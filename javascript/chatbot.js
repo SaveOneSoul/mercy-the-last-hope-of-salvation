@@ -88,10 +88,19 @@
     const cfg = window.MERCY_SITE_CONFIG || {};
     if (!cfg.enableRemoteAI || !cfg.apiBaseUrl) return null;
     try {
+      let recaptchaToken = null;
+      if (cfg.recaptchaEnabled) {
+        recaptchaToken = await window.MercyRecaptcha.execute("chat");
+      }
+
       const res = await fetch(cfg.apiBaseUrl.replace(/\/$/, "") + "/api/chat", {
         method:"POST",
         headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({message:question, client_id:getClientId()})
+        body:JSON.stringify({
+          message:question,
+          client_id:getClientId(),
+          recaptcha_token:recaptchaToken
+        })
       });
       if (!res.ok) return null;
       return await res.json();

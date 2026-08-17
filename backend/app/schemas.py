@@ -13,6 +13,7 @@ class Scope(str, Enum):
 class ChatRequest(BaseModel):
     message: str = Field(min_length=2, max_length=2000)
     client_id: str | None = Field(default=None, max_length=128)
+    recaptcha_token: str | None = Field(default=None, max_length=8192)
 
 
 class SourceRef(BaseModel):
@@ -59,6 +60,7 @@ class ContactRequest(BaseModel):
     topic: str = Field(default="Other", max_length=100)
     message: str = Field(min_length=2, max_length=5000)
     consent: Literal["yes"] | None = None
+    recaptcha_token: str | None = Field(default=None, max_length=8192)
 
 
 class ContactResponse(BaseModel):

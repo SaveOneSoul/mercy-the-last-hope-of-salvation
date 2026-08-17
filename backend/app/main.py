@@ -9,6 +9,11 @@ from .contact_service import process_contact
 from .database import init_db
 from .rate_limit import SlidingWindowRateLimiter
 from .reference_service import retrieve_references
+from .recaptcha_service import (
+    verify_recaptcha,
+    RecaptchaRejected,
+    RecaptchaUnavailable,
+)
 
 
 @asynccontextmanager
@@ -17,7 +22,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title=settings.app_name, version="2.0.0", lifespan=lifespan)
+app = FastAPI(title=settings.app_name, version="2.1.0", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.allowed_origins,
@@ -35,15 +40,37 @@ def _client_key(request: Request) -> str:
     return request.client.host if request.client else "unknown"
 
 
+def _require_recaptcha(token: str | None, action: str, request: Request) -> None:
+    try:
+        verify_recaptcha(token, action, request)
+    except RecaptchaRejected:
+        # Keep the response intentionally generic; do not leak risk scores or rejection reasons.
+        raise HTTPException(status_code=403, detail="Security verification failed.")
+    except RecaptchaUnavailable:
+        # Fail closed if verification cannot be performed while enforcement is enabled.
+        raise HTTPException(
+            status_code=503,
+            detail="Security verification is temporarily unavailable.",
+        )
+
+
 @app.get("/health")
 def health():
-    return {"status": "ok", "service": settings.app_name, "catholic_only": True}
+    return {
+        "status": "ok",
+        "service": settings.app_name,
+        "catholic_only": True,
+        "recaptcha_enforced": settings.recaptcha_enforce,
+    }
 
 
 @app.post("/api/chat", response_model=ChatResponse)
 def chat(payload: ChatRequest, request: Request):
     if not limiter.allow("chat:" + _client_key(request)):
         raise HTTPException(status_code=429, detail="Too many requests. Please try again later.")
+
+    _require_recaptcha(payload.recaptcha_token, "chat", request)
+
     message = payload.message.strip()
     if len(message) > settings.max_chat_chars:
         raise HTTPException(status_code=413, detail="Message is too long.")
@@ -66,6 +93,9 @@ def references(q: str):
 def contact(payload: ContactRequest, request: Request):
     if not limiter.allow("contact:" + _client_key(request)):
         raise HTTPException(status_code=429, detail="Too many submissions. Please try again later.")
+
+    _require_recaptcha(payload.recaptcha_token, "contact", request)
+
     if len(payload.message) > settings.max_contact_chars:
         raise HTTPException(status_code=413, detail="Message is too long.")
     reply, delivered_to_owner, stored = process_contact(payload)

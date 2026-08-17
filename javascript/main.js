@@ -1,10 +1,67 @@
-
 (() => {
   const root = document.documentElement;
   const saved = localStorage.getItem("mercy-theme");
   if (saved) root.dataset.theme = saved;
 
   document.querySelectorAll("[data-current-year]").forEach(el => el.textContent = new Date().getFullYear());
+
+  // Shared reCAPTCHA Enterprise helper. The site key is intentionally public.
+  (() => {
+    let scriptPromise = null;
+
+    function config() {
+      return window.MERCY_SITE_CONFIG || {};
+    }
+
+    function enabled() {
+      const cfg = config();
+      return Boolean(cfg.recaptchaEnabled && cfg.recaptchaSiteKey);
+    }
+
+    function loadScript() {
+      if (!enabled()) return Promise.resolve(false);
+      if (window.grecaptcha?.enterprise) return Promise.resolve(true);
+      if (scriptPromise) return scriptPromise;
+
+      const key = config().recaptchaSiteKey;
+      scriptPromise = new Promise((resolve, reject) => {
+        const existing = document.querySelector("script[data-mercy-recaptcha]");
+        if (existing) {
+          existing.addEventListener("load", () => resolve(true), {once:true});
+          existing.addEventListener("error", () => reject(new Error("reCAPTCHA failed to load.")), {once:true});
+          return;
+        }
+
+        const script = document.createElement("script");
+        script.src = `https://www.google.com/recaptcha/enterprise.js?render=${encodeURIComponent(key)}`;
+        script.async = true;
+        script.defer = true;
+        script.dataset.mercyRecaptcha = "true";
+        script.addEventListener("load", () => resolve(true), {once:true});
+        script.addEventListener("error", () => reject(new Error("reCAPTCHA failed to load.")), {once:true});
+        document.head.appendChild(script);
+      });
+      return scriptPromise;
+    }
+
+    async function execute(action) {
+      if (!enabled()) return null;
+      await loadScript();
+      const key = config().recaptchaSiteKey;
+
+      return new Promise((resolve, reject) => {
+        window.grecaptcha.enterprise.ready(async () => {
+          try {
+            resolve(await window.grecaptcha.enterprise.execute(key, {action}));
+          } catch (error) {
+            reject(error);
+          }
+        });
+      });
+    }
+
+    window.MercyRecaptcha = Object.freeze({enabled, execute});
+  })();
 
   const navToggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".site-nav");
@@ -24,7 +81,6 @@
     });
   }
 
-  // Rosary mystery tabs
   document.querySelectorAll("[data-mystery-tab]").forEach(btn => {
     btn.addEventListener("click", () => {
       document.querySelectorAll("[data-mystery-tab]").forEach(b => b.setAttribute("aria-selected", "false"));
@@ -35,7 +91,6 @@
     });
   });
 
-  // Bible book filter
   const bookSearch = document.querySelector("[data-book-search]");
   if (bookSearch) {
     bookSearch.addEventListener("input", () => {
@@ -46,8 +101,6 @@
     });
   }
 
-
-  // Catechism topic filter
   const cccSearch = document.querySelector("[data-ccc-search]");
   if (cccSearch) {
     cccSearch.addEventListener("input", () => {
@@ -58,7 +111,7 @@
     });
   }
 
-  // Contact form: API first, then email/WhatsApp fallback.
+  // Contact form: reCAPTCHA-protected API first, then user-initiated email/WhatsApp fallback.
   const form = document.querySelector("[data-contact-form]");
   if (form) {
     form.addEventListener("submit", async (event) => {
@@ -72,6 +125,11 @@
 
       if (cfg.apiBaseUrl) {
         try {
+          if (cfg.recaptchaEnabled) {
+            status.textContent = "Checking security…";
+            payload.recaptcha_token = await window.MercyRecaptcha.execute("contact");
+          }
+
           const res = await fetch(cfg.apiBaseUrl.replace(/\/$/, "") + "/api/contact", {
             method: "POST",
             headers: {"Content-Type":"application/json"},
@@ -86,7 +144,7 @@
           form.reset();
           return;
         } catch (err) {
-          console.warn("API submission failed; attempting fallback.", err);
+          console.warn("Protected API submission failed; attempting user-initiated fallback.", err);
         }
       }
 
@@ -111,7 +169,7 @@ ${payload.message || ""}`
         status.textContent = "WhatsApp has been opened with the message prepared.";
       } else {
         status.classList.add("error");
-        status.textContent = "Contact delivery is not configured yet. Set contactEmail or whatsappNumber in javascript/config.js, or connect the backend API.";
+        status.textContent = "Contact delivery is not configured yet.";
       }
     });
   }

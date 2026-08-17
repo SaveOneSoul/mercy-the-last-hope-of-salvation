@@ -20,12 +20,21 @@ class Settings:
     app_name: str = os.getenv("APP_NAME", "Mercy Catholic AI API")
     environment: str = os.getenv("ENVIRONMENT", "development")
 
-    # AI provider credentials remain server-side only.
-    openai_api_key: str = os.getenv("OPENAI_API_KEY", "")
-    openai_model: str = os.getenv("OPENAI_MODEL", "gpt-5.6-luna")
-    openai_classifier_model: str = os.getenv("OPENAI_CLASSIFIER_MODEL", "gpt-5.6-luna")
+    # Gemini credentials remain server-side only.
+    gemini_api_key: str = os.getenv("GEMINI_API_KEY", "")
+    gemini_model: str = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
+    gemini_classifier_model: str = os.getenv(
+        "GEMINI_CLASSIFIER_MODEL", "gemini-3.5-flash-lite"
+    )
 
     allowed_origins: list[str] = None
+
+    # reCAPTCHA Enterprise. The site key is public; assessment auth uses ADC/service-account IAM.
+    recaptcha_enforce: bool = _bool("RECAPTCHA_ENFORCE", False)
+    recaptcha_project_id: str = os.getenv("RECAPTCHA_PROJECT_ID", "")
+    recaptcha_site_key: str = os.getenv("RECAPTCHA_SITE_KEY", "")
+    recaptcha_min_score: float = float(os.getenv("RECAPTCHA_MIN_SCORE", "0.5"))
+    recaptcha_allowed_hostnames: list[str] = None
 
     # Cloud Run filesystems are ephemeral. Keep persistence disabled until a durable DB is configured.
     database_url: str = os.getenv("DATABASE_URL", "sqlite:////tmp/mercy.db")
@@ -53,7 +62,15 @@ class Settings:
         object.__setattr__(
             self,
             "allowed_origins",
-            _csv("ALLOWED_ORIGINS", "http://localhost:5500,http://127.0.0.1:5500"),
+            _csv(
+                "ALLOWED_ORIGINS",
+                "http://localhost:5500,http://127.0.0.1:5500",
+            ),
+        )
+        object.__setattr__(
+            self,
+            "recaptcha_allowed_hostnames",
+            _csv("RECAPTCHA_ALLOWED_HOSTNAMES", ""),
         )
 
 
