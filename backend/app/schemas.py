@@ -22,10 +22,19 @@ class SourceRef(BaseModel):
     url: str
 
 
+class DoctrineReference(BaseModel):
+    id: str
+    topic: str
+    ccc: str
+    scripture: list[str]
+    vatican_url: str
+
+
 class ChatResponse(BaseModel):
     reply: str
     scope: Scope
     sources: list[SourceRef] = []
+    references: list[DoctrineReference] = []
     needs_human_follow_up: bool = False
 
 
@@ -39,6 +48,7 @@ class CatholicAnswer(BaseModel):
     catholic_scope_confirmed: bool
     answer: str = Field(max_length=5000)
     source_ids: list[str]
+    reference_ids: list[str] = []
     needs_human_follow_up: bool = False
 
 

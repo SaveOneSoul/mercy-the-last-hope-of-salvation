@@ -46,6 +46,18 @@
     });
   }
 
+
+  // Catechism topic filter
+  const cccSearch = document.querySelector("[data-ccc-search]");
+  if (cccSearch) {
+    cccSearch.addEventListener("input", () => {
+      const q = cccSearch.value.trim().toLowerCase();
+      document.querySelectorAll("[data-ccc-topic]").forEach(item => {
+        item.hidden = q && !item.dataset.cccTopic.toLowerCase().includes(q);
+      });
+    });
+  }
+
   // Contact form: API first, then email/WhatsApp fallback.
   const form = document.querySelector("[data-contact-form]");
   if (form) {

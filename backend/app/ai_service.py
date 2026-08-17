@@ -2,10 +2,11 @@ from __future__ import annotations
 import hashlib
 from openai import OpenAI
 from .settings import settings
-from .schemas import ScopeDecision, CatholicAnswer, Scope, SourceRef, ChatResponse
+from .schemas import ScopeDecision, CatholicAnswer, Scope, SourceRef, DoctrineReference, ChatResponse
 from .prompts import CLASSIFIER_INSTRUCTIONS, ANSWER_INSTRUCTIONS
 from .catholic_guard import local_scope, contains_injection, is_pastoral_safety
 from .knowledge import retrieve, build_context
+from .reference_service import retrieve_references, build_reference_context
 
 OUT_OF_SCOPE_REPLY = (
     "Mercy Guide is limited to Roman Catholic faith, Sacred Scripture in Catholic context, "
@@ -96,7 +97,9 @@ def answer_catholic_question(message: str, client_id: str | None = None) -> Chat
         )
 
     approved_context = build_context(sources)
-    user_input = f"""USER QUESTION:\n{message}\n\nAPPROVED CATHOLIC CONTEXT:\n{approved_context}"""
+    doctrinal_refs = retrieve_references(message, limit=4)
+    reference_context = build_reference_context(doctrinal_refs) if doctrinal_refs else "No approved doctrine-reference mapping matched this question."
+    user_input = f"""USER QUESTION:\n{message}\n\nAPPROVED CATHOLIC CONTEXT:\n{approved_context}\n\nAPPROVED DOCTRINAL REFERENCE MAP:\n{reference_context}"""
     kwargs = {
         "model": settings.openai_model,
         "instructions": ANSWER_INSTRUCTIONS,
@@ -121,9 +124,18 @@ def answer_catholic_question(message: str, client_id: str | None = None) -> Chat
         SourceRef(id=s["id"], title=s["title"], authority=s["authority"], url=s["url"])
         for s in sources if s["id"] in valid_ids
     ]
+    allowed_reference_ids = {r["id"] for r in doctrinal_refs}
+    valid_reference_ids = [rid for rid in result.reference_ids if rid in allowed_reference_ids]
+    doctrine_refs = [
+        DoctrineReference(
+            id=r["id"], topic=r["topic"], ccc=r["ccc"], scripture=r["scripture"], vatican_url=r["vatican_url"]
+        )
+        for r in doctrinal_refs if r["id"] in valid_reference_ids
+    ]
     return ChatResponse(
         reply=result.answer.strip(),
         scope=Scope.catholic,
         sources=refs,
+        references=doctrine_refs,
         needs_human_follow_up=result.needs_human_follow_up,
     )

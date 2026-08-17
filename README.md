@@ -13,10 +13,11 @@ and later migrate to a professional cloud backend.
 6. Eucharistic Miracles
 7. Saints of the Church
 8. Bible
-9. Holy Spirit & Baptism in the Holy Spirit
-10. Save One Soul Campaign
-11. Catholic Charismatic Renewal
-12. Prayer Requests & Contact
+9. Catechism of the Catholic Church — CCC + Scripture cross-references
+10. Holy Spirit & Baptism in the Holy Spirit
+11. Save One Soul Campaign
+12. Catholic Charismatic Renewal
+13. Prayer Requests & Contact
 
 ## Folder structure
 
@@ -175,3 +176,8 @@ gcloud auth login
 ```
 
 After deployment, the script automatically updates `javascript/config.js` with the generated Cloud Run URL and enables the remote Catholic-only AI. See `backend/cloudrun/README.md` for details.
+
+
+## CCC + Bible cross-reference engine
+
+The backend now contains `backend/app/data/catholic_reference_map.json`. Mercy AI retrieves from this approved map and is instructed to use only the supplied Scripture references and CCC paragraph ranges. The public `html/catechism.html` page exposes the same study map. This project intentionally stores paragraph references and concise summaries rather than republishing the complete Catechism text.

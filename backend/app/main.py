@@ -8,6 +8,7 @@ from .ai_service import answer_catholic_question
 from .contact_service import process_contact
 from .database import init_db
 from .rate_limit import SlidingWindowRateLimiter
+from .reference_service import retrieve_references
 
 
 @asynccontextmanager
@@ -51,6 +52,14 @@ def chat(payload: ChatRequest, request: Request):
     except Exception:
         # Do not fall back to a general-purpose answer on AI/provider failures.
         raise HTTPException(status_code=503, detail="Catholic AI service is temporarily unavailable.")
+
+
+@app.get("/api/references")
+def references(q: str):
+    query = q.strip()
+    if len(query) < 2 or len(query) > settings.max_chat_chars:
+        raise HTTPException(status_code=400, detail="Query must be between 2 and the configured maximum characters.")
+    return {"query": query, "references": retrieve_references(query, limit=6)}
 
 
 @app.post("/api/contact", response_model=ContactResponse)

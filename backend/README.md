@@ -58,3 +58,8 @@ Recommended source priority:
 7. Secondary Catholic scholarship only after editorial review.
 
 Wikipedia should not be placed in the AI doctrine knowledge base. It may remain a human-readable secondary background link on non-doctrinal history pages.
+
+
+## Doctrine reference engine
+
+`app/data/catholic_reference_map.json` maps major Catholic topics to verified CCC paragraph ranges and Scripture references. `app/reference_service.py` retrieves these mappings. The AI receives them as approved context and must not invent Bible citations or CCC paragraph numbers. `GET /api/references?q=eucharist` can be used to inspect the reference map without calling OpenAI.
