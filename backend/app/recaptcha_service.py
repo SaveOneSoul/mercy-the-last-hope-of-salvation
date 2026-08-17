@@ -46,6 +46,16 @@ def verify_recaptcha(
     if not token:
         raise RecaptchaRejected("Missing reCAPTCHA token.")
 
+    allowed = {
+        h.strip().lower()
+        for h in settings.recaptcha_allowed_hostnames
+        if h.strip()
+    }
+    if not allowed:
+        raise RecaptchaUnavailable(
+            "reCAPTCHA is enforced but allowed hostnames are not configured."
+        )
+
     event = recaptchaenterprise_v1.Event(
         site_key=settings.recaptcha_site_key,
         token=token,
@@ -75,8 +85,7 @@ def verify_recaptcha(
         raise RecaptchaRejected("Unexpected reCAPTCHA action.")
 
     hostname = (props.hostname or "").lower()
-    allowed = {h.lower() for h in settings.recaptcha_allowed_hostnames}
-    if allowed and hostname not in allowed:
+    if hostname not in allowed:
         raise RecaptchaRejected("Unexpected reCAPTCHA hostname.")
 
     score = float(response.risk_analysis.score or 0.0)

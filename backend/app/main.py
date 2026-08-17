@@ -82,11 +82,24 @@ def chat(payload: ChatRequest, request: Request):
 
 
 @app.get("/api/references")
-def references(q: str):
+def references(q: str, request: Request):
+    if not limiter.allow("references:" + _client_key(request)):
+        raise HTTPException(
+            status_code=429,
+            detail="Too many requests. Please try again later.",
+        )
+
     query = q.strip()
     if len(query) < 2 or len(query) > settings.max_chat_chars:
-        raise HTTPException(status_code=400, detail="Query must be between 2 and the configured maximum characters.")
-    return {"query": query, "references": retrieve_references(query, limit=6)}
+        raise HTTPException(
+            status_code=400,
+            detail="Query must be between 2 and the configured maximum characters.",
+        )
+
+    return {
+        "query": query,
+        "references": retrieve_references(query, limit=6),
+    }
 
 
 @app.post("/api/contact", response_model=ContactResponse)

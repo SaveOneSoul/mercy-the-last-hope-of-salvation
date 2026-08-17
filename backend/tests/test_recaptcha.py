@@ -218,3 +218,18 @@ def test_recaptcha_accepts_valid_assessment(monkeypatch):
     assert verdict.action == "chat"
     assert verdict.hostname == "saveonesoul.github.io"
     assert verdict.score == pytest.approx(0.9)
+
+def test_recaptcha_fails_closed_when_allowed_hostnames_missing(monkeypatch):
+    monkeypatch.setattr(
+        recaptcha_service,
+        "settings",
+        _settings(recaptcha_allowed_hostnames=[]),
+    )
+
+    with pytest.raises(recaptcha_service.RecaptchaUnavailable):
+        recaptcha_service.verify_recaptcha(
+            "token",
+            "chat",
+            _request(),
+        )
+
