@@ -1,0 +1,13 @@
+.gcloudignore
+.git
+.gitignore
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+mercy.db
+*.sqlite
+*.sqlite3
