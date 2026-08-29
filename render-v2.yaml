@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: mercy-api
+    runtime: docker
+    rootDir: cloud-backend
+    healthCheckPath: /health
+    envVars:
+      - key: CORS_ORIGINS
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: mercy-db
+          property: connectionString
+databases:
+  - name: mercy-db
+    plan: free
