@@ -7,10 +7,15 @@
   const answerText=document.querySelector('[data-catholic-ai-text]');
   const sourceBox=document.querySelector('[data-catholic-ai-sources]');
   const relatedBox=document.querySelector('[data-catholic-ai-related]');
-  if(!form||!input||!status||!answerBox||!answerText||!sourceBox||!relatedBox)return;
+  const actionBar=document.querySelector('[data-catholic-ai-actions]');
+  const clearBtn=document.querySelector('[data-catholic-ai-clear]');
+  const undoBtn=document.querySelector('[data-catholic-ai-undo]');
+  if(!form||!input||!status||!answerBox||!answerText||!sourceBox||!relatedBox||!actionBar||!clearBtn||!undoBtn)return;
 
   const isKh=location.pathname.includes('/kh/');
   const t=(en,kh)=>isKh?kh:en;
+  let currentResult=null;
+  let clearedResult=null;
 
   async function apiBase(){
     let base=(window.MERCY_API_BASE||'').replace(/\/$/,'');
@@ -22,11 +27,17 @@
     return base;
   }
 
-  function clearResult(){
+  function resetDisplay(){
     answerBox.hidden=true;
     answerText.replaceChildren();
     sourceBox.replaceChildren();
     relatedBox.replaceChildren();
+  }
+
+  function updateActions(){
+    actionBar.hidden=!currentResult&&!clearedResult;
+    clearBtn.disabled=!currentResult||answerBox.hidden;
+    undoBtn.disabled=!clearedResult;
   }
 
   function appendInline(parent,text){
@@ -125,14 +136,21 @@
     flushParagraph();
   }
 
+  function sourceNumber(source,index){
+    const match=String(source?.id||'').match(/(?:mag-|source-)?(\d+)$/i);
+    return match?match[1]:String(index+1);
+  }
+
   function renderSources(sources){
     sourceBox.replaceChildren();
     if(!Array.isArray(sources)||!sources.length)return;
     const h=document.createElement('h3');h.textContent=t('Catholic sources','Ki Catholic source');sourceBox.appendChild(h);
-    const ul=document.createElement('ol');ul.className='source-list ai-source-list';
+    const ol=document.createElement('ol');ol.className='source-list ai-source-list';
     sources.forEach((source,index)=>{
+      const n=sourceNumber(source,index);
       const li=document.createElement('li');
-      li.id='ai-source-'+(index+1);
+      li.id='ai-source-'+n;
+      li.value=Number(n)||index+1;
       const title=(source.title||t('Catholic source','Catholic source')).trim();
       if(source.url){
         const a=document.createElement('a');a.href=source.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=title;li.appendChild(a);
@@ -144,9 +162,9 @@
       if(source.reference)details.push(source.reference);
       if(details.length)li.appendChild(document.createTextNode(' — '+details.join(' · ')));
       const back=document.createElement('a');back.className='ai-source-back';back.href='#main';back.textContent=' ↥';back.setAttribute('aria-label',t('Back to answer','Phai sha ka jubab'));li.appendChild(back);
-      ul.appendChild(li);
+      ol.appendChild(li);
     });
-    sourceBox.appendChild(ul);
+    sourceBox.appendChild(ol);
   }
 
   function renderRelated(questions){
@@ -162,6 +180,37 @@
     relatedBox.appendChild(div);
   }
 
+  function renderResult(data,{restored=false}={}){
+    renderMarkdown(data.reply||'');
+    renderSources(data.sources||[]);
+    renderRelated(data.related_questions||[]);
+    answerBox.hidden=false;
+    currentResult=data;
+    updateActions();
+    status.textContent=restored
+      ?t('Cleared response restored.','La pynphai biang ia ka jubab ba la clear.')
+      :t(`Answer provided by ${data.provider||'Magisterium AI'}.`,`La ai jubab da ${data.provider||'Magisterium AI'}.`);
+    answerBox.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
+  clearBtn.addEventListener('click',()=>{
+    if(!currentResult)return;
+    clearedResult=currentResult;
+    currentResult=null;
+    resetDisplay();
+    status.textContent=t('Response cleared. Use Undo Clear to restore it.','La clear ia ka jubab. Pyndonkam Undo Clear ban pynphai biang.');
+    updateActions();
+    clearBtn.blur();
+  });
+
+  undoBtn.addEventListener('click',()=>{
+    if(!clearedResult)return;
+    const restore=clearedResult;
+    clearedResult=null;
+    renderResult(restore,{restored:true});
+    undoBtn.blur();
+  });
+
   function errorMessage(statusCode,detail){
     if(detail==='magisterium_not_configured')return t('Catholic AI is installed, but the Magisterium API key has not yet been configured on the Mercy backend.','La install ia ka Catholic AI, hynrei ym pat configure ia ka Magisterium API key ha Mercy backend.');
     if(statusCode===429)return t('The Catholic AI request limit has been reached. Please try again later.','La poi sha ka request limit jong Catholic AI. Sngewbha pyrshang biang hadien.');
@@ -173,7 +222,9 @@
     e.preventDefault();
     const question=input.value.trim();
     if(question.length<2)return;
-    clearResult();
+    resetDisplay();
+    currentResult=null;
+    updateActions();
     const api=await apiBase();
     if(!api){
       status.textContent=t('The Catholic AI interface is ready, but the live Mercy API URL has not yet been connected.','Ka Catholic AI interface ka la ready, hynrei ym pat connect ia ka live Mercy API URL.');
@@ -191,16 +242,15 @@
       let data={};
       try{data=await r.json()}catch(e){}
       if(!r.ok){status.textContent=errorMessage(r.status,data.detail);return}
-      renderMarkdown(data.reply||'');
-      renderSources(data.sources||[]);
-      renderRelated(data.related_questions||[]);
-      answerBox.hidden=false;
-      status.textContent=t(`Answer provided by ${data.provider||'Magisterium AI'}.`,`La ai jubab da ${data.provider||'Magisterium AI'}.`);
-      answerBox.scrollIntoView({behavior:'smooth',block:'start'});
+      clearedResult=null;
+      renderResult(data);
     }catch(e){
       status.textContent=t('Could not reach the Mercy Catholic AI service. Please try again later.','Ym lah ban ioh ia ka Mercy Catholic AI service. Sngewbha pyrshang biang hadien.');
     }finally{
       if(submit)submit.disabled=false;
+      updateActions();
     }
   });
+
+  updateActions();
 })();
