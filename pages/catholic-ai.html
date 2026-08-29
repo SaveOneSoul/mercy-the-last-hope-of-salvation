@@ -35,6 +35,10 @@
 <button type="submit">Ask Catholic AI</button>
 <div class="status" data-catholic-ai-status role="status">The interface is ready. Live answers begin after the Mercy backend URL and Magisterium server secret are configured.</div>
 </form>
+<div class="ai-response-actions" data-catholic-ai-actions hidden aria-label="Response actions">
+<button type="button" class="btn secondary" data-catholic-ai-clear>Clear Response</button>
+<button type="button" class="btn secondary" data-catholic-ai-undo disabled>Undo Clear</button>
+</div>
 <div class="prayer" data-catholic-ai-answer hidden aria-live="polite">
 <h2>Answer</h2>
 <div data-catholic-ai-text></div>
@@ -51,7 +55,7 @@
 </div>
 </main>
 <footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Catholic prayer, formation and evangelization.</p></div><div><a href="sources.html">Sources & editorial policy</a><a href="https://www.vatican.va/" target="_blank" rel="noopener">Holy See</a></div><p class="copyright">© <span data-year></span> Mercy – The Last Hope of Salvation.</p></footer>
-<script src="../javascript/catholic-ai.js?v=2"></script>
+<script src="../javascript/catholic-ai.js?v=3"></script>
 <script src="../javascript/mercy.js?v=11"></script>
 </body>
 </html>
