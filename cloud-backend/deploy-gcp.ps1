@@ -133,12 +133,12 @@ try {
         --allow-unauthenticated `
         --service-account $runtimeEmail `
         --set-secrets "MAGISTERIUM_API_KEY=${SecretName}:latest" `
-        --set-env-vars "CORS_ORIGINS=https://saveonesoul.github.io,MAGISTERIUM_MODEL=magisterium-1,ENABLE_DOCS=false,DATABASE_URL=sqlite:////tmp/mercy.db" `
+        --set-env-vars "CORS_ORIGINS=https://saveonesoul.github.io,MAGISTERIUM_MODEL=magisterium-1,MAGISTERIUM_TIMEOUT_SECONDS=90,ENABLE_DOCS=false,DATABASE_URL=sqlite:////tmp/mercy.db" `
         --memory 512Mi `
         --cpu 1 `
         --concurrency 40 `
         --max-instances 3 `
-        --timeout 60
+        --timeout 120
 }
 finally {
     Pop-Location
@@ -167,7 +167,7 @@ try {
 Write-Host "`nTesting Catholic AI..." -ForegroundColor Cyan
 try {
     $testBody = @{ message = "What does the Catholic Church teach about the Eucharist?"; language = "en" } | ConvertTo-Json
-    $test = Invoke-RestMethod -Uri "$serviceUrl/api/chat" -Method Post -ContentType "application/json" -Body $testBody -TimeoutSec 60
+    $test = Invoke-RestMethod -Uri "$serviceUrl/api/chat" -Method Post -ContentType "application/json" -Body $testBody -TimeoutSec 120
     Write-Host "Provider: $($test.provider)" -ForegroundColor Green
     Write-Host "Reply received: $([bool]$test.reply)"
     Write-Host "Sources returned: $(@($test.sources).Count)"
