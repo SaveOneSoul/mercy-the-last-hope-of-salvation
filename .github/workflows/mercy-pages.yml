@@ -25,7 +25,7 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html mercy-manifest.webmanifest mercy-sw.js .nojekyll _site/ 2>/dev/null || true
-          cp -R css javascript pages _site/
+          cp -R css javascript pages kh _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
