@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#5a1020">
+<meta name="description" content="Catholic AI questions answered through the Mercy backend and Magisterium AI with Catholic source citations.">
+<title>Catholic AI · Mercy – The Last Hope of Salvation</title>
+<link rel="manifest" href="../mercy-manifest.webmanifest">
+<link rel="stylesheet" href="../css/mercy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="../index.html"><span class="cross">✠</span><span><b>Mercy</b><small>The Last Hope of Salvation</small></span></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button>
+<nav id="main-nav"><a href="../index.html">Home</a><a href="save-one-soul.html">Save One Soul</a><a href="pro-life.html">Pro-Life</a><a href="saints.html">Saints</a><a href="rosary.html">Rosary</a><a href="prayer.html">Prayer</a><a href="seven-sorrows.html">Seven Sorrows</a><a href="divine-mercy-chaplet.html">Divine Mercy Chaplet</a><a href="precious-blood.html">Precious Blood</a><a href="eucharistic-miracles.html">Eucharist</a><a href="charis.html">CHARIS</a><a href="catholic-ai.html">Catholic AI</a><a href="sources.html">Sources</a></nav>
+<button class="theme-btn" aria-label="Toggle theme">◐</button>
+</header>
+<main id="main">
+<section class="page-hero">
+<div class="crumb">Catholic Formation · Magisterium · Source-grounded Answers</div>
+<h1>Catholic AI — Magisterium Guide</h1>
+<p>Ask questions about Catholic doctrine, Scripture, the sacraments, prayer, saints, moral teaching, canon law, Divine Mercy and Catholic spiritual life. Answers are requested from Magisterium AI through the private Mercy backend and displayed with the Catholic sources returned by the provider.</p>
+</section>
+<div class="content">
+<div class="callout"><strong>Secure architecture:</strong> the Magisterium API key belongs only on the Mercy backend. It is never placed in this GitHub Pages site or sent to your browser.</div>
+<div class="callout warning"><strong>Pastoral and doctrinal boundary.</strong> This assistant is a formation aid, not the Magisterium of the Church and not a substitute for a priest, confessor, canon lawyer, physician, counsellor or emergency service. It should distinguish Catholic doctrine and discipline from theological opinion, devotional practice and private revelation. Always follow competent Church authority in individual sacramental or canonical cases.</div>
+<h2>Ask a Catholic question</h2>
+<p>Examples: “What does the Catechism teach about the Eucharist?”, “Explain Baptism in the Holy Spirit in Catholic theology”, “What does Canon Law teach about abortion?”, or “How should Catholics practice Lectio Divina?”</p>
+<form class="form" data-catholic-ai-form>
+<label>Your question
+<textarea data-catholic-ai-input required maxlength="2000" rows="6" placeholder="Ask a Catholic question…"></textarea>
+</label>
+<button type="submit">Ask Catholic AI</button>
+<div class="status" data-catholic-ai-status role="status">The interface is ready. Live answers begin after the Mercy backend URL and Magisterium server secret are configured.</div>
+</form>
+<div class="prayer" data-catholic-ai-answer hidden aria-live="polite">
+<h2>Answer</h2>
+<div data-catholic-ai-text style="white-space:pre-wrap"></div>
+<div data-catholic-ai-sources></div>
+<div data-catholic-ai-related></div>
+</div>
+<h2>How the answer is produced</h2>
+<div class="grid">
+<div class="card"><h3>1. Your question</h3><p>The browser sends the question to the Mercy API. The public page does not contain the Magisterium credential.</p></div>
+<div class="card"><h3>2. Catholic AI gateway</h3><p>The Mercy backend sends the question to Magisterium AI with instructions to remain within Catholic scope and to distinguish doctrine, discipline, opinion, devotion and private revelation.</p></div>
+<div class="card"><h3>3. Catholic sources</h3><p>The page displays the source citations returned by Magisterium so that important claims can be checked against the underlying Catholic documents.</p></div>
+</div>
+<p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.magisterium.com/developers">About the Magisterium AI developer platform</a></p>
+</div>
+</main>
+<footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Catholic prayer, formation and evangelization.</p></div><div><a href="sources.html">Sources & editorial policy</a><a href="https://www.vatican.va/" target="_blank" rel="noopener">Holy See</a></div><p class="copyright">© <span data-year></span> Mercy – The Last Hope of Salvation.</p></footer>
+<script src="../javascript/catholic-ai.js?v=1"></script>
+<script src="../javascript/mercy.js?v=11"></script>
+</body>
+</html>
