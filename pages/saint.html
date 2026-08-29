@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#5a1020">
+<meta name="description" content="Saint profile · Mercy – The Last Hope of Salvation">
+<title>Saint Profile · Mercy – The Last Hope of Salvation</title>
+<link rel="manifest" href="../mercy-manifest.webmanifest">
+<link rel="stylesheet" href="../css/mercy.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="../index.html"><span class="cross">✠</span><span><b>Mercy</b><small>The Last Hope of Salvation</small></span></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button>
+<nav id="main-nav">
+<a href="../index.html">Home</a><a href="save-one-soul.html">Save One Soul</a><a href="saints.html">Saints</a><a href="rosary.html">Rosary</a><a href="prayer.html">Prayer</a><a href="seven-sorrows.html">Seven Sorrows</a><a href="divine-mercy-chaplet.html">Divine Mercy Chaplet</a><a href="precious-blood.html">Precious Blood</a><a href="eucharistic-miracles.html">Eucharist</a><a href="charis.html">CHARIS</a><a href="sources.html">Sources</a>
+</nav>
+<button class="theme-btn" aria-label="Toggle theme">◐</button>
+</header>
+<main id="main">
+<section class="page-hero">
+<div class="crumb">Communion of Saints · Internal Profile</div>
+<h1 id="saint-name">Loading saint…</h1>
+<p id="saint-feast">Please wait while the profile is loaded from the Saints directory.</p>
+</section>
+<div class="content">
+<p><a class="btn secondary" href="saints.html">← Back to Saints</a></p>
+<div id="saint-profile" class="prayer" aria-live="polite">
+<h2>Loading profile</h2>
+<p>This profile is stored within Mercy – The Last Hope of Salvation, so it does not depend on a third-party saint URL.</p>
+</div>
+<div class="callout"><strong>Catholic reference policy.</strong> The biography and feast information displayed here comes from this site's curated Saints directory. For further research, use authoritative Catholic sources such as the Holy See and the Vatican News Saints calendar; external links are supplementary and may change independently of this website.</div>
+<div class="btns"><a class="btn primary" href="https://www.vaticannews.va/en/saints.html" target="_blank" rel="noopener">Vatican News Saints Calendar</a><a class="btn secondary" href="https://www.vatican.va/" target="_blank" rel="noopener">Holy See</a></div>
+</div>
+</main>
+<footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Catholic prayer, formation and evangelization.</p></div><div><a href="saints.html">Saints directory</a><a href="sources.html">Sources & editorial policy</a></div><p class="copyright">© <span data-year></span> Mercy – The Last Hope of Salvation.</p></footer>
+<script src="../javascript/mercy.js?v=4"></script>
+<script>
+(async()=>{
+  const params=new URLSearchParams(location.search),id=params.get('id');
+  const box=document.getElementById('saint-profile'),nameEl=document.getElementById('saint-name'),feastEl=document.getElementById('saint-feast');
+  if(!id||!/^st-[a-z0-9-]+$/.test(id)){nameEl.textContent='Saint profile not found';feastEl.textContent='No valid saint was selected.';box.innerHTML='<h2>Invalid profile link</h2><p>Please return to the Saints directory and choose a saint.</p>';return}
+  try{
+    const response=await fetch('saints.html?v=4',{cache:'no-store'});if(!response.ok)throw new Error('directory unavailable');
+    const html=await response.text(),doc=new DOMParser().parseFromString(html,'text/html'),article=doc.getElementById(id);if(!article)throw new Error('saint not found');
+    const saintName=article.querySelector('h3')?.textContent?.trim()||'Saint',feast=article.querySelector('.badge')?.textContent?.trim()||'Feast information unavailable';
+    const bio=[...article.querySelectorAll(':scope > p')].find(p=>!p.classList.contains('saint-source'))?.textContent?.trim()||'';
+    const themes=(article.dataset.saint||'').split(/\s+/).filter(Boolean).slice(1).map(x=>x.replace(/-/g,' '));
+    nameEl.textContent=saintName;feastEl.textContent=feast;document.title=saintName+' · Mercy – The Last Hope of Salvation';box.innerHTML='';
+    const h2=document.createElement('h2');h2.textContent=saintName;box.appendChild(h2);const badge=document.createElement('span');badge.className='badge';badge.textContent=feast;box.appendChild(badge);
+    const h3=document.createElement('h3');h3.textContent='Short story';box.appendChild(h3);const p=document.createElement('p');p.textContent=bio;box.appendChild(p);
+    if(themes.length){const th=document.createElement('h3');th.textContent='Themes & context';box.appendChild(th);const tp=document.createElement('p');tp.textContent=themes.join(' · ');box.appendChild(tp)}
+  }catch(err){nameEl.textContent='Saint profile unavailable';feastEl.textContent='The internal directory could not be loaded.';box.innerHTML='<h2>Profile could not be loaded</h2><p>Please return to the Saints directory and try again.</p>'}
+})();
+</script>
+</body>
+</html>
