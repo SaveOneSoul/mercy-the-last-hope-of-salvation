@@ -1,0 +1,17 @@
+services:
+  api:
+    build: .
+    ports: ["8080:8080"]
+    environment:
+      DATABASE_URL: postgresql+psycopg://mercy:mercy@db:5432/mercy
+      CORS_ORIGINS: http://localhost:5500,http://localhost:8000
+    depends_on: [db]
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: mercy
+      POSTGRES_USER: mercy
+      POSTGRES_PASSWORD: mercy
+    volumes: ["mercy_pg:/var/lib/postgresql/data"]
+volumes:
+  mercy_pg:
