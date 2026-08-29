@@ -130,8 +130,6 @@ def campaign_day(payload: CampaignDayIn, db: Session = Depends(get_db)):
     row = get_participant(db, payload.token)
     setattr(row, f"day{payload.day}", True)
     row.language = payload.language
-    if all(bool(getattr(row, f"day{i}")) for i in range(1, 8)) and row.completed_at is None:
-        row.completed_at = datetime.now(timezone.utc)
     db.commit()
     db.refresh(row)
     return progress_payload(row)
@@ -144,6 +142,7 @@ def campaign_complete(payload: CampaignIn, db: Session = Depends(get_db)):
         raise HTTPException(status_code=409, detail="complete_all_seven_days_first")
     if row.completed_at is None:
         row.completed_at = datetime.now(timezone.utc)
+    row.language = payload.language
     db.commit()
     db.refresh(row)
     return progress_payload(row)
