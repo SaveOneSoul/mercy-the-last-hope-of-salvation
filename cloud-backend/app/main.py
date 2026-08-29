@@ -2,19 +2,20 @@ import hashlib
 import os
 from datetime import datetime, timezone
 
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import FastAPI, Depends, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, EmailStr, Field
 from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from .db import Base, engine, get_db
+from .magisterium import CatholicChatIn, ask_magisterium, magisterium_state
 from .models import PrayerIntention, ContactMessage, SaveOneSoulParticipant
 
 Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="Mercy API",
-    version="2.1.0",
+    version="2.2.0",
     docs_url="/docs" if os.getenv("ENABLE_DOCS", "true").lower() == "true" else None,
 )
 origins = [x.strip() for x in os.getenv("CORS_ORIGINS", "http://localhost:5500").split(',') if x.strip()]
@@ -54,6 +55,13 @@ def token_hash(token: str) -> str:
     return hashlib.sha256(token.encode("utf-8")).hexdigest()
 
 
+def request_client_key(request: Request) -> str:
+    forwarded = request.headers.get("x-forwarded-for", "")
+    if forwarded:
+        return forwarded.split(",")[0].strip() or "unknown"
+    return request.client.host if request.client else "unknown"
+
+
 def get_participant(db: Session, token: str) -> SaveOneSoulParticipant:
     row = db.query(SaveOneSoulParticipant).filter_by(token_hash=token_hash(token)).first()
     if not row:
@@ -76,12 +84,22 @@ def progress_payload(row: SaveOneSoulParticipant):
 
 @app.get('/health')
 def health():
-    return {'status': 'ok', 'service': 'mercy-api', 'version': '2.1.0'}
+    return {
+        'status': 'ok',
+        'service': 'mercy-api',
+        'version': '2.2.0',
+        'catholic_ai': magisterium_state(),
+    }
 
 
 @app.get('/api/content/version')
 def version():
-    return {'content_version': '2026.08.29', 'frontend': 'github-pages-ready'}
+    return {'content_version': '2026.08.30', 'frontend': 'github-pages-ready'}
+
+
+@app.post('/api/chat')
+def catholic_chat(payload: CatholicChatIn, request: Request):
+    return ask_magisterium(payload, request_client_key(request))
 
 
 @app.post('/api/prayer-intentions', status_code=201)
