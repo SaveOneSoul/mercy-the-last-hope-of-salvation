@@ -13,7 +13,10 @@ MAGISTERIUM_CHAT_URL = os.getenv(
     "MAGISTERIUM_CHAT_URL",
     "https://www.magisterium.com/api/v1/chat/completions",
 ).strip()
-MAGISTERIUM_TIMEOUT_SECONDS = float(os.getenv("MAGISTERIUM_TIMEOUT_SECONDS", "30"))
+# Magisterium may perform source retrieval and synthesis before answering. Keep the
+# provider timeout below the Cloud Run request timeout so this gateway can return a
+# controlled error instead of having the platform terminate the request first.
+MAGISTERIUM_TIMEOUT_SECONDS = float(os.getenv("MAGISTERIUM_TIMEOUT_SECONDS", "90"))
 MAGISTERIUM_RATE_LIMIT_PER_MINUTE = max(1, int(os.getenv("MAGISTERIUM_RATE_LIMIT_PER_MINUTE", "8")))
 
 SYSTEM_PROMPT = """You are the Catholic AI service for Mercy – The Last Hope of Salvation.
@@ -134,7 +137,8 @@ def ask_magisterium(payload: CatholicChatIn, client_key: str = "unknown") -> dic
     }
 
     try:
-        with httpx.Client(timeout=MAGISTERIUM_TIMEOUT_SECONDS) as client:
+        timeout = httpx.Timeout(MAGISTERIUM_TIMEOUT_SECONDS, connect=15.0)
+        with httpx.Client(timeout=timeout) as client:
             response = client.post(MAGISTERIUM_CHAT_URL, headers=headers, json=body)
     except httpx.TimeoutException as exc:
         raise HTTPException(status_code=504, detail="magisterium_timeout") from exc
