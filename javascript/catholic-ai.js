@@ -13,8 +13,6 @@
   var clearBtn=document.querySelector('[data-catholic-ai-clear]');
   var undoBtn=document.querySelector('[data-catholic-ai-undo]');
 
-  // Only the core question/answer UI is required. Optional action controls must
-  // never prevent the AI form from working when an older page is cached.
   if(!form||!input||!status||!answerBox||!answerText||!sourceBox||!relatedBox)return;
 
   var isKh=location.pathname.indexOf('/kh/')!==-1;
@@ -34,8 +32,6 @@
         base=(j.mercy_api_base||base||DEFAULT_API_BASE).replace(/\/$/,'');
       }
     }catch(e){
-      // The Cloud Run URL is public configuration, not a secret. Keep using the
-      // known-good endpoint when mobile caching or config retrieval fails.
       base=(base||DEFAULT_API_BASE).replace(/\/$/,'');
     }
     return base||DEFAULT_API_BASE;
@@ -154,6 +150,13 @@
     throw lastError||new Error('network_error');
   }
 
+  function buildWireQuestion(question){
+    if(!isKh)return question;
+    var instruction='IMPORTANT: Answer ONLY in Khasi. Do not introduce yourself. Answer the Catholic question directly. Keep headings, explanations, conclusions and related-question suggestions in Khasi. English or Latin may appear only for proper names, official document titles, quotations, or unavoidable technical Church terms. Question: ';
+    if(instruction.length+question.length<=2000)return instruction+question;
+    return question;
+  }
+
   form.addEventListener('submit',async function(e){
     e.preventDefault();
     var question=input.value.trim();if(question.length<2)return;
@@ -163,7 +166,8 @@
     var submit=form.querySelector('button[type="submit"]');if(submit)submit.disabled=true;
     status.textContent=t('Consulting Magisterium AI and Catholic sources…','Dang wad ha Magisterium AI bad ki Catholic source…');
     try{
-      var r=await fetchChat(api+'/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:question,language:isKh?'kha':'en'}),cache:'no-store'});
+      var wireQuestion=buildWireQuestion(question);
+      var r=await fetchChat(api+'/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:wireQuestion,language:isKh?'kha':'en'}),cache:'no-store'});
       var data={};try{data=await r.json();}catch(parseError){}
       if(!r.ok){status.textContent=errorMessage(r.status,data.detail);return;}
       clearedResult=null;renderResult(data,false);
