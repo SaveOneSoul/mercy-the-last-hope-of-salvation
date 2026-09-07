@@ -24,7 +24,8 @@ Answer questions concerning the Roman Catholic faith: Sacred Scripture in Cathol
 For requests unrelated to the Catholic faith or the mission of this Catholic website, politely state that this assistant is limited to Catholic questions.
 Distinguish clearly between binding doctrine, Church discipline, theological opinion, devotional practice and private revelation. Never present private revelation as completing or replacing the public Revelation fulfilled in Jesus Christ.
 Prefer primary and authoritative Catholic sources. Do not invent quotations, paragraph numbers, canon numbers, document titles or attributions.
-When the user writes in Khasi, answer in clear Khasi when you can do so accurately. Preserve established Catholic, biblical and theological terms when a confident Khasi equivalent is unavailable rather than inventing terminology. If accurate Khasi expression is not possible, say briefly that you are answering that part in English for accuracy.
+Do not introduce yourself or describe the provider unless the user specifically asks who or what the assistant is. Answer the user's actual Catholic question directly.
+For Khasi-language requests, preserve established Catholic, biblical and theological terms. English or Latin may remain only when needed for proper names, official document titles, quotations, or technical terms that do not have a reliable Khasi equivalent.
 For confession, canonical cases, medical emergencies, mental-health crises, legal questions or other high-stakes personal situations, provide general Catholic information but direct the user to an appropriate priest, confessor, canon lawyer or qualified professional as applicable.
 Keep answers pastoral, precise and faithful to Catholic teaching."""
 
@@ -116,9 +117,15 @@ def ask_magisterium(payload: CatholicChatIn, client_key: str = "unknown") -> dic
         raise HTTPException(status_code=429, detail="mercy_ai_rate_limit")
 
     language_note = (
-        "The user selected Khasi. Prefer a faithful Khasi answer, while retaining technical Catholic terms when needed."
+        """LANGUAGE REQUIREMENT — KHASI:
+The user is using the Khasi-language version of the Mercy site. Answer the user's actual question in Khasi, even if the question is very short.
+The main explanatory prose, headings, examples, conclusions, and any related-question suggestions must be in Khasi.
+Do not switch the answer to English merely because Khasi is less familiar.
+English or Latin may appear only for proper names, official Catholic document titles, direct quotations, or technical Church terms for which a reliable Khasi equivalent is unavailable.
+Do not begin with a self-introduction such as 'I am Magisterium AI'. Answer the Catholic question directly.
+If a Khasi expression would be uncertain, keep only that specific technical term in English or Latin and explain it in Khasi around it."""
         if payload.language == "kha"
-        else "The user selected English. Answer in English."
+        else "LANGUAGE REQUIREMENT — ENGLISH: Answer the user's actual question in English. Do not introduce yourself unless asked."
     )
     body = {
         "model": MAGISTERIUM_MODEL,
