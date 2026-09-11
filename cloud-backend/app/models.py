@@ -1,6 +1,8 @@
 from datetime import datetime, timezone
-from sqlalchemy import String, Text, DateTime, Boolean
+
+from sqlalchemy import Boolean, DateTime, String, Text, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column
+
 from .db import Base
 
 
@@ -46,3 +48,25 @@ class SaveOneSoulParticipant(Base):
     day5: Mapped[bool] = mapped_column(Boolean, default=False)
     day6: Mapped[bool] = mapped_column(Boolean, default=False)
     day7: Mapped[bool] = mapped_column(Boolean, default=False)
+
+
+class CMSOverride(Base):
+    """One editorial override applied to an existing public-page DOM element.
+
+    The static GitHub Pages HTML remains the canonical technical shell. The CMS
+    stores only approved editorial fields (text/HTML, link href, image src/alt)
+    against deterministic CSS selectors. Interactive widgets and other elements
+    carrying data-* attributes are excluded from the editor.
+    """
+
+    __tablename__ = "cms_overrides"
+    __table_args__ = (
+        UniqueConstraint("page_path", "selector", "field", name="uq_cms_page_selector_field"),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    page_path: Mapped[str] = mapped_column(String(240), index=True)
+    selector: Mapped[str] = mapped_column(String(700))
+    field: Mapped[str] = mapped_column(String(16))
+    value: Mapped[str] = mapped_column(Text)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, onupdate=utcnow)
