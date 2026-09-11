@@ -18,6 +18,10 @@
     return cfg;
   })();
 
+  const cmsPagePath=(()=>{let path=p;const prefix='/mercy-the-last-hope-of-salvation';if(path.startsWith(prefix))path=path.slice(prefix.length)||'/';if(path==='/'||path.endsWith('/'))path=(path==='/'?'':path)+'index.html';if(!path.startsWith('/'))path='/'+path;return path})();
+  const applyCmsOverrides=async()=>{try{const cfg=await configPromise;if(!cfg.mercy_api_base)return;const r=await fetch(cfg.mercy_api_base+'/api/content/blocks?path='+encodeURIComponent(cmsPagePath),{cache:'no-store'});if(!r.ok)return;const j=await r.json(),items=Array.isArray(j.overrides)?j.overrides:[];const order={html:0,href:1,src:1,alt:1};items.sort((a,b)=>(order[a.field]??9)-(order[b.field]??9)||String(a.selector).length-String(b.selector).length);items.forEach(item=>{try{const el=document.querySelector(item.selector);if(!el)return;if(item.field==='html')el.innerHTML=item.value;else if(item.field==='href'&&el.tagName==='A')el.setAttribute('href',item.value);else if(item.field==='src'&&el.tagName==='IMG')el.setAttribute('src',item.value);else if(item.field==='alt'&&el.tagName==='IMG')el.setAttribute('alt',item.value)}catch(e){}})}catch(e){}};
+  applyCmsOverrides();
+
   const search=document.querySelector('[data-saint-search]');
   if(search){search.addEventListener('input',e=>{const q=e.target.value.toLowerCase().trim();document.querySelectorAll('[data-saint]').forEach(el=>el.hidden=q&&!el.dataset.saint.includes(q))})}
   document.querySelectorAll('.saint-list article.saint-item[id]').forEach(article=>{const href='saint.html?id='+encodeURIComponent(article.id),nameLink=article.querySelector('h3 a'),sourceLink=article.querySelector('.saint-source a');if(nameLink){nameLink.href=href;nameLink.removeAttribute('target');nameLink.removeAttribute('rel')}if(sourceLink){sourceLink.href=href;sourceLink.removeAttribute('target');sourceLink.removeAttribute('rel');sourceLink.textContent=isKh?'Plie ia ka profile →':'Open saint profile →'}});
