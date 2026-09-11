@@ -1,14 +1,15 @@
+[CmdletBinding(PositionalBinding = $false)]
 param(
-    [string]$ProjectId = "mercy-last-hope-rk-260817",
-    [string]$Region = "asia-south1",
-    [string]$ServiceName = "mercy-api",
-    [string]$RuntimeServiceAccountName = "mercy-api-runtime",
-    [string]$SecretName = "mercy-magisterium-api-key",
-    [string]$DbInstanceName = "mercy-postgres",
-    [string]$DbName = "mercy",
-    [string]$DbUser = "mercy_app",
-    [string]$DbPasswordSecretName = "mercy-db-password",
-    [string]$DbTier = "db-f1-micro",
+    [ValidateNotNullOrEmpty()][string]$ProjectId = "mercy-last-hope-rk-260817",
+    [ValidateNotNullOrEmpty()][string]$Region = "asia-south1",
+    [ValidateNotNullOrEmpty()][string]$ServiceName = "mercy-api",
+    [ValidateNotNullOrEmpty()][string]$RuntimeServiceAccountName = "mercy-api-runtime",
+    [ValidateNotNullOrEmpty()][string]$SecretName = "mercy-magisterium-api-key",
+    [ValidateNotNullOrEmpty()][string]$DbInstanceName = "mercy-postgres",
+    [ValidateNotNullOrEmpty()][string]$DbName = "mercy",
+    [ValidateNotNullOrEmpty()][string]$DbUser = "mercy_app",
+    [ValidateNotNullOrEmpty()][string]$DbPasswordSecretName = "mercy-db-password",
+    [ValidateNotNullOrEmpty()][string]$DbTier = "db-f1-micro",
     [switch]$RotateDatabasePassword
 )
 
