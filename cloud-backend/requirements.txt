@@ -4,3 +4,7 @@ SQLAlchemy==2.0.43
 psycopg[binary]==3.2.9
 pydantic[email]==2.11.7
 httpx==0.28.1
+bleach==6.2.0
+beautifulsoup4==4.13.4
+google-cloud-storage==2.19.0
+python-multipart==0.0.20
