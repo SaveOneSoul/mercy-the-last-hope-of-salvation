@@ -3,7 +3,7 @@
   if(!root)return;
 
   /* Own the campaign controls on this page. This prevents the generic
-     mercury.js handler from attaching a second set of click listeners. */
+     mercy.js handler from attaching a second set of click listeners. */
   root.removeAttribute('data-save-one-soul-campaign');
 
   var script=document.currentScript;
@@ -70,28 +70,35 @@
     }
   }
 
+  function freshPath(path){
+    return path+(path.indexOf('?')===-1?'?':'&')+'_mercy_ts='+Date.now();
+  }
+
   function request(method,path,payload,callback){
     if(!apiBase){callback(new Error('api_not_configured'));return;}
     var xhr=new XMLHttpRequest();
-    xhr.open(method,apiBase+path,true);
+    var done=false;
+    var requestPath=method==='GET'?freshPath(path):path;
+    function finish(err,body,status){if(done)return;done=true;callback(err,body,status);}
+    xhr.open(method,apiBase+requestPath,true);
     xhr.timeout=20000;
     if(payload!==null)xhr.setRequestHeader('Content-Type','application/json');
     xhr.onreadystatechange=function(){
       if(xhr.readyState!==4)return;
       var body=null;
       try{body=xhr.responseText?JSON.parse(xhr.responseText):null;}catch(e){}
-      if(xhr.status>=200&&xhr.status<300){callback(null,body,xhr.status);return;}
-      var err=new Error('api_error');err.status=xhr.status;err.body=body;callback(err,body,xhr.status);
+      if(xhr.status>=200&&xhr.status<300){finish(null,body,xhr.status);return;}
+      var err=new Error('api_error');err.status=xhr.status;err.body=body;finish(err,body,xhr.status);
     };
-    xhr.onerror=function(){callback(new Error('network_error'));};
-    xhr.ontimeout=function(){callback(new Error('timeout'));};
-    try{xhr.send(payload===null?null:JSON.stringify(payload));}catch(e){callback(e);}
+    xhr.onerror=function(){finish(new Error('network_error'));};
+    xhr.ontimeout=function(){finish(new Error('timeout'));};
+    try{xhr.send(payload===null?null:JSON.stringify(payload));}catch(e){finish(e);}
   }
 
   function loadConfig(callback){
     if(window.MERCY_API_BASE){apiBase=String(window.MERCY_API_BASE).replace(/\/$/,'');callback();return;}
     if(!configUrl){callback(new Error('config_missing'));return;}
-    var xhr=new XMLHttpRequest();xhr.open('GET',configUrl,true);xhr.timeout=10000;
+    var xhr=new XMLHttpRequest();xhr.open('GET',configUrl+'?v='+Date.now(),true);xhr.timeout=10000;
     xhr.onreadystatechange=function(){
       if(xhr.readyState!==4)return;
       if(xhr.status>=200&&xhr.status<300){
@@ -112,11 +119,19 @@
     });
   }
 
+  function savedMessage(day,state){
+    currentState=state;setBusy(false);render(state);loadStats();
+    setStatus(msg('Day '+day+' saved securely. '+(state.days_completed||0)+' of 7 days completed.','La save bha ia ka Sngi '+day+'. La pyndep '+(state.days_completed||0)+' na 7 sngi.'));
+  }
+
+  function stateConfirmsDay(state,day){
+    return !!(state&&state.days&&state.days.length>=day&&state.days[day-1]);
+  }
+
   function verifyDay(token,day,attempt){
     request('GET','/api/save-one-soul/status/'+encodeURIComponent(token),null,function(err,state){
-      if(!err&&state&&state.days&&state.days[day-1]){
-        currentState=state;setBusy(false);render(state);loadStats();
-        setStatus(msg('Day '+day+' saved securely. '+(state.days_completed||0)+' of 7 days completed.','La save bha ia ka Sngi '+day+'. La pyndep '+(state.days_completed||0)+' na 7 sngi.'));
+      if(!err&&stateConfirmsDay(state,day)){
+        savedMessage(day,state);
         return;
       }
       if(attempt<1){
@@ -136,7 +151,15 @@
         setStatus(msg('Could not save Day '+day+'. Check your connection and tap it again.','Ym lah ban save ia ka Sngi '+day+'. Check internet bad nion biang.'));
         return;
       }
-      if(state)currentState=state;
+
+      /* The POST response is returned only after the database transaction has
+         committed. If it already contains the saved day, treat that response
+         as authoritative instead of allowing a stale GET cache to report a
+         false failure. */
+      if(stateConfirmsDay(state,day)){
+        savedMessage(day,state);
+        return;
+      }
       verifyDay(token,day,attempt);
     });
   }
