@@ -1,6 +1,39 @@
 # Mercy API
 
-FastAPI backend for **Mercy – The Last Hope of Salvation**. GitHub Pages serves only the static frontend; deploy this folder separately to Cloud Run, Render, Railway, Fly.io, Azure Container Apps, or any Docker host.
+FastAPI backend for **Mercy – The Last Hope of Salvation**. GitHub Pages serves the static frontend; this folder runs separately on Google Cloud Run.
+
+## Production architecture
+
+```text
+GitHub Pages
+  https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/
+        |
+        | HTTPS API
+        v
+Google Cloud Run
+  mercy-api
+        |
+        +-- Magisterium AI (API key from Secret Manager)
+        |
+        +-- Cloud SQL for PostgreSQL
+            mercy-postgres / mercy
+```
+
+The static site does not need to move into Cloud Run. Its JavaScript calls the public Cloud Run API configured in `javascript/analytics-config.json`.
+
+## Durable data
+
+Production uses Cloud SQL PostgreSQL. The deployment script creates or reuses:
+
+- Cloud SQL instance: `mercy-postgres`
+- PostgreSQL database: `mercy`
+- Application user: `mercy_app`
+- Secret Manager secret: `mercy-db-password`
+- Cloud Run Unix-socket attachment for the Cloud SQL instance
+
+The application builds its PostgreSQL connection from `DB_USER`, `DB_PASS`, `DB_NAME`, and `INSTANCE_UNIX_SOCKET`. `DB_PASS` is supplied from Secret Manager. The database password is never committed to GitHub.
+
+For local development only, `DATABASE_URL=sqlite:///./mercy.db` remains supported as a fallback.
 
 ## What the API stores
 
@@ -20,7 +53,7 @@ Configure these values only on the backend host:
 MAGISTERIUM_API_KEY=<secret>
 MAGISTERIUM_MODEL=magisterium-1
 MAGISTERIUM_CHAT_URL=https://www.magisterium.com/api/v1/chat/completions
-MAGISTERIUM_TIMEOUT_SECONDS=30
+MAGISTERIUM_TIMEOUT_SECONDS=90
 MAGISTERIUM_RATE_LIMIT_PER_MINUTE=8
 ```
 
@@ -28,9 +61,77 @@ Never place `MAGISTERIUM_API_KEY` in `javascript/`, HTML, GitHub Pages configura
 
 The Mercy gateway requests non-streaming answers and related questions. It returns the answer plus the Catholic source citations supplied by Magisterium. The system prompt asks for Catholic-only scope, doctrinal distinctions, primary/authoritative sources, and faithful Khasi responses where possible.
 
-The in-memory per-client limiter protects the public gateway from rapid repeated requests. For a large public deployment, add a durable/shared rate limiter or API gateway in front of the service as well.
+The in-memory per-client limiter protects the public gateway from rapid repeated requests. For substantially larger traffic, add a durable/shared limiter or API gateway.
 
-## Local
+## One-command Google Cloud deployment
+
+From PowerShell in `cloud-backend`:
+
+```powershell
+.\deploy-gcp.ps1
+```
+
+The script is idempotent and will:
+
+1. Enable Cloud Run, Cloud Build, Artifact Registry, Secret Manager, IAM and Cloud SQL Admin APIs.
+2. Create or reuse the dedicated Cloud Run runtime service account.
+3. Create or reuse the Magisterium API-key secret.
+4. Create or reuse a PostgreSQL 15 Cloud SQL instance in `asia-south1`.
+5. Create or reuse the `mercy` database and `mercy_app` user.
+6. Generate a strong database password when required and store it in Secret Manager.
+7. Grant the runtime identity only Cloud SQL Client and secret-access permissions.
+8. Attach Cloud SQL to Cloud Run using the authenticated Unix socket.
+9. Deploy the API.
+10. Verify `/health`, database durability/reachability, Save One Soul statistics, and Catholic AI connectivity.
+
+To rotate the database password intentionally:
+
+```powershell
+.\deploy-gcp.ps1 -RotateDatabasePassword
+```
+
+The default Cloud SQL tier is `db-f1-micro` to keep a small ministry deployment economical. For greater capacity, pass another supported Cloud SQL tier:
+
+```powershell
+.\deploy-gcp.ps1 -DbTier "db-g1-small"
+```
+
+## Health verification
+
+After production deployment:
+
+```powershell
+Invoke-RestMethod https://YOUR-CLOUD-RUN-URL/health | ConvertTo-Json -Depth 8
+```
+
+A healthy durable deployment reports a database section similar to:
+
+```json
+{
+  "database": {
+    "backend": "cloud-sql-postgresql",
+    "durable": true,
+    "reachable": true
+  }
+}
+```
+
+Then verify aggregate Save One Soul statistics:
+
+```powershell
+Invoke-RestMethod https://YOUR-CLOUD-RUN-URL/api/save-one-soul/stats | ConvertTo-Json -Depth 8
+```
+
+Finally test the real frontend:
+
+1. Open the Save One Soul page.
+2. Click **Join the 7-Day Mission**.
+3. Mark **Day 1**.
+4. Refresh the browser.
+5. Confirm Day 1 remains recorded.
+6. A later Cloud Run revision or instance restart should not erase the record because it now resides in Cloud SQL.
+
+## Local development
 
 ```bash
 python -m venv .venv
@@ -45,20 +146,20 @@ uvicorn app.main:app --reload --port 8080
 docker compose up --build
 ```
 
-Set `CORS_ORIGINS` to the exact GitHub Pages origin. Use managed PostgreSQL in production; keep database credentials in host secrets, never in Git. The default SQLite database is for development and is not appropriate for durable production counters on a stateless container platform.
-
 ## Connect the live website
 
-Edit `javascript/analytics-config.json` after the backend is deployed:
+The public frontend currently reads:
 
 ```json
 {
   "mercy_api_base": "https://YOUR-MERCY-API.example",
-  "cloudflare_web_analytics_token": "YOUR-CLOUDFLARE-SITE-TOKEN"
+  "cloudflare_web_analytics_token": ""
 }
 ```
 
-Leave either value blank until that service is ready. The frontend will not send API requests when `mercy_api_base` is blank and will not load the Cloudflare beacon when the Cloudflare token is blank.
+from `javascript/analytics-config.json`.
+
+Set `mercy_api_base` to the Cloud Run service URL. Keep `CORS_ORIGINS` restricted to the exact production frontend origin (`https://saveonesoul.github.io`).
 
 ## Public endpoints
 
