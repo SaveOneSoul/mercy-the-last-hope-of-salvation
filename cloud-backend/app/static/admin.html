@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Mercy Admin</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#2a1820;background:#f8f3ed;line-height:1.45}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}.hidden{display:none!important}.shell{max-width:1240px;margin:auto;padding:24px}.top{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:24px}.brand h1{margin:0;color:#6e0f25;font-family:Georgia,serif}.brand p{margin:3px 0 0;color:#725d65}.panel,.card{background:#fff;border:1px solid #eadbd1;border-radius:20px;box-shadow:0 14px 38px rgba(76,34,45,.07)}.panel{padding:24px}.login{max-width:460px;margin:10vh auto}.login input{width:100%;padding:12px;border:1px solid #d7c4ba;border-radius:12px;margin:12px 0}.btn{border:0;border-radius:999px;padding:11px 18px;font-weight:700;cursor:pointer}.primary{background:#710e25;color:#fff}.secondary{background:#f1e8e2;color:#5c2634}.danger{background:#8f1f1f;color:#fff}.btn:disabled{opacity:.55;cursor:not-allowed}.nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.nav button.active{background:#710e25;color:#fff}.status{min-height:24px;margin:10px 0;color:#684c55}.error{color:#9a1729}.success{color:#156b3b}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.metric{padding:20px}.metric strong{display:block;font-size:2rem;color:#710e25}.metric span{color:#735e66}.table-wrap{overflow:auto;margin-top:20px}table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:10px 12px;border-bottom:1px solid #eee1da;text-align:left;white-space:nowrap}th{background:#faf4f0;color:#654550}.pill{display:inline-block;border-radius:999px;background:#f0e5df;padding:4px 9px;font-size:.85rem}.done{background:#e3f3e8;color:#175d35}.content-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px}.content-toolbar select{min-width:280px;padding:10px;border:1px solid #d8c5bb;border-radius:12px;background:#fff}.editor-list{display:grid;gap:14px}.edit-card{padding:18px}.edit-head{display:flex;justify-content:space-between;gap:12px;margin-bottom:9px}.edit-head code{font-size:.74rem;color:#866a73;overflow-wrap:anywhere}.editable{min-height:48px;padding:12px;border:1px solid #d9c7be;border-radius:12px;background:#fffdfb;outline:none}.editable:focus{border-color:#8b3046;box-shadow:0 0 0 3px rgba(113,14,37,.08)}.field{display:grid;gap:6px;margin-top:10px}.field input{padding:10px;border:1px solid #d9c7be;border-radius:10px;width:100%}.image-row{display:grid;grid-template-columns:180px 1fr;gap:16px}.image-row img{width:180px;max-height:140px;object-fit:contain;border-radius:12px;border:1px solid #eadbd1;background:#faf7f4}.note{padding:14px;border-radius:14px;background:#fff5dc;border:1px solid #ead09a;margin:14px 0}.muted{color:#78636b;font-size:.9rem}.right{display:flex;gap:8px;align-items:center}.spinner{opacity:.7}@media(max-width:800px){.grid{grid-template-columns:1fr 1fr}.image-row{grid-template-columns:1fr}.image-row img{width:100%}.top{align-items:flex-start;flex-direction:column}}@media(max-width:520px){.grid{grid-template-columns:1fr}.shell{padding:14px}.panel{padding:16px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<section id="loginView" class="panel login">
+<div class="brand"><h1>Mercy Admin</h1><p>Private administration for Mercy – The Last Hope of Salvation.</p></div>
+<form id="loginForm">
+<label for="password"><strong>Admin password</strong></label>
+<input id="password" name="password" type="password" autocomplete="current-password" minlength="8" required>
+<button class="btn primary" type="submit">Sign in</button>
+<p id="loginStatus" class="status"></p>
+</form>
+</section>
+
+<section id="appView" class="hidden">
+<header class="top">
+<div class="brand"><h1>Mercy Admin Dashboard</h1><p>Anonymous mission statistics and non-technical content management.</p></div>
+<div class="right"><a id="publicSite" class="btn secondary" href="https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/" target="_blank" rel="noopener">Open public site</a><button id="logoutBtn" class="btn secondary">Sign out</button></div>
+</header>
+<nav class="nav">
+<button class="btn secondary active" data-view="dashboard">Mission Dashboard</button>
+<button class="btn secondary" data-view="content">Content Manager</button>
+</nav>
+<p id="globalStatus" class="status"></p>
+
+<section id="dashboardView">
+<div class="grid">
+<div class="card metric"><span>People joined</span><strong id="joined">—</strong></div>
+<div class="card metric"><span>Completed</span><strong id="completed">—</strong></div>
+<div class="card metric"><span>In progress</span><strong id="inProgress">—</strong></div>
+<div class="card metric"><span>Completion rate</span><strong id="completionRate">—</strong></div>
+</div>
+<div class="panel" style="margin-top:18px">
+<h2>Anonymous participants</h2>
+<p class="muted">The public tracker does not collect names, phone numbers, email addresses, IP addresses, or the identity of the person being prayed for. “Who joined” therefore means an anonymous participant record.</p>
+<div class="table-wrap"><table><thead><tr><th>Anonymous ID</th><th>Language</th><th>Started</th><th>Progress</th><th>Status</th><th>Completed</th></tr></thead><tbody id="participantRows"></tbody></table></div>
+</div>
+</section>
+
+<section id="contentView" class="hidden">
+<div class="panel">
+<h2>Content Manager</h2>
+<div class="note"><strong>Editorial changes only.</strong> Headings, paragraphs, devotional text, links and images can be changed here. Technical widgets, forms, buttons with application behavior, Catholic AI, Save One Soul tracking and other <code>data-*</code> components are automatically locked out of the editor.</div>
+<div class="content-toolbar">
+<select id="pageSelect"><option value="">Choose a page…</option></select>
+<button id="loadPageBtn" class="btn secondary">Load page</button>
+<button id="savePageBtn" class="btn primary" disabled>Save changes</button>
+<button id="resetPageBtn" class="btn danger" disabled>Reset page overrides</button>
+<a id="previewPageBtn" class="btn secondary hidden" target="_blank" rel="noopener">Open live page</a>
+</div>
+<p id="contentStatus" class="status"></p>
+<div id="editorList" class="editor-list"></div>
+</div>
+</section>
+</section>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  var csrf='';
+  var currentPath='';
+  var dirty={};
+  var $=function(id){return document.getElementById(id)};
+  var loginView=$('loginView'),appView=$('appView'),globalStatus=$('globalStatus'),contentStatus=$('contentStatus');
+
+  function setGlobal(text,kind){globalStatus.textContent=text||'';globalStatus.className='status '+(kind||'');}
+  function setContent(text,kind){contentStatus.textContent=text||'';contentStatus.className='status '+(kind||'');}
+  function api(path,options){
+    options=options||{};
+    options.headers=options.headers||{};
+    if(options.body && !(options.body instanceof FormData))options.headers['Content-Type']='application/json';
+    if(options.method && options.method!=='GET')options.headers['X-CSRF-Token']=csrf;
+    return fetch(path,options).then(function(r){
+      if(r.status===401){showLogin();throw new Error('Your admin session expired. Please sign in again.');}
+      return r.text().then(function(t){var data={};try{data=t?JSON.parse(t):{};}catch(e){}if(!r.ok){throw new Error(data.detail||('Request failed: '+r.status));}return data;});
+    });
+  }
+  function showLogin(){appView.classList.add('hidden');loginView.classList.remove('hidden');csrf='';}
+  function showApp(){loginView.classList.add('hidden');appView.classList.remove('hidden');}
+  function fmtDate(v){if(!v)return '—';try{return new Date(v).toLocaleString();}catch(e){return v;}}
+  function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function key(selector,field){return selector+'\u0000'+field;}
+  function markDirty(selector,field,value){dirty[key(selector,field)]={selector:selector,field:field,value:value};$('savePageBtn').disabled=false;}
+
+  $('loginForm').addEventListener('submit',function(e){
+    e.preventDefault();$('loginStatus').textContent='Signing in…';
+    fetch('/api/admin/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:$('password').value})})
+      .then(function(r){return r.json().then(function(j){if(!r.ok)throw new Error(j.detail||'Sign in failed');return j;});})
+      .then(function(j){csrf=j.csrf;$('password').value='';$('loginStatus').textContent='';showApp();bootApp();})
+      .catch(function(err){$('loginStatus').textContent=err.message;$('loginStatus').className='status error';});
+  });
+
+  $('logoutBtn').addEventListener('click',function(){api('/api/admin/logout',{method:'POST'}).catch(function(){}).finally(showLogin);});
+
+  document.querySelectorAll('[data-view]').forEach(function(btn){btn.addEventListener('click',function(){
+    document.querySelectorAll('[data-view]').forEach(function(x){x.classList.toggle('active',x===btn);});
+    var view=btn.getAttribute('data-view');$('dashboardView').classList.toggle('hidden',view!=='dashboard');$('contentView').classList.toggle('hidden',view!=='content');
+    if(view==='dashboard')loadDashboard();
+  });});
+
+  function loadDashboard(){
+    setGlobal('Loading live mission data…','');
+    api('/api/admin/dashboard').then(function(d){
+      $('joined').textContent=d.joined;$('completed').textContent=d.completed;$('inProgress').textContent=d.in_progress;
+      $('completionRate').textContent=d.joined?Math.round((d.completed/d.joined)*100)+'%':'0%';
+      var rows='';
+      (d.participants||[]).forEach(function(p){rows+='<tr><td><code>'+esc(p.anonymous_id)+'</code></td><td>'+esc(p.language==='kha'?'Khasi':'English')+'</td><td>'+esc(fmtDate(p.started_at))+'</td><td>'+esc(p.days_completed)+'/7</td><td><span class="pill '+(p.completed?'done':'')+'">'+(p.completed?'Completed':'In progress')+'</span></td><td>'+esc(fmtDate(p.completed_at))+'</td></tr>';});
+      $('participantRows').innerHTML=rows||'<tr><td colspan="6">No participants yet.</td></tr>';
+      setGlobal('Dashboard refreshed from Cloud SQL.','success');
+    }).catch(function(err){setGlobal(err.message,'error');});
+  }
+
+  function loadPageList(){
+    api('/api/admin/pages').then(function(d){
+      var select=$('pageSelect');select.innerHTML='<option value="">Choose a page…</option>';
+      (d.pages||[]).forEach(function(p){var o=document.createElement('option');o.value=p.path;o.textContent=p.title+(p.overrides?' · '+p.overrides+' saved changes':'');select.appendChild(o);});
+    }).catch(function(err){setContent(err.message,'error');});
+  }
+
+  $('loadPageBtn').addEventListener('click',function(){var path=$('pageSelect').value;if(path)loadPage(path);});
+  $('pageSelect').addEventListener('change',function(){if(this.value)loadPage(this.value);});
+
+  function loadPage(path){
+    currentPath=path;dirty={};$('savePageBtn').disabled=true;$('resetPageBtn').disabled=true;$('editorList').innerHTML='';setContent('Loading editable fields…','');
+    api('/api/admin/page-fields?path='+encodeURIComponent(path)).then(function(d){
+      $('resetPageBtn').disabled=false;
+      var preview=$('previewPageBtn');preview.href='https://saveonesoul.github.io/mercy-the-last-hope-of-salvation'+path;preview.classList.remove('hidden');
+      renderBlocks(d.blocks||[]);setContent('Loaded '+(d.blocks||[]).length+' editable fields. Technical components are locked.','success');
+    }).catch(function(err){setContent(err.message,'error');});
+  }
+
+  function renderBlocks(blocks){
+    var out=$('editorList');out.innerHTML='';
+    blocks.forEach(function(b,index){
+      var card=document.createElement('article');card.className='card edit-card';
+      var head=document.createElement('div');head.className='edit-head';head.innerHTML='<strong>'+esc((index+1)+'. '+b.tag.toUpperCase()+' · '+b.kind)+'</strong><code>'+esc(b.selector)+'</code>';card.appendChild(head);
+      if(b.kind==='text'){
+        var ed=document.createElement('div');ed.className='editable';ed.contentEditable='true';ed.innerHTML=b.html||'';ed.addEventListener('input',function(){markDirty(b.selector,'html',ed.innerHTML);});card.appendChild(ed);
+      }else if(b.kind==='link'){
+        var ed2=document.createElement('div');ed2.className='editable';ed2.contentEditable='true';ed2.innerHTML=b.html||'';ed2.addEventListener('input',function(){markDirty(b.selector,'html',ed2.innerHTML);});card.appendChild(ed2);
+        var lf=document.createElement('label');lf.className='field';lf.innerHTML='<span>Link destination</span>';var li=document.createElement('input');li.value=b.href||'';li.addEventListener('input',function(){markDirty(b.selector,'href',li.value);});lf.appendChild(li);card.appendChild(lf);
+      }else if(b.kind==='image'){
+        var row=document.createElement('div');row.className='image-row';var img=document.createElement('img');img.src=b.src||'';img.alt=b.alt||'';row.appendChild(img);var controls=document.createElement('div');
+        var sf=document.createElement('label');sf.className='field';sf.innerHTML='<span>Image URL</span>';var si=document.createElement('input');si.value=b.src||'';si.addEventListener('input',function(){img.src=si.value;markDirty(b.selector,'src',si.value);});sf.appendChild(si);controls.appendChild(sf);
+        var af=document.createElement('label');af.className='field';af.innerHTML='<span>Alternative text</span>';var ai=document.createElement('input');ai.value=b.alt||'';ai.addEventListener('input',function(){img.alt=ai.value;markDirty(b.selector,'alt',ai.value);});af.appendChild(ai);controls.appendChild(af);
+        var uf=document.createElement('label');uf.className='field';uf.innerHTML='<span>Upload replacement image (JPG, PNG, WebP or GIF; max 5 MB)</span>';var fi=document.createElement('input');fi.type='file';fi.accept='image/jpeg,image/png,image/webp,image/gif';uf.appendChild(fi);controls.appendChild(uf);
+        var ub=document.createElement('button');ub.type='button';ub.className='btn secondary';ub.textContent='Upload image';ub.addEventListener('click',function(){if(!fi.files||!fi.files[0]){setContent('Choose an image first.','error');return;}var fd=new FormData();fd.append('file',fi.files[0]);ub.disabled=true;ub.textContent='Uploading…';api('/api/admin/upload-image',{method:'POST',body:fd}).then(function(r){si.value=r.url;img.src=r.url;markDirty(b.selector,'src',r.url);setContent('Image uploaded. Click Save changes to publish it on this page.','success');}).catch(function(err){setContent(err.message,'error');}).finally(function(){ub.disabled=false;ub.textContent='Upload image';});});controls.appendChild(ub);row.appendChild(controls);card.appendChild(row);
+      }
+      if(b.overridden){var note=document.createElement('div');note.className='muted';note.textContent='This field currently has a CMS override.';card.appendChild(note);}
+      out.appendChild(card);
+    });
+  }
+
+  $('savePageBtn').addEventListener('click',function(){
+    var edits=Object.keys(dirty).map(function(k){return dirty[k];});if(!currentPath||!edits.length)return;
+    $('savePageBtn').disabled=true;setContent('Saving '+edits.length+' change(s)…','');
+    api('/api/admin/content/batch',{method:'PUT',body:JSON.stringify({page_path:currentPath,edits:edits})}).then(function(r){dirty={};setContent('Saved '+r.saved+' change(s). The public page will receive them from the CMS immediately.','success');loadPageList();}).catch(function(err){$('savePageBtn').disabled=false;setContent(err.message,'error');});
+  });
+
+  $('resetPageBtn').addEventListener('click',function(){
+    if(!currentPath)return;if(!confirm('Remove all CMS overrides for this page and return it to the technical HTML defaults?'))return;
+    api('/api/admin/content/page?path='+encodeURIComponent(currentPath),{method:'DELETE'}).then(function(r){setContent('Removed '+r.deleted+' override(s).','success');loadPage(currentPath);loadPageList();}).catch(function(err){setContent(err.message,'error');});
+  });
+
+  function bootApp(){loadDashboard();loadPageList();}
+
+  fetch('/api/admin/me',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('not signed in');return r.json();}).then(function(j){csrf=j.csrf;showApp();bootApp();}).catch(function(){showLogin();});
+})();
+</script>
+</body>
+</html>
