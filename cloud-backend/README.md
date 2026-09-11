@@ -65,11 +65,28 @@ The in-memory per-client limiter protects the public gateway from rapid repeated
 
 ## One-command Google Cloud deployment
 
-From PowerShell in `cloud-backend`:
+From PowerShell in `cloud-backend`, run these as **separate commands**:
 
 ```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned -Force
 .\deploy-gcp.ps1
 ```
+
+Do **not** append `Set-ExecutionPolicy`, virtual-environment activation, or another parenthesized expression to the script invocation. The deployment script has positional argument binding disabled so an accidental extra expression cannot silently replace the configured Google Cloud project ID.
+
+The default project is:
+
+```text
+mercy-last-hope-rk-260817
+```
+
+If you intentionally want to override it, use a named parameter:
+
+```powershell
+.\deploy-gcp.ps1 -ProjectId "mercy-last-hope-rk-260817"
+```
+
+The Python virtual environment is not required for this deployment command; Cloud Build builds the container from `cloud-backend` using the checked-in `Dockerfile` and `requirements.txt`.
 
 The script is idempotent and will:
 
