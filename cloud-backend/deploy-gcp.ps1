@@ -9,11 +9,18 @@ param(
     [ValidateNotNullOrEmpty()][string]$DbName = "mercy",
     [ValidateNotNullOrEmpty()][string]$DbUser = "mercy_app",
     [ValidateNotNullOrEmpty()][string]$DbPasswordSecretName = "mercy-db-password",
+    [ValidateNotNullOrEmpty()][string]$AdminPasswordSecretName = "mercy-admin-password",
+    [ValidateNotNullOrEmpty()][string]$AdminSessionSecretName = "mercy-admin-session-secret",
+    [string]$CmsBucketName = "",
     [ValidateNotNullOrEmpty()][string]$DbTier = "db-f1-micro",
-    [switch]$RotateDatabasePassword
+    [switch]$RotateDatabasePassword,
+    [switch]$RotateAdminPassword
 )
 
 $ErrorActionPreference = "Stop"
+if ([string]::IsNullOrWhiteSpace($CmsBucketName)) {
+    $CmsBucketName = "$ProjectId-mercy-cms-assets"
+}
 
 function Invoke-GCloud {
     param([Parameter(ValueFromRemainingArguments = $true)][string[]]$Args)
@@ -29,11 +36,28 @@ function Test-GCloudResource {
     return ($LASTEXITCODE -eq 0)
 }
 
+function New-StrongSecret {
+    param([int]$Bytes = 32)
+    $buffer = New-Object byte[] $Bytes
+    [System.Security.Cryptography.RandomNumberGenerator]::Fill($buffer)
+    return [Convert]::ToBase64String($buffer).TrimEnd('=').Replace('+', 'A').Replace('/', 'B')
+}
+
 function New-StrongDatabasePassword {
-    $bytes = New-Object byte[] 32
-    [System.Security.Cryptography.RandomNumberGenerator]::Fill($bytes)
-    $token = [Convert]::ToBase64String($bytes).TrimEnd('=').Replace('+', 'A').Replace('/', 'B')
-    return "Mcy!$token"
+    return "Mcy!$(New-StrongSecret -Bytes 32)"
+}
+
+function Convert-SecureToPlain {
+    param([Parameter(Mandatory = $true)][System.Security.SecureString]$SecureValue)
+    $bstr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($SecureValue)
+    try {
+        return [Runtime.InteropServices.Marshal]::PtrToStringBSTR($bstr)
+    }
+    finally {
+        if ($bstr -ne [IntPtr]::Zero) {
+            [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($bstr)
+        }
+    }
 }
 
 function Write-SecretVersion {
@@ -70,13 +94,14 @@ if (-not $activeAccount) {
     $activeAccount = (& gcloud auth list --filter=status:ACTIVE --format="value(account)").Trim()
 }
 
-Write-Host "`n=== Mercy production backend - Google Cloud deployment ===" -ForegroundColor Cyan
+Write-Host "`n=== Mercy production backend + Admin CMS deployment ===" -ForegroundColor Cyan
 Write-Host "Project        : $ProjectId"
 Write-Host "Region         : $Region"
 Write-Host "Cloud Run      : $ServiceName"
 Write-Host "Cloud SQL      : $DbInstanceName"
 Write-Host "Database       : $DbName"
 Write-Host "Database user  : $DbUser"
+Write-Host "CMS bucket     : $CmsBucketName"
 Write-Host "Account        : $activeAccount"
 
 Invoke-GCloud config set project $ProjectId
@@ -88,7 +113,8 @@ Invoke-GCloud services enable `
     artifactregistry.googleapis.com `
     secretmanager.googleapis.com `
     iam.googleapis.com `
-    sqladmin.googleapis.com
+    sqladmin.googleapis.com `
+    storage.googleapis.com
 
 $runtimeEmail = "$RuntimeServiceAccountName@$ProjectId.iam.gserviceaccount.com"
 Write-Host "`nPreparing dedicated Cloud Run runtime service account..." -ForegroundColor Cyan
@@ -125,10 +151,8 @@ if ($magisteriumSecretExists) {
 if ($addSecretVersion) {
     Write-Host "Enter the Magisterium API key. It will NOT be printed or committed to GitHub." -ForegroundColor Yellow
     $secureKey = Read-Host "MAGISTERIUM_API_KEY" -AsSecureString
-    $bstr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secureKey)
-    $plainKey = $null
+    $plainKey = Convert-SecureToPlain $secureKey
     try {
-        $plainKey = [Runtime.InteropServices.Marshal]::PtrToStringBSTR($bstr)
         if ([string]::IsNullOrWhiteSpace($plainKey)) {
             throw "The Magisterium API key cannot be empty."
         }
@@ -136,9 +160,6 @@ if ($addSecretVersion) {
         $magisteriumSecretExists = $true
     }
     finally {
-        if ($bstr -ne [IntPtr]::Zero) {
-            [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($bstr)
-        }
         $plainKey = $null
     }
 }
@@ -204,6 +225,60 @@ if ($mustRotateDbPassword) {
     Write-Host "Database user and password secret already exist; password not rotated." -ForegroundColor Green
 }
 
+Write-Host "`nPreparing private Admin Dashboard credentials..." -ForegroundColor Cyan
+$adminPasswordSecretExists = Test-GCloudResource @("secrets", "describe", $AdminPasswordSecretName, "--project", $ProjectId)
+if ((-not $adminPasswordSecretExists) -or $RotateAdminPassword.IsPresent) {
+    Write-Host "Choose a strong password for the Mercy Admin Dashboard." -ForegroundColor Yellow
+    $secureAdminPassword = Read-Host "ADMIN PASSWORD (minimum 12 characters)" -AsSecureString
+    $adminPassword = Convert-SecureToPlain $secureAdminPassword
+    try {
+        if ([string]::IsNullOrWhiteSpace($adminPassword) -or $adminPassword.Length -lt 12) {
+            throw "Admin password must contain at least 12 characters."
+        }
+        Write-SecretVersion -Secret $AdminPasswordSecretName -Value $adminPassword -Exists $adminPasswordSecretExists
+        $adminPasswordSecretExists = $true
+    }
+    finally {
+        $adminPassword = $null
+    }
+} else {
+    Write-Host "Admin password secret already exists; password not rotated." -ForegroundColor Green
+}
+
+$adminSessionSecretExists = Test-GCloudResource @("secrets", "describe", $AdminSessionSecretName, "--project", $ProjectId)
+if (-not $adminSessionSecretExists) {
+    $adminSessionSecret = New-StrongSecret -Bytes 48
+    try {
+        Write-SecretVersion -Secret $AdminSessionSecretName -Value $adminSessionSecret -Exists $false
+        $adminSessionSecretExists = $true
+    }
+    finally {
+        $adminSessionSecret = $null
+    }
+} else {
+    Write-Host "Admin session-signing secret already exists." -ForegroundColor Green
+}
+
+Write-Host "`nPreparing Cloud Storage for CMS images..." -ForegroundColor Cyan
+$bucketUri = "gs://$CmsBucketName"
+$bucketExists = Test-GCloudResource @("storage", "buckets", "describe", $bucketUri, "--project", $ProjectId)
+if (-not $bucketExists) {
+    Invoke-GCloud storage buckets create $bucketUri `
+        --project $ProjectId `
+        --location $Region `
+        --uniform-bucket-level-access
+} else {
+    Write-Host "CMS image bucket already exists: $bucketUri" -ForegroundColor Green
+}
+
+# Public read is intentional: uploaded CMS images are public website assets.
+Invoke-GCloud storage buckets add-iam-policy-binding $bucketUri `
+    --member allUsers `
+    --role roles/storage.objectViewer
+Invoke-GCloud storage buckets add-iam-policy-binding $bucketUri `
+    --member "serviceAccount:$runtimeEmail" `
+    --role roles/storage.objectAdmin
+
 $instanceConnectionName = (& gcloud sql instances describe $DbInstanceName `
     --project $ProjectId `
     --format="value(connectionName)").Trim()
@@ -218,19 +293,15 @@ Invoke-GCloud projects add-iam-policy-binding $ProjectId `
     --role roles/cloudsql.client `
     --quiet
 
-Invoke-GCloud secrets add-iam-policy-binding $SecretName `
-    --project $ProjectId `
-    --member "serviceAccount:$runtimeEmail" `
-    --role roles/secretmanager.secretAccessor `
-    --quiet
+foreach ($secretToGrant in @($SecretName, $DbPasswordSecretName, $AdminPasswordSecretName, $AdminSessionSecretName)) {
+    Invoke-GCloud secrets add-iam-policy-binding $secretToGrant `
+        --project $ProjectId `
+        --member "serviceAccount:$runtimeEmail" `
+        --role roles/secretmanager.secretAccessor `
+        --quiet
+}
 
-Invoke-GCloud secrets add-iam-policy-binding $DbPasswordSecretName `
-    --project $ProjectId `
-    --member "serviceAccount:$runtimeEmail" `
-    --role roles/secretmanager.secretAccessor `
-    --quiet
-
-Write-Host "`nDeploying cloud-backend to Cloud Run with Cloud SQL attached..." -ForegroundColor Cyan
+Write-Host "`nDeploying cloud-backend to Cloud Run with Cloud SQL and Admin CMS..." -ForegroundColor Cyan
 Push-Location $PSScriptRoot
 try {
     Invoke-GCloud run deploy $ServiceName `
@@ -241,8 +312,8 @@ try {
         --allow-unauthenticated `
         --service-account $runtimeEmail `
         --add-cloudsql-instances $instanceConnectionName `
-        --set-secrets "MAGISTERIUM_API_KEY=${SecretName}:latest,DB_PASS=${DbPasswordSecretName}:latest" `
-        --set-env-vars "CORS_ORIGINS=https://saveonesoul.github.io,MAGISTERIUM_MODEL=magisterium-1,MAGISTERIUM_TIMEOUT_SECONDS=90,ENABLE_DOCS=false,DB_USER=$DbUser,DB_NAME=$DbName,INSTANCE_UNIX_SOCKET=$instanceUnixSocket,DB_POOL_SIZE=5,DB_MAX_OVERFLOW=2,DB_POOL_RECYCLE_SECONDS=1800" `
+        --set-secrets "MAGISTERIUM_API_KEY=${SecretName}:latest,DB_PASS=${DbPasswordSecretName}:latest,ADMIN_PASSWORD=${AdminPasswordSecretName}:latest,ADMIN_SESSION_SECRET=${AdminSessionSecretName}:latest" `
+        --set-env-vars "CORS_ORIGINS=https://saveonesoul.github.io,PUBLIC_SITE_BASE=https://saveonesoul.github.io/mercy-the-last-hope-of-salvation,MAGISTERIUM_MODEL=magisterium-1,MAGISTERIUM_TIMEOUT_SECONDS=90,ENABLE_DOCS=false,DB_USER=$DbUser,DB_NAME=$DbName,INSTANCE_UNIX_SOCKET=$instanceUnixSocket,DB_POOL_SIZE=5,DB_MAX_OVERFLOW=2,DB_POOL_RECYCLE_SECONDS=1800,CMS_BUCKET=$CmsBucketName" `
         --memory 512Mi `
         --cpu 1 `
         --concurrency 40 `
@@ -275,6 +346,12 @@ if (-not $health.database.reachable) {
 if (-not $health.database.durable) {
     throw "Deployment completed, but the API is not reporting durable database storage."
 }
+if (-not $health.admin_cms.configured) {
+    throw "Deployment completed, but Admin CMS authentication is not configured."
+}
+if (-not $health.admin_cms.bucket_configured) {
+    throw "Deployment completed, but the CMS image bucket is not configured."
+}
 
 Write-Host "`nChecking Save One Soul aggregate endpoint ..." -ForegroundColor Cyan
 $stats = Invoke-RestMethod -Uri "$serviceUrl/api/save-one-soul/stats" -Method Get -TimeoutSec 30
@@ -291,10 +368,12 @@ try {
     Write-Warning "Cloud Run and Cloud SQL are healthy, but the Magisterium AI test failed: $($_.Exception.Message)"
 }
 
-Write-Host "`nPRODUCTION PERSISTENCE READY" -ForegroundColor Green
+Write-Host "`nPRODUCTION BACKEND + ADMIN CMS READY" -ForegroundColor Green
 Write-Host "Cloud SQL connection : $instanceConnectionName"
 Write-Host "Database             : $DbName"
+Write-Host "CMS image bucket     : $bucketUri"
 Write-Host "Backend              : $serviceUrl"
+Write-Host "Admin Dashboard      : $serviceUrl/admin"
 Write-Host "Frontend origin      : https://saveonesoul.github.io"
-Write-Host "`nConfirm javascript/analytics-config.json points mercy_api_base to the service URL above."
-Write-Host "Then test Join -> Day 1 -> refresh the browser. Progress should remain after refresh and future Cloud Run restarts."
+Write-Host "`nUse the admin password you chose above to sign in."
+Write-Host "Editorial text, links and images should now be changed through the Admin Dashboard; source-code edits remain for technical changes only."
