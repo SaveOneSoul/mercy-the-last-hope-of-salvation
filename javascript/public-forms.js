@@ -38,6 +38,7 @@
     var status=ensureStatus(form);
     setBusy(form,true,t('Sending…','Dang phah…'));
     status.textContent=t('Sending securely…','Dang phah secure…');
+    status.classList.remove('error','success');
     resolveApi().then(function(api){
       return fetch(api+endpoint,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload),cache:'no-store'});
     }).then(function(r){
@@ -63,8 +64,10 @@
   function bindContact(form){
     form.addEventListener('submit',function(e){
       e.preventDefault();e.stopImmediatePropagation();
-      var payload={name:fieldValue(form,'name'),email:fieldValue(form,'email'),subject:fieldValue(form,'subject'),message:fieldValue(form,'message'),website:fieldValue(form,'website')};
-      if(!payload.name||!payload.email||!payload.subject||payload.message.length<2){var s=ensureStatus(form);s.textContent=t('Please complete the required fields before sending.','Sngewbha pyndep ia ki field ba donkam shwa ban phah.');s.classList.add('error');return;}
+      var name=fieldValue(form,'name'),email=fieldValue(form,'email'),topic=fieldValue(form,'subject')||fieldValue(form,'topic')||'Website message',message=fieldValue(form,'message'),phone=fieldValue(form,'phone');
+      var finalMessage=(phone?'WhatsApp / phone: '+phone+'\n\n':'')+message;
+      var payload={name:name,email:email,subject:topic.slice(0,160),message:finalMessage,website:fieldValue(form,'website')};
+      if(!payload.name||!payload.email||payload.message.length<2){var s=ensureStatus(form);s.textContent=t('Please complete your name, email and message before sending.','Sngewbha pyndep ia ka kyrteng, email bad message shwa ban phah.');s.classList.add('error');return;}
       submitJson(form,'/api/contact',payload,t('Your message was received securely.','La pdiang secure ia ka message jong phi.'));
     },true);
   }
