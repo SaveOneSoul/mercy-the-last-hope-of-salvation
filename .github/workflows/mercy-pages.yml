@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
 permissions:
   contents: read
   pages: write
@@ -21,6 +23,8 @@ jobs:
       - uses: actions/configure-pages@v5
         with:
           enablement: true
+      - name: Refresh sitemap from published CMS content
+        run: python3 scripts/build_sitemap.py
       - name: Stage static site only
         run: |
           mkdir -p _site
