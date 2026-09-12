@@ -15,7 +15,7 @@
 <header class="topbar">
 <a class="brand" href="index.html"><span class="cross">✠</span><span><b>Mercy</b><small>The Last Hope of Salvation</small></span></a>
 <button class="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button>
-<nav id="main-nav"><a href="index.html">Home</a><a href="pages/save-one-soul.html">Save One Soul</a><a href="pages/posts.html">Posts</a><a href="pages/pro-life.html">Pro-Life</a><a href="pages/saints.html">Saints</a><a href="pages/rosary.html">Rosary</a><a href="pages/prayer.html">Prayer</a><a href="pages/seven-sorrows.html">Seven Sorrows</a><a href="pages/divine-mercy-chaplet.html">Divine Mercy Chaplet</a><a href="pages/precious-blood.html">Precious Blood</a><a href="pages/eucharistic-miracles.html">Eucharist</a><a href="pages/charis.html">CHARIS</a><a href="pages/catholic-ai.html">Catholic AI</a><a href="pages/about.html">About</a><a href="pages/sources.html">Sources</a></nav>
+<nav id="main-nav"><a href="index.html">Home</a><a href="pages/save-one-soul.html">Save One Soul</a><a href="pages/intentions.html">Intentions</a><a href="pages/posts.html">Posts</a><a href="pages/pro-life.html">Pro-Life</a><a href="pages/saints.html">Saints</a><a href="pages/rosary.html">Rosary</a><a href="pages/prayer.html">Prayer</a><a href="pages/seven-sorrows.html">Seven Sorrows</a><a href="pages/divine-mercy-chaplet.html">Divine Mercy Chaplet</a><a href="pages/precious-blood.html">Precious Blood</a><a href="pages/eucharistic-miracles.html">Eucharist</a><a href="pages/charis.html">CHARIS</a><a href="pages/catholic-ai.html">Catholic AI</a><a href="pages/about.html">About</a><a href="pages/sources.html">Sources</a></nav>
 <button class="theme-btn" aria-label="Toggle theme">◐</button>
 </header>
 <main id="main">
@@ -29,6 +29,7 @@
 <p class="lead">Catholic prayer and formation resources for learning, devotion, evangelization and spiritual growth.</p>
 <div class="grid">
 <a class="card" href="pages/save-one-soul.html"><span class="icon">❤</span><h3>Save One Soul</h3><p>Intercession for conversion, sacrifice, accompaniment and works of mercy.</p></a>
+<a class="card" href="pages/intentions.html"><span class="icon">✚</span><h3>Prayer & Mass Intentions</h3><p>Send a prayer intention, request Masses, or register as a priest for the verified Mass-intention network.</p></a>
 <a class="card" href="pages/posts.html"><span class="icon">✎</span><h3>Posts & Reflections</h3><p>Latest prayers, reflections, Catholic teaching, announcements and ministry updates.</p></a>
 <a class="card" href="pages/catholic-ai.html"><span class="icon">✦</span><h3>Catholic AI</h3><p>Ask Catholic questions through the secure Mercy backend, with answers and source citations returned by Magisterium AI.</p></a>
 <a class="card" href="pages/pro-life.html"><span class="icon">🕊</span><h3>Pro-Life</h3><p>Catholic teaching on human dignity, abortion, mercy, healing and the Gospel of Life.</p></a>
@@ -48,13 +49,14 @@
 <section class="section">
 <div class="callout"><strong>Editorial principle.</strong> The site distinguishes Catholic doctrine from private revelation and devotional tradition. St. Faustina quotations are identified by Diary paragraph number; historical and formation claims link to primary or authoritative Catholic sources.</div>
 <h2>Prayer intention</h2>
-<p>Send your prayer intention securely through the Mercy backend. The intention is stored privately for ministry use.</p>
-<form class="form" data-prayer-form><label>Name (optional)<input name="name" maxlength="80" autocomplete="name"></label><label>Prayer intention<textarea name="intention" required minlength="2" maxlength="2000" rows="5" placeholder="Write your prayer intention here…"></textarea></label><input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><button type="submit">Send prayer intention</button><div class="status" role="status" aria-live="polite"></div></form>
+<p>Send your prayer intention securely to Mercy Admin. If you explicitly choose worldwide sharing, your name and intention may also be shared with approved Catholic prayer partners.</p>
+<form class="form" data-prayer-network-form><label>Name <input name="name" required minlength="2" maxlength="120" autocomplete="name"></label><label>Country (optional)<input name="country" maxlength="100" autocomplete="country-name"></label><label>Prayer intention<textarea name="intention" required minlength="2" maxlength="2000" rows="5" placeholder="Write your prayer intention here…"></textarea></label><label style="display:flex;gap:10px;align-items:flex-start"><input type="checkbox" name="share_worldwide" value="yes" style="width:auto;margin-top:6px"> <span>Share my <strong>name and prayer intention</strong> with approved Catholic prayer partners worldwide. I understand that this sends my request outside the Mercy website.</span></label><input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><button type="submit">Send prayer intention</button><div class="status" role="status" aria-live="polite"></div></form>
+<p style="margin-top:16px"><a class="btn secondary" href="pages/intentions.html">Mass intentions & priest registration</a></p>
 </section>
 </main>
-<footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Catholic prayer, formation and evangelization. Private revelation is presented in harmony with Sacred Scripture, Sacred Tradition and the Magisterium.</p></div><div><a href="pages/posts.html">Posts</a><a href="pages/about.html">About Rivaldo Kurbah</a><a href="pages/sources.html">Sources & editorial policy</a><a href="https://www.vatican.va/" target="_blank" rel="noopener">Holy See</a><a href="https://www.charis.international/" target="_blank" rel="noopener">CHARIS International</a></div><p class="copyright">© <span data-year></span> Mercy – The Last Hope of Salvation · Built for GitHub Pages + cloud API.</p></footer>
+<footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Catholic prayer, formation and evangelization. Private revelation is presented in harmony with Sacred Scripture, Sacred Tradition and the Magisterium.</p></div><div><a href="pages/intentions.html">Prayer & Mass Intentions</a><a href="pages/posts.html">Posts</a><a href="pages/about.html">About Rivaldo Kurbah</a><a href="pages/sources.html">Sources & editorial policy</a><a href="https://www.vatican.va/" target="_blank" rel="noopener">Holy See</a><a href="https://www.charis.international/" target="_blank" rel="noopener">CHARIS International</a></div><p class="copyright">© <span data-year></span> Mercy – The Last Hope of Salvation · Built for GitHub Pages + cloud API.</p></footer>
 <script src="javascript/cms-feed.js?v=1"></script>
-<script src="javascript/public-forms.js?v=1"></script>
+<script src="javascript/public-forms.js?v=2"></script>
 <script src="javascript/mercy.js?v=11"></script>
 </body>
 </html>
