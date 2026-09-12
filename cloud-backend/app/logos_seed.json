@@ -1,0 +1,214 @@
+{
+  "version": "2026.09.12-logos-foundation",
+  "editorial_policy": {
+    "rule": "Only sources with approved display rights may be bulk rendered. Reference-only and pending sources must never be copied into the corpus until provenance, edition, license and checksum are recorded.",
+    "ai_rule": "AI may explain and synthesize, but Scripture text, source metadata and citations remain deterministic and separately identified.",
+    "copyright_rule": "Modern copyrighted commentaries are represented only by bibliographic metadata unless a license or written permission explicitly permits full-text display."
+  },
+  "sources": [
+    {
+      "id": "drb-challoner",
+      "title": "Douay-Rheims Bible (Challoner revision)",
+      "category": "scripture",
+      "language": "en",
+      "status": "approved",
+      "rights": "public-domain",
+      "allowed_display_scope": "full-text-after-corpus-import",
+      "edition_note": "Public-domain Catholic English translation. Production corpus import still requires a pinned digital source and checksum."
+    },
+    {
+      "id": "vulgate-clementine",
+      "title": "Clementine Vulgate",
+      "category": "scripture",
+      "language": "la",
+      "status": "approved",
+      "rights": "public-domain",
+      "allowed_display_scope": "full-text-after-corpus-import",
+      "edition_note": "Latin biblical text; production corpus import requires a pinned digital source and checksum."
+    },
+    {
+      "id": "greek-scrivener-1894",
+      "title": "Greek New Testament — Scrivener 1894 base",
+      "category": "scripture",
+      "language": "grc",
+      "status": "approved",
+      "rights": "public-domain",
+      "allowed_display_scope": "full-text-after-corpus-import",
+      "edition_note": "Public-domain Greek edition candidate for the NT corpus; production ingestion must preserve exact edition provenance."
+    },
+    {
+      "id": "hebrew-masoretic-provisional",
+      "title": "Hebrew Masoretic Text — edition lock pending",
+      "category": "scripture",
+      "language": "he",
+      "status": "pending",
+      "rights": "edition-license-review-required",
+      "allowed_display_scope": "short-curated-seed-only",
+      "edition_note": "The ancient Hebrew text is not itself copyrighted, but the exact modern digital edition, vocalization and morphology dataset must be licensed and pinned before bulk import."
+    },
+    {
+      "id": "lxx-provisional",
+      "title": "Septuagint Greek — edition lock pending",
+      "category": "scripture",
+      "language": "grc",
+      "status": "pending",
+      "rights": "edition-license-review-required",
+      "allowed_display_scope": "short-curated-seed-only",
+      "edition_note": "A specific digital Septuagint edition must be selected and provenance-locked before bulk import."
+    },
+    {
+      "id": "peshitta-provisional",
+      "title": "Syriac Peshitta / Aramaic tradition — edition lock pending",
+      "category": "scripture",
+      "language": "arc",
+      "status": "pending",
+      "rights": "edition-license-review-required",
+      "allowed_display_scope": "metadata-only",
+      "edition_note": "No Syriac/Aramaic corpus is bundled yet. A source with explicit digital reuse rights must be approved first."
+    },
+    {
+      "id": "catena-aurea-candidate",
+      "title": "Catena Aurea of St. Thomas Aquinas",
+      "category": "patristic-commentary",
+      "language": "en",
+      "status": "provisional",
+      "rights": "public-domain-edition-candidate",
+      "allowed_display_scope": "source-pointers-and-editorial-summaries",
+      "edition_note": "Full-text import remains disabled until a specific public-domain English edition, provenance URL and checksum are pinned."
+    },
+    {
+      "id": "jerome-biblical-commentary",
+      "title": "Jerome Biblical Commentary",
+      "category": "modern-commentary",
+      "language": "en",
+      "status": "reference-only",
+      "rights": "copyrighted-permission-required",
+      "allowed_display_scope": "bibliographic-reference-only",
+      "edition_note": "No full text is stored or reproduced without permission or a suitable license."
+    },
+    {
+      "id": "church-fathers-library",
+      "title": "Church Fathers Library",
+      "category": "patristics",
+      "language": "multi",
+      "status": "provisional",
+      "rights": "source-by-source-review",
+      "allowed_display_scope": "editorial-summaries-and-approved-public-domain-texts",
+      "edition_note": "Each homily or translation must carry its own author, work, translator/edition, provenance and rights record."
+    }
+  ],
+  "books": [
+    {"name":"Genesis","testament":"OT","original_languages":["he"]},{"name":"Exodus","testament":"OT","original_languages":["he"]},{"name":"Leviticus","testament":"OT","original_languages":["he"]},{"name":"Numbers","testament":"OT","original_languages":["he"]},{"name":"Deuteronomy","testament":"OT","original_languages":["he"]},{"name":"Joshua","testament":"OT","original_languages":["he"]},{"name":"Judges","testament":"OT","original_languages":["he"]},{"name":"Ruth","testament":"OT","original_languages":["he"]},{"name":"1 Samuel","testament":"OT","original_languages":["he"]},{"name":"2 Samuel","testament":"OT","original_languages":["he"]},{"name":"1 Kings","testament":"OT","original_languages":["he"]},{"name":"2 Kings","testament":"OT","original_languages":["he"]},{"name":"1 Chronicles","testament":"OT","original_languages":["he"]},{"name":"2 Chronicles","testament":"OT","original_languages":["he"]},{"name":"Ezra","testament":"OT","original_languages":["he","arc"]},{"name":"Nehemiah","testament":"OT","original_languages":["he"]},{"name":"Tobit","testament":"OT","original_languages":["he","arc","grc"]},{"name":"Judith","testament":"OT","original_languages":["he","grc"]},{"name":"Esther","testament":"OT","original_languages":["he","grc"]},{"name":"1 Maccabees","testament":"OT","original_languages":["he","grc"]},{"name":"2 Maccabees","testament":"OT","original_languages":["grc"]},{"name":"Job","testament":"OT","original_languages":["he"]},{"name":"Psalms","testament":"OT","original_languages":["he"]},{"name":"Proverbs","testament":"OT","original_languages":["he"]},{"name":"Ecclesiastes","testament":"OT","original_languages":["he"]},{"name":"Song of Songs","testament":"OT","original_languages":["he"]},{"name":"Wisdom","testament":"OT","original_languages":["grc"]},{"name":"Sirach","testament":"OT","original_languages":["he","grc"]},{"name":"Isaiah","testament":"OT","original_languages":["he"]},{"name":"Jeremiah","testament":"OT","original_languages":["he"]},{"name":"Lamentations","testament":"OT","original_languages":["he"]},{"name":"Baruch","testament":"OT","original_languages":["grc"]},{"name":"Ezekiel","testament":"OT","original_languages":["he"]},{"name":"Daniel","testament":"OT","original_languages":["he","arc","grc"]},{"name":"Hosea","testament":"OT","original_languages":["he"]},{"name":"Joel","testament":"OT","original_languages":["he"]},{"name":"Amos","testament":"OT","original_languages":["he"]},{"name":"Obadiah","testament":"OT","original_languages":["he"]},{"name":"Jonah","testament":"OT","original_languages":["he"]},{"name":"Micah","testament":"OT","original_languages":["he"]},{"name":"Nahum","testament":"OT","original_languages":["he"]},{"name":"Habakkuk","testament":"OT","original_languages":["he"]},{"name":"Zephaniah","testament":"OT","original_languages":["he"]},{"name":"Haggai","testament":"OT","original_languages":["he"]},{"name":"Zechariah","testament":"OT","original_languages":["he"]},{"name":"Malachi","testament":"OT","original_languages":["he"]},
+    {"name":"Matthew","testament":"NT","original_languages":["grc"]},{"name":"Mark","testament":"NT","original_languages":["grc"]},{"name":"Luke","testament":"NT","original_languages":["grc"]},{"name":"John","testament":"NT","original_languages":["grc"]},{"name":"Acts","testament":"NT","original_languages":["grc"]},{"name":"Romans","testament":"NT","original_languages":["grc"]},{"name":"1 Corinthians","testament":"NT","original_languages":["grc"]},{"name":"2 Corinthians","testament":"NT","original_languages":["grc"]},{"name":"Galatians","testament":"NT","original_languages":["grc"]},{"name":"Ephesians","testament":"NT","original_languages":["grc"]},{"name":"Philippians","testament":"NT","original_languages":["grc"]},{"name":"Colossians","testament":"NT","original_languages":["grc"]},{"name":"1 Thessalonians","testament":"NT","original_languages":["grc"]},{"name":"2 Thessalonians","testament":"NT","original_languages":["grc"]},{"name":"1 Timothy","testament":"NT","original_languages":["grc"]},{"name":"2 Timothy","testament":"NT","original_languages":["grc"]},{"name":"Titus","testament":"NT","original_languages":["grc"]},{"name":"Philemon","testament":"NT","original_languages":["grc"]},{"name":"Hebrews","testament":"NT","original_languages":["grc"]},{"name":"James","testament":"NT","original_languages":["grc"]},{"name":"1 Peter","testament":"NT","original_languages":["grc"]},{"name":"2 Peter","testament":"NT","original_languages":["grc"]},{"name":"1 John","testament":"NT","original_languages":["grc"]},{"name":"2 John","testament":"NT","original_languages":["grc"]},{"name":"3 John","testament":"NT","original_languages":["grc"]},{"name":"Jude","testament":"NT","original_languages":["grc"]},{"name":"Revelation","testament":"NT","original_languages":["grc"]}
+  ],
+  "passages": {
+    "genesis 1:1": {
+      "reference": "Genesis 1:1",
+      "book": "Genesis",
+      "testament": "OT",
+      "languages": {
+        "en": {"label":"English","source_id":"drb-challoner","status":"available","text":"In the beginning God created heaven, and earth."},
+        "la": {"label":"Latin","source_id":"vulgate-clementine","status":"available","text":"In principio creavit Deus caelum et terram."},
+        "he": {"label":"Hebrew","source_id":"hebrew-masoretic-provisional","status":"provisional","text":"בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ׃","note":"Short traditional-text seed only; production Hebrew corpus awaits edition/provenance lock."},
+        "grc": {"label":"Greek LXX","source_id":"lxx-provisional","status":"provisional","text":"Ἐν ἀρχῇ ἐποίησεν ὁ θεὸς τὸν οὐρανὸν καὶ τὴν γῆν.","note":"Short Septuagint seed only; production LXX corpus awaits edition/provenance lock."},
+        "arc": {"label":"Aramaic / Syriac","source_id":"peshitta-provisional","status":"pending","text":"","note":"Aramaic/Syriac source is not installed until an approved edition and digital reuse license are pinned."}
+      },
+      "interlinear": {
+        "language": "he",
+        "label": "Hebrew interlinear",
+        "tokens": [
+          {"surface":"בְּרֵאשִׁית","transliteration":"bərēʾšît","lemma":"רֵאשִׁית","morphology":"prep ב + noun fs construct","gloss":"in beginning"},
+          {"surface":"בָּרָא","transliteration":"bārāʾ","lemma":"ברא","morphology":"Qal perfect 3ms","gloss":"created"},
+          {"surface":"אֱלֹהִים","transliteration":"ʾĕlōhîm","lemma":"אֱלֹהִים","morphology":"noun mp form; singular verbal agreement","gloss":"God"},
+          {"surface":"אֵת","transliteration":"ʾēt","lemma":"אֵת","morphology":"definite direct-object marker","gloss":"[object marker]"},
+          {"surface":"הַשָּׁמַיִם","transliteration":"haššāmayim","lemma":"שָׁמַיִם","morphology":"article + noun","gloss":"the heavens"},
+          {"surface":"וְאֵת","transliteration":"wəʾēt","lemma":"ו + אֵת","morphology":"conjunction + object marker","gloss":"and [object marker]"},
+          {"surface":"הָאָרֶץ","transliteration":"hāʾāreṣ","lemma":"אֶרֶץ","morphology":"article + noun fs","gloss":"the earth"}
+        ]
+      },
+      "commentary": {
+        "literary": "The opening clause functions as the programmatic beginning of the biblical creation account.",
+        "lexical": "The Hebrew verb bārāʾ is used here with God as subject; the verse presents creation as God's sovereign act.",
+        "catholic": "Catholic interpretation reads creation as the free act of the one God and as the beginning of salvation history; doctrinal synthesis should be checked against the Catechism and magisterial sources rather than inferred from one verse alone.",
+        "historical": "The text belongs to the ancient Israelite scriptural tradition. Historical and literary questions should be distinguished from the theological affirmation that creation depends upon God.",
+        "archaeology": "Archaeology can illuminate the Ancient Near Eastern setting and material cultures surrounding biblical Israel, but it cannot excavate the theological act of creation itself."
+      },
+      "fathers": [
+        {"father":"St. Augustine","work":"Confessions, Book XI","summary":"A major patristic reflection on creation, time and the meaning of 'beginning'.","source_status":"reference-pointer"}
+      ],
+      "catena": [],
+      "preacher": {
+        "title":"Creation begins in God",
+        "movements":["God is prior to all created reality","Creation is gift rather than accident","Creation opens the history that culminates in redemption","Faith in the Creator grounds gratitude, stewardship and hope"],
+        "caution":"Do not turn the verse into a simplistic scientific claim; keep theological, literary and scientific questions properly distinguished."
+      }
+    },
+    "john 1:1": {
+      "reference": "John 1:1",
+      "book": "John",
+      "testament": "NT",
+      "languages": {
+        "en": {"label":"English","source_id":"drb-challoner","status":"available","text":"In the beginning was the Word, and the Word was with God, and the Word was God."},
+        "la": {"label":"Latin","source_id":"vulgate-clementine","status":"available","text":"In principio erat Verbum, et Verbum erat apud Deum, et Deus erat Verbum."},
+        "grc": {"label":"Greek","source_id":"greek-scrivener-1894","status":"available","text":"Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος."},
+        "he": {"label":"Hebrew","source_id":"hebrew-masoretic-provisional","status":"not-original-language","text":"","note":"The New Testament was composed in Greek; a Hebrew rendering would be a later translation, not an original-language witness."},
+        "arc": {"label":"Aramaic / Syriac","source_id":"peshitta-provisional","status":"pending","text":"","note":"A Syriac Peshitta lane is designed but not populated until an approved digital edition and license are pinned."}
+      },
+      "interlinear": {
+        "language": "grc",
+        "label": "Greek interlinear",
+        "tokens": [
+          {"surface":"Ἐν","transliteration":"En","lemma":"ἐν","morphology":"preposition + dative","gloss":"in"},
+          {"surface":"ἀρχῇ","transliteration":"archē","lemma":"ἀρχή","morphology":"noun dative singular feminine","gloss":"beginning"},
+          {"surface":"ἦν","transliteration":"ēn","lemma":"εἰμί","morphology":"imperfect active indicative 3sg","gloss":"was"},
+          {"surface":"ὁ","transliteration":"ho","lemma":"ὁ","morphology":"article nominative singular masculine","gloss":"the"},
+          {"surface":"λόγος","transliteration":"logos","lemma":"λόγος","morphology":"noun nominative singular masculine","gloss":"Word"},
+          {"surface":"καὶ","transliteration":"kai","lemma":"καί","morphology":"conjunction","gloss":"and"},
+          {"surface":"ὁ λόγος","transliteration":"ho logos","lemma":"ὁ + λόγος","morphology":"article + noun nominative singular masculine","gloss":"the Word"},
+          {"surface":"ἦν","transliteration":"ēn","lemma":"εἰμί","morphology":"imperfect active indicative 3sg","gloss":"was"},
+          {"surface":"πρὸς","transliteration":"pros","lemma":"πρός","morphology":"preposition + accusative","gloss":"with / toward"},
+          {"surface":"τὸν θεόν","transliteration":"ton theon","lemma":"ὁ + θεός","morphology":"article + noun accusative singular masculine","gloss":"God"},
+          {"surface":"καὶ","transliteration":"kai","lemma":"καί","morphology":"conjunction","gloss":"and"},
+          {"surface":"θεὸς","transliteration":"theos","lemma":"θεός","morphology":"noun nominative singular masculine","gloss":"God"},
+          {"surface":"ἦν","transliteration":"ēn","lemma":"εἰμί","morphology":"imperfect active indicative 3sg","gloss":"was"},
+          {"surface":"ὁ λόγος","transliteration":"ho logos","lemma":"ὁ + λόγος","morphology":"article + noun nominative singular masculine","gloss":"the Word"}
+        ]
+      },
+      "commentary": {
+        "literary": "John deliberately opens with language that echoes Genesis and immediately places the Logos before creation.",
+        "lexical": "Logos can carry senses such as word, reason or discourse, but in the Johannine Prologue it functions personally and is identified in relation to God and as God.",
+        "catholic": "Catholic Christology reads this verse within the whole Prologue and the Church's confession of the eternal Son: distinct in relation and truly divine, not a creature.",
+        "historical": "The Prologue uses Jewish scriptural and wisdom language while speaking in Greek terms intelligible in the wider first-century Mediterranean world.",
+        "archaeology": "This verse is theological rather than topographical. Archaeology contributes to the historical world of the Gospel but does not by itself adjudicate the metaphysical claim about the Logos."
+      },
+      "fathers": [
+        {"father":"St. John Chrysostom","work":"Homilies on the Gospel of John","summary":"Emphasizes the pre-existence and divinity of the Word and warns against reducing the Son to a creature.","source_status":"reference-pointer"},
+        {"father":"St. Augustine","work":"Tractates on the Gospel of John","summary":"Reflects on the eternal Word, divine unity and the mystery of the Son's relation to the Father.","source_status":"reference-pointer"}
+      ],
+      "catena": [
+        {"father":"Catena Aurea — John 1:1","work":"Compiled by St. Thomas Aquinas","summary":"Patristic chain designed for Gospel-by-Gospel study. Only editorial summaries and source pointers are enabled until the selected public-domain edition is provenance-locked.","source_id":"catena-aurea-candidate"}
+      ],
+      "preacher": {
+        "title":"The eternal Word enters our history",
+        "movements":["The Word does not begin at Bethlehem; He is already 'in the beginning'","The Word is personally related to God","The Word is truly God","Christian discipleship begins by receiving the divine Word who later becomes flesh"],
+        "caution":"Do not isolate one Greek clause from the whole Prologue or present lexical observations as if they replace the Church's Trinitarian confession."
+      }
+    }
+  },
+  "places": [
+    {"id":"jerusalem","name":"Jerusalem","lat":31.7780,"lon":35.2350,"references":["2 Samuel 5","Psalm 122","Luke 19-24","Acts 1-15"],"periods":["Iron Age","Second Temple","Roman","Byzantine"],"historical_note":"Central city of biblical Israel/Judah and the principal setting of the Passion, Resurrection and earliest Jerusalem Church.","archaeology_note":"Excavations across the city illuminate multiple periods, including Iron Age and Second Temple Jerusalem. Individual identifications must be evaluated site by site.","media":[]},
+    {"id":"bethlehem","name":"Bethlehem","lat":31.7054,"lon":35.2024,"references":["Ruth 1-4","1 Samuel 16","Micah 5:2","Matthew 2","Luke 2"],"periods":["Iron Age","Roman","Byzantine"],"historical_note":"Biblically associated with David and, in the Gospel tradition, the birth of Jesus.","archaeology_note":"The traditional Nativity site is centered on the Church of the Nativity; historical claims should distinguish continuous Christian tradition from what archaeology alone can prove.","media":[{"id":"bethlehem-nativity","kind":"place-photo","title":"Church of the Nativity from Manger Square","image_url":"https://commons.wikimedia.org/wiki/Special:Redirect/file/Bethlehem%20Church%20of%20the%20Nativity.jpg?width=960","source_url":"https://commons.wikimedia.org/wiki/File:Bethlehem_Church_of_the_Nativity.jpg","rights":"CC0 1.0","credit":"Abraham / Wikimedia Commons"}]},
+    {"id":"nazareth","name":"Nazareth","lat":32.6996,"lon":35.3035,"references":["Matthew 2:23","Luke 1:26-38","Luke 4:16-30"],"periods":["Hellenistic","Roman","Byzantine"],"historical_note":"Galilean town associated with the Annunciation tradition and Jesus' upbringing.","archaeology_note":"Rock-cut tombs and domestic remains contribute to the evidence for a Jewish settlement in the Roman period; devotional identifications of particular structures require separate evaluation.","media":[]},
+    {"id":"capernaum","name":"Capernaum","lat":32.8803,"lon":35.5753,"references":["Matthew 4:13","Mark 1-2","Luke 4","John 6"],"periods":["Roman","Byzantine"],"historical_note":"Galilean lakeside settlement prominent in the public ministry of Jesus.","archaeology_note":"Excavated village remains, later synagogue structures and the house complex traditionally associated with Peter are important for reconstructing the settlement's history.","media":[]},
+    {"id":"corinth","name":"Corinth","lat":37.9386,"lon":22.9322,"references":["Acts 18","1 Corinthians","2 Corinthians"],"periods":["Hellenistic","Roman"],"historical_note":"Major Roman-period city associated with Paul's mission and correspondence.","archaeology_note":"The forum, bema and civic remains illuminate the urban setting in which Pauline Christianity developed.","media":[]},
+    {"id":"ephesus","name":"Ephesus","lat":37.9390,"lon":27.3410,"references":["Acts 18-20","Ephesians","Revelation 2:1-7"],"periods":["Hellenistic","Roman","Byzantine"],"historical_note":"Major city of Roman Asia linked with Paul's ministry and an early Christian community.","archaeology_note":"The theater, streets, public buildings and cultic remains provide a concrete urban context for Acts 19 and early Christianity in Asia Minor.","media":[]},
+    {"id":"rome","name":"Rome","lat":41.9028,"lon":12.4964,"references":["Acts 28","Romans","2 Timothy"],"periods":["Roman","Late Antique"],"historical_note":"Capital of the Roman Empire and major setting for the final chapters of Acts and the early Roman Church.","archaeology_note":"Urban monuments, catacombs and early Christian sites illuminate the social and religious environment of Roman Christianity; apostolic-site traditions should be identified as traditions where appropriate.","media":[]}
+  ],
+  "media": [
+    {"id":"bethlehem-nativity","kind":"place-photo","title":"Church of the Nativity from Manger Square","image_url":"https://commons.wikimedia.org/wiki/Special:Redirect/file/Bethlehem%20Church%20of%20the%20Nativity.jpg?width=960","source_url":"https://commons.wikimedia.org/wiki/File:Bethlehem_Church_of_the_Nativity.jpg","rights":"CC0 1.0","credit":"Abraham / Wikimedia Commons","tags":["Bethlehem","Nativity","place"]},
+    {"id":"calling-st-matthew","kind":"biblical-art","title":"The Calling of Saint Matthew — Caravaggio","image_url":"https://commons.wikimedia.org/wiki/Special:Redirect/file/Calling-of-st-matthew.jpg?width=960","source_url":"https://commons.wikimedia.org/wiki/File:Calling-of-st-matthew.jpg","rights":"public-domain artwork; verify file-page reproduction status before local mirroring","credit":"Caravaggio / Wikimedia Commons","tags":["Matthew","calling","Gospel","art"]}
+  ],
+  "ai_themes": [
+    {"id":"explain","label":"Explain this passage"},{"id":"catholic","label":"Catholic interpretation"},{"id":"fathers","label":"Church Fathers"},{"id":"original-language","label":"Original-language analysis"},{"id":"historical","label":"Historical context"},{"id":"archaeology","label":"Archaeological context"},{"id":"liturgical","label":"Liturgical use"},{"id":"cross-references","label":"Cross-references"},{"id":"homily","label":"Prepare a homily outline"},{"id":"bible-study","label":"Prepare a Bible-study outline"},{"id":"compare","label":"Compare translations"},{"id":"difficult","label":"Explain a difficult verse"},{"id":"marian","label":"Marian interpretation"},{"id":"christological","label":"Christological interpretation"},{"id":"sacramental","label":"Sacramental interpretation"},{"id":"moral-spiritual","label":"Moral / spiritual application"}
+  ]
+}
