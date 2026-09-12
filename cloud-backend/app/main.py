@@ -10,6 +10,7 @@ from sqlalchemy.orm import Session
 
 from .cms_admin import router as cms_admin_router
 from .cms_publish import router as cms_publish_router
+from .prayer_network import router as prayer_network_router
 from .db import Base, database_state, engine, get_db
 from .magisterium import CatholicChatIn, ask_magisterium, magisterium_state
 from .models import PrayerIntention, ContactMessage, SaveOneSoulParticipant
@@ -17,7 +18,7 @@ from .models import PrayerIntention, ContactMessage, SaveOneSoulParticipant
 Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="Mercy API",
-    version="2.5.0",
+    version="2.6.0",
     docs_url="/docs" if os.getenv("ENABLE_DOCS", "true").lower() == "true" else None,
 )
 origins = [x.strip() for x in os.getenv("CORS_ORIGINS", "http://localhost:5500").split(',') if x.strip()]
@@ -30,6 +31,7 @@ app.add_middleware(
 )
 app.include_router(cms_admin_router)
 app.include_router(cms_publish_router)
+app.include_router(prayer_network_router)
 
 
 class PrayerIn(BaseModel):
@@ -92,12 +94,14 @@ def health():
     return {
         'status': 'ok' if db_state['reachable'] else 'degraded',
         'service': 'mercy-api',
-        'version': '2.5.0',
+        'version': '2.6.0',
         'database': db_state,
         'admin_cms': {
             'configured': bool(os.getenv('ADMIN_PASSWORD') and os.getenv('ADMIN_SESSION_SECRET')),
             'bucket_configured': bool(os.getenv('CMS_BUCKET')),
             'publishing_enabled': True,
+            'prayer_network_enabled': True,
+            'mass_intention_network_enabled': True,
         },
         'catholic_ai': magisterium_state(),
     }
@@ -105,7 +109,7 @@ def health():
 
 @app.get('/api/content/version')
 def version():
-    return {'content_version': '2026.09.12-publishing-cms', 'frontend': 'github-pages-ready'}
+    return {'content_version': '2026.09.12-prayer-mass-network', 'frontend': 'github-pages-ready'}
 
 
 @app.post('/api/chat')
