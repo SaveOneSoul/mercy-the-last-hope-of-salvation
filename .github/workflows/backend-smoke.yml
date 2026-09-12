@@ -33,10 +33,11 @@ jobs:
         run: pip install -r requirements.txt
       - name: Compile backend
         run: python -m compileall -q app
-      - name: Import application, CMS and intention-network models
+      - name: Import application, CMS, SEO and intention-network models
         env:
           DATABASE_URL: sqlite:///./ci-mercy.db
           ENABLE_DOCS: 'false'
+          ADMIN_SESSION_SECRET: 'ci-only-session-secret-not-for-production'
         run: |
           python - <<'PY'
           from app.main import app
@@ -48,7 +49,9 @@ jobs:
               PrayerNetworkRequest,
               PriestRegistration,
           )
-          assert app.version == '2.6.0'
+          from app.priest_portal import PriestPortalInvite, PriestPortalSession
+
+          assert app.version == '2.8.0'
           assert CMSPublication.__tablename__ == 'cms_publications'
           assert CMSMedia.__tablename__ == 'cms_media'
           assert PrayerNetworkRequest.__tablename__ == 'prayer_network_requests'
@@ -56,15 +59,22 @@ jobs:
           assert MassIntentionRequest.__tablename__ == 'mass_intention_requests'
           assert PriestRegistration.__tablename__ == 'priest_registrations'
           assert MassAssignment.__tablename__ == 'mass_assignments'
+          assert PriestPortalInvite.__tablename__ == 'priest_portal_invites'
+          assert PriestPortalSession.__tablename__ == 'priest_portal_sessions'
           paths = {route.path for route in app.routes}
           for required in (
+              '/api/content/seo-manifest',
               '/api/prayer-network/requests',
               '/api/mass-intentions',
               '/api/priest-network/register',
               '/api/admin/prayer-network/requests',
               '/api/admin/mass-intentions',
               '/api/admin/priest-network',
+              '/api/admin/priest-network/{priest_id}/portal-invite',
+              '/api/priest/mass-intentions/available',
+              '/api/priest/assignments',
+              '/priest',
           ):
               assert required in paths, required
-          print('Mercy backend prayer/Mass network smoke test passed')
+          print('Mercy backend CMS SEO + prayer/Mass/priest portal smoke test passed')
           PY
