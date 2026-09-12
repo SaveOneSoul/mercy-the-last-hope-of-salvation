@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#5a1020">
+<meta name="description" content="Prayer requests, Mass intentions and verified priest registration for Mercy – The Last Hope of Salvation.">
+<title>Prayer & Mass Intentions · Mercy</title>
+<link rel="stylesheet" href="../css/mercy.css">
+<link rel="stylesheet" href="../css/cms-content.css">
+<style>
+.intentions-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.intentions-tabs button{border:0;border-radius:999px;padding:10px 16px;font-weight:700;cursor:pointer}.intentions-tabs button.active{background:#710e25;color:#fff}.intentions-panel[hidden]{display:none}.privacy-note{font-size:.95rem}.form .checkline{display:flex;gap:10px;align-items:flex-start}.form .checkline input{width:auto;margin-top:6px}.canon-box{padding:16px;border:1px solid #ead09a;background:#fff6dc;border-radius:16px;margin:18px 0}.split{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:760px){.split{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="../index.html"><span class="cross">✠</span><span><b>Mercy</b><small>The Last Hope of Salvation</small></span></a>
+<button class="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button>
+<nav id="main-nav"><a href="../index.html">Home</a><a href="save-one-soul.html">Save One Soul</a><a href="intentions.html">Intentions</a><a href="posts.html">Posts</a><a href="pro-life.html">Pro-Life</a><a href="saints.html">Saints</a><a href="rosary.html">Rosary</a><a href="prayer.html">Prayer</a><a href="charis.html">CHARIS</a><a href="catholic-ai.html">Catholic AI</a><a href="about.html">About</a></nav>
+<button class="theme-btn" aria-label="Toggle theme">◐</button>
+</header>
+<main id="main">
+<section class="section">
+<div class="eyebrow">Intercession · Eucharist · Communion</div>
+<h1>Prayer & Mass Intentions</h1>
+<p class="lead">Send a prayer request to Mercy, ask that a Mass intention be assigned to a verified Catholic priest, or register as a priest willing to receive intentions through the Mercy network.</p>
+<div class="canon-box"><strong>Important distinction.</strong> A prayer request may be shared with multiple Catholic intercessory ministries when you explicitly consent. A Mass intention is different: each requested Mass is tracked as a specific obligation and assigned to a verified priest. Mercy does not collect Mass stipends or offerings in this phase.</div>
+<div class="intentions-tabs"><button class="active" data-intention-tab="prayer">Prayer intention</button><button data-intention-tab="mass">Mass intention</button><button data-intention-tab="priest">Priest registration</button></div>
+
+<section class="intentions-panel" data-intention-panel="prayer">
+<h2>Send a prayer intention</h2>
+<p>Your request goes first to the private <strong>Prayer Intentions</strong> section in Mercy Admin. If you choose worldwide sharing, your name and intention may also be sent manually to approved Catholic prayer partners.</p>
+<form class="form" data-prayer-network-form>
+<div class="split"><label>Name <input name="name" required minlength="2" maxlength="120" autocomplete="name"></label><label>Country (optional)<input name="country" maxlength="100" autocomplete="country-name"></label></div>
+<label>Prayer intention<textarea name="intention" required minlength="2" maxlength="2000" rows="7" placeholder="Write your prayer intention here…"></textarea></label>
+<label class="checkline"><input type="checkbox" name="share_worldwide" value="yes"><span>Share my <strong>name and prayer intention</strong> with approved Catholic prayer partners worldwide. I understand that this sends my request outside the Mercy website to third-party Catholic ministries.</span></label>
+<input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+<button type="submit">Send prayer intention</button><div class="status" role="status" aria-live="polite"></div>
+</form>
+<p class="privacy-note">If you do not select worldwide sharing, the request remains inside Mercy Admin for ministry use. Avoid including unnecessary medical, financial or other highly sensitive personal details about another person without their permission.</p>
+</section>
+
+<section class="intentions-panel" data-intention-panel="mass" hidden>
+<h2>Request a Mass intention</h2>
+<p>Mercy can receive the request and place it in the verified-priest assignment queue. This phase does <strong>not</strong> collect or transfer Mass offerings.</p>
+<form class="form" data-mass-intention-form>
+<div class="split"><label>Your name <input name="requester_name" required minlength="2" maxlength="120" autocomplete="name"></label><label>Your email <input name="requester_email" type="email" required maxlength="254" autocomplete="email"></label></div>
+<div class="split"><label>Mass intention for <input name="intention_for_name" required minlength="2" maxlength="180" placeholder="Name of the person or intention"></label><label>Living / deceased <select name="life_status"><option value="living">Living</option><option value="deceased">Deceased</option><option value="other">Other intention</option></select></label></div>
+<label>Intention<textarea name="intention_text" required minlength="2" maxlength="2000" rows="6" placeholder="For healing, thanksgiving, repose of the soul, conversion, anniversary, or another intention…"></textarea></label>
+<label>Number of Masses requested <input name="masses_requested" type="number" min="1" max="30" value="1" required></label>
+<label class="checkline"><input type="checkbox" name="consent_priest_distribution" value="yes" required><span>I consent to Mercy sharing this Mass intention, including the name written above, with verified Catholic priests who accept assignments through this network.</span></label>
+<input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+<button type="submit">Submit Mass intention</button><div class="status" role="status" aria-live="polite"></div>
+</form>
+<div class="canon-box"><strong>Canonical safeguard.</strong> Mercy treats each requested Mass separately. It does not sell spiritual benefits, and it does not treat a general prayer remembrance as fulfillment of a Mass intention. Any future stipend system must follow canons 945–958 and the 2025 Dicastery for the Clergy decree on Mass intentions.</div>
+</section>
+
+<section class="intentions-panel" data-intention-panel="priest" hidden>
+<h2>Priest registration</h2>
+<p>Catholic priests may register interest in receiving Mass intentions. Registration does not activate the account automatically. Mercy Admin must independently verify the priest through his diocese, religious institute or competent superior before any intention can be assigned.</p>
+<form class="form" data-priest-registration-form>
+<div class="split"><label>Full name <input name="full_name" required minlength="3" maxlength="160" autocomplete="name"></label><label>Email <input name="email" type="email" required maxlength="254" autocomplete="email"></label></div>
+<div class="split"><label>Country <input name="country" required minlength="2" maxlength="100" autocomplete="country-name"></label><label>Diocese or religious institute <input name="diocese_or_institute" required minlength="2" maxlength="220"></label></div>
+<label>Parish or community (optional)<input name="parish_or_community" maxlength="220"></label>
+<div class="split"><label>Bishop / religious superior <input name="bishop_or_superior" required minlength="2" maxlength="220"></label><label>Official verification contact <input name="verification_contact" required minlength="3" maxlength="254" placeholder="Official diocesan/institute email or office contact"></label></div>
+<label class="checkline"><input type="checkbox" name="declaration_authorized" value="yes" required><span>I confirm that I am a Catholic priest authorized to exercise priestly ministry, and I consent to Mercy verifying this registration with my diocese, institute or competent superior.</span></label>
+<input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+<button type="submit">Register for verification</button><div class="status" role="status" aria-live="polite"></div>
+</form>
+</section>
+</section>
+</main>
+<footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Prayer requests and Mass intentions are handled with respect for privacy, Catholic discipline and ecclesial accountability.</p></div><div><a href="../index.html">Home</a><a href="sources.html">Sources & editorial policy</a><a href="https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann879-958_en.html" target="_blank" rel="noopener">Canon Law: Mass offerings</a></div><p class="copyright">© <span data-year></span> Mercy – The Last Hope of Salvation.</p></footer>
+<script src="../javascript/mobile-nav.js?v=2"></script>
+<script src="../javascript/public-forms.js?v=2"></script>
+<script src="../javascript/mercy.js?v=11"></script>
+<script>
+document.querySelectorAll('[data-intention-tab]').forEach(function(btn){btn.addEventListener('click',function(){document.querySelectorAll('[data-intention-tab]').forEach(function(x){x.classList.remove('active')});btn.classList.add('active');document.querySelectorAll('[data-intention-panel]').forEach(function(p){p.hidden=p.getAttribute('data-intention-panel')!==btn.getAttribute('data-intention-tab')});});});
+</script>
+</body>
+</html>
