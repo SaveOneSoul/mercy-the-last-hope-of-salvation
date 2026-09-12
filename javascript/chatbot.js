@@ -11,6 +11,8 @@
 
   const isKh = location.pathname.includes('/kh/');
   const t = (en, kh) => isKh ? kh : en;
+  input.maxLength = 2000;
+  input.minLength = 2;
 
   function toggle(open) {
     panel.hidden = !open;
@@ -118,7 +120,11 @@
   form.addEventListener('submit', async e => {
     e.preventDefault();
     const q = input.value.trim();
-    if (!q) return;
+    if (q.length < 2) return;
+    if (q.length > 2000) {
+      add(t('Please keep your question within 2,000 characters.','Sngewbha buh ia ka jingkylli hapoh 2,000 characters.'), 'bot');
+      return;
+    }
     const submit = form.querySelector('button[type="submit"]');
     input.value = '';
     add(q, 'user');
