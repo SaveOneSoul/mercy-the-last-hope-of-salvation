@@ -71,10 +71,12 @@ jobs:
               '/api/admin/mass-intentions',
               '/api/admin/priest-network',
               '/api/admin/priest-network/{priest_id}/portal-invite',
+              '/api/priest/activate',
               '/api/priest/mass-intentions/available',
               '/api/priest/assignments',
               '/priest',
           ):
               assert required in paths, required
+          assert '/priest/activate' not in paths
           print('Mercy backend CMS SEO + prayer/Mass/priest portal smoke test passed')
           PY
