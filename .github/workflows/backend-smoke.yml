@@ -51,7 +51,7 @@ jobs:
           )
           from app.priest_portal import PriestPortalInvite, PriestPortalSession
 
-          assert app.version == '2.8.0'
+          assert app.version == '2.8.1'
           assert CMSPublication.__tablename__ == 'cms_publications'
           assert CMSMedia.__tablename__ == 'cms_media'
           assert PrayerNetworkRequest.__tablename__ == 'prayer_network_requests'
