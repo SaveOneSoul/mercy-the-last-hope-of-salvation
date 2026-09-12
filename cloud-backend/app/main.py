@@ -10,8 +10,12 @@ from sqlalchemy.orm import Session
 
 from .cms_admin import router as cms_admin_router
 from .cms_publish import router as cms_publish_router
-from .prayer_network import router as prayer_network_router
-from .db import Base, database_state, engine, get_db
+from .prayer_network import (
+    PrayerDistributionLog,
+    PrayerNetworkRequest,
+    router as prayer_network_router,
+)
+from .db import Base, SessionLocal, database_state, engine, get_db
 from .magisterium import CatholicChatIn, ask_magisterium, magisterium_state
 from .models import PrayerIntention, ContactMessage, SaveOneSoulParticipant
 
@@ -88,6 +92,60 @@ def progress_payload(row: SaveOneSoulParticipant):
     }
 
 
+def _copy_legacy_prayer(db: Session, legacy: PrayerIntention) -> PrayerNetworkRequest | None:
+    marker = f"legacy_prayer_id={legacy.id}"
+    already = (
+        db.query(PrayerDistributionLog.id)
+        .filter(
+            PrayerDistributionLog.partner_key == "legacy-import",
+            PrayerDistributionLog.note == marker,
+        )
+        .first()
+    )
+    if already:
+        return None
+    row = PrayerNetworkRequest(
+        name=(legacy.name or "").strip() or "Name not provided (legacy)",
+        intention=legacy.intention.strip(),
+        country=None,
+        language="en",
+        share_worldwide=False,
+        consent_name_sharing=False,
+        status="new",
+        created_at=legacy.created_at,
+    )
+    db.add(row)
+    db.flush()
+    db.add(
+        PrayerDistributionLog(
+            prayer_id=row.id,
+            partner_key="legacy-import",
+            status="imported",
+            note=marker,
+        )
+    )
+    return row
+
+
+@app.on_event("startup")
+def import_legacy_prayer_intentions() -> None:
+    """Make earlier prayer submissions visible in the new Mercy Admin console.
+
+    Legacy submissions never gain worldwide-sharing permission automatically.
+    A missing historical name is explicitly labelled rather than invented.
+    """
+    db = SessionLocal()
+    try:
+        for legacy in db.query(PrayerIntention).order_by(PrayerIntention.id.asc()).all():
+            _copy_legacy_prayer(db, legacy)
+        db.commit()
+    except Exception:
+        db.rollback()
+        raise
+    finally:
+        db.close()
+
+
 @app.get('/health')
 def health():
     db_state = database_state()
@@ -119,10 +177,18 @@ def catholic_chat(payload: CatholicChatIn, request: Request):
 
 @app.post('/api/prayer-intentions', status_code=201)
 def create_prayer(payload: PrayerIn, db: Session = Depends(get_db)):
+    """Legacy-compatible prayer endpoint.
+
+    New public forms use /api/prayer-network/requests. This endpoint remains for
+    older cached clients and mirrors accepted submissions into Mercy Admin without
+    granting any third-party sharing consent.
+    """
     if payload.website:
         return {'status': 'accepted'}
     row = PrayerIntention(name=(payload.name or '').strip() or None, intention=payload.intention.strip())
     db.add(row)
+    db.flush()
+    _copy_legacy_prayer(db, row)
     db.commit()
     db.refresh(row)
     return {'status': 'received', 'id': row.id}
