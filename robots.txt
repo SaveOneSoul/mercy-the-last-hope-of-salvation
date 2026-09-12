@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /backend/
+Disallow: /backend-example/
+Disallow: /cloud-backend/
+Disallow: /.github/
+
+Sitemap: https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/sitemap.xml
