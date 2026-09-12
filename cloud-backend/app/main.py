@@ -24,7 +24,7 @@ from .models import PrayerIntention, ContactMessage, SaveOneSoulParticipant
 Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="Mercy API",
-    version="2.8.0",
+    version="2.8.1",
     docs_url="/docs" if os.getenv("ENABLE_DOCS", "true").lower() == "true" else None,
 )
 origins = [x.strip() for x in os.getenv("CORS_ORIGINS", "http://localhost:5500").split(',') if x.strip()]
@@ -35,6 +35,27 @@ app.add_middleware(
     allow_methods=["GET", "POST", "PUT", "DELETE"],
     allow_headers=["Content-Type", "X-CSRF-Token"],
 )
+
+
+@app.middleware("http")
+async def honor_forwarded_https(request: Request, call_next):
+    """Restore the public request scheme when Cloud Run terminates TLS upstream.
+
+    Admin and priest write guards compare the browser Origin with Request.url.
+    Cloud Run serves the browser over HTTPS but may forward the request to the
+    container over HTTP. In that case Starlette can otherwise reconstruct an
+    http:// URL and reject a legitimate same-origin write as ``origin_failed``.
+
+    Only the scheme is normalized; the Host header is deliberately left intact.
+    CSRF/session protections and exact host comparison therefore remain in force.
+    """
+    forwarded_proto = request.headers.get("x-forwarded-proto", "")
+    public_scheme = forwarded_proto.split(",", 1)[0].strip().lower()
+    if public_scheme in {"http", "https"}:
+        request.scope["scheme"] = public_scheme
+    return await call_next(request)
+
+
 app.include_router(cms_admin_router)
 app.include_router(cms_publish_router)
 app.include_router(prayer_network_router)
@@ -156,7 +177,7 @@ def health():
     return {
         'status': 'ok' if db_state['reachable'] else 'degraded',
         'service': 'mercy-api',
-        'version': '2.8.0',
+        'version': '2.8.1',
         'database': db_state,
         'admin_cms': {
             'configured': bool(os.getenv('ADMIN_PASSWORD') and os.getenv('ADMIN_SESSION_SECRET')),
@@ -173,7 +194,7 @@ def health():
 
 @app.get('/api/content/version')
 def version():
-    return {'content_version': '2026.09.12-cms-seo-priest-portal', 'frontend': 'github-pages-ready'}
+    return {'content_version': '2026.09.12-cms-seo-priest-portal-origin-fix', 'frontend': 'github-pages-ready'}
 
 
 @app.post('/api/chat')
