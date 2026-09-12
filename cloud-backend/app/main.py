@@ -17,6 +17,7 @@ from .prayer_network import (
 )
 from .priest_portal import router as priest_portal_router
 from .seo import router as seo_router
+from .logos import router as logos_router
 from .db import Base, SessionLocal, database_state, engine, get_db
 from .magisterium import CatholicChatIn, ask_magisterium, magisterium_state
 from .models import PrayerIntention, ContactMessage, SaveOneSoulParticipant
@@ -24,7 +25,7 @@ from .models import PrayerIntention, ContactMessage, SaveOneSoulParticipant
 Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="Mercy API",
-    version="2.8.1",
+    version="2.9.0",
     docs_url="/docs" if os.getenv("ENABLE_DOCS", "true").lower() == "true" else None,
 )
 origins = [x.strip() for x in os.getenv("CORS_ORIGINS", "http://localhost:5500").split(',') if x.strip()]
@@ -61,6 +62,7 @@ app.include_router(cms_publish_router)
 app.include_router(prayer_network_router)
 app.include_router(priest_portal_router)
 app.include_router(seo_router)
+app.include_router(logos_router)
 
 
 class PrayerIn(BaseModel):
@@ -177,7 +179,7 @@ def health():
     return {
         'status': 'ok' if db_state['reachable'] else 'degraded',
         'service': 'mercy-api',
-        'version': '2.8.1',
+        'version': '2.9.0',
         'database': db_state,
         'admin_cms': {
             'configured': bool(os.getenv('ADMIN_PASSWORD') and os.getenv('ADMIN_SESSION_SECRET')),
@@ -187,6 +189,8 @@ def health():
             'prayer_network_enabled': True,
             'mass_intention_network_enabled': True,
             'priest_portal_enabled': True,
+            'logos_enabled': True,
+            'logos_source_rights_gate': True,
         },
         'catholic_ai': magisterium_state(),
     }
@@ -194,7 +198,7 @@ def health():
 
 @app.get('/api/content/version')
 def version():
-    return {'content_version': '2026.09.12-cms-seo-priest-portal-origin-fix', 'frontend': 'github-pages-ready'}
+    return {'content_version': '2026.09.12-logos-biblical-study-foundation', 'frontend': 'github-pages-live-hybrid'}
 
 
 @app.post('/api/chat')
