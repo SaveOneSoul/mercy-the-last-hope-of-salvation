@@ -15,6 +15,7 @@ from .prayer_network import (
     PrayerNetworkRequest,
     router as prayer_network_router,
 )
+from .seo import router as seo_router
 from .db import Base, SessionLocal, database_state, engine, get_db
 from .magisterium import CatholicChatIn, ask_magisterium, magisterium_state
 from .models import PrayerIntention, ContactMessage, SaveOneSoulParticipant
@@ -22,7 +23,7 @@ from .models import PrayerIntention, ContactMessage, SaveOneSoulParticipant
 Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="Mercy API",
-    version="2.6.0",
+    version="2.7.0",
     docs_url="/docs" if os.getenv("ENABLE_DOCS", "true").lower() == "true" else None,
 )
 origins = [x.strip() for x in os.getenv("CORS_ORIGINS", "http://localhost:5500").split(',') if x.strip()]
@@ -36,6 +37,7 @@ app.add_middleware(
 app.include_router(cms_admin_router)
 app.include_router(cms_publish_router)
 app.include_router(prayer_network_router)
+app.include_router(seo_router)
 
 
 class PrayerIn(BaseModel):
@@ -152,12 +154,13 @@ def health():
     return {
         'status': 'ok' if db_state['reachable'] else 'degraded',
         'service': 'mercy-api',
-        'version': '2.6.0',
+        'version': '2.7.0',
         'database': db_state,
         'admin_cms': {
             'configured': bool(os.getenv('ADMIN_PASSWORD') and os.getenv('ADMIN_SESSION_SECRET')),
             'bucket_configured': bool(os.getenv('CMS_BUCKET')),
             'publishing_enabled': True,
+            'seo_automation_enabled': True,
             'prayer_network_enabled': True,
             'mass_intention_network_enabled': True,
         },
@@ -167,7 +170,7 @@ def health():
 
 @app.get('/api/content/version')
 def version():
-    return {'content_version': '2026.09.12-prayer-mass-network', 'frontend': 'github-pages-ready'}
+    return {'content_version': '2026.09.12-cms-seo-automation', 'frontend': 'github-pages-ready'}
 
 
 @app.post('/api/chat')
