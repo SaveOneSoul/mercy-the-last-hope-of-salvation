@@ -36,17 +36,39 @@ def has_named_field(body: str, name: str) -> bool:
     return f'name="{name}"' in body_l or f"name='{name}'" in body_l
 
 
+def require_submit_status_script(marker: str, body_l: str, page_l: str, errors: list[str]) -> None:
+    require('type="submit"' in body_l or "type='submit'" in body_l, f"{marker} form missing submit button", errors)
+    require('role="status"' in body_l or 'class="status"' in body_l or 'data-form-status' in body_l, f"{marker} form missing status output", errors)
+    require("public-forms.js" in page_l, f"{marker} form does not load public-forms.js", errors)
+
+
 def audit_form(rel: str, attrs: str, body: str, page: str, errors: list[str]) -> None:
     marker = f"{rel}:"
     attrs_l = attrs.lower()
     body_l = body.lower()
     page_l = page.lower()
 
+    if "data-prayer-network-form" in attrs_l:
+        for field in ("name", "intention", "share_worldwide"):
+            require(has_named_field(body, field), f"{marker} prayer-network form missing {field} field", errors)
+        require_submit_status_script(marker, body_l, page_l, errors)
+        return
+
+    if "data-mass-intention-form" in attrs_l:
+        for field in ("requester_name", "requester_email", "intention_for_name", "intention_text", "life_status", "masses_requested", "consent_priest_distribution"):
+            require(has_named_field(body, field), f"{marker} Mass-intention form missing {field} field", errors)
+        require_submit_status_script(marker, body_l, page_l, errors)
+        return
+
+    if "data-priest-registration-form" in attrs_l:
+        for field in ("full_name", "email", "country", "diocese_or_institute", "bishop_or_superior", "verification_contact", "declaration_authorized"):
+            require(has_named_field(body, field), f"{marker} priest-registration form missing {field} field", errors)
+        require_submit_status_script(marker, body_l, page_l, errors)
+        return
+
     if "data-prayer-form" in attrs_l:
         require(has_named_field(body, "intention"), f"{marker} prayer form missing intention field", errors)
-        require('type="submit"' in body_l or "type='submit'" in body_l, f"{marker} prayer form missing submit button", errors)
-        require('role="status"' in body_l or 'class="status"' in body_l, f"{marker} prayer form missing status output", errors)
-        require("public-forms.js" in page_l, f"{marker} prayer form does not load public-forms.js", errors)
+        require_submit_status_script(marker, body_l, page_l, errors)
         return
 
     if "data-contact-form" in attrs_l:
