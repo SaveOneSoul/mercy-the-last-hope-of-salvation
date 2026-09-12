@@ -33,7 +33,7 @@ jobs:
         run: pip install -r requirements.txt
       - name: Compile backend
         run: python -m compileall -q app
-      - name: Import application, CMS, SEO and intention-network models
+      - name: Import application, CMS, SEO, Logos and intention-network models
         env:
           DATABASE_URL: sqlite:///./ci-mercy.db
           ENABLE_DOCS: 'false'
@@ -51,7 +51,7 @@ jobs:
           )
           from app.priest_portal import PriestPortalInvite, PriestPortalSession
 
-          assert app.version == '2.8.1'
+          assert app.version == '2.9.0'
           assert CMSPublication.__tablename__ == 'cms_publications'
           assert CMSMedia.__tablename__ == 'cms_media'
           assert PrayerNetworkRequest.__tablename__ == 'prayer_network_requests'
@@ -74,9 +74,19 @@ jobs:
               '/api/priest/activate',
               '/api/priest/mass-intentions/available',
               '/api/priest/assignments',
+              '/api/logos/catalog',
+              '/api/logos/source-rights',
+              '/api/logos/passage',
+              '/api/logos/interlinear',
+              '/api/logos/commentary',
+              '/api/logos/fathers',
+              '/api/logos/preacher',
+              '/api/logos/places',
+              '/api/logos/media',
+              '/api/logos/ai',
               '/priest',
           ):
               assert required in paths, required
           assert '/priest/activate' not in paths
-          print('Mercy backend CMS SEO + prayer/Mass/priest portal smoke test passed')
+          print('Mercy backend CMS SEO + Logos + prayer/Mass/priest portal smoke test passed')
           PY
