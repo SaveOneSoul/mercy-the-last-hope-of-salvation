@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from fastapi import APIRouter, Depends, HTTPException, Request, Response
-from fastapi.responses import FileResponse, RedirectResponse
+from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 from sqlalchemy import DateTime, String, func
 from sqlalchemy.orm import Mapped, Session, mapped_column
@@ -65,9 +65,21 @@ class PriestPortalSession(Base):
     revoked_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
 
 
+class PriestActivateIn(BaseModel):
+    token: str = Field(min_length=32, max_length=256)
+
+
 class PriestAssignmentUpdateIn(BaseModel):
     status: str = Field(pattern="^(accepted|celebrated|declined)$")
     note: str | None = Field(default=None, max_length=1000)
+
+
+def _same_origin_guard(request: Request) -> None:
+    origin = request.headers.get("origin", "")
+    if origin:
+        expected = f"{request.url.scheme}://{request.url.netloc}"
+        if origin.rstrip("/") != expected.rstrip("/"):
+            raise HTTPException(status_code=403, detail="origin_failed")
 
 
 def _session(request: Request, db: Session) -> tuple[PriestPortalSession, PriestRegistration, str]:
@@ -97,11 +109,7 @@ def _write_guard(request: Request, raw_token: str) -> None:
     csrf = request.headers.get("x-csrf-token", "")
     if not csrf or not hmac.compare_digest(csrf, _csrf_for(raw_token)):
         raise HTTPException(status_code=403, detail="csrf_failed")
-    origin = request.headers.get("origin", "")
-    if origin:
-        expected = f"{request.url.scheme}://{request.url.netloc}"
-        if origin.rstrip("/") != expected.rstrip("/"):
-            raise HTTPException(status_code=403, detail="origin_failed")
+    _same_origin_guard(request)
 
 
 def _mass_payload(mass: MassIntentionRequest, assignments: int = 0) -> dict:
@@ -150,16 +158,29 @@ def priest_portal_page():
     return response
 
 
-@router.get("/priest/activate", include_in_schema=False)
-def priest_activate(token: str, db: Session = Depends(get_db)):
+@router.post("/api/priest/activate")
+def priest_activate(
+    payload: PriestActivateIn,
+    request: Request,
+    response: Response,
+    db: Session = Depends(get_db),
+):
+    """Exchange a one-time invite token for a secure priest session.
+
+    The invitation token is delivered in a URL fragment, which browsers do not send
+    to the server. The portal removes the fragment before POSTing the token here, so
+    the credential stays out of request URLs, Referer headers and access logs.
+    """
+    _same_origin_guard(request)
     invite = (
         db.query(PriestPortalInvite)
         .filter(
-            PriestPortalInvite.token_hash == _hash(token),
+            PriestPortalInvite.token_hash == _hash(payload.token),
             PriestPortalInvite.used_at.is_(None),
             PriestPortalInvite.revoked_at.is_(None),
             PriestPortalInvite.expires_at > utcnow(),
         )
+        .with_for_update()
         .first()
     )
     if not invite:
@@ -176,7 +197,6 @@ def priest_activate(token: str, db: Session = Depends(get_db)):
     invite.used_at = utcnow()
     db.add(session)
     db.commit()
-    response = RedirectResponse(url="/priest", status_code=303)
     response.set_cookie(
         PRIEST_COOKIE,
         raw_session,
@@ -186,7 +206,7 @@ def priest_activate(token: str, db: Session = Depends(get_db)):
         samesite="strict",
         path="/",
     )
-    return response
+    return {"activated": True, "priest_id": priest.id, "expires_at": session.expires_at}
 
 
 @router.post("/api/admin/priest-network/{priest_id}/portal-invite", status_code=201)
@@ -217,9 +237,10 @@ def admin_create_priest_invite(
     return {
         "priest_id": priest.id,
         "priest": priest.full_name,
-        "activation_url": f"{base}/priest/activate?token={raw}",
+        "activation_url": f"{base}/priest#activate={raw}",
         "expires_at": invite.expires_at,
         "delivery": "copy_and_send_privately_to_verified_priest",
+        "security": "invite_token_is_not_transmitted_until_the_activation_post",
     }
 
 
