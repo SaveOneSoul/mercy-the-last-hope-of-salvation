@@ -15,3 +15,5 @@ jobs:
           python-version: '3.12'
       - name: Verify every public form has a submission handler
         run: python tools/audit_public_forms.py
+      - name: Validate Logos corpus and source-rights metadata
+        run: python tools/validate_logos.py
