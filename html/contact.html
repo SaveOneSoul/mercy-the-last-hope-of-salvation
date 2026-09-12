@@ -30,24 +30,24 @@
     </section>
     <div class="content-shell">
       
-<p class="lead">Use this form for prayer requests, Catholic faith questions, testimonies, invitations, collaboration or requests for a reply. The static GitHub Pages version supports email/WhatsApp fallback after you add your contact details in <code>javascript/config.js</code>.</p>
+<p class="lead">Use this form for prayer requests, Catholic faith questions, testimonies, invitations, collaboration or requests for a reply. Messages are submitted securely to the live Mercy backend; email or WhatsApp is used as a fallback if the Cloud service cannot be reached.</p>
 <form class="card" data-contact-form>
   <div class="form-grid">
-    <div class="field"><label for="name">Name</label><input id="name" name="name" required maxlength="100"></div>
-    <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" maxlength="160"></div>
-    <div class="field"><label for="phone">WhatsApp / phone</label><input id="phone" name="phone" inputmode="tel" maxlength="30"></div>
+    <div class="field"><label for="name">Name</label><input id="name" name="name" required maxlength="100" autocomplete="name"></div>
+    <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required maxlength="160" autocomplete="email"></div>
+    <div class="field"><label for="phone">WhatsApp / phone (optional)</label><input id="phone" name="phone" inputmode="tel" maxlength="30" autocomplete="tel"></div>
     <div class="field"><label for="topic">Topic</label><select id="topic" name="topic"><option>Prayer request</option><option>Faith question</option><option>Testimony</option><option>Save One Soul Campaign</option><option>Invitation / collaboration</option><option>Technical issue</option><option>Other</option></select></div>
-    <div class="field full"><label for="message">Message</label><textarea id="message" name="message" required maxlength="5000" placeholder="Write your prayer request, question or message…"></textarea></div>
+    <div class="field full"><label for="message">Message</label><textarea id="message" name="message" required minlength="2" maxlength="5000" placeholder="Write your prayer request, question or message…"></textarea></div>
     <div class="field full"><label><input type="checkbox" name="consent" value="yes" required style="width:auto"> I understand that sensitive emergencies, medical crises and sacramental matters should be taken to appropriate local professionals or clergy.</label></div>
   </div>
   <button class="btn btn-dark" type="submit">Submit message</button>
   <p class="form-status" data-form-status aria-live="polite"></p>
 </form>
-<div class="notice"><strong>Privacy note:</strong> once a backend is added, publish a proper privacy policy, retention policy and consent notice before collecting personal data in a production database. Prayer requests can contain sensitive personal information.</div>
+<div class="notice"><strong>Privacy note:</strong> contact submissions may contain personal information such as your name, email address, optional phone number and message. Do not submit passwords, financial information or unnecessary sensitive personal details.</div>
 <h2>Catholic-only AI replies</h2>
 <div class="notice"><strong>Mercy Guide boundary:</strong> The production AI is designed to answer only Roman Catholic faith, doctrine, Scripture in Catholic context, sacraments, prayer, saints, Divine Mercy, Catholic Charismatic Renewal and Catholic pastoral formation. Unrelated questions are refused, and doctrinal answers require approved Catholic source references.</div>
-<h2>Automatic replies</h2>
-<p>The floating <strong>Mercy Guide</strong> currently answers common questions from an offline JavaScript knowledge base. When a secure backend is deployed, set <code>enableRemoteAI: true</code> and <code>apiBaseUrl</code> in <code>javascript/config.js</code>. The browser will then call <code>/api/chat</code> without exposing the AI provider key.</p>
+<h2>Mercy Guide</h2>
+<p>The floating <strong>Mercy Guide</strong> sends Catholic questions through the secure Mercy backend to Catholic AI. If the live service is temporarily unavailable, a limited local fallback can still answer a small set of common Catholic questions.</p>
 
     </div>
   </main>
@@ -70,12 +70,12 @@
   <button class="chat-launcher" type="button" aria-controls="mercy-chat" aria-expanded="false">Ask Mercy Guide</button>
   <section class="chat-panel" id="mercy-chat" aria-label="Mercy Guide chatbot" hidden>
     <div class="chat-head"><strong>Mercy Guide</strong><button type="button" data-chat-close aria-label="Close chatbot">×</button></div>
-    <div class="chat-messages" data-chat-messages>
+    <div class="chat-messages" data-chat-messages aria-live="polite">
       <div class="bot-message">Peace be with you. Ask about Divine Mercy, the Rosary, Scripture, the Holy Spirit, saints, or Catholic prayer. I am a catechetical helper, not a substitute for a priest or spiritual director.</div>
     </div>
     <form class="chat-form" data-chat-form>
       <label class="sr-only" for="chat-input">Your question</label>
-      <input id="chat-input" data-chat-input autocomplete="off" placeholder="Ask a Catholic faith question…" required>
+      <input id="chat-input" data-chat-input autocomplete="off" placeholder="Ask a Catholic faith question…" required minlength="2" maxlength="2000">
       <button type="submit">Send</button>
     </form>
   </section>
