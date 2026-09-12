@@ -33,7 +33,7 @@ jobs:
         run: pip install -r requirements.txt
       - name: Compile backend
         run: python -m compileall -q app
-      - name: Import application and CMS models
+      - name: Import application, CMS and intention-network models
         env:
           DATABASE_URL: sqlite:///./ci-mercy.db
           ENABLE_DOCS: 'false'
@@ -41,8 +41,30 @@ jobs:
           python - <<'PY'
           from app.main import app
           from app.models import CMSMedia, CMSPublication
-          assert app.version == '2.5.0'
+          from app.prayer_network import (
+              MassAssignment,
+              MassIntentionRequest,
+              PrayerDistributionLog,
+              PrayerNetworkRequest,
+              PriestRegistration,
+          )
+          assert app.version == '2.6.0'
           assert CMSPublication.__tablename__ == 'cms_publications'
           assert CMSMedia.__tablename__ == 'cms_media'
-          print('Mercy backend import smoke test passed')
+          assert PrayerNetworkRequest.__tablename__ == 'prayer_network_requests'
+          assert PrayerDistributionLog.__tablename__ == 'prayer_distribution_logs'
+          assert MassIntentionRequest.__tablename__ == 'mass_intention_requests'
+          assert PriestRegistration.__tablename__ == 'priest_registrations'
+          assert MassAssignment.__tablename__ == 'mass_assignments'
+          paths = {route.path for route in app.routes}
+          for required in (
+              '/api/prayer-network/requests',
+              '/api/mass-intentions',
+              '/api/priest-network/register',
+              '/api/admin/prayer-network/requests',
+              '/api/admin/mass-intentions',
+              '/api/admin/priest-network',
+          ):
+              assert required in paths, required
+          print('Mercy backend prayer/Mass network smoke test passed')
           PY
