@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Priest Portal · Mercy</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#2a1820;background:#f8f3ed;line-height:1.45;--wine:#710e25;--line:#eadbd1;--soft:#f7eee8;--green:#17613a}*{box-sizing:border-box}body{margin:0}.shell{max-width:1100px;margin:auto;padding:24px}h1,h2,h3{font-family:Georgia,serif;color:var(--wine)}.panel,.card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 32px rgba(76,34,45,.06)}.panel{padding:22px;margin:16px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}.card{padding:17px}.top{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;flex-wrap:wrap}.btn{border:0;border-radius:999px;padding:9px 14px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.primary{background:var(--wine);color:white}.secondary{background:#f1e8e2;color:#5c2634}.success{background:var(--green);color:white}.danger{background:#8f1f1f;color:white}.muted{color:#78636b}.pill{display:inline-block;padding:4px 8px;border-radius:999px;background:var(--soft);font-size:.82rem;margin:2px}.status{min-height:24px;color:#694e57}.hidden{display:none!important}.intention{white-space:pre-wrap}.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px}.note{padding:13px;border-radius:13px;background:#fff5dc;border:1px solid #ead09a}.auth{max-width:620px;margin:12vh auto}@media(max-width:560px){.shell{padding:12px}.panel{padding:15px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<section id="authView" class="panel auth hidden"><h1>Priest Portal</h1><p>This portal requires a private activation link issued after priest verification.</p><p class="muted">If your link expired, contact the Mercy administrator for a new invitation.</p></section>
+<section id="appView" class="hidden">
+<header class="top"><div><h1 style="margin:0">Mercy Priest Portal</h1><p id="priestIdentity" class="muted"></p></div><button id="logoutBtn" class="btn secondary">Sign out</button></header>
+<div class="note"><strong>Mass-intention discipline:</strong> this portal distributes intentions only to verified priests. Mercy does not collect Mass offerings in this phase. Claim only intentions you can genuinely fulfill and mark them celebrated only after the Mass has been offered.</div>
+<div id="globalStatus" class="status"></div>
+<section class="panel"><div class="top"><div><h2 style="margin:0">Available Mass intentions</h2><p class="muted">These requests include explicit consent for distribution to verified priests.</p></div><button class="btn secondary" onclick="loadAvailable()">Refresh</button></div><div id="availableGrid" class="grid"></div></section>
+<section class="panel"><div class="top"><div><h2 style="margin:0">My assignments</h2><p class="muted">Accept assigned intentions, record celebration, or decline if you cannot fulfill one.</p></div><button class="btn secondary" onclick="loadAssignments()">Refresh</button></div><div id="assignmentGrid" class="grid"></div></section>
+</section>
+</div>
+<script>
+let csrf='';
+const $=id=>document.getElementById(id);
+function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function fmt(v){if(!v)return '—';try{return new Date(v).toLocaleString();}catch(e){return v}}
+async function api(path,opt={}){opt.credentials='same-origin';opt.headers=Object.assign({'Accept':'application/json'},opt.headers||{});if(opt.method&&opt.method!=='GET'){opt.headers['Content-Type']='application/json';opt.headers['X-CSRF-Token']=csrf;}const r=await fetch(path,opt);const text=await r.text();let data={};try{data=text?JSON.parse(text):{}}catch(e){}if(!r.ok){const err=new Error(data.detail||('HTTP '+r.status));err.status=r.status;throw err;}return data;}
+function massCard(m,claim){return `<div class="card"><h3>${esc(m.intention_for_name)}</h3><p><span class="pill">${esc(m.life_status)}</span> <span class="pill">${m.remaining} remaining</span></p><p class="intention">${esc(m.intention_text)}</p><p class="muted"><small>Requested ${esc(fmt(m.created_at))}</small></p>${claim?`<button class="btn primary" onclick="claimMass(${m.id})">Accept one Mass intention</button>`:''}</div>`;}
+async function loadAvailable(){const d=await api('/api/priest/mass-intentions/available');const box=$('availableGrid');box.innerHTML=(d.items||[]).map(m=>massCard(m,true)).join('')||'<p class="muted">No unassigned Mass intentions are available right now.</p>';}
+async function loadAssignments(){const d=await api('/api/priest/assignments');const box=$('assignmentGrid');box.innerHTML=(d.items||[]).map(a=>{const m=a.mass;let actions='';if(a.status==='offered')actions=`<button class="btn primary" onclick="setAssignment(${a.assignment_id},'accepted')">Accept</button> <button class="btn danger" onclick="setAssignment(${a.assignment_id},'declined')">Decline</button>`;else if(a.status==='accepted')actions=`<button class="btn success" onclick="setAssignment(${a.assignment_id},'celebrated')">Mark Mass celebrated</button> <button class="btn danger" onclick="setAssignment(${a.assignment_id},'declined')">Decline</button>`;return `<div class="card"><h3>${esc(m.intention_for_name)}</h3><p><span class="pill">${esc(m.life_status)}</span> <span class="pill">${esc(a.status)}</span></p><p class="intention">${esc(m.intention_text)}</p><p class="muted"><small>Assigned ${esc(fmt(a.assigned_at))}${a.celebrated_at?' · Celebrated '+esc(fmt(a.celebrated_at)):''}</small></p><div class="toolbar">${actions}</div></div>`;}).join('')||'<p class="muted">You do not have any Mass-intention assignments yet.</p>';}
+async function claimMass(id){if(!confirm('Accept responsibility for offering one Mass for this intention?'))return;try{await api('/api/priest/mass-intentions/'+id+'/claim',{method:'POST',body:'{}'});$('globalStatus').textContent='Mass intention accepted.';await Promise.all([loadAvailable(),loadAssignments()]);}catch(e){$('globalStatus').textContent='Could not claim this intention: '+e.message;}}
+async function setAssignment(id,status){const text=status==='celebrated'?'Confirm that the Mass has actually been celebrated?':'Update this assignment to '+status+'?';if(!confirm(text))return;try{await api('/api/priest/assignments/'+id,{method:'PUT',body:JSON.stringify({status})});$('globalStatus').textContent='Assignment updated.';await Promise.all([loadAvailable(),loadAssignments()]);}catch(e){$('globalStatus').textContent='Update failed: '+e.message;}}
+async function boot(){try{const me=await api('/api/priest/me');csrf=me.csrf;$('priestIdentity').textContent=me.full_name+' · '+me.diocese_or_institute+(me.country?' · '+me.country:'');$('appView').classList.remove('hidden');await Promise.all([loadAvailable(),loadAssignments()]);}catch(e){$('authView').classList.remove('hidden');}}
+$('logoutBtn').addEventListener('click',async()=>{try{await api('/api/priest/logout',{method:'POST',body:'{}'});}catch(e){}location.reload();});
+boot();
+</script>
+</body>
+</html>
