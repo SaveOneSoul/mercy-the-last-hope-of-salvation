@@ -1,0 +1,48 @@
+name: Mercy Backend Smoke
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'cloud-backend/**'
+      - '.github/workflows/backend-smoke.yml'
+  pull_request:
+    paths:
+      - 'cloud-backend/**'
+      - '.github/workflows/backend-smoke.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: cloud-backend
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: cloud-backend/requirements.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Compile backend
+        run: python -m compileall -q app
+      - name: Import application and CMS models
+        env:
+          DATABASE_URL: sqlite:///./ci-mercy.db
+          ENABLE_DOCS: 'false'
+        run: |
+          python - <<'PY'
+          from app.main import app
+          from app.models import CMSMedia, CMSPublication
+          assert app.version == '2.5.0'
+          assert CMSPublication.__tablename__ == 'cms_publications'
+          assert CMSMedia.__tablename__ == 'cms_media'
+          print('Mercy backend import smoke test passed')
+          PY
