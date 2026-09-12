@@ -4,6 +4,7 @@ window.MERCY_SITE_CONFIG = {
   contactEmail: "kurbahdivine@gmail.com",
   whatsappNumber: "919862588386",
 
-  apiBaseUrl: "",
-  enableRemoteAI: false
+  // Public Cloud Run endpoint only. Provider credentials remain in Secret Manager.
+  apiBaseUrl: "https://mercy-api-h6icv7sk7a-el.a.run.app",
+  enableRemoteAI: true
 };
