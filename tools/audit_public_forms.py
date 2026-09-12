@@ -85,6 +85,13 @@ def audit_form(rel: str, attrs: str, body: str, page: str, errors: list[str]) ->
         require("catholic-ai.js" in page_l, f"{marker} Catholic AI form does not load catholic-ai.js", errors)
         return
 
+    if "data-logos-reference-form" in attrs_l:
+        require(has_named_field(body, "reference"), f"{marker} Logos form missing reference field", errors)
+        require('type="submit"' in body_l or "type='submit'" in body_l, f"{marker} Logos form missing submit button", errors)
+        require("logosstatus" in page_l, f"{marker} Logos page missing status output", errors)
+        require("logos.js" in page_l, f"{marker} Logos form does not load logos.js", errors)
+        return
+
     if "data-chat-form" in attrs_l:
         require("data-chat-input" in body_l, f"{marker} Mercy Guide form missing chat input hook", errors)
         require("data-chat-messages" in page_l, f"{marker} Mercy Guide page missing chat message output", errors)
