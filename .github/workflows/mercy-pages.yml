@@ -25,6 +25,10 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html mercy-manifest.webmanifest mercy-sw.js .nojekyll _site/ 2>/dev/null || true
+          cp robots.txt sitemap.xml _site/ 2>/dev/null || true
+          for f in google*.html; do
+            [ -f "$f" ] && cp "$f" _site/
+          done
           cp -R css javascript pages kh _site/
       - uses: actions/upload-pages-artifact@v3
         with:
