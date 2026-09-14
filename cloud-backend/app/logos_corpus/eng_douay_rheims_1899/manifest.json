@@ -1,0 +1,990 @@
+{
+  "schema_version": 1,
+  "corpus_version": "2026.09.14-douay-rheims-1899-full-73",
+  "translation": {
+    "id": "drb-challoner",
+    "title": "Douay-Rheims American Edition (1899)",
+    "language": "en",
+    "canon": "Catholic 73-book canon",
+    "rights": "public-domain",
+    "allowed_display_scope": "full-text",
+    "upstream_rights_url": "https://ebible.org/details.php?all=1&id=engDRA"
+  },
+  "source": {
+    "upstream": "eBible.org engDRA USFM",
+    "upstream_url": "https://ebible.org/Scriptures/engDRA_usfm.zip",
+    "mirror_repository": "gracious-tech/fetch_collection",
+    "mirror_commit": "772e1ab2b13af88cde05237fb9a8218cee9261bb",
+    "mirror_path": "bibles/eng_drae/source.zip",
+    "download_url": "https://raw.githubusercontent.com/gracious-tech/fetch_collection/772e1ab2b13af88cde05237fb9a8218cee9261bb/bibles/eng_drae/source.zip",
+    "git_blob_sha1": "b02336cd5db942f8ce6a2cede902f1b4d4927896",
+    "download_sha256": "6e8ffab6dcdbbb11e881ec7bc2f518b11a86f3026b03acf7ec39dfc37ea37a12",
+    "integrity": "verified"
+  },
+  "book_count": 73,
+  "chapter_count": 1334,
+  "verse_count": 35811,
+  "books": [
+    {
+      "id": "GEN",
+      "name": "Genesis",
+      "testament": "OT",
+      "filename": "gen.json",
+      "chapter_count": 50,
+      "verse_count": 1531,
+      "aliases": [
+        "gen",
+        "ge",
+        "gn"
+      ]
+    },
+    {
+      "id": "EXO",
+      "name": "Exodus",
+      "testament": "OT",
+      "filename": "exo.json",
+      "chapter_count": 40,
+      "verse_count": 1211,
+      "aliases": [
+        "exo",
+        "ex"
+      ]
+    },
+    {
+      "id": "LEV",
+      "name": "Leviticus",
+      "testament": "OT",
+      "filename": "lev.json",
+      "chapter_count": 27,
+      "verse_count": 858,
+      "aliases": [
+        "lev",
+        "lv"
+      ]
+    },
+    {
+      "id": "NUM",
+      "name": "Numbers",
+      "testament": "OT",
+      "filename": "num.json",
+      "chapter_count": 36,
+      "verse_count": 1288,
+      "aliases": [
+        "num",
+        "nm",
+        "nb"
+      ]
+    },
+    {
+      "id": "DEU",
+      "name": "Deuteronomy",
+      "testament": "OT",
+      "filename": "deu.json",
+      "chapter_count": 34,
+      "verse_count": 959,
+      "aliases": [
+        "deu",
+        "deut",
+        "dt"
+      ]
+    },
+    {
+      "id": "JOS",
+      "name": "Joshua",
+      "testament": "OT",
+      "filename": "jos.json",
+      "chapter_count": 24,
+      "verse_count": 658,
+      "aliases": [
+        "jos",
+        "josh"
+      ]
+    },
+    {
+      "id": "JDG",
+      "name": "Judges",
+      "testament": "OT",
+      "filename": "jdg.json",
+      "chapter_count": 21,
+      "verse_count": 618,
+      "aliases": [
+        "jdg",
+        "judg",
+        "jgs"
+      ]
+    },
+    {
+      "id": "RUT",
+      "name": "Ruth",
+      "testament": "OT",
+      "filename": "rut.json",
+      "chapter_count": 4,
+      "verse_count": 85,
+      "aliases": [
+        "rut",
+        "ruth"
+      ]
+    },
+    {
+      "id": "1SA",
+      "name": "1 Samuel",
+      "testament": "OT",
+      "filename": "1sa.json",
+      "chapter_count": 31,
+      "verse_count": 811,
+      "aliases": [
+        "1 samuel",
+        "1 sam",
+        "1sa",
+        "i samuel",
+        "i sam"
+      ]
+    },
+    {
+      "id": "2SA",
+      "name": "2 Samuel",
+      "testament": "OT",
+      "filename": "2sa.json",
+      "chapter_count": 24,
+      "verse_count": 695,
+      "aliases": [
+        "2 samuel",
+        "2 sam",
+        "2sa",
+        "ii samuel",
+        "ii sam"
+      ]
+    },
+    {
+      "id": "1KI",
+      "name": "1 Kings",
+      "testament": "OT",
+      "filename": "1ki.json",
+      "chapter_count": 22,
+      "verse_count": 817,
+      "aliases": [
+        "1 kings",
+        "1 king",
+        "1 kgs",
+        "1ki",
+        "i kings"
+      ]
+    },
+    {
+      "id": "2KI",
+      "name": "2 Kings",
+      "testament": "OT",
+      "filename": "2ki.json",
+      "chapter_count": 25,
+      "verse_count": 719,
+      "aliases": [
+        "2 kings",
+        "2 king",
+        "2 kgs",
+        "2ki",
+        "ii kings"
+      ]
+    },
+    {
+      "id": "1CH",
+      "name": "1 Chronicles",
+      "testament": "OT",
+      "filename": "1ch.json",
+      "chapter_count": 29,
+      "verse_count": 940,
+      "aliases": [
+        "1 chronicles",
+        "1 chron",
+        "1 chr",
+        "1ch",
+        "i chronicles"
+      ]
+    },
+    {
+      "id": "2CH",
+      "name": "2 Chronicles",
+      "testament": "OT",
+      "filename": "2ch.json",
+      "chapter_count": 36,
+      "verse_count": 822,
+      "aliases": [
+        "2 chronicles",
+        "2 chron",
+        "2 chr",
+        "2ch",
+        "ii chronicles"
+      ]
+    },
+    {
+      "id": "EZR",
+      "name": "Ezra",
+      "testament": "OT",
+      "filename": "ezr.json",
+      "chapter_count": 10,
+      "verse_count": 280,
+      "aliases": [
+        "ezr",
+        "ezra"
+      ]
+    },
+    {
+      "id": "NEH",
+      "name": "Nehemiah",
+      "testament": "OT",
+      "filename": "neh.json",
+      "chapter_count": 13,
+      "verse_count": 404,
+      "aliases": [
+        "neh",
+        "nehemiah"
+      ]
+    },
+    {
+      "id": "TOB",
+      "name": "Tobit",
+      "testament": "OT",
+      "filename": "tob.json",
+      "chapter_count": 14,
+      "verse_count": 298,
+      "aliases": [
+        "tob",
+        "tobit",
+        "tobias"
+      ]
+    },
+    {
+      "id": "JDT",
+      "name": "Judith",
+      "testament": "OT",
+      "filename": "jdt.json",
+      "chapter_count": 16,
+      "verse_count": 345,
+      "aliases": [
+        "jdt",
+        "judith"
+      ]
+    },
+    {
+      "id": "EST",
+      "name": "Esther",
+      "testament": "OT",
+      "filename": "est.json",
+      "chapter_count": 16,
+      "verse_count": 275,
+      "aliases": [
+        "est",
+        "esth",
+        "esther"
+      ]
+    },
+    {
+      "id": "1MA",
+      "name": "1 Maccabees",
+      "testament": "OT",
+      "filename": "1ma.json",
+      "chapter_count": 16,
+      "verse_count": 929,
+      "aliases": [
+        "1 maccabees",
+        "1 macc",
+        "1 mac",
+        "1ma",
+        "i maccabees"
+      ]
+    },
+    {
+      "id": "2MA",
+      "name": "2 Maccabees",
+      "testament": "OT",
+      "filename": "2ma.json",
+      "chapter_count": 15,
+      "verse_count": 558,
+      "aliases": [
+        "2 maccabees",
+        "2 macc",
+        "2 mac",
+        "2ma",
+        "ii maccabees"
+      ]
+    },
+    {
+      "id": "JOB",
+      "name": "Job",
+      "testament": "OT",
+      "filename": "job.json",
+      "chapter_count": 42,
+      "verse_count": 1070,
+      "aliases": [
+        "job"
+      ]
+    },
+    {
+      "id": "PSA",
+      "name": "Psalms",
+      "testament": "OT",
+      "filename": "psa.json",
+      "chapter_count": 150,
+      "verse_count": 2530,
+      "aliases": [
+        "psa",
+        "psalm",
+        "psalms",
+        "ps"
+      ]
+    },
+    {
+      "id": "PRO",
+      "name": "Proverbs",
+      "testament": "OT",
+      "filename": "pro.json",
+      "chapter_count": 31,
+      "verse_count": 915,
+      "aliases": [
+        "pro",
+        "prov",
+        "prv",
+        "proverbs"
+      ]
+    },
+    {
+      "id": "ECC",
+      "name": "Ecclesiastes",
+      "testament": "OT",
+      "filename": "ecc.json",
+      "chapter_count": 12,
+      "verse_count": 222,
+      "aliases": [
+        "ecc",
+        "eccl",
+        "ecclesiastes",
+        "qoheleth"
+      ]
+    },
+    {
+      "id": "SNG",
+      "name": "Song of Songs",
+      "testament": "OT",
+      "filename": "sng.json",
+      "chapter_count": 8,
+      "verse_count": 116,
+      "aliases": [
+        "sng",
+        "song",
+        "song of songs",
+        "song of solomon",
+        "canticles",
+        "canticle of canticles"
+      ]
+    },
+    {
+      "id": "WIS",
+      "name": "Wisdom",
+      "testament": "OT",
+      "filename": "wis.json",
+      "chapter_count": 19,
+      "verse_count": 439,
+      "aliases": [
+        "wis",
+        "wisdom",
+        "wisdom of solomon"
+      ]
+    },
+    {
+      "id": "SIR",
+      "name": "Sirach",
+      "testament": "OT",
+      "filename": "sir.json",
+      "chapter_count": 51,
+      "verse_count": 1591,
+      "aliases": [
+        "sir",
+        "sirach",
+        "ecclesiasticus"
+      ]
+    },
+    {
+      "id": "ISA",
+      "name": "Isaiah",
+      "testament": "OT",
+      "filename": "isa.json",
+      "chapter_count": 66,
+      "verse_count": 1292,
+      "aliases": [
+        "isa",
+        "is",
+        "isaiah"
+      ]
+    },
+    {
+      "id": "JER",
+      "name": "Jeremiah",
+      "testament": "OT",
+      "filename": "jer.json",
+      "chapter_count": 52,
+      "verse_count": 1363,
+      "aliases": [
+        "jer",
+        "jeremiah"
+      ]
+    },
+    {
+      "id": "LAM",
+      "name": "Lamentations",
+      "testament": "OT",
+      "filename": "lam.json",
+      "chapter_count": 5,
+      "verse_count": 154,
+      "aliases": [
+        "lam",
+        "lamentations"
+      ]
+    },
+    {
+      "id": "BAR",
+      "name": "Baruch",
+      "testament": "OT",
+      "filename": "bar.json",
+      "chapter_count": 6,
+      "verse_count": 213,
+      "aliases": [
+        "bar",
+        "baruch"
+      ]
+    },
+    {
+      "id": "EZK",
+      "name": "Ezekiel",
+      "testament": "OT",
+      "filename": "ezk.json",
+      "chapter_count": 48,
+      "verse_count": 1272,
+      "aliases": [
+        "ezk",
+        "eze",
+        "ezek",
+        "ezekiel"
+      ]
+    },
+    {
+      "id": "DAN",
+      "name": "Daniel",
+      "testament": "OT",
+      "filename": "dan.json",
+      "chapter_count": 14,
+      "verse_count": 531,
+      "aliases": [
+        "dan",
+        "dn",
+        "daniel"
+      ]
+    },
+    {
+      "id": "HOS",
+      "name": "Hosea",
+      "testament": "OT",
+      "filename": "hos.json",
+      "chapter_count": 14,
+      "verse_count": 198,
+      "aliases": [
+        "hos",
+        "hosea",
+        "osee"
+      ]
+    },
+    {
+      "id": "JOL",
+      "name": "Joel",
+      "testament": "OT",
+      "filename": "jol.json",
+      "chapter_count": 3,
+      "verse_count": 73,
+      "aliases": [
+        "jol",
+        "joel"
+      ]
+    },
+    {
+      "id": "AMO",
+      "name": "Amos",
+      "testament": "OT",
+      "filename": "amo.json",
+      "chapter_count": 9,
+      "verse_count": 147,
+      "aliases": [
+        "amo",
+        "amos"
+      ]
+    },
+    {
+      "id": "OBA",
+      "name": "Obadiah",
+      "testament": "OT",
+      "filename": "oba.json",
+      "chapter_count": 1,
+      "verse_count": 21,
+      "aliases": [
+        "oba",
+        "obad",
+        "obadiah",
+        "abdias"
+      ]
+    },
+    {
+      "id": "JON",
+      "name": "Jonah",
+      "testament": "OT",
+      "filename": "jon.json",
+      "chapter_count": 4,
+      "verse_count": 48,
+      "aliases": [
+        "jon",
+        "jonah",
+        "jonas"
+      ]
+    },
+    {
+      "id": "MIC",
+      "name": "Micah",
+      "testament": "OT",
+      "filename": "mic.json",
+      "chapter_count": 7,
+      "verse_count": 104,
+      "aliases": [
+        "mic",
+        "micah",
+        "micheas"
+      ]
+    },
+    {
+      "id": "NAM",
+      "name": "Nahum",
+      "testament": "OT",
+      "filename": "nam.json",
+      "chapter_count": 3,
+      "verse_count": 47,
+      "aliases": [
+        "nam",
+        "nah",
+        "nahum"
+      ]
+    },
+    {
+      "id": "HAB",
+      "name": "Habakkuk",
+      "testament": "OT",
+      "filename": "hab.json",
+      "chapter_count": 3,
+      "verse_count": 56,
+      "aliases": [
+        "hab",
+        "habakkuk",
+        "habacuc"
+      ]
+    },
+    {
+      "id": "ZEP",
+      "name": "Zephaniah",
+      "testament": "OT",
+      "filename": "zep.json",
+      "chapter_count": 3,
+      "verse_count": 53,
+      "aliases": [
+        "zep",
+        "zeph",
+        "zephaniah",
+        "sophonias"
+      ]
+    },
+    {
+      "id": "HAG",
+      "name": "Haggai",
+      "testament": "OT",
+      "filename": "hag.json",
+      "chapter_count": 2,
+      "verse_count": 38,
+      "aliases": [
+        "hag",
+        "haggai",
+        "aggeus"
+      ]
+    },
+    {
+      "id": "ZEC",
+      "name": "Zechariah",
+      "testament": "OT",
+      "filename": "zec.json",
+      "chapter_count": 14,
+      "verse_count": 211,
+      "aliases": [
+        "zec",
+        "zech",
+        "zechariah",
+        "zacharias"
+      ]
+    },
+    {
+      "id": "MAL",
+      "name": "Malachi",
+      "testament": "OT",
+      "filename": "mal.json",
+      "chapter_count": 4,
+      "verse_count": 55,
+      "aliases": [
+        "mal",
+        "malachi",
+        "malachias"
+      ]
+    },
+    {
+      "id": "MAT",
+      "name": "Matthew",
+      "testament": "NT",
+      "filename": "mat.json",
+      "chapter_count": 28,
+      "verse_count": 1070,
+      "aliases": [
+        "mat",
+        "matt",
+        "mt",
+        "matthew"
+      ]
+    },
+    {
+      "id": "MRK",
+      "name": "Mark",
+      "testament": "NT",
+      "filename": "mrk.json",
+      "chapter_count": 16,
+      "verse_count": 677,
+      "aliases": [
+        "mrk",
+        "mark",
+        "mk"
+      ]
+    },
+    {
+      "id": "LUK",
+      "name": "Luke",
+      "testament": "NT",
+      "filename": "luk.json",
+      "chapter_count": 24,
+      "verse_count": 1151,
+      "aliases": [
+        "luk",
+        "luke",
+        "lk"
+      ]
+    },
+    {
+      "id": "JHN",
+      "name": "John",
+      "testament": "NT",
+      "filename": "jhn.json",
+      "chapter_count": 21,
+      "verse_count": 880,
+      "aliases": [
+        "jhn",
+        "john",
+        "jn"
+      ]
+    },
+    {
+      "id": "ACT",
+      "name": "Acts",
+      "testament": "NT",
+      "filename": "act.json",
+      "chapter_count": 28,
+      "verse_count": 1004,
+      "aliases": [
+        "act",
+        "acts",
+        "acts of the apostles"
+      ]
+    },
+    {
+      "id": "ROM",
+      "name": "Romans",
+      "testament": "NT",
+      "filename": "rom.json",
+      "chapter_count": 16,
+      "verse_count": 433,
+      "aliases": [
+        "rom",
+        "romans",
+        "rm"
+      ]
+    },
+    {
+      "id": "1CO",
+      "name": "1 Corinthians",
+      "testament": "NT",
+      "filename": "1co.json",
+      "chapter_count": 16,
+      "verse_count": 437,
+      "aliases": [
+        "1 corinthians",
+        "1 cor",
+        "1co",
+        "i corinthians"
+      ]
+    },
+    {
+      "id": "2CO",
+      "name": "2 Corinthians",
+      "testament": "NT",
+      "filename": "2co.json",
+      "chapter_count": 13,
+      "verse_count": 256,
+      "aliases": [
+        "2 corinthians",
+        "2 cor",
+        "2co",
+        "ii corinthians"
+      ]
+    },
+    {
+      "id": "GAL",
+      "name": "Galatians",
+      "testament": "NT",
+      "filename": "gal.json",
+      "chapter_count": 6,
+      "verse_count": 149,
+      "aliases": [
+        "gal",
+        "galatians"
+      ]
+    },
+    {
+      "id": "EPH",
+      "name": "Ephesians",
+      "testament": "NT",
+      "filename": "eph.json",
+      "chapter_count": 6,
+      "verse_count": 155,
+      "aliases": [
+        "eph",
+        "ephesians"
+      ]
+    },
+    {
+      "id": "PHP",
+      "name": "Philippians",
+      "testament": "NT",
+      "filename": "php.json",
+      "chapter_count": 4,
+      "verse_count": 104,
+      "aliases": [
+        "php",
+        "phil",
+        "philippians"
+      ]
+    },
+    {
+      "id": "COL",
+      "name": "Colossians",
+      "testament": "NT",
+      "filename": "col.json",
+      "chapter_count": 4,
+      "verse_count": 95,
+      "aliases": [
+        "col",
+        "colossians"
+      ]
+    },
+    {
+      "id": "1TH",
+      "name": "1 Thessalonians",
+      "testament": "NT",
+      "filename": "1th.json",
+      "chapter_count": 5,
+      "verse_count": 88,
+      "aliases": [
+        "1 thessalonians",
+        "1 thess",
+        "1 thes",
+        "1th"
+      ]
+    },
+    {
+      "id": "2TH",
+      "name": "2 Thessalonians",
+      "testament": "NT",
+      "filename": "2th.json",
+      "chapter_count": 3,
+      "verse_count": 46,
+      "aliases": [
+        "2 thessalonians",
+        "2 thess",
+        "2 thes",
+        "2th"
+      ]
+    },
+    {
+      "id": "1TI",
+      "name": "1 Timothy",
+      "testament": "NT",
+      "filename": "1ti.json",
+      "chapter_count": 6,
+      "verse_count": 113,
+      "aliases": [
+        "1 timothy",
+        "1 tim",
+        "1ti"
+      ]
+    },
+    {
+      "id": "2TI",
+      "name": "2 Timothy",
+      "testament": "NT",
+      "filename": "2ti.json",
+      "chapter_count": 4,
+      "verse_count": 83,
+      "aliases": [
+        "2 timothy",
+        "2 tim",
+        "2ti"
+      ]
+    },
+    {
+      "id": "TIT",
+      "name": "Titus",
+      "testament": "NT",
+      "filename": "tit.json",
+      "chapter_count": 3,
+      "verse_count": 46,
+      "aliases": [
+        "tit",
+        "titus"
+      ]
+    },
+    {
+      "id": "PHM",
+      "name": "Philemon",
+      "testament": "NT",
+      "filename": "phm.json",
+      "chapter_count": 1,
+      "verse_count": 25,
+      "aliases": [
+        "phm",
+        "philemon"
+      ]
+    },
+    {
+      "id": "HEB",
+      "name": "Hebrews",
+      "testament": "NT",
+      "filename": "heb.json",
+      "chapter_count": 13,
+      "verse_count": 303,
+      "aliases": [
+        "heb",
+        "hebrews"
+      ]
+    },
+    {
+      "id": "JAS",
+      "name": "James",
+      "testament": "NT",
+      "filename": "jas.json",
+      "chapter_count": 5,
+      "verse_count": 108,
+      "aliases": [
+        "jas",
+        "james",
+        "jam"
+      ]
+    },
+    {
+      "id": "1PE",
+      "name": "1 Peter",
+      "testament": "NT",
+      "filename": "1pe.json",
+      "chapter_count": 5,
+      "verse_count": 105,
+      "aliases": [
+        "1 peter",
+        "1 pet",
+        "1 pe",
+        "1pe"
+      ]
+    },
+    {
+      "id": "2PE",
+      "name": "2 Peter",
+      "testament": "NT",
+      "filename": "2pe.json",
+      "chapter_count": 3,
+      "verse_count": 61,
+      "aliases": [
+        "2 peter",
+        "2 pet",
+        "2 pe",
+        "2pe"
+      ]
+    },
+    {
+      "id": "1JN",
+      "name": "1 John",
+      "testament": "NT",
+      "filename": "1jn.json",
+      "chapter_count": 5,
+      "verse_count": 105,
+      "aliases": [
+        "1 john",
+        "1 jn",
+        "1jn"
+      ]
+    },
+    {
+      "id": "2JN",
+      "name": "2 John",
+      "testament": "NT",
+      "filename": "2jn.json",
+      "chapter_count": 1,
+      "verse_count": 13,
+      "aliases": [
+        "2 john",
+        "2 jn",
+        "2jn"
+      ]
+    },
+    {
+      "id": "3JN",
+      "name": "3 John",
+      "testament": "NT",
+      "filename": "3jn.json",
+      "chapter_count": 1,
+      "verse_count": 14,
+      "aliases": [
+        "3 john",
+        "3 jn",
+        "3jn"
+      ]
+    },
+    {
+      "id": "JUD",
+      "name": "Jude",
+      "testament": "NT",
+      "filename": "jud.json",
+      "chapter_count": 1,
+      "verse_count": 25,
+      "aliases": [
+        "jud",
+        "jude"
+      ]
+    },
+    {
+      "id": "REV",
+      "name": "Revelation",
+      "testament": "NT",
+      "filename": "rev.json",
+      "chapter_count": 22,
+      "verse_count": 405,
+      "aliases": [
+        "rev",
+        "revelation",
+        "apocalypse"
+      ]
+    }
+  ]
+}
