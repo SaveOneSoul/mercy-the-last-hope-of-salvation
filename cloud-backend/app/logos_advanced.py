@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Query, Request, Response
 from pydantic import BaseModel, Field
 
-from .logos import _client_key, _passage, _passage_payload
+from .logos import _client_key, _parse_corpus_reference, _passage, _passage_payload
 from .logos_context import ADVANCED_AI_THEMES, build_background, build_chronology, build_traditions
 from .magisterium import CatholicChatIn, ask_magisterium
 
@@ -22,22 +22,30 @@ def _no_store(response: Response | None) -> None:
         response.headers["Cache-Control"] = "no-store, max-age=0"
 
 
+def _advanced_item(reference: str) -> dict:
+    item = _passage(reference)
+    if not item.get("book_id"):
+        book_meta, _, _, _ = _parse_corpus_reference(item.get("reference") or reference)
+        item["book_id"] = book_meta.get("id")
+    return item
+
+
 @router.get("/background")
 def logos_background(reference: str = Query(min_length=2, max_length=120), response: Response = None):
     _no_store(response)
-    return build_background(_passage(reference))
+    return build_background(_advanced_item(reference))
 
 
 @router.get("/chronology")
 def logos_chronology(reference: str = Query(min_length=2, max_length=120), response: Response = None):
     _no_store(response)
-    return build_chronology(_passage(reference))
+    return build_chronology(_advanced_item(reference))
 
 
 @router.get("/traditions")
 def logos_traditions(reference: str = Query(min_length=2, max_length=120), response: Response = None):
     _no_store(response)
-    return build_traditions(_passage(reference))
+    return build_traditions(_advanced_item(reference))
 
 
 @router.post("/advanced-ai")
@@ -45,7 +53,7 @@ def logos_advanced_ai(payload: LogosAdvancedAIIn, request: Request):
     if payload.theme not in ADVANCED_THEME_MAP:
         raise HTTPException(status_code=400, detail="invalid_logos_advanced_theme")
 
-    item = _passage(payload.reference)
+    item = _advanced_item(payload.reference)
     passage = _passage_payload(item)
     background = build_background(item)
     chronology = build_chronology(item)
