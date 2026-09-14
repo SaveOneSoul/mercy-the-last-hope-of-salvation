@@ -34,6 +34,9 @@ jobs:
             [ -f "$f" ] && cp "$f" _site/
           done
           cp -R css javascript pages kh _site/
+          mkdir -p _site/data/logos-interlinear
+          cp cloud-backend/app/logos_interlinear/prototypes/john-1-1/JHN-1-1.json _site/data/logos-interlinear/
+          cp cloud-backend/app/logos_interlinear/prototypes/john-1-1/sources-manifest.json _site/data/logos-interlinear/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
