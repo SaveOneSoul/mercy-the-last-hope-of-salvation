@@ -27,6 +27,7 @@ MORPH_COMMIT = "aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d"
 JOHN_SBL_BLOB = "a79ae036447d48fd88c4db8e166c771b4fc57d93"
 JOHN_MORPH_BLOB = "c3dab42934edab531f7dc08b630be8181638bd61"
 APPARATUS_MARKERS = frozenset({"⸀", "⸂", "⸃"})
+APOSTROPHE_EQUIVALENTS = {"ʼ": "’"}
 HEX40 = re.compile(r"^[0-9a-f]{40}$")
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
 
@@ -46,6 +47,24 @@ def load(path: Path) -> dict:
 
 def strip_apparatus_markers(value: str) -> str:
     return "".join(char for char in value if char not in APPARATUS_MARKERS)
+
+
+def normalize_apostrophe(value: str) -> str:
+    return "".join(APOSTROPHE_EQUIVALENTS.get(char, char) for char in value)
+
+
+def expected_alignment_mode(sbl_surface: str, morph_surface: str) -> str | None:
+    if sbl_surface == morph_surface:
+        return "exact"
+    if strip_apparatus_markers(sbl_surface) == strip_apparatus_markers(morph_surface):
+        return "apparatus-normalized"
+    if normalize_apostrophe(sbl_surface) == normalize_apostrophe(morph_surface):
+        return "apostrophe-normalized"
+    if normalize_apostrophe(strip_apparatus_markers(sbl_surface)) == normalize_apostrophe(
+        strip_apparatus_markers(morph_surface)
+    ):
+        return "apparatus-apostrophe-normalized"
+    return None
 
 
 def validate_static() -> dict:
@@ -145,8 +164,10 @@ def validate_static() -> dict:
     for required in (
         "git_blob_sha1",
         "APPARATUS_MARKERS",
+        "APOSTROPHE_EQUIVALENTS",
         "classify_surface_alignment",
         "apparatus_normalized_token_count",
+        "apostrophe_normalized_token_count",
         "lexical_mismatch_count",
         "production_enabled",
         "gloss_layer",
@@ -160,7 +181,7 @@ def validate_static() -> dict:
     print(
         "Greek NT Phase 1 static validation passed: "
         "owner acceptance, 27 source locks, SBLGNT/MorphGNT pins, ShareAlike partitions, "
-        "and narrow apparatus-aware alignment policy verified"
+        "and narrow source-presentation alignment policy verified"
     )
     return lock
 
@@ -182,24 +203,28 @@ def validate_generated(path: Path, lock: dict) -> None:
     token_count = int(manifest.get("token_count") or 0)
     exact_token_count = int(manifest.get("exact_token_count") or 0)
     apparatus_token_count = int(manifest.get("apparatus_normalized_token_count") or 0)
+    apostrophe_token_count = int(manifest.get("apostrophe_normalized_token_count") or 0)
+    combined_token_count = int(manifest.get("apparatus_apostrophe_normalized_token_count") or 0)
     exact_verse_count = int(manifest.get("exact_alignment_verse_count") or 0)
-    apparatus_verse_count = int(manifest.get("apparatus_aware_verse_count") or 0)
+    normalized_verse_count = int(manifest.get("source_presentation_normalized_verse_count") or 0)
     if verse_count < 7900:
         fail(f"generated verse count too small: {verse_count}")
     if token_count < 130000:
         fail(f"generated token count too small: {token_count}")
-    if exact_token_count + apparatus_token_count != token_count:
-        fail("manifest exact/apparatus token counts do not sum to total token count")
-    if exact_verse_count + apparatus_verse_count != verse_count:
-        fail("manifest exact/apparatus-aware verse counts do not sum to verse count")
+    if exact_token_count + apparatus_token_count + apostrophe_token_count + combined_token_count != token_count:
+        fail("manifest alignment-mode token counts do not sum to total token count")
+    if exact_verse_count + normalized_verse_count != verse_count:
+        fail("manifest exact/normalized verse counts do not sum to verse count")
     if manifest.get("lexical_mismatch_count") != 0 or manifest.get("alignment_mismatch_count") != 0:
         fail("generated corpus has lexical/alignment mismatches")
 
     policy = manifest.get("alignment_policy") or {}
-    if policy.get("mode") != "exact-or-enumerated-apparatus-markers":
+    if policy.get("mode") != "exact-or-enumerated-source-presentation-normalizations":
         fail("generated alignment policy mode changed")
     if policy.get("apparatus_markers_ignored_for_comparison_only") != sorted(APPARATUS_MARKERS):
         fail("generated alignment policy apparatus marker set changed")
+    if policy.get("apostrophe_equivalents_for_comparison_only") != APOSTROPHE_EQUIVALENTS:
+        fail("generated alignment policy apostrophe equivalence changed")
     if policy.get("source_surfaces_preserved") is not True:
         fail("generated alignment policy must preserve source surfaces")
 
@@ -216,10 +241,14 @@ def validate_generated(path: Path, lock: dict) -> None:
     lock_by_id = {row["book_id"]: row for row in lock["books"]}
 
     total_alignment_verses = 0
-    observed_exact_tokens = 0
-    observed_apparatus_tokens = 0
+    observed_counts = {
+        "exact": 0,
+        "apparatus-normalized": 0,
+        "apostrophe-normalized": 0,
+        "apparatus-apostrophe-normalized": 0,
+    }
     observed_exact_verses = 0
-    observed_apparatus_verses = 0
+    observed_normalized_verses = 0
 
     for book_id in EXPECTED_IDS:
         surface_path = path / "surface" / f"{book_id}.json"
@@ -248,13 +277,14 @@ def validate_generated(path: Path, lock: dict) -> None:
             fail(f"{book_id}: lexical/alignment mismatch count is non-zero")
         if align.get("apparatus_markers_ignored_for_comparison_only") != sorted(APPARATUS_MARKERS):
             fail(f"{book_id}: apparatus marker policy changed")
+        if align.get("apostrophe_equivalents_for_comparison_only") != APOSTROPHE_EQUIVALENTS:
+            fail(f"{book_id}: apostrophe equivalence policy changed")
 
         verses = align.get("verses") or []
         align_by_ref = {(int(row["chapter"]), str(row["verse"])): row for row in verses}
-        book_exact_tokens = 0
-        book_apparatus_tokens = 0
+        book_counts = {key: 0 for key in observed_counts}
         book_exact_verses = 0
-        book_apparatus_verses = 0
+        book_normalized_verses = 0
 
         for chapter_text, surface_verses in (surface.get("chapters") or {}).items():
             ling_verses = (ling.get("chapters") or {}).get(chapter_text) or {}
@@ -273,82 +303,80 @@ def validate_generated(path: Path, lock: dict) -> None:
                 if align_verse.get("token_count") != len(ids) or len(ids) != len(surface_tokens):
                     fail(f"{book_id} {chapter_text}:{verse_text}: alignment token-count/id mismatch")
 
-                verse_exact = 0
-                verse_apparatus = 0
-                for index, (surface_row, ling_row) in enumerate(
-                    zip(surface_tokens, ling_tokens), start=1
-                ):
+                verse_counts = {key: 0 for key in observed_counts}
+                for index, (surface_row, ling_row) in enumerate(zip(surface_tokens, ling_tokens), start=1):
                     if surface_row.get("id") != ling_row.get("id") or surface_row.get("id") != ids[index - 1]:
                         fail(f"{book_id} {chapter_text}:{verse_text} token {index}: token id mismatch")
                     sbl_surface = str(surface_row.get("surface") or "")
                     morph_surface = str(ling_row.get("source_surface") or "")
-                    mode = ling_row.get("alignment_mode")
-                    if mode == "exact":
-                        if sbl_surface != morph_surface:
-                            fail(
-                                f"{book_id} {chapter_text}:{verse_text} token {index}: "
-                                "exact alignment surfaces differ"
-                            )
-                        verse_exact += 1
-                    elif mode == "apparatus-normalized":
-                        if sbl_surface == morph_surface:
-                            fail(
-                                f"{book_id} {chapter_text}:{verse_text} token {index}: "
-                                "apparatus-normalized token is already exact"
-                            )
-                        if strip_apparatus_markers(sbl_surface) != strip_apparatus_markers(morph_surface):
-                            fail(
-                                f"{book_id} {chapter_text}:{verse_text} token {index}: "
-                                "apparatus normalization does not produce equality"
-                            )
-                        if not any(marker in sbl_surface or marker in morph_surface for marker in APPARATUS_MARKERS):
-                            fail(
-                                f"{book_id} {chapter_text}:{verse_text} token {index}: "
-                                "apparatus-normalized token contains no approved apparatus marker"
-                            )
-                        verse_apparatus += 1
-                    else:
-                        fail(f"{book_id} {chapter_text}:{verse_text} token {index}: invalid alignment mode {mode!r}")
+                    expected_mode = expected_alignment_mode(sbl_surface, morph_surface)
+                    actual_mode = ling_row.get("alignment_mode")
+                    if expected_mode is None:
+                        fail(
+                            f"{book_id} {chapter_text}:{verse_text} token {index}: "
+                            "source surfaces differ beyond approved normalizations"
+                        )
+                    if actual_mode != expected_mode:
+                        fail(
+                            f"{book_id} {chapter_text}:{verse_text} token {index}: "
+                            f"alignment mode {actual_mode!r} should be {expected_mode!r}"
+                        )
+                    if actual_mode != "exact" and sbl_surface == morph_surface:
+                        fail(f"{book_id} {chapter_text}:{verse_text} token {index}: normalized token is already exact")
+                    verse_counts[actual_mode] += 1
                     if not surface_row.get("transliteration"):
                         fail(f"{book_id} {chapter_text}:{verse_text} token {index}: transliteration missing")
 
-                if align_verse.get("exact_token_count") != verse_exact:
+                if align_verse.get("exact_token_count") != verse_counts["exact"]:
                     fail(f"{book_id} {chapter_text}:{verse_text}: exact-token count mismatch")
-                if align_verse.get("apparatus_normalized_token_count") != verse_apparatus:
+                if align_verse.get("apparatus_normalized_token_count") != verse_counts["apparatus-normalized"]:
                     fail(f"{book_id} {chapter_text}:{verse_text}: apparatus-token count mismatch")
+                if align_verse.get("apostrophe_normalized_token_count") != verse_counts["apostrophe-normalized"]:
+                    fail(f"{book_id} {chapter_text}:{verse_text}: apostrophe-token count mismatch")
+                if align_verse.get("apparatus_apostrophe_normalized_token_count") != verse_counts[
+                    "apparatus-apostrophe-normalized"
+                ]:
+                    fail(f"{book_id} {chapter_text}:{verse_text}: combined-normalization token count mismatch")
                 if align_verse.get("lexical_mismatch_count") != 0:
                     fail(f"{book_id} {chapter_text}:{verse_text}: lexical mismatch recorded")
-                expected_mode = "exact" if verse_apparatus == 0 else "apparatus-aware"
-                if align_verse.get("alignment_mode") != expected_mode:
-                    fail(f"{book_id} {chapter_text}:{verse_text}: verse alignment mode mismatch")
 
-                book_exact_tokens += verse_exact
-                book_apparatus_tokens += verse_apparatus
-                if expected_mode == "exact":
+                normalized_count = sum(value for key, value in verse_counts.items() if key != "exact")
+                expected_verse_mode = "exact" if normalized_count == 0 else "source-presentation-normalized"
+                if align_verse.get("alignment_mode") != expected_verse_mode:
+                    fail(f"{book_id} {chapter_text}:{verse_text}: verse alignment mode mismatch")
+                for key, value in verse_counts.items():
+                    book_counts[key] += value
+                if expected_verse_mode == "exact":
                     book_exact_verses += 1
                 else:
-                    book_apparatus_verses += 1
+                    book_normalized_verses += 1
 
         if len(align_by_ref) != len(verses):
             fail(f"{book_id}: duplicate alignment verse references")
-        if book_exact_tokens + book_apparatus_tokens != int(align.get("token_count") or 0):
-            fail(f"{book_id}: exact/apparatus token totals differ from alignment token count")
-        if book_exact_tokens != int(align.get("exact_token_count") or 0):
+        if sum(book_counts.values()) != int(align.get("token_count") or 0):
+            fail(f"{book_id}: alignment-mode token totals differ from alignment token count")
+        if book_counts["exact"] != int(align.get("exact_token_count") or 0):
             fail(f"{book_id}: exact token aggregate mismatch")
-        if book_apparatus_tokens != int(align.get("apparatus_normalized_token_count") or 0):
+        if book_counts["apparatus-normalized"] != int(align.get("apparatus_normalized_token_count") or 0):
             fail(f"{book_id}: apparatus token aggregate mismatch")
+        if book_counts["apostrophe-normalized"] != int(align.get("apostrophe_normalized_token_count") or 0):
+            fail(f"{book_id}: apostrophe token aggregate mismatch")
+        if book_counts["apparatus-apostrophe-normalized"] != int(
+            align.get("apparatus_apostrophe_normalized_token_count") or 0
+        ):
+            fail(f"{book_id}: combined-normalization token aggregate mismatch")
         if book_exact_verses != int(align.get("exact_verse_count") or 0):
             fail(f"{book_id}: exact verse aggregate mismatch")
-        if book_apparatus_verses != int(align.get("apparatus_aware_verse_count") or 0):
-            fail(f"{book_id}: apparatus-aware verse aggregate mismatch")
-        if book_exact_verses + book_apparatus_verses != int(align.get("verse_count") or 0):
+        if book_normalized_verses != int(align.get("source_presentation_normalized_verse_count") or 0):
+            fail(f"{book_id}: normalized verse aggregate mismatch")
+        if book_exact_verses + book_normalized_verses != int(align.get("verse_count") or 0):
             fail(f"{book_id}: alignment verse aggregate mismatch")
 
         total_alignment_verses += len(verses)
-        observed_exact_tokens += book_exact_tokens
-        observed_apparatus_tokens += book_apparatus_tokens
+        for key, value in book_counts.items():
+            observed_counts[key] += value
         observed_exact_verses += book_exact_verses
-        observed_apparatus_verses += book_apparatus_verses
+        observed_normalized_verses += book_normalized_verses
 
         serialized_surface = json.dumps(surface, ensure_ascii=False)
         serialized_ling = json.dumps(ling, ensure_ascii=False)
@@ -357,10 +385,16 @@ def validate_generated(path: Path, lock: dict) -> None:
 
     if total_alignment_verses != verse_count:
         fail("sum of per-book alignment verses differs from manifest verse count")
-    if observed_exact_tokens != exact_token_count or observed_apparatus_tokens != apparatus_token_count:
-        fail("observed exact/apparatus token totals differ from manifest")
-    if observed_exact_verses != exact_verse_count or observed_apparatus_verses != apparatus_verse_count:
-        fail("observed exact/apparatus verse totals differ from manifest")
+    if observed_counts["exact"] != exact_token_count:
+        fail("observed exact token total differs from manifest")
+    if observed_counts["apparatus-normalized"] != apparatus_token_count:
+        fail("observed apparatus token total differs from manifest")
+    if observed_counts["apostrophe-normalized"] != apostrophe_token_count:
+        fail("observed apostrophe token total differs from manifest")
+    if observed_counts["apparatus-apostrophe-normalized"] != combined_token_count:
+        fail("observed combined-normalization token total differs from manifest")
+    if observed_exact_verses != exact_verse_count or observed_normalized_verses != normalized_verse_count:
+        fail("observed exact/normalized verse totals differ from manifest")
 
     john_surface = load(path / "surface" / "JHN.json")
     john_ling = load(path / "linguistics" / "JHN.json")
@@ -374,9 +408,7 @@ def validate_generated(path: Path, lock: dict) -> None:
     proto_tokens = proto.get("tokens") or []
     if len(surface_tokens) != 17 or len(ling_tokens) != 17:
         fail("generated John 1:1 token count differs from accepted prototype")
-    for index, (surface_row, ling_row, proto_row) in enumerate(
-        zip(surface_tokens, ling_tokens, proto_tokens), start=1
-    ):
+    for index, (surface_row, ling_row, proto_row) in enumerate(zip(surface_tokens, ling_tokens, proto_tokens), start=1):
         if surface_row.get("surface") != proto_row.get("surface"):
             fail(f"John 1:1 token {index}: surface mismatch")
         if ling_row.get("lemma") != proto_row.get("lemma"):
@@ -390,10 +422,11 @@ def validate_generated(path: Path, lock: dict) -> None:
         if not surface_row.get("transliteration"):
             fail(f"John 1:1 token {index}: derived transliteration missing")
 
+    normalized_total = apparatus_token_count + apostrophe_token_count + combined_token_count
     print(
         "Greek NT Phase 1 generated-corpus validation passed: "
         f"27 books, {manifest['chapter_count']} chapters, {verse_count} verses, "
-        f"{token_count} aligned tokens ({apparatus_token_count} apparatus-normalized), "
+        f"{token_count} aligned tokens ({normalized_total} source-presentation-normalized), "
         "zero lexical mismatches, production disabled"
     )
 
