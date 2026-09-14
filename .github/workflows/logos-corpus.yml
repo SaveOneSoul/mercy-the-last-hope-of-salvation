@@ -6,18 +6,22 @@ on:
     branches: [main]
     paths:
       - 'scripts/vendor_douay_rheims.py'
+      - 'scripts/vendor_greek_nt_phase1.py'
       - 'cloud-backend/app/logos_interlinear/**'
       - 'tools/validate_logos.py'
       - 'tools/validate_logos_interlinear.py'
       - 'tools/validate_logos_interlinear_prototype.py'
+      - 'tools/validate_logos_greek_nt_phase1.py'
       - '.github/workflows/logos-corpus.yml'
   pull_request:
     paths:
       - 'scripts/vendor_douay_rheims.py'
+      - 'scripts/vendor_greek_nt_phase1.py'
       - 'cloud-backend/app/logos_interlinear/**'
       - 'tools/validate_logos.py'
       - 'tools/validate_logos_interlinear.py'
       - 'tools/validate_logos_interlinear_prototype.py'
+      - 'tools/validate_logos_greek_nt_phase1.py'
       - '.github/workflows/logos-corpus.yml'
 
 permissions:
@@ -47,6 +51,13 @@ jobs:
           python tools/validate_logos.py
           python tools/validate_logos_interlinear.py
           python tools/validate_logos_interlinear_prototype.py
+          python tools/validate_logos_greek_nt_phase1.py
+
+      - name: Build and validate Greek NT Phase 1 corpus
+        run: |
+          out="${RUNNER_TEMP}/logos-greek-nt-phase1"
+          python scripts/vendor_greek_nt_phase1.py --output "$out"
+          python tools/validate_logos_greek_nt_phase1.py --generated "$out"
 
       - name: Vendor pinned Douay-Rheims 1899 corpus
         run: python scripts/vendor_douay_rheims.py
