@@ -42,6 +42,7 @@ jobs:
           python - <<'PY'
           from app.main import app
           from app.logos import _corpus_manifest
+          from app.logos_context import BOOK_PROFILES, RESEARCH_LIBRARIES
           from app.models import CMSMedia, CMSPublication
           from app.prayer_network import (
               MassAssignment,
@@ -52,7 +53,9 @@ jobs:
           )
           from app.priest_portal import PriestPortalInvite, PriestPortalSession
 
-          assert app.version == '2.9.1'
+          assert app.version == '2.10.0'
+          assert len(BOOK_PROFILES) == 73
+          assert len(RESEARCH_LIBRARIES) >= 8
           assert CMSPublication.__tablename__ == 'cms_publications'
           assert CMSMedia.__tablename__ == 'cms_media'
           assert PrayerNetworkRequest.__tablename__ == 'prayer_network_requests'
@@ -81,10 +84,14 @@ jobs:
               '/api/logos/interlinear',
               '/api/logos/commentary',
               '/api/logos/fathers',
+              '/api/logos/background',
+              '/api/logos/chronology',
+              '/api/logos/traditions',
               '/api/logos/preacher',
               '/api/logos/places',
               '/api/logos/media',
               '/api/logos/ai',
+              '/api/logos/advanced-ai',
               '/priest',
           ):
               assert required in paths, required
@@ -95,5 +102,5 @@ jobs:
               assert manifest['chapter_count'] >= 1300
               assert manifest['verse_count'] >= 34000
               assert manifest['translation']['rights'] == 'public-domain'
-          print('Mercy backend CMS SEO + full Logos Bible + prayer/Mass/priest portal smoke test passed')
+          print('Mercy backend CMS SEO + Logos full Bible and advanced study + prayer/Mass/priest portal smoke test passed')
           PY
