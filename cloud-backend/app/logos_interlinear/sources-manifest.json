@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "foundation_version": "2026.09.14-logos-interlinear-foundation",
+  "policy": {
+    "canonical_data_format": "JSON",
+    "primary_rendering": "HTML/CSS",
+    "svg_policy": "SVG is derived export/print output only and must never be the canonical corpus store.",
+    "production_import_requires": [
+      "license_verified",
+      "immutable_upstream_pin",
+      "source_inventory_verified",
+      "integrity_checksum_recorded",
+      "attribution_recorded"
+    ],
+    "pending_sources_must_not_render": true,
+    "share_alike_sources_must_remain_separable": true
+  },
+  "sources": [
+    {
+      "id": "drb-challoner",
+      "title": "Douay-Rheims American Edition (1899)",
+      "role": ["english-scripture"],
+      "language": "en",
+      "status": "installed",
+      "production_import_allowed": true,
+      "license_verified": true,
+      "source_inventory_verified": true,
+      "rights": "public-domain",
+      "license": "Public Domain",
+      "upstream_url": "https://ebible.org/details.php?all=1&id=engDRA",
+      "local_manifest": "cloud-backend/app/logos_corpus/eng_douay_rheims_1899/manifest.json",
+      "pin": {
+        "type": "mirror-commit",
+        "value": "772e1ab2b13af88cde05237fb9a8218cee9261bb"
+      },
+      "integrity": {
+        "git_blob_sha1": "b02336cd5db942f8ce6a2cede902f1b4d4927896",
+        "sha256": "6e8ffab6dcdbbb11e881ec7bc2f518b11a86f3026b03acf7ec39dfc37ea37a12"
+      },
+      "attribution": "Douay-Rheims American Edition (1899), public-domain Catholic Bible corpus.",
+      "commercial_use": true,
+      "modification_allowed": true,
+      "share_alike": false,
+      "isolation_required": false,
+      "notes": "Existing installed 73-book English corpus. This foundation does not replace or modify it."
+    },
+    {
+      "id": "oshb",
+      "title": "Open Scriptures Hebrew Bible",
+      "role": ["hebrew-scripture", "hebrew-lemma", "hebrew-morphology"],
+      "language": ["he", "arc"],
+      "status": "approved-for-ingestion",
+      "production_import_allowed": true,
+      "license_verified": true,
+      "source_inventory_verified": true,
+      "rights": "mixed-public-domain-and-cc-by-4.0",
+      "license": "CC BY 4.0",
+      "base_text_rights": "Westminster Leningrad Codex: public domain",
+      "upstream_repository": "https://github.com/openscriptures/morphhb",
+      "license_url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/LICENSE.md",
+      "pin": {
+        "type": "git-commit",
+        "value": "3d15126fb1ef74867fc1434be1942e837932691f"
+      },
+      "integrity": {
+        "status": "required-at-vendor-time",
+        "sha256": null
+      },
+      "attribution": "Original work of the Open Scriptures Hebrew Bible available at https://github.com/openscriptures/morphhb",
+      "commercial_use": true,
+      "modification_allowed": true,
+      "share_alike": false,
+      "isolation_required": false,
+      "notes": "Importer must checksum the exact vendored files at the pinned commit before committing generated corpus data."
+    },
+    {
+      "id": "sblgnt",
+      "title": "SBL Greek New Testament",
+      "role": ["greek-new-testament"],
+      "language": "grc",
+      "status": "approved-for-ingestion",
+      "production_import_allowed": true,
+      "license_verified": true,
+      "source_inventory_verified": true,
+      "rights": "cc-by-4.0",
+      "license": "CC BY 4.0",
+      "upstream_repository": "https://github.com/Faithlife/SBLGNT",
+      "license_url": "https://github.com/Faithlife/SBLGNT/blob/c4d241a9c1c479a55b989ba35a4976c1d0b8052c/LICENSE",
+      "version": "v1.2",
+      "pin": {
+        "type": "git-commit",
+        "value": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c"
+      },
+      "integrity": {
+        "status": "required-at-vendor-time",
+        "sha256": null
+      },
+      "attribution": "SBL Greek New Testament. Copyright 2010 Society of Biblical Literature and Logos Bible Software. Licensed CC BY 4.0.",
+      "commercial_use": true,
+      "modification_allowed": true,
+      "share_alike": false,
+      "isolation_required": false,
+      "notes": "Greek NT text source. Word-level linguistic annotations are supplied separately."
+    },
+    {
+      "id": "stepbible-data",
+      "title": "STEPBible Data",
+      "role": ["greek-nt-lemma", "greek-nt-morphology", "greek-context-gloss", "greek-lexicon", "hebrew-lexicon", "morphology-code-expansion"],
+      "datasets": ["TAGNT", "TBESG", "TBESH", "TEGMC", "TEHMC"],
+      "language": ["grc", "he"],
+      "status": "approved-for-ingestion",
+      "production_import_allowed": true,
+      "license_verified": true,
+      "source_inventory_verified": true,
+      "rights": "cc-by-4.0",
+      "license": "CC BY 4.0",
+      "upstream_repository": "https://github.com/STEPBible/STEPBible-Data",
+      "license_url": "https://github.com/STEPBible/STEPBible-Data/blob/ae39711d7843b2902d54993e432de9c12d6a4b9a/README.md",
+      "pin": {
+        "type": "git-commit",
+        "value": "ae39711d7843b2902d54993e432de9c12d6a4b9a"
+      },
+      "integrity": {
+        "status": "required-at-vendor-time",
+        "sha256": null
+      },
+      "attribution": "STEP Bible — https://www.STEPBible.org",
+      "commercial_use": true,
+      "modification_allowed": true,
+      "share_alike": false,
+      "isolation_required": false,
+      "excluded_datasets": {
+        "TAGOT": "Upstream README currently lists TAGOT as a dataset still being finished/checked; it is not an approved production LXX source."
+      },
+      "notes": "Record local modifications and preserve attribution. Only explicitly listed, presently published datasets are in scope."
+    },
+    {
+      "id": "first1kgreek-swete",
+      "title": "Swete Septuagint witnesses in OpenGreekAndLatin First1KGreek",
+      "role": ["septuagint", "deuterocanonical-greek"],
+      "language": "grc",
+      "status": "license-verified-file-inventory-pending",
+      "production_import_allowed": false,
+      "license_verified": true,
+      "source_inventory_verified": false,
+      "rights": "cc-by-sa-4.0",
+      "license": "CC BY-SA 4.0",
+      "upstream_repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+      "license_url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/8ee111eb44ecef4120c844e10749178d95d1f30c/license.md",
+      "pin": {
+        "type": "git-commit",
+        "value": "8ee111eb44ecef4120c844e10749178d95d1f30c"
+      },
+      "integrity": {
+        "status": "blocked-until-exact-swete-file-inventory-is-pinned",
+        "sha256": null
+      },
+      "attribution": "OpenGreekAndLatin First1KGreek / source-specific Swete work metadata; CC BY-SA 4.0.",
+      "commercial_use": true,
+      "modification_allowed": true,
+      "share_alike": true,
+      "isolation_required": true,
+      "notes": "Repository-level licence and immutable commit are verified. Bulk import remains blocked until exact Swete work/file inventory and per-file provenance are recorded."
+    },
+    {
+      "id": "vulgate-clementine",
+      "title": "Clementine Vulgate",
+      "role": ["latin-scripture"],
+      "language": "la",
+      "status": "pending-source-pin",
+      "production_import_allowed": false,
+      "license_verified": false,
+      "source_inventory_verified": false,
+      "rights": "public-domain-text-digital-transcription-unpinned",
+      "license": null,
+      "upstream_repository": null,
+      "pin": null,
+      "integrity": {
+        "status": "pending",
+        "sha256": null
+      },
+      "attribution": null,
+      "commercial_use": null,
+      "modification_allowed": null,
+      "share_alike": false,
+      "isolation_required": false,
+      "notes": "The historical text is treated as public-domain in the existing Logos seed, but production bulk import remains blocked until one specific reusable digital transcription, licence/provenance record and checksum are pinned."
+    },
+    {
+      "id": "web-catholic",
+      "title": "World English Bible — Catholic Edition",
+      "role": ["optional-english-scripture"],
+      "language": "en",
+      "status": "pending-independent-verification",
+      "production_import_allowed": false,
+      "license_verified": false,
+      "source_inventory_verified": false,
+      "rights": "candidate-public-domain",
+      "license": null,
+      "upstream_repository": null,
+      "pin": null,
+      "integrity": {
+        "status": "pending",
+        "sha256": null
+      },
+      "attribution": null,
+      "commercial_use": null,
+      "modification_allowed": null,
+      "share_alike": false,
+      "isolation_required": false,
+      "notes": "Optional second English lane only. Existing Douay-Rheims remains authoritative until WEB Catholic provenance and immutable source data are independently pinned in this repository."
+    }
+  ]
+}
