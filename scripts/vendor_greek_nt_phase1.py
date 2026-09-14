@@ -3,8 +3,13 @@
 
 This importer deliberately keeps SBLGNT surface text (CC BY 4.0) separate from
 MorphGNT linguistic annotations (CC BY-SA 3.0). It verifies the immutable
-Git blob SHA-1 for every downloaded source file before parsing, requires exact
-word-for-word surface alignment, and writes no production API data.
+Git blob SHA-1 for every downloaded source file before parsing, requires
+word-for-word alignment, and writes no production API data.
+
+SBLGNT textual-apparatus display markers are preserved in the source surface
+layer. For alignment only, the explicitly enumerated apparatus glyphs below
+may be ignored. Greek letters, accents, breathing marks, apostrophes and
+punctuation are never normalized away by this alignment rule.
 """
 
 from __future__ import annotations
@@ -27,6 +32,7 @@ LOCK_PATH = ROOT / "cloud-backend" / "app" / "logos_interlinear" / "greek_nt_pha
 DEFAULT_OUTPUT = ROOT / "build" / "logos-greek-nt-phase1"
 VERSE_REF_RE = re.compile(r"^(.+?)\s+(\d+):(\d+)$")
 HEX40_RE = re.compile(r"^[0-9a-f]{40}$")
+APPARATUS_MARKERS = frozenset({"⸀", "⸂", "⸃"})
 
 GREEK_MAP = {
     "α": "a", "β": "b", "γ": "g", "δ": "d", "ε": "e", "ζ": "z",
@@ -144,6 +150,23 @@ def parse_morphgnt(text: str, book_name: str) -> dict[tuple[int, int], list[dict
     return dict(verses)
 
 
+def strip_apparatus_markers(value: str) -> str:
+    """Remove only the SBLGNT apparatus glyphs explicitly approved for alignment."""
+    return "".join(char for char in value if char not in APPARATUS_MARKERS)
+
+
+def classify_surface_alignment(sbl_surface: str, morph_surface: str) -> str:
+    """Return exact/apparatus-normalized or fail on a lexical/punctuation mismatch."""
+    if sbl_surface == morph_surface:
+        return "exact"
+    if strip_apparatus_markers(sbl_surface) == strip_apparatus_markers(morph_surface):
+        return "apparatus-normalized"
+    raise BuildError(
+        "surface tokens differ beyond approved apparatus markers: "
+        f"SBLGNT={sbl_surface!r}, MorphGNT={morph_surface!r}"
+    )
+
+
 def transliterate_greek(surface: str) -> str:
     decomposed = unicodedata.normalize("NFD", surface)
     rough = ROUGH_BREATHING in decomposed
@@ -217,28 +240,38 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
     linguistic_chapters: dict[str, dict] = {}
     alignment_verses: list[dict] = []
     token_total = 0
+    exact_token_total = 0
+    apparatus_token_total = 0
+    exact_verse_total = 0
+    apparatus_verse_total = 0
 
     for chapter, verse in sorted(sbl_verses):
         text = sbl_verses[(chapter, verse)]
         surfaces = text.split()
         morph_rows = morph_verses[(chapter, verse)]
-        morph_surfaces = [row["surface"] for row in morph_rows]
-        if surfaces != morph_surfaces:
-            mismatch_at = next(
-                (idx for idx, pair in enumerate(zip(surfaces, morph_surfaces), start=1) if pair[0] != pair[1]),
-                None,
-            )
-            if mismatch_at is None and len(surfaces) != len(morph_surfaces):
-                mismatch_at = min(len(surfaces), len(morph_surfaces)) + 1
+        if len(surfaces) != len(morph_rows):
             raise BuildError(
-                f"{book_name} {chapter}:{verse}: source alignment mismatch at token {mismatch_at}; "
-                f"SBLGNT count={len(surfaces)}, MorphGNT count={len(morph_surfaces)}"
+                f"{book_name} {chapter}:{verse}: token-count mismatch; "
+                f"SBLGNT count={len(surfaces)}, MorphGNT count={len(morph_rows)}"
             )
 
         surface_tokens = []
         linguistic_tokens = []
         ids = []
+        verse_exact = 0
+        verse_apparatus = 0
         for position, (surface, morph_row) in enumerate(zip(surfaces, morph_rows), start=1):
+            try:
+                alignment_mode = classify_surface_alignment(surface, morph_row["surface"])
+            except BuildError as exc:
+                raise BuildError(
+                    f"{book_name} {chapter}:{verse} token {position}: {exc}"
+                ) from exc
+            if alignment_mode == "exact":
+                verse_exact += 1
+            else:
+                verse_apparatus += 1
+
             current_id = token_id(book_id, chapter, verse, position)
             ids.append(current_id)
             transliteration = transliterate_greek(surface)
@@ -257,10 +290,12 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
                     "id": current_id,
                     "position": position,
                     "source_token_id": f"{morph_row['source_ref']}:{position:03d}",
+                    "source_surface": morph_row["surface"],
                     "part_of_speech_code": morph_row["part_of_speech_code"],
                     "morphology": morph_row["morphology"],
                     "normalized": morph_row["normalized"],
                     "lemma": morph_row["lemma"],
+                    "alignment_mode": alignment_mode,
                 }
             )
 
@@ -271,16 +306,26 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
         linguistic_chapters.setdefault(str(chapter), {})[str(verse)] = {
             "tokens": linguistic_tokens,
         }
+        verse_mode = "exact" if verse_apparatus == 0 else "apparatus-aware"
         alignment_verses.append(
             {
                 "chapter": chapter,
                 "verse": str(verse),
                 "token_count": len(ids),
                 "token_ids": ids,
-                "exact_surface_alignment": True,
+                "alignment_mode": verse_mode,
+                "exact_token_count": verse_exact,
+                "apparatus_normalized_token_count": verse_apparatus,
+                "lexical_mismatch_count": 0,
             }
         )
         token_total += len(ids)
+        exact_token_total += verse_exact
+        apparatus_token_total += verse_apparatus
+        if verse_mode == "exact":
+            exact_verse_total += 1
+        else:
+            apparatus_verse_total += 1
 
     surface_payload = {
         "schema_version": 1,
@@ -328,10 +373,12 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
             "isolation_required": True,
         },
         "field_provenance": {
+            "source_surface": "MorphGNT",
             "lemma": "MorphGNT",
             "normalized": "MorphGNT",
             "part_of_speech_code": "MorphGNT",
             "morphology": "MorphGNT",
+            "alignment_mode": "project-generated from exact source surfaces",
         },
         "chapters": linguistic_chapters,
     }
@@ -346,7 +393,13 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
         "contains_linguistic_payload": False,
         "verse_count": len(alignment_verses),
         "token_count": token_total,
+        "exact_token_count": exact_token_total,
+        "apparatus_normalized_token_count": apparatus_token_total,
+        "exact_verse_count": exact_verse_total,
+        "apparatus_aware_verse_count": apparatus_verse_total,
+        "lexical_mismatch_count": 0,
         "alignment_mismatch_count": 0,
+        "apparatus_markers_ignored_for_comparison_only": sorted(APPARATUS_MARKERS),
         "verses": alignment_verses,
     }
 
@@ -361,6 +414,11 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
         "chapter_count": len({chapter for chapter, _ in sbl_verses}),
         "verse_count": len(sbl_verses),
         "token_count": token_total,
+        "exact_token_count": exact_token_total,
+        "apparatus_normalized_token_count": apparatus_token_total,
+        "exact_verse_count": exact_verse_total,
+        "apparatus_aware_verse_count": apparatus_verse_total,
+        "lexical_mismatch_count": 0,
         "alignment_mismatch_count": 0,
         "sblgnt": {
             "path": book["sblgnt"]["path"],
@@ -433,8 +491,19 @@ def main() -> int:
         "chapter_count": sum(row["chapter_count"] for row in book_stats),
         "verse_count": sum(row["verse_count"] for row in book_stats),
         "token_count": sum(row["token_count"] for row in book_stats),
-        "exact_alignment_verse_count": sum(row["verse_count"] for row in book_stats),
+        "exact_token_count": sum(row["exact_token_count"] for row in book_stats),
+        "apparatus_normalized_token_count": sum(
+            row["apparatus_normalized_token_count"] for row in book_stats
+        ),
+        "exact_alignment_verse_count": sum(row["exact_verse_count"] for row in book_stats),
+        "apparatus_aware_verse_count": sum(row["apparatus_aware_verse_count"] for row in book_stats),
+        "lexical_mismatch_count": sum(row["lexical_mismatch_count"] for row in book_stats),
         "alignment_mismatch_count": sum(row["alignment_mismatch_count"] for row in book_stats),
+        "alignment_policy": {
+            "mode": "exact-or-enumerated-apparatus-markers",
+            "apparatus_markers_ignored_for_comparison_only": sorted(APPARATUS_MARKERS),
+            "source_surfaces_preserved": True,
+        },
         "source_commits": {
             "sblgnt": lock["sources"]["sblgnt"]["commit"],
             "morphgnt": lock["sources"]["morphgnt"]["commit"],
@@ -451,7 +520,8 @@ def main() -> int:
     print(
         "[Greek NT Phase 1] generated "
         f"{manifest['book_count']} books, {manifest['chapter_count']} chapters, "
-        f"{manifest['verse_count']} verses, {manifest['token_count']} aligned tokens; "
+        f"{manifest['verse_count']} verses, {manifest['token_count']} aligned tokens "
+        f"({manifest['apparatus_normalized_token_count']} apparatus-normalized); "
         "production remains disabled"
     )
     return 0
