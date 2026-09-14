@@ -26,6 +26,7 @@ SBL_COMMIT = "c4d241a9c1c479a55b989ba35a4976c1d0b8052c"
 MORPH_COMMIT = "aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d"
 JOHN_SBL_BLOB = "a79ae036447d48fd88c4db8e166c771b4fc57d93"
 JOHN_MORPH_BLOB = "c3dab42934edab531f7dc08b630be8181638bd61"
+APPARATUS_MARKERS = frozenset({"⸀", "⸂", "⸃"})
 HEX40 = re.compile(r"^[0-9a-f]{40}$")
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
 
@@ -41,6 +42,10 @@ def load(path: Path) -> dict:
         return json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         fail(f"cannot parse {path}: {exc}")
+
+
+def strip_apparatus_markers(value: str) -> str:
+    return "".join(char for char in value if char not in APPARATUS_MARKERS)
 
 
 def validate_static() -> dict:
@@ -137,7 +142,15 @@ def validate_static() -> dict:
     if not IMPORTER_PATH.exists():
         fail("Greek NT Phase 1 importer script is missing")
     importer = IMPORTER_PATH.read_text(encoding="utf-8")
-    for required in ("git_blob_sha1", "exact_surface_alignment", "production_enabled", "gloss_layer"):
+    for required in (
+        "git_blob_sha1",
+        "APPARATUS_MARKERS",
+        "classify_surface_alignment",
+        "apparatus_normalized_token_count",
+        "lexical_mismatch_count",
+        "production_enabled",
+        "gloss_layer",
+    ):
         if required not in importer:
             fail(f"importer is missing required gate marker {required!r}")
 
@@ -146,7 +159,8 @@ def validate_static() -> dict:
 
     print(
         "Greek NT Phase 1 static validation passed: "
-        "owner acceptance, 27 source locks, SBLGNT/MorphGNT pins, and ShareAlike partitions verified"
+        "owner acceptance, 27 source locks, SBLGNT/MorphGNT pins, ShareAlike partitions, "
+        "and narrow apparatus-aware alignment policy verified"
     )
     return lock
 
@@ -163,16 +177,32 @@ def validate_generated(path: Path, lock: dict) -> None:
         fail(f"generated book count is {manifest.get('book_count')}, expected 27")
     if manifest.get("chapter_count") != 260:
         fail(f"generated chapter count is {manifest.get('chapter_count')}, expected 260")
+
     verse_count = int(manifest.get("verse_count") or 0)
     token_count = int(manifest.get("token_count") or 0)
+    exact_token_count = int(manifest.get("exact_token_count") or 0)
+    apparatus_token_count = int(manifest.get("apparatus_normalized_token_count") or 0)
+    exact_verse_count = int(manifest.get("exact_alignment_verse_count") or 0)
+    apparatus_verse_count = int(manifest.get("apparatus_aware_verse_count") or 0)
     if verse_count < 7900:
         fail(f"generated verse count too small: {verse_count}")
     if token_count < 130000:
         fail(f"generated token count too small: {token_count}")
-    if manifest.get("alignment_mismatch_count") != 0:
-        fail("generated corpus has alignment mismatches")
-    if manifest.get("exact_alignment_verse_count") != verse_count:
-        fail("not every generated verse is exactly aligned")
+    if exact_token_count + apparatus_token_count != token_count:
+        fail("manifest exact/apparatus token counts do not sum to total token count")
+    if exact_verse_count + apparatus_verse_count != verse_count:
+        fail("manifest exact/apparatus-aware verse counts do not sum to verse count")
+    if manifest.get("lexical_mismatch_count") != 0 or manifest.get("alignment_mismatch_count") != 0:
+        fail("generated corpus has lexical/alignment mismatches")
+
+    policy = manifest.get("alignment_policy") or {}
+    if policy.get("mode") != "exact-or-enumerated-apparatus-markers":
+        fail("generated alignment policy mode changed")
+    if policy.get("apparatus_markers_ignored_for_comparison_only") != sorted(APPARATUS_MARKERS):
+        fail("generated alignment policy apparatus marker set changed")
+    if policy.get("source_surfaces_preserved") is not True:
+        fail("generated alignment policy must preserve source surfaces")
+
     if manifest.get("source_commits", {}).get("sblgnt") != SBL_COMMIT:
         fail("generated manifest SBLGNT commit mismatch")
     if manifest.get("source_commits", {}).get("morphgnt") != MORPH_COMMIT:
@@ -186,6 +216,11 @@ def validate_generated(path: Path, lock: dict) -> None:
     lock_by_id = {row["book_id"]: row for row in lock["books"]}
 
     total_alignment_verses = 0
+    observed_exact_tokens = 0
+    observed_apparatus_tokens = 0
+    observed_exact_verses = 0
+    observed_apparatus_verses = 0
+
     for book_id in EXPECTED_IDS:
         surface_path = path / "surface" / f"{book_id}.json"
         ling_path = path / "linguistics" / f"{book_id}.json"
@@ -205,18 +240,115 @@ def validate_generated(path: Path, lock: dict) -> None:
             fail(f"{book_id}: linguistic SHA-256 missing")
         if ling.get("source", {}).get("license") != "CC BY-SA 3.0":
             fail(f"{book_id}: linguistic ShareAlike licence missing")
+        if ling.get("source", {}).get("share_alike") is not True:
+            fail(f"{book_id}: linguistic ShareAlike flag missing")
         if align.get("contains_source_text") is not False or align.get("contains_linguistic_payload") is not False:
             fail(f"{book_id}: alignment layer leaked source payload")
+        if align.get("lexical_mismatch_count") != 0 or align.get("alignment_mismatch_count") != 0:
+            fail(f"{book_id}: lexical/alignment mismatch count is non-zero")
+        if align.get("apparatus_markers_ignored_for_comparison_only") != sorted(APPARATUS_MARKERS):
+            fail(f"{book_id}: apparatus marker policy changed")
+
         verses = align.get("verses") or []
-        if align.get("alignment_mismatch_count") != 0:
-            fail(f"{book_id}: alignment mismatch count is non-zero")
-        for verse in verses:
-            if verse.get("exact_surface_alignment") is not True:
-                fail(f"{book_id}: non-exact alignment record detected")
-            ids = verse.get("token_ids") or []
-            if verse.get("token_count") != len(ids):
-                fail(f"{book_id}: token count/id list mismatch")
+        align_by_ref = {(int(row["chapter"]), str(row["verse"])): row for row in verses}
+        book_exact_tokens = 0
+        book_apparatus_tokens = 0
+        book_exact_verses = 0
+        book_apparatus_verses = 0
+
+        for chapter_text, surface_verses in (surface.get("chapters") or {}).items():
+            ling_verses = (ling.get("chapters") or {}).get(chapter_text) or {}
+            for verse_text, surface_verse in surface_verses.items():
+                ling_verse = ling_verses.get(verse_text)
+                if not ling_verse:
+                    fail(f"{book_id} {chapter_text}:{verse_text}: missing linguistic verse")
+                align_verse = align_by_ref.get((int(chapter_text), str(verse_text)))
+                if not align_verse:
+                    fail(f"{book_id} {chapter_text}:{verse_text}: missing alignment verse")
+                surface_tokens = surface_verse.get("tokens") or []
+                ling_tokens = ling_verse.get("tokens") or []
+                if len(surface_tokens) != len(ling_tokens):
+                    fail(f"{book_id} {chapter_text}:{verse_text}: partition token-count mismatch")
+                ids = align_verse.get("token_ids") or []
+                if align_verse.get("token_count") != len(ids) or len(ids) != len(surface_tokens):
+                    fail(f"{book_id} {chapter_text}:{verse_text}: alignment token-count/id mismatch")
+
+                verse_exact = 0
+                verse_apparatus = 0
+                for index, (surface_row, ling_row) in enumerate(
+                    zip(surface_tokens, ling_tokens), start=1
+                ):
+                    if surface_row.get("id") != ling_row.get("id") or surface_row.get("id") != ids[index - 1]:
+                        fail(f"{book_id} {chapter_text}:{verse_text} token {index}: token id mismatch")
+                    sbl_surface = str(surface_row.get("surface") or "")
+                    morph_surface = str(ling_row.get("source_surface") or "")
+                    mode = ling_row.get("alignment_mode")
+                    if mode == "exact":
+                        if sbl_surface != morph_surface:
+                            fail(
+                                f"{book_id} {chapter_text}:{verse_text} token {index}: "
+                                "exact alignment surfaces differ"
+                            )
+                        verse_exact += 1
+                    elif mode == "apparatus-normalized":
+                        if sbl_surface == morph_surface:
+                            fail(
+                                f"{book_id} {chapter_text}:{verse_text} token {index}: "
+                                "apparatus-normalized token is already exact"
+                            )
+                        if strip_apparatus_markers(sbl_surface) != strip_apparatus_markers(morph_surface):
+                            fail(
+                                f"{book_id} {chapter_text}:{verse_text} token {index}: "
+                                "apparatus normalization does not produce equality"
+                            )
+                        if not any(marker in sbl_surface or marker in morph_surface for marker in APPARATUS_MARKERS):
+                            fail(
+                                f"{book_id} {chapter_text}:{verse_text} token {index}: "
+                                "apparatus-normalized token contains no approved apparatus marker"
+                            )
+                        verse_apparatus += 1
+                    else:
+                        fail(f"{book_id} {chapter_text}:{verse_text} token {index}: invalid alignment mode {mode!r}")
+                    if not surface_row.get("transliteration"):
+                        fail(f"{book_id} {chapter_text}:{verse_text} token {index}: transliteration missing")
+
+                if align_verse.get("exact_token_count") != verse_exact:
+                    fail(f"{book_id} {chapter_text}:{verse_text}: exact-token count mismatch")
+                if align_verse.get("apparatus_normalized_token_count") != verse_apparatus:
+                    fail(f"{book_id} {chapter_text}:{verse_text}: apparatus-token count mismatch")
+                if align_verse.get("lexical_mismatch_count") != 0:
+                    fail(f"{book_id} {chapter_text}:{verse_text}: lexical mismatch recorded")
+                expected_mode = "exact" if verse_apparatus == 0 else "apparatus-aware"
+                if align_verse.get("alignment_mode") != expected_mode:
+                    fail(f"{book_id} {chapter_text}:{verse_text}: verse alignment mode mismatch")
+
+                book_exact_tokens += verse_exact
+                book_apparatus_tokens += verse_apparatus
+                if expected_mode == "exact":
+                    book_exact_verses += 1
+                else:
+                    book_apparatus_verses += 1
+
+        if len(align_by_ref) != len(verses):
+            fail(f"{book_id}: duplicate alignment verse references")
+        if book_exact_tokens + book_apparatus_tokens != int(align.get("token_count") or 0):
+            fail(f"{book_id}: exact/apparatus token totals differ from alignment token count")
+        if book_exact_tokens != int(align.get("exact_token_count") or 0):
+            fail(f"{book_id}: exact token aggregate mismatch")
+        if book_apparatus_tokens != int(align.get("apparatus_normalized_token_count") or 0):
+            fail(f"{book_id}: apparatus token aggregate mismatch")
+        if book_exact_verses != int(align.get("exact_verse_count") or 0):
+            fail(f"{book_id}: exact verse aggregate mismatch")
+        if book_apparatus_verses != int(align.get("apparatus_aware_verse_count") or 0):
+            fail(f"{book_id}: apparatus-aware verse aggregate mismatch")
+        if book_exact_verses + book_apparatus_verses != int(align.get("verse_count") or 0):
+            fail(f"{book_id}: alignment verse aggregate mismatch")
+
         total_alignment_verses += len(verses)
+        observed_exact_tokens += book_exact_tokens
+        observed_apparatus_tokens += book_apparatus_tokens
+        observed_exact_verses += book_exact_verses
+        observed_apparatus_verses += book_apparatus_verses
 
         serialized_surface = json.dumps(surface, ensure_ascii=False)
         serialized_ling = json.dumps(ling, ensure_ascii=False)
@@ -225,6 +357,10 @@ def validate_generated(path: Path, lock: dict) -> None:
 
     if total_alignment_verses != verse_count:
         fail("sum of per-book alignment verses differs from manifest verse count")
+    if observed_exact_tokens != exact_token_count or observed_apparatus_tokens != apparatus_token_count:
+        fail("observed exact/apparatus token totals differ from manifest")
+    if observed_exact_verses != exact_verse_count or observed_apparatus_verses != apparatus_verse_count:
+        fail("observed exact/apparatus verse totals differ from manifest")
 
     john_surface = load(path / "surface" / "JHN.json")
     john_ling = load(path / "linguistics" / "JHN.json")
@@ -249,13 +385,16 @@ def validate_generated(path: Path, lock: dict) -> None:
             fail(f"John 1:1 token {index}: morphology mismatch")
         if surface_row.get("id") != ling_row.get("id"):
             fail(f"John 1:1 token {index}: partition token id mismatch")
+        if ling_row.get("alignment_mode") != "exact":
+            fail(f"John 1:1 token {index}: accepted prototype should remain exact-aligned")
         if not surface_row.get("transliteration"):
             fail(f"John 1:1 token {index}: derived transliteration missing")
 
     print(
         "Greek NT Phase 1 generated-corpus validation passed: "
         f"27 books, {manifest['chapter_count']} chapters, {verse_count} verses, "
-        f"{token_count} exact-aligned tokens, production disabled"
+        f"{token_count} aligned tokens ({apparatus_token_count} apparatus-normalized), "
+        "zero lexical mismatches, production disabled"
     )
 
 
