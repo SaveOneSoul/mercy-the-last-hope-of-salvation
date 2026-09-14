@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "prototype": "Logos Interlinear Foundation v1 — John 1:1",
+  "scope": "One-verse source-rights and rendering gate only; not approval for a 27-book bulk import.",
+  "sources": [
+    {
+      "id": "sblgnt",
+      "role": [
+        "greek-surface-text"
+      ],
+      "title": "SBL Greek New Testament",
+      "upstream_repository": "https://github.com/Faithlife/SBLGNT",
+      "commit": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c",
+      "path": "data/sblgnt/text/John.txt",
+      "blob_sha1": "a79ae036447d48fd88c4db8e166c771b4fc57d93",
+      "license": "CC BY 4.0",
+      "license_verified": true,
+      "attribution": "SBL Greek New Testament. Copyright 2010 Society of Biblical Literature and Logos Bible Software. Licensed under CC BY 4.0.",
+      "verified_reference": "John 1:1",
+      "verified_text": "Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος.",
+      "license_url": "https://github.com/Faithlife/SBLGNT/blob/c4d241a9c1c479a55b989ba35a4976c1d0b8052c/LICENSE"
+    },
+    {
+      "id": "morphgnt-sblgnt",
+      "role": [
+        "greek-lemma",
+        "greek-morphology",
+        "greek-part-of-speech"
+      ],
+      "title": "MorphGNT analysis aligned to SBLGNT",
+      "upstream_repository": "https://github.com/morphgnt/sblgnt",
+      "commit": "aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d",
+      "path": "64-Jn-morphgnt.txt",
+      "blob_sha1": "c3dab42934edab531f7dc08b630be8181638bd61",
+      "license": "CC BY-SA 3.0 (morphological parsing and lemmatization)",
+      "license_verified": true,
+      "share_alike": true,
+      "isolation_required": true,
+      "prototype_import_allowed": true,
+      "bulk_production_import_allowed": false,
+      "attribution": "MorphGNT morphological parsing and lemmatization, CC BY-SA 3.0. SBLGNT surface text is sourced separately from the pinned Faithlife SBLGNT repository.",
+      "verified_reference": "John 1:1",
+      "verified_token_count": 17,
+      "license_url": "https://github.com/morphgnt/sblgnt/blob/aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d/README.md"
+    }
+  ],
+  "derived_layers": [
+    {
+      "id": "logos-derived-greek-transliteration-v1",
+      "field": "transliteration",
+      "ownership": "project-derived",
+      "method": "deterministic Greek transliteration rules documented by the prototype"
+    },
+    {
+      "id": "logos-curated-gloss-v1",
+      "field": "gloss",
+      "ownership": "project-authored",
+      "method": "short study glosses written for the prototype; not a Bible translation"
+    }
+  ],
+  "licence_policy": "Do not flatten source rights into a single blanket licence. Preserve per-field provenance and ShareAlike isolation. No full-NT scaling is authorized by this prototype manifest."
+}
