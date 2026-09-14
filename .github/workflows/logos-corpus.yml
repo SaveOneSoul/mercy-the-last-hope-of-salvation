@@ -6,13 +6,23 @@ on:
     branches: [main]
     paths:
       - 'scripts/vendor_douay_rheims.py'
+      - 'cloud-backend/app/logos_interlinear/**'
+      - 'tools/validate_logos.py'
+      - 'tools/validate_logos_interlinear.py'
+      - '.github/workflows/logos-corpus.yml'
+  pull_request:
+    paths:
+      - 'scripts/vendor_douay_rheims.py'
+      - 'cloud-backend/app/logos_interlinear/**'
+      - 'tools/validate_logos.py'
+      - 'tools/validate_logos_interlinear.py'
       - '.github/workflows/logos-corpus.yml'
 
 permissions:
   contents: write
 
 concurrency:
-  group: logos-corpus-main
+  group: logos-corpus-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -29,6 +39,11 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Validate Logos source rights and interlinear foundation
+        run: |
+          python tools/validate_logos.py
+          python tools/validate_logos_interlinear.py
 
       - name: Vendor pinned Douay-Rheims 1899 corpus
         run: python scripts/vendor_douay_rheims.py
@@ -69,6 +84,7 @@ jobs:
           PY
 
       - name: Commit deterministic corpus
+        if: github.event_name != 'pull_request'
         run: |
           corpus_path='cloud-backend/app/logos_corpus/eng_douay_rheims_1899'
           git add --all -- "$corpus_path"
