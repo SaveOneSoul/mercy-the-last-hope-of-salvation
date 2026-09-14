@@ -6,10 +6,12 @@ MorphGNT linguistic annotations (CC BY-SA 3.0). It verifies the immutable
 Git blob SHA-1 for every downloaded source file before parsing, requires
 word-for-word alignment, and writes no production API data.
 
-SBLGNT textual-apparatus display markers are preserved in the source surface
-layer. For alignment only, the explicitly enumerated apparatus glyphs below
-may be ignored. Greek letters, accents, breathing marks, apostrophes and
-punctuation are never normalized away by this alignment rule.
+Source text is always preserved verbatim. For alignment comparison only, two
+narrow source-presentation normalizations are allowed: explicitly enumerated
+SBLGNT textual-apparatus glyphs may be ignored, and the confirmed SBLGNT
+modifier-letter apostrophe U+02BC may be treated as equivalent to MorphGNT's
+right single quotation mark U+2019. Greek letters, accents, breathing marks,
+and all other punctuation remain significant.
 """
 
 from __future__ import annotations
@@ -33,6 +35,7 @@ DEFAULT_OUTPUT = ROOT / "build" / "logos-greek-nt-phase1"
 VERSE_REF_RE = re.compile(r"^(.+?)\s+(\d+):(\d+)$")
 HEX40_RE = re.compile(r"^[0-9a-f]{40}$")
 APPARATUS_MARKERS = frozenset({"⸀", "⸂", "⸃"})
+APOSTROPHE_EQUIVALENTS = {"ʼ": "’"}
 
 GREEK_MAP = {
     "α": "a", "β": "b", "γ": "g", "δ": "d", "ε": "e", "ζ": "z",
@@ -155,14 +158,25 @@ def strip_apparatus_markers(value: str) -> str:
     return "".join(char for char in value if char not in APPARATUS_MARKERS)
 
 
+def normalize_apostrophe(value: str) -> str:
+    """Canonicalize only the one confirmed SBLGNT/MorphGNT apostrophe glyph pair."""
+    return "".join(APOSTROPHE_EQUIVALENTS.get(char, char) for char in value)
+
+
 def classify_surface_alignment(sbl_surface: str, morph_surface: str) -> str:
-    """Return exact/apparatus-normalized or fail on a lexical/punctuation mismatch."""
+    """Classify a source-token pair or fail on a lexical/unsupported punctuation mismatch."""
     if sbl_surface == morph_surface:
         return "exact"
     if strip_apparatus_markers(sbl_surface) == strip_apparatus_markers(morph_surface):
         return "apparatus-normalized"
+    if normalize_apostrophe(sbl_surface) == normalize_apostrophe(morph_surface):
+        return "apostrophe-normalized"
+    sbl_combined = normalize_apostrophe(strip_apparatus_markers(sbl_surface))
+    morph_combined = normalize_apostrophe(strip_apparatus_markers(morph_surface))
+    if sbl_combined == morph_combined:
+        return "apparatus-apostrophe-normalized"
     raise BuildError(
-        "surface tokens differ beyond approved apparatus markers: "
+        "surface tokens differ beyond approved source-presentation normalizations: "
         f"SBLGNT={sbl_surface!r}, MorphGNT={morph_surface!r}"
     )
 
@@ -242,8 +256,10 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
     token_total = 0
     exact_token_total = 0
     apparatus_token_total = 0
+    apostrophe_token_total = 0
+    combined_token_total = 0
     exact_verse_total = 0
-    apparatus_verse_total = 0
+    normalized_verse_total = 0
 
     for chapter, verse in sorted(sbl_verses):
         text = sbl_verses[(chapter, verse)]
@@ -258,8 +274,12 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
         surface_tokens = []
         linguistic_tokens = []
         ids = []
-        verse_exact = 0
-        verse_apparatus = 0
+        verse_counts = {
+            "exact": 0,
+            "apparatus-normalized": 0,
+            "apostrophe-normalized": 0,
+            "apparatus-apostrophe-normalized": 0,
+        }
         for position, (surface, morph_row) in enumerate(zip(surfaces, morph_rows), start=1):
             try:
                 alignment_mode = classify_surface_alignment(surface, morph_row["surface"])
@@ -267,10 +287,7 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
                 raise BuildError(
                     f"{book_name} {chapter}:{verse} token {position}: {exc}"
                 ) from exc
-            if alignment_mode == "exact":
-                verse_exact += 1
-            else:
-                verse_apparatus += 1
+            verse_counts[alignment_mode] += 1
 
             current_id = token_id(book_id, chapter, verse, position)
             ids.append(current_id)
@@ -306,7 +323,12 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
         linguistic_chapters.setdefault(str(chapter), {})[str(verse)] = {
             "tokens": linguistic_tokens,
         }
-        verse_mode = "exact" if verse_apparatus == 0 else "apparatus-aware"
+        normalized_count = (
+            verse_counts["apparatus-normalized"]
+            + verse_counts["apostrophe-normalized"]
+            + verse_counts["apparatus-apostrophe-normalized"]
+        )
+        verse_mode = "exact" if normalized_count == 0 else "source-presentation-normalized"
         alignment_verses.append(
             {
                 "chapter": chapter,
@@ -314,18 +336,24 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
                 "token_count": len(ids),
                 "token_ids": ids,
                 "alignment_mode": verse_mode,
-                "exact_token_count": verse_exact,
-                "apparatus_normalized_token_count": verse_apparatus,
+                "exact_token_count": verse_counts["exact"],
+                "apparatus_normalized_token_count": verse_counts["apparatus-normalized"],
+                "apostrophe_normalized_token_count": verse_counts["apostrophe-normalized"],
+                "apparatus_apostrophe_normalized_token_count": verse_counts[
+                    "apparatus-apostrophe-normalized"
+                ],
                 "lexical_mismatch_count": 0,
             }
         )
         token_total += len(ids)
-        exact_token_total += verse_exact
-        apparatus_token_total += verse_apparatus
+        exact_token_total += verse_counts["exact"]
+        apparatus_token_total += verse_counts["apparatus-normalized"]
+        apostrophe_token_total += verse_counts["apostrophe-normalized"]
+        combined_token_total += verse_counts["apparatus-apostrophe-normalized"]
         if verse_mode == "exact":
             exact_verse_total += 1
         else:
-            apparatus_verse_total += 1
+            normalized_verse_total += 1
 
     surface_payload = {
         "schema_version": 1,
@@ -378,7 +406,7 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
             "normalized": "MorphGNT",
             "part_of_speech_code": "MorphGNT",
             "morphology": "MorphGNT",
-            "alignment_mode": "project-generated from exact source surfaces",
+            "alignment_mode": "project-generated comparison of preserved source surfaces",
         },
         "chapters": linguistic_chapters,
     }
@@ -395,11 +423,14 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
         "token_count": token_total,
         "exact_token_count": exact_token_total,
         "apparatus_normalized_token_count": apparatus_token_total,
+        "apostrophe_normalized_token_count": apostrophe_token_total,
+        "apparatus_apostrophe_normalized_token_count": combined_token_total,
         "exact_verse_count": exact_verse_total,
-        "apparatus_aware_verse_count": apparatus_verse_total,
+        "source_presentation_normalized_verse_count": normalized_verse_total,
         "lexical_mismatch_count": 0,
         "alignment_mismatch_count": 0,
         "apparatus_markers_ignored_for_comparison_only": sorted(APPARATUS_MARKERS),
+        "apostrophe_equivalents_for_comparison_only": APOSTROPHE_EQUIVALENTS,
         "verses": alignment_verses,
     }
 
@@ -416,8 +447,10 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
         "token_count": token_total,
         "exact_token_count": exact_token_total,
         "apparatus_normalized_token_count": apparatus_token_total,
+        "apostrophe_normalized_token_count": apostrophe_token_total,
+        "apparatus_apostrophe_normalized_token_count": combined_token_total,
         "exact_verse_count": exact_verse_total,
-        "apparatus_aware_verse_count": apparatus_verse_total,
+        "source_presentation_normalized_verse_count": normalized_verse_total,
         "lexical_mismatch_count": 0,
         "alignment_mismatch_count": 0,
         "sblgnt": {
@@ -495,13 +528,22 @@ def main() -> int:
         "apparatus_normalized_token_count": sum(
             row["apparatus_normalized_token_count"] for row in book_stats
         ),
+        "apostrophe_normalized_token_count": sum(
+            row["apostrophe_normalized_token_count"] for row in book_stats
+        ),
+        "apparatus_apostrophe_normalized_token_count": sum(
+            row["apparatus_apostrophe_normalized_token_count"] for row in book_stats
+        ),
         "exact_alignment_verse_count": sum(row["exact_verse_count"] for row in book_stats),
-        "apparatus_aware_verse_count": sum(row["apparatus_aware_verse_count"] for row in book_stats),
+        "source_presentation_normalized_verse_count": sum(
+            row["source_presentation_normalized_verse_count"] for row in book_stats
+        ),
         "lexical_mismatch_count": sum(row["lexical_mismatch_count"] for row in book_stats),
         "alignment_mismatch_count": sum(row["alignment_mismatch_count"] for row in book_stats),
         "alignment_policy": {
-            "mode": "exact-or-enumerated-apparatus-markers",
+            "mode": "exact-or-enumerated-source-presentation-normalizations",
             "apparatus_markers_ignored_for_comparison_only": sorted(APPARATUS_MARKERS),
+            "apostrophe_equivalents_for_comparison_only": APOSTROPHE_EQUIVALENTS,
             "source_surfaces_preserved": True,
         },
         "source_commits": {
@@ -517,11 +559,16 @@ def main() -> int:
     }
     write_json(output / "manifest.json", manifest)
 
+    normalized_token_count = (
+        manifest["apparatus_normalized_token_count"]
+        + manifest["apostrophe_normalized_token_count"]
+        + manifest["apparatus_apostrophe_normalized_token_count"]
+    )
     print(
         "[Greek NT Phase 1] generated "
         f"{manifest['book_count']} books, {manifest['chapter_count']} chapters, "
         f"{manifest['verse_count']} verses, {manifest['token_count']} aligned tokens "
-        f"({manifest['apparatus_normalized_token_count']} apparatus-normalized); "
+        f"({normalized_token_count} source-presentation-normalized); "
         "production remains disabled"
     )
     return 0
