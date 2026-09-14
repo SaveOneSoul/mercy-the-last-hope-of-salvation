@@ -235,7 +235,6 @@ def create_contact(payload: ContactIn, db: Session = Depends(get_db)):
         email=str(payload.email),
         subject=payload.subject.strip(),
         message=payload.message.strip(),
-        website=payload.website,
     )
     db.add(row)
     db.commit()
