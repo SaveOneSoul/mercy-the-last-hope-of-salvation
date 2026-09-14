@@ -1,0 +1,31 @@
+/* Logos Interlinear v1 — one-verse source-locked prototype */
+.interlinear-v1{max-width:1180px;margin:0 auto;padding:1.25rem}
+.interlinear-v1-panel{margin:1.25rem 0;padding:1.25rem;border:1px solid rgba(127,127,127,.35);border-radius:1rem}
+.interlinear-v1-head{display:flex;gap:1rem;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}
+.interlinear-v1-kicker{font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.72}
+.interlinear-v1-status{font-size:.9rem;font-weight:700;padding:.45rem .7rem;border:1px solid currentColor;border-radius:999px}
+.interlinear-v1-status.error,.interlinear-v1-error{font-weight:700}
+.interlinear-v1-greek{font-size:clamp(1.4rem,3vw,2.15rem);line-height:1.7;margin:1.25rem 0;text-align:center}
+.interlinear-v1-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:.8rem}
+.interlinear-v1-token{position:relative;padding:1rem;border:1px solid rgba(127,127,127,.35);border-radius:.85rem;min-width:0}
+.interlinear-v1-position{position:absolute;top:.5rem;right:.65rem;font-size:.72rem;opacity:.55}
+.interlinear-v1-surface{font-size:1.7rem;line-height:1.35;padding-right:1.25rem}
+.interlinear-v1-transliteration{font-size:.95rem;font-style:italic;margin-top:.35rem}
+.interlinear-v1-gloss{font-weight:700;margin:.45rem 0 .7rem}
+.interlinear-v1-details{display:grid;grid-template-columns:auto 1fr;gap:.25rem .55rem;margin:0;font-size:.78rem}
+.interlinear-v1-details dt{font-weight:700;opacity:.72}
+.interlinear-v1-details dd{margin:0;overflow-wrap:anywhere}
+.interlinear-v1-table-wrap{overflow-x:auto}
+.interlinear-v1-table{width:100%;border-collapse:collapse}
+.interlinear-v1-table th,.interlinear-v1-table td{text-align:left;vertical-align:top;padding:.7rem;border-bottom:1px solid rgba(127,127,127,.3)}
+.interlinear-v1-sources{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.interlinear-v1-source{padding:1rem;border:1px solid rgba(127,127,127,.35);border-radius:.85rem}
+.interlinear-v1-source h3{margin-top:0}
+.interlinear-v1-license{font-weight:700}
+.interlinear-v1-gate{margin-top:1rem;padding:1rem;border-left:4px solid currentColor}
+.interlinear-v1-error{padding:1rem;border:1px solid currentColor;border-radius:.75rem}
+@media(max-width:600px){
+  .interlinear-v1{padding:.75rem}
+  .interlinear-v1-panel{padding:1rem}
+  .interlinear-v1-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
