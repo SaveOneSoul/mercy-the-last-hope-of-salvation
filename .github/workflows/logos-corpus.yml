@@ -70,12 +70,13 @@ jobs:
 
       - name: Commit deterministic corpus
         run: |
-          if git diff --quiet -- cloud-backend/app/logos_corpus/eng_douay_rheims_1899; then
+          corpus_path='cloud-backend/app/logos_corpus/eng_douay_rheims_1899'
+          git add --all -- "$corpus_path"
+          if git diff --cached --quiet -- "$corpus_path"; then
             echo "Corpus is already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add cloud-backend/app/logos_corpus/eng_douay_rheims_1899
           git commit -m "data: vendor full 73-book Douay-Rheims Logos corpus"
           git push origin HEAD:main
