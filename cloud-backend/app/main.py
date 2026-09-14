@@ -25,7 +25,7 @@ from .models import PrayerIntention, ContactMessage, SaveOneSoulParticipant
 Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="Mercy API",
-    version="2.9.0",
+    version="2.9.1",
     docs_url="/docs" if os.getenv("ENABLE_DOCS", "true").lower() == "true" else None,
 )
 origins = [x.strip() for x in os.getenv("CORS_ORIGINS", "http://localhost:5500").split(',') if x.strip()]
@@ -179,7 +179,7 @@ def health():
     return {
         'status': 'ok' if db_state['reachable'] else 'degraded',
         'service': 'mercy-api',
-        'version': '2.9.0',
+        'version': '2.9.1',
         'database': db_state,
         'admin_cms': {
             'configured': bool(os.getenv('ADMIN_PASSWORD') and os.getenv('ADMIN_SESSION_SECRET')),
@@ -191,6 +191,7 @@ def health():
             'priest_portal_enabled': True,
             'logos_enabled': True,
             'logos_source_rights_gate': True,
+            'logos_full_english_catholic_corpus': True,
         },
         'catholic_ai': magisterium_state(),
     }
@@ -198,7 +199,7 @@ def health():
 
 @app.get('/api/content/version')
 def version():
-    return {'content_version': '2026.09.12-logos-biblical-study-foundation', 'frontend': 'github-pages-live-hybrid'}
+    return {'content_version': '2026.09.14-logos-full-73-book-douay-rheims', 'frontend': 'github-pages-live-hybrid'}
 
 
 @app.post('/api/chat')
@@ -234,6 +235,7 @@ def create_contact(payload: ContactIn, db: Session = Depends(get_db)):
         email=str(payload.email),
         subject=payload.subject.strip(),
         message=payload.message.strip(),
+        website=payload.website,
     )
     db.add(row)
     db.commit()
