@@ -41,6 +41,7 @@ jobs:
         run: |
           python - <<'PY'
           from app.main import app
+          from app.logos import _corpus_manifest
           from app.models import CMSMedia, CMSPublication
           from app.prayer_network import (
               MassAssignment,
@@ -51,7 +52,7 @@ jobs:
           )
           from app.priest_portal import PriestPortalInvite, PriestPortalSession
 
-          assert app.version == '2.9.0'
+          assert app.version == '2.9.1'
           assert CMSPublication.__tablename__ == 'cms_publications'
           assert CMSMedia.__tablename__ == 'cms_media'
           assert PrayerNetworkRequest.__tablename__ == 'prayer_network_requests'
@@ -88,5 +89,11 @@ jobs:
           ):
               assert required in paths, required
           assert '/priest/activate' not in paths
-          print('Mercy backend CMS SEO + Logos + prayer/Mass/priest portal smoke test passed')
+          manifest = _corpus_manifest()
+          if manifest:
+              assert manifest['book_count'] == 73
+              assert manifest['chapter_count'] >= 1300
+              assert manifest['verse_count'] >= 34000
+              assert manifest['translation']['rights'] == 'public-domain'
+          print('Mercy backend CMS SEO + full Logos Bible + prayer/Mass/priest portal smoke test passed')
           PY
