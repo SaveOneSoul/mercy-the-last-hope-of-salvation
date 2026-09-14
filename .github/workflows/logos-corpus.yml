@@ -9,6 +9,7 @@ on:
       - 'cloud-backend/app/logos_interlinear/**'
       - 'tools/validate_logos.py'
       - 'tools/validate_logos_interlinear.py'
+      - 'tools/validate_logos_interlinear_prototype.py'
       - '.github/workflows/logos-corpus.yml'
   pull_request:
     paths:
@@ -16,6 +17,7 @@ on:
       - 'cloud-backend/app/logos_interlinear/**'
       - 'tools/validate_logos.py'
       - 'tools/validate_logos_interlinear.py'
+      - 'tools/validate_logos_interlinear_prototype.py'
       - '.github/workflows/logos-corpus.yml'
 
 permissions:
@@ -44,6 +46,7 @@ jobs:
         run: |
           python tools/validate_logos.py
           python tools/validate_logos_interlinear.py
+          python tools/validate_logos_interlinear_prototype.py
 
       - name: Vendor pinned Douay-Rheims 1899 corpus
         run: python scripts/vendor_douay_rheims.py
