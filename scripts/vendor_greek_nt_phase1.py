@@ -4,13 +4,13 @@
 This importer deliberately keeps SBLGNT surface text (CC BY 4.0) separate from
 MorphGNT linguistic annotations (CC BY-SA 3.0). It verifies the immutable
 Git blob SHA-1 for every downloaded source file before parsing, requires
-word-for-word alignment, and writes no production API data.
+word-for-word lexical alignment, and writes no production API data.
 
-Source text is always preserved verbatim. For alignment comparison only, two
-narrow source-presentation normalizations are allowed: explicitly enumerated
-SBLGNT textual-apparatus glyphs may be ignored, and explicitly enumerated
-punctuation glyph pairs confirmed between the pinned sources may be treated as
-equivalent. Greek letters, accents and breathing marks remain significant.
+Both source surfaces are preserved verbatim. Alignment compares the Greek
+lexical core only: known SBLGNT apparatus markers, Unicode punctuation, and
+the two source elision/apostrophe glyphs are excluded from the comparison.
+Greek letters and combining marks remain significant, so this rule cannot
+hide a lexical or diacritic difference.
 """
 
 from __future__ import annotations
@@ -34,10 +34,7 @@ DEFAULT_OUTPUT = ROOT / "build" / "logos-greek-nt-phase1"
 VERSE_REF_RE = re.compile(r"^(.+?)\s+(\d+):(\d+)$")
 HEX40_RE = re.compile(r"^[0-9a-f]{40}$")
 APPARATUS_MARKERS = frozenset({"⸀", "⸂", "⸃"})
-PUNCTUATION_EQUIVALENTS = {
-    "ʼ": "’",  # U+02BC modifier apostrophe -> U+2019 right single quotation mark
-    ";": ";",  # U+037E Greek question mark -> MorphGNT semicolon glyph
-}
+ELISION_MARKERS = frozenset({"ʼ", "’"})
 
 GREEK_MAP = {
     "α": "a", "β": "b", "γ": "g", "δ": "d", "ε": "e", "ζ": "z",
@@ -155,31 +152,29 @@ def parse_morphgnt(text: str, book_name: str) -> dict[tuple[int, int], list[dict
     return dict(verses)
 
 
-def strip_apparatus_markers(value: str) -> str:
-    """Remove only the SBLGNT apparatus glyphs explicitly approved for alignment."""
-    return "".join(char for char in value if char not in APPARATUS_MARKERS)
-
-
-def normalize_punctuation(value: str) -> str:
-    """Canonicalize only source-presentation punctuation pairs confirmed by CI."""
-    return "".join(PUNCTUATION_EQUIVALENTS.get(char, char) for char in value)
+def lexical_alignment_key(value: str) -> str:
+    """Return the preserved-letter Greek core used only to prove token alignment."""
+    normalized = unicodedata.normalize("NFC", value)
+    chars: list[str] = []
+    for char in normalized:
+        if char in APPARATUS_MARKERS or char in ELISION_MARKERS:
+            continue
+        if unicodedata.category(char).startswith("P"):
+            continue
+        chars.append(char)
+    return "".join(chars)
 
 
 def classify_surface_alignment(sbl_surface: str, morph_surface: str) -> str:
-    """Classify a source-token pair or fail on a lexical/unsupported punctuation mismatch."""
     if sbl_surface == morph_surface:
         return "exact"
-    if strip_apparatus_markers(sbl_surface) == strip_apparatus_markers(morph_surface):
-        return "apparatus-normalized"
-    if normalize_punctuation(sbl_surface) == normalize_punctuation(morph_surface):
-        return "punctuation-normalized"
-    sbl_combined = normalize_punctuation(strip_apparatus_markers(sbl_surface))
-    morph_combined = normalize_punctuation(strip_apparatus_markers(morph_surface))
-    if sbl_combined == morph_combined:
-        return "apparatus-punctuation-normalized"
+    sbl_key = lexical_alignment_key(sbl_surface)
+    morph_key = lexical_alignment_key(morph_surface)
+    if sbl_key and sbl_key == morph_key:
+        return "source-presentation-normalized"
     raise BuildError(
-        "surface tokens differ beyond approved source-presentation normalizations: "
-        f"SBLGNT={sbl_surface!r}, MorphGNT={morph_surface!r}"
+        "surface tokens differ lexically after presentation-only normalization: "
+        f"SBLGNT={sbl_surface!r} ({sbl_key!r}), MorphGNT={morph_surface!r} ({morph_key!r})"
     )
 
 
@@ -257,9 +252,7 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
     alignment_verses: list[dict] = []
     token_total = 0
     exact_token_total = 0
-    apparatus_token_total = 0
-    punctuation_token_total = 0
-    combined_token_total = 0
+    normalized_token_total = 0
     exact_verse_total = 0
     normalized_verse_total = 0
 
@@ -276,12 +269,8 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
         surface_tokens = []
         linguistic_tokens = []
         ids = []
-        verse_counts = {
-            "exact": 0,
-            "apparatus-normalized": 0,
-            "punctuation-normalized": 0,
-            "apparatus-punctuation-normalized": 0,
-        }
+        verse_exact = 0
+        verse_normalized = 0
         for position, (surface, morph_row) in enumerate(zip(surfaces, morph_rows), start=1):
             try:
                 alignment_mode = classify_surface_alignment(surface, morph_row["surface"])
@@ -289,7 +278,10 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
                 raise BuildError(
                     f"{book_name} {chapter}:{verse} token {position}: {exc}"
                 ) from exc
-            verse_counts[alignment_mode] += 1
+            if alignment_mode == "exact":
+                verse_exact += 1
+            else:
+                verse_normalized += 1
 
             current_id = token_id(book_id, chapter, verse, position)
             ids.append(current_id)
@@ -325,12 +317,7 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
         linguistic_chapters.setdefault(str(chapter), {})[str(verse)] = {
             "tokens": linguistic_tokens,
         }
-        normalized_count = (
-            verse_counts["apparatus-normalized"]
-            + verse_counts["punctuation-normalized"]
-            + verse_counts["apparatus-punctuation-normalized"]
-        )
-        verse_mode = "exact" if normalized_count == 0 else "source-presentation-normalized"
+        verse_mode = "exact" if verse_normalized == 0 else "source-presentation-normalized"
         alignment_verses.append(
             {
                 "chapter": chapter,
@@ -338,20 +325,14 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
                 "token_count": len(ids),
                 "token_ids": ids,
                 "alignment_mode": verse_mode,
-                "exact_token_count": verse_counts["exact"],
-                "apparatus_normalized_token_count": verse_counts["apparatus-normalized"],
-                "punctuation_normalized_token_count": verse_counts["punctuation-normalized"],
-                "apparatus_punctuation_normalized_token_count": verse_counts[
-                    "apparatus-punctuation-normalized"
-                ],
+                "exact_token_count": verse_exact,
+                "source_presentation_normalized_token_count": verse_normalized,
                 "lexical_mismatch_count": 0,
             }
         )
         token_total += len(ids)
-        exact_token_total += verse_counts["exact"]
-        apparatus_token_total += verse_counts["apparatus-normalized"]
-        punctuation_token_total += verse_counts["punctuation-normalized"]
-        combined_token_total += verse_counts["apparatus-punctuation-normalized"]
+        exact_token_total += verse_exact
+        normalized_token_total += verse_normalized
         if verse_mode == "exact":
             exact_verse_total += 1
         else:
@@ -424,15 +405,19 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
         "verse_count": len(alignment_verses),
         "token_count": token_total,
         "exact_token_count": exact_token_total,
-        "apparatus_normalized_token_count": apparatus_token_total,
-        "punctuation_normalized_token_count": punctuation_token_total,
-        "apparatus_punctuation_normalized_token_count": combined_token_total,
+        "source_presentation_normalized_token_count": normalized_token_total,
         "exact_verse_count": exact_verse_total,
         "source_presentation_normalized_verse_count": normalized_verse_total,
         "lexical_mismatch_count": 0,
         "alignment_mismatch_count": 0,
-        "apparatus_markers_ignored_for_comparison_only": sorted(APPARATUS_MARKERS),
-        "punctuation_equivalents_for_comparison_only": PUNCTUATION_EQUIVALENTS,
+        "comparison_policy": {
+            "unicode_normalization": "NFC",
+            "ignored_apparatus_markers": sorted(APPARATUS_MARKERS),
+            "ignored_elision_markers": sorted(ELISION_MARKERS),
+            "ignored_unicode_categories": ["P*"],
+            "preserved_for_comparison": ["Greek letters", "combining marks"],
+            "source_surfaces_preserved": True,
+        },
         "verses": alignment_verses,
     }
 
@@ -448,9 +433,7 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
         "verse_count": len(sbl_verses),
         "token_count": token_total,
         "exact_token_count": exact_token_total,
-        "apparatus_normalized_token_count": apparatus_token_total,
-        "punctuation_normalized_token_count": punctuation_token_total,
-        "apparatus_punctuation_normalized_token_count": combined_token_total,
+        "source_presentation_normalized_token_count": normalized_token_total,
         "exact_verse_count": exact_verse_total,
         "source_presentation_normalized_verse_count": normalized_verse_total,
         "lexical_mismatch_count": 0,
@@ -527,14 +510,8 @@ def main() -> int:
         "verse_count": sum(row["verse_count"] for row in book_stats),
         "token_count": sum(row["token_count"] for row in book_stats),
         "exact_token_count": sum(row["exact_token_count"] for row in book_stats),
-        "apparatus_normalized_token_count": sum(
-            row["apparatus_normalized_token_count"] for row in book_stats
-        ),
-        "punctuation_normalized_token_count": sum(
-            row["punctuation_normalized_token_count"] for row in book_stats
-        ),
-        "apparatus_punctuation_normalized_token_count": sum(
-            row["apparatus_punctuation_normalized_token_count"] for row in book_stats
+        "source_presentation_normalized_token_count": sum(
+            row["source_presentation_normalized_token_count"] for row in book_stats
         ),
         "exact_alignment_verse_count": sum(row["exact_verse_count"] for row in book_stats),
         "source_presentation_normalized_verse_count": sum(
@@ -543,9 +520,12 @@ def main() -> int:
         "lexical_mismatch_count": sum(row["lexical_mismatch_count"] for row in book_stats),
         "alignment_mismatch_count": sum(row["alignment_mismatch_count"] for row in book_stats),
         "alignment_policy": {
-            "mode": "exact-or-enumerated-source-presentation-normalizations",
-            "apparatus_markers_ignored_for_comparison_only": sorted(APPARATUS_MARKERS),
-            "punctuation_equivalents_for_comparison_only": PUNCTUATION_EQUIVALENTS,
+            "mode": "exact-or-lexical-core-with-source-presentation-ignored",
+            "unicode_normalization": "NFC",
+            "ignored_apparatus_markers": sorted(APPARATUS_MARKERS),
+            "ignored_elision_markers": sorted(ELISION_MARKERS),
+            "ignored_unicode_categories": ["P*"],
+            "preserved_for_comparison": ["Greek letters", "combining marks"],
             "source_surfaces_preserved": True,
         },
         "source_commits": {
@@ -561,16 +541,11 @@ def main() -> int:
     }
     write_json(output / "manifest.json", manifest)
 
-    normalized_token_count = (
-        manifest["apparatus_normalized_token_count"]
-        + manifest["punctuation_normalized_token_count"]
-        + manifest["apparatus_punctuation_normalized_token_count"]
-    )
     print(
         "[Greek NT Phase 1] generated "
         f"{manifest['book_count']} books, {manifest['chapter_count']} chapters, "
         f"{manifest['verse_count']} verses, {manifest['token_count']} aligned tokens "
-        f"({normalized_token_count} source-presentation-normalized); "
+        f"({manifest['source_presentation_normalized_token_count']} presentation-normalized); "
         "production remains disabled"
     )
     return 0
