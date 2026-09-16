@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 47,
-    "books_resolved": 26,
-    "unresolved_lane_count": 80,
-    "verified_registry_lane_count": 0,
+    "books_unresolved": 46,
+    "books_resolved": 27,
+    "unresolved_lane_count": 79,
+    "verified_registry_lane_count": 1,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -630,7 +630,7 @@
       "id": "JDT",
       "book": "Judith",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
           "status": "not-applicable"
@@ -640,12 +640,16 @@
           "mismatch_chapters": []
         },
         "latin": {
-          "status": "unresolved",
-          "source_status": "mapping-required",
-          "mismatch_chapters": [
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.17-jdt-latin-v1",
+          "file": "maps/JDT-latin-vulgate-clementine.json",
+          "covered_chapters": [
             "4"
           ],
-          "registry": null
+          "mismatch_chapters": [
+            "4"
+          ]
         }
       }
     },
