@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 46,
-    "books_resolved": 27,
-    "unresolved_lane_count": 79,
-    "verified_registry_lane_count": 1,
+    "books_unresolved": 45,
+    "books_resolved": 28,
+    "unresolved_lane_count": 78,
+    "verified_registry_lane_count": 2,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -1097,7 +1097,7 @@
       "id": "SIR",
       "book": "Sirach",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
           "status": "not-applicable"
@@ -1107,12 +1107,16 @@
           "mismatch_chapters": []
         },
         "latin": {
-          "status": "unresolved",
-          "source_status": "mapping-required",
-          "mismatch_chapters": [
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.17-sir-latin-v1",
+          "file": "maps/SIR-latin-vulgate-clementine.json",
+          "covered_chapters": [
             "29"
           ],
-          "registry": null
+          "mismatch_chapters": [
+            "29"
+          ]
         }
       }
     },
