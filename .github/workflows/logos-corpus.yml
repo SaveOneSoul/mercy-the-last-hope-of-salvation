@@ -17,6 +17,7 @@ on:
       - 'cloud-backend/app/logos_ot_greek.py'
       - 'cloud-backend/app/logos_ot_semitic.py'
       - 'cloud-backend/app/logos_advanced.py'
+      - 'tools/ci_sitecustomize/**'
       - 'tools/validate_logos.py'
       - 'tools/validate_logos_interlinear.py'
       - 'tools/validate_logos_interlinear_prototype.py'
@@ -42,6 +43,7 @@ on:
       - 'cloud-backend/app/logos_ot_greek.py'
       - 'cloud-backend/app/logos_ot_semitic.py'
       - 'cloud-backend/app/logos_advanced.py'
+      - 'tools/ci_sitecustomize/**'
       - 'tools/validate_logos.py'
       - 'tools/validate_logos_interlinear.py'
       - 'tools/validate_logos_interlinear_prototype.py'
@@ -64,6 +66,9 @@ concurrency:
 jobs:
   vendor-corpus:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      PYTHONPATH: ${{ github.workspace }}/tools/ci_sitecustomize
     steps:
       - name: Checkout
         uses: actions/checkout@v4
