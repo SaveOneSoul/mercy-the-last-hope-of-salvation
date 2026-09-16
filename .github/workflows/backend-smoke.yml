@@ -46,6 +46,8 @@ jobs:
           from app.logos_greek import _greek_manifest
           from app.logos_ot_greek import _ot_greek_manifest
           from app.logos_ot_semitic import _ot_semitic_manifest
+          from app.logos_ot_septuagint import _ot_septuagint_manifest
+          from app.logos_vulgate import _vulgate_manifest
           from app.models import CMSMedia, CMSPublication
           from app.prayer_network import (
               MassAssignment,
@@ -104,6 +106,12 @@ jobs:
               '/api/logos/ot-semitic/catalog',
               '/api/logos/ot-semitic/source-rights',
               '/api/logos/ot-semitic/interlinear',
+              '/api/logos/ot-septuagint/catalog',
+              '/api/logos/ot-septuagint/source-rights',
+              '/api/logos/ot-septuagint/interlinear',
+              '/api/logos/vulgate/catalog',
+              '/api/logos/vulgate/source-rights',
+              '/api/logos/vulgate/interlinear',
               '/priest',
           ):
               assert required in paths, required
@@ -137,5 +145,20 @@ jobs:
               assert ot_semitic['source']['surface_rights'] == 'Public Domain'
               assert ot_semitic['source']['linguistic_annotation_license'] == 'CC BY 4.0'
               assert ot_semitic['versification']['automatic_remapping'] is False
-          print('Mercy backend CMS SEO + Logos English/Greek NT/Greek OT/Hebrew-Aramaic OT study + prayer/Mass/priest portal smoke test passed')
+          septuagint = _ot_septuagint_manifest()
+          if septuagint:
+              assert septuagint['production_enabled'] is True
+              assert septuagint['book_count'] == 37
+              assert septuagint['source']['license'] == 'CC BY-SA 4.0'
+              assert septuagint['source']['share_alike'] is True
+              assert septuagint['versification']['automatic_remapping'] is False
+              assert septuagint['derived_layers']['glosses'] is False
+          vulgate = _vulgate_manifest()
+          if vulgate:
+              assert vulgate['production_enabled'] is True
+              assert vulgate['book_count'] == 73
+              assert vulgate['source']['rights'] == 'Public Domain'
+              assert vulgate['source']['commit'] == '38292f3f91e874d3db9e7e9bf7abd23da3217054'
+              assert vulgate['versification']['automatic_remapping'] is False
+          print('Mercy backend CMS SEO + Logos English/Greek NT/Greek OT/Hebrew-Aramaic/Septuagint/Vulgate study + prayer/Mass/priest portal smoke test passed')
           PY

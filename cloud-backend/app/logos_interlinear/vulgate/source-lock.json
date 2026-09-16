@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "phase": "Latin Vulgate Production",
+  "production_enabled": false,
+  "owner_acceptance_required": true,
+  "scope": "Full 73-book Sixto-Clementine Latin Vulgate source layer for Logos.",
+  "source": {
+    "id": "clementine-vulgate-project",
+    "title": "Biblia Sacra juxta Vulgatam Clementinam",
+    "edition": "Sixto-Clementine Vulgate",
+    "repository": "jrichter/ClementineVulgateConverter",
+    "commit": "38292f3f91e874d3db9e7e9bf7abd23da3217054",
+    "path": "lat-clementine-vul.usfx.xml",
+    "git_blob_sha1": "a9ec3099e8f641d601679242354366aff150070e",
+    "upstream": "The Clementine Vulgate Project / vulsearch.sourceforge.net",
+    "rights": "Public Domain",
+    "attribution": "Biblia Sacra juxta Vulgatam Clementinam; electronic text released into the public domain by The Clementine Vulgate Project. GitHub mirror/converter by Justin Richter.",
+    "mirror_code_license": "MIT",
+    "text_rights_separate_from_mirror_code": true
+  },
+  "fidelity_policy": {
+    "source_unicode": "preserve UTF-8 emitted by the pinned converter artifact",
+    "normalization": "none beyond deterministic XML text extraction and outer whitespace trimming",
+    "glosses": false,
+    "lemmata": false,
+    "morphology": false,
+    "transliteration": false,
+    "english_text_copied": false,
+    "versification_rule": "Runtime serves a Douay-Rheims citation only where numeric chapter/verse identities match exactly. Mismatches are blocked until an explicit mapping is reviewed."
+  },
+  "expected": {
+    "book_count": 73,
+    "canonical_reference_system": "Douay-Rheims Catholic 73-book corpus",
+    "source_reference_system": "Clementine Vulgate chapter/verse numbering"
+  }
+}
