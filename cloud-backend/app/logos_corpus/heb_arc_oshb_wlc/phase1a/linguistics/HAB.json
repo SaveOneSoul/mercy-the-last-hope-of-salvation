@@ -1,0 +1,6246 @@
+{
+  "schema_version": 1,
+  "phase": "Old Testament Expansion Phase 1A",
+  "production_enabled": false,
+  "book_id": "HAB",
+  "book": "Habakkuk",
+  "catholic_order": 42,
+  "source_osis": "Hab",
+  "source": {
+    "id": "oshb",
+    "repository": "openscriptures/morphhb",
+    "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+    "path": "wlc/Hab.xml",
+    "git_blob_sha1": "f64d893d18e79842e85b6457ea643008a81a8f9c",
+    "sha256": "2592b212d816775adc8dac46bd0c46263982c308a186dde64dfb8239c57bd2d1"
+  },
+  "normalization_applied": false,
+  "partition": "linguistics",
+  "license": "CC BY 4.0",
+  "attribution": "Open Scriptures Hebrew Bible Project",
+  "chapters": {
+    "1": {
+      "1": {
+        "source_osis_id": "Hab.1.1",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-1-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35xeN",
+            "lemma": "d/4853 b",
+            "morphology": "HTd/Ncmsa",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-1-1-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35Nvk",
+            "lemma": "834 a",
+            "morphology": "HTr",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-1-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35TyA",
+            "lemma": "2372",
+            "morphology": "HVqp3ms",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-1-1-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35vuQ",
+            "lemma": "2265",
+            "morphology": "HNp",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-1-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35TSc",
+            "lemma": "d/5030",
+            "morphology": "HTd/Ncmsa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "2": {
+        "source_osis_id": "Hab.1.2",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-2-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35k5P",
+            "lemma": "5704",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-2-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35nPh",
+            "lemma": "575",
+            "morphology": "HD",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-2-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35LN3",
+            "lemma": "3068",
+            "morphology": "HNp",
+            "language": "he",
+            "source_n": "1.0.0"
+          },
+          {
+            "id": "HAB-1-2-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35Qzf",
+            "lemma": "7768",
+            "morphology": "HVpp1cs",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-2-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35aPd",
+            "lemma": "c/3808",
+            "morphology": "HC/Tn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-2-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35eYX",
+            "lemma": "8085",
+            "morphology": "HVqi2ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-2-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35C5U",
+            "lemma": "2199",
+            "morphology": "HVqi1cs",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-2-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35qNN",
+            "lemma": "413",
+            "morphology": "HR/Sp2ms",
+            "language": "he",
+            "source_n": "0.0.0"
+          },
+          {
+            "id": "HAB-1-2-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35EVS",
+            "lemma": "2555",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-2-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35PB6",
+            "lemma": "c/3808",
+            "morphology": "HC/Tn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-2-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "3537c",
+            "lemma": "3467",
+            "morphology": "HVhi2ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "3": {
+        "source_osis_id": "Hab.1.3",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-3-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35x9c",
+            "lemma": "l/4100",
+            "morphology": "HR/Ti",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-3-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35yNB",
+            "lemma": "7200",
+            "morphology": "HVhi2ms/Sp1cs",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-3-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "3529t",
+            "lemma": "205",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-1-3-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35KZG",
+            "lemma": "c/5999",
+            "morphology": "HC/Ncbsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-3-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35TZE",
+            "lemma": "5027",
+            "morphology": "HVhi2ms",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-1-3-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35thY",
+            "lemma": "c/7701",
+            "morphology": "HC/Ncmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-3-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35JM7",
+            "lemma": "c/2555",
+            "morphology": "HC/Ncmsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-3-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35fpo",
+            "lemma": "l/5048",
+            "morphology": "HR/R/Sp1cs",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-3-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35W26",
+            "lemma": "c/1961",
+            "morphology": "HC/Vqw3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-3-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35yw4",
+            "lemma": "7379",
+            "morphology": "HNcbsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-3-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35jbg",
+            "lemma": "c/4066",
+            "morphology": "HC/Ncmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-3-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35USR",
+            "lemma": "5375",
+            "morphology": "HVqi3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "4": {
+        "source_osis_id": "Hab.1.4",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-4-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35v6U",
+            "lemma": "5921 a",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "355SS",
+            "lemma": "3651 c",
+            "morphology": "HTm",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35GzE",
+            "lemma": "6313",
+            "morphology": "HVqi3fs",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35qCU",
+            "lemma": "8451",
+            "morphology": "HNcfsa",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35g2y",
+            "lemma": "c/3808",
+            "morphology": "HC/Tn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35jQb",
+            "lemma": "3318",
+            "morphology": "HVqi3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35794",
+            "lemma": "l/5331",
+            "morphology": "HR/Ncmsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35CsU",
+            "lemma": "4941",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35XR4",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35KvS",
+            "lemma": "7563",
+            "morphology": "HAamsa",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35dBc",
+            "lemma": "3803",
+            "morphology": "HVhrmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35nAB",
+            "lemma": "853",
+            "morphology": "HTo",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35kfX",
+            "lemma": "d/6662",
+            "morphology": "HTd/Aamsa",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35Wkf",
+            "lemma": "5921 a",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35wrL",
+            "lemma": "3651 c",
+            "morphology": "HTm",
+            "language": "he",
+            "source_n": "0.0.0"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-016",
+            "position": 16,
+            "source_word_id": "353TL",
+            "lemma": "3318",
+            "morphology": "HVqi3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-017",
+            "position": 17,
+            "source_word_id": "35LeN",
+            "lemma": "4941",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-4-SEMITIC-018",
+            "position": 18,
+            "source_word_id": "35sMn",
+            "lemma": "6127",
+            "morphology": "HVPsmsa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "5": {
+        "source_osis_id": "Hab.1.5",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-5-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35Y3z",
+            "lemma": "7200",
+            "morphology": "HVqv2mp",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-5-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35NQN",
+            "lemma": "b/1471 a",
+            "morphology": "HRd/Ncmpa",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-1-5-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35uLf",
+            "lemma": "c/5027",
+            "morphology": "HC/Vhv2mp",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-1-5-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35kA7",
+            "lemma": "c/8539",
+            "morphology": "HC/Vtv2mp",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-5-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "353TS",
+            "lemma": "8539",
+            "morphology": "HVqv2mp",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-5-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35NFp",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-5-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "357am",
+            "lemma": "6467",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-1-5-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35hh7",
+            "lemma": "6466",
+            "morphology": "HVqrmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-5-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35BsK",
+            "lemma": "b/3117",
+            "morphology": "HR/Ncmpc/Sp2mp",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-1-5-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35fsu",
+            "lemma": "3808",
+            "morphology": "HTn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-5-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "358M6",
+            "lemma": "539",
+            "morphology": "HVhi2mp",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-5-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35wM5",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-5-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35qty",
+            "lemma": "5608 a",
+            "morphology": "HVPi3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "6": {
+        "source_osis_id": "Hab.1.6",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-6-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "355gQ",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-6-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35Xw6",
+            "lemma": "2005",
+            "morphology": "HTm/Sp1cs",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-6-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35eHJ",
+            "lemma": "6965 b",
+            "morphology": "HVhrmsa",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-1-6-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35H6L",
+            "lemma": "853",
+            "morphology": "HTo",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-6-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35bmv",
+            "lemma": "d/3778",
+            "morphology": "HTd/Np",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-1-6-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35FV9",
+            "lemma": "d/1471 a",
+            "morphology": "HTd/Ncmsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-6-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35Xm1",
+            "lemma": "d/4751",
+            "morphology": "HTd/Aamsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-6-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35UE6",
+            "lemma": "c/d/4116 a",
+            "morphology": "HC/Td/VNrmsa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-6-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35goK",
+            "lemma": "d/1980",
+            "morphology": "HTd/Vqrmsa",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-1-6-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35CyH",
+            "lemma": "l/4800",
+            "morphology": "HR/Ncmpc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-6-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35A4a",
+            "lemma": "776",
+            "morphology": "HNcbsa",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-1-6-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "355Pr",
+            "lemma": "l/3423",
+            "morphology": "HR/Vqc",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-6-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35L4k",
+            "lemma": "4908",
+            "morphology": "HNcmpa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-6-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35Mnv",
+            "lemma": "3808",
+            "morphology": "HTn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-6-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35mwU",
+            "lemma": "l",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "7": {
+        "source_osis_id": "Hab.1.7",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-7-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35tKT",
+            "lemma": "366",
+            "morphology": "HAamsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-7-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35NRT",
+            "lemma": "c/3372",
+            "morphology": "HC/VNrmsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-7-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35sRU",
+            "lemma": "1931",
+            "morphology": "HPp3ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-7-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35Wxq",
+            "lemma": "4480 a",
+            "morphology": "HR/Sp1cp",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-1-7-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "359qY",
+            "lemma": "4941",
+            "morphology": "HNcmsc/Sp3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-7-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35n5f",
+            "lemma": "c/7613",
+            "morphology": "HC/Ncfsc/Sp3ms",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-7-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35YUq",
+            "lemma": "3318",
+            "morphology": "HVqi3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "8": {
+        "source_osis_id": "Hab.1.8",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-8-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35fQr",
+            "lemma": "c/7043",
+            "morphology": "HC/Vqp3cp",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-8-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35L7t",
+            "lemma": "m/5246",
+            "morphology": "HR/Ncmpa",
+            "language": "he",
+            "source_n": "1.1.1.0"
+          },
+          {
+            "id": "HAB-1-8-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35A74",
+            "lemma": "5483 b",
+            "morphology": "HNcmpc/Sp3ms",
+            "language": "he",
+            "source_n": "1.1.1"
+          },
+          {
+            "id": "HAB-1-8-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35dNE",
+            "lemma": "c/2300 a",
+            "morphology": "HC/Vqp3cp",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-1-8-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35xdF",
+            "lemma": "m/2061",
+            "morphology": "HR/Ncmpc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-8-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35AYg",
+            "lemma": "6153",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-1-8-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35Ls9",
+            "lemma": "c/6335 a",
+            "morphology": "HC/Vqp3cp",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-8-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35Snp",
+            "lemma": "6571 b",
+            "morphology": "HNcmpc/Sp3ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-8-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "3587B",
+            "lemma": "c/6571 b",
+            "morphology": "HC/Ncmpc/Sp3ms",
+            "language": "he",
+            "source_n": "0.2.0"
+          },
+          {
+            "id": "HAB-1-8-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35nLp",
+            "lemma": "m/7350",
+            "morphology": "HR/Aamsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-8-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35PzC",
+            "lemma": "935",
+            "morphology": "HVqi3mp",
+            "language": "he",
+            "source_n": "0.2"
+          },
+          {
+            "id": "HAB-1-8-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35NPq",
+            "lemma": "5774 a",
+            "morphology": "HVqi3mp",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-1-8-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35d5m",
+            "lemma": "k/5404",
+            "morphology": "HR/Ncmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-8-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35BYa",
+            "lemma": "2363 a",
+            "morphology": "HVqrmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-8-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35LJh",
+            "lemma": "l/398",
+            "morphology": "HR/Vqc",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "9": {
+        "source_osis_id": "Hab.1.9",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-9-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35tRR",
+            "lemma": "3605",
+            "morphology": "HNcmsc/Sp3ms",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-1-9-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35Q7E",
+            "lemma": "l/2555",
+            "morphology": "HR/Ncmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-9-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35dv1",
+            "lemma": "935",
+            "morphology": "HVqi3ms",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-1-9-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35QwM",
+            "lemma": "4041",
+            "morphology": "HNcfsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-9-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35a62",
+            "lemma": "6440",
+            "morphology": "HNcbpc/Sp3mp",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-9-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35KvD",
+            "lemma": "6921",
+            "morphology": "HNcmsa/Sd",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-9-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35GLz",
+            "lemma": "c/622",
+            "morphology": "HC/Vqw3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-9-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35BU7",
+            "lemma": "k/2344",
+            "morphology": "HRd/Ncmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-9-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35iy2",
+            "lemma": "7628 a",
+            "morphology": "HNcbsa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "10": {
+        "source_osis_id": "Hab.1.10",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-10-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35zQ2",
+            "lemma": "c/1931",
+            "morphology": "HC/Pp3ms",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-1-10-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35Wxx",
+            "lemma": "b/4428",
+            "morphology": "HRd/Ncmpa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-10-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35jQ8",
+            "lemma": "7046",
+            "morphology": "HVti3ms",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-1-10-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35Haa",
+            "lemma": "c/7336",
+            "morphology": "HC/Vqrmpa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-10-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35fJN",
+            "lemma": "4890",
+            "morphology": "HNcmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-10-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "359KV",
+            "lemma": "l",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-10-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35F1s",
+            "lemma": "1931",
+            "morphology": "HPp3ms",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-1-10-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35dns",
+            "lemma": "l/3605",
+            "morphology": "HR/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-10-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35GK3",
+            "lemma": "4013",
+            "morphology": "HNcmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-10-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35nRZ",
+            "lemma": "7832",
+            "morphology": "HVqi3ms",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-1-10-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35cpb",
+            "lemma": "c/6651",
+            "morphology": "HC/Vqw3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-10-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35zio",
+            "lemma": "6083",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-10-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35Qsh",
+            "lemma": "c/3920",
+            "morphology": "HC/Vqw3ms/Sp3fs",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "11": {
+        "source_osis_id": "Hab.1.11",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-11-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35zTj",
+            "lemma": "227 a",
+            "morphology": "HD",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-11-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35fPi",
+            "lemma": "2498",
+            "morphology": "HVqp3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-11-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35GYe",
+            "lemma": "7307",
+            "morphology": "HNcbsa",
+            "language": "he",
+            "source_n": "1.0.0"
+          },
+          {
+            "id": "HAB-1-11-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35Bbz",
+            "lemma": "c/5674 a",
+            "morphology": "HC/Vqw3ms",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-11-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35VA9",
+            "lemma": "c/816",
+            "morphology": "HC/Vqp3ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-11-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35fV3",
+            "lemma": "2098",
+            "morphology": "HTr",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-11-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35Sov",
+            "lemma": "3581 b",
+            "morphology": "HNcmsc/Sp3ms",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-11-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35V27",
+            "lemma": "l/430",
+            "morphology": "HR/Ncmsc/Sp3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "12": {
+        "source_osis_id": "Hab.1.12",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-12-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35ifp",
+            "lemma": "i/3808",
+            "morphology": "HTi/Tn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-12-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "357ZG",
+            "lemma": "859 a",
+            "morphology": "HPp2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-12-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35B2d",
+            "lemma": "m/6924 a",
+            "morphology": "HR/Ncmsa",
+            "language": "he",
+            "source_n": "1.0.1"
+          },
+          {
+            "id": "HAB-1-12-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35ewe",
+            "lemma": "3068",
+            "morphology": "HNp",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-12-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35SV6",
+            "lemma": "430",
+            "morphology": "HNcmpc/Sp1cs",
+            "language": "he",
+            "source_n": "1.0.0"
+          },
+          {
+            "id": "HAB-1-12-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35G83",
+            "lemma": "6918",
+            "morphology": "HAamsc/Sp1cs",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-12-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35vzS",
+            "lemma": "3808",
+            "morphology": "HTn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-12-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35Gq9",
+            "lemma": "4191",
+            "morphology": "HVqi1cp",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-12-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "353y8",
+            "lemma": "3068",
+            "morphology": "HNp",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-1-12-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35TXw",
+            "lemma": "l/4941",
+            "morphology": "HR/Ncmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-12-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35Y4K",
+            "lemma": "7760 a",
+            "morphology": "HVqp2ms/Sp3ms",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-1-12-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35C32",
+            "lemma": "c/6697",
+            "morphology": "HC/Ncmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-12-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35aMT",
+            "lemma": "l/3198",
+            "morphology": "HR/Vhc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-12-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35Cof",
+            "lemma": "3245",
+            "morphology": "HVqp2ms/Sp3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "13": {
+        "source_osis_id": "Hab.1.13",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-13-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35YWU",
+            "lemma": "2890",
+            "morphology": "HAamsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35rAQ",
+            "lemma": "5869 a",
+            "morphology": "HNcbda",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35fLi",
+            "lemma": "m/7200",
+            "morphology": "HR/Vqc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35Ptj",
+            "lemma": "7451 a",
+            "morphology": "HAamsa",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35AJj",
+            "lemma": "c/5027",
+            "morphology": "HC/Vhc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "359Hv",
+            "lemma": "413",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35j1i",
+            "lemma": "5999",
+            "morphology": "HNcbsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35J9J",
+            "lemma": "3808",
+            "morphology": "HTn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35U4n",
+            "lemma": "3201",
+            "morphology": "HVqi2ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "352Kt",
+            "lemma": "l/4100",
+            "morphology": "HR/Ti",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35RmH",
+            "lemma": "5027",
+            "morphology": "HVhi2ms",
+            "language": "he",
+            "source_n": "0.2.0"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35SWL",
+            "lemma": "898",
+            "morphology": "HVqrmpa",
+            "language": "he",
+            "source_n": "0.2"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "3575P",
+            "lemma": "2790 b",
+            "morphology": "HVhi2ms",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "353Lj",
+            "lemma": "b/1104",
+            "morphology": "HR/Vpc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35Qa3",
+            "lemma": "7563",
+            "morphology": "HAamsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-016",
+            "position": 16,
+            "source_word_id": "35WTe",
+            "lemma": "6662",
+            "morphology": "HAamsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-13-SEMITIC-017",
+            "position": 17,
+            "source_word_id": "356VM",
+            "lemma": "4480 a",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "14": {
+        "source_osis_id": "Hab.1.14",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-14-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35sKn",
+            "lemma": "c/6213 a",
+            "morphology": "HC/Vqw2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-14-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35oAj",
+            "lemma": "120",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-14-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35AxB",
+            "lemma": "k/1709",
+            "morphology": "HR/Ncmpc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-14-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35Ap3",
+            "lemma": "d/3220",
+            "morphology": "HTd/Ncmsa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-14-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35CEu",
+            "lemma": "k/7431",
+            "morphology": "HR/Ncmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-14-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35zpy",
+            "lemma": "3808",
+            "morphology": "HTn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-14-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35FiN",
+            "lemma": "4910",
+            "morphology": "HVqrmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-14-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35cLk",
+            "lemma": "b",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "15": {
+        "source_osis_id": "Hab.1.15",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-15-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "3592v",
+            "lemma": "3605",
+            "morphology": "HNcmsc/Sp3ms",
+            "language": "he",
+            "source_n": "1.2.0"
+          },
+          {
+            "id": "HAB-1-15-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35j63",
+            "lemma": "b/2443",
+            "morphology": "HR/Ncfsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-15-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35LFW",
+            "lemma": "5927",
+            "morphology": "HVhp3ms",
+            "language": "he",
+            "source_n": "1.2"
+          },
+          {
+            "id": "HAB-1-15-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35FbT",
+            "lemma": "1641",
+            "morphology": "HVqi3ms/Sp3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-15-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35Bx7",
+            "lemma": "b/2764 b",
+            "morphology": "HR/Ncmsc/Sp3ms",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-1-15-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35btu",
+            "lemma": "c/622",
+            "morphology": "HC/Vqi3ms/Sp3ms",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-15-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35rTK",
+            "lemma": "b/4365 a",
+            "morphology": "HR/Ncfsc/Sp3ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-15-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35SHw",
+            "lemma": "5921 a",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-15-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35VuH",
+            "lemma": "3651 c",
+            "morphology": "HTm",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-15-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35Axb",
+            "lemma": "8055",
+            "morphology": "HVqi3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-15-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35xva",
+            "lemma": "c/1523",
+            "morphology": "HC/Vqi3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "16": {
+        "source_osis_id": "Hab.1.16",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-16-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35NrT",
+            "lemma": "5921 a",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-16-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35iAD",
+            "lemma": "3651 c",
+            "morphology": "HTm",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-1-16-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35372",
+            "lemma": "2076",
+            "morphology": "HVpi3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-16-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35FMU",
+            "lemma": "l/2764 b",
+            "morphology": "HR/Ncmsc/Sp3ms",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-1-16-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35SaV",
+            "lemma": "c/6999 a",
+            "morphology": "HC/Vpi3ms",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-16-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "354W9",
+            "lemma": "l/4365 a",
+            "morphology": "HR/Ncfsc/Sp3ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-16-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35MmM",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-16-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35wJn",
+            "lemma": "b/1992",
+            "morphology": "HR/Pp3mp",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-1-16-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35CQo",
+            "lemma": "8082",
+            "morphology": "HAamsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-16-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35XyU",
+            "lemma": "2506 a",
+            "morphology": "HNcmsc/Sp3ms",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-1-16-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35BG4",
+            "lemma": "c/3978",
+            "morphology": "HC/Ncmsc/Sp3ms",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-16-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35YHH",
+            "lemma": "1277",
+            "morphology": "HAafsa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "17": {
+        "source_osis_id": "Hab.1.17",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-1-17-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35sHf",
+            "lemma": "i/5921 a",
+            "morphology": "HTi/R",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-17-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35iee",
+            "lemma": "3651 c",
+            "morphology": "HTm",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-1-17-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "353eS",
+            "lemma": "7324",
+            "morphology": "HVhi3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-17-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35ddd",
+            "lemma": "2764 b",
+            "morphology": "HNcmsc/Sp3ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-1-17-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35hxo",
+            "lemma": "c/8548",
+            "morphology": "HC/Ncmsa",
+            "language": "he",
+            "source_n": "0.0.0"
+          },
+          {
+            "id": "HAB-1-17-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35TW6",
+            "lemma": "l/2026",
+            "morphology": "HR/Vqc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-17-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35PVx",
+            "lemma": "1471 a",
+            "morphology": "HNcmpa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-1-17-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35PGK",
+            "lemma": "3808",
+            "morphology": "HTn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-1-17-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35U4a",
+            "lemma": "2550",
+            "morphology": "HVqi3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      }
+    },
+    "2": {
+      "1": {
+        "source_osis_id": "Hab.2.1",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-1-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35dSQ",
+            "lemma": "5921 a",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-1-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35Qbs",
+            "lemma": "4931",
+            "morphology": "HNcfsc/Sp1cs",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-1-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35ndZ",
+            "lemma": "5975",
+            "morphology": "HVqh1cs",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-2-1-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35Xa1",
+            "lemma": "c/3320",
+            "morphology": "HC/Vth1cs",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-1-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "353yJ",
+            "lemma": "5921 a",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-1-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35B6c",
+            "lemma": "4692",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-1-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35bju",
+            "lemma": "c/6822",
+            "morphology": "HC/Vpi1cs",
+            "language": "he",
+            "source_n": "0.1.1"
+          },
+          {
+            "id": "HAB-2-1-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35cn3",
+            "lemma": "l/7200",
+            "morphology": "HR/Vqc",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-2-1-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "357mS",
+            "lemma": "4100",
+            "morphology": "HTi",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-1-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35dJe",
+            "lemma": "1696",
+            "morphology": "HVpi3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-1-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35WvG",
+            "lemma": "b",
+            "morphology": "HR/Sp1cs",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-2-1-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35RXg",
+            "lemma": "c/4100",
+            "morphology": "HC/Ti",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-1-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35pqY",
+            "lemma": "7725",
+            "morphology": "HVhi1cs",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-1-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35n9v",
+            "lemma": "5921 a",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-1-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35gYe",
+            "lemma": "8433 b",
+            "morphology": "HNcfsc/Sp1cs",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "2": {
+        "source_osis_id": "Hab.2.2",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-2-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35eXj",
+            "lemma": "c/6030 b",
+            "morphology": "HC/Vqw3ms/Sp1cs",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-2-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "358ro",
+            "lemma": "3068",
+            "morphology": "HNp",
+            "language": "he",
+            "source_n": "1.2.0"
+          },
+          {
+            "id": "HAB-2-2-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35v5z",
+            "lemma": "c/559",
+            "morphology": "HC/Vqw3ms",
+            "language": "he",
+            "source_n": "1.2"
+          },
+          {
+            "id": "HAB-2-2-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35bCC",
+            "lemma": "3789",
+            "morphology": "HVqv2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-2-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "356By",
+            "lemma": "2377",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-2-2-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35CZB",
+            "lemma": "c/874",
+            "morphology": "HC/Vpv2ms",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-2-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35VTb",
+            "lemma": "5921 a",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-2-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "356qf",
+            "lemma": "d/3871",
+            "morphology": "HTd/Ncmpa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-2-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35efz",
+            "lemma": "4616",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-2-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35QG5",
+            "lemma": "7323",
+            "morphology": "HVqi3ms",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-2-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "353k3",
+            "lemma": "7121",
+            "morphology": "HVqrmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-2-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "351rL",
+            "lemma": "b",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "3": {
+        "source_osis_id": "Hab.2.3",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-3-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35W2c",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35mL3",
+            "lemma": "5750",
+            "morphology": "HD",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35zfc",
+            "lemma": "2377",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35sYp",
+            "lemma": "l/4150",
+            "morphology": "HRd/Ncmsa",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35GvF",
+            "lemma": "c/6315",
+            "morphology": "HC/Vhi3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35dAC",
+            "lemma": "l/7093",
+            "morphology": "HRd/Ncmsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35i4W",
+            "lemma": "c/3808",
+            "morphology": "HC/Tn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35chR",
+            "lemma": "3576",
+            "morphology": "HVpi3ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35Ddq",
+            "lemma": "518 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35dSp",
+            "lemma": "4102",
+            "morphology": "HVfi3ms",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35ecS",
+            "lemma": "2442",
+            "morphology": "HVpv2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "352tG",
+            "lemma": "l",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35Xzm",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35CCj",
+            "lemma": "935",
+            "morphology": "HVqa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35gV8",
+            "lemma": "935",
+            "morphology": "HVqi3ms",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-016",
+            "position": 16,
+            "source_word_id": "35Czz",
+            "lemma": "3808",
+            "morphology": "HTn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-3-SEMITIC-017",
+            "position": 17,
+            "source_word_id": "35uXX",
+            "lemma": "309",
+            "morphology": "HVpi3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "4": {
+        "source_osis_id": "Hab.2.4",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-4-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35xCL",
+            "lemma": "2009",
+            "morphology": "HTm",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-4-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35Qnr",
+            "lemma": "6075 a",
+            "morphology": "HVPp3fs",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-2-4-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "356kU",
+            "lemma": "3808",
+            "morphology": "HTn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-4-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35qry",
+            "lemma": "3474",
+            "morphology": "HVqp3fs",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-4-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35bvP",
+            "lemma": "5315",
+            "morphology": "HNcbsc/Sp3ms",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-4-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35wjj",
+            "lemma": "b",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-4-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35Tn7",
+            "lemma": "c/6662",
+            "morphology": "HC/Aamsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-4-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35hEs",
+            "lemma": "b/530",
+            "morphology": "HR/Ncfsc/Sp3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-4-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35xAF",
+            "lemma": "2421",
+            "morphology": "HVqi3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "5": {
+        "source_osis_id": "Hab.2.5",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-5-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35qg1",
+            "lemma": "c/637",
+            "morphology": "HC/D",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "356w9",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35wA4",
+            "lemma": "d/3196",
+            "morphology": "HTd/Ncmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35ibe",
+            "lemma": "898",
+            "morphology": "HVqrmsa",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35v8V",
+            "lemma": "1397",
+            "morphology": "HNcmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35T2S",
+            "lemma": "3093",
+            "morphology": "HAamsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35tkJ",
+            "lemma": "c/3808",
+            "morphology": "HC/Tn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35EXL",
+            "lemma": "5115 b",
+            "morphology": "HVqi3ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35ZPN",
+            "lemma": "834 a",
+            "morphology": "HTr",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35q1G",
+            "lemma": "7337",
+            "morphology": "HVhp3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35bYD",
+            "lemma": "k/7585",
+            "morphology": "HR/Np",
+            "language": "he",
+            "source_n": "0.2.1.0"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35v2F",
+            "lemma": "5315",
+            "morphology": "HNcbsc/Sp3ms",
+            "language": "he",
+            "source_n": "0.2.1"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "357vt",
+            "lemma": "c/1931",
+            "morphology": "HC/Pp3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35kDm",
+            "lemma": "k/4194",
+            "morphology": "HRd/Ncmsa",
+            "language": "he",
+            "source_n": "0.2.0"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35doW",
+            "lemma": "c/3808",
+            "morphology": "HC/Tn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-016",
+            "position": 16,
+            "source_word_id": "35eRa",
+            "lemma": "7646",
+            "morphology": "HVqi3ms",
+            "language": "he",
+            "source_n": "0.2"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-017",
+            "position": 17,
+            "source_word_id": "35kDf",
+            "lemma": "c/622",
+            "morphology": "HC/Vqw3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-018",
+            "position": 18,
+            "source_word_id": "3563G",
+            "lemma": "413",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-019",
+            "position": 19,
+            "source_word_id": "35WPn",
+            "lemma": "3605",
+            "morphology": "HNcmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-020",
+            "position": 20,
+            "source_word_id": "351jv",
+            "lemma": "d/1471 a",
+            "morphology": "HTd/Ncmpa",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-021",
+            "position": 21,
+            "source_word_id": "35cK8",
+            "lemma": "c/6908",
+            "morphology": "HC/Vqw3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-022",
+            "position": 22,
+            "source_word_id": "35DDb",
+            "lemma": "413",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-023",
+            "position": 23,
+            "source_word_id": "35RCg",
+            "lemma": "3605",
+            "morphology": "HNcmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-5-SEMITIC-024",
+            "position": 24,
+            "source_word_id": "355KE",
+            "lemma": "d/5971 a",
+            "morphology": "HTd/Ncmpa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "6": {
+        "source_osis_id": "Hab.2.6",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-6-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35qVd",
+            "lemma": "i/3808",
+            "morphology": "HTi/Tn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35koG",
+            "lemma": "428",
+            "morphology": "HPdxcp",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35e6B",
+            "lemma": "3605",
+            "morphology": "HNcmsc/Sp3mp",
+            "language": "he",
+            "source_n": "1.1.1"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "358GY",
+            "lemma": "5921 a",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35GpK",
+            "lemma": "4912",
+            "morphology": "HNcmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "3568C",
+            "lemma": "5375",
+            "morphology": "HVqi3mp",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35CMz",
+            "lemma": "c/4426",
+            "morphology": "HC/Ncfsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35D4c",
+            "lemma": "2420",
+            "morphology": "HNcfpa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35ta1",
+            "lemma": "l",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35JnD",
+            "lemma": "c/559",
+            "morphology": "HC/Vqi3ms",
+            "language": "he",
+            "source_n": "0.2.1"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35jfz",
+            "lemma": "1945",
+            "morphology": "HTj",
+            "language": "he",
+            "source_n": "0.2.0"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35ErQ",
+            "lemma": "d/7235 a",
+            "morphology": "HTd/Vhrmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "354fv",
+            "lemma": "3808",
+            "morphology": "HTn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35yDv",
+            "lemma": "l",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "0.2"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35jyT",
+            "lemma": "5704",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-016",
+            "position": 16,
+            "source_word_id": "35Unh",
+            "lemma": "4970",
+            "morphology": "HTi",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-017",
+            "position": 17,
+            "source_word_id": "35QH2",
+            "lemma": "c/3513",
+            "morphology": "HC/Vhrmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-018",
+            "position": 18,
+            "source_word_id": "35xxn",
+            "lemma": "5921 a",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-6-SEMITIC-019",
+            "position": 19,
+            "source_word_id": "35ou4",
+            "lemma": "5671",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "7": {
+        "source_osis_id": "Hab.2.7",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-7-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "353KZ",
+            "lemma": "i/3808",
+            "morphology": "HTi/Tn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-7-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35jNE",
+            "lemma": "6621",
+            "morphology": "HD",
+            "language": "he",
+            "source_n": "1.1.1"
+          },
+          {
+            "id": "HAB-2-7-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35hj3",
+            "lemma": "6965 b",
+            "morphology": "HVqi3mp",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-2-7-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35iDs",
+            "lemma": "5391 a",
+            "morphology": "HVqrmpc/Sp2ms",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-2-7-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "356Lo",
+            "lemma": "c/6974",
+            "morphology": "HC/Vqi3mp",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-7-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35JZq",
+            "lemma": "2111",
+            "morphology": "HVlrmpc/Sp2ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-7-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35ZpQ",
+            "lemma": "c/1961",
+            "morphology": "HC/Vqq2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-7-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "359gS",
+            "lemma": "l/4933",
+            "morphology": "HR/Ncfpa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-7-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35LAe",
+            "lemma": "l",
+            "morphology": "HR/Sp3mp",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "8": {
+        "source_osis_id": "Hab.2.8",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-8-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35qK3",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "351Cv",
+            "lemma": "859 a",
+            "morphology": "HPp2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35PBQ",
+            "lemma": "7997 b",
+            "morphology": "HVqp2ms",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35mr5",
+            "lemma": "1471 a",
+            "morphology": "HNcmpa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35QDu",
+            "lemma": "7227 a",
+            "morphology": "HAampa",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35PbY",
+            "lemma": "7997 b",
+            "morphology": "HVqi3mp/Sp2ms",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35Ew6",
+            "lemma": "3605",
+            "morphology": "HNcmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "3574R",
+            "lemma": "3499 a",
+            "morphology": "HNcmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "356zt",
+            "lemma": "5971 a",
+            "morphology": "HNcmpa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35zEm",
+            "lemma": "m/1818",
+            "morphology": "HR/Ncmpc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "352dm",
+            "lemma": "120",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35uYh",
+            "lemma": "c/2555",
+            "morphology": "HC/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35YxK",
+            "lemma": "776",
+            "morphology": "HNcbsa",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35aSJ",
+            "lemma": "7151",
+            "morphology": "HNcfsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35Kz2",
+            "lemma": "c/3605",
+            "morphology": "HC/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-016",
+            "position": 16,
+            "source_word_id": "35YhQ",
+            "lemma": "3427",
+            "morphology": "HVqrmpc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-8-SEMITIC-017",
+            "position": 17,
+            "source_word_id": "35azZ",
+            "lemma": "b",
+            "morphology": "HR/Sp3fs",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "9": {
+        "source_osis_id": "Hab.2.9",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-9-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35oiy",
+            "lemma": "1945",
+            "morphology": "HTj",
+            "language": "he",
+            "source_n": "1.0.1"
+          },
+          {
+            "id": "HAB-2-9-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35gPX",
+            "lemma": "1214",
+            "morphology": "HVqrmsa",
+            "language": "he",
+            "source_n": "1.0.0"
+          },
+          {
+            "id": "HAB-2-9-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35gtq",
+            "lemma": "1215",
+            "morphology": "HNcmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-9-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35HSQ",
+            "lemma": "7451 a",
+            "morphology": "HAamsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-9-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35fbB",
+            "lemma": "l/1004 b",
+            "morphology": "HR/Ncmsc/Sp3ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-9-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35k1L",
+            "lemma": "l/7760 a",
+            "morphology": "HR/Vqc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-9-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "352tS",
+            "lemma": "b/4791",
+            "morphology": "HRd/Ncmsa",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-2-9-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35EVu",
+            "lemma": "7064",
+            "morphology": "HNcmsc/Sp3ms",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-2-9-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35ygU",
+            "lemma": "l/5337",
+            "morphology": "HR/VNc",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-9-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35swV",
+            "lemma": "m/3709",
+            "morphology": "HR/Ncfsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-9-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35HjU",
+            "lemma": "7451 b",
+            "morphology": "HAamsa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "10": {
+        "source_osis_id": "Hab.2.10",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-10-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35d3U",
+            "lemma": "3289",
+            "morphology": "HVqp2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-10-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35NtK",
+            "lemma": "1322",
+            "morphology": "HNcfsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-10-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35U94",
+            "lemma": "l/1004 b",
+            "morphology": "HR/Ncmsc/Sp2ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-10-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35zqr",
+            "lemma": "7096",
+            "morphology": "HVqc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-10-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "356JA",
+            "lemma": "5971 a",
+            "morphology": "HNcmpa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-10-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35JyD",
+            "lemma": "7227 a",
+            "morphology": "HAampa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-10-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35jjy",
+            "lemma": "c/2398",
+            "morphology": "HC/Vqrmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-10-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "3579E",
+            "lemma": "5315",
+            "morphology": "HNcbsc/Sp2ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "11": {
+        "source_osis_id": "Hab.2.11",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-11-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35Zuo",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-11-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35LXS",
+            "lemma": "68",
+            "morphology": "HNcfsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-11-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35mR4",
+            "lemma": "m/7023",
+            "morphology": "HR/Ncmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-11-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35MC8",
+            "lemma": "2199",
+            "morphology": "HVqi3fs",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-11-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35BnR",
+            "lemma": "c/3714",
+            "morphology": "HC/Ncmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-11-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35PUg",
+            "lemma": "m/6086",
+            "morphology": "HR/Ncmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-11-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35pUN",
+            "lemma": "6030 b",
+            "morphology": "HVqi3ms/Sp3fs",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "12": {
+        "source_osis_id": "Hab.2.12",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-12-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35gc8",
+            "lemma": "1945",
+            "morphology": "HTj",
+            "language": "he",
+            "source_n": "1.0.0"
+          },
+          {
+            "id": "HAB-2-12-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35Lsp",
+            "lemma": "1129",
+            "morphology": "HVqrmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-12-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35SAE",
+            "lemma": "5892 b",
+            "morphology": "HNcfsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-12-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "353gY",
+            "lemma": "b/1818",
+            "morphology": "HR/Ncmpa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-12-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35RuM",
+            "lemma": "c/3559 a",
+            "morphology": "HC/Voq3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-12-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35WFU",
+            "lemma": "7151",
+            "morphology": "HNcfsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-12-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35BJv",
+            "lemma": "b/5766 b",
+            "morphology": "HR/Ncbsa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "13": {
+        "source_osis_id": "Hab.2.13",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-13-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35ExP",
+            "lemma": "i/3808",
+            "morphology": "HTi/Tn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-13-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35ypu",
+            "lemma": "2009",
+            "morphology": "HTm",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-2-13-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35mP3",
+            "lemma": "m/854",
+            "morphology": "HR/R",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-13-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35V8b",
+            "lemma": "3068",
+            "morphology": "HNp",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-13-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35suQ",
+            "lemma": "6635 b",
+            "morphology": "HNcbpa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-13-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "351Su",
+            "lemma": "c/3021",
+            "morphology": "HC/Vqi3mp",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-13-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35MEz",
+            "lemma": "5971 a",
+            "morphology": "HNcmpa",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-2-13-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35Q2u",
+            "lemma": "b/1767",
+            "morphology": "HR/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-13-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35yT5",
+            "lemma": "784",
+            "morphology": "HNcbsa",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-2-13-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35b5Q",
+            "lemma": "c/3816",
+            "morphology": "HC/Ncmpa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-13-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35F88",
+            "lemma": "b/1767",
+            "morphology": "HR/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-13-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35AXb",
+            "lemma": "7385",
+            "morphology": "HNcmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-13-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35Wjz",
+            "lemma": "3286",
+            "morphology": "HVqi3mp",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "14": {
+        "source_osis_id": "Hab.2.14",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-14-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35bPJ",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-2-14-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35hS1",
+            "lemma": "4390",
+            "morphology": "HVNi3fs",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-14-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35h53",
+            "lemma": "d/776",
+            "morphology": "HTd/Ncbsa",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-2-14-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35vpK",
+            "lemma": "l/3045",
+            "morphology": "HR/Vqc",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-14-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35G6E",
+            "lemma": "853",
+            "morphology": "HTo",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-14-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "354vX",
+            "lemma": "3519",
+            "morphology": "HNcbsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-14-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35X1R",
+            "lemma": "3068",
+            "morphology": "HNp",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-14-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35bsu",
+            "lemma": "k/4325",
+            "morphology": "HRd/Ncmpa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-14-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35Ygn",
+            "lemma": "3680",
+            "morphology": "HVpi3mp",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-14-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "352gM",
+            "lemma": "5921 a",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-14-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35pAw",
+            "lemma": "3220",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "15": {
+        "source_osis_id": "Hab.2.15",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-15-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35mVV",
+            "lemma": "1945",
+            "morphology": "HTj",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-2-15-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35FMa",
+            "lemma": "8248",
+            "morphology": "HVhrmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-15-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35KPU",
+            "lemma": "7453",
+            "morphology": "HNcmsc/Sp3ms",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-2-15-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35ki2",
+            "lemma": "5596 a",
+            "morphology": "HVprmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-15-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "355pZ",
+            "lemma": "2573",
+            "morphology": "HNcfsc/Sp2ms",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-15-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35HWo",
+            "lemma": "c/637",
+            "morphology": "HC/D",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-15-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35zkA",
+            "lemma": "7937",
+            "morphology": "HVpa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-15-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35JMT",
+            "lemma": "4616",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-15-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35jEX",
+            "lemma": "5027",
+            "morphology": "HVhc",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-15-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35uUA",
+            "lemma": "5921 a",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-15-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35tKf",
+            "lemma": "4589",
+            "morphology": "HNcmpc/Sp3mp",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "16": {
+        "source_osis_id": "Hab.2.16",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-16-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35awE",
+            "lemma": "7646",
+            "morphology": "HVqp2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-16-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35yNT",
+            "lemma": "7036",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-2-16-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35Azu",
+            "lemma": "m/3519",
+            "morphology": "HR/Ncbsa",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-2-16-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35884",
+            "lemma": "8354",
+            "morphology": "HVqv2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-16-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35XMu",
+            "lemma": "1571",
+            "morphology": "HD",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-16-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35mrn",
+            "lemma": "859 a",
+            "morphology": "HPp2ms",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-16-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35Xh9",
+            "lemma": "c/6188",
+            "morphology": "HC/VNv2ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-16-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35D3a",
+            "lemma": "5437",
+            "morphology": "HVqi3fs",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-16-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35wEr",
+            "lemma": "5921 a",
+            "morphology": "HR/Sp2ms",
+            "language": "he",
+            "source_n": "0.1.1"
+          },
+          {
+            "id": "HAB-2-16-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35Rvc",
+            "lemma": "3563 a",
+            "morphology": "HNcfsc",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-2-16-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35c6V",
+            "lemma": "3225",
+            "morphology": "HNcfsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-16-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "358eM",
+            "lemma": "3068",
+            "morphology": "HNp",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-2-16-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35xkK",
+            "lemma": "c/7022",
+            "morphology": "HC/Ncmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-16-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35rGa",
+            "lemma": "5921 a",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-16-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35fp1",
+            "lemma": "3519",
+            "morphology": "HNcbsc/Sp2ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "17": {
+        "source_osis_id": "Hab.2.17",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-17-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35Y9g",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-17-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35mGU",
+            "lemma": "2555",
+            "morphology": "HNcmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-17-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35gBW",
+            "lemma": "3844",
+            "morphology": "HNp",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-2-17-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35eLD",
+            "lemma": "3680",
+            "morphology": "HVpi3ms/Sp2ms",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-2-17-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "3593F",
+            "lemma": "c/7701",
+            "morphology": "HC/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-17-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35eyL",
+            "lemma": "929",
+            "morphology": "HNcfpa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-17-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35pm7",
+            "lemma": "2865",
+            "morphology": "HVhi3ms/Sp3fp",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-17-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35teU",
+            "lemma": "m/1818",
+            "morphology": "HR/Ncmpc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-17-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35c58",
+            "lemma": "120",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-2-17-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35MRA",
+            "lemma": "c/2555",
+            "morphology": "HC/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-17-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35xp4",
+            "lemma": "776",
+            "morphology": "HNcbsa",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-2-17-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35Hki",
+            "lemma": "7151",
+            "morphology": "HNcfsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-17-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35QvZ",
+            "lemma": "c/3605",
+            "morphology": "HC/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-17-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35S38",
+            "lemma": "3427",
+            "morphology": "HVqrmpc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-17-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35eN1",
+            "lemma": "b",
+            "morphology": "HR/Sp3fs",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "18": {
+        "source_osis_id": "Hab.2.18",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-18-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35HoD",
+            "lemma": "4100",
+            "morphology": "HTi",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35P5s",
+            "lemma": "3276",
+            "morphology": "HVhp3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "355QX",
+            "lemma": "6459",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1.1.1"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35Mxy",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35w6u",
+            "lemma": "6458",
+            "morphology": "HVqp3ms/Sp3ms",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35e3z",
+            "lemma": "3336",
+            "morphology": "HVqrmsc/Sp3ms",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "352c6",
+            "lemma": "4541 a",
+            "morphology": "HNcfsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "353RL",
+            "lemma": "c/3384 b",
+            "morphology": "HC/Vhrmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35JUf",
+            "lemma": "8267",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35ce9",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35dPK",
+            "lemma": "982",
+            "morphology": "HVqp3ms",
+            "language": "he",
+            "source_n": "0.1.0.0"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35vLv",
+            "lemma": "3335",
+            "morphology": "HVqrmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35UrG",
+            "lemma": "3336",
+            "morphology": "HNcmsc/Sp3ms",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35Sxc",
+            "lemma": "5921 a",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35xwN",
+            "lemma": "l/6213 a",
+            "morphology": "HR/Vqc",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-016",
+            "position": 16,
+            "source_word_id": "35GjY",
+            "lemma": "457",
+            "morphology": "HNcmpa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-18-SEMITIC-017",
+            "position": 17,
+            "source_word_id": "35KNo",
+            "lemma": "483",
+            "morphology": "HAampa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "19": {
+        "source_osis_id": "Hab.2.19",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-19-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35NLD",
+            "lemma": "1945",
+            "morphology": "HTj",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35GUh",
+            "lemma": "559",
+            "morphology": "HVqrmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "355aF",
+            "lemma": "l/6086",
+            "morphology": "HRd/Ncmsa",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35taY",
+            "lemma": "6974",
+            "morphology": "HVhv2ms/Sh",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35EZz",
+            "lemma": "5782",
+            "morphology": "HVqv2fs",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35Hnw",
+            "lemma": "l/68",
+            "morphology": "HR/Ncfsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35pXi",
+            "lemma": "1748",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35Nq4",
+            "lemma": "1931",
+            "morphology": "HPp3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35rZH",
+            "lemma": "3384 b",
+            "morphology": "HVhi3ms",
+            "language": "he",
+            "source_n": "0.2"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35GtT",
+            "lemma": "2009",
+            "morphology": "HTm",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35kwz",
+            "lemma": "1931",
+            "morphology": "HPp3ms",
+            "language": "he",
+            "source_n": "0.1.1"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35tc4",
+            "lemma": "8610",
+            "morphology": "HVqsmsa",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35CMD",
+            "lemma": "2091",
+            "morphology": "HNcmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "355eq",
+            "lemma": "c/3701",
+            "morphology": "HC/Ncmsa",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35Cj2",
+            "lemma": "c/3605",
+            "morphology": "HC/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-016",
+            "position": 16,
+            "source_word_id": "35Ttm",
+            "lemma": "7307",
+            "morphology": "HNcbsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-017",
+            "position": 17,
+            "source_word_id": "356Vi",
+            "lemma": "369",
+            "morphology": "HTn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-19-SEMITIC-018",
+            "position": 18,
+            "source_word_id": "35V8W",
+            "lemma": "b/7130",
+            "morphology": "HR/Ncmsc/Sp3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "20": {
+        "source_osis_id": "Hab.2.20",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-2-20-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35zg2",
+            "lemma": "c/3068",
+            "morphology": "HC/Np",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-2-20-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35gXh",
+            "lemma": "b/1964",
+            "morphology": "HR/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-20-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "353iR",
+            "lemma": "6944",
+            "morphology": "HNcmsc/Sp3ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-2-20-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35RoG",
+            "lemma": "2013",
+            "morphology": "HTj",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-20-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35jP7",
+            "lemma": "m/6440",
+            "morphology": "HR/Ncbpc/Sp3ms",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-2-20-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35vCn",
+            "lemma": "3605",
+            "morphology": "HNcmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-2-20-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35jv3",
+            "lemma": "d/776",
+            "morphology": "HTd/Ncbsa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      }
+    },
+    "3": {
+      "1": {
+        "source_osis_id": "Hab.3.1",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-1-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35ggL",
+            "lemma": "8605",
+            "morphology": "HNcfsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-1-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35MVq",
+            "lemma": "l/2265",
+            "morphology": "HR/Np",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-1-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35g1y",
+            "lemma": "d/5030",
+            "morphology": "HTd/Ncmsa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-1-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35CBH",
+            "lemma": "5921 a",
+            "morphology": "HR",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-1-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "353t6",
+            "lemma": "7692",
+            "morphology": "HNp",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "2": {
+        "source_osis_id": "Hab.3.2",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-2-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35g33",
+            "lemma": "3068",
+            "morphology": "HNp",
+            "language": "he",
+            "source_n": "1.2.1"
+          },
+          {
+            "id": "HAB-3-2-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35LDn",
+            "lemma": "8085",
+            "morphology": "HVqp1cs",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-2-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "353jG",
+            "lemma": "8088 b",
+            "morphology": "HNcmsc/Sp2ms",
+            "language": "he",
+            "source_n": "1.2.0"
+          },
+          {
+            "id": "HAB-3-2-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35WDP",
+            "lemma": "3372",
+            "morphology": "HVqp1cs",
+            "language": "he",
+            "source_n": "1.2"
+          },
+          {
+            "id": "HAB-3-2-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35eeF",
+            "lemma": "3068",
+            "morphology": "HNp",
+            "language": "he",
+            "source_n": "1.1.2"
+          },
+          {
+            "id": "HAB-3-2-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35idA",
+            "lemma": "6467",
+            "morphology": "HNcmsc/Sp2ms",
+            "language": "he",
+            "source_n": "1.1.1"
+          },
+          {
+            "id": "HAB-3-2-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35Z4D",
+            "lemma": "b/7130",
+            "morphology": "HR/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-2-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35VMC",
+            "lemma": "8141",
+            "morphology": "HNcfpa",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-3-2-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35K8W",
+            "lemma": "2421",
+            "morphology": "HVpv2ms/Sp3ms",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-3-2-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "356RX",
+            "lemma": "b/7130",
+            "morphology": "HR/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-2-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35bYm",
+            "lemma": "8141",
+            "morphology": "HNcfpa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-2-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35M7H",
+            "lemma": "3045",
+            "morphology": "HVhj2ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-2-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35gcK",
+            "lemma": "b/7267",
+            "morphology": "HR/Ncmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-2-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35p7s",
+            "lemma": "7355",
+            "morphology": "HVpa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-2-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35ZBR",
+            "lemma": "2142",
+            "morphology": "HVqj2ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "3": {
+        "source_osis_id": "Hab.3.3",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-3-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35ACh",
+            "lemma": "433",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-3-3-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35mnL",
+            "lemma": "m/8487",
+            "morphology": "HR/Np",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-3-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "3589r",
+            "lemma": "935",
+            "morphology": "HVqi3ms",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-3-3-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35GmF",
+            "lemma": "c/6918",
+            "morphology": "HC/Aamsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-3-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35fcv",
+            "lemma": "m/2022",
+            "morphology": "HR/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-3-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35knb",
+            "lemma": "6290",
+            "morphology": "HNp",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-3-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35Qpj",
+            "lemma": "5542",
+            "morphology": "HTj",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-3-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35MDS",
+            "lemma": "3680",
+            "morphology": "HVpp3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-3-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35YBx",
+            "lemma": "8064",
+            "morphology": "HNcmpa",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-3-3-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35kMZ",
+            "lemma": "1935",
+            "morphology": "HNcmsc/Sp3ms",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-3-3-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35uqC",
+            "lemma": "c/8416",
+            "morphology": "HC/Ncfsc/Sp3ms",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-3-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35VY5",
+            "lemma": "4390",
+            "morphology": "HVqp3fs",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-3-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35WJY",
+            "lemma": "d/776",
+            "morphology": "HTd/Ncbsa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "4": {
+        "source_osis_id": "Hab.3.4",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-4-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35brh",
+            "lemma": "c/5051",
+            "morphology": "HC/Ncfsa",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-3-4-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35w1U",
+            "lemma": "k/216",
+            "morphology": "HRd/Ncbsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-4-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35aqT",
+            "lemma": "1961",
+            "morphology": "HVqi3fs",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-3-4-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35zXi",
+            "lemma": "7161 a",
+            "morphology": "HNcbda",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-4-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35H8a",
+            "lemma": "m/3027",
+            "morphology": "HR/Ncbsc/Sp3ms",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-4-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35Sjh",
+            "lemma": "l",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-4-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35oYp",
+            "lemma": "c/8033",
+            "morphology": "HC/D",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-4-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35Pht",
+            "lemma": "2253",
+            "morphology": "HNcmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-4-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35idy",
+            "lemma": "5797",
+            "morphology": "HNcmsc/Sp3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "5": {
+        "source_osis_id": "Hab.3.5",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-5-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35PU6",
+            "lemma": "l/6440",
+            "morphology": "HR/Ncbpc/Sp3ms",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-5-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35FCP",
+            "lemma": "3212",
+            "morphology": "HVqi3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-5-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35YuY",
+            "lemma": "1698",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-5-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "358Js",
+            "lemma": "c/3318",
+            "morphology": "HC/Vqi3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-5-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35FyK",
+            "lemma": "7565",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-5-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35XjR",
+            "lemma": "l/7272",
+            "morphology": "HR/Ncfdc/Sp3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "6": {
+        "source_osis_id": "Hab.3.6",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-6-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35jaD",
+            "lemma": "5975",
+            "morphology": "HVqp3ms",
+            "language": "he",
+            "source_n": "1.2.1.0"
+          },
+          {
+            "id": "HAB-3-6-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35W7V",
+            "lemma": "c/4128",
+            "morphology": "HC/Vow3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-6-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35U2Y",
+            "lemma": "776",
+            "morphology": "HNcbsa",
+            "language": "he",
+            "source_n": "1.2.1"
+          },
+          {
+            "id": "HAB-3-6-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "358na",
+            "lemma": "7200",
+            "morphology": "HVqp3ms",
+            "language": "he",
+            "source_n": "1.2.0"
+          },
+          {
+            "id": "HAB-3-6-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35sgw",
+            "lemma": "c/5425 a",
+            "morphology": "HC/Vhw3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-6-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35MDX",
+            "lemma": "1471 a",
+            "morphology": "HNcmpa",
+            "language": "he",
+            "source_n": "1.2"
+          },
+          {
+            "id": "HAB-3-6-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35pPp",
+            "lemma": "c/6327 a",
+            "morphology": "HC/Vrw3mp",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-3-6-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35ieN",
+            "lemma": "2042",
+            "morphology": "HNcmpc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-6-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35Csj",
+            "lemma": "5703",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-3-6-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35rHn",
+            "lemma": "7817",
+            "morphology": "HVqp3cp",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-6-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35ViB",
+            "lemma": "1389",
+            "morphology": "HNcfpc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-6-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35CFo",
+            "lemma": "5769",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-6-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "355Ja",
+            "lemma": "1979",
+            "morphology": "HNcfpc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-6-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35UXS",
+            "lemma": "5769",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-6-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35YQ8",
+            "lemma": "l",
+            "morphology": "HR/Sp3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "7": {
+        "source_osis_id": "Hab.3.7",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-7-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35Abd",
+            "lemma": "8478",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-7-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "352UV",
+            "lemma": "205",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-3-7-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35ZtS",
+            "lemma": "7200",
+            "morphology": "HVqp1cs",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-7-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35gMU",
+            "lemma": "168",
+            "morphology": "HNcmpc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-7-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35nWb",
+            "lemma": "3572",
+            "morphology": "HNp",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-7-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35GXk",
+            "lemma": "7264",
+            "morphology": "HVqi3mp/Sn",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-3-7-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35TZa",
+            "lemma": "3407",
+            "morphology": "HNcfpc",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-7-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "355qp",
+            "lemma": "776",
+            "morphology": "HNcbsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-7-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35uHZ",
+            "lemma": "4080",
+            "morphology": "HNp",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "8": {
+        "source_osis_id": "Hab.3.8",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-8-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35pAL",
+            "lemma": "i/b/5104",
+            "morphology": "HTi/R/Ncmpa",
+            "language": "he",
+            "source_n": "1.2.0"
+          },
+          {
+            "id": "HAB-3-8-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35hSr",
+            "lemma": "2734",
+            "morphology": "HVqp3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-8-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35ZMk",
+            "lemma": "3068",
+            "morphology": "HNp",
+            "language": "he",
+            "source_n": "1.2"
+          },
+          {
+            "id": "HAB-3-8-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35irW",
+            "lemma": "518 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-8-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35x72",
+            "lemma": "b/5104",
+            "morphology": "HRd/Ncmpa",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-3-8-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35FYV",
+            "lemma": "639",
+            "morphology": "HNcmsc/Sp2ms",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-3-8-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35Uoo",
+            "lemma": "518 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-8-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35sC3",
+            "lemma": "b/3220",
+            "morphology": "HRd/Ncmsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-8-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "354CS",
+            "lemma": "5678",
+            "morphology": "HNcfsc/Sp2ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-8-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "356n2",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-8-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35HqY",
+            "lemma": "7392",
+            "morphology": "HVqi2ms",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-3-8-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35BFZ",
+            "lemma": "5921 a",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-8-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35shy",
+            "lemma": "5483 b",
+            "morphology": "HNcmpc/Sp2ms",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-3-8-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35nzj",
+            "lemma": "4818",
+            "morphology": "HNcfpc/Sp2ms",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-8-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35vpT",
+            "lemma": "3444",
+            "morphology": "HNcfsa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "9": {
+        "source_osis_id": "Hab.3.9",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-9-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "353Sx",
+            "lemma": "6181",
+            "morphology": "HNcfsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-9-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35qVv",
+            "lemma": "5783",
+            "morphology": "HVNi3fs",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-3-9-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35Kov",
+            "lemma": "7198",
+            "morphology": "HNcfsc/Sp2ms",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-3-9-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35HNy",
+            "lemma": "7621",
+            "morphology": "HNcfpa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-9-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35Ta6",
+            "lemma": "4294",
+            "morphology": "HNcmpa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-9-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35ER2",
+            "lemma": "562",
+            "morphology": "HNcmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-9-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35yP1",
+            "lemma": "5542",
+            "morphology": "HTj",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-9-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35w4T",
+            "lemma": "5104",
+            "morphology": "HNcmpa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-9-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35Cyx",
+            "lemma": "1234",
+            "morphology": "HVpi2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-9-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35qTT",
+            "lemma": "776",
+            "morphology": "HNcbsa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "10": {
+        "source_osis_id": "Hab.3.10",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-10-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35m55",
+            "lemma": "7200",
+            "morphology": "HVqp3cp/Sp2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-10-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35AF1",
+            "lemma": "2342 a",
+            "morphology": "HVqi3mp",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-3-10-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "355ED",
+            "lemma": "2022",
+            "morphology": "HNcmpa",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-3-10-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35zCS",
+            "lemma": "2230",
+            "morphology": "HNcmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-10-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35LsC",
+            "lemma": "4325",
+            "morphology": "HNcmpa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-10-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35B4x",
+            "lemma": "5674 a",
+            "morphology": "HVqp3ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-10-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35JB6",
+            "lemma": "5414",
+            "morphology": "HVqp3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-10-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35LzS",
+            "lemma": "8415",
+            "morphology": "HNcbsa",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-3-10-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "3583E",
+            "lemma": "6963 a",
+            "morphology": "HNcmsc/Sp3ms",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-3-10-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35hQD",
+            "lemma": "7315",
+            "morphology": "HNcmsc",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-10-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35LZD",
+            "lemma": "3027",
+            "morphology": "HNcbdc/Sp3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-10-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "356bH",
+            "lemma": "5375",
+            "morphology": "HVqp3ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "11": {
+        "source_osis_id": "Hab.3.11",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-11-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35Ekx",
+            "lemma": "8121",
+            "morphology": "HNcbsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-11-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35PG7",
+            "lemma": "3394",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-11-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35EL8",
+            "lemma": "5975",
+            "morphology": "HVqp3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-11-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35ufm",
+            "lemma": "2073",
+            "morphology": "HNcmsa/Sd",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-11-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35XSi",
+            "lemma": "l/216",
+            "morphology": "HR/Ncbsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-11-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35ELV",
+            "lemma": "2671",
+            "morphology": "HNcmpc/Sp2ms",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-3-11-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35Y6w",
+            "lemma": "1980",
+            "morphology": "HVpi3mp",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-3-11-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35qLR",
+            "lemma": "l/5051",
+            "morphology": "HR/Ncfsc",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-11-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35vfq",
+            "lemma": "1300 b",
+            "morphology": "HNcmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-11-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35Qsx",
+            "lemma": "2595",
+            "morphology": "HNcfsc/Sp2ms",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "12": {
+        "source_osis_id": "Hab.3.12",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-12-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "358KZ",
+            "lemma": "b/2195",
+            "morphology": "HR/Ncmsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-12-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35GXq",
+            "lemma": "6805",
+            "morphology": "HVqi2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-12-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35iCi",
+            "lemma": "776",
+            "morphology": "HNcbsa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-12-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35vwH",
+            "lemma": "b/639",
+            "morphology": "HR/Ncmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-12-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35dbM",
+            "lemma": "1758",
+            "morphology": "HVqi2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-12-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35Dqb",
+            "lemma": "1471 a",
+            "morphology": "HNcmpa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "13": {
+        "source_osis_id": "Hab.3.13",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-13-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35kCD",
+            "lemma": "3318",
+            "morphology": "HVqp2ms",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-3-13-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35XgW",
+            "lemma": "l/3468",
+            "morphology": "HR/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-13-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "356PV",
+            "lemma": "5971 a",
+            "morphology": "HNcmsc/Sp2ms",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-3-13-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35qGs",
+            "lemma": "l/3468",
+            "morphology": "HR/Ncmsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-13-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35w7p",
+            "lemma": "854",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-13-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35k7H",
+            "lemma": "4899",
+            "morphology": "HNcmsc/Sp2ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-13-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35r6F",
+            "lemma": "4272",
+            "morphology": "HVqp2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-13-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35Ugz",
+            "lemma": "7218 a",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-3-13-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35Mjg",
+            "lemma": "m/1004 b",
+            "morphology": "HR/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-13-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35mdR",
+            "lemma": "7563",
+            "morphology": "HAamsa",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-3-13-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35eWA",
+            "lemma": "6168",
+            "morphology": "HVpa",
+            "language": "he",
+            "source_n": "0.0.0"
+          },
+          {
+            "id": "HAB-3-13-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35CqN",
+            "lemma": "3247",
+            "morphology": "HNcmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-13-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35Cpt",
+            "lemma": "5704",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-13-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35aSi",
+            "lemma": "6677 a",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-13-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "357VU",
+            "lemma": "5542",
+            "morphology": "HTj",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "14": {
+        "source_osis_id": "Hab.3.14",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-14-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35eK3",
+            "lemma": "5344 a",
+            "morphology": "HVqp2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-14-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35c63",
+            "lemma": "b/4294",
+            "morphology": "HR/Ncmpc/Sp3ms",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-3-14-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35TuL",
+            "lemma": "7218 a",
+            "morphology": "HNcmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-14-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35emQ",
+            "lemma": "6518",
+            "morphology": "HNcmsc/Sp3ms",
+            "language": "he",
+            "source_type": "x-ketiv"
+          },
+          {
+            "id": "HAB-3-14-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35jQv",
+            "lemma": "5590",
+            "morphology": "HVqi3mp",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-14-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35ME1",
+            "lemma": "l/6327 a",
+            "morphology": "HR/Vhc/Sp1cs",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-14-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35ht4",
+            "lemma": "5951",
+            "morphology": "HNcfsc/Sp3mp",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-3-14-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "353Yo",
+            "lemma": "3644",
+            "morphology": "HR",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-14-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35pYb",
+            "lemma": "l/398",
+            "morphology": "HR/Vqc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-14-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35g5u",
+            "lemma": "6041",
+            "morphology": "HAamsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-14-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35w6U",
+            "lemma": "b/4565",
+            "morphology": "HRd/Ncmsa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "15": {
+        "source_osis_id": "Hab.3.15",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-15-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35ifL",
+            "lemma": "1869",
+            "morphology": "HVqp2ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-15-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35LZU",
+            "lemma": "b/3220",
+            "morphology": "HRd/Ncmsa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-15-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35yHT",
+            "lemma": "5483 b",
+            "morphology": "HNcmpc/Sp2ms",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-15-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "359Dq",
+            "lemma": "2563 b",
+            "morphology": "HNcmsc",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-15-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "357Vg",
+            "lemma": "4325",
+            "morphology": "HNcmpa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-15-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "353LR",
+            "lemma": "7227 a",
+            "morphology": "HAampa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "16": {
+        "source_osis_id": "Hab.3.16",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-16-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35vdQ",
+            "lemma": "8085",
+            "morphology": "HVqp1cs",
+            "language": "he",
+            "source_n": "1.1.1.0"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35zAa",
+            "lemma": "c/7264",
+            "morphology": "HC/Vqw3fs",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35HK3",
+            "lemma": "990",
+            "morphology": "HNcfsc/Sp1cs",
+            "language": "he",
+            "source_n": "1.1.1"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35sCi",
+            "lemma": "l/6963 a",
+            "morphology": "HR/Ncmsa",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35S3d",
+            "lemma": "6750",
+            "morphology": "HVqp3cp",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35RFe",
+            "lemma": "8193",
+            "morphology": "HNcfdc/Sp1cs",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35PfQ",
+            "lemma": "935",
+            "morphology": "HVqi3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35AwN",
+            "lemma": "7538",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1.0.0"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35khc",
+            "lemma": "b/6106",
+            "morphology": "HR/Ncfpc/Sp1cs",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35kYA",
+            "lemma": "c/8478",
+            "morphology": "HC/R/Sp1cs",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35u6F",
+            "lemma": "7264",
+            "morphology": "HVqi1cs",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35PYJ",
+            "lemma": "834 a",
+            "morphology": "HTr",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "351Za",
+            "lemma": "5117",
+            "morphology": "HVqi1cs",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35gam",
+            "lemma": "l/3117",
+            "morphology": "HR/Ncmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35un5",
+            "lemma": "6869 b",
+            "morphology": "HNcfsa",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-016",
+            "position": 16,
+            "source_word_id": "35WSe",
+            "lemma": "l/5927",
+            "morphology": "HR/Vqc",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-017",
+            "position": 17,
+            "source_word_id": "35AFs",
+            "lemma": "l/5971 a",
+            "morphology": "HR/Ncmsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-16-SEMITIC-018",
+            "position": 18,
+            "source_word_id": "35aJe",
+            "lemma": "1464",
+            "morphology": "HVqi3ms/Sp1cp",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "17": {
+        "source_osis_id": "Hab.3.17",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-17-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35g2t",
+            "lemma": "3588 a",
+            "morphology": "HC",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "358HV",
+            "lemma": "8384",
+            "morphology": "HNcfsa",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35j8W",
+            "lemma": "3808",
+            "morphology": "HTn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35h73",
+            "lemma": "6524 a",
+            "morphology": "HVqi3fs",
+            "language": "he",
+            "source_n": "1.2.1"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "359Yh",
+            "lemma": "c/369",
+            "morphology": "HC/Tn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35SkM",
+            "lemma": "2981",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1.2.0"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "35yXK",
+            "lemma": "b/1612",
+            "morphology": "HRd/Ncbpa",
+            "language": "he",
+            "source_n": "1.2"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35hDf",
+            "lemma": "3584",
+            "morphology": "HVpp3ms",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35PuA",
+            "lemma": "4639",
+            "morphology": "HNcmsc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "35myi",
+            "lemma": "2132",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35YLn",
+            "lemma": "c/7709",
+            "morphology": "HC/Ncfpa",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-012",
+            "position": 12,
+            "source_word_id": "35AXU",
+            "lemma": "3808",
+            "morphology": "HTn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-013",
+            "position": 13,
+            "source_word_id": "35reD",
+            "lemma": "6213 a",
+            "morphology": "HVqp3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-014",
+            "position": 14,
+            "source_word_id": "35VFM",
+            "lemma": "400",
+            "morphology": "HNcmsa",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-015",
+            "position": 15,
+            "source_word_id": "35SGf",
+            "lemma": "1504",
+            "morphology": "HVqp3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-016",
+            "position": 16,
+            "source_word_id": "359jX",
+            "lemma": "m/4356",
+            "morphology": "HR/Ncbsa",
+            "language": "he",
+            "source_n": "0.1.0"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-017",
+            "position": 17,
+            "source_word_id": "356t4",
+            "lemma": "6629",
+            "morphology": "HNcbsa",
+            "language": "he",
+            "source_n": "0.1"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-018",
+            "position": 18,
+            "source_word_id": "35Yu7",
+            "lemma": "c/369",
+            "morphology": "HC/Tn",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-019",
+            "position": 19,
+            "source_word_id": "35vL9",
+            "lemma": "1241",
+            "morphology": "HNcbsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-17-SEMITIC-020",
+            "position": 20,
+            "source_word_id": "35G2d",
+            "lemma": "b/7517",
+            "morphology": "HRd/Ncmpa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "18": {
+        "source_osis_id": "Hab.3.18",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-18-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35xY3",
+            "lemma": "c/589",
+            "morphology": "HC/Pp1cs",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-18-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35Zmd",
+            "lemma": "b/3068",
+            "morphology": "HR/Np",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-18-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "35Wyn",
+            "lemma": "5937",
+            "morphology": "HVqh1cs",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-18-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35njg",
+            "lemma": "1523",
+            "morphology": "HVqh1cs",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-18-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35L6G",
+            "lemma": "b/430",
+            "morphology": "HR/Ncmpc",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-18-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35EDP",
+            "lemma": "3468",
+            "morphology": "HNcmsc/Sp1cs",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      },
+      "19": {
+        "source_osis_id": "Hab.3.19",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "HAB-3-19-SEMITIC-001",
+            "position": 1,
+            "source_word_id": "35QUP",
+            "lemma": "3069",
+            "morphology": "HNp",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-19-SEMITIC-002",
+            "position": 2,
+            "source_word_id": "35fv8",
+            "lemma": "136",
+            "morphology": "HNcmpc/Sp1cs",
+            "language": "he",
+            "source_n": "1.2.0"
+          },
+          {
+            "id": "HAB-3-19-SEMITIC-003",
+            "position": 3,
+            "source_word_id": "352SX",
+            "lemma": "2428",
+            "morphology": "HNcmsc/Sp1cs",
+            "language": "he",
+            "source_n": "1.2"
+          },
+          {
+            "id": "HAB-3-19-SEMITIC-004",
+            "position": 4,
+            "source_word_id": "35pwZ",
+            "lemma": "c/7760 a",
+            "morphology": "HC/Vqw3ms",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-19-SEMITIC-005",
+            "position": 5,
+            "source_word_id": "35KKJ",
+            "lemma": "7272",
+            "morphology": "HNcfdc/Sp1cs",
+            "language": "he",
+            "source_n": "1.1.0"
+          },
+          {
+            "id": "HAB-3-19-SEMITIC-006",
+            "position": 6,
+            "source_word_id": "35U9v",
+            "lemma": "k/355",
+            "morphology": "HRd/Ncfpa",
+            "language": "he",
+            "source_n": "1.1"
+          },
+          {
+            "id": "HAB-3-19-SEMITIC-007",
+            "position": 7,
+            "source_word_id": "353V4",
+            "lemma": "c/5921 a",
+            "morphology": "HC/R",
+            "language": "he"
+          },
+          {
+            "id": "HAB-3-19-SEMITIC-008",
+            "position": 8,
+            "source_word_id": "35gJ1",
+            "lemma": "1116",
+            "morphology": "HNcfpc/Sp1cs",
+            "language": "he",
+            "source_n": "1.0"
+          },
+          {
+            "id": "HAB-3-19-SEMITIC-009",
+            "position": 9,
+            "source_word_id": "35rWk",
+            "lemma": "1869",
+            "morphology": "HVhi3ms/Sp1cs",
+            "language": "he",
+            "source_n": "1"
+          },
+          {
+            "id": "HAB-3-19-SEMITIC-010",
+            "position": 10,
+            "source_word_id": "356gQ",
+            "lemma": "l/5329",
+            "morphology": "HRd/Vprmsa",
+            "language": "he",
+            "source_n": "0.0"
+          },
+          {
+            "id": "HAB-3-19-SEMITIC-011",
+            "position": 11,
+            "source_word_id": "35mSF",
+            "lemma": "b/5058",
+            "morphology": "HR/Ncfpa",
+            "language": "he",
+            "source_n": "0"
+          }
+        ]
+      }
+    }
+  }
+}

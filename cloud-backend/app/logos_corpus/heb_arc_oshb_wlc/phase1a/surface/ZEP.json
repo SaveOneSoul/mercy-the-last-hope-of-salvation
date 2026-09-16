@@ -1,0 +1,5054 @@
+{
+  "schema_version": 1,
+  "phase": "Old Testament Expansion Phase 1A",
+  "production_enabled": false,
+  "book_id": "ZEP",
+  "book": "Zephaniah",
+  "catholic_order": 43,
+  "source_osis": "Zeph",
+  "source": {
+    "id": "oshb",
+    "repository": "openscriptures/morphhb",
+    "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+    "path": "wlc/Zeph.xml",
+    "git_blob_sha1": "db77292abc38d6c4655c892f080246883b8180a3",
+    "sha256": "eb5bd2a745fba1ffeed31dfafd834ce7c290929c992390be1a2b9451d22dea2e"
+  },
+  "normalization_applied": false,
+  "partition": "surface",
+  "rights": "Westminster Leningrad Codex — Public Domain",
+  "chapters": {
+    "1": {
+      "1": {
+        "source_osis_id": "Zeph.1.1",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-1-SEMITIC-001",
+            "position": 1,
+            "surface": "דְּבַר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-002",
+            "position": 2,
+            "surface": "יְהוָ֣ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-003",
+            "position": 3,
+            "surface": "אֲשֶׁ֣ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-004",
+            "position": 4,
+            "surface": "הָיָ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-005",
+            "position": 5,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-006",
+            "position": 6,
+            "surface": "צְפַנְיָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-007",
+            "position": 7,
+            "surface": "בֶּן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-008",
+            "position": 8,
+            "surface": "כּוּשִׁ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-009",
+            "position": 9,
+            "surface": "בֶן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-010",
+            "position": 10,
+            "surface": "גְּדַלְיָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-011",
+            "position": 11,
+            "surface": "בֶּן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-012",
+            "position": 12,
+            "surface": "אֲמַרְיָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-013",
+            "position": 13,
+            "surface": "בֶּן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-014",
+            "position": 14,
+            "surface": "חִזְקִיָּ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-015",
+            "position": 15,
+            "surface": "בִּ/ימֵ֛י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-016",
+            "position": 16,
+            "surface": "יֹאשִׁיָּ֥הוּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-017",
+            "position": 17,
+            "surface": "בֶן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-018",
+            "position": 18,
+            "surface": "אָמ֖וֹן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-019",
+            "position": 19,
+            "surface": "מֶ֥לֶךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-1-SEMITIC-020",
+            "position": 20,
+            "surface": "יְהוּדָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "2": {
+        "source_osis_id": "Zeph.1.2",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-2-SEMITIC-001",
+            "position": 1,
+            "surface": "אָסֹ֨ף",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-2-SEMITIC-002",
+            "position": 2,
+            "surface": "אָסֵ֜ף",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-2-SEMITIC-003",
+            "position": 3,
+            "surface": "כֹּ֗ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-2-SEMITIC-004",
+            "position": 4,
+            "surface": "מֵ/עַ֛ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-2-SEMITIC-005",
+            "position": 5,
+            "surface": "פְּנֵ֥י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-2-SEMITIC-006",
+            "position": 6,
+            "surface": "הָ/אֲדָמָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-2-SEMITIC-007",
+            "position": 7,
+            "surface": "נְאֻם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-2-SEMITIC-008",
+            "position": 8,
+            "surface": "יְהוָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "3": {
+        "source_osis_id": "Zeph.1.3",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-3-SEMITIC-001",
+            "position": 1,
+            "surface": "אָסֵ֨ף",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-002",
+            "position": 2,
+            "surface": "אָדָ֜ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-003",
+            "position": 3,
+            "surface": "וּ/בְהֵמָ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-004",
+            "position": 4,
+            "surface": "אָסֵ֤ף",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-005",
+            "position": 5,
+            "surface": "עוֹף",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-006",
+            "position": 6,
+            "surface": "הַ/שָּׁמַ֨יִם֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-007",
+            "position": 7,
+            "surface": "וּ/דְגֵ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-008",
+            "position": 8,
+            "surface": "הַ/יָּ֔ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-009",
+            "position": 9,
+            "surface": "וְ/הַ/מַּכְשֵׁל֖וֹת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-010",
+            "position": 10,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-011",
+            "position": 11,
+            "surface": "הָ/רְשָׁעִ֑ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-012",
+            "position": 12,
+            "surface": "וְ/הִכְרַתִּ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-013",
+            "position": 13,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-014",
+            "position": 14,
+            "surface": "הָ/אָדָ֗ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-015",
+            "position": 15,
+            "surface": "מֵ/עַ֛ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-016",
+            "position": 16,
+            "surface": "פְּנֵ֥י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-017",
+            "position": 17,
+            "surface": "הָ/אֲדָמָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-018",
+            "position": 18,
+            "surface": "נְאֻם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-3-SEMITIC-019",
+            "position": 19,
+            "surface": "יְהוָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "4": {
+        "source_osis_id": "Zeph.1.4",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-4-SEMITIC-001",
+            "position": 1,
+            "surface": "וְ/נָטִ֤יתִי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-002",
+            "position": 2,
+            "surface": "יָדִ/י֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-003",
+            "position": 3,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-004",
+            "position": 4,
+            "surface": "יְהוּדָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-005",
+            "position": 5,
+            "surface": "וְ/עַ֖ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-006",
+            "position": 6,
+            "surface": "כָּל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-007",
+            "position": 7,
+            "surface": "יוֹשְׁבֵ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-008",
+            "position": 8,
+            "surface": "יְרוּשָׁלִָ֑ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-009",
+            "position": 9,
+            "surface": "וְ/הִכְרַתִּ֞י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-010",
+            "position": 10,
+            "surface": "מִן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-011",
+            "position": 11,
+            "surface": "הַ/מָּק֤וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-012",
+            "position": 12,
+            "surface": "הַ/זֶּה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-013",
+            "position": 13,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-014",
+            "position": 14,
+            "surface": "שְׁאָ֣ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-015",
+            "position": 15,
+            "surface": "הַ/בַּ֔עַל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-016",
+            "position": 16,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-017",
+            "position": 17,
+            "surface": "שֵׁ֥ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-018",
+            "position": 18,
+            "surface": "הַ/כְּמָרִ֖ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-019",
+            "position": 19,
+            "surface": "עִם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-4-SEMITIC-020",
+            "position": 20,
+            "surface": "הַ/כֹּהֲנִֽים",
+            "language": "he"
+          }
+        ]
+      },
+      "5": {
+        "source_osis_id": "Zeph.1.5",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-5-SEMITIC-001",
+            "position": 1,
+            "surface": "וְ/אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-5-SEMITIC-002",
+            "position": 2,
+            "surface": "הַ/מִּשְׁתַּחֲוִ֥ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-5-SEMITIC-003",
+            "position": 3,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-5-SEMITIC-004",
+            "position": 4,
+            "surface": "הַ/גַּגּ֖וֹת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-5-SEMITIC-005",
+            "position": 5,
+            "surface": "לִ/צְבָ֣א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-5-SEMITIC-006",
+            "position": 6,
+            "surface": "הַ/שָּׁמָ֑יִם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-5-SEMITIC-007",
+            "position": 7,
+            "surface": "וְ/אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-5-SEMITIC-008",
+            "position": 8,
+            "surface": "הַ/מִּֽשְׁתַּחֲוִים֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-5-SEMITIC-009",
+            "position": 9,
+            "surface": "הַ/נִּשְׁבָּעִ֣ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-5-SEMITIC-010",
+            "position": 10,
+            "surface": "לַֽ/יהוָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-5-SEMITIC-011",
+            "position": 11,
+            "surface": "וְ/הַ/נִּשְׁבָּעִ֖ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-5-SEMITIC-012",
+            "position": 12,
+            "surface": "בְּ/מַלְכָּֽ/ם",
+            "language": "he"
+          }
+        ]
+      },
+      "6": {
+        "source_osis_id": "Zeph.1.6",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-6-SEMITIC-001",
+            "position": 1,
+            "surface": "וְ/אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-6-SEMITIC-002",
+            "position": 2,
+            "surface": "הַ/נְּסוֹגִ֖ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-6-SEMITIC-003",
+            "position": 3,
+            "surface": "מֵ/אַחֲרֵ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-6-SEMITIC-004",
+            "position": 4,
+            "surface": "יְהוָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-6-SEMITIC-005",
+            "position": 5,
+            "surface": "וַ/אֲשֶׁ֛ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-6-SEMITIC-006",
+            "position": 6,
+            "surface": "לֹֽא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-6-SEMITIC-007",
+            "position": 7,
+            "surface": "בִקְשׁ֥וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-6-SEMITIC-008",
+            "position": 8,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-6-SEMITIC-009",
+            "position": 9,
+            "surface": "יְהוָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-6-SEMITIC-010",
+            "position": 10,
+            "surface": "וְ/לֹ֥א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-6-SEMITIC-011",
+            "position": 11,
+            "surface": "דְרָשֻֽׁ/הוּ",
+            "language": "he"
+          }
+        ]
+      },
+      "7": {
+        "source_osis_id": "Zeph.1.7",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-7-SEMITIC-001",
+            "position": 1,
+            "surface": "הַ֕ס",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-7-SEMITIC-002",
+            "position": 2,
+            "surface": "מִ/פְּנֵ֖י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-7-SEMITIC-003",
+            "position": 3,
+            "surface": "אֲדֹנָ֣/י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-7-SEMITIC-004",
+            "position": 4,
+            "surface": "יְהוִ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-7-SEMITIC-005",
+            "position": 5,
+            "surface": "כִּ֤י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-7-SEMITIC-006",
+            "position": 6,
+            "surface": "קָרוֹב֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-7-SEMITIC-007",
+            "position": 7,
+            "surface": "י֣וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-7-SEMITIC-008",
+            "position": 8,
+            "surface": "יְהוָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-7-SEMITIC-009",
+            "position": 9,
+            "surface": "כִּֽי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-7-SEMITIC-010",
+            "position": 10,
+            "surface": "הֵכִ֧ין",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-7-SEMITIC-011",
+            "position": 11,
+            "surface": "יְהוָ֛ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-7-SEMITIC-012",
+            "position": 12,
+            "surface": "זֶ֖בַח",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-7-SEMITIC-013",
+            "position": 13,
+            "surface": "הִקְדִּ֥ישׁ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-7-SEMITIC-014",
+            "position": 14,
+            "surface": "קְרֻאָֽי/ו",
+            "language": "he"
+          }
+        ]
+      },
+      "8": {
+        "source_osis_id": "Zeph.1.8",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-8-SEMITIC-001",
+            "position": 1,
+            "surface": "וְ/הָיָ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-8-SEMITIC-002",
+            "position": 2,
+            "surface": "בְּ/יוֹם֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-8-SEMITIC-003",
+            "position": 3,
+            "surface": "זֶ֣בַח",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-8-SEMITIC-004",
+            "position": 4,
+            "surface": "יְהוָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-8-SEMITIC-005",
+            "position": 5,
+            "surface": "וּ/פָקַדְתִּ֥י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-8-SEMITIC-006",
+            "position": 6,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-8-SEMITIC-007",
+            "position": 7,
+            "surface": "הַ/שָּׂרִ֖ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-8-SEMITIC-008",
+            "position": 8,
+            "surface": "וְ/עַל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-8-SEMITIC-009",
+            "position": 9,
+            "surface": "בְּנֵ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-8-SEMITIC-010",
+            "position": 10,
+            "surface": "הַ/מֶּ֑לֶךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-8-SEMITIC-011",
+            "position": 11,
+            "surface": "וְ/עַ֥ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-8-SEMITIC-012",
+            "position": 12,
+            "surface": "כָּל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-8-SEMITIC-013",
+            "position": 13,
+            "surface": "הַ/לֹּבְשִׁ֖ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-8-SEMITIC-014",
+            "position": 14,
+            "surface": "מַלְבּ֥וּשׁ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-8-SEMITIC-015",
+            "position": 15,
+            "surface": "נָכְרִֽי",
+            "language": "he"
+          }
+        ]
+      },
+      "9": {
+        "source_osis_id": "Zeph.1.9",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-9-SEMITIC-001",
+            "position": 1,
+            "surface": "וּ/פָקַדְתִּ֗י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-9-SEMITIC-002",
+            "position": 2,
+            "surface": "עַ֧ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-9-SEMITIC-003",
+            "position": 3,
+            "surface": "כָּל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-9-SEMITIC-004",
+            "position": 4,
+            "surface": "הַ/דּוֹלֵ֛ג",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-9-SEMITIC-005",
+            "position": 5,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-9-SEMITIC-006",
+            "position": 6,
+            "surface": "הַ/מִּפְתָּ֖ן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-9-SEMITIC-007",
+            "position": 7,
+            "surface": "בַּ/יּ֣וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-9-SEMITIC-008",
+            "position": 8,
+            "surface": "הַ/ה֑וּא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-9-SEMITIC-009",
+            "position": 9,
+            "surface": "הַֽ/מְמַלְאִ֛ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-9-SEMITIC-010",
+            "position": 10,
+            "surface": "בֵּ֥ית",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-9-SEMITIC-011",
+            "position": 11,
+            "surface": "אֲדֹנֵי/הֶ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-9-SEMITIC-012",
+            "position": 12,
+            "surface": "חָמָ֥ס",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-9-SEMITIC-013",
+            "position": 13,
+            "surface": "וּ/מִרְמָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "10": {
+        "source_osis_id": "Zeph.1.10",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-10-SEMITIC-001",
+            "position": 1,
+            "surface": "וְ/הָיָה֩",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-10-SEMITIC-002",
+            "position": 2,
+            "surface": "בַ/יּ֨וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-10-SEMITIC-003",
+            "position": 3,
+            "surface": "הַ/ה֜וּא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-10-SEMITIC-004",
+            "position": 4,
+            "surface": "נְאֻם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-10-SEMITIC-005",
+            "position": 5,
+            "surface": "יְהוָ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-10-SEMITIC-006",
+            "position": 6,
+            "surface": "ק֤וֹל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-10-SEMITIC-007",
+            "position": 7,
+            "surface": "צְעָקָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-10-SEMITIC-008",
+            "position": 8,
+            "surface": "מִ/שַּׁ֣עַר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-10-SEMITIC-009",
+            "position": 9,
+            "surface": "הַ/דָּגִ֔ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-10-SEMITIC-010",
+            "position": 10,
+            "surface": "וִֽ/ילָלָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-10-SEMITIC-011",
+            "position": 11,
+            "surface": "מִן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-10-SEMITIC-012",
+            "position": 12,
+            "surface": "הַ/מִּשְׁנֶ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-10-SEMITIC-013",
+            "position": 13,
+            "surface": "וְ/שֶׁ֥בֶר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-10-SEMITIC-014",
+            "position": 14,
+            "surface": "גָּד֖וֹל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-10-SEMITIC-015",
+            "position": 15,
+            "surface": "מֵ/הַ/גְּבָעֽוֹת",
+            "language": "he"
+          }
+        ]
+      },
+      "11": {
+        "source_osis_id": "Zeph.1.11",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-11-SEMITIC-001",
+            "position": 1,
+            "surface": "הֵילִ֖ילוּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-11-SEMITIC-002",
+            "position": 2,
+            "surface": "יֹשְׁבֵ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-11-SEMITIC-003",
+            "position": 3,
+            "surface": "הַ/מַּכְתֵּ֑שׁ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-11-SEMITIC-004",
+            "position": 4,
+            "surface": "כִּ֤י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-11-SEMITIC-005",
+            "position": 5,
+            "surface": "נִדְמָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-11-SEMITIC-006",
+            "position": 6,
+            "surface": "כָּל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-11-SEMITIC-007",
+            "position": 7,
+            "surface": "עַ֣ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-11-SEMITIC-008",
+            "position": 8,
+            "surface": "כְּנַ֔עַן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-11-SEMITIC-009",
+            "position": 9,
+            "surface": "נִכְרְת֖וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-11-SEMITIC-010",
+            "position": 10,
+            "surface": "כָּל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-11-SEMITIC-011",
+            "position": 11,
+            "surface": "נְטִ֥ילֵי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-11-SEMITIC-012",
+            "position": 12,
+            "surface": "כָֽסֶף",
+            "language": "he"
+          }
+        ]
+      },
+      "12": {
+        "source_osis_id": "Zeph.1.12",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-12-SEMITIC-001",
+            "position": 1,
+            "surface": "וְ/הָיָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-002",
+            "position": 2,
+            "surface": "בָּ/עֵ֣ת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-003",
+            "position": 3,
+            "surface": "הַ/הִ֔יא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-004",
+            "position": 4,
+            "surface": "אֲחַפֵּ֥שׂ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-005",
+            "position": 5,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-006",
+            "position": 6,
+            "surface": "יְרוּשָׁלִַ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-007",
+            "position": 7,
+            "surface": "בַּ/נֵּר֑וֹת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-008",
+            "position": 8,
+            "surface": "וּ/פָקַדְתִּ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-009",
+            "position": 9,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-010",
+            "position": 10,
+            "surface": "הָ/אֲנָשִׁ֗ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-011",
+            "position": 11,
+            "surface": "הַ/קֹּֽפְאִים֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-012",
+            "position": 12,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-013",
+            "position": 13,
+            "surface": "שִׁמְרֵי/הֶ֔ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-014",
+            "position": 14,
+            "surface": "הָ/אֹֽמְרִים֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-015",
+            "position": 15,
+            "surface": "בִּ/לְבָבָ֔/ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-016",
+            "position": 16,
+            "surface": "לֹֽא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-017",
+            "position": 17,
+            "surface": "יֵיטִ֥יב",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-018",
+            "position": 18,
+            "surface": "יְהוָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-019",
+            "position": 19,
+            "surface": "וְ/לֹ֥א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-12-SEMITIC-020",
+            "position": 20,
+            "surface": "יָרֵֽעַ",
+            "language": "he"
+          }
+        ]
+      },
+      "13": {
+        "source_osis_id": "Zeph.1.13",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-13-SEMITIC-001",
+            "position": 1,
+            "surface": "וְ/הָיָ֤ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-13-SEMITIC-002",
+            "position": 2,
+            "surface": "חֵילָ/ם֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-13-SEMITIC-003",
+            "position": 3,
+            "surface": "לִ/מְשִׁסָּ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-13-SEMITIC-004",
+            "position": 4,
+            "surface": "וּ/בָתֵּי/הֶ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-13-SEMITIC-005",
+            "position": 5,
+            "surface": "לִ/שְׁמָמָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-13-SEMITIC-006",
+            "position": 6,
+            "surface": "וּ/בָנ֤וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-13-SEMITIC-007",
+            "position": 7,
+            "surface": "בָתִּים֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-13-SEMITIC-008",
+            "position": 8,
+            "surface": "וְ/לֹ֣א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-13-SEMITIC-009",
+            "position": 9,
+            "surface": "יֵשֵׁ֔בוּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-13-SEMITIC-010",
+            "position": 10,
+            "surface": "וְ/נָטְע֣וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-13-SEMITIC-011",
+            "position": 11,
+            "surface": "כְרָמִ֔ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-13-SEMITIC-012",
+            "position": 12,
+            "surface": "וְ/לֹ֥א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-13-SEMITIC-013",
+            "position": 13,
+            "surface": "יִשְׁתּ֖וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-13-SEMITIC-014",
+            "position": 14,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-13-SEMITIC-015",
+            "position": 15,
+            "surface": "יֵינָֽ/ם",
+            "language": "he"
+          }
+        ]
+      },
+      "14": {
+        "source_osis_id": "Zeph.1.14",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-14-SEMITIC-001",
+            "position": 1,
+            "surface": "קָר֤וֹב",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-14-SEMITIC-002",
+            "position": 2,
+            "surface": "יוֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-14-SEMITIC-003",
+            "position": 3,
+            "surface": "יְהוָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-14-SEMITIC-004",
+            "position": 4,
+            "surface": "הַ/גָּד֔וֹל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-14-SEMITIC-005",
+            "position": 5,
+            "surface": "קָר֖וֹב",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-14-SEMITIC-006",
+            "position": 6,
+            "surface": "וּ/מַהֵ֣ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-14-SEMITIC-007",
+            "position": 7,
+            "surface": "מְאֹ֑ד",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-14-SEMITIC-008",
+            "position": 8,
+            "surface": "ק֚וֹל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-14-SEMITIC-009",
+            "position": 9,
+            "surface": "י֣וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-14-SEMITIC-010",
+            "position": 10,
+            "surface": "יְהוָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-14-SEMITIC-011",
+            "position": 11,
+            "surface": "מַ֥ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-14-SEMITIC-012",
+            "position": 12,
+            "surface": "צֹרֵ֖חַ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-14-SEMITIC-013",
+            "position": 13,
+            "surface": "שָׁ֥ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-14-SEMITIC-014",
+            "position": 14,
+            "surface": "גִּבּֽוֹר",
+            "language": "he"
+          }
+        ]
+      },
+      "15": {
+        "source_osis_id": "Zeph.1.15",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-15-SEMITIC-001",
+            "position": 1,
+            "surface": "י֥וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-15-SEMITIC-002",
+            "position": 2,
+            "surface": "עֶבְרָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-15-SEMITIC-003",
+            "position": 3,
+            "surface": "הַ/יּ֣וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-15-SEMITIC-004",
+            "position": 4,
+            "surface": "הַ/ה֑וּא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-15-SEMITIC-005",
+            "position": 5,
+            "surface": "י֧וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-15-SEMITIC-006",
+            "position": 6,
+            "surface": "צָרָ֣ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-15-SEMITIC-007",
+            "position": 7,
+            "surface": "וּ/מְצוּקָ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-15-SEMITIC-008",
+            "position": 8,
+            "surface": "י֤וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-15-SEMITIC-009",
+            "position": 9,
+            "surface": "שֹׁאָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-15-SEMITIC-010",
+            "position": 10,
+            "surface": "וּ/מְשׁוֹאָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-15-SEMITIC-011",
+            "position": 11,
+            "surface": "י֥וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-15-SEMITIC-012",
+            "position": 12,
+            "surface": "חֹ֨שֶׁךְ֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-15-SEMITIC-013",
+            "position": 13,
+            "surface": "וַ/אֲפֵלָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-15-SEMITIC-014",
+            "position": 14,
+            "surface": "י֥וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-15-SEMITIC-015",
+            "position": 15,
+            "surface": "עָנָ֖ן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-15-SEMITIC-016",
+            "position": 16,
+            "surface": "וַ/עֲרָפֶֽל",
+            "language": "he"
+          }
+        ]
+      },
+      "16": {
+        "source_osis_id": "Zeph.1.16",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-16-SEMITIC-001",
+            "position": 1,
+            "surface": "י֥וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-16-SEMITIC-002",
+            "position": 2,
+            "surface": "שׁוֹפָ֖ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-16-SEMITIC-003",
+            "position": 3,
+            "surface": "וּ/תְרוּעָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-16-SEMITIC-004",
+            "position": 4,
+            "surface": "עַ֚ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-16-SEMITIC-005",
+            "position": 5,
+            "surface": "הֶ/עָרִ֣ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-16-SEMITIC-006",
+            "position": 6,
+            "surface": "הַ/בְּצֻר֔וֹת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-16-SEMITIC-007",
+            "position": 7,
+            "surface": "וְ/עַ֖ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-16-SEMITIC-008",
+            "position": 8,
+            "surface": "הַ/פִּנּ֥וֹת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-16-SEMITIC-009",
+            "position": 9,
+            "surface": "הַ/גְּבֹהֽוֹת",
+            "language": "he"
+          }
+        ]
+      },
+      "17": {
+        "source_osis_id": "Zeph.1.17",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-17-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/הֲצֵרֹ֣תִי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-17-SEMITIC-002",
+            "position": 2,
+            "surface": "לָ/אָדָ֗ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-17-SEMITIC-003",
+            "position": 3,
+            "surface": "וְ/הָֽלְכוּ֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-17-SEMITIC-004",
+            "position": 4,
+            "surface": "כַּֽ/עִוְרִ֔ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-17-SEMITIC-005",
+            "position": 5,
+            "surface": "כִּ֥י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-17-SEMITIC-006",
+            "position": 6,
+            "surface": "לַֽ/יהוָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-17-SEMITIC-007",
+            "position": 7,
+            "surface": "חָטָ֑אוּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-17-SEMITIC-008",
+            "position": 8,
+            "surface": "וְ/שֻׁפַּ֤ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-17-SEMITIC-009",
+            "position": 9,
+            "surface": "דָּמָ/ם֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-17-SEMITIC-010",
+            "position": 10,
+            "surface": "כֶּֽ/עָפָ֔ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-17-SEMITIC-011",
+            "position": 11,
+            "surface": "וּ/לְחֻמָ֖/ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-17-SEMITIC-012",
+            "position": 12,
+            "surface": "כַּ/גְּלָלִֽים",
+            "language": "he"
+          }
+        ]
+      },
+      "18": {
+        "source_osis_id": "Zeph.1.18",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-1-18-SEMITIC-001",
+            "position": 1,
+            "surface": "גַּם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-002",
+            "position": 2,
+            "surface": "כַּסְפָּ֨/ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-003",
+            "position": 3,
+            "surface": "גַּם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-004",
+            "position": 4,
+            "surface": "זְהָבָ֜/ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-005",
+            "position": 5,
+            "surface": "לֹֽא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-006",
+            "position": 6,
+            "surface": "יוּכַ֣ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-007",
+            "position": 7,
+            "surface": "לְ/הַצִּילָ֗/ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-008",
+            "position": 8,
+            "surface": "בְּ/יוֹם֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-009",
+            "position": 9,
+            "surface": "עֶבְרַ֣ת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-010",
+            "position": 10,
+            "surface": "יְהוָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-011",
+            "position": 11,
+            "surface": "וּ/בְ/אֵשׁ֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-012",
+            "position": 12,
+            "surface": "קִנְאָת֔/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-013",
+            "position": 13,
+            "surface": "תֵּאָכֵ֖ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-014",
+            "position": 14,
+            "surface": "כָּל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-015",
+            "position": 15,
+            "surface": "הָ/אָ֑רֶץ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-016",
+            "position": 16,
+            "surface": "כִּֽי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-017",
+            "position": 17,
+            "surface": "כָלָ֤ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-018",
+            "position": 18,
+            "surface": "אַךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-019",
+            "position": 19,
+            "surface": "נִבְהָלָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-020",
+            "position": 20,
+            "surface": "יַֽעֲשֶׂ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-021",
+            "position": 21,
+            "surface": "אֵ֥ת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-022",
+            "position": 22,
+            "surface": "כָּל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-023",
+            "position": 23,
+            "surface": "יֹשְׁבֵ֖י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-1-18-SEMITIC-024",
+            "position": 24,
+            "surface": "הָ/אָֽרֶץ",
+            "language": "he"
+          }
+        ]
+      }
+    },
+    "2": {
+      "1": {
+        "source_osis_id": "Zeph.2.1",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-2-1-SEMITIC-001",
+            "position": 1,
+            "surface": "הִֽתְקוֹשְׁשׁ֖וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-1-SEMITIC-002",
+            "position": 2,
+            "surface": "וָ/ק֑וֹשּׁוּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-1-SEMITIC-003",
+            "position": 3,
+            "surface": "הַ/גּ֖וֹי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-1-SEMITIC-004",
+            "position": 4,
+            "surface": "לֹ֥א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-1-SEMITIC-005",
+            "position": 5,
+            "surface": "נִכְסָֽף",
+            "language": "he"
+          }
+        ]
+      },
+      "2": {
+        "source_osis_id": "Zeph.2.2",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-2-2-SEMITIC-001",
+            "position": 1,
+            "surface": "בְּ/טֶ֨רֶם֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-002",
+            "position": 2,
+            "surface": "לֶ֣דֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-003",
+            "position": 3,
+            "surface": "חֹ֔ק",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-004",
+            "position": 4,
+            "surface": "כְּ/מֹ֖ץ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-005",
+            "position": 5,
+            "surface": "עָ֣בַר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-006",
+            "position": 6,
+            "surface": "י֑וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-007",
+            "position": 7,
+            "surface": "בְּ/טֶ֣רֶם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-008",
+            "position": 8,
+            "surface": "לֹא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-009",
+            "position": 9,
+            "surface": "יָב֣וֹא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-010",
+            "position": 10,
+            "surface": "עֲלֵי/כֶ֗ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-011",
+            "position": 11,
+            "surface": "חֲרוֹן֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-012",
+            "position": 12,
+            "surface": "אַף",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-013",
+            "position": 13,
+            "surface": "יְהוָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-014",
+            "position": 14,
+            "surface": "בְּ/טֶ֨רֶם֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-015",
+            "position": 15,
+            "surface": "לֹא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-016",
+            "position": 16,
+            "surface": "יָב֣וֹא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-017",
+            "position": 17,
+            "surface": "עֲלֵי/כֶ֔ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-018",
+            "position": 18,
+            "surface": "י֖וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-019",
+            "position": 19,
+            "surface": "אַף",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-2-SEMITIC-020",
+            "position": 20,
+            "surface": "יְהוָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "3": {
+        "source_osis_id": "Zeph.2.3",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-2-3-SEMITIC-001",
+            "position": 1,
+            "surface": "בַּקְּשׁ֤וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-002",
+            "position": 2,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-003",
+            "position": 3,
+            "surface": "יְהוָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-004",
+            "position": 4,
+            "surface": "כָּל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-005",
+            "position": 5,
+            "surface": "עַנְוֵ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-006",
+            "position": 6,
+            "surface": "הָ/אָ֔רֶץ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-007",
+            "position": 7,
+            "surface": "אֲשֶׁ֥ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-008",
+            "position": 8,
+            "surface": "מִשְׁפָּט֖/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-009",
+            "position": 9,
+            "surface": "פָּעָ֑לוּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-010",
+            "position": 10,
+            "surface": "בַּקְּשׁוּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-011",
+            "position": 11,
+            "surface": "צֶ֨דֶק֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-012",
+            "position": 12,
+            "surface": "בַּקְּשׁ֣וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-013",
+            "position": 13,
+            "surface": "עֲנָוָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-014",
+            "position": 14,
+            "surface": "אוּלַי֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-015",
+            "position": 15,
+            "surface": "תִּסָּ֣תְר֔וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-016",
+            "position": 16,
+            "surface": "בְּ/י֖וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-017",
+            "position": 17,
+            "surface": "אַף",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-3-SEMITIC-018",
+            "position": 18,
+            "surface": "יְהוָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "4": {
+        "source_osis_id": "Zeph.2.4",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-2-4-SEMITIC-001",
+            "position": 1,
+            "surface": "כִּ֤י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-4-SEMITIC-002",
+            "position": 2,
+            "surface": "עַזָּה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-4-SEMITIC-003",
+            "position": 3,
+            "surface": "עֲזוּבָ֣ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-4-SEMITIC-004",
+            "position": 4,
+            "surface": "תִֽהְיֶ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-4-SEMITIC-005",
+            "position": 5,
+            "surface": "וְ/אַשְׁקְל֖וֹן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-4-SEMITIC-006",
+            "position": 6,
+            "surface": "לִ/שְׁמָמָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-4-SEMITIC-007",
+            "position": 7,
+            "surface": "אַשְׁדּ֗וֹד",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-4-SEMITIC-008",
+            "position": 8,
+            "surface": "בַּֽ/צָּהֳרַ֨יִם֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-4-SEMITIC-009",
+            "position": 9,
+            "surface": "יְגָ֣רְשׁ֔וּ/הָ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-4-SEMITIC-010",
+            "position": 10,
+            "surface": "וְ/עֶקְר֖וֹן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-4-SEMITIC-011",
+            "position": 11,
+            "surface": "תֵּעָקֵֽר",
+            "language": "he"
+          }
+        ]
+      },
+      "5": {
+        "source_osis_id": "Zeph.2.5",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-2-5-SEMITIC-001",
+            "position": 1,
+            "surface": "ה֗וֹי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-5-SEMITIC-002",
+            "position": 2,
+            "surface": "יֹֽשְׁבֵ֛י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-5-SEMITIC-003",
+            "position": 3,
+            "surface": "חֶ֥בֶל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-5-SEMITIC-004",
+            "position": 4,
+            "surface": "הַ/יָּ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-5-SEMITIC-005",
+            "position": 5,
+            "surface": "גּ֣וֹי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-5-SEMITIC-006",
+            "position": 6,
+            "surface": "כְּרֵתִ֑ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-5-SEMITIC-007",
+            "position": 7,
+            "surface": "דְּבַר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-5-SEMITIC-008",
+            "position": 8,
+            "surface": "יְהוָ֣ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-5-SEMITIC-009",
+            "position": 9,
+            "surface": "עֲלֵי/כֶ֗ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-5-SEMITIC-010",
+            "position": 10,
+            "surface": "כְּנַ֨עַן֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-5-SEMITIC-011",
+            "position": 11,
+            "surface": "אֶ֣רֶץ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-5-SEMITIC-012",
+            "position": 12,
+            "surface": "פְּלִשְׁתִּ֔ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-5-SEMITIC-013",
+            "position": 13,
+            "surface": "וְ/הַאֲבַדְתִּ֖י/ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-5-SEMITIC-014",
+            "position": 14,
+            "surface": "מֵ/אֵ֥ין",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-5-SEMITIC-015",
+            "position": 15,
+            "surface": "יוֹשֵֽׁב",
+            "language": "he"
+          }
+        ]
+      },
+      "6": {
+        "source_osis_id": "Zeph.2.6",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-2-6-SEMITIC-001",
+            "position": 1,
+            "surface": "וְֽ/הָיְתָ֞ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-6-SEMITIC-002",
+            "position": 2,
+            "surface": "חֶ֣בֶל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-6-SEMITIC-003",
+            "position": 3,
+            "surface": "הַ/יָּ֗ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-6-SEMITIC-004",
+            "position": 4,
+            "surface": "נְוֺ֛ת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-6-SEMITIC-005",
+            "position": 5,
+            "surface": "כְּרֹ֥ת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-6-SEMITIC-006",
+            "position": 6,
+            "surface": "רֹעִ֖ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-6-SEMITIC-007",
+            "position": 7,
+            "surface": "וְ/גִדְר֥וֹת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-6-SEMITIC-008",
+            "position": 8,
+            "surface": "צֹֽאן",
+            "language": "he"
+          }
+        ]
+      },
+      "7": {
+        "source_osis_id": "Zeph.2.7",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-2-7-SEMITIC-001",
+            "position": 1,
+            "surface": "וְ/הָ֣יָה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-002",
+            "position": 2,
+            "surface": "חֶ֗בֶל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-003",
+            "position": 3,
+            "surface": "לִ/שְׁאֵרִ֛ית",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-004",
+            "position": 4,
+            "surface": "בֵּ֥ית",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-005",
+            "position": 5,
+            "surface": "יְהוּדָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-006",
+            "position": 6,
+            "surface": "עֲלֵי/הֶ֣ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-007",
+            "position": 7,
+            "surface": "יִרְע֑וּ/ן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-008",
+            "position": 8,
+            "surface": "בְּ/בָתֵּ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-009",
+            "position": 9,
+            "surface": "אַשְׁקְל֗וֹן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-010",
+            "position": 10,
+            "surface": "בָּ/עֶ֨רֶב֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-011",
+            "position": 11,
+            "surface": "יִרְבָּצ֔וּ/ן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-012",
+            "position": 12,
+            "surface": "כִּ֧י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-013",
+            "position": 13,
+            "surface": "יִפְקְדֵ֛/ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-014",
+            "position": 14,
+            "surface": "יְהוָ֥ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-015",
+            "position": 15,
+            "surface": "אֱלֹהֵי/הֶ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-016",
+            "position": 16,
+            "surface": "וְ/שָׁ֥ב",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-7-SEMITIC-017",
+            "position": 17,
+            "surface": "שבות/ם",
+            "language": "he"
+          }
+        ]
+      },
+      "8": {
+        "source_osis_id": "Zeph.2.8",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-2-8-SEMITIC-001",
+            "position": 1,
+            "surface": "שָׁמַ֨עְתִּי֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-8-SEMITIC-002",
+            "position": 2,
+            "surface": "חֶרְפַּ֣ת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-8-SEMITIC-003",
+            "position": 3,
+            "surface": "מוֹאָ֔ב",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-8-SEMITIC-004",
+            "position": 4,
+            "surface": "וְ/גִדּוּפֵ֖י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-8-SEMITIC-005",
+            "position": 5,
+            "surface": "בְּנֵ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-8-SEMITIC-006",
+            "position": 6,
+            "surface": "עַמּ֑וֹן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-8-SEMITIC-007",
+            "position": 7,
+            "surface": "אֲשֶׁ֤ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-8-SEMITIC-008",
+            "position": 8,
+            "surface": "חֵֽרְפוּ֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-8-SEMITIC-009",
+            "position": 9,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-8-SEMITIC-010",
+            "position": 10,
+            "surface": "עַמִּ֔/י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-8-SEMITIC-011",
+            "position": 11,
+            "surface": "וַ/יַּגְדִּ֖ילוּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-8-SEMITIC-012",
+            "position": 12,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-8-SEMITIC-013",
+            "position": 13,
+            "surface": "גְּבוּלָֽ/ם",
+            "language": "he"
+          }
+        ]
+      },
+      "9": {
+        "source_osis_id": "Zeph.2.9",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-2-9-SEMITIC-001",
+            "position": 1,
+            "surface": "לָ/כֵ֣ן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-002",
+            "position": 2,
+            "surface": "חַי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-003",
+            "position": 3,
+            "surface": "אָ֡נִי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-004",
+            "position": 4,
+            "surface": "נְאֻם֩",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-005",
+            "position": 5,
+            "surface": "יְהוָ֨ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-006",
+            "position": 6,
+            "surface": "צְבָא֜וֹת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-007",
+            "position": 7,
+            "surface": "אֱלֹהֵ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-008",
+            "position": 8,
+            "surface": "יִשְׂרָאֵ֗ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-009",
+            "position": 9,
+            "surface": "כִּֽי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-010",
+            "position": 10,
+            "surface": "מוֹאָ֞ב",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-011",
+            "position": 11,
+            "surface": "כִּ/סְדֹ֤ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-012",
+            "position": 12,
+            "surface": "תִּֽהְיֶה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-013",
+            "position": 13,
+            "surface": "וּ/בְנֵ֤י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-014",
+            "position": 14,
+            "surface": "עַמּוֹן֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-015",
+            "position": 15,
+            "surface": "כַּֽ/עֲמֹרָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-016",
+            "position": 16,
+            "surface": "מִמְשַׁ֥ק",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-017",
+            "position": 17,
+            "surface": "חָר֛וּל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-018",
+            "position": 18,
+            "surface": "וּ/מִכְרֵה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-019",
+            "position": 19,
+            "surface": "מֶ֥לַח",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-020",
+            "position": 20,
+            "surface": "וּ/שְׁמָמָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-021",
+            "position": 21,
+            "surface": "עַד",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-022",
+            "position": 22,
+            "surface": "עוֹלָ֑ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-023",
+            "position": 23,
+            "surface": "שְׁאֵרִ֤ית",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-024",
+            "position": 24,
+            "surface": "עַמִּ/י֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-025",
+            "position": 25,
+            "surface": "יְבָזּ֔וּ/ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-026",
+            "position": 26,
+            "surface": "וְ/יֶ֥תֶר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-027",
+            "position": 27,
+            "surface": "גוי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-9-SEMITIC-028",
+            "position": 28,
+            "surface": "יִנְחָלֽוּ/ם",
+            "language": "he"
+          }
+        ]
+      },
+      "10": {
+        "source_osis_id": "Zeph.2.10",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-2-10-SEMITIC-001",
+            "position": 1,
+            "surface": "זֹ֥את",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-10-SEMITIC-002",
+            "position": 2,
+            "surface": "לָ/הֶ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-10-SEMITIC-003",
+            "position": 3,
+            "surface": "תַּ֣חַת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-10-SEMITIC-004",
+            "position": 4,
+            "surface": "גְּאוֹנָ֑/ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-10-SEMITIC-005",
+            "position": 5,
+            "surface": "כִּ֤י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-10-SEMITIC-006",
+            "position": 6,
+            "surface": "חֵֽרְפוּ֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-10-SEMITIC-007",
+            "position": 7,
+            "surface": "וַ/יַּגְדִּ֔לוּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-10-SEMITIC-008",
+            "position": 8,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-10-SEMITIC-009",
+            "position": 9,
+            "surface": "עַ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-10-SEMITIC-010",
+            "position": 10,
+            "surface": "יְהוָ֥ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-10-SEMITIC-011",
+            "position": 11,
+            "surface": "צְבָאֽוֹת",
+            "language": "he"
+          }
+        ]
+      },
+      "11": {
+        "source_osis_id": "Zeph.2.11",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-2-11-SEMITIC-001",
+            "position": 1,
+            "surface": "נוֹרָ֤א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-11-SEMITIC-002",
+            "position": 2,
+            "surface": "יְהוָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-11-SEMITIC-003",
+            "position": 3,
+            "surface": "עֲלֵי/הֶ֔ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-11-SEMITIC-004",
+            "position": 4,
+            "surface": "כִּ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-11-SEMITIC-005",
+            "position": 5,
+            "surface": "רָזָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-11-SEMITIC-006",
+            "position": 6,
+            "surface": "אֵ֖ת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-11-SEMITIC-007",
+            "position": 7,
+            "surface": "כָּל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-11-SEMITIC-008",
+            "position": 8,
+            "surface": "אֱלֹהֵ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-11-SEMITIC-009",
+            "position": 9,
+            "surface": "הָ/אָ֑רֶץ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-11-SEMITIC-010",
+            "position": 10,
+            "surface": "וְ/יִשְׁתַּֽחֲווּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-11-SEMITIC-011",
+            "position": 11,
+            "surface": "ל/וֹ֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-11-SEMITIC-012",
+            "position": 12,
+            "surface": "אִ֣ישׁ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-11-SEMITIC-013",
+            "position": 13,
+            "surface": "מִ/מְּקוֹמ֔/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-11-SEMITIC-014",
+            "position": 14,
+            "surface": "כֹּ֖ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-11-SEMITIC-015",
+            "position": 15,
+            "surface": "אִיֵּ֥י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-11-SEMITIC-016",
+            "position": 16,
+            "surface": "הַ/גּוֹיִֽם",
+            "language": "he"
+          }
+        ]
+      },
+      "12": {
+        "source_osis_id": "Zeph.2.12",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-2-12-SEMITIC-001",
+            "position": 1,
+            "surface": "גַּם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-12-SEMITIC-002",
+            "position": 2,
+            "surface": "אַתֶּ֣ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-12-SEMITIC-003",
+            "position": 3,
+            "surface": "כּוּשִׁ֔ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-12-SEMITIC-004",
+            "position": 4,
+            "surface": "חַֽלְלֵ֥י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-12-SEMITIC-005",
+            "position": 5,
+            "surface": "חַרְבִּ֖/י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-12-SEMITIC-006",
+            "position": 6,
+            "surface": "הֵֽמָּה",
+            "language": "he"
+          }
+        ]
+      },
+      "13": {
+        "source_osis_id": "Zeph.2.13",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-2-13-SEMITIC-001",
+            "position": 1,
+            "surface": "וְ/יֵ֤ט",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-13-SEMITIC-002",
+            "position": 2,
+            "surface": "יָד/וֹ֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-13-SEMITIC-003",
+            "position": 3,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-13-SEMITIC-004",
+            "position": 4,
+            "surface": "צָפ֔וֹן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-13-SEMITIC-005",
+            "position": 5,
+            "surface": "וִֽ/יאַבֵּ֖ד",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-13-SEMITIC-006",
+            "position": 6,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-13-SEMITIC-007",
+            "position": 7,
+            "surface": "אַשּׁ֑וּר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-13-SEMITIC-008",
+            "position": 8,
+            "surface": "וְ/יָשֵׂ֤ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-13-SEMITIC-009",
+            "position": 9,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-13-SEMITIC-010",
+            "position": 10,
+            "surface": "נִֽינְוֵה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-13-SEMITIC-011",
+            "position": 11,
+            "surface": "לִ/שְׁמָמָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-13-SEMITIC-012",
+            "position": 12,
+            "surface": "צִיָּ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-13-SEMITIC-013",
+            "position": 13,
+            "surface": "כַּ/מִּדְבָּֽר",
+            "language": "he"
+          }
+        ]
+      },
+      "14": {
+        "source_osis_id": "Zeph.2.14",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-2-14-SEMITIC-001",
+            "position": 1,
+            "surface": "וְ/רָבְצ֨וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-002",
+            "position": 2,
+            "surface": "בְ/תוֹכָ֤/הּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-003",
+            "position": 3,
+            "surface": "עֲדָרִים֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-004",
+            "position": 4,
+            "surface": "כָּל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-005",
+            "position": 5,
+            "surface": "חַיְת/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-006",
+            "position": 6,
+            "surface": "ג֔וֹי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-007",
+            "position": 7,
+            "surface": "גַּם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-008",
+            "position": 8,
+            "surface": "קָאַת֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-009",
+            "position": 9,
+            "surface": "גַּם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-010",
+            "position": 10,
+            "surface": "קִפֹּ֔ד",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-011",
+            "position": 11,
+            "surface": "בְּ/כַפְתֹּרֶ֖י/הָ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-012",
+            "position": 12,
+            "surface": "יָלִ֑ינוּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-013",
+            "position": 13,
+            "surface": "ק֠וֹל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-014",
+            "position": 14,
+            "surface": "יְשׁוֹרֵ֤ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-015",
+            "position": 15,
+            "surface": "בַּֽ/חַלּוֹן֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-016",
+            "position": 16,
+            "surface": "חֹ֣רֶב",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-017",
+            "position": 17,
+            "surface": "בַּ/סַּ֔ף",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-018",
+            "position": 18,
+            "surface": "כִּ֥י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-019",
+            "position": 19,
+            "surface": "אַרְזָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-14-SEMITIC-020",
+            "position": 20,
+            "surface": "עֵרָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "15": {
+        "source_osis_id": "Zeph.2.15",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-2-15-SEMITIC-001",
+            "position": 1,
+            "surface": "זֹ֞֠את",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-002",
+            "position": 2,
+            "surface": "הָ/עִ֤יר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-003",
+            "position": 3,
+            "surface": "הָ/עַלִּיזָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-004",
+            "position": 4,
+            "surface": "הַ/יּוֹשֶׁ֣בֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-005",
+            "position": 5,
+            "surface": "לָ/בֶ֔טַח",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-006",
+            "position": 6,
+            "surface": "הָ/אֹֽמְרָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-007",
+            "position": 7,
+            "surface": "בִּ/לְבָבָ֔/הּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-008",
+            "position": 8,
+            "surface": "אֲנִ֖י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-009",
+            "position": 9,
+            "surface": "וְ/אַפְסִ֣/י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-010",
+            "position": 10,
+            "surface": "ע֑וֹד",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-011",
+            "position": 11,
+            "surface": "אֵ֣יךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-012",
+            "position": 12,
+            "surface": "הָיְתָ֣ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-013",
+            "position": 13,
+            "surface": "לְ/שַׁמָּ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-014",
+            "position": 14,
+            "surface": "מַרְבֵּץ֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-015",
+            "position": 15,
+            "surface": "לַֽ/חַיָּ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-016",
+            "position": 16,
+            "surface": "כֹּ֚ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-017",
+            "position": 17,
+            "surface": "עוֹבֵ֣ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-018",
+            "position": 18,
+            "surface": "עָלֶ֔י/הָ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-019",
+            "position": 19,
+            "surface": "יִשְׁרֹ֖ק",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-020",
+            "position": 20,
+            "surface": "יָנִ֥יעַ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-2-15-SEMITIC-021",
+            "position": 21,
+            "surface": "יָדֽ/וֹ",
+            "language": "he"
+          }
+        ]
+      }
+    },
+    "3": {
+      "1": {
+        "source_osis_id": "Zeph.3.1",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-1-SEMITIC-001",
+            "position": 1,
+            "surface": "ה֥וֹי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-1-SEMITIC-002",
+            "position": 2,
+            "surface": "מֹרְאָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-1-SEMITIC-003",
+            "position": 3,
+            "surface": "וְ/נִגְאָלָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-1-SEMITIC-004",
+            "position": 4,
+            "surface": "הָ/עִ֖יר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-1-SEMITIC-005",
+            "position": 5,
+            "surface": "הַ/יּוֹנָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "2": {
+        "source_osis_id": "Zeph.3.2",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-2-SEMITIC-001",
+            "position": 1,
+            "surface": "לֹ֤א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-2-SEMITIC-002",
+            "position": 2,
+            "surface": "שָֽׁמְעָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-2-SEMITIC-003",
+            "position": 3,
+            "surface": "בְּ/ק֔וֹל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-2-SEMITIC-004",
+            "position": 4,
+            "surface": "לֹ֥א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-2-SEMITIC-005",
+            "position": 5,
+            "surface": "לָקְחָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-2-SEMITIC-006",
+            "position": 6,
+            "surface": "מוּסָ֑ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-2-SEMITIC-007",
+            "position": 7,
+            "surface": "בַּֽ/יהוָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-2-SEMITIC-008",
+            "position": 8,
+            "surface": "לֹ֣א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-2-SEMITIC-009",
+            "position": 9,
+            "surface": "בָטָ֔חָה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-2-SEMITIC-010",
+            "position": 10,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-2-SEMITIC-011",
+            "position": 11,
+            "surface": "אֱלֹהֶ֖י/הָ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-2-SEMITIC-012",
+            "position": 12,
+            "surface": "לֹ֥א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-2-SEMITIC-013",
+            "position": 13,
+            "surface": "קָרֵֽבָה",
+            "language": "he"
+          }
+        ]
+      },
+      "3": {
+        "source_osis_id": "Zeph.3.3",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-3-SEMITIC-001",
+            "position": 1,
+            "surface": "שָׂרֶ֣י/הָ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-3-SEMITIC-002",
+            "position": 2,
+            "surface": "בְ/קִרְבָּ֔/הּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-3-SEMITIC-003",
+            "position": 3,
+            "surface": "אֲרָי֖וֹת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-3-SEMITIC-004",
+            "position": 4,
+            "surface": "שֹֽׁאֲגִ֑ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-3-SEMITIC-005",
+            "position": 5,
+            "surface": "שֹׁפְטֶ֨י/הָ֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-3-SEMITIC-006",
+            "position": 6,
+            "surface": "זְאֵ֣בֵי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-3-SEMITIC-007",
+            "position": 7,
+            "surface": "עֶ֔רֶב",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-3-SEMITIC-008",
+            "position": 8,
+            "surface": "לֹ֥א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-3-SEMITIC-009",
+            "position": 9,
+            "surface": "גָרְמ֖וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-3-SEMITIC-010",
+            "position": 10,
+            "surface": "לַ/בֹּֽקֶר",
+            "language": "he"
+          }
+        ]
+      },
+      "4": {
+        "source_osis_id": "Zeph.3.4",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-4-SEMITIC-001",
+            "position": 1,
+            "surface": "נְבִיאֶ֨י/הָ֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-4-SEMITIC-002",
+            "position": 2,
+            "surface": "פֹּֽחֲזִ֔ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-4-SEMITIC-003",
+            "position": 3,
+            "surface": "אַנְשֵׁ֖י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-4-SEMITIC-004",
+            "position": 4,
+            "surface": "בֹּֽגְד֑וֹת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-4-SEMITIC-005",
+            "position": 5,
+            "surface": "כֹּהֲנֶ֨י/הָ֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-4-SEMITIC-006",
+            "position": 6,
+            "surface": "חִלְּלוּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-4-SEMITIC-007",
+            "position": 7,
+            "surface": "קֹ֔דֶשׁ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-4-SEMITIC-008",
+            "position": 8,
+            "surface": "חָמְס֖וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-4-SEMITIC-009",
+            "position": 9,
+            "surface": "תּוֹרָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "5": {
+        "source_osis_id": "Zeph.3.5",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-5-SEMITIC-001",
+            "position": 1,
+            "surface": "יְהוָ֤ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-002",
+            "position": 2,
+            "surface": "צַדִּיק֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-003",
+            "position": 3,
+            "surface": "בְּ/קִרְבָּ֔/הּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-004",
+            "position": 4,
+            "surface": "לֹ֥א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-005",
+            "position": 5,
+            "surface": "יַעֲשֶׂ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-006",
+            "position": 6,
+            "surface": "עַוְלָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-007",
+            "position": 7,
+            "surface": "בַּ/בֹּ֨קֶר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-008",
+            "position": 8,
+            "surface": "בַּ/בֹּ֜קֶר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-009",
+            "position": 9,
+            "surface": "מִשְׁפָּט֨/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-010",
+            "position": 10,
+            "surface": "יִתֵּ֤ן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-011",
+            "position": 11,
+            "surface": "לָ/אוֹר֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-012",
+            "position": 12,
+            "surface": "לֹ֣א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-013",
+            "position": 13,
+            "surface": "נֶעְדָּ֔ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-014",
+            "position": 14,
+            "surface": "וְ/לֹֽא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-015",
+            "position": 15,
+            "surface": "יוֹדֵ֥עַ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-016",
+            "position": 16,
+            "surface": "עַוָּ֖ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-5-SEMITIC-017",
+            "position": 17,
+            "surface": "בֹּֽשֶׁת",
+            "language": "he"
+          }
+        ]
+      },
+      "6": {
+        "source_osis_id": "Zeph.3.6",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-6-SEMITIC-001",
+            "position": 1,
+            "surface": "הִכְרַ֣תִּי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-6-SEMITIC-002",
+            "position": 2,
+            "surface": "גוֹיִ֗ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-6-SEMITIC-003",
+            "position": 3,
+            "surface": "נָשַׁ֨מּוּ֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-6-SEMITIC-004",
+            "position": 4,
+            "surface": "פִּנּוֹתָ֔/ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-6-SEMITIC-005",
+            "position": 5,
+            "surface": "הֶחֱרַ֥בְתִּי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-6-SEMITIC-006",
+            "position": 6,
+            "surface": "חֽוּצוֹתָ֖/ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-6-SEMITIC-007",
+            "position": 7,
+            "surface": "מִ/בְּלִ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-6-SEMITIC-008",
+            "position": 8,
+            "surface": "עוֹבֵ֑ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-6-SEMITIC-009",
+            "position": 9,
+            "surface": "נִצְדּ֧וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-6-SEMITIC-010",
+            "position": 10,
+            "surface": "עָרֵי/הֶ֛ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-6-SEMITIC-011",
+            "position": 11,
+            "surface": "מִ/בְּלִי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-6-SEMITIC-012",
+            "position": 12,
+            "surface": "אִ֖ישׁ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-6-SEMITIC-013",
+            "position": 13,
+            "surface": "מֵ/אֵ֥ין",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-6-SEMITIC-014",
+            "position": 14,
+            "surface": "יוֹשֵֽׁב",
+            "language": "he"
+          }
+        ]
+      },
+      "7": {
+        "source_osis_id": "Zeph.3.7",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-7-SEMITIC-001",
+            "position": 1,
+            "surface": "אָמַ֜רְתִּי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-002",
+            "position": 2,
+            "surface": "אַךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-003",
+            "position": 3,
+            "surface": "תִּירְאִ֤י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-004",
+            "position": 4,
+            "surface": "אוֹתִ/י֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-005",
+            "position": 5,
+            "surface": "תִּקְחִ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-006",
+            "position": 6,
+            "surface": "מוּסָ֔ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-007",
+            "position": 7,
+            "surface": "וְ/לֹֽא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-008",
+            "position": 8,
+            "surface": "יִכָּרֵ֣ת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-009",
+            "position": 9,
+            "surface": "מְעוֹנָ֔/הּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-010",
+            "position": 10,
+            "surface": "כֹּ֥ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-011",
+            "position": 11,
+            "surface": "אֲשֶׁר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-012",
+            "position": 12,
+            "surface": "פָּקַ֖דְתִּי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-013",
+            "position": 13,
+            "surface": "עָלֶ֑י/הָ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-014",
+            "position": 14,
+            "surface": "אָכֵן֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-015",
+            "position": 15,
+            "surface": "הִשְׁכִּ֣ימוּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-016",
+            "position": 16,
+            "surface": "הִשְׁחִ֔יתוּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-017",
+            "position": 17,
+            "surface": "כֹּ֖ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-7-SEMITIC-018",
+            "position": 18,
+            "surface": "עֲלִילוֹתָֽ/ם",
+            "language": "he"
+          }
+        ]
+      },
+      "8": {
+        "source_osis_id": "Zeph.3.8",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-8-SEMITIC-001",
+            "position": 1,
+            "surface": "לָ/כֵ֤ן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-002",
+            "position": 2,
+            "surface": "חַכּוּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-003",
+            "position": 3,
+            "surface": "לִ/י֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-004",
+            "position": 4,
+            "surface": "נְאֻם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-005",
+            "position": 5,
+            "surface": "יְהוָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-006",
+            "position": 6,
+            "surface": "לְ/י֖וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-007",
+            "position": 7,
+            "surface": "קוּמִ֣/י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-008",
+            "position": 8,
+            "surface": "לְ/עַ֑ד",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-009",
+            "position": 9,
+            "surface": "כִּ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-010",
+            "position": 10,
+            "surface": "מִשְׁפָּטִ/י֩",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-011",
+            "position": 11,
+            "surface": "לֶ/אֱסֹ֨ף",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-012",
+            "position": 12,
+            "surface": "גּוֹיִ֜ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-013",
+            "position": 13,
+            "surface": "לְ/קָבְצִ֣/י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-014",
+            "position": 14,
+            "surface": "מַמְלָכ֗וֹת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-015",
+            "position": 15,
+            "surface": "לִ/שְׁפֹּ֨ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-016",
+            "position": 16,
+            "surface": "עֲלֵי/הֶ֤ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-017",
+            "position": 17,
+            "surface": "זַעְמִ/י֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-018",
+            "position": 18,
+            "surface": "כֹּ֚ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-019",
+            "position": 19,
+            "surface": "חֲר֣וֹן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-020",
+            "position": 20,
+            "surface": "אַפִּ֔/י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-021",
+            "position": 21,
+            "surface": "כִּ֚י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-022",
+            "position": 22,
+            "surface": "בְּ/אֵ֣שׁ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-023",
+            "position": 23,
+            "surface": "קִנְאָתִ֔/י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-024",
+            "position": 24,
+            "surface": "תֵּאָכֵ֖ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-025",
+            "position": 25,
+            "surface": "כָּל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-8-SEMITIC-026",
+            "position": 26,
+            "surface": "הָ/אָֽרֶץ",
+            "language": "he"
+          }
+        ]
+      },
+      "9": {
+        "source_osis_id": "Zeph.3.9",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-9-SEMITIC-001",
+            "position": 1,
+            "surface": "כִּֽי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-9-SEMITIC-002",
+            "position": 2,
+            "surface": "אָ֛ז",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-9-SEMITIC-003",
+            "position": 3,
+            "surface": "אֶהְפֹּ֥ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-9-SEMITIC-004",
+            "position": 4,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-9-SEMITIC-005",
+            "position": 5,
+            "surface": "עַמִּ֖ים",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-9-SEMITIC-006",
+            "position": 6,
+            "surface": "שָׂפָ֣ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-9-SEMITIC-007",
+            "position": 7,
+            "surface": "בְרוּרָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-9-SEMITIC-008",
+            "position": 8,
+            "surface": "לִ/קְרֹ֤א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-9-SEMITIC-009",
+            "position": 9,
+            "surface": "כֻלָּ/ם֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-9-SEMITIC-010",
+            "position": 10,
+            "surface": "בְּ/שֵׁ֣ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-9-SEMITIC-011",
+            "position": 11,
+            "surface": "יְהוָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-9-SEMITIC-012",
+            "position": 12,
+            "surface": "לְ/עָבְד֖/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-9-SEMITIC-013",
+            "position": 13,
+            "surface": "שְׁכֶ֥ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-9-SEMITIC-014",
+            "position": 14,
+            "surface": "אֶחָֽד",
+            "language": "he"
+          }
+        ]
+      },
+      "10": {
+        "source_osis_id": "Zeph.3.10",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-10-SEMITIC-001",
+            "position": 1,
+            "surface": "מֵ/עֵ֖בֶר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-10-SEMITIC-002",
+            "position": 2,
+            "surface": "לְ/נַֽהֲרֵי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-10-SEMITIC-003",
+            "position": 3,
+            "surface": "כ֑וּשׁ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-10-SEMITIC-004",
+            "position": 4,
+            "surface": "עֲתָרַ/י֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-10-SEMITIC-005",
+            "position": 5,
+            "surface": "בַּת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-10-SEMITIC-006",
+            "position": 6,
+            "surface": "פוּצַ֔/י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-10-SEMITIC-007",
+            "position": 7,
+            "surface": "יוֹבִל֖וּ/ן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-10-SEMITIC-008",
+            "position": 8,
+            "surface": "מִנְחָתִֽ/י",
+            "language": "he"
+          }
+        ]
+      },
+      "11": {
+        "source_osis_id": "Zeph.3.11",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-11-SEMITIC-001",
+            "position": 1,
+            "surface": "בַּ/יּ֣וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-002",
+            "position": 2,
+            "surface": "הַ/ה֗וּא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-003",
+            "position": 3,
+            "surface": "לֹ֤א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-004",
+            "position": 4,
+            "surface": "תֵב֨וֹשִׁי֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-005",
+            "position": 5,
+            "surface": "מִ/כֹּ֣ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-006",
+            "position": 6,
+            "surface": "עֲלִילֹתַ֔יִ/ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-007",
+            "position": 7,
+            "surface": "אֲשֶׁ֥ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-008",
+            "position": 8,
+            "surface": "פָּשַׁ֖עַתְּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-009",
+            "position": 9,
+            "surface": "בִּ֑/י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-010",
+            "position": 10,
+            "surface": "כִּי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-011",
+            "position": 11,
+            "surface": "אָ֣ז",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-012",
+            "position": 12,
+            "surface": "אָסִ֣יר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-013",
+            "position": 13,
+            "surface": "מִ/קִּרְבֵּ֗/ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-014",
+            "position": 14,
+            "surface": "עַלִּיזֵי֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-015",
+            "position": 15,
+            "surface": "גַּאֲוָתֵ֔/ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-016",
+            "position": 16,
+            "surface": "וְ/לֹֽא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-017",
+            "position": 17,
+            "surface": "תוֹסִ֧פִי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-018",
+            "position": 18,
+            "surface": "לְ/גָבְהָ֛ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-019",
+            "position": 19,
+            "surface": "ע֖וֹד",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-020",
+            "position": 20,
+            "surface": "בְּ/הַ֥ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-11-SEMITIC-021",
+            "position": 21,
+            "surface": "קָדְשִֽׁ/י",
+            "language": "he"
+          }
+        ]
+      },
+      "12": {
+        "source_osis_id": "Zeph.3.12",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-12-SEMITIC-001",
+            "position": 1,
+            "surface": "וְ/הִשְׁאַרְתִּ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-12-SEMITIC-002",
+            "position": 2,
+            "surface": "בְ/קִרְבֵּ֔/ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-12-SEMITIC-003",
+            "position": 3,
+            "surface": "עַ֥ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-12-SEMITIC-004",
+            "position": 4,
+            "surface": "עָנִ֖י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-12-SEMITIC-005",
+            "position": 5,
+            "surface": "וָ/דָ֑ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-12-SEMITIC-006",
+            "position": 6,
+            "surface": "וְ/חָס֖וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-12-SEMITIC-007",
+            "position": 7,
+            "surface": "בְּ/שֵׁ֥ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-12-SEMITIC-008",
+            "position": 8,
+            "surface": "יְהוָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "13": {
+        "source_osis_id": "Zeph.3.13",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-13-SEMITIC-001",
+            "position": 1,
+            "surface": "שְׁאֵרִ֨ית",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-002",
+            "position": 2,
+            "surface": "יִשְׂרָאֵ֜ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-003",
+            "position": 3,
+            "surface": "לֹֽא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-004",
+            "position": 4,
+            "surface": "יַעֲשׂ֤וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-005",
+            "position": 5,
+            "surface": "עַוְלָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-006",
+            "position": 6,
+            "surface": "וְ/לֹא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-007",
+            "position": 7,
+            "surface": "יְדַבְּר֣וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-008",
+            "position": 8,
+            "surface": "כָזָ֔ב",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-009",
+            "position": 9,
+            "surface": "וְ/לֹֽא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-010",
+            "position": 10,
+            "surface": "יִמָּצֵ֥א",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-011",
+            "position": 11,
+            "surface": "בְּ/פִי/הֶ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-012",
+            "position": 12,
+            "surface": "לְשׁ֣וֹן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-013",
+            "position": 13,
+            "surface": "תַּרְמִ֑ית",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-014",
+            "position": 14,
+            "surface": "כִּֽי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-015",
+            "position": 15,
+            "surface": "הֵ֛מָּה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-016",
+            "position": 16,
+            "surface": "יִרְע֥וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-017",
+            "position": 17,
+            "surface": "וְ/רָבְצ֖וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-018",
+            "position": 18,
+            "surface": "וְ/אֵ֥ין",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-13-SEMITIC-019",
+            "position": 19,
+            "surface": "מַחֲרִֽיד",
+            "language": "he"
+          }
+        ]
+      },
+      "14": {
+        "source_osis_id": "Zeph.3.14",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-14-SEMITIC-001",
+            "position": 1,
+            "surface": "רָנִּי֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-14-SEMITIC-002",
+            "position": 2,
+            "surface": "בַּת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-14-SEMITIC-003",
+            "position": 3,
+            "surface": "צִיּ֔וֹן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-14-SEMITIC-004",
+            "position": 4,
+            "surface": "הָרִ֖יעוּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-14-SEMITIC-005",
+            "position": 5,
+            "surface": "יִשְׂרָאֵ֑ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-14-SEMITIC-006",
+            "position": 6,
+            "surface": "שִׂמְחִ֤י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-14-SEMITIC-007",
+            "position": 7,
+            "surface": "וְ/עָלְזִי֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-14-SEMITIC-008",
+            "position": 8,
+            "surface": "בְּ/כָל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-14-SEMITIC-009",
+            "position": 9,
+            "surface": "לֵ֔ב",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-14-SEMITIC-010",
+            "position": 10,
+            "surface": "בַּ֖ת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-14-SEMITIC-011",
+            "position": 11,
+            "surface": "יְרוּשָׁלִָֽם",
+            "language": "he"
+          }
+        ]
+      },
+      "15": {
+        "source_osis_id": "Zeph.3.15",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-15-SEMITIC-001",
+            "position": 1,
+            "surface": "הֵסִ֤יר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-15-SEMITIC-002",
+            "position": 2,
+            "surface": "יְהוָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-15-SEMITIC-003",
+            "position": 3,
+            "surface": "מִשְׁפָּטַ֔יִ/ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-15-SEMITIC-004",
+            "position": 4,
+            "surface": "פִּנָּ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-15-SEMITIC-005",
+            "position": 5,
+            "surface": "אֹֽיְבֵ֑/ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-15-SEMITIC-006",
+            "position": 6,
+            "surface": "מֶ֣לֶךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-15-SEMITIC-007",
+            "position": 7,
+            "surface": "יִשְׂרָאֵ֤ל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-15-SEMITIC-008",
+            "position": 8,
+            "surface": "יְהוָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-15-SEMITIC-009",
+            "position": 9,
+            "surface": "בְּ/קִרְבֵּ֔/ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-15-SEMITIC-010",
+            "position": 10,
+            "surface": "לֹא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-15-SEMITIC-011",
+            "position": 11,
+            "surface": "תִֽירְאִ֥י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-15-SEMITIC-012",
+            "position": 12,
+            "surface": "רָ֖ע",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-15-SEMITIC-013",
+            "position": 13,
+            "surface": "עֽוֹד",
+            "language": "he"
+          }
+        ]
+      },
+      "16": {
+        "source_osis_id": "Zeph.3.16",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-16-SEMITIC-001",
+            "position": 1,
+            "surface": "בַּ/יּ֣וֹם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-16-SEMITIC-002",
+            "position": 2,
+            "surface": "הַ/ה֔וּא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-16-SEMITIC-003",
+            "position": 3,
+            "surface": "יֵאָמֵ֥ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-16-SEMITIC-004",
+            "position": 4,
+            "surface": "לִ/ירֽוּשָׁלִַ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-16-SEMITIC-005",
+            "position": 5,
+            "surface": "אַל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-16-SEMITIC-006",
+            "position": 6,
+            "surface": "תִּירָ֑אִי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-16-SEMITIC-007",
+            "position": 7,
+            "surface": "צִיּ֖וֹן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-16-SEMITIC-008",
+            "position": 8,
+            "surface": "אַל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-16-SEMITIC-009",
+            "position": 9,
+            "surface": "יִרְפּ֥וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-16-SEMITIC-010",
+            "position": 10,
+            "surface": "יָדָֽיִ/ךְ",
+            "language": "he"
+          }
+        ]
+      },
+      "17": {
+        "source_osis_id": "Zeph.3.17",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-17-SEMITIC-001",
+            "position": 1,
+            "surface": "יְהוָ֧ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-17-SEMITIC-002",
+            "position": 2,
+            "surface": "אֱלֹהַ֛יִ/ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-17-SEMITIC-003",
+            "position": 3,
+            "surface": "בְּ/קִרְבֵּ֖/ך",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-17-SEMITIC-004",
+            "position": 4,
+            "surface": "גִּבּ֣וֹר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-17-SEMITIC-005",
+            "position": 5,
+            "surface": "יוֹשִׁ֑יעַ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-17-SEMITIC-006",
+            "position": 6,
+            "surface": "יָשִׂ֨ישׂ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-17-SEMITIC-007",
+            "position": 7,
+            "surface": "עָלַ֜יִ/ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-17-SEMITIC-008",
+            "position": 8,
+            "surface": "בְּ/שִׂמְחָ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-17-SEMITIC-009",
+            "position": 9,
+            "surface": "יַחֲרִישׁ֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-17-SEMITIC-010",
+            "position": 10,
+            "surface": "בְּ/אַ֣הֲבָת֔/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-17-SEMITIC-011",
+            "position": 11,
+            "surface": "יָגִ֥יל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-17-SEMITIC-012",
+            "position": 12,
+            "surface": "עָלַ֖יִ/ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-17-SEMITIC-013",
+            "position": 13,
+            "surface": "בְּ/רִנָּֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "18": {
+        "source_osis_id": "Zeph.3.18",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-18-SEMITIC-001",
+            "position": 1,
+            "surface": "נוּגֵ֧י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-18-SEMITIC-002",
+            "position": 2,
+            "surface": "מִ/מּוֹעֵ֛ד",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-18-SEMITIC-003",
+            "position": 3,
+            "surface": "אָסַ֖פְתִּי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-18-SEMITIC-004",
+            "position": 4,
+            "surface": "מִמֵּ֣/ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-18-SEMITIC-005",
+            "position": 5,
+            "surface": "הָי֑וּ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-18-SEMITIC-006",
+            "position": 6,
+            "surface": "מַשְׂאֵ֥ת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-18-SEMITIC-007",
+            "position": 7,
+            "surface": "עָלֶ֖י/הָ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-18-SEMITIC-008",
+            "position": 8,
+            "surface": "חֶרְפָּֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "19": {
+        "source_osis_id": "Zeph.3.19",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-19-SEMITIC-001",
+            "position": 1,
+            "surface": "הִנְ/נִ֥י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-002",
+            "position": 2,
+            "surface": "עֹשֶׂ֛ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-003",
+            "position": 3,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-004",
+            "position": 4,
+            "surface": "כָּל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-005",
+            "position": 5,
+            "surface": "מְעַנַּ֖יִ/ךְ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-006",
+            "position": 6,
+            "surface": "בָּ/עֵ֣ת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-007",
+            "position": 7,
+            "surface": "הַ/הִ֑יא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-008",
+            "position": 8,
+            "surface": "וְ/הוֹשַׁעְתִּ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-009",
+            "position": 9,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-010",
+            "position": 10,
+            "surface": "הַ/צֹּלֵעָ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-011",
+            "position": 11,
+            "surface": "וְ/הַ/נִּדָּחָה֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-012",
+            "position": 12,
+            "surface": "אֲקַבֵּ֔ץ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-013",
+            "position": 13,
+            "surface": "וְ/שַׂמְתִּי/ם֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-014",
+            "position": 14,
+            "surface": "לִ/תְהִלָּ֣ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-015",
+            "position": 15,
+            "surface": "וּ/לְ/שֵׁ֔ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-016",
+            "position": 16,
+            "surface": "בְּ/כָל",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-017",
+            "position": 17,
+            "surface": "הָ/אָ֖רֶץ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-19-SEMITIC-018",
+            "position": 18,
+            "surface": "בָּשְׁתָּֽ/ם",
+            "language": "he"
+          }
+        ]
+      },
+      "20": {
+        "source_osis_id": "Zeph.3.20",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "ZEP-3-20-SEMITIC-001",
+            "position": 1,
+            "surface": "בָּ/עֵ֤ת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-002",
+            "position": 2,
+            "surface": "הַ/הִיא֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-003",
+            "position": 3,
+            "surface": "אָבִ֣יא",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-004",
+            "position": 4,
+            "surface": "אֶתְ/כֶ֔ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-005",
+            "position": 5,
+            "surface": "וּ/בָ/עֵ֖ת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-006",
+            "position": 6,
+            "surface": "קַבְּצִ֣/י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-007",
+            "position": 7,
+            "surface": "אֶתְ/כֶ֑ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-008",
+            "position": 8,
+            "surface": "כִּֽי",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-009",
+            "position": 9,
+            "surface": "אֶתֵּ֨ן",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-010",
+            "position": 10,
+            "surface": "אֶתְ/כֶ֜ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-011",
+            "position": 11,
+            "surface": "לְ/שֵׁ֣ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-012",
+            "position": 12,
+            "surface": "וְ/לִ/תְהִלָּ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-013",
+            "position": 13,
+            "surface": "בְּ/כֹל֙",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-014",
+            "position": 14,
+            "surface": "עַמֵּ֣י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-015",
+            "position": 15,
+            "surface": "הָ/אָ֔רֶץ",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-016",
+            "position": 16,
+            "surface": "בְּ/שׁוּבִ֧/י",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-017",
+            "position": 17,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-018",
+            "position": 18,
+            "surface": "שְׁבוּתֵי/כֶ֛ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-019",
+            "position": 19,
+            "surface": "לְ/עֵינֵי/כֶ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-020",
+            "position": 20,
+            "surface": "אָמַ֥ר",
+            "language": "he"
+          },
+          {
+            "id": "ZEP-3-20-SEMITIC-021",
+            "position": 21,
+            "surface": "יְהוָֽה",
+            "language": "he"
+          }
+        ]
+      }
+    }
+  }
+}

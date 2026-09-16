@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "corpus_id": "heb_arc_oshb_wlc",
+  "corpus_version": "2026.09.16-oshb-wlc-39",
+  "status": "production-installed",
+  "production_enabled": true,
+  "languages": [
+    "he",
+    "arc"
+  ],
+  "scope": "39 Masoretic/Hebrew-Bible witnesses within the Catholic Old Testament",
+  "phase1a_acceptance": {
+    "validated_phase": "Old Testament Expansion Phase 1A",
+    "merge_commit": "c93507c2f2d7e6cec6540ac9a6f155dd6eefecc9",
+    "masoretic_book_witness_count": 39,
+    "chapter_count": 929,
+    "verse_count": 23213,
+    "token_count": 305507,
+    "hebrew_token_count": 300679,
+    "aramaic_token_count": 4828,
+    "alignment_mismatch_count": 0
+  },
+  "source": {
+    "id": "oshb",
+    "title": "Open Scriptures Hebrew Bible",
+    "repository": "openscriptures/morphhb",
+    "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+    "tree_sha": "dd2fe9d2168f3fc0963bcdbdac8fa1d487c06e45",
+    "base_text": "Westminster Leningrad Codex",
+    "surface_rights": "Public Domain",
+    "linguistic_annotation_license": "CC BY 4.0",
+    "attribution": "Open Scriptures Hebrew Bible Project",
+    "normalization_policy": "Preserve source Unicode exactly. Do not NFC-normalize OSHB Hebrew or Aramaic source strings."
+  },
+  "partitions": {
+    "root": "phase1a",
+    "surface": {
+      "path": "phase1a/surface",
+      "rights": "Public Domain",
+      "contains": [
+        "source-script Hebrew/Aramaic token surfaces",
+        "source OSIS verse ids"
+      ]
+    },
+    "linguistics": {
+      "path": "phase1a/linguistics",
+      "license": "CC BY 4.0",
+      "attribution": "Open Scriptures Hebrew Bible Project",
+      "contains": [
+        "lemma",
+        "morphology",
+        "source word id",
+        "language"
+      ]
+    },
+    "alignment": {
+      "path": "phase1a/alignment",
+      "mode": "same-source-exact-token-id",
+      "mismatch_count": 0
+    }
+  },
+  "versification": {
+    "canonical_reference_system": "Douay-Rheims Catholic 73-book corpus",
+    "source_reference_system": "OSHB/WLC OSIS",
+    "runtime_exact_identity_required": true,
+    "automatic_remapping": false,
+    "fabricate_verse_boundaries": false,
+    "mismatched_chapters_blocked_until_explicit_mapping": true,
+    "catholic_greek_additions_served_by_separate_ot_greek_corpus": true
+  },
+  "derived_layers": {
+    "glosses": false,
+    "transliteration": false,
+    "lemmata": true,
+    "morphology": true,
+    "lemma_morphology_are_source_annotations": true
+  },
+  "runtime_contract": {
+    "source_unicode_preserved_verbatim": true,
+    "unicode_normalization_applied": false,
+    "canonical_tokens_are_direct_verse_child_words_only": true,
+    "nested_qere_variants_not_duplicated": true,
+    "token_alignment_mismatch_count": 0,
+    "supported_languages": [
+      "he",
+      "arc"
+    ],
+    "exact_dra_source_verse_identity_checked_per_chapter": true
+  },
+  "serving_contract": {
+    "english_corpus_unchanged": true,
+    "greek_nt_corpus_unchanged": true,
+    "greek_ot_corpus_unchanged": true,
+    "no_english_scripture_text_in_package": true,
+    "no_fabricated_gloss_or_transliteration": true,
+    "no_silent_mt_to_dra_verse_remapping": true
+  },
+  "catholic_scope": {
+    "masoretic_witnesses": 39,
+    "esther_and_daniel": "Masoretic portions only in this package; Catholic Greek additions remain in grc_ot_catholic_swete",
+    "deuterocanonical_greek_material": "Not duplicated here"
+  }
+}

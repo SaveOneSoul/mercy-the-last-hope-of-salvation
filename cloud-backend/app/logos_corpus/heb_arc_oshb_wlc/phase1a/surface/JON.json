@@ -1,0 +1,4542 @@
+{
+  "schema_version": 1,
+  "phase": "Old Testament Expansion Phase 1A",
+  "production_enabled": false,
+  "book_id": "JON",
+  "book": "Jonah",
+  "catholic_order": 39,
+  "source_osis": "Jonah",
+  "source": {
+    "id": "oshb",
+    "repository": "openscriptures/morphhb",
+    "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+    "path": "wlc/Jonah.xml",
+    "git_blob_sha1": "158c18ecbf3026fa845105d34b8766d89bcd039e",
+    "sha256": "1e1afcc3aaba1399d5c884ee106894c6bfca87c8c81fa57783ab75a923eee17d"
+  },
+  "normalization_applied": false,
+  "partition": "surface",
+  "rights": "Westminster Leningrad Codex — Public Domain",
+  "chapters": {
+    "1": {
+      "1": {
+        "source_osis_id": "Jonah.1.1",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-1-SEMITIC-001",
+            "position": 1,
+            "surface": "וַֽ/יְהִי֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-1-SEMITIC-002",
+            "position": 2,
+            "surface": "דְּבַר",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-1-SEMITIC-003",
+            "position": 3,
+            "surface": "יְהוָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-1-SEMITIC-004",
+            "position": 4,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-1-SEMITIC-005",
+            "position": 5,
+            "surface": "יוֹנָ֥ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-1-SEMITIC-006",
+            "position": 6,
+            "surface": "בֶן",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-1-SEMITIC-007",
+            "position": 7,
+            "surface": "אֲמִתַּ֖י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-1-SEMITIC-008",
+            "position": 8,
+            "surface": "לֵ/אמֹֽר",
+            "language": "he"
+          }
+        ]
+      },
+      "2": {
+        "source_osis_id": "Jonah.1.2",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-2-SEMITIC-001",
+            "position": 1,
+            "surface": "ק֠וּם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-2-SEMITIC-002",
+            "position": 2,
+            "surface": "לֵ֧ךְ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-2-SEMITIC-003",
+            "position": 3,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-2-SEMITIC-004",
+            "position": 4,
+            "surface": "נִֽינְוֵ֛ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-2-SEMITIC-005",
+            "position": 5,
+            "surface": "הָ/עִ֥יר",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-2-SEMITIC-006",
+            "position": 6,
+            "surface": "הַ/גְּדוֹלָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-2-SEMITIC-007",
+            "position": 7,
+            "surface": "וּ/קְרָ֣א",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-2-SEMITIC-008",
+            "position": 8,
+            "surface": "עָלֶ֑י/הָ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-2-SEMITIC-009",
+            "position": 9,
+            "surface": "כִּֽי",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-2-SEMITIC-010",
+            "position": 10,
+            "surface": "עָלְתָ֥ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-2-SEMITIC-011",
+            "position": 11,
+            "surface": "רָעָתָ֖/ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-2-SEMITIC-012",
+            "position": 12,
+            "surface": "לְ/פָנָֽ/י",
+            "language": "he"
+          }
+        ]
+      },
+      "3": {
+        "source_osis_id": "Jonah.1.3",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-3-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יָּ֤קָם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-002",
+            "position": 2,
+            "surface": "יוֹנָה֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-003",
+            "position": 3,
+            "surface": "לִ/בְרֹ֣חַ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-004",
+            "position": 4,
+            "surface": "תַּרְשִׁ֔ישָׁ/ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-005",
+            "position": 5,
+            "surface": "מִ/לִּ/פְנֵ֖י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-006",
+            "position": 6,
+            "surface": "יְהוָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-007",
+            "position": 7,
+            "surface": "וַ/יֵּ֨רֶד",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-008",
+            "position": 8,
+            "surface": "יָפ֜וֹ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-009",
+            "position": 9,
+            "surface": "וַ/יִּמְצָ֥א",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-010",
+            "position": 10,
+            "surface": "אָנִיָּ֣ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-011",
+            "position": 11,
+            "surface": "בָּאָ֣ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-012",
+            "position": 12,
+            "surface": "תַרְשִׁ֗ישׁ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-013",
+            "position": 13,
+            "surface": "וַ/יִּתֵּ֨ן",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-014",
+            "position": 14,
+            "surface": "שְׂכָרָ֜/הּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-015",
+            "position": 15,
+            "surface": "וַ/יֵּ֤רֶד",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-016",
+            "position": 16,
+            "surface": "בָּ/הּ֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-017",
+            "position": 17,
+            "surface": "לָ/ב֤וֹא",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-018",
+            "position": 18,
+            "surface": "עִמָּ/הֶם֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-019",
+            "position": 19,
+            "surface": "תַּרְשִׁ֔ישָׁ/ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-020",
+            "position": 20,
+            "surface": "מִ/לִּ/פְנֵ֖י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-3-SEMITIC-021",
+            "position": 21,
+            "surface": "יְהוָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "4": {
+        "source_osis_id": "Jonah.1.4",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-4-SEMITIC-001",
+            "position": 1,
+            "surface": "וַֽ/יהוָ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-4-SEMITIC-002",
+            "position": 2,
+            "surface": "הֵטִ֤יל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-4-SEMITIC-003",
+            "position": 3,
+            "surface": "רֽוּחַ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-4-SEMITIC-004",
+            "position": 4,
+            "surface": "גְּדוֹלָה֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-4-SEMITIC-005",
+            "position": 5,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-4-SEMITIC-006",
+            "position": 6,
+            "surface": "הַ/יָּ֔ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-4-SEMITIC-007",
+            "position": 7,
+            "surface": "וַ/יְהִ֥י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-4-SEMITIC-008",
+            "position": 8,
+            "surface": "סַֽעַר",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-4-SEMITIC-009",
+            "position": 9,
+            "surface": "גָּד֖וֹל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-4-SEMITIC-010",
+            "position": 10,
+            "surface": "בַּ/יָּ֑ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-4-SEMITIC-011",
+            "position": 11,
+            "surface": "וְ/הָ֣/אֳנִיָּ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-4-SEMITIC-012",
+            "position": 12,
+            "surface": "חִשְּׁבָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-4-SEMITIC-013",
+            "position": 13,
+            "surface": "לְ/הִשָּׁבֵֽר",
+            "language": "he"
+          }
+        ]
+      },
+      "5": {
+        "source_osis_id": "Jonah.1.5",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-5-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יִּֽירְא֣וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-002",
+            "position": 2,
+            "surface": "הַ/מַּלָּחִ֗ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-003",
+            "position": 3,
+            "surface": "וַֽ/יִּזְעֲקוּ֮",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-004",
+            "position": 4,
+            "surface": "אִ֣ישׁ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-005",
+            "position": 5,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-006",
+            "position": 6,
+            "surface": "אֱלֹהָי/ו֒",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-007",
+            "position": 7,
+            "surface": "וַ/יָּטִ֨לוּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-008",
+            "position": 8,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-009",
+            "position": 9,
+            "surface": "הַ/כֵּלִ֜ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-010",
+            "position": 10,
+            "surface": "אֲשֶׁ֤ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-011",
+            "position": 11,
+            "surface": "בָּֽ/אֳנִיָּה֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-012",
+            "position": 12,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-013",
+            "position": 13,
+            "surface": "הַ/יָּ֔ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-014",
+            "position": 14,
+            "surface": "לְ/הָקֵ֖ל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-015",
+            "position": 15,
+            "surface": "מֵֽ/עֲלֵי/הֶ֑ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-016",
+            "position": 16,
+            "surface": "וְ/יוֹנָ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-017",
+            "position": 17,
+            "surface": "יָרַד֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-018",
+            "position": 18,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-019",
+            "position": 19,
+            "surface": "יַרְכְּתֵ֣י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-020",
+            "position": 20,
+            "surface": "הַ/סְּפִינָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-021",
+            "position": 21,
+            "surface": "וַ/יִּשְׁכַּ֖ב",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-5-SEMITIC-022",
+            "position": 22,
+            "surface": "וַ/יֵּרָדַֽם",
+            "language": "he"
+          }
+        ]
+      },
+      "6": {
+        "source_osis_id": "Jonah.1.6",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-6-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יִּקְרַ֤ב",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-002",
+            "position": 2,
+            "surface": "אֵלָי/ו֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-003",
+            "position": 3,
+            "surface": "רַ֣ב",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-004",
+            "position": 4,
+            "surface": "הַ/חֹבֵ֔ל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-005",
+            "position": 5,
+            "surface": "וַ/יֹּ֥אמֶר",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-006",
+            "position": 6,
+            "surface": "ל֖/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-007",
+            "position": 7,
+            "surface": "מַה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-008",
+            "position": 8,
+            "surface": "לְּ/ךָ֣",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-009",
+            "position": 9,
+            "surface": "נִרְדָּ֑ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-010",
+            "position": 10,
+            "surface": "ק֚וּם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-011",
+            "position": 11,
+            "surface": "קְרָ֣א",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-012",
+            "position": 12,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-013",
+            "position": 13,
+            "surface": "אֱלֹהֶ֔י/ךָ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-014",
+            "position": 14,
+            "surface": "אוּלַ֞י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-015",
+            "position": 15,
+            "surface": "יִתְעַשֵּׁ֧ת",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-016",
+            "position": 16,
+            "surface": "הָ/אֱלֹהִ֛ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-017",
+            "position": 17,
+            "surface": "לָ֖/נוּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-018",
+            "position": 18,
+            "surface": "וְ/לֹ֥א",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-6-SEMITIC-019",
+            "position": 19,
+            "surface": "נֹאבֵֽד",
+            "language": "he"
+          }
+        ]
+      },
+      "7": {
+        "source_osis_id": "Jonah.1.7",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-7-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יֹּאמְר֞וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-002",
+            "position": 2,
+            "surface": "אִ֣ישׁ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-003",
+            "position": 3,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-004",
+            "position": 4,
+            "surface": "רֵעֵ֗/הוּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-005",
+            "position": 5,
+            "surface": "לְכוּ֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-006",
+            "position": 6,
+            "surface": "וְ/נַפִּ֣ילָה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-007",
+            "position": 7,
+            "surface": "גֽוֹרָל֔וֹת",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-008",
+            "position": 8,
+            "surface": "וְ/נֵ֣דְעָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-009",
+            "position": 9,
+            "surface": "בְּ/שֶׁ/לְּ/מִ֛י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-010",
+            "position": 10,
+            "surface": "הָ/רָעָ֥ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-011",
+            "position": 11,
+            "surface": "הַ/זֹּ֖את",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-012",
+            "position": 12,
+            "surface": "לָ֑/נוּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-013",
+            "position": 13,
+            "surface": "וַ/יַּפִּ֨לוּ֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-014",
+            "position": 14,
+            "surface": "גּֽוֹרָל֔וֹת",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-015",
+            "position": 15,
+            "surface": "וַ/יִּפֹּ֥ל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-016",
+            "position": 16,
+            "surface": "הַ/גּוֹרָ֖ל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-017",
+            "position": 17,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-7-SEMITIC-018",
+            "position": 18,
+            "surface": "יוֹנָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "8": {
+        "source_osis_id": "Jonah.1.8",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-8-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יֹּאמְר֣וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-002",
+            "position": 2,
+            "surface": "אֵלָ֔י/ו",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-003",
+            "position": 3,
+            "surface": "הַגִּידָ/ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-004",
+            "position": 4,
+            "surface": "נָּ֣א",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-005",
+            "position": 5,
+            "surface": "לָ֔/נוּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-006",
+            "position": 6,
+            "surface": "בַּ/אֲשֶׁ֛ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-007",
+            "position": 7,
+            "surface": "לְ/מִי",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-008",
+            "position": 8,
+            "surface": "הָ/רָעָ֥ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-009",
+            "position": 9,
+            "surface": "הַ/זֹּ֖את",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-010",
+            "position": 10,
+            "surface": "לָ֑/נוּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-011",
+            "position": 11,
+            "surface": "מַה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-012",
+            "position": 12,
+            "surface": "מְּלַאכְתְּ/ךָ֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-013",
+            "position": 13,
+            "surface": "וּ/מֵ/אַ֣יִן",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-014",
+            "position": 14,
+            "surface": "תָּב֔וֹא",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-015",
+            "position": 15,
+            "surface": "מָ֣ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-016",
+            "position": 16,
+            "surface": "אַרְצֶ֔/ךָ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-017",
+            "position": 17,
+            "surface": "וְ/אֵֽי",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-018",
+            "position": 18,
+            "surface": "מִ/זֶּ֥ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-019",
+            "position": 19,
+            "surface": "עַ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-8-SEMITIC-020",
+            "position": 20,
+            "surface": "אָֽתָּה",
+            "language": "he"
+          }
+        ]
+      },
+      "9": {
+        "source_osis_id": "Jonah.1.9",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-9-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יֹּ֥אמֶר",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-9-SEMITIC-002",
+            "position": 2,
+            "surface": "אֲלֵי/הֶ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-9-SEMITIC-003",
+            "position": 3,
+            "surface": "עִבְרִ֣י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-9-SEMITIC-004",
+            "position": 4,
+            "surface": "אָנֹ֑כִי",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-9-SEMITIC-005",
+            "position": 5,
+            "surface": "וְ/אֶת",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-9-SEMITIC-006",
+            "position": 6,
+            "surface": "יְהוָ֞ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-9-SEMITIC-007",
+            "position": 7,
+            "surface": "אֱלֹהֵ֤י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-9-SEMITIC-008",
+            "position": 8,
+            "surface": "הַ/שָּׁמַ֨יִם֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-9-SEMITIC-009",
+            "position": 9,
+            "surface": "אֲנִ֣י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-9-SEMITIC-010",
+            "position": 10,
+            "surface": "יָרֵ֔א",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-9-SEMITIC-011",
+            "position": 11,
+            "surface": "אֲשֶׁר",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-9-SEMITIC-012",
+            "position": 12,
+            "surface": "עָשָׂ֥ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-9-SEMITIC-013",
+            "position": 13,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-9-SEMITIC-014",
+            "position": 14,
+            "surface": "הַ/יָּ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-9-SEMITIC-015",
+            "position": 15,
+            "surface": "וְ/אֶת",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-9-SEMITIC-016",
+            "position": 16,
+            "surface": "הַ/יַּבָּשָֽׁה",
+            "language": "he"
+          }
+        ]
+      },
+      "10": {
+        "source_osis_id": "Jonah.1.10",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-10-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יִּֽירְא֤וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-002",
+            "position": 2,
+            "surface": "הָֽ/אֲנָשִׁים֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-003",
+            "position": 3,
+            "surface": "יִרְאָ֣ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-004",
+            "position": 4,
+            "surface": "גְדוֹלָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-005",
+            "position": 5,
+            "surface": "וַ/יֹּאמְר֥וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-006",
+            "position": 6,
+            "surface": "אֵלָ֖י/ו",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-007",
+            "position": 7,
+            "surface": "מַה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-008",
+            "position": 8,
+            "surface": "זֹּ֣את",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-009",
+            "position": 9,
+            "surface": "עָשִׂ֑יתָ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-010",
+            "position": 10,
+            "surface": "כִּֽי",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-011",
+            "position": 11,
+            "surface": "יָדְע֣וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-012",
+            "position": 12,
+            "surface": "הָ/אֲנָשִׁ֗ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-013",
+            "position": 13,
+            "surface": "כִּֽי",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-014",
+            "position": 14,
+            "surface": "מִ/לִּ/פְנֵ֤י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-015",
+            "position": 15,
+            "surface": "יְהוָה֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-016",
+            "position": 16,
+            "surface": "ה֣וּא",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-017",
+            "position": 17,
+            "surface": "בֹרֵ֔חַ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-018",
+            "position": 18,
+            "surface": "כִּ֥י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-019",
+            "position": 19,
+            "surface": "הִגִּ֖יד",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-10-SEMITIC-020",
+            "position": 20,
+            "surface": "לָ/הֶֽם",
+            "language": "he"
+          }
+        ]
+      },
+      "11": {
+        "source_osis_id": "Jonah.1.11",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-11-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יֹּאמְר֤וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-11-SEMITIC-002",
+            "position": 2,
+            "surface": "אֵלָי/ו֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-11-SEMITIC-003",
+            "position": 3,
+            "surface": "מַה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-11-SEMITIC-004",
+            "position": 4,
+            "surface": "נַּ֣עֲשֶׂה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-11-SEMITIC-005",
+            "position": 5,
+            "surface": "לָּ֔/ךְ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-11-SEMITIC-006",
+            "position": 6,
+            "surface": "וְ/יִשְׁתֹּ֥ק",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-11-SEMITIC-007",
+            "position": 7,
+            "surface": "הַ/יָּ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-11-SEMITIC-008",
+            "position": 8,
+            "surface": "מֵֽ/עָלֵ֑י/נוּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-11-SEMITIC-009",
+            "position": 9,
+            "surface": "כִּ֥י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-11-SEMITIC-010",
+            "position": 10,
+            "surface": "הַ/יָּ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-11-SEMITIC-011",
+            "position": 11,
+            "surface": "הוֹלֵ֥ךְ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-11-SEMITIC-012",
+            "position": 12,
+            "surface": "וְ/סֹעֵֽר",
+            "language": "he"
+          }
+        ]
+      },
+      "12": {
+        "source_osis_id": "Jonah.1.12",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-12-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יֹּ֣אמֶר",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-002",
+            "position": 2,
+            "surface": "אֲלֵי/הֶ֗ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-003",
+            "position": 3,
+            "surface": "שָׂא֨וּ/נִי֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-004",
+            "position": 4,
+            "surface": "וַ/הֲטִילֻ֣/נִי",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-005",
+            "position": 5,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-006",
+            "position": 6,
+            "surface": "הַ/יָּ֔ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-007",
+            "position": 7,
+            "surface": "וְ/יִשְׁתֹּ֥ק",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-008",
+            "position": 8,
+            "surface": "הַ/יָּ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-009",
+            "position": 9,
+            "surface": "מֵֽ/עֲלֵי/כֶ֑ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-010",
+            "position": 10,
+            "surface": "כִּ֚י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-011",
+            "position": 11,
+            "surface": "יוֹדֵ֣עַ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-012",
+            "position": 12,
+            "surface": "אָ֔נִי",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-013",
+            "position": 13,
+            "surface": "כִּ֣י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-014",
+            "position": 14,
+            "surface": "בְ/שֶׁ/לִּ֔/י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-015",
+            "position": 15,
+            "surface": "הַ/סַּ֧עַר",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-016",
+            "position": 16,
+            "surface": "הַ/גָּד֛וֹל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-017",
+            "position": 17,
+            "surface": "הַ/זֶּ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-12-SEMITIC-018",
+            "position": 18,
+            "surface": "עֲלֵי/כֶֽם",
+            "language": "he"
+          }
+        ]
+      },
+      "13": {
+        "source_osis_id": "Jonah.1.13",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-13-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יַּחְתְּר֣וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-13-SEMITIC-002",
+            "position": 2,
+            "surface": "הָ/אֲנָשִׁ֗ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-13-SEMITIC-003",
+            "position": 3,
+            "surface": "לְ/הָשִׁ֛יב",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-13-SEMITIC-004",
+            "position": 4,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-13-SEMITIC-005",
+            "position": 5,
+            "surface": "הַ/יַּבָּשָׁ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-13-SEMITIC-006",
+            "position": 6,
+            "surface": "וְ/לֹ֣א",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-13-SEMITIC-007",
+            "position": 7,
+            "surface": "יָכֹ֑לוּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-13-SEMITIC-008",
+            "position": 8,
+            "surface": "כִּ֣י",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-13-SEMITIC-009",
+            "position": 9,
+            "surface": "הַ/יָּ֔ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-13-SEMITIC-010",
+            "position": 10,
+            "surface": "הוֹלֵ֥ךְ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-13-SEMITIC-011",
+            "position": 11,
+            "surface": "וְ/סֹעֵ֖ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-13-SEMITIC-012",
+            "position": 12,
+            "surface": "עֲלֵי/הֶֽם",
+            "language": "he"
+          }
+        ]
+      },
+      "14": {
+        "source_osis_id": "Jonah.1.14",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-14-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יִּקְרְא֨וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-002",
+            "position": 2,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-003",
+            "position": 3,
+            "surface": "יְהוָ֜ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-004",
+            "position": 4,
+            "surface": "וַ/יֹּאמְר֗וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-005",
+            "position": 5,
+            "surface": "אָנָּ֤ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-006",
+            "position": 6,
+            "surface": "יְהוָה֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-007",
+            "position": 7,
+            "surface": "אַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-008",
+            "position": 8,
+            "surface": "נָ֣א",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-009",
+            "position": 9,
+            "surface": "נֹאבְדָ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-010",
+            "position": 10,
+            "surface": "בְּ/נֶ֨פֶשׁ֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-011",
+            "position": 11,
+            "surface": "הָ/אִ֣ישׁ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-012",
+            "position": 12,
+            "surface": "הַ/זֶּ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-013",
+            "position": 13,
+            "surface": "וְ/אַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-014",
+            "position": 14,
+            "surface": "תִּתֵּ֥ן",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-015",
+            "position": 15,
+            "surface": "עָלֵ֖י/נוּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-016",
+            "position": 16,
+            "surface": "דָּ֣ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-017",
+            "position": 17,
+            "surface": "נָקִ֑יא",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-018",
+            "position": 18,
+            "surface": "כִּֽי",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-019",
+            "position": 19,
+            "surface": "אַתָּ֣ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-020",
+            "position": 20,
+            "surface": "יְהוָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-021",
+            "position": 21,
+            "surface": "כַּ/אֲשֶׁ֥ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-022",
+            "position": 22,
+            "surface": "חָפַ֖צְתָּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-14-SEMITIC-023",
+            "position": 23,
+            "surface": "עָשִֽׂיתָ",
+            "language": "he"
+          }
+        ]
+      },
+      "15": {
+        "source_osis_id": "Jonah.1.15",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-15-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יִּשְׂאוּ֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-15-SEMITIC-002",
+            "position": 2,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-15-SEMITIC-003",
+            "position": 3,
+            "surface": "יוֹנָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-15-SEMITIC-004",
+            "position": 4,
+            "surface": "וַ/יְטִלֻ֖/הוּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-15-SEMITIC-005",
+            "position": 5,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-15-SEMITIC-006",
+            "position": 6,
+            "surface": "הַ/יָּ֑ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-15-SEMITIC-007",
+            "position": 7,
+            "surface": "וַ/יַּעֲמֹ֥ד",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-15-SEMITIC-008",
+            "position": 8,
+            "surface": "הַ/יָּ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-15-SEMITIC-009",
+            "position": 9,
+            "surface": "מִ/זַּעְפּֽ/וֹ",
+            "language": "he"
+          }
+        ]
+      },
+      "16": {
+        "source_osis_id": "Jonah.1.16",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-1-16-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יִּֽירְא֧וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-16-SEMITIC-002",
+            "position": 2,
+            "surface": "הָ/אֲנָשִׁ֛ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-16-SEMITIC-003",
+            "position": 3,
+            "surface": "יִרְאָ֥ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-16-SEMITIC-004",
+            "position": 4,
+            "surface": "גְדוֹלָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-16-SEMITIC-005",
+            "position": 5,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-16-SEMITIC-006",
+            "position": 6,
+            "surface": "יְהוָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-16-SEMITIC-007",
+            "position": 7,
+            "surface": "וַ/יִּֽזְבְּחוּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-16-SEMITIC-008",
+            "position": 8,
+            "surface": "זֶ֨בַח֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-16-SEMITIC-009",
+            "position": 9,
+            "surface": "לַֽ/יהוָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-16-SEMITIC-010",
+            "position": 10,
+            "surface": "וַֽ/יִּדְּר֖וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-1-16-SEMITIC-011",
+            "position": 11,
+            "surface": "נְדָרִֽים",
+            "language": "he"
+          }
+        ]
+      }
+    },
+    "2": {
+      "1": {
+        "source_osis_id": "Jonah.2.1",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-2-1-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יְמַ֤ן",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-1-SEMITIC-002",
+            "position": 2,
+            "surface": "יְהוָה֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-1-SEMITIC-003",
+            "position": 3,
+            "surface": "דָּ֣ג",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-1-SEMITIC-004",
+            "position": 4,
+            "surface": "גָּד֔וֹל",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-1-SEMITIC-005",
+            "position": 5,
+            "surface": "לִ/בְלֹ֖עַ",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-1-SEMITIC-006",
+            "position": 6,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-1-SEMITIC-007",
+            "position": 7,
+            "surface": "יוֹנָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-1-SEMITIC-008",
+            "position": 8,
+            "surface": "וַ/יְהִ֤י",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-1-SEMITIC-009",
+            "position": 9,
+            "surface": "יוֹנָה֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-1-SEMITIC-010",
+            "position": 10,
+            "surface": "בִּ/מְעֵ֣י",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-1-SEMITIC-011",
+            "position": 11,
+            "surface": "הַ/דָּ֔ג",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-1-SEMITIC-012",
+            "position": 12,
+            "surface": "שְׁלֹשָׁ֥ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-1-SEMITIC-013",
+            "position": 13,
+            "surface": "יָמִ֖ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-1-SEMITIC-014",
+            "position": 14,
+            "surface": "וּ/שְׁלֹשָׁ֥ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-1-SEMITIC-015",
+            "position": 15,
+            "surface": "לֵילֽוֹת",
+            "language": "he"
+          }
+        ]
+      },
+      "2": {
+        "source_osis_id": "Jonah.2.2",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-2-2-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יִּתְפַּלֵּ֣ל",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-2-SEMITIC-002",
+            "position": 2,
+            "surface": "יוֹנָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-2-SEMITIC-003",
+            "position": 3,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-2-SEMITIC-004",
+            "position": 4,
+            "surface": "יְהוָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-2-SEMITIC-005",
+            "position": 5,
+            "surface": "אֱלֹהָ֑י/ו",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-2-SEMITIC-006",
+            "position": 6,
+            "surface": "מִ/מְּעֵ֖י",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-2-SEMITIC-007",
+            "position": 7,
+            "surface": "הַ/דָּגָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "3": {
+        "source_osis_id": "Jonah.2.3",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-2-3-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יֹּ֗אמֶר",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-3-SEMITIC-002",
+            "position": 2,
+            "surface": "קָ֠רָאתִי",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-3-SEMITIC-003",
+            "position": 3,
+            "surface": "מִ/צָּ֥רָה",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-3-SEMITIC-004",
+            "position": 4,
+            "surface": "לִ֛/י",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-3-SEMITIC-005",
+            "position": 5,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-3-SEMITIC-006",
+            "position": 6,
+            "surface": "יְהוָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-3-SEMITIC-007",
+            "position": 7,
+            "surface": "וַֽ/יַּעֲנֵ֑/נִי",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-3-SEMITIC-008",
+            "position": 8,
+            "surface": "מִ/בֶּ֧טֶן",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-3-SEMITIC-009",
+            "position": 9,
+            "surface": "שְׁא֛וֹל",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-3-SEMITIC-010",
+            "position": 10,
+            "surface": "שִׁוַּ֖עְתִּי",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-3-SEMITIC-011",
+            "position": 11,
+            "surface": "שָׁמַ֥עְתָּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-3-SEMITIC-012",
+            "position": 12,
+            "surface": "קוֹלִֽ/י",
+            "language": "he"
+          }
+        ]
+      },
+      "4": {
+        "source_osis_id": "Jonah.2.4",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-2-4-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/תַּשְׁלִיכֵ֤/נִי",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-4-SEMITIC-002",
+            "position": 2,
+            "surface": "מְצוּלָה֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-4-SEMITIC-003",
+            "position": 3,
+            "surface": "בִּ/לְבַ֣ב",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-4-SEMITIC-004",
+            "position": 4,
+            "surface": "יַמִּ֔ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-4-SEMITIC-005",
+            "position": 5,
+            "surface": "וְ/נָהָ֖ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-4-SEMITIC-006",
+            "position": 6,
+            "surface": "יְסֹבְבֵ֑/נִי",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-4-SEMITIC-007",
+            "position": 7,
+            "surface": "כָּל",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-4-SEMITIC-008",
+            "position": 8,
+            "surface": "מִשְׁבָּרֶ֥י/ךָ",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-4-SEMITIC-009",
+            "position": 9,
+            "surface": "וְ/גַלֶּ֖י/ךָ",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-4-SEMITIC-010",
+            "position": 10,
+            "surface": "עָלַ֥/י",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-4-SEMITIC-011",
+            "position": 11,
+            "surface": "עָבָֽרוּ",
+            "language": "he"
+          }
+        ]
+      },
+      "5": {
+        "source_osis_id": "Jonah.2.5",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-2-5-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/אֲנִ֣י",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-5-SEMITIC-002",
+            "position": 2,
+            "surface": "אָמַ֔רְתִּי",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-5-SEMITIC-003",
+            "position": 3,
+            "surface": "נִגְרַ֖שְׁתִּי",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-5-SEMITIC-004",
+            "position": 4,
+            "surface": "מִ/נֶּ֣גֶד",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-5-SEMITIC-005",
+            "position": 5,
+            "surface": "עֵינֶ֑י/ךָ",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-5-SEMITIC-006",
+            "position": 6,
+            "surface": "אַ֚ךְ",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-5-SEMITIC-007",
+            "position": 7,
+            "surface": "אוֹסִ֣יף",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-5-SEMITIC-008",
+            "position": 8,
+            "surface": "לְ/הַבִּ֔יט",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-5-SEMITIC-009",
+            "position": 9,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-5-SEMITIC-010",
+            "position": 10,
+            "surface": "הֵיכַ֖ל",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-5-SEMITIC-011",
+            "position": 11,
+            "surface": "קָדְשֶֽׁ/ךָ",
+            "language": "he"
+          }
+        ]
+      },
+      "6": {
+        "source_osis_id": "Jonah.2.6",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-2-6-SEMITIC-001",
+            "position": 1,
+            "surface": "אֲפָפ֤וּ/נִי",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-6-SEMITIC-002",
+            "position": 2,
+            "surface": "מַ֨יִם֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-6-SEMITIC-003",
+            "position": 3,
+            "surface": "עַד",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-6-SEMITIC-004",
+            "position": 4,
+            "surface": "נֶ֔פֶשׁ",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-6-SEMITIC-005",
+            "position": 5,
+            "surface": "תְּה֖וֹם",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-6-SEMITIC-006",
+            "position": 6,
+            "surface": "יְסֹבְבֵ֑/נִי",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-6-SEMITIC-007",
+            "position": 7,
+            "surface": "ס֖וּף",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-6-SEMITIC-008",
+            "position": 8,
+            "surface": "חָב֥וּשׁ",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-6-SEMITIC-009",
+            "position": 9,
+            "surface": "לְ/רֹאשִֽׁ/י",
+            "language": "he"
+          }
+        ]
+      },
+      "7": {
+        "source_osis_id": "Jonah.2.7",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-2-7-SEMITIC-001",
+            "position": 1,
+            "surface": "לְ/קִצְבֵ֤י",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-7-SEMITIC-002",
+            "position": 2,
+            "surface": "הָרִים֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-7-SEMITIC-003",
+            "position": 3,
+            "surface": "יָרַ֔דְתִּי",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-7-SEMITIC-004",
+            "position": 4,
+            "surface": "הָ/אָ֛רֶץ",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-7-SEMITIC-005",
+            "position": 5,
+            "surface": "בְּרִחֶ֥י/הָ",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-7-SEMITIC-006",
+            "position": 6,
+            "surface": "בַעֲדִ֖/י",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-7-SEMITIC-007",
+            "position": 7,
+            "surface": "לְ/עוֹלָ֑ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-7-SEMITIC-008",
+            "position": 8,
+            "surface": "וַ/תַּ֧עַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-7-SEMITIC-009",
+            "position": 9,
+            "surface": "מִ/שַּׁ֛חַת",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-7-SEMITIC-010",
+            "position": 10,
+            "surface": "חַיַּ֖/י",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-7-SEMITIC-011",
+            "position": 11,
+            "surface": "יְהוָ֥ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-7-SEMITIC-012",
+            "position": 12,
+            "surface": "אֱלֹהָֽ/י",
+            "language": "he"
+          }
+        ]
+      },
+      "8": {
+        "source_osis_id": "Jonah.2.8",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-2-8-SEMITIC-001",
+            "position": 1,
+            "surface": "בְּ/הִתְעַטֵּ֤ף",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-8-SEMITIC-002",
+            "position": 2,
+            "surface": "עָלַ/י֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-8-SEMITIC-003",
+            "position": 3,
+            "surface": "נַפְשִׁ֔/י",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-8-SEMITIC-004",
+            "position": 4,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-8-SEMITIC-005",
+            "position": 5,
+            "surface": "יְהוָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-8-SEMITIC-006",
+            "position": 6,
+            "surface": "זָכָ֑רְתִּי",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-8-SEMITIC-007",
+            "position": 7,
+            "surface": "וַ/תָּב֤וֹא",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-8-SEMITIC-008",
+            "position": 8,
+            "surface": "אֵלֶ֨י/ךָ֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-8-SEMITIC-009",
+            "position": 9,
+            "surface": "תְּפִלָּתִ֔/י",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-8-SEMITIC-010",
+            "position": 10,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-8-SEMITIC-011",
+            "position": 11,
+            "surface": "הֵיכַ֖ל",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-8-SEMITIC-012",
+            "position": 12,
+            "surface": "קָדְשֶֽׁ/ךָ",
+            "language": "he"
+          }
+        ]
+      },
+      "9": {
+        "source_osis_id": "Jonah.2.9",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-2-9-SEMITIC-001",
+            "position": 1,
+            "surface": "מְשַׁמְּרִ֖ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-9-SEMITIC-002",
+            "position": 2,
+            "surface": "הַבְלֵי",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-9-SEMITIC-003",
+            "position": 3,
+            "surface": "שָׁ֑וְא",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-9-SEMITIC-004",
+            "position": 4,
+            "surface": "חַסְדָּ֖/ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-9-SEMITIC-005",
+            "position": 5,
+            "surface": "יַעֲזֹֽבוּ",
+            "language": "he"
+          }
+        ]
+      },
+      "10": {
+        "source_osis_id": "Jonah.2.10",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-2-10-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/אֲנִ֗י",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-10-SEMITIC-002",
+            "position": 2,
+            "surface": "בְּ/ק֤וֹל",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-10-SEMITIC-003",
+            "position": 3,
+            "surface": "תּוֹדָה֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-10-SEMITIC-004",
+            "position": 4,
+            "surface": "אֶזְבְּחָה",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-10-SEMITIC-005",
+            "position": 5,
+            "surface": "לָּ֔/ךְ",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-10-SEMITIC-006",
+            "position": 6,
+            "surface": "אֲשֶׁ֥ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-10-SEMITIC-007",
+            "position": 7,
+            "surface": "נָדַ֖רְתִּי",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-10-SEMITIC-008",
+            "position": 8,
+            "surface": "אֲשַׁלֵּ֑מָה",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-10-SEMITIC-009",
+            "position": 9,
+            "surface": "יְשׁוּעָ֖תָ/ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-10-SEMITIC-010",
+            "position": 10,
+            "surface": "לַ/יהוָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "11": {
+        "source_osis_id": "Jonah.2.11",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-2-11-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יֹּ֥אמֶר",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-11-SEMITIC-002",
+            "position": 2,
+            "surface": "יְהוָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-11-SEMITIC-003",
+            "position": 3,
+            "surface": "לַ/דָּ֑ג",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-11-SEMITIC-004",
+            "position": 4,
+            "surface": "וַ/יָּקֵ֥א",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-11-SEMITIC-005",
+            "position": 5,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-11-SEMITIC-006",
+            "position": 6,
+            "surface": "יוֹנָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-11-SEMITIC-007",
+            "position": 7,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-2-11-SEMITIC-008",
+            "position": 8,
+            "surface": "הַ/יַּבָּשָֽׁה",
+            "language": "he"
+          }
+        ]
+      }
+    },
+    "3": {
+      "1": {
+        "source_osis_id": "Jonah.3.1",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-3-1-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יְהִ֧י",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-1-SEMITIC-002",
+            "position": 2,
+            "surface": "דְבַר",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-1-SEMITIC-003",
+            "position": 3,
+            "surface": "יְהוָ֛ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-1-SEMITIC-004",
+            "position": 4,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-1-SEMITIC-005",
+            "position": 5,
+            "surface": "יוֹנָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-1-SEMITIC-006",
+            "position": 6,
+            "surface": "שֵׁנִ֥ית",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-1-SEMITIC-007",
+            "position": 7,
+            "surface": "לֵ/אמֹֽר",
+            "language": "he"
+          }
+        ]
+      },
+      "2": {
+        "source_osis_id": "Jonah.3.2",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-3-2-SEMITIC-001",
+            "position": 1,
+            "surface": "ק֛וּם",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-2-SEMITIC-002",
+            "position": 2,
+            "surface": "לֵ֥ךְ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-2-SEMITIC-003",
+            "position": 3,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-2-SEMITIC-004",
+            "position": 4,
+            "surface": "נִֽינְוֵ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-2-SEMITIC-005",
+            "position": 5,
+            "surface": "הָ/עִ֣יר",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-2-SEMITIC-006",
+            "position": 6,
+            "surface": "הַ/גְּדוֹלָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-2-SEMITIC-007",
+            "position": 7,
+            "surface": "וִּ/קְרָ֤א",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-2-SEMITIC-008",
+            "position": 8,
+            "surface": "אֵלֶ֨י/הָ֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-2-SEMITIC-009",
+            "position": 9,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-2-SEMITIC-010",
+            "position": 10,
+            "surface": "הַ/קְּרִיאָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-2-SEMITIC-011",
+            "position": 11,
+            "surface": "אֲשֶׁ֥ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-2-SEMITIC-012",
+            "position": 12,
+            "surface": "אָנֹכִ֖י",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-2-SEMITIC-013",
+            "position": 13,
+            "surface": "דֹּבֵ֥ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-2-SEMITIC-014",
+            "position": 14,
+            "surface": "אֵלֶֽי/ךָ",
+            "language": "he"
+          }
+        ]
+      },
+      "3": {
+        "source_osis_id": "Jonah.3.3",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-3-3-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יָּ֣קָם",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-3-SEMITIC-002",
+            "position": 2,
+            "surface": "יוֹנָ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-3-SEMITIC-003",
+            "position": 3,
+            "surface": "וַ/יֵּ֛לֶךְ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-3-SEMITIC-004",
+            "position": 4,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-3-SEMITIC-005",
+            "position": 5,
+            "surface": "נִֽינְוֶ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-3-SEMITIC-006",
+            "position": 6,
+            "surface": "כִּ/דְבַ֣ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-3-SEMITIC-007",
+            "position": 7,
+            "surface": "יְהוָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-3-SEMITIC-008",
+            "position": 8,
+            "surface": "וְ/נִֽינְוֵ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-3-SEMITIC-009",
+            "position": 9,
+            "surface": "הָיְתָ֤ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-3-SEMITIC-010",
+            "position": 10,
+            "surface": "עִיר",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-3-SEMITIC-011",
+            "position": 11,
+            "surface": "גְּדוֹלָה֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-3-SEMITIC-012",
+            "position": 12,
+            "surface": "לֵֽ/אלֹהִ֔ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-3-SEMITIC-013",
+            "position": 13,
+            "surface": "מַהֲלַ֖ךְ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-3-SEMITIC-014",
+            "position": 14,
+            "surface": "שְׁלֹ֥שֶׁת",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-3-SEMITIC-015",
+            "position": 15,
+            "surface": "יָמִֽים",
+            "language": "he"
+          }
+        ]
+      },
+      "4": {
+        "source_osis_id": "Jonah.3.4",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-3-4-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יָּ֤חֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-4-SEMITIC-002",
+            "position": 2,
+            "surface": "יוֹנָה֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-4-SEMITIC-003",
+            "position": 3,
+            "surface": "לָ/ב֣וֹא",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-4-SEMITIC-004",
+            "position": 4,
+            "surface": "בָ/עִ֔יר",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-4-SEMITIC-005",
+            "position": 5,
+            "surface": "מַהֲלַ֖ךְ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-4-SEMITIC-006",
+            "position": 6,
+            "surface": "י֣וֹם",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-4-SEMITIC-007",
+            "position": 7,
+            "surface": "אֶחָ֑ד",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-4-SEMITIC-008",
+            "position": 8,
+            "surface": "וַ/יִּקְרָא֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-4-SEMITIC-009",
+            "position": 9,
+            "surface": "וַ/יֹּאמַ֔ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-4-SEMITIC-010",
+            "position": 10,
+            "surface": "ע֚וֹד",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-4-SEMITIC-011",
+            "position": 11,
+            "surface": "אַרְבָּעִ֣ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-4-SEMITIC-012",
+            "position": 12,
+            "surface": "י֔וֹם",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-4-SEMITIC-013",
+            "position": 13,
+            "surface": "וְ/נִֽינְוֵ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-4-SEMITIC-014",
+            "position": 14,
+            "surface": "נֶהְפָּֽכֶת",
+            "language": "he"
+          }
+        ]
+      },
+      "5": {
+        "source_osis_id": "Jonah.3.5",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-3-5-SEMITIC-001",
+            "position": 1,
+            "surface": "וַֽ/יַּאֲמִ֛ינוּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-5-SEMITIC-002",
+            "position": 2,
+            "surface": "אַנְשֵׁ֥י",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-5-SEMITIC-003",
+            "position": 3,
+            "surface": "נִֽינְוֵ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-5-SEMITIC-004",
+            "position": 4,
+            "surface": "בֵּֽ/אלֹהִ֑ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-5-SEMITIC-005",
+            "position": 5,
+            "surface": "וַ/יִּקְרְאוּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-5-SEMITIC-006",
+            "position": 6,
+            "surface": "צוֹם֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-5-SEMITIC-007",
+            "position": 7,
+            "surface": "וַ/יִּלְבְּשׁ֣וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-5-SEMITIC-008",
+            "position": 8,
+            "surface": "שַׂקִּ֔ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-5-SEMITIC-009",
+            "position": 9,
+            "surface": "מִ/גְּדוֹלָ֖/ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-5-SEMITIC-010",
+            "position": 10,
+            "surface": "וְ/עַד",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-5-SEMITIC-011",
+            "position": 11,
+            "surface": "קְטַנָּֽ/ם",
+            "language": "he"
+          }
+        ]
+      },
+      "6": {
+        "source_osis_id": "Jonah.3.6",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-3-6-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יִּגַּ֤ע",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-6-SEMITIC-002",
+            "position": 2,
+            "surface": "הַ/דָּבָר֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-6-SEMITIC-003",
+            "position": 3,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-6-SEMITIC-004",
+            "position": 4,
+            "surface": "מֶ֣לֶך",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-6-SEMITIC-005",
+            "position": 5,
+            "surface": "נִֽינְוֵ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-6-SEMITIC-006",
+            "position": 6,
+            "surface": "וַ/יָּ֨קָם֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-6-SEMITIC-007",
+            "position": 7,
+            "surface": "מִ/כִּסְא֔/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-6-SEMITIC-008",
+            "position": 8,
+            "surface": "וַ/יַּעֲבֵ֥ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-6-SEMITIC-009",
+            "position": 9,
+            "surface": "אַדַּרְתּ֖/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-6-SEMITIC-010",
+            "position": 10,
+            "surface": "מֵֽ/עָלָ֑י/ו",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-6-SEMITIC-011",
+            "position": 11,
+            "surface": "וַ/יְכַ֣ס",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-6-SEMITIC-012",
+            "position": 12,
+            "surface": "שַׂ֔ק",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-6-SEMITIC-013",
+            "position": 13,
+            "surface": "וַ/יֵּ֖שֶׁב",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-6-SEMITIC-014",
+            "position": 14,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-6-SEMITIC-015",
+            "position": 15,
+            "surface": "הָ/אֵֽפֶר",
+            "language": "he"
+          }
+        ]
+      },
+      "7": {
+        "source_osis_id": "Jonah.3.7",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-3-7-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יַּזְעֵ֗ק",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-002",
+            "position": 2,
+            "surface": "וַ/יֹּ֨אמֶר֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-003",
+            "position": 3,
+            "surface": "בְּ/נִֽינְוֵ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-004",
+            "position": 4,
+            "surface": "מִ/טַּ֧עַם",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-005",
+            "position": 5,
+            "surface": "הַ/מֶּ֛לֶךְ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-006",
+            "position": 6,
+            "surface": "וּ/גְדֹלָ֖י/ו",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-007",
+            "position": 7,
+            "surface": "לֵ/אמֹ֑ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-008",
+            "position": 8,
+            "surface": "הָ/אָדָ֨ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-009",
+            "position": 9,
+            "surface": "וְ/הַ/בְּהֵמָ֜ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-010",
+            "position": 10,
+            "surface": "הַ/בָּקָ֣ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-011",
+            "position": 11,
+            "surface": "וְ/הַ/צֹּ֗אן",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-012",
+            "position": 12,
+            "surface": "אַֽל",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-013",
+            "position": 13,
+            "surface": "יִטְעֲמוּ֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-014",
+            "position": 14,
+            "surface": "מְא֔וּמָה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-015",
+            "position": 15,
+            "surface": "אַ֨ל",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-016",
+            "position": 16,
+            "surface": "יִרְע֔וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-017",
+            "position": 17,
+            "surface": "וּ/מַ֖יִם",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-018",
+            "position": 18,
+            "surface": "אַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-7-SEMITIC-019",
+            "position": 19,
+            "surface": "יִשְׁתּֽוּ",
+            "language": "he"
+          }
+        ]
+      },
+      "8": {
+        "source_osis_id": "Jonah.3.8",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-3-8-SEMITIC-001",
+            "position": 1,
+            "surface": "וְ/יִתְכַּסּ֣וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-8-SEMITIC-002",
+            "position": 2,
+            "surface": "שַׂקִּ֗ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-8-SEMITIC-003",
+            "position": 3,
+            "surface": "הָֽ/אָדָם֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-8-SEMITIC-004",
+            "position": 4,
+            "surface": "וְ/הַ/בְּהֵמָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-8-SEMITIC-005",
+            "position": 5,
+            "surface": "וְ/יִקְרְא֥וּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-8-SEMITIC-006",
+            "position": 6,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-8-SEMITIC-007",
+            "position": 7,
+            "surface": "אֱלֹהִ֖ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-8-SEMITIC-008",
+            "position": 8,
+            "surface": "בְּ/חָזְקָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-8-SEMITIC-009",
+            "position": 9,
+            "surface": "וְ/יָשֻׁ֗בוּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-8-SEMITIC-010",
+            "position": 10,
+            "surface": "אִ֚ישׁ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-8-SEMITIC-011",
+            "position": 11,
+            "surface": "מִ/דַּרְכּ֣/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-8-SEMITIC-012",
+            "position": 12,
+            "surface": "הָֽ/רָעָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-8-SEMITIC-013",
+            "position": 13,
+            "surface": "וּ/מִן",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-8-SEMITIC-014",
+            "position": 14,
+            "surface": "הֶ/חָמָ֖ס",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-8-SEMITIC-015",
+            "position": 15,
+            "surface": "אֲשֶׁ֥ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-8-SEMITIC-016",
+            "position": 16,
+            "surface": "בְּ/כַפֵּי/הֶֽם",
+            "language": "he"
+          }
+        ]
+      },
+      "9": {
+        "source_osis_id": "Jonah.3.9",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-3-9-SEMITIC-001",
+            "position": 1,
+            "surface": "מִֽי",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-9-SEMITIC-002",
+            "position": 2,
+            "surface": "יוֹדֵ֣עַ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-9-SEMITIC-003",
+            "position": 3,
+            "surface": "יָשׁ֔וּב",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-9-SEMITIC-004",
+            "position": 4,
+            "surface": "וְ/נִחַ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-9-SEMITIC-005",
+            "position": 5,
+            "surface": "הָ/אֱלֹהִ֑ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-9-SEMITIC-006",
+            "position": 6,
+            "surface": "וְ/שָׁ֛ב",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-9-SEMITIC-007",
+            "position": 7,
+            "surface": "מֵ/חֲר֥וֹן",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-9-SEMITIC-008",
+            "position": 8,
+            "surface": "אַפּ֖/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-9-SEMITIC-009",
+            "position": 9,
+            "surface": "וְ/לֹ֥א",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-9-SEMITIC-010",
+            "position": 10,
+            "surface": "נֹאבֵֽד",
+            "language": "he"
+          }
+        ]
+      },
+      "10": {
+        "source_osis_id": "Jonah.3.10",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-3-10-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יַּ֤רְא",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-002",
+            "position": 2,
+            "surface": "הָֽ/אֱלֹהִים֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-003",
+            "position": 3,
+            "surface": "אֶֽת",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-004",
+            "position": 4,
+            "surface": "מַ֣עֲשֵׂי/הֶ֔ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-005",
+            "position": 5,
+            "surface": "כִּי",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-006",
+            "position": 6,
+            "surface": "שָׁ֖בוּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-007",
+            "position": 7,
+            "surface": "מִ/דַּרְכָּ֣/ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-008",
+            "position": 8,
+            "surface": "הָ/רָעָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-009",
+            "position": 9,
+            "surface": "וַ/יִּנָּ֣חֶם",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-010",
+            "position": 10,
+            "surface": "הָ/אֱלֹהִ֗ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-011",
+            "position": 11,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-012",
+            "position": 12,
+            "surface": "הָ/רָעָ֛ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-013",
+            "position": 13,
+            "surface": "אֲשֶׁר",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-014",
+            "position": 14,
+            "surface": "דִּבֶּ֥ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-015",
+            "position": 15,
+            "surface": "לַ/עֲשׂוֹת",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-016",
+            "position": 16,
+            "surface": "לָ/הֶ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-017",
+            "position": 17,
+            "surface": "וְ/לֹ֥א",
+            "language": "he"
+          },
+          {
+            "id": "JON-3-10-SEMITIC-018",
+            "position": 18,
+            "surface": "עָשָֽׂה",
+            "language": "he"
+          }
+        ]
+      }
+    },
+    "4": {
+      "1": {
+        "source_osis_id": "Jonah.4.1",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-4-1-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יֵּ֥רַע",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-1-SEMITIC-002",
+            "position": 2,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-1-SEMITIC-003",
+            "position": 3,
+            "surface": "יוֹנָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-1-SEMITIC-004",
+            "position": 4,
+            "surface": "רָעָ֣ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-1-SEMITIC-005",
+            "position": 5,
+            "surface": "גְדוֹלָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-1-SEMITIC-006",
+            "position": 6,
+            "surface": "וַ/יִּ֖חַר",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-1-SEMITIC-007",
+            "position": 7,
+            "surface": "לֽ/וֹ",
+            "language": "he"
+          }
+        ]
+      },
+      "2": {
+        "source_osis_id": "Jonah.4.2",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-4-2-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יִּתְפַּלֵּ֨ל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-002",
+            "position": 2,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-003",
+            "position": 3,
+            "surface": "יְהוָ֜ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-004",
+            "position": 4,
+            "surface": "וַ/יֹּאמַ֗ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-005",
+            "position": 5,
+            "surface": "אָנָּ֤ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-006",
+            "position": 6,
+            "surface": "יְהוָה֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-007",
+            "position": 7,
+            "surface": "הֲ/לוֹא",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-008",
+            "position": 8,
+            "surface": "זֶ֣ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-009",
+            "position": 9,
+            "surface": "דְבָרִ֗/י",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-010",
+            "position": 10,
+            "surface": "עַד",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-011",
+            "position": 11,
+            "surface": "הֱיוֹתִ/י֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-012",
+            "position": 12,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-013",
+            "position": 13,
+            "surface": "אַדְמָתִ֔/י",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-014",
+            "position": 14,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-015",
+            "position": 15,
+            "surface": "כֵּ֥ן",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-016",
+            "position": 16,
+            "surface": "קִדַּ֖מְתִּי",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-017",
+            "position": 17,
+            "surface": "לִ/בְרֹ֣חַ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-018",
+            "position": 18,
+            "surface": "תַּרְשִׁ֑ישָׁ/ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-019",
+            "position": 19,
+            "surface": "כִּ֣י",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-020",
+            "position": 20,
+            "surface": "יָדַ֗עְתִּי",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-021",
+            "position": 21,
+            "surface": "כִּ֤י",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-022",
+            "position": 22,
+            "surface": "אַתָּה֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-023",
+            "position": 23,
+            "surface": "אֵֽל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-024",
+            "position": 24,
+            "surface": "חַנּ֣וּן",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-025",
+            "position": 25,
+            "surface": "וְ/רַח֔וּם",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-026",
+            "position": 26,
+            "surface": "אֶ֤רֶךְ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-027",
+            "position": 27,
+            "surface": "אַפַּ֨יִם֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-028",
+            "position": 28,
+            "surface": "וְ/רַב",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-029",
+            "position": 29,
+            "surface": "חֶ֔סֶד",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-030",
+            "position": 30,
+            "surface": "וְ/נִחָ֖ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-031",
+            "position": 31,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-2-SEMITIC-032",
+            "position": 32,
+            "surface": "הָ/רָעָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "3": {
+        "source_osis_id": "Jonah.4.3",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-4-3-SEMITIC-001",
+            "position": 1,
+            "surface": "וְ/עַתָּ֣ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-3-SEMITIC-002",
+            "position": 2,
+            "surface": "יְהוָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-3-SEMITIC-003",
+            "position": 3,
+            "surface": "קַח",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-3-SEMITIC-004",
+            "position": 4,
+            "surface": "נָ֥א",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-3-SEMITIC-005",
+            "position": 5,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-3-SEMITIC-006",
+            "position": 6,
+            "surface": "נַפְשִׁ֖/י",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-3-SEMITIC-007",
+            "position": 7,
+            "surface": "מִמֶּ֑/נִּי",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-3-SEMITIC-008",
+            "position": 8,
+            "surface": "כִּ֛י",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-3-SEMITIC-009",
+            "position": 9,
+            "surface": "ט֥וֹב",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-3-SEMITIC-010",
+            "position": 10,
+            "surface": "מוֹתִ֖/י",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-3-SEMITIC-011",
+            "position": 11,
+            "surface": "מֵ/חַיָּֽ/י",
+            "language": "he"
+          }
+        ]
+      },
+      "4": {
+        "source_osis_id": "Jonah.4.4",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-4-4-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יֹּ֣אמֶר",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-4-SEMITIC-002",
+            "position": 2,
+            "surface": "יְהוָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-4-SEMITIC-003",
+            "position": 3,
+            "surface": "הַ/הֵיטֵ֖ב",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-4-SEMITIC-004",
+            "position": 4,
+            "surface": "חָ֥רָה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-4-SEMITIC-005",
+            "position": 5,
+            "surface": "לָֽ/ךְ",
+            "language": "he"
+          }
+        ]
+      },
+      "5": {
+        "source_osis_id": "Jonah.4.5",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-4-5-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יֵּצֵ֤א",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-002",
+            "position": 2,
+            "surface": "יוֹנָה֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-003",
+            "position": 3,
+            "surface": "מִן",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-004",
+            "position": 4,
+            "surface": "הָ/עִ֔יר",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-005",
+            "position": 5,
+            "surface": "וַ/יֵּ֖שֶׁב",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-006",
+            "position": 6,
+            "surface": "מִ/קֶּ֣דֶם",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-007",
+            "position": 7,
+            "surface": "לָ/עִ֑יר",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-008",
+            "position": 8,
+            "surface": "וַ/יַּעַשׂ֩",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-009",
+            "position": 9,
+            "surface": "ל֨/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-010",
+            "position": 10,
+            "surface": "שָׁ֜ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-011",
+            "position": 11,
+            "surface": "סֻכָּ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-012",
+            "position": 12,
+            "surface": "וַ/יֵּ֤שֶׁב",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-013",
+            "position": 13,
+            "surface": "תַּחְתֶּ֨י/הָ֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-014",
+            "position": 14,
+            "surface": "בַּ/צֵּ֔ל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-015",
+            "position": 15,
+            "surface": "עַ֚ד",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-016",
+            "position": 16,
+            "surface": "אֲשֶׁ֣ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-017",
+            "position": 17,
+            "surface": "יִרְאֶ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-018",
+            "position": 18,
+            "surface": "מַה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-019",
+            "position": 19,
+            "surface": "יִּהְיֶ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-5-SEMITIC-020",
+            "position": 20,
+            "surface": "בָּ/עִֽיר",
+            "language": "he"
+          }
+        ]
+      },
+      "6": {
+        "source_osis_id": "Jonah.4.6",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-4-6-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יְמַ֣ן",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-002",
+            "position": 2,
+            "surface": "יְהוָֽה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-003",
+            "position": 3,
+            "surface": "אֱ֠לֹהִים",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-004",
+            "position": 4,
+            "surface": "קִיקָי֞וֹן",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-005",
+            "position": 5,
+            "surface": "וַ/יַּ֣עַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-006",
+            "position": 6,
+            "surface": "מֵ/עַ֣ל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-007",
+            "position": 7,
+            "surface": "לְ/יוֹנָ֗ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-008",
+            "position": 8,
+            "surface": "לִֽ/הְי֥וֹת",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-009",
+            "position": 9,
+            "surface": "צֵל֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-010",
+            "position": 10,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-011",
+            "position": 11,
+            "surface": "רֹאשׁ֔/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-012",
+            "position": 12,
+            "surface": "לְ/הַצִּ֥יל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-013",
+            "position": 13,
+            "surface": "ל֖/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-014",
+            "position": 14,
+            "surface": "מֵ/רָֽעָת֑/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-015",
+            "position": 15,
+            "surface": "וַ/יִּשְׂמַ֥ח",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-016",
+            "position": 16,
+            "surface": "יוֹנָ֛ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-017",
+            "position": 17,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-018",
+            "position": 18,
+            "surface": "הַ/קִּֽיקָי֖וֹן",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-019",
+            "position": 19,
+            "surface": "שִׂמְחָ֥ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-6-SEMITIC-020",
+            "position": 20,
+            "surface": "גְדוֹלָֽה",
+            "language": "he"
+          }
+        ]
+      },
+      "7": {
+        "source_osis_id": "Jonah.4.7",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-4-7-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יְמַ֤ן",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-7-SEMITIC-002",
+            "position": 2,
+            "surface": "הָֽ/אֱלֹהִים֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-7-SEMITIC-003",
+            "position": 3,
+            "surface": "תּוֹלַ֔עַת",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-7-SEMITIC-004",
+            "position": 4,
+            "surface": "בַּ/עֲל֥וֹת",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-7-SEMITIC-005",
+            "position": 5,
+            "surface": "הַ/שַּׁ֖חַר",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-7-SEMITIC-006",
+            "position": 6,
+            "surface": "לַֽ/מָּחֳרָ֑ת",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-7-SEMITIC-007",
+            "position": 7,
+            "surface": "וַ/תַּ֥ךְ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-7-SEMITIC-008",
+            "position": 8,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-7-SEMITIC-009",
+            "position": 9,
+            "surface": "הַ/קִּֽיקָי֖וֹן",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-7-SEMITIC-010",
+            "position": 10,
+            "surface": "וַ/יִּיבָֽשׁ",
+            "language": "he"
+          }
+        ]
+      },
+      "8": {
+        "source_osis_id": "Jonah.4.8",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-4-8-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יְהִ֣י",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-002",
+            "position": 2,
+            "surface": "כִּ/זְרֹ֣חַ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-003",
+            "position": 3,
+            "surface": "הַ/שֶּׁ֗מֶשׁ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-004",
+            "position": 4,
+            "surface": "וַ/יְמַ֨ן",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-005",
+            "position": 5,
+            "surface": "אֱלֹהִ֜ים",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-006",
+            "position": 6,
+            "surface": "ר֤וּחַ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-007",
+            "position": 7,
+            "surface": "קָדִים֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-008",
+            "position": 8,
+            "surface": "חֲרִישִׁ֔ית",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-009",
+            "position": 9,
+            "surface": "וַ/תַּ֥ךְ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-010",
+            "position": 10,
+            "surface": "הַ/שֶּׁ֛מֶשׁ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-011",
+            "position": 11,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-012",
+            "position": 12,
+            "surface": "רֹ֥אשׁ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-013",
+            "position": 13,
+            "surface": "יוֹנָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-014",
+            "position": 14,
+            "surface": "וַ/יִּתְעַלָּ֑ף",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-015",
+            "position": 15,
+            "surface": "וַ/יִּשְׁאַ֤ל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-016",
+            "position": 16,
+            "surface": "אֶת",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-017",
+            "position": 17,
+            "surface": "נַפְשׁ/וֹ֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-018",
+            "position": 18,
+            "surface": "לָ/מ֔וּת",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-019",
+            "position": 19,
+            "surface": "וַ/יֹּ֕אמֶר",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-020",
+            "position": 20,
+            "surface": "ט֥וֹב",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-021",
+            "position": 21,
+            "surface": "מוֹתִ֖/י",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-8-SEMITIC-022",
+            "position": 22,
+            "surface": "מֵ/חַיָּֽ/י",
+            "language": "he"
+          }
+        ]
+      },
+      "9": {
+        "source_osis_id": "Jonah.4.9",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-4-9-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יֹּ֤אמֶר",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-9-SEMITIC-002",
+            "position": 2,
+            "surface": "אֱלֹהִים֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-9-SEMITIC-003",
+            "position": 3,
+            "surface": "אֶל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-9-SEMITIC-004",
+            "position": 4,
+            "surface": "יוֹנָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-9-SEMITIC-005",
+            "position": 5,
+            "surface": "הַ/הֵיטֵ֥ב",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-9-SEMITIC-006",
+            "position": 6,
+            "surface": "חָרָֽה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-9-SEMITIC-007",
+            "position": 7,
+            "surface": "לְ/ךָ֖",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-9-SEMITIC-008",
+            "position": 8,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-9-SEMITIC-009",
+            "position": 9,
+            "surface": "הַ/קִּֽיקָי֑וֹן",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-9-SEMITIC-010",
+            "position": 10,
+            "surface": "וַ/יֹּ֕אמֶר",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-9-SEMITIC-011",
+            "position": 11,
+            "surface": "הֵיטֵ֥ב",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-9-SEMITIC-012",
+            "position": 12,
+            "surface": "חָֽרָה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-9-SEMITIC-013",
+            "position": 13,
+            "surface": "לִ֖/י",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-9-SEMITIC-014",
+            "position": 14,
+            "surface": "עַד",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-9-SEMITIC-015",
+            "position": 15,
+            "surface": "מָֽוֶת",
+            "language": "he"
+          }
+        ]
+      },
+      "10": {
+        "source_osis_id": "Jonah.4.10",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-4-10-SEMITIC-001",
+            "position": 1,
+            "surface": "וַ/יֹּ֣אמֶר",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-002",
+            "position": 2,
+            "surface": "יְהוָ֔ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-003",
+            "position": 3,
+            "surface": "אַתָּ֥ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-004",
+            "position": 4,
+            "surface": "חַ֨סְתָּ֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-005",
+            "position": 5,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-006",
+            "position": 6,
+            "surface": "הַ/קִּ֣יקָי֔וֹן",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-007",
+            "position": 7,
+            "surface": "אֲשֶׁ֛ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-008",
+            "position": 8,
+            "surface": "לֹא",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-009",
+            "position": 9,
+            "surface": "עָמַ֥לְתָּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-010",
+            "position": 10,
+            "surface": "בּ֖/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-011",
+            "position": 11,
+            "surface": "וְ/לֹ֣א",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-012",
+            "position": 12,
+            "surface": "גִדַּלְתּ֑/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-013",
+            "position": 13,
+            "surface": "שֶׁ/בִּן",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-014",
+            "position": 14,
+            "surface": "לַ֥יְלָה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-015",
+            "position": 15,
+            "surface": "הָיָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-016",
+            "position": 16,
+            "surface": "וּ/בִן",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-017",
+            "position": 17,
+            "surface": "לַ֥יְלָה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-10-SEMITIC-018",
+            "position": 18,
+            "surface": "אָבָֽד",
+            "language": "he"
+          }
+        ]
+      },
+      "11": {
+        "source_osis_id": "Jonah.4.11",
+        "languages": [
+          "he"
+        ],
+        "tokens": [
+          {
+            "id": "JON-4-11-SEMITIC-001",
+            "position": 1,
+            "surface": "וַֽ/אֲנִי֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-002",
+            "position": 2,
+            "surface": "לֹ֣א",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-003",
+            "position": 3,
+            "surface": "אָח֔וּס",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-004",
+            "position": 4,
+            "surface": "עַל",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-005",
+            "position": 5,
+            "surface": "נִינְוֵ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-006",
+            "position": 6,
+            "surface": "הָ/עִ֣יר",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-007",
+            "position": 7,
+            "surface": "הַ/גְּדוֹלָ֑ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-008",
+            "position": 8,
+            "surface": "אֲשֶׁ֣ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-009",
+            "position": 9,
+            "surface": "יֶשׁ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-010",
+            "position": 10,
+            "surface": "בָּ֡/הּ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-011",
+            "position": 11,
+            "surface": "הַרְבֵּה֩",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-012",
+            "position": 12,
+            "surface": "מִֽ/שְׁתֵּים",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-013",
+            "position": 13,
+            "surface": "עֶשְׂרֵ֨ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-014",
+            "position": 14,
+            "surface": "רִבּ֜וֹ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-015",
+            "position": 15,
+            "surface": "אָדָ֗ם",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-016",
+            "position": 16,
+            "surface": "אֲשֶׁ֤ר",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-017",
+            "position": 17,
+            "surface": "לֹֽא",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-018",
+            "position": 18,
+            "surface": "יָדַע֙",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-019",
+            "position": 19,
+            "surface": "בֵּין",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-020",
+            "position": 20,
+            "surface": "יְמִינ֣/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-021",
+            "position": 21,
+            "surface": "לִ/שְׂמֹאל֔/וֹ",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-022",
+            "position": 22,
+            "surface": "וּ/בְהֵמָ֖ה",
+            "language": "he"
+          },
+          {
+            "id": "JON-4-11-SEMITIC-023",
+            "position": 23,
+            "surface": "רַבָּֽה",
+            "language": "he"
+          }
+        ]
+      }
+    }
+  }
+}
