@@ -17,7 +17,7 @@ jobs:
         run: python tools/audit_public_forms.py
       - name: Validate Logos corpus and source-rights metadata
         run: python tools/validate_logos.py
-      - name: Syntax-check Logos Greek NT frontend
-        run: node --check javascript/logos-greek-integration.js
-      - name: Validate Logos Greek NT frontend integration
+      - name: Syntax-check unified Logos frontend
+        run: node --check javascript/logos.js
+      - name: Validate Logos unified Interlinear + Greek NT integration
         run: python tools/validate_logos_greek_frontend.py
