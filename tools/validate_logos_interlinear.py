@@ -11,6 +11,10 @@ PHASE1B_ACCEPTANCE_MERGE = "22ad0019355d6924592d3c6b5176624e6fd4c866"
 VULGATE_COMMIT = "f257a3559025c3f873b48a75019f53a9354ed7de"
 VULGATE_BLOB = "c0e65106383658fd914e90da4c82f2be48a0a762"
 VULGATE_RIGHTS_BLOB = "50caf5d5b86fb69471c1b849584cc476a7944df5"
+ECC_COMMIT = "338aa27310b3cfe2588a993b4d113b503597d70f"
+ECC_BLOB = "1659770789d318e7ee04f3ee03684bf880922bc4"
+ECC_LICENSE_BLOB = "8259e21ad92848217dcdfd4067d8a919765eb4a7"
+ECC_INGEST_BLOB = "cef0ca6d447741352c1d2c9924b6af46a3de3862"
 
 DEUTEROCANON = {
     "Tobit", "Judith", "Wisdom", "Sirach", "Baruch", "1 Maccabees", "2 Maccabees",
@@ -156,8 +160,33 @@ def main() -> int:
     if integrity.get("status") != "verified-by-phase1b-source-lock" or integrity.get("witness_count") != 15 or integrity.get("source_verse_record_count") != 5337:
         fail("LXX accepted deuterocanonical source-inventory integrity evidence is incomplete")
     full_scope = lxx.get("full_protocanonical_package") or {}
-    if full_scope.get("book_scope_count") != 39 or full_scope.get("tree_sha") != "e1fe137e1409d0a73a52ddac6ba9669fcbc3ba79":
-        fail("full protocanonical Swete package pin is missing")
+    if full_scope.get("corpus_id") != "grc_ot_catholic_full":
+        fail("complete protocanonical Greek package id changed")
+    if full_scope.get("book_scope_count") != 39 or full_scope.get("first1k_swete_book_scope_count") != 38 or full_scope.get("ecclesiastes_fallback_book_scope_count") != 1:
+        fail("complete protocanonical Greek source-scope contract changed")
+    if full_scope.get("tree_sha") != "e1fe137e1409d0a73a52ddac6ba9669fcbc3ba79":
+        fail("complete protocanonical First1K tree pin is missing")
+    if full_scope.get("ecclesiastes_fallback_source_id") != "open-greek-ecclesiastes":
+        fail("complete protocanonical Ecclesiastes fallback source is missing")
+
+    ecclesiastes = source_index.get("open-greek-ecclesiastes") or {}
+    if ecclesiastes.get("status") != "approved-for-production-ingestion" or ecclesiastes.get("production_import_allowed") is not True:
+        fail("Ecclesiastes fallback must be approved for production ingestion")
+    if ecclesiastes.get("license") != "CC BY-SA 4.0" or ecclesiastes.get("share_alike") is not True or ecclesiastes.get("isolation_required") is not True:
+        fail("Ecclesiastes fallback rights/isolation record changed")
+    ecc_pin = ecclesiastes.get("pin") or {}
+    if ecc_pin.get("type") != "git-commit" or ecc_pin.get("value") != ECC_COMMIT:
+        fail("Ecclesiastes fallback immutable source commit changed")
+    ecc_integrity = ecclesiastes.get("integrity") or {}
+    if ecc_integrity.get("git_blob_sha1") != ECC_BLOB:
+        fail("Ecclesiastes fallback source blob changed")
+    if ecc_integrity.get("license_evidence_git_blob_sha1") != ECC_LICENSE_BLOB:
+        fail("Ecclesiastes fallback license-evidence blob changed")
+    if ecc_integrity.get("ingest_evidence_git_blob_sha1") != ECC_INGEST_BLOB:
+        fail("Ecclesiastes fallback ingest-evidence blob changed")
+    ecc_inventory = ecclesiastes.get("inventory") or {}
+    if ecc_inventory.get("chapter_count") != 12 or ecc_inventory.get("verse_count") != 222:
+        fail("Ecclesiastes fallback inventory changed")
 
     vulgate = source_index.get("vulgate-clementine") or {}
     if vulgate.get("status") != "approved-for-production-ingestion" or vulgate.get("production_import_allowed") is not True:
