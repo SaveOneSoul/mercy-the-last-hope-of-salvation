@@ -21,6 +21,7 @@ OSHB_COMMIT = "3d15126fb1ef74867fc1434be1942e837932691f"
 WLC_TREE = "dd2fe9d2168f3fc0963bcdbdac8fa1d487c06e45"
 LXX_COMMIT = "8ee111eb44ecef4120c844e10749178d95d1f30c"
 LXX_TREE = "e1fe137e1409d0a73a52ddac6ba9669fcbc3ba79"
+PHASE1B_ACCEPTANCE_MERGE = "22ad0019355d6924592d3c6b5176624e6fd4c866"
 BOOK_IDS = [
     "GEN", "EXO", "LEV", "NUM", "DEU", "JOS", "JDG", "RUT", "1SA", "2SA",
     "1KI", "2KI", "1CH", "2CH", "EZR", "NEH", "EST", "JOB", "PSA", "PRO",
@@ -96,13 +97,15 @@ def validate_static() -> None:
     need(oshb.get("license") == "CC BY 4.0", "OSHB registry license mismatch")
 
     lxx = source_by_id(sources, "first1kgreek-swete")
-    need(lxx.get("production_import_allowed") is False and lxx.get("source_inventory_verified") is False, "LXX central registry must remain blocked pending owner acceptance")
+    need(lxx.get("status") == "approved-for-production-ingestion", "LXX central registry acceptance state missing")
+    need(lxx.get("production_import_allowed") is True and lxx.get("source_inventory_verified") is True, "LXX central registry must reflect accepted Phase 1B inventory")
     need(lxx.get("share_alike") is True and lxx.get("isolation_required") is True, "LXX ShareAlike isolation changed")
     need((lxx.get("pin") or {}).get("value") == LXX_COMMIT, "LXX registry commit mismatch")
+    need((lxx.get("owner_acceptance") or {}).get("merge_commit") == PHASE1B_ACCEPTANCE_MERGE, "LXX registry owner-acceptance merge mismatch")
 
     gate_src = gate.get("source") or {}
-    need(gate.get("production_enabled") is False and gate.get("production_import_allowed") is False, "LXX gate must remain disabled")
-    need(gate.get("status") == "validated-awaiting-owner-acceptance", "LXX gate status must record validated Phase 1B evidence")
+    need(gate.get("production_enabled") is False and gate.get("production_import_allowed") is False, "Phase 1B evidence gate itself must remain validation-only")
+    need(gate.get("status") == "accepted-production-integration-authorized", "LXX gate must record accepted Phase 1B evidence")
     need(gate_src.get("repository") == "OpenGreekAndLatin/First1KGreek", "unexpected LXX candidate repository")
     need(gate_src.get("commit") == LXX_COMMIT and gate_src.get("septuagint_tree_sha") == LXX_TREE, "LXX immutable pin mismatch")
     need(gate_src.get("license") == "CC BY-SA 4.0", "LXX license mismatch")
@@ -114,7 +117,8 @@ def validate_static() -> None:
     need(evidence.get("versification_mapping_complete") is True, "Phase 1B versification evidence missing")
     need(evidence.get("sharealike_isolation_validated") is True, "Phase 1B ShareAlike validation evidence missing")
     need(evidence.get("deterministic_ci_import_validated") is True, "Phase 1B deterministic CI evidence missing")
-    need(evidence.get("owner_accepted") is False, "Phase 1B must still await project-owner acceptance")
+    need(evidence.get("owner_accepted") is True, "Phase 1B owner acceptance is not recorded")
+    need(evidence.get("owner_acceptance_merge_commit") == PHASE1B_ACCEPTANCE_MERGE, "Phase 1B acceptance merge mismatch")
 
     catalog = {str(row.get("id")): row for row in (books.get("books") or [])}
     need(len(catalog) == 73, "canonical books registry must remain 73 books")
