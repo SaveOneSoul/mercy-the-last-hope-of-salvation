@@ -1,0 +1,5619 @@
+{
+  "schema_version": 1,
+  "corpus_id": "grc_ot_catholic_full",
+  "corpus_version": "2026.09.17-catholic-lxx-full",
+  "production_enabled": true,
+  "partition": "sharealike-catholic-lxx",
+  "license": "CC BY-SA 4.0",
+  "share_alike": true,
+  "isolation_required": true,
+  "book_id": "PRO",
+  "book": "Proverbs",
+  "language": "grc",
+  "mapping": {
+    "mode": "source-reference-preserved",
+    "canonical_chapter_offset": 0
+  },
+  "source": {
+    "source_family": "first1k-swete",
+    "work": "tlg029",
+    "work_title": "Proverbia",
+    "edition_urn": "urn:cts:greekLit:tlg0527.tlg029.1st1K-grc1",
+    "repository": "OpenGreekAndLatin/First1KGreek",
+    "commit": "8ee111eb44ecef4120c844e10749178d95d1f30c",
+    "metadata_path": "data/tlg0527/tlg029/__cts__.xml",
+    "metadata_git_blob_sha1": "3042ea6c626de58e55464f2840c1c185ced117fe",
+    "metadata_sha256": "ac13d38465ed08655225d3e2f56ba15ef303cc80cedc74f9897b1835f3556f57",
+    "text_path": "data/tlg0527/tlg029/tlg0527.tlg029.1st1K-grc1.xml",
+    "text_git_blob_sha1": "96b0baf3510ef10621c31d53be89540e5dd00d14",
+    "text_sha256": "d88896708e735578a1c1a5681f1a703d98e48de4d2877bc5d7fc5304493aa333",
+    "license": "CC BY-SA 4.0",
+    "per_file_license_verified": true
+  },
+  "surface_policy": {
+    "source_boundaries_preserved": true,
+    "empty_source_divisions_preserved": true,
+    "unicode_normalization": "none",
+    "whitespace": "collapsed-layout-whitespace",
+    "excluded_editorial_tags": [
+      "head",
+      "milestone",
+      "note",
+      "pb"
+    ],
+    "glosses": false,
+    "lemmata": false,
+    "morphology": false,
+    "transliteration": false
+  },
+  "verses": [
+    {
+      "source_chapter": "1",
+      "source_verse": "1",
+      "source_reference": "1:1",
+      "surface": "ΠΑΡΟΙΜΙΑΙ Σαλωμῶντος υἱοῦ Δαυείδ ὃς ἐβασίλευσεν ἐν Ἰσραήλ,"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "2",
+      "source_reference": "1:2",
+      "surface": "γνῶναι σοφίαν καὶ παιδείαν §δέξασθαί τε λόγους φρονήσεως,"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "3",
+      "source_reference": "1:3",
+      "surface": "δέξασθαί τε στροφὰς λόγων, νοῆσαί τε δικαιοσύνην ἀληθῆ καὶ κρίμα κατευθύνειν·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "4",
+      "source_reference": "1:4",
+      "surface": "ἴνα δῷ ἀκάκοις πανουργίαν, παιδὶ δὲ νέῳ αἴσθησίν τε καὶ ἔννοιαν."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "5",
+      "source_reference": "1:5",
+      "surface": "τῶνδε γὰρ ἀκούσας σοφὸς σοφώτερος ἔσται, ὁ δὲ νοήμων κυβέρνησιν κτήσεται,"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "6",
+      "source_reference": "1:6",
+      "surface": "νοήσει τε παραβολὴν καὶ σκοτεινὸν λόγον ῥήσεις τε σοφῶν καὶ αἰνίγματα."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "7",
+      "source_reference": "1:7",
+      "surface": "Ἀρχὴ σοφίας φόβος θεοῦ, σύνεσις δὲ ἀγαθὴ πᾶσι τοῖς ποιοῦσιν αὐτήν· εὐσεβέα δὲ εἰς θεὸν ἀρχὴ αἰσθήσεως, σοφίαν δὲ καὶ παιδείαν ἀσεβεῖς ἐξουθενήσουσιν."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "8",
+      "source_reference": "1:8",
+      "surface": "ἄκουε, υἱέ, παιδείαν πατρός σου, καὶ μὴ ἀπώσῃ θεσμοὺς μητρός σου·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "9",
+      "source_reference": "1:9",
+      "surface": "στέφανον γὰρ χαρίτων δέξῃ σῇ κορυφῇ, καὶ κλοιὸν χρύσεον περὶ σῷ τραχήλῳι"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "10",
+      "source_reference": "1:10",
+      "surface": "υἱέ, μὴ σε πλανήσωσιν ἄνδρες ἀσεβεῖς, μηδέ βουληθῇς"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "11",
+      "source_reference": "1:11",
+      "surface": "ἐὰν παρακαλέσωσί σε λέγοντες Ἐλθὲ μεθʼ ἡμῶν, κοινώνησον αἵματος, κρύψωμεν δὲ εἰς γῆν ἄνδρα δίκαιον ἀδίκως."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "12",
+      "source_reference": "1:12",
+      "surface": "καταπίωμεν δέ αὐτὸν ὥσπερ ᾄδης ζῶντα, καὶ ἄρωμεν αὐτοῦ τὴν μνήμην ἐκ γῆς·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "13",
+      "source_reference": "1:13",
+      "surface": "τὴν κτῆσιν αὐτοῦ τὴν πολυτελῆ καταλαβώμεθα, πλήσωμεν δὲ οἴκους ἡμετέρους σκύλων·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "14",
+      "source_reference": "1:14",
+      "surface": "τὸν δὲ σὸν κλῆρον βάλε ἐν ἡμῖν, κοινὸν δὲ βαλλάντιον κτησώμεθα πάντες καὶ μαρσίππιον ἐν γενηθήτω ἡμῖν."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "15",
+      "source_reference": "1:15",
+      "surface": "μὴ πορευθῇς ἐν ὁδῷ μετʼ αὐτῶν, ἔκκλινον δὲ τὸν πόδα σου ἐκ τῶν τρίβων αὐτῶν·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "17",
+      "source_reference": "1:17",
+      "surface": "οὐ γὰρ ἀδίκως ἐκτείνεται δίκτυα πτερωτοῖς."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "18",
+      "source_reference": "1:18",
+      "surface": "αὐτοὶ γὰρ οἱ φόνου μετέχοντες θησαυρίζουσιν ἑαυτοῖς κακά, ἡ δέ καταστροφὴ ἀνδρῶν παρανόμωνν κακή."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "19",
+      "source_reference": "1:19",
+      "surface": "ηὗται αἱ ὁδοί εἰσιν πάνταον τῶν συντελούτωνν τὰ ἄνομα· τῇ γὰρ ἀσεβείᾳ τὴν ἑαυτῶν ψυχὴν ἀφαιροῦνται."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "20",
+      "source_reference": "1:20",
+      "surface": "Σοφία ἐν ἐξόδοις ὑμνεῖται, ἐν δὲ πλατείαις παρρησίαν ἄγει·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "21",
+      "source_reference": "1:21",
+      "surface": "ἐη᾿ ἄκρων δὲ τειχέων κηρύσσεται, ἐπὶ δὲ πύλαις δυναστῶν παρεδρεύει, ἐπὶ δὲ πύλαις πόλεως θαρροῦσα λέγει"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "22",
+      "source_reference": "1:22",
+      "surface": "Ὅσον ἂν χρόνον ἄκακοι ἔχωνται τῆς δικαιοσύνης, οὐκ αἰσχυνθήοἱ δὲ ἄφρονες, τῆς ὕβρεως ὄντες ἐπιθυμηταί, ἀσεβεῖς γενόμενοι ἐμίσησαν αἴσθησιν,"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "23",
+      "source_reference": "1:23",
+      "surface": "καὶ ὑπεύθυνοι ἐγένοντο ἐλέγχοις. ἰδοὺ προήσομαι ὑμῖν ἐμῆς πνοῆς ῥῆσιν, διδάξω δὲ ὑμᾶς τὸν ἐμὸν λόγον."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "24",
+      "source_reference": "1:24",
+      "surface": "ἐπειδὴ ἐκάλουν καὶ οὐχ ὑπηκούσατε, καὶ ἐξέτεινον λόγους καὶ οὐ προσείχετε,"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "25",
+      "source_reference": "1:25",
+      "surface": "ἀλλὰ ἀκύρους ἐποιεῖτε ἐμὰς βουλάς, τοῖς δὲ ἐμοῖς ἐλέγχοις ἠπειθήσατε·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "26",
+      "source_reference": "1:26",
+      "surface": "τοιγαροῦν κἀγὼ τῇ ὑμετέρᾳ ἀπωλείᾳ ἐπιγελάσομαι, καταχαροῦμαι δὲ ἡνίκα ἂν ἔρχηται ὑμῖν ὄλεθρος."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "27",
+      "source_reference": "1:27",
+      "surface": "καὶ ὡς ἂν ἀφίκηται ὑμῖν ἄφνω θόρυβος, ἡ δὲ καταστροφὴ ὁμοίως καταιγίδι παρῇ. καὶ ὅταν ἔρχηται ὑμῖν θλίψις καὶ πολιορκία, ἢ ὅταν ἔρχηται ὑμῖν ὄλεθρος."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "28",
+      "source_reference": "1:28",
+      "surface": "ἕσται γὰρ ὅταν ἐπικαλέσησθέ με, ἐγὼ δὲ οὐκ εἰσακούσομαι ὑμῶν· ζητήσουσίν με κακοί, καὶ οὐχ εὑρήσουσιν."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "29",
+      "source_reference": "1:29",
+      "surface": "ἐμίσησαν γὰρ σοφίαν, τὸν δὲ λόγον τοῦ κυρίου οὐ προείλαντο,"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "30",
+      "source_reference": "1:30",
+      "surface": "οὐδὲ ἤθελον ἐμαῖς προσέχειν βουλαῖς, ἐμυκτήριζον δὲ ἐμοὺς ἐλέγχους."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "31",
+      "source_reference": "1:31",
+      "surface": "τοιγαροῦν ἔδονται τῆς ἑαυτῶν ὁδοῦ τοὺς καρπούς, καὶ τῆς ἑαυτῶν ἀσεβείας πλησθήσονται·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "32",
+      "source_reference": "1:32",
+      "surface": "ἀνθʼ ὧν γὰρ ἠδίκουν νηπίους φονευθήσονται, καὶ ἐξετασμὸς ἀσεβεῖς ὀλεῖ"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "33",
+      "source_reference": "1:33",
+      "surface": "ὁ δὲ ἐμοῦ ἀκούων κατασκηνώσει ἐπʼ ἐλπίδι, καὶ ἡσυχάσει ἀφόβως ἀπὸ παντὸς κακοῦ."
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "1",
+      "source_reference": "2:1",
+      "surface": "Υἱέ, ἐὰν δεξάμενος ῥῆσιν ἐμῆς ἐντολῆς κρύψῃς παρὰ σεαυτῷ,"
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "2",
+      "source_reference": "2:2",
+      "surface": "ὑπακούσεται σοφίας τὸ οὗς σου, καὶ παραβαλεῖς καρδίαν σου εἰς σύνεσιν, παραβαλεῖς δὲ αὐτὴν ἐπὶ νουθέτησιν τῷ υἱῷ σου."
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "3",
+      "source_reference": "2:3",
+      "surface": "ἐὰν γὰρ τὴν σοφίαν ἐπικαλέσῃ καὶ τῇ συνέσει δῷς φωνήν σου,"
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "4",
+      "source_reference": "2:4",
+      "surface": "καὶ ἐὰν ζητήσῃς αὐτὴν ὡς ἀργύριον καὶ ὡς θησαυροὺς ἐξεραυνήσῃς αὐτήν·"
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "5",
+      "source_reference": "2:5",
+      "surface": "τότε συνήσεις φόβον Κυρίου, καὶ ἐπίγνωσιν θεοῦ εὑρήσεις."
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "6",
+      "source_reference": "2:6",
+      "surface": "ὅτι Κύριος δίδωσιν σοφίαν, καὶ ἀπὸ προσώπου αὐτοῦ γνῶσις καὶ σύνεσις·"
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "7",
+      "source_reference": "2:7",
+      "surface": "καὶ θησαυρίζει τοῖς κατορθοῦσι σωτηρίαν,"
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "8",
+      "source_reference": "2:8",
+      "surface": "ὑπερασπιεῖ τὴν πορείαν αὐτῶν ⁸τοῦ φυλάξαι ὁδοὺς δικαιωμάτων, καὶ ὁδὸν εὐλαβουμένων αὐτὸν διαφυλάξει"
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "9",
+      "source_reference": "2:9",
+      "surface": "πότε συνήσεις δικαιοσύνην καὶ κρίμα, καὶ κατορθώσεις πάντας ἄξονας ἀγαθούς."
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "10",
+      "source_reference": "2:10",
+      "surface": "ἐὰν γὰρ ἔλθῃ ἡ σοφία εἰς σὴν διάνοιαν, ἡ δὲ αἴοθησις τῇ σῇ ψυχῇ καλὴ εἶναι δόξῃ."
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "11",
+      "source_reference": "2:11",
+      "surface": "βουλὴ καλὴ φυλάξει σε, ἔννοια δὲ ὁσία τηρήσει σε·"
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "12",
+      "source_reference": "2:12",
+      "surface": "ἵνα ῥύσηταί σε ἀπὸ ὁδοῦ κακῆς καὶ ἀπὸ ἀνδρὸς λαλοῦντος μηδέν πιστόν."
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "13",
+      "source_reference": "2:13",
+      "surface": "ὦ οἱ ἐγκαταλείποντες ὁδοὺς εὐθείας τοῦ πορεύεσθαι ἐν ὁδοῖς σκότους,"
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "14",
+      "source_reference": "2:14",
+      "surface": "οἱ εὐφραινόμενοι ἐπὶ κακοῖς καὶ χαίροντες ἐπὶ διαστροφῇ κακῇ,"
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "15",
+      "source_reference": "2:15",
+      "surface": "ὧν αἱ τρίβοι σκολιαὶ καὶ καμπύλαι αἱ τροχιαὶ αὐτῶν,"
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "16",
+      "source_reference": "2:16",
+      "surface": "τοῦ μακράν σε ποιῆσαι ἀπὸ ὁδοῦ εὐθείας καὶ ἀλλότριον τῆς δικαίας γνώμης. υἱέ, μή σε καταλάβῃ κακὴ βουλή,"
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "17",
+      "source_reference": "2:17",
+      "surface": "ἡ ἀπολείπουσα διδασκαλίαν νεότητος, καὶ διαθήκην θείαν ἐπιλελησμένη."
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "18",
+      "source_reference": "2:18",
+      "surface": "ἔθετο γὰρ παρὰ τῷ θανάτῳ τὸν οἶκον αὐτῆς, καὶ παρὰ τῷ ᾄδῃ μετὰ τῶν γηγενῶν τοὺς ἄξονας αὐτῆς·"
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "19",
+      "source_reference": "2:19",
+      "surface": "πάντες οἱ πορευόμενοι ἐν αὐτῇ οὐκ ἀναστρέψουσιν οὐδὲ μὴ καταλάβωσιν τρίβους εὐθείας·"
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "20",
+      "source_reference": "2:20",
+      "surface": "εἰ γὰρ ἐπορεύοντο τρίβους ἀγαθάς. οὐ γὰρ καταλαμβάνονται ὑπὸ ἐνιαυτῶν ζωῆς. εὕροσαν ἂν τρίβους δικαιοσύνης λείους."
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "21",
+      "source_reference": "2:21",
+      "surface": "ὅτι εὐθεῖς κατασκηνώσουσι γῆν, καὶ ὅσιοι ὑπολειφθήσονται ἐν αὐτῇ·"
+    },
+    {
+      "source_chapter": "2",
+      "source_verse": "22",
+      "source_reference": "2:22",
+      "surface": "ὁδοὶ ἀσεβῶν ἐκ γῆς ὀλοῦνται, οἱ δὲ παράνομοι ἐξωσθήσονται ἀπʼ αὐτῆς."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "1",
+      "source_reference": "3:1",
+      "surface": "Υἰέ, ἐμῶν νομίμων μὴ ἐπλανθάνου, τὰ δὲ ῥήματά μου τηρείτω σὴ καρδία·"
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "2",
+      "source_reference": "3:2",
+      "surface": "μῆκος γὰρ βίου καὶ ἔτη ζωῆς καὶ εἰρήνην προσθήσουσίν σοι."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "3",
+      "source_reference": "3:3",
+      "surface": "ἐλεημοσύναι καὶ πίστεις μὴ ἐκλιπέτωσάν σε, ἄφαψαι δὲ αὐτὰς ἐπὶ σῷ τραχήλῳ, καὶ εὑρήσεις χάριν·"
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "4",
+      "source_reference": "3:4",
+      "surface": "καὶ προνοοῦ καλὰ ἐνώπιον Κυρίου καὶ ἀνθρώπων."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "5",
+      "source_reference": "3:5",
+      "surface": "ἴσθι πεποιθὼς ἐν ὅλῃ τῇ καρδίᾳ ἐπὶ θεῷ, ἐπὶ δὲ σῇ σοφίᾳ μὴ ἐπαίρου·"
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "6",
+      "source_reference": "3:6",
+      "surface": "πάσαις ὁδοῖς σου γνώριζε αὐτήν, ἴνα ὀρθοτομῇ τὰς ὁδούς σου."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "7",
+      "source_reference": "3:7",
+      "surface": "μὴ ἴσθι φρόνιμος παρὰ σεαυτῷ, φοβοῦ δὲ τὸν θεὸν καὶ ἔκκλινε ἀπὸ παντὸς κακοῦ·"
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "8",
+      "source_reference": "3:8",
+      "surface": "τότε ἴασις ἔσται τῷ σώματί σου, καὶ ἐπιμέλεια τοῖς ὀστέοις σου."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "9",
+      "source_reference": "3:9",
+      "surface": "τίμα τὸκύριον ἀπὸ σῶν δικαίων πόνων, καὶ ἀπάρχου αὐτῷ ἀπὸ σῶν καρπῶν δικαιοσύνης·"
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "10",
+      "source_reference": "3:10",
+      "surface": "ἴνα πίμπληται τὰ ταμεῖά σου πλησμονῆς σίτῳ, οἴνῳ δὲ αἱ ληνοί σου ἐκβλύζωσιν."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "11",
+      "source_reference": "3:11",
+      "surface": "Υἱέ, μὴ ὀλιγώρει παιδείας Κυρίου, μηδὲ ἐκλύου ὑπʼ αὐτοῦ ἐλεγχόμενος·"
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "12",
+      "source_reference": "3:12",
+      "surface": "ὃν γὰρ ἀγαπῷ Κύριος ἐλέγχει. μαστιγοῖ δὲ πάντα υἱὸν ὃν παραδέχεται."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "13",
+      "source_reference": "3:13",
+      "surface": "μακάριος ἄνθρωπος ὃς εὗρεν σοφίαν, καὶ θνητὸς ὃς εἶδεν φρόνησιν."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "14",
+      "source_reference": "3:14",
+      "surface": "κρεῖττον γὰρ αὐτὴν ἐμπορεύεσθαι ἢ χρυσίου καὶ ἀργυρίου θησαυρούς."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "15",
+      "source_reference": "3:15",
+      "surface": "τιμιωτέρα δέ ἐστιν λίθων πολυτελῶν· οὐκ ἀντιτάξεται αὐτῇ οὐδὲν πονηρόν. εὔγνωστός ἐστιν πᾶσιν τοῖς ἐγγίζουσιν αὐτῇ, πᾶν δὲ τίμιον οὐκ ἄξιον αὐτῆς ἐστιν."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "16",
+      "source_reference": "3:16",
+      "surface": "μῆκος γὰρ βίου καὶ ἔτη ζωῆς ἐν τῆ δεξιῷ αὐτῆς, ἐν δὲ τῆ ἀριστερῷ αὐτῆς πλοῦτος καὶ δόξα·"
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "16a",
+      "source_reference": "3:16a",
+      "surface": "a ¹⁶aἐκ τοῦ στόματος αὐτῆς ἐκπορεύεται δικαιοσύνη, νόμον δὲ καὶ ἔλεον ἐπὶ γλώσσης φορεῖ."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "17",
+      "source_reference": "3:17",
+      "surface": "αἱ ὁδοὶ αὐτῆς ὁδοὶ καλαί, καὶ πάντες οἱ τρίβοι αὐτῆς ἐν εἰρήνῃ·"
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "18",
+      "source_reference": "3:18",
+      "surface": "ξύλον ζωῆς ἐστι πᾶσι τοῖς ἀντεχομένοις αὐτῆς, καὶ τοῖς ἐπερειδομένοις ἐπʼ αὐτὴν ὡς ἐπὶ Κύριον."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "19",
+      "source_reference": "3:19",
+      "surface": "ὁ θεὸς τῆ σοφίᾳ ἐθεμελίωσεν τὴν γῆν, ἡτοίμασεν δὲ οὐρανοὺς φρονήσει·"
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "20",
+      "source_reference": "3:20",
+      "surface": "ἐν αἰσθήσει ἄβυσσοι ἐρράγησαν. νέφη δὲ ἐρρύησαν δρόσους."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "21",
+      "source_reference": "3:21",
+      "surface": "Υἱέ. μὴ παραρυῇς, τήρησον δὲ ἐμὴν βουλὴν καὶ ἔννοιαν·"
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "22",
+      "source_reference": "3:22",
+      "surface": "ἵνα ζήσῃ ἡ ψυχὴ σου. καὶ χάρις ᾖ περὶ σῷ τραχήλῳ."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "22a",
+      "source_reference": "3:22a",
+      "surface": "aἔσται δὲ ἴασις ταῖς σαρξί σου, καὶ ἐπιμέλεια τοῖς σοῖς ὀστέοις·"
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "23",
+      "source_reference": "3:23",
+      "surface": "ἴνα πορεύῃ πεποιθὼς ἐν εἰρήνῃ πάσας τὰς ὁδούς σου, ὁ δὲ πούς σου οὐ μὴ προσκόψῃ."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "24",
+      "source_reference": "3:24",
+      "surface": "ἐὰν γὰρ κάθῃ, ἄφοβος ἔσῃ, ἐὰν δὲ καθεύδῃς, ἡδέως ὑπνώσεις·"
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "25",
+      "source_reference": "3:25",
+      "surface": "καὶ οὐ φοβηθήσῃ πτόησιν ἐπελθοῦσαν οὐδὲ ὁρμὰς ἀσεβῶν ἐπερχομένας·"
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "26",
+      "source_reference": "3:26",
+      "surface": "ὁ γὰρ Κύριος ἔσται ἐπὶ πασῶν ὁδῶν σου, καὶ ἐρείσει σὸν πόδα ἵνα μὴ σαλευθῇς."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "27",
+      "source_reference": "3:27",
+      "surface": "μὴ ἀπόσχῃ εὖ ποιεῖν ἐνδεῆ, ἡνίκα ἂν ἔχῃ ἡ χείρ σου βοηθεῖν."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "28",
+      "source_reference": "3:28",
+      "surface": "μὴ εἴπῃς Ἐπανελθὼν ἐπάνηκε, αὔριον δώσω, δυνατοῦ σου ὄντος εἶ ποιεῖν· οὐ γὰρ οἶδας τί τέξεται ἡ ἐπιοῦσα."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "29",
+      "source_reference": "3:29",
+      "surface": "μὴ τεκτήνῃ ἐπὶ σὸν φίλον κακά, παροικοῦντα καὶ πεποιθότα ἐπὶ σοί."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "30",
+      "source_reference": "3:30",
+      "surface": "μὴ φιλεχθρήσῃς πρὸς ἄνθρωπον μάτην, μή τί σε ἐργάσηται κακόν."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "31",
+      "source_reference": "3:31",
+      "surface": "μὴ κτήσῃ κακῶν ἀνδρῶν ὀνείδη, μηδέ ζηλώσῃς τὰς ὁδοὺς αὐτῶν."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "32",
+      "source_reference": "3:32",
+      "surface": "ἀκάθαρτος γὰρ ἔναντι Κυρίου πᾶς παράνομος, ἐν δὲ δικαίοις οὐ συνεδριάζει."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "33",
+      "source_reference": "3:33",
+      "surface": "κατάρα θεοῦ ἐν οἴκοις ἀσεβῶν, ἐπαύλεις δὲ δικαίων εὐλογοῦνται."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "34",
+      "source_reference": "3:34",
+      "surface": "Κύριος ὑπερηφάνοις ἀντιτάσσεται, ταπεινοῖς δὲ δίδωσιν χάριν."
+    },
+    {
+      "source_chapter": "3",
+      "source_verse": "35",
+      "source_reference": "3:35",
+      "surface": "δόξαν σοφοὶ κληρονομήσουσιν, οἱ δὲ ἀσεβεῖς ὕψωσαν ἀτιμίαν."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "1",
+      "source_reference": "4:1",
+      "surface": "Ἀκούσατε, παῖδες, παιδείαν πατρός, καὶ προσέχετε γνῶναι ἔννοιαν."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "2",
+      "source_reference": "4:2",
+      "surface": "δῶρον γὰρ ἀγαθὸν δωροῦμαι ὑμῖν, τὸν ἐμὸν νόμον μὴ ἐγκαταλίπητε."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "3",
+      "source_reference": "4:3",
+      "surface": "υἱὸς γὰρ ἐγενόμην κἀγὼ πατρὶ ὑπήκοος καὶ ἀγαπώμενος ἐν προσώπῳ μητρός,"
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "4",
+      "source_reference": "4:4",
+      "surface": "οἳ ἔλεγον καὶ ἐδίδασκόν με Ἐρειδέτω ὁ ἡμένερος λόγος εἰς σὴν καρδίαν·"
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "5",
+      "source_reference": "4:5",
+      "surface": "φύλασσε ἐντολάς, ⁵μὴ ἐπιλάθῃ· μηδὲ παρίδῃς ῥῆσιν ἐμοῦ στόματος"
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "6",
+      "source_reference": "4:6",
+      "surface": "μηδὲ ἐγκαταλίπῃς αὐτήν, καὶ ἀνθέξεταί σου· ἐράσθητι αὐτῆς, καὶ τηρήσει σε."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "8",
+      "source_reference": "4:8",
+      "surface": "περιχαράκαωσον αὐτήν, καὶ ὑψώσει σε· τίμησον αὐτήν, ἴνα σε περιλάβῃ·"
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "9",
+      "source_reference": "4:9",
+      "surface": "ἵνα δῷ τῇ σῇ κεφαλῇ στέφανον χαρίτων. στεφάνῳ δέ τρυφῆς ὑπερασπίσῃ σου."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "10",
+      "source_reference": "4:10",
+      "surface": "Ἄκουε, υἱέ, καὶ δέξαι ἐμοὺς λόγους. καὶ πληθυνθήσεται ἔτη ζωῆς σου, ἴνα σοι γένωνται πολλαὶ ὁδοὶ βίου."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "11",
+      "source_reference": "4:11",
+      "surface": "ὁδοὺς γὰρ σοφίας διδάσκω σε. ἐμββάζω δέ σε τροχιαῖς ὀρθαῖς."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "12",
+      "source_reference": "4:12",
+      "surface": "ἐὰν γὰρ πορεύῃ, οὐ συνκλεισθήσεταί σου τὰ διαβήματα· ἐὰν δέ τρέχῃς, οὐ κοπιάσεις."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "13",
+      "source_reference": "4:13",
+      "surface": "ἐπιλαβοῦ ἐμῆς παιδείας. μὴ ἀφῇς, ἀλλὰ φύλαξον αὐτὴν σεαυτῷ εἰς ζωὴν σου."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "14",
+      "source_reference": "4:14",
+      "surface": "ὁδοὺς ἀσεβῶν μὴ ἐπέλθῃς, μηδέ ζηλώσῃς ὁδοὺς παρανόμων·"
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "15",
+      "source_reference": "4:15",
+      "surface": "ἐν ᾧ ἂν τόπῳ στρατοπεδεύσωσιν, μὴ ἐπέλθῃς ἐκει. ἔκκλινον δὲ ἀπʼ αὐτῶν καὶ παράλλαξον."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "16",
+      "source_reference": "4:16",
+      "surface": "οὐ γὰρ μὴ ὑπνώσωσιν, ἐὰν μὴ κακοποιήσωσιν· ἀφήρηται ὁ ὕπνος αὐτῶν, καὶ οὐ κοιμῶνται·"
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "17",
+      "source_reference": "4:17",
+      "surface": "οἵδε γὰρ σιτοῦνται σῖτα ἀσεβείας, οἴνῳ δὲ παρανόμῳ μεθύσκονται."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "18",
+      "source_reference": "4:18",
+      "surface": "αἱ δὲ ὁδοὶ τῶν δικαίων ὁμοίως φωτὶ λάμπουσιν, προπορεύονται καὶ φωτίζουσιν ἕως κατορθώσῃ ἡ ἡμέρα."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "19",
+      "source_reference": "4:19",
+      "surface": "αἱ δὲ ὁδοὶ τῶν ἀσεβῶν σκοτειναί, οὐκ οἴδασιν πῶς προσκόπτουσιν."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "20",
+      "source_reference": "4:20",
+      "surface": "Υἱέ, ἐμῇ ῥήσει πρόσεχε, τοῖς δὲ ἐμοῖς λόγοις παράβαλε σὸν οὖς,"
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "21",
+      "source_reference": "4:21",
+      "surface": "ὅπως μὴ ἐκλίπωσίν σε αἱ πηγαί σου, φύλασσε αὐτὰς ἐν καρδίᾳ·"
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "22",
+      "source_reference": "4:22",
+      "surface": "ζωὴ γάρ ἐστιν τοῖς εὑρίσκουσιν αὐτήν, καὶ πάσῃ σαρκὶ ἴασις."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "23",
+      "source_reference": "4:23",
+      "surface": "πάσῃ φυλακῇ τήρει σὴν καρδίαν· ἐκ γὰρ τούτων ἔξοδοι ζωῆς."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "24",
+      "source_reference": "4:24",
+      "surface": "περίελε σεαυτοῦ σκολιὸν στόμα, καὶ ἄδικα χείλη ἀπὸ σοῦ μακρὰν ἄπωσαι."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "25",
+      "source_reference": "4:25",
+      "surface": "οἱ ὀφθαλμοί σου ὀρθὰ βλεπέτωσαν, τὰ δὲ βλέφαρά σου νευέτω δίκαια."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "26",
+      "source_reference": "4:26",
+      "surface": "ὀρθὰς τροχιὰς ποίει σοῖς ποσίν, καὶ τὰς ὁδοὺς σου κατεύθυνε."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "27",
+      "source_reference": "4:27",
+      "surface": "μὴ ἐκκλίνῃς εἰς τὰ δεξιὰ μηδὲ εἰς τὰ ἀριστερά, ἀπόστρεψον δὲ σὸν πόδα ἀπὸ ὁδοῦ κακῆς."
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "27a",
+      "source_reference": "4:27a",
+      "surface": "aὁδοὺς γὰρ τὰς ἐκ δεξῶν οἶδεν ὁ θεός, διεστραμμέναι δέ εἰσιν αἱ ἐξ ἀριστερῶν·"
+    },
+    {
+      "source_chapter": "4",
+      "source_verse": "27b",
+      "source_reference": "4:27b",
+      "surface": "ᵇαὐτὸς δὲ ὀρθὰς ποιήσει τὰς τροχιάς σου, τὰς δὲ πορείας σου ἐν εἰρήνῃ προάξει."
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "1",
+      "source_reference": "5:1",
+      "surface": "Υἱέ, ἐμῇ σοφίᾳ πρόσεχε, ἐμοῖς δὲ λόγοις παράβαλλε σὸν οὗς,"
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "2",
+      "source_reference": "5:2",
+      "surface": "ἴνα φυλάξῃς ἔννοιαν ἀγαθήν· αἴσθησις δὲ ἐμῶν χειλέων ἐντέλλεταί σοι."
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "3",
+      "source_reference": "5:3",
+      "surface": "μὴ πρόσεχε φαύλῃ γυναικί μέλι γὰρ ἀποστάζει ἀπὸ χειλέων γυναικὸς πόρνης, ἣ πρὸς καιρὸν λιπαίνει σὸν φάρυγγα·"
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "4",
+      "source_reference": "5:4",
+      "surface": "ὕστερον μέντοι πικρότερον χολῆς εὑρήσεις καὶ ἠκονημένον μᾶλλον μαχαίρας διστόμου."
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "5",
+      "source_reference": "5:5",
+      "surface": "τῆς γὰρ ἀφροσύνης οἱ πόδες κατάγουσιν τοὺς χραομένους αὐτῇ μετὰ θανάτου εἰς τὸν ἄδήν, τὰ δέ ἴχνη αὐτῆς οὐκ ἐρείδεται"
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "6",
+      "source_reference": "5:6",
+      "surface": "ὁδοὺς γὰρ ζωῆς οὐκ ἐπέρχεται, σφαλεραὶ δέ αἱ τροχιαὶ αὐτῆς καὶ οὐκ εὔγνωστοι."
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "7",
+      "source_reference": "5:7",
+      "surface": "νῦν οὗν, υἱέ, ἄκουέ μου, καὶ μὴ ἀκύρους ποιήσῃς ἐμοὺς λόγους."
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "8",
+      "source_reference": "5:8",
+      "surface": "μακρὰν ποίησον ἀπʼ αὐτῆς σὴν ὁδόν, μὴ ἐγγίσῃς πρὸς θύραις οἴκων αὐτῆς·"
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "9",
+      "source_reference": "5:9",
+      "surface": "ἵνα μὴ πρόῃ ἄλλοις ζωήν σου, καὶ σὸν βίον ἀνελεήμοσιν·"
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "10",
+      "source_reference": "5:10",
+      "surface": "ἵνα μὴ πλησθῶσιν ἀλλότριοι σῆς ἰσχύος, οἱ δὲ σοὶ πόνοι εἰς οἴκους ἀλλοτρίων ἔλθωσιν·"
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "11",
+      "source_reference": "5:11",
+      "surface": "καὶ μεταμεληθήσῃ ἐπʼ ἐσχάτων, ἡνίκα ἂν κατατριβῶσιν σάρκες σώματός σου,"
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "12",
+      "source_reference": "5:12",
+      "surface": "καὶ ἐρεῖς Πῶς ἐμίσησα παιδείαν, καὶ ἐλέγχους ἐξέκλινεν ἡ καρδία μου·"
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "13",
+      "source_reference": "5:13",
+      "surface": "οὐκ ἤκουον φωνὴν παιδεύοντός με καὶ διδάσκοντός με. οὐδὲ παρέβαλλον τὸ οὖς μου·"
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "14",
+      "source_reference": "5:14",
+      "surface": "παρʼ ὀλίγον ἐγενόμην ἐν παντὶ κακῷ ἐν μέσῳ ἐκκλησίας καὶ συναγωγῆς."
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "15",
+      "source_reference": "5:15",
+      "surface": "πῖνε ὕδατα ἀπὸ σῶν ἀγγείων καὶ ἀπὸ σῶν φρεάτων πηγῆς."
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "16",
+      "source_reference": "5:16",
+      "surface": "μὴ ὑπερεκχείσθω σοι ὕδατα ἐκ τῆς σῆς πηγῆς. εἰς δὲ σὰς πλατείας διαπορευέσθω τὰ σὰ ὕδατα·"
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "17",
+      "source_reference": "5:17",
+      "surface": "ἔστω σοι μόνα ὑπάρχοντα. καὶ μηδεὶς ἀλλότριος μετασχέτω σοι·"
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "18",
+      "source_reference": "5:18",
+      "surface": "ἡ πηγή σου τοῦ ὕδατος ἔστω σοι ἰδία, καὶ συνευφραίνου μετὰ γυναικὸς τῆς ἐκ νεότητός σου."
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "19",
+      "source_reference": "5:19",
+      "surface": "ἔλαφος φιλίας καὶ πῶλος σῶν χαρίτων ὁμιλείτω σοι, ἡ δὲ ἰδία ἡγείσθω σου καὶ συνέστω σοι ἐν παντὶ καιρῷ ἐν γὰρ τῇ ταύτης φιλίᾳ συνπεριφερόμενος πολλοστὸς ἔσῃ."
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "20",
+      "source_reference": "5:20",
+      "surface": "μὴ πολὺς ἴσθι πρὸς ἀλλοτρίαν. μηδὲ συνέρχου ἀγκάλαις τῆς μὴ ἰδίας·"
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "21",
+      "source_reference": "5:21",
+      "surface": "ἐνώπιον γάρ εἰσιν τῶν τοῦ θεοῦ ὀφθαλμῶν ὁδοὶ ἀνδρός, εἰς δὲ πάσας τὰς τροχιὰς αὐτοῦ σκοπεύει."
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "22",
+      "source_reference": "5:22",
+      "surface": "παρανομίαι ἄνδρα ἀγρεύουσιν, σειραῖς δὲ τῶν ἑαυτοῦ ἁμαρτιῶν ἕκαστος σφίγγεται"
+    },
+    {
+      "source_chapter": "5",
+      "source_verse": "23",
+      "source_reference": "5:23",
+      "surface": "οὗτος τελευτῷ μετὰ ἀπαιδεύτων, ἐκ δὲ πλήθους τῆς ἑαυτοῦ βιότητος ἐξερίφη καὶ ἀπώλετο δι᾿ ἀφροσύνην."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "1",
+      "source_reference": "6:1",
+      "surface": "Υἱέ, ἐὰν ἐγγυήσῃ σὸν φίλον, παραδώσεις σὴν χεῖρα ἐχθρῷ."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "2",
+      "source_reference": "6:2",
+      "surface": "παγὶς γὰρ ἰσχυρὰ ἀνδρὶ τὰ ἴδια χείλη, καὶ ἁλίσκεται χείλεσιν ἰδίου στόματος."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "3",
+      "source_reference": "6:3",
+      "surface": "ποίει, υἱέ, ἃ ἐγὼ σοι ἐντέλλομαι, καὶ σώζου· ἥκεις γὰρ εἰς χεῖρας κακῶν διὰ σὸν φίλον· ἴσθι μὴ ἐκλυόμενος, παρόξυνε δὲ καὶ τὸν φίλον σου ὃν ἐνεγυήσω."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "4",
+      "source_reference": "6:4",
+      "surface": "μὴ δῷς ὕπνον σοῖς ὄμμασιν, μηδέ ἐπινυστάξῃς σοῖς βλεφάροις."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "5",
+      "source_reference": "6:5",
+      "surface": "ἵνα σώζῃ ὥσπερ δορκὰς ἐκ βρόχων καὶ ὥσπερ ὄρνεον ἐκ παγίδος."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "6",
+      "source_reference": "6:6",
+      "surface": "Ἴοθι πρὸς τὸν μύρμηκα, ὦ ὀκνηρέ, καὶ ζήλωσον ἰδὼν τὰς ὁδοὺς αὐτοῦ, καὶ γενοῦ ἐκείνου σοφώτερος·"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "7",
+      "source_reference": "6:7",
+      "surface": "ἐκείνῳ γὰρ γεωργίου μὴ ὑπάρχοντος, μηδέ τὸν ἀναγκάζοντα ἔχων μηδὲ ὑπὸ δεσπότην ὤν,"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "8",
+      "source_reference": "6:8",
+      "surface": "ἑτοιμάζεται θέρους τὴν τροφήν, πολλήν τε ἐν τῷ ἀμήτῳ ποιεῖται τὴν παράθεσιν."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "8a",
+      "source_reference": "6:8a",
+      "surface": "aἢ πορεύθητι πρὸς τὴν μέλισσαν καὶ μάθε ὡς ἐργάτις ἐστιν, τήν τε ἐργασίαν ὡς σεμνὴν ποιεῖται·"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "8b",
+      "source_reference": "6:8b",
+      "surface": "ᵇἧς τοὺς πόνους βασιλεῖς καὶ ἰδιῶται πρὸς ὑγείαν προσφέρονται, ποθεινὴ δέ ἐστιν πᾶσιν καὶ ἐπίδοξος·"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "8c",
+      "source_reference": "6:8c",
+      "surface": "καίπερ οὖσα τῇ ῥώμῃ ἀσθενής, τὴν σοφίαν τιμήσασα προήχθη."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "9",
+      "source_reference": "6:9",
+      "surface": "ἕως τίνος, ὀκνηρέ, κατάκεισαι ; πότε δὲ ἐξ ὕπνου ἐγερθήσῃ"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "10",
+      "source_reference": "6:10",
+      "surface": "ὀλίγον μέν ὑπνοῖς, ὀλίγον δὲ κάθησαι, μικρὸν δέ νυστάζεις, ὀλίγον δὲ ἐναγκαλίζῃ χερσὶν στήθη·"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "11",
+      "source_reference": "6:11",
+      "surface": "εἶτ᾿ ἐνπαραγίνεταί σοι ὥσπερ κακὸς ὁδοιπόρος ἡ πενία, καὶ ἡ ἔνδεια ὥσπερ ἀγαθὸς δρομεύς."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "11a",
+      "source_reference": "6:11a",
+      "surface": "ἐὰν δὲ ἄοκνος ᾖς, ἤξει ὥσπερ πηγὴ ὁ ἀμητός σου, ἡ δὲ ἔνδεια ὥσπερ κακὸς δρομεὺς ἀπαυτομολήσει."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "12",
+      "source_reference": "6:12",
+      "surface": "Ἀνὴρ ἄφρων καὶ παράνομος πορεύεται ὁδοὺς οὐκ ἀγαθάς·"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "13",
+      "source_reference": "6:13",
+      "surface": "ὁ δ᾿ αὐτὸς ἐννεύει ὀφθαλμῷ. σημαίνει δὲ ποδί διδάσκει δέ ἐννεύμασιν δακτύλων·"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "14",
+      "source_reference": "6:14",
+      "surface": "διεστραμμένῃ καρδίᾳ τεκταίνεται κακὰ ἐν παντὶ καιρῷ· ὁ τοιοῦτος ταραχὰς συνίστησιν πόλει."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "15",
+      "source_reference": "6:15",
+      "surface": "διὰ τοῦτο ἐξαπίνης ἔρχεται ἡ ἀπώλεια αὐτοῦ. διακοπὴ καὶ συντριβὴ ἀνίατος·"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "16",
+      "source_reference": "6:16",
+      "surface": "ὅτι χαίρει πᾶσιν οἷς μισεῖ ὁ θεός, συντρίβεται δὲ δι᾿ ἀκαθαρσίαν ψυχῆς·"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "17",
+      "source_reference": "6:17",
+      "surface": "ὀφθαλμὸς ὑβριστοῦ, γλῶσσα ἄδικος, χεῖρες ἐκχέουσαι αἷμα δικαίου,"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "18",
+      "source_reference": "6:18",
+      "surface": "καὶ καρδία τεκταινομένη λογισμοὺς κακούς, καὶ πόδες ἐπισπεύδοντες κακοποιεῖν."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "19",
+      "source_reference": "6:19",
+      "surface": "ἐκκαίει ψευδῆ μάρτυς ἄδικος, καὶ ἐπιπέμπει κρίσεις ἀνὰ μέσον ἀδελφῶν."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "20",
+      "source_reference": "6:20",
+      "surface": "Υἱέ, φύλασσε νόμους πατρός σου, καὶ μὴ ἀπώσῃ θεσμοὺς μητρός σου·"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "21",
+      "source_reference": "6:21",
+      "surface": "ἄφαψαι δέ αὐτοὺς ἐπὶ σῇ ψυχῇ διὰ παντός, καὶ ἐνκλοίωσαι ἐπὶ σῷ τραχήλῳ."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "22",
+      "source_reference": "6:22",
+      "surface": "ἡνίκα ἂν περιπατῇς ἐπάγου αὐτὴν καὶ μετὰ σοῦ ἔστω· ὡς δʼ ἂν καθεύδῃς φυλασσέτω σε, ἴνα ἐγειρομένῳ συλλαλῇ σοι."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "23",
+      "source_reference": "6:23",
+      "surface": "ὅτι λύχνος ἐντολὴ νόμου. καὶ φῶς ὁδὸς ζωῆς καὶ ἔλεγχος καὶ παιδεία,"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "24",
+      "source_reference": "6:24",
+      "surface": "τοῦ διαφυλάσσειν σε ἀπὸ γυναικὸς ὑπάνδρου καὶ ἀπὸ διαβολῆς γλώσσης ἀλλοτρίας."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "25",
+      "source_reference": "6:25",
+      "surface": "μή σε νικήσῃ κάλλους ἐπιθυμία, μηδὲ ἀγρευθῇς σοῖς ὀφθαλμοῖς, μηδέ συναρπασθῇς ἀπὸ τῶν αὐτῆς βλεφάρων."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "26",
+      "source_reference": "6:26",
+      "surface": "τιμὴ γὰρ πόρνης ὅση καὶ ἑνὸς ἄρτου, γυνὴ δὲ ἀνδρῶν τιμίας ψυχὰς ἀγρεύει."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "27",
+      "source_reference": "6:27",
+      "surface": "ἀποδήσει τις πῦρ ἐν κόλπῳ, τὰ δέ ἱμάτια οὐ κατακαύσει;"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "28",
+      "source_reference": "6:28",
+      "surface": "ἢ περιπατήσει τις ἐπʼ ἀνθράκων πυρός, τοὺς δὲ πόδας οὐ κατακαύσει"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "29",
+      "source_reference": "6:29",
+      "surface": "οὕτως ὁ εἰσελθὼν πρὸς γυναῖκα ὕπανδρον· οὐκ ἀθῳωθήσεται, οὐδὲ πᾶς ὁ ἁπτόμενος αὐτῆς."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "30",
+      "source_reference": "6:30",
+      "surface": "οὐ θαυμαστὸν ἐὰν ἁλῷ τις κλέπτων, κλέπτει γὰρ ἵνα ἐμπλήσῃ τὴν ψυχὴν πεινῶν·"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "31",
+      "source_reference": "6:31",
+      "surface": "ἐὰν δὲ ἁλῷ, ἀποτίσει ἑπταπλάσια, καὶ πάντα τὰ ὑπάρχοντα αὐτοῦ δοὺς ῥύσεται ἑαυτόν·"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "32",
+      "source_reference": "6:32",
+      "surface": "ὁ δὲ μοιχὸς δι᾿ ἔνδειαν φρενῶν ἀπώλειαν τῇ ψυχῇ αὐτοῦ περιποιεῖται,"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "33",
+      "source_reference": "6:33",
+      "surface": "ὀδύνας τε καὶ ἀτιμίας ὑποφέρει· τὸ δὲ ὄνειδος αὐτοῦ οὐκ ἐξαλειφθήσεται εἰς τὸν αἰῶνα."
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "34",
+      "source_reference": "6:34",
+      "surface": "μεστὸς γὰρ ζήλου θυμὸς ἀνδρὸς αὐτῆς, οὐ φείσεται ἐν ἡμέρᾳ κρίσεως·"
+    },
+    {
+      "source_chapter": "6",
+      "source_verse": "35",
+      "source_reference": "6:35",
+      "surface": "οὐκ ἀνταλλάξεται οὐδενὸς λύτρου τὴν ἔχθραν, οὐδὲ μὴ διαλυθῇ πολλῶν δώρων."
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "1",
+      "source_reference": "7:1",
+      "surface": "Υἱέ, φύλασσε ἐμοὺς λόγους, τὰς δὲ ἐμὰς ἐντολὰς κρύψον παρὰ σεαυτῷ·"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "1a",
+      "source_reference": "7:1a",
+      "surface": "aυἱέ, τίμα τὸν κύριον καὶ ἰσχύσεις, πλὴν δὲ αὐτοῦ μὴ φοβοῦ ἄλλον."
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "2",
+      "source_reference": "7:2",
+      "surface": "φύλαξον ἐμὰς ἐντολὰς καὶ βιώσεις, τοὺς δὲ ἐμοὺς λόγους ὥσπερ κόρας ὀμμάτων·"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "3",
+      "source_reference": "7:3",
+      "surface": "περίθου δὲ αὐτοὺς σοῖς δακτύλοις, ἐπίγραψον δὲ ἐπὶ τὸ πλάτος τῆς καρδίας σου."
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "4",
+      "source_reference": "7:4",
+      "surface": "εἰπὸν τὴν σοφίαν σὴν ἀδελφὴν εἶναι, τὴν δὲ φρόνησιν γνώριμον περιποίησαι σεαυτῷ,"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "5",
+      "source_reference": "7:5",
+      "surface": "ἵνα σε τηρήσῃ ἀπὸ γυναικὸς ἀλλοτρίας καὶ πονηρᾶς, ἐάν σε λόγοις τοῖς πρὸς χάριν ἐμβάληται."
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "6",
+      "source_reference": "7:6",
+      "surface": "ἀπὸ γὰρ θυρίδος ἐκ τοῦ οἴκου αὐτῆς εἰς τὰς πλατείας παρακύπτουσα,"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "7",
+      "source_reference": "7:7",
+      "surface": "ὃν ἂν ἴδῃ τῶν ἀφρόνων τέκνων νεανίαν ἐνδεῆ φρενῶν,"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "8",
+      "source_reference": "7:8",
+      "surface": "παραπορευόμενον παρὰ γωνίαν ἐν διόδοις οἴκων αὐτῆς καὶ λαλοῦντα"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "9",
+      "source_reference": "7:9",
+      "surface": "ἐν σκότει ἑσπερινῷ,"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "10",
+      "source_reference": "7:10",
+      "surface": "ἡ δὲ γυνὴ συναντᾷ αὐτῷ, εἶδος ἔχουσα πορνικόν. ἡνίκα ἂν ἡσυχία νυκτερινὴ καὶ γνοφώδης, ἣ ποιεῖ νέων ἐξίπτασθαι καρδίας."
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "11",
+      "source_reference": "7:11",
+      "surface": "ἀνεπτερωμένη δέ ἐστιν καὶ ἄσωτος, ἐν οἴκῳ δὲ οὐχ ἡσυχάζουσιν οἱ πόδες αὐτῆς·"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "12",
+      "source_reference": "7:12",
+      "surface": "χρόνον γὰρ τινα ἔξω ῥέμβεται, χρόνον δὲ ἐν πλατείαις παρὰ πᾶσαν γωνίαν ἐνεδρεύει."
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "13",
+      "source_reference": "7:13",
+      "surface": "εἶτα ἐπιλαβομένη ἐφίλησεν αὐτόν, ἀναιδεῖ δὲ προσώπῳ προσεῖπεν αὐτῷ"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "14",
+      "source_reference": "7:14",
+      "surface": "Θυσία εἰρηνική μοί ἐστιν· σήμερον ἀποδίδωμι τὰς εὐχάς μου·"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "15",
+      "source_reference": "7:15",
+      "surface": "ἕνεκα τούτου ἐξῆλθον εἰς ὑπάντησίν σοι, ποθοῦσα τὸ σὸν πρόσωπον, εὕρηκά σε."
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "16",
+      "source_reference": "7:16",
+      "surface": "κειρία τέτακα τὴν κλίνην μου, ἀμφιτάποις δὲ ἔστρωκα τοῖς ἀπʼ Αἰγύπτου·"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "17",
+      "source_reference": "7:17",
+      "surface": "διέρραγκα τὴν κοίτην μου κρόκῳ, ἐλθὲ καὶ ἀπολαύσωμεν φίλας ἔρωτι. ὄρθρου, τὸν δὲ οἶκόν μου κινναμώμῳ δεῦρο καὶ ἐνκυλισθῶμεν ἔρωτι."
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "19",
+      "source_reference": "7:19",
+      "surface": "οὐ γὰρ πάρεστιν ὁ ἀνήρ μου ἐν οἴκῳ, πεπόρευται δὲ ὁδὸν μακράν,"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "20",
+      "source_reference": "7:20",
+      "surface": "ἔνδεσμον ἀργυρίου λαβὼν ἐν χειρὶ αὐτοῦ, δἰ ἡμερῶν πολλῶν ἐπανήξει εἰς τὸν οἶκον αὐτοῦ."
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "21",
+      "source_reference": "7:21",
+      "surface": "ἀπεπλάνησεν δὲ αὐτὸν πολλῇ ὁμιλίᾳ, βρόχοις τε τοῖς ἀπὸ χειλέων ἐξώκειλεν αὐτόν·"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "22",
+      "source_reference": "7:22",
+      "surface": "ὁ δὲ ἐπηκολούθησεν αὐτῇ κεπφωθείς, ὥσπερ δὲ βοῦς ἐπὶ σφαγὴν ἄγεται, καὶ ὥσπερ κύων ἐπὶ δεσμούς,"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "23",
+      "source_reference": "7:23",
+      "surface": "ἡ ὡς ἔλαφος τοξεύματι πεπληγὼς εἰς τὸ ἧπαρ· σπεύδει δὲ ὥσπερ ὄρνεον εἰς παγίδα, οὐκ εἰδὼς ὅτι περὶ ψυχῆς τρέχει."
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "24",
+      "source_reference": "7:24",
+      "surface": "νῦν οὗν, υἱέ, ἄκουέ μου, καὶ πρόσεχε ῥήμασιν στόματός μου."
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "25",
+      "source_reference": "7:25",
+      "surface": "μὴ ἐκκλινάτω εἰς τὰς ὁδοὺς αὐτῆς ἡ καρδία σου·"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "26",
+      "source_reference": "7:26",
+      "surface": "πολλοὺς γὰρ τρώσασα καταβέβληκεν, καὶ ἀναρίθμητοί εἰσιν οὓς πεφόνευκεν·"
+    },
+    {
+      "source_chapter": "7",
+      "source_verse": "27",
+      "source_reference": "7:27",
+      "surface": "ὁδοὶ ᾅδου ὁ οἶκος αὐτῆς. κατάγουσαι εἰς τὰ ταμεῖα τοῦ θανάτου."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "1",
+      "source_reference": "8:1",
+      "surface": "Σὺ τὴν σοφίαν κηρύξεις, ἵνα φρόνησίς σοι ὑπακούσῃ."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "2",
+      "source_reference": "8:2",
+      "surface": "ἐπὶ γὰρ τῶν ὑψηλῶν ἄκρων ἐστιν, ἀνὰ μέσον δὲ τῶν τρίβων ἕστηκεν·"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "3",
+      "source_reference": "8:3",
+      "surface": "παρὰ γὰρ πύλαις δυναστῶν παρεδρεύει, ἐν δὲ εἰσόδοις ὑμνεῖται"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "4",
+      "source_reference": "8:4",
+      "surface": "Ὑμᾶς, ὦ ἄνθρωποι, παρακαλῶ, καὶ προίεμαι ἐμὴν φωνὴν υἱοῖς ἀνθρώπων."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "5",
+      "source_reference": "8:5",
+      "surface": "νοήσατε, ἄκακοι, πανουργίαν, οἱ δὲ ἀπαίδευτοι, ἔνθεσθε καρδίαν."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "6",
+      "source_reference": "8:6",
+      "surface": "εἰσακούσατέ μου· σεμνὰ γὰρ ἐρῶ, καὶ ἀνοίσω ἀπὸ χειλέων ὀρθά."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "7",
+      "source_reference": "8:7",
+      "surface": "ὅτι ἀλήθειαν μελετήσει ὁ φάρυγξ μου, ἐβδελυγμένα δὲ ἐναντίον ἐμοῦ χείλη ψευδῆ·"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "8",
+      "source_reference": "8:8",
+      "surface": "μετὰ δικαιοσύνης πάντα τὰ ῥήματα τοῦ στόματός μου, οὐδὲν ἐν αὐτοῖς σκολιὸν οὐδὲ στραγγαλῶδες·"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "9",
+      "source_reference": "8:9",
+      "surface": "πάντα ἐνώπια τοῖς συνιοῦσιν, καὶ ὀρθὰ τοῖς εὑρίσκουσι γνῶσιν."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "10",
+      "source_reference": "8:10",
+      "surface": "λάβετε παιδείαν καὶ μὴ ἀργύριον, καὶ γνῶσιν ὑπέρ χρυσίον δεδοκιμασμένον·"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "11",
+      "source_reference": "8:11",
+      "surface": "κρείσσων γὰρ σοφία λίθων πολυτελῶν, ᾶν δὲ τίμιον οὐκ ἄξιον αὐτῆς ἐστιν."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "12",
+      "source_reference": "8:12",
+      "surface": "ἐγὼ ἡ σοφία κατεσκήνωσα βουλήν, καὶ γνῶσιν καὶ ἔννοιαν ἐγὼ ἐπεκαλεσάμην· κρείσσων γὰρ σοφία λίθων πολυτελῶν."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "13",
+      "source_reference": "8:13",
+      "surface": "φόβος Κυρίου μισεῖ ἀδικίαν, ὕβριν τε καὶ ὑπερηφανίαν καὶ ὁδοὺς πονηρῶν· μεμίσηκα δὲ ἐγὼ διεστραμμένας ὁδοὺς κακῶν."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "14",
+      "source_reference": "8:14",
+      "surface": "ἐμὴ βουλὴ καὶ ἀσφάλεια, ἐμὴ φρόνησις. ἐμὴ δὲ ἰσχύς·"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "15",
+      "source_reference": "8:15",
+      "surface": "δἰ ἐμοῦ βασιλεῖς βασιλεύουσιν, καὶ οἱ δυνάσται γράφουσιν δικαιοσύνην·"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "16",
+      "source_reference": "8:16",
+      "surface": "εἰ ἐμοῦ μεγιστᾶνες μεγαλύνονται, καὶ τύραννοι δἰ ἐμοῦ κρατοῦσι γῆς"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "17",
+      "source_reference": "8:17",
+      "surface": "ἐγὼ τοὺς ἐμὲ φιλοῦντας ἀγαπῶ, οἱ δὲ ἐμέ ζητοῦντες εὑρήσουσιν."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "18",
+      "source_reference": "8:18",
+      "surface": "πλοῦτος καὶ δόξα ἐμοὶ ὑπάρχει, καὶ κτῆσις πολλῶν καὶ δικαιοσύνη."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "19",
+      "source_reference": "8:19",
+      "surface": "βέλτιον ἐμέ καρπίζεσθαι ὑπέρ χρυσίον καὶ λίθον τίμιον. τὰ δὲ ἐμὰ γενήματα κρείσσω ἀργυρίου ἐκλεκτοῦ."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "20",
+      "source_reference": "8:20",
+      "surface": "ἐν ὁδοῖς δικαιοσύνης περιπατῶ, καὶ ἀνὰ μέσον τρίβων δικαιώματος ἀναστρέφομαι,"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "21",
+      "source_reference": "8:21",
+      "surface": "ἵνα μερίσω τοῖς ἐμέ ἀγαπῶσιν ὕπαρξιν, καὶ τοὺς θησαυροὺς αὐτῶν ἐμπλήσω ἀγαθῶν."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "21a",
+      "source_reference": "8:21a",
+      "surface": "aἐὰν ἀναγγείλω ὑμῖν τὰ καθʼ ἡμέραν γινόμενα. μνημονεύσω τὰ ἐξ αἰῶνος ἀριθμῆσαι."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "22",
+      "source_reference": "8:22",
+      "surface": "Κύριος ἔκτισέν με ἀρχὴν ὁδῶν αὐτοῦ εἰς ἔργα αὐτοῦ,"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "23",
+      "source_reference": "8:23",
+      "surface": "πρὸ τοῦ αἰῶνος ἐθεμελίωσέν με ἐν ἀρχῇ,"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "24",
+      "source_reference": "8:24",
+      "surface": "πρὸ τοῦ τὴν γῆν ποιῆσαι καὶ πρὸ τοῦ τὰς ἀβύσσους ποιῆσαι, πρὸ τοῦ προελθεῖν τὰς πηγὰς τῶν ὑδάτων,"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "25",
+      "source_reference": "8:25",
+      "surface": "πρὸ τοῦ ὄρη ἑδρασθῆναι, πρὸ δέ πάντων βουνῶν γεννᾶ με."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "26",
+      "source_reference": "8:26",
+      "surface": "Κύριος ἐποίησεν χώρας καὶ ἀοικήτους καὶ ἄκρα οἰκούμενα τῆς ὑπʼ οὐρανῶν."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "27",
+      "source_reference": "8:27",
+      "surface": "ἡνίκα ἡτοίμαζεν τὸν οὐρανόν, συνπαρήμην αὐτῴ, καὶ ὅτε ἀφώριζεν τὸν ἑαυτοῦ θρόνον ἐπʼ ἀνέμων·"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "28",
+      "source_reference": "8:28",
+      "surface": "καὶ ὡς ἰσχυρὰ ἐποίει τὰ ἄνω νέφη, καὶ ὡς ἀσφαλεῖς ἐτίθει πηγὰς τῆς ὑπʼ οὐρανόν,"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "29",
+      "source_reference": "8:29",
+      "surface": "καὶ ὡς ἰσχυρὰ ἐποίει τὰ θεμέλια τῆς γῆς,"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "30",
+      "source_reference": "8:30",
+      "surface": "ἤμην παρʼ αὐτῷ ἁρμόζουσα· ἐγὼ ἤμην ᾗ προσέχαιρεν. καθʼ ἡμέραν δὲ εὐφραινόμην ἐν προσώπῳ αὐτοῦ ἐν παντὶ καιρῷ,"
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "31",
+      "source_reference": "8:31",
+      "surface": "ὅτε ἐνευφραίνετο τὴν οἰκουμένην συντελέσας, καὶ εὐφραίνετο ἐν υἱοῖς ἀνθρώπων."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "32",
+      "source_reference": "8:32",
+      "surface": "νῦν οὗν, υἱέ, ἄκουέ μου."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "34",
+      "source_reference": "8:34",
+      "surface": "μακάριος ἀνὴρ ὃς εἰσακούσεταί μου, καὶ ἄνθρωπος ὃς τὰς ἐμὰς ὁδοὺς φυλάξει. ἀγρυπνῶν ἐπʼ ἐμαῖς θύραις καθʼ ἡμέραν, τηρῶν σταθμοὺς ἐμῶν εἰσόδων."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "35",
+      "source_reference": "8:35",
+      "surface": "αἱ γὰρ ἔξοδοί μου ἔξοδοι ζωῆς, καὶ ἑτοιμάζεται θέλησις παρὰ Κυρίου."
+    },
+    {
+      "source_chapter": "8",
+      "source_verse": "36",
+      "source_reference": "8:36",
+      "surface": "οἱ δὲ εἰς ἐμέ ἁμαρτάνοντες ἀσεβοῦσιν τὰς ἑαυτῶν ψυχάς. καὶ οἱ μισοῦντές με ἀγαπῶσιν θάνατον."
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "1",
+      "source_reference": "9:1",
+      "surface": "Ἡ σοφία οἰκοδόμησεν ἑαυτῇ οἶκον, καὶ ὑπήρεισεν στύλους ἑπτά·"
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "2",
+      "source_reference": "9:2",
+      "surface": "ἔσφαξεν τὰ ἑαυτῆς θύματα, ἐκέρασεν εἰς κρατῆρα τὸν ἑαυτῆς οἶνον, καὶ ἡτοιμάσατο τὴν ἑαυτῆς τράπεζαν·"
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "3",
+      "source_reference": "9:3",
+      "surface": "ἀπέστειλεν τοὺς ἑαυτῆς δούλους, συγκαλοῦσα μετὰ ὑψηλοῦ κηρύγματος ἐπὶ κρατῆρα, λέγουσα"
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "4",
+      "source_reference": "9:4",
+      "surface": "Ὅς ἐστιν ἄφρων, ἐκκλινάτω πρὸς μέ· καὶ τοῖς ἐνδεέσι φρενῶν εἶπεν"
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "5",
+      "source_reference": "9:5",
+      "surface": "Ἔλθατε, φάγετε τῶν ἐμῶν ἄρτων, καὶ πίετε οἶνον ὃν ἐκέρασα ὑμῖν·"
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "6",
+      "source_reference": "9:6",
+      "surface": "ἀπολείπετε ἀφροσύνην, ἵνα εἰς τὸν αἰῶνα βασιλεύσητε, καὶ ζητήσατε φρόνησιν, καὶ κατορθώσατε ἐν γνώσει σύνεσιν."
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "7",
+      "source_reference": "9:7",
+      "surface": "Ὁ παιδεύων κακοὺς λήμψεται ἑαυτῷ ἀτιμίαν· ἐλέγχων δὲ τὸν ἀσεβῆ μωμήσεται ἑαυτόν."
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "8",
+      "source_reference": "9:8",
+      "surface": "μὴ ἔλεγχε κακούς, ἵνα μὴ μισῶσίν σε· ἔλεγχε σοφόν, καὶ ἀγαπήσει σε."
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "9",
+      "source_reference": "9:9",
+      "surface": "δίδου σοφῷ ἀφορμήν, καὶ σοφώτερος ἔσται· γνώριζε δικαίῳ, καὶ προσθήσει τοῦ δέχεσθαι."
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "10",
+      "source_reference": "9:10",
+      "surface": "ἀρχὴ σοφίας φόβος Κυρίου, καὶ βουλὴ ἁγίων σύνεσις· τὸ γὰρ γνῶναι νόμον διανοίας ἐστὶν ἀγαθῆς."
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "11",
+      "source_reference": "9:11",
+      "surface": "τούτῳ γὰρ τῷ τρόπῳ πολὺν ζήσεις χρόνον, καὶ προστεθήσεταί σοι ἔτη ζωῆς σου."
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "12",
+      "source_reference": "9:12",
+      "surface": "υἱέ, ἐὰν σοφὸς γένῃ σεαυτῷ, σοφὸς ἔσῃ καὶ τοῖς πλησίον· ἐὰν δὲ κακὸς ἀποβῇς, μόνος ἂν ἀντλήσεις κακά."
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "12a",
+      "source_reference": "9:12a",
+      "surface": "aὃς ἐρείδεται ἐπὶ ψεύδεσιν, οὗτος ποιμαίνει ἀνέμους. ὁ δʼ αὐτὸς διώξεται ὄρνεα πετόμενα·"
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "12b",
+      "source_reference": "9:12b",
+      "surface": "ᵇἀπέλιπεν γὰρ ὁδοὺς τοῦ ἑαυτοῦ ἀμπελῶνος, τοὺς δὲ ἄξονας τοῦ ἰδίου γεωργίου πεπλάνηται·"
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "12c",
+      "source_reference": "9:12c",
+      "surface": "διαπορεύεται δὲ δἱ ἀνύδρου ἐρήμου καὶ γῆν διατεταγμένην ἐν διψώδεσιν, συνάγει δέ χερσὶν ἀκαρπίαν."
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "13",
+      "source_reference": "9:13",
+      "surface": "Γυνὴ ἄφρων καὶ θρασεῖα ἐνδεὴς ψωμοῦ γίνεται, ἣ οὐκ ἐπίσταται αἰσχύνην·"
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "14",
+      "source_reference": "9:14",
+      "surface": "ἐκάθισεν ἐπὶ θύραις τοῦ ἑαυτῆς οἴκου ἐπὶ δίφρου, ἐμφανῶς ἐν πλατείαις"
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "15",
+      "source_reference": "9:15",
+      "surface": "προσκαλουμένη τοὺς παριόντας καὶ κατευθύνοντας ἐν ταῖς ὁδοῖς αὐτῶν"
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "16",
+      "source_reference": "9:16",
+      "surface": "Ὅs ἐστιν ὑμῶν ἀφρονέστατος, ἐκκλινάτω πρὸς μέ· ἐνδεέσι δέ φρονήσεως παρακελεύομαι λέγουσα"
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "17",
+      "source_reference": "9:17",
+      "surface": "Ἄρτων κρυφίων ἡδέως ἅψασθε, καὶ ὕδατος κλοπῆς γλυκεροῦ."
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "18",
+      "source_reference": "9:18",
+      "surface": "ό δὲ οὐκ οἶδεν ὅτι γηγενεῖς παρʼ αὐτῇ ὄλλυνται, καὶ ἐπὶ πέτευρον ἅδου συναντᾷ."
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "18a",
+      "source_reference": "9:18a",
+      "surface": "aἀλλὰ ἀποπήδησον, μὴ χρονίσῃς ἐν τῷ τόπῳ, αηδὲ ἐπιστήσῃς τὸ σὸν ὄμμα πρὸς αὐτὴν· οὕτως γὰρ διαβήσῃ ὕδωρ ἀλλότριον·"
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "18b",
+      "source_reference": "9:18b",
+      "surface": "ᵇἀπὸ δὲ ὕδατος ἀλλοτρίου ἀπόσχου, καὶ ἀπὸ πηγῆς ἀλλοτρίας μὴ πίης."
+    },
+    {
+      "source_chapter": "9",
+      "source_verse": "18c",
+      "source_reference": "9:18c",
+      "surface": "cἵνᾷ πολὺν ζήσῃς χρόνον, προστεθῇ δέ σοι ἔτη ζωῆς."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "1",
+      "source_reference": "10:1",
+      "surface": "Υἱὸς σοφὸς εὐφραίνει πατέρα, υἱὸς δὲ ἄφρων λύπη τῇ μητρί"
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "2",
+      "source_reference": "10:2",
+      "surface": "οὐκ ὠφελήσουσιν θησαυροὶ ἀνόμους, δικαιοσύνη δὲ ῥύσεται ἐκ θανάτου."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "3",
+      "source_reference": "10:3",
+      "surface": "οὐ λιμοκτονήσει Κύριος ψυχὴν δικαίαν, ζωὴν δὲ ἀσεβῶν ἀνατρέψει."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "4",
+      "source_reference": "10:4",
+      "surface": "πενία ἄνδρα ταπεινοῖ, χεῖρες δὲ ἀνδρείων πλουτίζουσιν."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "4a",
+      "source_reference": "10:4a",
+      "surface": "aυἱὸς πεπαιδευμένος σοφὸς ἔσται, τῷ δὲ ἄφρονι διακόνῳ χρήσεται."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "5",
+      "source_reference": "10:5",
+      "surface": "διεσώθη ἀπὸ καύματος υἱὸς νοήμων, ἀνεμόφθορος δὲ γίνεται ἐν ἀμήτῳ υἱὸς παράνομος."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "6",
+      "source_reference": "10:6",
+      "surface": "εὐλογία Κυρίου ἐπὶ κεφαλὴν δικαίου, στόμα δὲ ἀσεβῶν καλύψει πένθος ἄωρον."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "7",
+      "source_reference": "10:7",
+      "surface": "μνήμη δικαίων μετʼ ἐγκωμίων, ὄνομα δὲ ἀσεβοῦς σβέννυται."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "8",
+      "source_reference": "10:8",
+      "surface": "σοφὸς καρδίᾳ δέξεται ἐντολάς, ὁ δὲ ἄστεγος χείλεσιν σκολιάζων ὑποσκελισθήσεται."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "9",
+      "source_reference": "10:9",
+      "surface": "ὃς πορεύεται ἁπλῶς, πορεύεται πεποιθώς· ὁ δὲ διαστρέφων τὰς ὁδοὺς αὐτοῦ γνωσθήσεται."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "10",
+      "source_reference": "10:10",
+      "surface": "ὁ ἐννεύων ὀφθαλμοῖς μετὰ δόλου συνάγει ἀνδράσι λύπας, ὁ δὲ ἐλέγχων μετὰ παρρησίας εἰρηνοποιεῖ."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "11",
+      "source_reference": "10:11",
+      "surface": "πηγὴ ζωῆς ἐν χειρὶ δικαίου, στόμα δὲ ἀσεβοῦς καλύψει ἀπώλεια."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "12",
+      "source_reference": "10:12",
+      "surface": "μῖσος ἐγείρει νεῖκος, πάντας δὲ τοὺς μὴ φιλονεικοῦντας καλύπτει φιλία·"
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "13",
+      "source_reference": "10:13",
+      "surface": "ῥάβδῳ τύπτει ἄνδρα ἀκάρδιον."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "14",
+      "source_reference": "10:14",
+      "surface": "σοφοὶ κρύψουσιν αἴσθησιν, στόμα δὲ προπετοῦς ἐγγίζει συντριβῇ."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "15",
+      "source_reference": "10:15",
+      "surface": "κτῆσις πλουσίων πόλις ὀχυρά, συντριβὴ δὲ ἀσεβῶν πενία."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "16",
+      "source_reference": "10:16",
+      "surface": "ἔργα δικαίων ζωὴν ποιεῖ, καρποὶ δὲ ἀσεβῶν ἁμαρτίας."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "17",
+      "source_reference": "10:17",
+      "surface": "ὁδοὺς δικαίας ζωῆς φυλάσσει παιδεία, παιδεία δὲ ἀνεξέλεγκτος πλανᾶται."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "18",
+      "source_reference": "10:18",
+      "surface": "καλύπτουσιν ἔχθραν χείλη δίκαια, οἱ δὲ ἐκφέροντες λοιδορίας ἀφρονέστατοί εἰσιν."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "19",
+      "source_reference": "10:19",
+      "surface": "ἐκ πολυλογίας οὐκ ἐκφεύξῃ ἁμαρτίαν, φειδόμενος δὲ χειλέων νοήμων ἔσῃ."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "20",
+      "source_reference": "10:20",
+      "surface": "ἄργυρος πεπυρωμένος γλῶσσα δικαίου, καρδία δὲ ἀσεβοῦς ἐκλείψει."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "21",
+      "source_reference": "10:21",
+      "surface": "χείλη δικαίων ἐπίσταται ὑψηλά, οἱ δὲ ἄφρονες ἐν ἐνδείᾳ τελευτῶσιν."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "22",
+      "source_reference": "10:22",
+      "surface": "εὐλογία Κυρίου ἐπὶ κεφαλὴν δικαίου· αὕτη πλουτίζει, καὶ οὐ μὴ προστεθῇ αὐτῇ λύπη ἐν καρδίᾳ."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "23",
+      "source_reference": "10:23",
+      "surface": "ἐν γέλωτι ἄφρων πράσσει κακά, ἡ δὲ σοφία ἀνδρὶ τίκτει φρόνησιν."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "24",
+      "source_reference": "10:24",
+      "surface": "ἐν ἀπωλείᾳ ἀσεβὴς περιφέρεται, ἐπιθυμία δὲ δικαίου δεκτή."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "25",
+      "source_reference": "10:25",
+      "surface": "παραπορευομένης καταιγίδος ἀφανίζεται ἀσεβής, δίκαιος δὲ ἐκκλίνας σώζεται εἰς τὸν αἰῶνα."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "26",
+      "source_reference": "10:26",
+      "surface": "ὥσπερ ὄμφαξ ὀδοῦσι βλαβερὸν καὶ καπνὸς ὄμμασιν, οὕτως παρανομία τοῖς χρωμένοις αὐτὴν."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "27",
+      "source_reference": "10:27",
+      "surface": "φόβος Κυρίου προστίθησιν ἡμέρας, ἔτη δὲ ἀσεβῶν ὀλιγωθήσεται."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "28",
+      "source_reference": "10:28",
+      "surface": "ἐνχρονίζει δικαίοις εὐφροσύνη, ἐλπὶς δὲ ἀσεβῶν ἀπολεῖται."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "29",
+      "source_reference": "10:29",
+      "surface": "ὀχύρωμα ὁσίου φόβος Κυρίου, συντριβὴ δὲ τοῖς ἐργαζομένοις κακά."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "30",
+      "source_reference": "10:30",
+      "surface": "δίκαιος τὸν αἰῶνα οὐκ ἐνδώσει, ἀσεβεῖς δὲ οὐκ οἰκήσουσιν γῆν."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "31",
+      "source_reference": "10:31",
+      "surface": "στόμα δικαίου ἀποστάζει σοφίαν, γλῶσσα δὲ ἀδίκου ἐξολεῖται."
+    },
+    {
+      "source_chapter": "10",
+      "source_verse": "32",
+      "source_reference": "10:32",
+      "surface": "χείλη ἀνδρῶν δικαίων ἀποστάζει χάριτας, στόμα δὲ ἀσεβῶν ἀποστρέφεται."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "1",
+      "source_reference": "11:1",
+      "surface": "ζυγοὶ δόλιοι βδέλυγμα ἐνώπιον Κυρίου, στάθμιον δὲ δίκαιον δεκτὸν αὐτῷ."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "2",
+      "source_reference": "11:2",
+      "surface": "οὗ ἐὰν εἰσέλθῃ ὕβρις, ἐκεῖ καὶ ἀτιμία· στόμα δὲ ταπεινῶν μελετᾷ σοφίαν."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "3",
+      "source_reference": "11:3",
+      "surface": "ἀποθανὼν δίκαιος ἔλιπεν μετάμελον, πρόχειρος δὲ γίνεται καὶ ἐπίχαρτος ἀσεβῶν ἀπώλεια."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "5",
+      "source_reference": "11:5",
+      "surface": "δικαιοσύνη ἀμώμους ὀρθοτομεῖ ὁδούς, ἀσέβεια δὲ περιπίπτει ἀδικίᾳ."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "6",
+      "source_reference": "11:6",
+      "surface": "δικαιοσύνη ἀνδρῶν ὀρθῶν ῥύεται αὐτούς, τῇ δὲ ἀπωλείᾳ αὐτῶν ἁλίσκονται παράνομοι."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "7",
+      "source_reference": "11:7",
+      "surface": "τελευτήσαντος ἀνδρὸς δικαίου οὐκ ὄλλυται ἐλπίς, τὸ δὲ καύχημα τῶν ἀσεβῶν ὄλλυται."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "8",
+      "source_reference": "11:8",
+      "surface": "δίκαιος ἐκ θήρας ἐκδύνει, ἀντʼ αὐτοῦ δὲ παραδίδοται ὁ ἀσεβής."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "9",
+      "source_reference": "11:9",
+      "surface": "ἐν στόματι ἀσεβῶν παγὶς πολίταις, αἴσθησις δὲ δικαίων εὔοδος."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "10",
+      "source_reference": "11:10",
+      "surface": "ἐν ἀγαθοῖς δικαίων κατώρθωσεν πόλις,"
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "11",
+      "source_reference": "11:11",
+      "surface": "στόμασιν δὲ ἀσεβῶν κατεσκάφη."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "12",
+      "source_reference": "11:12",
+      "surface": "μυκτηρίζει πολίτας ἐνδεὴς φρενῶν, ἀνὴρ δὲ φρόνιμος ἡσυχίαν ἄγει."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "13",
+      "source_reference": "11:13",
+      "surface": "ἀνὴρ δίγλωσσος ἀποκαλύπτει βουλὰς ἐν συνεδρίῳ, πιστὸς δὲ πνοῇ κρύπτει πράγματα."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "14",
+      "source_reference": "11:14",
+      "surface": "οἷς μὴ ὑπάρχει κυβέρνησις, πίπτουσιν ὥσπερ φύλλα, σωτηρία δὲ ὑπάρχει ἐν πολλῇ βουλῇ."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "15",
+      "source_reference": "11:15",
+      "surface": "πονηρὸς κακοποιεῖ ὅταν συνμίξῃ δικαίῳ, μισεῖ δὲ ἦχον ἀσφαλείας."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "16",
+      "source_reference": "11:16",
+      "surface": "γυνὴ εὐχάριστος ἐγείρει ἀνδρὶ δόξαν, θρόνος δὲ ἀτιμίας γυνὴ μισοῦσα δίκαια. πλούτου ὀκνηροὶ ἐνδεεῖς γίνονται, οἱ δὲ ἀνδρεῖοι ἐρείδονται πλούτῳ."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "17",
+      "source_reference": "11:17",
+      "surface": "τῇ ψυχῇ αὐτοῦ ἀγαθὸν ποιεῖ ἀνὴρ ἐλεήμων, ἐξολλύει δὲ αὐτοῦ σῶμα ὁ ἀνελεήμων."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "18",
+      "source_reference": "11:18",
+      "surface": "ἀσεβὴς ποιεῖ ἔργα ἄδικα, σπέρμα δὲ δικαίων μισθὸς ἀληθείας."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "19",
+      "source_reference": "11:19",
+      "surface": "υἱὸς δίκαιος γεννᾶται εἰς ζωήν, διωγμὸς δὲ ἀσεβοῦς εἰς θάνατον."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "20",
+      "source_reference": "11:20",
+      "surface": "βδέλυγμα Κυρίῳ διεστραμμέναι ὁδοί, προσδεκτοὶ δὲ αὐτῷ πάντες ἄμωμοι ἐν ταῖς ὁδοῖς αὐτῶν."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "21",
+      "source_reference": "11:21",
+      "surface": "χειρὶ χεῖρας ἐμβαλὼν ἀδίκως οὐκ ἀτιμώρητος ἔσται, ὁ δὲ σπείρων δικαιοσύνην λήμψεται μισθὸν πιστόν."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "22",
+      "source_reference": "11:22",
+      "surface": "ὥσπερ ἐνώτιον ἐν ῥινὶ ὑός, οὕτως γυναικὶ κακόφρονι κάλλος."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "23",
+      "source_reference": "11:23",
+      "surface": "ἐπιθυμία δικαίων πᾶσα ἀγαθή, ἐλπὶς δὲ ἀσεβῶν ἀπολεῖται."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "24",
+      "source_reference": "11:24",
+      "surface": "εἰσὶν οἳ τὰ ἴδια σπείροντες πλείονα ποιοῦσιν· εἰσὶν καὶ οἳ συνάγοντες ἐλαττονοῦνται."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "25",
+      "source_reference": "11:25",
+      "surface": "ψυχὴ εὐλογουμένη πᾶσα ἁπλῆ, ἀνὴρ δὲ θυμώδης οὐκ εὐσχήμων."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "26",
+      "source_reference": "11:26",
+      "surface": "ὁ συνέχων σῖτον, ὑπολίποιτο αὐτὸν τοῖς ἔθνεσιν· εὐλογία δὲ εἰς κεφαλὴν τοῦ μεταδιδόντος."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "27",
+      "source_reference": "11:27",
+      "surface": "τεκταινόμενος ἀγαθὰ ζητεῖ χάριν ἀγαθήν, ἐκζητοῦντα δὲ κακὰ καταλήμψεται αὐτόν."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "28",
+      "source_reference": "11:28",
+      "surface": "ὁ πεποιθὼς ἐπὶ πλούτῳ, οὗτος πεσεῖται, ὁ δὲ ἀντιλαμβανόμενος δικαίων, οὗτος ἀνατελεῖ."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "29",
+      "source_reference": "11:29",
+      "surface": "ὁ μὴ συνπεριφερόμενος τῷ ἑαυτοῦ οἴκῳ κληρονομήσει ἄνεμον, δουλεύσει δὲ ἄφρων φρονίμῳ."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "30",
+      "source_reference": "11:30",
+      "surface": "ἐκ καρποῦ δικαιοσύνης φύεται δένδρον ζωῆς, ἀφαιροῦνται δὲ ἄωροι ψυχαὶ παρανόμαων."
+    },
+    {
+      "source_chapter": "11",
+      "source_verse": "31",
+      "source_reference": "11:31",
+      "surface": "εἰ ὁ μὲν δίκαιος μόλις σώζεται, ὁ ἀσεβὴς καὶ ἁμαρτωλὸς ποῦ φανεῖται;"
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "1",
+      "source_reference": "12:1",
+      "surface": "ὁ ἀγαπῶν παιδείαν ἀγαπᾷ αἴσθησιν, ὁ δὲ μισῶν ἐλέγχους ἄφρων."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "2",
+      "source_reference": "12:2",
+      "surface": "κρείσσων ὁ εὑρὼν χάριν παρὰ Κυρίῳ, ἀνὴρ δὲ παράνομος παρασιωπηθήσεται."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "3",
+      "source_reference": "12:3",
+      "surface": "οὐ κατορθώσει ἄνθρωπος ἐξ ἀνόμου, αἱ δὲ ῥίζαι τῶν δικαίων οὐκ ἐξαρθήσονται."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "4",
+      "source_reference": "12:4",
+      "surface": "γυνὴ ἀνδρεία στέφανος τῷ ἀνδρὶ αὐτῆς· ὥσπερ δὲ ἐν ξύλῳ σκώληξ, οὕτως ἄνδρα ἀπόλλυσιν γυνὴ κακοποιός."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "5",
+      "source_reference": "12:5",
+      "surface": "λογισμοὶ δικαίων κρίματα, κυβερνῶσιν δὲ ἀσεβεῖς δόλους."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "6",
+      "source_reference": "12:6",
+      "surface": "λόγοι ἀσεβῶν δόλιοι, στόμα δὲ ὀρθῶν ῥύσεται αὐτούς."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "7",
+      "source_reference": "12:7",
+      "surface": "οὗ ἐὰν στραφῇ, ἀσεβὴς ἀφανίζεται, οἶκοι δὲ δικαίων παραμένουσιν."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "8",
+      "source_reference": "12:8",
+      "surface": "στόμα συνετοῦ ἐγκωμιάζεται ὑπὸ ἀνδρός, νωθροκάρδιος δὲ μυκτηρίζεται."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "9",
+      "source_reference": "12:9",
+      "surface": "κρείσσων ἀνὴρ ἐν ἀτιμίᾳ δουλεύων ἑαυτῷ, ἢ τιμὴν ἑαυτῷ περιτιθεὶς καὶ προσδεόμενος ἄρτου."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "10",
+      "source_reference": "12:10",
+      "surface": "δίκαιος οἰκτείρει ψυχὰς κτηνῶν αὐτοῦ. τὰ δὲ σπλάγχνα τῶν ἀσεβῶν ἀνελεήμονα."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "11",
+      "source_reference": "12:11",
+      "surface": "ὁ ἐργαζόμενος τὴν ἑαυτοῦ γῆν ἐμπλησθήσεται ἄρτων. οἱ δὲ διώκοντες μάταια ἐνδεεῖς φρενῶν."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "11a",
+      "source_reference": "12:11a",
+      "surface": "a ὅς ἐστιν ἡδὺς ἐν οἴνων διατριβαῖς, ἐν τοῖς ἑαυτοῦ ὀχυρώμασιν καταλείψει ἀτιμίαν."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "12",
+      "source_reference": "12:12",
+      "surface": "ἐπιθυμίαι ἀσεβῶν κακαί, αἱ δὲ ῥίζαι τῶν εὐσεβῶν ἐν ὀχυρώμασιν."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "13",
+      "source_reference": "12:13",
+      "surface": "δι᾿ ἁμαρτίαν χειλέων ἐμπίπτει εἰς παγίδας ἁμαρτωλός, ἐκφεύγει δὲ ἐξ αὐτῶν δίκαιος."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "13a",
+      "source_reference": "12:13a",
+      "surface": "a ὁ βλέπων λεῖα ἐλεηθήσεται, ὁ δὲ συναντῶν ἐν πύλαις ἐκθλίψει ψυχάς."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "14",
+      "source_reference": "12:14",
+      "surface": "ἀπὸ καρπῶν στόματος ψυχὴ ἀνδρὸς πλησθήσεται ἀγαθῶν, ἀνταπόδομα δὲ χειλέων αὐτοῦ δοθήσεται αὐτῷ."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "15",
+      "source_reference": "12:15",
+      "surface": "ὁδοὶ ἀφρόνων ὀρθαὶ ἐνώπιον αὐτῶν, εἰσακούει δὲ συμβουλίας σοφός."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "16",
+      "source_reference": "12:16",
+      "surface": "ἄφρων αὐθημερὸν ἐξαγγέλλει ὀργὴν αὐτοῦ, κρύπτει δὲ τὴν ἑαυτοῦ ἀτιμίαν πανοῦργος."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "17",
+      "source_reference": "12:17",
+      "surface": "ἐπιδεικνυμένην πίστιν ἀπαγγέλλει δίκαιος, ὁ δὲ μάρτυς τῶν ἀδίκων δόλιος."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "18",
+      "source_reference": "12:18",
+      "surface": "εἰσὶν οἳ λέγοντες τιτρώσκουσιν μάχαιραι, γλῶσσαι δὲ σοφῶν ἰῶνται."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "19",
+      "source_reference": "12:19",
+      "surface": "χείλη ἀληθινὰ κατορθοῖ μαρτυρίαν, μάρτυς δὲ ταχὺς γλῶσσαν ἔχει ἄδικον."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "20",
+      "source_reference": "12:20",
+      "surface": "δόλος ἐν καρδίᾳ τεκταινομένου κακά, οἱ δὲ βουλόμενοι εἰρήνην εὐφρανθήσονται."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "21",
+      "source_reference": "12:21",
+      "surface": "οὐκ ἀρέσει τῷ δικαίῳ οὐδὲν ἄδικον, οἱ δὲ ἀσεβεῖς πλησθήσονται κακῶν."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "22",
+      "source_reference": "12:22",
+      "surface": "βδέλυγμα Κυρίῳ χείλη ψευδῆ, ὁ δὲ ποιῶν πίστεις δεκτὸς παρʼ αὐτῷ."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "23",
+      "source_reference": "12:23",
+      "surface": "ἀνὴρ συνετὸς θρόνος αἰσθήσεως, καρδία δὲ ἀφρόνων συναντήσεται ἀραῖς."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "24",
+      "source_reference": "12:24",
+      "surface": "χεὶρ ἐκλεκτῶν κρατήσει εὐχερῶς, δόλιοι δὲ ἔσονται ἐν προνομῇ."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "25",
+      "source_reference": "12:25",
+      "surface": "φοβερὸς λόγος καρδίαν ταράσσει ἀνδρὸς δικαίου, ἀγγελία δὲ ἀγαθὴ εὐφραίνει αὐτόν."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "26",
+      "source_reference": "12:26",
+      "surface": "ἐπιγνώμων δίκαιος ἑαυτοῦ φίλος ἔσται, ἁμαρτάνοντας δὲ καταδιώξεται κακά, ἡ δὲ ὁδὸς τῶν ἀσεβῶν πλανήσει αὐτούς."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "27",
+      "source_reference": "12:27",
+      "surface": "οὐκ ἐπιτεύξεται δόλιος θήρας, κτῆμα δὲ τίμιον ἀνὴρ καθαρός."
+    },
+    {
+      "source_chapter": "12",
+      "source_verse": "28",
+      "source_reference": "12:28",
+      "surface": "ἐν ὁδοῖς δικαιοσύνης ζωή, ὁδοὶ δὲ μνησικάκων εἰς θάνατον."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "1",
+      "source_reference": "13:1",
+      "surface": "Υἱὸς πανοῦργος ὑπήκοος πατρί, υἱὸς δὲ ἀνήκοος ἐν ἀπωλείᾳ."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "2",
+      "source_reference": "13:2",
+      "surface": "ἀπὸ καρπῶν δικαιοσύνης φάγεται ἀγαθός, ψυχαὶ δὲ παρανόμων ὀλοῦνται ἄωροι."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "3",
+      "source_reference": "13:3",
+      "surface": "ὃς φυλάσσει τὸ ἑαυτοῦ στόμα τηρεῖ τὴν ἑαυτοῦ ψυχήν, ὁ δὲ προπετὴς χείλεσιν πτοήσει ἑαυτόν."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "4",
+      "source_reference": "13:4",
+      "surface": "ἐν ἐπιθυμίαις ἐστιν πᾶς ἀεργός, χεῖρες δὲ ἀνδρείων ἐν ἐπιμελείᾳ."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "5",
+      "source_reference": "13:5",
+      "surface": "λόγον ἄδικον μισεῖ δίκαιος, ἀσεβὴς δὲ αἰσχύνεται καὶ οὐχ ἕξει παρρησίαν."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "7",
+      "source_reference": "13:7",
+      "surface": "εἰσὶν οἱ πλουτίζοντες ἑαυτοὺς μηδὲν ἔχοντες, καὶ εἰσὶν οἱ ταπεινοῦντες ἑαυτοὺς ἐν πολλῷ πλούτῳ."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "8",
+      "source_reference": "13:8",
+      "surface": "λύτρον ἀνδρὸς ψυχῆς ὁ ἴδιος πλοῦτος, πτωχὸς δὲ οὐχ ὑφίσταται ἀπειλήν."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "9",
+      "source_reference": "13:9",
+      "surface": "φῶς δικαίοις διὰ παντός. φῶς δὲ ἀσεβῶν σβέννυται."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "9a",
+      "source_reference": "13:9a",
+      "surface": "a ψυχαὶ δόλιαι πλανῶνται ἐν ἁμαρτίαις, δίκαιοι δὲ οἰκτείρουσιν καὶ ἐλεῶσιν."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "10",
+      "source_reference": "13:10",
+      "surface": "κακὸς μεθʼ ὕβρεως πράσσει κακά, οἱ δὲ ἑαυτῶν ἐπιγνώμονες σοφοί."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "11",
+      "source_reference": "13:11",
+      "surface": "ὕπαρξις ἐπισπουδαζομένη μετὰ ἀνομίας ἐλάσσων γίνεται, ὁ δὲ συνάγων ἑαυτῷ μετʼ εὐσεβείας πληθυνθήσεται· δίκαιος οἰκτείρει καὶ κιχρᾷ."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "12",
+      "source_reference": "13:12",
+      "surface": "κρείσσων ἐναρχομένοις βοηθῶν καρδίᾳ τοῦ ἐπαγγελλομένου καὶ εἰς ἐλπίδα ἄγοντος· δένδρον γὰρ ζωῆς ἐπιθυμία ἀγαθή."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "13",
+      "source_reference": "13:13",
+      "surface": "ὃς καταφρονεῖ πράγματος, καταφρονηθήσεται ὑπʼ αὐτοῦ· ὁ δὲ φοβούμενος ἐντολήν, οὗτος ὑγιαίνει."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "13a",
+      "source_reference": "13:13a",
+      "surface": "a υἱῷ δολίῳ οὐδὲν ἔσται ἀγαθόν· οἰκέτῃ δὲ σοφῷ εὔοδοι ἔσονται πράξεις, καὶ κατευθυνθήσεται ἡ ὁδὸς αὐτοῦ."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "14",
+      "source_reference": "13:14",
+      "surface": "νόμος σοφοῦ πηγὴ ζωῆς, ὁ δὲ ἄνους ὑπὸ παγίδος θανεῖται."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "15",
+      "source_reference": "13:15",
+      "surface": "σύνεσις ἀγαθὴ δίδωσιν χάριν, τὸ δὲ γνῶναι νόμον διανοίας ἐστὶν ἀγαθῆς, ὁδοὶ δὲ καταφρονούντων ἐν ἀπωλείᾳ."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "16",
+      "source_reference": "13:16",
+      "surface": "πᾶς πανοῦργος πράσσει μετὰ γνώσεως, ὁ δὲ ἄφρων ἐξεπέτασεν ἑαυτοῦ κακίαν."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "17",
+      "source_reference": "13:17",
+      "surface": "βασιλεὺς θρασὺς ἐμπεσεῖται εἰς κακά, ἄγγελος δὲ σοφὸς ῥύσεται αὐτόν."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "18",
+      "source_reference": "13:18",
+      "surface": "πενίαν καὶ ἀτιμίαν ἀφαιρεῖται παιδεία, ὁ δὲ φυλάσσων ἐλέγχους δοξασθήσεται."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "19",
+      "source_reference": "13:19",
+      "surface": "ἐπιθυμίαι εὐσεβῶν ἡδύνουσιν ψυχήν, ἔργα δὲ ἀσεβῶν μακρὰν ἀπὸ γνώσεως."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "20",
+      "source_reference": "13:20",
+      "surface": "συμπορευόμενος σοφοῖς σοφὸς ἔσῃ, ὁ δὲ συμπορευόμενος ἄφροσι γνωσθήσεται."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "21",
+      "source_reference": "13:21",
+      "surface": "ἁμαρτάνοντας καταδιώξεται κακά, τοὺς δὲ δικαίους καταλήμψεται ἀγαθά."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "22",
+      "source_reference": "13:22",
+      "surface": "ἀγαθὸς ἀνὴρ κληρονομήσει υἱοὺς υἱῶν, θησαυρίζεται δὲ δικαίοις πλοῦτος ἀσεβῶν."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "23",
+      "source_reference": "13:23",
+      "surface": "δίκαιοι ποιήσουσιν ἐν πλούτῳ ἔτη πολλά, ἄδικοι δὲ ἀπολοῦνται συντόμως."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "24",
+      "source_reference": "13:24",
+      "surface": "ὃς φείδεται τῆς βακτηρίας, μισεῖ τὸν υἱὸν αὐτοῦ, ὁ δὲ ἀγαπῶν ἐπιμελῶς παιδεύει."
+    },
+    {
+      "source_chapter": "13",
+      "source_verse": "25",
+      "source_reference": "13:25",
+      "surface": "δίκαιος ἔσθων ἐμπιπλᾷ τὴν ψυχὴν αὐτοῦ, ψυχαὶ δὲ ἀσεβῶν ἐνδεεῖς."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "1",
+      "source_reference": "14:1",
+      "surface": "σοφαὶ γυναῖκες ᾠκοδόμησαν οἴκους, ἡ δὲ ἄφρων κατέσκαψεν ταῖς χερσὶν αὐτῆς."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "2",
+      "source_reference": "14:2",
+      "surface": "ὁ πορευόμενος ὀρθῶς φοβεῖται τὸν κύριον, ὁ δὲ σκολιάζων ταῖς ὁδοῖς αὐτοῦ ἀτιμασθήσεται."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "3",
+      "source_reference": "14:3",
+      "surface": "ἐκ στόματος ἀφρόνων βακτηρία ὕβρεως, χείλη δὲ σοφῶν φυλάσσει αὐτούς."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "4",
+      "source_reference": "14:4",
+      "surface": "οὗ μή εἰσιν βόες, φάτναι καθαραί· οὗ δὲ πολλὰ γενήματα, φανερὰ βοὸς ἰσχύς."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "5",
+      "source_reference": "14:5",
+      "surface": "μάρτυς πιστὸς οὐ ψεύδεται, ἐκκαίει δὲ ψευδῆ μάρτυς ἄδικος."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "6",
+      "source_reference": "14:6",
+      "surface": "ζητήσεις σοφίαν παρὰ κακοῖς καὶ οὐχ εὑρήσεις, αἴσθησις δὲ παρὰ φρονίμοις εὐχερής."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "7",
+      "source_reference": "14:7",
+      "surface": "πάντα ἐναντία ἀνδρὶ ἄφρονι, ὅπλα δὲ αἰσθήσεως χείλη σοφά."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "8",
+      "source_reference": "14:8",
+      "surface": "σοφία πανούργων ἐπιγνώσεται τὰς ὁδοὺς αὐτῶν, ἄνοια δὲ ἀφρόνων ἐν πλάνῃ."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "9",
+      "source_reference": "14:9",
+      "surface": "οἰκίαι παρανόμων ὀφειλήσουσιν καθαρισμόν, οἰκίαι δὲ δικαίων δεκταί."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "10",
+      "source_reference": "14:10",
+      "surface": "καρδία ἀνδρὸς αἰσθητική, λυπηρὰ ψυχὴ αὐτοῦ· ὅταν δὲ εὐφραίνηται, οὐκ ἐπιμίγνυται ὕβρει."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "11",
+      "source_reference": "14:11",
+      "surface": "οἰκίαι ἀσεβῶν ἀφανισθήσονται, σκηναὶ δὲ κατορθούντων στήσονται."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "12",
+      "source_reference": "14:12",
+      "surface": "ἔστιν ὁδὸς ἣ δοκεῖ παρὰ ἀνθρώποις ὀρθὴ εἶναι, τὰ δὲ τελευταῖα αὐτῆς ἔρχεται εἰς πυθμένα ᾅδου."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "13",
+      "source_reference": "14:13",
+      "surface": "ἐν εὐφροσύναις οὐ προσμίγνυται λύπη, τελευταία δὲ χαρὰ εἰς πένθος ἔρχεται."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "14",
+      "source_reference": "14:14",
+      "surface": "τῶν ἑαυτοῦ ὁδῶν πλησθήσεται θρασυκάρδιος, ἀπὸ δὲ τῶν διανοημάτων αὐτοῦ ἀνὴρ ἀγαθός."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "15",
+      "source_reference": "14:15",
+      "surface": "ἄκακος πιστεύει παντὶ λόγῳ, πανοῦργος δὲ ἔρχεται εἰς μετάνοιαν."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "16",
+      "source_reference": "14:16",
+      "surface": "σοφὸς φοβηθεὶς ἐξέκλινεν ἀπὸ κακοῦ, ὁ δὲ ἄφρων ἑαυτῷ πεποιθὼς μίγνυται ἀνόμῳ."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "17",
+      "source_reference": "14:17",
+      "surface": "ὀξύθυμος πράσσει μετὰ ἀβουλίας, ἀνὴρ δὲ φρόνιμος πολλὰ ὑποφέρει."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "18",
+      "source_reference": "14:18",
+      "surface": "μεριοῦνται ἄφρονες κακίαν, οἱ δὲ πανοῦργοι κρατήσουσιν αἰσθήσεως."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "19",
+      "source_reference": "14:19",
+      "surface": "ὀλισθήσουσιν κακοὶ ἔναντι ἀγαθῶν, καὶ ἀσεβεῖς θεραπεύσουσιν θύρας δικαίων."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "20",
+      "source_reference": "14:20",
+      "surface": "φίλοι μισήσουσιν φίλους πτωχούς, φίλοι δὲ πλουσίων πολλοί."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "21",
+      "source_reference": "14:21",
+      "surface": "ὁ ἀτιμάζων πένητας ἁμαρτάνει, ἐλεῶν δὲ πτωχοὺς μακαριστός."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "22",
+      "source_reference": "14:22",
+      "surface": "πλανώμενοι τεκταίνουσι κακά, ἔλεον δὲ καὶ ἀλήθειαν τεκταίνουσιν ἀγαθοί· οὐκ ἐπίστανται ἔλεον καὶ πίστιν τέκτονες κακῶν, ἐλεημοσύναι δὲ καὶ πίστεις παρὰ τέκτοσιν ἀγαθοῖς."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "23",
+      "source_reference": "14:23",
+      "surface": "ἐν παντὶ μεριμνῶντι ἔνεστιν περισσόν, ὁ δὲ ἡδὺς καὶ ἀνάλγητος ἐν ἐνδείᾳ ἔσται."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "24",
+      "source_reference": "14:24",
+      "surface": "στέφανος σοφῶν πανοῦργος. ἡ δὲ διατριβὴ ἀφρόνων κακή."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "25",
+      "source_reference": "14:25",
+      "surface": "ῥύσεται ἐκ κακῶν ψυχὴν μάρτυς πιστός, ἐκκαίει δὲ ψευδῆ δόλιος."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "26",
+      "source_reference": "14:26",
+      "surface": "ἐν φόβῳ Κυρίου ἐλπὶς ἰσχύος. τοῖς δὲ τέκνοις αὐτοῦ καταλείπει ἔρεισμα."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "27",
+      "source_reference": "14:27",
+      "surface": "πρόσταγμα Κυρίου πηγὴ ζωῆς, ποιεῖ δὲ ἐκκλίνειν ἐκ παγίδος θανάτου."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "28",
+      "source_reference": "14:28",
+      "surface": "ἐν πολλῷ ἔθνει δόξα βασιλέως. ἐν δὲ ἐκλείψει λαοῦ συντριβὴ δυνάστου."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "29",
+      "source_reference": "14:29",
+      "surface": "μακρόθυμος ἀνὴρ πολὺς ἐν φρονήσει, ὁ δὲ ὀλιγόψυχος ἰσχυρὸς ἄφρων."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "30",
+      "source_reference": "14:30",
+      "surface": "πρᾳύθυμος ἀνὴρ καρδίας ἰατρός, σὴς δὲ ὀστέων καρδία αἰσθητική."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "31",
+      "source_reference": "14:31",
+      "surface": "ὁ συκοφαντῶν πένητα παροξύνει τὸν ποιήσαντα αὐτόν, ὁ δὲ τιμῶν αὐτὸν ἐλεᾷ πτωχόν."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "32",
+      "source_reference": "14:32",
+      "surface": "ἐν κακίᾳ αὐτοῦ ἀπωσθήσεται ἀσεβής, ὁ δὲ πεποιθὼς τῇ ἑαυτοῦ ὁσιότητι δίκαιος."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "33",
+      "source_reference": "14:33",
+      "surface": "ἐν καρδίᾳ ἀγαθῇ ἀνδρὸς σοφία, ἐν δὲ καρδίᾳ ἀφρόνων οὐ διαγινώσκεται."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "34",
+      "source_reference": "14:34",
+      "surface": "δικαιοσύνη ὑψοῖ ἔθνος, ἐλασσονοῦσι δὲ φυλὰς ἁμαρτίαι."
+    },
+    {
+      "source_chapter": "14",
+      "source_verse": "35",
+      "source_reference": "14:35",
+      "surface": "δεκτὸς βασιλεῖ ὑπηρέτης νοήμων, τῇ δὲ ἑαυτοῦ εὐστροφίᾳ ἀφαιρεῖται ἀτιμίαν."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "1",
+      "source_reference": "15:1",
+      "surface": "ὀργὴ ἀπόλλυσιν καὶ φρονίμους, ἀπόκρισις δὲ ὑποπίπτουσα ἀποστρέφει θυμόν, λόγος δὲ λυπηρὸς ἐγείρει ὀργάς."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "2",
+      "source_reference": "15:2",
+      "surface": "γλῶσσα σοφῶν καλὰ ἐπίσταται, στόμα δὲ ἀφρόνων ἀναγγελεῖ κακά."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "3",
+      "source_reference": "15:3",
+      "surface": "ἐν παντὶ τόπῳ ὀφθαλμοὶ Κυρίου· σκοπεύουσιν κακούς τε καὶ ἀγαθούς."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "4",
+      "source_reference": "15:4",
+      "surface": "ἴασις γλώσσης δένδρον ζωῆς, ὁ δὲ συντηρῶν αὐτὴν πλησθήσεται πνεύματος."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "5",
+      "source_reference": "15:5",
+      "surface": "ἄφρων μυκτηρίζει παιδίαν πατρός, ὁ δὲ φυλάσσων ἐντολὰς πανουργότερος."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "6",
+      "source_reference": "15:6",
+      "surface": "ἐν πλεοναζούσῃ δικαιοσύνῃ ἰσχὺς πολλή, οἱ δὲ ἀσεβεῖς ὁλόριζοι ἐκ γῆς ἀπολοῦνται· οἴκοις δικαίων ἰσχὺς πολλή, καρποὶ δὲ ἀσεβῶν ἀπολοῦνται."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "7",
+      "source_reference": "15:7",
+      "surface": "χείλη σοφῶν δέδεται αἰσθήσει, καρδίαι δὲ ἀφρόνων οὐκ ἀσφαλεῖς."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "8",
+      "source_reference": "15:8",
+      "surface": "θυσίαι ἀσεβῶν βδέλυγμα Κυρίῳ, εὐχαὶ δὲ κατευθυνόντων δεκταὶ παρʼ αὐτῷ."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "9",
+      "source_reference": "15:9",
+      "surface": "βδέλυγμα Κυρίῳ ὁδοὶ ἀσεβοῦς, διώκοντας δὲ δικαιοσύνην ἀγαπᾷ."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "10",
+      "source_reference": "15:10",
+      "surface": "παιδεία ἀκάκου γνωρίζεται ὑπὸ τῶν παριόντων, οἱ δὲ μισοῦντες ἐλέγχους τελευτῶσιν αἰσχρῶς."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "11",
+      "source_reference": "15:11",
+      "surface": "ᾅδης καὶ ἀπώλεια φανερὰ παρὰ τῷ κυρίῳ, πῶς οὐχὶ καὶ αἱ καρδίαι τῶν ἀνθρώπων;"
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "12",
+      "source_reference": "15:12",
+      "surface": "οὐκ ἀγαπήσει ἀπαίδευτος τοὺς ἐλέγχοντας αὐτόν, μετὰ δὲ σοφῶν οὐχ ὁμιλήσει."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "13",
+      "source_reference": "15:13",
+      "surface": "καρδίας εὐφραινομένης πρόσωπον θάλλει, ἐν δὲ λύπαις οὔσης σκυθρωπάζει."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "14",
+      "source_reference": "15:14",
+      "surface": "καρδία ὀρθὴ ζητεῖ αἴσθησιν, στόμα δὲ ἀπαιδεύτων γνώσεται κακά."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "15",
+      "source_reference": "15:15",
+      "surface": "πάντα τὸν χρόνον οἱ ὀφθαλμοὶ τῶν κακῶν προσδέχονται κακά, οἱ δὲ ἀγαθοὶ ἡσυχάσουσιν διὰ παντός."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "16",
+      "source_reference": "15:16",
+      "surface": "κρείσσων μικρὰ μερὶς μετὰ φόβου Κυρίου ἢ θησαυροὶ μεγάλοι μετὰ ἀφοβίας."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "17",
+      "source_reference": "15:17",
+      "surface": "κρείσσων ξενισμὸς μετὰ λαχάνων πρὸς φιλίαν καὶ χάριν ἢ παράθεσις μόσχων μετὰ ἔχθρας."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "18",
+      "source_reference": "15:18",
+      "surface": "ἀνὴρ θυμώδης παρασκευάζει μάχας, μακρόθυμος δὲ καὶ τὴν μέλλουσαν καταπρᾳύνει·"
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "18a",
+      "source_reference": "15:18a",
+      "surface": "μακρόθυμος ἀνὴρ κατασβέσει κρίσεις, ὁ δὲ ἀσεβὴς ἐγείρει μᾶλλον."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "19",
+      "source_reference": "15:19",
+      "surface": "ὁδοὶ ἀεργῶν ἐστρωμέναι ἀκάνθαις, αἱ δὲ τῶν ἀνδρείων τετριμμέναι."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "20",
+      "source_reference": "15:20",
+      "surface": "υἱὸς σοφὸς εὐφραίνει πατέρα, υἱὸς δὲ ἄφρων μυκτηρίζει μητέρα αὐτοῦ."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "21",
+      "source_reference": "15:21",
+      "surface": "ἀνοήτου τρίβοι ἐνδεεῖς φρενῶν, ἀνὴρ δὲ φρόνιμος κατευθύνων πορεύεται."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "22",
+      "source_reference": "15:22",
+      "surface": "ὑπερτίθενται λογισμοὺς οἱ μὴ τιμῶντες συνέδρια, ἐν δὲ καρδίαις βουλευομένων μένει βουλή."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "23",
+      "source_reference": "15:23",
+      "surface": "οὐ μὴ ὑπακούσῃ ὁ κακὸς αὐτῇ, οὐδὲ μὴ εἴπῃ καίριόν τι καὶ καλὸν τῷ κοινῷ."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "24",
+      "source_reference": "15:24",
+      "surface": "ὁδοὶ ζωῆς διανοήματα συνετοῦ, ἵνα ἐκκλίνας ἐκ τοῦ ᾅδου σωθῇ."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "25",
+      "source_reference": "15:25",
+      "surface": "οἴκους ὑβριστῶν κατασπᾷ Κύριος, ἐστήρισεν δὲ ὅριον χήρας."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "26",
+      "source_reference": "15:26",
+      "surface": "βδέλυγμα Κυρίῳ λογισμὸς ἄδικος, ἁγνῶν δὲ ῥήσεις σεμναί."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "27",
+      "source_reference": "15:27",
+      "surface": "ἐξόλλυσιν ἑαυτὸν ὁ δωρολήμπτης, ὁ δὲ μισῶν δώρων λήμψεις σώζεται. (6)ἐλεημοσύναις καὶ πίστεσιν ἀποκαθαίρονται ἁμαρτίαι, τῷ δὲ φόβῳ Κυρίου ἐκκλίνει πᾶς ἀπὸ κακοῦ."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "28",
+      "source_reference": "15:28",
+      "surface": "καρδίαι δικαίων μελετῶσιν πίστεις, στόμα δὲ ἀσεβῶν ἀποκρίνεται κακά. (7)δεκταὶ παρὰ Κυρίῳ ὁδοὶ ἀνθρώπων δικαίων, διὰ δὲ αὐτῶν καὶ οἱ ἐχθροὶ φίλοι γίνονται."
+    },
+    {
+      "source_chapter": "15",
+      "source_verse": "29",
+      "source_reference": "15:29",
+      "surface": "μακρὰν ἀπέχει ὁ θεὸς ἀπὸ ἀσεβῶν, εὐχαῖς δὲ δικαίων ἐπακούει. §(8)κρείσσων ὀλίγη λῆμψις μετὰ δικαιοσύνης ἢ πολλὰ γενήματα μετὰ ἀδικίας."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "1",
+      "source_reference": "16:1",
+      "surface": "καρδία δὲ ἀνδρὸς λογιζέσθω δίκαια, ἵνα ὑπὸ τοῦ θεοῦ διορθωθῇ τὰ διαβήματα αὐτοῦ."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "2",
+      "source_reference": "16:2",
+      "surface": "θεωρῶν ὀφθαλμὸς καλὰ εὐφραίνει καρδίαν, φήμη δὲ ἀγαθὴ πιαίνει ὀστᾶ."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "3",
+      "source_reference": "16:3",
+      "surface": "ὃς ἀπωθεῖται παιδείαν μισεῖ ἑαυτόν, ὁ δὲ τηρῶν ἐλέγχους ἀγαπᾷ ψυχὴν αὐτοῦ."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "4",
+      "source_reference": "16:4",
+      "surface": "φόβος θεοῦ παιδεία καὶ σοφία, καὶ ἀρχὴ δόξης ἀποκριθήσεται αὐτῇ."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "5",
+      "source_reference": "16:5",
+      "surface": "πάντα τὰ ἔργα τοῦ ταπεινοῦ φανερὰ παρὰ τῷ θεῷ, οἱ δὲ ἀσεβεῖς ἐν ἡμέρᾳ κακῇ ὀλοῦνται."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "6",
+      "source_reference": "16:6",
+      "surface": "ἀκάθαρτος παρὰ θεῷ πᾶς ὑψηλοκάρδιος, χειρὶ δὲ χεῖρας ἐμβαλὼν ἀδίκως οὐκ ἀθῳωθήσεται."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "7",
+      "source_reference": "16:7",
+      "surface": "ἀρχὴ ὁδοῦ ἀγαθῆς τὸ ποιεῖν τὰ δίκαια, δεκτὰ δὲ παρὰ θεῷ μᾶλλον ἢ θύειν θυσίας."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "8",
+      "source_reference": "16:8",
+      "surface": "ὁ ζητῶν τὸν κύριον εὑρήσει γνῶσιν μετὰ δικαιοσύνης, οἱ δὲ ὀρθῶς ζητοῦντες αὐτὸν εὑρήσουσιν εἰρήνην."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "9",
+      "source_reference": "16:9",
+      "surface": "πάντα τὰ ἔργα τοῦ κυρίου μετὰ δικαιοσύνης, φυλάσσεται δὲ ὁ ἀσεβὴς εἰς ἡμέραν κακήν."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "10",
+      "source_reference": "16:10",
+      "surface": "μαντεῖον ἐπὶ χείλεσιν βασιλέως, ἐν δὲ κρίσει οὐ μὴ πλανηθῇ τὸ στόμα αὐτοῦ."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "11",
+      "source_reference": "16:11",
+      "surface": "ῥοπὴ ζυγοῦ δικαιοσύνη παρὰ Κυρίῳ, τὰ δὲ ἔργα αὐτοῦ στάθμια δίκαια."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "12",
+      "source_reference": "16:12",
+      "surface": "βδέλυγμα βασιλεῖ ὁ ποιῶν κακά, μετὰ γὰρ δικαιοσύνης ἑτοιμάζεται θρόνος ἀρχῆς."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "13",
+      "source_reference": "16:13",
+      "surface": "δεκτὰ βασιλεῖ χείλη δίκαια, λόγους δὲ ὀρθοὺς ἀγαπᾷ."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "14",
+      "source_reference": "16:14",
+      "surface": "θυμὸς βασιλέως ἄγγελος θανάτου, ἀνὴρ δὲ σοφὸς ἐξιλάσεται αὐτόν."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "15",
+      "source_reference": "16:15",
+      "surface": "ἐν φωτὶ ζωῆς υἱὸς βασιλέως, οἱ δὲ προσδεκτοὶ αὐτῷ ὥσπερ νέφος ὄψιμον."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "16",
+      "source_reference": "16:16",
+      "surface": "νοσσιαὶ σοφίας αἱρετώτεραι χρυσίου, νοσσιαὶ δὲ φρονήσεως αἱρετώτεραι ὑπὲρ ἀργύριον"
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "17",
+      "source_reference": "16:17",
+      "surface": "τρίβοι ζωῆς ἐκκλίνουσιν ἀπὸ κακῶν, μῆκος δὲ βίου ὁδοὶ δικαιοσύνης. ὁ δεχόμενος παιδείαν ἐν ἀγαθοῖς ἔσται, ὁ δὲ φυλάσσων ἐλέγχους σοφισθήσεται. ὃς φυλάσσει τὰς ἑαυτοῦ ὁδοὺς τηρεῖ τὴν ἑαυτοῦ ψυχήν, ἀγαπῶν δὲ ζωὴν αὐτοῦ φείσεται στόματος αὐτοῦ."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "18",
+      "source_reference": "16:18",
+      "surface": "πρὸ συντριβῆς ἡγεῖται ὕβρις, πρὸ δὲ πτώματος κακοφροσύνη."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "19",
+      "source_reference": "16:19",
+      "surface": "κρείσσων πρᾳύθυμος μετὰ ταπεινώσεως ἢ ὃς διαιρεῖται σκῦλα μετὰ ὑβριστῶν."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "20",
+      "source_reference": "16:20",
+      "surface": "συνετὸς ἐν πράγμασιν εὑρειὴς ἀγαθῶν, πεποιθὼς δὲ ἐπὶ θεῷ μακαριστός."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "21",
+      "source_reference": "16:21",
+      "surface": "τοὺς σοφοὺς καὶ συνετοὺς φαύλους καλοῦσιν, οἱ δὲ γλυκεῖς ἐν λόγῳ πλείονα ἀκούσονται."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "22",
+      "source_reference": "16:22",
+      "surface": "πηγὴ ζωῆς ἔννοια τοῖς κεκτημένοις, παιδεία δὲ ἀφρόνων κακή."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "23",
+      "source_reference": "16:23",
+      "surface": "καρδία σοφοῦ νοήσει τὰ ἀπὸ τοῦ ἰδίου στόματος, ἐπὶ δὲ χείλεσιν φορέσει ἐπιγνωμοσύνην."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "24",
+      "source_reference": "16:24",
+      "surface": "κηρία μέλιτος λόγοι καλοί, γλύκασμα δὲ αὐτοῦ ἴασις ψυχῆς."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "25",
+      "source_reference": "16:25",
+      "surface": "εἰσὶν ὁδοὶ δοκοῦσαι εἶναι ὀρθαὶ ἀνδρί, τὰ μέντοι τελευταῖα αὐτῶν βλέπει εἰς πυθμένα ᾅδου."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "26",
+      "source_reference": "16:26",
+      "surface": "ἀνὴρ ἐν πόνοις πονεῖ ἑαυτῷ καὶ ἐκβιάζεται ἑαυτοῦ τὴν ἀπώλειαν· ὁ μέντοι σκολιὸς ἐπὶ τῷ ἑαυτοῦ στόματι φορεῖ τὴν ἀπώλειαν."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "27",
+      "source_reference": "16:27",
+      "surface": "ἀνὴρ ἄφρων ὀρύσσει ἑαυτῷ κακά, ἐπὶ δὲ τῶν ἑαυτοῦ χειλέων θησαυρίζει πῦρ."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "28",
+      "source_reference": "16:28",
+      "surface": "ἀνὴρ σκολιὸς διαπέμπεται κακά, καὶ λαμπτῆρα δόλου πυρσεύσει κακοῖς, καὶ διαχωρίζει φίλους."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "29",
+      "source_reference": "16:29",
+      "surface": "ἀνὴρ παράνομος ἀποπειρᾶται φίλων, καὶ ἀπάγει αὐτοὺς ὁδοὺς οὐκ ἀγαθάς."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "30",
+      "source_reference": "16:30",
+      "surface": "στηρίζων δὲ ὀφθαλμοὺς αὐτοῦ διαλογίζεται διεστραμμένα, ὁρίζει δὲ τοῖς χείλεσιν αὐτοῦ πάντα τὰ κακά, οὗτος κάμινός ἐστιν κακίας."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "31",
+      "source_reference": "16:31",
+      "surface": "στέφανος καυχήσεως γῆρας, ἐν δὲ ὁδοῖς δικαιοσύνης εὑρίσκεται."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "32",
+      "source_reference": "16:32",
+      "surface": "κρείσσων ἀνὴρ μακρόθυμος ἰσχυροῦ, ὁ δὲ κρατῶν ὀργῆς κρείσσων καταλαμβανομένου πόλιν."
+    },
+    {
+      "source_chapter": "16",
+      "source_verse": "33",
+      "source_reference": "16:33",
+      "surface": "εἰς κόλπους ἐπέρχεται πάντα τοῖς ἀδίκοις, παρὰ δὲ Κυρίου πάντα τὰ δίκαια."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "1",
+      "source_reference": "17:1",
+      "surface": "κρείσσων ψωμὸς μεθʼ ἡδονῆς ἐν εἰρήνῃ ἢ οἶκος πολλῶν ἀγαθῶν καὶ ἀδίκων θυμάτων μετὰ μάχης. ¶"
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "2",
+      "source_reference": "17:2",
+      "surface": "οἰκέτης νοήμων κρατήσει δεσποτῶν ἀφρόνων, ἐν δὲ ἀδελφοῖς διελεῖται μέρη."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "3",
+      "source_reference": "17:3",
+      "surface": "ὥσπερ δοκιμάζεται ἐν καμίνῳ ἄργυρος καὶ χρυσός, οὕτως ἐκλεκταὶ καρδίαι παρὰ Κυρίῳ."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "4",
+      "source_reference": "17:4",
+      "surface": "κακὸς ὑπακούει γλώσσης παρανόμων, δίκαιος δὲ οὐ προσέχει χείλεσιν ψευδέσιν."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "5",
+      "source_reference": "17:5",
+      "surface": "ὁ καταγελῶν πτωχοῦ παροξύνει τὸν ποιήσαντα αὐτόν, ὁ δὲ ἐπιχαίρων ἀπολλυμένῳ οὐκ ἀθῳωθήσεται· ὁ δὲ ἐπισπλαχνιζόμενος ἐλεηθήσεται."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "6",
+      "source_reference": "17:6",
+      "surface": "στέφανος γερόντων τέκνα τέκνων, καύχημα δὲ τέκνων πατέρες αὐτῶν."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "6a",
+      "source_reference": "17:6a",
+      "surface": "aτοῦ πιστοῦ ὅλος ὁ κόσμος τῶν χρημάτων, τοῦ δὲ ἀπίστου οὐδὲ ὀβολός."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "7",
+      "source_reference": "17:7",
+      "surface": "οὐχ ἁρμόσει ἄφρονι χείλη πιστά, οὐδὲ δικαίῳ χείλη ψευδῆ."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "8",
+      "source_reference": "17:8",
+      "surface": "μισθὸς χαρίτων παιδεία τοῖς χρωμένοις, οὗ δ᾿ ἂν ἐπιστρέψῃ, εὐοδωθήσεται."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "9",
+      "source_reference": "17:9",
+      "surface": "ὃς κρύπτει ἀδικήματα ζητεῖ φιλίαν, ὃς δὲ μισεῖ κρύπτειν διίστησιν φίλους καὶ οἰκείους."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "10",
+      "source_reference": "17:10",
+      "surface": "συντρίβει ἀπειλὴ καρδίαν φρονίμου, ἄφρων δὲ μαστιγωθεὶς οὐκ αἰσθάνεται."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "11",
+      "source_reference": "17:11",
+      "surface": "ἀντιλογίας ἐγείρει πᾶς κακός, ὁ δὲ Κύριος ἄγγελον ἀνελεήμονα ἐκπέμψει αὐτῷ."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "12",
+      "source_reference": "17:12",
+      "surface": "ἐμπεσεῖται μέριμνα ἀνδρὶ νοήμονι, οἱ δὲ ἄφρονες διαλογιοῦνται κακά."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "13",
+      "source_reference": "17:13",
+      "surface": "ὃς ἀποδίδωσιν κακὰ ἀντὶ ἀγαθῶν, οὐ κινηθήσεται κακὰ ἐκ τοῦ οἴκου αὐτοῦ."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "14",
+      "source_reference": "17:14",
+      "surface": "ἐξουσίαν δίδωσιν λόγοις ἀρχὴ δικαιοσύνης, προηγεῖται δὲ τῆς ἐνδείας στάσις καὶ μάχη."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "15",
+      "source_reference": "17:15",
+      "surface": "ὃς δίκαιον κρίνει τὸν ἄδικον, ἄδικον δὲ τὸν δίκαιον, ἀκάθαρτος καὶ βδελυκτὸς παρὰ θεῷ."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "16",
+      "source_reference": "17:16",
+      "surface": "ἵνα τί ὑπῆρξεν χρήματα ἄφρονι; κτήσασθαι γὰρ σοφίαν ἀκάρδιος οὐ δυνήσεται. (19)ὃς ὑψηλὸν ποιεῖ τὸν ἑαυτοῦ οἶκον ζητεῖ συντριβήν, (20)ὁ δὲ σκολιάζων τοῦ μαθεῖν ἐμπεσεῖται εἰς κακά."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "17",
+      "source_reference": "17:17",
+      "surface": "εἰς πάντα καιρὸν φίλος ὑπαρχέτω σοι, ἀδελφοὶ δὲ ἐν ἀνάγκαις χρήσιμοι ἔστωσαν, τούτου γὰρ χάριν γεννῶνται."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "18",
+      "source_reference": "17:18",
+      "surface": "ἀνὴρ ἄφρων ἐπικροτεῖ καὶ ἐπιχαίρει ἑαυτῷ, ὡς καὶ ὁ ἐγγυώμενος ἐγγύην τῶν ἑαυτοῦ φίλων."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "19",
+      "source_reference": "17:19",
+      "surface": "φιλαμαρτήμων χαίρει μάχαις,"
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "20",
+      "source_reference": "17:20",
+      "surface": "ὁ δὲ σκληροκάρδιος οὐ συναντᾷ ἀγαθοῖς. ἀνὴρ εὐμετάβολος γλώσσῃ ἐμπεσεῖται εἰς κακά,"
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "21",
+      "source_reference": "17:21",
+      "surface": "καρδία δὲ ἄφρονος ὀδύνη τῷ κεκτημένῳ αὐτήν. οὐκ εὐφραίνεται πατὴρ ἐπὶ υἱῷ ἀπαιδεύτῳ, υἱὸς δὲ φρόνιμος εὐφραίνει μητέρα αὐτοῦ."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "22",
+      "source_reference": "17:22",
+      "surface": "καρδία εὐφραινομένη εὐεκτεῖν ποιεῖ, ἀνδρὸς δὲ λυπηροῦ ξηραίνεται τὰ ὀστᾶ."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "23",
+      "source_reference": "17:23",
+      "surface": "λαμβάνοντος δῶρα ἐν κόλποις ἀδίκως οὐ κατευοδοῦνται ὁδοί, ἀσεβὴς δὲ ἐκκλίνει ὁδοὺς δικαιοσύνης."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "24",
+      "source_reference": "17:24",
+      "surface": "πρόσωπον συνετὸν ἀνδρὸς σοφοῦ, οἱ δὲ ὀφθαλμοὶ τοῦ ἄφρονος ἐπʼ ἄκρα γῆς."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "25",
+      "source_reference": "17:25",
+      "surface": "ὀργὴ πατρί ἐστιν υἱὸς ἄφρων, καὶ ὀδύνη τῇ τεκούσῃ αὐτοῦ."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "26",
+      "source_reference": "17:26",
+      "surface": "ζημιοῦν ἄνδρα δίκαιον οὐ καλόν, οὐδὲ ὅσιον ἐπιβουλεύειν δυνάσταις δικαίοις."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "27",
+      "source_reference": "17:27",
+      "surface": "ὃς φείδεται ῥῆμα προελέσθαι σκληρὸν ἐπιγνώμων, μακρόθυμος δὲ ἀνὴρ φρόνιμος."
+    },
+    {
+      "source_chapter": "17",
+      "source_verse": "28",
+      "source_reference": "17:28",
+      "surface": "ἀνοήτῳ ἐπερωτήσαντι σοφίαν σοφία λογισθήσεται, ἐνεὸν δέ τις ἑαυτὸν ποιήσας δόξει φρόνιμος εἶναι."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "1",
+      "source_reference": "18:1",
+      "surface": "προφάσεις ζητεῖ ἀνὴρ βουλόμενος χωρίζεσθαι ἀπὸ φίλων, ἐν παντὶ δὲ καιρῷ ἐπονείδιστος ἔσται."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "2",
+      "source_reference": "18:2",
+      "surface": "οὐ χρείαν ἔχει σοφίας ἐνδεὴς φρενῶν, μᾶλλον γὰρ ἄγεται ἀφροσύνῃ."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "3",
+      "source_reference": "18:3",
+      "surface": "ὅταν ἔλθῃ ἀσεβὴς εἰς βάθος κακῶν, καταφρονεῖ, ἐπέρχεται δὲ αὐτῷ ἀτιμία καὶ ὄνειδος."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "4",
+      "source_reference": "18:4",
+      "surface": "ὕδωρ βαθὺ λόγος ἐν καρδίᾳ ἀνδρός, ποταμὸς δὲ ἀναπηδύει καὶ πηγὴ ζωῆς."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "5",
+      "source_reference": "18:5",
+      "surface": "θαυμάσαι πρόσωπον ἀσεβοῦς οὐ καλόν, οὐδὲ ὅσιον ἐκκλίνειν τὸ δίκαιον ἐν κρίσει."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "6",
+      "source_reference": "18:6",
+      "surface": "χείλη ἄφρονος ἄγουσιν αὐτὸν εἰς κακά, τὸ δὲ στόμα αὐτοῦ τὸ θρασὺ θάνατον ἐπικαλεῖται."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "7",
+      "source_reference": "18:7",
+      "surface": "στόμα ἄφρονος συντριβὴ αὐτῷ, τὰ δὲ χείλη αὐτοῦ παγὶς τῇ ψυχῇ αὐτοῦ."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "8",
+      "source_reference": "18:8",
+      "surface": "ὀκνηροὺς καταβάλλει φόβος, ψυχαὶ δὲ ἀνδρογύνων πεινάσουσιν."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "9",
+      "source_reference": "18:9",
+      "surface": "ὁ μὴ ἰώμενος αὐτὸν ἐν τοῖς ἔργοις αὐτοῦ ἀδελφός ἐστιν τοῦ λυμαινομένου ἑαυτόν."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "10",
+      "source_reference": "18:10",
+      "surface": "ἐκ μεγαλωσύνης ἰσχύος ὄνομα Κυρίου, αὐτῷ δὲ προσδραμόντες δίκαιοι ὑψοῦνται."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "11",
+      "source_reference": "18:11",
+      "surface": "ὕπαρξις πλουσίου ἀνδρὸς πόλις ὀχυρά, §ἡ δὲ δόξα αὐτῆς μέγα ἐπισκιάζει."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "12",
+      "source_reference": "18:12",
+      "surface": "πρὸ συντριβῆς ὑψοῦται καρδία ἀνδρός, καὶ πρὸ δόξης ταπεινοῦται."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "13",
+      "source_reference": "18:13",
+      "surface": "ὃς ἀποκρίνεται λόγον πρὶν ἀκοῦσαι, ἀφροσύνη αὐτῷ ἐστιν καὶ ὄνειδος."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "14",
+      "source_reference": "18:14",
+      "surface": "θυμὸν ἀνδρὸς πρᾳύνει θεράπων φρόνιμος, ὀλιγόψυχον δὲ ἄνδρα τίς ὑποίσει;"
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "15",
+      "source_reference": "18:15",
+      "surface": "καρδία φρονίμου κτᾶται αἴσθησιν, ὦτα δὲ σοφῶν ζητεῖ ἔννοιαν."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "16",
+      "source_reference": "18:16",
+      "surface": "δόμα ἀνθρώπου ἐμπλατύνει αὐτόν, καὶ παρὰ δυνάσταις καθιζάνει αὐτόν."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "17",
+      "source_reference": "18:17",
+      "surface": "δίκαιος ἑαυτοῦ κατήγορος ἐν πρωτολογίᾳ· ὡς δ᾿ ἂν ἐπιβάλῃ ὁ ἀντίδικος, ἐλέγχεται."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "18",
+      "source_reference": "18:18",
+      "surface": "ἀντιλογίας παύει σιγηρός, ἐν δὲ δυναστείαις ὁρίζει."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "19",
+      "source_reference": "18:19",
+      "surface": "ἀδελφὸς ὑπὸ ἀδελφοῦ βοηθούμενος ὡς πόλις ὀχυρὰ καὶ ὑψηλή, ἰσχύει δὲ ὥσπερ τεθεμελιωμένον βασίλειον."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "20",
+      "source_reference": "18:20",
+      "surface": "ἀπὸ καρπῶν στόματος ἀνὴρ πίμπλησιν κοιλίαν αὐτοῦ, ἀπὸ δὲ καρπῶν χειλέων αὐτοῦ ἐμπλησθήσεται."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "21",
+      "source_reference": "18:21",
+      "surface": "θάνατος καὶ ζωὴ ἐν χειρὶ γλώσσης, οἱ δὲ κρατοῦντες αὐτῆς ἔδονται τοὺς καρποὺς αὐτῆς."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "22",
+      "source_reference": "18:22",
+      "surface": "ὃς εὗρεν γυναῖκα ἀγαθὴν εὗρεν χάριτας, ἔλαβεν δὲ παρὰ θεοῦ ἱλαρότητα·"
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "22a",
+      "source_reference": "18:22a",
+      "surface": "ὃς ἐκβάλλει γυναῖκα ἀγαθὴν ἐκβάλλει τὰ ἀγαθά, ὁ δὲ κατέχων μοιχαλίδα ἄφρων καὶ ἀσεβής."
+    },
+    {
+      "source_chapter": "18",
+      "source_verse": "23",
+      "source_reference": "18:23",
+      "surface": "ἀφροσύνη ἀνδρὸς λυμαίνεται τὰς ὁδοὺς αὐτοῦ, τὸν δὲ θεὸν αἰτιᾶται τῇ καρδίᾳ αὐτοῦ."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "1",
+      "source_reference": "19:1",
+      "surface": "πλοῦτος προστίθησιν φίλους πολλούς, ὁ δὲ πτωχὸς καὶ ἀπὸ τοῦ ὑπάρχοντος φίλου λείπεται."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "2",
+      "source_reference": "19:2",
+      "surface": "μάρτυς ψευδὴς οὐκ ἀτιμώρητος ἔσται, ὁ δὲ ἐγκαλῶν ἀδίκως οὐ διαφεύξεται."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "3",
+      "source_reference": "19:3",
+      "surface": "πολλοὶ θεραπεύουσιν πρόσωπα βασιλέων, πᾶς δὲ ὁ κακὸς γίνεται ὄνειδος ἀνδρί."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "4",
+      "source_reference": "19:4",
+      "surface": "πᾶς ὃς ἀδελφὸν πτωχὸν μισεῖ, καὶ φιλίας μακρὰν ἔσται· ἔννοια ἀγαθὴ τοῖς εἰδόσιν αὐτὴν ἐγγιεῖ, ἀνὴρ δὲ φρόνιμος εὑρήσει αὐτήν. ὁ πολλὰ κακοποιῶν τελεσιουργεῖ κακίαν, ὃς δὲ ἐρεθίζει λόγους οὐ σωθήσεται."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "5",
+      "source_reference": "19:5",
+      "surface": "ὁ κτώμενος φρόνησιν ἀγαπᾷ ἑαυτόν, ὃς δὲ φυλάσσει φρόνησιν εὑρήσει ἀγαθά."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "6",
+      "source_reference": "19:6",
+      "surface": "μάρτυς ψευδὴς οὐκ ἀτιμώρητος ἔσται, ͎܎ҏďĎ̠εἰμι ἢ δράκων, ὅτι κατέταξας ἐπʼ ἐμέ φυλ"
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "7",
+      "source_reference": "19:7",
+      "surface": "οὐ συμφέρει ἄφρονι τρυφή, καὶ ἐὰν οἰκέτης ἄρξηται μεθʼ ὕβρεως δυναστεύειν."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "8",
+      "source_reference": "19:8",
+      "surface": "ἐλεήμων ἀνὴρ μακροθυμεῖ, τὸ δὲ καύχημα αὐτοῦ ἐπέρχεται παρανόμοις."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "9",
+      "source_reference": "19:9",
+      "surface": "βασιλέως ἀπειλὴ ὁμοία βρυγμῷ λέοντος, ὥσπερ δὲ δρόσος ἐπὶ χόρτῳ, οὕτως τὸ ἱλαρὸν αὐτοῦ."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "10",
+      "source_reference": "19:10",
+      "surface": "αἰσχύνη πατρὶ υἱὸς ἄφρων· οὐχ ἁγναὶ εὐχαὶ ἀπὸ μισθώματος ἑταίρας."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "11",
+      "source_reference": "19:11",
+      "surface": "οἶκον καὶ ὕπαρξιν μερίζουσιν πατέρες παισίν, παρὰ δὲ θεοῦ ἁρμόζεται γυνὴ ἀνδρί."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "12",
+      "source_reference": "19:12",
+      "surface": "δειλία κατέχει ἀνδρογύναιον, ψυχὴ δὲ ἀεργοῦ πεινάσει."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "13",
+      "source_reference": "19:13",
+      "surface": "ὃς φυλάσσει ἐντολὴν τηρεῖ τὴν ἑαυτοῦ ψυχήν, ὁ δὲ καταφρονῶν τῶν ἑαυτοῦ ὁδῶν ἀπολεῖται."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "14",
+      "source_reference": "19:14",
+      "surface": "δανίζει θεῷ ὁ ἐλεῶν πτωχόν, κατὰ δὲ τὸ δόμα αὐτοῦ ἀνταποδοθήσεται αὐτῷ."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "15",
+      "source_reference": "19:15",
+      "surface": "παίδευε υἱόν σου, οὕτως γὰρ ἔσται εὔελπις, εἰς δὲ ὕβριν μὴ ἐπαίρου τῇ ψυχῇ σου."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "16",
+      "source_reference": "19:16",
+      "surface": "κακόφρων ἀνὴρ ζημιωθήσεται· ἐὰν δὲ λοιμεύηται, καὶ τὴν ψυχὴν αὐτοῦ προσθήσει."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "17",
+      "source_reference": "19:17",
+      "surface": "Ἄκουε, υἱέ, παιδείαν πατρός σου, ἵνα σοφὸς γένῃ ἐπʼ ἐσχάτων σου."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "18",
+      "source_reference": "19:18",
+      "surface": "πολλοὶ λογισμοὶ ἐν καρδίᾳ ἀνδρός, ἡ δὲ βουλὴ τοῦ κυρίου εἰς τὸν αἰῶνα μένει."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "19",
+      "source_reference": "19:19",
+      "surface": "καρπὸς ἀνδρὶ ἐλεημοσύνη, κρείσσων δὲ πτωχὸς δίκαιος ἢ πλούσιος ψευδής."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "20",
+      "source_reference": "19:20",
+      "surface": "φόβος Κυρίου εἰς ζωὴν ἀνδρί. ὁ δὲ ἄφοβος αὐλισθήσεται ἐν τόποις οὗ οὐκ ἐπισκοπεῖται γνῶσις."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "21",
+      "source_reference": "19:21",
+      "surface": "ὁ ἐγκρύπτων εἰς τὸν κόλπον αὐτοῦ χεῖρας ἀδίκως, οὐδὲ τῷ στόματι οὐ μὴ προσενέγκῃ αὐτάς."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "22",
+      "source_reference": "19:22",
+      "surface": "λοιμοῦ μαστιγουμένου ἄφρων πανουργότερος γίνεται· ἐὰν δὲ ἐλέγχῃς ἄνδρα φρόνιμον, νοήσει αἴσθησιν."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "23",
+      "source_reference": "19:23",
+      "surface": "ὁ ἀτιμάζων πατέρα καὶ ἀπωθούμενος μητέρα αὐτοῦ καταισχυνθήσεται καὶ ἐπονείδιστος ἔσται.¶"
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "24",
+      "source_reference": "19:24",
+      "surface": "υἱὸς ἀπολειπόμενος φυλάξαι παιδείαν πατρὸς μελετήσει ῥήσεις κακάς."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "25",
+      "source_reference": "19:25",
+      "surface": "ὁ ἐγγυώμενος παῖδα ἄφρονα καθυβρίζει δικαίωμα, στόμα δὲ ἀσεβῶν καταπίεται κρίσεις."
+    },
+    {
+      "source_chapter": "19",
+      "source_verse": "26",
+      "source_reference": "19:26",
+      "surface": "ἑτοιμάζονται ἀκολάστοις μάστιγες, καὶ τιμωρίαι ὁμοίως ἄφροσιν."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "1",
+      "source_reference": "20:1",
+      "surface": "ἀκόλαστον οἶνος καὶ ὑβριστικὸν μέθη, πᾶς δὲ ἄφρων τοιούτοις συμπλέκεται."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "2",
+      "source_reference": "20:2",
+      "surface": "οὐ διαφέρει ἀπειλὴ βασλέως θυμοῦ λέοντος, ὁ δὲ παροξύνων αὐτὸν ἁμαρτάνει εἰς τὴν ἑαυτοῦ ψυχήν."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "3",
+      "source_reference": "20:3",
+      "surface": "δόξα ἀνδρὶ ἀποστρέφεσθαι λοιδορίας, πᾶς δὲ ἄφρων τοιούτοις συμπλέκεται."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "4",
+      "source_reference": "20:4",
+      "surface": "ὀνειδιζόμενος ὀκνηρὸς οὐκ αἰσχύνεται, ὡσαύτως καὶ ὁ δανιζόμενος σῖτον ἐν ἀμήτῳ."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "5",
+      "source_reference": "20:5",
+      "surface": "ὕδωρ βαθὺ βουλὴ ἐν καρδίᾳ ἀνδρός, ἀνὴρ δὲ φρόνιμος ἐξαντλήσει αὐτήν."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "6",
+      "source_reference": "20:6",
+      "surface": "μέγα ἄνθρωπος καὶ τίμιον ἀνὴρ ἐλεήμων, ἄνδρα δὲ πιστὸν ἔργον εὑρεῖν."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "7",
+      "source_reference": "20:7",
+      "surface": "ὃς ἀναστρέφεται ἄμωμος ἐν δικαιοσύνῃ, μακαρίους τοὺς παῖδας αὐτοῦ καταλείψει."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "8",
+      "source_reference": "20:8",
+      "surface": "ὅταν βασιλεὺς δίκαιος καθίσῃ ἐπὶ θρόνου, οὐκ ἐναντιοῦται ἐν ὀφθαλμοῖς αὐτοῦ πᾶν πονηρόν."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "9",
+      "source_reference": "20:9",
+      "surface": "τίς καυχήσεται ἁγνὴν ἔχειν τὴν καρδίαν; ἢ τίς παρρησιάσεται καθαρὸς εἶναι ἀπὸ ἁμαρτιῶν;"
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "10",
+      "source_reference": "20:10",
+      "surface": "κακολογοῦντος πατέρα ἢ μητέρα σβεσθήσεται λαμπτήρ, αἱ δὲ κόραι τῶν ὀφθαλμῶν αὐτοῦ ὄψονται σκότος."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "11",
+      "source_reference": "20:11",
+      "surface": "μερὶς ἐπισπουδαζομένη ἐν πρώτοις ἐν τοῖς τελευταίοις οὐκ εὐλογηθήσεται."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "12",
+      "source_reference": "20:12",
+      "surface": "μὴ εἴπῃς Τίσομαι τὸν ἐχθρόν· ἀλλὰ ὑπόμεινον τὸν κύριον, ἵνα σοι βοηθήσῃ."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "13",
+      "source_reference": "20:13",
+      "surface": "στάθμιον μέγα καὶ μικρὸν καὶ μέτρα δισσά, ἀκάθαρτα ἐνώπιον Κυρίου καὶ ἀμφότερα·"
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "14",
+      "source_reference": "20:14",
+      "surface": "καὶ ὁ ποιῶν αὐτὰ ἐν τοῖς ἐπιτηδεύμασιν αὐτοῦ συνποδισθήσεται, νεανίσκος μετὰ ὁσίου· καὶ εὐθεῖα ἡ ὁδὸς αὐτοῦ."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "15",
+      "source_reference": "20:15",
+      "surface": "οὖς ἀκούει καὶ ὀφθαλμὸς ὁρᾷ· Κυρίου ἔργα καὶ ἀμφότερα,"
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "16",
+      "source_reference": "20:16",
+      "surface": "μὴ ἀγάπα καταλαλεῖν, ἵνα μὴ ἐξαρθῇς· διάνοιξον τοὺς ὀφθαλμούς σου καὶ ἐμπλήσθητι ἄρτων."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "17",
+      "source_reference": "20:17",
+      "surface": "βδέλυγμα Κυρίῳ δισσὸν στάθμιον, καὶ ζυγὸς δόλιος οὐ καλὸν ἐνώπιον αὐτοῦ."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "18",
+      "source_reference": "20:18",
+      "surface": "παρὰ Κυρίου εὐθύνεται τὰ διαβήματα ἀνδρί, θνητὸς δὲ πῶς ἂν νοήσαι τὰς ὁδοὺς αὐτοῦ;"
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "19",
+      "source_reference": "20:19",
+      "surface": "παγὶς ἀνδρὶ ταχύ τι τῶν ἰδίων ἁγιάσαι, μετὰ γὰρ τὸ εὔξασθαι μετανοεῖν γίνεται."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "20",
+      "source_reference": "20:20",
+      "surface": "λικμήτωρ ἀσεβῶν βασιλεὺς σοφός, καὶ ἐπιβαλεῖ αὐτοῖς τροχόν."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "21",
+      "source_reference": "20:21",
+      "surface": "φῶς Κυρίου πνοὴ ἀνθρώπων, ὃς ἐραυνᾷ ταμεῖα κοιλίας."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "22",
+      "source_reference": "20:22",
+      "surface": "ἐλεημοσύνη καὶ ἀλήθεια φυλακὴ βασιλεῖ, καὶ περικυκλώσουσιν ἐν δικαιοσύνῃ τὸν θρόνον αὐτοῦ."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "23",
+      "source_reference": "20:23",
+      "surface": "κόσμος νεανίαις σοφία, δόξα δὲ πρεσβυτέρων πολιαί."
+    },
+    {
+      "source_chapter": "20",
+      "source_verse": "24",
+      "source_reference": "20:24",
+      "surface": "ὑπώπια καὶ συντρίμματα συναντᾷ κακοῖς, πληγαὶ δὲ εἰς ταμεῖα κοιλίας."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "1",
+      "source_reference": "21:1",
+      "surface": "ὥσπερ ὁρμὴ ὕδατος, οὕτως καρδία βασιλέως ἐν χειρὶ θεοῦ· οὗ ἐὰν θέλων νεῦσαι, ἐκεῖ ἔκλινεν αὐτήν."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "2",
+      "source_reference": "21:2",
+      "surface": "πᾶς ἀνὴρ φαίνεται ἑαυτῷ δίκαιος, κατευθύνει δὲ καρδίας Κύριος."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "3",
+      "source_reference": "21:3",
+      "surface": "ποιεῖν δίκαια καὶ ἀληθεύειν ἀρεστὰ παρὰ θεῷ μᾶλλον ἢ θυσιῶν αἷμα."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "4",
+      "source_reference": "21:4",
+      "surface": "μεγαλόφρων ἐφʼ ὕβρει θρασυκάρδιος· λαμπτὴρ δὲ ἀσεβῶν ἁμαρτία."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "6",
+      "source_reference": "21:6",
+      "surface": "ὁ ἐνεργῶν θησαυρίσματα γλώσσῃ ψευδεῖ μάταια διώκει ἐπὶ παγίδας θανάτου."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "7",
+      "source_reference": "21:7",
+      "surface": "ὄλεθρος ἀσεβέσιν ἐπιξενωθήσεται, οὐ γὰρ βούλονται πράσσειν τὰ δίκαια."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "8",
+      "source_reference": "21:8",
+      "surface": "πρὸς τοὺς σκολιοὺς σκολιὰς ὁδοὺς ἀποστέλλει ὁ θεός, ἁγνὰ γὰρ καὶ ὀρθὰ τὰ ἔργα αὐτοῦ."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "9",
+      "source_reference": "21:9",
+      "surface": "κρεῖσσον οἰκεῖν ἐπὶ γωνίας ὑπαίθρου ἢ ἐν κεκονιαμένοις μετὰ ἀδικίας καὶ ἐν οἴκῳ κοινῷ."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "10",
+      "source_reference": "21:10",
+      "surface": "ψυχὴ ἀσεβοῦς οὐκ ἐλεηθήσεται ὑπʼ οὐδενὸς τῶν ἀνθρώπων."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "11",
+      "source_reference": "21:11",
+      "surface": "ζημιουμένου ἀκολάστου πανουργότερος γίνεται ὁ κακός, συνίων δὲ σοφὸς δέξεται γνῶσιν."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "12",
+      "source_reference": "21:12",
+      "surface": "συνίει δίκαιος καρδίας ἀσεβῶν καὶ φαυλίζει ἀσεβεῖς ἐν κακοῖς."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "13",
+      "source_reference": "21:13",
+      "surface": "ὃς φράσσει τὰ ὦτα τοῦ μὴ ἐπακοῦσαι ἀσθενοῦς, καὶ αὐτὸς ἐπικαλέσεται καὶ οὐκ ἔσται ὁ εἰσακούων."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "14",
+      "source_reference": "21:14",
+      "surface": "δόσις λάθριος ἀνατρέπει ὀργάς, δώρων δὲ ὁ φειδόμενος θυμὸν ἐγείρει ἰσχυρόν."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "15",
+      "source_reference": "21:15",
+      "surface": "εὐφροσύνη δικαίων ποιεῖ κρίμα, ὅσιος δὲ ἀκάθαρτος παρὰ κακούργοις."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "16",
+      "source_reference": "21:16",
+      "surface": "ἀνὴρ πλανώμενος ἐξ ὁδοῦ δικαιοσύνης ἐν συναγωγῇ γιγάντων ἀναπαύσεται."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "17",
+      "source_reference": "21:17",
+      "surface": "ἀνὴρ ἐνδεὴς ἀγαπᾷ εὐφροσύνην, φιλῶν οἶνον καὶ ἔλαιον εἰς πλοῦτον·"
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "18",
+      "source_reference": "21:18",
+      "surface": "περικάθαρμα δὲ δικαίου ἄνομος."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "19",
+      "source_reference": "21:19",
+      "surface": "κρεῖσσον οἰκεῖν ἐν τῇ ἐρήμῳ ἢ μετὰ γυναικὸς γλωσσώδους καὶ μαχίμου καὶ ὀργίλου."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "20",
+      "source_reference": "21:20",
+      "surface": "θησαυρὸς ἐπιθυμητὸς ἀναπαύσεται ἐπὶ στόματος σοφοῦ, ἄφρονες δὲ ἄνδρες καταπίονται αὐτόν."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "21",
+      "source_reference": "21:21",
+      "surface": "ὁδὸς δικαιοσύνης καὶ ἐλεημοσύνης εὑρήσει ζωὴν καὶ δόξαν."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "22",
+      "source_reference": "21:22",
+      "surface": "πόλεις ὀχυρὰς ἐπέβη σοφὸς καὶ καθεῖλεν τὸ ὀχύρωμα ἐφʼ ᾧ ἐπεποίθεισαν οἱ ἀσεβεῖς."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "23",
+      "source_reference": "21:23",
+      "surface": "ὃς φυλάσσει τὸ στόμα αὐτοῦ καὶ τὴν γλῶσσαν, διατηρεῖ ἐκ θλίψεως τὴν ψυχὴν αὐτοῦ."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "24",
+      "source_reference": "21:24",
+      "surface": "θρασὺς καὶ αὐθάδης καὶ ἀλαζὼν λοιμὸς καλεῖται, ὃς δὲ μνησικακεῖ παράνομος."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "25",
+      "source_reference": "21:25",
+      "surface": "ἐπιθυμίαι ὀκνηρὸν ἀποκτείνουσιν, οὐ γὰρ προαιροῦνται αἱ χεῖρες αὐτοῦ ποιεῖν τι."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "26",
+      "source_reference": "21:26",
+      "surface": "ἀσεβὴς ἐπιθυμεῖ ὅλην τὴν ἡμέραν ἐπιθυμίας κακάς, ὁ δὲ δίκαιος ἐλεᾷ καὶ οἰκτείρει ἀφειδῶς."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "27",
+      "source_reference": "21:27",
+      "surface": "θυσίαι ἀσεβῶν βδέλυγμα Κυρίῳ, καὶ γὰρ παρανόμως προσφέρουσιν αὐτάς."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "28",
+      "source_reference": "21:28",
+      "surface": "μάρτυς ψευδὴς ἀπολεῖται, ἀνὴρ δὲ ὑπήκοος φυλασσόμενος λαλήσει."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "29",
+      "source_reference": "21:29",
+      "surface": "ἀσεβὴς ἀνὴρ ἀναιδῶς ὑφίσταται προσώπῳ, ὁ δὲ εὐθὴς αὐτὸς συνίει τὰς ὁδοὺς αὐτοῦ."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "30",
+      "source_reference": "21:30",
+      "surface": "οὐκ ἔστιν σοφία, οὐκ ἔστιν ἀνδρία, οὐκ ἔστιν βουλὴ πρὸς τὸν ἀσεβῆ."
+    },
+    {
+      "source_chapter": "21",
+      "source_verse": "31",
+      "source_reference": "21:31",
+      "surface": "ἵππος ἑτοιμάζεται εἰς ἡμέραν πολέμου, παρὰ δὲ Κυρίου ἡ βοήθεια."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "1",
+      "source_reference": "22:1",
+      "surface": "αἱρετώτερον ὄνομα καλὸν ἢ πλοῦτος πολύς· ὑπὲρ δὲ ἀργύριον καὶ χρυσίον χάρις ἀγαθή."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "2",
+      "source_reference": "22:2",
+      "surface": "πλούσιος καὶ πτωχὸς συνήντησαν ἀλλήλοις, ἀμφοτέρους δὲ ὁ κύριος ἐποίησεν."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "3",
+      "source_reference": "22:3",
+      "surface": "πανοῦργος ἰδὼν πονηρὸν τιμωρούμενον κραταιῶς αὐτὸς παιδεύεται, οἱ δὲ ἄφρονες παρελθόντες ἐζημιώθησαν."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "4",
+      "source_reference": "22:4",
+      "surface": "γενεὰ σοφίας φόβος Κυρίου καὶ πλοῦτος καὶ δόξα καὶ ζωή."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "5",
+      "source_reference": "22:5",
+      "surface": "τρίβολοι καὶ παγίδες ἐν ὁδοῖς σκολιαῖς, ὁ δὲ φυλάσσων τὴν ἑαυτοῦ ψυχὴν ἀφέξεται αὐτῶν."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "7",
+      "source_reference": "22:7",
+      "surface": "πλούσιοι πτωχῶν ἄρξουσιν, καὶ οἰκέται ἰδίοις δεσπόταις δανιοῦσιν."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "8",
+      "source_reference": "22:8",
+      "surface": "ὁ σπείρων φαῦλα θερίσει κακά, πληγὴν δὲ ἔργων αὐτοῦ συντελέσει."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "8a",
+      "source_reference": "22:8a",
+      "surface": "ἄνδρα ἱλαρὸν καὶ δότην εὐλογεῖ ὁ θεός, ματαιότητα δὲ ἔργων αὐτοῦ συντελέσει."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "9",
+      "source_reference": "22:9",
+      "surface": "ὁ ἐλεῶν πτωχὸν αὐτὸς διατραφήσεται, τῶν γὰρ ἑαυτοῦ ἄρτων ἔδωκεν τῷ πτωχῷ."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "9a",
+      "source_reference": "22:9a",
+      "surface": "aνίκην καὶ τιμὴν περιποιεῖται ὁ δῶρα δούς, τὴν μέντοι ψυχὴν ἀφαιρεῖται τῶν κεκτημένων."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "10",
+      "source_reference": "22:10",
+      "surface": "ἔκβαλε ἐκ συνεδρίου λοιμόν, καὶ συνεξελεύσεται αὐτῷ νεῖκος· ὅταν γὰρ καθίσῃ ἐν συνεδρίῳ πάντας ἀτιμάζει."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "11",
+      "source_reference": "22:11",
+      "surface": "ἀγαπᾷ Κύριος ὁσίας καρδίας, δεκτοὶ δὲ αὐτῷ πάντες ἄμωμοι· χείλεσιν ποιμαίνει βασιλεύς."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "12",
+      "source_reference": "22:12",
+      "surface": "οἱ δὲ ὀφθαλμοὶ Κυρίου διατηροῦσιν αἴσθησιν, φαυλίζει δὲ λόγους παράνομος."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "13",
+      "source_reference": "22:13",
+      "surface": "προφασίζεται καὶ λέγει ὀκνηρός Λέων ἐν ταῖς ὁδοῖς, ἐν δὲ ταῖς πλατείαις φονευταί."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "14",
+      "source_reference": "22:14",
+      "surface": "βόθρος βαθὺς στόμα παρανόμου, ὁ δὲ μισηθεὶς ὑπὸ Κυρίου ἐμπεσεῖται εἰς αὐτόν."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "14a",
+      "source_reference": "22:14a",
+      "surface": "aεἰσὶν ὁδοὶ κακαὶ ἐνώπιον ἀνδρός, καὶ οὐκ ἀγαπᾷ τοῦ ἀποστρέψαι ἀπʼ αὐτῶν· ἀποστρέφειν δὲ δεῖ ἀπὸ ὁδοῦ σκολιᾶς καὶ κακῆς."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "15",
+      "source_reference": "22:15",
+      "surface": "ἄνοια ἐξῆπται καρδίας νέου, ῥάβδος δὲ καὶ παιδία μακρὰν ἀπʼ αὐτοῦ."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "16",
+      "source_reference": "22:16",
+      "surface": "ὁ συκοφαντῶν πένητα πολλὰ ποιεῖ τὰ ἑαυτοῦ· δίδωσιν δὲ πλουσίῳ ἐπʼ ἐλάσσονι."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "17",
+      "source_reference": "22:17",
+      "surface": "Λόγοις σοφῶν παράβαλλε σὸν οὖς καὶ ἄκουε ἐμὸν λόγον, § C §τὴν δὲ σὴν καρδίαν ἐπίστησον, ἵνα γνῷς ὅτι καλοί εἰσιν."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "18",
+      "source_reference": "22:18",
+      "surface": "καὶ ἐὰν ἐμβάλῃς αὐτοὺς εἰς τὴν καρδίαν σου, εὐφρανοῦσίν σε ἅμα ἐπὶ σοῖς χείλεσιν·"
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "19",
+      "source_reference": "22:19",
+      "surface": "ἵνα σου γένηται ἐπὶ Κύριον ἡ ἐλπίς, καὶ γνωρίσῃ σοι τὴν ὁδόν σου."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "20",
+      "source_reference": "22:20",
+      "surface": "καὶ σὺ δὲ ἀπόγραψαι αὐτὰ σεαυτῷ τρισσῶς εἰς βουλὴν καὶ γνῶσιν ἐπὶ τὸ πλάτος τῆς ψυχῆς σου."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "21",
+      "source_reference": "22:21",
+      "surface": "διδάσκω οὖν σε ἀληθῆ λόγον καὶ γνῶσιν ἀγαθὴν ὑπακούειν, τοῦ ἀποκρίνεσθαι λόγους ἀληθείας τοῖς προβαλλομένοις σοι."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "22",
+      "source_reference": "22:22",
+      "surface": "μὴ ἀποβιάζου πένητα, πτωχὸς γάρ ἐστιν, καὶ μὴ ἀτιμάσῃς ἀσθενῆ ἐν πύλαις."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "23",
+      "source_reference": "22:23",
+      "surface": "ὁ γὰρ Κύριος κρινεῖ αὐτοῦ τὴν κρίσιν, καὶ ῥύσῃ σὴν ἄσυλον ψυχήν."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "24",
+      "source_reference": "22:24",
+      "surface": "μὴ ἴσθι ἑταῖρος ἀνδρὶ θυμώδει, φίλῳ δὲ ὀργίλῳ μὴ συναυλίζου,"
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "25",
+      "source_reference": "22:25",
+      "surface": "μή ποτε μάθῃς τῶν ὁδῶν αὐτοῦ καὶ λάβῃς βρόχους τῇ σῇ"
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "26",
+      "source_reference": "22:26",
+      "surface": "μὴ δίδου σεαυτὸν εἰς ἐγγύην, αἰσχυνόμενος πρόσωπον· ἐὰν γὰρ μὴ ἔχῃ πόθεν ἀποτίσῃ, λήμψονται τὸ στρῶμα τὸ ὑπὸ τὰς πλευράς σου."
+    },
+    {
+      "source_chapter": "22",
+      "source_verse": "28",
+      "source_reference": "22:28",
+      "surface": "μὴ μέταιρε ὅρια αἰώνια ἃ ἔθεντο οἱ πατέρες σου. ὁρατικὸν ἄνδρα καὶ ὀξὺν ἐν τοῖς ἔργοις αὐτοῦ βασιλεῦσι δεῖ παρεστάναι, καὶ μὴ παρεστάναι ἀνδράσι νωθροῖς."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "1",
+      "source_reference": "23:1",
+      "surface": "ἐὰν καθίσῃς δειπνεῖν ἐπὶ τραπέζης δυναστῶν, νοητῶς νόει τὰ παρατιθέμενά σοι,"
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "2",
+      "source_reference": "23:2",
+      "surface": "καὶ ἐπίβαλλε τὴν χεῖρά σου, εἰδὼς ὅτι τοιαῦτά σε δεῖ παρασκευάσαι."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "3",
+      "source_reference": "23:3",
+      "surface": "εἰ δὲ ἀπληστότερος εἶ, ³μὴ ἐπιθύμει τῶν ἐδεσμάτων αὐτοῦ· ταῦτα γὰρ ἔχεται ζωῆς ψευδοῦς."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "4",
+      "source_reference": "23:4",
+      "surface": "μὴ παρεκτείνου πένης ὢν πλουσίῳ, τῇ δὲ σῇ ἐννοίᾳ ἀπόσχου."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "5",
+      "source_reference": "23:5",
+      "surface": "ἐὰν ἐπιστήσῃς τὸ σὸν ὄμμα πρὸς αὐτόν, οὐδαμοῦ πεσεῖται· κατεσκεύασται γὰρ αὐτῷ πτέρυγες ὥσπερ ἀετοῦ, καὶ ὑποστρέφει εἰς τὸν οἶκον τοῦ προεστηκότος αὐτοῦ."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "6",
+      "source_reference": "23:6",
+      "surface": "μὴ συνδείπνει ἀνδρὶ βασκάνῳ, μηδὲ ἐπιθύμει τῶν βρωμάτων αὐτοῦ·"
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "7",
+      "source_reference": "23:7",
+      "surface": "ὃν τρόπον γὰρ εἴ τις καταπίοι τρίχα, οὕτως ἐσθίει καὶ πίνει. μηδὲ πρὸς σὲ εἰσαγάγῃς αὐτὸν καὶ φάγῃς τὸν ψωμόν σου μετʼ αὐτοῦ·"
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "8",
+      "source_reference": "23:8",
+      "surface": "ἐξεμέσει γὰρ αὐτὸν καὶ λυμανεῖται τοὺς λόγους σου τοὺς καλούς."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "9",
+      "source_reference": "23:9",
+      "surface": "εἰς ὦτα ἄφρονος μηδὲν λέγε, μή ποτε μυκτηρίσῃ τοὺς συνετοὺς λόγους σου."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "10",
+      "source_reference": "23:10",
+      "surface": "μὴ μεταθῇς ὅρια αἰώνια, εἰς δὲ κτῆμα ὀρφανῶν μὴ εἰσέλθῃς·"
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "11",
+      "source_reference": "23:11",
+      "surface": "ὁ γὰρ λυτρούμενος αὐτοὺς Κύριος· κραταιός ἐστιν, καὶ κρινεῖ τὴν κρίσιν αὐτῶν μετὰ σοῦ."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "12",
+      "source_reference": "23:12",
+      "surface": "δὸς εἰς παιδείαν τὴν καρδίαν σου, τὸ δὲ ὦτά σου ἑτοίμασον λόγοις αἰσθήσεως."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "13",
+      "source_reference": "23:13",
+      "surface": "μὴ ἀπόσχῃ νήπιον παιδεύειν, ὅτι ἐὰν πατάξῃς αὐτὸν ῥάβδῳ, οὐ μὴ ἀποθάνῃ·"
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "14",
+      "source_reference": "23:14",
+      "surface": "σὺ μὲν γὰρ πατάξεις αὐτὸν ῥάβδῳ, τὴν δὲ ψυχὴν αὐτοῦ ἐκ θανάτου ῥύσῃ."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "15",
+      "source_reference": "23:15",
+      "surface": "υἱέ, ἐὰν σοφὴ γένηταί σου ἡ καρδία, εὐφρανεῖς καὶ τὴν ἐμὴν καρδίαν,"
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "16",
+      "source_reference": "23:16",
+      "surface": "καὶ ἐνδιατρίψει λόγοις τὰ σὰ χείλη πρὸς τὰ ἐμὰ χείλη, ἐὰν ὀρθὰ ὦσιν."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "17",
+      "source_reference": "23:17",
+      "surface": "μὴ ζηλούτω ἡ καρδία σου ἁμαρτωλούς, ἀλλὰ ἐν φόβῳ Κυρίου ἴσθι ὅλην τὴν ἡμέραν."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "18",
+      "source_reference": "23:18",
+      "surface": "ἐὰν γὰρ τηρήσῃς αὐτά, ἔσται σοι ἔκγονα, ἡ δὲ ἐλπίς σου οὐκ ἀποστήσεται."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "19",
+      "source_reference": "23:19",
+      "surface": "ἄκουε, υἱέ, καὶ σοφὸς γενοῦ, καὶ κατεύθυνε ἐννοίας σῆς καρδίας."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "20",
+      "source_reference": "23:20",
+      "surface": "μὴ ἴσθι οἰνοπότης, μηδὲ ἐκτείνου συμβολαῖς, κρεῶν ἀγορασμοῖς·"
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "21",
+      "source_reference": "23:21",
+      "surface": "πᾶς γὰρ μέθυσος καὶ πορνοκόπος πτωχεύσει, καὶ ἐνδύσεται διερρηγμένα καὶ ῥακώδη πᾶς ὑπνώδης."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "22",
+      "source_reference": "23:22",
+      "surface": "ἄκουε, υἱέ, πατρὸς τοῦ γεννήσαντός σε, καὶ μὴ καταφρόνει ὅτι γεγήρακέν σου ἡ μήτηρ."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "24",
+      "source_reference": "23:24",
+      "surface": "καλῶς ἐκτρέφει πατὴρ δίκαιος, ἐπὶ δὲ υἱῷ σοφῷ εὐφραίνεται ἡ ψυχὴ αὐτοῦ."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "25",
+      "source_reference": "23:25",
+      "surface": "εὐφραινέσθω ὁ πατὴρ καὶ ἡ μήτηρ ἐπὶ σοί, καὶ χαιρέτω ἡ τεκοῦσά σε.¶"
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "26",
+      "source_reference": "23:26",
+      "surface": "δός μοι, υἱέ, σὴν καρδίαν· οἱ δὲ σοὶ ὀφθαλμοὶ ἐμὰς ὁδοὺς τηρείτωσαν."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "27",
+      "source_reference": "23:27",
+      "surface": "πίθος γὰρ τετρημένος ἐστὶν ἀλλότριος οἶκος καὶ φρέαρ στενὸν ἀλλότριον."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "28",
+      "source_reference": "23:28",
+      "surface": "οὗτος γὰρ συντόμως ἀπολεῖται, καὶ πᾶς παράνομος ἀναλωθήσεται."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "29",
+      "source_reference": "23:29",
+      "surface": "τίνι οὐαί; τίνι θόρυβος ; τίνι κρίσις; τίνι δὲ ἀηδία καὶ λέσχαι ; τίνι συντρίμματα διὰ κενῆς; τίνος πελιοὶ ὀφθαλμοί;"
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "30",
+      "source_reference": "23:30",
+      "surface": "οὐ τῶν ἐνχρονιζόντων ἐο οἴνοις; οὐ τῶν ἰχνευόντων ποῦ πότοι γίνονται;"
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "31",
+      "source_reference": "23:31",
+      "surface": "μὴ μεθύσκεσθε ἐν οἴνοις, ἀλλὰ ὁμιλεῖτε ἀνθρώποις δικαίοις, καὶ ὁμιλεῖτε ἐν περιπάτοις· ἐὰν γὰρ εἰς τὰς φιάλας καὶ τὰ ποτήρια δῷς τοὺς ὀφθαλμούς ὕστερον περιπατήσεις γυμνότερος ὑπέρου·"
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "32",
+      "source_reference": "23:32",
+      "surface": "τὸ δὲ ἔσχατον ὥσπερ ὑπὸ ὄφεως πεπληγὼς ἐκτείνεται, καὶ ὥσπερ ὑπὸ κεράστου διαχεῖται αὐτῷ ὁ ἰός."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "33",
+      "source_reference": "23:33",
+      "surface": "οἱ ὀφθαλμοί σου ὅταν ἴδωσιν ἀλλοτρίαν, τὸ στόμα σου τότε λαλήσει σκολιά,"
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "34",
+      "source_reference": "23:34",
+      "surface": "καὶ κατακείσῃ ὥσπερ ἐν καρδίᾳ θαλάσσης, καὶ ὥσπερ κυβερνήτης ἐν πολλῷ κλύδωνι."
+    },
+    {
+      "source_chapter": "23",
+      "source_verse": "35",
+      "source_reference": "23:35",
+      "surface": "ἐρεῖς δέ Τύπτουσίν με καὶ οὐκ ἐπόνεσα, καὶ ἐνέπαιξάν μοι, ἐγὼ δὲ οὐκ ᾔδειν· πότε ὄρθρος ἔσται, ἵνα ἐλθὼν ζητήσω μεθʼ ὧν συνελεύσομαι;"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "1",
+      "source_reference": "24:1",
+      "surface": "υἱέ, μὴ ζηλώσῃς κακοὺς ἄνδρας, μηδὲ ἐπιθυμήσῃς εἶναι μετ᾿ αὐτῶν·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "2",
+      "source_reference": "24:2",
+      "surface": "ψευδῆ γὰρ μελετᾷ ἡ καρδία αὐτῶν, καὶ πόνους τὰ χείλη αὐτῶν λαλεῖ."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "3",
+      "source_reference": "24:3",
+      "surface": "μετὰ σοφίας οἰκοδομεῖται οἶκος, καὶ μετὰ συνέσεως ἀνορθοῦται·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "4",
+      "source_reference": "24:4",
+      "surface": "μετὰ αἰσθήσεως ἐμπίμπλανται ταμεῖα ἐκ παντὸς πλούτου τιμίου καὶ καλοῦ."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "5",
+      "source_reference": "24:5",
+      "surface": "κρείσσων σοφὸς ἰσχυροῦ, καὶ ἀνὴρ φρόνησιν ἔχων γεωργίου μεγάλου."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "6",
+      "source_reference": "24:6",
+      "surface": "μετὰ κυβερνήσεως γίνεται πόλεμος, βοήθεια δὲ μετὰ καρδίας βουλευτικῆς."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "7",
+      "source_reference": "24:7",
+      "surface": "σοφία καὶ ἔννοια ἀγαθὴ ἐν πύλαις σοφῶν· σοφοὶ οὐκ ἐκκλίνουσιν ἐκ στόματος Κυρίου,"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "8",
+      "source_reference": "24:8",
+      "surface": "ἀλλὰ λογίζονται ἐν συνεδρίοις. ἀπαιδεύτοις συναντᾷ θάνατος,"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "9",
+      "source_reference": "24:9",
+      "surface": "ἀποθνήσκει δὲ ἄφρων ἐν ἁμαρτίαις. ἀκαθαρσία δὲ ἀνδρὶ λοιμῷ ἐμμολυνθήσεται"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "10",
+      "source_reference": "24:10",
+      "surface": "ἐν ἡμέρᾳ κακῇ καὶ ἐν ἡμέρᾳ θλίψεως ἕως ἂν ἐκλίπῃ."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "11",
+      "source_reference": "24:11",
+      "surface": "ῥῦσαι ἀγομένους εἰς θάνατον καὶ ἐκπρίου κτεινομένους, μὴ φείσῃ."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "12",
+      "source_reference": "24:12",
+      "surface": "ἐὰν δὲ εἴπῃς Οὐκ οἶδα τοῦτον, γίνωσκε ὅτι Κύριος καρδίας πάντων γινώσκει· καὶ ὁ πλάσας πνοὴν πᾶσιν αὐτὸς οἶδεν πάντα, ὃς ἀποδίδωσιν ἑκάστῳ κατὰ τὰ ἔργα αὐτοῦ."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "13",
+      "source_reference": "24:13",
+      "surface": "φάγε μέλι, υἱέ, ἀγαθὸν γὰρ κηρίον, ἵνα γλυκανθῇ σου ὁ φάρυγξ."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "14",
+      "source_reference": "24:14",
+      "surface": "οὕτως αἰσθηθήσῃ σοφίαν τῇ σῇ ψυχῇ· ἐὰν γὰρ εὕρῃς, ἔσται καλὴ ἡ τελευτή σου καὶ ἐλπίς σε οὐκ ἐγκαταλείψει."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "15",
+      "source_reference": "24:15",
+      "surface": "μὴ προσαγάγῃς ἀσεβῆ νομῇ δικαίων, μηδὲ ἀπατηθῇς χορτασίᾳ κοιλίας."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "16",
+      "source_reference": "24:16",
+      "surface": "ἑπτάκι γὰρ πεσεῖται δίκαιος καὶ ἀναστήσεται, οἱ δὲ ἀσεβεῖς ἀσθενήσουσιν ἐν κακοῖς."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "17",
+      "source_reference": "24:17",
+      "surface": "ἐὰν πέσῃ ὁ ἐχθρός σου, μὴ ἐπιχαρῇς αὐτῷ, ἐν δὲ τῷ ὑποσκελίσματι αὐτοῦ μὴ ἐπαίρου·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "18",
+      "source_reference": "24:18",
+      "surface": "ὅτι ὄψεται Κύριος καὶ οὐκ ἀρέσει αὐτῷ, καὶ ἀποστρέψει τὸν θυμὸν αὐτοῦ ἀπʼ αὐτοῦ."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "19",
+      "source_reference": "24:19",
+      "surface": "μὴ χαῖρε ἐπὶ κακοποιοῖς, μηδὲ ζήλου ἁμαρτωλούς·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "20",
+      "source_reference": "24:20",
+      "surface": "οὐ γὰρ μὴ γένηται ἔκγονα πονηρῷ, λαμπτὴρ δὲ ἀσεβῶν σβεσθήσεται."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "21",
+      "source_reference": "24:21",
+      "surface": "φοβοῦ τὸν θεόν, υἱέ, καὶ βασιλέα, καὶ μηθετέρῳ αὐτῶν ἀπειθήσῃς·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "22",
+      "source_reference": "24:22",
+      "surface": "ἐξαίφνης γὰρ τίσονται τοὺς ἀσεβεῖς, τὰς δὲ τιμωρίας ἀμφοτέρων τίς γνώσεται;"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "22a",
+      "source_reference": "24:22a",
+      "surface": "aλόγον φυλασσόμενος υἱὸς ἀπωλείας ἐκτὸς ἔσται, δεχόμενος δὲ ἐδέξατο αὐτόν."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "22b",
+      "source_reference": "24:22b",
+      "surface": "bμηδὲν ψεῦδος ἀπὸ γλώσσης βασιλεῖ λεγέσθω, καὶ οὐδὲν ψεῦδος αὐτοῦ ἀπὸ γλώσσης μὴ ἐξέλθῃ."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "22c",
+      "source_reference": "24:22c",
+      "surface": "cμάχαιρα γλῶσσα βασιλέως καὶ οὐ σαρκίνη· ὃς δʼ ἂν παραδοθῇ, συντριβήσεται."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "22d",
+      "source_reference": "24:22d",
+      "surface": "dἐὰν γὰρ ὀξυνθῇ ὁ θυμὸς αὐτοῦ, σὺν νεύροις ἀνθρώπους ἀναλίσκει,"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "22e",
+      "source_reference": "24:22e",
+      "surface": "eκαὶ ὀστᾶ ἀνθρώπων κατατρώγει, καὶ συνκαίει ὥσπερ φλόξ, §ὥστε ἄβρωτα εἶναι νεοσσοῖς ἀετῶν."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "24",
+      "source_reference": "24:24",
+      "surface": "Τοὺς ἐμοὺς λόγους, υἱέ, φοβήθητι. καὶ δεξάμενος αὐτοὺς μετανόει. τάδε λέγει ὁ ἀνὴρ τοῖς πιστεύουσιν θεῷ, καὶ παύομαι."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "25",
+      "source_reference": "24:25",
+      "surface": "ἀφρονέστατος γάρ εἰμι πάντων ἀνθρώπων, καὶ φρόνησις ἀνθρώπων οὐκ ἔστιν ἐν ἐμοί."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "26",
+      "source_reference": "24:26",
+      "surface": "θεὸς δεδίδαχέν με σοφίαν, καὶ γνῶσιν ἁγίων ἔγνωκα."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "27",
+      "source_reference": "24:27",
+      "surface": "τίς ἀνέβη εἰς τὸν οὐρανὸν καὶ κατέβη; τίς συνήγαγεν ἀνέμους ἐν κόλπῳ ; τίς συνέστρεψεν ὕδωρ ἐν ἱματίῳ ; τίς ἐκράτησεν τῶν ἄκρων τῆς γῆς, τί ὄνομα αὐτῷ; ἢ τί ὄνομα τοῖς τέκνοις αὐτοῦ;"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "28",
+      "source_reference": "24:28",
+      "surface": "πάντες γὰρ λόγοι θεοῦ πεπυρωμένοι, ὑπερασπίζει δὲ αὐτὸς τῶν εὐλαβουμένων αὐτόν."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "29",
+      "source_reference": "24:29",
+      "surface": "μὴ προσθῇς τοῖς λόγοις αὐτοῦ, ἵνα μὴ ἐλέγξῃ σε καὶ ψευδὴς γένῃ."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "30",
+      "source_reference": "24:30",
+      "surface": "δύο αἰτοῦμαι παρὰ σοῦ, μὴ ἀφέλῃς μου χάριν πρὸ τοῦ ἀποθανεῖν με·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "31",
+      "source_reference": "24:31",
+      "surface": "μάταιον λόγον καὶ ψευδῆ μακράν μου ποίησον, πλοῦτον δὲ καὶ πενίαν μή μοι δῷς, σύνταξον δέ μοι τὰ δέοντα καὶ τὰ αὐτάρκη·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "32",
+      "source_reference": "24:32",
+      "surface": "ἵνα μὴ πλησθεὶς ψευδὴς γένωμαι καὶ εἴπω Τίς με ὁρᾶ ἢ πενηθεὶς κλέψω καὶ ὀμόσω τὸ ὄνομα τοῦ θεοῦ."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "33",
+      "source_reference": "24:33",
+      "surface": "μὴ παραδῷς οἰκέτην εἰς χεῖρας δεσπότου, μή ποτε καταράσηταί σε καὶ ἀφανισθῇς."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "34",
+      "source_reference": "24:34",
+      "surface": "ἔκγονον κακὸν πατέρα καταρᾶται, τὴν δὲ μητέρα οὐκ εὐλογεῖ."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "35",
+      "source_reference": "24:35",
+      "surface": "ἔκγονον κακὸν δίκαιον ἑαυτὸν κρίνει, τὴν δὲ ἔξοδον αὐτοῦ οὐκ ἀπένιψεν."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "36",
+      "source_reference": "24:36",
+      "surface": "ἔκγονον κακὸν ὑψηλοὺς ὀφθαλμοὺς ἔχει, τοῖς δὲ βλεφάροις αὐτοῦ ἐπαίρεται."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "37",
+      "source_reference": "24:37",
+      "surface": "ἔκγονον κακὸν μαχαίρας τοὺς ὀδόντας ἔχει καὶ τὰς μύλας τομίδας, ὥστε ἀναλίσκειν καὶ κατεσθίειν τοὺς ταπεινοὺς ἀπὸ τῆς γῆς καὶ τοὺς πένητας αὐτῶν ἐξ ἀνθρώπων."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "38",
+      "source_reference": "24:38",
+      "surface": "Ταῦτα δὲ λέγω ὑμῖν τοῖς σοφοῖς ἐπιγινώσκειν· αἰδεῖσθαι πρόσωπον ἐν κρίσει οὐ καλόν."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "39",
+      "source_reference": "24:39",
+      "surface": "ὁ εἰπὼν τὸν ἀσεβῆ Δίκαιός ἐστιν, ἐπικατάρατος λαοῖς ἔσται καὶ μισητὸς εἰς ἔθνη·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "40",
+      "source_reference": "24:40",
+      "surface": "οἱ δὲ ἐλέγχοντες βελτίους φανοῦνται, ἐπʼ αὐτοὺς δὲ ἥξει εὐλογία."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "41",
+      "source_reference": "24:41",
+      "surface": "χείλη δὲ φιλήσουσιν ἀποκρινόμενα λόγους ἀγαθούς."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "42",
+      "source_reference": "24:42",
+      "surface": "ἑτοίμαζε εἰς τὴν ἔξοδον τὰ ἔργα σου, καὶ παρασκευάζου εἰς τὸν ἀγρόν, καὶ πορεύου κατόπισθέν μου καὶ ἀνοικοδομήσεις τὸν οἶκόν σου."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "43",
+      "source_reference": "24:43",
+      "surface": "μὴ ἵσθι ψευδὴς μάρτυς ἐπὶ σὸν πολίτην, μηδὲ πλατύνου σοῖς χείλεσιν."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "44",
+      "source_reference": "24:44",
+      "surface": "μὴ εἴπῃς Ὃν τρόπον ἐχρήσατό μοι χρήσομαι αὐτῷ, τίσομαι δὲ αὐτὸν ἅ με ἠδίκησεν."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "45",
+      "source_reference": "24:45",
+      "surface": "ὥσπερ γεώργιον ἀνὴ καὶ ὥσπερ ἀμπελὼν ἄνθρωπος ἐνδεὴς φρενῶν·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "46",
+      "source_reference": "24:46",
+      "surface": "ἐὰν ἀφῇς αὐτόν, χερσωθήσεται καὶ χορτομανήσει ὅλος, καὶ γίνεται ἐκλελιμμένος, οἱ δὲ φραγμοὶ τῶν λίθων αὐτοῦ κατασκάπτονται."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "47",
+      "source_reference": "24:47",
+      "surface": "ὕστερον ἐγὼ μετενόησα, ἀπέβλεψα τοῦ ἐκλέξασθαι παιδείαν."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "48",
+      "source_reference": "24:48",
+      "surface": "ὀλίγον νυστάζω, ὀλίγον δὲ καθυπνῶ, ὀλίγον δὲ ἐναγκαλίζομαι χερσὶν στήθη·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "49",
+      "source_reference": "24:49",
+      "surface": "ἐὰν δὲ τοῦτο ποιῇς, ἥξει προπορευομένη ἡ πενία σου, καὶ ἡ ἔνδειά σου ὥσπερ ἀγαθὸς δρομεύς."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "50",
+      "source_reference": "24:50",
+      "surface": "Τῇ βδέλλῃ τρεῖς θυγατέρες ἦσαν ἀγαπήσει ἀγαπώμεναι. καὶ αἱ τρεῖς αὗται οὐκ ἐνεπίμπλασαν αὐτήν. καὶ ἡ τετάρτη οὐκ ἠρκέσθη εἰπεῖν Ἱκανόν·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "51",
+      "source_reference": "24:51",
+      "surface": "ᾅδης καὶ ἔρως γυναικὸς καὶ τάρταρος καὶ γῆ οὐκ ἐμπιπλαμένη ὕδατος καὶ ὕδωρ καὶ πῦρ οὐ μὴ εἴπωσιν Ἀρκεῖ."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "52",
+      "source_reference": "24:52",
+      "surface": "ὀφθαλμὸν καταγελῶντα πατρὸς καὶ ἀτιμάζοντα γῆρας μητρός, ἐκκόψαισαν αὐτὸν κόρακες ἐκ τῶν φαράγγων, καὶ καταφάγοισαν αὐτὸν νεοσσοὶ ἀετῶν."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "53",
+      "source_reference": "24:53",
+      "surface": "τρία δέ ἐστιν ἀδύνατά μοι νοῆσαι, καὶ τὸ τέταρτον οὐκ ἐπιγινώσκω·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "54",
+      "source_reference": "24:54",
+      "surface": "ἴχνη ἀετοῦ πετομένου, καὶ ὁδοὺς ὄφεως ἐπὶ πέτρας, καὶ τρίβους νηὸς ποντοπορούσης, καὶ ὁδοὺς ἀνδρὸς ἐν νεότητι."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "55",
+      "source_reference": "24:55",
+      "surface": "τοιαύτη ὁδὸς γυναικὸς μοιχαλίδος, ἢ ὅταν πράξῃ, ἀπονιψαμένη οὐδέν φησιν πεπραχέναι ἄτοπον."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "56",
+      "source_reference": "24:56",
+      "surface": "διὰ τριῶν σείεται ἡ γῆ,¶ τὸ δὲ τέταρτον οὐ δύναται φέρειν·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "57",
+      "source_reference": "24:57",
+      "surface": "ἐὰν οἰκέτης βασιλεύσῃ, καὶ ἄφρων πλησθῇ σιτίων,"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "58",
+      "source_reference": "24:58",
+      "surface": "καὶ οἰκέτις ἐὰν ἐκβάλῃ τὴν ἑαυτῆς κυρίαν, καὶ μισητὴ γυνὴ ἐὰν τύχῃ ἀνδρὸς ἀγαθοῦ."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "59",
+      "source_reference": "24:59",
+      "surface": "τέσσαρα δὲ ἐλάχιστα ἐπὶ τῆς γῆς, ταῦτα δέ ἐστιν σοφώτερα τῶν σοφῶν·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "60",
+      "source_reference": "24:60",
+      "surface": "οἱ μύρμηκες οἷς μὴ ἔστιν ἰσχύς, καὶ ἑτοιμάζονται θέρους τὴν τροφήν·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "61",
+      "source_reference": "24:61",
+      "surface": "καὶ οἱ χοιρογρύλλιοι, ἔθνος οὐκ ἰσχυρόν, οἳ ἐποιήσαντο ἐν πέτραις τοὺς ἑαυτῶν οἴκους·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "62",
+      "source_reference": "24:62",
+      "surface": "ἀβασίλευτόν ἐστιν ἡ ἀκρίς, καὶ στρατεύει ἀφʼ ἑνὸς κελεύσματος εὐτάκτως·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "63",
+      "source_reference": "24:63",
+      "surface": "καὶ καλαβώτης χερσὶν ἐρειδόμενος καὶ εὐάλωτος ὤν, κατοικεῖ ἐν ὀχυρώμασιν βασιλέων."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "64",
+      "source_reference": "24:64",
+      "surface": "τρία δέ ἐστιν ἃ εὐόδως πορεύεται, καὶ τέταρτον ὃ καλῶς διαβαίνει·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "65",
+      "source_reference": "24:65",
+      "surface": "σκύμνος λέοντος ἰσχυρότερος κτηνῶν, ὃς οὐκ ἀποστρέφεται οὐδὲ καταπτήσσει κτῆνος,"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "66",
+      "source_reference": "24:66",
+      "surface": "καὶ ἀλέκτωρ ἐνπεριπατῶν θηλείαις εὔψυχος, καὶ τράγος ἡγούμενος αἰπολίου, καὶ βασιλεὺς δημηγορῶν ἐν ἔθνει."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "67",
+      "source_reference": "24:67",
+      "surface": "ἐὰν πρόῃ σεαυτὸν ἐν εὐφροσύνῃ, καὶ ἐκτείνῃς τὴν χεῖρά σου μετὰ μάχης, ἀτιμασθήσῃ."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "68",
+      "source_reference": "24:68",
+      "surface": "ἄμελγε γάλα, καὶ ἔσται βούτυρον· ἐὰν δὲ ἐκπιέζῃς μυκτῆρας, ἐξελεύσεται αἷμα· ἐὰν δὲ ἐξέλκῃς λόγους, ἐξελεύσονται κρίσεις καὶ μάχαι."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "69",
+      "source_reference": "24:69",
+      "surface": "Οἱ ἐμοὶ λόγοι εἴρηνται ὑπὸ θεοῦβασιλέως χρηματισμὸς ὃν ἐπαίδευσεν ἡ μήτηρ αὐτοῦ."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "70",
+      "source_reference": "24:70",
+      "surface": "τί, τέκνον, τηρήσεις ; τί; ῥήσεις θεοῦ· πρωτογενές, σοὶ λέγω, υἱέ· τί, τέκνον ἐμῆς κοιλίας; τί, τέκνον ἐμῶν εὐχῶν;"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "71",
+      "source_reference": "24:71",
+      "surface": "μὴ δῷς γυναιξὶ σὸν πλοῦτον, καὶ τὸν σὸν νοῦν καὶ βίον εἰς ὑστεροβουλίαν."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "72",
+      "source_reference": "24:72",
+      "surface": "μετὰ βουλῆς πάντα ποίει, μετὰ βουλῆς οἰνοπότει. οἱ δυνάσται θυμώδεις εἰσίν, οἶνον δὲ μὴ πινέτωσαν·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "73",
+      "source_reference": "24:73",
+      "surface": "ἵνα μὴ πιόντες ἐπιλάθωνται τῆς σοφίας, καὶ ὀρθὰ κρῖναι οὐ μὴ δύνωνται τοὺς ἀσθενεῖς."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "74",
+      "source_reference": "24:74",
+      "surface": "δίδοτε μέθην τοῖς ἐν λύπαις, καὶ οἶνον πίνειν τοῖς ἐν ὀδύναις,"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "75",
+      "source_reference": "24:75",
+      "surface": "ἵνα ἐπιλάθωνται τῆς πενίας, καὶ τῶν πόνων μὴ μνησθῶσιν ἔτι."
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "76",
+      "source_reference": "24:76",
+      "surface": "ἄνοιγε σὸν στόμα λόγῳ θεοῦ, καὶ κρῖνε πάντας ὑγιῶς·"
+    },
+    {
+      "source_chapter": "24",
+      "source_verse": "77",
+      "source_reference": "24:77",
+      "surface": "ἄνοιγε σὸν στόμα καὶ κρῖνε δικαίως, διάκρινε δὲ πένητα καὶ ἀσθενῆ."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "1",
+      "source_reference": "25:1",
+      "surface": "Aὗται αἱ παιδεῖαι Σαλωμῶντος αἱ ἀδιάκριτοι, ἃς ἐξεγράψαντο οἱ φίλοι Ἑζεκίου τοῦ βασιλέως τῆς Ἰουδαίας."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "2",
+      "source_reference": "25:2",
+      "surface": "Δόξα θεοῦ κρύπτει λόγον, δόξα δὲ βασιλέως τιμᾷ πράγματα."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "3",
+      "source_reference": "25:3",
+      "surface": "οὐρανὸς ὑψηλός, γῆ δὲ βαθεῖα, καρδία δὲ βασιλέως ἀνεξέλεγκτος."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "4",
+      "source_reference": "25:4",
+      "surface": "τύπτε ἀδόκιμον ἀργύριον, καὶ καθαρισθήσεται καθαρὸν ἅπαν·"
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "5",
+      "source_reference": "25:5",
+      "surface": "κτεῖνε ἀσεβεῖς ἐκ προσώπου βασιλέως, καὶ κατορθώσει ἐν δικαιοσύνῃ ὁ θρόνος αὐτοῦ."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "6",
+      "source_reference": "25:6",
+      "surface": "μὴ ἀλαζονεύου ἐνώπιον βασιλέως, μηδὲ ἐν τόποις δυναστῶν ὑφίστασο·"
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "7",
+      "source_reference": "25:7",
+      "surface": "κρεῖσσον γάρ σοι τὸ ῥηθῆναι Ἀνάβαινε πρὸς μέ, ἢ ταπεινῶσαί σε ἐν προσώπῳ δυνάστου. ἃ εἶδον οἱ ὀφθαλμοί σου λέγε."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "8",
+      "source_reference": "25:8",
+      "surface": "μὴ πρόσπιπτε εἰς μάχην ταχέως, ἵνα μὴ μεταμεληθῇς ἐπʼ ἐσχάτῳ, ἡνίκα ἄν σε ὀνειδίσῃ ὁ σὸς φίλος."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "9",
+      "source_reference": "25:9",
+      "surface": "ἀναχώρει εἰς τὰ ὀπίσω, μὴ καταφρόνει,"
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "10",
+      "source_reference": "25:10",
+      "surface": "μή σε ὀνειδίσῃ μὲν ὁ φίλος· ἡ δὲ μάχη σου καὶ ἡ ἔχθρα οὐκ ἀπέσται, ἀλλ᾿ ἔσται σοι ἴση θανάτῳ."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "10a",
+      "source_reference": "25:10a",
+      "surface": "χάρις καὶ φιλία ἐλευθεροῖ, ἃς τήρησον σεαυτῷ, ἵνα μὴ ἐπονείδιστος γένῃ, ἀλλὰ φύλαξον τὰς ὁδούς σου εὐσυναλλάκτως."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "11",
+      "source_reference": "25:11",
+      "surface": "μῆλον χρυσοῦν ἐν ὁρμίσκῳ σαρδίου, οὕτως εἰπεῖν λόγον."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "12",
+      "source_reference": "25:12",
+      "surface": "εἰς ἐνώτιον χρυσοῦν καὶ σάρδιον πολυτελὲς δέδεται, λόγος σοφὸς εἰς εὐήκοον οὖς."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "13",
+      "source_reference": "25:13",
+      "surface": "ὥσπερ ἔξοδος ἐν ἀμήτῳ κατὰ καῦμα ὠφελεῖ, οὕτως ἄγγελος πιστὸς τοὺς ἀποστείλαντας αὐτόν· ψυχὰς γὰρ τῶν αὐτῷ χρωμένων ὠφελεῖ."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "14",
+      "source_reference": "25:14",
+      "surface": "ὥσπερ ἄνεμοι καὶ νέφη καὶ ὑετοὶ ἐπιφανέστατα, οὕτως ὁ καυχώμενος ἐπὶ δόσει ψευδεῖ"
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "15",
+      "source_reference": "25:15",
+      "surface": "ἐν μακροθυμίᾳ εὐοδία βασιλεῦσιν, γλῶσσα δὲ μαλακὴ συντρίβει ὀστᾶ."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "16",
+      "source_reference": "25:16",
+      "surface": "μέλι εὑρὼν φάγε τὸ ἱκανόν, μή ποτε πλησθεὶς ἐξεμέσῃς."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "17",
+      "source_reference": "25:17",
+      "surface": "σπάνιον εἴσαγε σὸν πόδα πρὸς σεαυτοῦ φίλον, μή ποτε πλησθείς σου μισήσῃ σε."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "18",
+      "source_reference": "25:18",
+      "surface": "ῥόπαλον καὶ μάχαιρα καὶ τόξευμα ἀκιδωτόν, οὕτως καὶ ἀνὴρ ὁ καταμαρτυρῶν τοῦ φίλου αὐτοῦ μαρτυρίαν ψευδῆ."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "19",
+      "source_reference": "25:19",
+      "surface": "ὁδὸς κακοῦ καὶ ποὺς παρανόμου ὀλεῖται ἐν ἡμέρᾳ κακῇ."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "20",
+      "source_reference": "25:20",
+      "surface": "ὥσπερ ὄξος ἕλκει ἀσύμφορον, οὕτως προσπεσὸν πάθος ἐν σώματι καρδίαν λυπεῖ."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "29a",
+      "source_reference": "25:29a",
+      "surface": "aὥσπερ σὴς ἐν ἱματίῳ καὶ σκώληξ ξύλῳ, οὕτως λύπη ἀνδρὸς βλάπτει καρδίαν."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "21",
+      "source_reference": "25:21",
+      "surface": "ἐὰν πεινᾷ ὁ ἐχθρός σου, ψώμιζε αὐτόν, ἐὰν διψᾷ, πότιζε αὐτόν·"
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "22",
+      "source_reference": "25:22",
+      "surface": "τοῦτο γὰρ ποιῶν ἄνθρακας πυρὸς σωρεύσεις ἐπὶ τὴν κεφαλὴν αὐτοῦ, ὁ δὲ Κύριος ἀνταποδώσει σοι ἀγαθά."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "23",
+      "source_reference": "25:23",
+      "surface": "ἄνεμος βορέας ἐξεγείρει νέφη, πρόσωπον δὲ ἀναιδὲς γλῶσσαν ἐρεθίζει."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "24",
+      "source_reference": "25:24",
+      "surface": "κρεῖττον οἰκεῖν ἐπὶ γωνίας δώματος ἢ μετὰ γυναικὸς λοιδόρου ἐν οἰκίᾳ κοινῇ."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "25",
+      "source_reference": "25:25",
+      "surface": "ὥσπερ ὕδωρ ψυχρὸν ψυχῇ διψώσῃ προσηνές. οὕτως ἀγγελία ἀγαθὴ ἐκ γῆς μακρόθεν."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "26",
+      "source_reference": "25:26",
+      "surface": "ὥσπερ εἴ τις πηγὴν φράσσοι καὶ ὕδατος ἔξοδον λυμαίνοιτο, οὕτως ἄκοσμον δίκαιον πεπτωκέναι ἐνώπιον ἀσεβοῦς."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "27",
+      "source_reference": "25:27",
+      "surface": "ἐσθίειν μέλι πολὺ οὐ καλόν, τιμᾷν δὲ χρὴ λόγους ἐνδόξους."
+    },
+    {
+      "source_chapter": "25",
+      "source_verse": "28",
+      "source_reference": "25:28",
+      "surface": "ὥσπερ πόλις τὰ τείχη καταβεβλημένη καὶ ἀτείχιστος, οὕτως ἀνὴρ ὃς οὐ μετὰ βουλῆς τι πράσσει."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "1",
+      "source_reference": "26:1",
+      "surface": "ὥσπερ δρόσος ἐν ἀμήτῳ καὶ ὥσπερ ὑετὸς ἐν θέρει, οὕτως οὐκ ἔστιν ἄφρονι τιμή."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "2",
+      "source_reference": "26:2",
+      "surface": "ὥσπερ ὄρνεα πέταται καὶ στρουθοί, οὕτως ἀρὰ ματαία οὐκ ἐπελεύσεται οὐδενί."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "3",
+      "source_reference": "26:3",
+      "surface": "ὥσπερ μάστιξ ἵππῳ καὶ κέντρον ὄνῳ, οὕτως ῥάβδος ἔθνει παρανόμῳ."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "4",
+      "source_reference": "26:4",
+      "surface": "μὴ ἀποκρίνου ἄφρονι πρὸς τὴν ἐκείνου ἀφροσύνην, ἵνα μὴ ὅμοιος γένῃ αὐτῷ·"
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "5",
+      "source_reference": "26:5",
+      "surface": "ἀλλὰ ἀποκρίνου ἄφρονι κατὰ τὴν ἀφροσύνην αὐτοῦ, ἵνα μὴ φαίνηται σοφὸς παρʼ ἑαυτῷ."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "6",
+      "source_reference": "26:6",
+      "surface": "ἐκ τῶν ἑαυτοῦ ὁδῶν ὄνειδος ποιεῖται ὁ ἀποστείλας δι᾿ ἀγγέλου ἄφρονος λόγον."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "7",
+      "source_reference": "26:7",
+      "surface": "ἀφελοῦ πορείαν σκελῶν καὶ παρανομίαν ἐκ στόματος ἀφρόνων."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "8",
+      "source_reference": "26:8",
+      "surface": "ὃς ἀποδεσμεύει λίθον ἐν σφενδόνῃ, ὅμοιός ἐστιν τῷ διδόντι ἄφρονι δόξαν."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "9",
+      "source_reference": "26:9",
+      "surface": "ἄκανθαι φύονται ἐν χειρὶ μεθύσου, δουλεία δὲ ἐν χειρὶ τῶν ἀφρόνων."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "10",
+      "source_reference": "26:10",
+      "surface": "πολλὰ χειμάζεται πᾶσα σὰρξ ἀφρόνων, συντρίβεται γὰρ ἡ ἔκστασις αὐτῶν."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "11",
+      "source_reference": "26:11",
+      "surface": "ὥσπερ κύων ὅταν ἐπέλθῃ ἐπὶ τὸν ἑαυτοῦ ἔμετον καὶ μισητὸς γένηται, οὕτως ἄφρων τῇ ἑαυτοῦ κακίᾳ ἀναστρέψας ἐπὶ τὴν ἑαυτοῦ ἁμαρτίαν."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "11a",
+      "source_reference": "26:11a",
+      "surface": "ἔστιν αἰσχύνη ἐπάγουσα ἁμαρτίαν, καὶ ἔστιν αἰσχύνη δόξα καὶ χάρις."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "12",
+      "source_reference": "26:12",
+      "surface": "εἶδον ἄνδρα δόξαντα παρʼ ἑαυτῷ σοφὸν εἶναι, ἐλπίδα μέντοι ἔσχεν μᾶλλον ἄφρων αὐτοῦ."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "13",
+      "source_reference": "26:13",
+      "surface": "λέγει ὀκνηρὸς ἀποστελλόμενος εἰς ὁδόν Λέων ἐν ταῖς ὁδοῖς."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "14",
+      "source_reference": "26:14",
+      "surface": "ὥσπερ θύρα στρέφεται ἐπὶ τοῦ στρόφιγγος, οὕτως ὀκνηρὸς ἐπὶ τῆς κλίνης αὐτοῦ."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "15",
+      "source_reference": "26:15",
+      "surface": "κρύψας ὀκνηρὸς τὴν χεῖρα ἐν τῷ κόλπῳ αὐτοῦ οὐ δυνήσεται ἐπενεγκεῖν ἐπὶ στόμα."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "16",
+      "source_reference": "26:16",
+      "surface": "σοφώτερος ἑαυτῷ ὀκνηρὸς φαίνεται τοῦ ἐν πλησμονῇ ἀποκομίζοντος ἀγγελίαν."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "17",
+      "source_reference": "26:17",
+      "surface": "ὥσπερ ὁ κρατῶν κέρκου κυνός, οὕτως ὁ προεστὼς ἀλλοτρίας κρίσεως."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "18",
+      "source_reference": "26:18",
+      "surface": "ὥσπερ οἱ ἰώμενοι προβάλλουσιν λόγους εἰς ἀνθρώπους, ὁ δὲ ἀπαντήσας τῷ λόγῳ πρῶτος ὑποσκελισθήσεται·"
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "19",
+      "source_reference": "26:19",
+      "surface": "οὕτως πάντες οἱ ἐνεδρεύοντες τοὺς ἑαυτῶν φίλους, ὅταν δὲ ὁραθῶσιν, λέγουσιν ὅτι Παίζων ἔπραξα."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "20",
+      "source_reference": "26:20",
+      "surface": "ἐν πολλοῖς ξύλοις θάλλει πῦρ, ὅπου δὲ οὐκ ἔστιν δίθυμος, ἡσυχάζει μάχη."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "21",
+      "source_reference": "26:21",
+      "surface": "ἐσχάρα ἄνθραξιν καὶ ξύλα πυρί, ἀνὴρ δὲ λοίδορος εἰς ταραχὴν μάχης."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "22",
+      "source_reference": "26:22",
+      "surface": "λόγοι κερκώπων μαλακοί, οὗτοι δὲ τύπτουσιν εἰς ταμεῖα σπλάγχνων."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "23",
+      "source_reference": "26:23",
+      "surface": "ἀργύριον διδόμενον μετὰ δόλου ὥσπερ ὄστρακον ἡγητέον· §χείλη λεῖα καρδίαν καλύπτει λυπηράν."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "24",
+      "source_reference": "26:24",
+      "surface": "χείλεσιν πάντα ἐπινεύει ἀποκλαιόμενος ἐχθρούς, ἐν δὲ τῇ καρδίᾳ τεκταίνεται λόγους."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "25",
+      "source_reference": "26:25",
+      "surface": "ἐάν σου δέηται ὁ ἐχθρὸς μεγάλῃ τῇ φωνῇ, μὴ πεισθῇς· ἑπτὰ γὰρ πονηρίαι ἐν τῇ ψυχῇ αὐτοῦ."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "26",
+      "source_reference": "26:26",
+      "surface": "ὁ κρύπτων ἔχθραν συνίστησιν δόλον, ἐνκαλύπτει δὲ τὰς ἑαυτοῦ ἁμαρτίας εὔγνωστος ἐν συνεδρίοις."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "27",
+      "source_reference": "26:27",
+      "surface": "ὁ ὀρύσσων βόθρον τῷ πλησίον ἐμπεσεῖται εἰς αὐτόν· ὁ δὲ κυλίων λίθον ἐφʼ ἑαυτὸν κυλίει."
+    },
+    {
+      "source_chapter": "26",
+      "source_verse": "28",
+      "source_reference": "26:28",
+      "surface": "γλῶσσα ψευδὴς μισεῖ ἀλήθειαν, στόμα δὲ ἄστεγον ποιεῖ ἀκαταστασίας."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "1",
+      "source_reference": "27:1",
+      "surface": "μὴ καυχῶ τὰ εἰς αὔριον, οὐ γὰρ γινώσκεις τί τέξεται ἡ ἐπιοῦσα."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "2",
+      "source_reference": "27:2",
+      "surface": "ἐγκωμιαζέτω σε ὁ πέλας καὶ μὴ τὸ σὸν στόμα, ἀλλότριος καὶ μὴ τὰ σὰ χείλη."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "3",
+      "source_reference": "27:3",
+      "surface": "βαρὺ λίθος καὶ δυσβάστακτον ἄμμος, ὀργὴ δὲ ἄφρονος βαρυτέρα ἀμφοτέρων."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "4",
+      "source_reference": "27:4",
+      "surface": "ἀνελεήμων θυμὸς καὶ ὀξεῖα ὀργή, ἀλλ᾿ οὐδένα ὑφίσταται ζῆλος."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "5",
+      "source_reference": "27:5",
+      "surface": "κρείσσους ἔλεγχοι ἀποκεκαλυμμένοι κρυπτομένης φιλίας."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "6",
+      "source_reference": "27:6",
+      "surface": "ἀξιοπιστότερά ἐστιν τραύματα φίλου ἢ ἑκούσια φιλήματα ἐχθροῦ."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "7",
+      "source_reference": "27:7",
+      "surface": "ψυχὴ ἐν πλησμονῇ οὖσα κηρίοις ἐμπαίζει, ψυχῇ δὲ ἐν ἐνδεεῖ καὶ τὰ πικρὰ γλυκέα φαίνεται."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "8",
+      "source_reference": "27:8",
+      "surface": "ὥσπερ ὅταν ὄρνεον καταπετασθῇ ἐκ τῆς ἰδίας νοσσιᾶς, οὕτως ἄνθρωπος δουλοῦται ὅταν ἀποξενωθῇ ἐκ τῶν ἰδίων τόπων."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "9",
+      "source_reference": "27:9",
+      "surface": "μύροις καὶ οἴνοις καὶ θυμιάμασιν τέρπεται καρδία, καταρήγνυται δὲ ὑπὸ συμπτωμάτων ψυχή."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "10",
+      "source_reference": "27:10",
+      "surface": "φίλον σὸν ἢ φίλον πατρῷον μὴ ἐγκαταλίπῃς, εἰς δὲ τὸν οἶκον τοῦ ἀδελφοῦ σου μὴ εἰσέλθῃς ἀτυχῶν· κρείσσων φίλος ἐγγὺς ἢ ἀδελφὸς μακρὰν οἰκῶν."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "11",
+      "source_reference": "27:11",
+      "surface": "Σοφὸς γίνου, υἱέ, ἵνα σου εὐφραίνηται ἡ καρδία, καὶ ἀπόστρεψον ἀπὸ σοῦ ἐπονειδίστους λόγους."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "12",
+      "source_reference": "27:12",
+      "surface": "πανοῦργος κακῶν ἐπερχομένων ἀπεκρύβη, ἄφρονες δὲ ἐπελθόντες ζημίαν τίσουσιν."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "13",
+      "source_reference": "27:13",
+      "surface": "ἀφελοῦ τὸ ἱμάτιον αὐτοῦ, παρῆλθεν γάρ· ὑβριστὴς ὅστις τὰ ἀλλότρια λυμαίνεται."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "14",
+      "source_reference": "27:14",
+      "surface": "ὃς ἂν εὐλογῇ φίλον τὸ πρωὶ μεγάλῃ τῇ φωνῇ, καταρωμένου οὐδὲν διαφέρειν δόξει."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "15",
+      "source_reference": "27:15",
+      "surface": "σταγόνες ἐκβάλλουσιν ἄνθρωπον ἐν ἡμέρᾳ χειμερινῇ ἐκ τοῦ οἴκου· ὡσαύτως καὶ γυνὴ λοίδορος ἐκ τοῦ ἰδίου οἴκου."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "16",
+      "source_reference": "27:16",
+      "surface": "βορέας σκληρὸς ἄνεμος, ὀνόματι δὲ ἐπιδέξιος καλεῖται."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "17",
+      "source_reference": "27:17",
+      "surface": "σίδηρος σίδηρον ὀξύνει, ἀνὴρ δὲ παροξύνει πρόσωπον ἑταίρου."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "18",
+      "source_reference": "27:18",
+      "surface": "ὃς φυτεύει συκῆν φάγεται τοὺς καρποὺς αὐτῆς, ὃς δὲ φυλάσσει τὸν ἑαυτοῦ κύριον τιμηθήσεται."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "19",
+      "source_reference": "27:19",
+      "surface": "ὥσπερ οὐχ ὅμοια πρόσωπα προσώποις, οὕτως οὐδὲ αἱ διάνοιαι τῶν ἀνθρώπων."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "20",
+      "source_reference": "27:20",
+      "surface": "ᾅδης καὶ ἀπώλεια οὐκ ἐμπίμπλανται, ὡσαύτως καὶ οἱ ὀφθαλμοὶ τῶν ἀνθρώπων ἄπληστοι."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "20a",
+      "source_reference": "27:20a",
+      "surface": "aβδέλυγμα Κυρίῳ στηρίζων ὀφθαλμόν. καὶ οἱ ἀπαίδευτοι ἀκρατεῖς γλώσσῃ."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "21",
+      "source_reference": "27:21",
+      "surface": "δοκίμιον ἀργύρῳ καὶ χρυσῷ πύρωσις, ἀνὴρ δὲ δοκιμάζεται διὰ στόματος ἐγκωμιαζόντων αὐτόν."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "21a",
+      "source_reference": "27:21a",
+      "surface": "aκαρδία ἀνόμου ἐκζητεῖ κακά, καρδία δὲ εὐθὴς ζητεῖ γνῶσιν."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "22",
+      "source_reference": "27:22",
+      "surface": "ἐὰν μαστιγοῖς ἄφρονα ἐν μέσῳ συνεδρίου ἀτιμάζων, οὐ μὴ περιέλῃς τὴν ἀφροσύνην αὐτοῦ."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "23",
+      "source_reference": "27:23",
+      "surface": "Γνωστῶς ἐπιγνώσῃ ψυχὰς ποιμνίου σου, καὶ ἐπιστήσεις καρδίαν σου σαῖς ἀγέλαις·"
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "24",
+      "source_reference": "27:24",
+      "surface": "ὅτι οὐ τὸν αἰῶνα ἀνδρὶ κράτος καὶ ἰσχύς, οὐδὲ παραδίδωσιν ἐκ γενεᾶς εἰς γενεάν."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "25",
+      "source_reference": "27:25",
+      "surface": "ἐπιμελοῦ τῶν ἐν τῷ πεδίῳ χλωρῶν καὶ κερεῖς πόαν,"
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "26",
+      "source_reference": "27:26",
+      "surface": "καὶ σύναγε χόρτον ὀρινόν, 26ἵνα ἔχῃς πρόβατα εἰς ἱματισμόν· τίμα πεδίον, ἵνα ὦσίν σοι ἄρνες."
+    },
+    {
+      "source_chapter": "27",
+      "source_verse": "27",
+      "source_reference": "27:27",
+      "surface": "υἱέ, παρʼ ἐμοῦ ἔχεις ῥήσεις ἰσχυρὰς εἰς τὴν ζωήν σου καὶ εἰς τὴν ζωὴν σῶν θεραπόντων."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "1",
+      "source_reference": "28:1",
+      "surface": "Φεύγει ἀσεβὴς μηδενὸς διώκοντος, δίκαιος δὲ ὥσπερ λέων πέποιθεν."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "2",
+      "source_reference": "28:2",
+      "surface": "δι᾿ ἁμαρτίας ἀσεβῶν κρίσεις ἐγείρονται, ἀνὴρ δὲ πανοῦργος κατασβέσει αὐτάς.¶"
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "3",
+      "source_reference": "28:3",
+      "surface": "ἀνδρεῖος ἐν ἀσεβείαις συκοφαντεῖ πτωχούς. ὥσπερ ὑετὸς λάβρος καὶ ἀνωφελής,"
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "4",
+      "source_reference": "28:4",
+      "surface": "οὕτως οἱ ἐγκαταλιπόντες τὸν νόμον ἐγκωμιάζουσιν ἀσέβειαν· οἱ δὲ ἀγαπῶντες τὸν νόμον περιβάλλουσιν ἑαυτοῖς τεῖχος."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "5",
+      "source_reference": "28:5",
+      "surface": "ἄνδρες κακοὶ οὐ συνήσουσιν κρίμα, οἱ δὲ ζητοῦντες τὸν κύριον συνήσουσιν ἐν παντί."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "6",
+      "source_reference": "28:6",
+      "surface": "κρείσσων πτωχὸς πορευόμενος ἐν ἀληθείᾳ πλουσίου ψευδοῦς."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "7",
+      "source_reference": "28:7",
+      "surface": "φυλάσσει νόμον υἱὸς συνετός, ὃς δὲ ποιμαίνει ἀσωτίαν ἀτιμάζει πατέρα."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "8",
+      "source_reference": "28:8",
+      "surface": "ὁ πληθύνων τὸν πλοῦτον αὐτοῦ μετὰ τόκων καὶ μῶνπλεονασ τῷ ἐλεῶντι πτωχοὺς συνάγει αὐτόν."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "9",
+      "source_reference": "28:9",
+      "surface": "ὁ ἐκκλίνων τὸ οὖς αὐτοῦ μὴ εἰσακοῦσαι νόμου, καὶ αὐτὸς τὴν προσευχὴν αὐτοῦ ἐβδέλυκται."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "10",
+      "source_reference": "28:10",
+      "surface": "ὃς πλανᾷ εὐθεῖς ἐν ὁδῷ κακῇ εἰς διαφθορὰν αὐτὸς ἐμπεσεῖται, οἱ δὲ ἄνομοι διελεύσονται ἀγαθὰ καὶ οὐκ εἰσελεύσονται εἰς αὐτά."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "11",
+      "source_reference": "28:11",
+      "surface": "σοφὸς παρʼ ἑαυτῷ ἀνὴρ πλούσιος, πένης δὲ νοήμων καταγνώσεται αὐτοῦ."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "12",
+      "source_reference": "28:12",
+      "surface": "διὰ βοήθειαν δικαίων πολλὴ γίνεται δόξα, ἐν δὲ τόποις ἀσεβῶν ἁλίσκονται ἄνθρωποι."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "13",
+      "source_reference": "28:13",
+      "surface": "ὁ ἐπικαλύπτων ἀσέβειαν ἑαυτοῦ οὐκ εὐοδωθήσεται, ὁ δὲ ἐξηγούμενος ἐλέγχους ἀγαπηθήσεται."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "14",
+      "source_reference": "28:14",
+      "surface": "μακάριος ἀνὴρ ὃς καταπτήσσει πάντα δι᾿ εὐλάβειαν, ὁ δὲ σκληρὸς τὴν καρδίαν ἐμπεσεῖται κακοῖς."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "15",
+      "source_reference": "28:15",
+      "surface": "λέων πεινῶν καὶ λύκος διψῶν ὃς τυραννεῖ πτωχὸς ὢν ἔθνους πενιχροῦ."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "16",
+      "source_reference": "28:16",
+      "surface": "βασιλεὺς ἐνδεὴς προσόδων μέγας συκοφάντης, ὁ δὲ μισῶν ἀδικίαν μακρὸν χρόνον ζήσεται."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "17",
+      "source_reference": "28:17",
+      "surface": "ἄνδρα τὸν ἐν αἰτίᾳ φόνου ὁ ἐγγυώμενος φυγὰς ἔσται καὶ οὐκ ἐν ἀσφαλείᾳ."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "17a",
+      "source_reference": "28:17a",
+      "surface": "aπαίδευε υἱὸν καὶ ἀγαπήσει σε, καὶ δώσει κόσμον τῇ σῇ ψυχῇ· οὐ μὴ ὑπακούσῃς ἔθνει παρανόμῳ."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "18",
+      "source_reference": "28:18",
+      "surface": "ὁ πορευόμενος δικαίως βεβοήθηται, ὁ δὲ σκολιαῖς ὁδοῖς πορευόμενος ἐμπλακήσεται."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "19",
+      "source_reference": "28:19",
+      "surface": "ὁ ἐργαζόμενος τὴν ἑαυτοῦ γῆν πλησθήσεται ἄρτων, ὁ δὲ διώκων σχολὴν πλησθήσεται πενίας."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "20",
+      "source_reference": "28:20",
+      "surface": "ἀνὴρ ἀξιόπιστος πολλὰ εὐλογηθήσεται, ὁ δὲ κακὸς οὐκ ἀτιμώρητος ἔσται."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "21",
+      "source_reference": "28:21",
+      "surface": "ὃς οὐκ αἰσχύνεται πρόσωπα δικαίων οὐκ ἀγαθός, ὁ τοιοῦτος ψωμοῦ ἄρτου ἀποδώσεται ἄνδρα."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "22",
+      "source_reference": "28:22",
+      "surface": "σπεύδει πλουτεῖν ἀνὴρ βάσκανος, καὶ οὐκ οἶδεν ὅτι ἐλεήμων κρατήσει αὐτοῦ."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "23",
+      "source_reference": "28:23",
+      "surface": "ὁ ἐλέγχων ἀνθρώπου ἱδοὺς χάριτας ἕξει μᾶλλον τοῦ γλωσσοχαριτοῦντος."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "24",
+      "source_reference": "28:24",
+      "surface": "ὃς ἀποβάλλεται πατέρα ἢ μητέρα καὶ δοκεῖ μὴ ἁμαρτάνειν, οὗτος κοινωνός ἐστιν ἀνδρὸς ἀσεβοῦς."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "25",
+      "source_reference": "28:25",
+      "surface": "ἄπιστος ἀνὴρ κρίνει εἰκῆ, ὃς δὲ πέποιθεν ἐπὶ Κύριον ἐν ἐπιμελείᾳ ἔσται."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "26",
+      "source_reference": "28:26",
+      "surface": "ὃς πέποιθεν θρασείᾳ καρδίᾳ, ὁ τοιοῦτος ἄφρων· ὃς δὲ πορεύεται σοφίᾳ σωθήσεται."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "27",
+      "source_reference": "28:27",
+      "surface": "ὃς δίδωσιν πτωχοῖς οὐκ ἐνδεηθήσεται, ὃς δὲ ἀποστρέφει τὸν ὀφθαλμὸν αὐτοῦ ἐν πολλῇ ἀπορίᾳ ἔσται."
+    },
+    {
+      "source_chapter": "28",
+      "source_verse": "28",
+      "source_reference": "28:28",
+      "surface": "ἐν τόποις ἀσεβῶν στένουσι δίκαιοι, ἐν δὲ τῇ ἐκείνων ἀπωλείᾳ πληθυνθήσονται δίκαιοι."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "1",
+      "source_reference": "29:1",
+      "surface": "κρείσσων ἀνὴρ ἐλέγχων ἀνδρὸς σκληροτραχήλου, ἐξαπίνης γὰρ φλεγομένου αὐτοῦ οὐκ ἔστιν ἴασις."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "2",
+      "source_reference": "29:2",
+      "surface": "ἐγκωμιαζομένων δικαίων εὐφρανθήσονται λαοί, ἀρχόντων δε ἀσεβῶν στένουσιν ἄνδρες."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "3",
+      "source_reference": "29:3",
+      "surface": "ἀνδρὸς φιλοῦντος σοφίαν εὐφραίνεται πατὴρ αὐτοῦ, ὃς δὲ ποιμαίνει πόρνας ἀπολεῖ πλοῦτον."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "4",
+      "source_reference": "29:4",
+      "surface": "βασιλεὺς δίκαιος ἀνίστησιν χώραν, ἀνὴρ δὲ παράνομος κατασκάπτει."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "5",
+      "source_reference": "29:5",
+      "surface": "ὃς παρασκευάζεται ἐπὶ πρόσωπον τοῦ ἑαυτοῦ φίλου δίκτυον, περιβάλλει αὐτὸ τοῖς ἑαυτοῦ ποσίν."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "6",
+      "source_reference": "29:6",
+      "surface": "ἁμαρτάνοντι ἀνδρὶ μεγάλη παγίς, δίκαιος δὲ ἐν χαρᾷ καὶ ἐν εὐφροσύνῃ ἔσται."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "7",
+      "source_reference": "29:7",
+      "surface": "ἐπίσταται δίκαιος κρίνειν πενιχροῖς, ὁ δὲ ἀσεβὴς οὐ νοεῖ γνῶσιν, καὶ πτωχῷ οὐχ ὑπάρχει νοῦς ἐπιγνώμων."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "8",
+      "source_reference": "29:8",
+      "surface": "ἄνδρες ἄνομοι ἐξέκαυσαν πόλιν, σοφοὶ δὲ ἀπέστρεψαν ὀργήν."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "9",
+      "source_reference": "29:9",
+      "surface": "ἀνὴρ σοφὸς κρίνει ἔθνη, ἀνὴρ δὲ φαῦλος ὀργιζόμενος καταγελᾶται καὶ οὐ καταπτήσσει."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "10",
+      "source_reference": "29:10",
+      "surface": "ἄνδρες αἱμάτων μέτοχοι μισοῦσιν ὅσιον, οἱ δὲ εὐθεῖς ἐκζητήσουσιν ψυχὴν αὐτοῦ."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "11",
+      "source_reference": "29:11",
+      "surface": "ὅλον τὸν θυμὸν αὐτοῦ ἐκφέρει ἄφρων, σοφὸς δὲ ταμιεύεται κατὰ μέρος."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "12",
+      "source_reference": "29:12",
+      "surface": "βασιλέως ἐπακούοντος λόγον ἄδικον, πάντες οἱ ὑπʼ αὐτὸν παράνομοι."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "13",
+      "source_reference": "29:13",
+      "surface": "δανιστοῦ καὶ χρεοφιλέτου ἀλλήλοις συνελθόντων, ἐπισκοπὴν ἀμφοτέρων ποιεῖται ὁ κύριος."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "14",
+      "source_reference": "29:14",
+      "surface": "βασιλέως ἐν ἀληθείᾳ κρίνοντος πτωχούς, ὁ θρόνος αὐτοῦ εἰς μαρτύριον κατασταθήσεται."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "15",
+      "source_reference": "29:15",
+      "surface": "πληγαὶ καὶ ἔλεγχοι διδόασιν σοφίαν, παῖς δὲ πλανώμενος αἰσχύνει γονεῖς αὐτοῦ."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "16",
+      "source_reference": "29:16",
+      "surface": "πολλῶν ὄντων ἀσεβῶν πολλαὶ γίνονται ἁμαρτίαι, οἱ δὲ δίκαιοι ἐκείνων πιπτόντων κατάφοβοι γίνονται."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "17",
+      "source_reference": "29:17",
+      "surface": "παίδευε υἱόν σου καὶ ἀναπαύσει σε, καὶ δώσει κόσμον τῇ ψυχῇ σου."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "18",
+      "source_reference": "29:18",
+      "surface": "οὐ μὴ ὑπάρξῃ ἐξηγητὴς ἔθνει παρανόμῳ, ὁ δὲ φυλάσσων τὸν νόμον μακαριστός."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "19",
+      "source_reference": "29:19",
+      "surface": "λόγοις οὐ παιδευθήσεται οἰκέτης σκληρός· ἐὰν γὰρ καὶ νοήσῃ, ἀλλʼ οὐχ ὑπακούσεται."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "20",
+      "source_reference": "29:20",
+      "surface": "ἐὰν ἴβῃς ἄνδρα ταχὺν ἐν λόγοις, γίνωσκε ὅτι ἐλπίδα ἔχει μᾶλλον ἄφρων αὐτοῦ."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "21",
+      "source_reference": "29:21",
+      "surface": "ὃς κατασπαταλᾷ ἐκ παιδὸς οἰκέτης ἔσται, ἔσχατον δὲ ὀδυνηθήσεται ἐφʼ ἑαυτῷ."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "22",
+      "source_reference": "29:22",
+      "surface": "ἀνὴρ θυμώδης ἐγείρει νεῖκος, ἀνὴρ δὲ ὀργίλος ἐξώρυξεν ἁμαρτίας."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "23",
+      "source_reference": "29:23",
+      "surface": "ὕβρις ἄνδρα ταπεινοῖ, τοὺς δὲ ταπεινόφρονας ἐρείδει δόξῃ Κύριος."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "24",
+      "source_reference": "29:24",
+      "surface": "ὃς μερίζεται κλέπτῃ, μισεῖ τὴν ἑαυτοῦ ψυχήν· ἐὰν δὲ ὅρκου προτεθέντος ἀκούσαντες μὴ ἀναγγείλωσιν,"
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "25",
+      "source_reference": "29:25",
+      "surface": "φοβηθέντες καὶ αἰσχυνθέντες ἀνθρώπους ὑπεσκελίσθησαν· ὁ δὲ πεποιθὼς ἐπὶ Κυρίῳ εὐφρανθήσεται. ἀσέβεια ἀνδρὶ δίδωσιν σφάλμα, ὃς δὲ πέποιθεν ἐπὶ τῷ δεσπότῃ σωθήσεται."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "26",
+      "source_reference": "29:26",
+      "surface": "πολλοὶ θεραπεύουσιν πρόσωπα ἡγουμένων, παρὰ δὲ Κυρίου γίνεται τὸ δίκαιον ἀνδρί."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "27",
+      "source_reference": "29:27",
+      "surface": "βδέλυγμα δίκαιος ἀνὴρ ἀδίκῳ, βδέλυγμα δὲ ἀνόμῳ κατευθύνουσα ὁδός."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "28",
+      "source_reference": "29:28",
+      "surface": "Γυναῖκα ἀνδρείαν τίς εὑρήσει; τιμιωτέρα δέ ἐστιν λίθων πολυτελῶν ἡ τοιαύτη."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "29",
+      "source_reference": "29:29",
+      "surface": "θαρσεῖ ἐπʼ αὐτῇ ἡ καρδία τοῦ ἀνδρὸς αὐτῆς, ἡ τοιαύτη καλῶν σκύλων οὐκ ἀπορήσει·"
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "30",
+      "source_reference": "29:30",
+      "surface": "ἐνεργεῖ γὰρ τῷ ἀνδρὶ ἀγαθὰ πάντα τὸν βίον."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "31",
+      "source_reference": "29:31",
+      "surface": "μηρυομένη ἔρια καὶ λίνον ἐποίησεν εδχρηστον ταῖς χερσὶν αὐτῆς."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "32",
+      "source_reference": "29:32",
+      "surface": "ἐγένετο ὡσεὶ ναῦς ἐμπορευομένη μακρόθεν· συνάγει δὲ αὕτη τὸν βίον,"
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "33",
+      "source_reference": "29:33",
+      "surface": "καὶ ἀνίσταται ἐκ νυκτῶν. καὶ ἔδωκεν βρώματα τῷ οἴκῳ καὶ ἔργα ταῖς θεραπαίναις."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "34",
+      "source_reference": "29:34",
+      "surface": "θεωρήσασα γεώργιον ἐπρίατο, ἀπὸ δὲ καρπῶν χειρῶν αὐτῆς κατεφύτευσεν κτῆμα."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "35",
+      "source_reference": "29:35",
+      "surface": "ἀναζωσαμένη ἰσχυρῶς τὴν ὀσφὺν αὐτῆς ἤρεισεν τοὺς βραχίονας αὐτῆς εἰς ἔργον."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "36",
+      "source_reference": "29:36",
+      "surface": "καὶ ἐγεύσατο ὅτι καλόν ἐστιν τὸ ἐργάζεσθαι, καὶ οὐκ ἀποσβέννυται ὁ λύχνος αὐτῆς ὅλην τὴν νύκτα."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "37",
+      "source_reference": "29:37",
+      "surface": "τοὺς πήχεις αὐτῆς ἐκτείνει ἐπὶ τὰ συμφέροντα, τὰς δὲ χεῖρας αὐτῆς ἐρείδει εἰς ἄτρακτον."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "38",
+      "source_reference": "29:38",
+      "surface": "χεῖρας δὲ αὐτῆς διήνοιξεν πένητι, καρπὸν δὲ ἐξέτεινεν πτωχῷ."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "39",
+      "source_reference": "29:39",
+      "surface": "οὐ φροντίζει τῶν ἐν οἴκῳ ὁ ἀνὴρ αὐτῆς ὅταν που χρονίζῃ, πάντες γὰρ οἱ παρʼ αὐτῆς ἐνδιδύσκονται."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "40",
+      "source_reference": "29:40",
+      "surface": "δισσὰς χλαίνας ἐποίησεν τῷ ἀνδρὶ αὐτῆς, ἐκ δὲ βύσσου καὶ πορφύρας ἑαυτῇ ἐνδύματα."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "41",
+      "source_reference": "29:41",
+      "surface": "περίβλεπτος δὲ γίνεται ἐν πύλαις ὁ ἀνὴρ αὐτῆς, ἡνίκα ἂν καθίσῃ ἐν συνεδρίῳ μετὰ τῶν γερόντων κατοίκων τῆς γῆς."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "42",
+      "source_reference": "29:42",
+      "surface": "σινδόνας ἐποίησεν καὶ ἀπέδοτο, περιζώματα τοῖς Χαναναίοις."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "43",
+      "source_reference": "29:43",
+      "surface": "στόμα αὐτῆς διήνοιξεν προσεχόντως καὶ ἐννόμως, καὶ τάξιν ἐστείλατο τῇ γλώσσῃ αὐτῆς."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "44",
+      "source_reference": "29:44",
+      "surface": "ἰσχὺν καὶ εὐπρέπειαν ἐνεδύσατο, καὶ εὐφράνθη ἐν ἡμέραις ἐσχάταις."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "45",
+      "source_reference": "29:45",
+      "surface": "στεγναὶ διατριβαὶ οἴκων αὐτῆς, σῖτα δὲ ὀκνηρὰ οὐκ ἔφαγεν. τὸ στόμα δὲ ἀνοίγει σοφοῖς νομοθέσμως,"
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "46",
+      "source_reference": "29:46",
+      "surface": "ἡ δὲ ἐλεημοσύνη αὐτῆς ⁴⁶ἀνέστησεν τὰ τέκνα αὐτῆς καὶ ἐπλούτησαν, καὶ ὁ ἀνὴρ αὐτῆς ᾔνεσεν αὐτήν"
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "47",
+      "source_reference": "29:47",
+      "surface": "Πολλαὶ θυγατέρες ἐκτήσαντο πλοῦτον, πολλαὶ ἐποίησαν δυνατά· σὺ δὲ ὑπέρκεισαι καὶ ὑπερῆρας πάσας."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "48",
+      "source_reference": "29:48",
+      "surface": "§⁴⁸ψευδεῖς ἀρέσκειαι καὶ μάταιον κάλλος γυναικός· γυνὴ γὰρ συνετὴ εὐλογεῖται, φόβον δὲ Κυρίου αὕτη αἰνείτω."
+    },
+    {
+      "source_chapter": "29",
+      "source_verse": "49",
+      "source_reference": "29:49",
+      "surface": "δότε αὐτῇ ἀπὸ καρπῶν χειλέων αὐτῆς, καὶ αἰνείσθω ἐν πύλαις ὁ ἀνὴρ αὐτῆς."
+    }
+  ]
+}

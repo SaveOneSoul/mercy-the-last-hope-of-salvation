@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "corpus_id": "grc_ot_catholic_full",
+  "corpus_version": "2026.09.17-catholic-lxx-full",
+  "production_enabled": true,
+  "partition": "sharealike-catholic-lxx",
+  "license": "CC BY-SA 4.0",
+  "share_alike": true,
+  "isolation_required": true,
+  "book_id": "OBA",
+  "book": "Obadiah",
+  "language": "grc",
+  "mapping": {
+    "mode": "source-reference-preserved",
+    "canonical_chapter_offset": 0
+  },
+  "source": {
+    "source_family": "first1k-swete",
+    "work": "tlg040",
+    "work_title": "Abdias",
+    "edition_urn": "urn:cts:greekLit:tlg0527.tlg040.1st1K-grc1",
+    "repository": "OpenGreekAndLatin/First1KGreek",
+    "commit": "8ee111eb44ecef4120c844e10749178d95d1f30c",
+    "metadata_path": "data/tlg0527/tlg040/__cts__.xml",
+    "metadata_git_blob_sha1": "eb0c2db4f931eab86ce9063310db727f10a4a056",
+    "metadata_sha256": "3fcedec411a6527e70792026a9668ac6e018856f3031844ce42c8a2651f02944",
+    "text_path": "data/tlg0527/tlg040/tlg0527.tlg040.1st1K-grc1.xml",
+    "text_git_blob_sha1": "965c3866a6fe9c75f53265a803776d31a156334d",
+    "text_sha256": "ba9ebe6a8f84261a5c7bf40625248c21dc730c572aae0d8a6a546d17621b611d",
+    "license": "CC BY-SA 4.0",
+    "per_file_license_verified": true
+  },
+  "surface_policy": {
+    "source_boundaries_preserved": true,
+    "empty_source_divisions_preserved": true,
+    "unicode_normalization": "none",
+    "whitespace": "collapsed-layout-whitespace",
+    "excluded_editorial_tags": [
+      "head",
+      "milestone",
+      "note",
+      "pb"
+    ],
+    "glosses": false,
+    "lemmata": false,
+    "morphology": false,
+    "transliteration": false
+  },
+  "verses": [
+    {
+      "source_chapter": "1",
+      "source_verse": "1",
+      "source_reference": "1:1",
+      "surface": "Τάδε λέγει Κύριος ὁ θεὸς τῇ Ἰδουμαίᾳ Ἀκοὴν ἤκουσα παρὰ Κυρίου, καὶ περιοχὴν εἰς τὰ ἔθνη ἐξαπέστειλεν Ἀνάστητε καὶ ἐξαναστῶμεν ἐπʼ αὐτὴν εἰς πόλεμον."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "2",
+      "source_reference": "1:2",
+      "surface": "ἰδοὺ ὀλιγοστὸν δέδωκά σε ἐν τοῖς ἔθνεσιν, ἠτιμωμένος σὺ εἶ σφόδρα·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "3",
+      "source_reference": "1:3",
+      "surface": "ὑπερηφανία τῆς καρδίας σου ἐπῆρέν σε κατασκηνοῦντα ἐν ταῖς ὀπαῖς τῶν πετρῶν· ὑψῶν κατοικίαν αὐτοῦ, λέγων ἐν καρδίᾳ αὐτοῦ Τίς με κατάξει ἐπὶ τὴν γῆν ;"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "4",
+      "source_reference": "1:4",
+      "surface": "ἐὰν μετεωρισθῇς ὡς ἀετός, καὶ ἐὰν ἀνὰ μέσον τῶν ἄστρων θῇς νοσσιάν σου, ἐκεῖθεν κατάξω σε, λέγει Κύριος."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "5",
+      "source_reference": "1:5",
+      "surface": "εἰ κλέπται εἰσῆλθον πρὸς σὲ ἢ λῃσταὶ νυκτός, ποῦ ἂν ἀπερρίφης; οὐκ ἂν ἔκλεψαν τὰ ἱκανὰ ἑαυτοῖς; καὶ εἰ τρυγηταὶ εἰσῆλθον πρὸς σέ, οὐκ ἂν ὑπελίποντο ἐπιφυλλίδας;"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "6",
+      "source_reference": "1:6",
+      "surface": "πῶς ἐξηρευνήθη Ἠσοὺ καὶ κατελήμφθη αὐτοῦ τὰ κεκριυμμένα."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "7",
+      "source_reference": "1:7",
+      "surface": "ἕως τῶν ὁρίων ἐξαπέστειλάν σε· πάντες οἱ ἄνδρες τῆς διαθήκης σου ἀντέστησάν σοι, ἡδυνάσθησαν πρὸς σὲ ἄνδρες εἰρηνικοί σου, ἔθηκαν ἔνεδρα ὑποκάτω σου, οὐκ ἔστιν σύνεσις αὐτοῖς."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "8",
+      "source_reference": "1:8",
+      "surface": "ἐν ἐκείνῃ τῇ ἡμέρᾳ, λέγει Κύριος, ἀπολῶ σοφοὺς ἐκ τῆς Ἰδουμαίας καὶ σύνεσιν ἐξ ὄρους Ἠσού·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "9",
+      "source_reference": "1:9",
+      "surface": "καὶ πτοηθήσονται οἱ μαχηταί σου οἱ ἐκ Θαιμάν, ὅπαως ἐξαρθῇ ἄνθρωπος ἐξ ὄρους Ἠσαύ·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "10",
+      "source_reference": "1:10",
+      "surface": "διὰ τὴν σφαγὴν καὶ τὴν ἀσέβειαν ἀδελφοῦ σου Ἰακὼβ καλύψει σε αἰσχύνη, καὶ ἐξαρθήσῃ εἰς τὸν αἰῶνα."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "11",
+      "source_reference": "1:11",
+      "surface": "Ἀφʼ ἧς ἡμέρας ἀντέστης ἐξ ἐναντίας ἐν ἡμέραις αἰχμαλωτευόντων ἀλλογενῶν δύναμιν αὐτοῦ, καὶ ἀλλότριοι εἰσῆλθον εἰς πύλας αὐτοῦ καὶ ἐπὶ Ἰερουσαλὴμ ἔβαλον κλήρους, καὶ σὺ ἧς ὡς εἷς ἐξ αὐτῶν."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "12",
+      "source_reference": "1:12",
+      "surface": "καὶ μὴ ἐπίδῃς ἡμέραν ἀδελφοῦ σου ἐν ἡμέρᾳ ἀλλοτρίων, καὶ μὴ ἐπιχαρῆς ἐπὶ τοὺς υἱοὺς Ἰούδα ἐν ἡμέρᾳ ἀπωλίας αὐτῶν, καὶ μὴ μεγαλορημονῆς ἐν ἡμέρᾳ θλίψεως·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "13",
+      "source_reference": "1:13",
+      "surface": "μηδὲ εἰσέλθῃς εἰς πύλας λαῶν ἐν ἡμέρᾳ πόνων αὐτῶν, μηδέ ἐπίδῃς καὶ σὺ τὴν συναγωγὴν αὐτάων ἐν ἡμέρᾳ ὀλέθρου αὐτῶν, μηδἐ συνεπιθῇ ἐπὶ τὴν δύναμιν αὐτῶν ἐν ἡμέρᾳ ἀπωλίας αὐτῶν·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "14",
+      "source_reference": "1:14",
+      "surface": "μηδὲ ἐπιστῆς ἐπὶ τὰς διεκβολὰς αὐτοῦ ἐξολεθρεῦσαι τοὺς ἀνασωζομένους αὐτοῦ, μηδέ συγκλείσῃς τοὺς φεύγοντας αὐτοῦ ἐν ἡμέρᾳ θλίψεως."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "15",
+      "source_reference": "1:15",
+      "surface": "διότι ἐγγὺς ἡμέρα Κυρίου ἐπὶ πάντα τὰ ἔθνη· ὃν τρόπον ἐποίησας, οὕτως ἔσται σοι τὸ ἀνταπόδομά σου ἀνταποδοθήσεται εἰς κεφαλήν σου·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "16",
+      "source_reference": "1:16",
+      "surface": "διότι ὃν τρόπον ἔπιες ἐπὶ τὸ ὄρος τὸ ἅγιόν μου, πίονται καὶ καταβήσονται, καὶ ἔσονται καθὼς οὐχ ὑπάρχοντες."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "17",
+      "source_reference": "1:17",
+      "surface": "Ἐν δὲ τῷ ὄρει Σειὼν ἔσται σωτηρία, καὶ ἔσται ἅγιονʼ καὶ κατακληρονομήσουσιν ὁ οἵκος Ἰακὼβ τοὺς κατακληρονομήσαντας αὐτούς."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "18",
+      "source_reference": "1:18",
+      "surface": "καὶ ἔσται ὁ οἶκος Ἰακὼβ πῦρ, ὁ δὲ οἶκος Ἰωσὴφ φλόξ, ὁ δὲ οἶκος Ἠσαύ εἰς καλάμην, καὶ ἐκκαυθήσονται εἰς αὐτοὺς καὶ καταφάγονται αὐτούς, καὶ οὐκ ἔσται πυροφόρος τῷ οἴκῳ Ἠσαύ, διότι Κύριος ἐλάλησεν."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "19",
+      "source_reference": "1:19",
+      "surface": "καὶ κατακληρονομήσουσιν οἱ ἐν Νάγεβ τὸ ὄρος τὸ Ἠσαύ, καὶ οἱ ἐν τῇ Σεφηλὰ τοὺς ἀλλοφύλους· καὶ κατακληρονομήσουσιν τὸ ὄρος Ἐφράιμ καὶ τὸ πεδίον Σαμαρείας καὶ Βενιαμεὶν καὶ τὴν Γαλααδεῖτιν."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "20",
+      "source_reference": "1:20",
+      "surface": "καὶ τῆς μετοικεσίας ἡ ἀρχὴ αὕτη· τοῖς υἱοῖς Ἰσραήλ, γῆ τῶν Χαναναίων ἕως Σαρέπτων, καὶ ἡ μετοικεσία Ἰερουσαλὴμ ἕως Ἐφράθα· κληρονομήσουσιν τὰς πόλεις τοῦ Νάγεβ."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "21",
+      "source_reference": "1:21",
+      "surface": "καὶ ἀναβήσονται ἀνασωζόμενοι ἐξ ὄρους Σειὼν τοῦ ἐκδικῆσαι τὸ ὄρος Ἠσαύ, καὶ ἔσται τῷ κυρίῳ ἡ βασιλεία."
+    }
+  ]
+}

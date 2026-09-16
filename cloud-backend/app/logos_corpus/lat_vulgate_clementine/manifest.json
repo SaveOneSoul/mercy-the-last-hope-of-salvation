@@ -1,0 +1,771 @@
+{
+  "schema_version": 1,
+  "corpus_id": "lat_vulgate_clementine",
+  "corpus_version": "2026.09.16-clementine-open-bibles",
+  "status": "production-installed",
+  "production_enabled": true,
+  "language": "la",
+  "scope": "Complete 73-book Clementine Latin Vulgate",
+  "book_count": 73,
+  "chapter_count": 1334,
+  "verse_count": 35809,
+  "books": [
+    {
+      "id": "GEN",
+      "name": "Genesis",
+      "order": 1,
+      "filename": "gen.json",
+      "source_book_id": "GEN",
+      "source_title": "Genesis",
+      "chapter_count": 50,
+      "verse_count": 1530
+    },
+    {
+      "id": "EXO",
+      "name": "Exodus",
+      "order": 2,
+      "filename": "exo.json",
+      "source_book_id": "EXO",
+      "source_title": "Exodus",
+      "chapter_count": 40,
+      "verse_count": 1211
+    },
+    {
+      "id": "LEV",
+      "name": "Leviticus",
+      "order": 3,
+      "filename": "lev.json",
+      "source_book_id": "LEV",
+      "source_title": "Leviticus",
+      "chapter_count": 27,
+      "verse_count": 858
+    },
+    {
+      "id": "NUM",
+      "name": "Numbers",
+      "order": 4,
+      "filename": "num.json",
+      "source_book_id": "NUM",
+      "source_title": "Numeri",
+      "chapter_count": 36,
+      "verse_count": 1288
+    },
+    {
+      "id": "DEU",
+      "name": "Deuteronomy",
+      "order": 5,
+      "filename": "deu.json",
+      "source_book_id": "DEU",
+      "source_title": "Deuteronomium",
+      "chapter_count": 34,
+      "verse_count": 959
+    },
+    {
+      "id": "JOS",
+      "name": "Joshua",
+      "order": 6,
+      "filename": "jos.json",
+      "source_book_id": "JOS",
+      "source_title": "Josue",
+      "chapter_count": 24,
+      "verse_count": 658
+    },
+    {
+      "id": "JDG",
+      "name": "Judges",
+      "order": 7,
+      "filename": "jdg.json",
+      "source_book_id": "JDG",
+      "source_title": "Judicum",
+      "chapter_count": 21,
+      "verse_count": 618
+    },
+    {
+      "id": "RUT",
+      "name": "Ruth",
+      "order": 8,
+      "filename": "rut.json",
+      "source_book_id": "RUT",
+      "source_title": "Ruth",
+      "chapter_count": 4,
+      "verse_count": 85
+    },
+    {
+      "id": "1SA",
+      "name": "1 Samuel",
+      "order": 9,
+      "filename": "1sa.json",
+      "source_book_id": "1SA",
+      "source_title": "Regum I",
+      "chapter_count": 31,
+      "verse_count": 811
+    },
+    {
+      "id": "2SA",
+      "name": "2 Samuel",
+      "order": 10,
+      "filename": "2sa.json",
+      "source_book_id": "2SA",
+      "source_title": "Regum II",
+      "chapter_count": 24,
+      "verse_count": 695
+    },
+    {
+      "id": "1KI",
+      "name": "1 Kings",
+      "order": 11,
+      "filename": "1ki.json",
+      "source_book_id": "1KI",
+      "source_title": "Regum III",
+      "chapter_count": 22,
+      "verse_count": 817
+    },
+    {
+      "id": "2KI",
+      "name": "2 Kings",
+      "order": 12,
+      "filename": "2ki.json",
+      "source_book_id": "2KI",
+      "source_title": "Regum IV",
+      "chapter_count": 25,
+      "verse_count": 719
+    },
+    {
+      "id": "1CH",
+      "name": "1 Chronicles",
+      "order": 13,
+      "filename": "1ch.json",
+      "source_book_id": "1CH",
+      "source_title": "Paralipomenon I",
+      "chapter_count": 29,
+      "verse_count": 940
+    },
+    {
+      "id": "2CH",
+      "name": "2 Chronicles",
+      "order": 14,
+      "filename": "2ch.json",
+      "source_book_id": "2CH",
+      "source_title": "Paralipomenon II",
+      "chapter_count": 36,
+      "verse_count": 822
+    },
+    {
+      "id": "EZR",
+      "name": "Ezra",
+      "order": 15,
+      "filename": "ezr.json",
+      "source_book_id": "EZR",
+      "source_title": "Esdræ",
+      "chapter_count": 10,
+      "verse_count": 280
+    },
+    {
+      "id": "NEH",
+      "name": "Nehemiah",
+      "order": 16,
+      "filename": "neh.json",
+      "source_book_id": "NEH",
+      "source_title": "Nehemiæ",
+      "chapter_count": 13,
+      "verse_count": 404
+    },
+    {
+      "id": "TOB",
+      "name": "Tobit",
+      "order": 17,
+      "filename": "tob.json",
+      "source_book_id": "TOB",
+      "source_title": "Tobiæ",
+      "chapter_count": 14,
+      "verse_count": 298
+    },
+    {
+      "id": "JDT",
+      "name": "Judith",
+      "order": 18,
+      "filename": "jdt.json",
+      "source_book_id": "JDT",
+      "source_title": "Judith",
+      "chapter_count": 16,
+      "verse_count": 346
+    },
+    {
+      "id": "EST",
+      "name": "Esther",
+      "order": 19,
+      "filename": "est.json",
+      "source_book_id": "EST",
+      "source_title": "Esther",
+      "chapter_count": 16,
+      "verse_count": 275
+    },
+    {
+      "id": "1MA",
+      "name": "1 Maccabees",
+      "order": 20,
+      "filename": "1ma.json",
+      "source_book_id": "1MA",
+      "source_title": "Machabæorum I",
+      "chapter_count": 16,
+      "verse_count": 929
+    },
+    {
+      "id": "2MA",
+      "name": "2 Maccabees",
+      "order": 21,
+      "filename": "2ma.json",
+      "source_book_id": "2MA",
+      "source_title": "Machabæorum II",
+      "chapter_count": 15,
+      "verse_count": 558
+    },
+    {
+      "id": "JOB",
+      "name": "Job",
+      "order": 22,
+      "filename": "job.json",
+      "source_book_id": "JOB",
+      "source_title": "Job",
+      "chapter_count": 42,
+      "verse_count": 1070
+    },
+    {
+      "id": "PSA",
+      "name": "Psalms",
+      "order": 23,
+      "filename": "psa.json",
+      "source_book_id": "PSA",
+      "source_title": "Psalmi",
+      "chapter_count": 150,
+      "verse_count": 2527
+    },
+    {
+      "id": "PRO",
+      "name": "Proverbs",
+      "order": 24,
+      "filename": "pro.json",
+      "source_book_id": "PRO",
+      "source_title": "Proverbia",
+      "chapter_count": 31,
+      "verse_count": 915
+    },
+    {
+      "id": "ECC",
+      "name": "Ecclesiastes",
+      "order": 25,
+      "filename": "ecc.json",
+      "source_book_id": "ECC",
+      "source_title": "Ecclesiastes",
+      "chapter_count": 12,
+      "verse_count": 222
+    },
+    {
+      "id": "SNG",
+      "name": "Song of Songs",
+      "order": 26,
+      "filename": "sng.json",
+      "source_book_id": "SNG",
+      "source_title": "Canticum Canticorum",
+      "chapter_count": 8,
+      "verse_count": 116
+    },
+    {
+      "id": "WIS",
+      "name": "Wisdom",
+      "order": 27,
+      "filename": "wis.json",
+      "source_book_id": "WIS",
+      "source_title": "Sapientia",
+      "chapter_count": 19,
+      "verse_count": 439
+    },
+    {
+      "id": "SIR",
+      "name": "Sirach",
+      "order": 28,
+      "filename": "sir.json",
+      "source_book_id": "SIR",
+      "source_title": "Ecclesiasticus",
+      "chapter_count": 51,
+      "verse_count": 1592
+    },
+    {
+      "id": "ISA",
+      "name": "Isaiah",
+      "order": 29,
+      "filename": "isa.json",
+      "source_book_id": "ISA",
+      "source_title": "Isaias",
+      "chapter_count": 66,
+      "verse_count": 1292
+    },
+    {
+      "id": "JER",
+      "name": "Jeremiah",
+      "order": 30,
+      "filename": "jer.json",
+      "source_book_id": "JER",
+      "source_title": "Jeremias",
+      "chapter_count": 52,
+      "verse_count": 1363
+    },
+    {
+      "id": "LAM",
+      "name": "Lamentations",
+      "order": 31,
+      "filename": "lam.json",
+      "source_book_id": "LAM",
+      "source_title": "Lamentationes",
+      "chapter_count": 5,
+      "verse_count": 154
+    },
+    {
+      "id": "BAR",
+      "name": "Baruch",
+      "order": 32,
+      "filename": "bar.json",
+      "source_book_id": "BAR",
+      "source_title": "Baruch",
+      "chapter_count": 6,
+      "verse_count": 213
+    },
+    {
+      "id": "EZK",
+      "name": "Ezekiel",
+      "order": 33,
+      "filename": "ezk.json",
+      "source_book_id": "EZK",
+      "source_title": "Ezechiel",
+      "chapter_count": 48,
+      "verse_count": 1272
+    },
+    {
+      "id": "DAN",
+      "name": "Daniel",
+      "order": 34,
+      "filename": "dan.json",
+      "source_book_id": "DAN",
+      "source_title": "Daniel",
+      "chapter_count": 14,
+      "verse_count": 531
+    },
+    {
+      "id": "HOS",
+      "name": "Hosea",
+      "order": 35,
+      "filename": "hos.json",
+      "source_book_id": "HOS",
+      "source_title": "Osee",
+      "chapter_count": 14,
+      "verse_count": 198
+    },
+    {
+      "id": "JOL",
+      "name": "Joel",
+      "order": 36,
+      "filename": "jol.json",
+      "source_book_id": "JOL",
+      "source_title": "Joël",
+      "chapter_count": 3,
+      "verse_count": 73
+    },
+    {
+      "id": "AMO",
+      "name": "Amos",
+      "order": 37,
+      "filename": "amo.json",
+      "source_book_id": "AMO",
+      "source_title": "Amos",
+      "chapter_count": 9,
+      "verse_count": 147
+    },
+    {
+      "id": "OBA",
+      "name": "Obadiah",
+      "order": 38,
+      "filename": "oba.json",
+      "source_book_id": "OBA",
+      "source_title": "Abdias",
+      "chapter_count": 1,
+      "verse_count": 21
+    },
+    {
+      "id": "JON",
+      "name": "Jonah",
+      "order": 39,
+      "filename": "jon.json",
+      "source_book_id": "JON",
+      "source_title": "Jonas",
+      "chapter_count": 4,
+      "verse_count": 48
+    },
+    {
+      "id": "MIC",
+      "name": "Micah",
+      "order": 40,
+      "filename": "mic.json",
+      "source_book_id": "MIC",
+      "source_title": "Michæa",
+      "chapter_count": 7,
+      "verse_count": 104
+    },
+    {
+      "id": "NAM",
+      "name": "Nahum",
+      "order": 41,
+      "filename": "nam.json",
+      "source_book_id": "NAM",
+      "source_title": "Nahum",
+      "chapter_count": 3,
+      "verse_count": 47
+    },
+    {
+      "id": "HAB",
+      "name": "Habakkuk",
+      "order": 42,
+      "filename": "hab.json",
+      "source_book_id": "HAB",
+      "source_title": "Habacuc",
+      "chapter_count": 3,
+      "verse_count": 56
+    },
+    {
+      "id": "ZEP",
+      "name": "Zephaniah",
+      "order": 43,
+      "filename": "zep.json",
+      "source_book_id": "ZEP",
+      "source_title": "Sophonias",
+      "chapter_count": 3,
+      "verse_count": 53
+    },
+    {
+      "id": "HAG",
+      "name": "Haggai",
+      "order": 44,
+      "filename": "hag.json",
+      "source_book_id": "HAG",
+      "source_title": "Aggæus",
+      "chapter_count": 2,
+      "verse_count": 38
+    },
+    {
+      "id": "ZEC",
+      "name": "Zechariah",
+      "order": 45,
+      "filename": "zec.json",
+      "source_book_id": "ZEC",
+      "source_title": "Zacharias",
+      "chapter_count": 14,
+      "verse_count": 211
+    },
+    {
+      "id": "MAL",
+      "name": "Malachi",
+      "order": 46,
+      "filename": "mal.json",
+      "source_book_id": "MAL",
+      "source_title": "Malachias",
+      "chapter_count": 4,
+      "verse_count": 55
+    },
+    {
+      "id": "MAT",
+      "name": "Matthew",
+      "order": 47,
+      "filename": "mat.json",
+      "source_book_id": "MAT",
+      "source_title": "Matthæus",
+      "chapter_count": 28,
+      "verse_count": 1070
+    },
+    {
+      "id": "MRK",
+      "name": "Mark",
+      "order": 48,
+      "filename": "mrk.json",
+      "source_book_id": "MRK",
+      "source_title": "Marcus",
+      "chapter_count": 16,
+      "verse_count": 677
+    },
+    {
+      "id": "LUK",
+      "name": "Luke",
+      "order": 49,
+      "filename": "luk.json",
+      "source_book_id": "LUK",
+      "source_title": "Lucas",
+      "chapter_count": 24,
+      "verse_count": 1151
+    },
+    {
+      "id": "JHN",
+      "name": "John",
+      "order": 50,
+      "filename": "jhn.json",
+      "source_book_id": "JHN",
+      "source_title": "Joannes",
+      "chapter_count": 21,
+      "verse_count": 879
+    },
+    {
+      "id": "ACT",
+      "name": "Acts",
+      "order": 51,
+      "filename": "act.json",
+      "source_book_id": "ACT",
+      "source_title": "Actus Apostolorum",
+      "chapter_count": 28,
+      "verse_count": 1004
+    },
+    {
+      "id": "ROM",
+      "name": "Romans",
+      "order": 52,
+      "filename": "rom.json",
+      "source_book_id": "ROM",
+      "source_title": "ad Romanos",
+      "chapter_count": 16,
+      "verse_count": 433
+    },
+    {
+      "id": "1CO",
+      "name": "1 Corinthians",
+      "order": 53,
+      "filename": "1co.json",
+      "source_book_id": "1CO",
+      "source_title": "ad Corinthios I",
+      "chapter_count": 16,
+      "verse_count": 437
+    },
+    {
+      "id": "2CO",
+      "name": "2 Corinthians",
+      "order": 54,
+      "filename": "2co.json",
+      "source_book_id": "2CO",
+      "source_title": "ad Corinthios II",
+      "chapter_count": 13,
+      "verse_count": 255
+    },
+    {
+      "id": "GAL",
+      "name": "Galatians",
+      "order": 55,
+      "filename": "gal.json",
+      "source_book_id": "GAL",
+      "source_title": "ad Galatas",
+      "chapter_count": 6,
+      "verse_count": 149
+    },
+    {
+      "id": "EPH",
+      "name": "Ephesians",
+      "order": 56,
+      "filename": "eph.json",
+      "source_book_id": "EPH",
+      "source_title": "ad Ephesios",
+      "chapter_count": 6,
+      "verse_count": 155
+    },
+    {
+      "id": "PHP",
+      "name": "Philippians",
+      "order": 57,
+      "filename": "php.json",
+      "source_book_id": "PHP",
+      "source_title": "ad Philippenses",
+      "chapter_count": 4,
+      "verse_count": 104
+    },
+    {
+      "id": "COL",
+      "name": "Colossians",
+      "order": 58,
+      "filename": "col.json",
+      "source_book_id": "COL",
+      "source_title": "ad Colossenses",
+      "chapter_count": 4,
+      "verse_count": 95
+    },
+    {
+      "id": "1TH",
+      "name": "1 Thessalonians",
+      "order": 59,
+      "filename": "1th.json",
+      "source_book_id": "1TH",
+      "source_title": "ad Thessalonicenses I",
+      "chapter_count": 5,
+      "verse_count": 89
+    },
+    {
+      "id": "2TH",
+      "name": "2 Thessalonians",
+      "order": 60,
+      "filename": "2th.json",
+      "source_book_id": "2TH",
+      "source_title": "ad Thessalonicenses II",
+      "chapter_count": 3,
+      "verse_count": 47
+    },
+    {
+      "id": "1TI",
+      "name": "1 Timothy",
+      "order": 61,
+      "filename": "1ti.json",
+      "source_book_id": "1TI",
+      "source_title": "ad Timotheum I",
+      "chapter_count": 6,
+      "verse_count": 113
+    },
+    {
+      "id": "2TI",
+      "name": "2 Timothy",
+      "order": 62,
+      "filename": "2ti.json",
+      "source_book_id": "2TI",
+      "source_title": "ad Timotheum II",
+      "chapter_count": 4,
+      "verse_count": 83
+    },
+    {
+      "id": "TIT",
+      "name": "Titus",
+      "order": 63,
+      "filename": "tit.json",
+      "source_book_id": "TIT",
+      "source_title": "ad Titum",
+      "chapter_count": 3,
+      "verse_count": 46
+    },
+    {
+      "id": "PHM",
+      "name": "Philemon",
+      "order": 64,
+      "filename": "phm.json",
+      "source_book_id": "PHM",
+      "source_title": "ad Philemonem",
+      "chapter_count": 1,
+      "verse_count": 25
+    },
+    {
+      "id": "HEB",
+      "name": "Hebrews",
+      "order": 65,
+      "filename": "heb.json",
+      "source_book_id": "HEB",
+      "source_title": "ad Hebræos",
+      "chapter_count": 13,
+      "verse_count": 303
+    },
+    {
+      "id": "JAS",
+      "name": "James",
+      "order": 66,
+      "filename": "jas.json",
+      "source_book_id": "JAS",
+      "source_title": "Jacobi",
+      "chapter_count": 5,
+      "verse_count": 108
+    },
+    {
+      "id": "1PE",
+      "name": "1 Peter",
+      "order": 67,
+      "filename": "1pe.json",
+      "source_book_id": "1PE",
+      "source_title": "Petri I",
+      "chapter_count": 5,
+      "verse_count": 105
+    },
+    {
+      "id": "2PE",
+      "name": "2 Peter",
+      "order": 68,
+      "filename": "2pe.json",
+      "source_book_id": "2PE",
+      "source_title": "Petri II",
+      "chapter_count": 3,
+      "verse_count": 61
+    },
+    {
+      "id": "1JN",
+      "name": "1 John",
+      "order": 69,
+      "filename": "1jn.json",
+      "source_book_id": "1JN",
+      "source_title": "Joannis I",
+      "chapter_count": 5,
+      "verse_count": 105
+    },
+    {
+      "id": "2JN",
+      "name": "2 John",
+      "order": 70,
+      "filename": "2jn.json",
+      "source_book_id": "2JN",
+      "source_title": "Joannis II",
+      "chapter_count": 1,
+      "verse_count": 13
+    },
+    {
+      "id": "3JN",
+      "name": "3 John",
+      "order": 71,
+      "filename": "3jn.json",
+      "source_book_id": "3JN",
+      "source_title": "Joannis III",
+      "chapter_count": 1,
+      "verse_count": 14
+    },
+    {
+      "id": "JUD",
+      "name": "Jude",
+      "order": 72,
+      "filename": "jud.json",
+      "source_book_id": "JUD",
+      "source_title": "Judæ",
+      "chapter_count": 1,
+      "verse_count": 25
+    },
+    {
+      "id": "REV",
+      "name": "Revelation",
+      "order": 73,
+      "filename": "rev.json",
+      "source_book_id": "REV",
+      "source_title": "Apocalypsis",
+      "chapter_count": 22,
+      "verse_count": 405
+    }
+  ],
+  "source": {
+    "title": "Clementine Latin Vulgate",
+    "repository": "seven1m/open-bibles",
+    "commit": "f257a3559025c3f873b48a75019f53a9354ed7de",
+    "path": "lat-clementine.usfx.xml",
+    "git_blob_sha1": "c0e65106383658fd914e90da4c82f2be48a0a762",
+    "sha256": "5da5f3c07fa6896d4a2b45f5f309c3ece43e554fd059b31b8ae3688bbd182baf",
+    "rights": "public-domain",
+    "license": "Public Domain",
+    "rights_evidence": {
+      "path": "README.md",
+      "git_blob_sha1": "50caf5d5b86fb69471c1b849584cc476a7944df5",
+      "sha256": "c3831650c1aea89023b473aa33f5ca11bdbfe9438631b3d782dd84c6489e1be1"
+    },
+    "attribution": "Clementine Latin Vulgate via seven1m/open-bibles public-domain corpus."
+  },
+  "runtime_contract": {
+    "local_only": true,
+    "automatic_versification_remapping": false,
+    "exact_douay_rheims_alignment_required_before_parallel_render": true
+  },
+  "derived_layers": {
+    "lemma": false,
+    "morphology": false,
+    "gloss": false,
+    "transliteration": false
+  }
+}

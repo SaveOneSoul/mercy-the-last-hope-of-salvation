@@ -1,0 +1,597 @@
+{
+  "schema_version": 1,
+  "corpus_id": "grc_ot_catholic_full",
+  "corpus_version": "2026.09.17-catholic-lxx-full",
+  "status": "production-installed",
+  "production_enabled": true,
+  "language": "grc",
+  "scope": "39 protocanonical Catholic Old Testament book scopes: 38 pinned First1KGreek Swete scopes plus the pinned Greek Wikisource Ecclesiastes fallback; complements the accepted Catholic deuterocanonical/additions package",
+  "book_count": 39,
+  "first1k_swete_book_scope_count": 38,
+  "ecclesiastes_fallback_book_scope_count": 1,
+  "verse_record_count": 23110,
+  "empty_source_surface_count": 4,
+  "empty_source_surfaces": [
+    {
+      "book_id": "DEU",
+      "source_reference": "25:19"
+    },
+    {
+      "book_id": "1SA",
+      "source_reference": "13:1"
+    },
+    {
+      "book_id": "1SA",
+      "source_reference": "18:1"
+    },
+    {
+      "book_id": "1KI",
+      "source_reference": "3:1"
+    }
+  ],
+  "books": [
+    {
+      "book_id": "GEN",
+      "book": "Genesis",
+      "work": "tlg001",
+      "source_family": "first1k-swete",
+      "chapter_count": 50,
+      "verse_count": 1523,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "EXO",
+      "book": "Exodus",
+      "work": "tlg002",
+      "source_family": "first1k-swete",
+      "chapter_count": 40,
+      "verse_count": 1160,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "LEV",
+      "book": "Leviticus",
+      "work": "tlg003",
+      "source_family": "first1k-swete",
+      "chapter_count": 27,
+      "verse_count": 858,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "NUM",
+      "book": "Numbers",
+      "work": "tlg004",
+      "source_family": "first1k-swete",
+      "chapter_count": 36,
+      "verse_count": 1285,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "DEU",
+      "book": "Deuteronomy",
+      "work": "tlg005",
+      "source_family": "first1k-swete",
+      "chapter_count": 34,
+      "verse_count": 948,
+      "empty_source_surface_count": 1,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "JOS",
+      "book": "Joshua",
+      "work": "tlg006",
+      "source_family": "first1k-swete",
+      "chapter_count": 24,
+      "verse_count": 661,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "JDG",
+      "book": "Judges",
+      "work": "tlg008",
+      "source_family": "first1k-swete",
+      "chapter_count": 21,
+      "verse_count": 618,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "RUT",
+      "book": "Ruth",
+      "work": "tlg010",
+      "source_family": "first1k-swete",
+      "chapter_count": 4,
+      "verse_count": 85,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "1SA",
+      "book": "1 Samuel",
+      "work": "tlg011",
+      "source_family": "first1k-swete",
+      "chapter_count": 31,
+      "verse_count": 769,
+      "empty_source_surface_count": 2,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "2SA",
+      "book": "2 Samuel",
+      "work": "tlg012",
+      "source_family": "first1k-swete",
+      "chapter_count": 24,
+      "verse_count": 695,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "1KI",
+      "book": "1 Kings",
+      "work": "tlg013",
+      "source_family": "first1k-swete",
+      "chapter_count": 22,
+      "verse_count": 830,
+      "empty_source_surface_count": 1,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "2KI",
+      "book": "2 Kings",
+      "work": "tlg014",
+      "source_family": "first1k-swete",
+      "chapter_count": 25,
+      "verse_count": 721,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "1CH",
+      "book": "1 Chronicles",
+      "work": "tlg015",
+      "source_family": "first1k-swete",
+      "chapter_count": 29,
+      "verse_count": 922,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "2CH",
+      "book": "2 Chronicles",
+      "work": "tlg016",
+      "source_family": "first1k-swete",
+      "chapter_count": 36,
+      "verse_count": 827,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "EZR",
+      "book": "Ezra",
+      "work": "tlg018",
+      "source_family": "first1k-swete",
+      "chapter_count": 10,
+      "verse_count": 273,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "esdras-b-component",
+        "source_chapter_start": 1,
+        "source_chapter_end": 10,
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "NEH",
+      "book": "Nehemiah",
+      "work": "tlg018",
+      "source_family": "first1k-swete",
+      "chapter_count": 13,
+      "verse_count": 376,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "esdras-b-component",
+        "source_chapter_start": 11,
+        "source_chapter_end": 23,
+        "canonical_chapter_offset": 10
+      }
+    },
+    {
+      "book_id": "EST",
+      "book": "Esther",
+      "work": "tlg019",
+      "source_family": "first1k-swete",
+      "chapter_count": 11,
+      "verse_count": 266,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "JOB",
+      "book": "Job",
+      "work": "tlg032",
+      "source_family": "first1k-swete",
+      "chapter_count": 42,
+      "verse_count": 1077,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "PSA",
+      "book": "Psalms",
+      "work": "tlg027",
+      "source_family": "first1k-swete",
+      "chapter_count": 151,
+      "verse_count": 2509,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "PRO",
+      "book": "Proverbs",
+      "work": "tlg029",
+      "source_family": "first1k-swete",
+      "chapter_count": 29,
+      "verse_count": 928,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "ECC",
+      "book": "Ecclesiastes",
+      "work": "tlg030",
+      "source_family": "open-greek-wikisource-ecclesiastes",
+      "chapter_count": 12,
+      "verse_count": 222,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "SNG",
+      "book": "Song of Songs",
+      "work": "tlg031",
+      "source_family": "first1k-swete",
+      "chapter_count": 8,
+      "verse_count": 116,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "ISA",
+      "book": "Isaiah",
+      "work": "tlg048",
+      "source_family": "first1k-swete",
+      "chapter_count": 66,
+      "verse_count": 1277,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "JER",
+      "book": "Jeremiah",
+      "work": "tlg049",
+      "source_family": "first1k-swete",
+      "chapter_count": 52,
+      "verse_count": 1293,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "LAM",
+      "book": "Lamentations",
+      "work": "tlg051",
+      "source_family": "first1k-swete",
+      "chapter_count": 5,
+      "verse_count": 150,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "EZK",
+      "book": "Ezekiel",
+      "work": "tlg053",
+      "source_family": "first1k-swete",
+      "chapter_count": 48,
+      "verse_count": 1262,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "DAN",
+      "book": "Daniel",
+      "work": "tlg057",
+      "source_family": "first1k-swete",
+      "chapter_count": 12,
+      "verse_count": 412,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "HOS",
+      "book": "Hosea",
+      "work": "tlg036",
+      "source_family": "first1k-swete",
+      "chapter_count": 14,
+      "verse_count": 197,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "JOL",
+      "book": "Joel",
+      "work": "tlg039",
+      "source_family": "first1k-swete",
+      "chapter_count": 3,
+      "verse_count": 73,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "AMO",
+      "book": "Amos",
+      "work": "tlg037",
+      "source_family": "first1k-swete",
+      "chapter_count": 9,
+      "verse_count": 146,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "OBA",
+      "book": "Obadiah",
+      "work": "tlg040",
+      "source_family": "first1k-swete",
+      "chapter_count": 1,
+      "verse_count": 21,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "JON",
+      "book": "Jonah",
+      "work": "tlg041",
+      "source_family": "first1k-swete",
+      "chapter_count": 4,
+      "verse_count": 48,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "MIC",
+      "book": "Micah",
+      "work": "tlg038",
+      "source_family": "first1k-swete",
+      "chapter_count": 7,
+      "verse_count": 105,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "NAM",
+      "book": "Nahum",
+      "work": "tlg042",
+      "source_family": "first1k-swete",
+      "chapter_count": 3,
+      "verse_count": 48,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "HAB",
+      "book": "Habakkuk",
+      "work": "tlg043",
+      "source_family": "first1k-swete",
+      "chapter_count": 3,
+      "verse_count": 56,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "ZEP",
+      "book": "Zephaniah",
+      "work": "tlg044",
+      "source_family": "first1k-swete",
+      "chapter_count": 3,
+      "verse_count": 51,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "HAG",
+      "book": "Haggai",
+      "work": "tlg045",
+      "source_family": "first1k-swete",
+      "chapter_count": 2,
+      "verse_count": 37,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "ZEC",
+      "book": "Zechariah",
+      "work": "tlg046",
+      "source_family": "first1k-swete",
+      "chapter_count": 14,
+      "verse_count": 210,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    },
+    {
+      "book_id": "MAL",
+      "book": "Malachi",
+      "work": "tlg047",
+      "source_family": "first1k-swete",
+      "chapter_count": 4,
+      "verse_count": 55,
+      "empty_source_surface_count": 0,
+      "mapping": {
+        "mode": "source-reference-preserved",
+        "canonical_chapter_offset": 0
+      }
+    }
+  ],
+  "sources": {
+    "first1k_swete": {
+      "repository": "OpenGreekAndLatin/First1KGreek",
+      "commit": "8ee111eb44ecef4120c844e10749178d95d1f30c",
+      "septuagint_path": "data/tlg0527",
+      "septuagint_tree_sha": "e1fe137e1409d0a73a52ddac6ba9669fcbc3ba79",
+      "license": "CC BY-SA 4.0",
+      "license_target": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "share_alike": true,
+      "isolation_required": true,
+      "attribution": "OpenGreekAndLatin First1KGreek / Henry Barclay Swete Septuagint witnesses."
+    },
+    "ecclesiastes": {
+      "repository": "open-greek/open-greek-corpus",
+      "commit": "338aa27310b3cfe2588a993b4d113b503597d70f",
+      "path": "data/corpus/septuaginta.ecclesiastes.jsonl",
+      "git_blob_sha1": "1659770789d318e7ee04f3ee03684bf880922bc4",
+      "license": "CC BY-SA 4.0",
+      "license_detail": "PD (ancient LXX text); Wikisource transcription CC BY-SA 4.0",
+      "share_alike": true,
+      "isolation_required": true,
+      "source": "Greek Wikisource via Open Greek Corpus",
+      "recension": "ecclesiastical/Byzantine-tradition LXX",
+      "verse_count": 222,
+      "chapter_count": 12,
+      "first1k_gap_verified": true
+    }
+  },
+  "partition": {
+    "path": "sharealike/catholic_lxx_cc-by-sa-4.0",
+    "license": "CC BY-SA 4.0",
+    "share_alike": true,
+    "isolation_required": true
+  },
+  "runtime_contract": {
+    "local_only": true,
+    "source_boundaries_preserved": true,
+    "empty_source_divisions_preserved": true,
+    "automatic_versification_remapping": false,
+    "exact_douay_rheims_alignment_required_before_parallel_render": true,
+    "deuterocanonical_package": "grc_ot_catholic_swete",
+    "daniel_primary_base_witness": "Theodotion",
+    "ezra_nehemiah_source": "Esdras B",
+    "ecclesiastes_source": "Greek Wikisource ecclesiastical LXX via pinned Open Greek Corpus",
+    "ecclesiastes_not_swete": true
+  },
+  "derived_layers": {
+    "glosses": false,
+    "lemmata": false,
+    "morphology": false,
+    "transliteration": false
+  }
+}
