@@ -116,17 +116,18 @@
       },
       {
         "witness_id": "SUS-TH-SWETE",
-        "source_locus": "Susanna 1-n",
-        "canonical_locus": "DAN 13:1-n",
+        "source_locus": "Susanna 1-64",
+        "canonical_locus": "DAN 13:1-64",
         "description": "Susanna",
         "mapping": "source-verse-to-canonical-chapter-13"
       },
       {
         "witness_id": "BEL-TH-SWETE",
-        "source_locus": "Bel and the Dragon 1-n",
-        "canonical_locus": "DAN 14:1-n",
+        "source_locus": "Bel and the Dragon 1:1-36",
+        "canonical_locus": "DAN 14:1-42",
         "description": "Bel and the Dragon",
-        "mapping": "source-verse-to-canonical-chapter-14"
+        "mapping": "component-range-no-forced-verse-split",
+        "note": "The pinned Swete Theodotion TEI has 36 source verse divisions while the Douay-Rheims Catholic chapter has 42 verses. Preserve the source divisions and map the component as a range; do not manufacture six synthetic Greek verse boundaries."
       }
     ],
     "parallel_segments": [
