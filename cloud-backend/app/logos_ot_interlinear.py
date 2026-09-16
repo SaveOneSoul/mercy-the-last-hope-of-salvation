@@ -1,0 +1,132 @@
+from fastapi import APIRouter, HTTPException, Query, Response
+
+from .logos import _parse_corpus_reference, _passage, _passage_payload
+from .logos_ot_greek import _ot_greek_manifest, _study_payload as _accepted_greek_payload
+from .logos_ot_greek_full import _manifest as _full_greek_manifest, _study_payload as _full_greek_payload
+from .logos_ot_latin import _manifest as _latin_manifest, _study_payload as _latin_payload
+from .logos_ot_semitic import _ot_semitic_manifest, _study_payload as _semitic_payload
+
+router = APIRouter(prefix="/ot-interlinear", tags=["Logos Unified Old Testament Interlinear"])
+
+
+def _lane(callable_, reference: str) -> dict:
+    try:
+        return {"status": "available", "data": callable_(reference)}
+    except HTTPException as exc:
+        if exc.status_code == 404:
+            return {"status": "not-applicable", "detail": exc.detail}
+        if exc.status_code == 409:
+            return {"status": "mapping-required", "detail": exc.detail}
+        raise
+
+
+def _greek_lane(reference: str) -> dict:
+    accepted = _lane(_accepted_greek_payload, reference)
+    if accepted["status"] == "available":
+        accepted["source_scope"] = "accepted-catholic-deuterocanonical-and-additions"
+        return accepted
+    if accepted["status"] == "mapping-required":
+        return accepted
+    full = _lane(_full_greek_payload, reference)
+    if full["status"] == "available":
+        full["source_scope"] = "full-swete-protocanonical"
+    return full
+
+
+def _english_lane(reference: str) -> dict:
+    payload = _passage_payload(_passage(reference))
+    english = ((payload.get("languages") or {}).get("en") or {})
+    return {
+        "status": "available",
+        "data": {
+            "reference": payload.get("reference"),
+            "book": payload.get("book"),
+            "chapter": payload.get("chapter"),
+            "verse_start": payload.get("verse_start"),
+            "verse_end": payload.get("verse_end"),
+            "language": "en",
+            "label": english.get("label") or "English — Douay-Rheims 1899",
+            "text": english.get("text") or "",
+            "verses": payload.get("verses") or [],
+            "source": english.get("source") or {},
+            "note": english.get("note"),
+        },
+    }
+
+
+@router.get("/catalog")
+def catalog(response: Response):
+    response.headers["Cache-Control"] = "public, max-age=300"
+    semitic = _ot_semitic_manifest()
+    accepted_greek = _ot_greek_manifest()
+    full_greek = _full_greek_manifest()
+    latin = _latin_manifest()
+    return {
+        "module": "Logos Unified Catholic Old Testament Interlinear",
+        "production_enabled": bool(semitic and accepted_greek and full_greek and latin),
+        "catholic_ot_book_count": 46,
+        "lanes": {
+            "english": {"installed": True, "label": "Douay-Rheims 1899", "language": "en"},
+            "semitic": {
+                "installed": bool(semitic),
+                "corpus_id": semitic.get("corpus_id"),
+                "languages": semitic.get("languages") or ["he", "arc"],
+                "book_scope": 39,
+            },
+            "greek": {
+                "installed": bool(accepted_greek and full_greek),
+                "protocanonical_corpus_id": full_greek.get("corpus_id"),
+                "protocanonical_book_scope": full_greek.get("book_count", 0),
+                "deuterocanonical_corpus_id": accepted_greek.get("corpus_id"),
+                "accepted_witness_count": ((accepted_greek.get("phase1b_acceptance") or {}).get("witness_count", 0)),
+                "language": "grc",
+            },
+            "latin": {
+                "installed": bool(latin),
+                "corpus_id": latin.get("corpus_id"),
+                "book_count": latin.get("book_count", 0),
+                "language": "la",
+            },
+        },
+        "alignment_policy": {
+            "english_primary": True,
+            "source_boundaries_preserved": True,
+            "automatic_versification_remapping": False,
+            "parallel_render_requires_verified_mapping": True,
+            "unavailable_linguistic_layers_are_never_fabricated": True,
+        },
+    }
+
+
+@router.get("")
+def interlinear(reference: str = Query(min_length=2, max_length=120), response: Response = None):
+    if response is not None:
+        response.headers["Cache-Control"] = "public, max-age=300"
+    book_meta, _, _, _ = _parse_corpus_reference(reference)
+    if str(book_meta.get("testament")) != "OT":
+        raise HTTPException(status_code=404, detail="logos_unified_interlinear_ot_reference_required")
+
+    english = _english_lane(reference)
+    canonical_reference = str((english.get("data") or {}).get("reference") or reference)
+    semitic = _lane(_semitic_payload, canonical_reference)
+    greek = _greek_lane(canonical_reference)
+    latin = _lane(_latin_payload, canonical_reference)
+    return {
+        "reference": canonical_reference,
+        "book": book_meta.get("name"),
+        "book_id": book_meta.get("id"),
+        "testament": "OT",
+        "lanes": {
+            "english": english,
+            "semitic": semitic,
+            "greek": greek,
+            "latin": latin,
+        },
+        "alignment_policy": {
+            "english_primary": True,
+            "source_boundaries_preserved": True,
+            "automatic_versification_remapping": False,
+            "mapping_required_is_exposed_not_hidden": True,
+        },
+        "note": "This response unifies deterministic local Catholic OT source layers. A lane marked mapping-required is intentionally not rendered verse-for-verse until its source/Douay versification mapping is validated.",
+    }
