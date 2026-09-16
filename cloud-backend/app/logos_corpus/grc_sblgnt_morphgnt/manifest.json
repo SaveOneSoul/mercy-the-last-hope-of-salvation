@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "corpus_id": "grc_sblgnt_morphgnt",
+  "corpus_version": "2026.09.16-sblgnt-morphgnt-27",
+  "status": "production-installed",
+  "production_enabled": true,
+  "language": "grc",
+  "scope": "New Testament — 27 books",
+  "phase1_acceptance": {
+    "validated_phase": "Greek NT Expansion Phase 1",
+    "merge_commit": "7ee1b88676f5b19a92a5080abee389232ee56382",
+    "book_count": 27,
+    "chapter_count": 260,
+    "verse_count": 7939,
+    "surface_token_count": 137741,
+    "morphology_coverage_verse_count": 7927,
+    "annotation_gap_verse_count": 12,
+    "lexical_mismatch_count": 0
+  },
+  "sources": {
+    "surface": {
+      "id": "sblgnt",
+      "repository": "Faithlife/SBLGNT",
+      "commit": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c",
+      "license": "CC BY 4.0",
+      "role": "Greek surface text"
+    },
+    "linguistics": {
+      "id": "morphgnt-sblgnt",
+      "repository": "morphgnt/sblgnt",
+      "commit": "aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d",
+      "license": "CC BY-SA 3.0",
+      "role": "lemma, normalized form, POS and morphology",
+      "share_alike": true,
+      "isolation_required": true
+    }
+  },
+  "partitions": {
+    "surface": {
+      "path": "phase1/surface",
+      "license": "CC BY 4.0",
+      "contains": [
+        "Greek surface text",
+        "derived transliteration"
+      ]
+    },
+    "linguistics": {
+      "path": "phase1/linguistics",
+      "license": "CC BY-SA 3.0",
+      "share_alike": true,
+      "contains": [
+        "MorphGNT source surface",
+        "lemma",
+        "normalized form",
+        "POS",
+        "morphology"
+      ]
+    },
+    "alignment": {
+      "path": "phase1/alignment",
+      "license": "project-generated metadata",
+      "contains_source_text": false,
+      "contains_linguistic_payload": false
+    }
+  },
+  "annotation_gap_policy": {
+    "references": [
+      "John 7:53",
+      "John 8:1-11"
+    ],
+    "verse_count": 12,
+    "surface_text_preserved": true,
+    "morphology_status": "unavailable-in-pinned-morphgnt",
+    "fabricate_morphology": false
+  },
+  "gloss_layer": {
+    "installed": false,
+    "reason": "No separately approved gloss source has been licensed and source-locked yet."
+  },
+  "serving_contract": {
+    "surface_and_linguistics_remain_separate": true,
+    "join_key": "token id",
+    "source_surfaces_preserved": true,
+    "english_corpus_unchanged": true
+  }
+}

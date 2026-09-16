@@ -1,0 +1,804 @@
+{
+  "schema_version": 1,
+  "phase": "Greek NT Expansion Phase 1",
+  "status": "validation-generated",
+  "production_enabled": false,
+  "book_count": 27,
+  "chapter_count": 260,
+  "verse_count": 7939,
+  "token_count": 137741,
+  "exact_token_count": 136286,
+  "source_presentation_normalized_token_count": 1268,
+  "annotation_gap_token_count": 187,
+  "exact_alignment_verse_count": 6804,
+  "source_presentation_normalized_verse_count": 1123,
+  "annotation_gap_verse_count": 12,
+  "morphology_coverage_verse_count": 7927,
+  "lexical_mismatch_count": 0,
+  "alignment_mismatch_count": 0,
+  "alignment_policy": {
+    "mode": "exact-or-lexical-core-with-source-presentation-ignored",
+    "unicode_normalization": "NFC",
+    "casefolded_for_comparison": true,
+    "ignored_apparatus_markers": [
+      "⸀",
+      "⸂",
+      "⸃"
+    ],
+    "ignored_elision_markers": [
+      "ʼ",
+      "’"
+    ],
+    "ignored_unicode_categories": [
+      "P*"
+    ],
+    "preserved_for_comparison": [
+      "Greek letters",
+      "combining marks"
+    ],
+    "source_surfaces_preserved": true
+  },
+  "annotation_gap_policy": {
+    "mode": "source-locked-only",
+    "fabricate_morphology": false,
+    "surface_text_preserved": true
+  },
+  "source_commits": {
+    "sblgnt": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c",
+    "morphgnt": "aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d"
+  },
+  "license_partitions": {
+    "surface": {
+      "source": "sblgnt",
+      "license": "CC BY 4.0",
+      "output_subdir": "surface"
+    },
+    "linguistics": {
+      "source": "morphgnt",
+      "license": "CC BY-SA 3.0",
+      "output_subdir": "linguistics",
+      "share_alike": true
+    },
+    "alignment": {
+      "source": "project-generated",
+      "contains_source_text": false,
+      "output_subdir": "alignment",
+      "note": "Contains token ids and alignment/integrity metadata only; source payloads remain partitioned."
+    }
+  },
+  "gloss_layer": {
+    "installed": false,
+    "reason": "Phase 1 does not invent or copy glosses; a separately approved gloss source is required."
+  },
+  "books": [
+    {
+      "order": 1,
+      "book_id": "MAT",
+      "name": "Matthew",
+      "chapter_count": 28,
+      "verse_count": 1068,
+      "token_count": 18329,
+      "exact_token_count": 18193,
+      "source_presentation_normalized_token_count": 136,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 948,
+      "source_presentation_normalized_verse_count": 120,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 1068,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/Matt.txt",
+        "blob_sha1": "d19efbdff018c2bde83ba0fc01e0d8cb399b496b",
+        "sha256": "4fa718540cbc6330591b233c99c68bbf52b85afc90016e4188efe5cd9719eeb0"
+      },
+      "morphgnt": {
+        "path": "61-Mt-morphgnt.txt",
+        "blob_sha1": "4745674bd63bf0bbec37b8b08f2c8f32b73266b4",
+        "sha256": "95b360228bedd1c2d06655469111d3f028a4ce1d46939d440ed549feee8b73ec"
+      }
+    },
+    {
+      "order": 2,
+      "book_id": "MRK",
+      "name": "Mark",
+      "chapter_count": 16,
+      "verse_count": 673,
+      "token_count": 11286,
+      "exact_token_count": 11187,
+      "source_presentation_normalized_token_count": 99,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 581,
+      "source_presentation_normalized_verse_count": 92,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 673,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/Mark.txt",
+        "blob_sha1": "3f50fe360d1d2351db6b6c3000de47c16abccf84",
+        "sha256": "fe1b5a4c15db71e7e30f33fb67966ca93baffae377085ece0b88f66316729638"
+      },
+      "morphgnt": {
+        "path": "62-Mk-morphgnt.txt",
+        "blob_sha1": "d68222360b161cd6acba11746acfcb092b6af0c3",
+        "sha256": "4a2d2365cfe3e8d6c20b7c130c2c46363fa4459c3a6004992eba0a18231b183e"
+      }
+    },
+    {
+      "order": 3,
+      "book_id": "LUK",
+      "name": "Luke",
+      "chapter_count": 24,
+      "verse_count": 1149,
+      "token_count": 19446,
+      "exact_token_count": 19269,
+      "source_presentation_normalized_token_count": 177,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 986,
+      "source_presentation_normalized_verse_count": 163,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 1149,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/Luke.txt",
+        "blob_sha1": "735aca6a87f3339d806e5330461cb4c7a7d46d9c",
+        "sha256": "102d65ec7a91271777115d1a605688776adfda6a1188680ccf593e27e3e876d6"
+      },
+      "morphgnt": {
+        "path": "63-Lk-morphgnt.txt",
+        "blob_sha1": "474e65703c49ef3890fca4b24403434ab6df6457",
+        "sha256": "a6f10ccf27a905f21ecbec96c3c01f220c39dd37aae118022113a52dfeb7528e"
+      }
+    },
+    {
+      "order": 4,
+      "book_id": "JHN",
+      "name": "John",
+      "chapter_count": 21,
+      "verse_count": 878,
+      "token_count": 15625,
+      "exact_token_count": 15292,
+      "source_presentation_normalized_token_count": 146,
+      "annotation_gap_token_count": 187,
+      "exact_verse_count": 740,
+      "source_presentation_normalized_verse_count": 126,
+      "annotation_gap_verse_count": 12,
+      "morphology_coverage_verse_count": 866,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/John.txt",
+        "blob_sha1": "a79ae036447d48fd88c4db8e166c771b4fc57d93",
+        "sha256": "ada9643154a990ae2725ab847c6cfb576ce2c3bcd4945d47606e8a90c8d065f5"
+      },
+      "morphgnt": {
+        "path": "64-Jn-morphgnt.txt",
+        "blob_sha1": "c3dab42934edab531f7dc08b630be8181638bd61",
+        "sha256": "1b1de3e48e3f3d212ba19c76e5b2f1749833f888f5b52513099ec13cc01b619c"
+      }
+    },
+    {
+      "order": 5,
+      "book_id": "ACT",
+      "name": "Acts",
+      "chapter_count": 28,
+      "verse_count": 1002,
+      "token_count": 18412,
+      "exact_token_count": 18268,
+      "source_presentation_normalized_token_count": 144,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 868,
+      "source_presentation_normalized_verse_count": 134,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 1002,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/Acts.txt",
+        "blob_sha1": "4cdcc5176134a1b9802c87dbdf3a90ffb6c284aa",
+        "sha256": "199867a92d9a1ef73abe85986e4489d4799bb187bdd22845f3c168c93cafa9c8"
+      },
+      "morphgnt": {
+        "path": "65-Ac-morphgnt.txt",
+        "blob_sha1": "3aed8e1a1dd9d77b4c448a0893bd4ddee6eb6842",
+        "sha256": "04349afeba263d667698b37d39465d746530434b455fb6ac2941ec5c59fb85ca"
+      }
+    },
+    {
+      "order": 6,
+      "book_id": "ROM",
+      "name": "Romans",
+      "chapter_count": 16,
+      "verse_count": 430,
+      "token_count": 7055,
+      "exact_token_count": 6980,
+      "source_presentation_normalized_token_count": 75,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 364,
+      "source_presentation_normalized_verse_count": 66,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 430,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/Rom.txt",
+        "blob_sha1": "9782d917928719056708db2b1849eb8cfe65a6c5",
+        "sha256": "a919e44983ec633d541ec1084da79cfba1c1aa7f0eac6470c1ac7ec66cf774e8"
+      },
+      "morphgnt": {
+        "path": "66-Ro-morphgnt.txt",
+        "blob_sha1": "874480223c7f71bbc71f18d77ed3a6ad734561e1",
+        "sha256": "364b3b57c70e731920c7fa8a61f09ecd53eed858f7f3590596066484d0638cc6"
+      }
+    },
+    {
+      "order": 7,
+      "book_id": "1CO",
+      "name": "1 Corinthians",
+      "chapter_count": 16,
+      "verse_count": 437,
+      "token_count": 6812,
+      "exact_token_count": 6746,
+      "source_presentation_normalized_token_count": 66,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 383,
+      "source_presentation_normalized_verse_count": 54,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 437,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/1Cor.txt",
+        "blob_sha1": "e3518b277c62f4f28c62089dffdda385fb30ed5b",
+        "sha256": "2a706bac29f1e34568bf6862cbc1616471511e9b915d7292adba3e93fb72c946"
+      },
+      "morphgnt": {
+        "path": "67-1Co-morphgnt.txt",
+        "blob_sha1": "28dec6618da3a378f454b6c72776286855857920",
+        "sha256": "5233a5b099e2499baed34ec2d6f53ae44545d532a7e2fb12acafcf39ff6fdbf3"
+      }
+    },
+    {
+      "order": 8,
+      "book_id": "2CO",
+      "name": "2 Corinthians",
+      "chapter_count": 13,
+      "verse_count": 256,
+      "token_count": 4473,
+      "exact_token_count": 4407,
+      "source_presentation_normalized_token_count": 66,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 203,
+      "source_presentation_normalized_verse_count": 53,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 256,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/2Cor.txt",
+        "blob_sha1": "9fa2dfdaf9736f102f4377084c6176cc92ff7e89",
+        "sha256": "af6a60d5f851762c7ee22be6f15975e706a55cf24bd0b890d6ee9ab2ad74bd18"
+      },
+      "morphgnt": {
+        "path": "68-2Co-morphgnt.txt",
+        "blob_sha1": "9beb35c77da5ffbcf56a8d7c0e9d6054452a0b43",
+        "sha256": "1742d5076780a5338a858f2d83e615c87b2412cbefa56a4b8e14aa2c0ce326c4"
+      }
+    },
+    {
+      "order": 9,
+      "book_id": "GAL",
+      "name": "Galatians",
+      "chapter_count": 6,
+      "verse_count": 149,
+      "token_count": 2226,
+      "exact_token_count": 2197,
+      "source_presentation_normalized_token_count": 29,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 123,
+      "source_presentation_normalized_verse_count": 26,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 149,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/Gal.txt",
+        "blob_sha1": "f0ccf0cd88061ba2df09f88c8cc6da9101d92aa6",
+        "sha256": "cea30996850efb7a24d5be03d5d1ea052f2200e292f8bdd190c57298bd8c2fb1"
+      },
+      "morphgnt": {
+        "path": "69-Ga-morphgnt.txt",
+        "blob_sha1": "b6ba67c907b35700e32a8fa00c0b30328472a992",
+        "sha256": "ec249897464e8e8992e4869645471d6f3372e7373ba3a5d429516946d8cffada"
+      }
+    },
+    {
+      "order": 10,
+      "book_id": "EPH",
+      "name": "Ephesians",
+      "chapter_count": 6,
+      "verse_count": 155,
+      "token_count": 2416,
+      "exact_token_count": 2402,
+      "source_presentation_normalized_token_count": 14,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 142,
+      "source_presentation_normalized_verse_count": 13,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 155,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/Eph.txt",
+        "blob_sha1": "a6e1ed7096486673ce3c89bb85869c8283297d5c",
+        "sha256": "c15837d245dc849384a0be9f6c76de65590ffd496474f48c16822696ca024f6a"
+      },
+      "morphgnt": {
+        "path": "70-Eph-morphgnt.txt",
+        "blob_sha1": "c506f4c4933b0c202f07742ca54aad26ff5495bc",
+        "sha256": "9f6444d3aff9791817c2ad84d8ff5b1c229d18a4e9ab07e5066ceb0068dee397"
+      }
+    },
+    {
+      "order": 11,
+      "book_id": "PHP",
+      "name": "Philippians",
+      "chapter_count": 4,
+      "verse_count": 104,
+      "token_count": 1626,
+      "exact_token_count": 1613,
+      "source_presentation_normalized_token_count": 13,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 92,
+      "source_presentation_normalized_verse_count": 12,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 104,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/Phil.txt",
+        "blob_sha1": "c97991ef6d1bd1f236ea4bb81dc9230df895bc7b",
+        "sha256": "c99e25ea7856fd7a3edb1055716869117c4cba4c15f07567ea22c0269e211b85"
+      },
+      "morphgnt": {
+        "path": "71-Php-morphgnt.txt",
+        "blob_sha1": "0dde9e397d8e0c8384eab85ca1f61b38b37a6272",
+        "sha256": "6e6133fba46c164c16264c4d9563b30d5634effba5792419f8ed5d5ec08961a4"
+      }
+    },
+    {
+      "order": 12,
+      "book_id": "COL",
+      "name": "Colossians",
+      "chapter_count": 4,
+      "verse_count": 95,
+      "token_count": 1580,
+      "exact_token_count": 1565,
+      "source_presentation_normalized_token_count": 15,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 81,
+      "source_presentation_normalized_verse_count": 14,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 95,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/Col.txt",
+        "blob_sha1": "06f9ee0bc5f86cd1f28f1e54867224f49e446380",
+        "sha256": "665ef40dbc19bacf2b2642aa0bfc265e3cfab3f37b5757ea1ff69bdaf968bd08"
+      },
+      "morphgnt": {
+        "path": "72-Col-morphgnt.txt",
+        "blob_sha1": "8cdbc8e44370e7ffa2aa92419e2dd2ccaf40cdd2",
+        "sha256": "21e18b4310ce953cd786f8466824f24795cb46ef149dc501a330d55a05f7346a"
+      }
+    },
+    {
+      "order": 13,
+      "book_id": "1TH",
+      "name": "1 Thessalonians",
+      "chapter_count": 5,
+      "verse_count": 89,
+      "token_count": 1473,
+      "exact_token_count": 1458,
+      "source_presentation_normalized_token_count": 15,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 76,
+      "source_presentation_normalized_verse_count": 13,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 89,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/1Thess.txt",
+        "blob_sha1": "e3d844977c70badc19c056f3728dfeafe493486f",
+        "sha256": "58b57d9b87ee994757a6bd425cfb8a12cecee9b3c7d0206286fdf2b089b44ccf"
+      },
+      "morphgnt": {
+        "path": "73-1Th-morphgnt.txt",
+        "blob_sha1": "ced6898c215029bc8460c23d1b1600d3fd6f5243",
+        "sha256": "e322ec075748e81897dc0a2b87a821ee78e200f6ba833bbba07607e55a3c68d5"
+      }
+    },
+    {
+      "order": 14,
+      "book_id": "2TH",
+      "name": "2 Thessalonians",
+      "chapter_count": 3,
+      "verse_count": 47,
+      "token_count": 820,
+      "exact_token_count": 806,
+      "source_presentation_normalized_token_count": 14,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 36,
+      "source_presentation_normalized_verse_count": 11,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 47,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/2Thess.txt",
+        "blob_sha1": "d73ba27f24a7d4a953242bc81d230833152c87ed",
+        "sha256": "c2a6922591a0282f5c07fe9fa47b8f38cd1aaf15b56eb9364aac91f5546f5822"
+      },
+      "morphgnt": {
+        "path": "74-2Th-morphgnt.txt",
+        "blob_sha1": "123860bf9b3a59ffe1dd7ae0fdeb7a0eddd5d080",
+        "sha256": "309ba3338e0ccf2219bea7ee49f1e63bbefc1edcceedc5527c79395fd6b0bc19"
+      }
+    },
+    {
+      "order": 15,
+      "book_id": "1TI",
+      "name": "1 Timothy",
+      "chapter_count": 6,
+      "verse_count": 113,
+      "token_count": 1591,
+      "exact_token_count": 1583,
+      "source_presentation_normalized_token_count": 8,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 106,
+      "source_presentation_normalized_verse_count": 7,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 113,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/1Tim.txt",
+        "blob_sha1": "54745ec5731df6c6f844b28a9e12d063a38cf416",
+        "sha256": "e4813e23b26b8b4763771b252cb41982d3af66abeead62f014e5f5f0a5323dcb"
+      },
+      "morphgnt": {
+        "path": "75-1Ti-morphgnt.txt",
+        "blob_sha1": "b3a48cf39e72a1d5ab12e22dbfccf50d5273c450",
+        "sha256": "b4a6a446d163b8b651ba11119bbc211b4e14cb12871b48df175adb88d4f9db97"
+      }
+    },
+    {
+      "order": 16,
+      "book_id": "2TI",
+      "name": "2 Timothy",
+      "chapter_count": 4,
+      "verse_count": 83,
+      "token_count": 1235,
+      "exact_token_count": 1223,
+      "source_presentation_normalized_token_count": 12,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 72,
+      "source_presentation_normalized_verse_count": 11,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 83,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/2Tim.txt",
+        "blob_sha1": "8809e18b0f95c7e6913ea5d239f2c28eda2fffad",
+        "sha256": "eecea7f17f3493bb3e0d2d5922acf2ab10dae876156e0cbc395355c05f66d2bf"
+      },
+      "morphgnt": {
+        "path": "76-2Ti-morphgnt.txt",
+        "blob_sha1": "9e8982318844d411c26cb29f88fbe2e44f733f6a",
+        "sha256": "8af532322a0693ecb8d34b75c544c3b6a57e76e266be750d62d42bc07385376e"
+      }
+    },
+    {
+      "order": 17,
+      "book_id": "TIT",
+      "name": "Titus",
+      "chapter_count": 3,
+      "verse_count": 46,
+      "token_count": 659,
+      "exact_token_count": 651,
+      "source_presentation_normalized_token_count": 8,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 38,
+      "source_presentation_normalized_verse_count": 8,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 46,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/Titus.txt",
+        "blob_sha1": "114ee929baff42f702b30553442010fe1ec84747",
+        "sha256": "8a7ff3511b7cbaaba481fe92b9aa716b8fd2abcc9d54829939c2fa3f836a2267"
+      },
+      "morphgnt": {
+        "path": "77-Tit-morphgnt.txt",
+        "blob_sha1": "20181fbb5729cc9fbd200b58241ac5e5612c2ec3",
+        "sha256": "16e9204306d616795f53f8627ff6ea05a80f572d7a21ed23ac7df99c6e00324d"
+      }
+    },
+    {
+      "order": 18,
+      "book_id": "PHM",
+      "name": "Philemon",
+      "chapter_count": 1,
+      "verse_count": 25,
+      "token_count": 334,
+      "exact_token_count": 332,
+      "source_presentation_normalized_token_count": 2,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 23,
+      "source_presentation_normalized_verse_count": 2,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 25,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/Phlm.txt",
+        "blob_sha1": "7904bf8debfe51ea69e0259d214352310eebe3c2",
+        "sha256": "0b74d129888819be274cdcf239672f4688691ebab77c627521b5fcb185bea011"
+      },
+      "morphgnt": {
+        "path": "78-Phm-morphgnt.txt",
+        "blob_sha1": "a4a64fb468e0110aec98d94d707af8a5188419fd",
+        "sha256": "e302779406b5405e8ff82a0dc2ded5ab49951f0d6245fe86894100bd83c51e33"
+      }
+    },
+    {
+      "order": 19,
+      "book_id": "HEB",
+      "name": "Hebrews",
+      "chapter_count": 13,
+      "verse_count": 303,
+      "token_count": 4935,
+      "exact_token_count": 4869,
+      "source_presentation_normalized_token_count": 66,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 246,
+      "source_presentation_normalized_verse_count": 57,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 303,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/Heb.txt",
+        "blob_sha1": "3a7e9b3f7f17aaae39976aae8661bfa5dba55db2",
+        "sha256": "a89fa2a3a8f04e8bf6a9c71404a9c45fa0e32cff5b6942043e663d8c1f40cc93"
+      },
+      "morphgnt": {
+        "path": "79-Heb-morphgnt.txt",
+        "blob_sha1": "b6f41c7341e6b40dddf36eb7230f6ea2541cd879",
+        "sha256": "de7d5c7efe4cdb5e9023c8571c322c3b1a5a817de1d97c3275aef5e154b2756b"
+      }
+    },
+    {
+      "order": 20,
+      "book_id": "JAS",
+      "name": "James",
+      "chapter_count": 5,
+      "verse_count": 108,
+      "token_count": 1739,
+      "exact_token_count": 1720,
+      "source_presentation_normalized_token_count": 19,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 92,
+      "source_presentation_normalized_verse_count": 16,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 108,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/Jas.txt",
+        "blob_sha1": "283a675fdfab4ca4967ca5a72500a1aff2bd07c7",
+        "sha256": "1343ea4125c64585c738a2f8bf54a077947d0a6229b2642b39a1ad845f40e153"
+      },
+      "morphgnt": {
+        "path": "80-Jas-morphgnt.txt",
+        "blob_sha1": "462cf055ed12eb98f050da2d2ddcf040212304af",
+        "sha256": "205d4cdbb4c89aabd51ebf599fcfa622001af6e64dcd4e5ad487298ee4b7a204"
+      }
+    },
+    {
+      "order": 21,
+      "book_id": "1PE",
+      "name": "1 Peter",
+      "chapter_count": 5,
+      "verse_count": 105,
+      "token_count": 1678,
+      "exact_token_count": 1658,
+      "source_presentation_normalized_token_count": 20,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 87,
+      "source_presentation_normalized_verse_count": 18,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 105,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/1Pet.txt",
+        "blob_sha1": "fe0f29aecbc8476ce87df0bf396e5e78c410491d",
+        "sha256": "9c847143fbecfb2c5d0fc35820f973efb749c04a9badae99eb8d9ac0cf3d2a6d"
+      },
+      "morphgnt": {
+        "path": "81-1Pe-morphgnt.txt",
+        "blob_sha1": "5ac72702c9fba9872973d9ae477933ffd261caf7",
+        "sha256": "7eeeecddae91a5d103576f629e4fa536fa2217381f4a83eaa904b63d81ffc0b8"
+      }
+    },
+    {
+      "order": 22,
+      "book_id": "2PE",
+      "name": "2 Peter",
+      "chapter_count": 3,
+      "verse_count": 61,
+      "token_count": 1098,
+      "exact_token_count": 1085,
+      "source_presentation_normalized_token_count": 13,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 50,
+      "source_presentation_normalized_verse_count": 11,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 61,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/2Pet.txt",
+        "blob_sha1": "4e5e26aba20f43d1509afc828e96d90134e52e00",
+        "sha256": "7afd9df2ea451cc6b3d55984d12fcf8d8d159b5f3d40489b4ebd375dbac8aea0"
+      },
+      "morphgnt": {
+        "path": "82-2Pe-morphgnt.txt",
+        "blob_sha1": "e00185e04d19766df22734e7bce8342916f1d695",
+        "sha256": "41c1bb93726bf66e46653bb369850f2e319869375f31746d120276dff73a310a"
+      }
+    },
+    {
+      "order": 23,
+      "book_id": "1JN",
+      "name": "1 John",
+      "chapter_count": 5,
+      "verse_count": 105,
+      "token_count": 2137,
+      "exact_token_count": 2101,
+      "source_presentation_normalized_token_count": 36,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 77,
+      "source_presentation_normalized_verse_count": 28,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 105,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/1John.txt",
+        "blob_sha1": "e4f7c05c3e7d6afb1fceff563bc443065df586eb",
+        "sha256": "074201796600c23d79c0abd26621ed0046290d5f227f4aaea67ac425784094c5"
+      },
+      "morphgnt": {
+        "path": "83-1Jn-morphgnt.txt",
+        "blob_sha1": "256ce436ae5bb07f405b8971b8355336dfe39e76",
+        "sha256": "99fb0d33100f9df25697e9b9ecaa04c599a277b5f2f65f8ed28e97902fed4df9"
+      }
+    },
+    {
+      "order": 24,
+      "book_id": "2JN",
+      "name": "2 John",
+      "chapter_count": 1,
+      "verse_count": 13,
+      "token_count": 245,
+      "exact_token_count": 241,
+      "source_presentation_normalized_token_count": 4,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 9,
+      "source_presentation_normalized_verse_count": 4,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 13,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/2John.txt",
+        "blob_sha1": "29ac357d293ef2b525f04e66ba4bef5c144e4b12",
+        "sha256": "b2daf832c6f88d67ae0bdf2ecfbbb42309e330dc161f5b127c8939d5cb448bc7"
+      },
+      "morphgnt": {
+        "path": "84-2Jn-morphgnt.txt",
+        "blob_sha1": "1dd4b1fd9bd6095ddbb6d9e178c193666fd43860",
+        "sha256": "bb90002d6b9bbbc43977a59c85ad04de873750b5e24187da064a319c2acd7fec"
+      }
+    },
+    {
+      "order": 25,
+      "book_id": "3JN",
+      "name": "3 John",
+      "chapter_count": 1,
+      "verse_count": 15,
+      "token_count": 219,
+      "exact_token_count": 216,
+      "source_presentation_normalized_token_count": 3,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 12,
+      "source_presentation_normalized_verse_count": 3,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 15,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/3John.txt",
+        "blob_sha1": "023c167c50535f735e9b15d564f1bd83e10b7d6d",
+        "sha256": "db0bfc024dfbafa4bf0c978d6f53186c35e6eb771058672ff4f1c31708db6c16"
+      },
+      "morphgnt": {
+        "path": "85-3Jn-morphgnt.txt",
+        "blob_sha1": "27a36b65129ba367a8ea92dc3507ef1a0cfee730",
+        "sha256": "a75df82d9007bb673e7d27bcb86681e011befc24cbaef1c658965803d7ae490a"
+      }
+    },
+    {
+      "order": 26,
+      "book_id": "JUD",
+      "name": "Jude",
+      "chapter_count": 1,
+      "verse_count": 25,
+      "token_count": 459,
+      "exact_token_count": 457,
+      "source_presentation_normalized_token_count": 2,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 23,
+      "source_presentation_normalized_verse_count": 2,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 25,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/Jude.txt",
+        "blob_sha1": "acff675d2bda62ecbe081bb75a73788e71c521da",
+        "sha256": "9d80e8332848395a7af425ebf30edd21c9c43f0f446489f648b65c652630b734"
+      },
+      "morphgnt": {
+        "path": "86-Jud-morphgnt.txt",
+        "blob_sha1": "c401f296d69d02a78d0266a976bdd72db95fb318",
+        "sha256": "93c64857b492812544f1c5903bb63b5ec63ee5f32f69dd4c02d9d9c84b84624d"
+      }
+    },
+    {
+      "order": 27,
+      "book_id": "REV",
+      "name": "Revelation",
+      "chapter_count": 22,
+      "verse_count": 405,
+      "token_count": 9833,
+      "exact_token_count": 9767,
+      "source_presentation_normalized_token_count": 66,
+      "annotation_gap_token_count": 0,
+      "exact_verse_count": 346,
+      "source_presentation_normalized_verse_count": 59,
+      "annotation_gap_verse_count": 0,
+      "morphology_coverage_verse_count": 405,
+      "lexical_mismatch_count": 0,
+      "alignment_mismatch_count": 0,
+      "sblgnt": {
+        "path": "data/sblgnt/text/Rev.txt",
+        "blob_sha1": "a50a57daa6f410cccc219ac45b03f069f43baad8",
+        "sha256": "61419de7970661f8c481975c35b50e7c1df0422db0c6400d1ce2c6ade35da9f0"
+      },
+      "morphgnt": {
+        "path": "87-Re-morphgnt.txt",
+        "blob_sha1": "bf6fde5561b55eef837ae05067d270cdbc858c25",
+        "sha256": "5386b17ab6e3a8a68478cb0f4644009f6ad5322f379327629407ffd46a0e6dd3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,6926 @@
+{
+  "schema_version": 1,
+  "phase": "Greek NT Expansion Phase 1",
+  "status": "validation-only",
+  "layer": "surface",
+  "book_id": "2PE",
+  "name": "2 Peter",
+  "language": "grc",
+  "source": {
+    "id": "sblgnt",
+    "repository": "Faithlife/SBLGNT",
+    "commit": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c",
+    "path": "data/sblgnt/text/2Pet.txt",
+    "blob_sha1": "4e5e26aba20f43d1509afc828e96d90134e52e00",
+    "sha256": "7afd9df2ea451cc6b3d55984d12fcf8d8d159b5f3d40489b4ebd375dbac8aea0",
+    "license": "CC BY 4.0"
+  },
+  "derived_fields": {
+    "transliteration": {
+      "source": "logos-derived-greek-transliteration-v1",
+      "basis": "SBLGNT surface token",
+      "note": "Mechanical deterministic transliteration for search/display; not a replacement for the Greek source."
+    }
+  },
+  "chapters": {
+    "1": {
+      "1": {
+        "text": "⸀Συμεὼν Πέτρος δοῦλος καὶ ἀπόστολος Ἰησοῦ Χριστοῦ τοῖς ἰσότιμον ἡμῖν λαχοῦσιν πίστιν ἐν δικαιοσύνῃ τοῦ θεοῦ ἡμῶν καὶ σωτῆρος Ἰησοῦ Χριστοῦ·",
+        "tokens": [
+          {
+            "id": "2PE-1-1-GR-001",
+            "position": 1,
+            "surface": "⸀Συμεὼν",
+            "transliteration": "Symeōn"
+          },
+          {
+            "id": "2PE-1-1-GR-002",
+            "position": 2,
+            "surface": "Πέτρος",
+            "transliteration": "Petros"
+          },
+          {
+            "id": "2PE-1-1-GR-003",
+            "position": 3,
+            "surface": "δοῦλος",
+            "transliteration": "doylos"
+          },
+          {
+            "id": "2PE-1-1-GR-004",
+            "position": 4,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-1-GR-005",
+            "position": 5,
+            "surface": "ἀπόστολος",
+            "transliteration": "apostolos"
+          },
+          {
+            "id": "2PE-1-1-GR-006",
+            "position": 6,
+            "surface": "Ἰησοῦ",
+            "transliteration": "Iēsoy"
+          },
+          {
+            "id": "2PE-1-1-GR-007",
+            "position": 7,
+            "surface": "Χριστοῦ",
+            "transliteration": "Christoy"
+          },
+          {
+            "id": "2PE-1-1-GR-008",
+            "position": 8,
+            "surface": "τοῖς",
+            "transliteration": "tois"
+          },
+          {
+            "id": "2PE-1-1-GR-009",
+            "position": 9,
+            "surface": "ἰσότιμον",
+            "transliteration": "isotimon"
+          },
+          {
+            "id": "2PE-1-1-GR-010",
+            "position": 10,
+            "surface": "ἡμῖν",
+            "transliteration": "hēmin"
+          },
+          {
+            "id": "2PE-1-1-GR-011",
+            "position": 11,
+            "surface": "λαχοῦσιν",
+            "transliteration": "lachoysin"
+          },
+          {
+            "id": "2PE-1-1-GR-012",
+            "position": 12,
+            "surface": "πίστιν",
+            "transliteration": "pistin"
+          },
+          {
+            "id": "2PE-1-1-GR-013",
+            "position": 13,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-1-GR-014",
+            "position": 14,
+            "surface": "δικαιοσύνῃ",
+            "transliteration": "dikaiosynēi"
+          },
+          {
+            "id": "2PE-1-1-GR-015",
+            "position": 15,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-1-1-GR-016",
+            "position": 16,
+            "surface": "θεοῦ",
+            "transliteration": "theoy"
+          },
+          {
+            "id": "2PE-1-1-GR-017",
+            "position": 17,
+            "surface": "ἡμῶν",
+            "transliteration": "hēmōn"
+          },
+          {
+            "id": "2PE-1-1-GR-018",
+            "position": 18,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-1-GR-019",
+            "position": 19,
+            "surface": "σωτῆρος",
+            "transliteration": "sōtēros"
+          },
+          {
+            "id": "2PE-1-1-GR-020",
+            "position": 20,
+            "surface": "Ἰησοῦ",
+            "transliteration": "Iēsoy"
+          },
+          {
+            "id": "2PE-1-1-GR-021",
+            "position": 21,
+            "surface": "Χριστοῦ·",
+            "transliteration": "Christoy"
+          }
+        ]
+      },
+      "2": {
+        "text": "χάρις ὑμῖν καὶ εἰρήνη πληθυνθείη ἐν ἐπιγνώσει τοῦ θεοῦ καὶ Ἰησοῦ τοῦ κυρίου ἡμῶν.",
+        "tokens": [
+          {
+            "id": "2PE-1-2-GR-001",
+            "position": 1,
+            "surface": "χάρις",
+            "transliteration": "charis"
+          },
+          {
+            "id": "2PE-1-2-GR-002",
+            "position": 2,
+            "surface": "ὑμῖν",
+            "transliteration": "hymin"
+          },
+          {
+            "id": "2PE-1-2-GR-003",
+            "position": 3,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-2-GR-004",
+            "position": 4,
+            "surface": "εἰρήνη",
+            "transliteration": "eirēnē"
+          },
+          {
+            "id": "2PE-1-2-GR-005",
+            "position": 5,
+            "surface": "πληθυνθείη",
+            "transliteration": "plēthyntheiē"
+          },
+          {
+            "id": "2PE-1-2-GR-006",
+            "position": 6,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-2-GR-007",
+            "position": 7,
+            "surface": "ἐπιγνώσει",
+            "transliteration": "epignōsei"
+          },
+          {
+            "id": "2PE-1-2-GR-008",
+            "position": 8,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-1-2-GR-009",
+            "position": 9,
+            "surface": "θεοῦ",
+            "transliteration": "theoy"
+          },
+          {
+            "id": "2PE-1-2-GR-010",
+            "position": 10,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-2-GR-011",
+            "position": 11,
+            "surface": "Ἰησοῦ",
+            "transliteration": "Iēsoy"
+          },
+          {
+            "id": "2PE-1-2-GR-012",
+            "position": 12,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-1-2-GR-013",
+            "position": 13,
+            "surface": "κυρίου",
+            "transliteration": "kyrioy"
+          },
+          {
+            "id": "2PE-1-2-GR-014",
+            "position": 14,
+            "surface": "ἡμῶν.",
+            "transliteration": "hēmōn"
+          }
+        ]
+      },
+      "3": {
+        "text": "Ὡς πάντα ἡμῖν τῆς θείας δυνάμεως αὐτοῦ τὰ πρὸς ζωὴν καὶ εὐσέβειαν δεδωρημένης διὰ τῆς ἐπιγνώσεως τοῦ καλέσαντος ἡμᾶς ⸂ἰδίᾳ δόξῃ καὶ ἀρετῇ⸃,",
+        "tokens": [
+          {
+            "id": "2PE-1-3-GR-001",
+            "position": 1,
+            "surface": "Ὡς",
+            "transliteration": "Hōs"
+          },
+          {
+            "id": "2PE-1-3-GR-002",
+            "position": 2,
+            "surface": "πάντα",
+            "transliteration": "panta"
+          },
+          {
+            "id": "2PE-1-3-GR-003",
+            "position": 3,
+            "surface": "ἡμῖν",
+            "transliteration": "hēmin"
+          },
+          {
+            "id": "2PE-1-3-GR-004",
+            "position": 4,
+            "surface": "τῆς",
+            "transliteration": "tēs"
+          },
+          {
+            "id": "2PE-1-3-GR-005",
+            "position": 5,
+            "surface": "θείας",
+            "transliteration": "theias"
+          },
+          {
+            "id": "2PE-1-3-GR-006",
+            "position": 6,
+            "surface": "δυνάμεως",
+            "transliteration": "dynameōs"
+          },
+          {
+            "id": "2PE-1-3-GR-007",
+            "position": 7,
+            "surface": "αὐτοῦ",
+            "transliteration": "aytoy"
+          },
+          {
+            "id": "2PE-1-3-GR-008",
+            "position": 8,
+            "surface": "τὰ",
+            "transliteration": "ta"
+          },
+          {
+            "id": "2PE-1-3-GR-009",
+            "position": 9,
+            "surface": "πρὸς",
+            "transliteration": "pros"
+          },
+          {
+            "id": "2PE-1-3-GR-010",
+            "position": 10,
+            "surface": "ζωὴν",
+            "transliteration": "zōēn"
+          },
+          {
+            "id": "2PE-1-3-GR-011",
+            "position": 11,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-3-GR-012",
+            "position": 12,
+            "surface": "εὐσέβειαν",
+            "transliteration": "eysebeian"
+          },
+          {
+            "id": "2PE-1-3-GR-013",
+            "position": 13,
+            "surface": "δεδωρημένης",
+            "transliteration": "dedōrēmenēs"
+          },
+          {
+            "id": "2PE-1-3-GR-014",
+            "position": 14,
+            "surface": "διὰ",
+            "transliteration": "dia"
+          },
+          {
+            "id": "2PE-1-3-GR-015",
+            "position": 15,
+            "surface": "τῆς",
+            "transliteration": "tēs"
+          },
+          {
+            "id": "2PE-1-3-GR-016",
+            "position": 16,
+            "surface": "ἐπιγνώσεως",
+            "transliteration": "epignōseōs"
+          },
+          {
+            "id": "2PE-1-3-GR-017",
+            "position": 17,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-1-3-GR-018",
+            "position": 18,
+            "surface": "καλέσαντος",
+            "transliteration": "kalesantos"
+          },
+          {
+            "id": "2PE-1-3-GR-019",
+            "position": 19,
+            "surface": "ἡμᾶς",
+            "transliteration": "hēmas"
+          },
+          {
+            "id": "2PE-1-3-GR-020",
+            "position": 20,
+            "surface": "⸂ἰδίᾳ",
+            "transliteration": "idiai"
+          },
+          {
+            "id": "2PE-1-3-GR-021",
+            "position": 21,
+            "surface": "δόξῃ",
+            "transliteration": "doxēi"
+          },
+          {
+            "id": "2PE-1-3-GR-022",
+            "position": 22,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-3-GR-023",
+            "position": 23,
+            "surface": "ἀρετῇ⸃,",
+            "transliteration": "aretēi"
+          }
+        ]
+      },
+      "4": {
+        "text": "διʼ ὧν τὰ ⸂τίμια καὶ μέγιστα ἡμῖν⸃ ἐπαγγέλματα δεδώρηται, ἵνα διὰ τούτων γένησθε θείας κοινωνοὶ φύσεως, ἀποφυγόντες τῆς ἐν ⸀τῷ κόσμῳ ἐν ἐπιθυμίᾳ φθορᾶς.",
+        "tokens": [
+          {
+            "id": "2PE-1-4-GR-001",
+            "position": 1,
+            "surface": "διʼ",
+            "transliteration": "di"
+          },
+          {
+            "id": "2PE-1-4-GR-002",
+            "position": 2,
+            "surface": "ὧν",
+            "transliteration": "hōn"
+          },
+          {
+            "id": "2PE-1-4-GR-003",
+            "position": 3,
+            "surface": "τὰ",
+            "transliteration": "ta"
+          },
+          {
+            "id": "2PE-1-4-GR-004",
+            "position": 4,
+            "surface": "⸂τίμια",
+            "transliteration": "timia"
+          },
+          {
+            "id": "2PE-1-4-GR-005",
+            "position": 5,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-4-GR-006",
+            "position": 6,
+            "surface": "μέγιστα",
+            "transliteration": "megista"
+          },
+          {
+            "id": "2PE-1-4-GR-007",
+            "position": 7,
+            "surface": "ἡμῖν⸃",
+            "transliteration": "hēmin"
+          },
+          {
+            "id": "2PE-1-4-GR-008",
+            "position": 8,
+            "surface": "ἐπαγγέλματα",
+            "transliteration": "epaggelmata"
+          },
+          {
+            "id": "2PE-1-4-GR-009",
+            "position": 9,
+            "surface": "δεδώρηται,",
+            "transliteration": "dedōrētai"
+          },
+          {
+            "id": "2PE-1-4-GR-010",
+            "position": 10,
+            "surface": "ἵνα",
+            "transliteration": "hina"
+          },
+          {
+            "id": "2PE-1-4-GR-011",
+            "position": 11,
+            "surface": "διὰ",
+            "transliteration": "dia"
+          },
+          {
+            "id": "2PE-1-4-GR-012",
+            "position": 12,
+            "surface": "τούτων",
+            "transliteration": "toytōn"
+          },
+          {
+            "id": "2PE-1-4-GR-013",
+            "position": 13,
+            "surface": "γένησθε",
+            "transliteration": "genēsthe"
+          },
+          {
+            "id": "2PE-1-4-GR-014",
+            "position": 14,
+            "surface": "θείας",
+            "transliteration": "theias"
+          },
+          {
+            "id": "2PE-1-4-GR-015",
+            "position": 15,
+            "surface": "κοινωνοὶ",
+            "transliteration": "koinōnoi"
+          },
+          {
+            "id": "2PE-1-4-GR-016",
+            "position": 16,
+            "surface": "φύσεως,",
+            "transliteration": "physeōs"
+          },
+          {
+            "id": "2PE-1-4-GR-017",
+            "position": 17,
+            "surface": "ἀποφυγόντες",
+            "transliteration": "apophygontes"
+          },
+          {
+            "id": "2PE-1-4-GR-018",
+            "position": 18,
+            "surface": "τῆς",
+            "transliteration": "tēs"
+          },
+          {
+            "id": "2PE-1-4-GR-019",
+            "position": 19,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-4-GR-020",
+            "position": 20,
+            "surface": "⸀τῷ",
+            "transliteration": "tōi"
+          },
+          {
+            "id": "2PE-1-4-GR-021",
+            "position": 21,
+            "surface": "κόσμῳ",
+            "transliteration": "kosmōi"
+          },
+          {
+            "id": "2PE-1-4-GR-022",
+            "position": 22,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-4-GR-023",
+            "position": 23,
+            "surface": "ἐπιθυμίᾳ",
+            "transliteration": "epithymiai"
+          },
+          {
+            "id": "2PE-1-4-GR-024",
+            "position": 24,
+            "surface": "φθορᾶς.",
+            "transliteration": "phthoras"
+          }
+        ]
+      },
+      "5": {
+        "text": "καὶ αὐτὸ τοῦτο δὲ σπουδὴν πᾶσαν παρεισενέγκαντες ἐπιχορηγήσατε ἐν τῇ πίστει ὑμῶν τὴν ἀρετήν, ἐν δὲ τῇ ἀρετῇ τὴν γνῶσιν,",
+        "tokens": [
+          {
+            "id": "2PE-1-5-GR-001",
+            "position": 1,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-5-GR-002",
+            "position": 2,
+            "surface": "αὐτὸ",
+            "transliteration": "ayto"
+          },
+          {
+            "id": "2PE-1-5-GR-003",
+            "position": 3,
+            "surface": "τοῦτο",
+            "transliteration": "toyto"
+          },
+          {
+            "id": "2PE-1-5-GR-004",
+            "position": 4,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-1-5-GR-005",
+            "position": 5,
+            "surface": "σπουδὴν",
+            "transliteration": "spoydēn"
+          },
+          {
+            "id": "2PE-1-5-GR-006",
+            "position": 6,
+            "surface": "πᾶσαν",
+            "transliteration": "pasan"
+          },
+          {
+            "id": "2PE-1-5-GR-007",
+            "position": 7,
+            "surface": "παρεισενέγκαντες",
+            "transliteration": "pareisenegkantes"
+          },
+          {
+            "id": "2PE-1-5-GR-008",
+            "position": 8,
+            "surface": "ἐπιχορηγήσατε",
+            "transliteration": "epichorēgēsate"
+          },
+          {
+            "id": "2PE-1-5-GR-009",
+            "position": 9,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-5-GR-010",
+            "position": 10,
+            "surface": "τῇ",
+            "transliteration": "tēi"
+          },
+          {
+            "id": "2PE-1-5-GR-011",
+            "position": 11,
+            "surface": "πίστει",
+            "transliteration": "pistei"
+          },
+          {
+            "id": "2PE-1-5-GR-012",
+            "position": 12,
+            "surface": "ὑμῶν",
+            "transliteration": "hymōn"
+          },
+          {
+            "id": "2PE-1-5-GR-013",
+            "position": 13,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-1-5-GR-014",
+            "position": 14,
+            "surface": "ἀρετήν,",
+            "transliteration": "aretēn"
+          },
+          {
+            "id": "2PE-1-5-GR-015",
+            "position": 15,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-5-GR-016",
+            "position": 16,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-1-5-GR-017",
+            "position": 17,
+            "surface": "τῇ",
+            "transliteration": "tēi"
+          },
+          {
+            "id": "2PE-1-5-GR-018",
+            "position": 18,
+            "surface": "ἀρετῇ",
+            "transliteration": "aretēi"
+          },
+          {
+            "id": "2PE-1-5-GR-019",
+            "position": 19,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-1-5-GR-020",
+            "position": 20,
+            "surface": "γνῶσιν,",
+            "transliteration": "gnōsin"
+          }
+        ]
+      },
+      "6": {
+        "text": "ἐν δὲ τῇ γνώσει τὴν ἐγκράτειαν, ἐν δὲ τῇ ἐγκρατείᾳ τὴν ὑπομονήν, ἐν δὲ τῇ ὑπομονῇ τὴν εὐσέβειαν,",
+        "tokens": [
+          {
+            "id": "2PE-1-6-GR-001",
+            "position": 1,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-6-GR-002",
+            "position": 2,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-1-6-GR-003",
+            "position": 3,
+            "surface": "τῇ",
+            "transliteration": "tēi"
+          },
+          {
+            "id": "2PE-1-6-GR-004",
+            "position": 4,
+            "surface": "γνώσει",
+            "transliteration": "gnōsei"
+          },
+          {
+            "id": "2PE-1-6-GR-005",
+            "position": 5,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-1-6-GR-006",
+            "position": 6,
+            "surface": "ἐγκράτειαν,",
+            "transliteration": "egkrateian"
+          },
+          {
+            "id": "2PE-1-6-GR-007",
+            "position": 7,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-6-GR-008",
+            "position": 8,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-1-6-GR-009",
+            "position": 9,
+            "surface": "τῇ",
+            "transliteration": "tēi"
+          },
+          {
+            "id": "2PE-1-6-GR-010",
+            "position": 10,
+            "surface": "ἐγκρατείᾳ",
+            "transliteration": "egkrateiai"
+          },
+          {
+            "id": "2PE-1-6-GR-011",
+            "position": 11,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-1-6-GR-012",
+            "position": 12,
+            "surface": "ὑπομονήν,",
+            "transliteration": "hypomonēn"
+          },
+          {
+            "id": "2PE-1-6-GR-013",
+            "position": 13,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-6-GR-014",
+            "position": 14,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-1-6-GR-015",
+            "position": 15,
+            "surface": "τῇ",
+            "transliteration": "tēi"
+          },
+          {
+            "id": "2PE-1-6-GR-016",
+            "position": 16,
+            "surface": "ὑπομονῇ",
+            "transliteration": "hypomonēi"
+          },
+          {
+            "id": "2PE-1-6-GR-017",
+            "position": 17,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-1-6-GR-018",
+            "position": 18,
+            "surface": "εὐσέβειαν,",
+            "transliteration": "eysebeian"
+          }
+        ]
+      },
+      "7": {
+        "text": "ἐν δὲ τῇ εὐσεβείᾳ τὴν φιλαδελφίαν, ἐν δὲ τῇ φιλαδελφίᾳ τὴν ἀγάπην·",
+        "tokens": [
+          {
+            "id": "2PE-1-7-GR-001",
+            "position": 1,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-7-GR-002",
+            "position": 2,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-1-7-GR-003",
+            "position": 3,
+            "surface": "τῇ",
+            "transliteration": "tēi"
+          },
+          {
+            "id": "2PE-1-7-GR-004",
+            "position": 4,
+            "surface": "εὐσεβείᾳ",
+            "transliteration": "eysebeiai"
+          },
+          {
+            "id": "2PE-1-7-GR-005",
+            "position": 5,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-1-7-GR-006",
+            "position": 6,
+            "surface": "φιλαδελφίαν,",
+            "transliteration": "philadelphian"
+          },
+          {
+            "id": "2PE-1-7-GR-007",
+            "position": 7,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-7-GR-008",
+            "position": 8,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-1-7-GR-009",
+            "position": 9,
+            "surface": "τῇ",
+            "transliteration": "tēi"
+          },
+          {
+            "id": "2PE-1-7-GR-010",
+            "position": 10,
+            "surface": "φιλαδελφίᾳ",
+            "transliteration": "philadelphiai"
+          },
+          {
+            "id": "2PE-1-7-GR-011",
+            "position": 11,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-1-7-GR-012",
+            "position": 12,
+            "surface": "ἀγάπην·",
+            "transliteration": "agapēn"
+          }
+        ]
+      },
+      "8": {
+        "text": "ταῦτα γὰρ ὑμῖν ὑπάρχοντα καὶ πλεονάζοντα οὐκ ἀργοὺς οὐδὲ ἀκάρπους καθίστησιν εἰς τὴν τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ ἐπίγνωσιν·",
+        "tokens": [
+          {
+            "id": "2PE-1-8-GR-001",
+            "position": 1,
+            "surface": "ταῦτα",
+            "transliteration": "tayta"
+          },
+          {
+            "id": "2PE-1-8-GR-002",
+            "position": 2,
+            "surface": "γὰρ",
+            "transliteration": "gar"
+          },
+          {
+            "id": "2PE-1-8-GR-003",
+            "position": 3,
+            "surface": "ὑμῖν",
+            "transliteration": "hymin"
+          },
+          {
+            "id": "2PE-1-8-GR-004",
+            "position": 4,
+            "surface": "ὑπάρχοντα",
+            "transliteration": "hyparchonta"
+          },
+          {
+            "id": "2PE-1-8-GR-005",
+            "position": 5,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-8-GR-006",
+            "position": 6,
+            "surface": "πλεονάζοντα",
+            "transliteration": "pleonazonta"
+          },
+          {
+            "id": "2PE-1-8-GR-007",
+            "position": 7,
+            "surface": "οὐκ",
+            "transliteration": "oyk"
+          },
+          {
+            "id": "2PE-1-8-GR-008",
+            "position": 8,
+            "surface": "ἀργοὺς",
+            "transliteration": "argoys"
+          },
+          {
+            "id": "2PE-1-8-GR-009",
+            "position": 9,
+            "surface": "οὐδὲ",
+            "transliteration": "oyde"
+          },
+          {
+            "id": "2PE-1-8-GR-010",
+            "position": 10,
+            "surface": "ἀκάρπους",
+            "transliteration": "akarpoys"
+          },
+          {
+            "id": "2PE-1-8-GR-011",
+            "position": 11,
+            "surface": "καθίστησιν",
+            "transliteration": "kathistēsin"
+          },
+          {
+            "id": "2PE-1-8-GR-012",
+            "position": 12,
+            "surface": "εἰς",
+            "transliteration": "eis"
+          },
+          {
+            "id": "2PE-1-8-GR-013",
+            "position": 13,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-1-8-GR-014",
+            "position": 14,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-1-8-GR-015",
+            "position": 15,
+            "surface": "κυρίου",
+            "transliteration": "kyrioy"
+          },
+          {
+            "id": "2PE-1-8-GR-016",
+            "position": 16,
+            "surface": "ἡμῶν",
+            "transliteration": "hēmōn"
+          },
+          {
+            "id": "2PE-1-8-GR-017",
+            "position": 17,
+            "surface": "Ἰησοῦ",
+            "transliteration": "Iēsoy"
+          },
+          {
+            "id": "2PE-1-8-GR-018",
+            "position": 18,
+            "surface": "Χριστοῦ",
+            "transliteration": "Christoy"
+          },
+          {
+            "id": "2PE-1-8-GR-019",
+            "position": 19,
+            "surface": "ἐπίγνωσιν·",
+            "transliteration": "epignōsin"
+          }
+        ]
+      },
+      "9": {
+        "text": "ᾧ γὰρ μὴ πάρεστιν ταῦτα, τυφλός ἐστιν μυωπάζων, λήθην λαβὼν τοῦ καθαρισμοῦ τῶν πάλαι αὐτοῦ ⸀ἁμαρτημάτων.",
+        "tokens": [
+          {
+            "id": "2PE-1-9-GR-001",
+            "position": 1,
+            "surface": "ᾧ",
+            "transliteration": "hōi"
+          },
+          {
+            "id": "2PE-1-9-GR-002",
+            "position": 2,
+            "surface": "γὰρ",
+            "transliteration": "gar"
+          },
+          {
+            "id": "2PE-1-9-GR-003",
+            "position": 3,
+            "surface": "μὴ",
+            "transliteration": "mē"
+          },
+          {
+            "id": "2PE-1-9-GR-004",
+            "position": 4,
+            "surface": "πάρεστιν",
+            "transliteration": "parestin"
+          },
+          {
+            "id": "2PE-1-9-GR-005",
+            "position": 5,
+            "surface": "ταῦτα,",
+            "transliteration": "tayta"
+          },
+          {
+            "id": "2PE-1-9-GR-006",
+            "position": 6,
+            "surface": "τυφλός",
+            "transliteration": "typhlos"
+          },
+          {
+            "id": "2PE-1-9-GR-007",
+            "position": 7,
+            "surface": "ἐστιν",
+            "transliteration": "estin"
+          },
+          {
+            "id": "2PE-1-9-GR-008",
+            "position": 8,
+            "surface": "μυωπάζων,",
+            "transliteration": "myōpazōn"
+          },
+          {
+            "id": "2PE-1-9-GR-009",
+            "position": 9,
+            "surface": "λήθην",
+            "transliteration": "lēthēn"
+          },
+          {
+            "id": "2PE-1-9-GR-010",
+            "position": 10,
+            "surface": "λαβὼν",
+            "transliteration": "labōn"
+          },
+          {
+            "id": "2PE-1-9-GR-011",
+            "position": 11,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-1-9-GR-012",
+            "position": 12,
+            "surface": "καθαρισμοῦ",
+            "transliteration": "katharismoy"
+          },
+          {
+            "id": "2PE-1-9-GR-013",
+            "position": 13,
+            "surface": "τῶν",
+            "transliteration": "tōn"
+          },
+          {
+            "id": "2PE-1-9-GR-014",
+            "position": 14,
+            "surface": "πάλαι",
+            "transliteration": "palai"
+          },
+          {
+            "id": "2PE-1-9-GR-015",
+            "position": 15,
+            "surface": "αὐτοῦ",
+            "transliteration": "aytoy"
+          },
+          {
+            "id": "2PE-1-9-GR-016",
+            "position": 16,
+            "surface": "⸀ἁμαρτημάτων.",
+            "transliteration": "hamartēmatōn"
+          }
+        ]
+      },
+      "10": {
+        "text": "διὸ μᾶλλον, ἀδελφοί, σπουδάσατε βεβαίαν ὑμῶν τὴν κλῆσιν καὶ ἐκλογὴν ποιεῖσθαι· ταῦτα γὰρ ποιοῦντες οὐ μὴ πταίσητέ ποτε·",
+        "tokens": [
+          {
+            "id": "2PE-1-10-GR-001",
+            "position": 1,
+            "surface": "διὸ",
+            "transliteration": "dio"
+          },
+          {
+            "id": "2PE-1-10-GR-002",
+            "position": 2,
+            "surface": "μᾶλλον,",
+            "transliteration": "mallon"
+          },
+          {
+            "id": "2PE-1-10-GR-003",
+            "position": 3,
+            "surface": "ἀδελφοί,",
+            "transliteration": "adelphoi"
+          },
+          {
+            "id": "2PE-1-10-GR-004",
+            "position": 4,
+            "surface": "σπουδάσατε",
+            "transliteration": "spoydasate"
+          },
+          {
+            "id": "2PE-1-10-GR-005",
+            "position": 5,
+            "surface": "βεβαίαν",
+            "transliteration": "bebaian"
+          },
+          {
+            "id": "2PE-1-10-GR-006",
+            "position": 6,
+            "surface": "ὑμῶν",
+            "transliteration": "hymōn"
+          },
+          {
+            "id": "2PE-1-10-GR-007",
+            "position": 7,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-1-10-GR-008",
+            "position": 8,
+            "surface": "κλῆσιν",
+            "transliteration": "klēsin"
+          },
+          {
+            "id": "2PE-1-10-GR-009",
+            "position": 9,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-10-GR-010",
+            "position": 10,
+            "surface": "ἐκλογὴν",
+            "transliteration": "eklogēn"
+          },
+          {
+            "id": "2PE-1-10-GR-011",
+            "position": 11,
+            "surface": "ποιεῖσθαι·",
+            "transliteration": "poieisthai"
+          },
+          {
+            "id": "2PE-1-10-GR-012",
+            "position": 12,
+            "surface": "ταῦτα",
+            "transliteration": "tayta"
+          },
+          {
+            "id": "2PE-1-10-GR-013",
+            "position": 13,
+            "surface": "γὰρ",
+            "transliteration": "gar"
+          },
+          {
+            "id": "2PE-1-10-GR-014",
+            "position": 14,
+            "surface": "ποιοῦντες",
+            "transliteration": "poioyntes"
+          },
+          {
+            "id": "2PE-1-10-GR-015",
+            "position": 15,
+            "surface": "οὐ",
+            "transliteration": "oy"
+          },
+          {
+            "id": "2PE-1-10-GR-016",
+            "position": 16,
+            "surface": "μὴ",
+            "transliteration": "mē"
+          },
+          {
+            "id": "2PE-1-10-GR-017",
+            "position": 17,
+            "surface": "πταίσητέ",
+            "transliteration": "ptaisēte"
+          },
+          {
+            "id": "2PE-1-10-GR-018",
+            "position": 18,
+            "surface": "ποτε·",
+            "transliteration": "pote"
+          }
+        ]
+      },
+      "11": {
+        "text": "οὕτως γὰρ πλουσίως ἐπιχορηγηθήσεται ὑμῖν ἡ εἴσοδος εἰς τὴν αἰώνιον βασιλείαν τοῦ κυρίου ἡμῶν καὶ σωτῆρος Ἰησοῦ Χριστοῦ.",
+        "tokens": [
+          {
+            "id": "2PE-1-11-GR-001",
+            "position": 1,
+            "surface": "οὕτως",
+            "transliteration": "hoytōs"
+          },
+          {
+            "id": "2PE-1-11-GR-002",
+            "position": 2,
+            "surface": "γὰρ",
+            "transliteration": "gar"
+          },
+          {
+            "id": "2PE-1-11-GR-003",
+            "position": 3,
+            "surface": "πλουσίως",
+            "transliteration": "ploysiōs"
+          },
+          {
+            "id": "2PE-1-11-GR-004",
+            "position": 4,
+            "surface": "ἐπιχορηγηθήσεται",
+            "transliteration": "epichorēgēthēsetai"
+          },
+          {
+            "id": "2PE-1-11-GR-005",
+            "position": 5,
+            "surface": "ὑμῖν",
+            "transliteration": "hymin"
+          },
+          {
+            "id": "2PE-1-11-GR-006",
+            "position": 6,
+            "surface": "ἡ",
+            "transliteration": "hē"
+          },
+          {
+            "id": "2PE-1-11-GR-007",
+            "position": 7,
+            "surface": "εἴσοδος",
+            "transliteration": "eisodos"
+          },
+          {
+            "id": "2PE-1-11-GR-008",
+            "position": 8,
+            "surface": "εἰς",
+            "transliteration": "eis"
+          },
+          {
+            "id": "2PE-1-11-GR-009",
+            "position": 9,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-1-11-GR-010",
+            "position": 10,
+            "surface": "αἰώνιον",
+            "transliteration": "aiōnion"
+          },
+          {
+            "id": "2PE-1-11-GR-011",
+            "position": 11,
+            "surface": "βασιλείαν",
+            "transliteration": "basileian"
+          },
+          {
+            "id": "2PE-1-11-GR-012",
+            "position": 12,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-1-11-GR-013",
+            "position": 13,
+            "surface": "κυρίου",
+            "transliteration": "kyrioy"
+          },
+          {
+            "id": "2PE-1-11-GR-014",
+            "position": 14,
+            "surface": "ἡμῶν",
+            "transliteration": "hēmōn"
+          },
+          {
+            "id": "2PE-1-11-GR-015",
+            "position": 15,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-11-GR-016",
+            "position": 16,
+            "surface": "σωτῆρος",
+            "transliteration": "sōtēros"
+          },
+          {
+            "id": "2PE-1-11-GR-017",
+            "position": 17,
+            "surface": "Ἰησοῦ",
+            "transliteration": "Iēsoy"
+          },
+          {
+            "id": "2PE-1-11-GR-018",
+            "position": 18,
+            "surface": "Χριστοῦ.",
+            "transliteration": "Christoy"
+          }
+        ]
+      },
+      "12": {
+        "text": "Διὸ ⸀μελλήσω ἀεὶ ὑμᾶς ὑπομιμνῄσκειν περὶ τούτων, καίπερ εἰδότας καὶ ἐστηριγμένους ἐν τῇ παρούσῃ ἀληθείᾳ.",
+        "tokens": [
+          {
+            "id": "2PE-1-12-GR-001",
+            "position": 1,
+            "surface": "Διὸ",
+            "transliteration": "Dio"
+          },
+          {
+            "id": "2PE-1-12-GR-002",
+            "position": 2,
+            "surface": "⸀μελλήσω",
+            "transliteration": "mellēsō"
+          },
+          {
+            "id": "2PE-1-12-GR-003",
+            "position": 3,
+            "surface": "ἀεὶ",
+            "transliteration": "aei"
+          },
+          {
+            "id": "2PE-1-12-GR-004",
+            "position": 4,
+            "surface": "ὑμᾶς",
+            "transliteration": "hymas"
+          },
+          {
+            "id": "2PE-1-12-GR-005",
+            "position": 5,
+            "surface": "ὑπομιμνῄσκειν",
+            "transliteration": "hypomimnēiskein"
+          },
+          {
+            "id": "2PE-1-12-GR-006",
+            "position": 6,
+            "surface": "περὶ",
+            "transliteration": "peri"
+          },
+          {
+            "id": "2PE-1-12-GR-007",
+            "position": 7,
+            "surface": "τούτων,",
+            "transliteration": "toytōn"
+          },
+          {
+            "id": "2PE-1-12-GR-008",
+            "position": 8,
+            "surface": "καίπερ",
+            "transliteration": "kaiper"
+          },
+          {
+            "id": "2PE-1-12-GR-009",
+            "position": 9,
+            "surface": "εἰδότας",
+            "transliteration": "eidotas"
+          },
+          {
+            "id": "2PE-1-12-GR-010",
+            "position": 10,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-12-GR-011",
+            "position": 11,
+            "surface": "ἐστηριγμένους",
+            "transliteration": "estērigmenoys"
+          },
+          {
+            "id": "2PE-1-12-GR-012",
+            "position": 12,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-12-GR-013",
+            "position": 13,
+            "surface": "τῇ",
+            "transliteration": "tēi"
+          },
+          {
+            "id": "2PE-1-12-GR-014",
+            "position": 14,
+            "surface": "παρούσῃ",
+            "transliteration": "paroysēi"
+          },
+          {
+            "id": "2PE-1-12-GR-015",
+            "position": 15,
+            "surface": "ἀληθείᾳ.",
+            "transliteration": "alētheiai"
+          }
+        ]
+      },
+      "13": {
+        "text": "δίκαιον δὲ ἡγοῦμαι, ἐφʼ ὅσον εἰμὶ ἐν τούτῳ τῷ σκηνώματι, διεγείρειν ὑμᾶς ἐν ὑπομνήσει,",
+        "tokens": [
+          {
+            "id": "2PE-1-13-GR-001",
+            "position": 1,
+            "surface": "δίκαιον",
+            "transliteration": "dikaion"
+          },
+          {
+            "id": "2PE-1-13-GR-002",
+            "position": 2,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-1-13-GR-003",
+            "position": 3,
+            "surface": "ἡγοῦμαι,",
+            "transliteration": "hēgoymai"
+          },
+          {
+            "id": "2PE-1-13-GR-004",
+            "position": 4,
+            "surface": "ἐφʼ",
+            "transliteration": "eph"
+          },
+          {
+            "id": "2PE-1-13-GR-005",
+            "position": 5,
+            "surface": "ὅσον",
+            "transliteration": "hoson"
+          },
+          {
+            "id": "2PE-1-13-GR-006",
+            "position": 6,
+            "surface": "εἰμὶ",
+            "transliteration": "eimi"
+          },
+          {
+            "id": "2PE-1-13-GR-007",
+            "position": 7,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-13-GR-008",
+            "position": 8,
+            "surface": "τούτῳ",
+            "transliteration": "toytōi"
+          },
+          {
+            "id": "2PE-1-13-GR-009",
+            "position": 9,
+            "surface": "τῷ",
+            "transliteration": "tōi"
+          },
+          {
+            "id": "2PE-1-13-GR-010",
+            "position": 10,
+            "surface": "σκηνώματι,",
+            "transliteration": "skēnōmati"
+          },
+          {
+            "id": "2PE-1-13-GR-011",
+            "position": 11,
+            "surface": "διεγείρειν",
+            "transliteration": "diegeirein"
+          },
+          {
+            "id": "2PE-1-13-GR-012",
+            "position": 12,
+            "surface": "ὑμᾶς",
+            "transliteration": "hymas"
+          },
+          {
+            "id": "2PE-1-13-GR-013",
+            "position": 13,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-13-GR-014",
+            "position": 14,
+            "surface": "ὑπομνήσει,",
+            "transliteration": "hypomnēsei"
+          }
+        ]
+      },
+      "14": {
+        "text": "εἰδὼς ὅτι ταχινή ἐστιν ἡ ἀπόθεσις τοῦ σκηνώματός μου, καθὼς καὶ ὁ κύριος ἡμῶν Ἰησοῦς Χριστὸς ἐδήλωσέν μοι·",
+        "tokens": [
+          {
+            "id": "2PE-1-14-GR-001",
+            "position": 1,
+            "surface": "εἰδὼς",
+            "transliteration": "eidōs"
+          },
+          {
+            "id": "2PE-1-14-GR-002",
+            "position": 2,
+            "surface": "ὅτι",
+            "transliteration": "hoti"
+          },
+          {
+            "id": "2PE-1-14-GR-003",
+            "position": 3,
+            "surface": "ταχινή",
+            "transliteration": "tachinē"
+          },
+          {
+            "id": "2PE-1-14-GR-004",
+            "position": 4,
+            "surface": "ἐστιν",
+            "transliteration": "estin"
+          },
+          {
+            "id": "2PE-1-14-GR-005",
+            "position": 5,
+            "surface": "ἡ",
+            "transliteration": "hē"
+          },
+          {
+            "id": "2PE-1-14-GR-006",
+            "position": 6,
+            "surface": "ἀπόθεσις",
+            "transliteration": "apothesis"
+          },
+          {
+            "id": "2PE-1-14-GR-007",
+            "position": 7,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-1-14-GR-008",
+            "position": 8,
+            "surface": "σκηνώματός",
+            "transliteration": "skēnōmatos"
+          },
+          {
+            "id": "2PE-1-14-GR-009",
+            "position": 9,
+            "surface": "μου,",
+            "transliteration": "moy"
+          },
+          {
+            "id": "2PE-1-14-GR-010",
+            "position": 10,
+            "surface": "καθὼς",
+            "transliteration": "kathōs"
+          },
+          {
+            "id": "2PE-1-14-GR-011",
+            "position": 11,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-14-GR-012",
+            "position": 12,
+            "surface": "ὁ",
+            "transliteration": "ho"
+          },
+          {
+            "id": "2PE-1-14-GR-013",
+            "position": 13,
+            "surface": "κύριος",
+            "transliteration": "kyrios"
+          },
+          {
+            "id": "2PE-1-14-GR-014",
+            "position": 14,
+            "surface": "ἡμῶν",
+            "transliteration": "hēmōn"
+          },
+          {
+            "id": "2PE-1-14-GR-015",
+            "position": 15,
+            "surface": "Ἰησοῦς",
+            "transliteration": "Iēsoys"
+          },
+          {
+            "id": "2PE-1-14-GR-016",
+            "position": 16,
+            "surface": "Χριστὸς",
+            "transliteration": "Christos"
+          },
+          {
+            "id": "2PE-1-14-GR-017",
+            "position": 17,
+            "surface": "ἐδήλωσέν",
+            "transliteration": "edēlōsen"
+          },
+          {
+            "id": "2PE-1-14-GR-018",
+            "position": 18,
+            "surface": "μοι·",
+            "transliteration": "moi"
+          }
+        ]
+      },
+      "15": {
+        "text": "σπουδάσω δὲ καὶ ἑκάστοτε ἔχειν ὑμᾶς μετὰ τὴν ἐμὴν ἔξοδον τὴν τούτων μνήμην ποιεῖσθαι.",
+        "tokens": [
+          {
+            "id": "2PE-1-15-GR-001",
+            "position": 1,
+            "surface": "σπουδάσω",
+            "transliteration": "spoydasō"
+          },
+          {
+            "id": "2PE-1-15-GR-002",
+            "position": 2,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-1-15-GR-003",
+            "position": 3,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-15-GR-004",
+            "position": 4,
+            "surface": "ἑκάστοτε",
+            "transliteration": "hekastote"
+          },
+          {
+            "id": "2PE-1-15-GR-005",
+            "position": 5,
+            "surface": "ἔχειν",
+            "transliteration": "echein"
+          },
+          {
+            "id": "2PE-1-15-GR-006",
+            "position": 6,
+            "surface": "ὑμᾶς",
+            "transliteration": "hymas"
+          },
+          {
+            "id": "2PE-1-15-GR-007",
+            "position": 7,
+            "surface": "μετὰ",
+            "transliteration": "meta"
+          },
+          {
+            "id": "2PE-1-15-GR-008",
+            "position": 8,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-1-15-GR-009",
+            "position": 9,
+            "surface": "ἐμὴν",
+            "transliteration": "emēn"
+          },
+          {
+            "id": "2PE-1-15-GR-010",
+            "position": 10,
+            "surface": "ἔξοδον",
+            "transliteration": "exodon"
+          },
+          {
+            "id": "2PE-1-15-GR-011",
+            "position": 11,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-1-15-GR-012",
+            "position": 12,
+            "surface": "τούτων",
+            "transliteration": "toytōn"
+          },
+          {
+            "id": "2PE-1-15-GR-013",
+            "position": 13,
+            "surface": "μνήμην",
+            "transliteration": "mnēmēn"
+          },
+          {
+            "id": "2PE-1-15-GR-014",
+            "position": 14,
+            "surface": "ποιεῖσθαι.",
+            "transliteration": "poieisthai"
+          }
+        ]
+      },
+      "16": {
+        "text": "Οὐ γὰρ σεσοφισμένοις μύθοις ἐξακολουθήσαντες ἐγνωρίσαμεν ὑμῖν τὴν τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ δύναμιν καὶ παρουσίαν, ἀλλʼ ἐπόπται γενηθέντες τῆς ἐκείνου μεγαλειότητος.",
+        "tokens": [
+          {
+            "id": "2PE-1-16-GR-001",
+            "position": 1,
+            "surface": "Οὐ",
+            "transliteration": "Oy"
+          },
+          {
+            "id": "2PE-1-16-GR-002",
+            "position": 2,
+            "surface": "γὰρ",
+            "transliteration": "gar"
+          },
+          {
+            "id": "2PE-1-16-GR-003",
+            "position": 3,
+            "surface": "σεσοφισμένοις",
+            "transliteration": "sesophismenois"
+          },
+          {
+            "id": "2PE-1-16-GR-004",
+            "position": 4,
+            "surface": "μύθοις",
+            "transliteration": "mythois"
+          },
+          {
+            "id": "2PE-1-16-GR-005",
+            "position": 5,
+            "surface": "ἐξακολουθήσαντες",
+            "transliteration": "exakoloythēsantes"
+          },
+          {
+            "id": "2PE-1-16-GR-006",
+            "position": 6,
+            "surface": "ἐγνωρίσαμεν",
+            "transliteration": "egnōrisamen"
+          },
+          {
+            "id": "2PE-1-16-GR-007",
+            "position": 7,
+            "surface": "ὑμῖν",
+            "transliteration": "hymin"
+          },
+          {
+            "id": "2PE-1-16-GR-008",
+            "position": 8,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-1-16-GR-009",
+            "position": 9,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-1-16-GR-010",
+            "position": 10,
+            "surface": "κυρίου",
+            "transliteration": "kyrioy"
+          },
+          {
+            "id": "2PE-1-16-GR-011",
+            "position": 11,
+            "surface": "ἡμῶν",
+            "transliteration": "hēmōn"
+          },
+          {
+            "id": "2PE-1-16-GR-012",
+            "position": 12,
+            "surface": "Ἰησοῦ",
+            "transliteration": "Iēsoy"
+          },
+          {
+            "id": "2PE-1-16-GR-013",
+            "position": 13,
+            "surface": "Χριστοῦ",
+            "transliteration": "Christoy"
+          },
+          {
+            "id": "2PE-1-16-GR-014",
+            "position": 14,
+            "surface": "δύναμιν",
+            "transliteration": "dynamin"
+          },
+          {
+            "id": "2PE-1-16-GR-015",
+            "position": 15,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-16-GR-016",
+            "position": 16,
+            "surface": "παρουσίαν,",
+            "transliteration": "paroysian"
+          },
+          {
+            "id": "2PE-1-16-GR-017",
+            "position": 17,
+            "surface": "ἀλλʼ",
+            "transliteration": "all"
+          },
+          {
+            "id": "2PE-1-16-GR-018",
+            "position": 18,
+            "surface": "ἐπόπται",
+            "transliteration": "epoptai"
+          },
+          {
+            "id": "2PE-1-16-GR-019",
+            "position": 19,
+            "surface": "γενηθέντες",
+            "transliteration": "genēthentes"
+          },
+          {
+            "id": "2PE-1-16-GR-020",
+            "position": 20,
+            "surface": "τῆς",
+            "transliteration": "tēs"
+          },
+          {
+            "id": "2PE-1-16-GR-021",
+            "position": 21,
+            "surface": "ἐκείνου",
+            "transliteration": "ekeinoy"
+          },
+          {
+            "id": "2PE-1-16-GR-022",
+            "position": 22,
+            "surface": "μεγαλειότητος.",
+            "transliteration": "megaleiotētos"
+          }
+        ]
+      },
+      "17": {
+        "text": "λαβὼν γὰρ παρὰ θεοῦ πατρὸς τιμὴν καὶ δόξαν φωνῆς ἐνεχθείσης αὐτῷ τοιᾶσδε ὑπὸ τῆς μεγαλοπρεποῦς δόξης· ⸂Ὁ υἱός μου ὁ ἀγαπητός μου οὗτός ἐστιν⸃, εἰς ὃν ἐγὼ εὐδόκησα—",
+        "tokens": [
+          {
+            "id": "2PE-1-17-GR-001",
+            "position": 1,
+            "surface": "λαβὼν",
+            "transliteration": "labōn"
+          },
+          {
+            "id": "2PE-1-17-GR-002",
+            "position": 2,
+            "surface": "γὰρ",
+            "transliteration": "gar"
+          },
+          {
+            "id": "2PE-1-17-GR-003",
+            "position": 3,
+            "surface": "παρὰ",
+            "transliteration": "para"
+          },
+          {
+            "id": "2PE-1-17-GR-004",
+            "position": 4,
+            "surface": "θεοῦ",
+            "transliteration": "theoy"
+          },
+          {
+            "id": "2PE-1-17-GR-005",
+            "position": 5,
+            "surface": "πατρὸς",
+            "transliteration": "patros"
+          },
+          {
+            "id": "2PE-1-17-GR-006",
+            "position": 6,
+            "surface": "τιμὴν",
+            "transliteration": "timēn"
+          },
+          {
+            "id": "2PE-1-17-GR-007",
+            "position": 7,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-17-GR-008",
+            "position": 8,
+            "surface": "δόξαν",
+            "transliteration": "doxan"
+          },
+          {
+            "id": "2PE-1-17-GR-009",
+            "position": 9,
+            "surface": "φωνῆς",
+            "transliteration": "phōnēs"
+          },
+          {
+            "id": "2PE-1-17-GR-010",
+            "position": 10,
+            "surface": "ἐνεχθείσης",
+            "transliteration": "enechtheisēs"
+          },
+          {
+            "id": "2PE-1-17-GR-011",
+            "position": 11,
+            "surface": "αὐτῷ",
+            "transliteration": "aytōi"
+          },
+          {
+            "id": "2PE-1-17-GR-012",
+            "position": 12,
+            "surface": "τοιᾶσδε",
+            "transliteration": "toiasde"
+          },
+          {
+            "id": "2PE-1-17-GR-013",
+            "position": 13,
+            "surface": "ὑπὸ",
+            "transliteration": "hypo"
+          },
+          {
+            "id": "2PE-1-17-GR-014",
+            "position": 14,
+            "surface": "τῆς",
+            "transliteration": "tēs"
+          },
+          {
+            "id": "2PE-1-17-GR-015",
+            "position": 15,
+            "surface": "μεγαλοπρεποῦς",
+            "transliteration": "megaloprepoys"
+          },
+          {
+            "id": "2PE-1-17-GR-016",
+            "position": 16,
+            "surface": "δόξης·",
+            "transliteration": "doxēs"
+          },
+          {
+            "id": "2PE-1-17-GR-017",
+            "position": 17,
+            "surface": "⸂Ὁ",
+            "transliteration": "Ho"
+          },
+          {
+            "id": "2PE-1-17-GR-018",
+            "position": 18,
+            "surface": "υἱός",
+            "transliteration": "hyios"
+          },
+          {
+            "id": "2PE-1-17-GR-019",
+            "position": 19,
+            "surface": "μου",
+            "transliteration": "moy"
+          },
+          {
+            "id": "2PE-1-17-GR-020",
+            "position": 20,
+            "surface": "ὁ",
+            "transliteration": "ho"
+          },
+          {
+            "id": "2PE-1-17-GR-021",
+            "position": 21,
+            "surface": "ἀγαπητός",
+            "transliteration": "agapētos"
+          },
+          {
+            "id": "2PE-1-17-GR-022",
+            "position": 22,
+            "surface": "μου",
+            "transliteration": "moy"
+          },
+          {
+            "id": "2PE-1-17-GR-023",
+            "position": 23,
+            "surface": "οὗτός",
+            "transliteration": "hoytos"
+          },
+          {
+            "id": "2PE-1-17-GR-024",
+            "position": 24,
+            "surface": "ἐστιν⸃,",
+            "transliteration": "estin"
+          },
+          {
+            "id": "2PE-1-17-GR-025",
+            "position": 25,
+            "surface": "εἰς",
+            "transliteration": "eis"
+          },
+          {
+            "id": "2PE-1-17-GR-026",
+            "position": 26,
+            "surface": "ὃν",
+            "transliteration": "hon"
+          },
+          {
+            "id": "2PE-1-17-GR-027",
+            "position": 27,
+            "surface": "ἐγὼ",
+            "transliteration": "egō"
+          },
+          {
+            "id": "2PE-1-17-GR-028",
+            "position": 28,
+            "surface": "εὐδόκησα—",
+            "transliteration": "eydokēsa"
+          }
+        ]
+      },
+      "18": {
+        "text": "καὶ ταύτην τὴν φωνὴν ἡμεῖς ἠκούσαμεν ἐξ οὐρανοῦ ἐνεχθεῖσαν σὺν αὐτῷ ὄντες ἐν τῷ ⸂ἁγίῳ ὄρει⸃.",
+        "tokens": [
+          {
+            "id": "2PE-1-18-GR-001",
+            "position": 1,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-18-GR-002",
+            "position": 2,
+            "surface": "ταύτην",
+            "transliteration": "taytēn"
+          },
+          {
+            "id": "2PE-1-18-GR-003",
+            "position": 3,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-1-18-GR-004",
+            "position": 4,
+            "surface": "φωνὴν",
+            "transliteration": "phōnēn"
+          },
+          {
+            "id": "2PE-1-18-GR-005",
+            "position": 5,
+            "surface": "ἡμεῖς",
+            "transliteration": "hēmeis"
+          },
+          {
+            "id": "2PE-1-18-GR-006",
+            "position": 6,
+            "surface": "ἠκούσαμεν",
+            "transliteration": "ēkoysamen"
+          },
+          {
+            "id": "2PE-1-18-GR-007",
+            "position": 7,
+            "surface": "ἐξ",
+            "transliteration": "ex"
+          },
+          {
+            "id": "2PE-1-18-GR-008",
+            "position": 8,
+            "surface": "οὐρανοῦ",
+            "transliteration": "oyranoy"
+          },
+          {
+            "id": "2PE-1-18-GR-009",
+            "position": 9,
+            "surface": "ἐνεχθεῖσαν",
+            "transliteration": "enechtheisan"
+          },
+          {
+            "id": "2PE-1-18-GR-010",
+            "position": 10,
+            "surface": "σὺν",
+            "transliteration": "syn"
+          },
+          {
+            "id": "2PE-1-18-GR-011",
+            "position": 11,
+            "surface": "αὐτῷ",
+            "transliteration": "aytōi"
+          },
+          {
+            "id": "2PE-1-18-GR-012",
+            "position": 12,
+            "surface": "ὄντες",
+            "transliteration": "ontes"
+          },
+          {
+            "id": "2PE-1-18-GR-013",
+            "position": 13,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-18-GR-014",
+            "position": 14,
+            "surface": "τῷ",
+            "transliteration": "tōi"
+          },
+          {
+            "id": "2PE-1-18-GR-015",
+            "position": 15,
+            "surface": "⸂ἁγίῳ",
+            "transliteration": "hagiōi"
+          },
+          {
+            "id": "2PE-1-18-GR-016",
+            "position": 16,
+            "surface": "ὄρει⸃.",
+            "transliteration": "orei"
+          }
+        ]
+      },
+      "19": {
+        "text": "καὶ ἔχομεν βεβαιότερον τὸν προφητικὸν λόγον, ᾧ καλῶς ποιεῖτε προσέχοντες ὡς λύχνῳ φαίνοντι ἐν αὐχμηρῷ τόπῳ, ἕως οὗ ἡμέρα διαυγάσῃ καὶ φωσφόρος ἀνατείλῃ ἐν ταῖς καρδίαις ὑμῶν·",
+        "tokens": [
+          {
+            "id": "2PE-1-19-GR-001",
+            "position": 1,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-19-GR-002",
+            "position": 2,
+            "surface": "ἔχομεν",
+            "transliteration": "echomen"
+          },
+          {
+            "id": "2PE-1-19-GR-003",
+            "position": 3,
+            "surface": "βεβαιότερον",
+            "transliteration": "bebaioteron"
+          },
+          {
+            "id": "2PE-1-19-GR-004",
+            "position": 4,
+            "surface": "τὸν",
+            "transliteration": "ton"
+          },
+          {
+            "id": "2PE-1-19-GR-005",
+            "position": 5,
+            "surface": "προφητικὸν",
+            "transliteration": "prophētikon"
+          },
+          {
+            "id": "2PE-1-19-GR-006",
+            "position": 6,
+            "surface": "λόγον,",
+            "transliteration": "logon"
+          },
+          {
+            "id": "2PE-1-19-GR-007",
+            "position": 7,
+            "surface": "ᾧ",
+            "transliteration": "hōi"
+          },
+          {
+            "id": "2PE-1-19-GR-008",
+            "position": 8,
+            "surface": "καλῶς",
+            "transliteration": "kalōs"
+          },
+          {
+            "id": "2PE-1-19-GR-009",
+            "position": 9,
+            "surface": "ποιεῖτε",
+            "transliteration": "poieite"
+          },
+          {
+            "id": "2PE-1-19-GR-010",
+            "position": 10,
+            "surface": "προσέχοντες",
+            "transliteration": "prosechontes"
+          },
+          {
+            "id": "2PE-1-19-GR-011",
+            "position": 11,
+            "surface": "ὡς",
+            "transliteration": "hōs"
+          },
+          {
+            "id": "2PE-1-19-GR-012",
+            "position": 12,
+            "surface": "λύχνῳ",
+            "transliteration": "lychnōi"
+          },
+          {
+            "id": "2PE-1-19-GR-013",
+            "position": 13,
+            "surface": "φαίνοντι",
+            "transliteration": "phainonti"
+          },
+          {
+            "id": "2PE-1-19-GR-014",
+            "position": 14,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-19-GR-015",
+            "position": 15,
+            "surface": "αὐχμηρῷ",
+            "transliteration": "aychmērōi"
+          },
+          {
+            "id": "2PE-1-19-GR-016",
+            "position": 16,
+            "surface": "τόπῳ,",
+            "transliteration": "topōi"
+          },
+          {
+            "id": "2PE-1-19-GR-017",
+            "position": 17,
+            "surface": "ἕως",
+            "transliteration": "heōs"
+          },
+          {
+            "id": "2PE-1-19-GR-018",
+            "position": 18,
+            "surface": "οὗ",
+            "transliteration": "hoy"
+          },
+          {
+            "id": "2PE-1-19-GR-019",
+            "position": 19,
+            "surface": "ἡμέρα",
+            "transliteration": "hēmera"
+          },
+          {
+            "id": "2PE-1-19-GR-020",
+            "position": 20,
+            "surface": "διαυγάσῃ",
+            "transliteration": "diaygasēi"
+          },
+          {
+            "id": "2PE-1-19-GR-021",
+            "position": 21,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-1-19-GR-022",
+            "position": 22,
+            "surface": "φωσφόρος",
+            "transliteration": "phōsphoros"
+          },
+          {
+            "id": "2PE-1-19-GR-023",
+            "position": 23,
+            "surface": "ἀνατείλῃ",
+            "transliteration": "anateilēi"
+          },
+          {
+            "id": "2PE-1-19-GR-024",
+            "position": 24,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-1-19-GR-025",
+            "position": 25,
+            "surface": "ταῖς",
+            "transliteration": "tais"
+          },
+          {
+            "id": "2PE-1-19-GR-026",
+            "position": 26,
+            "surface": "καρδίαις",
+            "transliteration": "kardiais"
+          },
+          {
+            "id": "2PE-1-19-GR-027",
+            "position": 27,
+            "surface": "ὑμῶν·",
+            "transliteration": "hymōn"
+          }
+        ]
+      },
+      "20": {
+        "text": "τοῦτο πρῶτον γινώσκοντες ὅτι πᾶσα προφητεία γραφῆς ἰδίας ἐπιλύσεως οὐ γίνεται,",
+        "tokens": [
+          {
+            "id": "2PE-1-20-GR-001",
+            "position": 1,
+            "surface": "τοῦτο",
+            "transliteration": "toyto"
+          },
+          {
+            "id": "2PE-1-20-GR-002",
+            "position": 2,
+            "surface": "πρῶτον",
+            "transliteration": "prōton"
+          },
+          {
+            "id": "2PE-1-20-GR-003",
+            "position": 3,
+            "surface": "γινώσκοντες",
+            "transliteration": "ginōskontes"
+          },
+          {
+            "id": "2PE-1-20-GR-004",
+            "position": 4,
+            "surface": "ὅτι",
+            "transliteration": "hoti"
+          },
+          {
+            "id": "2PE-1-20-GR-005",
+            "position": 5,
+            "surface": "πᾶσα",
+            "transliteration": "pasa"
+          },
+          {
+            "id": "2PE-1-20-GR-006",
+            "position": 6,
+            "surface": "προφητεία",
+            "transliteration": "prophēteia"
+          },
+          {
+            "id": "2PE-1-20-GR-007",
+            "position": 7,
+            "surface": "γραφῆς",
+            "transliteration": "graphēs"
+          },
+          {
+            "id": "2PE-1-20-GR-008",
+            "position": 8,
+            "surface": "ἰδίας",
+            "transliteration": "idias"
+          },
+          {
+            "id": "2PE-1-20-GR-009",
+            "position": 9,
+            "surface": "ἐπιλύσεως",
+            "transliteration": "epilyseōs"
+          },
+          {
+            "id": "2PE-1-20-GR-010",
+            "position": 10,
+            "surface": "οὐ",
+            "transliteration": "oy"
+          },
+          {
+            "id": "2PE-1-20-GR-011",
+            "position": 11,
+            "surface": "γίνεται,",
+            "transliteration": "ginetai"
+          }
+        ]
+      },
+      "21": {
+        "text": "οὐ γὰρ θελήματι ἀνθρώπου ἠνέχθη ⸂προφητεία ποτέ⸃, ἀλλὰ ὑπὸ πνεύματος ἁγίου φερόμενοι ἐλάλησαν ⸀ἀπὸ θεοῦ ἄνθρωποι.",
+        "tokens": [
+          {
+            "id": "2PE-1-21-GR-001",
+            "position": 1,
+            "surface": "οὐ",
+            "transliteration": "oy"
+          },
+          {
+            "id": "2PE-1-21-GR-002",
+            "position": 2,
+            "surface": "γὰρ",
+            "transliteration": "gar"
+          },
+          {
+            "id": "2PE-1-21-GR-003",
+            "position": 3,
+            "surface": "θελήματι",
+            "transliteration": "thelēmati"
+          },
+          {
+            "id": "2PE-1-21-GR-004",
+            "position": 4,
+            "surface": "ἀνθρώπου",
+            "transliteration": "anthrōpoy"
+          },
+          {
+            "id": "2PE-1-21-GR-005",
+            "position": 5,
+            "surface": "ἠνέχθη",
+            "transliteration": "ēnechthē"
+          },
+          {
+            "id": "2PE-1-21-GR-006",
+            "position": 6,
+            "surface": "⸂προφητεία",
+            "transliteration": "prophēteia"
+          },
+          {
+            "id": "2PE-1-21-GR-007",
+            "position": 7,
+            "surface": "ποτέ⸃,",
+            "transliteration": "pote"
+          },
+          {
+            "id": "2PE-1-21-GR-008",
+            "position": 8,
+            "surface": "ἀλλὰ",
+            "transliteration": "alla"
+          },
+          {
+            "id": "2PE-1-21-GR-009",
+            "position": 9,
+            "surface": "ὑπὸ",
+            "transliteration": "hypo"
+          },
+          {
+            "id": "2PE-1-21-GR-010",
+            "position": 10,
+            "surface": "πνεύματος",
+            "transliteration": "pneymatos"
+          },
+          {
+            "id": "2PE-1-21-GR-011",
+            "position": 11,
+            "surface": "ἁγίου",
+            "transliteration": "hagioy"
+          },
+          {
+            "id": "2PE-1-21-GR-012",
+            "position": 12,
+            "surface": "φερόμενοι",
+            "transliteration": "pheromenoi"
+          },
+          {
+            "id": "2PE-1-21-GR-013",
+            "position": 13,
+            "surface": "ἐλάλησαν",
+            "transliteration": "elalēsan"
+          },
+          {
+            "id": "2PE-1-21-GR-014",
+            "position": 14,
+            "surface": "⸀ἀπὸ",
+            "transliteration": "apo"
+          },
+          {
+            "id": "2PE-1-21-GR-015",
+            "position": 15,
+            "surface": "θεοῦ",
+            "transliteration": "theoy"
+          },
+          {
+            "id": "2PE-1-21-GR-016",
+            "position": 16,
+            "surface": "ἄνθρωποι.",
+            "transliteration": "anthrōpoi"
+          }
+        ]
+      }
+    },
+    "2": {
+      "1": {
+        "text": "Ἐγένοντο δὲ καὶ ψευδοπροφῆται ἐν τῷ λαῷ, ὡς καὶ ἐν ὑμῖν ἔσονται ψευδοδιδάσκαλοι, οἵτινες παρεισάξουσιν αἱρέσεις ἀπωλείας, καὶ τὸν ἀγοράσαντα αὐτοὺς δεσπότην ἀρνούμενοι, ἐπάγοντες ἑαυτοῖς ταχινὴν ἀπώλειαν·",
+        "tokens": [
+          {
+            "id": "2PE-2-1-GR-001",
+            "position": 1,
+            "surface": "Ἐγένοντο",
+            "transliteration": "Egenonto"
+          },
+          {
+            "id": "2PE-2-1-GR-002",
+            "position": 2,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-2-1-GR-003",
+            "position": 3,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-1-GR-004",
+            "position": 4,
+            "surface": "ψευδοπροφῆται",
+            "transliteration": "pseydoprophētai"
+          },
+          {
+            "id": "2PE-2-1-GR-005",
+            "position": 5,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-2-1-GR-006",
+            "position": 6,
+            "surface": "τῷ",
+            "transliteration": "tōi"
+          },
+          {
+            "id": "2PE-2-1-GR-007",
+            "position": 7,
+            "surface": "λαῷ,",
+            "transliteration": "laōi"
+          },
+          {
+            "id": "2PE-2-1-GR-008",
+            "position": 8,
+            "surface": "ὡς",
+            "transliteration": "hōs"
+          },
+          {
+            "id": "2PE-2-1-GR-009",
+            "position": 9,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-1-GR-010",
+            "position": 10,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-2-1-GR-011",
+            "position": 11,
+            "surface": "ὑμῖν",
+            "transliteration": "hymin"
+          },
+          {
+            "id": "2PE-2-1-GR-012",
+            "position": 12,
+            "surface": "ἔσονται",
+            "transliteration": "esontai"
+          },
+          {
+            "id": "2PE-2-1-GR-013",
+            "position": 13,
+            "surface": "ψευδοδιδάσκαλοι,",
+            "transliteration": "pseydodidaskaloi"
+          },
+          {
+            "id": "2PE-2-1-GR-014",
+            "position": 14,
+            "surface": "οἵτινες",
+            "transliteration": "hoitines"
+          },
+          {
+            "id": "2PE-2-1-GR-015",
+            "position": 15,
+            "surface": "παρεισάξουσιν",
+            "transliteration": "pareisaxoysin"
+          },
+          {
+            "id": "2PE-2-1-GR-016",
+            "position": 16,
+            "surface": "αἱρέσεις",
+            "transliteration": "haireseis"
+          },
+          {
+            "id": "2PE-2-1-GR-017",
+            "position": 17,
+            "surface": "ἀπωλείας,",
+            "transliteration": "apōleias"
+          },
+          {
+            "id": "2PE-2-1-GR-018",
+            "position": 18,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-1-GR-019",
+            "position": 19,
+            "surface": "τὸν",
+            "transliteration": "ton"
+          },
+          {
+            "id": "2PE-2-1-GR-020",
+            "position": 20,
+            "surface": "ἀγοράσαντα",
+            "transliteration": "agorasanta"
+          },
+          {
+            "id": "2PE-2-1-GR-021",
+            "position": 21,
+            "surface": "αὐτοὺς",
+            "transliteration": "aytoys"
+          },
+          {
+            "id": "2PE-2-1-GR-022",
+            "position": 22,
+            "surface": "δεσπότην",
+            "transliteration": "despotēn"
+          },
+          {
+            "id": "2PE-2-1-GR-023",
+            "position": 23,
+            "surface": "ἀρνούμενοι,",
+            "transliteration": "arnoymenoi"
+          },
+          {
+            "id": "2PE-2-1-GR-024",
+            "position": 24,
+            "surface": "ἐπάγοντες",
+            "transliteration": "epagontes"
+          },
+          {
+            "id": "2PE-2-1-GR-025",
+            "position": 25,
+            "surface": "ἑαυτοῖς",
+            "transliteration": "heaytois"
+          },
+          {
+            "id": "2PE-2-1-GR-026",
+            "position": 26,
+            "surface": "ταχινὴν",
+            "transliteration": "tachinēn"
+          },
+          {
+            "id": "2PE-2-1-GR-027",
+            "position": 27,
+            "surface": "ἀπώλειαν·",
+            "transliteration": "apōleian"
+          }
+        ]
+      },
+      "2": {
+        "text": "καὶ πολλοὶ ἐξακολουθήσουσιν αὐτῶν ταῖς ἀσελγείαις, διʼ οὓς ἡ ὁδὸς τῆς ἀληθείας βλασφημηθήσεται·",
+        "tokens": [
+          {
+            "id": "2PE-2-2-GR-001",
+            "position": 1,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-2-GR-002",
+            "position": 2,
+            "surface": "πολλοὶ",
+            "transliteration": "polloi"
+          },
+          {
+            "id": "2PE-2-2-GR-003",
+            "position": 3,
+            "surface": "ἐξακολουθήσουσιν",
+            "transliteration": "exakoloythēsoysin"
+          },
+          {
+            "id": "2PE-2-2-GR-004",
+            "position": 4,
+            "surface": "αὐτῶν",
+            "transliteration": "aytōn"
+          },
+          {
+            "id": "2PE-2-2-GR-005",
+            "position": 5,
+            "surface": "ταῖς",
+            "transliteration": "tais"
+          },
+          {
+            "id": "2PE-2-2-GR-006",
+            "position": 6,
+            "surface": "ἀσελγείαις,",
+            "transliteration": "aselgeiais"
+          },
+          {
+            "id": "2PE-2-2-GR-007",
+            "position": 7,
+            "surface": "διʼ",
+            "transliteration": "di"
+          },
+          {
+            "id": "2PE-2-2-GR-008",
+            "position": 8,
+            "surface": "οὓς",
+            "transliteration": "hoys"
+          },
+          {
+            "id": "2PE-2-2-GR-009",
+            "position": 9,
+            "surface": "ἡ",
+            "transliteration": "hē"
+          },
+          {
+            "id": "2PE-2-2-GR-010",
+            "position": 10,
+            "surface": "ὁδὸς",
+            "transliteration": "hodos"
+          },
+          {
+            "id": "2PE-2-2-GR-011",
+            "position": 11,
+            "surface": "τῆς",
+            "transliteration": "tēs"
+          },
+          {
+            "id": "2PE-2-2-GR-012",
+            "position": 12,
+            "surface": "ἀληθείας",
+            "transliteration": "alētheias"
+          },
+          {
+            "id": "2PE-2-2-GR-013",
+            "position": 13,
+            "surface": "βλασφημηθήσεται·",
+            "transliteration": "blasphēmēthēsetai"
+          }
+        ]
+      },
+      "3": {
+        "text": "καὶ ἐν πλεονεξίᾳ πλαστοῖς λόγοις ὑμᾶς ἐμπορεύσονται· οἷς τὸ κρίμα ἔκπαλαι οὐκ ἀργεῖ, καὶ ἡ ἀπώλεια αὐτῶν οὐ ⸀νυστάζει.",
+        "tokens": [
+          {
+            "id": "2PE-2-3-GR-001",
+            "position": 1,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-3-GR-002",
+            "position": 2,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-2-3-GR-003",
+            "position": 3,
+            "surface": "πλεονεξίᾳ",
+            "transliteration": "pleonexiai"
+          },
+          {
+            "id": "2PE-2-3-GR-004",
+            "position": 4,
+            "surface": "πλαστοῖς",
+            "transliteration": "plastois"
+          },
+          {
+            "id": "2PE-2-3-GR-005",
+            "position": 5,
+            "surface": "λόγοις",
+            "transliteration": "logois"
+          },
+          {
+            "id": "2PE-2-3-GR-006",
+            "position": 6,
+            "surface": "ὑμᾶς",
+            "transliteration": "hymas"
+          },
+          {
+            "id": "2PE-2-3-GR-007",
+            "position": 7,
+            "surface": "ἐμπορεύσονται·",
+            "transliteration": "emporeysontai"
+          },
+          {
+            "id": "2PE-2-3-GR-008",
+            "position": 8,
+            "surface": "οἷς",
+            "transliteration": "hois"
+          },
+          {
+            "id": "2PE-2-3-GR-009",
+            "position": 9,
+            "surface": "τὸ",
+            "transliteration": "to"
+          },
+          {
+            "id": "2PE-2-3-GR-010",
+            "position": 10,
+            "surface": "κρίμα",
+            "transliteration": "krima"
+          },
+          {
+            "id": "2PE-2-3-GR-011",
+            "position": 11,
+            "surface": "ἔκπαλαι",
+            "transliteration": "ekpalai"
+          },
+          {
+            "id": "2PE-2-3-GR-012",
+            "position": 12,
+            "surface": "οὐκ",
+            "transliteration": "oyk"
+          },
+          {
+            "id": "2PE-2-3-GR-013",
+            "position": 13,
+            "surface": "ἀργεῖ,",
+            "transliteration": "argei"
+          },
+          {
+            "id": "2PE-2-3-GR-014",
+            "position": 14,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-3-GR-015",
+            "position": 15,
+            "surface": "ἡ",
+            "transliteration": "hē"
+          },
+          {
+            "id": "2PE-2-3-GR-016",
+            "position": 16,
+            "surface": "ἀπώλεια",
+            "transliteration": "apōleia"
+          },
+          {
+            "id": "2PE-2-3-GR-017",
+            "position": 17,
+            "surface": "αὐτῶν",
+            "transliteration": "aytōn"
+          },
+          {
+            "id": "2PE-2-3-GR-018",
+            "position": 18,
+            "surface": "οὐ",
+            "transliteration": "oy"
+          },
+          {
+            "id": "2PE-2-3-GR-019",
+            "position": 19,
+            "surface": "⸀νυστάζει.",
+            "transliteration": "nystazei"
+          }
+        ]
+      },
+      "4": {
+        "text": "Εἰ γὰρ ὁ θεὸς ἀγγέλων ἁμαρτησάντων οὐκ ἐφείσατο, ἀλλὰ ⸀σειραῖς ζόφου ταρταρώσας παρέδωκεν εἰς κρίσιν τηρουμένους,",
+        "tokens": [
+          {
+            "id": "2PE-2-4-GR-001",
+            "position": 1,
+            "surface": "Εἰ",
+            "transliteration": "Ei"
+          },
+          {
+            "id": "2PE-2-4-GR-002",
+            "position": 2,
+            "surface": "γὰρ",
+            "transliteration": "gar"
+          },
+          {
+            "id": "2PE-2-4-GR-003",
+            "position": 3,
+            "surface": "ὁ",
+            "transliteration": "ho"
+          },
+          {
+            "id": "2PE-2-4-GR-004",
+            "position": 4,
+            "surface": "θεὸς",
+            "transliteration": "theos"
+          },
+          {
+            "id": "2PE-2-4-GR-005",
+            "position": 5,
+            "surface": "ἀγγέλων",
+            "transliteration": "aggelōn"
+          },
+          {
+            "id": "2PE-2-4-GR-006",
+            "position": 6,
+            "surface": "ἁμαρτησάντων",
+            "transliteration": "hamartēsantōn"
+          },
+          {
+            "id": "2PE-2-4-GR-007",
+            "position": 7,
+            "surface": "οὐκ",
+            "transliteration": "oyk"
+          },
+          {
+            "id": "2PE-2-4-GR-008",
+            "position": 8,
+            "surface": "ἐφείσατο,",
+            "transliteration": "epheisato"
+          },
+          {
+            "id": "2PE-2-4-GR-009",
+            "position": 9,
+            "surface": "ἀλλὰ",
+            "transliteration": "alla"
+          },
+          {
+            "id": "2PE-2-4-GR-010",
+            "position": 10,
+            "surface": "⸀σειραῖς",
+            "transliteration": "seirais"
+          },
+          {
+            "id": "2PE-2-4-GR-011",
+            "position": 11,
+            "surface": "ζόφου",
+            "transliteration": "zophoy"
+          },
+          {
+            "id": "2PE-2-4-GR-012",
+            "position": 12,
+            "surface": "ταρταρώσας",
+            "transliteration": "tartarōsas"
+          },
+          {
+            "id": "2PE-2-4-GR-013",
+            "position": 13,
+            "surface": "παρέδωκεν",
+            "transliteration": "paredōken"
+          },
+          {
+            "id": "2PE-2-4-GR-014",
+            "position": 14,
+            "surface": "εἰς",
+            "transliteration": "eis"
+          },
+          {
+            "id": "2PE-2-4-GR-015",
+            "position": 15,
+            "surface": "κρίσιν",
+            "transliteration": "krisin"
+          },
+          {
+            "id": "2PE-2-4-GR-016",
+            "position": 16,
+            "surface": "τηρουμένους,",
+            "transliteration": "tēroymenoys"
+          }
+        ]
+      },
+      "5": {
+        "text": "καὶ ἀρχαίου κόσμου οὐκ ἐφείσατο, ἀλλὰ ὄγδοον Νῶε δικαιοσύνης κήρυκα ἐφύλαξεν, κατακλυσμὸν κόσμῳ ἀσεβῶν ἐπάξας,",
+        "tokens": [
+          {
+            "id": "2PE-2-5-GR-001",
+            "position": 1,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-5-GR-002",
+            "position": 2,
+            "surface": "ἀρχαίου",
+            "transliteration": "archaioy"
+          },
+          {
+            "id": "2PE-2-5-GR-003",
+            "position": 3,
+            "surface": "κόσμου",
+            "transliteration": "kosmoy"
+          },
+          {
+            "id": "2PE-2-5-GR-004",
+            "position": 4,
+            "surface": "οὐκ",
+            "transliteration": "oyk"
+          },
+          {
+            "id": "2PE-2-5-GR-005",
+            "position": 5,
+            "surface": "ἐφείσατο,",
+            "transliteration": "epheisato"
+          },
+          {
+            "id": "2PE-2-5-GR-006",
+            "position": 6,
+            "surface": "ἀλλὰ",
+            "transliteration": "alla"
+          },
+          {
+            "id": "2PE-2-5-GR-007",
+            "position": 7,
+            "surface": "ὄγδοον",
+            "transliteration": "ogdoon"
+          },
+          {
+            "id": "2PE-2-5-GR-008",
+            "position": 8,
+            "surface": "Νῶε",
+            "transliteration": "Nōe"
+          },
+          {
+            "id": "2PE-2-5-GR-009",
+            "position": 9,
+            "surface": "δικαιοσύνης",
+            "transliteration": "dikaiosynēs"
+          },
+          {
+            "id": "2PE-2-5-GR-010",
+            "position": 10,
+            "surface": "κήρυκα",
+            "transliteration": "kēryka"
+          },
+          {
+            "id": "2PE-2-5-GR-011",
+            "position": 11,
+            "surface": "ἐφύλαξεν,",
+            "transliteration": "ephylaxen"
+          },
+          {
+            "id": "2PE-2-5-GR-012",
+            "position": 12,
+            "surface": "κατακλυσμὸν",
+            "transliteration": "kataklysmon"
+          },
+          {
+            "id": "2PE-2-5-GR-013",
+            "position": 13,
+            "surface": "κόσμῳ",
+            "transliteration": "kosmōi"
+          },
+          {
+            "id": "2PE-2-5-GR-014",
+            "position": 14,
+            "surface": "ἀσεβῶν",
+            "transliteration": "asebōn"
+          },
+          {
+            "id": "2PE-2-5-GR-015",
+            "position": 15,
+            "surface": "ἐπάξας,",
+            "transliteration": "epaxas"
+          }
+        ]
+      },
+      "6": {
+        "text": "καὶ πόλεις Σοδόμων καὶ Γομόρρας τεφρώσας ⸀καταστροφῇ κατέκρινεν, ὑπόδειγμα μελλόντων ⸀ἀσεβέσιν τεθεικώς,",
+        "tokens": [
+          {
+            "id": "2PE-2-6-GR-001",
+            "position": 1,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-6-GR-002",
+            "position": 2,
+            "surface": "πόλεις",
+            "transliteration": "poleis"
+          },
+          {
+            "id": "2PE-2-6-GR-003",
+            "position": 3,
+            "surface": "Σοδόμων",
+            "transliteration": "Sodomōn"
+          },
+          {
+            "id": "2PE-2-6-GR-004",
+            "position": 4,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-6-GR-005",
+            "position": 5,
+            "surface": "Γομόρρας",
+            "transliteration": "Gomorras"
+          },
+          {
+            "id": "2PE-2-6-GR-006",
+            "position": 6,
+            "surface": "τεφρώσας",
+            "transliteration": "tephrōsas"
+          },
+          {
+            "id": "2PE-2-6-GR-007",
+            "position": 7,
+            "surface": "⸀καταστροφῇ",
+            "transliteration": "katastrophēi"
+          },
+          {
+            "id": "2PE-2-6-GR-008",
+            "position": 8,
+            "surface": "κατέκρινεν,",
+            "transliteration": "katekrinen"
+          },
+          {
+            "id": "2PE-2-6-GR-009",
+            "position": 9,
+            "surface": "ὑπόδειγμα",
+            "transliteration": "hypodeigma"
+          },
+          {
+            "id": "2PE-2-6-GR-010",
+            "position": 10,
+            "surface": "μελλόντων",
+            "transliteration": "mellontōn"
+          },
+          {
+            "id": "2PE-2-6-GR-011",
+            "position": 11,
+            "surface": "⸀ἀσεβέσιν",
+            "transliteration": "asebesin"
+          },
+          {
+            "id": "2PE-2-6-GR-012",
+            "position": 12,
+            "surface": "τεθεικώς,",
+            "transliteration": "tetheikōs"
+          }
+        ]
+      },
+      "7": {
+        "text": "καὶ δίκαιον Λὼτ καταπονούμενον ὑπὸ τῆς τῶν ἀθέσμων ἐν ἀσελγείᾳ ἀναστροφῆς ἐρρύσατο—",
+        "tokens": [
+          {
+            "id": "2PE-2-7-GR-001",
+            "position": 1,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-7-GR-002",
+            "position": 2,
+            "surface": "δίκαιον",
+            "transliteration": "dikaion"
+          },
+          {
+            "id": "2PE-2-7-GR-003",
+            "position": 3,
+            "surface": "Λὼτ",
+            "transliteration": "Lōt"
+          },
+          {
+            "id": "2PE-2-7-GR-004",
+            "position": 4,
+            "surface": "καταπονούμενον",
+            "transliteration": "kataponoymenon"
+          },
+          {
+            "id": "2PE-2-7-GR-005",
+            "position": 5,
+            "surface": "ὑπὸ",
+            "transliteration": "hypo"
+          },
+          {
+            "id": "2PE-2-7-GR-006",
+            "position": 6,
+            "surface": "τῆς",
+            "transliteration": "tēs"
+          },
+          {
+            "id": "2PE-2-7-GR-007",
+            "position": 7,
+            "surface": "τῶν",
+            "transliteration": "tōn"
+          },
+          {
+            "id": "2PE-2-7-GR-008",
+            "position": 8,
+            "surface": "ἀθέσμων",
+            "transliteration": "athesmōn"
+          },
+          {
+            "id": "2PE-2-7-GR-009",
+            "position": 9,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-2-7-GR-010",
+            "position": 10,
+            "surface": "ἀσελγείᾳ",
+            "transliteration": "aselgeiai"
+          },
+          {
+            "id": "2PE-2-7-GR-011",
+            "position": 11,
+            "surface": "ἀναστροφῆς",
+            "transliteration": "anastrophēs"
+          },
+          {
+            "id": "2PE-2-7-GR-012",
+            "position": 12,
+            "surface": "ἐρρύσατο—",
+            "transliteration": "errysato"
+          }
+        ]
+      },
+      "8": {
+        "text": "βλέμματι γὰρ καὶ ἀκοῇ ⸀ὁ δίκαιος ἐγκατοικῶν ἐν αὐτοῖς ἡμέραν ἐξ ἡμέρας ψυχὴν δικαίαν ἀνόμοις ἔργοις ἐβασάνιζεν—",
+        "tokens": [
+          {
+            "id": "2PE-2-8-GR-001",
+            "position": 1,
+            "surface": "βλέμματι",
+            "transliteration": "blemmati"
+          },
+          {
+            "id": "2PE-2-8-GR-002",
+            "position": 2,
+            "surface": "γὰρ",
+            "transliteration": "gar"
+          },
+          {
+            "id": "2PE-2-8-GR-003",
+            "position": 3,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-8-GR-004",
+            "position": 4,
+            "surface": "ἀκοῇ",
+            "transliteration": "akoēi"
+          },
+          {
+            "id": "2PE-2-8-GR-005",
+            "position": 5,
+            "surface": "⸀ὁ",
+            "transliteration": "ho"
+          },
+          {
+            "id": "2PE-2-8-GR-006",
+            "position": 6,
+            "surface": "δίκαιος",
+            "transliteration": "dikaios"
+          },
+          {
+            "id": "2PE-2-8-GR-007",
+            "position": 7,
+            "surface": "ἐγκατοικῶν",
+            "transliteration": "egkatoikōn"
+          },
+          {
+            "id": "2PE-2-8-GR-008",
+            "position": 8,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-2-8-GR-009",
+            "position": 9,
+            "surface": "αὐτοῖς",
+            "transliteration": "aytois"
+          },
+          {
+            "id": "2PE-2-8-GR-010",
+            "position": 10,
+            "surface": "ἡμέραν",
+            "transliteration": "hēmeran"
+          },
+          {
+            "id": "2PE-2-8-GR-011",
+            "position": 11,
+            "surface": "ἐξ",
+            "transliteration": "ex"
+          },
+          {
+            "id": "2PE-2-8-GR-012",
+            "position": 12,
+            "surface": "ἡμέρας",
+            "transliteration": "hēmeras"
+          },
+          {
+            "id": "2PE-2-8-GR-013",
+            "position": 13,
+            "surface": "ψυχὴν",
+            "transliteration": "psychēn"
+          },
+          {
+            "id": "2PE-2-8-GR-014",
+            "position": 14,
+            "surface": "δικαίαν",
+            "transliteration": "dikaian"
+          },
+          {
+            "id": "2PE-2-8-GR-015",
+            "position": 15,
+            "surface": "ἀνόμοις",
+            "transliteration": "anomois"
+          },
+          {
+            "id": "2PE-2-8-GR-016",
+            "position": 16,
+            "surface": "ἔργοις",
+            "transliteration": "ergois"
+          },
+          {
+            "id": "2PE-2-8-GR-017",
+            "position": 17,
+            "surface": "ἐβασάνιζεν—",
+            "transliteration": "ebasanizen"
+          }
+        ]
+      },
+      "9": {
+        "text": "οἶδεν κύριος εὐσεβεῖς ἐκ πειρασμοῦ ῥύεσθαι, ἀδίκους δὲ εἰς ἡμέραν κρίσεως κολαζομένους τηρεῖν,",
+        "tokens": [
+          {
+            "id": "2PE-2-9-GR-001",
+            "position": 1,
+            "surface": "οἶδεν",
+            "transliteration": "oiden"
+          },
+          {
+            "id": "2PE-2-9-GR-002",
+            "position": 2,
+            "surface": "κύριος",
+            "transliteration": "kyrios"
+          },
+          {
+            "id": "2PE-2-9-GR-003",
+            "position": 3,
+            "surface": "εὐσεβεῖς",
+            "transliteration": "eysebeis"
+          },
+          {
+            "id": "2PE-2-9-GR-004",
+            "position": 4,
+            "surface": "ἐκ",
+            "transliteration": "ek"
+          },
+          {
+            "id": "2PE-2-9-GR-005",
+            "position": 5,
+            "surface": "πειρασμοῦ",
+            "transliteration": "peirasmoy"
+          },
+          {
+            "id": "2PE-2-9-GR-006",
+            "position": 6,
+            "surface": "ῥύεσθαι,",
+            "transliteration": "rhyesthai"
+          },
+          {
+            "id": "2PE-2-9-GR-007",
+            "position": 7,
+            "surface": "ἀδίκους",
+            "transliteration": "adikoys"
+          },
+          {
+            "id": "2PE-2-9-GR-008",
+            "position": 8,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-2-9-GR-009",
+            "position": 9,
+            "surface": "εἰς",
+            "transliteration": "eis"
+          },
+          {
+            "id": "2PE-2-9-GR-010",
+            "position": 10,
+            "surface": "ἡμέραν",
+            "transliteration": "hēmeran"
+          },
+          {
+            "id": "2PE-2-9-GR-011",
+            "position": 11,
+            "surface": "κρίσεως",
+            "transliteration": "kriseōs"
+          },
+          {
+            "id": "2PE-2-9-GR-012",
+            "position": 12,
+            "surface": "κολαζομένους",
+            "transliteration": "kolazomenoys"
+          },
+          {
+            "id": "2PE-2-9-GR-013",
+            "position": 13,
+            "surface": "τηρεῖν,",
+            "transliteration": "tērein"
+          }
+        ]
+      },
+      "10": {
+        "text": "μάλιστα δὲ τοὺς ὀπίσω σαρκὸς ἐν ἐπιθυμίᾳ μιασμοῦ πορευομένους καὶ κυριότητος καταφρονοῦντας. Τολμηταί, αὐθάδεις, δόξας οὐ τρέμουσιν, βλασφημοῦντες,",
+        "tokens": [
+          {
+            "id": "2PE-2-10-GR-001",
+            "position": 1,
+            "surface": "μάλιστα",
+            "transliteration": "malista"
+          },
+          {
+            "id": "2PE-2-10-GR-002",
+            "position": 2,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-2-10-GR-003",
+            "position": 3,
+            "surface": "τοὺς",
+            "transliteration": "toys"
+          },
+          {
+            "id": "2PE-2-10-GR-004",
+            "position": 4,
+            "surface": "ὀπίσω",
+            "transliteration": "opisō"
+          },
+          {
+            "id": "2PE-2-10-GR-005",
+            "position": 5,
+            "surface": "σαρκὸς",
+            "transliteration": "sarkos"
+          },
+          {
+            "id": "2PE-2-10-GR-006",
+            "position": 6,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-2-10-GR-007",
+            "position": 7,
+            "surface": "ἐπιθυμίᾳ",
+            "transliteration": "epithymiai"
+          },
+          {
+            "id": "2PE-2-10-GR-008",
+            "position": 8,
+            "surface": "μιασμοῦ",
+            "transliteration": "miasmoy"
+          },
+          {
+            "id": "2PE-2-10-GR-009",
+            "position": 9,
+            "surface": "πορευομένους",
+            "transliteration": "poreyomenoys"
+          },
+          {
+            "id": "2PE-2-10-GR-010",
+            "position": 10,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-10-GR-011",
+            "position": 11,
+            "surface": "κυριότητος",
+            "transliteration": "kyriotētos"
+          },
+          {
+            "id": "2PE-2-10-GR-012",
+            "position": 12,
+            "surface": "καταφρονοῦντας.",
+            "transliteration": "kataphronoyntas"
+          },
+          {
+            "id": "2PE-2-10-GR-013",
+            "position": 13,
+            "surface": "Τολμηταί,",
+            "transliteration": "Tolmētai"
+          },
+          {
+            "id": "2PE-2-10-GR-014",
+            "position": 14,
+            "surface": "αὐθάδεις,",
+            "transliteration": "aythadeis"
+          },
+          {
+            "id": "2PE-2-10-GR-015",
+            "position": 15,
+            "surface": "δόξας",
+            "transliteration": "doxas"
+          },
+          {
+            "id": "2PE-2-10-GR-016",
+            "position": 16,
+            "surface": "οὐ",
+            "transliteration": "oy"
+          },
+          {
+            "id": "2PE-2-10-GR-017",
+            "position": 17,
+            "surface": "τρέμουσιν,",
+            "transliteration": "tremoysin"
+          },
+          {
+            "id": "2PE-2-10-GR-018",
+            "position": 18,
+            "surface": "βλασφημοῦντες,",
+            "transliteration": "blasphēmoyntes"
+          }
+        ]
+      },
+      "11": {
+        "text": "ὅπου ἄγγελοι ἰσχύϊ καὶ δυνάμει μείζονες ὄντες οὐ φέρουσιν κατʼ ⸀αὐτῶν βλάσφημον κρίσιν.",
+        "tokens": [
+          {
+            "id": "2PE-2-11-GR-001",
+            "position": 1,
+            "surface": "ὅπου",
+            "transliteration": "hopoy"
+          },
+          {
+            "id": "2PE-2-11-GR-002",
+            "position": 2,
+            "surface": "ἄγγελοι",
+            "transliteration": "aggeloi"
+          },
+          {
+            "id": "2PE-2-11-GR-003",
+            "position": 3,
+            "surface": "ἰσχύϊ",
+            "transliteration": "ischyi"
+          },
+          {
+            "id": "2PE-2-11-GR-004",
+            "position": 4,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-11-GR-005",
+            "position": 5,
+            "surface": "δυνάμει",
+            "transliteration": "dynamei"
+          },
+          {
+            "id": "2PE-2-11-GR-006",
+            "position": 6,
+            "surface": "μείζονες",
+            "transliteration": "meizones"
+          },
+          {
+            "id": "2PE-2-11-GR-007",
+            "position": 7,
+            "surface": "ὄντες",
+            "transliteration": "ontes"
+          },
+          {
+            "id": "2PE-2-11-GR-008",
+            "position": 8,
+            "surface": "οὐ",
+            "transliteration": "oy"
+          },
+          {
+            "id": "2PE-2-11-GR-009",
+            "position": 9,
+            "surface": "φέρουσιν",
+            "transliteration": "pheroysin"
+          },
+          {
+            "id": "2PE-2-11-GR-010",
+            "position": 10,
+            "surface": "κατʼ",
+            "transliteration": "kat"
+          },
+          {
+            "id": "2PE-2-11-GR-011",
+            "position": 11,
+            "surface": "⸀αὐτῶν",
+            "transliteration": "aytōn"
+          },
+          {
+            "id": "2PE-2-11-GR-012",
+            "position": 12,
+            "surface": "βλάσφημον",
+            "transliteration": "blasphēmon"
+          },
+          {
+            "id": "2PE-2-11-GR-013",
+            "position": 13,
+            "surface": "κρίσιν.",
+            "transliteration": "krisin"
+          }
+        ]
+      },
+      "12": {
+        "text": "οὗτοι δέ, ὡς ἄλογα ζῷα ⸂γεγεννημένα φυσικὰ⸃ εἰς ἅλωσιν καὶ φθοράν, ἐν οἷς ἀγνοοῦσιν βλασφημοῦντες, ἐν τῇ φθορᾷ αὐτῶν ⸂καὶ φθαρήσονται⸃,",
+        "tokens": [
+          {
+            "id": "2PE-2-12-GR-001",
+            "position": 1,
+            "surface": "οὗτοι",
+            "transliteration": "hoytoi"
+          },
+          {
+            "id": "2PE-2-12-GR-002",
+            "position": 2,
+            "surface": "δέ,",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-2-12-GR-003",
+            "position": 3,
+            "surface": "ὡς",
+            "transliteration": "hōs"
+          },
+          {
+            "id": "2PE-2-12-GR-004",
+            "position": 4,
+            "surface": "ἄλογα",
+            "transliteration": "aloga"
+          },
+          {
+            "id": "2PE-2-12-GR-005",
+            "position": 5,
+            "surface": "ζῷα",
+            "transliteration": "zōia"
+          },
+          {
+            "id": "2PE-2-12-GR-006",
+            "position": 6,
+            "surface": "⸂γεγεννημένα",
+            "transliteration": "gegennēmena"
+          },
+          {
+            "id": "2PE-2-12-GR-007",
+            "position": 7,
+            "surface": "φυσικὰ⸃",
+            "transliteration": "physika"
+          },
+          {
+            "id": "2PE-2-12-GR-008",
+            "position": 8,
+            "surface": "εἰς",
+            "transliteration": "eis"
+          },
+          {
+            "id": "2PE-2-12-GR-009",
+            "position": 9,
+            "surface": "ἅλωσιν",
+            "transliteration": "halōsin"
+          },
+          {
+            "id": "2PE-2-12-GR-010",
+            "position": 10,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-12-GR-011",
+            "position": 11,
+            "surface": "φθοράν,",
+            "transliteration": "phthoran"
+          },
+          {
+            "id": "2PE-2-12-GR-012",
+            "position": 12,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-2-12-GR-013",
+            "position": 13,
+            "surface": "οἷς",
+            "transliteration": "hois"
+          },
+          {
+            "id": "2PE-2-12-GR-014",
+            "position": 14,
+            "surface": "ἀγνοοῦσιν",
+            "transliteration": "agnooysin"
+          },
+          {
+            "id": "2PE-2-12-GR-015",
+            "position": 15,
+            "surface": "βλασφημοῦντες,",
+            "transliteration": "blasphēmoyntes"
+          },
+          {
+            "id": "2PE-2-12-GR-016",
+            "position": 16,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-2-12-GR-017",
+            "position": 17,
+            "surface": "τῇ",
+            "transliteration": "tēi"
+          },
+          {
+            "id": "2PE-2-12-GR-018",
+            "position": 18,
+            "surface": "φθορᾷ",
+            "transliteration": "phthorai"
+          },
+          {
+            "id": "2PE-2-12-GR-019",
+            "position": 19,
+            "surface": "αὐτῶν",
+            "transliteration": "aytōn"
+          },
+          {
+            "id": "2PE-2-12-GR-020",
+            "position": 20,
+            "surface": "⸂καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-12-GR-021",
+            "position": 21,
+            "surface": "φθαρήσονται⸃,",
+            "transliteration": "phtharēsontai"
+          }
+        ]
+      },
+      "13": {
+        "text": "⸀ἀδικούμενοι μισθὸν ἀδικίας· ἡδονὴν ἡγούμενοι τὴν ἐν ἡμέρᾳ τρυφήν, σπίλοι καὶ μῶμοι ἐντρυφῶντες ἐν ταῖς ⸀ἀπάταις αὐτῶν συνευωχούμενοι ὑμῖν,",
+        "tokens": [
+          {
+            "id": "2PE-2-13-GR-001",
+            "position": 1,
+            "surface": "⸀ἀδικούμενοι",
+            "transliteration": "adikoymenoi"
+          },
+          {
+            "id": "2PE-2-13-GR-002",
+            "position": 2,
+            "surface": "μισθὸν",
+            "transliteration": "misthon"
+          },
+          {
+            "id": "2PE-2-13-GR-003",
+            "position": 3,
+            "surface": "ἀδικίας·",
+            "transliteration": "adikias"
+          },
+          {
+            "id": "2PE-2-13-GR-004",
+            "position": 4,
+            "surface": "ἡδονὴν",
+            "transliteration": "hēdonēn"
+          },
+          {
+            "id": "2PE-2-13-GR-005",
+            "position": 5,
+            "surface": "ἡγούμενοι",
+            "transliteration": "hēgoymenoi"
+          },
+          {
+            "id": "2PE-2-13-GR-006",
+            "position": 6,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-2-13-GR-007",
+            "position": 7,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-2-13-GR-008",
+            "position": 8,
+            "surface": "ἡμέρᾳ",
+            "transliteration": "hēmerai"
+          },
+          {
+            "id": "2PE-2-13-GR-009",
+            "position": 9,
+            "surface": "τρυφήν,",
+            "transliteration": "tryphēn"
+          },
+          {
+            "id": "2PE-2-13-GR-010",
+            "position": 10,
+            "surface": "σπίλοι",
+            "transliteration": "spiloi"
+          },
+          {
+            "id": "2PE-2-13-GR-011",
+            "position": 11,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-13-GR-012",
+            "position": 12,
+            "surface": "μῶμοι",
+            "transliteration": "mōmoi"
+          },
+          {
+            "id": "2PE-2-13-GR-013",
+            "position": 13,
+            "surface": "ἐντρυφῶντες",
+            "transliteration": "entryphōntes"
+          },
+          {
+            "id": "2PE-2-13-GR-014",
+            "position": 14,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-2-13-GR-015",
+            "position": 15,
+            "surface": "ταῖς",
+            "transliteration": "tais"
+          },
+          {
+            "id": "2PE-2-13-GR-016",
+            "position": 16,
+            "surface": "⸀ἀπάταις",
+            "transliteration": "apatais"
+          },
+          {
+            "id": "2PE-2-13-GR-017",
+            "position": 17,
+            "surface": "αὐτῶν",
+            "transliteration": "aytōn"
+          },
+          {
+            "id": "2PE-2-13-GR-018",
+            "position": 18,
+            "surface": "συνευωχούμενοι",
+            "transliteration": "syneyōchoymenoi"
+          },
+          {
+            "id": "2PE-2-13-GR-019",
+            "position": 19,
+            "surface": "ὑμῖν,",
+            "transliteration": "hymin"
+          }
+        ]
+      },
+      "14": {
+        "text": "ὀφθαλμοὺς ἔχοντες μεστοὺς μοιχαλίδος καὶ ⸀ἀκαταπαύστους ἁμαρτίας, δελεάζοντες ψυχὰς ἀστηρίκτους, καρδίαν γεγυμνασμένην πλεονεξίας ἔχοντες, κατάρας τέκνα,",
+        "tokens": [
+          {
+            "id": "2PE-2-14-GR-001",
+            "position": 1,
+            "surface": "ὀφθαλμοὺς",
+            "transliteration": "ophthalmoys"
+          },
+          {
+            "id": "2PE-2-14-GR-002",
+            "position": 2,
+            "surface": "ἔχοντες",
+            "transliteration": "echontes"
+          },
+          {
+            "id": "2PE-2-14-GR-003",
+            "position": 3,
+            "surface": "μεστοὺς",
+            "transliteration": "mestoys"
+          },
+          {
+            "id": "2PE-2-14-GR-004",
+            "position": 4,
+            "surface": "μοιχαλίδος",
+            "transliteration": "moichalidos"
+          },
+          {
+            "id": "2PE-2-14-GR-005",
+            "position": 5,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-14-GR-006",
+            "position": 6,
+            "surface": "⸀ἀκαταπαύστους",
+            "transliteration": "akatapaystoys"
+          },
+          {
+            "id": "2PE-2-14-GR-007",
+            "position": 7,
+            "surface": "ἁμαρτίας,",
+            "transliteration": "hamartias"
+          },
+          {
+            "id": "2PE-2-14-GR-008",
+            "position": 8,
+            "surface": "δελεάζοντες",
+            "transliteration": "deleazontes"
+          },
+          {
+            "id": "2PE-2-14-GR-009",
+            "position": 9,
+            "surface": "ψυχὰς",
+            "transliteration": "psychas"
+          },
+          {
+            "id": "2PE-2-14-GR-010",
+            "position": 10,
+            "surface": "ἀστηρίκτους,",
+            "transliteration": "astēriktoys"
+          },
+          {
+            "id": "2PE-2-14-GR-011",
+            "position": 11,
+            "surface": "καρδίαν",
+            "transliteration": "kardian"
+          },
+          {
+            "id": "2PE-2-14-GR-012",
+            "position": 12,
+            "surface": "γεγυμνασμένην",
+            "transliteration": "gegymnasmenēn"
+          },
+          {
+            "id": "2PE-2-14-GR-013",
+            "position": 13,
+            "surface": "πλεονεξίας",
+            "transliteration": "pleonexias"
+          },
+          {
+            "id": "2PE-2-14-GR-014",
+            "position": 14,
+            "surface": "ἔχοντες,",
+            "transliteration": "echontes"
+          },
+          {
+            "id": "2PE-2-14-GR-015",
+            "position": 15,
+            "surface": "κατάρας",
+            "transliteration": "kataras"
+          },
+          {
+            "id": "2PE-2-14-GR-016",
+            "position": 16,
+            "surface": "τέκνα,",
+            "transliteration": "tekna"
+          }
+        ]
+      },
+      "15": {
+        "text": "⸀καταλιπόντες εὐθεῖαν ὁδὸν ἐπλανήθησαν, ἐξακολουθήσαντες τῇ ὁδῷ τοῦ Βαλαὰμ τοῦ ⸀Βοσὸρ ὃς μισθὸν ἀδικίας ἠγάπησεν",
+        "tokens": [
+          {
+            "id": "2PE-2-15-GR-001",
+            "position": 1,
+            "surface": "⸀καταλιπόντες",
+            "transliteration": "katalipontes"
+          },
+          {
+            "id": "2PE-2-15-GR-002",
+            "position": 2,
+            "surface": "εὐθεῖαν",
+            "transliteration": "eytheian"
+          },
+          {
+            "id": "2PE-2-15-GR-003",
+            "position": 3,
+            "surface": "ὁδὸν",
+            "transliteration": "hodon"
+          },
+          {
+            "id": "2PE-2-15-GR-004",
+            "position": 4,
+            "surface": "ἐπλανήθησαν,",
+            "transliteration": "eplanēthēsan"
+          },
+          {
+            "id": "2PE-2-15-GR-005",
+            "position": 5,
+            "surface": "ἐξακολουθήσαντες",
+            "transliteration": "exakoloythēsantes"
+          },
+          {
+            "id": "2PE-2-15-GR-006",
+            "position": 6,
+            "surface": "τῇ",
+            "transliteration": "tēi"
+          },
+          {
+            "id": "2PE-2-15-GR-007",
+            "position": 7,
+            "surface": "ὁδῷ",
+            "transliteration": "hodōi"
+          },
+          {
+            "id": "2PE-2-15-GR-008",
+            "position": 8,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-2-15-GR-009",
+            "position": 9,
+            "surface": "Βαλαὰμ",
+            "transliteration": "Balaam"
+          },
+          {
+            "id": "2PE-2-15-GR-010",
+            "position": 10,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-2-15-GR-011",
+            "position": 11,
+            "surface": "⸀Βοσὸρ",
+            "transliteration": "Bosor"
+          },
+          {
+            "id": "2PE-2-15-GR-012",
+            "position": 12,
+            "surface": "ὃς",
+            "transliteration": "hos"
+          },
+          {
+            "id": "2PE-2-15-GR-013",
+            "position": 13,
+            "surface": "μισθὸν",
+            "transliteration": "misthon"
+          },
+          {
+            "id": "2PE-2-15-GR-014",
+            "position": 14,
+            "surface": "ἀδικίας",
+            "transliteration": "adikias"
+          },
+          {
+            "id": "2PE-2-15-GR-015",
+            "position": 15,
+            "surface": "ἠγάπησεν",
+            "transliteration": "ēgapēsen"
+          }
+        ]
+      },
+      "16": {
+        "text": "ἔλεγξιν δὲ ἔσχεν ἰδίας παρανομίας· ὑποζύγιον ἄφωνον ἐν ἀνθρώπου φωνῇ φθεγξάμενον ἐκώλυσεν τὴν τοῦ προφήτου παραφρονίαν.",
+        "tokens": [
+          {
+            "id": "2PE-2-16-GR-001",
+            "position": 1,
+            "surface": "ἔλεγξιν",
+            "transliteration": "elegxin"
+          },
+          {
+            "id": "2PE-2-16-GR-002",
+            "position": 2,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-2-16-GR-003",
+            "position": 3,
+            "surface": "ἔσχεν",
+            "transliteration": "eschen"
+          },
+          {
+            "id": "2PE-2-16-GR-004",
+            "position": 4,
+            "surface": "ἰδίας",
+            "transliteration": "idias"
+          },
+          {
+            "id": "2PE-2-16-GR-005",
+            "position": 5,
+            "surface": "παρανομίας·",
+            "transliteration": "paranomias"
+          },
+          {
+            "id": "2PE-2-16-GR-006",
+            "position": 6,
+            "surface": "ὑποζύγιον",
+            "transliteration": "hypozygion"
+          },
+          {
+            "id": "2PE-2-16-GR-007",
+            "position": 7,
+            "surface": "ἄφωνον",
+            "transliteration": "aphōnon"
+          },
+          {
+            "id": "2PE-2-16-GR-008",
+            "position": 8,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-2-16-GR-009",
+            "position": 9,
+            "surface": "ἀνθρώπου",
+            "transliteration": "anthrōpoy"
+          },
+          {
+            "id": "2PE-2-16-GR-010",
+            "position": 10,
+            "surface": "φωνῇ",
+            "transliteration": "phōnēi"
+          },
+          {
+            "id": "2PE-2-16-GR-011",
+            "position": 11,
+            "surface": "φθεγξάμενον",
+            "transliteration": "phthegxamenon"
+          },
+          {
+            "id": "2PE-2-16-GR-012",
+            "position": 12,
+            "surface": "ἐκώλυσεν",
+            "transliteration": "ekōlysen"
+          },
+          {
+            "id": "2PE-2-16-GR-013",
+            "position": 13,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-2-16-GR-014",
+            "position": 14,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-2-16-GR-015",
+            "position": 15,
+            "surface": "προφήτου",
+            "transliteration": "prophētoy"
+          },
+          {
+            "id": "2PE-2-16-GR-016",
+            "position": 16,
+            "surface": "παραφρονίαν.",
+            "transliteration": "paraphronian"
+          }
+        ]
+      },
+      "17": {
+        "text": "Οὗτοί εἰσιν πηγαὶ ἄνυδροι ⸂καὶ ὁμίχλαι⸃ ὑπὸ λαίλαπος ἐλαυνόμεναι, οἷς ὁ ζόφος τοῦ ⸀σκότους τετήρηται.",
+        "tokens": [
+          {
+            "id": "2PE-2-17-GR-001",
+            "position": 1,
+            "surface": "Οὗτοί",
+            "transliteration": "Hoytoi"
+          },
+          {
+            "id": "2PE-2-17-GR-002",
+            "position": 2,
+            "surface": "εἰσιν",
+            "transliteration": "eisin"
+          },
+          {
+            "id": "2PE-2-17-GR-003",
+            "position": 3,
+            "surface": "πηγαὶ",
+            "transliteration": "pēgai"
+          },
+          {
+            "id": "2PE-2-17-GR-004",
+            "position": 4,
+            "surface": "ἄνυδροι",
+            "transliteration": "anydroi"
+          },
+          {
+            "id": "2PE-2-17-GR-005",
+            "position": 5,
+            "surface": "⸂καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-17-GR-006",
+            "position": 6,
+            "surface": "ὁμίχλαι⸃",
+            "transliteration": "homichlai"
+          },
+          {
+            "id": "2PE-2-17-GR-007",
+            "position": 7,
+            "surface": "ὑπὸ",
+            "transliteration": "hypo"
+          },
+          {
+            "id": "2PE-2-17-GR-008",
+            "position": 8,
+            "surface": "λαίλαπος",
+            "transliteration": "lailapos"
+          },
+          {
+            "id": "2PE-2-17-GR-009",
+            "position": 9,
+            "surface": "ἐλαυνόμεναι,",
+            "transliteration": "elaynomenai"
+          },
+          {
+            "id": "2PE-2-17-GR-010",
+            "position": 10,
+            "surface": "οἷς",
+            "transliteration": "hois"
+          },
+          {
+            "id": "2PE-2-17-GR-011",
+            "position": 11,
+            "surface": "ὁ",
+            "transliteration": "ho"
+          },
+          {
+            "id": "2PE-2-17-GR-012",
+            "position": 12,
+            "surface": "ζόφος",
+            "transliteration": "zophos"
+          },
+          {
+            "id": "2PE-2-17-GR-013",
+            "position": 13,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-2-17-GR-014",
+            "position": 14,
+            "surface": "⸀σκότους",
+            "transliteration": "skotoys"
+          },
+          {
+            "id": "2PE-2-17-GR-015",
+            "position": 15,
+            "surface": "τετήρηται.",
+            "transliteration": "tetērētai"
+          }
+        ]
+      },
+      "18": {
+        "text": "ὑπέρογκα γὰρ ματαιότητος φθεγγόμενοι δελεάζουσιν ἐν ἐπιθυμίαις σαρκὸς ἀσελγείαις τοὺς ⸀ὀλίγως ⸀ἀποφεύγοντας τοὺς ἐν πλάνῃ ἀναστρεφομένους,",
+        "tokens": [
+          {
+            "id": "2PE-2-18-GR-001",
+            "position": 1,
+            "surface": "ὑπέρογκα",
+            "transliteration": "hyperogka"
+          },
+          {
+            "id": "2PE-2-18-GR-002",
+            "position": 2,
+            "surface": "γὰρ",
+            "transliteration": "gar"
+          },
+          {
+            "id": "2PE-2-18-GR-003",
+            "position": 3,
+            "surface": "ματαιότητος",
+            "transliteration": "mataiotētos"
+          },
+          {
+            "id": "2PE-2-18-GR-004",
+            "position": 4,
+            "surface": "φθεγγόμενοι",
+            "transliteration": "phtheggomenoi"
+          },
+          {
+            "id": "2PE-2-18-GR-005",
+            "position": 5,
+            "surface": "δελεάζουσιν",
+            "transliteration": "deleazoysin"
+          },
+          {
+            "id": "2PE-2-18-GR-006",
+            "position": 6,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-2-18-GR-007",
+            "position": 7,
+            "surface": "ἐπιθυμίαις",
+            "transliteration": "epithymiais"
+          },
+          {
+            "id": "2PE-2-18-GR-008",
+            "position": 8,
+            "surface": "σαρκὸς",
+            "transliteration": "sarkos"
+          },
+          {
+            "id": "2PE-2-18-GR-009",
+            "position": 9,
+            "surface": "ἀσελγείαις",
+            "transliteration": "aselgeiais"
+          },
+          {
+            "id": "2PE-2-18-GR-010",
+            "position": 10,
+            "surface": "τοὺς",
+            "transliteration": "toys"
+          },
+          {
+            "id": "2PE-2-18-GR-011",
+            "position": 11,
+            "surface": "⸀ὀλίγως",
+            "transliteration": "oligōs"
+          },
+          {
+            "id": "2PE-2-18-GR-012",
+            "position": 12,
+            "surface": "⸀ἀποφεύγοντας",
+            "transliteration": "apopheygontas"
+          },
+          {
+            "id": "2PE-2-18-GR-013",
+            "position": 13,
+            "surface": "τοὺς",
+            "transliteration": "toys"
+          },
+          {
+            "id": "2PE-2-18-GR-014",
+            "position": 14,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-2-18-GR-015",
+            "position": 15,
+            "surface": "πλάνῃ",
+            "transliteration": "planēi"
+          },
+          {
+            "id": "2PE-2-18-GR-016",
+            "position": 16,
+            "surface": "ἀναστρεφομένους,",
+            "transliteration": "anastrephomenoys"
+          }
+        ]
+      },
+      "19": {
+        "text": "ἐλευθερίαν αὐτοῖς ἐπαγγελλόμενοι, αὐτοὶ δοῦλοι ὑπάρχοντες τῆς φθορᾶς· ᾧ γάρ τις ἥττηται, τούτῳ ⸀καὶ δεδούλωται.",
+        "tokens": [
+          {
+            "id": "2PE-2-19-GR-001",
+            "position": 1,
+            "surface": "ἐλευθερίαν",
+            "transliteration": "eleytherian"
+          },
+          {
+            "id": "2PE-2-19-GR-002",
+            "position": 2,
+            "surface": "αὐτοῖς",
+            "transliteration": "aytois"
+          },
+          {
+            "id": "2PE-2-19-GR-003",
+            "position": 3,
+            "surface": "ἐπαγγελλόμενοι,",
+            "transliteration": "epaggellomenoi"
+          },
+          {
+            "id": "2PE-2-19-GR-004",
+            "position": 4,
+            "surface": "αὐτοὶ",
+            "transliteration": "aytoi"
+          },
+          {
+            "id": "2PE-2-19-GR-005",
+            "position": 5,
+            "surface": "δοῦλοι",
+            "transliteration": "doyloi"
+          },
+          {
+            "id": "2PE-2-19-GR-006",
+            "position": 6,
+            "surface": "ὑπάρχοντες",
+            "transliteration": "hyparchontes"
+          },
+          {
+            "id": "2PE-2-19-GR-007",
+            "position": 7,
+            "surface": "τῆς",
+            "transliteration": "tēs"
+          },
+          {
+            "id": "2PE-2-19-GR-008",
+            "position": 8,
+            "surface": "φθορᾶς·",
+            "transliteration": "phthoras"
+          },
+          {
+            "id": "2PE-2-19-GR-009",
+            "position": 9,
+            "surface": "ᾧ",
+            "transliteration": "hōi"
+          },
+          {
+            "id": "2PE-2-19-GR-010",
+            "position": 10,
+            "surface": "γάρ",
+            "transliteration": "gar"
+          },
+          {
+            "id": "2PE-2-19-GR-011",
+            "position": 11,
+            "surface": "τις",
+            "transliteration": "tis"
+          },
+          {
+            "id": "2PE-2-19-GR-012",
+            "position": 12,
+            "surface": "ἥττηται,",
+            "transliteration": "hēttētai"
+          },
+          {
+            "id": "2PE-2-19-GR-013",
+            "position": 13,
+            "surface": "τούτῳ",
+            "transliteration": "toytōi"
+          },
+          {
+            "id": "2PE-2-19-GR-014",
+            "position": 14,
+            "surface": "⸀καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-19-GR-015",
+            "position": 15,
+            "surface": "δεδούλωται.",
+            "transliteration": "dedoylōtai"
+          }
+        ]
+      },
+      "20": {
+        "text": "εἰ γὰρ ἀποφυγόντες τὰ μιάσματα τοῦ κόσμου ἐν ἐπιγνώσει τοῦ ⸀κυρίου καὶ σωτῆρος Ἰησοῦ Χριστοῦ τούτοις δὲ πάλιν ἐμπλακέντες ἡττῶνται, γέγονεν αὐτοῖς τὰ ἔσχατα χείρονα τῶν πρώτων.",
+        "tokens": [
+          {
+            "id": "2PE-2-20-GR-001",
+            "position": 1,
+            "surface": "εἰ",
+            "transliteration": "ei"
+          },
+          {
+            "id": "2PE-2-20-GR-002",
+            "position": 2,
+            "surface": "γὰρ",
+            "transliteration": "gar"
+          },
+          {
+            "id": "2PE-2-20-GR-003",
+            "position": 3,
+            "surface": "ἀποφυγόντες",
+            "transliteration": "apophygontes"
+          },
+          {
+            "id": "2PE-2-20-GR-004",
+            "position": 4,
+            "surface": "τὰ",
+            "transliteration": "ta"
+          },
+          {
+            "id": "2PE-2-20-GR-005",
+            "position": 5,
+            "surface": "μιάσματα",
+            "transliteration": "miasmata"
+          },
+          {
+            "id": "2PE-2-20-GR-006",
+            "position": 6,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-2-20-GR-007",
+            "position": 7,
+            "surface": "κόσμου",
+            "transliteration": "kosmoy"
+          },
+          {
+            "id": "2PE-2-20-GR-008",
+            "position": 8,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-2-20-GR-009",
+            "position": 9,
+            "surface": "ἐπιγνώσει",
+            "transliteration": "epignōsei"
+          },
+          {
+            "id": "2PE-2-20-GR-010",
+            "position": 10,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-2-20-GR-011",
+            "position": 11,
+            "surface": "⸀κυρίου",
+            "transliteration": "kyrioy"
+          },
+          {
+            "id": "2PE-2-20-GR-012",
+            "position": 12,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-20-GR-013",
+            "position": 13,
+            "surface": "σωτῆρος",
+            "transliteration": "sōtēros"
+          },
+          {
+            "id": "2PE-2-20-GR-014",
+            "position": 14,
+            "surface": "Ἰησοῦ",
+            "transliteration": "Iēsoy"
+          },
+          {
+            "id": "2PE-2-20-GR-015",
+            "position": 15,
+            "surface": "Χριστοῦ",
+            "transliteration": "Christoy"
+          },
+          {
+            "id": "2PE-2-20-GR-016",
+            "position": 16,
+            "surface": "τούτοις",
+            "transliteration": "toytois"
+          },
+          {
+            "id": "2PE-2-20-GR-017",
+            "position": 17,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-2-20-GR-018",
+            "position": 18,
+            "surface": "πάλιν",
+            "transliteration": "palin"
+          },
+          {
+            "id": "2PE-2-20-GR-019",
+            "position": 19,
+            "surface": "ἐμπλακέντες",
+            "transliteration": "emplakentes"
+          },
+          {
+            "id": "2PE-2-20-GR-020",
+            "position": 20,
+            "surface": "ἡττῶνται,",
+            "transliteration": "hēttōntai"
+          },
+          {
+            "id": "2PE-2-20-GR-021",
+            "position": 21,
+            "surface": "γέγονεν",
+            "transliteration": "gegonen"
+          },
+          {
+            "id": "2PE-2-20-GR-022",
+            "position": 22,
+            "surface": "αὐτοῖς",
+            "transliteration": "aytois"
+          },
+          {
+            "id": "2PE-2-20-GR-023",
+            "position": 23,
+            "surface": "τὰ",
+            "transliteration": "ta"
+          },
+          {
+            "id": "2PE-2-20-GR-024",
+            "position": 24,
+            "surface": "ἔσχατα",
+            "transliteration": "eschata"
+          },
+          {
+            "id": "2PE-2-20-GR-025",
+            "position": 25,
+            "surface": "χείρονα",
+            "transliteration": "cheirona"
+          },
+          {
+            "id": "2PE-2-20-GR-026",
+            "position": 26,
+            "surface": "τῶν",
+            "transliteration": "tōn"
+          },
+          {
+            "id": "2PE-2-20-GR-027",
+            "position": 27,
+            "surface": "πρώτων.",
+            "transliteration": "prōtōn"
+          }
+        ]
+      },
+      "21": {
+        "text": "κρεῖττον γὰρ ἦν αὐτοῖς μὴ ἐπεγνωκέναι τὴν ὁδὸν τῆς δικαιοσύνης ἢ ἐπιγνοῦσιν ⸀ὑποστρέψαι ἐκ τῆς παραδοθείσης αὐτοῖς ἁγίας ἐντολῆς·",
+        "tokens": [
+          {
+            "id": "2PE-2-21-GR-001",
+            "position": 1,
+            "surface": "κρεῖττον",
+            "transliteration": "kreitton"
+          },
+          {
+            "id": "2PE-2-21-GR-002",
+            "position": 2,
+            "surface": "γὰρ",
+            "transliteration": "gar"
+          },
+          {
+            "id": "2PE-2-21-GR-003",
+            "position": 3,
+            "surface": "ἦν",
+            "transliteration": "ēn"
+          },
+          {
+            "id": "2PE-2-21-GR-004",
+            "position": 4,
+            "surface": "αὐτοῖς",
+            "transliteration": "aytois"
+          },
+          {
+            "id": "2PE-2-21-GR-005",
+            "position": 5,
+            "surface": "μὴ",
+            "transliteration": "mē"
+          },
+          {
+            "id": "2PE-2-21-GR-006",
+            "position": 6,
+            "surface": "ἐπεγνωκέναι",
+            "transliteration": "epegnōkenai"
+          },
+          {
+            "id": "2PE-2-21-GR-007",
+            "position": 7,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-2-21-GR-008",
+            "position": 8,
+            "surface": "ὁδὸν",
+            "transliteration": "hodon"
+          },
+          {
+            "id": "2PE-2-21-GR-009",
+            "position": 9,
+            "surface": "τῆς",
+            "transliteration": "tēs"
+          },
+          {
+            "id": "2PE-2-21-GR-010",
+            "position": 10,
+            "surface": "δικαιοσύνης",
+            "transliteration": "dikaiosynēs"
+          },
+          {
+            "id": "2PE-2-21-GR-011",
+            "position": 11,
+            "surface": "ἢ",
+            "transliteration": "ē"
+          },
+          {
+            "id": "2PE-2-21-GR-012",
+            "position": 12,
+            "surface": "ἐπιγνοῦσιν",
+            "transliteration": "epignoysin"
+          },
+          {
+            "id": "2PE-2-21-GR-013",
+            "position": 13,
+            "surface": "⸀ὑποστρέψαι",
+            "transliteration": "hypostrepsai"
+          },
+          {
+            "id": "2PE-2-21-GR-014",
+            "position": 14,
+            "surface": "ἐκ",
+            "transliteration": "ek"
+          },
+          {
+            "id": "2PE-2-21-GR-015",
+            "position": 15,
+            "surface": "τῆς",
+            "transliteration": "tēs"
+          },
+          {
+            "id": "2PE-2-21-GR-016",
+            "position": 16,
+            "surface": "παραδοθείσης",
+            "transliteration": "paradotheisēs"
+          },
+          {
+            "id": "2PE-2-21-GR-017",
+            "position": 17,
+            "surface": "αὐτοῖς",
+            "transliteration": "aytois"
+          },
+          {
+            "id": "2PE-2-21-GR-018",
+            "position": 18,
+            "surface": "ἁγίας",
+            "transliteration": "hagias"
+          },
+          {
+            "id": "2PE-2-21-GR-019",
+            "position": 19,
+            "surface": "ἐντολῆς·",
+            "transliteration": "entolēs"
+          }
+        ]
+      },
+      "22": {
+        "text": "⸀συμβέβηκεν αὐτοῖς τὸ τῆς ἀληθοῦς παροιμίας· Κύων ἐπιστρέψας ἐπὶ τὸ ἴδιον ἐξέραμα, καί· Ὗς λουσαμένη εἰς ⸀κυλισμὸν βορβόρου.",
+        "tokens": [
+          {
+            "id": "2PE-2-22-GR-001",
+            "position": 1,
+            "surface": "⸀συμβέβηκεν",
+            "transliteration": "symbebēken"
+          },
+          {
+            "id": "2PE-2-22-GR-002",
+            "position": 2,
+            "surface": "αὐτοῖς",
+            "transliteration": "aytois"
+          },
+          {
+            "id": "2PE-2-22-GR-003",
+            "position": 3,
+            "surface": "τὸ",
+            "transliteration": "to"
+          },
+          {
+            "id": "2PE-2-22-GR-004",
+            "position": 4,
+            "surface": "τῆς",
+            "transliteration": "tēs"
+          },
+          {
+            "id": "2PE-2-22-GR-005",
+            "position": 5,
+            "surface": "ἀληθοῦς",
+            "transliteration": "alēthoys"
+          },
+          {
+            "id": "2PE-2-22-GR-006",
+            "position": 6,
+            "surface": "παροιμίας·",
+            "transliteration": "paroimias"
+          },
+          {
+            "id": "2PE-2-22-GR-007",
+            "position": 7,
+            "surface": "Κύων",
+            "transliteration": "Kyōn"
+          },
+          {
+            "id": "2PE-2-22-GR-008",
+            "position": 8,
+            "surface": "ἐπιστρέψας",
+            "transliteration": "epistrepsas"
+          },
+          {
+            "id": "2PE-2-22-GR-009",
+            "position": 9,
+            "surface": "ἐπὶ",
+            "transliteration": "epi"
+          },
+          {
+            "id": "2PE-2-22-GR-010",
+            "position": 10,
+            "surface": "τὸ",
+            "transliteration": "to"
+          },
+          {
+            "id": "2PE-2-22-GR-011",
+            "position": 11,
+            "surface": "ἴδιον",
+            "transliteration": "idion"
+          },
+          {
+            "id": "2PE-2-22-GR-012",
+            "position": 12,
+            "surface": "ἐξέραμα,",
+            "transliteration": "exerama"
+          },
+          {
+            "id": "2PE-2-22-GR-013",
+            "position": 13,
+            "surface": "καί·",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-2-22-GR-014",
+            "position": 14,
+            "surface": "Ὗς",
+            "transliteration": "Hys"
+          },
+          {
+            "id": "2PE-2-22-GR-015",
+            "position": 15,
+            "surface": "λουσαμένη",
+            "transliteration": "loysamenē"
+          },
+          {
+            "id": "2PE-2-22-GR-016",
+            "position": 16,
+            "surface": "εἰς",
+            "transliteration": "eis"
+          },
+          {
+            "id": "2PE-2-22-GR-017",
+            "position": 17,
+            "surface": "⸀κυλισμὸν",
+            "transliteration": "kylismon"
+          },
+          {
+            "id": "2PE-2-22-GR-018",
+            "position": 18,
+            "surface": "βορβόρου.",
+            "transliteration": "borboroy"
+          }
+        ]
+      }
+    },
+    "3": {
+      "1": {
+        "text": "Ταύτην ἤδη, ἀγαπητοί, δευτέραν ὑμῖν γράφω ἐπιστολήν, ἐν αἷς διεγείρω ὑμῶν ἐν ὑπομνήσει τὴν εἰλικρινῆ διάνοιαν,",
+        "tokens": [
+          {
+            "id": "2PE-3-1-GR-001",
+            "position": 1,
+            "surface": "Ταύτην",
+            "transliteration": "Taytēn"
+          },
+          {
+            "id": "2PE-3-1-GR-002",
+            "position": 2,
+            "surface": "ἤδη,",
+            "transliteration": "ēdē"
+          },
+          {
+            "id": "2PE-3-1-GR-003",
+            "position": 3,
+            "surface": "ἀγαπητοί,",
+            "transliteration": "agapētoi"
+          },
+          {
+            "id": "2PE-3-1-GR-004",
+            "position": 4,
+            "surface": "δευτέραν",
+            "transliteration": "deyteran"
+          },
+          {
+            "id": "2PE-3-1-GR-005",
+            "position": 5,
+            "surface": "ὑμῖν",
+            "transliteration": "hymin"
+          },
+          {
+            "id": "2PE-3-1-GR-006",
+            "position": 6,
+            "surface": "γράφω",
+            "transliteration": "graphō"
+          },
+          {
+            "id": "2PE-3-1-GR-007",
+            "position": 7,
+            "surface": "ἐπιστολήν,",
+            "transliteration": "epistolēn"
+          },
+          {
+            "id": "2PE-3-1-GR-008",
+            "position": 8,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-3-1-GR-009",
+            "position": 9,
+            "surface": "αἷς",
+            "transliteration": "hais"
+          },
+          {
+            "id": "2PE-3-1-GR-010",
+            "position": 10,
+            "surface": "διεγείρω",
+            "transliteration": "diegeirō"
+          },
+          {
+            "id": "2PE-3-1-GR-011",
+            "position": 11,
+            "surface": "ὑμῶν",
+            "transliteration": "hymōn"
+          },
+          {
+            "id": "2PE-3-1-GR-012",
+            "position": 12,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-3-1-GR-013",
+            "position": 13,
+            "surface": "ὑπομνήσει",
+            "transliteration": "hypomnēsei"
+          },
+          {
+            "id": "2PE-3-1-GR-014",
+            "position": 14,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-3-1-GR-015",
+            "position": 15,
+            "surface": "εἰλικρινῆ",
+            "transliteration": "eilikrinē"
+          },
+          {
+            "id": "2PE-3-1-GR-016",
+            "position": 16,
+            "surface": "διάνοιαν,",
+            "transliteration": "dianoian"
+          }
+        ]
+      },
+      "2": {
+        "text": "μνησθῆναι τῶν προειρημένων ῥημάτων ὑπὸ τῶν ἁγίων προφητῶν καὶ τῆς τῶν ἀποστόλων ὑμῶν ἐντολῆς τοῦ κυρίου καὶ σωτῆρος,",
+        "tokens": [
+          {
+            "id": "2PE-3-2-GR-001",
+            "position": 1,
+            "surface": "μνησθῆναι",
+            "transliteration": "mnēsthēnai"
+          },
+          {
+            "id": "2PE-3-2-GR-002",
+            "position": 2,
+            "surface": "τῶν",
+            "transliteration": "tōn"
+          },
+          {
+            "id": "2PE-3-2-GR-003",
+            "position": 3,
+            "surface": "προειρημένων",
+            "transliteration": "proeirēmenōn"
+          },
+          {
+            "id": "2PE-3-2-GR-004",
+            "position": 4,
+            "surface": "ῥημάτων",
+            "transliteration": "rhēmatōn"
+          },
+          {
+            "id": "2PE-3-2-GR-005",
+            "position": 5,
+            "surface": "ὑπὸ",
+            "transliteration": "hypo"
+          },
+          {
+            "id": "2PE-3-2-GR-006",
+            "position": 6,
+            "surface": "τῶν",
+            "transliteration": "tōn"
+          },
+          {
+            "id": "2PE-3-2-GR-007",
+            "position": 7,
+            "surface": "ἁγίων",
+            "transliteration": "hagiōn"
+          },
+          {
+            "id": "2PE-3-2-GR-008",
+            "position": 8,
+            "surface": "προφητῶν",
+            "transliteration": "prophētōn"
+          },
+          {
+            "id": "2PE-3-2-GR-009",
+            "position": 9,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-2-GR-010",
+            "position": 10,
+            "surface": "τῆς",
+            "transliteration": "tēs"
+          },
+          {
+            "id": "2PE-3-2-GR-011",
+            "position": 11,
+            "surface": "τῶν",
+            "transliteration": "tōn"
+          },
+          {
+            "id": "2PE-3-2-GR-012",
+            "position": 12,
+            "surface": "ἀποστόλων",
+            "transliteration": "apostolōn"
+          },
+          {
+            "id": "2PE-3-2-GR-013",
+            "position": 13,
+            "surface": "ὑμῶν",
+            "transliteration": "hymōn"
+          },
+          {
+            "id": "2PE-3-2-GR-014",
+            "position": 14,
+            "surface": "ἐντολῆς",
+            "transliteration": "entolēs"
+          },
+          {
+            "id": "2PE-3-2-GR-015",
+            "position": 15,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-3-2-GR-016",
+            "position": 16,
+            "surface": "κυρίου",
+            "transliteration": "kyrioy"
+          },
+          {
+            "id": "2PE-3-2-GR-017",
+            "position": 17,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-2-GR-018",
+            "position": 18,
+            "surface": "σωτῆρος,",
+            "transliteration": "sōtēros"
+          }
+        ]
+      },
+      "3": {
+        "text": "τοῦτο πρῶτον γινώσκοντες ὅτι ἐλεύσονται ἐπʼ ⸀ἐσχάτων τῶν ἡμερῶν ⸂ἐν ἐμπαιγμονῇ⸃ ἐμπαῖκται κατὰ τὰς ἰδίας ἐπιθυμίας αὐτῶν πορευόμενοι",
+        "tokens": [
+          {
+            "id": "2PE-3-3-GR-001",
+            "position": 1,
+            "surface": "τοῦτο",
+            "transliteration": "toyto"
+          },
+          {
+            "id": "2PE-3-3-GR-002",
+            "position": 2,
+            "surface": "πρῶτον",
+            "transliteration": "prōton"
+          },
+          {
+            "id": "2PE-3-3-GR-003",
+            "position": 3,
+            "surface": "γινώσκοντες",
+            "transliteration": "ginōskontes"
+          },
+          {
+            "id": "2PE-3-3-GR-004",
+            "position": 4,
+            "surface": "ὅτι",
+            "transliteration": "hoti"
+          },
+          {
+            "id": "2PE-3-3-GR-005",
+            "position": 5,
+            "surface": "ἐλεύσονται",
+            "transliteration": "eleysontai"
+          },
+          {
+            "id": "2PE-3-3-GR-006",
+            "position": 6,
+            "surface": "ἐπʼ",
+            "transliteration": "ep"
+          },
+          {
+            "id": "2PE-3-3-GR-007",
+            "position": 7,
+            "surface": "⸀ἐσχάτων",
+            "transliteration": "eschatōn"
+          },
+          {
+            "id": "2PE-3-3-GR-008",
+            "position": 8,
+            "surface": "τῶν",
+            "transliteration": "tōn"
+          },
+          {
+            "id": "2PE-3-3-GR-009",
+            "position": 9,
+            "surface": "ἡμερῶν",
+            "transliteration": "hēmerōn"
+          },
+          {
+            "id": "2PE-3-3-GR-010",
+            "position": 10,
+            "surface": "⸂ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-3-3-GR-011",
+            "position": 11,
+            "surface": "ἐμπαιγμονῇ⸃",
+            "transliteration": "empaigmonēi"
+          },
+          {
+            "id": "2PE-3-3-GR-012",
+            "position": 12,
+            "surface": "ἐμπαῖκται",
+            "transliteration": "empaiktai"
+          },
+          {
+            "id": "2PE-3-3-GR-013",
+            "position": 13,
+            "surface": "κατὰ",
+            "transliteration": "kata"
+          },
+          {
+            "id": "2PE-3-3-GR-014",
+            "position": 14,
+            "surface": "τὰς",
+            "transliteration": "tas"
+          },
+          {
+            "id": "2PE-3-3-GR-015",
+            "position": 15,
+            "surface": "ἰδίας",
+            "transliteration": "idias"
+          },
+          {
+            "id": "2PE-3-3-GR-016",
+            "position": 16,
+            "surface": "ἐπιθυμίας",
+            "transliteration": "epithymias"
+          },
+          {
+            "id": "2PE-3-3-GR-017",
+            "position": 17,
+            "surface": "αὐτῶν",
+            "transliteration": "aytōn"
+          },
+          {
+            "id": "2PE-3-3-GR-018",
+            "position": 18,
+            "surface": "πορευόμενοι",
+            "transliteration": "poreyomenoi"
+          }
+        ]
+      },
+      "4": {
+        "text": "καὶ λέγοντες· Ποῦ ἐστιν ἡ ἐπαγγελία τῆς παρουσίας αὐτοῦ; ἀφʼ ἧς γὰρ οἱ πατέρες ἐκοιμήθησαν, πάντα οὕτως διαμένει ἀπʼ ἀρχῆς κτίσεως.",
+        "tokens": [
+          {
+            "id": "2PE-3-4-GR-001",
+            "position": 1,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-4-GR-002",
+            "position": 2,
+            "surface": "λέγοντες·",
+            "transliteration": "legontes"
+          },
+          {
+            "id": "2PE-3-4-GR-003",
+            "position": 3,
+            "surface": "Ποῦ",
+            "transliteration": "Poy"
+          },
+          {
+            "id": "2PE-3-4-GR-004",
+            "position": 4,
+            "surface": "ἐστιν",
+            "transliteration": "estin"
+          },
+          {
+            "id": "2PE-3-4-GR-005",
+            "position": 5,
+            "surface": "ἡ",
+            "transliteration": "hē"
+          },
+          {
+            "id": "2PE-3-4-GR-006",
+            "position": 6,
+            "surface": "ἐπαγγελία",
+            "transliteration": "epaggelia"
+          },
+          {
+            "id": "2PE-3-4-GR-007",
+            "position": 7,
+            "surface": "τῆς",
+            "transliteration": "tēs"
+          },
+          {
+            "id": "2PE-3-4-GR-008",
+            "position": 8,
+            "surface": "παρουσίας",
+            "transliteration": "paroysias"
+          },
+          {
+            "id": "2PE-3-4-GR-009",
+            "position": 9,
+            "surface": "αὐτοῦ;",
+            "transliteration": "aytoy"
+          },
+          {
+            "id": "2PE-3-4-GR-010",
+            "position": 10,
+            "surface": "ἀφʼ",
+            "transliteration": "aph"
+          },
+          {
+            "id": "2PE-3-4-GR-011",
+            "position": 11,
+            "surface": "ἧς",
+            "transliteration": "hēs"
+          },
+          {
+            "id": "2PE-3-4-GR-012",
+            "position": 12,
+            "surface": "γὰρ",
+            "transliteration": "gar"
+          },
+          {
+            "id": "2PE-3-4-GR-013",
+            "position": 13,
+            "surface": "οἱ",
+            "transliteration": "hoi"
+          },
+          {
+            "id": "2PE-3-4-GR-014",
+            "position": 14,
+            "surface": "πατέρες",
+            "transliteration": "pateres"
+          },
+          {
+            "id": "2PE-3-4-GR-015",
+            "position": 15,
+            "surface": "ἐκοιμήθησαν,",
+            "transliteration": "ekoimēthēsan"
+          },
+          {
+            "id": "2PE-3-4-GR-016",
+            "position": 16,
+            "surface": "πάντα",
+            "transliteration": "panta"
+          },
+          {
+            "id": "2PE-3-4-GR-017",
+            "position": 17,
+            "surface": "οὕτως",
+            "transliteration": "hoytōs"
+          },
+          {
+            "id": "2PE-3-4-GR-018",
+            "position": 18,
+            "surface": "διαμένει",
+            "transliteration": "diamenei"
+          },
+          {
+            "id": "2PE-3-4-GR-019",
+            "position": 19,
+            "surface": "ἀπʼ",
+            "transliteration": "ap"
+          },
+          {
+            "id": "2PE-3-4-GR-020",
+            "position": 20,
+            "surface": "ἀρχῆς",
+            "transliteration": "archēs"
+          },
+          {
+            "id": "2PE-3-4-GR-021",
+            "position": 21,
+            "surface": "κτίσεως.",
+            "transliteration": "ktiseōs"
+          }
+        ]
+      },
+      "5": {
+        "text": "λανθάνει γὰρ αὐτοὺς τοῦτο θέλοντας ὅτι οὐρανοὶ ἦσαν ἔκπαλαι καὶ γῆ ἐξ ὕδατος καὶ διʼ ὕδατος συνεστῶσα τῷ τοῦ θεοῦ λόγῳ,",
+        "tokens": [
+          {
+            "id": "2PE-3-5-GR-001",
+            "position": 1,
+            "surface": "λανθάνει",
+            "transliteration": "lanthanei"
+          },
+          {
+            "id": "2PE-3-5-GR-002",
+            "position": 2,
+            "surface": "γὰρ",
+            "transliteration": "gar"
+          },
+          {
+            "id": "2PE-3-5-GR-003",
+            "position": 3,
+            "surface": "αὐτοὺς",
+            "transliteration": "aytoys"
+          },
+          {
+            "id": "2PE-3-5-GR-004",
+            "position": 4,
+            "surface": "τοῦτο",
+            "transliteration": "toyto"
+          },
+          {
+            "id": "2PE-3-5-GR-005",
+            "position": 5,
+            "surface": "θέλοντας",
+            "transliteration": "thelontas"
+          },
+          {
+            "id": "2PE-3-5-GR-006",
+            "position": 6,
+            "surface": "ὅτι",
+            "transliteration": "hoti"
+          },
+          {
+            "id": "2PE-3-5-GR-007",
+            "position": 7,
+            "surface": "οὐρανοὶ",
+            "transliteration": "oyranoi"
+          },
+          {
+            "id": "2PE-3-5-GR-008",
+            "position": 8,
+            "surface": "ἦσαν",
+            "transliteration": "ēsan"
+          },
+          {
+            "id": "2PE-3-5-GR-009",
+            "position": 9,
+            "surface": "ἔκπαλαι",
+            "transliteration": "ekpalai"
+          },
+          {
+            "id": "2PE-3-5-GR-010",
+            "position": 10,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-5-GR-011",
+            "position": 11,
+            "surface": "γῆ",
+            "transliteration": "gē"
+          },
+          {
+            "id": "2PE-3-5-GR-012",
+            "position": 12,
+            "surface": "ἐξ",
+            "transliteration": "ex"
+          },
+          {
+            "id": "2PE-3-5-GR-013",
+            "position": 13,
+            "surface": "ὕδατος",
+            "transliteration": "hydatos"
+          },
+          {
+            "id": "2PE-3-5-GR-014",
+            "position": 14,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-5-GR-015",
+            "position": 15,
+            "surface": "διʼ",
+            "transliteration": "di"
+          },
+          {
+            "id": "2PE-3-5-GR-016",
+            "position": 16,
+            "surface": "ὕδατος",
+            "transliteration": "hydatos"
+          },
+          {
+            "id": "2PE-3-5-GR-017",
+            "position": 17,
+            "surface": "συνεστῶσα",
+            "transliteration": "synestōsa"
+          },
+          {
+            "id": "2PE-3-5-GR-018",
+            "position": 18,
+            "surface": "τῷ",
+            "transliteration": "tōi"
+          },
+          {
+            "id": "2PE-3-5-GR-019",
+            "position": 19,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-3-5-GR-020",
+            "position": 20,
+            "surface": "θεοῦ",
+            "transliteration": "theoy"
+          },
+          {
+            "id": "2PE-3-5-GR-021",
+            "position": 21,
+            "surface": "λόγῳ,",
+            "transliteration": "logōi"
+          }
+        ]
+      },
+      "6": {
+        "text": "⸂διʼ ὧν⸃ ὁ τότε κόσμος ὕδατι κατακλυσθεὶς ἀπώλετο·",
+        "tokens": [
+          {
+            "id": "2PE-3-6-GR-001",
+            "position": 1,
+            "surface": "⸂διʼ",
+            "transliteration": "di"
+          },
+          {
+            "id": "2PE-3-6-GR-002",
+            "position": 2,
+            "surface": "ὧν⸃",
+            "transliteration": "hōn"
+          },
+          {
+            "id": "2PE-3-6-GR-003",
+            "position": 3,
+            "surface": "ὁ",
+            "transliteration": "ho"
+          },
+          {
+            "id": "2PE-3-6-GR-004",
+            "position": 4,
+            "surface": "τότε",
+            "transliteration": "tote"
+          },
+          {
+            "id": "2PE-3-6-GR-005",
+            "position": 5,
+            "surface": "κόσμος",
+            "transliteration": "kosmos"
+          },
+          {
+            "id": "2PE-3-6-GR-006",
+            "position": 6,
+            "surface": "ὕδατι",
+            "transliteration": "hydati"
+          },
+          {
+            "id": "2PE-3-6-GR-007",
+            "position": 7,
+            "surface": "κατακλυσθεὶς",
+            "transliteration": "kataklystheis"
+          },
+          {
+            "id": "2PE-3-6-GR-008",
+            "position": 8,
+            "surface": "ἀπώλετο·",
+            "transliteration": "apōleto"
+          }
+        ]
+      },
+      "7": {
+        "text": "οἱ δὲ νῦν οὐρανοὶ καὶ ἡ γῆ τῷ ⸀αὐτῷ λόγῳ τεθησαυρισμένοι εἰσὶν πυρὶ τηρούμενοι εἰς ἡμέραν κρίσεως καὶ ἀπωλείας τῶν ἀσεβῶν ἀνθρώπων.",
+        "tokens": [
+          {
+            "id": "2PE-3-7-GR-001",
+            "position": 1,
+            "surface": "οἱ",
+            "transliteration": "hoi"
+          },
+          {
+            "id": "2PE-3-7-GR-002",
+            "position": 2,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-3-7-GR-003",
+            "position": 3,
+            "surface": "νῦν",
+            "transliteration": "nyn"
+          },
+          {
+            "id": "2PE-3-7-GR-004",
+            "position": 4,
+            "surface": "οὐρανοὶ",
+            "transliteration": "oyranoi"
+          },
+          {
+            "id": "2PE-3-7-GR-005",
+            "position": 5,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-7-GR-006",
+            "position": 6,
+            "surface": "ἡ",
+            "transliteration": "hē"
+          },
+          {
+            "id": "2PE-3-7-GR-007",
+            "position": 7,
+            "surface": "γῆ",
+            "transliteration": "gē"
+          },
+          {
+            "id": "2PE-3-7-GR-008",
+            "position": 8,
+            "surface": "τῷ",
+            "transliteration": "tōi"
+          },
+          {
+            "id": "2PE-3-7-GR-009",
+            "position": 9,
+            "surface": "⸀αὐτῷ",
+            "transliteration": "aytōi"
+          },
+          {
+            "id": "2PE-3-7-GR-010",
+            "position": 10,
+            "surface": "λόγῳ",
+            "transliteration": "logōi"
+          },
+          {
+            "id": "2PE-3-7-GR-011",
+            "position": 11,
+            "surface": "τεθησαυρισμένοι",
+            "transliteration": "tethēsayrismenoi"
+          },
+          {
+            "id": "2PE-3-7-GR-012",
+            "position": 12,
+            "surface": "εἰσὶν",
+            "transliteration": "eisin"
+          },
+          {
+            "id": "2PE-3-7-GR-013",
+            "position": 13,
+            "surface": "πυρὶ",
+            "transliteration": "pyri"
+          },
+          {
+            "id": "2PE-3-7-GR-014",
+            "position": 14,
+            "surface": "τηρούμενοι",
+            "transliteration": "tēroymenoi"
+          },
+          {
+            "id": "2PE-3-7-GR-015",
+            "position": 15,
+            "surface": "εἰς",
+            "transliteration": "eis"
+          },
+          {
+            "id": "2PE-3-7-GR-016",
+            "position": 16,
+            "surface": "ἡμέραν",
+            "transliteration": "hēmeran"
+          },
+          {
+            "id": "2PE-3-7-GR-017",
+            "position": 17,
+            "surface": "κρίσεως",
+            "transliteration": "kriseōs"
+          },
+          {
+            "id": "2PE-3-7-GR-018",
+            "position": 18,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-7-GR-019",
+            "position": 19,
+            "surface": "ἀπωλείας",
+            "transliteration": "apōleias"
+          },
+          {
+            "id": "2PE-3-7-GR-020",
+            "position": 20,
+            "surface": "τῶν",
+            "transliteration": "tōn"
+          },
+          {
+            "id": "2PE-3-7-GR-021",
+            "position": 21,
+            "surface": "ἀσεβῶν",
+            "transliteration": "asebōn"
+          },
+          {
+            "id": "2PE-3-7-GR-022",
+            "position": 22,
+            "surface": "ἀνθρώπων.",
+            "transliteration": "anthrōpōn"
+          }
+        ]
+      },
+      "8": {
+        "text": "Ἓν δὲ τοῦτο μὴ λανθανέτω ὑμᾶς, ἀγαπητοί, ὅτι μία ἡμέρα παρὰ κυρίῳ ὡς χίλια ἔτη καὶ χίλια ἔτη ὡς ἡμέρα μία.",
+        "tokens": [
+          {
+            "id": "2PE-3-8-GR-001",
+            "position": 1,
+            "surface": "Ἓν",
+            "transliteration": "Hen"
+          },
+          {
+            "id": "2PE-3-8-GR-002",
+            "position": 2,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-3-8-GR-003",
+            "position": 3,
+            "surface": "τοῦτο",
+            "transliteration": "toyto"
+          },
+          {
+            "id": "2PE-3-8-GR-004",
+            "position": 4,
+            "surface": "μὴ",
+            "transliteration": "mē"
+          },
+          {
+            "id": "2PE-3-8-GR-005",
+            "position": 5,
+            "surface": "λανθανέτω",
+            "transliteration": "lanthanetō"
+          },
+          {
+            "id": "2PE-3-8-GR-006",
+            "position": 6,
+            "surface": "ὑμᾶς,",
+            "transliteration": "hymas"
+          },
+          {
+            "id": "2PE-3-8-GR-007",
+            "position": 7,
+            "surface": "ἀγαπητοί,",
+            "transliteration": "agapētoi"
+          },
+          {
+            "id": "2PE-3-8-GR-008",
+            "position": 8,
+            "surface": "ὅτι",
+            "transliteration": "hoti"
+          },
+          {
+            "id": "2PE-3-8-GR-009",
+            "position": 9,
+            "surface": "μία",
+            "transliteration": "mia"
+          },
+          {
+            "id": "2PE-3-8-GR-010",
+            "position": 10,
+            "surface": "ἡμέρα",
+            "transliteration": "hēmera"
+          },
+          {
+            "id": "2PE-3-8-GR-011",
+            "position": 11,
+            "surface": "παρὰ",
+            "transliteration": "para"
+          },
+          {
+            "id": "2PE-3-8-GR-012",
+            "position": 12,
+            "surface": "κυρίῳ",
+            "transliteration": "kyriōi"
+          },
+          {
+            "id": "2PE-3-8-GR-013",
+            "position": 13,
+            "surface": "ὡς",
+            "transliteration": "hōs"
+          },
+          {
+            "id": "2PE-3-8-GR-014",
+            "position": 14,
+            "surface": "χίλια",
+            "transliteration": "chilia"
+          },
+          {
+            "id": "2PE-3-8-GR-015",
+            "position": 15,
+            "surface": "ἔτη",
+            "transliteration": "etē"
+          },
+          {
+            "id": "2PE-3-8-GR-016",
+            "position": 16,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-8-GR-017",
+            "position": 17,
+            "surface": "χίλια",
+            "transliteration": "chilia"
+          },
+          {
+            "id": "2PE-3-8-GR-018",
+            "position": 18,
+            "surface": "ἔτη",
+            "transliteration": "etē"
+          },
+          {
+            "id": "2PE-3-8-GR-019",
+            "position": 19,
+            "surface": "ὡς",
+            "transliteration": "hōs"
+          },
+          {
+            "id": "2PE-3-8-GR-020",
+            "position": 20,
+            "surface": "ἡμέρα",
+            "transliteration": "hēmera"
+          },
+          {
+            "id": "2PE-3-8-GR-021",
+            "position": 21,
+            "surface": "μία.",
+            "transliteration": "mia"
+          }
+        ]
+      },
+      "9": {
+        "text": "οὐ βραδύνει ⸀κύριος τῆς ἐπαγγελίας, ὥς τινες βραδύτητα ἡγοῦνται, ἀλλὰ μακροθυμεῖ εἰς ⸀ὑμᾶς, μὴ βουλόμενός τινας ἀπολέσθαι ἀλλὰ πάντας εἰς μετάνοιαν χωρῆσαι.",
+        "tokens": [
+          {
+            "id": "2PE-3-9-GR-001",
+            "position": 1,
+            "surface": "οὐ",
+            "transliteration": "oy"
+          },
+          {
+            "id": "2PE-3-9-GR-002",
+            "position": 2,
+            "surface": "βραδύνει",
+            "transliteration": "bradynei"
+          },
+          {
+            "id": "2PE-3-9-GR-003",
+            "position": 3,
+            "surface": "⸀κύριος",
+            "transliteration": "kyrios"
+          },
+          {
+            "id": "2PE-3-9-GR-004",
+            "position": 4,
+            "surface": "τῆς",
+            "transliteration": "tēs"
+          },
+          {
+            "id": "2PE-3-9-GR-005",
+            "position": 5,
+            "surface": "ἐπαγγελίας,",
+            "transliteration": "epaggelias"
+          },
+          {
+            "id": "2PE-3-9-GR-006",
+            "position": 6,
+            "surface": "ὥς",
+            "transliteration": "hōs"
+          },
+          {
+            "id": "2PE-3-9-GR-007",
+            "position": 7,
+            "surface": "τινες",
+            "transliteration": "tines"
+          },
+          {
+            "id": "2PE-3-9-GR-008",
+            "position": 8,
+            "surface": "βραδύτητα",
+            "transliteration": "bradytēta"
+          },
+          {
+            "id": "2PE-3-9-GR-009",
+            "position": 9,
+            "surface": "ἡγοῦνται,",
+            "transliteration": "hēgoyntai"
+          },
+          {
+            "id": "2PE-3-9-GR-010",
+            "position": 10,
+            "surface": "ἀλλὰ",
+            "transliteration": "alla"
+          },
+          {
+            "id": "2PE-3-9-GR-011",
+            "position": 11,
+            "surface": "μακροθυμεῖ",
+            "transliteration": "makrothymei"
+          },
+          {
+            "id": "2PE-3-9-GR-012",
+            "position": 12,
+            "surface": "εἰς",
+            "transliteration": "eis"
+          },
+          {
+            "id": "2PE-3-9-GR-013",
+            "position": 13,
+            "surface": "⸀ὑμᾶς,",
+            "transliteration": "hymas"
+          },
+          {
+            "id": "2PE-3-9-GR-014",
+            "position": 14,
+            "surface": "μὴ",
+            "transliteration": "mē"
+          },
+          {
+            "id": "2PE-3-9-GR-015",
+            "position": 15,
+            "surface": "βουλόμενός",
+            "transliteration": "boylomenos"
+          },
+          {
+            "id": "2PE-3-9-GR-016",
+            "position": 16,
+            "surface": "τινας",
+            "transliteration": "tinas"
+          },
+          {
+            "id": "2PE-3-9-GR-017",
+            "position": 17,
+            "surface": "ἀπολέσθαι",
+            "transliteration": "apolesthai"
+          },
+          {
+            "id": "2PE-3-9-GR-018",
+            "position": 18,
+            "surface": "ἀλλὰ",
+            "transliteration": "alla"
+          },
+          {
+            "id": "2PE-3-9-GR-019",
+            "position": 19,
+            "surface": "πάντας",
+            "transliteration": "pantas"
+          },
+          {
+            "id": "2PE-3-9-GR-020",
+            "position": 20,
+            "surface": "εἰς",
+            "transliteration": "eis"
+          },
+          {
+            "id": "2PE-3-9-GR-021",
+            "position": 21,
+            "surface": "μετάνοιαν",
+            "transliteration": "metanoian"
+          },
+          {
+            "id": "2PE-3-9-GR-022",
+            "position": 22,
+            "surface": "χωρῆσαι.",
+            "transliteration": "chōrēsai"
+          }
+        ]
+      },
+      "10": {
+        "text": "ἥξει δὲ ⸀ἡμέρα κυρίου ὡς ⸀κλέπτης, ἐν ᾗ οἱ οὐρανοὶ ῥοιζηδὸν παρελεύσονται, στοιχεῖα δὲ καυσούμενα ⸀λυθήσεται, καὶ γῆ καὶ τὰ ἐν αὐτῇ ἔργα ⸀εὑρεθήσεται.",
+        "tokens": [
+          {
+            "id": "2PE-3-10-GR-001",
+            "position": 1,
+            "surface": "ἥξει",
+            "transliteration": "hēxei"
+          },
+          {
+            "id": "2PE-3-10-GR-002",
+            "position": 2,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-3-10-GR-003",
+            "position": 3,
+            "surface": "⸀ἡμέρα",
+            "transliteration": "hēmera"
+          },
+          {
+            "id": "2PE-3-10-GR-004",
+            "position": 4,
+            "surface": "κυρίου",
+            "transliteration": "kyrioy"
+          },
+          {
+            "id": "2PE-3-10-GR-005",
+            "position": 5,
+            "surface": "ὡς",
+            "transliteration": "hōs"
+          },
+          {
+            "id": "2PE-3-10-GR-006",
+            "position": 6,
+            "surface": "⸀κλέπτης,",
+            "transliteration": "kleptēs"
+          },
+          {
+            "id": "2PE-3-10-GR-007",
+            "position": 7,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-3-10-GR-008",
+            "position": 8,
+            "surface": "ᾗ",
+            "transliteration": "hēi"
+          },
+          {
+            "id": "2PE-3-10-GR-009",
+            "position": 9,
+            "surface": "οἱ",
+            "transliteration": "hoi"
+          },
+          {
+            "id": "2PE-3-10-GR-010",
+            "position": 10,
+            "surface": "οὐρανοὶ",
+            "transliteration": "oyranoi"
+          },
+          {
+            "id": "2PE-3-10-GR-011",
+            "position": 11,
+            "surface": "ῥοιζηδὸν",
+            "transliteration": "rhoizēdon"
+          },
+          {
+            "id": "2PE-3-10-GR-012",
+            "position": 12,
+            "surface": "παρελεύσονται,",
+            "transliteration": "pareleysontai"
+          },
+          {
+            "id": "2PE-3-10-GR-013",
+            "position": 13,
+            "surface": "στοιχεῖα",
+            "transliteration": "stoicheia"
+          },
+          {
+            "id": "2PE-3-10-GR-014",
+            "position": 14,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-3-10-GR-015",
+            "position": 15,
+            "surface": "καυσούμενα",
+            "transliteration": "kaysoymena"
+          },
+          {
+            "id": "2PE-3-10-GR-016",
+            "position": 16,
+            "surface": "⸀λυθήσεται,",
+            "transliteration": "lythēsetai"
+          },
+          {
+            "id": "2PE-3-10-GR-017",
+            "position": 17,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-10-GR-018",
+            "position": 18,
+            "surface": "γῆ",
+            "transliteration": "gē"
+          },
+          {
+            "id": "2PE-3-10-GR-019",
+            "position": 19,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-10-GR-020",
+            "position": 20,
+            "surface": "τὰ",
+            "transliteration": "ta"
+          },
+          {
+            "id": "2PE-3-10-GR-021",
+            "position": 21,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-3-10-GR-022",
+            "position": 22,
+            "surface": "αὐτῇ",
+            "transliteration": "aytēi"
+          },
+          {
+            "id": "2PE-3-10-GR-023",
+            "position": 23,
+            "surface": "ἔργα",
+            "transliteration": "erga"
+          },
+          {
+            "id": "2PE-3-10-GR-024",
+            "position": 24,
+            "surface": "⸀εὑρεθήσεται.",
+            "transliteration": "heyrethēsetai"
+          }
+        ]
+      },
+      "11": {
+        "text": "Τούτων ⸀οὕτως πάντων λυομένων ποταποὺς δεῖ ὑπάρχειν ὑμᾶς ἐν ἁγίαις ἀναστροφαῖς καὶ εὐσεβείαις,",
+        "tokens": [
+          {
+            "id": "2PE-3-11-GR-001",
+            "position": 1,
+            "surface": "Τούτων",
+            "transliteration": "Toytōn"
+          },
+          {
+            "id": "2PE-3-11-GR-002",
+            "position": 2,
+            "surface": "⸀οὕτως",
+            "transliteration": "hoytōs"
+          },
+          {
+            "id": "2PE-3-11-GR-003",
+            "position": 3,
+            "surface": "πάντων",
+            "transliteration": "pantōn"
+          },
+          {
+            "id": "2PE-3-11-GR-004",
+            "position": 4,
+            "surface": "λυομένων",
+            "transliteration": "lyomenōn"
+          },
+          {
+            "id": "2PE-3-11-GR-005",
+            "position": 5,
+            "surface": "ποταποὺς",
+            "transliteration": "potapoys"
+          },
+          {
+            "id": "2PE-3-11-GR-006",
+            "position": 6,
+            "surface": "δεῖ",
+            "transliteration": "dei"
+          },
+          {
+            "id": "2PE-3-11-GR-007",
+            "position": 7,
+            "surface": "ὑπάρχειν",
+            "transliteration": "hyparchein"
+          },
+          {
+            "id": "2PE-3-11-GR-008",
+            "position": 8,
+            "surface": "ὑμᾶς",
+            "transliteration": "hymas"
+          },
+          {
+            "id": "2PE-3-11-GR-009",
+            "position": 9,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-3-11-GR-010",
+            "position": 10,
+            "surface": "ἁγίαις",
+            "transliteration": "hagiais"
+          },
+          {
+            "id": "2PE-3-11-GR-011",
+            "position": 11,
+            "surface": "ἀναστροφαῖς",
+            "transliteration": "anastrophais"
+          },
+          {
+            "id": "2PE-3-11-GR-012",
+            "position": 12,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-11-GR-013",
+            "position": 13,
+            "surface": "εὐσεβείαις,",
+            "transliteration": "eysebeiais"
+          }
+        ]
+      },
+      "12": {
+        "text": "προσδοκῶντας καὶ σπεύδοντας τὴν παρουσίαν τῆς τοῦ θεοῦ ἡμέρας, διʼ ἣν οὐρανοὶ πυρούμενοι λυθήσονται καὶ στοιχεῖα καυσούμενα τήκεται·",
+        "tokens": [
+          {
+            "id": "2PE-3-12-GR-001",
+            "position": 1,
+            "surface": "προσδοκῶντας",
+            "transliteration": "prosdokōntas"
+          },
+          {
+            "id": "2PE-3-12-GR-002",
+            "position": 2,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-12-GR-003",
+            "position": 3,
+            "surface": "σπεύδοντας",
+            "transliteration": "speydontas"
+          },
+          {
+            "id": "2PE-3-12-GR-004",
+            "position": 4,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-3-12-GR-005",
+            "position": 5,
+            "surface": "παρουσίαν",
+            "transliteration": "paroysian"
+          },
+          {
+            "id": "2PE-3-12-GR-006",
+            "position": 6,
+            "surface": "τῆς",
+            "transliteration": "tēs"
+          },
+          {
+            "id": "2PE-3-12-GR-007",
+            "position": 7,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-3-12-GR-008",
+            "position": 8,
+            "surface": "θεοῦ",
+            "transliteration": "theoy"
+          },
+          {
+            "id": "2PE-3-12-GR-009",
+            "position": 9,
+            "surface": "ἡμέρας,",
+            "transliteration": "hēmeras"
+          },
+          {
+            "id": "2PE-3-12-GR-010",
+            "position": 10,
+            "surface": "διʼ",
+            "transliteration": "di"
+          },
+          {
+            "id": "2PE-3-12-GR-011",
+            "position": 11,
+            "surface": "ἣν",
+            "transliteration": "hēn"
+          },
+          {
+            "id": "2PE-3-12-GR-012",
+            "position": 12,
+            "surface": "οὐρανοὶ",
+            "transliteration": "oyranoi"
+          },
+          {
+            "id": "2PE-3-12-GR-013",
+            "position": 13,
+            "surface": "πυρούμενοι",
+            "transliteration": "pyroymenoi"
+          },
+          {
+            "id": "2PE-3-12-GR-014",
+            "position": 14,
+            "surface": "λυθήσονται",
+            "transliteration": "lythēsontai"
+          },
+          {
+            "id": "2PE-3-12-GR-015",
+            "position": 15,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-12-GR-016",
+            "position": 16,
+            "surface": "στοιχεῖα",
+            "transliteration": "stoicheia"
+          },
+          {
+            "id": "2PE-3-12-GR-017",
+            "position": 17,
+            "surface": "καυσούμενα",
+            "transliteration": "kaysoymena"
+          },
+          {
+            "id": "2PE-3-12-GR-018",
+            "position": 18,
+            "surface": "τήκεται·",
+            "transliteration": "tēketai"
+          }
+        ]
+      },
+      "13": {
+        "text": "καινοὺς δὲ οὐρανοὺς καὶ γῆν καινὴν κατὰ τὸ ἐπάγγελμα αὐτοῦ προσδοκῶμεν, ἐν οἷς δικαιοσύνη κατοικεῖ.",
+        "tokens": [
+          {
+            "id": "2PE-3-13-GR-001",
+            "position": 1,
+            "surface": "καινοὺς",
+            "transliteration": "kainoys"
+          },
+          {
+            "id": "2PE-3-13-GR-002",
+            "position": 2,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-3-13-GR-003",
+            "position": 3,
+            "surface": "οὐρανοὺς",
+            "transliteration": "oyranoys"
+          },
+          {
+            "id": "2PE-3-13-GR-004",
+            "position": 4,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-13-GR-005",
+            "position": 5,
+            "surface": "γῆν",
+            "transliteration": "gēn"
+          },
+          {
+            "id": "2PE-3-13-GR-006",
+            "position": 6,
+            "surface": "καινὴν",
+            "transliteration": "kainēn"
+          },
+          {
+            "id": "2PE-3-13-GR-007",
+            "position": 7,
+            "surface": "κατὰ",
+            "transliteration": "kata"
+          },
+          {
+            "id": "2PE-3-13-GR-008",
+            "position": 8,
+            "surface": "τὸ",
+            "transliteration": "to"
+          },
+          {
+            "id": "2PE-3-13-GR-009",
+            "position": 9,
+            "surface": "ἐπάγγελμα",
+            "transliteration": "epaggelma"
+          },
+          {
+            "id": "2PE-3-13-GR-010",
+            "position": 10,
+            "surface": "αὐτοῦ",
+            "transliteration": "aytoy"
+          },
+          {
+            "id": "2PE-3-13-GR-011",
+            "position": 11,
+            "surface": "προσδοκῶμεν,",
+            "transliteration": "prosdokōmen"
+          },
+          {
+            "id": "2PE-3-13-GR-012",
+            "position": 12,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-3-13-GR-013",
+            "position": 13,
+            "surface": "οἷς",
+            "transliteration": "hois"
+          },
+          {
+            "id": "2PE-3-13-GR-014",
+            "position": 14,
+            "surface": "δικαιοσύνη",
+            "transliteration": "dikaiosynē"
+          },
+          {
+            "id": "2PE-3-13-GR-015",
+            "position": 15,
+            "surface": "κατοικεῖ.",
+            "transliteration": "katoikei"
+          }
+        ]
+      },
+      "14": {
+        "text": "Διό, ἀγαπητοί, ταῦτα προσδοκῶντες σπουδάσατε ἄσπιλοι καὶ ἀμώμητοι αὐτῷ εὑρεθῆναι ἐν εἰρήνῃ,",
+        "tokens": [
+          {
+            "id": "2PE-3-14-GR-001",
+            "position": 1,
+            "surface": "Διό,",
+            "transliteration": "Dio"
+          },
+          {
+            "id": "2PE-3-14-GR-002",
+            "position": 2,
+            "surface": "ἀγαπητοί,",
+            "transliteration": "agapētoi"
+          },
+          {
+            "id": "2PE-3-14-GR-003",
+            "position": 3,
+            "surface": "ταῦτα",
+            "transliteration": "tayta"
+          },
+          {
+            "id": "2PE-3-14-GR-004",
+            "position": 4,
+            "surface": "προσδοκῶντες",
+            "transliteration": "prosdokōntes"
+          },
+          {
+            "id": "2PE-3-14-GR-005",
+            "position": 5,
+            "surface": "σπουδάσατε",
+            "transliteration": "spoydasate"
+          },
+          {
+            "id": "2PE-3-14-GR-006",
+            "position": 6,
+            "surface": "ἄσπιλοι",
+            "transliteration": "aspiloi"
+          },
+          {
+            "id": "2PE-3-14-GR-007",
+            "position": 7,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-14-GR-008",
+            "position": 8,
+            "surface": "ἀμώμητοι",
+            "transliteration": "amōmētoi"
+          },
+          {
+            "id": "2PE-3-14-GR-009",
+            "position": 9,
+            "surface": "αὐτῷ",
+            "transliteration": "aytōi"
+          },
+          {
+            "id": "2PE-3-14-GR-010",
+            "position": 10,
+            "surface": "εὑρεθῆναι",
+            "transliteration": "heyrethēnai"
+          },
+          {
+            "id": "2PE-3-14-GR-011",
+            "position": 11,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-3-14-GR-012",
+            "position": 12,
+            "surface": "εἰρήνῃ,",
+            "transliteration": "eirēnēi"
+          }
+        ]
+      },
+      "15": {
+        "text": "καὶ τὴν τοῦ κυρίου ἡμῶν μακροθυμίαν σωτηρίαν ἡγεῖσθε, καθὼς καὶ ὁ ἀγαπητὸς ἡμῶν ἀδελφὸς Παῦλος κατὰ τὴν ⸂δοθεῖσαν αὐτῷ⸃ σοφίαν ἔγραψεν ὑμῖν,",
+        "tokens": [
+          {
+            "id": "2PE-3-15-GR-001",
+            "position": 1,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-15-GR-002",
+            "position": 2,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-3-15-GR-003",
+            "position": 3,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-3-15-GR-004",
+            "position": 4,
+            "surface": "κυρίου",
+            "transliteration": "kyrioy"
+          },
+          {
+            "id": "2PE-3-15-GR-005",
+            "position": 5,
+            "surface": "ἡμῶν",
+            "transliteration": "hēmōn"
+          },
+          {
+            "id": "2PE-3-15-GR-006",
+            "position": 6,
+            "surface": "μακροθυμίαν",
+            "transliteration": "makrothymian"
+          },
+          {
+            "id": "2PE-3-15-GR-007",
+            "position": 7,
+            "surface": "σωτηρίαν",
+            "transliteration": "sōtērian"
+          },
+          {
+            "id": "2PE-3-15-GR-008",
+            "position": 8,
+            "surface": "ἡγεῖσθε,",
+            "transliteration": "hēgeisthe"
+          },
+          {
+            "id": "2PE-3-15-GR-009",
+            "position": 9,
+            "surface": "καθὼς",
+            "transliteration": "kathōs"
+          },
+          {
+            "id": "2PE-3-15-GR-010",
+            "position": 10,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-15-GR-011",
+            "position": 11,
+            "surface": "ὁ",
+            "transliteration": "ho"
+          },
+          {
+            "id": "2PE-3-15-GR-012",
+            "position": 12,
+            "surface": "ἀγαπητὸς",
+            "transliteration": "agapētos"
+          },
+          {
+            "id": "2PE-3-15-GR-013",
+            "position": 13,
+            "surface": "ἡμῶν",
+            "transliteration": "hēmōn"
+          },
+          {
+            "id": "2PE-3-15-GR-014",
+            "position": 14,
+            "surface": "ἀδελφὸς",
+            "transliteration": "adelphos"
+          },
+          {
+            "id": "2PE-3-15-GR-015",
+            "position": 15,
+            "surface": "Παῦλος",
+            "transliteration": "Paylos"
+          },
+          {
+            "id": "2PE-3-15-GR-016",
+            "position": 16,
+            "surface": "κατὰ",
+            "transliteration": "kata"
+          },
+          {
+            "id": "2PE-3-15-GR-017",
+            "position": 17,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-3-15-GR-018",
+            "position": 18,
+            "surface": "⸂δοθεῖσαν",
+            "transliteration": "dotheisan"
+          },
+          {
+            "id": "2PE-3-15-GR-019",
+            "position": 19,
+            "surface": "αὐτῷ⸃",
+            "transliteration": "aytōi"
+          },
+          {
+            "id": "2PE-3-15-GR-020",
+            "position": 20,
+            "surface": "σοφίαν",
+            "transliteration": "sophian"
+          },
+          {
+            "id": "2PE-3-15-GR-021",
+            "position": 21,
+            "surface": "ἔγραψεν",
+            "transliteration": "egrapsen"
+          },
+          {
+            "id": "2PE-3-15-GR-022",
+            "position": 22,
+            "surface": "ὑμῖν,",
+            "transliteration": "hymin"
+          }
+        ]
+      },
+      "16": {
+        "text": "ὡς καὶ ἐν πάσαις ⸀ταῖς ἐπιστολαῖς λαλῶν ἐν αὐταῖς περὶ τούτων, ἐν ⸀αἷς ἐστιν δυσνόητά τινα, ἃ οἱ ἀμαθεῖς καὶ ἀστήρικτοι ⸀στρεβλοῦσιν ὡς καὶ τὰς λοιπὰς γραφὰς πρὸς τὴν ἰδίαν αὐτῶν ἀπώλειαν.",
+        "tokens": [
+          {
+            "id": "2PE-3-16-GR-001",
+            "position": 1,
+            "surface": "ὡς",
+            "transliteration": "hōs"
+          },
+          {
+            "id": "2PE-3-16-GR-002",
+            "position": 2,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-16-GR-003",
+            "position": 3,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-3-16-GR-004",
+            "position": 4,
+            "surface": "πάσαις",
+            "transliteration": "pasais"
+          },
+          {
+            "id": "2PE-3-16-GR-005",
+            "position": 5,
+            "surface": "⸀ταῖς",
+            "transliteration": "tais"
+          },
+          {
+            "id": "2PE-3-16-GR-006",
+            "position": 6,
+            "surface": "ἐπιστολαῖς",
+            "transliteration": "epistolais"
+          },
+          {
+            "id": "2PE-3-16-GR-007",
+            "position": 7,
+            "surface": "λαλῶν",
+            "transliteration": "lalōn"
+          },
+          {
+            "id": "2PE-3-16-GR-008",
+            "position": 8,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-3-16-GR-009",
+            "position": 9,
+            "surface": "αὐταῖς",
+            "transliteration": "aytais"
+          },
+          {
+            "id": "2PE-3-16-GR-010",
+            "position": 10,
+            "surface": "περὶ",
+            "transliteration": "peri"
+          },
+          {
+            "id": "2PE-3-16-GR-011",
+            "position": 11,
+            "surface": "τούτων,",
+            "transliteration": "toytōn"
+          },
+          {
+            "id": "2PE-3-16-GR-012",
+            "position": 12,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-3-16-GR-013",
+            "position": 13,
+            "surface": "⸀αἷς",
+            "transliteration": "hais"
+          },
+          {
+            "id": "2PE-3-16-GR-014",
+            "position": 14,
+            "surface": "ἐστιν",
+            "transliteration": "estin"
+          },
+          {
+            "id": "2PE-3-16-GR-015",
+            "position": 15,
+            "surface": "δυσνόητά",
+            "transliteration": "dysnoēta"
+          },
+          {
+            "id": "2PE-3-16-GR-016",
+            "position": 16,
+            "surface": "τινα,",
+            "transliteration": "tina"
+          },
+          {
+            "id": "2PE-3-16-GR-017",
+            "position": 17,
+            "surface": "ἃ",
+            "transliteration": "ha"
+          },
+          {
+            "id": "2PE-3-16-GR-018",
+            "position": 18,
+            "surface": "οἱ",
+            "transliteration": "hoi"
+          },
+          {
+            "id": "2PE-3-16-GR-019",
+            "position": 19,
+            "surface": "ἀμαθεῖς",
+            "transliteration": "amatheis"
+          },
+          {
+            "id": "2PE-3-16-GR-020",
+            "position": 20,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-16-GR-021",
+            "position": 21,
+            "surface": "ἀστήρικτοι",
+            "transliteration": "astēriktoi"
+          },
+          {
+            "id": "2PE-3-16-GR-022",
+            "position": 22,
+            "surface": "⸀στρεβλοῦσιν",
+            "transliteration": "strebloysin"
+          },
+          {
+            "id": "2PE-3-16-GR-023",
+            "position": 23,
+            "surface": "ὡς",
+            "transliteration": "hōs"
+          },
+          {
+            "id": "2PE-3-16-GR-024",
+            "position": 24,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-16-GR-025",
+            "position": 25,
+            "surface": "τὰς",
+            "transliteration": "tas"
+          },
+          {
+            "id": "2PE-3-16-GR-026",
+            "position": 26,
+            "surface": "λοιπὰς",
+            "transliteration": "loipas"
+          },
+          {
+            "id": "2PE-3-16-GR-027",
+            "position": 27,
+            "surface": "γραφὰς",
+            "transliteration": "graphas"
+          },
+          {
+            "id": "2PE-3-16-GR-028",
+            "position": 28,
+            "surface": "πρὸς",
+            "transliteration": "pros"
+          },
+          {
+            "id": "2PE-3-16-GR-029",
+            "position": 29,
+            "surface": "τὴν",
+            "transliteration": "tēn"
+          },
+          {
+            "id": "2PE-3-16-GR-030",
+            "position": 30,
+            "surface": "ἰδίαν",
+            "transliteration": "idian"
+          },
+          {
+            "id": "2PE-3-16-GR-031",
+            "position": 31,
+            "surface": "αὐτῶν",
+            "transliteration": "aytōn"
+          },
+          {
+            "id": "2PE-3-16-GR-032",
+            "position": 32,
+            "surface": "ἀπώλειαν.",
+            "transliteration": "apōleian"
+          }
+        ]
+      },
+      "17": {
+        "text": "ὑμεῖς οὖν, ἀγαπητοί, προγινώσκοντες φυλάσσεσθε ἵνα μὴ τῇ τῶν ἀθέσμων πλάνῃ συναπαχθέντες ἐκπέσητε τοῦ ἰδίου στηριγμοῦ,",
+        "tokens": [
+          {
+            "id": "2PE-3-17-GR-001",
+            "position": 1,
+            "surface": "ὑμεῖς",
+            "transliteration": "hymeis"
+          },
+          {
+            "id": "2PE-3-17-GR-002",
+            "position": 2,
+            "surface": "οὖν,",
+            "transliteration": "oyn"
+          },
+          {
+            "id": "2PE-3-17-GR-003",
+            "position": 3,
+            "surface": "ἀγαπητοί,",
+            "transliteration": "agapētoi"
+          },
+          {
+            "id": "2PE-3-17-GR-004",
+            "position": 4,
+            "surface": "προγινώσκοντες",
+            "transliteration": "proginōskontes"
+          },
+          {
+            "id": "2PE-3-17-GR-005",
+            "position": 5,
+            "surface": "φυλάσσεσθε",
+            "transliteration": "phylassesthe"
+          },
+          {
+            "id": "2PE-3-17-GR-006",
+            "position": 6,
+            "surface": "ἵνα",
+            "transliteration": "hina"
+          },
+          {
+            "id": "2PE-3-17-GR-007",
+            "position": 7,
+            "surface": "μὴ",
+            "transliteration": "mē"
+          },
+          {
+            "id": "2PE-3-17-GR-008",
+            "position": 8,
+            "surface": "τῇ",
+            "transliteration": "tēi"
+          },
+          {
+            "id": "2PE-3-17-GR-009",
+            "position": 9,
+            "surface": "τῶν",
+            "transliteration": "tōn"
+          },
+          {
+            "id": "2PE-3-17-GR-010",
+            "position": 10,
+            "surface": "ἀθέσμων",
+            "transliteration": "athesmōn"
+          },
+          {
+            "id": "2PE-3-17-GR-011",
+            "position": 11,
+            "surface": "πλάνῃ",
+            "transliteration": "planēi"
+          },
+          {
+            "id": "2PE-3-17-GR-012",
+            "position": 12,
+            "surface": "συναπαχθέντες",
+            "transliteration": "synapachthentes"
+          },
+          {
+            "id": "2PE-3-17-GR-013",
+            "position": 13,
+            "surface": "ἐκπέσητε",
+            "transliteration": "ekpesēte"
+          },
+          {
+            "id": "2PE-3-17-GR-014",
+            "position": 14,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-3-17-GR-015",
+            "position": 15,
+            "surface": "ἰδίου",
+            "transliteration": "idioy"
+          },
+          {
+            "id": "2PE-3-17-GR-016",
+            "position": 16,
+            "surface": "στηριγμοῦ,",
+            "transliteration": "stērigmoy"
+          }
+        ]
+      },
+      "18": {
+        "text": "αὐξάνετε δὲ ἐν χάριτι καὶ γνώσει τοῦ κυρίου ἡμῶν καὶ σωτῆρος Ἰησοῦ Χριστοῦ. αὐτῷ ἡ δόξα καὶ νῦν καὶ εἰς ἡμέραν αἰῶνος. ⸀ἀμήν.",
+        "tokens": [
+          {
+            "id": "2PE-3-18-GR-001",
+            "position": 1,
+            "surface": "αὐξάνετε",
+            "transliteration": "ayxanete"
+          },
+          {
+            "id": "2PE-3-18-GR-002",
+            "position": 2,
+            "surface": "δὲ",
+            "transliteration": "de"
+          },
+          {
+            "id": "2PE-3-18-GR-003",
+            "position": 3,
+            "surface": "ἐν",
+            "transliteration": "en"
+          },
+          {
+            "id": "2PE-3-18-GR-004",
+            "position": 4,
+            "surface": "χάριτι",
+            "transliteration": "chariti"
+          },
+          {
+            "id": "2PE-3-18-GR-005",
+            "position": 5,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-18-GR-006",
+            "position": 6,
+            "surface": "γνώσει",
+            "transliteration": "gnōsei"
+          },
+          {
+            "id": "2PE-3-18-GR-007",
+            "position": 7,
+            "surface": "τοῦ",
+            "transliteration": "toy"
+          },
+          {
+            "id": "2PE-3-18-GR-008",
+            "position": 8,
+            "surface": "κυρίου",
+            "transliteration": "kyrioy"
+          },
+          {
+            "id": "2PE-3-18-GR-009",
+            "position": 9,
+            "surface": "ἡμῶν",
+            "transliteration": "hēmōn"
+          },
+          {
+            "id": "2PE-3-18-GR-010",
+            "position": 10,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-18-GR-011",
+            "position": 11,
+            "surface": "σωτῆρος",
+            "transliteration": "sōtēros"
+          },
+          {
+            "id": "2PE-3-18-GR-012",
+            "position": 12,
+            "surface": "Ἰησοῦ",
+            "transliteration": "Iēsoy"
+          },
+          {
+            "id": "2PE-3-18-GR-013",
+            "position": 13,
+            "surface": "Χριστοῦ.",
+            "transliteration": "Christoy"
+          },
+          {
+            "id": "2PE-3-18-GR-014",
+            "position": 14,
+            "surface": "αὐτῷ",
+            "transliteration": "aytōi"
+          },
+          {
+            "id": "2PE-3-18-GR-015",
+            "position": 15,
+            "surface": "ἡ",
+            "transliteration": "hē"
+          },
+          {
+            "id": "2PE-3-18-GR-016",
+            "position": 16,
+            "surface": "δόξα",
+            "transliteration": "doxa"
+          },
+          {
+            "id": "2PE-3-18-GR-017",
+            "position": 17,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-18-GR-018",
+            "position": 18,
+            "surface": "νῦν",
+            "transliteration": "nyn"
+          },
+          {
+            "id": "2PE-3-18-GR-019",
+            "position": 19,
+            "surface": "καὶ",
+            "transliteration": "kai"
+          },
+          {
+            "id": "2PE-3-18-GR-020",
+            "position": 20,
+            "surface": "εἰς",
+            "transliteration": "eis"
+          },
+          {
+            "id": "2PE-3-18-GR-021",
+            "position": 21,
+            "surface": "ἡμέραν",
+            "transliteration": "hēmeran"
+          },
+          {
+            "id": "2PE-3-18-GR-022",
+            "position": 22,
+            "surface": "αἰῶνος.",
+            "transliteration": "aiōnos"
+          },
+          {
+            "id": "2PE-3-18-GR-023",
+            "position": 23,
+            "surface": "⸀ἀμήν.",
+            "transliteration": "amēn"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,3832 @@
+{
+  "schema_version": 1,
+  "phase": "Greek NT Expansion Phase 1",
+  "status": "validation-only",
+  "layer": "linguistics",
+  "book_id": "PHM",
+  "name": "Philemon",
+  "language": "grc",
+  "source": {
+    "id": "morphgnt-sblgnt",
+    "repository": "morphgnt/sblgnt",
+    "commit": "aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d",
+    "path": "78-Phm-morphgnt.txt",
+    "blob_sha1": "a4a64fb468e0110aec98d94d707af8a5188419fd",
+    "sha256": "e302779406b5405e8ff82a0dc2ded5ab49951f0d6245fe86894100bd83c51e33",
+    "license": "CC BY-SA 3.0",
+    "share_alike": true,
+    "isolation_required": true
+  },
+  "expected_missing_verses": [],
+  "field_provenance": {
+    "source_surface": "MorphGNT",
+    "lemma": "MorphGNT",
+    "normalized": "MorphGNT",
+    "part_of_speech_code": "MorphGNT",
+    "morphology": "MorphGNT",
+    "alignment_mode": "project-generated comparison of preserved source surfaces"
+  },
+  "chapters": {
+    "1": {
+      "1": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-1-GR-001",
+            "position": 1,
+            "source_token_id": "180101:001",
+            "source_surface": "Παῦλος",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSM-",
+            "normalized": "Παῦλος",
+            "lemma": "Παῦλος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-1-GR-002",
+            "position": 2,
+            "source_token_id": "180101:002",
+            "source_surface": "δέσμιος",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSM-",
+            "normalized": "δέσμιος",
+            "lemma": "δέσμιος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-1-GR-003",
+            "position": 3,
+            "source_token_id": "180101:003",
+            "source_surface": "Χριστοῦ",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSM-",
+            "normalized": "Χριστοῦ",
+            "lemma": "Χριστός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-1-GR-004",
+            "position": 4,
+            "source_token_id": "180101:004",
+            "source_surface": "Ἰησοῦ",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSM-",
+            "normalized": "Ἰησοῦ",
+            "lemma": "Ἰησοῦς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-1-GR-005",
+            "position": 5,
+            "source_token_id": "180101:005",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-1-GR-006",
+            "position": 6,
+            "source_token_id": "180101:006",
+            "source_surface": "Τιμόθεος",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSM-",
+            "normalized": "Τιμόθεος",
+            "lemma": "Τιμόθεος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-1-GR-007",
+            "position": 7,
+            "source_token_id": "180101:007",
+            "source_surface": "ὁ",
+            "part_of_speech_code": "RA",
+            "morphology": "----NSM-",
+            "normalized": "ὁ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-1-GR-008",
+            "position": 8,
+            "source_token_id": "180101:008",
+            "source_surface": "ἀδελφὸς",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSM-",
+            "normalized": "ἀδελφός",
+            "lemma": "ἀδελφός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-1-GR-009",
+            "position": 9,
+            "source_token_id": "180101:009",
+            "source_surface": "Φιλήμονι",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSM-",
+            "normalized": "Φιλήμονι",
+            "lemma": "Φιλήμων",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-1-GR-010",
+            "position": 10,
+            "source_token_id": "180101:010",
+            "source_surface": "τῷ",
+            "part_of_speech_code": "RA",
+            "morphology": "----DSM-",
+            "normalized": "τῷ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-1-GR-011",
+            "position": 11,
+            "source_token_id": "180101:011",
+            "source_surface": "ἀγαπητῷ",
+            "part_of_speech_code": "A-",
+            "morphology": "----DSM-",
+            "normalized": "ἀγαπητῷ",
+            "lemma": "ἀγαπητός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-1-GR-012",
+            "position": 12,
+            "source_token_id": "180101:012",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-1-GR-013",
+            "position": 13,
+            "source_token_id": "180101:013",
+            "source_surface": "συνεργῷ",
+            "part_of_speech_code": "A-",
+            "morphology": "----DSM-",
+            "normalized": "συνεργῷ",
+            "lemma": "συνεργός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-1-GR-014",
+            "position": 14,
+            "source_token_id": "180101:014",
+            "source_surface": "ἡμῶν",
+            "part_of_speech_code": "RP",
+            "morphology": "----GP--",
+            "normalized": "ἡμῶν",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "2": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-2-GR-001",
+            "position": 1,
+            "source_token_id": "180102:001",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-2-GR-002",
+            "position": 2,
+            "source_token_id": "180102:002",
+            "source_surface": "Ἀπφίᾳ",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSF-",
+            "normalized": "Ἀπφίᾳ",
+            "lemma": "Ἀπφία",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-2-GR-003",
+            "position": 3,
+            "source_token_id": "180102:003",
+            "source_surface": "τῇ",
+            "part_of_speech_code": "RA",
+            "morphology": "----DSF-",
+            "normalized": "τῇ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-2-GR-004",
+            "position": 4,
+            "source_token_id": "180102:004",
+            "source_surface": "⸀ἀδελφῇ",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSF-",
+            "normalized": "ἀδελφῇ",
+            "lemma": "ἀδελφή",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-2-GR-005",
+            "position": 5,
+            "source_token_id": "180102:005",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-2-GR-006",
+            "position": 6,
+            "source_token_id": "180102:006",
+            "source_surface": "Ἀρχίππῳ",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSM-",
+            "normalized": "Ἀρχίππῳ",
+            "lemma": "Ἄρχιππος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-2-GR-007",
+            "position": 7,
+            "source_token_id": "180102:007",
+            "source_surface": "τῷ",
+            "part_of_speech_code": "RA",
+            "morphology": "----DSM-",
+            "normalized": "τῷ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-2-GR-008",
+            "position": 8,
+            "source_token_id": "180102:008",
+            "source_surface": "συστρατιώτῃ",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSM-",
+            "normalized": "συστρατιώτῃ",
+            "lemma": "συστρατιώτης",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-2-GR-009",
+            "position": 9,
+            "source_token_id": "180102:009",
+            "source_surface": "ἡμῶν",
+            "part_of_speech_code": "RP",
+            "morphology": "----GP--",
+            "normalized": "ἡμῶν",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-2-GR-010",
+            "position": 10,
+            "source_token_id": "180102:010",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-2-GR-011",
+            "position": 11,
+            "source_token_id": "180102:011",
+            "source_surface": "τῇ",
+            "part_of_speech_code": "RA",
+            "morphology": "----DSF-",
+            "normalized": "τῇ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-2-GR-012",
+            "position": 12,
+            "source_token_id": "180102:012",
+            "source_surface": "κατ’",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "κατά",
+            "lemma": "κατά",
+            "alignment_mode": "source-presentation-normalized"
+          },
+          {
+            "id": "PHM-1-2-GR-013",
+            "position": 13,
+            "source_token_id": "180102:013",
+            "source_surface": "οἶκόν",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASM-",
+            "normalized": "οἶκον",
+            "lemma": "οἶκος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-2-GR-014",
+            "position": 14,
+            "source_token_id": "180102:014",
+            "source_surface": "σου",
+            "part_of_speech_code": "RP",
+            "morphology": "----GS--",
+            "normalized": "σου",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-2-GR-015",
+            "position": 15,
+            "source_token_id": "180102:015",
+            "source_surface": "ἐκκλησίᾳ·",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSF-",
+            "normalized": "ἐκκλησίᾳ",
+            "lemma": "ἐκκλησία",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "3": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-3-GR-001",
+            "position": 1,
+            "source_token_id": "180103:001",
+            "source_surface": "χάρις",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSF-",
+            "normalized": "χάρις",
+            "lemma": "χάρις",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-3-GR-002",
+            "position": 2,
+            "source_token_id": "180103:002",
+            "source_surface": "ὑμῖν",
+            "part_of_speech_code": "RP",
+            "morphology": "----DP--",
+            "normalized": "ὑμῖν",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-3-GR-003",
+            "position": 3,
+            "source_token_id": "180103:003",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-3-GR-004",
+            "position": 4,
+            "source_token_id": "180103:004",
+            "source_surface": "εἰρήνη",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSF-",
+            "normalized": "εἰρήνη",
+            "lemma": "εἰρήνη",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-3-GR-005",
+            "position": 5,
+            "source_token_id": "180103:005",
+            "source_surface": "ἀπὸ",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ἀπό",
+            "lemma": "ἀπό",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-3-GR-006",
+            "position": 6,
+            "source_token_id": "180103:006",
+            "source_surface": "θεοῦ",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSM-",
+            "normalized": "θεοῦ",
+            "lemma": "θεός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-3-GR-007",
+            "position": 7,
+            "source_token_id": "180103:007",
+            "source_surface": "πατρὸς",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSM-",
+            "normalized": "πατρός",
+            "lemma": "πατήρ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-3-GR-008",
+            "position": 8,
+            "source_token_id": "180103:008",
+            "source_surface": "ἡμῶν",
+            "part_of_speech_code": "RP",
+            "morphology": "----GP--",
+            "normalized": "ἡμῶν",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-3-GR-009",
+            "position": 9,
+            "source_token_id": "180103:009",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-3-GR-010",
+            "position": 10,
+            "source_token_id": "180103:010",
+            "source_surface": "κυρίου",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSM-",
+            "normalized": "κυρίου",
+            "lemma": "κύριος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-3-GR-011",
+            "position": 11,
+            "source_token_id": "180103:011",
+            "source_surface": "Ἰησοῦ",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSM-",
+            "normalized": "Ἰησοῦ",
+            "lemma": "Ἰησοῦς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-3-GR-012",
+            "position": 12,
+            "source_token_id": "180103:012",
+            "source_surface": "Χριστοῦ.",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSM-",
+            "normalized": "Χριστοῦ",
+            "lemma": "Χριστός",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "4": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-4-GR-001",
+            "position": 1,
+            "source_token_id": "180104:001",
+            "source_surface": "Εὐχαριστῶ",
+            "part_of_speech_code": "V-",
+            "morphology": "1PAI-S--",
+            "normalized": "εὐχαριστῶ",
+            "lemma": "εὐχαριστέω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-4-GR-002",
+            "position": 2,
+            "source_token_id": "180104:002",
+            "source_surface": "τῷ",
+            "part_of_speech_code": "RA",
+            "morphology": "----DSM-",
+            "normalized": "τῷ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-4-GR-003",
+            "position": 3,
+            "source_token_id": "180104:003",
+            "source_surface": "θεῷ",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSM-",
+            "normalized": "θεῷ",
+            "lemma": "θεός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-4-GR-004",
+            "position": 4,
+            "source_token_id": "180104:004",
+            "source_surface": "μου",
+            "part_of_speech_code": "RP",
+            "morphology": "----GS--",
+            "normalized": "μου",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-4-GR-005",
+            "position": 5,
+            "source_token_id": "180104:005",
+            "source_surface": "πάντοτε",
+            "part_of_speech_code": "D-",
+            "morphology": "--------",
+            "normalized": "πάντοτε",
+            "lemma": "πάντοτε",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-4-GR-006",
+            "position": 6,
+            "source_token_id": "180104:006",
+            "source_surface": "μνείαν",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASF-",
+            "normalized": "μνείαν",
+            "lemma": "μνεία",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-4-GR-007",
+            "position": 7,
+            "source_token_id": "180104:007",
+            "source_surface": "σου",
+            "part_of_speech_code": "RP",
+            "morphology": "----GS--",
+            "normalized": "σου",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-4-GR-008",
+            "position": 8,
+            "source_token_id": "180104:008",
+            "source_surface": "ποιούμενος",
+            "part_of_speech_code": "V-",
+            "morphology": "-PMPNSM-",
+            "normalized": "ποιούμενος",
+            "lemma": "ποιέω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-4-GR-009",
+            "position": 9,
+            "source_token_id": "180104:009",
+            "source_surface": "ἐπὶ",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ἐπί",
+            "lemma": "ἐπί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-4-GR-010",
+            "position": 10,
+            "source_token_id": "180104:010",
+            "source_surface": "τῶν",
+            "part_of_speech_code": "RA",
+            "morphology": "----GPF-",
+            "normalized": "τῶν",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-4-GR-011",
+            "position": 11,
+            "source_token_id": "180104:011",
+            "source_surface": "προσευχῶν",
+            "part_of_speech_code": "N-",
+            "morphology": "----GPF-",
+            "normalized": "προσευχῶν",
+            "lemma": "προσευχή",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-4-GR-012",
+            "position": 12,
+            "source_token_id": "180104:012",
+            "source_surface": "μου,",
+            "part_of_speech_code": "RP",
+            "morphology": "----GS--",
+            "normalized": "μου",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "5": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-5-GR-001",
+            "position": 1,
+            "source_token_id": "180105:001",
+            "source_surface": "ἀκούων",
+            "part_of_speech_code": "V-",
+            "morphology": "-PAPNSM-",
+            "normalized": "ἀκούων",
+            "lemma": "ἀκούω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-002",
+            "position": 2,
+            "source_token_id": "180105:002",
+            "source_surface": "σου",
+            "part_of_speech_code": "RP",
+            "morphology": "----GS--",
+            "normalized": "σου",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-003",
+            "position": 3,
+            "source_token_id": "180105:003",
+            "source_surface": "τὴν",
+            "part_of_speech_code": "RA",
+            "morphology": "----ASF-",
+            "normalized": "τήν",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-004",
+            "position": 4,
+            "source_token_id": "180105:004",
+            "source_surface": "ἀγάπην",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASF-",
+            "normalized": "ἀγάπην",
+            "lemma": "ἀγάπη",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-005",
+            "position": 5,
+            "source_token_id": "180105:005",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-006",
+            "position": 6,
+            "source_token_id": "180105:006",
+            "source_surface": "τὴν",
+            "part_of_speech_code": "RA",
+            "morphology": "----ASF-",
+            "normalized": "τήν",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-007",
+            "position": 7,
+            "source_token_id": "180105:007",
+            "source_surface": "πίστιν",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASF-",
+            "normalized": "πίστιν",
+            "lemma": "πίστις",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-008",
+            "position": 8,
+            "source_token_id": "180105:008",
+            "source_surface": "ἣν",
+            "part_of_speech_code": "RR",
+            "morphology": "----ASF-",
+            "normalized": "ἥν",
+            "lemma": "ὅς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-009",
+            "position": 9,
+            "source_token_id": "180105:009",
+            "source_surface": "ἔχεις",
+            "part_of_speech_code": "V-",
+            "morphology": "2PAI-S--",
+            "normalized": "ἔχεις",
+            "lemma": "ἔχω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-010",
+            "position": 10,
+            "source_token_id": "180105:010",
+            "source_surface": "⸀πρὸς",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "πρός",
+            "lemma": "πρός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-011",
+            "position": 11,
+            "source_token_id": "180105:011",
+            "source_surface": "τὸν",
+            "part_of_speech_code": "RA",
+            "morphology": "----ASM-",
+            "normalized": "τόν",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-012",
+            "position": 12,
+            "source_token_id": "180105:012",
+            "source_surface": "κύριον",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASM-",
+            "normalized": "κύριον",
+            "lemma": "κύριος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-013",
+            "position": 13,
+            "source_token_id": "180105:013",
+            "source_surface": "Ἰησοῦν",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASM-",
+            "normalized": "Ἰησοῦν",
+            "lemma": "Ἰησοῦς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-014",
+            "position": 14,
+            "source_token_id": "180105:014",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-015",
+            "position": 15,
+            "source_token_id": "180105:015",
+            "source_surface": "εἰς",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "εἰς",
+            "lemma": "εἰς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-016",
+            "position": 16,
+            "source_token_id": "180105:016",
+            "source_surface": "πάντας",
+            "part_of_speech_code": "A-",
+            "morphology": "----APM-",
+            "normalized": "πάντας",
+            "lemma": "πᾶς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-017",
+            "position": 17,
+            "source_token_id": "180105:017",
+            "source_surface": "τοὺς",
+            "part_of_speech_code": "RA",
+            "morphology": "----APM-",
+            "normalized": "τούς",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-5-GR-018",
+            "position": 18,
+            "source_token_id": "180105:018",
+            "source_surface": "ἁγίους,",
+            "part_of_speech_code": "A-",
+            "morphology": "----APM-",
+            "normalized": "ἁγίους",
+            "lemma": "ἅγιος",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "6": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-6-GR-001",
+            "position": 1,
+            "source_token_id": "180106:001",
+            "source_surface": "ὅπως",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ὅπως",
+            "lemma": "ὅπως",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-002",
+            "position": 2,
+            "source_token_id": "180106:002",
+            "source_surface": "ἡ",
+            "part_of_speech_code": "RA",
+            "morphology": "----NSF-",
+            "normalized": "ἡ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-003",
+            "position": 3,
+            "source_token_id": "180106:003",
+            "source_surface": "κοινωνία",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSF-",
+            "normalized": "κοινωνία",
+            "lemma": "κοινωνία",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-004",
+            "position": 4,
+            "source_token_id": "180106:004",
+            "source_surface": "τῆς",
+            "part_of_speech_code": "RA",
+            "morphology": "----GSF-",
+            "normalized": "τῆς",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-005",
+            "position": 5,
+            "source_token_id": "180106:005",
+            "source_surface": "πίστεώς",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSF-",
+            "normalized": "πίστεως",
+            "lemma": "πίστις",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-006",
+            "position": 6,
+            "source_token_id": "180106:006",
+            "source_surface": "σου",
+            "part_of_speech_code": "RP",
+            "morphology": "----GS--",
+            "normalized": "σου",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-007",
+            "position": 7,
+            "source_token_id": "180106:007",
+            "source_surface": "ἐνεργὴς",
+            "part_of_speech_code": "A-",
+            "morphology": "----NSF-",
+            "normalized": "ἐνεργής",
+            "lemma": "ἐνεργής",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-008",
+            "position": 8,
+            "source_token_id": "180106:008",
+            "source_surface": "γένηται",
+            "part_of_speech_code": "V-",
+            "morphology": "3AMS-S--",
+            "normalized": "γένηται",
+            "lemma": "γίνομαι",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-009",
+            "position": 9,
+            "source_token_id": "180106:009",
+            "source_surface": "ἐν",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ἐν",
+            "lemma": "ἐν",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-010",
+            "position": 10,
+            "source_token_id": "180106:010",
+            "source_surface": "ἐπιγνώσει",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSF-",
+            "normalized": "ἐπιγνώσει",
+            "lemma": "ἐπίγνωσις",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-011",
+            "position": 11,
+            "source_token_id": "180106:011",
+            "source_surface": "παντὸς",
+            "part_of_speech_code": "A-",
+            "morphology": "----GSN-",
+            "normalized": "παντός",
+            "lemma": "πᾶς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-012",
+            "position": 12,
+            "source_token_id": "180106:012",
+            "source_surface": "ἀγαθοῦ",
+            "part_of_speech_code": "A-",
+            "morphology": "----GSN-",
+            "normalized": "ἀγαθοῦ",
+            "lemma": "ἀγαθός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-013",
+            "position": 13,
+            "source_token_id": "180106:013",
+            "source_surface": "⸀τοῦ",
+            "part_of_speech_code": "RA",
+            "morphology": "----GSN-",
+            "normalized": "τοῦ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-014",
+            "position": 14,
+            "source_token_id": "180106:014",
+            "source_surface": "ἐν",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ἐν",
+            "lemma": "ἐν",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-015",
+            "position": 15,
+            "source_token_id": "180106:015",
+            "source_surface": "ἡμῖν",
+            "part_of_speech_code": "RP",
+            "morphology": "----DP--",
+            "normalized": "ἡμῖν",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-016",
+            "position": 16,
+            "source_token_id": "180106:016",
+            "source_surface": "εἰς",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "εἰς",
+            "lemma": "εἰς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-6-GR-017",
+            "position": 17,
+            "source_token_id": "180106:017",
+            "source_surface": "⸀Χριστόν·",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASM-",
+            "normalized": "Χριστόν",
+            "lemma": "Χριστός",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "7": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-7-GR-001",
+            "position": 1,
+            "source_token_id": "180107:001",
+            "source_surface": "⸀χαρὰν",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASF-",
+            "normalized": "χαράν",
+            "lemma": "χαρά",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-002",
+            "position": 2,
+            "source_token_id": "180107:002",
+            "source_surface": "γὰρ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "γάρ",
+            "lemma": "γάρ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-003",
+            "position": 3,
+            "source_token_id": "180107:003",
+            "source_surface": "⸂πολλὴν",
+            "part_of_speech_code": "A-",
+            "morphology": "----ASF-",
+            "normalized": "πολλήν",
+            "lemma": "πολύς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-004",
+            "position": 4,
+            "source_token_id": "180107:004",
+            "source_surface": "ἔσχον⸃",
+            "part_of_speech_code": "V-",
+            "morphology": "1AAI-S--",
+            "normalized": "ἔσχον",
+            "lemma": "ἔχω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-005",
+            "position": 5,
+            "source_token_id": "180107:005",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-006",
+            "position": 6,
+            "source_token_id": "180107:006",
+            "source_surface": "παράκλησιν",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASF-",
+            "normalized": "παράκλησιν",
+            "lemma": "παράκλησις",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-007",
+            "position": 7,
+            "source_token_id": "180107:007",
+            "source_surface": "ἐπὶ",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ἐπί",
+            "lemma": "ἐπί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-008",
+            "position": 8,
+            "source_token_id": "180107:008",
+            "source_surface": "τῇ",
+            "part_of_speech_code": "RA",
+            "morphology": "----DSF-",
+            "normalized": "τῇ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-009",
+            "position": 9,
+            "source_token_id": "180107:009",
+            "source_surface": "ἀγάπῃ",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSF-",
+            "normalized": "ἀγάπῃ",
+            "lemma": "ἀγάπη",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-010",
+            "position": 10,
+            "source_token_id": "180107:010",
+            "source_surface": "σου,",
+            "part_of_speech_code": "RP",
+            "morphology": "----GS--",
+            "normalized": "σου",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-011",
+            "position": 11,
+            "source_token_id": "180107:011",
+            "source_surface": "ὅτι",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ὅτι",
+            "lemma": "ὅτι",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-012",
+            "position": 12,
+            "source_token_id": "180107:012",
+            "source_surface": "τὰ",
+            "part_of_speech_code": "RA",
+            "morphology": "----NPN-",
+            "normalized": "τά",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-013",
+            "position": 13,
+            "source_token_id": "180107:013",
+            "source_surface": "σπλάγχνα",
+            "part_of_speech_code": "N-",
+            "morphology": "----NPN-",
+            "normalized": "σπλάγχνα",
+            "lemma": "σπλάγχνον",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-014",
+            "position": 14,
+            "source_token_id": "180107:014",
+            "source_surface": "τῶν",
+            "part_of_speech_code": "RA",
+            "morphology": "----GPM-",
+            "normalized": "τῶν",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-015",
+            "position": 15,
+            "source_token_id": "180107:015",
+            "source_surface": "ἁγίων",
+            "part_of_speech_code": "A-",
+            "morphology": "----GPM-",
+            "normalized": "ἁγίων",
+            "lemma": "ἅγιος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-016",
+            "position": 16,
+            "source_token_id": "180107:016",
+            "source_surface": "ἀναπέπαυται",
+            "part_of_speech_code": "V-",
+            "morphology": "3XPI-S--",
+            "normalized": "ἀναπέπαυται",
+            "lemma": "ἀναπαύω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-017",
+            "position": 17,
+            "source_token_id": "180107:017",
+            "source_surface": "διὰ",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "διά",
+            "lemma": "διά",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-018",
+            "position": 18,
+            "source_token_id": "180107:018",
+            "source_surface": "σοῦ,",
+            "part_of_speech_code": "RP",
+            "morphology": "----GS--",
+            "normalized": "σοῦ",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-7-GR-019",
+            "position": 19,
+            "source_token_id": "180107:019",
+            "source_surface": "ἀδελφέ.",
+            "part_of_speech_code": "N-",
+            "morphology": "----VSM-",
+            "normalized": "ἀδελφέ",
+            "lemma": "ἀδελφός",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "8": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-8-GR-001",
+            "position": 1,
+            "source_token_id": "180108:001",
+            "source_surface": "Διό,",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "διό",
+            "lemma": "διό",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-8-GR-002",
+            "position": 2,
+            "source_token_id": "180108:002",
+            "source_surface": "πολλὴν",
+            "part_of_speech_code": "A-",
+            "morphology": "----ASF-",
+            "normalized": "πολλήν",
+            "lemma": "πολύς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-8-GR-003",
+            "position": 3,
+            "source_token_id": "180108:003",
+            "source_surface": "ἐν",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ἐν",
+            "lemma": "ἐν",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-8-GR-004",
+            "position": 4,
+            "source_token_id": "180108:004",
+            "source_surface": "Χριστῷ",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSM-",
+            "normalized": "Χριστῷ",
+            "lemma": "Χριστός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-8-GR-005",
+            "position": 5,
+            "source_token_id": "180108:005",
+            "source_surface": "παρρησίαν",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASF-",
+            "normalized": "παρρησίαν",
+            "lemma": "παρρησία",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-8-GR-006",
+            "position": 6,
+            "source_token_id": "180108:006",
+            "source_surface": "ἔχων",
+            "part_of_speech_code": "V-",
+            "morphology": "-PAPNSM-",
+            "normalized": "ἔχων",
+            "lemma": "ἔχω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-8-GR-007",
+            "position": 7,
+            "source_token_id": "180108:007",
+            "source_surface": "ἐπιτάσσειν",
+            "part_of_speech_code": "V-",
+            "morphology": "-PAN----",
+            "normalized": "ἐπιτάσσειν",
+            "lemma": "ἐπιτάσσω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-8-GR-008",
+            "position": 8,
+            "source_token_id": "180108:008",
+            "source_surface": "σοι",
+            "part_of_speech_code": "RP",
+            "morphology": "----DS--",
+            "normalized": "σοι",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-8-GR-009",
+            "position": 9,
+            "source_token_id": "180108:009",
+            "source_surface": "τὸ",
+            "part_of_speech_code": "RA",
+            "morphology": "----ASN-",
+            "normalized": "τό",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-8-GR-010",
+            "position": 10,
+            "source_token_id": "180108:010",
+            "source_surface": "ἀνῆκον,",
+            "part_of_speech_code": "V-",
+            "morphology": "-PAPASN-",
+            "normalized": "ἀνῆκον",
+            "lemma": "ἀνήκω",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "9": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-9-GR-001",
+            "position": 1,
+            "source_token_id": "180109:001",
+            "source_surface": "διὰ",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "διά",
+            "lemma": "διά",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-9-GR-002",
+            "position": 2,
+            "source_token_id": "180109:002",
+            "source_surface": "τὴν",
+            "part_of_speech_code": "RA",
+            "morphology": "----ASF-",
+            "normalized": "τήν",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-9-GR-003",
+            "position": 3,
+            "source_token_id": "180109:003",
+            "source_surface": "ἀγάπην",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASF-",
+            "normalized": "ἀγάπην",
+            "lemma": "ἀγάπη",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-9-GR-004",
+            "position": 4,
+            "source_token_id": "180109:004",
+            "source_surface": "μᾶλλον",
+            "part_of_speech_code": "D-",
+            "morphology": "--------",
+            "normalized": "μᾶλλον",
+            "lemma": "μᾶλλον",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-9-GR-005",
+            "position": 5,
+            "source_token_id": "180109:005",
+            "source_surface": "παρακαλῶ,",
+            "part_of_speech_code": "V-",
+            "morphology": "1PAI-S--",
+            "normalized": "παρακαλῶ",
+            "lemma": "παρακαλέω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-9-GR-006",
+            "position": 6,
+            "source_token_id": "180109:006",
+            "source_surface": "τοιοῦτος",
+            "part_of_speech_code": "RD",
+            "morphology": "----NSM-",
+            "normalized": "τοιοῦτος",
+            "lemma": "τοιοῦτος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-9-GR-007",
+            "position": 7,
+            "source_token_id": "180109:007",
+            "source_surface": "ὢν",
+            "part_of_speech_code": "V-",
+            "morphology": "-PAPNSM-",
+            "normalized": "ὤν",
+            "lemma": "εἰμί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-9-GR-008",
+            "position": 8,
+            "source_token_id": "180109:008",
+            "source_surface": "ὡς",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ὡς",
+            "lemma": "ὡς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-9-GR-009",
+            "position": 9,
+            "source_token_id": "180109:009",
+            "source_surface": "Παῦλος",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSM-",
+            "normalized": "Παῦλος",
+            "lemma": "Παῦλος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-9-GR-010",
+            "position": 10,
+            "source_token_id": "180109:010",
+            "source_surface": "πρεσβύτης",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSM-",
+            "normalized": "πρεσβύτης",
+            "lemma": "πρεσβύτης",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-9-GR-011",
+            "position": 11,
+            "source_token_id": "180109:011",
+            "source_surface": "νυνὶ",
+            "part_of_speech_code": "D-",
+            "morphology": "--------",
+            "normalized": "νυνί",
+            "lemma": "νυνί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-9-GR-012",
+            "position": 12,
+            "source_token_id": "180109:012",
+            "source_surface": "δὲ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "δέ",
+            "lemma": "δέ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-9-GR-013",
+            "position": 13,
+            "source_token_id": "180109:013",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "D-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-9-GR-014",
+            "position": 14,
+            "source_token_id": "180109:014",
+            "source_surface": "δέσμιος",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSM-",
+            "normalized": "δέσμιος",
+            "lemma": "δέσμιος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-9-GR-015",
+            "position": 15,
+            "source_token_id": "180109:015",
+            "source_surface": "⸂Χριστοῦ",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSM-",
+            "normalized": "Χριστοῦ",
+            "lemma": "Χριστός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-9-GR-016",
+            "position": 16,
+            "source_token_id": "180109:016",
+            "source_surface": "Ἰησοῦ⸃—",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSM-",
+            "normalized": "Ἰησοῦ",
+            "lemma": "Ἰησοῦς",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "10": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-10-GR-001",
+            "position": 1,
+            "source_token_id": "180110:001",
+            "source_surface": "παρακαλῶ",
+            "part_of_speech_code": "V-",
+            "morphology": "1PAI-S--",
+            "normalized": "παρακαλῶ",
+            "lemma": "παρακαλέω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-10-GR-002",
+            "position": 2,
+            "source_token_id": "180110:002",
+            "source_surface": "σε",
+            "part_of_speech_code": "RP",
+            "morphology": "----AS--",
+            "normalized": "σε",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-10-GR-003",
+            "position": 3,
+            "source_token_id": "180110:003",
+            "source_surface": "περὶ",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "περί",
+            "lemma": "περί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-10-GR-004",
+            "position": 4,
+            "source_token_id": "180110:004",
+            "source_surface": "τοῦ",
+            "part_of_speech_code": "RA",
+            "morphology": "----GSN-",
+            "normalized": "τοῦ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-10-GR-005",
+            "position": 5,
+            "source_token_id": "180110:005",
+            "source_surface": "ἐμοῦ",
+            "part_of_speech_code": "A-",
+            "morphology": "----GSN-",
+            "normalized": "ἐμοῦ",
+            "lemma": "ἐμός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-10-GR-006",
+            "position": 6,
+            "source_token_id": "180110:006",
+            "source_surface": "τέκνου,",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSN-",
+            "normalized": "τέκνου",
+            "lemma": "τέκνον",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-10-GR-007",
+            "position": 7,
+            "source_token_id": "180110:007",
+            "source_surface": "ὃν",
+            "part_of_speech_code": "RR",
+            "morphology": "----ASM-",
+            "normalized": "ὅν",
+            "lemma": "ὅς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-10-GR-008",
+            "position": 8,
+            "source_token_id": "180110:008",
+            "source_surface": "ἐγέννησα",
+            "part_of_speech_code": "V-",
+            "morphology": "1AAI-S--",
+            "normalized": "ἐγέννησα",
+            "lemma": "γεννάω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-10-GR-009",
+            "position": 9,
+            "source_token_id": "180110:009",
+            "source_surface": "ἐν",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ἐν",
+            "lemma": "ἐν",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-10-GR-010",
+            "position": 10,
+            "source_token_id": "180110:010",
+            "source_surface": "τοῖς",
+            "part_of_speech_code": "RA",
+            "morphology": "----DPM-",
+            "normalized": "τοῖς",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-10-GR-011",
+            "position": 11,
+            "source_token_id": "180110:011",
+            "source_surface": "⸀δεσμοῖς",
+            "part_of_speech_code": "N-",
+            "morphology": "----DPM-",
+            "normalized": "δεσμοῖς",
+            "lemma": "δεσμός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-10-GR-012",
+            "position": 12,
+            "source_token_id": "180110:012",
+            "source_surface": "Ὀνήσιμον,",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASM-",
+            "normalized": "Ὀνήσιμον",
+            "lemma": "Ὀνήσιμος",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "11": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-11-GR-001",
+            "position": 1,
+            "source_token_id": "180111:001",
+            "source_surface": "τόν",
+            "part_of_speech_code": "RA",
+            "morphology": "----ASM-",
+            "normalized": "τόν",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-11-GR-002",
+            "position": 2,
+            "source_token_id": "180111:002",
+            "source_surface": "ποτέ",
+            "part_of_speech_code": "X-",
+            "morphology": "--------",
+            "normalized": "ποτέ",
+            "lemma": "ποτέ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-11-GR-003",
+            "position": 3,
+            "source_token_id": "180111:003",
+            "source_surface": "σοι",
+            "part_of_speech_code": "RP",
+            "morphology": "----DS--",
+            "normalized": "σοι",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-11-GR-004",
+            "position": 4,
+            "source_token_id": "180111:004",
+            "source_surface": "ἄχρηστον",
+            "part_of_speech_code": "A-",
+            "morphology": "----ASM-",
+            "normalized": "ἄχρηστον",
+            "lemma": "ἄχρηστος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-11-GR-005",
+            "position": 5,
+            "source_token_id": "180111:005",
+            "source_surface": "νυνὶ",
+            "part_of_speech_code": "D-",
+            "morphology": "--------",
+            "normalized": "νυνί",
+            "lemma": "νυνί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-11-GR-006",
+            "position": 6,
+            "source_token_id": "180111:006",
+            "source_surface": "⸀δὲ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "δέ",
+            "lemma": "δέ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-11-GR-007",
+            "position": 7,
+            "source_token_id": "180111:007",
+            "source_surface": "σοὶ",
+            "part_of_speech_code": "RP",
+            "morphology": "----DS--",
+            "normalized": "σοί",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-11-GR-008",
+            "position": 8,
+            "source_token_id": "180111:008",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-11-GR-009",
+            "position": 9,
+            "source_token_id": "180111:009",
+            "source_surface": "ἐμοὶ",
+            "part_of_speech_code": "RP",
+            "morphology": "----DS--",
+            "normalized": "ἐμοί",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-11-GR-010",
+            "position": 10,
+            "source_token_id": "180111:010",
+            "source_surface": "εὔχρηστον,",
+            "part_of_speech_code": "A-",
+            "morphology": "----ASM-",
+            "normalized": "εὔχρηστον",
+            "lemma": "εὔχρηστος",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "12": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-12-GR-001",
+            "position": 1,
+            "source_token_id": "180112:001",
+            "source_surface": "ὃν",
+            "part_of_speech_code": "RR",
+            "morphology": "----ASM-",
+            "normalized": "ὅν",
+            "lemma": "ὅς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-12-GR-002",
+            "position": 2,
+            "source_token_id": "180112:002",
+            "source_surface": "ἀνέπεμψά",
+            "part_of_speech_code": "V-",
+            "morphology": "1AAI-S--",
+            "normalized": "ἀνέπεμψα",
+            "lemma": "ἀναπέμπω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-12-GR-003",
+            "position": 3,
+            "source_token_id": "180112:003",
+            "source_surface": "⸂σοι",
+            "part_of_speech_code": "RP",
+            "morphology": "----DS--",
+            "normalized": "σοι",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-12-GR-004",
+            "position": 4,
+            "source_token_id": "180112:004",
+            "source_surface": "αὐτόν,",
+            "part_of_speech_code": "RP",
+            "morphology": "----ASM-",
+            "normalized": "αὐτόν",
+            "lemma": "αὐτός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-12-GR-005",
+            "position": 5,
+            "source_token_id": "180112:005",
+            "source_surface": "τοῦτ’",
+            "part_of_speech_code": "RD",
+            "morphology": "----NSN-",
+            "normalized": "τοῦτο",
+            "lemma": "οὗτος",
+            "alignment_mode": "source-presentation-normalized"
+          },
+          {
+            "id": "PHM-1-12-GR-006",
+            "position": 6,
+            "source_token_id": "180112:006",
+            "source_surface": "ἔστιν",
+            "part_of_speech_code": "V-",
+            "morphology": "3PAI-S--",
+            "normalized": "ἐστί(ν)",
+            "lemma": "εἰμί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-12-GR-007",
+            "position": 7,
+            "source_token_id": "180112:007",
+            "source_surface": "τὰ",
+            "part_of_speech_code": "RA",
+            "morphology": "----APN-",
+            "normalized": "τά",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-12-GR-008",
+            "position": 8,
+            "source_token_id": "180112:008",
+            "source_surface": "ἐμὰ",
+            "part_of_speech_code": "A-",
+            "morphology": "----APN-",
+            "normalized": "ἐμά",
+            "lemma": "ἐμός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-12-GR-009",
+            "position": 9,
+            "source_token_id": "180112:009",
+            "source_surface": "σπλάγχνα⸃·",
+            "part_of_speech_code": "N-",
+            "morphology": "----APN-",
+            "normalized": "σπλάγχνα",
+            "lemma": "σπλάγχνον",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "13": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-13-GR-001",
+            "position": 1,
+            "source_token_id": "180113:001",
+            "source_surface": "ὃν",
+            "part_of_speech_code": "RR",
+            "morphology": "----ASM-",
+            "normalized": "ὅν",
+            "lemma": "ὅς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-13-GR-002",
+            "position": 2,
+            "source_token_id": "180113:002",
+            "source_surface": "ἐγὼ",
+            "part_of_speech_code": "RP",
+            "morphology": "----NS--",
+            "normalized": "ἐγώ",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-13-GR-003",
+            "position": 3,
+            "source_token_id": "180113:003",
+            "source_surface": "ἐβουλόμην",
+            "part_of_speech_code": "V-",
+            "morphology": "1IMI-S--",
+            "normalized": "ἐβουλόμην",
+            "lemma": "βούλομαι",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-13-GR-004",
+            "position": 4,
+            "source_token_id": "180113:004",
+            "source_surface": "πρὸς",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "πρός",
+            "lemma": "πρός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-13-GR-005",
+            "position": 5,
+            "source_token_id": "180113:005",
+            "source_surface": "ἐμαυτὸν",
+            "part_of_speech_code": "RP",
+            "morphology": "----ASM-",
+            "normalized": "ἐμαυτόν",
+            "lemma": "ἐμαυτοῦ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-13-GR-006",
+            "position": 6,
+            "source_token_id": "180113:006",
+            "source_surface": "κατέχειν,",
+            "part_of_speech_code": "V-",
+            "morphology": "-PAN----",
+            "normalized": "κατέχειν",
+            "lemma": "κατέχω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-13-GR-007",
+            "position": 7,
+            "source_token_id": "180113:007",
+            "source_surface": "ἵνα",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ἵνα",
+            "lemma": "ἵνα",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-13-GR-008",
+            "position": 8,
+            "source_token_id": "180113:008",
+            "source_surface": "ὑπὲρ",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ὑπέρ",
+            "lemma": "ὑπέρ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-13-GR-009",
+            "position": 9,
+            "source_token_id": "180113:009",
+            "source_surface": "σοῦ",
+            "part_of_speech_code": "RP",
+            "morphology": "----GS--",
+            "normalized": "σοῦ",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-13-GR-010",
+            "position": 10,
+            "source_token_id": "180113:010",
+            "source_surface": "⸂μοι",
+            "part_of_speech_code": "RP",
+            "morphology": "----DS--",
+            "normalized": "μοι",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-13-GR-011",
+            "position": 11,
+            "source_token_id": "180113:011",
+            "source_surface": "διακονῇ⸃",
+            "part_of_speech_code": "V-",
+            "morphology": "3PAS-S--",
+            "normalized": "διακονῇ",
+            "lemma": "διακονέω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-13-GR-012",
+            "position": 12,
+            "source_token_id": "180113:012",
+            "source_surface": "ἐν",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ἐν",
+            "lemma": "ἐν",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-13-GR-013",
+            "position": 13,
+            "source_token_id": "180113:013",
+            "source_surface": "τοῖς",
+            "part_of_speech_code": "RA",
+            "morphology": "----DPM-",
+            "normalized": "τοῖς",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-13-GR-014",
+            "position": 14,
+            "source_token_id": "180113:014",
+            "source_surface": "δεσμοῖς",
+            "part_of_speech_code": "N-",
+            "morphology": "----DPM-",
+            "normalized": "δεσμοῖς",
+            "lemma": "δεσμός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-13-GR-015",
+            "position": 15,
+            "source_token_id": "180113:015",
+            "source_surface": "τοῦ",
+            "part_of_speech_code": "RA",
+            "morphology": "----GSN-",
+            "normalized": "τοῦ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-13-GR-016",
+            "position": 16,
+            "source_token_id": "180113:016",
+            "source_surface": "εὐαγγελίου,",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSN-",
+            "normalized": "εὐαγγελίου",
+            "lemma": "εὐαγγέλιον",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "14": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-14-GR-001",
+            "position": 1,
+            "source_token_id": "180114:001",
+            "source_surface": "χωρὶς",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "χωρίς",
+            "lemma": "χωρίς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-002",
+            "position": 2,
+            "source_token_id": "180114:002",
+            "source_surface": "δὲ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "δέ",
+            "lemma": "δέ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-003",
+            "position": 3,
+            "source_token_id": "180114:003",
+            "source_surface": "τῆς",
+            "part_of_speech_code": "RA",
+            "morphology": "----GSF-",
+            "normalized": "τῆς",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-004",
+            "position": 4,
+            "source_token_id": "180114:004",
+            "source_surface": "σῆς",
+            "part_of_speech_code": "A-",
+            "morphology": "----GSF-",
+            "normalized": "σῆς",
+            "lemma": "σός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-005",
+            "position": 5,
+            "source_token_id": "180114:005",
+            "source_surface": "γνώμης",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSF-",
+            "normalized": "γνώμης",
+            "lemma": "γνώμη",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-006",
+            "position": 6,
+            "source_token_id": "180114:006",
+            "source_surface": "οὐδὲν",
+            "part_of_speech_code": "A-",
+            "morphology": "----ASN-",
+            "normalized": "οὐδέν",
+            "lemma": "οὐδείς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-007",
+            "position": 7,
+            "source_token_id": "180114:007",
+            "source_surface": "ἠθέλησα",
+            "part_of_speech_code": "V-",
+            "morphology": "1AAI-S--",
+            "normalized": "ἠθέλησα",
+            "lemma": "θέλω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-008",
+            "position": 8,
+            "source_token_id": "180114:008",
+            "source_surface": "ποιῆσαι,",
+            "part_of_speech_code": "V-",
+            "morphology": "-AAN----",
+            "normalized": "ποιῆσαι",
+            "lemma": "ποιέω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-009",
+            "position": 9,
+            "source_token_id": "180114:009",
+            "source_surface": "ἵνα",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ἵνα",
+            "lemma": "ἵνα",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-010",
+            "position": 10,
+            "source_token_id": "180114:010",
+            "source_surface": "μὴ",
+            "part_of_speech_code": "D-",
+            "morphology": "--------",
+            "normalized": "μή",
+            "lemma": "μή",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-011",
+            "position": 11,
+            "source_token_id": "180114:011",
+            "source_surface": "ὡς",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ὡς",
+            "lemma": "ὡς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-012",
+            "position": 12,
+            "source_token_id": "180114:012",
+            "source_surface": "κατὰ",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "κατά",
+            "lemma": "κατά",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-013",
+            "position": 13,
+            "source_token_id": "180114:013",
+            "source_surface": "ἀνάγκην",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASF-",
+            "normalized": "ἀνάγκην",
+            "lemma": "ἀνάγκη",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-014",
+            "position": 14,
+            "source_token_id": "180114:014",
+            "source_surface": "τὸ",
+            "part_of_speech_code": "RA",
+            "morphology": "----NSN-",
+            "normalized": "τό",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-015",
+            "position": 15,
+            "source_token_id": "180114:015",
+            "source_surface": "ἀγαθόν",
+            "part_of_speech_code": "A-",
+            "morphology": "----NSN-",
+            "normalized": "ἀγαθόν",
+            "lemma": "ἀγαθός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-016",
+            "position": 16,
+            "source_token_id": "180114:016",
+            "source_surface": "σου",
+            "part_of_speech_code": "RP",
+            "morphology": "----GS--",
+            "normalized": "σου",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-017",
+            "position": 17,
+            "source_token_id": "180114:017",
+            "source_surface": "ᾖ",
+            "part_of_speech_code": "V-",
+            "morphology": "3PAS-S--",
+            "normalized": "ᾖ",
+            "lemma": "εἰμί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-018",
+            "position": 18,
+            "source_token_id": "180114:018",
+            "source_surface": "ἀλλὰ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ἀλλά",
+            "lemma": "ἀλλά",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-019",
+            "position": 19,
+            "source_token_id": "180114:019",
+            "source_surface": "κατὰ",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "κατά",
+            "lemma": "κατά",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-14-GR-020",
+            "position": 20,
+            "source_token_id": "180114:020",
+            "source_surface": "ἑκούσιον·",
+            "part_of_speech_code": "A-",
+            "morphology": "----ASN-",
+            "normalized": "ἑκούσιον",
+            "lemma": "ἑκούσιος",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "15": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-15-GR-001",
+            "position": 1,
+            "source_token_id": "180115:001",
+            "source_surface": "τάχα",
+            "part_of_speech_code": "D-",
+            "morphology": "--------",
+            "normalized": "τάχα",
+            "lemma": "τάχα",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-15-GR-002",
+            "position": 2,
+            "source_token_id": "180115:002",
+            "source_surface": "γὰρ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "γάρ",
+            "lemma": "γάρ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-15-GR-003",
+            "position": 3,
+            "source_token_id": "180115:003",
+            "source_surface": "διὰ",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "διά",
+            "lemma": "διά",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-15-GR-004",
+            "position": 4,
+            "source_token_id": "180115:004",
+            "source_surface": "τοῦτο",
+            "part_of_speech_code": "RD",
+            "morphology": "----ASN-",
+            "normalized": "τοῦτο",
+            "lemma": "οὗτος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-15-GR-005",
+            "position": 5,
+            "source_token_id": "180115:005",
+            "source_surface": "ἐχωρίσθη",
+            "part_of_speech_code": "V-",
+            "morphology": "3API-S--",
+            "normalized": "ἐχωρίσθη",
+            "lemma": "χωρίζω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-15-GR-006",
+            "position": 6,
+            "source_token_id": "180115:006",
+            "source_surface": "πρὸς",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "πρός",
+            "lemma": "πρός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-15-GR-007",
+            "position": 7,
+            "source_token_id": "180115:007",
+            "source_surface": "ὥραν",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASF-",
+            "normalized": "ὥραν",
+            "lemma": "ὥρα",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-15-GR-008",
+            "position": 8,
+            "source_token_id": "180115:008",
+            "source_surface": "ἵνα",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ἵνα",
+            "lemma": "ἵνα",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-15-GR-009",
+            "position": 9,
+            "source_token_id": "180115:009",
+            "source_surface": "αἰώνιον",
+            "part_of_speech_code": "A-",
+            "morphology": "----ASM-",
+            "normalized": "αἰώνιον",
+            "lemma": "αἰώνιος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-15-GR-010",
+            "position": 10,
+            "source_token_id": "180115:010",
+            "source_surface": "αὐτὸν",
+            "part_of_speech_code": "RP",
+            "morphology": "----ASM-",
+            "normalized": "αὐτόν",
+            "lemma": "αὐτός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-15-GR-011",
+            "position": 11,
+            "source_token_id": "180115:011",
+            "source_surface": "ἀπέχῃς,",
+            "part_of_speech_code": "V-",
+            "morphology": "2AAS-S--",
+            "normalized": "ἀπέχῃς",
+            "lemma": "ἀπέχω",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "16": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-16-GR-001",
+            "position": 1,
+            "source_token_id": "180116:001",
+            "source_surface": "οὐκέτι",
+            "part_of_speech_code": "D-",
+            "morphology": "--------",
+            "normalized": "οὐκέτι",
+            "lemma": "οὐκέτι",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-002",
+            "position": 2,
+            "source_token_id": "180116:002",
+            "source_surface": "ὡς",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ὡς",
+            "lemma": "ὡς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-003",
+            "position": 3,
+            "source_token_id": "180116:003",
+            "source_surface": "δοῦλον",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASM-",
+            "normalized": "δοῦλον",
+            "lemma": "δοῦλος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-004",
+            "position": 4,
+            "source_token_id": "180116:004",
+            "source_surface": "ἀλλὰ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ἀλλά",
+            "lemma": "ἀλλά",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-005",
+            "position": 5,
+            "source_token_id": "180116:005",
+            "source_surface": "ὑπὲρ",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ὑπέρ",
+            "lemma": "ὑπέρ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-006",
+            "position": 6,
+            "source_token_id": "180116:006",
+            "source_surface": "δοῦλον,",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASM-",
+            "normalized": "δοῦλον",
+            "lemma": "δοῦλος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-007",
+            "position": 7,
+            "source_token_id": "180116:007",
+            "source_surface": "ἀδελφὸν",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASM-",
+            "normalized": "ἀδελφόν",
+            "lemma": "ἀδελφός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-008",
+            "position": 8,
+            "source_token_id": "180116:008",
+            "source_surface": "ἀγαπητόν,",
+            "part_of_speech_code": "A-",
+            "morphology": "----ASM-",
+            "normalized": "ἀγαπητόν",
+            "lemma": "ἀγαπητός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-009",
+            "position": 9,
+            "source_token_id": "180116:009",
+            "source_surface": "μάλιστα",
+            "part_of_speech_code": "D-",
+            "morphology": "--------",
+            "normalized": "μάλιστα",
+            "lemma": "μάλιστα",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-010",
+            "position": 10,
+            "source_token_id": "180116:010",
+            "source_surface": "ἐμοί,",
+            "part_of_speech_code": "RP",
+            "morphology": "----DS--",
+            "normalized": "ἐμοί",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-011",
+            "position": 11,
+            "source_token_id": "180116:011",
+            "source_surface": "πόσῳ",
+            "part_of_speech_code": "RI",
+            "morphology": "----DSN-",
+            "normalized": "πόσῳ",
+            "lemma": "πόσος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-012",
+            "position": 12,
+            "source_token_id": "180116:012",
+            "source_surface": "δὲ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "δέ",
+            "lemma": "δέ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-013",
+            "position": 13,
+            "source_token_id": "180116:013",
+            "source_surface": "μᾶλλον",
+            "part_of_speech_code": "D-",
+            "morphology": "--------",
+            "normalized": "μᾶλλον",
+            "lemma": "μᾶλλον",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-014",
+            "position": 14,
+            "source_token_id": "180116:014",
+            "source_surface": "σοὶ",
+            "part_of_speech_code": "RP",
+            "morphology": "----DS--",
+            "normalized": "σοί",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-015",
+            "position": 15,
+            "source_token_id": "180116:015",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-016",
+            "position": 16,
+            "source_token_id": "180116:016",
+            "source_surface": "ἐν",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ἐν",
+            "lemma": "ἐν",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-017",
+            "position": 17,
+            "source_token_id": "180116:017",
+            "source_surface": "σαρκὶ",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSF-",
+            "normalized": "σαρκί",
+            "lemma": "σάρξ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-018",
+            "position": 18,
+            "source_token_id": "180116:018",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-019",
+            "position": 19,
+            "source_token_id": "180116:019",
+            "source_surface": "ἐν",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ἐν",
+            "lemma": "ἐν",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-16-GR-020",
+            "position": 20,
+            "source_token_id": "180116:020",
+            "source_surface": "κυρίῳ.",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSM-",
+            "normalized": "κυρίῳ",
+            "lemma": "κύριος",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "17": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-17-GR-001",
+            "position": 1,
+            "source_token_id": "180117:001",
+            "source_surface": "Εἰ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "εἰ",
+            "lemma": "εἰ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-17-GR-002",
+            "position": 2,
+            "source_token_id": "180117:002",
+            "source_surface": "οὖν",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "οὖν",
+            "lemma": "οὖν",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-17-GR-003",
+            "position": 3,
+            "source_token_id": "180117:003",
+            "source_surface": "με",
+            "part_of_speech_code": "RP",
+            "morphology": "----AS--",
+            "normalized": "με",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-17-GR-004",
+            "position": 4,
+            "source_token_id": "180117:004",
+            "source_surface": "ἔχεις",
+            "part_of_speech_code": "V-",
+            "morphology": "2PAI-S--",
+            "normalized": "ἔχεις",
+            "lemma": "ἔχω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-17-GR-005",
+            "position": 5,
+            "source_token_id": "180117:005",
+            "source_surface": "κοινωνόν,",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASM-",
+            "normalized": "κοινωνόν",
+            "lemma": "κοινωνός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-17-GR-006",
+            "position": 6,
+            "source_token_id": "180117:006",
+            "source_surface": "προσλαβοῦ",
+            "part_of_speech_code": "V-",
+            "morphology": "2AMD-S--",
+            "normalized": "προσλαβοῦ",
+            "lemma": "προσλαμβάνομαι",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-17-GR-007",
+            "position": 7,
+            "source_token_id": "180117:007",
+            "source_surface": "αὐτὸν",
+            "part_of_speech_code": "RP",
+            "morphology": "----ASM-",
+            "normalized": "αὐτόν",
+            "lemma": "αὐτός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-17-GR-008",
+            "position": 8,
+            "source_token_id": "180117:008",
+            "source_surface": "ὡς",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ὡς",
+            "lemma": "ὡς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-17-GR-009",
+            "position": 9,
+            "source_token_id": "180117:009",
+            "source_surface": "ἐμέ.",
+            "part_of_speech_code": "RP",
+            "morphology": "----AS--",
+            "normalized": "ἐμέ",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "18": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-18-GR-001",
+            "position": 1,
+            "source_token_id": "180118:001",
+            "source_surface": "εἰ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "εἰ",
+            "lemma": "εἰ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-18-GR-002",
+            "position": 2,
+            "source_token_id": "180118:002",
+            "source_surface": "δέ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "δέ",
+            "lemma": "δέ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-18-GR-003",
+            "position": 3,
+            "source_token_id": "180118:003",
+            "source_surface": "τι",
+            "part_of_speech_code": "RI",
+            "morphology": "----ASN-",
+            "normalized": "τὶ",
+            "lemma": "τις",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-18-GR-004",
+            "position": 4,
+            "source_token_id": "180118:004",
+            "source_surface": "ἠδίκησέν",
+            "part_of_speech_code": "V-",
+            "morphology": "3AAI-S--",
+            "normalized": "ἠδίκησε(ν)",
+            "lemma": "ἀδικέω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-18-GR-005",
+            "position": 5,
+            "source_token_id": "180118:005",
+            "source_surface": "σε",
+            "part_of_speech_code": "RP",
+            "morphology": "----AS--",
+            "normalized": "σε",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-18-GR-006",
+            "position": 6,
+            "source_token_id": "180118:006",
+            "source_surface": "ἢ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ἤ",
+            "lemma": "ἤ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-18-GR-007",
+            "position": 7,
+            "source_token_id": "180118:007",
+            "source_surface": "ὀφείλει,",
+            "part_of_speech_code": "V-",
+            "morphology": "3PAI-S--",
+            "normalized": "ὀφείλει",
+            "lemma": "ὀφείλω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-18-GR-008",
+            "position": 8,
+            "source_token_id": "180118:008",
+            "source_surface": "τοῦτο",
+            "part_of_speech_code": "RD",
+            "morphology": "----ASN-",
+            "normalized": "τοῦτο",
+            "lemma": "οὗτος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-18-GR-009",
+            "position": 9,
+            "source_token_id": "180118:009",
+            "source_surface": "ἐμοὶ",
+            "part_of_speech_code": "RP",
+            "morphology": "----DS--",
+            "normalized": "ἐμοί",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-18-GR-010",
+            "position": 10,
+            "source_token_id": "180118:010",
+            "source_surface": "⸀ἐλλόγα·",
+            "part_of_speech_code": "V-",
+            "morphology": "2PAD-S--",
+            "normalized": "ἐλλόγα",
+            "lemma": "ἐλλογέω",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "19": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-19-GR-001",
+            "position": 1,
+            "source_token_id": "180119:001",
+            "source_surface": "ἐγὼ",
+            "part_of_speech_code": "RP",
+            "morphology": "----NS--",
+            "normalized": "ἐγώ",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-002",
+            "position": 2,
+            "source_token_id": "180119:002",
+            "source_surface": "Παῦλος",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSM-",
+            "normalized": "Παῦλος",
+            "lemma": "Παῦλος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-003",
+            "position": 3,
+            "source_token_id": "180119:003",
+            "source_surface": "ἔγραψα",
+            "part_of_speech_code": "V-",
+            "morphology": "1AAI-S--",
+            "normalized": "ἔγραψα",
+            "lemma": "γράφω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-004",
+            "position": 4,
+            "source_token_id": "180119:004",
+            "source_surface": "τῇ",
+            "part_of_speech_code": "RA",
+            "morphology": "----DSF-",
+            "normalized": "τῇ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-005",
+            "position": 5,
+            "source_token_id": "180119:005",
+            "source_surface": "ἐμῇ",
+            "part_of_speech_code": "A-",
+            "morphology": "----DSF-",
+            "normalized": "ἐμῇ",
+            "lemma": "ἐμός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-006",
+            "position": 6,
+            "source_token_id": "180119:006",
+            "source_surface": "χειρί,",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSF-",
+            "normalized": "χειρί",
+            "lemma": "χείρ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-007",
+            "position": 7,
+            "source_token_id": "180119:007",
+            "source_surface": "ἐγὼ",
+            "part_of_speech_code": "RP",
+            "morphology": "----NS--",
+            "normalized": "ἐγώ",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-008",
+            "position": 8,
+            "source_token_id": "180119:008",
+            "source_surface": "ἀποτίσω·",
+            "part_of_speech_code": "V-",
+            "morphology": "1FAI-S--",
+            "normalized": "ἀποτίσω",
+            "lemma": "ἀποτίνω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-009",
+            "position": 9,
+            "source_token_id": "180119:009",
+            "source_surface": "ἵνα",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ἵνα",
+            "lemma": "ἵνα",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-010",
+            "position": 10,
+            "source_token_id": "180119:010",
+            "source_surface": "μὴ",
+            "part_of_speech_code": "D-",
+            "morphology": "--------",
+            "normalized": "μή",
+            "lemma": "μή",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-011",
+            "position": 11,
+            "source_token_id": "180119:011",
+            "source_surface": "λέγω",
+            "part_of_speech_code": "V-",
+            "morphology": "1PAS-S--",
+            "normalized": "λέγω",
+            "lemma": "λέγω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-012",
+            "position": 12,
+            "source_token_id": "180119:012",
+            "source_surface": "σοι",
+            "part_of_speech_code": "RP",
+            "morphology": "----DS--",
+            "normalized": "σοι",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-013",
+            "position": 13,
+            "source_token_id": "180119:013",
+            "source_surface": "ὅτι",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ὅτι",
+            "lemma": "ὅτι",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-014",
+            "position": 14,
+            "source_token_id": "180119:014",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "D-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-015",
+            "position": 15,
+            "source_token_id": "180119:015",
+            "source_surface": "σεαυτόν",
+            "part_of_speech_code": "RP",
+            "morphology": "----ASM-",
+            "normalized": "σεαυτόν",
+            "lemma": "σεαυτοῦ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-016",
+            "position": 16,
+            "source_token_id": "180119:016",
+            "source_surface": "μοι",
+            "part_of_speech_code": "RP",
+            "morphology": "----DS--",
+            "normalized": "μοι",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-19-GR-017",
+            "position": 17,
+            "source_token_id": "180119:017",
+            "source_surface": "προσοφείλεις.",
+            "part_of_speech_code": "V-",
+            "morphology": "2PAI-S--",
+            "normalized": "προσοφείλεις",
+            "lemma": "προσοφείλω",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "20": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-20-GR-001",
+            "position": 1,
+            "source_token_id": "180120:001",
+            "source_surface": "ναί,",
+            "part_of_speech_code": "X-",
+            "morphology": "--------",
+            "normalized": "ναί",
+            "lemma": "ναί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-20-GR-002",
+            "position": 2,
+            "source_token_id": "180120:002",
+            "source_surface": "ἀδελφέ,",
+            "part_of_speech_code": "N-",
+            "morphology": "----VSM-",
+            "normalized": "ἀδελφέ",
+            "lemma": "ἀδελφός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-20-GR-003",
+            "position": 3,
+            "source_token_id": "180120:003",
+            "source_surface": "ἐγώ",
+            "part_of_speech_code": "RP",
+            "morphology": "----NS--",
+            "normalized": "ἐγώ",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-20-GR-004",
+            "position": 4,
+            "source_token_id": "180120:004",
+            "source_surface": "σου",
+            "part_of_speech_code": "RP",
+            "morphology": "----GS--",
+            "normalized": "σου",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-20-GR-005",
+            "position": 5,
+            "source_token_id": "180120:005",
+            "source_surface": "ὀναίμην",
+            "part_of_speech_code": "V-",
+            "morphology": "1AMO-S--",
+            "normalized": "ὀναίμην",
+            "lemma": "ὀνίνημι",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-20-GR-006",
+            "position": 6,
+            "source_token_id": "180120:006",
+            "source_surface": "ἐν",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ἐν",
+            "lemma": "ἐν",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-20-GR-007",
+            "position": 7,
+            "source_token_id": "180120:007",
+            "source_surface": "κυρίῳ·",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSM-",
+            "normalized": "κυρίῳ",
+            "lemma": "κύριος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-20-GR-008",
+            "position": 8,
+            "source_token_id": "180120:008",
+            "source_surface": "ἀνάπαυσόν",
+            "part_of_speech_code": "V-",
+            "morphology": "2AAD-S--",
+            "normalized": "ἀνάπαυσον",
+            "lemma": "ἀναπαύω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-20-GR-009",
+            "position": 9,
+            "source_token_id": "180120:009",
+            "source_surface": "μου",
+            "part_of_speech_code": "RP",
+            "morphology": "----GS--",
+            "normalized": "μου",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-20-GR-010",
+            "position": 10,
+            "source_token_id": "180120:010",
+            "source_surface": "τὰ",
+            "part_of_speech_code": "RA",
+            "morphology": "----APN-",
+            "normalized": "τά",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-20-GR-011",
+            "position": 11,
+            "source_token_id": "180120:011",
+            "source_surface": "σπλάγχνα",
+            "part_of_speech_code": "N-",
+            "morphology": "----APN-",
+            "normalized": "σπλάγχνα",
+            "lemma": "σπλάγχνον",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-20-GR-012",
+            "position": 12,
+            "source_token_id": "180120:012",
+            "source_surface": "ἐν",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ἐν",
+            "lemma": "ἐν",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-20-GR-013",
+            "position": 13,
+            "source_token_id": "180120:013",
+            "source_surface": "⸀Χριστῷ.",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSM-",
+            "normalized": "Χριστῷ",
+            "lemma": "Χριστός",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "21": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-21-GR-001",
+            "position": 1,
+            "source_token_id": "180121:001",
+            "source_surface": "πεποιθὼς",
+            "part_of_speech_code": "V-",
+            "morphology": "-XAPNSM-",
+            "normalized": "πεποιθώς",
+            "lemma": "πείθω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-21-GR-002",
+            "position": 2,
+            "source_token_id": "180121:002",
+            "source_surface": "τῇ",
+            "part_of_speech_code": "RA",
+            "morphology": "----DSF-",
+            "normalized": "τῇ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-21-GR-003",
+            "position": 3,
+            "source_token_id": "180121:003",
+            "source_surface": "ὑπακοῇ",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSF-",
+            "normalized": "ὑπακοῇ",
+            "lemma": "ὑπακοή",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-21-GR-004",
+            "position": 4,
+            "source_token_id": "180121:004",
+            "source_surface": "σου",
+            "part_of_speech_code": "RP",
+            "morphology": "----GS--",
+            "normalized": "σου",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-21-GR-005",
+            "position": 5,
+            "source_token_id": "180121:005",
+            "source_surface": "ἔγραψά",
+            "part_of_speech_code": "V-",
+            "morphology": "1AAI-S--",
+            "normalized": "ἔγραψα",
+            "lemma": "γράφω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-21-GR-006",
+            "position": 6,
+            "source_token_id": "180121:006",
+            "source_surface": "σοι,",
+            "part_of_speech_code": "RP",
+            "morphology": "----DS--",
+            "normalized": "σοι",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-21-GR-007",
+            "position": 7,
+            "source_token_id": "180121:007",
+            "source_surface": "εἰδὼς",
+            "part_of_speech_code": "V-",
+            "morphology": "-XAPNSM-",
+            "normalized": "εἰδώς",
+            "lemma": "ὁράω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-21-GR-008",
+            "position": 8,
+            "source_token_id": "180121:008",
+            "source_surface": "ὅτι",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ὅτι",
+            "lemma": "ὅτι",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-21-GR-009",
+            "position": 9,
+            "source_token_id": "180121:009",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "D-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-21-GR-010",
+            "position": 10,
+            "source_token_id": "180121:010",
+            "source_surface": "ὑπὲρ",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ὑπέρ",
+            "lemma": "ὑπέρ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-21-GR-011",
+            "position": 11,
+            "source_token_id": "180121:011",
+            "source_surface": "⸀ἃ",
+            "part_of_speech_code": "RR",
+            "morphology": "----APN-",
+            "normalized": "ἅ",
+            "lemma": "ὅς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-21-GR-012",
+            "position": 12,
+            "source_token_id": "180121:012",
+            "source_surface": "λέγω",
+            "part_of_speech_code": "V-",
+            "morphology": "1PAI-S--",
+            "normalized": "λέγω",
+            "lemma": "λέγω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-21-GR-013",
+            "position": 13,
+            "source_token_id": "180121:013",
+            "source_surface": "ποιήσεις.",
+            "part_of_speech_code": "V-",
+            "morphology": "2FAI-S--",
+            "normalized": "ποιήσεις",
+            "lemma": "ποιέω",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "22": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-22-GR-001",
+            "position": 1,
+            "source_token_id": "180122:001",
+            "source_surface": "ἅμα",
+            "part_of_speech_code": "D-",
+            "morphology": "--------",
+            "normalized": "ἅμα",
+            "lemma": "ἅμα",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-22-GR-002",
+            "position": 2,
+            "source_token_id": "180122:002",
+            "source_surface": "δὲ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "δέ",
+            "lemma": "δέ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-22-GR-003",
+            "position": 3,
+            "source_token_id": "180122:003",
+            "source_surface": "καὶ",
+            "part_of_speech_code": "D-",
+            "morphology": "--------",
+            "normalized": "καί",
+            "lemma": "καί",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-22-GR-004",
+            "position": 4,
+            "source_token_id": "180122:004",
+            "source_surface": "ἑτοίμαζέ",
+            "part_of_speech_code": "V-",
+            "morphology": "2PAD-S--",
+            "normalized": "ἑτοίμαζε",
+            "lemma": "ἑτοιμάζω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-22-GR-005",
+            "position": 5,
+            "source_token_id": "180122:005",
+            "source_surface": "μοι",
+            "part_of_speech_code": "RP",
+            "morphology": "----DS--",
+            "normalized": "μοι",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-22-GR-006",
+            "position": 6,
+            "source_token_id": "180122:006",
+            "source_surface": "ξενίαν,",
+            "part_of_speech_code": "N-",
+            "morphology": "----ASF-",
+            "normalized": "ξενίαν",
+            "lemma": "ξενία",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-22-GR-007",
+            "position": 7,
+            "source_token_id": "180122:007",
+            "source_surface": "ἐλπίζω",
+            "part_of_speech_code": "V-",
+            "morphology": "1PAI-S--",
+            "normalized": "ἐλπίζω",
+            "lemma": "ἐλπίζω",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-22-GR-008",
+            "position": 8,
+            "source_token_id": "180122:008",
+            "source_surface": "γὰρ",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "γάρ",
+            "lemma": "γάρ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-22-GR-009",
+            "position": 9,
+            "source_token_id": "180122:009",
+            "source_surface": "ὅτι",
+            "part_of_speech_code": "C-",
+            "morphology": "--------",
+            "normalized": "ὅτι",
+            "lemma": "ὅτι",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-22-GR-010",
+            "position": 10,
+            "source_token_id": "180122:010",
+            "source_surface": "διὰ",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "διά",
+            "lemma": "διά",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-22-GR-011",
+            "position": 11,
+            "source_token_id": "180122:011",
+            "source_surface": "τῶν",
+            "part_of_speech_code": "RA",
+            "morphology": "----GPF-",
+            "normalized": "τῶν",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-22-GR-012",
+            "position": 12,
+            "source_token_id": "180122:012",
+            "source_surface": "προσευχῶν",
+            "part_of_speech_code": "N-",
+            "morphology": "----GPF-",
+            "normalized": "προσευχῶν",
+            "lemma": "προσευχή",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-22-GR-013",
+            "position": 13,
+            "source_token_id": "180122:013",
+            "source_surface": "ὑμῶν",
+            "part_of_speech_code": "RP",
+            "morphology": "----GP--",
+            "normalized": "ὑμῶν",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-22-GR-014",
+            "position": 14,
+            "source_token_id": "180122:014",
+            "source_surface": "χαρισθήσομαι",
+            "part_of_speech_code": "V-",
+            "morphology": "1FPI-S--",
+            "normalized": "χαρισθήσομαι",
+            "lemma": "χαρίζομαι",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-22-GR-015",
+            "position": 15,
+            "source_token_id": "180122:015",
+            "source_surface": "ὑμῖν.",
+            "part_of_speech_code": "RP",
+            "morphology": "----DP--",
+            "normalized": "ὑμῖν",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "23": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-23-GR-001",
+            "position": 1,
+            "source_token_id": "180123:001",
+            "source_surface": "⸀Ἀσπάζεταί",
+            "part_of_speech_code": "V-",
+            "morphology": "3PMI-S--",
+            "normalized": "ἀσπάζεται",
+            "lemma": "ἀσπάζομαι",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-23-GR-002",
+            "position": 2,
+            "source_token_id": "180123:002",
+            "source_surface": "σε",
+            "part_of_speech_code": "RP",
+            "morphology": "----AS--",
+            "normalized": "σε",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-23-GR-003",
+            "position": 3,
+            "source_token_id": "180123:003",
+            "source_surface": "Ἐπαφρᾶς",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSM-",
+            "normalized": "Ἐπαφρᾶς",
+            "lemma": "Ἐπαφρᾶς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-23-GR-004",
+            "position": 4,
+            "source_token_id": "180123:004",
+            "source_surface": "ὁ",
+            "part_of_speech_code": "RA",
+            "morphology": "----NSM-",
+            "normalized": "ὁ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-23-GR-005",
+            "position": 5,
+            "source_token_id": "180123:005",
+            "source_surface": "συναιχμάλωτός",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSM-",
+            "normalized": "συναιχμάλωτος",
+            "lemma": "συναιχμάλωτος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-23-GR-006",
+            "position": 6,
+            "source_token_id": "180123:006",
+            "source_surface": "μου",
+            "part_of_speech_code": "RP",
+            "morphology": "----GS--",
+            "normalized": "μου",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-23-GR-007",
+            "position": 7,
+            "source_token_id": "180123:007",
+            "source_surface": "ἐν",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "ἐν",
+            "lemma": "ἐν",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-23-GR-008",
+            "position": 8,
+            "source_token_id": "180123:008",
+            "source_surface": "Χριστῷ",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSM-",
+            "normalized": "Χριστῷ",
+            "lemma": "Χριστός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-23-GR-009",
+            "position": 9,
+            "source_token_id": "180123:009",
+            "source_surface": "Ἰησοῦ,",
+            "part_of_speech_code": "N-",
+            "morphology": "----DSM-",
+            "normalized": "Ἰησοῦ",
+            "lemma": "Ἰησοῦς",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "24": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-24-GR-001",
+            "position": 1,
+            "source_token_id": "180124:001",
+            "source_surface": "Μᾶρκος,",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSM-",
+            "normalized": "Μᾶρκος",
+            "lemma": "Μᾶρκος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-24-GR-002",
+            "position": 2,
+            "source_token_id": "180124:002",
+            "source_surface": "Ἀρίσταρχος,",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSM-",
+            "normalized": "Ἀρίσταρχος",
+            "lemma": "Ἀρίσταρχος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-24-GR-003",
+            "position": 3,
+            "source_token_id": "180124:003",
+            "source_surface": "Δημᾶς,",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSM-",
+            "normalized": "Δημᾶς",
+            "lemma": "Δημᾶς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-24-GR-004",
+            "position": 4,
+            "source_token_id": "180124:004",
+            "source_surface": "Λουκᾶς,",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSM-",
+            "normalized": "Λουκᾶς",
+            "lemma": "Λουκᾶς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-24-GR-005",
+            "position": 5,
+            "source_token_id": "180124:005",
+            "source_surface": "οἱ",
+            "part_of_speech_code": "RA",
+            "morphology": "----NPM-",
+            "normalized": "οἱ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-24-GR-006",
+            "position": 6,
+            "source_token_id": "180124:006",
+            "source_surface": "συνεργοί",
+            "part_of_speech_code": "A-",
+            "morphology": "----NPM-",
+            "normalized": "συνεργοί",
+            "lemma": "συνεργός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-24-GR-007",
+            "position": 7,
+            "source_token_id": "180124:007",
+            "source_surface": "μου.",
+            "part_of_speech_code": "RP",
+            "morphology": "----GS--",
+            "normalized": "μου",
+            "lemma": "ἐγώ",
+            "alignment_mode": "exact"
+          }
+        ]
+      },
+      "25": {
+        "annotation_status": "available",
+        "tokens": [
+          {
+            "id": "PHM-1-25-GR-001",
+            "position": 1,
+            "source_token_id": "180125:001",
+            "source_surface": "Ἡ",
+            "part_of_speech_code": "RA",
+            "morphology": "----NSF-",
+            "normalized": "ἡ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-25-GR-002",
+            "position": 2,
+            "source_token_id": "180125:002",
+            "source_surface": "χάρις",
+            "part_of_speech_code": "N-",
+            "morphology": "----NSF-",
+            "normalized": "χάρις",
+            "lemma": "χάρις",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-25-GR-003",
+            "position": 3,
+            "source_token_id": "180125:003",
+            "source_surface": "τοῦ",
+            "part_of_speech_code": "RA",
+            "morphology": "----GSM-",
+            "normalized": "τοῦ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-25-GR-004",
+            "position": 4,
+            "source_token_id": "180125:004",
+            "source_surface": "⸀κυρίου",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSM-",
+            "normalized": "κυρίου",
+            "lemma": "κύριος",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-25-GR-005",
+            "position": 5,
+            "source_token_id": "180125:005",
+            "source_surface": "Ἰησοῦ",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSM-",
+            "normalized": "Ἰησοῦ",
+            "lemma": "Ἰησοῦς",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-25-GR-006",
+            "position": 6,
+            "source_token_id": "180125:006",
+            "source_surface": "Χριστοῦ",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSM-",
+            "normalized": "Χριστοῦ",
+            "lemma": "Χριστός",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-25-GR-007",
+            "position": 7,
+            "source_token_id": "180125:007",
+            "source_surface": "μετὰ",
+            "part_of_speech_code": "P-",
+            "morphology": "--------",
+            "normalized": "μετά",
+            "lemma": "μετά",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-25-GR-008",
+            "position": 8,
+            "source_token_id": "180125:008",
+            "source_surface": "τοῦ",
+            "part_of_speech_code": "RA",
+            "morphology": "----GSN-",
+            "normalized": "τοῦ",
+            "lemma": "ὁ",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-25-GR-009",
+            "position": 9,
+            "source_token_id": "180125:009",
+            "source_surface": "πνεύματος",
+            "part_of_speech_code": "N-",
+            "morphology": "----GSN-",
+            "normalized": "πνεύματος",
+            "lemma": "πνεῦμα",
+            "alignment_mode": "exact"
+          },
+          {
+            "id": "PHM-1-25-GR-010",
+            "position": 10,
+            "source_token_id": "180125:010",
+            "source_surface": "⸀ὑμῶν.",
+            "part_of_speech_code": "RP",
+            "morphology": "----GP--",
+            "normalized": "ὑμῶν",
+            "lemma": "σύ",
+            "alignment_mode": "exact"
+          }
+        ]
+      }
+    }
+  }
+}
