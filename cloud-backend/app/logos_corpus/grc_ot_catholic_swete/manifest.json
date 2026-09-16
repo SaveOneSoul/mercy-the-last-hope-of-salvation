@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "corpus_id": "grc_ot_catholic_swete",
+  "corpus_version": "2026.09.16-swete-catholic-greek-15",
+  "status": "production-installed",
+  "production_enabled": true,
+  "language": "grc",
+  "scope": "Catholic Old Testament Greek deuterocanonical books and additions — 15 preserved witnesses",
+  "phase1b_acceptance": {
+    "validated_phase": "Old Testament Expansion Phase 1B",
+    "merge_commit": "22ad0019355d6924592d3c6b5176624e6fd4c866",
+    "witness_count": 15,
+    "source_verse_record_count": 5337,
+    "primary_integration_witness_count": 12,
+    "parallel_witness_count": 3
+  },
+  "source": {
+    "id": "first1kgreek-swete",
+    "repository": "OpenGreekAndLatin/First1KGreek",
+    "commit": "8ee111eb44ecef4120c844e10749178d95d1f30c",
+    "septuagint_tree_sha": "e1fe137e1409d0a73a52ddac6ba9669fcbc3ba79",
+    "license": "CC BY-SA 4.0",
+    "license_target": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "share_alike": true,
+    "isolation_required": true,
+    "attribution": "OpenGreekAndLatin First1KGreek / source-specific Henry Barclay Swete edition metadata"
+  },
+  "partition": {
+    "path": "sharealike/first1kgreek_swete_cc-by-sa-4.0",
+    "license": "CC BY-SA 4.0",
+    "share_alike": true,
+    "isolation_required": true,
+    "contains": [
+      "source Greek verse surfaces",
+      "source provenance",
+      "witness metadata"
+    ]
+  },
+  "mapping": {
+    "path": "versification-map.json",
+    "canonical_reference_system": "Douay-Rheims Catholic 73-book corpus",
+    "source_reference_system": "First1KGreek Swete TEI/CTS loci",
+    "source_boundaries_preserved": true,
+    "one_to_one_only_when_verified": true,
+    "component_range_allowed": true,
+    "parallel_witnesses_do_not_replace_primary": true,
+    "fabricate_verse_boundaries": false
+  },
+  "witnesses": {
+    "primary_integration": [
+      "EST-SWETE",
+      "JDT-SWETE",
+      "TOB-SWETE",
+      "1MA-SWETE",
+      "2MA-SWETE",
+      "WIS-SWETE",
+      "SIR-SWETE",
+      "BAR-SWETE",
+      "EPJ-SWETE",
+      "SUS-TH-SWETE",
+      "DAN-TH-SWETE",
+      "BEL-TH-SWETE"
+    ],
+    "parallel": [
+      "SUS-OG-SWETE",
+      "DAN-OG-SWETE",
+      "BEL-OG-SWETE"
+    ],
+    "supported_canonical_books": [
+      "EST",
+      "JDT",
+      "TOB",
+      "1MA",
+      "2MA",
+      "WIS",
+      "SIR",
+      "BAR",
+      "DAN"
+    ]
+  },
+  "derived_layers": {
+    "glosses": false,
+    "lemmata": false,
+    "morphology": false,
+    "transliteration": false
+  },
+  "runtime_contract": {
+    "exact_identity_mapping_books": [
+      "TOB",
+      "JDT",
+      "1MA",
+      "2MA",
+      "WIS",
+      "SIR"
+    ],
+    "baruch_1_5_identity": true,
+    "baruch_6_epistle_of_jeremiah": true,
+    "esther_component_range_mapping": true,
+    "daniel_primary_witness": "Theodotion",
+    "daniel_parallel_witness": "Old Greek",
+    "daniel_3_24_90_exact_source_range": true,
+    "daniel_13_susanna_exact_source_verse_numbering": true,
+    "daniel_14_component_range_only": true,
+    "bel_source_verse_count": 36,
+    "bel_douay_rheims_verse_count": 42
+  },
+  "serving_contract": {
+    "source_surfaces_preserved": true,
+    "english_corpus_unchanged": true,
+    "oshb_corpus_unchanged": true,
+    "greek_nt_corpus_unchanged": true,
+    "no_english_scripture_text_in_package": true,
+    "no_fabricated_gloss_or_linguistic_annotation": true
+  }
+}

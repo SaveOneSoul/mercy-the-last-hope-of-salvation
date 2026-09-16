@@ -1,0 +1,481 @@
+{
+  "schema_version": 1,
+  "phase": "Old Testament Expansion Phase 1B",
+  "production_enabled": false,
+  "partition": "sharealike-first1kgreek-swete",
+  "license": "CC BY-SA 4.0",
+  "share_alike": true,
+  "isolation_required": true,
+  "witness_id": "EPJ-SWETE",
+  "name": "Epistle of Jeremiah / Catholic Baruch 6",
+  "canonical_scope": "BAR",
+  "witness_role": "primary-catholic-integration",
+  "source": {
+    "repository": "OpenGreekAndLatin/First1KGreek",
+    "commit": "8ee111eb44ecef4120c844e10749178d95d1f30c",
+    "work_urn": "urn:cts:greekLit:tlg0527.tlg052",
+    "edition_urn": "urn:cts:greekLit:tlg0527.tlg052.1st1K-grc1",
+    "metadata_path": "data/tlg0527/tlg052/__cts__.xml",
+    "metadata_git_blob_sha1": "49cb5caafb568e382b1b6d5010dfdd9756d6f1cd",
+    "metadata_sha256": "bd2cfbb79c1470392a4b9c8e25f1e7f6e0c526906831e958e4e631c8e9d7ab4d",
+    "text_path": "data/tlg0527/tlg052/tlg0527.tlg052.1st1K-grc1.xml",
+    "text_git_blob_sha1": "995e8fe386cc20fcd8163e84c9bf5d4b1ad5d326",
+    "text_sha256": "07b2e94928153b4d928b685c8121a0c9f685fc2956753b2c3cc62db294b3c44e",
+    "per_file_license_verified": true
+  },
+  "canonical_mapping": {
+    "witness_id": "EPJ-SWETE",
+    "source_locus": "verses 1-n (single-level Epistula Jeremiae citation)",
+    "canonical_locus": "BAR 6:1-n",
+    "mapping": "source-verse-to-canonical-chapter-6",
+    "evidence_note": "The Swete TEI labels this work Epistula Jeremiae and includes the marginal identification 'Bar vi (Lat.)'."
+  },
+  "surface_policy": {
+    "unicode_normalization": "none",
+    "whitespace": "collapsed-layout-whitespace",
+    "excluded_editorial_tags": [
+      "head",
+      "milestone",
+      "note",
+      "pb"
+    ],
+    "glosses": false,
+    "lemmata": false,
+    "morphology": false,
+    "transliteration": false
+  },
+  "verses": [
+    {
+      "source_chapter": null,
+      "source_verse": "1",
+      "source_reference": "1",
+      "surface": "Διὰ τὰς ἁμαρτίας ὑμῶν ἄς ἡμαρτήκατε ἐναντίον τοῦ θεοῦ ἀχθήσεσθε εἰς Βαβυλῶνα αἰχμάλωτοι ὑπὸ Ναβουχοδονοσὸρ βασιλέως τῶν Βαβυλωνίων."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "2",
+      "source_reference": "2",
+      "surface": "εἰσελθόντες οὗν εἰς Βαβυλῶνα ἔσεσθε ἐκεῖ ἔτη πλείονα καὶ χρόνον μακρὸν ἕως γενεῶν ἑπτά· μετὰ τοῦτο δὲ ἐξάξω ὑμᾶς ἐκεῖθεν μετʼ εἰρήνης."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "3",
+      "source_reference": "3",
+      "surface": "νυνὶ δὲ ὄψεσθε ἐν Βαβυλῶνι θεοὺς ἀργυροῦς καὶ χρυσοῦς καὶ ξυλίνους ἐπʼ ὠμοις αἰρομένους, δεικνύντας φόβον τοῖς ἔθνεσιν."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "4",
+      "source_reference": "4",
+      "surface": "εὐλαβήθητε οὗν μὴ καὶ ὑμεῖς ἀφομοιωθέντες τοῖς ἀλλοφύλοις ἀφομοιωθῆτε, καὶ φόβος ὑμᾶς λάβῃ ἐπʼ αὐτοῖς,"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "5",
+      "source_reference": "5",
+      "surface": "ἰδόντας ὄχλον ἔμπροσθεν καὶ ὄπισθεν αὐτῶν προσκυνοῦντας αὐτά· εἶπατε δὲ τῇ διανοίᾳ Σοὶ δεῖ προσκυνεῖν, Δἐσποτα."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "6",
+      "source_reference": "6",
+      "surface": "ό γὰρ ἄγγελός μου μεθʼ ὑμῶν ἐστίν, αὐτός τε ἐκζητῶν τὰς ψυχὰς ὑμῶν."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "7",
+      "source_reference": "7",
+      "surface": "Γλῶσσα γὰρ αὐτῶν ἐστὶν κατεξυσμένη ὑπὸ τέκτονος, αὐτά τε περίχρυσα καὶ περιάργυρα, ψευδῆ δʼ ἐστὶν καὶ οὐ δύνανται λαλεῖν."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "8",
+      "source_reference": "8",
+      "surface": "καὶ ὥσπερ παρθένῳ φιλοκόσμῳ λαμβάνοντες χρυσίον"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "9",
+      "source_reference": "9",
+      "surface": "κατασκευἀζουσιν στεφάνους ἐπὶ τὰς κεφαλὰς τῶν θεῶν αὐτῶν· ἔστι δέ καὶ ὅτε ὑφαιρούμενοι οἱ ἱερεῖς ἀπὸ τῶν θεῶν αὐτῶν χρυσίον καὶ ἀργύριον εἰς ἑαυτοὺς καταναλοῦσιν,"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "10",
+      "source_reference": "10",
+      "surface": "δώσουσιν δὲ ἀπ αὐτῶν καὶ ταῖς ἐπὶ τοῦ στέγους πόρναις. κοσμοῦσί τε αὐτοὺς ὡς ἀνθρώπους τοῖς ἐνδύμασιν, θεοὺς ἀργυροῦς καὶ θεοὺς χρυσοῦς καὶ ξυλίνους."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "11",
+      "source_reference": "11",
+      "surface": "οὗτοι δὲ οὐ δια- σώζονται ἀπὸ ἰοῦ καὶ βρωμάτων, περιβεβλημένων αὐτῶν ἱματισμὸν πορφυροῦν."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "12",
+      "source_reference": "12",
+      "surface": "ἐκμάσσονται τὸ πρόσωπον αὐτῶν διὰ τὸν ἐκ τῆς οἰκίας κονιορτόν, ὅς ἐστιν πλείω ἐπʼ αὐτοῖς."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "13",
+      "source_reference": "13",
+      "surface": "καὶ σκῆπτρον ἔχει ὁὡς ἄνθρωπος κριτὴς χώρας, ὸς τὸν εἰς αὐτὸν ἁμαρτάνοντα οὐκ ἀνελεῖ."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "14",
+      "source_reference": "14",
+      "surface": "ἔχει δὲ ἐνχειρίδιον δεξιῷ καὶ πέλεκυν, ἑαυτὸν δὲ ἐκ πολέμου καὶ λῃστῶν οὐκ ἐξελεῖται. ὅθεν γνώριμοί εἰσιν οὐκ ὄντες θεοί μὴ οὗν φοβηθῆτε αὐτούς."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "15",
+      "source_reference": "15",
+      "surface": "Ὥσπερ γὰρ σκεῦος ἀνθρώπου συντριβὲν ἀχρεῖον γίνεται,"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "16",
+      "source_reference": "16",
+      "surface": "τοιοῦτοι ὑπάρχουσιν οἱ θεοὶ αὐτῶν, καθιδρυμένων αὐτῶν ἐν τοῖς οἴκοις. οἱ ὀφθαλμοὶ αὐτῶν πλήρεις εἰσὶν κονιορτοῦ ἀπὸ τῶν ποδῶν τῶν εἰσπορευομένων."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "17",
+      "source_reference": "17",
+      "surface": "καὶ ὥσπερ τινὶ ἠδικηκότι βασιλέα περιπεφραγμέναι εἰσὶν αἱ αὐλαί, ὡς ἐπὶ θανάτῳ ἀπηγμένῳ, τοὺς οἴκους αὐτῶν ὐχυροῦσιν οἱ ἱερεῖς θυρώμασίν τε καὶ κλείθροις καὶ μοχλοῖς, ὅπως ὑπὸ τῶν λῃστῶν μὴ συληθῶσι"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "18",
+      "source_reference": "18",
+      "surface": "λύχνους καίουσιν καὶ πλείους ἑαυτοῖς, ὧν οὐδένα δύνανται ἰδεῖν."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "19",
+      "source_reference": "19",
+      "surface": "ἔστιν μέν ὥσπερ δοκὸς τῶν ἐκ τῆς οἰκίας, τὰς δέ καρδίας αὐτῶν φασὶν ἐκλείχεσθαιʼ τῶν ἀπὸ τῆς γῆς ἑρπετῶν κατεσθόντων αὐτοὺς τε καὶ τὸν ἱματισμὸν αὐτῶν οὐκ αἰσθάνονται."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "20",
+      "source_reference": "20",
+      "surface": "μεμελανωμένοι τὸ πρόσωπον αὐτῶν ἀπὸ τοῦ καπνοῦ τοῦ ἐκ τῆς οἰκίας."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "21",
+      "source_reference": "21",
+      "surface": "ἐπ ὶ τὸ σώμα αὐτῶν καὶ ἐπὶ τὴν κεφαλὴν ἐφίπτανται νυκτερίδες, χελιδόνες καὶ τὰ ὄρνεα, ὡσαύτως δὲ καὶ οἱ αἵλουροι."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "22",
+      "source_reference": "22",
+      "surface": "ἰθεν γνώσεσθε ὅτι οὐκ εἰσὶν θεοί μὴ οὗν φοβεῖσθε αὐτά."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "23",
+      "source_reference": "23",
+      "surface": "Τὸ γὰρ χρυσίον ὁ περίκεινται εἰς κάλλος, ἐὰν μή τις ἐκμάξῃ τὸν ἰόν, οὐ μὴ στίλψωσιν· οὐδὲ γὰρ ὅτε ἐχωνεύοντο ἠσθάνοντο."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "24",
+      "source_reference": "24",
+      "surface": "ἐκ πάσης τιμῆς ἠγορασμένα ἐστίν, ἐν οἷς οὐκ ἔστιν πνεῦμα."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "25",
+      "source_reference": "25",
+      "surface": "ἄνευ ποδῶν ἐπʼ ὀμοις φέρονται ἐνδεικνύμενοι τὴν ἑαυτῶν ἀτιμίαν τοῖς ἀνθρώποις, αἰσχύνονταί τε καὶ οἱ θεραπεύοντες αὐτά,"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "26",
+      "source_reference": "26",
+      "surface": "διὰ τό, μὴ ποτε ἐπὶ τὴν γῆν πέσῃ, δι᾿ αὐτῶν ἀνίστασθαι· μήτε ἐάν τις αὐτὸ ὀρθὸν στήσῃ, δι᾿ ἑαυτοῦ κινηθήσεται, μήτε ἐὰν κλιθῇ, οὐ μὴ ὀρθωθῇ, ἀλλʼ ἶσπερ νεκροῖς τὰ δώρα αὐτοῖς παρατίθεται."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "27",
+      "source_reference": "27",
+      "surface": "τὰς δὲ θυσίας αὐτῶν ἀποδόμενοι οἱ ἱερεῖς αὐτῶν καταχρῶνται· ὡσαύτως δὲ καὶ αἱ γυναῖκες ἀπʼ αὐτῶν ταριχεύουσαι οὕτε πτωχῷ οὕτε ἀδυνάτῳ μὴ μεταδώσιν·"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "28",
+      "source_reference": "28",
+      "surface": "τῶυ θυσιῶν αὐτῶν ἀποκαθημένη καὶ λεχὼς ἄπτονται. γνόντες οὗν ἀπὸ τούτων ὅτι οὐκ εἰσὶν θεοί, μὴ φοβηθῆτε αὐτοὺς."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "29",
+      "source_reference": "29",
+      "surface": "Πόθεν γὰρ κληθείησαν θεοί; ὅτι γυναῖκες παρατιθέασιν θεοῖς ἀργυροῖς καὶ χρυσοῖς καὶ ξυλίνοις·"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "30",
+      "source_reference": "30",
+      "surface": "καὶ ἐν τοῖς οἴκοις αὐτῶν οἱ ἱερεῖς διφρεύουσιν, ἔχοντες τοὺς χιτῶνας διερραωγότας καὶ τὰς κεφαλὰς καὶ τοὺς πώγωνας ἐξυρημένους, ὧν αἱ κεφαλαὶ ἀκάλυπτοί εἰσιν,"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "31",
+      "source_reference": "31",
+      "surface": "ὠρύονται δέ βοώντες ἐναντίον τῶν θεῶν αὐτῶν ώσπερ τινές ἐν περιδείπνῳ νεκροῦ."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "32",
+      "source_reference": "32",
+      "surface": "ἀπὸ τοῦ ἱματισμοῦ αὐτῶν ἀφελόμενοι οἱ ἱερεῖς ἐνδύσουσιν τὰς γυναίκας αὐτῶν καὶ τὰ παιδία·"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "33",
+      "source_reference": "33",
+      "surface": "οδτε ἐὰν κακὸν πάθωσιν ὑπό τινος οὕτε ἐὰν ἀγαθόν, δυνήσονται ἀνταποδοῦναι· οὕτε καταστῆσαι βασιλέα δύνανται οὕτε ἀφελέσθαι."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "34",
+      "source_reference": "34",
+      "surface": "ὁὡσαύτως οὕτε πλοῦτον οὐτε χαλκὸν οὐ μὴ δύνωνται διδόναι· ἐάν τις αὐτοῖς εὐχὴν εὐξάμενος μὴ ἀποδῷ, οὐ μὴ ἐπιζητήσωσιν·"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "35",
+      "source_reference": "35",
+      "surface": "ἐκ θανάτου ἄνθρωπον οὐ μὴ όύσωνται, οὐτε ἥττονα ἀπὸ ἰσχυροῦ μὴ ἐξέλωνται·"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "36",
+      "source_reference": "36",
+      "surface": "Μνθρωπον τυφλὸυ εἰς ὄρασιν οὐ μὴ περιστήσωσιν, ἐν ἀνάγκῃ ἄνθρωπον ὄντα οὐ μὴ ἐξέλωνται·"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "37",
+      "source_reference": "37",
+      "surface": "χήραν οὐ μὴ ἐλεήσωσιν, οὕτε ὀρφανὸν εὗ ποιήσουσιν."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "38",
+      "source_reference": "38",
+      "surface": "τοῖς ἀπὸ τοῦ ὄρους λίθοις ὡμοιωμένοι εἰσὶν τὰ ξύλινα καὶ τὰ περίχρυσα καὶ τὰ περιάργυρα, οἱ δῆ θεραπεύοντες αὐτὰ καταισχυνθήσονται."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "39",
+      "source_reference": "39",
+      "surface": "πώς οὗν νομιστέον ἤ κλητέον αὐτοὺς ὑπάρχειν θεούς;"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "40",
+      "source_reference": "40",
+      "surface": "Ἐτι δὲ καὶ αὐτῶν τῶν Χαλδαίων ἀτιμαζόντων αὐτά, oζ ὅταν ἴδωσιν ἐνεὸν οὐ δυνάμενον λαλῆσαι, προσενεγκάμενοι τὸν Βῆλον ἀξιοῦσιν φωνῆσαι, ὡς δυνατοῦ ὄντος αὐτοῦ αἰσθέσθαι,"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "41",
+      "source_reference": "41",
+      "surface": "καὶ οὐ δύνανται αὐτοὶ νοήσαντες καταλιπεῖν αὐτά, αἵσθησιν γὰρ οὐκ ἔχουσιν."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "42",
+      "source_reference": "42",
+      "surface": "αἱ δὲ γυναῖκες περιθέμεναι σχοινία ἐν ταῖς οδοῖς ενκαθηνται, θυμιῶσαι τὰ πίτυρα·"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "43",
+      "source_reference": "43",
+      "surface": "ὅταν δέ τις αὐτῶν ἐφελκυσθεῖσα ὑπό τινος τῶν παραπορευομένων κοιμηθῇ, τὴν πλησίον ὀνειδίζει, ὅτι οὐκ ἠξίωται ὥσπερ καὶ αὐτὴ οὕτε τὸ σχοινίον αὐτῆς διερράγη."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "44",
+      "source_reference": "44",
+      "surface": "πάντα τὰ γενόμενα αὐτοῖς ἐστὶν ψευδῆ. πῶς οὗν νομιστέον ἡ κλητέον ὡς θεοὺς αὐτοὺς ὑπάρχειν"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "45",
+      "source_reference": "45",
+      "surface": "Ὑπὸ τεκτόνων καὶ χρυσοχόων κατασκευασμένα εἰσίν· οὐθὲν ἄλλο μὴ γένηται ἤ ὃ βούλονται οἱ τεχνῖται αὐτὰ γενέσθαι."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "46",
+      "source_reference": "46",
+      "surface": "φὐτοί τε οἱ κατασκευάζοντες αὐτὰ οὐ μὴ γένωνται πολυχρόνιοι·"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "47",
+      "source_reference": "47",
+      "surface": "πῶς τε δὴ μέλλει τὰ ὑπʼ αὐτῶν κατασκευασθέντα; κατέλιπον γὰρ ψεύδη καὶ ὄνειδος τοῖς ἐπιγινομένοις."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "48",
+      "source_reference": "48",
+      "surface": "ὅταν γὰρ ἐπέλθῃ ἐπʼ αὐτὰ πόλεμος καὶ κακά, βουλεύονται πρὸς ἑαυτοὺς οἱ ἱερεῖς ποῦ συναποκρυβῶσι μετʼ αὐτῶν."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "49",
+      "source_reference": "49",
+      "surface": "πῶς οὗν οὐκ ἔστιν αἰσθέσθαι ὅτι οὐκ εἰσὶν θεοί, οἱ οδτε σώζουσιν ἑαυτοὺς ἐκ πολέμου οὕτε ἐκ κακῶν;"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "50",
+      "source_reference": "50",
+      "surface": "ὑπάρχοντα γὰρ ξύλινα καὶ περίχρυσα καὶ περιάργυρα γνωσθήσεται μετὰ ταῦτα ὅτι ἐστὶν ψευδῆ· τοῖς ἔθνεσι πᾶσι τοῖς τε βασιλεῦσι φανερὸν ἔσται ὅτι οὐκ εἰσὶ θεοὶ ἀλλὰ ἔργα χειρῶν ἀνθρώπων, καὶ οὐδὲν θεοῦ ἔργον ἐν αὐτοῖς ἐστίν."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "51",
+      "source_reference": "51",
+      "surface": "Τίνι οὗν γνωστέον ἐστὶν ὅτι οὐκ εἰσὶν θεοί;"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "52",
+      "source_reference": "52",
+      "surface": "βασιλέα γὰρ χώρας οὐ μὴ ἀναστήσωσιν, οὕτε ὑετὸν ἀνθρώποις οὐ μὴ δώσιν,"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "53",
+      "source_reference": "53",
+      "surface": "κρίσιν τε οὐ μὴ διακρίνωσιν ἑαυτῶν, οὐδὲ μὴ όύσωνται ἀδίκημα, ἀδύνατοι ὄντες·"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "54",
+      "source_reference": "54",
+      "surface": "ὥσπερ γὰρ κορῶναι ἀνὰ μέσον τοῦ οὐρανοῦ καὶ τῆς γῆς. καὶ γὰρ ὅταν ἐμπέσῃ εἰς οἰκίαν θεῶν ξυλίνων ἡ περιχρύσων ἡ περιαργύρων πῦρ, οἱ μέν ἱερεῖς αὐτῶν φεύξονται καὶ διασωθήσονται, αὐτοὶ δὲ ὥσπερ δοκοὶ μέσοι κατακαυθήσονται."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "55",
+      "source_reference": "55",
+      "surface": "βασιλεῖ δέ καὶ πολεμίοις οὐ μὴ ἀντιστώσιν."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "56",
+      "source_reference": "56",
+      "surface": "πῶς οὗν ἐκδεκτέον ἤ νομιστέον ὅτι εἰσὶν θεοί; Οδτε ἀπὸ κλεπτῶν οὕτε ἀπὸ λῃστῶν οὐ μὴ διαθώσιν, θεοὶ ξύλινοι καὶ περιάργυροι καὶ περίχρυσοι·"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "57",
+      "source_reference": "57",
+      "surface": "ὦν οἱ ἰσχύοντες περιελοῦνται τὸ χρυσίον καὶ τὸ ἀργύριον, καὶ τὸν ἱματισμὸν τὸν περικείμενον αὐτοῖς ἀπελεύσονται ἔχοντες, οὕτε ἑαυτοῖς οὐ μὴ βοηθήσωσιν."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "58",
+      "source_reference": "58",
+      "surface": "ζώστε κρεῖσσον εἶναι βασιλέα ἐπιδεικνύμενον τὴν ἑαυτοῦ ἀνδρείαν ἡ σκεῦος ἐν οἰκίᾳ χρήσιμον, ἐφ ᾧ κεχρήσεται ὁ κεκτημένος, ἤ οἱ ψευδεῖς θεοί ἡ καὶ θύρα ἐν οἰκίᾳ διασώζουσα τὰ ἐν αὐτῇ ὄντα ἤ οἱ ψευδεῖς θεοί, καὶ ξύλινος στύλος ἐν βασιλείοις ἤ οἱ ψευδεῖς θεοί"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "59",
+      "source_reference": "59",
+      "surface": "ἥλιος μὲν γὰρ καὶ σελήνη καὶ ἄστρα ὄντα λαμπρὰ καὶ ἀποστελλόμενα ἐπὶ χρείας εὐήκοα εἰσιν."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "60",
+      "source_reference": "60",
+      "surface": "ῶὡσαύτως καὶ ἀστραπὴ ὅταν ἐπιφανῇ εὐοπτός ἐστιν· τὸ δʼ αὐτὸ καὶ πνεῦμα ἐν πάσῃ χώρᾳ πνεῖ"
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "61",
+      "source_reference": "61",
+      "surface": "καὶ νεφέλαις ὅταν ἐπιταγῇ ὑπὸ τοῦ θεοῦ ἐπιπορεύεσθαι ἐφʼ ὅλην τὴν οἰκουμένην, συντελοῦσι τὸ ταχθέν."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "62",
+      "source_reference": "62",
+      "surface": "χ ό τε πῦρ ἐξαποσταλὲν ἄνωθεν ἐξαναλῶσαι ὄρη καὶ δρυμοὺς ποιεῖ τὸ συνταχθέν. ταῦτα δὲ oδτε ταῖς εἰδέαις οὕτε ταῖς δυνάμεσιν αὐτῶν ἀφωμοιωμένα ἐστίν."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "63",
+      "source_reference": "63",
+      "surface": "ὅδεν οὕτε νομιστέον οὕτε κλητέον ὑπάρχειν αὐτοὺς θεούς, οὐ δυνατῶν ὄντων αὐτῶν οὕτε κρίσιν κρῖναι οὕτε εὗ ποιεῖν ἀυθρώποις."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "64",
+      "source_reference": "64",
+      "surface": "γνόντες οὗν ὅτι οὐκ εἰσὶν θεοί, μὴ φοβηθῆτε αὐτούς."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "65",
+      "source_reference": "65",
+      "surface": "Οὔτε γὰρ βασιλεῦσιν οὐ μὴ καταράσωνται οὕτε μὴ εὐλογήσωσι."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "66",
+      "source_reference": "66",
+      "surface": "σημεῖά τε ἐυ ἔθνεσιν ἐν οὐρανῷ οὐ μὴ δείξωσιν, οὐδὲ ὡς ὁ ἥλιος λάμψουσιν, οὐδὲ φωτίσουσιν ὡς σελήνη."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "67",
+      "source_reference": "67",
+      "surface": "τὰ θηρία ἐστὶν κρείττω αὐτῶν, ἄ δύνανται ἐκφυγόντα εἰς σκέπην αὐτὰ φελῆσαι."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "68",
+      "source_reference": "68",
+      "surface": "κατʼ οὐδένα οὗν τρόπον ἐστὶν ἡμῖν φανερὸν ὅτι εἰσὶν θεοί διὸ μὴ φοβηθῆτε αὐτούς."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "69",
+      "source_reference": "69",
+      "surface": "Ὥσπερ γὰρ ἐν σικυηράτῳ προβασκάνιον οὐδὲν φυλάσσον, οὕτως οἱ θεοὶ αὐτῶν εἰσὶν ξύλινοι καὶ περίχρυσοι καὶ περιάργυροι."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "70",
+      "source_reference": "70",
+      "surface": "τὸν αὐτὸν τρόπον καὶ τῇ ἐν κήπῳ όάμνῳ, ἐφʼ ἧς πᾶν ὄρνεον ἐπικάθηται, ὡσαύτως δὲ καὶ νεκρῷ ἐρριμμένῳ ἐν σκότει ἀφωμοίωνται οἱ θεοὶ αὐτῶν ξύλινοι καὶ περίχρυσοι καὶ περιάργυροι."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "71",
+      "source_reference": "71",
+      "surface": "ἀπό τε τῆς πορφύρας καὶ τῆς μαρμάρου τῆς ἐπʼ αὐτοὺς σηπομένης γνωσθήσεται ὅτι οὐκ εἰσὶν θεοί αὐτά τε ἐξ ὑστέρου βρωθήσονται, καὶ ἔσται ὄνειδος ἐν τῇ χώρᾳ."
+    },
+    {
+      "source_chapter": null,
+      "source_verse": "72",
+      "source_reference": "72",
+      "surface": "κρείσσων οὖν ἄνθρωπος δίκαιος οὐκ ἔχων εἶδωλα, ἔσται γὰρ μακράν ἀπὸ ὀνειδισμοῦ."
+    }
+  ]
+}

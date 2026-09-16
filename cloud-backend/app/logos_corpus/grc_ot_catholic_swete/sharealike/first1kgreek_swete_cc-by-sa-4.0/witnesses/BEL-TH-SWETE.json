@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "phase": "Old Testament Expansion Phase 1B",
+  "production_enabled": false,
+  "partition": "sharealike-first1kgreek-swete",
+  "license": "CC BY-SA 4.0",
+  "share_alike": true,
+  "isolation_required": true,
+  "witness_id": "BEL-TH-SWETE",
+  "name": "Bel and the Dragon — Theodotion",
+  "canonical_scope": "DAN",
+  "witness_role": "primary-catholic-integration",
+  "source": {
+    "repository": "OpenGreekAndLatin/First1KGreek",
+    "commit": "8ee111eb44ecef4120c844e10749178d95d1f30c",
+    "work_urn": "urn:cts:greekLit:tlg0527.tlg059",
+    "edition_urn": "urn:cts:greekLit:tlg0527.tlg059.1st1K-grc1",
+    "metadata_path": "data/tlg0527/tlg059/__cts__.xml",
+    "metadata_git_blob_sha1": "1712fd35cb76e3af9c1b0ab953816ceede35e3d6",
+    "metadata_sha256": "dfbbcb211a43e11d1b302b15bd40c9b98b4ed91ba87cd49447daa9cdd36568aa",
+    "text_path": "data/tlg0527/tlg059/tlg0527.tlg059.1st1K-grc1.xml",
+    "text_git_blob_sha1": "ae4fa8f3e19bcd21dc57c230f4cee0cc69cf5c78",
+    "text_sha256": "2af9b536e2cf12e1f6bc52a6ceae10f02e7c75290d4f35623f40c35bc78a8453",
+    "per_file_license_verified": true
+  },
+  "canonical_mapping": {
+    "witness_id": "BEL-TH-SWETE",
+    "source_locus": "Bel and the Dragon 1:1-36",
+    "canonical_locus": "DAN 14:1-42",
+    "description": "Bel and the Dragon",
+    "mapping": "component-range-no-forced-verse-split",
+    "note": "The pinned Swete Theodotion TEI has 36 source verse divisions while the Douay-Rheims Catholic chapter has 42 verses. Preserve the source divisions and map the component as a range; do not manufacture six synthetic Greek verse boundaries."
+  },
+  "surface_policy": {
+    "unicode_normalization": "none",
+    "whitespace": "collapsed-layout-whitespace",
+    "excluded_editorial_tags": [
+      "head",
+      "milestone",
+      "note",
+      "pb"
+    ],
+    "glosses": false,
+    "lemmata": false,
+    "morphology": false,
+    "transliteration": false
+  },
+  "verses": [
+    {
+      "source_chapter": "1",
+      "source_verse": "1",
+      "source_reference": "1:1",
+      "surface": "ΚAI ὁ βασιλεὺς Ἀστυάγης προσετέθη πρὸς τοὺς πατέρας αὐτοῦ, § καὶ παρέλαβεν Κῦρος ὁ Πέρσης τὴν βασιλείαν αὐτοῦ."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "2",
+      "source_reference": "1:2",
+      "surface": "καὶ ἦν Δανιὴλ συνβιωτὴς τοῦ βασιλέως καὶ ἔνδοξος ὑπέρ πάντας τοὺς φίλους αὐτοῦ."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "3",
+      "source_reference": "1:3",
+      "surface": "καὶ ἣν εἴδωλον τοῖς Βαβυλωνίοις ᾦ ὄνομα Βήλ, καὶ ἐδαπανῶντο εἰς αὐτὸν ἑκάστης ἡμέρας σεμιδάλεως ἀρτάβαι δώδεκα καὶ πρόβατα τεσσεράκοντα καὶ οἴνου μετρηταὶ ἕξ."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "4",
+      "source_reference": "1:4",
+      "surface": "καὶ ὁ βασιλεὺς ἐσέβετο αὐτόν, καὶ ἐπορεύετο καθʼ ἑκάστην ἡμέραν προσκυνεῖν αὐτῷ, Δανιὴλ δὲ προσεκύνει τῷ θεῷ αὐτοῦ· καὶ εἶπεν αὐτῷ ὁ βασιλεύς Διὰ τί οὐ προσκυνεῖς τῷ Βήλ;"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "5",
+      "source_reference": "1:5",
+      "surface": "ὁ δὲ εἶπ εν Ὅτι οὐ σέβομαι εἴδωλα χειροποίητα, ἀλλὰ τὸν ζῶντα θεόν, τὸν κτίσαντα τὸν οὐρανὸν καὶ τὴν γῆν καὶ ἔχοντα πάσης σαρκὸς κυρίαν."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "6",
+      "source_reference": "1:6",
+      "surface": "καὶ εἶπεν αὐτῷ ὁ βασιλεύς Οὐ δοκεῖ σοι Βὴλ εἶναι ζῶν θεός; ἡ οὐχ ὁρᾷς ὅσα ἐσθίει καὶ πίνει καθʼ ἑκάστην ἡμέραν ;"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "7",
+      "source_reference": "1:7",
+      "surface": "καὶ εἶπεν Δανιὴλ γελάσας Μὴ πλανῶ, βασιλεῦ· οὗτος γὰρ ἔσωθέν ἐστι πηλός, ἔξωθεν δὲ χαλκός, καὶ οὐ βέβρωκεν οὐδέποτε."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "8",
+      "source_reference": "1:8",
+      "surface": "καὶ θυμωθεὶς ὁ βασιλεὺς ἐκάλεσεν τοὺς ἱερεῖς αὐτοῦ καὶ εἶπεν αὐτοῖς Ἐὰν μὴ εἵπητέ μοι τίς ὁ κατέσθων τὴν δαπάνην ταύτην, ἀποθανεῖσθε·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "9",
+      "source_reference": "1:9",
+      "surface": "ἐὸν δὲ δείξητε ὅτι Βὴλ κατεσθίει αὐτά, ἀποθανεῖται Δανιὴλ, ὅτι ἐβλασφήμησεν εἰς τὸν Βήλ. καὶ εἶπεν Δανιὴλ τῷ βασιλεῖ Γινέσθω κατὰ τὸ ῥῆμά σου."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "10",
+      "source_reference": "1:10",
+      "surface": "καὶ ἤσαν ἱερεῖς τοῦ Βὴλ ἑβδομήκοντα ἐκτὸς γυναικῶν καὶ τέκνων· καὶ ἦλθεν ὁ βασιλεὺς μετὰ Δανιὴλ εἰς τὸν οἶκον τοῦ Βήλ."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "11",
+      "source_reference": "1:11",
+      "surface": "καὶ εἶπαν οἰ ἱε- ρεῖς τοῦ Βήλ Ἰδοὺ ἡμεῖς ἀποτρέχομεν ἔξω, σὺ δέ, βασιλεῦ, παράθες τὰ βρώματα καὶ τὸν οἶνον κεράσας θές, καὶ ἀπόκλεισον τὴν θύραν καὶ σφράγισον τῷ δακτυλίῳ σου."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "12",
+      "source_reference": "1:12",
+      "surface": "καὶ ἐλθὼν πρωὶ ἐὰν μὴ εὕρῃς πάντα βεβρωμένα ὑπὸ τοῦ Βήλ, ἀποθανούμεθα, ἡ Δανιὴλ ὁ ψευδόμένος καθʼ ἡμῶν."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "13",
+      "source_reference": "1:13",
+      "surface": "αὐτοὶ δὲ κατεφρόνουν, ὅτι πεποιήκεισαν ὑπὸ τὴν τράπεζαν κεκρυμμένην εἴσοδον, καὶ δι᾿ αὐτῆς εἰσεπορεύοντο διόλου καὶ ἀνήλουν αὐτά."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "14",
+      "source_reference": "1:14",
+      "surface": "καὶ ἐγένετο ὡς ἐξήλθοσαν ἐκεῖνοι, καὶ ὁ βασιλεὺς παρέθηκεν τὰ βρώματα τῷ Βήλ· καὶ ἐπέταξεν Δανιὴλ τοῖς παιδαρίοις αὐτοῦ καὶ ἤνεγκαν τέφραν, καὶ κατέσησαν ὅλον τὸν ναὸν ἐνώπιον τοῦ βασιλέως μόνου· καὶ ἐξελθόντες ἔκλεισαν τὴν θὑραν καὶ ἐσφραγίσαντο ἐν τῷ δακτυλίῳ τοῦ βασιλέως, καὶ ἀπῆλθον."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "15",
+      "source_reference": "1:15",
+      "surface": "οἱ δὲ ἱερεῖς ἦλθον τὴν νύκτα κατὰ τὸ ἔθος αὐτῶν καὶ αἱ γυναῖκες καὶ τὰ τέκνα αὐτῶν, καὶ κατέφαγον πάντα καὶ ἐξέπιον."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "16",
+      "source_reference": "1:16",
+      "surface": "καὶ ὤρθρίσεν ὁ βασιλεὺς πρωί, καὶ Δανιὴλ μετʼ αὐτοῦ."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "17",
+      "source_reference": "1:17",
+      "surface": "καὶ εἶπεν Σῷοι αἱ σφραγῖδες, Δανιὴλ; ὁ δὲ εἶπεν Σῷοι, βασιλεῦ."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "18",
+      "source_reference": "1:18",
+      "surface": "καὶ ἐγένετο ἄμα τῷ ἀνοῖξαι τὰς θύρας, ἐπιβλέψας ὁ βασιλεὺς ἐπὶ τὴν τράπεζαν ἐβόησεν φωνῇ μεγάλῃ Μέγας εἶ, Βήλ, καὶ οὐκ ἔστιν παρὰ σοὶ δόλος οὐδὲ εἰς."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "19",
+      "source_reference": "1:19",
+      "surface": "καὶ ἐγέλασεν Δανιὴλ, καὶ ἐκράτησεν τὸν βασιλέα τοῦ μὴ εἰσελθεῖν αὐτὸν ἔσω, καὶ εἶπ εν Ἴδε δὴ τὸ ἔδαφος καὶ γνῶθι τίνος τὰ ἴχνη ταῦτα."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "20",
+      "source_reference": "1:20",
+      "surface": "καὶ εἶπεν ὁ βασιλεύς Ὁρῶ τὰ ἴχνη ἀνδρῶν καὶ § γυναικῶν καὶ παιδίων."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "21",
+      "source_reference": "1:21",
+      "surface": "καὶ ὀργισθεὶς ὁ βασιλεὺς τότε συνέλαβεν τοὺς ἱερεῖς καὶ τὰς γυναῖκας καὶ τὰ τέκνα αὐτῶν, καὶ ἔδειξαν αὐτῷ τὰς κρυπτὰς θύρας δι ὅν εἰσεπορεύοντο καὶ ἐδαπάνων τὰ ἐπὶ τῇ τραπέζῃ."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "22",
+      "source_reference": "1:22",
+      "surface": "καὶ ἀπέκτεινεν αὐτοὺς ὁ βασιλεύς, καὶ ἔδωκεν τὸν Βήλ ἔκδοτον τῷ Δανιὴλ· καὶ κατέστρεψεν αὐτὸν καὶ τὸ ἱερὸν αὐτοῦ."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "23",
+      "source_reference": "1:23",
+      "surface": "Καὶ ἦν δράκων μέγας, καὶ ἐσέβοντο αὐτὸν οἱ Βαβυλώνιοι."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "24",
+      "source_reference": "1:24",
+      "surface": "καὶ εἶπεν ὁ βασιλεὺς τῷ Δανιὴλ Οὐ δύνασαι εἰπεῖν ὅτι οὐκ ἔστιν οὗτος θεὸς ζῶν· καὶ προσκύνησον αὐτῷ."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "25",
+      "source_reference": "1:25",
+      "surface": "καὶ εἶπεν Δανιὴλ Κυρίῳ τῷ θεῷ μου προσκυνήσω, ὅτι· οὗτός ἐστιν θεὸς ζῶν·"
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "26",
+      "source_reference": "1:26",
+      "surface": "οὺ δέ, βασιλεῦ, δός μοι ἐξουσίαν, καὶ ἀποκτενῶ τὸν δράκοντα ἄνευ μαχαίρας καὶ ῥάβδου. καὶ εἶπεν ὁ βασιλεύς Δίδωμί σοι."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "27",
+      "source_reference": "1:27",
+      "surface": "καὶ ἔλαβεν Δανιὴλ πίσσαν καὶ στῆρ καὶ τρίχας, καὶ ἥψησεν ἐπὶ τὸ αὐτὸ καὶ ἐποίησεν μάζας, καὶ ἔδωκεν εἰς τὸ στόμα τοῦ δράκοντος· καὶ φαγὼν διερράγη ὁ δράκων. καὶ εἶπεν Ἵδετε τὰ σεβάσματα ὑμῶν."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "28",
+      "source_reference": "1:28",
+      "surface": "καὶ ἐγένετο ὡς ἤκουσαν οἱ Βαβυλώνιοι, ἠγανάκτησαν καὶ συνεστράφησαν ἐπὶ τὸν βασιλέα καὶ εἶπαν Ἰουδαῖος γέγονεν ὁ βασιλεύς· τὸν Βὴλ κατέσπασεν καὶ τὸν δράκοντα ἀπέκτεινεν, καὶ τοὺς ἱερεῖς κατέσφαξεν."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "29",
+      "source_reference": "1:29",
+      "surface": "καὶ εἶπαν ἐλθόντες πρὸς τὸν βασιλέα ΙΙαράδος ἡμῖν τὸν Δανιὴλ· εἰ δὲ μή, ἀποκτενοῦμέν σε καὶ τὸν οἶκόν σου."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "30",
+      "source_reference": "1:30",
+      "surface": "καὶ ἴδεν ὁ βασιλεὺς ὅτι ἐπείγουσιν αὐτὸν σφόδρα, καὶ ἀναγκασθεὶς παρέδωκεν αὐτοῖς τὸν Δανιὴλ."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "31",
+      "source_reference": "1:31",
+      "surface": "οἱ δὲ ἔβαλον αὐτὸν εἰς τὸν λάκκον τῶν λεόντων, καὶ ἦν ἐκεῖ ἡμέρας ἔξ."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "32",
+      "source_reference": "1:32",
+      "surface": "ἦσαν δὲ ἐν τῷ λάκκῳ ἑπτὰ λέοντες, καὶ ἐδίδετο αὐτοῖς τὴν ἡμέραν δύο σώματα καὶ δύο πρόβατα· τότε δὲ οὐκ ἐδόθη αὐτοῖς, ἵνα καταφάγωσιν τὸν Δανιὴλ."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "33",
+      "source_reference": "1:33",
+      "surface": "καὶ ἦν Ἁμβακοὺμ ὁ προφήτης ἐν τῇ Ἰουδαίᾳ, καὶ αὐτὸς ἥψησεν ἕψεμα καὶ ἐνέθρυψεν ἄρτους εἰς σκάφην, καὶ ἐπορεύετο εἰς τὸ πεδίον ἀπενέγκαι τοῖς θερισταῖς."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "34",
+      "source_reference": "1:34",
+      "surface": "καὶ εἶπεν ἅγγελος Κυρίου τῷ Ἁμβακούμ Ἀπένεγκε τὸ ἄριστον ὁ ἔχεις εἰς Βαβυλῶνα τῷ Δανιὴλ εἰς τὸν λάκκον τῶν λεόντων."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "35",
+      "source_reference": "1:35",
+      "surface": "καὶ εἶπεν Ἁμβακούμ Κύριε, Βαβυλῶνα οὐχ ἑώρακα, καὶ τὸν λάκκον οὐ γινώσκω."
+    },
+    {
+      "source_chapter": "1",
+      "source_verse": "36",
+      "source_reference": "1:36",
+      "surface": "καὶ ἐπελάβετο ὁ ἄγγελος Κυρίου τῆς κορυφῆς αὐτοῦ, καὶ βαστάσας τῆς κόμης τῆς κεφαλῆς αὐτοῦ ἔθηκεν αὐτὸν εἰς Βαβυλῶνα ἐπάνω τοῦ λάκκου, ἐν τῷ ῥοίζῳ τοῦ"
+    }
+  ]
+}

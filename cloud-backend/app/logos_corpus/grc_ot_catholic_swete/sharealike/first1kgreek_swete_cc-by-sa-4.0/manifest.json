@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "phase": "Old Testament Expansion Phase 1B",
+  "production_enabled": false,
+  "production_import_allowed": false,
+  "owner_acceptance_required": true,
+  "source": {
+    "id": "first1kgreek-swete",
+    "repository": "OpenGreekAndLatin/First1KGreek",
+    "commit": "8ee111eb44ecef4120c844e10749178d95d1f30c",
+    "septuagint_tree_sha": "e1fe137e1409d0a73a52ddac6ba9669fcbc3ba79",
+    "license": "CC BY-SA 4.0",
+    "share_alike": true,
+    "isolation_required": true,
+    "attribution": "OpenGreekAndLatin First1KGreek / source-specific Henry Barclay Swete edition metadata"
+  },
+  "isolation": {
+    "root": "sharealike/first1kgreek_swete_cc-by-sa-4.0",
+    "english_corpus_unchanged": true,
+    "oshb_corpus_unchanged": true,
+    "greek_nt_corpus_unchanged": true,
+    "contains_english_scripture_text": false
+  },
+  "derived_layers": {
+    "glosses": false,
+    "lemmata": false,
+    "morphology": false,
+    "transliteration": false
+  },
+  "witness_count": 15,
+  "chapter_container_count": 175,
+  "verse_record_count": 5337,
+  "witnesses": [
+    {
+      "witness_id": "EST-SWETE",
+      "canonical_scope": "EST",
+      "witness_role": "primary-catholic-integration",
+      "chapter_count": 11,
+      "verse_count": 266,
+      "metadata_git_blob_sha1": "a7e3bd97ac2a56630aa23f6d98b9bb7f742fe80e",
+      "metadata_sha256": "d642f660781e2749b46c14b6096ab6b6f6534c3454c4b8f1a05ea5a6c8d94a4e",
+      "text_git_blob_sha1": "c23197953e754f9fe8c01b13f7a4c1e12729731a",
+      "text_sha256": "82f2b01ea74646fa0f6d3d80a7470a1edf8095a11fc1e13a10e2d88678de0cb4"
+    },
+    {
+      "witness_id": "JDT-SWETE",
+      "canonical_scope": "JDT",
+      "witness_role": "primary-catholic-integration",
+      "chapter_count": 16,
+      "verse_count": 339,
+      "metadata_git_blob_sha1": "1030fa7bbaaab4ac66668b86fedbe3a4ae0da55c",
+      "metadata_sha256": "a2567747ef2f3ee4cc3fbd7ba5024e869e8aadcaee3c1937ab7026fe66cb1c81",
+      "text_git_blob_sha1": "757d35aa3e1e92a7b564df5065958e2f24fa2e1b",
+      "text_sha256": "7e755379d0b3f04627597f47d154da8c2320850d35e33ecb6b674273e5049aaa"
+    },
+    {
+      "witness_id": "TOB-SWETE",
+      "canonical_scope": "TOB",
+      "witness_role": "primary-catholic-integration",
+      "chapter_count": 14,
+      "verse_count": 243,
+      "metadata_git_blob_sha1": "24e98313587eef0930ca5b5680d4a542faf22f70",
+      "metadata_sha256": "2925d135c14d7f1ccf684c70081e4a3698b1587b9d09114606b777c669239476",
+      "text_git_blob_sha1": "c5a8284cd4f8a2a2cb585ce7ca367556fe64ca23",
+      "text_sha256": "380bca2fc080d613a82cc8a468d83841d1af759b62aea0b609ef9aaa60d0a787"
+    },
+    {
+      "witness_id": "1MA-SWETE",
+      "canonical_scope": "1MA",
+      "witness_role": "primary-catholic-integration",
+      "chapter_count": 16,
+      "verse_count": 921,
+      "metadata_git_blob_sha1": "1eb5442c31ca8bf5465683672a321f5ff1748a67",
+      "metadata_sha256": "ecc865ee2461ec838b94f985aa67f316c941b2f57f1b77270926fe950319a466",
+      "text_git_blob_sha1": "27f6ae321392cf35ec282c8eceec5c448d7fa0b4",
+      "text_sha256": "278fcb432ca9ff870510971a8377e7c57fc76d926bd279f9b6ce403bb1c82445"
+    },
+    {
+      "witness_id": "2MA-SWETE",
+      "canonical_scope": "2MA",
+      "witness_role": "primary-catholic-integration",
+      "chapter_count": 15,
+      "verse_count": 553,
+      "metadata_git_blob_sha1": "b57fd51d45943acdd162dc2d6aacd52d3d527cd2",
+      "metadata_sha256": "d9e04b8a6ecf31b9ff3c3082f0c0932b9a34d5485b5fb6bf0be4c058dda6da72",
+      "text_git_blob_sha1": "d24e91af4b3f9a76d84843421b4505a4f52474ca",
+      "text_sha256": "cdfe0b3033d4f20abcf160266c0efbee84e536f7e2331a9338f3af0bc2830c11"
+    },
+    {
+      "witness_id": "WIS-SWETE",
+      "canonical_scope": "WIS",
+      "witness_role": "primary-catholic-integration",
+      "chapter_count": 19,
+      "verse_count": 424,
+      "metadata_git_blob_sha1": "8ec960095c94cf6838874b0aaf31171719785a7e",
+      "metadata_sha256": "657665a86dcfa1e55c03066df6f652a04e8d918dea0844a42abb9c714441932f",
+      "text_git_blob_sha1": "1e03e3efea963f8e03820f53bc78639483b221a9",
+      "text_sha256": "a4e14aeeafb3c88a6dc8e71bc62cb71d2026b95fb1a014f7e14609db394fa297"
+    },
+    {
+      "witness_id": "SIR-SWETE",
+      "canonical_scope": "SIR",
+      "witness_role": "primary-catholic-integration",
+      "chapter_count": 51,
+      "verse_count": 1369,
+      "metadata_git_blob_sha1": "1ce3e4912bc96653107d2619da06691b0e697e24",
+      "metadata_sha256": "f3338fd9a6f467fdc9db55236dd1f84e247098f5fbf8c95829125ce37504e24d",
+      "text_git_blob_sha1": "2b6649b4d5ec05286555c899a4e6992fff88fecd",
+      "text_sha256": "554121f0ed01f9754eb0a3910c28e7ffd9337fe59bf4cadcc54f6b13857ca7a1"
+    },
+    {
+      "witness_id": "BAR-SWETE",
+      "canonical_scope": "BAR",
+      "witness_role": "primary-catholic-integration",
+      "chapter_count": 5,
+      "verse_count": 141,
+      "metadata_git_blob_sha1": "c837b7fe591226a905f9310510f0a6cf73e97be2",
+      "metadata_sha256": "350cad61c42d9b2cc9e72846c0e29bb9cd8abd819d8a4de98534dc5c6cf5628f",
+      "text_git_blob_sha1": "3d581a34d6e6f51fd94b235909a6e690ec7ed454",
+      "text_sha256": "5970c69ac576fbab9ab3ccb5edfa2175417ed5566f8404eb25cfe4071a5f6bd1"
+    },
+    {
+      "witness_id": "EPJ-SWETE",
+      "canonical_scope": "BAR",
+      "witness_role": "primary-catholic-integration",
+      "chapter_count": 0,
+      "verse_count": 72,
+      "metadata_git_blob_sha1": "49cb5caafb568e382b1b6d5010dfdd9756d6f1cd",
+      "metadata_sha256": "bd2cfbb79c1470392a4b9c8e25f1e7f6e0c526906831e958e4e631c8e9d7ab4d",
+      "text_git_blob_sha1": "995e8fe386cc20fcd8163e84c9bf5d4b1ad5d326",
+      "text_sha256": "07b2e94928153b4d928b685c8121a0c9f685fc2956753b2c3cc62db294b3c44e"
+    },
+    {
+      "witness_id": "SUS-OG-SWETE",
+      "canonical_scope": "DAN",
+      "witness_role": "preserved-parallel-witness",
+      "chapter_count": 1,
+      "verse_count": 46,
+      "metadata_git_blob_sha1": "5e5164d850a2ede497bc6da3f6ef8f8bf1f889ce",
+      "metadata_sha256": "c16a10cb097c98f84d270573973e25a359d9a23e8417ce99d11a00aea851f19f",
+      "text_git_blob_sha1": "e37b9413e3f2ad866b63be64d52ecef7aee434af",
+      "text_sha256": "931b8f51b78b936113711755b6ff1f3257fba511acfc70826dd9f300719a0ce6"
+    },
+    {
+      "witness_id": "SUS-TH-SWETE",
+      "canonical_scope": "DAN",
+      "witness_role": "primary-catholic-integration",
+      "chapter_count": 1,
+      "verse_count": 64,
+      "metadata_git_blob_sha1": "12d077fdc6862b278083547763466b6594626531",
+      "metadata_sha256": "cdf0d64a6ae40ec4f532652f6808a166e0b1a2ebd18d6fa24aa141ac8dc17a92",
+      "text_git_blob_sha1": "2cb31d91f30c2411f127a2ba8517796fb0604f10",
+      "text_sha256": "436dc7bdfcba0e551492d04689b89ed3fa51920bbf7c60bcfb437a542cc3dfec"
+    },
+    {
+      "witness_id": "DAN-OG-SWETE",
+      "canonical_scope": "DAN",
+      "witness_role": "preserved-parallel-witness",
+      "chapter_count": 12,
+      "verse_count": 416,
+      "metadata_git_blob_sha1": "7de2ffa4519d72cb63a4dbd316bf8c7046047f94",
+      "metadata_sha256": "8d52f936c15c13f226ab6665d6b9ce991bed93fde71831e7c4ef931770f9a290",
+      "text_git_blob_sha1": "b76058d168bee73b68d1eaea1272475e6b7143a1",
+      "text_sha256": "fa8160a315688cd94c30f534de26b9ec6250d4c41ab2059eafff3e43a5a6a465"
+    },
+    {
+      "witness_id": "DAN-TH-SWETE",
+      "canonical_scope": "DAN",
+      "witness_role": "primary-catholic-integration",
+      "chapter_count": 12,
+      "verse_count": 412,
+      "metadata_git_blob_sha1": "30650d8b3a74308622c9815f4413b4786c90eb4d",
+      "metadata_sha256": "545d1cbbfd4268fb962f353bf0792657b196112386e9dfb288b21931df55ca73",
+      "text_git_blob_sha1": "4341bb3d7b1ab572477cc39f43c1d6f7cada094a",
+      "text_sha256": "7a2f052ef94ce28968f978a13c35f3199ce4a9e5adfbf32fce36d5a76002621c"
+    },
+    {
+      "witness_id": "BEL-OG-SWETE",
+      "canonical_scope": "DAN",
+      "witness_role": "preserved-parallel-witness",
+      "chapter_count": 1,
+      "verse_count": 35,
+      "metadata_git_blob_sha1": "64c201e0a741aa825004b07c6d36095f86bea478",
+      "metadata_sha256": "aa729f08ed14d2e3b9c04a637225bd655502509c37f8772ff688a277bbb0ea74",
+      "text_git_blob_sha1": "b1a876e0e684f9cb6b82de5a41725e428a22a63d",
+      "text_sha256": "dd29011364fb416457382406c463a21a43a26ca692c480668a2423e94f7d5e35"
+    },
+    {
+      "witness_id": "BEL-TH-SWETE",
+      "canonical_scope": "DAN",
+      "witness_role": "primary-catholic-integration",
+      "chapter_count": 1,
+      "verse_count": 36,
+      "metadata_git_blob_sha1": "1712fd35cb76e3af9c1b0ab953816ceede35e3d6",
+      "metadata_sha256": "dfbbcb211a43e11d1b302b15bd40c9b98b4ed91ba87cd49447daa9cdd36568aa",
+      "text_git_blob_sha1": "ae4fa8f3e19bcd21dc57c230f4cee0cc69cf5c78",
+      "text_sha256": "2af9b536e2cf12e1f6bc52a6ceae10f02e7c75290d4f35623f40c35bc78a8453"
+    }
+  ]
+}
