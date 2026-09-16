@@ -3,7 +3,7 @@
   "phase": "Old Testament Expansion Phase 1B source inventory gate",
   "production_enabled": false,
   "production_import_allowed": false,
-  "status": "validated-awaiting-owner-acceptance",
+  "status": "accepted-production-integration-authorized",
   "source": {
     "id": "first1kgreek-swete",
     "title": "Swete Septuagint witnesses in OpenGreekAndLatin First1KGreek",
@@ -45,7 +45,8 @@
     "versification_mapping_complete": true,
     "sharealike_isolation_validated": true,
     "deterministic_ci_import_validated": true,
-    "owner_accepted": false
+    "owner_accepted": true,
+    "owner_acceptance_merge_commit": "22ad0019355d6924592d3c6b5176624e6fd4c866"
   },
   "phase1b_evidence": {
     "source_lock": "cloud-backend/app/logos_interlinear/old_testament_phase1b/source-lock.json",
@@ -54,5 +55,5 @@
     "source_verse_record_count": 5337,
     "generated_output_policy": "temporary CI evidence only"
   },
-  "policy": "Phase 1B source inventory, versification, rights isolation, and deterministic validation evidence are complete. Serving stays disabled until project-owner acceptance and a separate production-integration change explicitly enables it."
+  "policy": "Phase 1B source inventory, versification, rights isolation, deterministic validation evidence, and project-owner acceptance are complete. The Phase 1B evidence itself remains validation-only; production serving is allowed only through a separate package that preserves the accepted mapping and CC BY-SA isolation."
 }
