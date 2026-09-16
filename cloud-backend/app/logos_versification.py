@@ -127,3 +127,61 @@ def canonical_segments(book_id: str, lane: str, canonical_chapter: int | str) ->
         if str(chapter.get("canonical_chapter")) == wanted:
             return list(chapter.get("segments") or [])
     return []
+
+
+def canonical_source_map(book_id: str, lane: str, canonical_chapter: int | str) -> dict[str, Any]:
+    """Return an explicit canonical-verse -> source-ref map for safe generic relationships.
+
+    This helper never edits source text and never guesses a mapping. Component/range mappings that
+    cannot be represented without a specialized adapter are deliberately reported unsupported.
+    """
+    status = mapping_status(book_id, lane, canonical_chapter)
+    if status.get("status") != "verified-map":
+        return {"supported": False, "reason": "verified-map-required", "status": status, "verses": {}}
+
+    verses: dict[str, dict[str, Any]] = {}
+    for segment in canonical_segments(book_id, lane, canonical_chapter):
+        segment_id = str(segment.get("id") or "")
+        relationship = str(segment.get("relationship") or "")
+        canonical_refs = list(segment.get("canonical_refs") or [])
+        source_refs = list(segment.get("source_refs") or [])
+
+        pairs: list[tuple[dict[str, Any], list[dict[str, Any]]]] = []
+        if relationship in {"identity", "renumber", "offset"}:
+            if not canonical_refs or len(canonical_refs) != len(source_refs):
+                return {"supported": False, "reason": "invalid-one-to-one-segment", "segment_id": segment_id, "status": status, "verses": {}}
+            pairs = [(canonical, [source]) for canonical, source in zip(canonical_refs, source_refs)]
+        elif relationship == "split":
+            if len(canonical_refs) != 1 or not source_refs:
+                return {"supported": False, "reason": "split-requires-one-canonical-ref", "segment_id": segment_id, "status": status, "verses": {}}
+            pairs = [(canonical_refs[0], source_refs)]
+        elif relationship == "merge":
+            if not canonical_refs or len(source_refs) != 1:
+                return {"supported": False, "reason": "merge-requires-one-source-ref", "segment_id": segment_id, "status": status, "verses": {}}
+            pairs = [(canonical, source_refs) for canonical in canonical_refs]
+        elif relationship == "canonical-only":
+            pairs = [(canonical, []) for canonical in canonical_refs]
+        else:
+            return {"supported": False, "reason": f"specialized-adapter-required:{relationship}", "segment_id": segment_id, "status": status, "verses": {}}
+
+        for canonical, sources in pairs:
+            if str(canonical.get("chapter")) != str(canonical_chapter):
+                return {"supported": False, "reason": "cross-chapter-canonical-segment", "segment_id": segment_id, "status": status, "verses": {}}
+            verse = str(canonical.get("verse") or "")
+            if not verse or verse in verses:
+                return {"supported": False, "reason": "duplicate-or-empty-canonical-verse", "segment_id": segment_id, "status": status, "verses": {}}
+            verses[verse] = {
+                "segment_id": segment_id,
+                "relationship": relationship,
+                "source_refs": [
+                    {"chapter": str(source.get("chapter")), "verse": str(source.get("verse"))}
+                    for source in sources
+                ],
+            }
+
+    return {
+        "supported": bool(verses),
+        "reason": None if verses else "no-mapped-verses",
+        "status": status,
+        "verses": verses,
+    }
