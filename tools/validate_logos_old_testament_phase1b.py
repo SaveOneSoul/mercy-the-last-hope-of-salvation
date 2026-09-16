@@ -20,6 +20,7 @@ HEX64 = re.compile(r"^[0-9a-f]{64}$")
 SOURCE_COMMIT = "8ee111eb44ecef4120c844e10749178d95d1f30c"
 SOURCE_TREE = "e1fe137e1409d0a73a52ddac6ba9669fcbc3ba79"
 ISOLATED_ROOT = "sharealike/first1kgreek_swete_cc-by-sa-4.0"
+EXPECTED_TOTAL_VERSES = 5337
 EXPECTED_IDS = [
     "EST-SWETE", "JDT-SWETE", "TOB-SWETE", "1MA-SWETE", "2MA-SWETE",
     "WIS-SWETE", "SIR-SWETE", "BAR-SWETE", "EPJ-SWETE",
@@ -113,14 +114,16 @@ def validate_static() -> None:
     need(daniel.get("primary_integration_witness") == "Theodotion" and daniel.get("parallel_witness") == "Old Greek", "Daniel witness policy changed")
     primary = {str(x.get("witness_id")): x for x in daniel.get("primary_segments") or []}
     need(primary.get("DAN-TH-SWETE", {}).get("canonical_locus") == "DAN 3:24-90", "Daniel 3 Greek addition map missing")
-    need(primary.get("SUS-TH-SWETE", {}).get("canonical_locus") == "DAN 13:1-n", "Susanna map missing")
-    need(primary.get("BEL-TH-SWETE", {}).get("canonical_locus") == "DAN 14:1-n", "Bel map missing")
+    need(primary.get("SUS-TH-SWETE", {}).get("source_locus") == "Susanna 1-64", "Susanna source range changed")
+    need(primary.get("SUS-TH-SWETE", {}).get("canonical_locus") == "DAN 13:1-64", "Susanna map missing")
+    need(primary.get("BEL-TH-SWETE", {}).get("source_locus") == "Bel and the Dragon 1:1-36", "Bel source range changed")
+    need(primary.get("BEL-TH-SWETE", {}).get("canonical_locus") == "DAN 14:1-42", "Bel Catholic range map missing")
+    need(primary.get("BEL-TH-SWETE", {}).get("mapping") == "component-range-no-forced-verse-split", "Bel must preserve its source/Douay verse-boundary difference")
     parallel = {str(x.get("witness_id")): x for x in daniel.get("parallel_segments") or []}
     need(set(parallel) == PARALLEL_IDS and all(x.get("canonical_replacement") is False for x in parallel.values()), "Old Greek parallel-witness preservation changed")
 
-    # The previous Phase 1A gate may record completed Phase 1B evidence, but production must stay blocked.
+    # The Phase 1A gate and central registry remain production-blocked until exact-head owner acceptance.
     need(gate.get("production_enabled") is False and gate.get("production_import_allowed") is False, "Phase 1B source gate must not enable production")
-
     first1k = next((x for x in sources.get("sources") or [] if x.get("id") == "first1kgreek-swete"), None)
     need(first1k is not None, "First1KGreek source registry entry missing")
     need(first1k.get("production_import_allowed") is False, "central source registry must remain blocked until owner acceptance")
@@ -158,6 +161,7 @@ def validate_generated(root: Path) -> None:
     manifest = load(isolated / "manifest.json")
     need(manifest.get("production_enabled") is False and manifest.get("production_import_allowed") is False, "generated Phase 1B corpus must remain disabled")
     need(manifest.get("witness_count") == 15, "generated witness count must be 15")
+    need(manifest.get("verse_record_count") == EXPECTED_TOTAL_VERSES, f"generated source verse total changed: expected {EXPECTED_TOTAL_VERSES}, got {manifest.get('verse_record_count')}")
     source = manifest.get("source") or {}
     need(source.get("commit") == SOURCE_COMMIT and source.get("septuagint_tree_sha") == SOURCE_TREE, "generated immutable source pin mismatch")
     need(source.get("license") == "CC BY-SA 4.0" and source.get("share_alike") is True and source.get("isolation_required") is True, "generated ShareAlike boundary missing")
@@ -191,16 +195,17 @@ def validate_generated(root: Path) -> None:
         need(all(str(row.get("surface") or "").strip() for row in verses), f"{wid}: empty source surface")
         scan_forbidden(payload.get("verses") or [], wid)
         total += len(verses)
-    need(total == manifest.get("verse_record_count"), "manifest/source verse totals disagree")
+    need(total == EXPECTED_TOTAL_VERSES == manifest.get("verse_record_count"), "manifest/source verse totals disagree")
 
     epj = load(witness_path(root, "EPJ-SWETE"))
-    need(has_verse_number(epj, "1") and has_verse_number(epj, "72"), "Epistle of Jeremiah expected source range 1-72 not found")
+    need(len(epj.get("verses") or []) == 72 and has_verse_number(epj, "1") and has_verse_number(epj, "72"), "Epistle of Jeremiah expected source range 1-72 not found")
     dan = load(witness_path(root, "DAN-TH-SWETE"))
     need(has_ref(dan, "3", "24") and has_ref(dan, "3", "90"), "Theodotion Daniel 3:24-90 evidence missing")
     sus = load(witness_path(root, "SUS-TH-SWETE"))
-    need(has_verse_number(sus, "1") and has_verse_number(sus, "64"), "Theodotion Susanna expected 1-64 range missing")
+    need(len(sus.get("verses") or []) == 64 and has_verse_number(sus, "1") and has_verse_number(sus, "64"), "Theodotion Susanna expected source range 1-64 missing")
     bel = load(witness_path(root, "BEL-TH-SWETE"))
-    need(has_verse_number(bel, "1") and has_verse_number(bel, "42"), "Theodotion Bel expected 1-42 range missing")
+    need(len(bel.get("verses") or []) == 36 and has_ref(bel, "1", "1") and has_ref(bel, "1", "36"), "Theodotion Bel expected pinned Swete source range 1:1-36 missing")
+    need(not has_verse_number(bel, "42"), "Theodotion Bel source must not fabricate Douay-Rheims verse 42")
     est = load(witness_path(root, "EST-SWETE"))
     need(has_ref(est, "prologue", "1") and has_ref(est, "prologue", "17"), "Greek Esther prologue Addition A evidence missing")
 
