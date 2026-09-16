@@ -12,10 +12,14 @@ on:
       - 'scripts/vendor_old_testament_phase1b.py'
       - 'scripts/vendor_old_testament_greek_production.py'
       - 'scripts/vendor_old_testament_semitic_production.py'
+      - 'scripts/vendor_old_testament_septuagint_full.py'
+      - 'scripts/vendor_vulgate_production.py'
       - 'cloud-backend/app/logos_interlinear/**'
       - 'cloud-backend/app/logos_greek.py'
       - 'cloud-backend/app/logos_ot_greek.py'
       - 'cloud-backend/app/logos_ot_semitic.py'
+      - 'cloud-backend/app/logos_ot_septuagint.py'
+      - 'cloud-backend/app/logos_vulgate.py'
       - 'cloud-backend/app/logos_advanced.py'
       - 'tools/ci_sitecustomize/**'
       - 'tools/validate_logos.py'
@@ -27,6 +31,8 @@ on:
       - 'tools/validate_logos_old_testament_phase1b.py'
       - 'tools/validate_logos_old_testament_greek_production.py'
       - 'tools/validate_logos_old_testament_semitic_production.py'
+      - 'tools/validate_logos_old_testament_septuagint_full.py'
+      - 'tools/validate_logos_vulgate_production.py'
       - 'tools/validate_logos_ot_greek_runtime.py'
       - '.github/workflows/logos-corpus.yml'
   pull_request:
@@ -38,10 +44,14 @@ on:
       - 'scripts/vendor_old_testament_phase1b.py'
       - 'scripts/vendor_old_testament_greek_production.py'
       - 'scripts/vendor_old_testament_semitic_production.py'
+      - 'scripts/vendor_old_testament_septuagint_full.py'
+      - 'scripts/vendor_vulgate_production.py'
       - 'cloud-backend/app/logos_interlinear/**'
       - 'cloud-backend/app/logos_greek.py'
       - 'cloud-backend/app/logos_ot_greek.py'
       - 'cloud-backend/app/logos_ot_semitic.py'
+      - 'cloud-backend/app/logos_ot_septuagint.py'
+      - 'cloud-backend/app/logos_vulgate.py'
       - 'cloud-backend/app/logos_advanced.py'
       - 'tools/ci_sitecustomize/**'
       - 'tools/validate_logos.py'
@@ -53,6 +63,8 @@ on:
       - 'tools/validate_logos_old_testament_phase1b.py'
       - 'tools/validate_logos_old_testament_greek_production.py'
       - 'tools/validate_logos_old_testament_semitic_production.py'
+      - 'tools/validate_logos_old_testament_septuagint_full.py'
+      - 'tools/validate_logos_vulgate_production.py'
       - 'tools/validate_logos_ot_greek_runtime.py'
       - '.github/workflows/logos-corpus.yml'
 
@@ -115,7 +127,7 @@ jobs:
           python scripts/vendor_greek_nt_production.py --output "$out"
           python tools/validate_logos_greek_nt_production.py --root "$out"
 
-      - name: Build and validate OT Greek production package for PR
+      - name: Build and validate accepted OT Greek production package for PR
         if: github.event_name == 'pull_request'
         run: |
           out="${RUNNER_TEMP}/logos-ot-greek-production"
@@ -130,13 +142,27 @@ jobs:
           python scripts/vendor_old_testament_semitic_production.py --output "$out"
           python tools/validate_logos_old_testament_semitic_production.py --root "$out"
 
+      - name: Build and validate full protocanonical Septuagint production package for PR
+        if: github.event_name == 'pull_request'
+        run: |
+          out="${RUNNER_TEMP}/logos-ot-septuagint-production"
+          python scripts/vendor_old_testament_septuagint_full.py --output "$out"
+          python tools/validate_logos_old_testament_septuagint_full.py --root "$out"
+
+      - name: Build and validate Clementine Vulgate production package for PR
+        if: github.event_name == 'pull_request'
+        run: |
+          out="${RUNNER_TEMP}/logos-vulgate-production"
+          python scripts/vendor_vulgate_production.py --output "$out"
+          python tools/validate_logos_vulgate_production.py --root "$out"
+
       - name: Vendor Greek NT production package on main
         if: github.event_name != 'pull_request'
         run: |
           python scripts/vendor_greek_nt_production.py
           python tools/validate_logos_greek_nt_production.py
 
-      - name: Vendor OT Greek production package on main
+      - name: Vendor accepted OT Greek production package on main
         if: github.event_name != 'pull_request'
         run: |
           python scripts/vendor_old_testament_greek_production.py
@@ -148,6 +174,18 @@ jobs:
         run: |
           python scripts/vendor_old_testament_semitic_production.py
           python tools/validate_logos_old_testament_semitic_production.py
+
+      - name: Vendor full protocanonical Septuagint production package on main
+        if: github.event_name != 'pull_request'
+        run: |
+          python scripts/vendor_old_testament_septuagint_full.py
+          python tools/validate_logos_old_testament_septuagint_full.py
+
+      - name: Vendor Clementine Vulgate production package on main
+        if: github.event_name != 'pull_request'
+        run: |
+          python scripts/vendor_vulgate_production.py
+          python tools/validate_logos_vulgate_production.py
 
       - name: Vendor pinned Douay-Rheims 1899 corpus
         run: python scripts/vendor_douay_rheims.py
@@ -194,12 +232,14 @@ jobs:
           greek_nt_path='cloud-backend/app/logos_corpus/grc_sblgnt_morphgnt'
           greek_ot_path='cloud-backend/app/logos_corpus/grc_ot_catholic_swete'
           semitic_ot_path='cloud-backend/app/logos_corpus/heb_arc_oshb_wlc'
-          git add --all -- "$english_path" "$greek_nt_path" "$greek_ot_path" "$semitic_ot_path"
-          if git diff --cached --quiet -- "$english_path" "$greek_nt_path" "$greek_ot_path" "$semitic_ot_path"; then
+          septuagint_ot_path='cloud-backend/app/logos_corpus/grc_ot_swete_protocanonical'
+          vulgate_path='cloud-backend/app/logos_corpus/lat_clementine_vulgate'
+          git add --all -- "$english_path" "$greek_nt_path" "$greek_ot_path" "$semitic_ot_path" "$septuagint_ot_path" "$vulgate_path"
+          if git diff --cached --quiet -- "$english_path" "$greek_nt_path" "$greek_ot_path" "$semitic_ot_path" "$septuagint_ot_path" "$vulgate_path"; then
             echo "Corpora are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "data: vendor deterministic Logos English Greek and Semitic corpora"
+          git commit -m "data: vendor deterministic Logos English Greek Semitic and Latin corpora"
           git push origin HEAD:main
