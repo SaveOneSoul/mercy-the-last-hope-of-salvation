@@ -10,6 +10,8 @@ on:
       - 'cloud-backend/app/logos*.py'
       - 'tools/ci_sitecustomize/**'
       - 'tools/validate_logos*.py'
+      - 'tools/audit_logos*.py'
+      - 'LOGOS_INTERLINEAR_COVERAGE.md'
       - '.github/workflows/logos-corpus.yml'
   pull_request:
     paths:
@@ -18,6 +20,8 @@ on:
       - 'cloud-backend/app/logos*.py'
       - 'tools/ci_sitecustomize/**'
       - 'tools/validate_logos*.py'
+      - 'tools/audit_logos*.py'
+      - 'LOGOS_INTERLINEAR_COVERAGE.md'
       - '.github/workflows/logos-corpus.yml'
 
 permissions:
@@ -63,7 +67,8 @@ jobs:
             cloud-backend/app/logos_ot_semitic.py \
             cloud-backend/app/logos_ot_latin.py \
             cloud-backend/app/logos_ot_interlinear.py \
-            cloud-backend/app/logos_advanced.py
+            cloud-backend/app/logos_advanced.py \
+            tools/audit_logos_73_book_interlinear.py
 
       - name: Build and validate Greek NT Phase 1 corpus
         run: |
@@ -188,7 +193,35 @@ jobs:
           )
           PY
 
-      - name: Commit deterministic corpora
+      - name: Generate 73-book interlinear coverage audit for PR
+        if: github.event_name == 'pull_request'
+        run: |
+          audit="${RUNNER_TEMP}/logos-73-book-interlinear-audit"
+          mkdir -p "$audit"
+          python tools/audit_logos_73_book_interlinear.py \
+            --greek-nt-root "${RUNNER_TEMP}/logos-greek-nt-production" \
+            --greek-ot-accepted-root "${RUNNER_TEMP}/logos-ot-greek-production" \
+            --greek-ot-full-root "${RUNNER_TEMP}/logos-ot-greek-full" \
+            --semitic-root "${RUNNER_TEMP}/logos-ot-semitic-production" \
+            --latin-root "${RUNNER_TEMP}/logos-vulgate-clementine" \
+            --json-output "$audit/coverage-audit.json" \
+            --markdown-output "$audit/LOGOS_INTERLINEAR_COVERAGE.md"
+
+      - name: Upload 73-book interlinear coverage audit
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: logos-73-book-interlinear-coverage
+          path: |
+            ${{ runner.temp }}/logos-73-book-interlinear-audit/coverage-audit.json
+            ${{ runner.temp }}/logos-73-book-interlinear-audit/LOGOS_INTERLINEAR_COVERAGE.md
+          if-no-files-found: error
+
+      - name: Generate deterministic 73-book interlinear coverage audit on main
+        if: github.event_name != 'pull_request'
+        run: python tools/audit_logos_73_book_interlinear.py
+
+      - name: Commit deterministic corpora and coverage audit
         if: github.event_name != 'pull_request'
         run: |
           english_path='cloud-backend/app/logos_corpus/eng_douay_rheims_1899'
@@ -197,16 +230,20 @@ jobs:
           greek_ot_full_path='cloud-backend/app/logos_corpus/grc_ot_catholic_full'
           semitic_ot_path='cloud-backend/app/logos_corpus/heb_arc_oshb_wlc'
           latin_path='cloud-backend/app/logos_corpus/lat_vulgate_clementine'
+          audit_json='cloud-backend/app/logos_interlinear/coverage-audit.json'
+          audit_md='LOGOS_INTERLINEAR_COVERAGE.md'
           git add --all -- \
             "$english_path" "$greek_nt_path" "$greek_ot_path" \
-            "$greek_ot_full_path" "$semitic_ot_path" "$latin_path"
+            "$greek_ot_full_path" "$semitic_ot_path" "$latin_path" \
+            "$audit_json" "$audit_md"
           if git diff --cached --quiet -- \
             "$english_path" "$greek_nt_path" "$greek_ot_path" \
-            "$greek_ot_full_path" "$semitic_ot_path" "$latin_path"; then
-            echo "Corpora are already current."
+            "$greek_ot_full_path" "$semitic_ot_path" "$latin_path" \
+            "$audit_json" "$audit_md"; then
+            echo "Corpora and 73-book coverage audit are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "data: vendor deterministic Logos English Greek Semitic and Latin corpora"
+          git commit -m "data: vendor deterministic Logos corpora and 73-book coverage audit"
           git push origin HEAD:main
