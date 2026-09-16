@@ -3,10 +3,12 @@ from pydantic import BaseModel, Field
 
 from .logos import _client_key, _parse_corpus_reference, _passage, _passage_payload
 from .logos_context import ADVANCED_AI_THEMES, build_background, build_chronology, build_traditions
+from .logos_greek import router as logos_greek_router
 from .magisterium import CatholicChatIn, ask_magisterium
 
 
 router = APIRouter(prefix="/api/logos", tags=["Logos Advanced Study"])
+router.include_router(logos_greek_router)
 ADVANCED_THEME_MAP = {str(row["id"]): str(row["label"]) for row in ADVANCED_AI_THEMES}
 
 
