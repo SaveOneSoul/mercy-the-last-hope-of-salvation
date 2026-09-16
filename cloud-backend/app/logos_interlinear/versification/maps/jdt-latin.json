@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.17-jdt-latin-v1",
+  "book_id": "JDT",
+  "lane": "latin",
+  "status": "verified",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "vulgate-clementine",
+    "reference_system": "clementine-vulgate-chapter-verse"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "complete_for_audited_mismatches": true,
+    "audited_mismatch_chapters": ["4"]
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "4",
+      "segments": [
+        {
+          "id": "jdt-lat-4-identity-1-4",
+          "relationship": "identity",
+          "canonical_refs": [
+            {"chapter": "4", "verse": "1"},
+            {"chapter": "4", "verse": "2"},
+            {"chapter": "4", "verse": "3"},
+            {"chapter": "4", "verse": "4"}
+          ],
+          "source_refs": [
+            {"chapter": "4", "verse": "1"},
+            {"chapter": "4", "verse": "2"},
+            {"chapter": "4", "verse": "3"},
+            {"chapter": "4", "verse": "4"}
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims JDT 4:1-4 and pinned Clementine JDT 4:1-4 in the vendored production corpora.",
+            "note": "The first four verse boundaries are identical in both witnesses."
+          }
+        },
+        {
+          "id": "jdt-lat-4-douay-5-to-clementine-5-6",
+          "relationship": "split",
+          "canonical_refs": [
+            {"chapter": "4", "verse": "5"}
+          ],
+          "source_refs": [
+            {"chapter": "4", "verse": "5"},
+            {"chapter": "4", "verse": "6"}
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims JDT 4:5 compared directly with pinned Clementine JDT 4:5-6 in the vendored production corpora.",
+            "note": "Douay 4:5 contains both the Eliachim instruction introduction found in Clementine 4:5 and the mountain-pass instruction found in Clementine 4:6. The two Clementine source verse boundaries are preserved."
+          }
+        },
+        {
+          "id": "jdt-lat-4-offset-6-16-to-7-17",
+          "relationship": "offset",
+          "canonical_refs": [
+            {"chapter": "4", "verse": "6"},
+            {"chapter": "4", "verse": "7"},
+            {"chapter": "4", "verse": "8"},
+            {"chapter": "4", "verse": "9"},
+            {"chapter": "4", "verse": "10"},
+            {"chapter": "4", "verse": "11"},
+            {"chapter": "4", "verse": "12"},
+            {"chapter": "4", "verse": "13"},
+            {"chapter": "4", "verse": "14"},
+            {"chapter": "4", "verse": "15"},
+            {"chapter": "4", "verse": "16"}
+          ],
+          "source_refs": [
+            {"chapter": "4", "verse": "7"},
+            {"chapter": "4", "verse": "8"},
+            {"chapter": "4", "verse": "9"},
+            {"chapter": "4", "verse": "10"},
+            {"chapter": "4", "verse": "11"},
+            {"chapter": "4", "verse": "12"},
+            {"chapter": "4", "verse": "13"},
+            {"chapter": "4", "verse": "14"},
+            {"chapter": "4", "verse": "15"},
+            {"chapter": "4", "verse": "16"},
+            {"chapter": "4", "verse": "17"}
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims JDT 4:6-16 compared directly with pinned Clementine JDT 4:7-17 in the vendored production corpora.",
+            "note": "After the Douay 4:5 / Clementine 4:5-6 split, the remaining verse boundaries correspond in order with a +1 Clementine verse-number offset."
+          }
+        }
+      ]
+    }
+  ]
+}
