@@ -1,16 +1,12 @@
 #!/usr/bin/env python3
 """Build the validation-only 27-book Greek NT interlinear source layers.
 
-This importer deliberately keeps SBLGNT surface text (CC BY 4.0) separate from
-MorphGNT linguistic annotations (CC BY-SA 3.0). It verifies the immutable
-Git blob SHA-1 for every downloaded source file before parsing, requires
-word-for-word lexical alignment, and writes no production API data.
-
-Both source surfaces are preserved verbatim. Alignment compares the Greek
-lexical core only: known SBLGNT apparatus markers, Unicode punctuation, and
-the two source elision/apostrophe glyphs are excluded from the comparison.
-Greek letters and combining marks remain significant, so this rule cannot
-hide a lexical or diacritic difference.
+SBLGNT surface text (CC BY 4.0) and MorphGNT linguistic annotations
+(CC BY-SA 3.0) remain in separate output partitions. Every upstream file is
+verified by pinned Git blob SHA-1 before parsing. Source surfaces are preserved
+verbatim; comparison-only normalization removes presentation punctuation,
+known apparatus/elision marks, and case distinctions while preserving Greek
+letters and diacritics. Any remaining lexical difference fails the build.
 """
 
 from __future__ import annotations
@@ -78,9 +74,8 @@ def download_pinned(repo: str, commit: str, path: str, expected_blob_sha1: str) 
             break
         except (HTTPError, URLError, TimeoutError) as exc:
             last_error = exc
-            if attempt == 2:
-                break
-            time.sleep(2**attempt)
+            if attempt < 2:
+                time.sleep(2**attempt)
     if payload is None:
         raise BuildError(f"failed to download {repo}:{path}: {last_error}")
     actual_blob = git_blob_sha1(payload)
@@ -153,8 +148,9 @@ def parse_morphgnt(text: str, book_name: str) -> dict[tuple[int, int], list[dict
 
 
 def lexical_alignment_key(value: str) -> str:
-    """Return the preserved-letter Greek core used only to prove token alignment."""
-    normalized = unicodedata.normalize("NFC", value)
+    """Return a comparison-only Greek lexical core; source text is never changed."""
+    normalized = unicodedata.normalize("NFC", value).casefold()
+    normalized = unicodedata.normalize("NFC", normalized)
     chars: list[str] = []
     for char in normalized:
         if char in APPARATUS_MARKERS or char in ELISION_MARKERS:
@@ -190,8 +186,7 @@ def transliterate_greek(surface: str) -> str:
             continue
         if unicodedata.category(char).startswith("M"):
             continue
-        lower = char.lower()
-        mapped = GREEK_MAP.get(lower)
+        mapped = GREEK_MAP.get(char.lower())
         if mapped is None:
             continue
         if not base_seen:
@@ -200,10 +195,7 @@ def transliterate_greek(surface: str) -> str:
         out.append(mapped)
     result = "".join(out)
     if rough and result:
-        if result.startswith("r"):
-            result = "rh" + result[1:]
-        else:
-            result = "h" + result
+        result = ("rh" + result[1:]) if result.startswith("r") else ("h" + result)
     if first_base_upper and result:
         result = result[0].upper() + result[1:]
     return result
@@ -218,6 +210,18 @@ def write_json(path: Path, payload: dict) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def comparison_policy() -> dict:
+    return {
+        "unicode_normalization": "NFC",
+        "casefolded_for_comparison": True,
+        "ignored_apparatus_markers": sorted(APPARATUS_MARKERS),
+        "ignored_elision_markers": sorted(ELISION_MARKERS),
+        "ignored_unicode_categories": ["P*"],
+        "preserved_for_comparison": ["Greek letters", "combining marks"],
+        "source_surfaces_preserved": True,
+    }
+
+
 def build_book(book: dict, lock: dict, output: Path) -> dict:
     book_id = str(book["book_id"])
     book_name = str(book["name"])
@@ -225,16 +229,12 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
     morph_source = lock["sources"]["morphgnt"]
 
     sbl_text, sbl_sha256 = download_pinned(
-        sbl_source["repository"],
-        sbl_source["commit"],
-        book["sblgnt"]["path"],
-        book["sblgnt"]["blob_sha1"],
+        sbl_source["repository"], sbl_source["commit"],
+        book["sblgnt"]["path"], book["sblgnt"]["blob_sha1"],
     )
     morph_text, morph_sha256 = download_pinned(
-        morph_source["repository"],
-        morph_source["commit"],
-        book["morphgnt"]["path"],
-        book["morphgnt"]["blob_sha1"],
+        morph_source["repository"], morph_source["commit"],
+        book["morphgnt"]["path"], book["morphgnt"]["blob_sha1"],
     )
 
     sbl_verses = parse_sblgnt(sbl_text, book_name)
@@ -250,11 +250,8 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
     surface_chapters: dict[str, dict] = {}
     linguistic_chapters: dict[str, dict] = {}
     alignment_verses: list[dict] = []
-    token_total = 0
-    exact_token_total = 0
-    normalized_token_total = 0
-    exact_verse_total = 0
-    normalized_verse_total = 0
+    token_total = exact_token_total = normalized_token_total = 0
+    exact_verse_total = normalized_verse_total = 0
 
     for chapter, verse in sorted(sbl_verses):
         text = sbl_verses[(chapter, verse)]
@@ -266,28 +263,26 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
                 f"SBLGNT count={len(surfaces)}, MorphGNT count={len(morph_rows)}"
             )
 
-        surface_tokens = []
-        linguistic_tokens = []
-        ids = []
-        verse_exact = 0
-        verse_normalized = 0
+        surface_tokens: list[dict] = []
+        linguistic_tokens: list[dict] = []
+        ids: list[str] = []
+        verse_exact = verse_normalized = 0
+
         for position, (surface, morph_row) in enumerate(zip(surfaces, morph_rows), start=1):
             try:
                 alignment_mode = classify_surface_alignment(surface, morph_row["surface"])
             except BuildError as exc:
-                raise BuildError(
-                    f"{book_name} {chapter}:{verse} token {position}: {exc}"
-                ) from exc
+                raise BuildError(f"{book_name} {chapter}:{verse} token {position}: {exc}") from exc
             if alignment_mode == "exact":
                 verse_exact += 1
             else:
                 verse_normalized += 1
 
             current_id = token_id(book_id, chapter, verse, position)
-            ids.append(current_id)
             transliteration = transliterate_greek(surface)
             if not transliteration:
                 raise BuildError(f"{book_name} {chapter}:{verse} token {position}: transliteration is empty")
+            ids.append(current_id)
             surface_tokens.append(
                 {
                     "id": current_id,
@@ -330,6 +325,7 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
                 "lexical_mismatch_count": 0,
             }
         )
+
         token_total += len(ids)
         exact_token_total += verse_exact
         normalized_token_total += verse_normalized
@@ -410,14 +406,7 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
         "source_presentation_normalized_verse_count": normalized_verse_total,
         "lexical_mismatch_count": 0,
         "alignment_mismatch_count": 0,
-        "comparison_policy": {
-            "unicode_normalization": "NFC",
-            "ignored_apparatus_markers": sorted(APPARATUS_MARKERS),
-            "ignored_elision_markers": sorted(ELISION_MARKERS),
-            "ignored_unicode_categories": ["P*"],
-            "preserved_for_comparison": ["Greek letters", "combining marks"],
-            "source_surfaces_preserved": True,
-        },
+        "comparison_policy": comparison_policy(),
         "verses": alignment_verses,
     }
 
@@ -463,8 +452,7 @@ def validate_lock(lock: dict) -> None:
         raise BuildError(f"source lock must contain exactly 27 NT books, found {len(books)}")
     if [row.get("order") for row in books] != list(range(1, 28)):
         raise BuildError("source lock book order must be 1..27")
-    ids = [row.get("book_id") for row in books]
-    if len(set(ids)) != 27:
+    if len({row.get("book_id") for row in books}) != 27:
         raise BuildError("source lock book ids are not unique")
     sbl = lock.get("sources", {}).get("sblgnt", {})
     morph = lock.get("sources", {}).get("morphgnt", {})
@@ -479,11 +467,7 @@ def validate_lock(lock: dict) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
-    parser.add_argument(
-        "--keep-output",
-        action="store_true",
-        help="Do not remove an existing output directory before generation.",
-    )
+    parser.add_argument("--keep-output", action="store_true")
     args = parser.parse_args()
 
     lock = load_json(LOCK_PATH)
@@ -521,12 +505,7 @@ def main() -> int:
         "alignment_mismatch_count": sum(row["alignment_mismatch_count"] for row in book_stats),
         "alignment_policy": {
             "mode": "exact-or-lexical-core-with-source-presentation-ignored",
-            "unicode_normalization": "NFC",
-            "ignored_apparatus_markers": sorted(APPARATUS_MARKERS),
-            "ignored_elision_markers": sorted(ELISION_MARKERS),
-            "ignored_unicode_categories": ["P*"],
-            "preserved_for_comparison": ["Greek letters", "combining marks"],
-            "source_surfaces_preserved": True,
+            **comparison_policy(),
         },
         "source_commits": {
             "sblgnt": lock["sources"]["sblgnt"]["commit"],
