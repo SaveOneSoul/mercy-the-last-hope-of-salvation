@@ -29,7 +29,7 @@ def _greek_lane(reference: str) -> dict:
         return accepted
     full = _lane(_full_greek_payload, reference)
     if full["status"] == "available":
-        full["source_scope"] = "full-swete-protocanonical"
+        full["source_scope"] = "complete-protocanonical-greek-ot"
     return full
 
 
@@ -77,6 +77,8 @@ def catalog(response: Response):
                 "installed": bool(accepted_greek and full_greek),
                 "protocanonical_corpus_id": full_greek.get("corpus_id"),
                 "protocanonical_book_scope": full_greek.get("book_count", 0),
+                "first1k_swete_book_scope": full_greek.get("first1k_swete_book_scope_count", 0),
+                "ecclesiastes_fallback_book_scope": full_greek.get("ecclesiastes_fallback_book_scope_count", 0),
                 "deuterocanonical_corpus_id": accepted_greek.get("corpus_id"),
                 "accepted_witness_count": ((accepted_greek.get("phase1b_acceptance") or {}).get("witness_count", 0)),
                 "language": "grc",
