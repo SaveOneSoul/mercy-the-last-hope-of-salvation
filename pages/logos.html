@@ -28,10 +28,10 @@
 <section class="logos-shell" aria-label="Logos study workspace">
 <aside class="logos-sidebar">
 <h2>Passage</h2>
-<form id="logosReferenceForm" class="logos-reference-form" data-logos-reference-form><label for="logosReference">Bible reference</label><div class="logos-reference-row"><input id="logosReference" name="reference" value="John 1:1" autocomplete="off" spellcheck="false" aria-describedby="logosReferenceHelp"><button type="submit">Study</button></div><small id="logosReferenceHelp">The complete 73-book Douay-Rheims 1899 Catholic Bible is installed in English. For any New Testament reference, the Greek NT tab adds SBLGNT surface text, transliteration, lemma, part of speech and MorphGNT morphology. Examples: John 1:1, John 3:16-18, Romans 8:28, Tobit 4 or 2 Maccabees 7:9.</small></form>
-<div class="logos-quick"><button type="button" data-reference="John 1:1">John 1:1</button><button type="button" data-reference="John 3:16">John 3:16</button><button type="button" data-reference="Romans 8:28">Romans 8:28</button><button type="button" data-reference="2 Maccabees 7:9">2 Maccabees 7:9</button></div>
+<form id="logosReferenceForm" class="logos-reference-form" data-logos-reference-form><label for="logosReference">Bible reference</label><div class="logos-reference-row"><input id="logosReference" name="reference" value="John 1:1" autocomplete="off" spellcheck="false" aria-describedby="logosReferenceHelp"><button type="submit">Study</button></div><small id="logosReferenceHelp">The complete 73-book Douay-Rheims 1899 Catholic Bible is installed in English. The Interlinear tab automatically loads the production Greek NT layer for all 27 New Testament books: SBLGNT surface text, transliteration, lemma, part of speech and MorphGNT morphology. Examples: John 1:1, Luke 15:15, Romans 8:28, Tobit 4 or 2 Maccabees 7:9.</small></form>
+<div class="logos-quick"><button type="button" data-reference="John 1:1">John 1:1</button><button type="button" data-reference="Luke 15:15">Luke 15:15</button><button type="button" data-reference="Romans 8:28">Romans 8:28</button><button type="button" data-reference="2 Maccabees 7:9">2 Maccabees 7:9</button></div>
 <div class="logos-status" id="logosStatus" role="status" aria-live="polite">Connecting to Logos…</div>
-<div class="logos-policy"><strong>Source-rights gate</strong><p>The English Douay-Rheims 1899 corpus remains the primary Catholic Bible layer. The production Greek New Testament is a separate licensed study layer: SBLGNT surface text and transliteration remain distinct from MorphGNT lemma, POS and morphology. No English word-gloss layer is displayed until a separately approved source is licensed and source-locked.</p></div>
+<div class="logos-policy"><strong>Source-rights gate</strong><p>The English Douay-Rheims 1899 corpus remains the primary Catholic Bible layer. For New Testament references, Interlinear automatically adds the separate production Greek study layer: SBLGNT surface text and transliteration remain distinct from MorphGNT lemma, POS and morphology. No English word-gloss layer is displayed until a separately approved source is licensed and source-locked.</p></div>
 </aside>
 
 <div class="logos-workspace">
@@ -39,7 +39,6 @@
 
 <nav class="logos-tabs" aria-label="Logos study layers">
 <button class="active" type="button" data-logos-tab="interlinear">Interlinear</button>
-<button type="button" id="logosGreekNtTab" disabled>Greek NT</button>
 <button type="button" data-logos-tab="commentary">Catholic Exegesis</button>
 <button type="button" data-logos-tab="fathers">Fathers & Catena</button>
 <button type="button" data-logos-tab="background">Background & Audience</button>
@@ -57,12 +56,11 @@
 </div>
 </section>
 
-<section class="section logos-about"><div class="eyebrow">Catholic biblical method</div><h2>Literal sense, Tradition, history and comparative interpretation kept distinct</h2><div class="grid"><div class="card"><h3>Complete Catholic English canon</h3><p>The public-domain Douay-Rheims 1899 corpus provides all 73 Catholic books locally from a pinned, integrity-verified source and remains the primary Bible layer.</p></div><div class="card"><h3>Production Greek New Testament</h3><p>All 27 New Testament books can be studied with SBLGNT Greek surface text and transliteration plus MorphGNT lemma, POS and morphology, with source and licence partitions preserved.</p></div><div class="card"><h3>History, archives & archaeology</h3><p>Secular sources, royal annals, inscriptions, coins and archaeology are classified as direct attestation, synchronism, contextual evidence, disputed identification or reconstruction. They are never treated as automatic proof of theology.</p></div><div class="card"><h3>Commentary traditions</h3><p>Catholic, Jewish, Eastern Christian, Protestant/Evangelical and ecumenical scholarship can be compared while Catholic Magisterial teaching remains clearly identified and distinct.</p></div></div></section>
+<section class="section logos-about"><div class="eyebrow">Catholic biblical method</div><h2>Literal sense, Tradition, history and comparative interpretation kept distinct</h2><div class="grid"><div class="card"><h3>Complete Catholic English canon</h3><p>The public-domain Douay-Rheims 1899 corpus provides all 73 Catholic books locally from a pinned, integrity-verified source and remains the primary Bible layer.</p></div><div class="card"><h3>Production Greek New Testament</h3><p>All 27 New Testament books can be studied directly from the normal Interlinear tab with SBLGNT Greek surface text and transliteration plus MorphGNT lemma, POS and morphology, with source and licence partitions preserved.</p></div><div class="card"><h3>History, archives & archaeology</h3><p>Secular sources, royal annals, inscriptions, coins and archaeology are classified as direct attestation, synchronism, contextual evidence, disputed identification or reconstruction. They are never treated as automatic proof of theology.</p></div><div class="card"><h3>Commentary traditions</h3><p>Catholic, Jewish, Eastern Christian, Protestant/Evangelical and ecumenical scholarship can be compared while Catholic Magisterial teaching remains clearly identified and distinct.</p></div></div></section>
 </main>
 <footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Logos is the biblical-study section of the Mercy Catholic digital mission.</p></div><div><a href="logos.html">Logos</a><a href="catholic-ai.html">Catholic AI</a><a href="sources.html">Sources & editorial policy</a><a href="https://www.vatican.va/" target="_blank" rel="noopener">Holy See</a></div><p class="copyright">© <span data-year></span> Mercy – The Last Hope of Salvation.</p></footer>
 <script src="../javascript/mobile-nav.js?v=2"></script>
-<script src="../javascript/logos.js?v=3"></script>
-<script src="../javascript/logos-greek-integration.js?v=1"></script>
+<script src="../javascript/logos.js?v=4"></script>
 <script src="../javascript/mercy.js?v=12"></script>
 </body>
 </html>
