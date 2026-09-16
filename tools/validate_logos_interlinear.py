@@ -8,20 +8,15 @@ SOURCES_PATH = INTERLINEAR_DIR / "sources-manifest.json"
 BOOKS_PATH = INTERLINEAR_DIR / "books.json"
 TOKEN_SCHEMA_PATH = INTERLINEAR_DIR / "token.schema.json"
 PHASE1B_ACCEPTANCE_MERGE = "22ad0019355d6924592d3c6b5176624e6fd4c866"
+VULGATE_COMMIT = "f257a3559025c3f873b48a75019f53a9354ed7de"
+VULGATE_BLOB = "c0e65106383658fd914e90da4c82f2be48a0a762"
+VULGATE_RIGHTS_BLOB = "50caf5d5b86fb69471c1b849584cc476a7944df5"
 
 DEUTEROCANON = {
-    "Tobit",
-    "Judith",
-    "Wisdom",
-    "Sirach",
-    "Baruch",
-    "1 Maccabees",
-    "2 Maccabees",
+    "Tobit", "Judith", "Wisdom", "Sirach", "Baruch", "1 Maccabees", "2 Maccabees",
 }
 REQUIRED_DANIEL_ADDITIONS = {
-    "Prayer of Azariah and Song of the Three Young Men",
-    "Susanna",
-    "Bel and the Dragon",
+    "Prayer of Azariah and Song of the Three Young Men", "Susanna", "Bel and the Dragon",
 }
 
 
@@ -63,21 +58,8 @@ def main() -> int:
     token_schema = load_json(TOKEN_SCHEMA_PATH)
 
     required_token_fields = {
-        "id",
-        "book_id",
-        "chapter",
-        "verse",
-        "position",
-        "language",
-        "surface",
-        "normalized",
-        "lemma",
-        "transliteration",
-        "gloss",
-        "part_of_speech",
-        "morphology",
-        "text_source",
-        "linguistic_source",
+        "id", "book_id", "chapter", "verse", "position", "language", "surface", "normalized",
+        "lemma", "transliteration", "gloss", "part_of_speech", "morphology", "text_source", "linguistic_source",
     }
     if not required_token_fields.issubset(set(token_schema.get("required") or [])):
         fail("token schema is missing canonical required fields")
@@ -153,11 +135,9 @@ def main() -> int:
     esther_segments = {row.get("name") for row in profiles["esther-composite"].get("segments") or []}
     if "Greek additions to Esther" not in esther_segments:
         fail("Esther must explicitly map the Greek additions")
-
     daniel_segments = {row.get("name") for row in profiles["daniel-composite"].get("segments") or []}
     if not REQUIRED_DANIEL_ADDITIONS.issubset(daniel_segments):
         fail("Daniel must explicitly map all Catholic Greek additions")
-
     for book_id in {"TOB", "JDT", "WIS", "SIR", "BAR", "1MA", "2MA"}:
         if by_id[book_id]["profile"] != "greek-deuterocanonical":
             fail(f"{by_id[book_id]['name']} must use the Greek deuterocanonical profile")
@@ -174,11 +154,22 @@ def main() -> int:
         fail("LXX exact-head owner acceptance is missing or changed")
     integrity = lxx.get("integrity") or {}
     if integrity.get("status") != "verified-by-phase1b-source-lock" or integrity.get("witness_count") != 15 or integrity.get("source_verse_record_count") != 5337:
-        fail("LXX accepted source-inventory integrity evidence is incomplete")
+        fail("LXX accepted deuterocanonical source-inventory integrity evidence is incomplete")
+    full_scope = lxx.get("full_protocanonical_package") or {}
+    if full_scope.get("book_scope_count") != 39 or full_scope.get("tree_sha") != "e1fe137e1409d0a73a52ddac6ba9669fcbc3ba79":
+        fail("full protocanonical Swete package pin is missing")
 
     vulgate = source_index.get("vulgate-clementine") or {}
-    if vulgate.get("production_import_allowed") is not False:
-        fail("Clementine Vulgate must remain blocked until a specific digital source is pinned")
+    if vulgate.get("status") != "approved-for-production-ingestion" or vulgate.get("production_import_allowed") is not True:
+        fail("Clementine Vulgate must be approved for production ingestion")
+    if vulgate.get("rights") != "public-domain" or vulgate.get("license") != "Public Domain":
+        fail("Clementine Vulgate public-domain rights record is missing")
+    pin = vulgate.get("pin") or {}
+    if pin.get("type") != "git-commit" or pin.get("value") != VULGATE_COMMIT:
+        fail("Clementine Vulgate immutable source commit changed")
+    integrity = vulgate.get("integrity") or {}
+    if integrity.get("git_blob_sha1") != VULGATE_BLOB or integrity.get("rights_evidence_git_blob_sha1") != VULGATE_RIGHTS_BLOB:
+        fail("Clementine Vulgate source/rights blob evidence changed")
 
     print(
         "Logos interlinear validation passed: "
