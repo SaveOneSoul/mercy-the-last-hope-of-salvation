@@ -20,7 +20,7 @@ def main() -> None:
 
     require(page, 'data-logos-tab="interlinear"', "normal Interlinear tab")
     require(page, "logos.js?v=4", "cache-busted unified Logos script")
-    require(page, "logos-ot-unified-integration.js?v=2", "cache-busted unified OT integration script")
+    require(page, "logos-ot-unified-integration.js?v=3", "cache-busted unified OT recovery script")
     require(page, "logos-greek-integration.css?v=1", "interlinear stylesheet")
     require(page, "complete 73-book Douay-Rheims", "73-book English primary corpus wording")
     require(page, "unified Old Testament workspace", "unified OT workspace wording")
@@ -83,6 +83,18 @@ def main() -> None:
     require(ot_script, "mapping.exact_verse_alignment===true", "accepted deuterocanonical exact-mapping gate")
     require(ot_script, "No unavailable Greek linguistic annotation is invented", "OT Greek derived-layer boundary")
     require(ot_script, "No Latin lemma, morphology, gloss or transliteration is fabricated", "Latin derived-layer boundary")
+
+    # Regression gate for the chapter-level failure observed after the full OT corpora
+    # were deployed: the old logos.js renderer may briefly write its historical
+    # "corpus not installed" message. The unified script must detect that state,
+    # reacquire its catalog if necessary, and take ownership of the panel.
+    require(ot_script, "LEGACY_OT_WARNING='Original-language Old Testament corpus not installed yet'", "legacy OT warning detector")
+    require(ot_script, "function legacyFallbackVisible()", "legacy OT fallback detector")
+    require(ot_script, "function requestUnified(reference,force)", "unified OT recovery request")
+    require(ot_script, "if(legacyFallbackVisible())showUnifiedLoading()", "legacy warning replacement")
+    require(ot_script, "if(metadataInFlight)return metadataInFlight", "catalog retry de-duplication")
+    require(ot_script, "window.MercyLogosOT=", "explicit unified OT frontend ownership API")
+    require(ot_script, "observer.observe(tabPanel,{childList:true,subtree:true,characterData:true})", "legacy fallback mutation recovery")
 
     if "appendMappingCard('grc','Septuagint — Swete'" in ot_script:
         raise SystemExit("Mapping-required Greek lane must not mislabel Ecclesiastes as Swete")
