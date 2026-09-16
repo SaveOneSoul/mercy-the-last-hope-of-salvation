@@ -20,6 +20,6 @@ jobs:
       - name: Syntax-check unified Logos frontend
         run: |
           node --check javascript/logos.js
-          node --check javascript/logos-ot-greek-integration.js
-      - name: Validate Logos unified Interlinear + Greek NT + OT Greek integration
+          node --check javascript/logos-ot-unified-integration.js
+      - name: Validate Logos unified Interlinear + Greek NT + OT integration
         run: python tools/validate_logos_greek_frontend.py
