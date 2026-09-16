@@ -4,8 +4,8 @@
 The accepted grc_ot_catholic_swete package remains authoritative for the seven
 Catholic deuterocanonical books and the Greek additions to Esther and Daniel.
 This companion package installs the 39 protocanonical Catholic OT book scopes.
-Source verse boundaries are preserved and no versification remapping or
-linguistic annotation is fabricated.
+Source verse boundaries, including explicitly empty source verse divisions,
+are preserved. No versification remapping or linguistic annotation is fabricated.
 """
 from __future__ import annotations
 
@@ -191,14 +191,15 @@ def parse_tei(payload: bytes, edition_urn: str, book_id: str) -> list[dict]:
                 raise BuildError(f"{book_id}: duplicate source locus {chapter}:{verse}")
             seen.add(key)
             text = surface_text(node)
-            if not text:
-                raise BuildError(f"{book_id}: empty source surface at {chapter}:{verse}")
-            verses.append({
+            row = {
                 "source_chapter": chapter,
                 "source_verse": verse,
                 "source_reference": f"{chapter}:{verse}" if chapter is not None else verse,
                 "surface": text,
-            })
+            }
+            if not text:
+                row["source_empty_surface"] = True
+            verses.append(row)
             return
         for child in list(node):
             walk(child, chapter)
@@ -235,6 +236,7 @@ def build(output: Path) -> dict:
 
     cache: dict[str, tuple[list[dict], dict]] = {}
     stats: list[dict] = []
+    empty_loci: list[dict] = []
     total_verses = 0
     for book_id, canonical_name, work in WORKS:
         if work not in cache:
@@ -259,6 +261,8 @@ def build(output: Path) -> dict:
         verses, mapping = split_scope(book_id, source_verses)
         if not verses:
             raise BuildError(f"{book_id}: source split produced no verses")
+        book_empty = [v for v in verses if v.get("source_empty_surface") is True]
+        empty_loci.extend({"book_id": book_id, "source_reference": v.get("source_reference")} for v in book_empty)
         payload = {
             "schema_version": 1,
             "corpus_id": "grc_ot_swete_full",
@@ -280,6 +284,7 @@ def build(output: Path) -> dict:
             },
             "surface_policy": {
                 "source_boundaries_preserved": True,
+                "empty_source_divisions_preserved": True,
                 "unicode_normalization": "none",
                 "whitespace": "collapsed-layout-whitespace",
                 "excluded_editorial_tags": sorted(EXCLUDED_SURFACE_TAGS),
@@ -300,6 +305,7 @@ def build(output: Path) -> dict:
             "edition_urn": source_meta["edition_urn"],
             "chapter_count": len(chapters),
             "verse_count": len(verses),
+            "empty_source_surface_count": len(book_empty),
             "mapping": mapping,
             "text_git_blob_sha1": source_meta["text_git_blob_sha1"],
             "text_sha256": source_meta["text_sha256"],
@@ -316,6 +322,8 @@ def build(output: Path) -> dict:
         "scope": "39 protocanonical Catholic Old Testament book scopes from Swete; complements the accepted deuterocanonical/additions package",
         "book_count": 39,
         "verse_record_count": total_verses,
+        "empty_source_surface_count": len(empty_loci),
+        "empty_source_surfaces": empty_loci,
         "books": stats,
         "source": {
             "repository": REPOSITORY,
@@ -337,6 +345,7 @@ def build(output: Path) -> dict:
         "runtime_contract": {
             "local_only": True,
             "source_boundaries_preserved": True,
+            "empty_source_divisions_preserved": True,
             "automatic_versification_remapping": False,
             "exact_douay_rheims_alignment_required_before_parallel_render": True,
             "deuterocanonical_package": "grc_ot_catholic_swete",
@@ -359,7 +368,11 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
     manifest = build(args.output.resolve())
-    print(f"[OT Greek Full] vendored {manifest['book_count']} book scopes / {manifest['verse_record_count']} source verse records")
+    print(
+        f"[OT Greek Full] vendored {manifest['book_count']} book scopes / "
+        f"{manifest['verse_record_count']} source verse records / "
+        f"{manifest['empty_source_surface_count']} preserved empty source divisions"
+    )
     return 0
 
 
