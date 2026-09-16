@@ -12,6 +12,7 @@ on:
       - 'tools/validate_logos*.py'
       - 'tools/audit_logos*.py'
       - 'LOGOS_INTERLINEAR_COVERAGE.md'
+      - 'LOGOS_VERSIFICATION_RESOLUTION.md'
       - '.github/workflows/logos-corpus.yml'
   pull_request:
     paths:
@@ -22,6 +23,7 @@ on:
       - 'tools/validate_logos*.py'
       - 'tools/audit_logos*.py'
       - 'LOGOS_INTERLINEAR_COVERAGE.md'
+      - 'LOGOS_VERSIFICATION_RESOLUTION.md'
       - '.github/workflows/logos-corpus.yml'
 
 permissions:
@@ -57,6 +59,7 @@ jobs:
           python tools/validate_logos_greek_nt_phase1.py
           python tools/validate_logos_old_testament_phase1.py
           python tools/validate_logos_old_testament_phase1b.py
+          python tools/validate_logos_versification.py
 
       - name: Compile Logos runtime modules
         run: |
@@ -67,8 +70,11 @@ jobs:
             cloud-backend/app/logos_ot_semitic.py \
             cloud-backend/app/logos_ot_latin.py \
             cloud-backend/app/logos_ot_interlinear.py \
+            cloud-backend/app/logos_versification.py \
             cloud-backend/app/logos_advanced.py \
-            tools/audit_logos_73_book_interlinear.py
+            tools/audit_logos_73_book_interlinear.py \
+            tools/audit_logos_versification_resolution.py \
+            tools/validate_logos_versification.py
 
       - name: Build and validate Greek NT Phase 1 corpus
         run: |
@@ -207,6 +213,16 @@ jobs:
             --json-output "$audit/coverage-audit.json" \
             --markdown-output "$audit/LOGOS_INTERLINEAR_COVERAGE.md"
 
+      - name: Generate versification resolution audit for PR
+        if: github.event_name == 'pull_request'
+        run: |
+          audit="${RUNNER_TEMP}/logos-73-book-interlinear-audit"
+          python tools/validate_logos_versification.py
+          python tools/audit_logos_versification_resolution.py \
+            --coverage "$audit/coverage-audit.json" \
+            --json-output "$audit/versification-resolution.json" \
+            --markdown-output "$audit/LOGOS_VERSIFICATION_RESOLUTION.md"
+
       - name: Upload 73-book interlinear coverage audit
         if: github.event_name == 'pull_request'
         uses: actions/upload-artifact@v4
@@ -215,11 +231,19 @@ jobs:
           path: |
             ${{ runner.temp }}/logos-73-book-interlinear-audit/coverage-audit.json
             ${{ runner.temp }}/logos-73-book-interlinear-audit/LOGOS_INTERLINEAR_COVERAGE.md
+            ${{ runner.temp }}/logos-73-book-interlinear-audit/versification-resolution.json
+            ${{ runner.temp }}/logos-73-book-interlinear-audit/LOGOS_VERSIFICATION_RESOLUTION.md
           if-no-files-found: error
 
       - name: Generate deterministic 73-book interlinear coverage audit on main
         if: github.event_name != 'pull_request'
         run: python tools/audit_logos_73_book_interlinear.py
+
+      - name: Generate deterministic versification resolution audit on main
+        if: github.event_name != 'pull_request'
+        run: |
+          python tools/validate_logos_versification.py
+          python tools/audit_logos_versification_resolution.py
 
       - name: Commit deterministic corpora and coverage audit
         if: github.event_name != 'pull_request'
@@ -232,18 +256,20 @@ jobs:
           latin_path='cloud-backend/app/logos_corpus/lat_vulgate_clementine'
           audit_json='cloud-backend/app/logos_interlinear/coverage-audit.json'
           audit_md='LOGOS_INTERLINEAR_COVERAGE.md'
+          resolution_json='cloud-backend/app/logos_interlinear/versification/resolution-audit.json'
+          resolution_md='LOGOS_VERSIFICATION_RESOLUTION.md'
           git add --all -- \
             "$english_path" "$greek_nt_path" "$greek_ot_path" \
             "$greek_ot_full_path" "$semitic_ot_path" "$latin_path" \
-            "$audit_json" "$audit_md"
+            "$audit_json" "$audit_md" "$resolution_json" "$resolution_md"
           if git diff --cached --quiet -- \
             "$english_path" "$greek_nt_path" "$greek_ot_path" \
             "$greek_ot_full_path" "$semitic_ot_path" "$latin_path" \
-            "$audit_json" "$audit_md"; then
-            echo "Corpora and 73-book coverage audit are already current."
+            "$audit_json" "$audit_md" "$resolution_json" "$resolution_md"; then
+            echo "Corpora and Logos coverage/resolution audits are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "data: vendor deterministic Logos corpora and 73-book coverage audit"
+          git commit -m "data: vendor Logos corpora and coverage resolution audits"
           git push origin HEAD:main
