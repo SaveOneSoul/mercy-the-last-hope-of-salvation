@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "registry_version": "2026.09.17-v1",
+  "canonical_reference_system": "douay-rheims-1899",
+  "policy": {
+    "source_text_immutable": true,
+    "automatic_remapping_forbidden": true,
+    "verified_mapping_required_for_parallel_alignment": true,
+    "bidirectional_validation_required": true,
+    "fabricated_source_boundaries_forbidden": true
+  },
+  "allowed_relationships": [
+    "identity",
+    "renumber",
+    "offset",
+    "split",
+    "merge",
+    "range",
+    "component-range",
+    "source-only",
+    "canonical-only"
+  ],
+  "mappings": []
+}

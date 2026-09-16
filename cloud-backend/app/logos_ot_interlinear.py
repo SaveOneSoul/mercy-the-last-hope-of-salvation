@@ -5,6 +5,7 @@ from .logos_ot_greek import _ot_greek_manifest, _study_payload as _accepted_gree
 from .logos_ot_greek_full import _manifest as _full_greek_manifest, _study_payload as _full_greek_payload
 from .logos_ot_latin import _manifest as _latin_manifest, _study_payload as _latin_payload
 from .logos_ot_semitic import _ot_semitic_manifest, _study_payload as _semitic_payload
+from .logos_versification import mapping_status, registry_summary
 
 router = APIRouter(prefix="/ot-interlinear", tags=["Logos Unified Old Testament Interlinear"])
 
@@ -90,11 +91,13 @@ def catalog(response: Response):
                 "language": "la",
             },
         },
+        "versification_registry": registry_summary(),
         "alignment_policy": {
             "english_primary": True,
             "source_boundaries_preserved": True,
             "automatic_versification_remapping": False,
             "parallel_render_requires_verified_mapping": True,
+            "verified_registry_maps_are_applied_only_by_explicit_lane_adapters": True,
             "unavailable_linguistic_layers_are_never_fabricated": True,
         },
     }
@@ -104,7 +107,7 @@ def catalog(response: Response):
 def interlinear(reference: str = Query(min_length=2, max_length=120), response: Response = None):
     if response is not None:
         response.headers["Cache-Control"] = "public, max-age=300"
-    book_meta, _, _, _ = _parse_corpus_reference(reference)
+    book_meta, chapter, _, _ = _parse_corpus_reference(reference)
     if str(book_meta.get("testament")) != "OT":
         raise HTTPException(status_code=404, detail="logos_unified_interlinear_ot_reference_required")
 
@@ -113,10 +116,11 @@ def interlinear(reference: str = Query(min_length=2, max_length=120), response: 
     semitic = _lane(_semitic_payload, canonical_reference)
     greek = _greek_lane(canonical_reference)
     latin = _lane(_latin_payload, canonical_reference)
+    book_id = str(book_meta.get("id"))
     return {
         "reference": canonical_reference,
         "book": book_meta.get("name"),
-        "book_id": book_meta.get("id"),
+        "book_id": book_id,
         "testament": "OT",
         "lanes": {
             "english": english,
@@ -124,11 +128,17 @@ def interlinear(reference: str = Query(min_length=2, max_length=120), response: 
             "greek": greek,
             "latin": latin,
         },
+        "versification_registry": {
+            "semitic": mapping_status(book_id, "semitic", chapter),
+            "greek": mapping_status(book_id, "greek", chapter),
+            "latin": mapping_status(book_id, "latin", chapter),
+        },
         "alignment_policy": {
             "english_primary": True,
             "source_boundaries_preserved": True,
             "automatic_versification_remapping": False,
             "mapping_required_is_exposed_not_hidden": True,
+            "verified_registry_maps_are_applied_only_by_explicit_lane_adapters": True,
         },
-        "note": "This response unifies deterministic local Catholic OT source layers. A lane marked mapping-required is intentionally not rendered verse-for-verse until its source/Douay versification mapping is validated.",
+        "note": "This response unifies deterministic local Catholic OT source layers. A lane marked mapping-required remains blocked until an explicit, evidence-backed source/Douay mapping is both registry-verified and enabled by that lane's runtime adapter.",
     }
