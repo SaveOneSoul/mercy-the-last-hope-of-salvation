@@ -5,55 +5,19 @@ on:
   push:
     branches: [main]
     paths:
-      - 'scripts/vendor_douay_rheims.py'
-      - 'scripts/vendor_greek_nt_phase1.py'
-      - 'scripts/vendor_greek_nt_production.py'
-      - 'scripts/vendor_old_testament_phase1.py'
-      - 'scripts/vendor_old_testament_phase1b.py'
-      - 'scripts/vendor_old_testament_greek_production.py'
-      - 'scripts/vendor_old_testament_semitic_production.py'
+      - 'scripts/vendor_*.py'
       - 'cloud-backend/app/logos_interlinear/**'
-      - 'cloud-backend/app/logos_greek.py'
-      - 'cloud-backend/app/logos_ot_greek.py'
-      - 'cloud-backend/app/logos_ot_semitic.py'
-      - 'cloud-backend/app/logos_advanced.py'
+      - 'cloud-backend/app/logos*.py'
       - 'tools/ci_sitecustomize/**'
-      - 'tools/validate_logos.py'
-      - 'tools/validate_logos_interlinear.py'
-      - 'tools/validate_logos_interlinear_prototype.py'
-      - 'tools/validate_logos_greek_nt_phase1.py'
-      - 'tools/validate_logos_greek_nt_production.py'
-      - 'tools/validate_logos_old_testament_phase1.py'
-      - 'tools/validate_logos_old_testament_phase1b.py'
-      - 'tools/validate_logos_old_testament_greek_production.py'
-      - 'tools/validate_logos_old_testament_semitic_production.py'
-      - 'tools/validate_logos_ot_greek_runtime.py'
+      - 'tools/validate_logos*.py'
       - '.github/workflows/logos-corpus.yml'
   pull_request:
     paths:
-      - 'scripts/vendor_douay_rheims.py'
-      - 'scripts/vendor_greek_nt_phase1.py'
-      - 'scripts/vendor_greek_nt_production.py'
-      - 'scripts/vendor_old_testament_phase1.py'
-      - 'scripts/vendor_old_testament_phase1b.py'
-      - 'scripts/vendor_old_testament_greek_production.py'
-      - 'scripts/vendor_old_testament_semitic_production.py'
+      - 'scripts/vendor_*.py'
       - 'cloud-backend/app/logos_interlinear/**'
-      - 'cloud-backend/app/logos_greek.py'
-      - 'cloud-backend/app/logos_ot_greek.py'
-      - 'cloud-backend/app/logos_ot_semitic.py'
-      - 'cloud-backend/app/logos_advanced.py'
+      - 'cloud-backend/app/logos*.py'
       - 'tools/ci_sitecustomize/**'
-      - 'tools/validate_logos.py'
-      - 'tools/validate_logos_interlinear.py'
-      - 'tools/validate_logos_interlinear_prototype.py'
-      - 'tools/validate_logos_greek_nt_phase1.py'
-      - 'tools/validate_logos_greek_nt_production.py'
-      - 'tools/validate_logos_old_testament_phase1.py'
-      - 'tools/validate_logos_old_testament_phase1b.py'
-      - 'tools/validate_logos_old_testament_greek_production.py'
-      - 'tools/validate_logos_old_testament_semitic_production.py'
-      - 'tools/validate_logos_ot_greek_runtime.py'
+      - 'tools/validate_logos*.py'
       - '.github/workflows/logos-corpus.yml'
 
 permissions:
@@ -90,6 +54,17 @@ jobs:
           python tools/validate_logos_old_testament_phase1.py
           python tools/validate_logos_old_testament_phase1b.py
 
+      - name: Compile Logos runtime modules
+        run: |
+          python -m py_compile \
+            cloud-backend/app/logos_greek.py \
+            cloud-backend/app/logos_ot_greek.py \
+            cloud-backend/app/logos_ot_greek_full.py \
+            cloud-backend/app/logos_ot_semitic.py \
+            cloud-backend/app/logos_ot_latin.py \
+            cloud-backend/app/logos_ot_interlinear.py \
+            cloud-backend/app/logos_advanced.py
+
       - name: Build and validate Greek NT Phase 1 corpus
         run: |
           out="${RUNNER_TEMP}/logos-greek-nt-phase1"
@@ -115,13 +90,20 @@ jobs:
           python scripts/vendor_greek_nt_production.py --output "$out"
           python tools/validate_logos_greek_nt_production.py --root "$out"
 
-      - name: Build and validate OT Greek production package for PR
+      - name: Build and validate accepted OT Greek production package for PR
         if: github.event_name == 'pull_request'
         run: |
           out="${RUNNER_TEMP}/logos-ot-greek-production"
           python scripts/vendor_old_testament_greek_production.py --output "$out"
           python tools/validate_logos_old_testament_greek_production.py --root "$out"
           python tools/validate_logos_ot_greek_runtime.py --root "$out"
+
+      - name: Build and validate full Swete OT Greek package for PR
+        if: github.event_name == 'pull_request'
+        run: |
+          out="${RUNNER_TEMP}/logos-ot-greek-full"
+          python scripts/vendor_old_testament_greek_full.py --output "$out"
+          python tools/validate_logos_old_testament_greek_full.py --root "$out"
 
       - name: Build and validate OT Hebrew Aramaic production package for PR
         if: github.event_name == 'pull_request'
@@ -130,18 +112,31 @@ jobs:
           python scripts/vendor_old_testament_semitic_production.py --output "$out"
           python tools/validate_logos_old_testament_semitic_production.py --root "$out"
 
+      - name: Build and validate Clementine Vulgate package for PR
+        if: github.event_name == 'pull_request'
+        run: |
+          out="${RUNNER_TEMP}/logos-vulgate-clementine"
+          python scripts/vendor_vulgate_clementine.py --output "$out"
+          python tools/validate_logos_vulgate_clementine.py --root "$out"
+
       - name: Vendor Greek NT production package on main
         if: github.event_name != 'pull_request'
         run: |
           python scripts/vendor_greek_nt_production.py
           python tools/validate_logos_greek_nt_production.py
 
-      - name: Vendor OT Greek production package on main
+      - name: Vendor accepted OT Greek production package on main
         if: github.event_name != 'pull_request'
         run: |
           python scripts/vendor_old_testament_greek_production.py
           python tools/validate_logos_old_testament_greek_production.py
           python tools/validate_logos_ot_greek_runtime.py
+
+      - name: Vendor full Swete OT Greek package on main
+        if: github.event_name != 'pull_request'
+        run: |
+          python scripts/vendor_old_testament_greek_full.py
+          python tools/validate_logos_old_testament_greek_full.py
 
       - name: Vendor OT Hebrew Aramaic production package on main
         if: github.event_name != 'pull_request'
@@ -149,10 +144,16 @@ jobs:
           python scripts/vendor_old_testament_semitic_production.py
           python tools/validate_logos_old_testament_semitic_production.py
 
+      - name: Vendor Clementine Vulgate package on main
+        if: github.event_name != 'pull_request'
+        run: |
+          python scripts/vendor_vulgate_clementine.py
+          python tools/validate_logos_vulgate_clementine.py
+
       - name: Vendor pinned Douay-Rheims 1899 corpus
         run: python scripts/vendor_douay_rheims.py
 
-      - name: Verify generated 73-book corpus
+      - name: Verify generated 73-book English corpus
         run: |
           python - <<'PY'
           import json
@@ -193,13 +194,19 @@ jobs:
           english_path='cloud-backend/app/logos_corpus/eng_douay_rheims_1899'
           greek_nt_path='cloud-backend/app/logos_corpus/grc_sblgnt_morphgnt'
           greek_ot_path='cloud-backend/app/logos_corpus/grc_ot_catholic_swete'
+          greek_ot_full_path='cloud-backend/app/logos_corpus/grc_ot_swete_full'
           semitic_ot_path='cloud-backend/app/logos_corpus/heb_arc_oshb_wlc'
-          git add --all -- "$english_path" "$greek_nt_path" "$greek_ot_path" "$semitic_ot_path"
-          if git diff --cached --quiet -- "$english_path" "$greek_nt_path" "$greek_ot_path" "$semitic_ot_path"; then
+          latin_path='cloud-backend/app/logos_corpus/lat_vulgate_clementine'
+          git add --all -- \
+            "$english_path" "$greek_nt_path" "$greek_ot_path" \
+            "$greek_ot_full_path" "$semitic_ot_path" "$latin_path"
+          if git diff --cached --quiet -- \
+            "$english_path" "$greek_nt_path" "$greek_ot_path" \
+            "$greek_ot_full_path" "$semitic_ot_path" "$latin_path"; then
             echo "Corpora are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "data: vendor deterministic Logos English Greek and Semitic corpora"
+          git commit -m "data: vendor deterministic Logos English Greek Semitic and Latin corpora"
           git push origin HEAD:main
