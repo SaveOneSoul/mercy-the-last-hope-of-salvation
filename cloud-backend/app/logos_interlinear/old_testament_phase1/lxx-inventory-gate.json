@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "phase": "Old Testament Expansion Phase 1B source inventory gate",
+  "production_enabled": false,
+  "production_import_allowed": false,
+  "status": "blocked-pending-exact-catholic-book-mapping",
+  "source": {
+    "id": "first1kgreek-swete",
+    "title": "Swete Septuagint witnesses in OpenGreekAndLatin First1KGreek",
+    "repository": "OpenGreekAndLatin/First1KGreek",
+    "commit": "8ee111eb44ecef4120c844e10749178d95d1f30c",
+    "septuagint_path": "data/tlg0527",
+    "septuagint_tree_sha": "e1fe137e1409d0a73a52ddac6ba9669fcbc3ba79",
+    "license": "CC BY-SA 4.0",
+    "share_alike": true,
+    "isolation_required": true,
+    "cts_textgroup": "Septuaginta",
+    "attribution": "OpenGreekAndLatin First1KGreek / source-specific Henry Barclay Swete edition metadata"
+  },
+  "required_catholic_mapping_scope": [
+    "Tobit",
+    "Judith",
+    "Greek additions to Esther",
+    "1 Maccabees",
+    "2 Maccabees",
+    "Wisdom",
+    "Sirach",
+    "Baruch",
+    "Greek additions to Daniel"
+  ],
+  "gate_requirements": [
+    "Enumerate the exact Swete CTS work for every required Catholic canonical book or addition.",
+    "Pin every production XML file by path and Git blob SHA-1 at the locked commit.",
+    "Verify work-level metadata and edition identity instead of relying only on repository-level licensing.",
+    "Define explicit Catholic-to-source versification mappings, especially Esther and Daniel additions.",
+    "Keep CC BY-SA 4.0 material physically and logically separable from non-ShareAlike corpus partitions.",
+    "Validate the complete required Catholic Greek inventory before production_import_allowed may become true."
+  ],
+  "known_repository_evidence": {
+    "repository_license_verified": true,
+    "septuagint_textgroup_verified": true,
+    "swete_edition_files_discovered": true,
+    "exact_catholic_book_inventory_complete": false
+  },
+  "policy": "This file is a blocking gate, not a production source manifest. No Septuagint or deuterocanonical Greek text may be served from this candidate source until the exact work/file inventory, Catholic mapping, checksums and owner acceptance are complete."
+}
