@@ -32,6 +32,9 @@ def _manifest() -> dict:
     partition = payload.get("partition") or {}
     if partition.get("share_alike") is not True or partition.get("isolation_required") is not True:
         raise RuntimeError("Full Swete OT ShareAlike partition contract changed")
+    runtime = payload.get("runtime_contract") or {}
+    if runtime.get("source_boundaries_preserved") is not True or runtime.get("empty_source_divisions_preserved") is not True:
+        raise RuntimeError("Full Swete OT source-boundary preservation contract changed")
     return payload
 
 
@@ -50,6 +53,9 @@ def _book(book_id: str) -> dict:
         raise RuntimeError("Full Swete OT book rights/isolation contract changed")
     if (payload.get("source") or {}).get("per_file_license_verified") is not True:
         raise RuntimeError("Full Swete OT per-file licence gate missing")
+    surface_policy = payload.get("surface_policy") or {}
+    if surface_policy.get("source_boundaries_preserved") is not True or surface_policy.get("empty_source_divisions_preserved") is not True:
+        raise RuntimeError("Full Swete OT source-surface preservation metadata missing")
     return payload
 
 
@@ -118,8 +124,10 @@ def _chapter_identity(book_id: str, chapter: int, source_book: dict) -> dict:
         "source_chapter": _source_chapter_for(source_book, chapter),
         "source_verse_count": len(rows),
         "dra_verse_count": len(dra_chapter),
+        "empty_source_surface_count": sum(1 for row in rows if row.get("source_empty_surface") is True),
         "automatic_remapping": False,
         "source_boundary_preserved": True,
+        "empty_source_divisions_preserved": True,
     }
 
 
@@ -129,6 +137,7 @@ def _public_row(row: dict) -> dict:
         "source_verse": row.get("source_verse"),
         "source_reference": row.get("source_reference"),
         "surface": row.get("surface"),
+        "source_empty_surface": row.get("source_empty_surface") is True,
     }
 
 
@@ -192,7 +201,7 @@ def _study_payload(reference: str) -> dict:
         "verses": selected,
         "source": source_book.get("source") or {},
         "derived_layers": manifest.get("derived_layers") or {},
-        "note": "The Greek source surface is preserved from the pinned Swete witness. No LXX gloss, lemma, morphology, transliteration or verse remapping is fabricated.",
+        "note": "The Greek source surface and its verse divisions are preserved from the pinned Swete witness, including explicitly empty source divisions. No LXX gloss, lemma, morphology, transliteration or verse remapping is fabricated.",
     }
 
 
@@ -207,6 +216,7 @@ def catalog(response: Response):
         "corpus_version": manifest.get("corpus_version"),
         "book_count": manifest.get("book_count", 0),
         "verse_record_count": manifest.get("verse_record_count", 0),
+        "empty_source_surface_count": manifest.get("empty_source_surface_count", 0),
         "scope": manifest.get("scope"),
         "source": manifest.get("source") or {},
     }
@@ -225,6 +235,7 @@ def source_rights(response: Response):
         "partition": manifest.get("partition") or {},
         "runtime_contract": manifest.get("runtime_contract") or {},
         "derived_layers": manifest.get("derived_layers") or {},
+        "empty_source_surfaces": manifest.get("empty_source_surfaces") or [],
     }
 
 
