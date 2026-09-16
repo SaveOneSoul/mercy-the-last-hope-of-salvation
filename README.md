@@ -1,7 +1,10 @@
-# Mercy – The Last Hope of Salvation
+# Source Repository — Save One Soul Catholic Mission
 
-A responsive, multi-page Catholic website designed to run immediately on **GitHub Pages**
-and later migrate to a professional cloud backend.
+> **Official public website:** https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/
+>
+> This GitHub repository contains the **source code** for **Save One Soul Catholic Mission — Mercy: The Last Hope of Salvation**. Visitors looking for the ministry, prayers, Divine Mercy resources, Logos biblical study, intentions, reflections and Catholic formation should use the official website above.
+
+A responsive, multi-page Catholic website deployed through **GitHub Pages** with a secure cloud backend for dynamic features.
 
 ## Included pages
 
