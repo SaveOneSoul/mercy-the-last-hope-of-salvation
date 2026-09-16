@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "foundation_version": "2026.09.14-logos-interlinear-foundation",
+  "foundation_version": "2026.09.16-logos-complete-ot-source-gates",
   "policy": {
     "canonical_data_format": "JSON",
     "primary_rendering": "HTML/CSS",
@@ -13,7 +13,8 @@
       "attribution_recorded"
     ],
     "pending_sources_must_not_render": true,
-    "share_alike_sources_must_remain_separable": true
+    "share_alike_sources_must_remain_separable": true,
+    "versification_policy": "Never manufacture verse equivalence. Parallel/interlinear rendering requires a validated mapping or exact chapter/verse identity."
   },
   "sources": [
     {
@@ -29,10 +30,7 @@
       "license": "Public Domain",
       "upstream_url": "https://ebible.org/details.php?all=1&id=engDRA",
       "local_manifest": "cloud-backend/app/logos_corpus/eng_douay_rheims_1899/manifest.json",
-      "pin": {
-        "type": "mirror-commit",
-        "value": "772e1ab2b13af88cde05237fb9a8218cee9261bb"
-      },
+      "pin": {"type": "mirror-commit", "value": "772e1ab2b13af88cde05237fb9a8218cee9261bb"},
       "integrity": {
         "git_blob_sha1": "b02336cd5db942f8ce6a2cede902f1b4d4927896",
         "sha256": "6e8ffab6dcdbbb11e881ec7bc2f518b11a86f3026b03acf7ec39dfc37ea37a12"
@@ -58,20 +56,14 @@
       "base_text_rights": "Westminster Leningrad Codex: public domain",
       "upstream_repository": "https://github.com/openscriptures/morphhb",
       "license_url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/LICENSE.md",
-      "pin": {
-        "type": "git-commit",
-        "value": "3d15126fb1ef74867fc1434be1942e837932691f"
-      },
-      "integrity": {
-        "status": "required-at-vendor-time",
-        "sha256": null
-      },
+      "pin": {"type": "git-commit", "value": "3d15126fb1ef74867fc1434be1942e837932691f"},
+      "integrity": {"status": "required-at-vendor-time", "sha256": null},
       "attribution": "Original work of the Open Scriptures Hebrew Bible available at https://github.com/openscriptures/morphhb",
       "commercial_use": true,
       "modification_allowed": true,
       "share_alike": false,
       "isolation_required": false,
-      "notes": "Importer must checksum the exact vendored files at the pinned commit before committing generated corpus data."
+      "notes": "Importer checksums the exact vendored files at the pinned commit before committing generated corpus data."
     },
     {
       "id": "sblgnt",
@@ -87,14 +79,8 @@
       "upstream_repository": "https://github.com/Faithlife/SBLGNT",
       "license_url": "https://github.com/Faithlife/SBLGNT/blob/c4d241a9c1c479a55b989ba35a4976c1d0b8052c/LICENSE",
       "version": "v1.2",
-      "pin": {
-        "type": "git-commit",
-        "value": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c"
-      },
-      "integrity": {
-        "status": "required-at-vendor-time",
-        "sha256": null
-      },
+      "pin": {"type": "git-commit", "value": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c"},
+      "integrity": {"status": "required-at-vendor-time", "sha256": null},
       "attribution": "SBL Greek New Testament. Copyright 2010 Society of Biblical Literature and Logos Bible Software. Licensed CC BY 4.0.",
       "commercial_use": true,
       "modification_allowed": true,
@@ -116,22 +102,14 @@
       "license": "CC BY 4.0",
       "upstream_repository": "https://github.com/STEPBible/STEPBible-Data",
       "license_url": "https://github.com/STEPBible/STEPBible-Data/blob/ae39711d7843b2902d54993e432de9c12d6a4b9a/README.md",
-      "pin": {
-        "type": "git-commit",
-        "value": "ae39711d7843b2902d54993e432de9c12d6a4b9a"
-      },
-      "integrity": {
-        "status": "required-at-vendor-time",
-        "sha256": null
-      },
+      "pin": {"type": "git-commit", "value": "ae39711d7843b2902d54993e432de9c12d6a4b9a"},
+      "integrity": {"status": "required-at-vendor-time", "sha256": null},
       "attribution": "STEP Bible — https://www.STEPBible.org",
       "commercial_use": true,
       "modification_allowed": true,
       "share_alike": false,
       "isolation_required": false,
-      "excluded_datasets": {
-        "TAGOT": "Upstream README currently lists TAGOT as a dataset still being finished/checked; it is not an approved production LXX source."
-      },
+      "excluded_datasets": {"TAGOT": "Upstream README currently lists TAGOT as a dataset still being finished/checked; it is not an approved production LXX source."},
       "notes": "Record local modifications and preserve attribution. Only explicitly listed, presently published datasets are in scope."
     },
     {
@@ -147,16 +125,25 @@
       "license": "CC BY-SA 4.0",
       "upstream_repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
       "license_url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/8ee111eb44ecef4120c844e10749178d95d1f30c/license.md",
-      "pin": {
-        "type": "git-commit",
-        "value": "8ee111eb44ecef4120c844e10749178d95d1f30c"
-      },
+      "pin": {"type": "git-commit", "value": "8ee111eb44ecef4120c844e10749178d95d1f30c"},
       "integrity": {
         "status": "verified-by-phase1b-source-lock",
         "source_lock": "cloud-backend/app/logos_interlinear/old_testament_phase1b/source-lock.json",
         "witness_count": 15,
         "source_verse_record_count": 5337,
         "per_file_sha256_required_at_vendor_time": true
+      },
+      "full_protocanonical_package": {
+        "corpus_id": "grc_ot_swete_full",
+        "book_scope_count": 39,
+        "tree_sha": "e1fe137e1409d0a73a52ddac6ba9669fcbc3ba79",
+        "tree_path": "data/tlg0527",
+        "vendor_script": "scripts/vendor_old_testament_greek_full.py",
+        "validator": "tools/validate_logos_old_testament_greek_full.py",
+        "per_file_git_blob_and_sha256_required": true,
+        "share_alike_partition_required": true,
+        "automatic_versification_remapping": false,
+        "companion_deuterocanonical_corpus_id": "grc_ot_catholic_swete"
       },
       "owner_acceptance": {
         "phase": "Old Testament Expansion Phase 1B",
@@ -167,31 +154,37 @@
       "modification_allowed": true,
       "share_alike": true,
       "isolation_required": true,
-      "notes": "The exact 15-witness inventory, CTS editions, Git blob identities, per-file licence declarations, Catholic mapping contract, and deterministic 5,337-record validation build were accepted in OT Phase 1B. Production ingestion is allowed only through the isolated production packager and must preserve source verse boundaries and ShareAlike separation."
+      "notes": "The accepted Phase 1B deuterocanonical/additions package remains unchanged. The full protocanonical companion package uses the same immutable First1KGreek commit and pinned Septuagint tree, verifies CTS work/edition identity, per-file licence declarations, Git blob identity and SHA-256 at vendor time, and remains isolated under the ShareAlike partition."
     },
     {
       "id": "vulgate-clementine",
       "title": "Clementine Vulgate",
       "role": ["latin-scripture"],
       "language": "la",
-      "status": "pending-source-pin",
-      "production_import_allowed": false,
-      "license_verified": false,
-      "source_inventory_verified": false,
-      "rights": "public-domain-text-digital-transcription-unpinned",
-      "license": null,
-      "upstream_repository": null,
-      "pin": null,
+      "status": "approved-for-production-ingestion",
+      "production_import_allowed": true,
+      "license_verified": true,
+      "source_inventory_verified": true,
+      "rights": "public-domain",
+      "license": "Public Domain",
+      "upstream_repository": "https://github.com/seven1m/open-bibles",
+      "license_url": "https://github.com/seven1m/open-bibles/blob/f257a3559025c3f873b48a75019f53a9354ed7de/README.md",
+      "pin": {"type": "git-commit", "value": "f257a3559025c3f873b48a75019f53a9354ed7de"},
       "integrity": {
-        "status": "pending",
-        "sha256": null
+        "path": "lat-clementine.usfx.xml",
+        "git_blob_sha1": "c0e65106383658fd914e90da4c82f2be48a0a762",
+        "sha256": "required-at-vendor-time",
+        "rights_evidence_path": "README.md",
+        "rights_evidence_git_blob_sha1": "50caf5d5b86fb69471c1b849584cc476a7944df5",
+        "rights_evidence_sha256": "required-at-vendor-time"
       },
-      "attribution": null,
-      "commercial_use": null,
-      "modification_allowed": null,
+      "local_manifest": "cloud-backend/app/logos_corpus/lat_vulgate_clementine/manifest.json",
+      "attribution": "Clementine Latin Vulgate via seven1m/open-bibles public-domain corpus.",
+      "commercial_use": true,
+      "modification_allowed": true,
       "share_alike": false,
       "isolation_required": false,
-      "notes": "The historical text is treated as public-domain in the existing Logos seed, but production bulk import remains blocked until one specific reusable digital transcription, licence/provenance record and checksum are pinned."
+      "notes": "The historical Clementine text and the selected digital transcription are recorded as public domain by the pinned upstream README. The vendor verifies both source and rights-evidence Git blobs before building the local 73-book corpus."
     },
     {
       "id": "web-catholic",
@@ -206,10 +199,7 @@
       "license": null,
       "upstream_repository": null,
       "pin": null,
-      "integrity": {
-        "status": "pending",
-        "sha256": null
-      },
+      "integrity": {"status": "pending", "sha256": null},
       "attribution": null,
       "commercial_use": null,
       "modification_allowed": null,
