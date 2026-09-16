@@ -109,22 +109,64 @@ def _numeric_verse_set(chapter: dict) -> set[int] | None:
     return result
 
 
-def _chapter_identity(book_id: str, chapter: int, surface: dict) -> dict:
-    source_chapter = ((surface.get("chapters") or {}).get(str(chapter)))
+def _source_chapter_for_dra(book_id: str, chapter: int) -> tuple[int | None, str]:
+    """Return an explicitly reviewed source chapter for simple DRA/LXX-to-MT Psalm numbering.
+
+    Douay-Rheims Psalm numbering follows the Vulgate/Septuagint system.  For
+    simple whole-psalm shifts, map to the corresponding MT/WLC Psalm before the
+    existing exact verse-identity gate runs.  Split/combined psalms are blocked
+    until a segment-level map is reviewed; they are never silently concatenated.
+    """
+    if book_id != "PSA":
+        return chapter, "same-chapter-number"
+    if 1 <= chapter <= 8:
+        return chapter, "psalm-same-number"
+    if chapter == 9:
+        return None, "psalm-9-maps-to-mt-9-and-10-segment-map-required"
+    if 10 <= chapter <= 112:
+        return chapter + 1, "vulgate-lxx-psalm-number-plus-one-to-mt"
+    if chapter == 113:
+        return None, "psalm-113-maps-to-mt-114-and-115-segment-map-required"
+    if chapter in {114, 115}:
+        return None, "psalms-114-115-map-to-segments-of-mt-116-segment-map-required"
+    if 116 <= chapter <= 145:
+        return chapter + 1, "vulgate-lxx-psalm-number-plus-one-to-mt"
+    if chapter in {146, 147}:
+        return None, "psalms-146-147-map-to-segments-of-mt-147-segment-map-required"
+    if 148 <= chapter <= 150:
+        return chapter, "psalm-same-number"
+    return None, "psalm-outside-canonical-150"
+
+
+def _chapter_identity(book_id: str, dra_chapter_number: int, source_chapter_number: int | None, surface: dict, mapping_rule: str) -> dict:
+    if source_chapter_number is None:
+        return {
+            "exact": False,
+            "reason": mapping_rule,
+            "dra_chapter": dra_chapter_number,
+            "source_chapter": None,
+            "source_verse_count": 0,
+            "dra_verse_count": 0,
+        }
+    source_chapter = ((surface.get("chapters") or {}).get(str(source_chapter_number)))
     if not source_chapter:
         return {
             "exact": False,
             "reason": "source_chapter_missing_or_outside_masoretic_scope",
+            "dra_chapter": dra_chapter_number,
+            "source_chapter": source_chapter_number,
             "source_verse_count": 0,
             "dra_verse_count": 0,
         }
     dra_meta = _dra_book_meta(book_id)
     dra_book = _corpus_book(str(dra_meta.get("filename")))
-    dra_chapter = (dra_book.get("chapters") or {}).get(str(chapter))
+    dra_chapter = (dra_book.get("chapters") or {}).get(str(dra_chapter_number))
     if not dra_chapter:
         return {
             "exact": False,
             "reason": "dra_chapter_missing",
+            "dra_chapter": dra_chapter_number,
+            "source_chapter": source_chapter_number,
             "source_verse_count": len(source_chapter),
             "dra_verse_count": 0,
         }
@@ -134,6 +176,8 @@ def _chapter_identity(book_id: str, chapter: int, surface: dict) -> dict:
         return {
             "exact": False,
             "reason": "compound_or_nonnumeric_verse_ids_require_explicit_mapping",
+            "dra_chapter": dra_chapter_number,
+            "source_chapter": source_chapter_number,
             "source_verse_count": len(source_chapter),
             "dra_verse_count": len(dra_chapter),
         }
@@ -141,6 +185,9 @@ def _chapter_identity(book_id: str, chapter: int, surface: dict) -> dict:
     return {
         "exact": exact,
         "reason": "exact_chapter_verse_identity" if exact else "mt_dra_verse_identity_differs",
+        "mapping_rule": mapping_rule,
+        "dra_chapter": dra_chapter_number,
+        "source_chapter": source_chapter_number,
         "source_verse_count": len(source_set),
         "dra_verse_count": len(dra_set),
         "source_verse_min": min(source_set) if source_set else None,
@@ -192,7 +239,8 @@ def _study_payload(reference: str) -> dict:
 
     surface = _partition_book("surface", book_id)
     linguistics = _partition_book("linguistics", book_id)
-    identity = _chapter_identity(book_id, chapter, surface)
+    source_chapter_number, mapping_rule = _source_chapter_for_dra(book_id, chapter)
+    identity = _chapter_identity(book_id, chapter, source_chapter_number, surface, mapping_rule)
     if identity.get("exact") is not True:
         raise HTTPException(
             status_code=409,
@@ -200,12 +248,13 @@ def _study_payload(reference: str) -> dict:
                 "code": "logos_ot_semitic_versification_mapping_required",
                 "reference": _canonical_reference(str(book_meta.get("name")), chapter, verse_start, verse_end),
                 "alignment": identity,
-                "message": "This OSHB/WLC chapter is not served against Douay-Rheims until an explicit versification mapping is validated.",
+                "message": "This OSHB/WLC locus is not served against Douay-Rheims until its versification mapping is explicitly validated.",
             },
         )
 
-    source_chapter = (surface.get("chapters") or {}).get(str(chapter)) or {}
-    linguistic_chapter = (linguistics.get("chapters") or {}).get(str(chapter)) or {}
+    source_key = str(source_chapter_number)
+    source_chapter = (surface.get("chapters") or {}).get(source_key) or {}
+    linguistic_chapter = (linguistics.get("chapters") or {}).get(source_key) or {}
     if set(source_chapter) != set(linguistic_chapter):
         raise RuntimeError("OT Semitic chapter partition verse mismatch")
 
@@ -223,6 +272,8 @@ def _study_payload(reference: str) -> dict:
             raise HTTPException(status_code=404, detail="logos_ot_semitic_source_verse_not_found")
         combined = _combined_verse(source_chapter[key], linguistic_chapter[key])
         combined["verse"] = number
+        combined["source_chapter"] = source_chapter_number
+        combined["source_verse"] = number
         verses.append(combined)
         flat_tokens.extend(combined["tokens"])
         languages.update(str(x) for x in combined.get("languages") or [])
@@ -240,7 +291,7 @@ def _study_payload(reference: str) -> dict:
         "corpus_version": manifest.get("corpus_version"),
         "alignment": {
             **identity,
-            "mode": "exact-dra-source-chapter-verse-identity",
+            "mode": "explicit-canonical-chapter-map-plus-exact-verse-identity" if source_chapter_number != chapter else "exact-dra-source-chapter-verse-identity",
             "automatic_remapping": False,
         },
         "verses": verses,
@@ -250,7 +301,7 @@ def _study_payload(reference: str) -> dict:
         "partitions": manifest.get("partitions") or {},
         "note": (
             "Source Hebrew/Aramaic is preserved verbatim. Lemma and morphology come from the pinned OSHB annotations. "
-            "No gloss or transliteration is fabricated. Douay-Rheims alignment is exposed only for chapters whose numeric verse identities match exactly."
+            "No gloss or transliteration is fabricated. Douay-Rheims alignment is served only after an explicit chapter mapping (where needed) and exact numeric verse-identity verification."
         ),
     }
 
@@ -274,6 +325,7 @@ def logos_ot_semitic_catalog(response: Response):
         "aramaic_token_count": accepted.get("aramaic_token_count", 0),
         "alignment_mismatch_count": accepted.get("alignment_mismatch_count", 0),
         "production_enabled": manifest.get("production_enabled", False),
+        "psalm_versification_policy": "Simple whole-psalm Vulgate/LXX-to-MT shifts are explicitly mapped; split/combined psalms remain blocked pending segment-level maps.",
     }
 
 
@@ -291,6 +343,13 @@ def logos_ot_semitic_source_rights(response: Response):
         "runtime_contract": manifest.get("runtime_contract") or {},
         "serving_contract": manifest.get("serving_contract") or {},
         "catholic_scope": manifest.get("catholic_scope") or {},
+        "explicit_psalm_mapping": {
+            "simple_whole_psalm_shifts": True,
+            "dra_10_112_to_mt": "+1",
+            "dra_116_145_to_mt": "+1",
+            "same_number_ranges": ["1-8", "148-150"],
+            "blocked_segment_maps": [9, 113, 114, 115, 146, 147],
+        },
     }
 
 
