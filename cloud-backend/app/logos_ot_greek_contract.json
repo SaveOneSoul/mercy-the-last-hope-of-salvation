@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "milestone": "Old Testament Greek Production Integration",
+  "production_package": "cloud-backend/app/logos_corpus/grc_ot_catholic_swete",
+  "routes": [
+    "/api/logos/ot-greek/catalog",
+    "/api/logos/ot-greek/source-rights",
+    "/api/logos/ot-greek/interlinear"
+  ],
+  "frontend_integration": false,
+  "live_deployment_required_after_merge": true,
+  "accepted_phase1b_merge": "22ad0019355d6924592d3c6b5176624e6fd4c866"
+}
