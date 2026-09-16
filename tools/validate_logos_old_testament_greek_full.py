@@ -52,6 +52,8 @@ def main() -> int:
     runtime = manifest.get("runtime_contract") or {}
     if runtime.get("local_only") is not True or runtime.get("automatic_versification_remapping") is not False:
         fail("runtime safety contract changed")
+    if runtime.get("source_boundaries_preserved") is not True or runtime.get("empty_source_divisions_preserved") is not True:
+        fail("source-boundary preservation contract changed")
     if runtime.get("deuterocanonical_package") != "grc_ot_catholic_swete":
         fail("accepted deuterocanonical companion package contract changed")
     derived = manifest.get("derived_layers") or {}
@@ -66,7 +68,9 @@ def main() -> int:
     files = list(book_dir.glob("*.json"))
     if len(files) != 39:
         fail(f"expected 39 isolated Greek book files, found {len(files)}")
+
     total = 0
+    empty_loci: set[tuple[str, str]] = set()
     for book_id in sorted(EXPECTED_BOOKS):
         payload = load(book_dir / f"{book_id}.json")
         if payload.get("book_id") != book_id or payload.get("corpus_id") != "grc_ot_swete_full":
@@ -78,15 +82,38 @@ def main() -> int:
             fail(f"{book_id}: source pin changed")
         if source_row.get("per_file_license_verified") is not True or not source_row.get("text_sha256") or not source_row.get("text_git_blob_sha1"):
             fail(f"{book_id}: source integrity/licence evidence incomplete")
+        surface_policy = payload.get("surface_policy") or {}
+        if surface_policy.get("source_boundaries_preserved") is not True or surface_policy.get("empty_source_divisions_preserved") is not True:
+            fail(f"{book_id}: source-surface preservation policy changed")
         verses = payload.get("verses") or []
         if not verses:
             fail(f"{book_id}: no Greek source verses")
         for verse in verses:
-            if not str(verse.get("surface") or "").strip() or not str(verse.get("source_reference") or "").strip():
-                fail(f"{book_id}: empty source surface/reference")
+            source_reference = str(verse.get("source_reference") or "").strip()
+            if not source_reference:
+                fail(f"{book_id}: empty source reference")
+            surface = str(verse.get("surface") or "")
+            if surface:
+                if verse.get("source_empty_surface") is True:
+                    fail(f"{book_id} {source_reference}: non-empty surface incorrectly marked empty")
+            else:
+                if verse.get("source_empty_surface") is not True:
+                    fail(f"{book_id} {source_reference}: empty source division is not explicitly preserved")
+                empty_loci.add((book_id, source_reference))
         total += len(verses)
+
     if total != int(manifest.get("verse_record_count") or 0):
         fail("manifest verse total does not equal isolated source records")
+    if not empty_loci:
+        fail("known pinned Swete empty source verse divisions were not preserved")
+    if int(manifest.get("empty_source_surface_count") or 0) != len(empty_loci):
+        fail("manifest empty-source count does not equal preserved empty divisions")
+    manifest_empty = {
+        (str(row.get("book_id") or ""), str(row.get("source_reference") or ""))
+        for row in (manifest.get("empty_source_surfaces") or [])
+    }
+    if manifest_empty != empty_loci:
+        fail("manifest empty-source locus inventory changed")
 
     genesis = load(book_dir / "GEN.json")
     gen11 = [row for row in genesis.get("verses") or [] if row.get("source_chapter") == "1" and row.get("source_verse") == "1"]
@@ -99,7 +126,10 @@ def main() -> int:
     if (nehemiah.get("mapping") or {}).get("canonical_chapter_offset") != 10:
         fail("Nehemiah Esdras-B mapping changed")
 
-    print(f"Full Swete OT validation passed: 39 book scopes / {total} source verse records")
+    print(
+        f"Full Swete OT validation passed: 39 book scopes / {total} source verse records / "
+        f"{len(empty_loci)} preserved empty source divisions"
+    )
     return 0
 
 
