@@ -45,6 +45,7 @@ jobs:
           from app.logos_context import BOOK_PROFILES, RESEARCH_LIBRARIES
           from app.logos_greek import _greek_manifest
           from app.logos_ot_greek import _ot_greek_manifest
+          from app.logos_ot_semitic import _ot_semitic_manifest
           from app.models import CMSMedia, CMSPublication
           from app.prayer_network import (
               MassAssignment,
@@ -100,6 +101,9 @@ jobs:
               '/api/logos/ot-greek/catalog',
               '/api/logos/ot-greek/source-rights',
               '/api/logos/ot-greek/interlinear',
+              '/api/logos/ot-semitic/catalog',
+              '/api/logos/ot-semitic/source-rights',
+              '/api/logos/ot-semitic/interlinear',
               '/priest',
           ):
               assert required in paths, required
@@ -124,5 +128,14 @@ jobs:
               assert ot_greek['source']['license'] == 'CC BY-SA 4.0'
               assert ot_greek['partition']['share_alike'] is True
               assert ot_greek['mapping']['fabricate_verse_boundaries'] is False
-          print('Mercy backend CMS SEO + Logos English/Greek NT/Greek OT study + prayer/Mass/priest portal smoke test passed')
+          ot_semitic = _ot_semitic_manifest()
+          if ot_semitic:
+              assert ot_semitic['production_enabled'] is True
+              assert ot_semitic['phase1a_acceptance']['masoretic_book_witness_count'] == 39
+              assert ot_semitic['phase1a_acceptance']['verse_count'] == 23213
+              assert ot_semitic['phase1a_acceptance']['token_count'] == 305507
+              assert ot_semitic['source']['surface_rights'] == 'Public Domain'
+              assert ot_semitic['source']['linguistic_annotation_license'] == 'CC BY 4.0'
+              assert ot_semitic['versification']['automatic_remapping'] is False
+          print('Mercy backend CMS SEO + Logos English/Greek NT/Greek OT/Hebrew-Aramaic OT study + prayer/Mass/priest portal smoke test passed')
           PY

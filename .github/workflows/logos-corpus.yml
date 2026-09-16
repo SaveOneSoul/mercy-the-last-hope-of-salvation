@@ -11,10 +11,13 @@ on:
       - 'scripts/vendor_old_testament_phase1.py'
       - 'scripts/vendor_old_testament_phase1b.py'
       - 'scripts/vendor_old_testament_greek_production.py'
+      - 'scripts/vendor_old_testament_semitic_production.py'
       - 'cloud-backend/app/logos_interlinear/**'
       - 'cloud-backend/app/logos_greek.py'
       - 'cloud-backend/app/logos_ot_greek.py'
+      - 'cloud-backend/app/logos_ot_semitic.py'
       - 'cloud-backend/app/logos_advanced.py'
+      - 'tools/ci_sitecustomize/**'
       - 'tools/validate_logos.py'
       - 'tools/validate_logos_interlinear.py'
       - 'tools/validate_logos_interlinear_prototype.py'
@@ -23,6 +26,7 @@ on:
       - 'tools/validate_logos_old_testament_phase1.py'
       - 'tools/validate_logos_old_testament_phase1b.py'
       - 'tools/validate_logos_old_testament_greek_production.py'
+      - 'tools/validate_logos_old_testament_semitic_production.py'
       - 'tools/validate_logos_ot_greek_runtime.py'
       - '.github/workflows/logos-corpus.yml'
   pull_request:
@@ -33,10 +37,13 @@ on:
       - 'scripts/vendor_old_testament_phase1.py'
       - 'scripts/vendor_old_testament_phase1b.py'
       - 'scripts/vendor_old_testament_greek_production.py'
+      - 'scripts/vendor_old_testament_semitic_production.py'
       - 'cloud-backend/app/logos_interlinear/**'
       - 'cloud-backend/app/logos_greek.py'
       - 'cloud-backend/app/logos_ot_greek.py'
+      - 'cloud-backend/app/logos_ot_semitic.py'
       - 'cloud-backend/app/logos_advanced.py'
+      - 'tools/ci_sitecustomize/**'
       - 'tools/validate_logos.py'
       - 'tools/validate_logos_interlinear.py'
       - 'tools/validate_logos_interlinear_prototype.py'
@@ -45,6 +52,7 @@ on:
       - 'tools/validate_logos_old_testament_phase1.py'
       - 'tools/validate_logos_old_testament_phase1b.py'
       - 'tools/validate_logos_old_testament_greek_production.py'
+      - 'tools/validate_logos_old_testament_semitic_production.py'
       - 'tools/validate_logos_ot_greek_runtime.py'
       - '.github/workflows/logos-corpus.yml'
 
@@ -58,6 +66,9 @@ concurrency:
 jobs:
   vendor-corpus:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      PYTHONPATH: ${{ github.workspace }}/tools/ci_sitecustomize
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -112,6 +123,13 @@ jobs:
           python tools/validate_logos_old_testament_greek_production.py --root "$out"
           python tools/validate_logos_ot_greek_runtime.py --root "$out"
 
+      - name: Build and validate OT Hebrew Aramaic production package for PR
+        if: github.event_name == 'pull_request'
+        run: |
+          out="${RUNNER_TEMP}/logos-ot-semitic-production"
+          python scripts/vendor_old_testament_semitic_production.py --output "$out"
+          python tools/validate_logos_old_testament_semitic_production.py --root "$out"
+
       - name: Vendor Greek NT production package on main
         if: github.event_name != 'pull_request'
         run: |
@@ -124,6 +142,12 @@ jobs:
           python scripts/vendor_old_testament_greek_production.py
           python tools/validate_logos_old_testament_greek_production.py
           python tools/validate_logos_ot_greek_runtime.py
+
+      - name: Vendor OT Hebrew Aramaic production package on main
+        if: github.event_name != 'pull_request'
+        run: |
+          python scripts/vendor_old_testament_semitic_production.py
+          python tools/validate_logos_old_testament_semitic_production.py
 
       - name: Vendor pinned Douay-Rheims 1899 corpus
         run: python scripts/vendor_douay_rheims.py
@@ -169,12 +193,13 @@ jobs:
           english_path='cloud-backend/app/logos_corpus/eng_douay_rheims_1899'
           greek_nt_path='cloud-backend/app/logos_corpus/grc_sblgnt_morphgnt'
           greek_ot_path='cloud-backend/app/logos_corpus/grc_ot_catholic_swete'
-          git add --all -- "$english_path" "$greek_nt_path" "$greek_ot_path"
-          if git diff --cached --quiet -- "$english_path" "$greek_nt_path" "$greek_ot_path"; then
+          semitic_ot_path='cloud-backend/app/logos_corpus/heb_arc_oshb_wlc'
+          git add --all -- "$english_path" "$greek_nt_path" "$greek_ot_path" "$semitic_ot_path"
+          if git diff --cached --quiet -- "$english_path" "$greek_nt_path" "$greek_ot_path" "$semitic_ot_path"; then
             echo "Corpora are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "data: vendor deterministic Logos English and Greek corpora"
+          git commit -m "data: vendor deterministic Logos English Greek and Semitic corpora"
           git push origin HEAD:main
