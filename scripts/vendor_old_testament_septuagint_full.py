@@ -2,13 +2,14 @@
 """Build the production Swete Septuagint protocanonical OT expansion.
 
 This package complements, rather than replaces, the already accepted
-`grc_ot_catholic_swete` package.  Esther, Daniel and the deuterocanonical
-books/additions remain in that accepted package.  This script adds the other
+`grc_ot_catholic_swete` package. Esther, Daniel and the deuterocanonical
+books/additions remain in that accepted package. This script adds the other
 37 Catholic OT books from the same immutable First1KGreek/Swete source tree.
 
-Source Greek boundaries are preserved.  No gloss, lemma, morphology or
-transliteration is invented.  Runtime API serving remains gated by exact
-Douay-Rheims/source numeric chapter/verse identity.
+Source Greek boundaries are preserved. Empty TEI verse divs are retained as
+explicit source gaps rather than guessed from neighboring text. No gloss,
+lemma, morphology or transliteration is invented. Runtime API serving remains
+gated by exact Douay-Rheims/source numeric chapter/verse identity.
 """
 
 from __future__ import annotations
@@ -16,14 +17,17 @@ from __future__ import annotations
 import argparse
 import json
 import shutil
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 from vendor_old_testament_phase1b import (
     BuildError as SourceBuildError,
     download_pinned,
     fetch_locked_tree,
-    parse_tei,
+    local_name,
     relative_to_tree,
+    surface_text,
+    verify_tei_license,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -64,6 +68,80 @@ def source_path(work: str) -> str:
     return f"data/tlg0527/tlg{work}/tlg0527.tlg{work}.1st1K-grc1.xml"
 
 
+def parse_tei_tolerant(payload: bytes, witness_id: str, selected_edition: str, license_target: str) -> tuple[list[dict], dict, list[dict]]:
+    """Parse Swete TEI without inventing text for malformed/empty verse divs.
+
+    The accepted Phase 1B parser deliberately hard-fails empty surfaces. For a
+    full 37-book production inventory, an upstream TEI encoding defect such as
+    Deuteronomy 25:19 must not make unrelated books unavailable. We therefore
+    preserve the empty locus as a source gap and omit it from auto-served verse
+    surfaces. The runtime exact-identity gate consequently blocks that chapter.
+    """
+    try:
+        root = ET.fromstring(payload)
+    except ET.ParseError as exc:
+        raise BuildError(f"{witness_id}: invalid TEI XML: {exc}") from exc
+    verify_tei_license(root, witness_id, license_target)
+    edition_nodes = [
+        node
+        for node in root.iter()
+        if local_name(node.tag) == "div"
+        and node.attrib.get("type") == "edition"
+        and node.attrib.get("n") == selected_edition
+    ]
+    if len(edition_nodes) != 1:
+        raise BuildError(f"{witness_id}: expected exactly one selected TEI edition div")
+
+    verses: list[dict] = []
+    gaps: list[dict] = []
+    seen: set[tuple[str | None, str]] = set()
+    chapters_seen: set[str] = set()
+
+    def walk(node: ET.Element, chapter: str | None = None) -> None:
+        if local_name(node.tag) == "div" and node.attrib.get("subtype") == "chapter":
+            chapter = str(node.attrib.get("n") or "")
+            if not chapter:
+                raise BuildError(f"{witness_id}: chapter without source n")
+            chapters_seen.add(chapter)
+        if local_name(node.tag) == "div" and node.attrib.get("subtype") == "verse":
+            verse = str(node.attrib.get("n") or "")
+            if not verse:
+                raise BuildError(f"{witness_id}: verse without source n")
+            key = (chapter, verse)
+            if key in seen:
+                raise BuildError(f"{witness_id}: duplicate source locus {chapter}:{verse}")
+            seen.add(key)
+            source_ref = f"{chapter}:{verse}" if chapter is not None else verse
+            text = surface_text(node)
+            if not text:
+                gaps.append(
+                    {
+                        "source_chapter": chapter,
+                        "source_verse": verse,
+                        "source_reference": source_ref,
+                        "reason": "empty_source_tei_verse_div",
+                        "fabricated_surface": False,
+                    }
+                )
+                return
+            verses.append(
+                {
+                    "source_chapter": chapter,
+                    "source_verse": verse,
+                    "source_reference": source_ref,
+                    "surface": text,
+                }
+            )
+            return
+        for child in list(node):
+            walk(child, chapter)
+
+    walk(edition_nodes[0])
+    if not verses:
+        raise BuildError(f"{witness_id}: no nonempty TEI verse surfaces parsed")
+    return verses, {"verse_div_count": len(seen), "surface_verse_count": len(verses), "chapter_count": len(chapters_seen)}, gaps
+
+
 def canonicalize_verses(row: dict, verses: list[dict]) -> tuple[dict, list[dict]]:
     start = int(row.get("source_chapter_start") or -1)
     end = int(row.get("source_chapter_end") or -1)
@@ -100,6 +178,20 @@ def canonicalize_verses(row: dict, verses: list[dict]) -> tuple[dict, list[dict]
     return chapters, nonnumeric
 
 
+def gap_in_book_range(row: dict, gap: dict) -> bool:
+    chapter = str(gap.get("source_chapter") or "")
+    if not chapter.isdigit():
+        return True
+    chapter_n = int(chapter)
+    start = int(row.get("source_chapter_start") or -1)
+    end = int(row.get("source_chapter_end") or -1)
+    if start >= 0 and chapter_n < start:
+        return False
+    if end >= 0 and chapter_n > end:
+        return False
+    return True
+
+
 def build(output: Path) -> dict:
     lock = load_json(LOCK_PATH)
     if lock.get("phase") != "Old Testament Septuagint Protocanonical Expansion":
@@ -132,6 +224,7 @@ def build(output: Path) -> dict:
 
     total_chapters = 0
     total_verses = 0
+    total_source_gaps = 0
     source_files: dict[str, dict] = {}
     book_stats: list[dict] = []
 
@@ -146,16 +239,22 @@ def build(output: Path) -> dict:
 
         try:
             payload, sha256 = download_pinned(repo, commit, path, expected_blob)
-            witness = {"id": f"{book_id}-SWETE", "edition_urn": edition_urn(work)}
-            verses, parsed_counts = parse_tei(payload, witness, str(source["license_target"]))
+            verses, parsed_counts, source_gaps = parse_tei_tolerant(
+                payload,
+                f"{book_id}-SWETE",
+                edition_urn(work),
+                str(source["license_target"]),
+            )
         except SourceBuildError as exc:
             raise BuildError(str(exc)) from exc
 
         chapters, nonnumeric = canonicalize_verses(row, verses)
+        relevant_gaps = [gap for gap in source_gaps if gap_in_book_range(row, gap)]
         chapter_count = len(chapters)
         verse_count = sum(len(v) for v in chapters.values())
         total_chapters += chapter_count
         total_verses += verse_count
+        total_source_gaps += len(relevant_gaps)
 
         source_files.setdefault(
             work,
@@ -166,7 +265,9 @@ def build(output: Path) -> dict:
                 "sha256": sha256,
                 "edition_urn": edition_urn(work),
                 "parsed_source_chapter_count": parsed_counts.get("chapter_count"),
-                "parsed_source_verse_count": parsed_counts.get("verse_count"),
+                "parsed_source_verse_div_count": parsed_counts.get("verse_div_count"),
+                "parsed_surface_verse_count": parsed_counts.get("surface_verse_count"),
+                "empty_source_locus_count": len(source_gaps),
             },
         )
 
@@ -207,6 +308,7 @@ def build(output: Path) -> dict:
             },
             "chapter_count": chapter_count,
             "verse_count": verse_count,
+            "empty_source_loci_not_auto_served": relevant_gaps,
             "nonnumeric_source_loci_not_auto_served": nonnumeric,
             "chapters": chapters,
         }
@@ -218,6 +320,7 @@ def build(output: Path) -> dict:
                 "work": work,
                 "chapter_count": chapter_count,
                 "verse_count": verse_count,
+                "empty_source_locus_count": len(relevant_gaps),
                 "nonnumeric_source_locus_count": len(nonnumeric),
             }
         )
@@ -233,6 +336,7 @@ def build(output: Path) -> dict:
         "book_count": len(book_stats),
         "chapter_count": total_chapters,
         "verse_count": total_verses,
+        "empty_source_locus_count": total_source_gaps,
         "supported_canonical_books": [row["book_id"] for row in book_stats],
         "books": book_stats,
         "source": {
@@ -265,6 +369,7 @@ def build(output: Path) -> dict:
             "runtime_exact_identity_required": True,
             "automatic_remapping": False,
             "fabricate_verse_boundaries": False,
+            "empty_source_loci_are_not_filled_from_neighboring_text": True,
             "mismatched_chapters_blocked_until_explicit_mapping": True,
             "ezra_nehemiah_source": "Swete Esdras B: source chapters 1-10 => Ezra 1-10; source chapters 11-23 => Nehemiah 1-13",
         },
@@ -275,12 +380,14 @@ def build(output: Path) -> dict:
             "accepted_deuterocanonical_greek_corpus_unchanged": True,
             "no_english_scripture_text_in_package": True,
             "no_fabricated_gloss_or_linguistic_annotation": True,
+            "no_fabricated_source_surface_for_empty_tei_loci": True,
         },
     }
     write_json(target / "manifest.json", manifest)
     print(
         f"[OT Septuagint] packaged {manifest['book_count']} books / "
-        f"{manifest['chapter_count']} chapters / {manifest['verse_count']} numeric source verse records"
+        f"{manifest['chapter_count']} chapters / {manifest['verse_count']} nonempty numeric source verse surfaces; "
+        f"{manifest['empty_source_locus_count']} explicit empty source loci retained as gaps"
     )
     return manifest
 
