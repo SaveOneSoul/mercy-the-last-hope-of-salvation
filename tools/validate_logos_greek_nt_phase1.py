@@ -47,8 +47,8 @@ def load(path: Path) -> dict:
 
 
 def lexical_alignment_key(value: str) -> str:
-    """Mirror the importer's comparison-only lexical-core normalization."""
-    normalized = unicodedata.normalize("NFC", value)
+    normalized = unicodedata.normalize("NFC", value).casefold()
+    normalized = unicodedata.normalize("NFC", normalized)
     chars: list[str] = []
     for char in normalized:
         if char in APPARATUS_MARKERS or char in ELISION_MARKERS:
@@ -169,6 +169,7 @@ def validate_static() -> dict:
         "git_blob_sha1",
         "APPARATUS_MARKERS",
         "ELISION_MARKERS",
+        "casefolded_for_comparison",
         "lexical_alignment_key",
         "classify_surface_alignment",
         "source_presentation_normalized_token_count",
@@ -184,9 +185,26 @@ def validate_static() -> dict:
 
     print(
         "Greek NT Phase 1 static validation passed: owner acceptance, 27 source locks, "
-        "SBLGNT/MorphGNT pins, ShareAlike partitions, and lexical-core alignment policy verified"
+        "SBLGNT/MorphGNT pins, ShareAlike partitions, and casefolded lexical-core alignment policy verified"
     )
     return lock
+
+
+def validate_policy(policy: dict, label: str) -> None:
+    if policy.get("unicode_normalization") != "NFC":
+        fail(f"{label}: Unicode normalization changed")
+    if policy.get("casefolded_for_comparison") is not True:
+        fail(f"{label}: casefold comparison rule changed")
+    if policy.get("ignored_apparatus_markers") != sorted(APPARATUS_MARKERS):
+        fail(f"{label}: apparatus marker set changed")
+    if policy.get("ignored_elision_markers") != sorted(ELISION_MARKERS):
+        fail(f"{label}: elision marker set changed")
+    if policy.get("ignored_unicode_categories") != ["P*"]:
+        fail(f"{label}: punctuation-category rule changed")
+    if policy.get("preserved_for_comparison") != ["Greek letters", "combining marks"]:
+        fail(f"{label}: preserved-character rule changed")
+    if policy.get("source_surfaces_preserved") is not True:
+        fail(f"{label}: source surfaces must remain preserved")
 
 
 def validate_generated(path: Path, lock: dict) -> None:
@@ -223,18 +241,7 @@ def validate_generated(path: Path, lock: dict) -> None:
     policy = manifest.get("alignment_policy") or {}
     if policy.get("mode") != "exact-or-lexical-core-with-source-presentation-ignored":
         fail("generated alignment policy mode changed")
-    if policy.get("unicode_normalization") != "NFC":
-        fail("generated alignment Unicode normalization changed")
-    if policy.get("ignored_apparatus_markers") != sorted(APPARATUS_MARKERS):
-        fail("generated alignment apparatus marker set changed")
-    if policy.get("ignored_elision_markers") != sorted(ELISION_MARKERS):
-        fail("generated alignment elision marker set changed")
-    if policy.get("ignored_unicode_categories") != ["P*"]:
-        fail("generated alignment punctuation-category rule changed")
-    if policy.get("preserved_for_comparison") != ["Greek letters", "combining marks"]:
-        fail("generated alignment preserved-character rule changed")
-    if policy.get("source_surfaces_preserved") is not True:
-        fail("generated alignment policy must preserve source surfaces")
+    validate_policy(policy, "manifest alignment policy")
 
     if manifest.get("source_commits", {}).get("sblgnt") != SBL_COMMIT:
         fail("generated manifest SBLGNT commit mismatch")
@@ -248,10 +255,8 @@ def validate_generated(path: Path, lock: dict) -> None:
         fail("generated book order differs from source lock")
     lock_by_id = {row["book_id"]: row for row in lock["books"]}
 
-    observed_exact_tokens = 0
-    observed_normalized_tokens = 0
-    observed_exact_verses = 0
-    observed_normalized_verses = 0
+    observed_exact_tokens = observed_normalized_tokens = 0
+    observed_exact_verses = observed_normalized_verses = 0
     total_alignment_verses = 0
 
     for book_id in EXPECTED_IDS:
@@ -277,30 +282,15 @@ def validate_generated(path: Path, lock: dict) -> None:
             fail(f"{book_id}: alignment layer leaked source payload")
         if align.get("lexical_mismatch_count") != 0 or align.get("alignment_mismatch_count") != 0:
             fail(f"{book_id}: lexical/alignment mismatch count is non-zero")
-
-        comparison_policy = align.get("comparison_policy") or {}
-        if comparison_policy.get("unicode_normalization") != "NFC":
-            fail(f"{book_id}: comparison Unicode normalization changed")
-        if comparison_policy.get("ignored_apparatus_markers") != sorted(APPARATUS_MARKERS):
-            fail(f"{book_id}: comparison apparatus marker set changed")
-        if comparison_policy.get("ignored_elision_markers") != sorted(ELISION_MARKERS):
-            fail(f"{book_id}: comparison elision marker set changed")
-        if comparison_policy.get("ignored_unicode_categories") != ["P*"]:
-            fail(f"{book_id}: comparison punctuation-category rule changed")
-        if comparison_policy.get("preserved_for_comparison") != ["Greek letters", "combining marks"]:
-            fail(f"{book_id}: comparison preserved-character rule changed")
-        if comparison_policy.get("source_surfaces_preserved") is not True:
-            fail(f"{book_id}: comparison policy must preserve source surfaces")
+        validate_policy(align.get("comparison_policy") or {}, f"{book_id} comparison policy")
 
         verses = align.get("verses") or []
         align_by_ref = {(int(row["chapter"]), str(row["verse"])): row for row in verses}
         if len(align_by_ref) != len(verses):
             fail(f"{book_id}: duplicate alignment verse references")
 
-        book_exact_tokens = 0
-        book_normalized_tokens = 0
-        book_exact_verses = 0
-        book_normalized_verses = 0
+        book_exact_tokens = book_normalized_tokens = 0
+        book_exact_verses = book_normalized_verses = 0
 
         for chapter_text, surface_verses in (surface.get("chapters") or {}).items():
             ling_verses = (ling.get("chapters") or {}).get(chapter_text) or {}
@@ -320,12 +310,10 @@ def validate_generated(path: Path, lock: dict) -> None:
                 if align_verse.get("token_count") != len(ids) or len(ids) != len(surface_tokens):
                     fail(f"{book_id} {chapter_text}:{verse_text}: alignment token-count/id mismatch")
 
-                verse_exact = 0
-                verse_normalized = 0
+                verse_exact = verse_normalized = 0
                 for index, (surface_row, ling_row) in enumerate(zip(surface_tokens, ling_tokens), start=1):
                     if surface_row.get("id") != ling_row.get("id") or surface_row.get("id") != ids[index - 1]:
                         fail(f"{book_id} {chapter_text}:{verse_text} token {index}: token id mismatch")
-
                     sbl_surface = str(surface_row.get("surface") or "")
                     morph_surface = str(ling_row.get("source_surface") or "")
                     expected_mode = expected_alignment_mode(sbl_surface, morph_surface)
