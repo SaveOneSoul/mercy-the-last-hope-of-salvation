@@ -31,9 +31,6 @@ PENDING_GREEK = {
     "Tobit", "Judith", "Greek additions to Esther", "1 Maccabees", "2 Maccabees",
     "Wisdom", "Sirach", "Baruch", "Greek additions to Daniel",
 }
-# These are deterministic totals observed from the immutable OSHB commit/tree using
-# the Phase 1A direct-verse-child <w> token contract. Locking them catches silent
-# inventory, parser, or qere/variant double-counting regressions.
 EXPECTED_COUNTS = {
     "chapter_count": 929,
     "verse_count": 23213,
@@ -87,7 +84,7 @@ def validate_static() -> None:
     filenames = [str(x.get("filename")) for x in locked]
     need(len(set(filenames)) == 39 and all(x.endswith(".xml") for x in filenames), "expected 39 unique OSHB XML files")
     need(lock.get("required_non_book_files") == ["VerseMap.xml"], "VerseMap.xml lock missing")
-    need(set(lock.get("excluded_catholic_ot_material") or []) == PENDING_GREEK, "pending Catholic Greek material inventory changed")
+    need(set(lock.get("excluded_catholic_ot_material") or []) == PENDING_GREEK, "Phase 1A Greek-outside-scope inventory changed")
     need((lock.get("gloss_policy") or {}).get("installed") is False, "gloss layer must remain absent")
     need((lock.get("transliteration_policy") or {}).get("installed") is False, "transliteration must remain absent")
     need((lock.get("versification_policy") or {}).get("dra_alignment_enabled") is False, "MT-to-DRA remapping must remain disabled")
@@ -99,19 +96,25 @@ def validate_static() -> None:
     need(oshb.get("license") == "CC BY 4.0", "OSHB registry license mismatch")
 
     lxx = source_by_id(sources, "first1kgreek-swete")
-    need(lxx.get("production_import_allowed") is False and lxx.get("source_inventory_verified") is False, "LXX candidate must remain blocked")
+    need(lxx.get("production_import_allowed") is False and lxx.get("source_inventory_verified") is False, "LXX central registry must remain blocked pending owner acceptance")
     need(lxx.get("share_alike") is True and lxx.get("isolation_required") is True, "LXX ShareAlike isolation changed")
     need((lxx.get("pin") or {}).get("value") == LXX_COMMIT, "LXX registry commit mismatch")
 
     gate_src = gate.get("source") or {}
     need(gate.get("production_enabled") is False and gate.get("production_import_allowed") is False, "LXX gate must remain disabled")
-    need(gate.get("status") == "blocked-pending-exact-catholic-book-mapping", "LXX gate status changed")
+    need(gate.get("status") == "validated-awaiting-owner-acceptance", "LXX gate status must record validated Phase 1B evidence")
     need(gate_src.get("repository") == "OpenGreekAndLatin/First1KGreek", "unexpected LXX candidate repository")
     need(gate_src.get("commit") == LXX_COMMIT and gate_src.get("septuagint_tree_sha") == LXX_TREE, "LXX immutable pin mismatch")
     need(gate_src.get("license") == "CC BY-SA 4.0", "LXX license mismatch")
     need(gate_src.get("share_alike") is True and gate_src.get("isolation_required") is True, "LXX isolation rule missing")
     need(set(gate.get("required_catholic_mapping_scope") or []) == PENDING_GREEK, "LXX Catholic mapping scope incomplete")
-    need((gate.get("known_repository_evidence") or {}).get("exact_catholic_book_inventory_complete") is False, "LXX gate cannot claim complete mapping")
+    evidence = gate.get("known_repository_evidence") or {}
+    need(evidence.get("exact_catholic_book_inventory_complete") is True, "Phase 1B exact Catholic Greek inventory evidence missing")
+    need(evidence.get("exact_metadata_and_text_blob_pins_complete") is True, "Phase 1B exact file pin evidence missing")
+    need(evidence.get("versification_mapping_complete") is True, "Phase 1B versification evidence missing")
+    need(evidence.get("sharealike_isolation_validated") is True, "Phase 1B ShareAlike validation evidence missing")
+    need(evidence.get("deterministic_ci_import_validated") is True, "Phase 1B deterministic CI evidence missing")
+    need(evidence.get("owner_accepted") is False, "Phase 1B must still await project-owner acceptance")
 
     catalog = {str(row.get("id")): row for row in (books.get("books") or [])}
     need(len(catalog) == 73, "canonical books registry must remain 73 books")
@@ -191,7 +194,7 @@ def validate_generated(root: Path) -> None:
     dan24 = load(root / "linguistics" / "DAN.json")["chapters"]["2"]["4"]["tokens"]
     need({x["language"] for x in dan24} == {"he", "arc"}, "Daniel 2:4 Hebrew-to-Aramaic transition lost")
     need(any(str(x.get("morphology") or "").startswith("A") for x in dan24), "Daniel 2:4 Aramaic morphology evidence missing")
-    need((manifest.get("catholic_scope") or {}).get("esther_and_daniel_status") == "Masoretic portions only; Catholic Greek additions pending separate source gate", "Catholic Esther/Daniel boundary missing")
+    need((manifest.get("catholic_scope") or {}).get("esther_and_daniel_status") == "Masoretic portions only; Catholic Greek additions pending separate source gate", "Phase 1A Catholic Esther/Daniel boundary changed")
 
 
 def main() -> None:
