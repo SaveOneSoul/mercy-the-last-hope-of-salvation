@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "phase": "Old Testament Expansion Phase 1B",
+  "production_enabled": false,
+  "mapping_policy": {
+    "canonical_reference_system": "Douay-Rheims Catholic 73-book corpus",
+    "source_reference_system": "First1KGreek Swete TEI/CTS loci",
+    "rule": "Mappings are reference metadata. Source Greek verse boundaries and surfaces are never rewritten, split, merged, or fabricated.",
+    "one_to_one_only_when_verified": true,
+    "component_range_allowed": true,
+    "parallel_witnesses_do_not_replace_primary": true
+  },
+  "identity_books": [
+    {"witness_id": "TOB-SWETE", "canonical_book": "TOB", "mapping": "identity-chapter-verse"},
+    {"witness_id": "JDT-SWETE", "canonical_book": "JDT", "mapping": "identity-chapter-verse"},
+    {"witness_id": "1MA-SWETE", "canonical_book": "1MA", "mapping": "identity-chapter-verse"},
+    {"witness_id": "2MA-SWETE", "canonical_book": "2MA", "mapping": "identity-chapter-verse"},
+    {"witness_id": "WIS-SWETE", "canonical_book": "WIS", "mapping": "identity-chapter-verse"},
+    {"witness_id": "SIR-SWETE", "canonical_book": "SIR", "mapping": "identity-chapter-verse"}
+  ],
+  "baruch": {
+    "primary_book": "BAR",
+    "segments": [
+      {
+        "witness_id": "BAR-SWETE",
+        "source_locus": "chapters 1-5",
+        "canonical_locus": "BAR 1-5",
+        "mapping": "identity-chapter-verse"
+      },
+      {
+        "witness_id": "EPJ-SWETE",
+        "source_locus": "verses 1-n (single-level Epistula Jeremiae citation)",
+        "canonical_locus": "BAR 6:1-n",
+        "mapping": "source-verse-to-canonical-chapter-6",
+        "evidence_note": "The Swete TEI labels this work Epistula Jeremiae and includes the marginal identification 'Bar vi (Lat.)'."
+      }
+    ]
+  },
+  "esther": {
+    "witness_id": "EST-SWETE",
+    "canonical_book": "EST",
+    "mapping_granularity": "component-range",
+    "policy": "The integrated Greek Esther source is preserved exactly. Greek additions are mapped to Catholic/Douay-Rheims canonical ranges at component level where a forced one-to-one verse split would be unsafe.",
+    "components": [
+      {
+        "component": "A",
+        "description": "Mordecai's dream and conspiracy prologue",
+        "source_locus": "prologue:1-17",
+        "canonical_locus": "EST 11:2-12:6",
+        "mapping": "component-range"
+      },
+      {
+        "component": "B1-7",
+        "description": "Royal decree against the Jews",
+        "source_placement": "after Greek Esther 3:13",
+        "canonical_locus": "EST 13:1-7",
+        "mapping": "component-range"
+      },
+      {
+        "component": "C",
+        "description": "Prayers of Mordecai and Esther",
+        "source_placement": "after Greek Esther 4:17",
+        "canonical_locus": "EST 13:8-14:19",
+        "mapping": "component-range"
+      },
+      {
+        "component": "B8-9",
+        "description": "Mordecai instructs Esther to approach the king and pray",
+        "source_placement": "material attached around Greek Esther 4:8",
+        "canonical_locus": "EST 15:1-3",
+        "mapping": "component-range-no-forced-verse-split",
+        "note": "The Greek component has two logical source verses while the Douay-Rheims/Vulgate presentation spans three verses. Do not manufacture a one-to-one split."
+      },
+      {
+        "component": "D",
+        "description": "Esther appears before the king",
+        "source_placement": "after Greek Esther 4:17",
+        "canonical_locus": "EST 15:4-19",
+        "mapping": "component-range"
+      },
+      {
+        "component": "E",
+        "description": "Royal counter-decree",
+        "source_placement": "after Greek Esther 8:12",
+        "canonical_locus": "EST 16:1-24",
+        "mapping": "component-range"
+      },
+      {
+        "component": "F1-10",
+        "description": "Interpretation of Mordecai's dream",
+        "source_placement": "after Greek Esther 10:3",
+        "canonical_locus": "EST 10:4-13",
+        "mapping": "component-range"
+      },
+      {
+        "component": "F11-postscript",
+        "description": "Greek Esther subscription/postscript",
+        "source_placement": "end of Greek Esther",
+        "canonical_locus": "EST 11:1",
+        "mapping": "component-range"
+      }
+    ]
+  },
+  "daniel": {
+    "canonical_book": "DAN",
+    "primary_integration_witness": "Theodotion",
+    "parallel_witness": "Old Greek",
+    "policy": "Theodotion is the Catholic/Douay-Rheims integration lane for the Greek additions in this phase. Old Greek Daniel, Susanna, and Bel are preserved as independent parallel witnesses and are never silently collapsed into Theodotion.",
+    "primary_segments": [
+      {
+        "witness_id": "DAN-TH-SWETE",
+        "source_locus": "3:24-90",
+        "canonical_locus": "DAN 3:24-90",
+        "description": "Prayer of Azariah and Song of the Three Young Men",
+        "mapping": "identity-chapter-verse-range"
+      },
+      {
+        "witness_id": "SUS-TH-SWETE",
+        "source_locus": "Susanna 1-64",
+        "canonical_locus": "DAN 13:1-64",
+        "description": "Susanna",
+        "mapping": "source-verse-to-canonical-chapter-13"
+      },
+      {
+        "witness_id": "BEL-TH-SWETE",
+        "source_locus": "Bel and the Dragon 1:1-36",
+        "canonical_locus": "DAN 14:1-42",
+        "description": "Bel and the Dragon",
+        "mapping": "component-range-no-forced-verse-split",
+        "note": "The pinned Swete Theodotion TEI has 36 source verse divisions while the Douay-Rheims Catholic chapter has 42 verses. Preserve the source divisions and map the component as a range; do not manufacture six synthetic Greek verse boundaries."
+      }
+    ],
+    "parallel_segments": [
+      {"witness_id": "DAN-OG-SWETE", "role": "preserved-parallel-witness", "canonical_replacement": false},
+      {"witness_id": "SUS-OG-SWETE", "role": "preserved-parallel-witness", "canonical_replacement": false},
+      {"witness_id": "BEL-OG-SWETE", "role": "preserved-parallel-witness", "canonical_replacement": false}
+    ]
+  }
+}
