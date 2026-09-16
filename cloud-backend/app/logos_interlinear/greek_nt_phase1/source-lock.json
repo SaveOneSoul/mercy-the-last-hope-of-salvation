@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "phase": "Greek NT Expansion Phase 1",
+  "status": "validation-only",
+  "owner_acceptance": {
+    "prototype_pr": 6,
+    "prototype_merge_commit": "4a00a0afb5a578b3c7cb3e737cdd12348c52e821",
+    "accepted": true,
+    "note": "Project owner accepted Logos Interlinear Foundation v1 before this 27-book importer milestone began."
+  },
+  "production": {
+    "enabled": false,
+    "reason": "Phase 1 validates deterministic full-corpus generation before any production API integration."
+  },
+  "sources": {
+    "sblgnt": {
+      "repository": "Faithlife/SBLGNT",
+      "commit": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c",
+      "license": "CC BY 4.0",
+      "license_blob_sha1": "2f244ac814036ecd9ba9f69782e89ce6b1dca9eb",
+      "role": "Greek surface text"
+    },
+    "morphgnt": {
+      "repository": "morphgnt/sblgnt",
+      "commit": "aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d",
+      "license": "CC BY-SA 3.0",
+      "readme_blob_sha1": "a3256051467a61ddb5099254dd9abaf5d03e5e80",
+      "role": "lemma, normalized form, POS and morphology",
+      "share_alike": true,
+      "isolation_required": true
+    }
+  },
+  "license_partitions": {
+    "surface": {
+      "source": "sblgnt",
+      "license": "CC BY 4.0",
+      "output_subdir": "surface"
+    },
+    "linguistics": {
+      "source": "morphgnt",
+      "license": "CC BY-SA 3.0",
+      "output_subdir": "linguistics",
+      "share_alike": true
+    },
+    "alignment": {
+      "source": "project-generated",
+      "contains_source_text": false,
+      "output_subdir": "alignment",
+      "note": "Contains token ids and alignment/integrity metadata only; source payloads remain partitioned."
+    }
+  },
+  "books": [
+    {"order":1,"book_id":"MAT","name":"Matthew","sblgnt":{"path":"data/sblgnt/text/Matt.txt","blob_sha1":"d19efbdff018c2bde83ba0fc01e0d8cb399b496b"},"morphgnt":{"path":"61-Mt-morphgnt.txt","blob_sha1":"4745674bd63bf0bbec37b8b08f2c8f32b73266b4"}},
+    {"order":2,"book_id":"MRK","name":"Mark","sblgnt":{"path":"data/sblgnt/text/Mark.txt","blob_sha1":"3f50fe360d1d2351db6b6c3000de47c16abccf84"},"morphgnt":{"path":"62-Mk-morphgnt.txt","blob_sha1":"d68222360b161cd6acba11746acfcb092b6af0c3"}},
+    {"order":3,"book_id":"LUK","name":"Luke","sblgnt":{"path":"data/sblgnt/text/Luke.txt","blob_sha1":"735aca6a87f3339d806e5330461cb4c7a7d46d9c"},"morphgnt":{"path":"63-Lk-morphgnt.txt","blob_sha1":"474e65703c49ef3890fca4b24403434ab6df6457"}},
+    {"order":4,"book_id":"JHN","name":"John","sblgnt":{"path":"data/sblgnt/text/John.txt","blob_sha1":"a79ae036447d48fd88c4db8e166c771b4fc57d93"},"morphgnt":{"path":"64-Jn-morphgnt.txt","blob_sha1":"c3dab42934edab531f7dc08b630be8181638bd61","expected_missing_verses":["7:53","8:1","8:2","8:3","8:4","8:5","8:6","8:7","8:8","8:9","8:10","8:11"],"missing_reason":"The pinned SBLGNT surface includes John 7:53-8:11 in double brackets, while the pinned MorphGNT file jumps from John 7:52 to 8:12. Phase 1 preserves the SBLGNT surface and records morphology as unavailable rather than fabricating annotations."}},
+    {"order":5,"book_id":"ACT","name":"Acts","sblgnt":{"path":"data/sblgnt/text/Acts.txt","blob_sha1":"4cdcc5176134a1b9802c87dbdf3a90ffb6c284aa"},"morphgnt":{"path":"65-Ac-morphgnt.txt","blob_sha1":"3aed8e1a1dd9d77b4c448a0893bd4ddee6eb6842"}},
+    {"order":6,"book_id":"ROM","name":"Romans","sblgnt":{"path":"data/sblgnt/text/Rom.txt","blob_sha1":"9782d917928719056708db2b1849eb8cfe65a6c5"},"morphgnt":{"path":"66-Ro-morphgnt.txt","blob_sha1":"874480223c7f71bbc71f18d77ed3a6ad734561e1"}},
+    {"order":7,"book_id":"1CO","name":"1 Corinthians","sblgnt":{"path":"data/sblgnt/text/1Cor.txt","blob_sha1":"e3518b277c62f4f28c62089dffdda385fb30ed5b"},"morphgnt":{"path":"67-1Co-morphgnt.txt","blob_sha1":"28dec6618da3a378f454b6c72776286855857920"}},
+    {"order":8,"book_id":"2CO","name":"2 Corinthians","sblgnt":{"path":"data/sblgnt/text/2Cor.txt","blob_sha1":"9fa2dfdaf9736f102f4377084c6176cc92ff7e89"},"morphgnt":{"path":"68-2Co-morphgnt.txt","blob_sha1":"9beb35c77da5ffbcf56a8d7c0e9d6054452a0b43"}},
+    {"order":9,"book_id":"GAL","name":"Galatians","sblgnt":{"path":"data/sblgnt/text/Gal.txt","blob_sha1":"f0ccf0cd88061ba2df09f88c8cc6da9101d92aa6"},"morphgnt":{"path":"69-Ga-morphgnt.txt","blob_sha1":"b6ba67c907b35700e32a8fa00c0b30328472a992"}},
+    {"order":10,"book_id":"EPH","name":"Ephesians","sblgnt":{"path":"data/sblgnt/text/Eph.txt","blob_sha1":"a6e1ed7096486673ce3c89bb85869c8283297d5c"},"morphgnt":{"path":"70-Eph-morphgnt.txt","blob_sha1":"c506f4c4933b0c202f07742ca54aad26ff5495bc"}},
+    {"order":11,"book_id":"PHP","name":"Philippians","sblgnt":{"path":"data/sblgnt/text/Phil.txt","blob_sha1":"c97991ef6d1bd1f236ea4bb81dc9230df895bc7b"},"morphgnt":{"path":"71-Php-morphgnt.txt","blob_sha1":"0dde9e397d8e0c8384eab85ca1f61b38b37a6272"}},
+    {"order":12,"book_id":"COL","name":"Colossians","sblgnt":{"path":"data/sblgnt/text/Col.txt","blob_sha1":"06f9ee0bc5f86cd1f28f1e54867224f49e446380"},"morphgnt":{"path":"72-Col-morphgnt.txt","blob_sha1":"8cdbc8e44370e7ffa2aa92419e2dd2ccaf40cdd2"}},
+    {"order":13,"book_id":"1TH","name":"1 Thessalonians","sblgnt":{"path":"data/sblgnt/text/1Thess.txt","blob_sha1":"e3d844977c70badc19c056f3728dfeafe493486f"},"morphgnt":{"path":"73-1Th-morphgnt.txt","blob_sha1":"ced6898c215029bc8460c23d1b1600d3fd6f5243"}},
+    {"order":14,"book_id":"2TH","name":"2 Thessalonians","sblgnt":{"path":"data/sblgnt/text/2Thess.txt","blob_sha1":"d73ba27f24a7d4a953242bc81d230833152c87ed"},"morphgnt":{"path":"74-2Th-morphgnt.txt","blob_sha1":"123860bf9b3a59ffe1dd7ae0fdeb7a0eddd5d080"}},
+    {"order":15,"book_id":"1TI","name":"1 Timothy","sblgnt":{"path":"data/sblgnt/text/1Tim.txt","blob_sha1":"54745ec5731df6c6f844b28a9e12d063a38cf416"},"morphgnt":{"path":"75-1Ti-morphgnt.txt","blob_sha1":"b3a48cf39e72a1d5ab12e22dbfccf50d5273c450"}},
+    {"order":16,"book_id":"2TI","name":"2 Timothy","sblgnt":{"path":"data/sblgnt/text/2Tim.txt","blob_sha1":"8809e18b0f95c7e6913ea5d239f2c28eda2fffad"},"morphgnt":{"path":"76-2Ti-morphgnt.txt","blob_sha1":"9e8982318844d411c26cb29f88fbe2e44f733f6a"}},
+    {"order":17,"book_id":"TIT","name":"Titus","sblgnt":{"path":"data/sblgnt/text/Titus.txt","blob_sha1":"114ee929baff42f702b30553442010fe1ec84747"},"morphgnt":{"path":"77-Tit-morphgnt.txt","blob_sha1":"20181fbb5729cc9fbd200b58241ac5e5612c2ec3"}},
+    {"order":18,"book_id":"PHM","name":"Philemon","sblgnt":{"path":"data/sblgnt/text/Phlm.txt","blob_sha1":"7904bf8debfe51ea69e0259d214352310eebe3c2"},"morphgnt":{"path":"78-Phm-morphgnt.txt","blob_sha1":"a4a64fb468e0110aec98d94d707af8a5188419fd"}},
+    {"order":19,"book_id":"HEB","name":"Hebrews","sblgnt":{"path":"data/sblgnt/text/Heb.txt","blob_sha1":"3a7e9b3f7f17aaae39976aae8661bfa5dba55db2"},"morphgnt":{"path":"79-Heb-morphgnt.txt","blob_sha1":"b6f41c7341e6b40dddf36eb7230f6ea2541cd879"}},
+    {"order":20,"book_id":"JAS","name":"James","sblgnt":{"path":"data/sblgnt/text/Jas.txt","blob_sha1":"283a675fdfab4ca4967ca5a72500a1aff2bd07c7"},"morphgnt":{"path":"80-Jas-morphgnt.txt","blob_sha1":"462cf055ed12eb98f050da2d2ddcf040212304af"}},
+    {"order":21,"book_id":"1PE","name":"1 Peter","sblgnt":{"path":"data/sblgnt/text/1Pet.txt","blob_sha1":"fe0f29aecbc8476ce87df0bf396e5e78c410491d"},"morphgnt":{"path":"81-1Pe-morphgnt.txt","blob_sha1":"5ac72702c9fba9872973d9ae477933ffd261caf7"}},
+    {"order":22,"book_id":"2PE","name":"2 Peter","sblgnt":{"path":"data/sblgnt/text/2Pet.txt","blob_sha1":"4e5e26aba20f43d1509afc828e96d90134e52e00"},"morphgnt":{"path":"82-2Pe-morphgnt.txt","blob_sha1":"e00185e04d19766df22734e7bce8342916f1d695"}},
+    {"order":23,"book_id":"1JN","name":"1 John","sblgnt":{"path":"data/sblgnt/text/1John.txt","blob_sha1":"e4f7c05c3e7d6afb1fceff563bc443065df586eb"},"morphgnt":{"path":"83-1Jn-morphgnt.txt","blob_sha1":"256ce436ae5bb07f405b8971b8355336dfe39e76"}},
+    {"order":24,"book_id":"2JN","name":"2 John","sblgnt":{"path":"data/sblgnt/text/2John.txt","blob_sha1":"29ac357d293ef2b525f04e66ba4bef5c144e4b12"},"morphgnt":{"path":"84-2Jn-morphgnt.txt","blob_sha1":"1dd4b1fd9bd6095ddbb6d9e178c193666fd43860"}},
+    {"order":25,"book_id":"3JN","name":"3 John","sblgnt":{"path":"data/sblgnt/text/3John.txt","blob_sha1":"023c167c50535f735e9b15d564f1bd83e10b7d6d"},"morphgnt":{"path":"85-3Jn-morphgnt.txt","blob_sha1":"27a36b65129ba367a8ea92dc3507ef1a0cfee730"}},
+    {"order":26,"book_id":"JUD","name":"Jude","sblgnt":{"path":"data/sblgnt/text/Jude.txt","blob_sha1":"acff675d2bda62ecbe081bb75a73788e71c521da"},"morphgnt":{"path":"86-Jud-morphgnt.txt","blob_sha1":"c401f296d69d02a78d0266a976bdd72db95fb318"}},
+    {"order":27,"book_id":"REV","name":"Revelation","sblgnt":{"path":"data/sblgnt/text/Rev.txt","blob_sha1":"a50a57daa6f410cccc219ac45b03f069f43baad8"},"morphgnt":{"path":"87-Re-morphgnt.txt","blob_sha1":"bf6fde5561b55eef837ae05067d270cdbc858c25"}}
+  ]
+}
