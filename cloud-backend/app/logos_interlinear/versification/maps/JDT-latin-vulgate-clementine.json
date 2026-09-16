@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.17-jdt-latin-v1",
+  "status": "verified",
+  "book_id": "JDT",
+  "book": "Judith",
+  "lane": "latin",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "vulgate-clementine",
+    "reference_system": "clementine-vulgate-open-bibles",
+    "corpus_id": "lat_vulgate_clementine",
+    "corpus_version": "2026.09.16-clementine-open-bibles"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "4"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "4",
+      "source_chapter": "4",
+      "segments": [
+        {
+          "id": "JDT-4-1-4",
+          "relationship": "identity",
+          "canonical_refs": [
+            {"chapter": "4", "verse": "1"},
+            {"chapter": "4", "verse": "2"},
+            {"chapter": "4", "verse": "3"},
+            {"chapter": "4", "verse": "4"}
+          ],
+          "source_refs": [
+            {"chapter": "4", "verse": "1"},
+            {"chapter": "4", "verse": "2"},
+            {"chapter": "4", "verse": "3"},
+            {"chapter": "4", "verse": "4"}
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims 1899 Judith 4:1-4 and pinned Clementine Vulgate Judith 4:1-4 have matching verse boundaries."
+          }
+        },
+        {
+          "id": "JDT-4-5",
+          "relationship": "merge",
+          "canonical_refs": [
+            {"chapter": "4", "verse": "5"}
+          ],
+          "source_refs": [
+            {"chapter": "4", "verse": "5"},
+            {"chapter": "4", "verse": "6"}
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Judith 4:5 contains the complete sense represented by Clementine Vulgate Judith 4:5-6: Eliachim writes to the approaches of Esdrelon and orders the mountain ascents and narrow pass to be held."
+          }
+        },
+        {
+          "id": "JDT-4-6-16",
+          "relationship": "offset",
+          "canonical_refs": [
+            {"chapter": "4", "verse": "6"},
+            {"chapter": "4", "verse": "7"},
+            {"chapter": "4", "verse": "8"},
+            {"chapter": "4", "verse": "9"},
+            {"chapter": "4", "verse": "10"},
+            {"chapter": "4", "verse": "11"},
+            {"chapter": "4", "verse": "12"},
+            {"chapter": "4", "verse": "13"},
+            {"chapter": "4", "verse": "14"},
+            {"chapter": "4", "verse": "15"},
+            {"chapter": "4", "verse": "16"}
+          ],
+          "source_refs": [
+            {"chapter": "4", "verse": "7"},
+            {"chapter": "4", "verse": "8"},
+            {"chapter": "4", "verse": "9"},
+            {"chapter": "4", "verse": "10"},
+            {"chapter": "4", "verse": "11"},
+            {"chapter": "4", "verse": "12"},
+            {"chapter": "4", "verse": "13"},
+            {"chapter": "4", "verse": "14"},
+            {"chapter": "4", "verse": "15"},
+            {"chapter": "4", "verse": "16"},
+            {"chapter": "4", "verse": "17"}
+          ],
+          "evidence": {
+            "citation": "After the Douay-Rheims 4:5 / Clementine 4:5-6 merge, Douay-Rheims Judith 4:6-16 corresponds sequentially to Clementine Judith 4:7-17."
+          }
+        }
+      ]
+    }
+  ]
+}
