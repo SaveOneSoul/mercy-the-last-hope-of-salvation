@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "foundation_version": "2026.09.16-logos-complete-ot-source-gates",
+  "foundation_version": "2026.09.17-logos-complete-ot-source-gates",
   "policy": {
     "canonical_data_format": "JSON",
     "primary_rendering": "HTML/CSS",
@@ -134,10 +134,13 @@
         "per_file_sha256_required_at_vendor_time": true
       },
       "full_protocanonical_package": {
-        "corpus_id": "grc_ot_swete_full",
+        "corpus_id": "grc_ot_catholic_full",
         "book_scope_count": 39,
+        "first1k_swete_book_scope_count": 38,
+        "ecclesiastes_fallback_book_scope_count": 1,
         "tree_sha": "e1fe137e1409d0a73a52ddac6ba9669fcbc3ba79",
         "tree_path": "data/tlg0527",
+        "ecclesiastes_fallback_source_id": "open-greek-ecclesiastes",
         "vendor_script": "scripts/vendor_old_testament_greek_full.py",
         "validator": "tools/validate_logos_old_testament_greek_full.py",
         "per_file_git_blob_and_sha256_required": true,
@@ -154,7 +157,39 @@
       "modification_allowed": true,
       "share_alike": true,
       "isolation_required": true,
-      "notes": "The accepted Phase 1B deuterocanonical/additions package remains unchanged. The full protocanonical companion package uses the same immutable First1KGreek commit and pinned Septuagint tree, verifies CTS work/edition identity, per-file licence declarations, Git blob identity and SHA-256 at vendor time, and remains isolated under the ShareAlike partition."
+      "notes": "The accepted Phase 1B deuterocanonical/additions package remains unchanged. The complete protocanonical companion package uses 38 immutable First1K/Swete scopes; Ecclesiastes is intentionally supplied by the separately pinned Open Greek Corpus source because the pinned First1K tree has only the Ecclesiastes CTS metadata stub and no Greek text blob."
+    },
+    {
+      "id": "open-greek-ecclesiastes",
+      "title": "Greek Wikisource Septuagint Ecclesiastes via Open Greek Corpus",
+      "role": ["septuagint-ecclesiastes-fallback"],
+      "language": "grc",
+      "status": "approved-for-production-ingestion",
+      "production_import_allowed": true,
+      "license_verified": true,
+      "source_inventory_verified": true,
+      "rights": "pd-ancient-text-cc-by-sa-4.0-transcription",
+      "license": "CC BY-SA 4.0",
+      "license_detail": "PD (ancient LXX text); Wikisource transcription CC BY-SA 4.0",
+      "upstream_repository": "https://github.com/open-greek/open-greek-corpus",
+      "license_url": "https://github.com/open-greek/open-greek-corpus/blob/338aa27310b3cfe2588a993b4d113b503597d70f/LICENSE",
+      "pin": {"type": "git-commit", "value": "338aa27310b3cfe2588a993b4d113b503597d70f"},
+      "integrity": {
+        "path": "data/corpus/septuaginta.ecclesiastes.jsonl",
+        "git_blob_sha1": "1659770789d318e7ee04f3ee03684bf880922bc4",
+        "sha256": "required-at-vendor-time",
+        "license_evidence_path": "LICENSE",
+        "license_evidence_git_blob_sha1": "8259e21ad92848217dcdfd4067d8a919765eb4a7",
+        "ingest_evidence_path": "scripts/ingest_wikisource_ecclesiastes.py",
+        "ingest_evidence_git_blob_sha1": "cef0ca6d447741352c1d2c9924b6af46a3de3862"
+      },
+      "inventory": {"chapter_count": 12, "verse_count": 222},
+      "attribution": "Greek Wikisource LXX Ecclesiastes transcription via open-greek/open-greek-corpus.",
+      "commercial_use": true,
+      "modification_allowed": true,
+      "share_alike": true,
+      "isolation_required": true,
+      "notes": "This is an ecclesiastical/Byzantine-tradition LXX witness, not Swete's diplomatic Vaticanus text. Native source numbering is preserved. It is used only for Ecclesiastes because the pinned First1K tree contains an Ecclesiastes CTS stub without a Greek text blob."
     },
     {
       "id": "vulgate-clementine",
