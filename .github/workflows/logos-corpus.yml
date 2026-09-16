@@ -98,7 +98,7 @@ jobs:
           python tools/validate_logos_old_testament_greek_production.py --root "$out"
           python tools/validate_logos_ot_greek_runtime.py --root "$out"
 
-      - name: Build and validate full Swete OT Greek package for PR
+      - name: Build and validate complete Catholic Greek OT package for PR
         if: github.event_name == 'pull_request'
         run: |
           out="${RUNNER_TEMP}/logos-ot-greek-full"
@@ -132,7 +132,7 @@ jobs:
           python tools/validate_logos_old_testament_greek_production.py
           python tools/validate_logos_ot_greek_runtime.py
 
-      - name: Vendor full Swete OT Greek package on main
+      - name: Vendor complete Catholic Greek OT package on main
         if: github.event_name != 'pull_request'
         run: |
           python scripts/vendor_old_testament_greek_full.py
@@ -194,7 +194,7 @@ jobs:
           english_path='cloud-backend/app/logos_corpus/eng_douay_rheims_1899'
           greek_nt_path='cloud-backend/app/logos_corpus/grc_sblgnt_morphgnt'
           greek_ot_path='cloud-backend/app/logos_corpus/grc_ot_catholic_swete'
-          greek_ot_full_path='cloud-backend/app/logos_corpus/grc_ot_swete_full'
+          greek_ot_full_path='cloud-backend/app/logos_corpus/grc_ot_catholic_full'
           semitic_ot_path='cloud-backend/app/logos_corpus/heb_arc_oshb_wlc'
           latin_path='cloud-backend/app/logos_corpus/lat_vulgate_clementine'
           git add --all -- \
