@@ -7,6 +7,10 @@ verified by pinned Git blob SHA-1 before parsing. Source surfaces are preserved
 verbatim; comparison-only normalization removes presentation punctuation,
 known apparatus/elision marks, and case distinctions while preserving Greek
 letters and diacritics. Any remaining lexical difference fails the build.
+
+When a MorphGNT verse is intentionally absent, the omission must be explicitly
+source-locked. The SBLGNT surface remains present and the build records a
+linguistic annotation gap rather than fabricating morphology.
 """
 
 from __future__ import annotations
@@ -28,6 +32,7 @@ ROOT = Path(__file__).resolve().parents[1]
 LOCK_PATH = ROOT / "cloud-backend" / "app" / "logos_interlinear" / "greek_nt_phase1" / "source-lock.json"
 DEFAULT_OUTPUT = ROOT / "build" / "logos-greek-nt-phase1"
 VERSE_REF_RE = re.compile(r"^(.+?)\s+(\d+):(\d+)$")
+SHORT_REF_RE = re.compile(r"^(\d+):(\d+)$")
 HEX40_RE = re.compile(r"^[0-9a-f]{40}$")
 APPARATUS_MARKERS = frozenset({"⸀", "⸂", "⸃"})
 ELISION_MARKERS = frozenset({"ʼ", "’"})
@@ -147,6 +152,22 @@ def parse_morphgnt(text: str, book_name: str) -> dict[tuple[int, int], list[dict
     return dict(verses)
 
 
+def expected_missing_verses(book: dict) -> set[tuple[int, int]]:
+    raw_refs = book.get("morphgnt", {}).get("expected_missing_verses") or []
+    parsed: set[tuple[int, int]] = set()
+    for raw_ref in raw_refs:
+        match = SHORT_REF_RE.fullmatch(str(raw_ref))
+        if not match:
+            raise BuildError(f"{book.get('name')}: invalid expected missing MorphGNT verse {raw_ref!r}")
+        key = (int(match.group(1)), int(match.group(2)))
+        if key in parsed:
+            raise BuildError(f"{book.get('name')}: duplicate expected missing MorphGNT verse {raw_ref!r}")
+        parsed.add(key)
+    if parsed and not str(book.get("morphgnt", {}).get("missing_reason") or "").strip():
+        raise BuildError(f"{book.get('name')}: expected missing MorphGNT verses require a reason")
+    return parsed
+
+
 def lexical_alignment_key(value: str) -> str:
     """Return a comparison-only Greek lexical core; source text is never changed."""
     normalized = unicodedata.normalize("NFC", value).casefold()
@@ -222,11 +243,32 @@ def comparison_policy() -> dict:
     }
 
 
+def make_surface_tokens(book_id: str, chapter: int, verse: int, surfaces: list[str]) -> tuple[list[dict], list[str]]:
+    rows: list[dict] = []
+    ids: list[str] = []
+    for position, surface in enumerate(surfaces, start=1):
+        current_id = token_id(book_id, chapter, verse, position)
+        transliteration = transliterate_greek(surface)
+        if not transliteration:
+            raise BuildError(f"{book_id} {chapter}:{verse} token {position}: transliteration is empty")
+        ids.append(current_id)
+        rows.append(
+            {
+                "id": current_id,
+                "position": position,
+                "surface": surface,
+                "transliteration": transliteration,
+            }
+        )
+    return rows, ids
+
+
 def build_book(book: dict, lock: dict, output: Path) -> dict:
     book_id = str(book["book_id"])
     book_name = str(book["name"])
     sbl_source = lock["sources"]["sblgnt"]
     morph_source = lock["sources"]["morphgnt"]
+    expected_gaps = expected_missing_verses(book)
 
     sbl_text, sbl_sha256 = download_pinned(
         sbl_source["repository"], sbl_source["commit"],
@@ -239,12 +281,14 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
 
     sbl_verses = parse_sblgnt(sbl_text, book_name)
     morph_verses = parse_morphgnt(morph_text, book_name)
-    if set(sbl_verses) != set(morph_verses):
-        missing_morph = sorted(set(sbl_verses) - set(morph_verses))
-        missing_surface = sorted(set(morph_verses) - set(sbl_verses))
+    missing_morph = set(sbl_verses) - set(morph_verses)
+    missing_surface = set(morph_verses) - set(sbl_verses)
+    if missing_surface:
+        raise BuildError(f"{book_name}: MorphGNT has verses absent from SBLGNT: {sorted(missing_surface)[:12]}")
+    if missing_morph != expected_gaps:
         raise BuildError(
-            f"{book_name}: verse inventory mismatch; "
-            f"missing MorphGNT={missing_morph[:8]}, missing SBLGNT={missing_surface[:8]}"
+            f"{book_name}: MorphGNT annotation-gap inventory mismatch; "
+            f"expected={sorted(expected_gaps)}, actual={sorted(missing_morph)}"
         )
 
     surface_chapters: dict[str, dict] = {}
@@ -252,10 +296,42 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
     alignment_verses: list[dict] = []
     token_total = exact_token_total = normalized_token_total = 0
     exact_verse_total = normalized_verse_total = 0
+    gap_token_total = gap_verse_total = 0
+    gap_reason = str(book.get("morphgnt", {}).get("missing_reason") or "")
 
     for chapter, verse in sorted(sbl_verses):
         text = sbl_verses[(chapter, verse)]
         surfaces = text.split()
+        surface_tokens, ids = make_surface_tokens(book_id, chapter, verse, surfaces)
+        surface_chapters.setdefault(str(chapter), {})[str(verse)] = {
+            "text": text,
+            "tokens": surface_tokens,
+        }
+
+        if (chapter, verse) in expected_gaps:
+            linguistic_chapters.setdefault(str(chapter), {})[str(verse)] = {
+                "annotation_status": "unavailable-in-pinned-morphgnt",
+                "reason": gap_reason,
+                "tokens": [],
+            }
+            alignment_verses.append(
+                {
+                    "chapter": chapter,
+                    "verse": str(verse),
+                    "token_count": len(ids),
+                    "token_ids": ids,
+                    "alignment_mode": "surface-only-annotation-gap",
+                    "exact_token_count": 0,
+                    "source_presentation_normalized_token_count": 0,
+                    "annotation_gap_token_count": len(ids),
+                    "lexical_mismatch_count": 0,
+                }
+            )
+            token_total += len(ids)
+            gap_token_total += len(ids)
+            gap_verse_total += 1
+            continue
+
         morph_rows = morph_verses[(chapter, verse)]
         if len(surfaces) != len(morph_rows):
             raise BuildError(
@@ -263,11 +339,8 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
                 f"SBLGNT count={len(surfaces)}, MorphGNT count={len(morph_rows)}"
             )
 
-        surface_tokens: list[dict] = []
         linguistic_tokens: list[dict] = []
-        ids: list[str] = []
         verse_exact = verse_normalized = 0
-
         for position, (surface, morph_row) in enumerate(zip(surfaces, morph_rows), start=1):
             try:
                 alignment_mode = classify_surface_alignment(surface, morph_row["surface"])
@@ -277,23 +350,9 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
                 verse_exact += 1
             else:
                 verse_normalized += 1
-
-            current_id = token_id(book_id, chapter, verse, position)
-            transliteration = transliterate_greek(surface)
-            if not transliteration:
-                raise BuildError(f"{book_name} {chapter}:{verse} token {position}: transliteration is empty")
-            ids.append(current_id)
-            surface_tokens.append(
-                {
-                    "id": current_id,
-                    "position": position,
-                    "surface": surface,
-                    "transliteration": transliteration,
-                }
-            )
             linguistic_tokens.append(
                 {
-                    "id": current_id,
+                    "id": ids[position - 1],
                     "position": position,
                     "source_token_id": f"{morph_row['source_ref']}:{position:03d}",
                     "source_surface": morph_row["surface"],
@@ -305,11 +364,8 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
                 }
             )
 
-        surface_chapters.setdefault(str(chapter), {})[str(verse)] = {
-            "text": text,
-            "tokens": surface_tokens,
-        }
         linguistic_chapters.setdefault(str(chapter), {})[str(verse)] = {
+            "annotation_status": "available",
             "tokens": linguistic_tokens,
         }
         verse_mode = "exact" if verse_normalized == 0 else "source-presentation-normalized"
@@ -322,6 +378,7 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
                 "alignment_mode": verse_mode,
                 "exact_token_count": verse_exact,
                 "source_presentation_normalized_token_count": verse_normalized,
+                "annotation_gap_token_count": 0,
                 "lexical_mismatch_count": 0,
             }
         )
@@ -379,6 +436,7 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
             "share_alike": True,
             "isolation_required": True,
         },
+        "expected_missing_verses": sorted(book.get("morphgnt", {}).get("expected_missing_verses") or []),
         "field_provenance": {
             "source_surface": "MorphGNT",
             "lemma": "MorphGNT",
@@ -402,8 +460,11 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
         "token_count": token_total,
         "exact_token_count": exact_token_total,
         "source_presentation_normalized_token_count": normalized_token_total,
+        "annotation_gap_token_count": gap_token_total,
         "exact_verse_count": exact_verse_total,
         "source_presentation_normalized_verse_count": normalized_verse_total,
+        "annotation_gap_verse_count": gap_verse_total,
+        "morphology_coverage_verse_count": len(alignment_verses) - gap_verse_total,
         "lexical_mismatch_count": 0,
         "alignment_mismatch_count": 0,
         "comparison_policy": comparison_policy(),
@@ -423,8 +484,11 @@ def build_book(book: dict, lock: dict, output: Path) -> dict:
         "token_count": token_total,
         "exact_token_count": exact_token_total,
         "source_presentation_normalized_token_count": normalized_token_total,
+        "annotation_gap_token_count": gap_token_total,
         "exact_verse_count": exact_verse_total,
         "source_presentation_normalized_verse_count": normalized_verse_total,
+        "annotation_gap_verse_count": gap_verse_total,
+        "morphology_coverage_verse_count": len(sbl_verses) - gap_verse_total,
         "lexical_mismatch_count": 0,
         "alignment_mismatch_count": 0,
         "sblgnt": {
@@ -454,6 +518,8 @@ def validate_lock(lock: dict) -> None:
         raise BuildError("source lock book order must be 1..27")
     if len({row.get("book_id") for row in books}) != 27:
         raise BuildError("source lock book ids are not unique")
+    for book in books:
+        expected_missing_verses(book)
     sbl = lock.get("sources", {}).get("sblgnt", {})
     morph = lock.get("sources", {}).get("morphgnt", {})
     if sbl.get("license") != "CC BY 4.0":
@@ -497,15 +563,23 @@ def main() -> int:
         "source_presentation_normalized_token_count": sum(
             row["source_presentation_normalized_token_count"] for row in book_stats
         ),
+        "annotation_gap_token_count": sum(row["annotation_gap_token_count"] for row in book_stats),
         "exact_alignment_verse_count": sum(row["exact_verse_count"] for row in book_stats),
         "source_presentation_normalized_verse_count": sum(
             row["source_presentation_normalized_verse_count"] for row in book_stats
         ),
+        "annotation_gap_verse_count": sum(row["annotation_gap_verse_count"] for row in book_stats),
+        "morphology_coverage_verse_count": sum(row["morphology_coverage_verse_count"] for row in book_stats),
         "lexical_mismatch_count": sum(row["lexical_mismatch_count"] for row in book_stats),
         "alignment_mismatch_count": sum(row["alignment_mismatch_count"] for row in book_stats),
         "alignment_policy": {
             "mode": "exact-or-lexical-core-with-source-presentation-ignored",
             **comparison_policy(),
+        },
+        "annotation_gap_policy": {
+            "mode": "source-locked-only",
+            "fabricate_morphology": False,
+            "surface_text_preserved": True,
         },
         "source_commits": {
             "sblgnt": lock["sources"]["sblgnt"]["commit"],
@@ -523,8 +597,8 @@ def main() -> int:
     print(
         "[Greek NT Phase 1] generated "
         f"{manifest['book_count']} books, {manifest['chapter_count']} chapters, "
-        f"{manifest['verse_count']} verses, {manifest['token_count']} aligned tokens "
-        f"({manifest['source_presentation_normalized_token_count']} presentation-normalized); "
+        f"{manifest['verse_count']} verses, {manifest['token_count']} surface tokens; "
+        f"{manifest['annotation_gap_verse_count']} source-locked morphology-gap verses; "
         "production remains disabled"
     )
     return 0
