@@ -6,13 +6,15 @@ from fastapi import APIRouter, HTTPException, Query, Response
 
 from .logos import _corpus_book, _corpus_manifest, _parse_corpus_reference
 
-router = APIRouter(prefix="/ot-lxx", tags=["Logos Full Septuagint Old Testament"])
-CORPUS_DIR = Path(__file__).with_name("logos_corpus") / "grc_ot_swete_full"
+router = APIRouter(prefix="/ot-lxx", tags=["Logos Complete Protocanonical Greek Old Testament"])
+CORPUS_DIR = Path(__file__).with_name("logos_corpus") / "grc_ot_catholic_full"
 MANIFEST_PATH = CORPUS_DIR / "manifest.json"
-ISOLATED_ROOT = CORPUS_DIR / "sharealike" / "first1kgreek_swete_cc-by-sa-4.0"
+ISOLATED_ROOT = CORPUS_DIR / "sharealike" / "catholic_lxx_cc-by-sa-4.0"
 BOOK_DIR = ISOLATED_ROOT / "books"
-EXPECTED_SOURCE_COMMIT = "8ee111eb44ecef4120c844e10749178d95d1f30c"
-EXPECTED_TREE_SHA = "e1fe137e1409d0a73a52ddac6ba9669fcbc3ba79"
+FIRST1K_COMMIT = "8ee111eb44ecef4120c844e10749178d95d1f30c"
+FIRST1K_TREE_SHA = "e1fe137e1409d0a73a52ddac6ba9669fcbc3ba79"
+ECC_COMMIT = "338aa27310b3cfe2588a993b4d113b503597d70f"
+ECC_BLOB = "1659770789d318e7ee04f3ee03684bf880922bc4"
 
 
 @lru_cache(maxsize=1)
@@ -20,21 +22,33 @@ def _manifest() -> dict:
     if not MANIFEST_PATH.exists():
         return {}
     payload = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
-    if payload.get("corpus_id") != "grc_ot_swete_full" or payload.get("production_enabled") is not True:
-        raise RuntimeError("Unexpected Logos full Swete OT manifest")
+    if payload.get("corpus_id") != "grc_ot_catholic_full" or payload.get("production_enabled") is not True:
+        raise RuntimeError("Unexpected Logos complete Catholic Greek OT manifest")
     if int(payload.get("book_count") or 0) != 39:
-        raise RuntimeError("Full Swete OT package does not contain 39 protocanonical Catholic book scopes")
-    source = payload.get("source") or {}
-    if source.get("commit") != EXPECTED_SOURCE_COMMIT or source.get("septuagint_tree_sha") != EXPECTED_TREE_SHA:
-        raise RuntimeError("Full Swete OT immutable source pin changed")
-    if source.get("license") != "CC BY-SA 4.0" or source.get("share_alike") is not True or source.get("isolation_required") is not True:
-        raise RuntimeError("Full Swete OT rights/isolation contract changed")
+        raise RuntimeError("Complete Catholic Greek OT package does not contain 39 protocanonical book scopes")
+    if int(payload.get("first1k_swete_book_scope_count") or 0) != 38:
+        raise RuntimeError("Complete Catholic Greek OT package does not preserve 38 First1K/Swete scopes")
+    if int(payload.get("ecclesiastes_fallback_book_scope_count") or 0) != 1:
+        raise RuntimeError("Complete Catholic Greek OT package lacks the explicit Ecclesiastes fallback scope")
+    sources = payload.get("sources") or {}
+    first1k = sources.get("first1k_swete") or {}
+    if first1k.get("commit") != FIRST1K_COMMIT or first1k.get("septuagint_tree_sha") != FIRST1K_TREE_SHA:
+        raise RuntimeError("Complete Catholic Greek OT First1K immutable source pin changed")
+    ecclesiastes = sources.get("ecclesiastes") or {}
+    if ecclesiastes.get("commit") != ECC_COMMIT or ecclesiastes.get("git_blob_sha1") != ECC_BLOB:
+        raise RuntimeError("Complete Catholic Greek OT Ecclesiastes immutable source pin changed")
+    if ecclesiastes.get("first1k_gap_verified") is not True:
+        raise RuntimeError("Complete Catholic Greek OT Ecclesiastes fallback no longer proves the First1K gap")
+    if first1k.get("license") != "CC BY-SA 4.0" or ecclesiastes.get("license") != "CC BY-SA 4.0":
+        raise RuntimeError("Complete Catholic Greek OT source licence contract changed")
     partition = payload.get("partition") or {}
     if partition.get("share_alike") is not True or partition.get("isolation_required") is not True:
-        raise RuntimeError("Full Swete OT ShareAlike partition contract changed")
+        raise RuntimeError("Complete Catholic Greek OT ShareAlike partition contract changed")
     runtime = payload.get("runtime_contract") or {}
     if runtime.get("source_boundaries_preserved") is not True or runtime.get("empty_source_divisions_preserved") is not True:
-        raise RuntimeError("Full Swete OT source-boundary preservation contract changed")
+        raise RuntimeError("Complete Catholic Greek OT source-boundary preservation contract changed")
+    if runtime.get("ecclesiastes_not_swete") is not True:
+        raise RuntimeError("Ecclesiastes must remain explicitly distinguished from Swete")
     return payload
 
 
@@ -42,20 +56,31 @@ def _manifest() -> dict:
 def _book(book_id: str) -> dict:
     safe = "".join(ch for ch in str(book_id).upper() if ch.isalnum())
     if safe != str(book_id).upper():
-        raise RuntimeError("Invalid full Swete OT book id")
+        raise RuntimeError("Invalid complete Catholic Greek OT book id")
     path = BOOK_DIR / f"{safe}.json"
     if not path.exists():
         raise HTTPException(status_code=404, detail="logos_full_lxx_book_not_installed")
     payload = json.loads(path.read_text(encoding="utf-8"))
-    if payload.get("book_id") != safe or payload.get("corpus_id") != "grc_ot_swete_full":
-        raise RuntimeError("Unexpected full Swete OT book payload")
+    if payload.get("book_id") != safe or payload.get("corpus_id") != "grc_ot_catholic_full":
+        raise RuntimeError("Unexpected complete Catholic Greek OT book payload")
     if payload.get("license") != "CC BY-SA 4.0" or payload.get("share_alike") is not True or payload.get("isolation_required") is not True:
-        raise RuntimeError("Full Swete OT book rights/isolation contract changed")
-    if (payload.get("source") or {}).get("per_file_license_verified") is not True:
-        raise RuntimeError("Full Swete OT per-file licence gate missing")
+        raise RuntimeError("Complete Catholic Greek OT book rights/isolation contract changed")
+    source = payload.get("source") or {}
+    if source.get("per_file_license_verified") is not True:
+        raise RuntimeError("Complete Catholic Greek OT per-file licence gate missing")
+    if safe == "ECC":
+        if source.get("source_family") != "open-greek-wikisource-ecclesiastes":
+            raise RuntimeError("Ecclesiastes source family changed")
+        if source.get("commit") != ECC_COMMIT or source.get("git_blob_sha1") != ECC_BLOB:
+            raise RuntimeError("Ecclesiastes source integrity pin changed")
+    else:
+        if source.get("source_family") != "first1k-swete":
+            raise RuntimeError(f"{safe} unexpectedly left the First1K/Swete source family")
+        if source.get("commit") != FIRST1K_COMMIT:
+            raise RuntimeError(f"{safe} First1K source pin changed")
     surface_policy = payload.get("surface_policy") or {}
     if surface_policy.get("source_boundaries_preserved") is not True or surface_policy.get("empty_source_divisions_preserved") is not True:
-        raise RuntimeError("Full Swete OT source-surface preservation metadata missing")
+        raise RuntimeError("Complete Catholic Greek OT source-surface preservation metadata missing")
     return payload
 
 
@@ -119,7 +144,7 @@ def _chapter_identity(book_id: str, chapter: int, source_book: dict) -> dict:
     exact = bool(rows and dra_chapter and source_set is not None and dra_set is not None and source_set == dra_set)
     return {
         "exact": exact,
-        "mode": "exact-dra-swete-chapter-verse-identity" if exact else "explicit-mapping-required",
+        "mode": "exact-dra-greek-chapter-verse-identity" if exact else "explicit-mapping-required",
         "canonical_chapter": chapter,
         "source_chapter": _source_chapter_for(source_book, chapter),
         "source_verse_count": len(rows),
@@ -139,6 +164,13 @@ def _public_row(row: dict) -> dict:
         "surface": row.get("surface"),
         "source_empty_surface": row.get("source_empty_surface") is True,
     }
+
+
+def _label(source_book: dict) -> str:
+    source = source_book.get("source") or {}
+    if source.get("source_family") == "open-greek-wikisource-ecclesiastes":
+        return "Septuagint — Greek Wikisource Ecclesiastes"
+    return "Septuagint — Swete"
 
 
 def _study_payload(reference: str) -> dict:
@@ -163,7 +195,7 @@ def _study_payload(reference: str) -> dict:
                 "code": "logos_full_lxx_versification_mapping_required",
                 "reference": canonical_ref,
                 "alignment": alignment,
-                "message": "The Swete Greek witness is installed, but this chapter is not rendered verse-for-verse against Douay-Rheims until an explicit versification mapping is validated.",
+                "message": "The Greek OT witness is installed, but this chapter is not rendered verse-for-verse against Douay-Rheims until an explicit versification mapping is validated.",
             },
         )
 
@@ -182,6 +214,13 @@ def _study_payload(reference: str) -> dict:
             raise HTTPException(status_code=404, detail="logos_full_lxx_source_verse_not_found")
         selected.append(_public_row(row))
 
+    source = source_book.get("source") or {}
+    source_family = source.get("source_family")
+    note = (
+        "Ecclesiastes is served from the pinned Greek Wikisource ecclesiastical LXX fallback because the pinned First1K tree contains only its CTS stub. Native source numbering is preserved; this witness is not represented as Swete."
+        if source_family == "open-greek-wikisource-ecclesiastes"
+        else "The Greek source surface and verse divisions are preserved from the pinned Swete witness, including explicitly empty source divisions."
+    )
     return {
         "reference": canonical_ref,
         "book": book_meta.get("name"),
@@ -190,7 +229,7 @@ def _study_payload(reference: str) -> dict:
         "verse_start": verse_start,
         "verse_end": verse_end,
         "language": "grc",
-        "label": "Septuagint — Swete",
+        "label": _label(source_book),
         "corpus_id": manifest.get("corpus_id"),
         "corpus_version": manifest.get("corpus_version"),
         "license": source_book.get("license"),
@@ -199,9 +238,9 @@ def _study_payload(reference: str) -> dict:
         "alignment": alignment,
         "mapping": source_book.get("mapping") or {},
         "verses": selected,
-        "source": source_book.get("source") or {},
+        "source": source,
         "derived_layers": manifest.get("derived_layers") or {},
-        "note": "The Greek source surface and its verse divisions are preserved from the pinned Swete witness, including explicitly empty source divisions. No LXX gloss, lemma, morphology, transliteration or verse remapping is fabricated.",
+        "note": note + " No LXX gloss, lemma, morphology, transliteration or verse remapping is fabricated.",
     }
 
 
@@ -215,10 +254,12 @@ def catalog(response: Response):
         "corpus_id": manifest.get("corpus_id"),
         "corpus_version": manifest.get("corpus_version"),
         "book_count": manifest.get("book_count", 0),
+        "first1k_swete_book_scope_count": manifest.get("first1k_swete_book_scope_count", 0),
+        "ecclesiastes_fallback_book_scope_count": manifest.get("ecclesiastes_fallback_book_scope_count", 0),
         "verse_record_count": manifest.get("verse_record_count", 0),
         "empty_source_surface_count": manifest.get("empty_source_surface_count", 0),
         "scope": manifest.get("scope"),
-        "source": manifest.get("source") or {},
+        "sources": manifest.get("sources") or {},
     }
 
 
@@ -231,7 +272,7 @@ def source_rights(response: Response):
     return {
         "corpus_id": manifest.get("corpus_id"),
         "corpus_version": manifest.get("corpus_version"),
-        "source": manifest.get("source") or {},
+        "sources": manifest.get("sources") or {},
         "partition": manifest.get("partition") or {},
         "runtime_contract": manifest.get("runtime_contract") or {},
         "derived_layers": manifest.get("derived_layers") or {},
