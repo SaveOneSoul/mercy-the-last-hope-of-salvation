@@ -139,10 +139,10 @@
       "title": "Swete Septuagint witnesses in OpenGreekAndLatin First1KGreek",
       "role": ["septuagint", "deuterocanonical-greek"],
       "language": "grc",
-      "status": "license-verified-file-inventory-pending",
-      "production_import_allowed": false,
+      "status": "approved-for-production-ingestion",
+      "production_import_allowed": true,
       "license_verified": true,
-      "source_inventory_verified": false,
+      "source_inventory_verified": true,
       "rights": "cc-by-sa-4.0",
       "license": "CC BY-SA 4.0",
       "upstream_repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
@@ -152,15 +152,22 @@
         "value": "8ee111eb44ecef4120c844e10749178d95d1f30c"
       },
       "integrity": {
-        "status": "blocked-until-exact-swete-file-inventory-is-pinned",
-        "sha256": null
+        "status": "verified-by-phase1b-source-lock",
+        "source_lock": "cloud-backend/app/logos_interlinear/old_testament_phase1b/source-lock.json",
+        "witness_count": 15,
+        "source_verse_record_count": 5337,
+        "per_file_sha256_required_at_vendor_time": true
+      },
+      "owner_acceptance": {
+        "phase": "Old Testament Expansion Phase 1B",
+        "merge_commit": "22ad0019355d6924592d3c6b5176624e6fd4c866"
       },
       "attribution": "OpenGreekAndLatin First1KGreek / source-specific Swete work metadata; CC BY-SA 4.0.",
       "commercial_use": true,
       "modification_allowed": true,
       "share_alike": true,
       "isolation_required": true,
-      "notes": "Repository-level licence and immutable commit are verified. Bulk import remains blocked until exact Swete work/file inventory and per-file provenance are recorded."
+      "notes": "The exact 15-witness inventory, CTS editions, Git blob identities, per-file licence declarations, Catholic mapping contract, and deterministic 5,337-record validation build were accepted in OT Phase 1B. Production ingestion is allowed only through the isolated production packager and must preserve source verse boundaries and ShareAlike separation."
     },
     {
       "id": "vulgate-clementine",

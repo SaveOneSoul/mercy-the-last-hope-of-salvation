@@ -7,6 +7,7 @@ INTERLINEAR_DIR = ROOT / "cloud-backend" / "app" / "logos_interlinear"
 SOURCES_PATH = INTERLINEAR_DIR / "sources-manifest.json"
 BOOKS_PATH = INTERLINEAR_DIR / "books.json"
 TOKEN_SCHEMA_PATH = INTERLINEAR_DIR / "token.schema.json"
+PHASE1B_ACCEPTANCE_MERGE = "22ad0019355d6924592d3c6b5176624e6fd4c866"
 
 DEUTEROCANON = {
     "Tobit",
@@ -162,10 +163,18 @@ def main() -> int:
             fail(f"{by_id[book_id]['name']} must use the Greek deuterocanonical profile")
 
     lxx = source_index.get("first1kgreek-swete") or {}
-    if lxx.get("production_import_allowed") is not False:
-        fail("LXX must remain blocked until the exact Swete file inventory is pinned")
+    if lxx.get("status") != "approved-for-production-ingestion":
+        fail("LXX must record accepted production-ingestion status")
+    if lxx.get("production_import_allowed") is not True or lxx.get("source_inventory_verified") is not True:
+        fail("LXX accepted Swete inventory must be production-importable")
     if lxx.get("share_alike") is not True or lxx.get("isolation_required") is not True:
         fail("LXX ShareAlike isolation gate is missing")
+    acceptance = lxx.get("owner_acceptance") or {}
+    if acceptance.get("phase") != "Old Testament Expansion Phase 1B" or acceptance.get("merge_commit") != PHASE1B_ACCEPTANCE_MERGE:
+        fail("LXX exact-head owner acceptance is missing or changed")
+    integrity = lxx.get("integrity") or {}
+    if integrity.get("status") != "verified-by-phase1b-source-lock" or integrity.get("witness_count") != 15 or integrity.get("source_verse_record_count") != 5337:
+        fail("LXX accepted source-inventory integrity evidence is incomplete")
 
     vulgate = source_index.get("vulgate-clementine") or {}
     if vulgate.get("production_import_allowed") is not False:

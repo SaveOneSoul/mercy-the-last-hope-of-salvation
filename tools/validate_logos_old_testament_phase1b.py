@@ -19,6 +19,7 @@ HEX64 = re.compile(r"^[0-9a-f]{64}$")
 
 SOURCE_COMMIT = "8ee111eb44ecef4120c844e10749178d95d1f30c"
 SOURCE_TREE = "e1fe137e1409d0a73a52ddac6ba9669fcbc3ba79"
+PHASE1B_ACCEPTANCE_MERGE = "22ad0019355d6924592d3c6b5176624e6fd4c866"
 ISOLATED_ROOT = "sharealike/first1kgreek_swete_cc-by-sa-4.0"
 EXPECTED_TOTAL_VERSES = 5337
 EXPECTED_IDS = [
@@ -58,7 +59,7 @@ def validate_static() -> None:
     sources = load(SOURCES_PATH)
 
     need(lock.get("phase") == "Old Testament Expansion Phase 1B", "unexpected Phase 1B lock identity")
-    need(lock.get("production_enabled") is False and lock.get("production_import_allowed") is False, "Phase 1B must remain production-disabled")
+    need(lock.get("production_enabled") is False and lock.get("production_import_allowed") is False, "Phase 1B evidence must remain production-disabled")
     need(lock.get("owner_acceptance_required") is True, "Phase 1B owner-acceptance gate missing")
     source = lock.get("source") or {}
     need(source.get("repository") == "OpenGreekAndLatin/First1KGreek", "unexpected Phase 1B repository")
@@ -89,7 +90,7 @@ def validate_static() -> None:
     need({wid for wid, row in ids.items() if row.get("witness_role") == "preserved-parallel-witness"} == PARALLEL_IDS, "Old Greek parallel witness inventory changed")
     need(THEODOTION_IDS.issubset({wid for wid, row in ids.items() if row.get("witness_role") == "primary-catholic-integration"}), "Theodotion integration witnesses missing")
 
-    need(mapping.get("production_enabled") is False, "versification map must remain validation-only")
+    need(mapping.get("production_enabled") is False, "accepted versification evidence itself must remain validation-only")
     identity = {str(x.get("witness_id")): x for x in mapping.get("identity_books") or []}
     need(set(identity) == {"TOB-SWETE", "JDT-SWETE", "1MA-SWETE", "2MA-SWETE", "WIS-SWETE", "SIR-SWETE"}, "identity-book map changed")
     need(all(x.get("mapping") == "identity-chapter-verse" for x in identity.values()), "identity mapping must stay explicit")
@@ -122,12 +123,18 @@ def validate_static() -> None:
     parallel = {str(x.get("witness_id")): x for x in daniel.get("parallel_segments") or []}
     need(set(parallel) == PARALLEL_IDS and all(x.get("canonical_replacement") is False for x in parallel.values()), "Old Greek parallel-witness preservation changed")
 
-    # The Phase 1A gate and central registry remain production-blocked until exact-head owner acceptance.
-    need(gate.get("production_enabled") is False and gate.get("production_import_allowed") is False, "Phase 1B source gate must not enable production")
+    need(gate.get("production_enabled") is False and gate.get("production_import_allowed") is False, "Phase 1B evidence gate itself must remain validation-only")
+    need(gate.get("status") == "accepted-production-integration-authorized", "Phase 1B acceptance state missing")
+    gate_evidence = gate.get("known_repository_evidence") or {}
+    need(gate_evidence.get("owner_accepted") is True, "Phase 1B owner acceptance not recorded")
+    need(gate_evidence.get("owner_acceptance_merge_commit") == PHASE1B_ACCEPTANCE_MERGE, "Phase 1B owner-acceptance merge mismatch")
+
     first1k = next((x for x in sources.get("sources") or [] if x.get("id") == "first1kgreek-swete"), None)
     need(first1k is not None, "First1KGreek source registry entry missing")
-    need(first1k.get("production_import_allowed") is False, "central source registry must remain blocked until owner acceptance")
+    need(first1k.get("status") == "approved-for-production-ingestion", "central source registry acceptance state missing")
+    need(first1k.get("production_import_allowed") is True and first1k.get("source_inventory_verified") is True, "central source registry must reflect accepted Phase 1B inventory")
     need(first1k.get("share_alike") is True and first1k.get("isolation_required") is True, "central ShareAlike boundary changed")
+    need((first1k.get("owner_acceptance") or {}).get("merge_commit") == PHASE1B_ACCEPTANCE_MERGE, "central registry acceptance merge mismatch")
 
 
 def witness_path(root: Path, witness_id: str) -> Path:
@@ -221,7 +228,7 @@ def main() -> None:
         print(
             "Logos OT Phase 1B validation passed: "
             f"15 locked Greek witnesses, {manifest['verse_record_count']} source verse records, "
-            "CC BY-SA 4.0 isolated; production disabled"
+            "CC BY-SA 4.0 isolated; production evidence remains validation-only"
         )
     else:
         print("Logos OT Phase 1B static source-lock and versification validation: OK")
