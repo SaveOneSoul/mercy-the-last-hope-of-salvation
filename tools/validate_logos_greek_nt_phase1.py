@@ -23,18 +23,27 @@ EXPECTED_IDS = [
     "EPH", "PHP", "COL", "1TH", "2TH", "1TI", "2TI", "TIT", "PHM",
     "HEB", "JAS", "1PE", "2PE", "1JN", "2JN", "3JN", "JUD", "REV",
 ]
+EXPECTED_JOHN_MORPH_GAPS = {
+    "7:53", "8:1", "8:2", "8:3", "8:4", "8:5", "8:6",
+    "8:7", "8:8", "8:9", "8:10", "8:11",
+}
 SBL_COMMIT = "c4d241a9c1c479a55b989ba35a4976c1d0b8052c"
 MORPH_COMMIT = "aaed91e57c8e4a8dc9a2383e129ca5e75fe6393d"
 JOHN_SBL_BLOB = "a79ae036447d48fd88c4db8e166c771b4fc57d93"
 JOHN_MORPH_BLOB = "c3dab42934edab531f7dc08b630be8181638bd61"
 APPARATUS_MARKERS = frozenset({"⸀", "⸂", "⸃"})
 ELISION_MARKERS = frozenset({"ʼ", "’"})
+SHORT_REF_RE = re.compile(r"^(\d+):(\d+)$")
 HEX40 = re.compile(r"^[0-9a-f]{40}$")
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
 
 
+class ValidationError(RuntimeError):
+    pass
+
+
 def fail(message: str) -> None:
-    raise SystemExit(f"Greek NT Phase 1 validation failed: {message}")
+    raise ValidationError(message)
 
 
 def load(path: Path) -> dict:
@@ -46,7 +55,33 @@ def load(path: Path) -> dict:
         fail(f"cannot parse {path}: {exc}")
 
 
+def parse_short_refs(values: list[str], label: str) -> set[tuple[int, int]]:
+    parsed: set[tuple[int, int]] = set()
+    for raw in values:
+        match = SHORT_REF_RE.fullmatch(str(raw))
+        if not match:
+            fail(f"{label}: malformed verse reference {raw!r}")
+        key = (int(match.group(1)), int(match.group(2)))
+        if key in parsed:
+            fail(f"{label}: duplicate verse reference {raw!r}")
+        parsed.add(key)
+    return parsed
+
+
+def ref_string(key: tuple[int, int]) -> str:
+    return f"{key[0]}:{key[1]}"
+
+
+def lock_gap_refs(book: dict) -> set[tuple[int, int]]:
+    morph = book.get("morphgnt") or {}
+    refs = parse_short_refs(list(morph.get("expected_missing_verses") or []), f"{book.get('book_id')} gap lock")
+    if refs and not str(morph.get("missing_reason") or "").strip():
+        fail(f"{book.get('book_id')}: source-locked annotation gaps require a missing_reason")
+    return refs
+
+
 def lexical_alignment_key(value: str) -> str:
+    """Mirror the importer's comparison-only lexical-core normalization."""
     normalized = unicodedata.normalize("NFC", value).casefold()
     normalized = unicodedata.normalize("NFC", normalized)
     chars: list[str] = []
@@ -128,6 +163,7 @@ def validate_static() -> dict:
     if len({row.get("name") for row in books}) != 27:
         fail("source-lock book names are not unique")
 
+    by_id = {row["book_id"]: row for row in books}
     for row in books:
         for source_key in ("sblgnt", "morphgnt"):
             part = row.get(source_key) or {}
@@ -136,7 +172,16 @@ def validate_static() -> dict:
             if not HEX40.fullmatch(str(part.get("blob_sha1") or "")):
                 fail(f"{row.get('book_id')} has invalid {source_key} blob SHA-1")
 
-    by_id = {row["book_id"]: row for row in books}
+        gaps = {ref_string(key) for key in lock_gap_refs(row)}
+        if row.get("book_id") == "JHN":
+            if gaps != EXPECTED_JOHN_MORPH_GAPS:
+                fail(
+                    "John MorphGNT gap lock must be exactly John 7:53-8:11; "
+                    f"found {sorted(gaps)}"
+                )
+        elif gaps:
+            fail(f"{row.get('book_id')}: unexpected MorphGNT annotation-gap lock {sorted(gaps)}")
+
     if by_id["JHN"]["sblgnt"]["blob_sha1"] != JOHN_SBL_BLOB:
         fail("John SBLGNT blob no longer matches accepted prototype")
     if by_id["JHN"]["morphgnt"]["blob_sha1"] != JOHN_MORPH_BLOB:
@@ -153,7 +198,7 @@ def validate_static() -> dict:
     if global_sbl.get("pin", {}).get("value") != SBL_COMMIT:
         fail("global SBLGNT source registry pin differs from Phase 1")
     if "morphgnt-sblgnt" in global_index and global_index["morphgnt-sblgnt"].get("production_import_allowed") is not False:
-        fail("MorphGNT must not become a production source before Phase 1 corpus validation passes")
+        fail("MorphGNT must not become a production source before Phase 1 validation passes")
 
     profile = (books_payload.get("profiles") or {}).get("greek-nt") or {}
     if profile.get("primary_text_source") != "sblgnt":
@@ -170,6 +215,11 @@ def validate_static() -> dict:
         "APPARATUS_MARKERS",
         "ELISION_MARKERS",
         "casefolded_for_comparison",
+        "expected_missing_verses",
+        "surface-only-annotation-gap",
+        "annotation_gap_token_count",
+        "annotation_gap_verse_count",
+        "fabricate_morphology",
         "lexical_alignment_key",
         "classify_surface_alignment",
         "source_presentation_normalized_token_count",
@@ -185,7 +235,8 @@ def validate_static() -> dict:
 
     print(
         "Greek NT Phase 1 static validation passed: owner acceptance, 27 source locks, "
-        "SBLGNT/MorphGNT pins, ShareAlike partitions, and casefolded lexical-core alignment policy verified"
+        "SBLGNT/MorphGNT pins, ShareAlike partitions, lexical-core alignment, and "
+        "the source-locked John 7:53-8:11 MorphGNT annotation gap verified"
     )
     return lock
 
@@ -224,17 +275,24 @@ def validate_generated(path: Path, lock: dict) -> None:
     token_count = int(manifest.get("token_count") or 0)
     exact_token_count = int(manifest.get("exact_token_count") or 0)
     normalized_token_count = int(manifest.get("source_presentation_normalized_token_count") or 0)
+    gap_token_count = int(manifest.get("annotation_gap_token_count") or 0)
     exact_verse_count = int(manifest.get("exact_alignment_verse_count") or 0)
     normalized_verse_count = int(manifest.get("source_presentation_normalized_verse_count") or 0)
+    gap_verse_count = int(manifest.get("annotation_gap_verse_count") or 0)
+    morphology_coverage_verse_count = int(manifest.get("morphology_coverage_verse_count") or 0)
 
     if verse_count < 7900:
         fail(f"generated verse count too small: {verse_count}")
     if token_count < 130000:
         fail(f"generated token count too small: {token_count}")
-    if exact_token_count + normalized_token_count != token_count:
-        fail("manifest exact/normalized token counts do not sum to total token count")
-    if exact_verse_count + normalized_verse_count != verse_count:
-        fail("manifest exact/normalized verse counts do not sum to verse count")
+    if exact_token_count + normalized_token_count + gap_token_count != token_count:
+        fail("manifest exact/normalized/gap token counts do not sum to total token count")
+    if exact_verse_count + normalized_verse_count + gap_verse_count != verse_count:
+        fail("manifest exact/normalized/gap verse counts do not sum to verse count")
+    if morphology_coverage_verse_count + gap_verse_count != verse_count:
+        fail("manifest MorphGNT coverage plus annotation gaps does not sum to verse count")
+    if gap_verse_count != len(EXPECTED_JOHN_MORPH_GAPS):
+        fail(f"generated annotation-gap verse count is {gap_verse_count}, expected 12")
     if manifest.get("lexical_mismatch_count") != 0 or manifest.get("alignment_mismatch_count") != 0:
         fail("generated corpus has lexical/alignment mismatches")
 
@@ -242,6 +300,14 @@ def validate_generated(path: Path, lock: dict) -> None:
     if policy.get("mode") != "exact-or-lexical-core-with-source-presentation-ignored":
         fail("generated alignment policy mode changed")
     validate_policy(policy, "manifest alignment policy")
+
+    gap_policy = manifest.get("annotation_gap_policy") or {}
+    if gap_policy.get("mode") != "source-locked-only":
+        fail("annotation-gap policy must remain source-locked-only")
+    if gap_policy.get("fabricate_morphology") is not False:
+        fail("annotation-gap policy must forbid fabricated morphology")
+    if gap_policy.get("surface_text_preserved") is not True:
+        fail("annotation-gap policy must preserve SBLGNT surface text")
 
     if manifest.get("source_commits", {}).get("sblgnt") != SBL_COMMIT:
         fail("generated manifest SBLGNT commit mismatch")
@@ -254,21 +320,29 @@ def validate_generated(path: Path, lock: dict) -> None:
     if [row.get("book_id") for row in book_rows] != EXPECTED_IDS:
         fail("generated book order differs from source lock")
     lock_by_id = {row["book_id"]: row for row in lock["books"]}
+    manifest_by_id = {row["book_id"]: row for row in book_rows}
 
-    observed_exact_tokens = observed_normalized_tokens = 0
-    observed_exact_verses = observed_normalized_verses = 0
+    observed_exact_tokens = 0
+    observed_normalized_tokens = 0
+    observed_gap_tokens = 0
+    observed_exact_verses = 0
+    observed_normalized_verses = 0
+    observed_gap_verses = 0
     total_alignment_verses = 0
 
     for book_id in EXPECTED_IDS:
+        lock_book = lock_by_id[book_id]
+        expected_gaps = lock_gap_refs(lock_book)
         surface = load(path / "surface" / f"{book_id}.json")
         ling = load(path / "linguistics" / f"{book_id}.json")
         align = load(path / "alignment" / f"{book_id}.json")
+        manifest_book = manifest_by_id[book_id]
 
         if surface.get("layer") != "surface" or ling.get("layer") != "linguistics" or align.get("layer") != "alignment":
             fail(f"{book_id}: generated layer labels are invalid")
-        if surface.get("source", {}).get("blob_sha1") != lock_by_id[book_id]["sblgnt"]["blob_sha1"]:
+        if surface.get("source", {}).get("blob_sha1") != lock_book["sblgnt"]["blob_sha1"]:
             fail(f"{book_id}: SBLGNT blob lock mismatch in generated output")
-        if ling.get("source", {}).get("blob_sha1") != lock_by_id[book_id]["morphgnt"]["blob_sha1"]:
+        if ling.get("source", {}).get("blob_sha1") != lock_book["morphgnt"]["blob_sha1"]:
             fail(f"{book_id}: MorphGNT blob lock mismatch in generated output")
         if not HEX64.fullmatch(str(surface.get("source", {}).get("sha256") or "")):
             fail(f"{book_id}: surface SHA-256 missing")
@@ -284,33 +358,81 @@ def validate_generated(path: Path, lock: dict) -> None:
             fail(f"{book_id}: lexical/alignment mismatch count is non-zero")
         validate_policy(align.get("comparison_policy") or {}, f"{book_id} comparison policy")
 
+        generated_gap_refs = parse_short_refs(
+            list(ling.get("expected_missing_verses") or []),
+            f"{book_id} generated gap registry",
+        )
+        if generated_gap_refs != expected_gaps:
+            fail(f"{book_id}: generated linguistic gap registry differs from source lock")
+
         verses = align.get("verses") or []
         align_by_ref = {(int(row["chapter"]), str(row["verse"])): row for row in verses}
         if len(align_by_ref) != len(verses):
             fail(f"{book_id}: duplicate alignment verse references")
 
-        book_exact_tokens = book_normalized_tokens = 0
-        book_exact_verses = book_normalized_verses = 0
+        book_exact_tokens = 0
+        book_normalized_tokens = 0
+        book_gap_tokens = 0
+        book_exact_verses = 0
+        book_normalized_verses = 0
+        book_gap_verses = 0
+        seen_gap_refs: set[tuple[int, int]] = set()
 
-        for chapter_text, surface_verses in (surface.get("chapters") or {}).items():
-            ling_verses = (ling.get("chapters") or {}).get(chapter_text) or {}
+        surface_chapters = surface.get("chapters") or {}
+        linguistic_chapters = ling.get("chapters") or {}
+        for chapter_text, surface_verses in surface_chapters.items():
+            ling_verses = linguistic_chapters.get(chapter_text) or {}
             for verse_text, surface_verse in surface_verses.items():
+                key = (int(chapter_text), int(verse_text))
                 ling_verse = ling_verses.get(verse_text)
-                if not ling_verse:
-                    fail(f"{book_id} {chapter_text}:{verse_text}: missing linguistic verse")
+                if ling_verse is None:
+                    fail(f"{book_id} {chapter_text}:{verse_text}: missing linguistic verse record")
                 align_verse = align_by_ref.get((int(chapter_text), str(verse_text)))
-                if not align_verse:
+                if align_verse is None:
                     fail(f"{book_id} {chapter_text}:{verse_text}: missing alignment verse")
 
                 surface_tokens = surface_verse.get("tokens") or []
+                ids = align_verse.get("token_ids") or []
+                if align_verse.get("token_count") != len(ids) or len(ids) != len(surface_tokens):
+                    fail(f"{book_id} {chapter_text}:{verse_text}: surface/alignment token-count mismatch")
+                for index, surface_row in enumerate(surface_tokens, start=1):
+                    if surface_row.get("id") != ids[index - 1]:
+                        fail(f"{book_id} {chapter_text}:{verse_text} token {index}: surface/alignment token id mismatch")
+                    if not surface_row.get("transliteration"):
+                        fail(f"{book_id} {chapter_text}:{verse_text} token {index}: transliteration missing")
+
+                if key in expected_gaps:
+                    seen_gap_refs.add(key)
+                    if ling_verse.get("annotation_status") != "unavailable-in-pinned-morphgnt":
+                        fail(f"{book_id} {chapter_text}:{verse_text}: expected MorphGNT gap status missing")
+                    if (ling_verse.get("tokens") or []) != []:
+                        fail(f"{book_id} {chapter_text}:{verse_text}: MorphGNT gap must not contain fabricated tokens")
+                    if not str(ling_verse.get("reason") or "").strip():
+                        fail(f"{book_id} {chapter_text}:{verse_text}: MorphGNT gap reason missing")
+                    if align_verse.get("alignment_mode") != "surface-only-annotation-gap":
+                        fail(f"{book_id} {chapter_text}:{verse_text}: annotation-gap alignment mode missing")
+                    if int(align_verse.get("exact_token_count") or 0) != 0:
+                        fail(f"{book_id} {chapter_text}:{verse_text}: gap verse cannot claim exact MorphGNT tokens")
+                    if int(align_verse.get("source_presentation_normalized_token_count") or 0) != 0:
+                        fail(f"{book_id} {chapter_text}:{verse_text}: gap verse cannot claim normalized MorphGNT tokens")
+                    if int(align_verse.get("annotation_gap_token_count") or 0) != len(surface_tokens):
+                        fail(f"{book_id} {chapter_text}:{verse_text}: gap token count mismatch")
+                    if int(align_verse.get("lexical_mismatch_count") or 0) != 0:
+                        fail(f"{book_id} {chapter_text}:{verse_text}: gap verse cannot claim lexical mismatch")
+                    book_gap_tokens += len(surface_tokens)
+                    book_gap_verses += 1
+                    continue
+
+                if ling_verse.get("annotation_status") != "available":
+                    fail(f"{book_id} {chapter_text}:{verse_text}: annotated verse missing available status")
                 ling_tokens = ling_verse.get("tokens") or []
                 if len(surface_tokens) != len(ling_tokens):
                     fail(f"{book_id} {chapter_text}:{verse_text}: partition token-count mismatch")
-                ids = align_verse.get("token_ids") or []
-                if align_verse.get("token_count") != len(ids) or len(ids) != len(surface_tokens):
-                    fail(f"{book_id} {chapter_text}:{verse_text}: alignment token-count/id mismatch")
+                if int(align_verse.get("annotation_gap_token_count") or 0) != 0:
+                    fail(f"{book_id} {chapter_text}:{verse_text}: non-gap verse reports annotation-gap tokens")
 
-                verse_exact = verse_normalized = 0
+                verse_exact = 0
+                verse_normalized = 0
                 for index, (surface_row, ling_row) in enumerate(zip(surface_tokens, ling_tokens), start=1):
                     if surface_row.get("id") != ling_row.get("id") or surface_row.get("id") != ids[index - 1]:
                         fail(f"{book_id} {chapter_text}:{verse_text} token {index}: token id mismatch")
@@ -332,14 +454,12 @@ def validate_generated(path: Path, lock: dict) -> None:
                         verse_exact += 1
                     else:
                         verse_normalized += 1
-                    if not surface_row.get("transliteration"):
-                        fail(f"{book_id} {chapter_text}:{verse_text} token {index}: transliteration missing")
 
-                if align_verse.get("exact_token_count") != verse_exact:
+                if int(align_verse.get("exact_token_count") or 0) != verse_exact:
                     fail(f"{book_id} {chapter_text}:{verse_text}: exact-token count mismatch")
-                if align_verse.get("source_presentation_normalized_token_count") != verse_normalized:
+                if int(align_verse.get("source_presentation_normalized_token_count") or 0) != verse_normalized:
                     fail(f"{book_id} {chapter_text}:{verse_text}: normalized-token count mismatch")
-                if align_verse.get("lexical_mismatch_count") != 0:
+                if int(align_verse.get("lexical_mismatch_count") or 0) != 0:
                     fail(f"{book_id} {chapter_text}:{verse_text}: lexical mismatch recorded")
 
                 expected_verse_mode = "exact" if verse_normalized == 0 else "source-presentation-normalized"
@@ -353,23 +473,49 @@ def validate_generated(path: Path, lock: dict) -> None:
                 else:
                     book_normalized_verses += 1
 
-        if book_exact_tokens + book_normalized_tokens != int(align.get("token_count") or 0):
+        if seen_gap_refs != expected_gaps:
+            missing = sorted(ref_string(key) for key in (expected_gaps - seen_gap_refs))
+            extra = sorted(ref_string(key) for key in (seen_gap_refs - expected_gaps))
+            fail(f"{book_id}: generated annotation-gap coverage mismatch; missing={missing}, extra={extra}")
+
+        if book_exact_tokens + book_normalized_tokens + book_gap_tokens != int(align.get("token_count") or 0):
             fail(f"{book_id}: token aggregates differ from alignment token count")
         if book_exact_tokens != int(align.get("exact_token_count") or 0):
             fail(f"{book_id}: exact token aggregate mismatch")
         if book_normalized_tokens != int(align.get("source_presentation_normalized_token_count") or 0):
             fail(f"{book_id}: normalized token aggregate mismatch")
+        if book_gap_tokens != int(align.get("annotation_gap_token_count") or 0):
+            fail(f"{book_id}: annotation-gap token aggregate mismatch")
         if book_exact_verses != int(align.get("exact_verse_count") or 0):
             fail(f"{book_id}: exact verse aggregate mismatch")
         if book_normalized_verses != int(align.get("source_presentation_normalized_verse_count") or 0):
             fail(f"{book_id}: normalized verse aggregate mismatch")
-        if book_exact_verses + book_normalized_verses != int(align.get("verse_count") or 0):
+        if book_gap_verses != int(align.get("annotation_gap_verse_count") or 0):
+            fail(f"{book_id}: annotation-gap verse aggregate mismatch")
+        if book_exact_verses + book_normalized_verses + book_gap_verses != int(align.get("verse_count") or 0):
             fail(f"{book_id}: alignment verse aggregate mismatch")
+        if book_exact_verses + book_normalized_verses != int(align.get("morphology_coverage_verse_count") or 0):
+            fail(f"{book_id}: MorphGNT coverage verse aggregate mismatch")
+
+        for field, expected in (
+            ("token_count", int(align.get("token_count") or 0)),
+            ("exact_token_count", book_exact_tokens),
+            ("source_presentation_normalized_token_count", book_normalized_tokens),
+            ("annotation_gap_token_count", book_gap_tokens),
+            ("exact_verse_count", book_exact_verses),
+            ("source_presentation_normalized_verse_count", book_normalized_verses),
+            ("annotation_gap_verse_count", book_gap_verses),
+            ("morphology_coverage_verse_count", book_exact_verses + book_normalized_verses),
+        ):
+            if int(manifest_book.get(field) or 0) != expected:
+                fail(f"{book_id}: manifest book field {field} does not match generated alignment")
 
         observed_exact_tokens += book_exact_tokens
         observed_normalized_tokens += book_normalized_tokens
+        observed_gap_tokens += book_gap_tokens
         observed_exact_verses += book_exact_verses
         observed_normalized_verses += book_normalized_verses
+        observed_gap_verses += book_gap_verses
         total_alignment_verses += len(verses)
 
         serialized_surface = json.dumps(surface, ensure_ascii=False)
@@ -379,10 +525,18 @@ def validate_generated(path: Path, lock: dict) -> None:
 
     if total_alignment_verses != verse_count:
         fail("sum of per-book alignment verses differs from manifest verse count")
-    if observed_exact_tokens != exact_token_count or observed_normalized_tokens != normalized_token_count:
-        fail("observed token alignment totals differ from manifest")
-    if observed_exact_verses != exact_verse_count or observed_normalized_verses != normalized_verse_count:
-        fail("observed verse alignment totals differ from manifest")
+    if observed_exact_tokens != exact_token_count:
+        fail("observed exact token total differs from manifest")
+    if observed_normalized_tokens != normalized_token_count:
+        fail("observed normalized token total differs from manifest")
+    if observed_gap_tokens != gap_token_count:
+        fail("observed annotation-gap token total differs from manifest")
+    if observed_exact_verses != exact_verse_count:
+        fail("observed exact verse total differs from manifest")
+    if observed_normalized_verses != normalized_verse_count:
+        fail("observed normalized verse total differs from manifest")
+    if observed_gap_verses != gap_verse_count:
+        fail("observed annotation-gap verse total differs from manifest")
 
     john_surface = load(path / "surface" / "JHN.json")
     john_ling = load(path / "linguistics" / "JHN.json")
@@ -394,6 +548,8 @@ def validate_generated(path: Path, lock: dict) -> None:
     surface_tokens = surface_verse.get("tokens") or []
     ling_tokens = ling_verse.get("tokens") or []
     proto_tokens = proto.get("tokens") or []
+    if ling_verse.get("annotation_status") != "available":
+        fail("generated John 1:1 must remain morphologically annotated")
     if len(surface_tokens) != 17 or len(ling_tokens) != 17:
         fail("generated John 1:1 token count differs from accepted prototype")
     for index, (surface_row, ling_row, proto_row) in enumerate(zip(surface_tokens, ling_tokens, proto_tokens), start=1):
@@ -413,8 +569,8 @@ def validate_generated(path: Path, lock: dict) -> None:
     print(
         "Greek NT Phase 1 generated-corpus validation passed: "
         f"27 books, {manifest['chapter_count']} chapters, {verse_count} verses, "
-        f"{token_count} aligned tokens ({normalized_token_count} source-presentation-normalized), "
-        "zero lexical mismatches, production disabled"
+        f"{token_count} SBLGNT surface tokens, {morphology_coverage_verse_count} verses with MorphGNT annotations, "
+        f"{gap_verse_count} source-locked annotation-gap verses, zero lexical mismatches, production disabled"
     )
 
 
@@ -422,9 +578,12 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--generated", type=Path, help="Validate a generated Phase 1 output directory")
     args = parser.parse_args()
-    lock = validate_static()
-    if args.generated:
-        validate_generated(args.generated.resolve(), lock)
+    try:
+        lock = validate_static()
+        if args.generated:
+            validate_generated(args.generated.resolve(), lock)
+    except ValidationError as exc:
+        raise SystemExit(f"Greek NT Phase 1 validation failed: {exc}") from exc
     return 0
 
 
