@@ -9,6 +9,7 @@ on:
       - 'scripts/vendor_greek_nt_phase1.py'
       - 'scripts/vendor_greek_nt_production.py'
       - 'scripts/vendor_old_testament_phase1.py'
+      - 'scripts/vendor_old_testament_phase1b.py'
       - 'cloud-backend/app/logos_interlinear/**'
       - 'cloud-backend/app/logos_greek.py'
       - 'cloud-backend/app/logos_advanced.py'
@@ -18,6 +19,7 @@ on:
       - 'tools/validate_logos_greek_nt_phase1.py'
       - 'tools/validate_logos_greek_nt_production.py'
       - 'tools/validate_logos_old_testament_phase1.py'
+      - 'tools/validate_logos_old_testament_phase1b.py'
       - '.github/workflows/logos-corpus.yml'
   pull_request:
     paths:
@@ -25,6 +27,7 @@ on:
       - 'scripts/vendor_greek_nt_phase1.py'
       - 'scripts/vendor_greek_nt_production.py'
       - 'scripts/vendor_old_testament_phase1.py'
+      - 'scripts/vendor_old_testament_phase1b.py'
       - 'cloud-backend/app/logos_interlinear/**'
       - 'cloud-backend/app/logos_greek.py'
       - 'cloud-backend/app/logos_advanced.py'
@@ -34,6 +37,7 @@ on:
       - 'tools/validate_logos_greek_nt_phase1.py'
       - 'tools/validate_logos_greek_nt_production.py'
       - 'tools/validate_logos_old_testament_phase1.py'
+      - 'tools/validate_logos_old_testament_phase1b.py'
       - '.github/workflows/logos-corpus.yml'
 
 permissions:
@@ -65,6 +69,7 @@ jobs:
           python tools/validate_logos_interlinear_prototype.py
           python tools/validate_logos_greek_nt_phase1.py
           python tools/validate_logos_old_testament_phase1.py
+          python tools/validate_logos_old_testament_phase1b.py
 
       - name: Build and validate Greek NT Phase 1 corpus
         run: |
@@ -77,6 +82,12 @@ jobs:
           out="${RUNNER_TEMP}/logos-old-testament-phase1"
           python scripts/vendor_old_testament_phase1.py --output "$out"
           python tools/validate_logos_old_testament_phase1.py --generated "$out"
+
+      - name: Build and validate Old Testament Phase 1B Greek corpus
+        run: |
+          out="${RUNNER_TEMP}/logos-old-testament-phase1b"
+          python scripts/vendor_old_testament_phase1b.py --output "$out"
+          python tools/validate_logos_old_testament_phase1b.py --generated "$out"
 
       - name: Build and validate Greek NT production package for PR
         if: github.event_name == 'pull_request'
