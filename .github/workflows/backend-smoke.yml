@@ -44,6 +44,7 @@ jobs:
           from app.logos import _corpus_manifest
           from app.logos_context import BOOK_PROFILES, RESEARCH_LIBRARIES
           from app.logos_greek import _greek_manifest
+          from app.logos_ot_greek import _ot_greek_manifest
           from app.models import CMSMedia, CMSPublication
           from app.prayer_network import (
               MassAssignment,
@@ -96,6 +97,9 @@ jobs:
               '/api/logos/greek/catalog',
               '/api/logos/greek/source-rights',
               '/api/logos/greek/interlinear',
+              '/api/logos/ot-greek/catalog',
+              '/api/logos/ot-greek/source-rights',
+              '/api/logos/ot-greek/interlinear',
               '/priest',
           ):
               assert required in paths, required
@@ -112,5 +116,13 @@ jobs:
               assert greek['phase1_acceptance']['book_count'] == 27
               assert greek['sources']['surface']['license'] == 'CC BY 4.0'
               assert greek['sources']['linguistics']['license'] == 'CC BY-SA 3.0'
-          print('Mercy backend CMS SEO + Logos English/Greek study + prayer/Mass/priest portal smoke test passed')
+          ot_greek = _ot_greek_manifest()
+          if ot_greek:
+              assert ot_greek['production_enabled'] is True
+              assert ot_greek['phase1b_acceptance']['witness_count'] == 15
+              assert ot_greek['phase1b_acceptance']['source_verse_record_count'] == 5337
+              assert ot_greek['source']['license'] == 'CC BY-SA 4.0'
+              assert ot_greek['partition']['share_alike'] is True
+              assert ot_greek['mapping']['fabricate_verse_boundaries'] is False
+          print('Mercy backend CMS SEO + Logos English/Greek NT/Greek OT study + prayer/Mass/priest portal smoke test passed')
           PY
