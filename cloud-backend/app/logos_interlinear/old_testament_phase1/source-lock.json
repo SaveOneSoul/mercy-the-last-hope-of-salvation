@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "phase": "Old Testament Expansion Phase 1A",
+  "production_enabled": false,
+  "catholic_ot_complete": false,
+  "scope_note": "Validation-only import of the 39 Masoretic/Hebrew-Bible book witnesses used within the Catholic Old Testament. Esther and Daniel remain incomplete relative to the Catholic canonical form until their Greek additions are separately source-locked and validated.",
+  "source": {
+    "id": "oshb",
+    "title": "Open Scriptures Hebrew Bible",
+    "repository": "openscriptures/morphhb",
+    "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+    "directory": "wlc",
+    "tree_sha": "dd2fe9d2168f3fc0963bcdbdac8fa1d487c06e45",
+    "license": "CC BY 4.0",
+    "base_text": "Westminster Leningrad Codex",
+    "base_text_rights": "Public Domain",
+    "attribution": "Open Scriptures Hebrew Bible Project",
+    "normalization_policy": "Preserve source Unicode exactly. Do not NFC-normalize OSHB Hebrew or Aramaic source strings.",
+    "word_contract": {
+      "surface": "direct child w element text, preserved verbatim",
+      "lemma": "direct child w @lemma",
+      "morphology": "direct child w @morph",
+      "source_word_id": "direct child w @id",
+      "language_rule": "morphology prefix H = Hebrew; morphology prefix A = Aramaic",
+      "variant_rule": "Only direct verse-child w elements are canonical tokens. Nested qere/variant w elements inside notes are retained by the upstream source but are not duplicated as canonical tokens in this phase."
+    }
+  },
+  "required_non_book_files": [
+    "VerseMap.xml"
+  ],
+  "books": [
+    {"book_id":"GEN","name":"Genesis","catholic_order":1,"source_osis":"Gen","filename":"Gen.xml"},
+    {"book_id":"EXO","name":"Exodus","catholic_order":2,"source_osis":"Exod","filename":"Exod.xml"},
+    {"book_id":"LEV","name":"Leviticus","catholic_order":3,"source_osis":"Lev","filename":"Lev.xml"},
+    {"book_id":"NUM","name":"Numbers","catholic_order":4,"source_osis":"Num","filename":"Num.xml"},
+    {"book_id":"DEU","name":"Deuteronomy","catholic_order":5,"source_osis":"Deut","filename":"Deut.xml"},
+    {"book_id":"JOS","name":"Joshua","catholic_order":6,"source_osis":"Josh","filename":"Josh.xml"},
+    {"book_id":"JDG","name":"Judges","catholic_order":7,"source_osis":"Judg","filename":"Judg.xml"},
+    {"book_id":"RUT","name":"Ruth","catholic_order":8,"source_osis":"Ruth","filename":"Ruth.xml"},
+    {"book_id":"1SA","name":"1 Samuel","catholic_order":9,"source_osis":"1Sam","filename":"1Sam.xml"},
+    {"book_id":"2SA","name":"2 Samuel","catholic_order":10,"source_osis":"2Sam","filename":"2Sam.xml"},
+    {"book_id":"1KI","name":"1 Kings","catholic_order":11,"source_osis":"1Kgs","filename":"1Kgs.xml"},
+    {"book_id":"2KI","name":"2 Kings","catholic_order":12,"source_osis":"2Kgs","filename":"2Kgs.xml"},
+    {"book_id":"1CH","name":"1 Chronicles","catholic_order":13,"source_osis":"1Chr","filename":"1Chr.xml"},
+    {"book_id":"2CH","name":"2 Chronicles","catholic_order":14,"source_osis":"2Chr","filename":"2Chr.xml"},
+    {"book_id":"EZR","name":"Ezra","catholic_order":15,"source_osis":"Ezra","filename":"Ezra.xml"},
+    {"book_id":"NEH","name":"Nehemiah","catholic_order":16,"source_osis":"Neh","filename":"Neh.xml"},
+    {"book_id":"EST","name":"Esther","catholic_order":19,"source_osis":"Esth","filename":"Esth.xml","catholic_completeness":"partial-pending-greek-additions"},
+    {"book_id":"JOB","name":"Job","catholic_order":22,"source_osis":"Job","filename":"Job.xml"},
+    {"book_id":"PSA","name":"Psalms","catholic_order":23,"source_osis":"Ps","filename":"Ps.xml"},
+    {"book_id":"PRO","name":"Proverbs","catholic_order":24,"source_osis":"Prov","filename":"Prov.xml"},
+    {"book_id":"ECC","name":"Ecclesiastes","catholic_order":25,"source_osis":"Eccl","filename":"Eccl.xml"},
+    {"book_id":"SNG","name":"Song of Songs","catholic_order":26,"source_osis":"Song","filename":"Song.xml"},
+    {"book_id":"ISA","name":"Isaiah","catholic_order":29,"source_osis":"Isa","filename":"Isa.xml"},
+    {"book_id":"JER","name":"Jeremiah","catholic_order":30,"source_osis":"Jer","filename":"Jer.xml"},
+    {"book_id":"LAM","name":"Lamentations","catholic_order":31,"source_osis":"Lam","filename":"Lam.xml"},
+    {"book_id":"EZK","name":"Ezekiel","catholic_order":33,"source_osis":"Ezek","filename":"Ezek.xml"},
+    {"book_id":"DAN","name":"Daniel","catholic_order":34,"source_osis":"Dan","filename":"Dan.xml","catholic_completeness":"partial-pending-greek-additions"},
+    {"book_id":"HOS","name":"Hosea","catholic_order":35,"source_osis":"Hos","filename":"Hos.xml"},
+    {"book_id":"JOL","name":"Joel","catholic_order":36,"source_osis":"Joel","filename":"Joel.xml"},
+    {"book_id":"AMO","name":"Amos","catholic_order":37,"source_osis":"Amos","filename":"Amos.xml"},
+    {"book_id":"OBA","name":"Obadiah","catholic_order":38,"source_osis":"Obad","filename":"Obad.xml"},
+    {"book_id":"JON","name":"Jonah","catholic_order":39,"source_osis":"Jonah","filename":"Jonah.xml"},
+    {"book_id":"MIC","name":"Micah","catholic_order":40,"source_osis":"Mic","filename":"Mic.xml"},
+    {"book_id":"NAM","name":"Nahum","catholic_order":41,"source_osis":"Nah","filename":"Nah.xml"},
+    {"book_id":"HAB","name":"Habakkuk","catholic_order":42,"source_osis":"Hab","filename":"Hab.xml"},
+    {"book_id":"ZEP","name":"Zephaniah","catholic_order":43,"source_osis":"Zeph","filename":"Zeph.xml"},
+    {"book_id":"HAG","name":"Haggai","catholic_order":44,"source_osis":"Hag","filename":"Hag.xml"},
+    {"book_id":"ZEC","name":"Zechariah","catholic_order":45,"source_osis":"Zech","filename":"Zech.xml"},
+    {"book_id":"MAL","name":"Malachi","catholic_order":46,"source_osis":"Mal","filename":"Mal.xml"}
+  ],
+  "excluded_catholic_ot_material": [
+    "Tobit",
+    "Judith",
+    "Greek additions to Esther",
+    "1 Maccabees",
+    "2 Maccabees",
+    "Wisdom",
+    "Sirach",
+    "Baruch",
+    "Greek additions to Daniel"
+  ],
+  "gloss_policy": {
+    "installed": false,
+    "reason": "No English word-gloss layer is introduced in Phase 1A. Glosses require a separately approved, immutable, rights-safe source lock."
+  },
+  "transliteration_policy": {
+    "installed": false,
+    "reason": "Phase 1A preserves the source-script data exactly. Transliteration will be added only after a deterministic Hebrew/Aramaic algorithm is separately specified and validated."
+  },
+  "versification_policy": {
+    "source_numbering_preserved": true,
+    "dra_alignment_enabled": false,
+    "reason": "Masoretic and Douay-Rheims versification differences must be mapped explicitly in a later gate; Phase 1A does not silently remap verse numbers."
+  }
+}
