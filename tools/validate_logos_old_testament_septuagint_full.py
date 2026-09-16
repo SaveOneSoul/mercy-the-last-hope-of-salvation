@@ -58,6 +58,11 @@ def main() -> int:
         fail("versification safety gate changed")
     if vers.get("fabricate_verse_boundaries") is not False:
         fail("verse fabrication must remain disabled")
+    if vers.get("empty_source_loci_are_not_filled_from_neighboring_text") is not True:
+        fail("empty-source-locus safety contract missing")
+    serving = manifest.get("serving_contract") or {}
+    if serving.get("no_fabricated_source_surface_for_empty_tei_loci") is not True:
+        fail("source-gap fabrication guard missing")
 
     books_root = root / "sharealike" / "first1kgreek_swete_cc-by-sa-4.0" / "books"
     if not books_root.is_dir(): fail("isolated book partition missing")
@@ -66,6 +71,7 @@ def main() -> int:
 
     counted_chapters = 0
     counted_verses = 0
+    counted_gaps = 0
     for book_id in sorted(EXPECTED_BOOKS):
         payload = load(books_root / f"{book_id}.json")
         if payload.get("book_id") != book_id: fail(f"{book_id}: identity mismatch")
@@ -73,6 +79,12 @@ def main() -> int:
         src = payload.get("source") or {}
         if src.get("license") != "CC BY-SA 4.0" or src.get("share_alike") is not True: fail(f"{book_id}: rights mismatch")
         if not src.get("git_blob_sha1") or not src.get("sha256"): fail(f"{book_id}: immutable source digests missing")
+        gaps = payload.get("empty_source_loci_not_auto_served") or []
+        for gap in gaps:
+            if gap.get("reason") != "empty_source_tei_verse_div": fail(f"{book_id}: unexpected source-gap reason")
+            if gap.get("fabricated_surface") is not False: fail(f"{book_id}: source gap was fabricated")
+            if not gap.get("source_reference"): fail(f"{book_id}: source-gap reference missing")
+            counted_gaps += 1
         chapters = payload.get("chapters") or {}
         if not chapters: fail(f"{book_id}: no chapters")
         counted_chapters += len(chapters)
@@ -86,10 +98,15 @@ def main() -> int:
 
     if counted_chapters != int(manifest["chapter_count"]): fail("chapter total mismatch")
     if counted_verses != int(manifest["verse_count"]): fail("verse total mismatch")
+    if counted_gaps != int(manifest.get("empty_source_locus_count") or 0): fail("source-gap total mismatch")
 
     gen = load(books_root / "GEN.json")
     gen1 = (gen.get("chapters") or {}).get("1") or {}
     if len(gen1) != 31 or not (gen1.get("1") or {}).get("surface"): fail("Genesis 1 acceptance locus failed")
+    deu = load(books_root / "DEU.json")
+    deu_gaps = {(str(g.get("source_chapter")), str(g.get("source_verse"))) for g in (deu.get("empty_source_loci_not_auto_served") or [])}
+    if ("25", "19") not in deu_gaps: fail("known pinned Deuteronomy 25:19 empty TEI locus was not preserved as a gap")
+    if "19" in (((deu.get("chapters") or {}).get("25")) or {}): fail("Deuteronomy 25:19 must not be fabricated")
     ezr = load(books_root / "EZR.json")
     neh = load(books_root / "NEH.json")
     if set((ezr.get("chapters") or {}).keys()) != {str(i) for i in range(1,11)}: fail("Ezra chapter split changed")
@@ -97,7 +114,8 @@ def main() -> int:
 
     print(
         f"Validated OT Septuagint protocanonical production: {manifest['book_count']} books, "
-        f"{manifest['chapter_count']} chapters, {manifest['verse_count']} numeric source verse records"
+        f"{manifest['chapter_count']} chapters, {manifest['verse_count']} nonempty numeric source verse surfaces, "
+        f"{manifest.get('empty_source_locus_count', 0)} explicit source gaps"
     )
     return 0
 
