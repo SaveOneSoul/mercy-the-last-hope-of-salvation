@@ -30,7 +30,7 @@ def main() -> None:
     require(script, "['Greek','Transliteration','Lemma','POS','Morphology']", "five-column Greek table")
     require(script, "No English word gloss is displayed", "explicit no-gloss frontend rule")
     require(script, "No morphology is fabricated", "annotation-gap rule")
-    require(script, "surface_and_linguistics", "licence partition contract marker") if "surface_and_linguistics" in script else None
+    require(script, "ShareAlike partition preserved", "ShareAlike frontend notice")
 
     if "['Greek','Transliteration','Lemma','POS','Morphology','Gloss']" in script:
         raise SystemExit("Greek production table must not expose an unapproved Gloss column")
