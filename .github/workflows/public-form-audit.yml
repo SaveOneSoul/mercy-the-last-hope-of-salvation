@@ -17,3 +17,5 @@ jobs:
         run: python tools/audit_public_forms.py
       - name: Validate Logos corpus and source-rights metadata
         run: python tools/validate_logos.py
+      - name: Validate Logos Greek NT frontend integration
+        run: python tools/validate_logos_greek_frontend.py
