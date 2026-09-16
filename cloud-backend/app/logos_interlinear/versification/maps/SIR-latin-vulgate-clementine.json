@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.17-sir-latin-v1",
+  "status": "verified",
+  "book_id": "SIR",
+  "book": "Sirach",
+  "lane": "latin",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "vulgate-clementine",
+    "reference_system": "clementine-vulgate-open-bibles",
+    "corpus_id": "lat_vulgate_clementine",
+    "corpus_version": "2026.09.16-clementine-open-bibles"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "29"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "29",
+      "source_chapter": "29",
+      "segments": [
+        {
+          "id": "SIR-29-1-15",
+          "relationship": "identity",
+          "canonical_refs": [
+            {"chapter": "29", "verse": "1"},
+            {"chapter": "29", "verse": "2"},
+            {"chapter": "29", "verse": "3"},
+            {"chapter": "29", "verse": "4"},
+            {"chapter": "29", "verse": "5"},
+            {"chapter": "29", "verse": "6"},
+            {"chapter": "29", "verse": "7"},
+            {"chapter": "29", "verse": "8"},
+            {"chapter": "29", "verse": "9"},
+            {"chapter": "29", "verse": "10"},
+            {"chapter": "29", "verse": "11"},
+            {"chapter": "29", "verse": "12"},
+            {"chapter": "29", "verse": "13"},
+            {"chapter": "29", "verse": "14"},
+            {"chapter": "29", "verse": "15"}
+          ],
+          "source_refs": [
+            {"chapter": "29", "verse": "1"},
+            {"chapter": "29", "verse": "2"},
+            {"chapter": "29", "verse": "3"},
+            {"chapter": "29", "verse": "4"},
+            {"chapter": "29", "verse": "5"},
+            {"chapter": "29", "verse": "6"},
+            {"chapter": "29", "verse": "7"},
+            {"chapter": "29", "verse": "8"},
+            {"chapter": "29", "verse": "9"},
+            {"chapter": "29", "verse": "10"},
+            {"chapter": "29", "verse": "11"},
+            {"chapter": "29", "verse": "12"},
+            {"chapter": "29", "verse": "13"},
+            {"chapter": "29", "verse": "14"},
+            {"chapter": "29", "verse": "15"}
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims 1899 Sirach 29:1-15 and pinned Clementine Vulgate Sirach 29:1-15 preserve matching verse boundaries."
+          }
+        },
+        {
+          "id": "SIR-29-16",
+          "relationship": "merge",
+          "canonical_refs": [
+            {"chapter": "29", "verse": "16"}
+          ],
+          "source_refs": [
+            {"chapter": "29", "verse": "16"},
+            {"chapter": "29", "verse": "17"}
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Sirach 29:16, 'Better than the shield of the mighty, and better than the spear,' corresponds to the two Clementine verse divisions 29:16 'Super scutum potentis' and 29:17 'et super lanceam'."
+          }
+        },
+        {
+          "id": "SIR-29-17-34",
+          "relationship": "offset",
+          "canonical_refs": [
+            {"chapter": "29", "verse": "17"},
+            {"chapter": "29", "verse": "18"},
+            {"chapter": "29", "verse": "19"},
+            {"chapter": "29", "verse": "20"},
+            {"chapter": "29", "verse": "21"},
+            {"chapter": "29", "verse": "22"},
+            {"chapter": "29", "verse": "23"},
+            {"chapter": "29", "verse": "24"},
+            {"chapter": "29", "verse": "25"},
+            {"chapter": "29", "verse": "26"},
+            {"chapter": "29", "verse": "27"},
+            {"chapter": "29", "verse": "28"},
+            {"chapter": "29", "verse": "29"},
+            {"chapter": "29", "verse": "30"},
+            {"chapter": "29", "verse": "31"},
+            {"chapter": "29", "verse": "32"},
+            {"chapter": "29", "verse": "33"},
+            {"chapter": "29", "verse": "34"}
+          ],
+          "source_refs": [
+            {"chapter": "29", "verse": "18"},
+            {"chapter": "29", "verse": "19"},
+            {"chapter": "29", "verse": "20"},
+            {"chapter": "29", "verse": "21"},
+            {"chapter": "29", "verse": "22"},
+            {"chapter": "29", "verse": "23"},
+            {"chapter": "29", "verse": "24"},
+            {"chapter": "29", "verse": "25"},
+            {"chapter": "29", "verse": "26"},
+            {"chapter": "29", "verse": "27"},
+            {"chapter": "29", "verse": "28"},
+            {"chapter": "29", "verse": "29"},
+            {"chapter": "29", "verse": "30"},
+            {"chapter": "29", "verse": "31"},
+            {"chapter": "29", "verse": "32"},
+            {"chapter": "29", "verse": "33"},
+            {"chapter": "29", "verse": "34"},
+            {"chapter": "29", "verse": "35"}
+          ],
+          "evidence": {
+            "citation": "After the Douay-Rheims 29:16 / Clementine 29:16-17 merge, Douay-Rheims Sirach 29:17-34 corresponds sequentially to Clementine Sirach 29:18-35."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -146,8 +146,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 1
-          assert registry['verified_book_count'] >= 1
+          assert registry['verified_mapping_count'] >= 2
+          assert registry['verified_book_count'] >= 2
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -161,5 +161,19 @@ jobs:
           assert [(row['chapter'], row['verse']) for row in by_verse[16]['source_verses']] == [(4, 17)]
           assert all(row['surface'] for row in judith['verses'])
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith Latin versification + prayer/Mass/priest portal smoke test passed')
+          sirach = _latin_study_payload('Sirach 29')
+          assert sirach['alignment']['mode'] == 'verified-explicit-map'
+          assert sirach['alignment']['verified_mapping'] is True
+          assert len(sirach['verses']) == 34
+          sirach_by_verse = {row['verse']: row for row in sirach['verses']}
+          assert sirach_by_verse[15]['mapping_relationship'] == 'identity'
+          assert [(row['chapter'], row['verse']) for row in sirach_by_verse[15]['source_verses']] == [(29, 15)]
+          assert sirach_by_verse[16]['mapping_relationship'] == 'merge'
+          assert [(row['chapter'], row['verse']) for row in sirach_by_verse[16]['source_verses']] == [(29, 16), (29, 17)]
+          assert sirach_by_verse[17]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in sirach_by_verse[17]['source_verses']] == [(29, 18)]
+          assert [(row['chapter'], row['verse']) for row in sirach_by_verse[34]['source_verses']] == [(29, 35)]
+          assert all(row['surface'] for row in sirach['verses'])
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin versification + prayer/Mass/priest portal smoke test passed')
           PY
