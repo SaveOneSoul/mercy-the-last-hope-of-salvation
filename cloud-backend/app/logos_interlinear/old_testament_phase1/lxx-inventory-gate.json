@@ -3,7 +3,7 @@
   "phase": "Old Testament Expansion Phase 1B source inventory gate",
   "production_enabled": false,
   "production_import_allowed": false,
-  "status": "blocked-pending-exact-catholic-book-mapping",
+  "status": "validated-awaiting-owner-acceptance",
   "source": {
     "id": "first1kgreek-swete",
     "title": "Swete Septuagint witnesses in OpenGreekAndLatin First1KGreek",
@@ -29,18 +29,30 @@
     "Greek additions to Daniel"
   ],
   "gate_requirements": [
-    "Enumerate the exact Swete CTS work for every required Catholic canonical book or addition.",
-    "Pin every production XML file by path and Git blob SHA-1 at the locked commit.",
-    "Verify work-level metadata and edition identity instead of relying only on repository-level licensing.",
-    "Define explicit Catholic-to-source versification mappings, especially Esther and Daniel additions.",
-    "Keep CC BY-SA 4.0 material physically and logically separable from non-ShareAlike corpus partitions.",
-    "Validate the complete required Catholic Greek inventory before production_import_allowed may become true."
+    "Exact selected CTS editions and metadata/text Git blob SHA-1 values are pinned in the Phase 1B source lock.",
+    "Work-level CTS metadata and per-file CC BY-SA 4.0 declarations are verified during deterministic CI import.",
+    "Catholic source-to-Douay versification mappings are explicit and do not fabricate source verse boundaries.",
+    "Old Greek and Theodotion Daniel-family witnesses remain separate.",
+    "CC BY-SA 4.0 material remains physically isolated from non-ShareAlike corpus partitions.",
+    "Exact-head project-owner acceptance is required before any later production integration."
   ],
   "known_repository_evidence": {
     "repository_license_verified": true,
     "septuagint_textgroup_verified": true,
     "swete_edition_files_discovered": true,
-    "exact_catholic_book_inventory_complete": false
+    "exact_catholic_book_inventory_complete": true,
+    "exact_metadata_and_text_blob_pins_complete": true,
+    "versification_mapping_complete": true,
+    "sharealike_isolation_validated": true,
+    "deterministic_ci_import_validated": true,
+    "owner_accepted": false
   },
-  "policy": "This file is a blocking gate, not a production source manifest. No Septuagint or deuterocanonical Greek text may be served from this candidate source until the exact work/file inventory, Catholic mapping, checksums and owner acceptance are complete."
+  "phase1b_evidence": {
+    "source_lock": "cloud-backend/app/logos_interlinear/old_testament_phase1b/source-lock.json",
+    "versification_map": "cloud-backend/app/logos_interlinear/old_testament_phase1b/versification-map.json",
+    "witness_count": 15,
+    "source_verse_record_count": 5337,
+    "generated_output_policy": "temporary CI evidence only"
+  },
+  "policy": "Phase 1B source inventory, versification, rights isolation, and deterministic validation evidence are complete. Serving stays disabled until project-owner acceptance and a separate production-integration change explicitly enables it."
 }
