@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Vendor the full protocanonical Swete Greek OT layer from the pinned First1KGreek tree.
+"""Vendor the full protocanonical Swete Greek OT from the pinned First1KGreek tree.
 
-The existing OT Greek production package remains authoritative for the seven
-Catholic deuterocanonical books and the Greek additions. This package adds the
-39 protocanonical Old Testament books, using Theodotion for the Daniel base
-witness. Source verse boundaries are preserved; Catholic/Douay alignment is
-validated at runtime and is never manufactured.
+The accepted grc_ot_catholic_swete package remains authoritative for the seven
+Catholic deuterocanonical books and the Greek additions to Esther and Daniel.
+This companion package installs the 39 protocanonical Catholic OT book scopes.
+Source verse boundaries are preserved and no versification remapping or
+linguistic annotation is fabricated.
 """
 from __future__ import annotations
 
@@ -34,46 +34,29 @@ HEX40 = re.compile(r"^[0-9a-f]{40}$")
 WHITESPACE = re.compile(r"\s+")
 EXCLUDED_SURFACE_TAGS = {"note", "pb", "milestone", "head"}
 
+# Catholic canonical book id -> pinned Swete CTS work id. Esdras B contains
+# canonical Ezra (source chapters 1-10) and Nehemiah (source chapters 11-23).
 WORKS = [
-    ("GEN", "Genesis", "tlg001", "Genesis"),
-    ("EXO", "Exodus", "tlg002", "Exodus"),
-    ("LEV", "Leviticus", "tlg003", "Leviticus"),
-    ("NUM", "Numbers", "tlg004", "Numeri"),
-    ("DEU", "Deuteronomy", "tlg005", "Deuteronomium"),
-    ("JOS", "Joshua", "tlg006", "Josue"),
-    ("JDG", "Judges", "tlg008", "Judices"),
-    ("RUT", "Ruth", "tlg010", "Ruth"),
-    ("1SA", "1 Samuel", "tlg011", "Regnorum I"),
-    ("2SA", "2 Samuel", "tlg012", "Regnorum II"),
-    ("1KI", "1 Kings", "tlg013", "Regnorum III"),
-    ("2KI", "2 Kings", "tlg014", "Regnorum IV"),
-    ("1CH", "1 Chronicles", "tlg015", "Paralipomenon I"),
-    ("2CH", "2 Chronicles", "tlg016", "Paralipomenon II"),
-    ("EZR", "Ezra", "tlg018", "Esdras B"),
-    ("NEH", "Nehemiah", "tlg018", "Esdras B"),
-    ("EST", "Esther", "tlg019", "Esther"),
-    ("JOB", "Job", "tlg032", "Job"),
-    ("PSA", "Psalms", "tlg027", "Psalmi"),
-    ("PRO", "Proverbs", "tlg029", "Proverbia"),
-    ("ECC", "Ecclesiastes", "tlg030", "Ecclesiastes"),
-    ("SNG", "Song of Songs", "tlg031", "Canticum"),
-    ("ISA", "Isaiah", "tlg048", "Isaias"),
-    ("JER", "Jeremiah", "tlg049", "Jeremias"),
-    ("LAM", "Lamentations", "tlg051", "Threni seu Lamentationes"),
-    ("EZK", "Ezekiel", "tlg053", "Ezechiel"),
-    ("DAN", "Daniel", "tlg057", "Daniel (Theodotionis versio)"),
-    ("HOS", "Hosea", "tlg036", "Osee"),
-    ("JOL", "Joel", "tlg039", "Joel"),
-    ("AMO", "Amos", "tlg037", "Amos"),
-    ("OBA", "Obadiah", "tlg040", "Abdias"),
-    ("JON", "Jonah", "tlg041", "Jonas"),
-    ("MIC", "Micah", "tlg038", "Michaeas"),
-    ("NAM", "Nahum", "tlg042", "Nahum"),
-    ("HAB", "Habakkuk", "tlg043", "Habacuc"),
-    ("ZEP", "Zephaniah", "tlg044", "Sophonias"),
-    ("HAG", "Haggai", "tlg045", "Aggaeus"),
-    ("ZEC", "Zechariah", "tlg046", "Zacharias"),
-    ("MAL", "Malachi", "tlg047", "Malachias"),
+    ("GEN", "Genesis", "tlg001"), ("EXO", "Exodus", "tlg002"),
+    ("LEV", "Leviticus", "tlg003"), ("NUM", "Numbers", "tlg004"),
+    ("DEU", "Deuteronomy", "tlg005"), ("JOS", "Joshua", "tlg006"),
+    ("JDG", "Judges", "tlg008"), ("RUT", "Ruth", "tlg010"),
+    ("1SA", "1 Samuel", "tlg011"), ("2SA", "2 Samuel", "tlg012"),
+    ("1KI", "1 Kings", "tlg013"), ("2KI", "2 Kings", "tlg014"),
+    ("1CH", "1 Chronicles", "tlg015"), ("2CH", "2 Chronicles", "tlg016"),
+    ("EZR", "Ezra", "tlg018"), ("NEH", "Nehemiah", "tlg018"),
+    ("EST", "Esther", "tlg019"), ("JOB", "Job", "tlg032"),
+    ("PSA", "Psalms", "tlg027"), ("PRO", "Proverbs", "tlg029"),
+    ("ECC", "Ecclesiastes", "tlg030"), ("SNG", "Song of Songs", "tlg031"),
+    ("ISA", "Isaiah", "tlg048"), ("JER", "Jeremiah", "tlg049"),
+    ("LAM", "Lamentations", "tlg051"), ("EZK", "Ezekiel", "tlg053"),
+    ("DAN", "Daniel", "tlg057"), ("HOS", "Hosea", "tlg036"),
+    ("JOL", "Joel", "tlg039"), ("AMO", "Amos", "tlg037"),
+    ("OBA", "Obadiah", "tlg040"), ("JON", "Jonah", "tlg041"),
+    ("MIC", "Micah", "tlg038"), ("NAM", "Nahum", "tlg042"),
+    ("HAB", "Habakkuk", "tlg043"), ("ZEP", "Zephaniah", "tlg044"),
+    ("HAG", "Haggai", "tlg045"), ("ZEC", "Zechariah", "tlg046"),
+    ("MAL", "Malachi", "tlg047"),
 ]
 
 
@@ -91,7 +74,7 @@ def request_bytes(url: str) -> bytes:
         except (HTTPError, URLError, TimeoutError) as exc:
             last_error = exc
             if attempt < 2:
-                time.sleep(2 ** attempt)
+                time.sleep(2**attempt)
     raise BuildError(f"failed to download {url}: {last_error}")
 
 
@@ -101,11 +84,14 @@ def git_blob_sha1(payload: bytes) -> str:
 
 def fetch_tree() -> dict[str, str]:
     raw = request_bytes(f"https://api.github.com/repos/{REPOSITORY}/git/trees/{TREE_SHA}?recursive=1")
-    data = json.loads(raw.decode("utf-8"))
+    try:
+        data = json.loads(raw.decode("utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+        raise BuildError(f"cannot decode pinned Septuagint tree: {exc}") from exc
     if data.get("sha") != TREE_SHA or data.get("truncated"):
         raise BuildError("pinned First1KGreek Septuagint tree identity/truncation failure")
     return {
-        str(row["path"]): str(row["sha"])
+        str(row.get("path")): str(row.get("sha"))
         for row in (data.get("tree") or [])
         if row.get("type") == "blob" and HEX40.fullmatch(str(row.get("sha") or ""))
     }
@@ -128,17 +114,23 @@ def local_name(tag: str) -> str:
     return tag.rsplit("}", 1)[-1]
 
 
-def metadata(payload: bytes, work: str) -> tuple[str, str]:
+def parse_metadata(payload: bytes, work: str) -> tuple[str, str]:
     try:
         root = ET.fromstring(payload)
     except ET.ParseError as exc:
         raise BuildError(f"{work}: invalid CTS metadata XML: {exc}") from exc
-    title = next((" ".join("".join(node.itertext()).split()) for node in root.iter() if local_name(node.tag) == "title"), "")
-    editions = [str(node.attrib.get("urn") or "") for node in root.iter() if local_name(node.tag) == "edition"]
-    candidates = [urn for urn in editions if urn.endswith("1st1K-grc1")]
-    if len(candidates) != 1:
-        raise BuildError(f"{work}: expected one 1st1K-grc1 CTS edition, found {candidates}")
-    return title, candidates[0]
+    expected_work_urn = f"urn:cts:greekLit:tlg0527.{work}"
+    if root.attrib.get("urn") != expected_work_urn:
+        raise BuildError(f"{work}: CTS work URN mismatch")
+    title = next(
+        (" ".join("".join(node.itertext()).split()) for node in root.iter() if local_name(node.tag) == "title"),
+        work,
+    )
+    edition_urn = f"{expected_work_urn}.1st1K-grc1"
+    editions = {str(node.attrib.get("urn") or "") for node in root.iter() if local_name(node.tag) == "edition"}
+    if edition_urn not in editions:
+        raise BuildError(f"{work}: pinned grc1 CTS edition missing")
+    return title, edition_urn
 
 
 def verify_license(root: ET.Element, book_id: str) -> None:
@@ -153,6 +145,7 @@ def verify_license(root: ET.Element, book_id: str) -> None:
 
 def surface_text(node: ET.Element) -> str:
     pieces: list[str] = []
+
     def walk(current: ET.Element) -> None:
         if current.text:
             pieces.append(current.text)
@@ -161,6 +154,7 @@ def surface_text(node: ET.Element) -> str:
                 walk(child)
             if child.tail:
                 pieces.append(child.tail)
+
     walk(node)
     return WHITESPACE.sub(" ", "".join(pieces)).strip()
 
@@ -173,10 +167,13 @@ def parse_tei(payload: bytes, edition_urn: str, book_id: str) -> list[dict]:
     verify_license(root, book_id)
     edition_nodes = [
         node for node in root.iter()
-        if local_name(node.tag) == "div" and node.attrib.get("type") == "edition" and node.attrib.get("n") == edition_urn
+        if local_name(node.tag) == "div"
+        and node.attrib.get("type") == "edition"
+        and node.attrib.get("n") == edition_urn
     ]
     if len(edition_nodes) != 1:
         raise BuildError(f"{book_id}: selected CTS edition div not found exactly once")
+
     verses: list[dict] = []
     seen: set[tuple[str | None, str]] = set()
 
@@ -205,6 +202,7 @@ def parse_tei(payload: bytes, edition_urn: str, book_id: str) -> list[dict]:
             return
         for child in list(node):
             walk(child, chapter)
+
     walk(edition_nodes[0])
     if not verses:
         raise BuildError(f"{book_id}: no verse divisions parsed")
@@ -213,11 +211,11 @@ def parse_tei(payload: bytes, edition_urn: str, book_id: str) -> list[dict]:
 
 def split_scope(book_id: str, verses: list[dict]) -> tuple[list[dict], dict]:
     if book_id == "EZR":
-        selected = [row for row in verses if str(row.get("source_chapter") or "").isdigit() and 1 <= int(row["source_chapter"]) <= 10]
-        return selected, {"mode": "esdras-b-component", "source_chapter_start": 1, "source_chapter_end": 10, "canonical_chapter_offset": 0}
+        rows = [v for v in verses if str(v.get("source_chapter") or "").isdigit() and 1 <= int(v["source_chapter"]) <= 10]
+        return rows, {"mode": "esdras-b-component", "source_chapter_start": 1, "source_chapter_end": 10, "canonical_chapter_offset": 0}
     if book_id == "NEH":
-        selected = [row for row in verses if str(row.get("source_chapter") or "").isdigit() and 11 <= int(row["source_chapter"]) <= 23]
-        return selected, {"mode": "esdras-b-component", "source_chapter_start": 11, "source_chapter_end": 23, "canonical_chapter_offset": 10}
+        rows = [v for v in verses if str(v.get("source_chapter") or "").isdigit() and 11 <= int(v["source_chapter"]) <= 23]
+        return rows, {"mode": "esdras-b-component", "source_chapter_start": 11, "source_chapter_end": 23, "canonical_chapter_offset": 10}
     return verses, {"mode": "source-reference-preserved", "canonical_chapter_offset": 0}
 
 
@@ -228,27 +226,25 @@ def write_json(path: Path, payload: dict) -> None:
 
 def build(output: Path) -> dict:
     if len(WORKS) != 39 or len({row[0] for row in WORKS}) != 39:
-        raise BuildError("protocanonical Greek work contract must contain exactly 39 Catholic book scopes")
+        raise BuildError("protocanonical Greek contract must contain exactly 39 Catholic book scopes")
     inventory = fetch_tree()
     if output.exists():
         shutil.rmtree(output)
-    books_dir = output / ISOLATED_ROOT / "books"
-    books_dir.mkdir(parents=True, exist_ok=True)
+    book_dir = output / ISOLATED_ROOT / "books"
+    book_dir.mkdir(parents=True, exist_ok=True)
 
     cache: dict[str, tuple[list[dict], dict]] = {}
     stats: list[dict] = []
     total_verses = 0
-    for book_id, canonical_name, work, expected_title in WORKS:
+    for book_id, canonical_name, work in WORKS:
         if work not in cache:
             metadata_path = f"{work}/__cts__.xml"
             metadata_bytes, metadata_blob, metadata_sha256 = download_relative(metadata_path, inventory)
-            title, edition_urn = metadata(metadata_bytes, work)
-            if expected_title.lower() not in title.lower():
-                raise BuildError(f"{book_id}: CTS title mismatch: expected {expected_title!r}, got {title!r}")
+            title, edition_urn = parse_metadata(metadata_bytes, work)
             text_path = f"{work}/tlg0527.{work}.1st1K-grc1.xml"
             text_bytes, text_blob, text_sha256 = download_relative(text_path, inventory)
-            source_verses = parse_tei(text_bytes, edition_urn, book_id)
-            cache[work] = (source_verses, {
+            verses = parse_tei(text_bytes, edition_urn, book_id)
+            cache[work] = (verses, {
                 "work": work,
                 "work_title": title,
                 "edition_urn": edition_urn,
@@ -294,15 +290,15 @@ def build(output: Path) -> dict:
             },
             "verses": verses,
         }
-        write_json(books_dir / f"{book_id}.json", payload)
-        chapter_values = {str(v.get("source_chapter")) for v in verses if v.get("source_chapter") is not None}
+        write_json(book_dir / f"{book_id}.json", payload)
+        chapters = {v.get("source_chapter") for v in verses if v.get("source_chapter") is not None}
         stats.append({
             "book_id": book_id,
             "book": canonical_name,
             "work": work,
             "work_title": source_meta["work_title"],
             "edition_urn": source_meta["edition_urn"],
-            "chapter_count": len(chapter_values),
+            "chapter_count": len(chapters),
             "verse_count": len(verses),
             "mapping": mapping,
             "text_git_blob_sha1": source_meta["text_git_blob_sha1"],
@@ -317,7 +313,7 @@ def build(output: Path) -> dict:
         "status": "production-installed",
         "production_enabled": True,
         "language": "grc",
-        "scope": "39 protocanonical Catholic Old Testament book scopes from Swete; complements the accepted deuterocanonical/additions production package",
+        "scope": "39 protocanonical Catholic Old Testament book scopes from Swete; complements the accepted deuterocanonical/additions package",
         "book_count": 39,
         "verse_record_count": total_verses,
         "books": stats,
@@ -332,7 +328,12 @@ def build(output: Path) -> dict:
             "isolation_required": True,
             "attribution": "OpenGreekAndLatin First1KGreek / Henry Barclay Swete Septuagint witnesses.",
         },
-        "partition": {"path": ISOLATED_ROOT, "license": "CC BY-SA 4.0", "share_alike": True, "isolation_required": True},
+        "partition": {
+            "path": ISOLATED_ROOT,
+            "license": "CC BY-SA 4.0",
+            "share_alike": True,
+            "isolation_required": True,
+        },
         "runtime_contract": {
             "local_only": True,
             "source_boundaries_preserved": True,
@@ -342,7 +343,12 @@ def build(output: Path) -> dict:
             "daniel_primary_base_witness": "Theodotion",
             "ezra_nehemiah_source": "Esdras B",
         },
-        "derived_layers": {"glosses": False, "lemmata": False, "morphology": False, "transliteration": False},
+        "derived_layers": {
+            "glosses": False,
+            "lemmata": False,
+            "morphology": False,
+            "transliteration": False,
+        },
     }
     write_json(output / "manifest.json", manifest)
     return manifest
@@ -353,7 +359,7 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
     manifest = build(args.output.resolve())
-    print(f"[OT Greek Full] vendored {manifest['book_count']} protocanonical book scopes / {manifest['verse_record_count']} source verse records")
+    print(f"[OT Greek Full] vendored {manifest['book_count']} book scopes / {manifest['verse_record_count']} source verse records")
     return 0
 
 
