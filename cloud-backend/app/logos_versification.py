@@ -127,3 +127,66 @@ def canonical_segments(book_id: str, lane: str, canonical_chapter: int | str) ->
         if str(chapter.get("canonical_chapter")) == wanted:
             return list(chapter.get("segments") or [])
     return []
+
+
+def canonical_source_mapping(
+    book_id: str,
+    lane: str,
+    canonical_chapter: int | str,
+    canonical_verse: int | str,
+) -> dict[str, Any] | None:
+    """Resolve one canonical verse through a verified map without altering source boundaries."""
+    chapter = str(canonical_chapter)
+    verse = str(canonical_verse)
+    wanted = (chapter, verse)
+    status = mapping_status(book_id, lane, chapter)
+    if status.get("status") != "verified-map":
+        return None
+
+    for segment in canonical_segments(book_id, lane, chapter):
+        relationship = str(segment.get("relationship") or "")
+        canonical_rows = list(segment.get("canonical_refs") or [])
+        source_rows = list(segment.get("source_refs") or [])
+        canonical_refs = [(str(row.get("chapter")), str(row.get("verse"))) for row in canonical_rows]
+        if wanted not in canonical_refs:
+            continue
+
+        selected: list[dict[str, str]] = []
+        if relationship in {"identity", "renumber", "offset"}:
+            if len(canonical_rows) != len(source_rows):
+                raise RuntimeError("Verified one-to-one mapping has unequal reference counts")
+            idx = canonical_refs.index(wanted)
+            row = source_rows[idx]
+            selected = [{"chapter": str(row.get("chapter")), "verse": str(row.get("verse"))}]
+        elif relationship == "merge":
+            if len(canonical_rows) != 1 or not source_rows:
+                raise RuntimeError("Verified merge mapping must map one canonical ref to source refs")
+            selected = [{"chapter": str(row.get("chapter")), "verse": str(row.get("verse"))} for row in source_rows]
+        elif relationship == "split":
+            if len(source_rows) != 1 or not canonical_rows:
+                raise RuntimeError("Verified split mapping must map canonical refs to one source ref")
+            row = source_rows[0]
+            selected = [{"chapter": str(row.get("chapter")), "verse": str(row.get("verse"))}]
+        elif relationship in {"range", "component-range"}:
+            if len(canonical_rows) == len(source_rows) and source_rows:
+                idx = canonical_refs.index(wanted)
+                row = source_rows[idx]
+                selected = [{"chapter": str(row.get("chapter")), "verse": str(row.get("verse"))}]
+            else:
+                raise RuntimeError("Ambiguous verified range mapping requires a lane-specific resolver")
+        elif relationship == "canonical-only":
+            selected = []
+        else:
+            return None
+
+        return {
+            "book_id": str(book_id).upper(),
+            "lane": str(lane).lower(),
+            "canonical_ref": {"chapter": chapter, "verse": verse},
+            "relationship": relationship,
+            "segment_id": segment.get("id"),
+            "source_refs": selected,
+            "mapping_version": status.get("mapping_version"),
+            "mapping_file": status.get("file"),
+        }
+    return None

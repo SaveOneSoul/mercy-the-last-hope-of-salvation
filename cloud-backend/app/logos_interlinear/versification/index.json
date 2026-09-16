@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.17-v1",
+  "registry_version": "2026.09.17-v2",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -20,5 +20,12 @@
     "source-only",
     "canonical-only"
   ],
-  "mappings": []
+  "mappings": [
+    {
+      "book_id": "JDT",
+      "lane": "latin",
+      "status": "verified",
+      "file": "maps/JDT-latin-vulgate-clementine.json"
+    }
+  ]
 }
