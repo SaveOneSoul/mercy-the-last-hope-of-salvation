@@ -43,6 +43,7 @@ jobs:
           from app.main import app
           from app.logos import _corpus_manifest
           from app.logos_context import BOOK_PROFILES, RESEARCH_LIBRARIES
+          from app.logos_greek import _greek_manifest
           from app.models import CMSMedia, CMSPublication
           from app.prayer_network import (
               MassAssignment,
@@ -92,6 +93,9 @@ jobs:
               '/api/logos/media',
               '/api/logos/ai',
               '/api/logos/advanced-ai',
+              '/api/logos/greek/catalog',
+              '/api/logos/greek/source-rights',
+              '/api/logos/greek/interlinear',
               '/priest',
           ):
               assert required in paths, required
@@ -102,5 +106,11 @@ jobs:
               assert manifest['chapter_count'] >= 1300
               assert manifest['verse_count'] >= 34000
               assert manifest['translation']['rights'] == 'public-domain'
-          print('Mercy backend CMS SEO + Logos full Bible and advanced study + prayer/Mass/priest portal smoke test passed')
+          greek = _greek_manifest()
+          if greek:
+              assert greek['production_enabled'] is True
+              assert greek['phase1_acceptance']['book_count'] == 27
+              assert greek['sources']['surface']['license'] == 'CC BY 4.0'
+              assert greek['sources']['linguistics']['license'] == 'CC BY-SA 3.0'
+          print('Mercy backend CMS SEO + Logos English/Greek study + prayer/Mass/priest portal smoke test passed')
           PY

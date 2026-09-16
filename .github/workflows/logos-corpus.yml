@@ -7,21 +7,29 @@ on:
     paths:
       - 'scripts/vendor_douay_rheims.py'
       - 'scripts/vendor_greek_nt_phase1.py'
+      - 'scripts/vendor_greek_nt_production.py'
       - 'cloud-backend/app/logos_interlinear/**'
+      - 'cloud-backend/app/logos_greek.py'
+      - 'cloud-backend/app/logos_advanced.py'
       - 'tools/validate_logos.py'
       - 'tools/validate_logos_interlinear.py'
       - 'tools/validate_logos_interlinear_prototype.py'
       - 'tools/validate_logos_greek_nt_phase1.py'
+      - 'tools/validate_logos_greek_nt_production.py'
       - '.github/workflows/logos-corpus.yml'
   pull_request:
     paths:
       - 'scripts/vendor_douay_rheims.py'
       - 'scripts/vendor_greek_nt_phase1.py'
+      - 'scripts/vendor_greek_nt_production.py'
       - 'cloud-backend/app/logos_interlinear/**'
+      - 'cloud-backend/app/logos_greek.py'
+      - 'cloud-backend/app/logos_advanced.py'
       - 'tools/validate_logos.py'
       - 'tools/validate_logos_interlinear.py'
       - 'tools/validate_logos_interlinear_prototype.py'
       - 'tools/validate_logos_greek_nt_phase1.py'
+      - 'tools/validate_logos_greek_nt_production.py'
       - '.github/workflows/logos-corpus.yml'
 
 permissions:
@@ -58,6 +66,19 @@ jobs:
           out="${RUNNER_TEMP}/logos-greek-nt-phase1"
           python scripts/vendor_greek_nt_phase1.py --output "$out"
           python tools/validate_logos_greek_nt_phase1.py --generated "$out"
+
+      - name: Build and validate Greek NT production package for PR
+        if: github.event_name == 'pull_request'
+        run: |
+          out="${RUNNER_TEMP}/logos-greek-nt-production"
+          python scripts/vendor_greek_nt_production.py --output "$out"
+          python tools/validate_logos_greek_nt_production.py --root "$out"
+
+      - name: Vendor Greek NT production package on main
+        if: github.event_name != 'pull_request'
+        run: |
+          python scripts/vendor_greek_nt_production.py
+          python tools/validate_logos_greek_nt_production.py
 
       - name: Vendor pinned Douay-Rheims 1899 corpus
         run: python scripts/vendor_douay_rheims.py
@@ -97,16 +118,17 @@ jobs:
           )
           PY
 
-      - name: Commit deterministic corpus
+      - name: Commit deterministic corpora
         if: github.event_name != 'pull_request'
         run: |
-          corpus_path='cloud-backend/app/logos_corpus/eng_douay_rheims_1899'
-          git add --all -- "$corpus_path"
-          if git diff --cached --quiet -- "$corpus_path"; then
-            echo "Corpus is already current."
+          english_path='cloud-backend/app/logos_corpus/eng_douay_rheims_1899'
+          greek_path='cloud-backend/app/logos_corpus/grc_sblgnt_morphgnt'
+          git add --all -- "$english_path" "$greek_path"
+          if git diff --cached --quiet -- "$english_path" "$greek_path"; then
+            echo "Corpora are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "data: vendor full 73-book Douay-Rheims Logos corpus"
+          git commit -m "data: vendor deterministic Logos English and Greek corpora"
           git push origin HEAD:main
