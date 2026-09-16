@@ -1,0 +1,10 @@
+{
+  "examples": [
+    {"reference": "Tobit 1:1", "expected_mapping": "identity-chapter-verse"},
+    {"reference": "Baruch 6:1", "expected_mapping": "source-verse-to-canonical-chapter-6"},
+    {"reference": "Esther 15:1", "expected_mapping": "component-range"},
+    {"reference": "Daniel 3:24", "expected_mapping": "identity-chapter-verse-range"},
+    {"reference": "Daniel 13:1", "expected_mapping": "source-verse-to-canonical-chapter-13"},
+    {"reference": "Daniel 14:1", "expected_mapping": "component-range-no-forced-verse-split"}
+  ]
+}
