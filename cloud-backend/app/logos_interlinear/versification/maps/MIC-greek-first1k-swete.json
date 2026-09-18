@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.18-mic-greek-v1",
+  "status": "verified",
+  "book_id": "MIC",
+  "book": "Micah",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "first1kgreek-swete",
+    "reference_system": "swete-first1k-source-numbering",
+    "corpus_id": "grc_ot_catholic_full",
+    "corpus_version": "2026.09.17-catholic-lxx-full"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "5"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "5",
+      "segments": [
+        {
+          "id": "MIC-5-1-10-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "1"
+            },
+            {
+              "chapter": "5",
+              "verse": "2"
+            },
+            {
+              "chapter": "5",
+              "verse": "3"
+            },
+            {
+              "chapter": "5",
+              "verse": "4"
+            },
+            {
+              "chapter": "5",
+              "verse": "5"
+            },
+            {
+              "chapter": "5",
+              "verse": "6"
+            },
+            {
+              "chapter": "5",
+              "verse": "7"
+            },
+            {
+              "chapter": "5",
+              "verse": "8"
+            },
+            {
+              "chapter": "5",
+              "verse": "9"
+            },
+            {
+              "chapter": "5",
+              "verse": "10"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "5",
+              "verse": "1"
+            },
+            {
+              "chapter": "5",
+              "verse": "2"
+            },
+            {
+              "chapter": "5",
+              "verse": "3"
+            },
+            {
+              "chapter": "5",
+              "verse": "4"
+            },
+            {
+              "chapter": "5",
+              "verse": "5"
+            },
+            {
+              "chapter": "5",
+              "verse": "6"
+            },
+            {
+              "chapter": "5",
+              "verse": "7"
+            },
+            {
+              "chapter": "5",
+              "verse": "8"
+            },
+            {
+              "chapter": "5",
+              "verse": "9"
+            },
+            {
+              "chapter": "5",
+              "verse": "10"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Micah 5:1-10 and pinned First1KGreek/Swete Micah 5:1-10 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "MIC-5-11-greek",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "11"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "5",
+              "verse": "11"
+            },
+            {
+              "chapter": "5",
+              "verse": "12"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Micah 5:11 contains both destruction of cities/strongholds and removal of sorceries/divinations; pinned Swete records those clauses separately as Greek 5:11 and 5:12."
+          }
+        },
+        {
+          "id": "MIC-5-12-14-greek",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "12"
+            },
+            {
+              "chapter": "5",
+              "verse": "13"
+            },
+            {
+              "chapter": "5",
+              "verse": "14"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "5",
+              "verse": "13"
+            },
+            {
+              "chapter": "5",
+              "verse": "14"
+            },
+            {
+              "chapter": "5",
+              "verse": "15"
+            }
+          ],
+          "evidence": {
+            "citation": "After the Douay 5:11 / Swete 5:11-12 merge, Douay-Rheims Micah 5:12-14 corresponds sequentially to pinned Swete 5:13-15: idols/statues, groves/cities, and vengeance on the nations."
+          }
+        }
+      ]
+    }
+  ]
+}
