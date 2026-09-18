@@ -40,8 +40,8 @@ if(lat){appendParallelCard('la',lat.label||'Clementine Latin Vulgate',latinText(
 
 function englishMap(data){var out={};(data&&data.verses||[]).forEach(function(row){out[String(row.verse)]=row.text||'';});return out;}
 function semiticMap(data){var out={};if(!data||!data.alignment||data.alignment.exact!==true)return out;(data.verses||[]).forEach(function(row){out[String(row.verse)]=wordsFromTokens(row.tokens);});return out;}
-function greekExact(data){if(!data)return false;if(data.alignment&&data.alignment.exact===true)return true;var witness=greekWitness(data),mapping=witness&&witness.mapping||{};return mapping.exact_verse_alignment===true;}
-function greekMap(data){var out={};if(!greekExact(data))return out;var witness=greekWitness(data),rows=witness?witness.verses:data.verses;(rows||[]).forEach(function(row){var key=String(row.source_verse||'');if(/^\d+$/.test(key))out[key]=row.surface||'';});return out;}
+function greekExact(data){if(!data)return false;if(data.alignment&&(data.alignment.exact===true||data.alignment.verified_mapping===true))return true;var witness=greekWitness(data),mapping=witness&&witness.mapping||{};return mapping.exact_verse_alignment===true;}
+function greekMap(data){var out={};if(!greekExact(data))return out;var witness=greekWitness(data),rows=witness?witness.verses:data.verses;(rows||[]).forEach(function(row){var key=String(row.verse||row.source_verse||'');if(/^\d+$/.test(key))out[key]=row.surface||'';});return out;}
 function latinMap(data){var out={};if(!data||!data.alignment||data.alignment.exact!==true)return out;(data.verses||[]).forEach(function(row){out[String(row.verse)]=row.surface||'';});return out;}
 function statusSummary(label,lane){if(!lane||lane.status==='not-applicable')return null;var box=el('div','logos-policy');box.appendChild(el('strong','',label));if(lane.status==='mapping-required')box.appendChild(el('p','',mappingMessage(lane)));else box.appendChild(el('p','','Available from the installed deterministic local corpus.'));return box;}
 

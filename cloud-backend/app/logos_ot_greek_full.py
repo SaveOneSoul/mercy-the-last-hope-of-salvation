@@ -5,6 +5,7 @@ from pathlib import Path
 from fastapi import APIRouter, HTTPException, Query, Response
 
 from .logos import _corpus_book, _corpus_manifest, _parse_corpus_reference
+from .logos_versification import canonical_source_mapping, mapping_status
 
 router = APIRouter(prefix="/ot-lxx", tags=["Logos Complete Protocanonical Greek Old Testament"])
 CORPUS_DIR = Path(__file__).with_name("logos_corpus") / "grc_ot_catholic_full"
@@ -142,9 +143,18 @@ def _chapter_identity(book_id: str, chapter: int, source_book: dict) -> dict:
     dra_set = _numeric_dra_keys(dra_chapter)
     source_set = set(source_map) if source_map is not None else None
     exact = bool(rows and dra_chapter and source_set is not None and dra_set is not None and source_set == dra_set)
+    registry = mapping_status(book_id, "greek", chapter) if not exact else None
+    verified_map = bool(registry and registry.get("status") == "verified-map")
     return {
         "exact": exact,
-        "mode": "exact-dra-greek-chapter-verse-identity" if exact else "explicit-mapping-required",
+        "verified_mapping": verified_map,
+        "mode": (
+            "exact-dra-greek-chapter-verse-identity"
+            if exact
+            else "verified-explicit-map"
+            if verified_map
+            else "explicit-mapping-required"
+        ),
         "canonical_chapter": chapter,
         "source_chapter": _source_chapter_for(source_book, chapter),
         "source_verse_count": len(rows),
@@ -153,8 +163,8 @@ def _chapter_identity(book_id: str, chapter: int, source_book: dict) -> dict:
         "automatic_remapping": False,
         "source_boundary_preserved": True,
         "empty_source_divisions_preserved": True,
+        "mapping": registry if verified_map else None,
     }
-
 
 def _public_row(row: dict) -> dict:
     return {
@@ -164,6 +174,23 @@ def _public_row(row: dict) -> dict:
         "surface": row.get("surface"),
         "source_empty_surface": row.get("source_empty_surface") is True,
     }
+
+
+def _mapped_source_rows(source_book: dict, refs: list[dict]) -> list[dict]:
+    rows = source_book.get("verses") or []
+    by_ref = {
+        (str(row.get("source_chapter")), str(row.get("source_verse"))): row
+        for row in rows
+        if row.get("source_chapter") is not None and row.get("source_verse") is not None
+    }
+    selected: list[dict] = []
+    for ref in refs:
+        key = (str(ref.get("chapter")), str(ref.get("verse")))
+        row = by_ref.get(key)
+        if row is None:
+            raise RuntimeError(f"Verified Greek mapping references missing source verse {key[0]}:{key[1]}")
+        selected.append(_public_row(row))
+    return selected
 
 
 def _label(source_book: dict) -> str:
@@ -188,7 +215,7 @@ def _study_payload(reference: str) -> dict:
     source_book = _book(book_id)
     alignment = _chapter_identity(book_id, chapter, source_book)
     canonical_ref = _canonical_reference(str(book_meta.get("name")), chapter, verse_start, verse_end)
-    if alignment.get("exact") is not True:
+    if alignment.get("exact") is not True and alignment.get("verified_mapping") is not True:
         raise HTTPException(
             status_code=409,
             detail={
@@ -199,20 +226,51 @@ def _study_payload(reference: str) -> dict:
             },
         )
 
-    rows = _source_rows_for_chapter(source_book, chapter)
-    numeric = _numeric_source_rows(rows)
-    if numeric is None:
-        raise HTTPException(status_code=409, detail="logos_full_lxx_non_numeric_source_versification")
+    dra_meta = _dra_book_meta(book_id)
+    dra_book = _corpus_book(str(dra_meta.get("filename")))
+    dra_chapter = (dra_book.get("chapters") or {}).get(str(chapter)) or {}
+    if not dra_chapter:
+        raise HTTPException(status_code=404, detail="logos_douay_chapter_not_found")
     if verse_start is None:
-        numbers = sorted(numeric)
+        numbers = sorted(int(value) for value in dra_chapter if str(value).isdigit())
     else:
         numbers = list(range(verse_start, (verse_end or verse_start) + 1))
-    selected = []
-    for number in numbers:
-        row = numeric.get(number)
-        if row is None:
-            raise HTTPException(status_code=404, detail="logos_full_lxx_source_verse_not_found")
-        selected.append(_public_row(row))
+
+    if alignment.get("exact") is True:
+        rows = _source_rows_for_chapter(source_book, chapter)
+        numeric = _numeric_source_rows(rows)
+        if numeric is None:
+            raise HTTPException(status_code=409, detail="logos_full_lxx_non_numeric_source_versification")
+        selected = []
+        for number in numbers:
+            if str(number) not in dra_chapter:
+                raise HTTPException(status_code=404, detail="logos_douay_verse_not_found")
+            row = numeric.get(number)
+            if row is None:
+                raise HTTPException(status_code=404, detail="logos_full_lxx_source_verse_not_found")
+            selected.append(_public_row(row))
+    else:
+        selected = []
+        for number in numbers:
+            if str(number) not in dra_chapter:
+                raise HTTPException(status_code=404, detail="logos_douay_verse_not_found")
+            mapped = canonical_source_mapping(book_id, "greek", chapter, number)
+            if mapped is None:
+                raise RuntimeError(f"Verified Greek chapter lacks canonical mapping for {book_id} {chapter}:{number}")
+            source_rows = _mapped_source_rows(source_book, list(mapped.get("source_refs") or []))
+            relationship = str(mapped.get("relationship") or "")
+            source_missing = relationship == "canonical-only"
+            if not source_rows and not source_missing:
+                raise RuntimeError(f"Verified Greek map produced no source row for {book_id} {chapter}:{number}")
+            selected.append({
+                "verse": number,
+                "surface": " ".join(str(row.get("surface") or "") for row in source_rows).strip(),
+                "source_verses": source_rows,
+                "source_missing": source_missing,
+                "mapping_relationship": relationship,
+                "mapping_segment": mapped.get("segment_id"),
+                "mapping_version": mapped.get("mapping_version"),
+            })
 
     source = source_book.get("source") or {}
     source_family = source.get("source_family")
@@ -221,6 +279,8 @@ def _study_payload(reference: str) -> dict:
         if source_family == "open-greek-wikisource-ecclesiastes"
         else "The Greek source surface and verse divisions are preserved from the pinned Swete witness, including explicitly empty source divisions."
     )
+    if alignment.get("verified_mapping") is True:
+        note += " A verified registry map aligns the canonical row to the pinned source records; canonical-only rows explicitly represent source gaps and do not synthesize Greek text."
     return {
         "reference": canonical_ref,
         "book": book_meta.get("name"),
@@ -237,6 +297,7 @@ def _study_payload(reference: str) -> dict:
         "isolation_required": source_book.get("isolation_required"),
         "alignment": alignment,
         "mapping": source_book.get("mapping") or {},
+        "versification_mapping": alignment.get("mapping"),
         "verses": selected,
         "source": source,
         "derived_layers": manifest.get("derived_layers") or {},

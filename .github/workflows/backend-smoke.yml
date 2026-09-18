@@ -45,6 +45,7 @@ jobs:
           from app.logos_context import BOOK_PROFILES, RESEARCH_LIBRARIES
           from app.logos_greek import _greek_manifest
           from app.logos_ot_greek import _ot_greek_manifest
+          from app.logos_ot_greek_full import _study_payload as _full_greek_study_payload
           from app.logos_ot_latin import _study_payload as _latin_study_payload
           from app.logos_ot_semitic import _ot_semitic_manifest
           from app.logos_versification import registry_summary
@@ -146,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 2
-          assert registry['verified_book_count'] >= 2
+          assert registry['verified_mapping_count'] >= 3
+          assert registry['verified_book_count'] >= 3
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -175,5 +176,23 @@ jobs:
           assert [(row['chapter'], row['verse']) for row in sirach_by_verse[34]['source_verses']] == [(29, 35)]
           assert all(row['surface'] for row in sirach['verses'])
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin versification + prayer/Mass/priest portal smoke test passed')
+          lamentations = _full_greek_study_payload('Lamentations 3')
+          assert lamentations['alignment']['mode'] == 'verified-explicit-map'
+          assert lamentations['alignment']['verified_mapping'] is True
+          assert len(lamentations['verses']) == 66
+          lamentations_by_verse = {row['verse']: row for row in lamentations['verses']}
+          assert lamentations_by_verse[21]['mapping_relationship'] == 'identity'
+          assert [(row['source_chapter'], row['source_verse']) for row in lamentations_by_verse[21]['source_verses']] == [('3', '21')]
+          for missing in (22, 23, 24, 29):
+              assert lamentations_by_verse[missing]['mapping_relationship'] == 'canonical-only'
+              assert lamentations_by_verse[missing]['source_verses'] == []
+              assert lamentations_by_verse[missing]['surface'] == ''
+              assert lamentations_by_verse[missing]['source_missing'] is True
+          assert [(row['source_chapter'], row['source_verse']) for row in lamentations_by_verse[25]['source_verses']] == [('3', '25')]
+          assert [(row['source_chapter'], row['source_verse']) for row in lamentations_by_verse[28]['source_verses']] == [('3', '28')]
+          assert [(row['source_chapter'], row['source_verse']) for row in lamentations_by_verse[30]['source_verses']] == [('3', '30')]
+          assert [(row['source_chapter'], row['source_verse']) for row in lamentations_by_verse[66]['source_verses']] == [('3', '66')]
+          assert all(row['surface'] or row['source_missing'] for row in lamentations['verses'])
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations Greek versification + prayer/Mass/priest portal smoke test passed')
           PY
