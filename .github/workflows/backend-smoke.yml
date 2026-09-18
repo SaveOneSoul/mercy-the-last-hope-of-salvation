@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 5
-          assert registry['verified_book_count'] >= 4
+          assert registry['verified_mapping_count'] >= 7
+          assert registry['verified_book_count'] >= 5
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -226,5 +226,42 @@ jobs:
           assert [(row['chapter'], row['verse']) for row in amos_semitic_by_verse[15]['source_verses']] == [(6, 14)]
           assert len({row['id'] for row in amos_semitic['tokens']}) == len(amos_semitic['tokens'])
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations Greek + Amos Greek/Semitic versification + prayer/Mass/priest portal smoke test passed')
+          micah_semitic_4 = _semitic_study_payload('Micah 4')
+          assert micah_semitic_4['alignment']['mode'] == 'verified-explicit-map'
+          assert micah_semitic_4['alignment']['verified_mapping'] is True
+          assert len(micah_semitic_4['verses']) == 13
+          micah4 = {row['verse']: row for row in micah_semitic_4['verses']}
+          assert [(row['chapter'], row['verse']) for row in micah4[13]['source_verses']] == [(4, 13)]
+
+          micah_semitic_5 = _semitic_study_payload('Micah 5')
+          assert micah_semitic_5['alignment']['mode'] == 'verified-explicit-map'
+          assert micah_semitic_5['alignment']['verified_mapping'] is True
+          assert micah_semitic_5['alignment']['numeric_identifier_identity'] is True
+          assert micah_semitic_5['alignment']['exact'] is False
+          assert len(micah_semitic_5['verses']) == 14
+          micah5s = {row['verse']: row for row in micah_semitic_5['verses']}
+          assert micah5s[1]['mapping_relationship'] == 'renumber'
+          assert [(row['chapter'], row['verse']) for row in micah5s[1]['source_verses']] == [(4, 14)]
+          assert micah5s[2]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in micah5s[2]['source_verses']] == [(5, 1)]
+          assert [(row['chapter'], row['verse']) for row in micah5s[10]['source_verses']] == [(5, 9)]
+          assert micah5s[11]['mapping_relationship'] == 'merge'
+          assert [(row['chapter'], row['verse']) for row in micah5s[11]['source_verses']] == [(5, 10), (5, 11)]
+          assert [(row['chapter'], row['verse']) for row in micah5s[12]['source_verses']] == [(5, 12)]
+          assert [(row['chapter'], row['verse']) for row in micah5s[14]['source_verses']] == [(5, 14)]
+
+          micah_greek_5 = _full_greek_study_payload('Micah 5')
+          assert micah_greek_5['alignment']['mode'] == 'verified-explicit-map'
+          assert micah_greek_5['alignment']['verified_mapping'] is True
+          assert len(micah_greek_5['verses']) == 14
+          micah5g = {row['verse']: row for row in micah_greek_5['verses']}
+          assert micah5g[10]['mapping_relationship'] == 'identity'
+          assert [(row['source_chapter'], row['source_verse']) for row in micah5g[10]['source_verses']] == [('5', '10')]
+          assert micah5g[11]['mapping_relationship'] == 'merge'
+          assert [(row['source_chapter'], row['source_verse']) for row in micah5g[11]['source_verses']] == [('5', '11'), ('5', '12')]
+          assert micah5g[12]['mapping_relationship'] == 'offset'
+          assert [(row['source_chapter'], row['source_verse']) for row in micah5g[12]['source_verses']] == [('5', '13')]
+          assert [(row['source_chapter'], row['source_verse']) for row in micah5g[14]['source_verses']] == [('5', '15')]
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah source versification + prayer/Mass/priest portal smoke test passed')
           PY
