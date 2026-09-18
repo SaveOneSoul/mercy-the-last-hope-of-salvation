@@ -233,7 +233,7 @@ def render(report: dict[str, Any]) -> str:
             "",
             "## Acceptance rule",
             "",
-            "The target is **0 unresolved books**. A mapping may reduce the burn-down only after the mapping file is `verified`, its audited mismatch chapters exactly match current corpus evidence, all enumerated references exist, and the mapping validator passes bidirectionally.",
+            "The target is **0 unresolved books**. A mapping may reduce the burn-down only after the mapping file is `verified`, its audited mismatch chapters exactly match structural corpus evidence, any numeric-identity override chapter is separately evidenced, all enumerated references exist, and the mapping validator passes bidirectionally.",
             "",
         ]
     )
