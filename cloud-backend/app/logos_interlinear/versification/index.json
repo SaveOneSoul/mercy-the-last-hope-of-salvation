@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.18-v4",
+  "registry_version": "2026.09.18-v5",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -38,6 +38,18 @@
       "lane": "greek",
       "status": "verified",
       "file": "maps/LAM-greek-first1k-swete.json"
+    },
+    {
+      "book_id": "AMO",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/AMO-greek-first1k-swete.json"
+    },
+    {
+      "book_id": "AMO",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/AMO-semitic-oshb-wlc.json"
     }
   ]
 }
