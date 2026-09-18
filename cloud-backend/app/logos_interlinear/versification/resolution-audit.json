@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 45,
-    "books_resolved": 28,
-    "unresolved_lane_count": 78,
-    "verified_registry_lane_count": 2,
+    "books_unresolved": 44,
+    "books_resolved": 29,
+    "unresolved_lane_count": 77,
+    "verified_registry_lane_count": 3,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -1243,19 +1243,23 @@
       "id": "LAM",
       "book": "Lamentations",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
           "status": "exact",
           "mismatch_chapters": []
         },
         "greek": {
-          "status": "unresolved",
-          "source_status": "mapping-required",
-          "mismatch_chapters": [
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.18-lam-greek-v1",
+          "file": "maps/LAM-greek-first1k-swete.json",
+          "covered_chapters": [
             "3"
           ],
-          "registry": null
+          "mismatch_chapters": [
+            "3"
+          ]
         },
         "latin": {
           "status": "exact",
