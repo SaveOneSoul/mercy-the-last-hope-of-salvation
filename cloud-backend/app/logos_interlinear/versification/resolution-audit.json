@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 43,
-    "books_resolved": 30,
-    "unresolved_lane_count": 75,
-    "verified_registry_lane_count": 5,
+    "books_unresolved": 42,
+    "books_resolved": 31,
+    "unresolved_lane_count": 73,
+    "verified_registry_lane_count": 7,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -647,6 +647,11 @@
           "covered_chapters": [
             "4"
           ],
+          "audited_mismatch_chapters": [
+            "4"
+          ],
+          "verified_override_chapters": [],
+          "source_status": "mapping-required",
           "mismatch_chapters": [
             "4"
           ]
@@ -1114,6 +1119,11 @@
           "covered_chapters": [
             "29"
           ],
+          "audited_mismatch_chapters": [
+            "29"
+          ],
+          "verified_override_chapters": [],
+          "source_status": "mapping-required",
           "mismatch_chapters": [
             "29"
           ]
@@ -1257,6 +1267,11 @@
           "covered_chapters": [
             "3"
           ],
+          "audited_mismatch_chapters": [
+            "3"
+          ],
+          "verified_override_chapters": [],
+          "source_status": "mapping-required",
           "mismatch_chapters": [
             "3"
           ]
@@ -1433,6 +1448,11 @@
           "covered_chapters": [
             "6"
           ],
+          "audited_mismatch_chapters": [
+            "6"
+          ],
+          "verified_override_chapters": [],
+          "source_status": "mapping-required",
           "mismatch_chapters": [
             "6"
           ]
@@ -1445,6 +1465,11 @@
           "covered_chapters": [
             "6"
           ],
+          "audited_mismatch_chapters": [
+            "6"
+          ],
+          "verified_override_chapters": [],
+          "source_status": "mapping-required",
           "mismatch_chapters": [
             "6"
           ]
@@ -1502,23 +1527,44 @@
       "id": "MIC",
       "book": "Micah",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.18-mic-semitic-v1",
+          "file": "maps/MIC-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "4",
+            "5"
+          ],
+          "audited_mismatch_chapters": [
+            "4"
+          ],
+          "verified_override_chapters": [
+            "5"
+          ],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "4"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.18-mic-greek-v1",
+          "file": "maps/MIC-greek-first1k-swete.json",
+          "covered_chapters": [
+            "5"
+          ],
+          "audited_mismatch_chapters": [
+            "5"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "5"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",

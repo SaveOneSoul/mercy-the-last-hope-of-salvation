@@ -5,10 +5,10 @@ Generated deterministically from `coverage-audit.json` plus the verified versifi
 ## Burn-down
 
 - Catholic books: **73**
-- Books with at least one unresolved lane: **43**
-- Books with all applicable lanes resolved/exact: **30**
-- Unresolved source lanes: **75**
-- Lanes resolved by new verified registry maps: **5**
+- Books with at least one unresolved lane: **42**
+- Books with all applicable lanes resolved/exact: **31**
+- Unresolved source lanes: **73**
+- Lanes resolved by new verified registry maps: **7**
 - Lanes already resolved by accepted component/explicit maps: **3**
 
 A book leaves the unresolved count only when every applicable Hebrew/Aramaic, Greek, and Latin lane is exact or backed by a verified explicit/component mapping.
@@ -56,7 +56,7 @@ A book leaves the unresolved count only when every applicable Hebrew/Aramaic, Gr
 | 37 | Amos | OT | Verified map | Verified map | Exact | Resolved |
 | 38 | Obadiah | OT | Exact | Exact | Exact | Resolved |
 | 39 | Jonah | OT | Exact | Exact | Exact | Resolved |
-| 40 | Micah | OT | Unresolved (1 ch) | Unresolved (1 ch) | Exact | Unresolved |
+| 40 | Micah | OT | Verified map | Verified map | Exact | Resolved |
 | 41 | Nahum | OT | Unresolved (2 ch) | Unresolved (1 ch) | Exact | Unresolved |
 | 42 | Habakkuk | OT | Exact | Exact | Exact | Resolved |
 | 43 | Zephaniah | OT | Exact | Unresolved (2 ch) | Exact | Unresolved |
@@ -93,4 +93,4 @@ A book leaves the unresolved count only when every applicable Hebrew/Aramaic, Gr
 
 ## Acceptance rule
 
-The target is **0 unresolved books**. A mapping may reduce the burn-down only after the mapping file is `verified`, its audited mismatch chapters exactly match current corpus evidence, all enumerated references exist, and the mapping validator passes bidirectionally.
+The target is **0 unresolved books**. A mapping may reduce the burn-down only after the mapping file is `verified`, its audited mismatch chapters exactly match structural corpus evidence, any numeric-identity override chapter is separately evidenced, all enumerated references exist, and the mapping validator passes bidirectionally.
