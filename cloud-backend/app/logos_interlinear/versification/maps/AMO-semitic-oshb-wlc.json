@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.18-amo-semitic-v1",
+  "status": "verified",
+  "book_id": "AMO",
+  "book": "Amos",
+  "lane": "semitic",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "oshb",
+    "reference_system": "oshb-wlc-osis",
+    "corpus_id": "heb_arc_oshb_wlc",
+    "corpus_version": "2026.09.16-oshb-wlc-39"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "6"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "6",
+      "source_chapter": "6",
+      "segments": [
+        {
+          "id": "AMO-6-1-9-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "6",
+              "verse": "1"
+            },
+            {
+              "chapter": "6",
+              "verse": "2"
+            },
+            {
+              "chapter": "6",
+              "verse": "3"
+            },
+            {
+              "chapter": "6",
+              "verse": "4"
+            },
+            {
+              "chapter": "6",
+              "verse": "5"
+            },
+            {
+              "chapter": "6",
+              "verse": "6"
+            },
+            {
+              "chapter": "6",
+              "verse": "7"
+            },
+            {
+              "chapter": "6",
+              "verse": "8"
+            },
+            {
+              "chapter": "6",
+              "verse": "9"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "6",
+              "verse": "1"
+            },
+            {
+              "chapter": "6",
+              "verse": "2"
+            },
+            {
+              "chapter": "6",
+              "verse": "3"
+            },
+            {
+              "chapter": "6",
+              "verse": "4"
+            },
+            {
+              "chapter": "6",
+              "verse": "5"
+            },
+            {
+              "chapter": "6",
+              "verse": "6"
+            },
+            {
+              "chapter": "6",
+              "verse": "7"
+            },
+            {
+              "chapter": "6",
+              "verse": "8"
+            },
+            {
+              "chapter": "6",
+              "verse": "9"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims 1899 Amos 6:1-9 and the pinned OSHB/WLC witness preserve matching numbered source divisions."
+          }
+        },
+        {
+          "id": "AMO-6-10-11-semitic",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "6",
+              "verse": "10"
+            },
+            {
+              "chapter": "6",
+              "verse": "11"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "6",
+              "verse": "10"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned OSHB/WLC Amos 6:10 contains the complete source material represented as Douay-Rheims Amos 6:10 and 6:11, including removal of the bones, the question whether anyone remains, the answer that none remains, and the command to keep silence and not mention the name of YHWH."
+          }
+        },
+        {
+          "id": "AMO-6-12-15-semitic",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "6",
+              "verse": "12"
+            },
+            {
+              "chapter": "6",
+              "verse": "13"
+            },
+            {
+              "chapter": "6",
+              "verse": "14"
+            },
+            {
+              "chapter": "6",
+              "verse": "15"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "6",
+              "verse": "11"
+            },
+            {
+              "chapter": "6",
+              "verse": "12"
+            },
+            {
+              "chapter": "6",
+              "verse": "13"
+            },
+            {
+              "chapter": "6",
+              "verse": "14"
+            }
+          ],
+          "evidence": {
+            "citation": "After the Douay-Rheims 6:10-11 / source 6:10 split, Douay-Rheims Amos 6:12-15 corresponds sequentially to the pinned OSHB/WLC Amos 6:11-14 source divisions."
+          }
+        }
+      ]
+    }
+  ]
+}
