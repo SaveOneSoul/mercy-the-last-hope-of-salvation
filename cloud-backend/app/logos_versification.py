@@ -88,13 +88,16 @@ def mapping_status(book_id: str, lane: str, canonical_chapter: int | str | None 
     document = _mapping_document(filename)
     status = str(document.get("status") or entry.get("status") or "draft")
     coverage = document.get("coverage") or {}
-    covered = {str(value) for value in coverage.get("audited_mismatch_chapters") or []}
+    audited = {str(value) for value in coverage.get("audited_mismatch_chapters") or []}
+    overrides = {str(value) for value in coverage.get("verified_override_chapters") or []}
+    covered = audited | overrides
     chapter = str(canonical_chapter) if canonical_chapter is not None else None
     chapter_covered = chapter is None or chapter in covered
     verified = (
         status == "verified"
         and entry.get("status") == "verified"
         and coverage.get("complete_for_audited_mismatches") is True
+        and (not overrides or coverage.get("complete_for_numeric_identity_overrides") is True)
     )
     return {
         "status": "verified-map" if verified and chapter_covered else ("draft-map" if status == "draft" else "unresolved"),
