@@ -23,7 +23,7 @@ function showUnifiedUnavailable(reference){if(!tabPanel||!interlinearActive()||c
 function removeCards(){if(!parallelRoot)return;parallelRoot.querySelectorAll('.logos-ot-unified-card').forEach(function(node){node.remove();});}
 function wordsFromTokens(tokens){return (tokens||[]).map(function(token){return token&&token.surface||'';}).filter(Boolean).join(' ');}
 function laneData(lane){return lane&&lane.status==='available'&&lane.data?lane.data:null;}
-function semiticText(data){if(!data)return'';return(data.verses||[]).map(function(row){return wordsFromTokens(row.tokens);}).filter(Boolean).join(' ');}
+function semiticText(data){if(!data)return'';var seen={},parts=[];(data.verses||[]).forEach(function(row){var sources=row&&row.source_verses||[];if(sources.length){sources.forEach(function(source){var key=String(source.source_osis_id||((source.chapter||'')+':'+(source.verse||'')));if(seen[key])return;seen[key]=true;var text=wordsFromTokens(source.tokens);if(text)parts.push(text);});return;}var text=wordsFromTokens(row&&row.tokens);if(text)parts.push(text);});return parts.join(' ');}
 function greekWitness(data){return data&&data.primary_witness?data.primary_witness:null;}
 function greekText(data){if(!data)return'';var witness=greekWitness(data);var rows=witness?witness.verses:data.verses;return(rows||[]).map(function(row){return row&&row.surface||'';}).filter(Boolean).join(' ');}
 function latinText(data){return(data&&data.verses||[]).map(function(row){return row&&row.surface||'';}).filter(Boolean).join(' ');}
@@ -39,7 +39,7 @@ if(grc){var witness=greekWitness(grc),label=grc.label||(witness&&witness.name)||
 if(lat){appendParallelCard('la',lat.label||'Clementine Latin Vulgate',latinText(lat),sourceBadge(lat,'Clementine Vulgate · Public Domain'),'Pinned public-domain Latin source. No Latin lemma, morphology, gloss or transliteration is fabricated.',false);}else if(lanes.latin&&lanes.latin.status==='mapping-required'){appendMappingCard('la','Clementine Latin Vulgate',lanes.latin);}}
 
 function englishMap(data){var out={};(data&&data.verses||[]).forEach(function(row){out[String(row.verse)]=row.text||'';});return out;}
-function semiticMap(data){var out={};if(!data||!data.alignment||data.alignment.exact!==true)return out;(data.verses||[]).forEach(function(row){out[String(row.verse)]=wordsFromTokens(row.tokens);});return out;}
+function semiticMap(data){var out={};if(!data||!data.alignment||(data.alignment.exact!==true&&data.alignment.verified_mapping!==true))return out;(data.verses||[]).forEach(function(row){out[String(row.verse)]=wordsFromTokens(row.tokens);});return out;}
 function greekExact(data){if(!data)return false;if(data.alignment&&(data.alignment.exact===true||data.alignment.verified_mapping===true))return true;var witness=greekWitness(data),mapping=witness&&witness.mapping||{};return mapping.exact_verse_alignment===true;}
 function greekMap(data){var out={};if(!greekExact(data))return out;var witness=greekWitness(data),rows=witness?witness.verses:data.verses;(rows||[]).forEach(function(row){var key=String(row.verse||row.source_verse||'');if(/^\d+$/.test(key))out[key]=row.surface||'';});return out;}
 function latinMap(data){var out={};if(!data||!data.alignment||data.alignment.exact!==true)return out;(data.verses||[]).forEach(function(row){out[String(row.verse)]=row.surface||'';});return out;}
