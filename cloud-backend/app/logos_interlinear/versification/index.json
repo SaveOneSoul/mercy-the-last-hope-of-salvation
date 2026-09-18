@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.18-v5",
+  "registry_version": "2026.09.18-v6",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -50,6 +50,18 @@
       "lane": "semitic",
       "status": "verified",
       "file": "maps/AMO-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "MIC",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/MIC-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "MIC",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/MIC-greek-first1k-swete.json"
     }
   ]
 }
