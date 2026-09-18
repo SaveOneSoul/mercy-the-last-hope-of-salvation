@@ -20,7 +20,7 @@ def main() -> None:
 
     require(page, 'data-logos-tab="interlinear"', "normal Interlinear tab")
     require(page, "logos.js?v=4", "cache-busted unified Logos script")
-    require(page, "logos-ot-unified-integration.js?v=3", "cache-busted unified OT recovery script")
+    require(page, "logos-ot-unified-integration.js?v=4", "cache-busted unified OT recovery script")
     require(page, "logos-greek-integration.css?v=1", "interlinear stylesheet")
     require(page, "complete 73-book Douay-Rheims", "73-book English primary corpus wording")
     require(page, "unified Old Testament workspace", "unified OT workspace wording")
@@ -80,6 +80,8 @@ def main() -> None:
     require(ot_script, "appendMappingCard('grc','Septuagint Greek'", "generic mapping-required Greek label")
     require(ot_script, "Ecclesiastes is not presented as Swete", "Ecclesiastes provenance disclosure")
     require(ot_script, "data.alignment&&(data.alignment.exact===true||data.alignment.verified_mapping===true)", "exact-or-verified Greek mapping gate")
+    require(ot_script, "data.alignment.exact!==true&&data.alignment.verified_mapping!==true", "exact-or-verified Semitic mapping gate")
+    require(ot_script, "source.source_osis_id", "Semitic native source deduplication gate")
     require(ot_script, "mapping.exact_verse_alignment===true", "accepted deuterocanonical exact-mapping gate")
     require(ot_script, "No unavailable Greek linguistic annotation is invented", "OT Greek derived-layer boundary")
     require(ot_script, "No Latin lemma, morphology, gloss or transliteration is fabricated", "Latin derived-layer boundary")
