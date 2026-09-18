@@ -144,24 +144,26 @@ def _chapter_identity(book_id: str, chapter: int, surface: dict) -> dict:
             "dra_verse_count": len(dra_chapter),
             "automatic_remapping": False,
         }
-    exact = source_set == dra_set
-    registry = mapping_status(book_id, "semitic", chapter) if not exact else None
+    numeric_identity = source_set == dra_set
+    registry = mapping_status(book_id, "semitic", chapter)
     verified_map = bool(registry and registry.get("status") == "verified-map")
+    exact = numeric_identity and not verified_map
     return {
         "exact": exact,
+        "numeric_identifier_identity": numeric_identity,
         "verified_mapping": verified_map,
         "reason": (
-            "exact_chapter_verse_identity"
-            if exact
-            else "verified_explicit_map"
+            "verified_explicit_map"
             if verified_map
+            else "exact_chapter_verse_identity"
+            if exact
             else "mt_dra_verse_identity_differs"
         ),
         "mode": (
-            "exact-dra-source-chapter-verse-identity"
-            if exact
-            else "verified-explicit-map"
+            "verified-explicit-map"
             if verified_map
+            else "exact-dra-source-chapter-verse-identity"
+            if exact
             else "explicit-mapping-required"
         ),
         "source_verse_count": len(source_set),
