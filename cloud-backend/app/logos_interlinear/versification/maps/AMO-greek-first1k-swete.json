@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.18-amo-greek-v1",
+  "status": "verified",
+  "book_id": "AMO",
+  "book": "Amos",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "first1kgreek-swete",
+    "reference_system": "swete-first1k-source-numbering",
+    "corpus_id": "grc_ot_catholic_full",
+    "corpus_version": "2026.09.17-catholic-lxx-full"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "6"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "6",
+      "source_chapter": "6",
+      "segments": [
+        {
+          "id": "AMO-6-1-9-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "6",
+              "verse": "1"
+            },
+            {
+              "chapter": "6",
+              "verse": "2"
+            },
+            {
+              "chapter": "6",
+              "verse": "3"
+            },
+            {
+              "chapter": "6",
+              "verse": "4"
+            },
+            {
+              "chapter": "6",
+              "verse": "5"
+            },
+            {
+              "chapter": "6",
+              "verse": "6"
+            },
+            {
+              "chapter": "6",
+              "verse": "7"
+            },
+            {
+              "chapter": "6",
+              "verse": "8"
+            },
+            {
+              "chapter": "6",
+              "verse": "9"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "6",
+              "verse": "1"
+            },
+            {
+              "chapter": "6",
+              "verse": "2"
+            },
+            {
+              "chapter": "6",
+              "verse": "3"
+            },
+            {
+              "chapter": "6",
+              "verse": "4"
+            },
+            {
+              "chapter": "6",
+              "verse": "5"
+            },
+            {
+              "chapter": "6",
+              "verse": "6"
+            },
+            {
+              "chapter": "6",
+              "verse": "7"
+            },
+            {
+              "chapter": "6",
+              "verse": "8"
+            },
+            {
+              "chapter": "6",
+              "verse": "9"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims 1899 Amos 6:1-9 and the pinned First1KGreek/Swete witness preserve matching numbered source divisions."
+          }
+        },
+        {
+          "id": "AMO-6-10-11-greek",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "6",
+              "verse": "10"
+            },
+            {
+              "chapter": "6",
+              "verse": "11"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "6",
+              "verse": "10"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Swete Amos 6:10 contains the complete material represented as Douay-Rheims Amos 6:10 and 6:11: carrying the bones from the house, the question whether anyone remains, the answer that there is an end, and the command to keep silence and not name the Lord."
+          }
+        },
+        {
+          "id": "AMO-6-12-15-greek",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "6",
+              "verse": "12"
+            },
+            {
+              "chapter": "6",
+              "verse": "13"
+            },
+            {
+              "chapter": "6",
+              "verse": "14"
+            },
+            {
+              "chapter": "6",
+              "verse": "15"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "6",
+              "verse": "11"
+            },
+            {
+              "chapter": "6",
+              "verse": "12"
+            },
+            {
+              "chapter": "6",
+              "verse": "13"
+            },
+            {
+              "chapter": "6",
+              "verse": "14"
+            }
+          ],
+          "evidence": {
+            "citation": "After the Douay-Rheims 6:10-11 / source 6:10 split, Douay-Rheims Amos 6:12-15 corresponds sequentially to the pinned Swete Amos 6:11-14 source divisions."
+          }
+        }
+      ]
+    }
+  ]
+}
