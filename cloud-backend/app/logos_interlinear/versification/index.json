@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.17-v3",
+  "registry_version": "2026.09.18-v4",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -32,6 +32,12 @@
       "lane": "latin",
       "status": "verified",
       "file": "maps/SIR-latin-vulgate-clementine.json"
+    },
+    {
+      "book_id": "LAM",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/LAM-greek-first1k-swete.json"
     }
   ]
 }
