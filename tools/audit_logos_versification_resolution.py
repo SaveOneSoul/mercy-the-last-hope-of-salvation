@@ -66,19 +66,23 @@ def registry_resolution(
     coverage = document.get("coverage") or {}
     audited = {str(row.get("chapter")) for row in mismatches}
     covered = {str(value) for value in coverage.get("audited_mismatch_chapters") or []}
+    overrides = {str(value) for value in coverage.get("verified_override_chapters") or []}
     verified = (
         entry.get("status") == "verified"
         and document.get("status") == "verified"
         and coverage.get("complete_for_audited_mismatches") is True
+        and (not overrides or coverage.get("complete_for_numeric_identity_overrides") is True)
         and audited == covered
-        and bool(audited)
+        and bool(audited or overrides)
     )
     return {
         "status": "verified-registry-map" if verified else "registered-unresolved",
         "verified": verified,
         "mapping_version": document.get("mapping_version"),
         "file": entry.get("file"),
-        "covered_chapters": sorted(covered, key=lambda value: int(value) if value.isdigit() else value),
+        "covered_chapters": sorted(covered | overrides, key=lambda value: int(value) if value.isdigit() else value),
+        "audited_mismatch_chapters": sorted(covered, key=lambda value: int(value) if value.isdigit() else value),
+        "verified_override_chapters": sorted(overrides, key=lambda value: int(value) if value.isdigit() else value),
     }
 
 
@@ -106,6 +110,15 @@ def build(coverage: dict[str, Any], registry: dict[str, Any]) -> dict[str, Any]:
             status = str(vers.get("status") or "")
             mismatches = list(vers.get("mismatches") or [])
             mismatch_chapters = [str(row.get("chapter")) for row in mismatches]
+            registered = registry_resolution(docs, book_id, lane, mismatches)
+            if registered and registered.get("verified"):
+                lane_rows[lane] = {
+                    **registered,
+                    "source_status": status or "unknown",
+                    "mismatch_chapters": mismatch_chapters,
+                }
+                verified_registry_lane_count += 1
+                continue
             if status == "exact-all-chapters":
                 lane_rows[lane] = {"status": "exact", "mismatch_chapters": []}
                 exact_lane_count += 1
@@ -117,14 +130,6 @@ def build(coverage: dict[str, Any], registry: dict[str, Any]) -> dict[str, Any]:
                     "mismatch_chapters": mismatch_chapters,
                 }
                 native_resolved_lane_count += 1
-                continue
-            registered = registry_resolution(docs, book_id, lane, mismatches)
-            if registered and registered.get("verified"):
-                lane_rows[lane] = {
-                    **registered,
-                    "mismatch_chapters": mismatch_chapters,
-                }
-                verified_registry_lane_count += 1
                 continue
             lane_rows[lane] = {
                 "status": "unresolved",
@@ -228,7 +233,7 @@ def render(report: dict[str, Any]) -> str:
             "",
             "## Acceptance rule",
             "",
-            "The target is **0 unresolved books**. A mapping may reduce the burn-down only after the mapping file is `verified`, its audited mismatch chapters exactly match current corpus evidence, all enumerated references exist, and the mapping validator passes bidirectionally.",
+            "The target is **0 unresolved books**. A mapping may reduce the burn-down only after the mapping file is `verified`, its audited mismatch chapters exactly match structural corpus evidence, any numeric-identity override chapter is separately evidenced, all enumerated references exist, and the mapping validator passes bidirectionally.",
             "",
         ]
     )

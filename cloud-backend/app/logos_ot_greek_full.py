@@ -142,17 +142,19 @@ def _chapter_identity(book_id: str, chapter: int, source_book: dict) -> dict:
     dra_chapter = (dra_book.get("chapters") or {}).get(str(chapter)) or {}
     dra_set = _numeric_dra_keys(dra_chapter)
     source_set = set(source_map) if source_map is not None else None
-    exact = bool(rows and dra_chapter and source_set is not None and dra_set is not None and source_set == dra_set)
-    registry = mapping_status(book_id, "greek", chapter) if not exact else None
+    numeric_identity = bool(rows and dra_chapter and source_set is not None and dra_set is not None and source_set == dra_set)
+    registry = mapping_status(book_id, "greek", chapter)
     verified_map = bool(registry and registry.get("status") == "verified-map")
+    exact = numeric_identity and not verified_map
     return {
         "exact": exact,
+        "numeric_identifier_identity": numeric_identity,
         "verified_mapping": verified_map,
         "mode": (
-            "exact-dra-greek-chapter-verse-identity"
-            if exact
-            else "verified-explicit-map"
+            "verified-explicit-map"
             if verified_map
+            else "exact-dra-greek-chapter-verse-identity"
+            if exact
             else "explicit-mapping-required"
         ),
         "canonical_chapter": chapter,

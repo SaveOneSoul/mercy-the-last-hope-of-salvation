@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.18-mic-semitic-v1",
+  "status": "verified",
+  "book_id": "MIC",
+  "book": "Micah",
+  "lane": "semitic",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "oshb",
+    "reference_system": "oshb-wlc-osis",
+    "corpus_id": "heb_arc_oshb_wlc",
+    "corpus_version": "2026.09.16-oshb-wlc-39"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "4"
+    ],
+    "verified_override_chapters": [
+      "5"
+    ],
+    "complete_for_audited_mismatches": true,
+    "complete_for_numeric_identity_overrides": true,
+    "numeric_identity_override_evidence": {
+      "5": {
+        "citation": "Pinned OSHB/WLC Micah 4:14 contains the siege-and-struck-judge material printed as Douay-Rheims Micah 5:1, while OSHB/WLC Micah 5:1 begins the Bethlehem Ephrata material printed as Douay-Rheims 5:2. Therefore equal numeric verse inventories in chapter 5 do not imply verse identity."
+      }
+    }
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "4",
+      "segments": [
+        {
+          "id": "MIC-4-1-13-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "4",
+              "verse": "1"
+            },
+            {
+              "chapter": "4",
+              "verse": "2"
+            },
+            {
+              "chapter": "4",
+              "verse": "3"
+            },
+            {
+              "chapter": "4",
+              "verse": "4"
+            },
+            {
+              "chapter": "4",
+              "verse": "5"
+            },
+            {
+              "chapter": "4",
+              "verse": "6"
+            },
+            {
+              "chapter": "4",
+              "verse": "7"
+            },
+            {
+              "chapter": "4",
+              "verse": "8"
+            },
+            {
+              "chapter": "4",
+              "verse": "9"
+            },
+            {
+              "chapter": "4",
+              "verse": "10"
+            },
+            {
+              "chapter": "4",
+              "verse": "11"
+            },
+            {
+              "chapter": "4",
+              "verse": "12"
+            },
+            {
+              "chapter": "4",
+              "verse": "13"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "4",
+              "verse": "1"
+            },
+            {
+              "chapter": "4",
+              "verse": "2"
+            },
+            {
+              "chapter": "4",
+              "verse": "3"
+            },
+            {
+              "chapter": "4",
+              "verse": "4"
+            },
+            {
+              "chapter": "4",
+              "verse": "5"
+            },
+            {
+              "chapter": "4",
+              "verse": "6"
+            },
+            {
+              "chapter": "4",
+              "verse": "7"
+            },
+            {
+              "chapter": "4",
+              "verse": "8"
+            },
+            {
+              "chapter": "4",
+              "verse": "9"
+            },
+            {
+              "chapter": "4",
+              "verse": "10"
+            },
+            {
+              "chapter": "4",
+              "verse": "11"
+            },
+            {
+              "chapter": "4",
+              "verse": "12"
+            },
+            {
+              "chapter": "4",
+              "verse": "13"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Micah 4:1-13 and pinned OSHB/WLC Micah 4:1-13 preserve the same numbered source divisions. OSHB/WLC 4:14 belongs to the following Douay chapter and is mapped there rather than discarded."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "5",
+      "segments": [
+        {
+          "id": "MIC-5-1-semitic-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "1"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "4",
+              "verse": "14"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Micah 5:1 ('laid waste... siege... strike the cheek of the judge of Israel') corresponds to pinned OSHB/WLC Micah 4:14, whose source surface contains the same siege, rod, cheek, and judge-of-Israel material."
+          }
+        },
+        {
+          "id": "MIC-5-2-10-semitic",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "2"
+            },
+            {
+              "chapter": "5",
+              "verse": "3"
+            },
+            {
+              "chapter": "5",
+              "verse": "4"
+            },
+            {
+              "chapter": "5",
+              "verse": "5"
+            },
+            {
+              "chapter": "5",
+              "verse": "6"
+            },
+            {
+              "chapter": "5",
+              "verse": "7"
+            },
+            {
+              "chapter": "5",
+              "verse": "8"
+            },
+            {
+              "chapter": "5",
+              "verse": "9"
+            },
+            {
+              "chapter": "5",
+              "verse": "10"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "5",
+              "verse": "1"
+            },
+            {
+              "chapter": "5",
+              "verse": "2"
+            },
+            {
+              "chapter": "5",
+              "verse": "3"
+            },
+            {
+              "chapter": "5",
+              "verse": "4"
+            },
+            {
+              "chapter": "5",
+              "verse": "5"
+            },
+            {
+              "chapter": "5",
+              "verse": "6"
+            },
+            {
+              "chapter": "5",
+              "verse": "7"
+            },
+            {
+              "chapter": "5",
+              "verse": "8"
+            },
+            {
+              "chapter": "5",
+              "verse": "9"
+            }
+          ],
+          "evidence": {
+            "citation": "After the MT/OSHB chapter-boundary shift, Douay-Rheims Micah 5:2-10 corresponds sequentially to OSHB/WLC Micah 5:1-9, from Bethlehem Ephrata through the removal of horses and chariots."
+          }
+        },
+        {
+          "id": "MIC-5-11-semitic",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "11"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "5",
+              "verse": "10"
+            },
+            {
+              "chapter": "5",
+              "verse": "11"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Micah 5:11 combines the destruction of cities/strongholds and removal of sorceries/divinations; those clauses occupy pinned OSHB/WLC Micah 5:10 and 5:11 respectively."
+          }
+        },
+        {
+          "id": "MIC-5-12-14-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "12"
+            },
+            {
+              "chapter": "5",
+              "verse": "13"
+            },
+            {
+              "chapter": "5",
+              "verse": "14"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "5",
+              "verse": "12"
+            },
+            {
+              "chapter": "5",
+              "verse": "13"
+            },
+            {
+              "chapter": "5",
+              "verse": "14"
+            }
+          ],
+          "evidence": {
+            "citation": "Following the 5:11 merge, Douay-Rheims Micah 5:12-14 and OSHB/WLC Micah 5:12-14 realign: idols/statues, groves/cities, and vengeance on the nations."
+          }
+        }
+      ]
+    }
+  ]
+}

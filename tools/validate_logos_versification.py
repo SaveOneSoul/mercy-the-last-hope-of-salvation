@@ -207,25 +207,36 @@ def validate_mapping(entry: dict[str, Any], book_index: dict[str, dict[str, Any]
 
     coverage = payload.get("coverage") or {}
     covered = {str(value) for value in coverage.get("audited_mismatch_chapters") or []}
+    overrides = {str(value) for value in coverage.get("verified_override_chapters") or []}
+    declared = covered | overrides
+    require(not (covered & overrides), f"{filename}: audited mismatch and override chapter sets must be disjoint")
     chapters = payload.get("chapters") or []
     require(isinstance(chapters, list), f"{filename}: chapters must be a list")
     chapter_ids = {str(row.get("canonical_chapter") or "") for row in chapters}
     require("" not in chapter_ids, f"{filename}: canonical_chapter required")
-    require(chapter_ids == covered, f"{filename}: chapter inventory must equal coverage.audited_mismatch_chapters")
+    require(chapter_ids == declared, f"{filename}: chapter inventory must equal audited mismatch plus verified override chapters")
 
     audited = audited_mismatch_chapters(book_id, lane)
     verified = status == "verified"
     if verified:
         require(coverage.get("complete_for_audited_mismatches") is True, f"{filename}: verified mapping must declare complete audited coverage")
-        require(covered == audited, f"{filename}: verified mapping coverage {sorted(covered)} does not equal audited mismatches {sorted(audited)}")
-        require(bool(covered), f"{filename}: verified mapping cannot claim a book/lane with no audited mismatches")
+        require(covered == audited, f"{filename}: audited mapping coverage {sorted(covered)} does not equal structural audit mismatches {sorted(audited)}")
+        require(bool(declared), f"{filename}: verified mapping must cover at least one audited mismatch or evidenced numeric-identity override")
+        if overrides:
+            require(coverage.get("complete_for_numeric_identity_overrides") is True, f"{filename}: override chapters require complete_for_numeric_identity_overrides=true")
+            evidence = coverage.get("numeric_identity_override_evidence") or {}
+            require(isinstance(evidence, dict), f"{filename}: numeric_identity_override_evidence must be an object")
+            require(set(str(key) for key in evidence) == overrides, f"{filename}: override evidence keys must equal verified_override_chapters")
+            for override in overrides:
+                row = evidence.get(override) or {}
+                require(str(row.get("citation") or "").strip(), f"{filename}: override chapter {override} requires evidence.citation")
 
     lane_inventory = source_refs(lane, book_id)
     seen_canonical: dict[tuple[str, str], str] = {}
     seen_source: dict[tuple[str, str], str] = {}
     for chapter in chapters:
         canonical_chapter = str(chapter.get("canonical_chapter") or "")
-        require(canonical_chapter in covered, f"{filename}: chapter {canonical_chapter} not declared in coverage")
+        require(canonical_chapter in declared, f"{filename}: chapter {canonical_chapter} not declared in coverage")
         segments = chapter.get("segments") or []
         require(isinstance(segments, list) and segments, f"{filename}: chapter {canonical_chapter} requires at least one segment")
         for segment in segments:
