@@ -79,6 +79,8 @@ For `component-range`, an opaque `source_locus` may be used when forcing artific
 
 A `verified` file must provide evidence for every segment, must cover exactly the audited mismatch chapters it claims to resolve, and must pass bidirectional duplicate/coverage checks. Draft mappings may be stored but never change runtime alignment status.
 
+If a pinned source and Douay-Rheims have the same numeric verse identifiers but comparison proves that the content boundaries are shifted, the file may additionally declare `coverage.verified_override_chapters`. Such chapters require `complete_for_numeric_identity_overrides: true` plus a chapter-keyed `numeric_identity_override_evidence` citation. A verified override takes precedence over apparent numeric identity at runtime; equal verse counts alone are never sufficient evidence of alignment.
+
 ## Integrity rules
 
 - Never edit or renumber the imported source corpora to make them match Douay-Rheims.
