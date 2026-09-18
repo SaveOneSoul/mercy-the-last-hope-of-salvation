@@ -5,6 +5,7 @@ from pathlib import Path
 from fastapi import APIRouter, HTTPException, Query, Response
 
 from .logos import _corpus_book, _corpus_manifest, _parse_corpus_reference
+from .logos_versification import canonical_source_mapping, mapping_status
 
 
 router = APIRouter(prefix="/ot-semitic", tags=["Logos Hebrew/Aramaic Old Testament"])
@@ -114,9 +115,11 @@ def _chapter_identity(book_id: str, chapter: int, surface: dict) -> dict:
     if not source_chapter:
         return {
             "exact": False,
+            "verified_mapping": False,
             "reason": "source_chapter_missing_or_outside_masoretic_scope",
             "source_verse_count": 0,
             "dra_verse_count": 0,
+            "automatic_remapping": False,
         }
     dra_meta = _dra_book_meta(book_id)
     dra_book = _corpus_book(str(dra_meta.get("filename")))
@@ -124,29 +127,51 @@ def _chapter_identity(book_id: str, chapter: int, surface: dict) -> dict:
     if not dra_chapter:
         return {
             "exact": False,
+            "verified_mapping": False,
             "reason": "dra_chapter_missing",
             "source_verse_count": len(source_chapter),
             "dra_verse_count": 0,
+            "automatic_remapping": False,
         }
     source_set = _numeric_verse_set(source_chapter)
     dra_set = _numeric_verse_set(dra_chapter)
     if source_set is None or dra_set is None:
         return {
             "exact": False,
+            "verified_mapping": False,
             "reason": "compound_or_nonnumeric_verse_ids_require_explicit_mapping",
             "source_verse_count": len(source_chapter),
             "dra_verse_count": len(dra_chapter),
+            "automatic_remapping": False,
         }
     exact = source_set == dra_set
+    registry = mapping_status(book_id, "semitic", chapter) if not exact else None
+    verified_map = bool(registry and registry.get("status") == "verified-map")
     return {
         "exact": exact,
-        "reason": "exact_chapter_verse_identity" if exact else "mt_dra_verse_identity_differs",
+        "verified_mapping": verified_map,
+        "reason": (
+            "exact_chapter_verse_identity"
+            if exact
+            else "verified_explicit_map"
+            if verified_map
+            else "mt_dra_verse_identity_differs"
+        ),
+        "mode": (
+            "exact-dra-source-chapter-verse-identity"
+            if exact
+            else "verified-explicit-map"
+            if verified_map
+            else "explicit-mapping-required"
+        ),
         "source_verse_count": len(source_set),
         "dra_verse_count": len(dra_set),
         "source_verse_min": min(source_set) if source_set else None,
         "source_verse_max": max(source_set) if source_set else None,
         "dra_verse_min": min(dra_set) if dra_set else None,
         "dra_verse_max": max(dra_set) if dra_set else None,
+        "automatic_remapping": False,
+        "mapping": registry if verified_map else None,
     }
 
 
@@ -179,6 +204,36 @@ def _combined_verse(surface_row: dict, linguistic_row: dict) -> dict:
     }
 
 
+def _mapped_source_verses(
+    surface: dict,
+    linguistics: dict,
+    refs: list[dict],
+) -> list[dict]:
+    surface_chapters = surface.get("chapters") or {}
+    linguistic_chapters = linguistics.get("chapters") or {}
+    rows: list[dict] = []
+    for ref in refs:
+        source_chapter = str(ref.get("chapter"))
+        source_verse = str(ref.get("verse"))
+        surface_row = (surface_chapters.get(source_chapter) or {}).get(source_verse)
+        linguistic_row = (linguistic_chapters.get(source_chapter) or {}).get(source_verse)
+        if surface_row is None or linguistic_row is None:
+            raise RuntimeError(
+                f"Verified OT Semitic mapping references missing source verse {source_chapter}:{source_verse}"
+            )
+        combined = _combined_verse(surface_row, linguistic_row)
+        rows.append(
+            {
+                "chapter": int(source_chapter),
+                "verse": int(source_verse),
+                "source_osis_id": combined.get("source_osis_id"),
+                "languages": combined.get("languages") or [],
+                "tokens": combined.get("tokens") or [],
+            }
+        )
+    return rows
+
+
 def _study_payload(reference: str) -> dict:
     manifest, phase = _require_installed()
     book_meta, chapter, verse_start, verse_end = _parse_corpus_reference(reference)
@@ -193,42 +248,120 @@ def _study_payload(reference: str) -> dict:
     surface = _partition_book("surface", book_id)
     linguistics = _partition_book("linguistics", book_id)
     identity = _chapter_identity(book_id, chapter, surface)
-    if identity.get("exact") is not True:
+    canonical_ref = _canonical_reference(str(book_meta.get("name")), chapter, verse_start, verse_end)
+    if identity.get("exact") is not True and identity.get("verified_mapping") is not True:
         raise HTTPException(
             status_code=409,
             detail={
                 "code": "logos_ot_semitic_versification_mapping_required",
-                "reference": _canonical_reference(str(book_meta.get("name")), chapter, verse_start, verse_end),
+                "reference": canonical_ref,
                 "alignment": identity,
                 "message": "This OSHB/WLC chapter is not served against Douay-Rheims until an explicit versification mapping is validated.",
             },
         )
 
-    source_chapter = (surface.get("chapters") or {}).get(str(chapter)) or {}
-    linguistic_chapter = (linguistics.get("chapters") or {}).get(str(chapter)) or {}
-    if set(source_chapter) != set(linguistic_chapter):
-        raise RuntimeError("OT Semitic chapter partition verse mismatch")
+    dra_meta = _dra_book_meta(book_id)
+    dra_book = _corpus_book(str(dra_meta.get("filename")))
+    dra_chapter = (dra_book.get("chapters") or {}).get(str(chapter)) or {}
+    if not dra_chapter:
+        raise HTTPException(status_code=404, detail="logos_douay_chapter_not_found")
 
     if verse_start is None:
-        selected_numbers = sorted(int(v) for v in source_chapter if str(v).isdigit())
+        selected_numbers = sorted(int(v) for v in dra_chapter if str(v).isdigit())
     else:
         selected_numbers = list(range(verse_start, (verse_end or verse_start) + 1))
 
     verses = []
     flat_tokens = []
+    flat_token_ids: set[str] = set()
     languages: set[str] = set()
-    for number in selected_numbers:
-        key = str(number)
-        if key not in source_chapter or key not in linguistic_chapter:
-            raise HTTPException(status_code=404, detail="logos_ot_semitic_source_verse_not_found")
-        combined = _combined_verse(source_chapter[key], linguistic_chapter[key])
-        combined["verse"] = number
-        verses.append(combined)
-        flat_tokens.extend(combined["tokens"])
-        languages.update(str(x) for x in combined.get("languages") or [])
+
+    if identity.get("exact") is True:
+        source_chapter = (surface.get("chapters") or {}).get(str(chapter)) or {}
+        linguistic_chapter = (linguistics.get("chapters") or {}).get(str(chapter)) or {}
+        if set(source_chapter) != set(linguistic_chapter):
+            raise RuntimeError("OT Semitic chapter partition verse mismatch")
+        for number in selected_numbers:
+            key = str(number)
+            if key not in dra_chapter:
+                raise HTTPException(status_code=404, detail="logos_douay_verse_not_found")
+            if key not in source_chapter or key not in linguistic_chapter:
+                raise HTTPException(status_code=404, detail="logos_ot_semitic_source_verse_not_found")
+            combined = _combined_verse(source_chapter[key], linguistic_chapter[key])
+            combined["verse"] = number
+            combined["mapping_relationship"] = "identity"
+            combined["mapping_segment"] = None
+            combined["mapping_version"] = None
+            combined["source_missing"] = False
+            combined["source_verses"] = [{
+                "chapter": chapter,
+                "verse": number,
+                "source_osis_id": combined.get("source_osis_id"),
+                "languages": combined.get("languages") or [],
+                "tokens": combined.get("tokens") or [],
+            }]
+            verses.append(combined)
+            for token in combined["tokens"]:
+                token_id = str(token.get("id") or "")
+                if token_id not in flat_token_ids:
+                    flat_token_ids.add(token_id)
+                    flat_tokens.append(token)
+            languages.update(str(x) for x in combined.get("languages") or [])
+    else:
+        for number in selected_numbers:
+            if str(number) not in dra_chapter:
+                raise HTTPException(status_code=404, detail="logos_douay_verse_not_found")
+            mapped = canonical_source_mapping(book_id, "semitic", chapter, number)
+            if mapped is None:
+                raise RuntimeError(f"Verified OT Semitic chapter lacks canonical mapping for {book_id} {chapter}:{number}")
+            relationship = str(mapped.get("relationship") or "")
+            source_rows = _mapped_source_verses(surface, linguistics, list(mapped.get("source_refs") or []))
+            source_missing = relationship == "canonical-only"
+            if not source_rows and not source_missing:
+                raise RuntimeError(f"Verified OT Semitic map produced no source row for {book_id} {chapter}:{number}")
+            row_tokens = [
+                token
+                for source_row in source_rows
+                for token in (source_row.get("tokens") or [])
+            ]
+            row_languages = sorted({
+                str(language)
+                for source_row in source_rows
+                for language in (source_row.get("languages") or [])
+            })
+            row = {
+                "verse": number,
+                "source_osis_id": source_rows[0].get("source_osis_id") if len(source_rows) == 1 else None,
+                "languages": row_languages,
+                "tokens": row_tokens,
+                "source_verses": source_rows,
+                "source_missing": source_missing,
+                "mapping_relationship": relationship,
+                "mapping_segment": mapped.get("segment_id"),
+                "mapping_version": mapped.get("mapping_version"),
+            }
+            verses.append(row)
+            for token in row_tokens:
+                token_id = str(token.get("id") or "")
+                if token_id not in flat_token_ids:
+                    flat_token_ids.add(token_id)
+                    flat_tokens.append(token)
+            languages.update(row_languages)
+
+    note = (
+        "Source Hebrew/Aramaic is preserved verbatim. Lemma and morphology come from the pinned OSHB annotations. "
+        "No gloss or transliteration is fabricated."
+    )
+    if identity.get("verified_mapping") is True:
+        note += (
+            " A verified registry map aligns canonical rows to complete native source verse records. "
+            "Split mappings may repeat one intact source verse across multiple canonical rows; source tokens are never cut or reassigned."
+        )
+    else:
+        note += " Douay-Rheims alignment is exposed only where numeric verse identities match exactly."
 
     return {
-        "reference": _canonical_reference(str(book_meta.get("name")), chapter, verse_start, verse_end),
+        "reference": canonical_ref,
         "book": str(book_meta.get("name")),
         "book_id": book_id,
         "chapter": chapter,
@@ -238,20 +371,13 @@ def _study_payload(reference: str) -> dict:
         "label": "Hebrew/Aramaic Old Testament — OSHB/WLC",
         "corpus_id": manifest.get("corpus_id"),
         "corpus_version": manifest.get("corpus_version"),
-        "alignment": {
-            **identity,
-            "mode": "exact-dra-source-chapter-verse-identity",
-            "automatic_remapping": False,
-        },
+        "alignment": identity,
         "verses": verses,
         "tokens": flat_tokens,
         "derived_layers": manifest.get("derived_layers") or {},
         "source": manifest.get("source") or {},
         "partitions": manifest.get("partitions") or {},
-        "note": (
-            "Source Hebrew/Aramaic is preserved verbatim. Lemma and morphology come from the pinned OSHB annotations. "
-            "No gloss or transliteration is fabricated. Douay-Rheims alignment is exposed only for chapters whose numeric verse identities match exactly."
-        ),
+        "note": note,
     }
 
 
