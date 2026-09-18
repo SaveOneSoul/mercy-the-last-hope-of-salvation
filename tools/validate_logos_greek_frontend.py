@@ -79,7 +79,7 @@ def main() -> None:
     require(ot_script, "grc.label||(witness&&witness.name)||'Septuagint Greek'", "Greek witness-aware rendering")
     require(ot_script, "appendMappingCard('grc','Septuagint Greek'", "generic mapping-required Greek label")
     require(ot_script, "Ecclesiastes is not presented as Swete", "Ecclesiastes provenance disclosure")
-    require(ot_script, "data.alignment&&data.alignment.exact===true", "verified mapping gate")
+    require(ot_script, "data.alignment&&(data.alignment.exact===true||data.alignment.verified_mapping===true)", "exact-or-verified Greek mapping gate")
     require(ot_script, "mapping.exact_verse_alignment===true", "accepted deuterocanonical exact-mapping gate")
     require(ot_script, "No unavailable Greek linguistic annotation is invented", "OT Greek derived-layer boundary")
     require(ot_script, "No Latin lemma, morphology, gloss or transliteration is fabricated", "Latin derived-layer boundary")
