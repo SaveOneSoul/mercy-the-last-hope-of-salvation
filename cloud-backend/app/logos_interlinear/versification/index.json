@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.19-v20",
+  "registry_version": "2026.09.20-v22",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -182,6 +182,18 @@
       "lane": "greek",
       "status": "verified",
       "file": "maps/MAT-greek-sblgnt.json"
+    },
+    {
+      "book_id": "2TH",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/2TH-greek-sblgnt.json"
+    },
+    {
+      "book_id": "2TH",
+      "lane": "latin",
+      "status": "verified",
+      "file": "maps/2TH-latin-vulgate-clementine.json"
     }
   ]
 }
