@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 42,
-    "books_resolved": 31,
-    "unresolved_lane_count": 73,
-    "verified_registry_lane_count": 7,
+    "books_unresolved": 41,
+    "books_resolved": 32,
+    "unresolved_lane_count": 72,
+    "verified_registry_lane_count": 8,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -1628,20 +1628,31 @@
       "id": "ZEP",
       "book": "Zephaniah",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
           "status": "exact",
           "mismatch_chapters": []
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.18-zep-greek-v1",
+          "file": "maps/ZEP-greek-first1k-swete.json",
+          "covered_chapters": [
+            "2",
+            "3"
+          ],
+          "audited_mismatch_chapters": [
+            "2",
+            "3"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "2",
             "3"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
