@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 22,
-    "books_resolved": 51,
-    "unresolved_lane_count": 43,
-    "verified_registry_lane_count": 37,
+    "books_unresolved": 21,
+    "books_resolved": 52,
+    "unresolved_lane_count": 41,
+    "verified_registry_lane_count": 39,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -1157,26 +1157,55 @@
       "id": "SNG",
       "book": "Song of Songs",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.20-sng-semitic-v1",
+          "file": "maps/SNG-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "1",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "audited_mismatch_chapters": [
+            "1",
+            "5",
+            "7"
+          ],
+          "verified_override_chapters": [
+            "4",
+            "6"
+          ],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "1",
             "5",
             "7"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.20-sng-greek-v1",
+          "file": "maps/SNG-greek-first1k-swete.json",
+          "covered_chapters": [
+            "1",
+            "4"
+          ],
+          "audited_mismatch_chapters": [
+            "1",
+            "4"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "1",
             "4"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",

@@ -5,10 +5,10 @@ Generated deterministically from `coverage-audit.json` plus the verified versifi
 ## Burn-down
 
 - Catholic books: **73**
-- Books with at least one unresolved lane: **22**
-- Books with all applicable lanes resolved/exact: **51**
-- Unresolved source lanes: **43**
-- Lanes resolved by new verified registry maps: **37**
+- Books with at least one unresolved lane: **21**
+- Books with all applicable lanes resolved/exact: **52**
+- Unresolved source lanes: **41**
+- Lanes resolved by new verified registry maps: **39**
 - Lanes already resolved by accepted component/explicit maps: **3**
 
 A book leaves the unresolved count only when every applicable Hebrew/Aramaic, Greek, and Latin lane is exact or backed by a verified explicit/component mapping.
@@ -42,7 +42,7 @@ A book leaves the unresolved count only when every applicable Hebrew/Aramaic, Gr
 | 23 | Psalms | OT | Unresolved (135 ch) | Unresolved (21 ch) | Unresolved (5 ch) | Unresolved |
 | 24 | Proverbs | OT | Exact | Unresolved (27 ch) | Exact | Unresolved |
 | 25 | Ecclesiastes | OT | Verified map | Verified map | Exact | Resolved |
-| 26 | Song of Songs | OT | Unresolved (3 ch) | Unresolved (2 ch) | Exact | Unresolved |
+| 26 | Song of Songs | OT | Verified map | Verified map | Exact | Resolved |
 | 27 | Wisdom | OT | — | Exact | Exact | Resolved |
 | 28 | Sirach | OT | — | Exact | Verified map | Resolved |
 | 29 | Isaiah | OT | Unresolved (5 ch) | Unresolved (16 ch) | Unresolved (2 ch) | Unresolved |
