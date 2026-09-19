@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 29
-          assert registry['verified_book_count'] >= 20
+          assert registry['verified_mapping_count'] >= 31
+          assert registry['verified_book_count'] >= 21
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -693,5 +693,36 @@ jobs:
           assert [(row['chapter'], row['verse']) for row in th2l[11]['source_verses']] == [(2, 12)]
           assert [(row['chapter'], row['verse']) for row in th2l[16]['source_verses']] == [(2, 17)]
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including 2 Thessalonians, Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
+          john_5 = _greek_nt_interlinear_payload('John 5')
+          assert john_5['versification']['mode'] == 'verified-explicit-map'
+          assert len(john_5['surface']['verses']) == 47
+          john5s = {int(row['verse']): row for row in john_5['surface']['verses']}
+          assert john5s[4]['mapping_relationship'] == 'canonical-only'
+          assert john5s[4]['source_missing'] is True
+          assert john5s[4]['source_verses'] == []
+          assert john5s[4]['text'] == ''
+          assert john5s[5]['mapping_relationship'] == 'identity'
+          assert [(row['chapter'], row['verse']) for row in john5s[5]['source_verses']] == [(5, '5')]
+
+          john_6 = _greek_nt_interlinear_payload('John 6')
+          assert john_6['versification']['mode'] == 'verified-explicit-map'
+          assert len(john_6['surface']['verses']) == 72
+          john6s = {int(row['verse']): row for row in john_6['surface']['verses']}
+          for canonical in (51, 52):
+              assert john6s[canonical]['mapping_relationship'] == 'split'
+              assert [(row['chapter'], row['verse']) for row in john6s[canonical]['source_verses']] == [(6, '51')]
+          assert john6s[53]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in john6s[53]['source_verses']] == [(6, '52')]
+          assert [(row['chapter'], row['verse']) for row in john6s[72]['source_verses']] == [(6, '71')]
+
+          john_latin_11 = _latin_study_payload('John 11')
+          assert john_latin_11['alignment']['mode'] == 'verified-explicit-map'
+          assert len(john_latin_11['verses']) == 57
+          john11l = {row['verse']: row for row in john_latin_11['verses']}
+          for canonical in (56, 57):
+              assert john11l[canonical]['mapping_relationship'] == 'split'
+              assert [(row['chapter'], row['verse']) for row in john11l[canonical]['source_verses']] == [(11, 56)]
+              assert john11l[canonical]['surface']
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including John, 2 Thessalonians, Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
           PY

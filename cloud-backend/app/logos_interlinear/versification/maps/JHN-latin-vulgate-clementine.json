@@ -1,0 +1,507 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.20-jhn-latin-v1",
+  "status": "verified",
+  "book_id": "JHN",
+  "book": "John",
+  "lane": "latin",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "vulgate-clementine",
+    "reference_system": "clementine-vulgate",
+    "corpus_id": "lat_vulgate_clementine",
+    "corpus_version": "2026.09.16-clementine-open-bibles"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "11"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "11",
+      "segments": [
+        {
+          "id": "JHN-11-1-55-latin",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "1"
+            },
+            {
+              "chapter": "11",
+              "verse": "2"
+            },
+            {
+              "chapter": "11",
+              "verse": "3"
+            },
+            {
+              "chapter": "11",
+              "verse": "4"
+            },
+            {
+              "chapter": "11",
+              "verse": "5"
+            },
+            {
+              "chapter": "11",
+              "verse": "6"
+            },
+            {
+              "chapter": "11",
+              "verse": "7"
+            },
+            {
+              "chapter": "11",
+              "verse": "8"
+            },
+            {
+              "chapter": "11",
+              "verse": "9"
+            },
+            {
+              "chapter": "11",
+              "verse": "10"
+            },
+            {
+              "chapter": "11",
+              "verse": "11"
+            },
+            {
+              "chapter": "11",
+              "verse": "12"
+            },
+            {
+              "chapter": "11",
+              "verse": "13"
+            },
+            {
+              "chapter": "11",
+              "verse": "14"
+            },
+            {
+              "chapter": "11",
+              "verse": "15"
+            },
+            {
+              "chapter": "11",
+              "verse": "16"
+            },
+            {
+              "chapter": "11",
+              "verse": "17"
+            },
+            {
+              "chapter": "11",
+              "verse": "18"
+            },
+            {
+              "chapter": "11",
+              "verse": "19"
+            },
+            {
+              "chapter": "11",
+              "verse": "20"
+            },
+            {
+              "chapter": "11",
+              "verse": "21"
+            },
+            {
+              "chapter": "11",
+              "verse": "22"
+            },
+            {
+              "chapter": "11",
+              "verse": "23"
+            },
+            {
+              "chapter": "11",
+              "verse": "24"
+            },
+            {
+              "chapter": "11",
+              "verse": "25"
+            },
+            {
+              "chapter": "11",
+              "verse": "26"
+            },
+            {
+              "chapter": "11",
+              "verse": "27"
+            },
+            {
+              "chapter": "11",
+              "verse": "28"
+            },
+            {
+              "chapter": "11",
+              "verse": "29"
+            },
+            {
+              "chapter": "11",
+              "verse": "30"
+            },
+            {
+              "chapter": "11",
+              "verse": "31"
+            },
+            {
+              "chapter": "11",
+              "verse": "32"
+            },
+            {
+              "chapter": "11",
+              "verse": "33"
+            },
+            {
+              "chapter": "11",
+              "verse": "34"
+            },
+            {
+              "chapter": "11",
+              "verse": "35"
+            },
+            {
+              "chapter": "11",
+              "verse": "36"
+            },
+            {
+              "chapter": "11",
+              "verse": "37"
+            },
+            {
+              "chapter": "11",
+              "verse": "38"
+            },
+            {
+              "chapter": "11",
+              "verse": "39"
+            },
+            {
+              "chapter": "11",
+              "verse": "40"
+            },
+            {
+              "chapter": "11",
+              "verse": "41"
+            },
+            {
+              "chapter": "11",
+              "verse": "42"
+            },
+            {
+              "chapter": "11",
+              "verse": "43"
+            },
+            {
+              "chapter": "11",
+              "verse": "44"
+            },
+            {
+              "chapter": "11",
+              "verse": "45"
+            },
+            {
+              "chapter": "11",
+              "verse": "46"
+            },
+            {
+              "chapter": "11",
+              "verse": "47"
+            },
+            {
+              "chapter": "11",
+              "verse": "48"
+            },
+            {
+              "chapter": "11",
+              "verse": "49"
+            },
+            {
+              "chapter": "11",
+              "verse": "50"
+            },
+            {
+              "chapter": "11",
+              "verse": "51"
+            },
+            {
+              "chapter": "11",
+              "verse": "52"
+            },
+            {
+              "chapter": "11",
+              "verse": "53"
+            },
+            {
+              "chapter": "11",
+              "verse": "54"
+            },
+            {
+              "chapter": "11",
+              "verse": "55"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "11",
+              "verse": "1"
+            },
+            {
+              "chapter": "11",
+              "verse": "2"
+            },
+            {
+              "chapter": "11",
+              "verse": "3"
+            },
+            {
+              "chapter": "11",
+              "verse": "4"
+            },
+            {
+              "chapter": "11",
+              "verse": "5"
+            },
+            {
+              "chapter": "11",
+              "verse": "6"
+            },
+            {
+              "chapter": "11",
+              "verse": "7"
+            },
+            {
+              "chapter": "11",
+              "verse": "8"
+            },
+            {
+              "chapter": "11",
+              "verse": "9"
+            },
+            {
+              "chapter": "11",
+              "verse": "10"
+            },
+            {
+              "chapter": "11",
+              "verse": "11"
+            },
+            {
+              "chapter": "11",
+              "verse": "12"
+            },
+            {
+              "chapter": "11",
+              "verse": "13"
+            },
+            {
+              "chapter": "11",
+              "verse": "14"
+            },
+            {
+              "chapter": "11",
+              "verse": "15"
+            },
+            {
+              "chapter": "11",
+              "verse": "16"
+            },
+            {
+              "chapter": "11",
+              "verse": "17"
+            },
+            {
+              "chapter": "11",
+              "verse": "18"
+            },
+            {
+              "chapter": "11",
+              "verse": "19"
+            },
+            {
+              "chapter": "11",
+              "verse": "20"
+            },
+            {
+              "chapter": "11",
+              "verse": "21"
+            },
+            {
+              "chapter": "11",
+              "verse": "22"
+            },
+            {
+              "chapter": "11",
+              "verse": "23"
+            },
+            {
+              "chapter": "11",
+              "verse": "24"
+            },
+            {
+              "chapter": "11",
+              "verse": "25"
+            },
+            {
+              "chapter": "11",
+              "verse": "26"
+            },
+            {
+              "chapter": "11",
+              "verse": "27"
+            },
+            {
+              "chapter": "11",
+              "verse": "28"
+            },
+            {
+              "chapter": "11",
+              "verse": "29"
+            },
+            {
+              "chapter": "11",
+              "verse": "30"
+            },
+            {
+              "chapter": "11",
+              "verse": "31"
+            },
+            {
+              "chapter": "11",
+              "verse": "32"
+            },
+            {
+              "chapter": "11",
+              "verse": "33"
+            },
+            {
+              "chapter": "11",
+              "verse": "34"
+            },
+            {
+              "chapter": "11",
+              "verse": "35"
+            },
+            {
+              "chapter": "11",
+              "verse": "36"
+            },
+            {
+              "chapter": "11",
+              "verse": "37"
+            },
+            {
+              "chapter": "11",
+              "verse": "38"
+            },
+            {
+              "chapter": "11",
+              "verse": "39"
+            },
+            {
+              "chapter": "11",
+              "verse": "40"
+            },
+            {
+              "chapter": "11",
+              "verse": "41"
+            },
+            {
+              "chapter": "11",
+              "verse": "42"
+            },
+            {
+              "chapter": "11",
+              "verse": "43"
+            },
+            {
+              "chapter": "11",
+              "verse": "44"
+            },
+            {
+              "chapter": "11",
+              "verse": "45"
+            },
+            {
+              "chapter": "11",
+              "verse": "46"
+            },
+            {
+              "chapter": "11",
+              "verse": "47"
+            },
+            {
+              "chapter": "11",
+              "verse": "48"
+            },
+            {
+              "chapter": "11",
+              "verse": "49"
+            },
+            {
+              "chapter": "11",
+              "verse": "50"
+            },
+            {
+              "chapter": "11",
+              "verse": "51"
+            },
+            {
+              "chapter": "11",
+              "verse": "52"
+            },
+            {
+              "chapter": "11",
+              "verse": "53"
+            },
+            {
+              "chapter": "11",
+              "verse": "54"
+            },
+            {
+              "chapter": "11",
+              "verse": "55"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Clementine Vulgate John 11:1-55 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "JHN-11-56-57-latin",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "56"
+            },
+            {
+              "chapter": "11",
+              "verse": "57"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "11",
+              "verse": "56"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Clementine John 11:56 contains both the Douay-Rheims 11:56 temple discussion and 11:57 command from the chief priests and Pharisees to report Jesus' location. The intact Latin source verse is referenced by both canonical rows."
+          }
+        }
+      ]
+    }
+  ]
+}
