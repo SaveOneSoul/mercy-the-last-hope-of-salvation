@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.19-v14",
+  "registry_version": "2026.09.19-v15",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -140,6 +140,12 @@
       "lane": "greek",
       "status": "verified",
       "file": "maps/ECC-greek-wikisource.json"
+    },
+    {
+      "book_id": "2CO",
+      "lane": "latin",
+      "status": "verified",
+      "file": "maps/2CO-latin-vulgate-clementine.json"
     }
   ]
 }
