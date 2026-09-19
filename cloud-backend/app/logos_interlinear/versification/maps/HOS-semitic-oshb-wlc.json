@@ -1,0 +1,794 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.20-hos-semitic-v1",
+  "status": "verified",
+  "book_id": "HOS",
+  "book": "Hosea",
+  "lane": "semitic",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "oshb",
+    "reference_system": "oshb-wlc-osis",
+    "corpus_id": "heb_arc_oshb_wlc",
+    "corpus_version": "2026.09.16-oshb-wlc-39"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "1",
+      "2",
+      "11",
+      "12"
+    ],
+    "verified_override_chapters": [
+      "10"
+    ],
+    "complete_for_audited_mismatches": true,
+    "complete_for_numeric_identity_overrides": true,
+    "numeric_identity_override_evidence": {
+      "10": {
+        "citation": "Pinned OSHB/WLC Hosea 10:15 contains both the Bethel-judgment material printed as Douay 10:15 and the dawn/king-of-Israel clause printed at the opening of Douay 11:1. Equal numeric verse inventories therefore conceal a shared cross-chapter source boundary."
+      }
+    }
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "1",
+      "segments": [
+        {
+          "id": "HOS-1-1-9-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "1",
+              "verse": "1"
+            },
+            {
+              "chapter": "1",
+              "verse": "2"
+            },
+            {
+              "chapter": "1",
+              "verse": "3"
+            },
+            {
+              "chapter": "1",
+              "verse": "4"
+            },
+            {
+              "chapter": "1",
+              "verse": "5"
+            },
+            {
+              "chapter": "1",
+              "verse": "6"
+            },
+            {
+              "chapter": "1",
+              "verse": "7"
+            },
+            {
+              "chapter": "1",
+              "verse": "8"
+            },
+            {
+              "chapter": "1",
+              "verse": "9"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "1",
+              "verse": "1"
+            },
+            {
+              "chapter": "1",
+              "verse": "2"
+            },
+            {
+              "chapter": "1",
+              "verse": "3"
+            },
+            {
+              "chapter": "1",
+              "verse": "4"
+            },
+            {
+              "chapter": "1",
+              "verse": "5"
+            },
+            {
+              "chapter": "1",
+              "verse": "6"
+            },
+            {
+              "chapter": "1",
+              "verse": "7"
+            },
+            {
+              "chapter": "1",
+              "verse": "8"
+            },
+            {
+              "chapter": "1",
+              "verse": "9"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and OSHB/WLC Hosea 1:1-9 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "HOS-1-10-semitic-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "1",
+              "verse": "10"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay Hosea 1:10 ('number of the children of Israel... sand of the sea... sons of the living God') is pinned OSHB/WLC 2:1."
+          }
+        },
+        {
+          "id": "HOS-1-11-semitic-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "1",
+              "verse": "11"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "2"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay Hosea 1:11 (Judah and Israel gathered under one head; great day of Jezreel) is pinned OSHB/WLC 2:2."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "2",
+      "segments": [
+        {
+          "id": "HOS-2-1-22-semitic",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            },
+            {
+              "chapter": "2",
+              "verse": "15"
+            },
+            {
+              "chapter": "2",
+              "verse": "16"
+            },
+            {
+              "chapter": "2",
+              "verse": "17"
+            },
+            {
+              "chapter": "2",
+              "verse": "18"
+            },
+            {
+              "chapter": "2",
+              "verse": "19"
+            },
+            {
+              "chapter": "2",
+              "verse": "20"
+            },
+            {
+              "chapter": "2",
+              "verse": "21"
+            },
+            {
+              "chapter": "2",
+              "verse": "22"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            },
+            {
+              "chapter": "2",
+              "verse": "15"
+            },
+            {
+              "chapter": "2",
+              "verse": "16"
+            },
+            {
+              "chapter": "2",
+              "verse": "17"
+            },
+            {
+              "chapter": "2",
+              "verse": "18"
+            },
+            {
+              "chapter": "2",
+              "verse": "19"
+            },
+            {
+              "chapter": "2",
+              "verse": "20"
+            },
+            {
+              "chapter": "2",
+              "verse": "21"
+            },
+            {
+              "chapter": "2",
+              "verse": "22"
+            },
+            {
+              "chapter": "2",
+              "verse": "23"
+            },
+            {
+              "chapter": "2",
+              "verse": "24"
+            }
+          ],
+          "evidence": {
+            "citation": "After OSHB/WLC 2:1-2 maps to Douay 1:10-11, Douay Hosea 2:1-22 corresponds sequentially to pinned OSHB/WLC 2:3-24."
+          }
+        },
+        {
+          "id": "HOS-2-23-24-semitic",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "23"
+            },
+            {
+              "chapter": "2",
+              "verse": "24"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "25"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned OSHB/WLC Hosea 2:25 contains both Douay 2:23 ('I will sow her... have mercy...') and Douay 2:24 ('not my people... my people... my God') in one intact source verse."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "10",
+      "segments": [
+        {
+          "id": "HOS-10-1-14-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "10",
+              "verse": "1"
+            },
+            {
+              "chapter": "10",
+              "verse": "2"
+            },
+            {
+              "chapter": "10",
+              "verse": "3"
+            },
+            {
+              "chapter": "10",
+              "verse": "4"
+            },
+            {
+              "chapter": "10",
+              "verse": "5"
+            },
+            {
+              "chapter": "10",
+              "verse": "6"
+            },
+            {
+              "chapter": "10",
+              "verse": "7"
+            },
+            {
+              "chapter": "10",
+              "verse": "8"
+            },
+            {
+              "chapter": "10",
+              "verse": "9"
+            },
+            {
+              "chapter": "10",
+              "verse": "10"
+            },
+            {
+              "chapter": "10",
+              "verse": "11"
+            },
+            {
+              "chapter": "10",
+              "verse": "12"
+            },
+            {
+              "chapter": "10",
+              "verse": "13"
+            },
+            {
+              "chapter": "10",
+              "verse": "14"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "10",
+              "verse": "1"
+            },
+            {
+              "chapter": "10",
+              "verse": "2"
+            },
+            {
+              "chapter": "10",
+              "verse": "3"
+            },
+            {
+              "chapter": "10",
+              "verse": "4"
+            },
+            {
+              "chapter": "10",
+              "verse": "5"
+            },
+            {
+              "chapter": "10",
+              "verse": "6"
+            },
+            {
+              "chapter": "10",
+              "verse": "7"
+            },
+            {
+              "chapter": "10",
+              "verse": "8"
+            },
+            {
+              "chapter": "10",
+              "verse": "9"
+            },
+            {
+              "chapter": "10",
+              "verse": "10"
+            },
+            {
+              "chapter": "10",
+              "verse": "11"
+            },
+            {
+              "chapter": "10",
+              "verse": "12"
+            },
+            {
+              "chapter": "10",
+              "verse": "13"
+            },
+            {
+              "chapter": "10",
+              "verse": "14"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and OSHB/WLC Hosea 10:1-14 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "HOS-10-15-semitic-shared-boundary",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "10",
+              "verse": "15"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "10",
+              "verse": "15"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay 10:15 is contained in pinned OSHB/WLC 10:15. The intact source verse additionally contains the dawn/king clause printed in Douay 11:1, so it is preserved whole and reused at the next canonical boundary."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "11",
+      "segments": [
+        {
+          "id": "HOS-11-1-semitic-cross-chapter",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "1"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "10",
+              "verse": "15"
+            },
+            {
+              "chapter": "11",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay Hosea 11:1 combines the dawn/king-of-Israel clause at the end of OSHB/WLC 10:15 with the child-Israel/out-of-Egypt material of OSHB/WLC 11:1. Both source records remain intact."
+          }
+        },
+        {
+          "id": "HOS-11-2-11-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "2"
+            },
+            {
+              "chapter": "11",
+              "verse": "3"
+            },
+            {
+              "chapter": "11",
+              "verse": "4"
+            },
+            {
+              "chapter": "11",
+              "verse": "5"
+            },
+            {
+              "chapter": "11",
+              "verse": "6"
+            },
+            {
+              "chapter": "11",
+              "verse": "7"
+            },
+            {
+              "chapter": "11",
+              "verse": "8"
+            },
+            {
+              "chapter": "11",
+              "verse": "9"
+            },
+            {
+              "chapter": "11",
+              "verse": "10"
+            },
+            {
+              "chapter": "11",
+              "verse": "11"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "11",
+              "verse": "2"
+            },
+            {
+              "chapter": "11",
+              "verse": "3"
+            },
+            {
+              "chapter": "11",
+              "verse": "4"
+            },
+            {
+              "chapter": "11",
+              "verse": "5"
+            },
+            {
+              "chapter": "11",
+              "verse": "6"
+            },
+            {
+              "chapter": "11",
+              "verse": "7"
+            },
+            {
+              "chapter": "11",
+              "verse": "8"
+            },
+            {
+              "chapter": "11",
+              "verse": "9"
+            },
+            {
+              "chapter": "11",
+              "verse": "10"
+            },
+            {
+              "chapter": "11",
+              "verse": "11"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and OSHB/WLC Hosea 11:2-11 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "HOS-11-12-semitic-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "12"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "12",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay Hosea 11:12 ('Ephraim hath compassed me about...') is pinned OSHB/WLC Hosea 12:1."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "12",
+      "segments": [
+        {
+          "id": "HOS-12-1-14-semitic",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "12",
+              "verse": "1"
+            },
+            {
+              "chapter": "12",
+              "verse": "2"
+            },
+            {
+              "chapter": "12",
+              "verse": "3"
+            },
+            {
+              "chapter": "12",
+              "verse": "4"
+            },
+            {
+              "chapter": "12",
+              "verse": "5"
+            },
+            {
+              "chapter": "12",
+              "verse": "6"
+            },
+            {
+              "chapter": "12",
+              "verse": "7"
+            },
+            {
+              "chapter": "12",
+              "verse": "8"
+            },
+            {
+              "chapter": "12",
+              "verse": "9"
+            },
+            {
+              "chapter": "12",
+              "verse": "10"
+            },
+            {
+              "chapter": "12",
+              "verse": "11"
+            },
+            {
+              "chapter": "12",
+              "verse": "12"
+            },
+            {
+              "chapter": "12",
+              "verse": "13"
+            },
+            {
+              "chapter": "12",
+              "verse": "14"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "12",
+              "verse": "2"
+            },
+            {
+              "chapter": "12",
+              "verse": "3"
+            },
+            {
+              "chapter": "12",
+              "verse": "4"
+            },
+            {
+              "chapter": "12",
+              "verse": "5"
+            },
+            {
+              "chapter": "12",
+              "verse": "6"
+            },
+            {
+              "chapter": "12",
+              "verse": "7"
+            },
+            {
+              "chapter": "12",
+              "verse": "8"
+            },
+            {
+              "chapter": "12",
+              "verse": "9"
+            },
+            {
+              "chapter": "12",
+              "verse": "10"
+            },
+            {
+              "chapter": "12",
+              "verse": "11"
+            },
+            {
+              "chapter": "12",
+              "verse": "12"
+            },
+            {
+              "chapter": "12",
+              "verse": "13"
+            },
+            {
+              "chapter": "12",
+              "verse": "14"
+            },
+            {
+              "chapter": "12",
+              "verse": "15"
+            }
+          ],
+          "evidence": {
+            "citation": "After OSHB/WLC 12:1 maps to Douay 11:12, Douay Hosea 12:1-14 corresponds sequentially to pinned OSHB/WLC 12:2-15."
+          }
+        }
+      ]
+    }
+  ]
+}
