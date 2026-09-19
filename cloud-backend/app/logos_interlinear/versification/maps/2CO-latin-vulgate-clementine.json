@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.19-2co-latin-v1",
+  "status": "verified",
+  "book_id": "2CO",
+  "book": "2 Corinthians",
+  "lane": "latin",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "vulgate-clementine",
+    "reference_system": "clementine-vulgate",
+    "corpus_id": "lat_vulgate_clementine",
+    "corpus_version": "2026.09.16-clementine-open-bibles"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "1"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "1",
+      "segments": [
+        {
+          "id": "2CO-1-1-22-latin",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "1",
+              "verse": "1"
+            },
+            {
+              "chapter": "1",
+              "verse": "2"
+            },
+            {
+              "chapter": "1",
+              "verse": "3"
+            },
+            {
+              "chapter": "1",
+              "verse": "4"
+            },
+            {
+              "chapter": "1",
+              "verse": "5"
+            },
+            {
+              "chapter": "1",
+              "verse": "6"
+            },
+            {
+              "chapter": "1",
+              "verse": "7"
+            },
+            {
+              "chapter": "1",
+              "verse": "8"
+            },
+            {
+              "chapter": "1",
+              "verse": "9"
+            },
+            {
+              "chapter": "1",
+              "verse": "10"
+            },
+            {
+              "chapter": "1",
+              "verse": "11"
+            },
+            {
+              "chapter": "1",
+              "verse": "12"
+            },
+            {
+              "chapter": "1",
+              "verse": "13"
+            },
+            {
+              "chapter": "1",
+              "verse": "14"
+            },
+            {
+              "chapter": "1",
+              "verse": "15"
+            },
+            {
+              "chapter": "1",
+              "verse": "16"
+            },
+            {
+              "chapter": "1",
+              "verse": "17"
+            },
+            {
+              "chapter": "1",
+              "verse": "18"
+            },
+            {
+              "chapter": "1",
+              "verse": "19"
+            },
+            {
+              "chapter": "1",
+              "verse": "20"
+            },
+            {
+              "chapter": "1",
+              "verse": "21"
+            },
+            {
+              "chapter": "1",
+              "verse": "22"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "1",
+              "verse": "1"
+            },
+            {
+              "chapter": "1",
+              "verse": "2"
+            },
+            {
+              "chapter": "1",
+              "verse": "3"
+            },
+            {
+              "chapter": "1",
+              "verse": "4"
+            },
+            {
+              "chapter": "1",
+              "verse": "5"
+            },
+            {
+              "chapter": "1",
+              "verse": "6"
+            },
+            {
+              "chapter": "1",
+              "verse": "7"
+            },
+            {
+              "chapter": "1",
+              "verse": "8"
+            },
+            {
+              "chapter": "1",
+              "verse": "9"
+            },
+            {
+              "chapter": "1",
+              "verse": "10"
+            },
+            {
+              "chapter": "1",
+              "verse": "11"
+            },
+            {
+              "chapter": "1",
+              "verse": "12"
+            },
+            {
+              "chapter": "1",
+              "verse": "13"
+            },
+            {
+              "chapter": "1",
+              "verse": "14"
+            },
+            {
+              "chapter": "1",
+              "verse": "15"
+            },
+            {
+              "chapter": "1",
+              "verse": "16"
+            },
+            {
+              "chapter": "1",
+              "verse": "17"
+            },
+            {
+              "chapter": "1",
+              "verse": "18"
+            },
+            {
+              "chapter": "1",
+              "verse": "19"
+            },
+            {
+              "chapter": "1",
+              "verse": "20"
+            },
+            {
+              "chapter": "1",
+              "verse": "21"
+            },
+            {
+              "chapter": "1",
+              "verse": "22"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims 2 Corinthians 1:1-22 and pinned Clementine Vulgate 1:1-22 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "2CO-1-23-24-latin",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "1",
+              "verse": "23"
+            },
+            {
+              "chapter": "1",
+              "verse": "24"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "1",
+              "verse": "23"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Clementine Vulgate 2 Corinthians 1:23 contains both the Douay-Rheims 1:23 clause ('I call God to witness... I came not any more to Corinth') and the Douay-Rheims 1:24 clause ('not because we exercise dominion over your faith... for in faith you stand'). The intact Latin source verse is mapped to both canonical rows without creating a synthetic Latin verse 24."
+          }
+        }
+      ]
+    }
+  ]
+}
