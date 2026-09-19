@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.19-1th-latin-v1",
+  "status": "verified",
+  "book_id": "1TH",
+  "book": "1 Thessalonians",
+  "lane": "latin",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "vulgate-clementine",
+    "reference_system": "clementine-vulgate",
+    "corpus_id": "lat_vulgate_clementine",
+    "corpus_version": "2026.09.16-clementine-open-bibles"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "4"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "4",
+      "segments": [
+        {
+          "id": "1TH-4-1-10-latin",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "4",
+              "verse": "1"
+            },
+            {
+              "chapter": "4",
+              "verse": "2"
+            },
+            {
+              "chapter": "4",
+              "verse": "3"
+            },
+            {
+              "chapter": "4",
+              "verse": "4"
+            },
+            {
+              "chapter": "4",
+              "verse": "5"
+            },
+            {
+              "chapter": "4",
+              "verse": "6"
+            },
+            {
+              "chapter": "4",
+              "verse": "7"
+            },
+            {
+              "chapter": "4",
+              "verse": "8"
+            },
+            {
+              "chapter": "4",
+              "verse": "9"
+            },
+            {
+              "chapter": "4",
+              "verse": "10"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "4",
+              "verse": "1"
+            },
+            {
+              "chapter": "4",
+              "verse": "2"
+            },
+            {
+              "chapter": "4",
+              "verse": "3"
+            },
+            {
+              "chapter": "4",
+              "verse": "4"
+            },
+            {
+              "chapter": "4",
+              "verse": "5"
+            },
+            {
+              "chapter": "4",
+              "verse": "6"
+            },
+            {
+              "chapter": "4",
+              "verse": "7"
+            },
+            {
+              "chapter": "4",
+              "verse": "8"
+            },
+            {
+              "chapter": "4",
+              "verse": "9"
+            },
+            {
+              "chapter": "4",
+              "verse": "10"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims 1 Thessalonians 4:1-10 and pinned Clementine Vulgate preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "1TH-4-11-latin",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "4",
+              "verse": "11"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "4",
+              "verse": "11"
+            },
+            {
+              "chapter": "4",
+              "verse": "12"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims 1 Thessalonians 4:11 contains both the exhortation to quiet work and the instruction to walk honestly toward outsiders and want nothing; the pinned Clementine Vulgate records those clauses separately as 4:11 and 4:12."
+          }
+        },
+        {
+          "id": "1TH-4-12-17-latin",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "4",
+              "verse": "12"
+            },
+            {
+              "chapter": "4",
+              "verse": "13"
+            },
+            {
+              "chapter": "4",
+              "verse": "14"
+            },
+            {
+              "chapter": "4",
+              "verse": "15"
+            },
+            {
+              "chapter": "4",
+              "verse": "16"
+            },
+            {
+              "chapter": "4",
+              "verse": "17"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "4",
+              "verse": "13"
+            },
+            {
+              "chapter": "4",
+              "verse": "14"
+            },
+            {
+              "chapter": "4",
+              "verse": "15"
+            },
+            {
+              "chapter": "4",
+              "verse": "16"
+            },
+            {
+              "chapter": "4",
+              "verse": "17"
+            },
+            {
+              "chapter": "4",
+              "verse": "18"
+            }
+          ],
+          "evidence": {
+            "citation": "After the Douay 4:11 / source 4:11-12 merge, Douay-Rheims 1 Thessalonians 4:12-17 corresponds sequentially to pinned Clementine Vulgate 4:13-18, from the teaching about those who sleep through the final exhortation to comfort one another."
+          }
+        }
+      ]
+    }
+  ]
+}

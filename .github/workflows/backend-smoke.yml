@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 23
-          assert registry['verified_book_count'] >= 16
+          assert registry['verified_mapping_count'] >= 25
+          assert registry['verified_book_count'] >= 17
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -564,5 +564,36 @@ jobs:
           assert returned_token_ids == source_token_ids
           assert len(returned_token_ids) == len(set(returned_token_ids))
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including Romans and 3 John Greek + prayer/Mass/priest portal smoke test passed')
+          first_thessalonians_greek_4 = _greek_nt_interlinear_payload('1 Thessalonians 4')
+          assert first_thessalonians_greek_4['versification']['mode'] == 'verified-explicit-map'
+          assert first_thessalonians_greek_4['versification']['verified_mapping'] is True
+          assert len(first_thessalonians_greek_4['surface']['verses']) == 17
+          th4g = {int(row['verse']): row for row in first_thessalonians_greek_4['surface']['verses']}
+          assert th4g[10]['mapping_relationship'] == 'identity'
+          assert [(row['chapter'], row['verse']) for row in th4g[10]['source_verses']] == [(4, '10')]
+          assert th4g[11]['mapping_relationship'] == 'merge'
+          assert [(row['chapter'], row['verse']) for row in th4g[11]['source_verses']] == [(4, '11'), (4, '12')]
+          assert th4g[12]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in th4g[12]['source_verses']] == [(4, '13')]
+          assert [(row['chapter'], row['verse']) for row in th4g[17]['source_verses']] == [(4, '18')]
+          th4g_source_ids = [token['id'] for row in th4g[11]['source_verses'] for token in row['tokens']]
+          th4g_returned_ids = [token['id'] for token in first_thessalonians_greek_4['tokens'] if int(token['verse']) == 11]
+          assert th4g_returned_ids == th4g_source_ids
+          assert len(th4g_returned_ids) == len(set(th4g_returned_ids))
+
+          first_thessalonians_latin_4 = _latin_study_payload('1 Thessalonians 4')
+          assert first_thessalonians_latin_4['alignment']['mode'] == 'verified-explicit-map'
+          assert first_thessalonians_latin_4['alignment']['verified_mapping'] is True
+          assert len(first_thessalonians_latin_4['verses']) == 17
+          th4l = {row['verse']: row for row in first_thessalonians_latin_4['verses']}
+          assert th4l[10]['mapping_relationship'] == 'identity'
+          assert [(row['chapter'], row['verse']) for row in th4l[10]['source_verses']] == [(4, 10)]
+          assert th4l[11]['mapping_relationship'] == 'merge'
+          assert [(row['chapter'], row['verse']) for row in th4l[11]['source_verses']] == [(4, 11), (4, 12)]
+          assert th4l[12]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in th4l[12]['source_verses']] == [(4, 13)]
+          assert [(row['chapter'], row['verse']) for row in th4l[17]['source_verses']] == [(4, 18)]
+          assert all(row['surface'] for row in first_thessalonians_latin_4['verses'])
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including Romans, 3 John, and 1 Thessalonians + prayer/Mass/priest portal smoke test passed')
           PY
