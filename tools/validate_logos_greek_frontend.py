@@ -19,7 +19,7 @@ def main() -> None:
     style = STYLE.read_text(encoding="utf-8")
 
     require(page, 'data-logos-tab="interlinear"', "normal Interlinear tab")
-    require(page, "logos.js?v=4", "cache-busted unified Logos script")
+    require(page, "logos.js?v=5", "cache-busted unified Logos script")
     require(page, "logos-ot-unified-integration.js?v=4", "cache-busted unified OT recovery script")
     require(page, "logos-greek-integration.css?v=1", "interlinear stylesheet")
     require(page, "complete 73-book Douay-Rheims", "73-book English primary corpus wording")
@@ -53,6 +53,8 @@ def main() -> None:
     require(script, "['Greek','Transliteration','Lemma','POS','Morphology']", "five-column Greek NT table")
     require(script, "No English word gloss is displayed", "explicit NT no-gloss frontend rule")
     require(script, "No morphology is fabricated", "NT annotation-gap rule")
+    require(script, "Pinned Greek source gap", "NT canonical-only Greek source-gap disclosure")
+    require(script, "no Greek text or linguistic annotation is fabricated", "NT source-gap no-fabrication rule")
     require(script, "ShareAlike partition preserved", "NT ShareAlike frontend notice")
     require(script, "surface_and_linguistics_remain_separate", "NT licence partition contract gate")
 
