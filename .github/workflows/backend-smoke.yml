@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 26
-          assert registry['verified_book_count'] >= 18
+          assert registry['verified_mapping_count'] >= 27
+          assert registry['verified_book_count'] >= 19
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -630,5 +630,44 @@ jobs:
           assert [(row['chapter'], row['verse']) for row in luk23s[18]['source_verses']] == [(23, '18')]
           assert [(row['chapter'], row['verse']) for row in luk23s[56]['source_verses']] == [(23, '56')]
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including Romans, 3 John, 1 Thessalonians, and Luke + prayer/Mass/priest portal smoke test passed')
+          matthew_17 = _greek_nt_interlinear_payload('Matthew 17')
+          assert matthew_17['versification']['mode'] == 'verified-explicit-map'
+          assert matthew_17['versification']['verified_mapping'] is True
+          assert len(matthew_17['surface']['verses']) == 26
+          mat17 = {int(row['verse']): row for row in matthew_17['surface']['verses']}
+          assert mat17[20]['mapping_relationship'] == 'identity'
+          assert [(row['chapter'], row['verse']) for row in mat17[20]['source_verses']] == [(17, '20')]
+          assert mat17[21]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in mat17[21]['source_verses']] == [(17, '22')]
+          assert [(row['chapter'], row['verse']) for row in mat17[26]['source_verses']] == [(17, '27')]
+          assert all(row['text'] for row in matthew_17['surface']['verses'])
+
+          matthew_18 = _greek_nt_interlinear_payload('Matthew 18')
+          assert matthew_18['versification']['mode'] == 'verified-explicit-map'
+          assert len(matthew_18['surface']['verses']) == 35
+          mat18s = {int(row['verse']): row for row in matthew_18['surface']['verses']}
+          mat18l = {int(row['verse']): row for row in matthew_18['linguistics']['verses']}
+          assert mat18s[10]['mapping_relationship'] == 'identity'
+          assert mat18s[11]['mapping_relationship'] == 'canonical-only'
+          assert mat18s[11]['source_missing'] is True
+          assert mat18s[11]['text'] == ''
+          assert mat18s[11]['tokens'] == []
+          assert mat18l[11]['annotation_status'] == 'canonical-only-source-gap'
+          assert [(row['chapter'], row['verse']) for row in mat18s[12]['source_verses']] == [(18, '12')]
+
+          matthew_23 = _greek_nt_interlinear_payload('Matthew 23')
+          assert matthew_23['versification']['mode'] == 'verified-explicit-map'
+          assert len(matthew_23['surface']['verses']) == 39
+          mat23s = {int(row['verse']): row for row in matthew_23['surface']['verses']}
+          mat23l = {int(row['verse']): row for row in matthew_23['linguistics']['verses']}
+          assert mat23s[13]['mapping_relationship'] == 'identity'
+          assert mat23s[14]['mapping_relationship'] == 'canonical-only'
+          assert mat23s[14]['source_missing'] is True
+          assert mat23s[14]['text'] == ''
+          assert mat23s[14]['tokens'] == []
+          assert mat23l[14]['annotation_status'] == 'canonical-only-source-gap'
+          assert [(row['chapter'], row['verse']) for row in mat23s[15]['source_verses']] == [(23, '15')]
+          assert [(row['chapter'], row['verse']) for row in mat23s[39]['source_verses']] == [(23, '39')]
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
           PY
