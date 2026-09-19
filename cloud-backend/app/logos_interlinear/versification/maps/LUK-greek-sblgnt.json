@@ -1,0 +1,842 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.19-luk-greek-v1",
+  "status": "verified",
+  "book_id": "LUK",
+  "book": "Luke",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "sblgnt",
+    "reference_system": "sblgnt",
+    "corpus_id": "grc_sblgnt_morphgnt",
+    "corpus_version": "2026.09.16-sblgnt-morphgnt-27",
+    "repository": "Faithlife/SBLGNT",
+    "commit": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c",
+    "source_path": "data/sblgnt/text/Luk.txt"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "17",
+      "23"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "17",
+      "segments": [
+        {
+          "id": "LUK-17-1-35-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "17",
+              "verse": "1"
+            },
+            {
+              "chapter": "17",
+              "verse": "2"
+            },
+            {
+              "chapter": "17",
+              "verse": "3"
+            },
+            {
+              "chapter": "17",
+              "verse": "4"
+            },
+            {
+              "chapter": "17",
+              "verse": "5"
+            },
+            {
+              "chapter": "17",
+              "verse": "6"
+            },
+            {
+              "chapter": "17",
+              "verse": "7"
+            },
+            {
+              "chapter": "17",
+              "verse": "8"
+            },
+            {
+              "chapter": "17",
+              "verse": "9"
+            },
+            {
+              "chapter": "17",
+              "verse": "10"
+            },
+            {
+              "chapter": "17",
+              "verse": "11"
+            },
+            {
+              "chapter": "17",
+              "verse": "12"
+            },
+            {
+              "chapter": "17",
+              "verse": "13"
+            },
+            {
+              "chapter": "17",
+              "verse": "14"
+            },
+            {
+              "chapter": "17",
+              "verse": "15"
+            },
+            {
+              "chapter": "17",
+              "verse": "16"
+            },
+            {
+              "chapter": "17",
+              "verse": "17"
+            },
+            {
+              "chapter": "17",
+              "verse": "18"
+            },
+            {
+              "chapter": "17",
+              "verse": "19"
+            },
+            {
+              "chapter": "17",
+              "verse": "20"
+            },
+            {
+              "chapter": "17",
+              "verse": "21"
+            },
+            {
+              "chapter": "17",
+              "verse": "22"
+            },
+            {
+              "chapter": "17",
+              "verse": "23"
+            },
+            {
+              "chapter": "17",
+              "verse": "24"
+            },
+            {
+              "chapter": "17",
+              "verse": "25"
+            },
+            {
+              "chapter": "17",
+              "verse": "26"
+            },
+            {
+              "chapter": "17",
+              "verse": "27"
+            },
+            {
+              "chapter": "17",
+              "verse": "28"
+            },
+            {
+              "chapter": "17",
+              "verse": "29"
+            },
+            {
+              "chapter": "17",
+              "verse": "30"
+            },
+            {
+              "chapter": "17",
+              "verse": "31"
+            },
+            {
+              "chapter": "17",
+              "verse": "32"
+            },
+            {
+              "chapter": "17",
+              "verse": "33"
+            },
+            {
+              "chapter": "17",
+              "verse": "34"
+            },
+            {
+              "chapter": "17",
+              "verse": "35"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "17",
+              "verse": "1"
+            },
+            {
+              "chapter": "17",
+              "verse": "2"
+            },
+            {
+              "chapter": "17",
+              "verse": "3"
+            },
+            {
+              "chapter": "17",
+              "verse": "4"
+            },
+            {
+              "chapter": "17",
+              "verse": "5"
+            },
+            {
+              "chapter": "17",
+              "verse": "6"
+            },
+            {
+              "chapter": "17",
+              "verse": "7"
+            },
+            {
+              "chapter": "17",
+              "verse": "8"
+            },
+            {
+              "chapter": "17",
+              "verse": "9"
+            },
+            {
+              "chapter": "17",
+              "verse": "10"
+            },
+            {
+              "chapter": "17",
+              "verse": "11"
+            },
+            {
+              "chapter": "17",
+              "verse": "12"
+            },
+            {
+              "chapter": "17",
+              "verse": "13"
+            },
+            {
+              "chapter": "17",
+              "verse": "14"
+            },
+            {
+              "chapter": "17",
+              "verse": "15"
+            },
+            {
+              "chapter": "17",
+              "verse": "16"
+            },
+            {
+              "chapter": "17",
+              "verse": "17"
+            },
+            {
+              "chapter": "17",
+              "verse": "18"
+            },
+            {
+              "chapter": "17",
+              "verse": "19"
+            },
+            {
+              "chapter": "17",
+              "verse": "20"
+            },
+            {
+              "chapter": "17",
+              "verse": "21"
+            },
+            {
+              "chapter": "17",
+              "verse": "22"
+            },
+            {
+              "chapter": "17",
+              "verse": "23"
+            },
+            {
+              "chapter": "17",
+              "verse": "24"
+            },
+            {
+              "chapter": "17",
+              "verse": "25"
+            },
+            {
+              "chapter": "17",
+              "verse": "26"
+            },
+            {
+              "chapter": "17",
+              "verse": "27"
+            },
+            {
+              "chapter": "17",
+              "verse": "28"
+            },
+            {
+              "chapter": "17",
+              "verse": "29"
+            },
+            {
+              "chapter": "17",
+              "verse": "30"
+            },
+            {
+              "chapter": "17",
+              "verse": "31"
+            },
+            {
+              "chapter": "17",
+              "verse": "32"
+            },
+            {
+              "chapter": "17",
+              "verse": "33"
+            },
+            {
+              "chapter": "17",
+              "verse": "34"
+            },
+            {
+              "chapter": "17",
+              "verse": "35"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Luke 17:1-35 and pinned SBLGNT Luke 17:1-35 preserve matching numbered verse records."
+          }
+        },
+        {
+          "id": "LUK-17-36-greek-source-gap",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "17",
+              "verse": "36"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "The pinned SBLGNT Luke 17 verse inventory has no 17:36 record while the Douay-Rheims canonical corpus contains Luke 17:36. Logos preserves the source gap and does not synthesize Greek text, transliteration, lemma, POS, or morphology."
+          }
+        },
+        {
+          "id": "LUK-17-37-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "17",
+              "verse": "37"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "17",
+              "verse": "37"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and SBLGNT Luke 17:37 preserve the same numbered verse record after the explicit 17:36 source gap."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "23",
+      "segments": [
+        {
+          "id": "LUK-23-1-16-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "23",
+              "verse": "1"
+            },
+            {
+              "chapter": "23",
+              "verse": "2"
+            },
+            {
+              "chapter": "23",
+              "verse": "3"
+            },
+            {
+              "chapter": "23",
+              "verse": "4"
+            },
+            {
+              "chapter": "23",
+              "verse": "5"
+            },
+            {
+              "chapter": "23",
+              "verse": "6"
+            },
+            {
+              "chapter": "23",
+              "verse": "7"
+            },
+            {
+              "chapter": "23",
+              "verse": "8"
+            },
+            {
+              "chapter": "23",
+              "verse": "9"
+            },
+            {
+              "chapter": "23",
+              "verse": "10"
+            },
+            {
+              "chapter": "23",
+              "verse": "11"
+            },
+            {
+              "chapter": "23",
+              "verse": "12"
+            },
+            {
+              "chapter": "23",
+              "verse": "13"
+            },
+            {
+              "chapter": "23",
+              "verse": "14"
+            },
+            {
+              "chapter": "23",
+              "verse": "15"
+            },
+            {
+              "chapter": "23",
+              "verse": "16"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "23",
+              "verse": "1"
+            },
+            {
+              "chapter": "23",
+              "verse": "2"
+            },
+            {
+              "chapter": "23",
+              "verse": "3"
+            },
+            {
+              "chapter": "23",
+              "verse": "4"
+            },
+            {
+              "chapter": "23",
+              "verse": "5"
+            },
+            {
+              "chapter": "23",
+              "verse": "6"
+            },
+            {
+              "chapter": "23",
+              "verse": "7"
+            },
+            {
+              "chapter": "23",
+              "verse": "8"
+            },
+            {
+              "chapter": "23",
+              "verse": "9"
+            },
+            {
+              "chapter": "23",
+              "verse": "10"
+            },
+            {
+              "chapter": "23",
+              "verse": "11"
+            },
+            {
+              "chapter": "23",
+              "verse": "12"
+            },
+            {
+              "chapter": "23",
+              "verse": "13"
+            },
+            {
+              "chapter": "23",
+              "verse": "14"
+            },
+            {
+              "chapter": "23",
+              "verse": "15"
+            },
+            {
+              "chapter": "23",
+              "verse": "16"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Luke 23:1-16 and pinned SBLGNT Luke 23:1-16 preserve matching numbered verse records."
+          }
+        },
+        {
+          "id": "LUK-23-17-greek-source-gap",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "23",
+              "verse": "17"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "The pinned SBLGNT Luke 23 verse inventory has no 23:17 record while the Douay-Rheims canonical corpus contains Luke 23:17. Logos preserves the source gap and does not synthesize Greek text or annotations."
+          }
+        },
+        {
+          "id": "LUK-23-18-56-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "23",
+              "verse": "18"
+            },
+            {
+              "chapter": "23",
+              "verse": "19"
+            },
+            {
+              "chapter": "23",
+              "verse": "20"
+            },
+            {
+              "chapter": "23",
+              "verse": "21"
+            },
+            {
+              "chapter": "23",
+              "verse": "22"
+            },
+            {
+              "chapter": "23",
+              "verse": "23"
+            },
+            {
+              "chapter": "23",
+              "verse": "24"
+            },
+            {
+              "chapter": "23",
+              "verse": "25"
+            },
+            {
+              "chapter": "23",
+              "verse": "26"
+            },
+            {
+              "chapter": "23",
+              "verse": "27"
+            },
+            {
+              "chapter": "23",
+              "verse": "28"
+            },
+            {
+              "chapter": "23",
+              "verse": "29"
+            },
+            {
+              "chapter": "23",
+              "verse": "30"
+            },
+            {
+              "chapter": "23",
+              "verse": "31"
+            },
+            {
+              "chapter": "23",
+              "verse": "32"
+            },
+            {
+              "chapter": "23",
+              "verse": "33"
+            },
+            {
+              "chapter": "23",
+              "verse": "34"
+            },
+            {
+              "chapter": "23",
+              "verse": "35"
+            },
+            {
+              "chapter": "23",
+              "verse": "36"
+            },
+            {
+              "chapter": "23",
+              "verse": "37"
+            },
+            {
+              "chapter": "23",
+              "verse": "38"
+            },
+            {
+              "chapter": "23",
+              "verse": "39"
+            },
+            {
+              "chapter": "23",
+              "verse": "40"
+            },
+            {
+              "chapter": "23",
+              "verse": "41"
+            },
+            {
+              "chapter": "23",
+              "verse": "42"
+            },
+            {
+              "chapter": "23",
+              "verse": "43"
+            },
+            {
+              "chapter": "23",
+              "verse": "44"
+            },
+            {
+              "chapter": "23",
+              "verse": "45"
+            },
+            {
+              "chapter": "23",
+              "verse": "46"
+            },
+            {
+              "chapter": "23",
+              "verse": "47"
+            },
+            {
+              "chapter": "23",
+              "verse": "48"
+            },
+            {
+              "chapter": "23",
+              "verse": "49"
+            },
+            {
+              "chapter": "23",
+              "verse": "50"
+            },
+            {
+              "chapter": "23",
+              "verse": "51"
+            },
+            {
+              "chapter": "23",
+              "verse": "52"
+            },
+            {
+              "chapter": "23",
+              "verse": "53"
+            },
+            {
+              "chapter": "23",
+              "verse": "54"
+            },
+            {
+              "chapter": "23",
+              "verse": "55"
+            },
+            {
+              "chapter": "23",
+              "verse": "56"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "23",
+              "verse": "18"
+            },
+            {
+              "chapter": "23",
+              "verse": "19"
+            },
+            {
+              "chapter": "23",
+              "verse": "20"
+            },
+            {
+              "chapter": "23",
+              "verse": "21"
+            },
+            {
+              "chapter": "23",
+              "verse": "22"
+            },
+            {
+              "chapter": "23",
+              "verse": "23"
+            },
+            {
+              "chapter": "23",
+              "verse": "24"
+            },
+            {
+              "chapter": "23",
+              "verse": "25"
+            },
+            {
+              "chapter": "23",
+              "verse": "26"
+            },
+            {
+              "chapter": "23",
+              "verse": "27"
+            },
+            {
+              "chapter": "23",
+              "verse": "28"
+            },
+            {
+              "chapter": "23",
+              "verse": "29"
+            },
+            {
+              "chapter": "23",
+              "verse": "30"
+            },
+            {
+              "chapter": "23",
+              "verse": "31"
+            },
+            {
+              "chapter": "23",
+              "verse": "32"
+            },
+            {
+              "chapter": "23",
+              "verse": "33"
+            },
+            {
+              "chapter": "23",
+              "verse": "34"
+            },
+            {
+              "chapter": "23",
+              "verse": "35"
+            },
+            {
+              "chapter": "23",
+              "verse": "36"
+            },
+            {
+              "chapter": "23",
+              "verse": "37"
+            },
+            {
+              "chapter": "23",
+              "verse": "38"
+            },
+            {
+              "chapter": "23",
+              "verse": "39"
+            },
+            {
+              "chapter": "23",
+              "verse": "40"
+            },
+            {
+              "chapter": "23",
+              "verse": "41"
+            },
+            {
+              "chapter": "23",
+              "verse": "42"
+            },
+            {
+              "chapter": "23",
+              "verse": "43"
+            },
+            {
+              "chapter": "23",
+              "verse": "44"
+            },
+            {
+              "chapter": "23",
+              "verse": "45"
+            },
+            {
+              "chapter": "23",
+              "verse": "46"
+            },
+            {
+              "chapter": "23",
+              "verse": "47"
+            },
+            {
+              "chapter": "23",
+              "verse": "48"
+            },
+            {
+              "chapter": "23",
+              "verse": "49"
+            },
+            {
+              "chapter": "23",
+              "verse": "50"
+            },
+            {
+              "chapter": "23",
+              "verse": "51"
+            },
+            {
+              "chapter": "23",
+              "verse": "52"
+            },
+            {
+              "chapter": "23",
+              "verse": "53"
+            },
+            {
+              "chapter": "23",
+              "verse": "54"
+            },
+            {
+              "chapter": "23",
+              "verse": "55"
+            },
+            {
+              "chapter": "23",
+              "verse": "56"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and SBLGNT Luke 23:18-56 preserve matching numbered verse records after the explicit 23:17 source gap."
+          }
+        }
+      ]
+    }
+  ]
+}

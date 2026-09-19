@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.19-v18",
+  "registry_version": "2026.09.19-v19",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -170,6 +170,12 @@
       "lane": "latin",
       "status": "verified",
       "file": "maps/1TH-latin-vulgate-clementine.json"
+    },
+    {
+      "book_id": "LUK",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/LUK-greek-sblgnt.json"
     }
   ]
 }
