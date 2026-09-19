@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 24,
-    "books_resolved": 49,
-    "unresolved_lane_count": 45,
-    "verified_registry_lane_count": 35,
+    "books_unresolved": 23,
+    "books_resolved": 50,
+    "unresolved_lane_count": 44,
+    "verified_registry_lane_count": 36,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -609,14 +609,32 @@
       "id": "EZR",
       "book": "Ezra",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
           "status": "exact",
           "mismatch_chapters": []
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.20-ezr-greek-v1",
+          "file": "maps/EZR-greek-first1k-swete.json",
+          "covered_chapters": [
+            "2",
+            "5",
+            "6",
+            "8",
+            "10"
+          ],
+          "audited_mismatch_chapters": [
+            "2",
+            "5",
+            "6",
+            "8",
+            "10"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "2",
@@ -624,8 +642,7 @@
             "6",
             "8",
             "10"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
