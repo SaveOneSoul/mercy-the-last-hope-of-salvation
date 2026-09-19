@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 31,
-    "books_resolved": 42,
-    "unresolved_lane_count": 57,
-    "verified_registry_lane_count": 23,
+    "books_unresolved": 30,
+    "books_resolved": 43,
+    "unresolved_lane_count": 55,
+    "verified_registry_lane_count": 25,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -2189,26 +2189,44 @@
       "id": "1TH",
       "book": "1 Thessalonians",
       "testament": "NT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
           "status": "not-applicable"
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.19-1th-greek-v1",
+          "file": "maps/1TH-greek-sblgnt.json",
+          "covered_chapters": [
+            "4"
+          ],
+          "audited_mismatch_chapters": [
+            "4"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "4"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.19-1th-latin-v1",
+          "file": "maps/1TH-latin-vulgate-clementine.json",
+          "covered_chapters": [
+            "4"
+          ],
+          "audited_mismatch_chapters": [
+            "4"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "4"
-          ],
-          "registry": null
+          ]
         }
       }
     },
