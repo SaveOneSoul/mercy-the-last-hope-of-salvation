@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 8
-          assert registry['verified_book_count'] >= 6
+          assert registry['verified_mapping_count'] >= 9
+          assert registry['verified_book_count'] >= 7
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -292,5 +292,27 @@ jobs:
           assert [(row['source_chapter'], row['source_verse']) for row in zeph3[14]['source_verses']] == [('3', '14')]
           assert [(row['source_chapter'], row['source_verse']) for row in zeph3[20]['source_verses']] == [('3', '20')]
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah/Zephaniah source versification + prayer/Mass/priest portal smoke test passed')
+          malachi_3 = _semitic_study_payload('Malachi 3')
+          assert malachi_3['alignment']['mode'] == 'verified-explicit-map'
+          assert malachi_3['alignment']['verified_mapping'] is True
+          assert len(malachi_3['verses']) == 18
+          mal3 = {row['verse']: row for row in malachi_3['verses']}
+          assert mal3[1]['mapping_relationship'] == 'identity'
+          assert [(row['chapter'], row['verse']) for row in mal3[1]['source_verses']] == [(3, 1)]
+          assert [(row['chapter'], row['verse']) for row in mal3[18]['source_verses']] == [(3, 18)]
+
+          malachi_4 = _semitic_study_payload('Malachi 4')
+          assert malachi_4['alignment']['mode'] == 'verified-explicit-map'
+          assert malachi_4['alignment']['verified_mapping'] is True
+          assert malachi_4['alignment']['reason'] == 'verified_explicit_cross_chapter_map'
+          assert malachi_4['alignment']['source_verse_count'] == 0
+          assert len(malachi_4['verses']) == 6
+          mal4 = {row['verse']: row for row in malachi_4['verses']}
+          for canonical, source in enumerate(range(19, 25), start=1):
+              assert mal4[canonical]['mapping_relationship'] == 'renumber'
+              assert [(row['chapter'], row['verse']) for row in mal4[canonical]['source_verses']] == [(3, source)]
+              assert mal4[canonical]['tokens']
+          assert len({row['id'] for row in malachi_4['tokens']}) == len(malachi_4['tokens'])
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah/Zephaniah/Malachi source versification + prayer/Mass/priest portal smoke test passed')
           PY
