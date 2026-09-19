@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 38,
-    "books_resolved": 35,
-    "unresolved_lane_count": 68,
-    "verified_registry_lane_count": 12,
+    "books_unresolved": 37,
+    "books_resolved": 36,
+    "unresolved_lane_count": 66,
+    "verified_registry_lane_count": 14,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -1701,24 +1701,44 @@
       "id": "HAG",
       "book": "Haggai",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.19-hag-semitic-v1",
+          "file": "maps/HAG-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "1",
+            "2"
+          ],
+          "audited_mismatch_chapters": [
+            "1",
+            "2"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "1",
             "2"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.19-hag-greek-v1",
+          "file": "maps/HAG-greek-first1k-swete.json",
+          "covered_chapters": [
+            "2"
+          ],
+          "audited_mismatch_chapters": [
+            "2"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "2"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
