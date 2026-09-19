@@ -1,0 +1,376 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.19-hag-semitic-v1",
+  "status": "verified",
+  "book_id": "HAG",
+  "book": "Haggai",
+  "lane": "semitic",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "oshb",
+    "reference_system": "oshb-wlc-osis",
+    "corpus_id": "heb_arc_oshb_wlc",
+    "corpus_version": "2026.09.16-oshb-wlc-39"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "1",
+      "2"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "1",
+      "segments": [
+        {
+          "id": "HAG-1-1-14-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "1",
+              "verse": "1"
+            },
+            {
+              "chapter": "1",
+              "verse": "2"
+            },
+            {
+              "chapter": "1",
+              "verse": "3"
+            },
+            {
+              "chapter": "1",
+              "verse": "4"
+            },
+            {
+              "chapter": "1",
+              "verse": "5"
+            },
+            {
+              "chapter": "1",
+              "verse": "6"
+            },
+            {
+              "chapter": "1",
+              "verse": "7"
+            },
+            {
+              "chapter": "1",
+              "verse": "8"
+            },
+            {
+              "chapter": "1",
+              "verse": "9"
+            },
+            {
+              "chapter": "1",
+              "verse": "10"
+            },
+            {
+              "chapter": "1",
+              "verse": "11"
+            },
+            {
+              "chapter": "1",
+              "verse": "12"
+            },
+            {
+              "chapter": "1",
+              "verse": "13"
+            },
+            {
+              "chapter": "1",
+              "verse": "14"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "1",
+              "verse": "1"
+            },
+            {
+              "chapter": "1",
+              "verse": "2"
+            },
+            {
+              "chapter": "1",
+              "verse": "3"
+            },
+            {
+              "chapter": "1",
+              "verse": "4"
+            },
+            {
+              "chapter": "1",
+              "verse": "5"
+            },
+            {
+              "chapter": "1",
+              "verse": "6"
+            },
+            {
+              "chapter": "1",
+              "verse": "7"
+            },
+            {
+              "chapter": "1",
+              "verse": "8"
+            },
+            {
+              "chapter": "1",
+              "verse": "9"
+            },
+            {
+              "chapter": "1",
+              "verse": "10"
+            },
+            {
+              "chapter": "1",
+              "verse": "11"
+            },
+            {
+              "chapter": "1",
+              "verse": "12"
+            },
+            {
+              "chapter": "1",
+              "verse": "13"
+            },
+            {
+              "chapter": "1",
+              "verse": "14"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Haggai 1:1-14 and pinned OSHB/WLC Haggai 1:1-14 preserve matching numbered divisions. OSHB 1:15 is the date clause printed as Douay 2:1 and is mapped there explicitly."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "2",
+      "segments": [
+        {
+          "id": "HAG-2-1-semitic-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "1",
+              "verse": "15"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Haggai 2:1 gives the twenty-fourth day of the sixth month in Darius' second year; pinned OSHB/WLC Haggai 1:15 contains that same date clause."
+          }
+        },
+        {
+          "id": "HAG-2-2-24-semitic",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            },
+            {
+              "chapter": "2",
+              "verse": "15"
+            },
+            {
+              "chapter": "2",
+              "verse": "16"
+            },
+            {
+              "chapter": "2",
+              "verse": "17"
+            },
+            {
+              "chapter": "2",
+              "verse": "18"
+            },
+            {
+              "chapter": "2",
+              "verse": "19"
+            },
+            {
+              "chapter": "2",
+              "verse": "20"
+            },
+            {
+              "chapter": "2",
+              "verse": "21"
+            },
+            {
+              "chapter": "2",
+              "verse": "22"
+            },
+            {
+              "chapter": "2",
+              "verse": "23"
+            },
+            {
+              "chapter": "2",
+              "verse": "24"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            },
+            {
+              "chapter": "2",
+              "verse": "15"
+            },
+            {
+              "chapter": "2",
+              "verse": "16"
+            },
+            {
+              "chapter": "2",
+              "verse": "17"
+            },
+            {
+              "chapter": "2",
+              "verse": "18"
+            },
+            {
+              "chapter": "2",
+              "verse": "19"
+            },
+            {
+              "chapter": "2",
+              "verse": "20"
+            },
+            {
+              "chapter": "2",
+              "verse": "21"
+            },
+            {
+              "chapter": "2",
+              "verse": "22"
+            },
+            {
+              "chapter": "2",
+              "verse": "23"
+            }
+          ],
+          "evidence": {
+            "citation": "After the chapter-boundary date clause, Douay-Rheims Haggai 2:2-24 corresponds sequentially to pinned OSHB/WLC Haggai 2:1-23, from the seventh-month prophecy through the Zerubbabel signet oracle."
+          }
+        }
+      ]
+    }
+  ]
+}
