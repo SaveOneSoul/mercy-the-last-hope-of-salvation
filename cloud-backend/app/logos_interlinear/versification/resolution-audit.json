@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 34,
-    "books_resolved": 39,
-    "unresolved_lane_count": 60,
-    "verified_registry_lane_count": 20,
+    "books_unresolved": 33,
+    "books_resolved": 40,
+    "unresolved_lane_count": 59,
+    "verified_registry_lane_count": 21,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -2067,7 +2067,7 @@
       "id": "2CO",
       "book": "2 Corinthians",
       "testament": "NT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
           "status": "not-applicable"
@@ -2077,12 +2077,21 @@
           "mismatch_chapters": []
         },
         "latin": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.19-2co-latin-v1",
+          "file": "maps/2CO-latin-vulgate-clementine.json",
+          "covered_chapters": [
+            "1"
+          ],
+          "audited_mismatch_chapters": [
+            "1"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "1"
-          ],
-          "registry": null
+          ]
         }
       }
     },
