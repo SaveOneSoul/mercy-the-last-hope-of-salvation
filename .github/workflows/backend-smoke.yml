@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 33
-          assert registry['verified_book_count'] >= 22
+          assert registry['verified_mapping_count'] >= 34
+          assert registry['verified_book_count'] >= 23
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -759,5 +759,60 @@ jobs:
           assert [(row['source_chapter'], row['source_verse']) for row in sa2g23[31]['source_verses']] == [('23', '31a'), ('23', '31')]
           assert [(row['source_chapter'], row['source_verse']) for row in sa2g23[32]['source_verses']] == [('23', '32')]
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including 2 Samuel, John, 2 Thessalonians, Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
+          ezra_2 = _full_greek_study_payload('Ezra 2')
+          assert ezra_2['alignment']['mode'] == 'verified-explicit-map'
+          assert len(ezra_2['verses']) == 70
+          ezr2 = {row['verse']: row for row in ezra_2['verses']}
+          for canonical in (13, 14):
+              assert ezr2[canonical]['mapping_relationship'] == 'split'
+              assert [(row['source_chapter'], row['source_verse']) for row in ezr2[canonical]['source_verses']] == [('2', '13')]
+          assert ezr2[15]['mapping_relationship'] == 'offset'
+          assert [(row['source_chapter'], row['source_verse']) for row in ezr2[15]['source_verses']] == [('2', '14')]
+          assert [(row['source_chapter'], row['source_verse']) for row in ezr2[16]['source_verses']] == [('2', '15')]
+          for canonical in (21, 22):
+              assert ezr2[canonical]['mapping_relationship'] == 'split'
+              assert [(row['source_chapter'], row['source_verse']) for row in ezr2[canonical]['source_verses']] == [('2', '21')]
+          assert ezr2[39]['mapping_relationship'] == 'canonical-only'
+          assert ezr2[39]['source_missing'] is True
+          assert ezr2[39]['source_verses'] == []
+          assert ezr2[39]['surface'] == ''
+          assert [(row['source_chapter'], row['source_verse']) for row in ezr2[40]['source_verses']] == [('2', '40')]
+
+          ezra_5 = _full_greek_study_payload('Ezra 5')
+          assert ezra_5['alignment']['mode'] == 'verified-explicit-map'
+          assert len(ezra_5['verses']) == 17
+          ezr5 = {row['verse']: row for row in ezra_5['verses']}
+          for canonical in (4, 5):
+              assert ezr5[canonical]['mapping_relationship'] == 'split'
+              assert [(row['source_chapter'], row['source_verse']) for row in ezr5[canonical]['source_verses']] == [('5', '4')]
+
+          ezra_6 = _full_greek_study_payload('Ezra 6')
+          assert ezra_6['alignment']['mode'] == 'verified-explicit-map'
+          assert len(ezra_6['verses']) == 22
+          ezr6 = {row['verse']: row for row in ezra_6['verses']}
+          for canonical in (19, 20):
+              assert ezr6[canonical]['mapping_relationship'] == 'split'
+              assert [(row['source_chapter'], row['source_verse']) for row in ezr6[canonical]['source_verses']] == [('6', '19')]
+          assert [(row['source_chapter'], row['source_verse']) for row in ezr6[21]['source_verses']] == [('6', '21')]
+
+          ezra_8 = _full_greek_study_payload('Ezra 8')
+          assert ezra_8['alignment']['mode'] == 'verified-explicit-map'
+          assert len(ezra_8['verses']) == 36
+          ezr8 = {row['verse']: row for row in ezra_8['verses']}
+          assert ezr8[5]['mapping_relationship'] == 'canonical-only'
+          assert ezr8[5]['source_missing'] is True
+          assert ezr8[5]['source_verses'] == []
+          assert ezr8[5]['surface'] == ''
+          assert [(row['source_chapter'], row['source_verse']) for row in ezr8[6]['source_verses']] == [('8', '6')]
+
+          ezra_10 = _full_greek_study_payload('Ezra 10')
+          assert ezra_10['alignment']['mode'] == 'verified-explicit-map'
+          assert len(ezra_10['verses']) == 44
+          ezr10 = {row['verse']: row for row in ezra_10['verses']}
+          for canonical in (43, 44):
+              assert ezr10[canonical]['mapping_relationship'] == 'split'
+              assert [(row['source_chapter'], row['source_verse']) for row in ezr10[canonical]['source_verses']] == [('10', '43')]
+              assert ezr10[canonical]['surface']
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including Ezra, 2 Samuel, John, 2 Thessalonians, Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
           PY
