@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 30,
-    "books_resolved": 43,
-    "unresolved_lane_count": 55,
-    "verified_registry_lane_count": 25,
+    "books_unresolved": 29,
+    "books_resolved": 44,
+    "unresolved_lane_count": 54,
+    "verified_registry_lane_count": 26,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -1940,19 +1940,30 @@
       "id": "LUK",
       "book": "Luke",
       "testament": "NT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
           "status": "not-applicable"
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.19-luk-greek-v1",
+          "file": "maps/LUK-greek-sblgnt.json",
+          "covered_chapters": [
+            "17",
+            "23"
+          ],
+          "audited_mismatch_chapters": [
+            "17",
+            "23"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "17",
             "23"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
