@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 14
-          assert registry['verified_book_count'] >= 10
+          assert registry['verified_mapping_count'] >= 16
+          assert registry['verified_book_count'] >= 11
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -405,5 +405,48 @@ jobs:
           assert [(row['source_chapter'], row['source_verse']) for row in hag2g[3]['source_verses']] == [('2', '2')]
           assert [(row['source_chapter'], row['source_verse']) for row in hag2g[24]['source_verses']] == [('2', '23')]
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah/Zephaniah/Malachi/Joel/Nahum/Haggai source versification + prayer/Mass/priest portal smoke test passed')
+          zechariah_semitic_1 = _semitic_study_payload('Zechariah 1')
+          assert zechariah_semitic_1['alignment']['mode'] == 'verified-explicit-map'
+          assert zechariah_semitic_1['alignment']['verified_mapping'] is True
+          assert len(zechariah_semitic_1['verses']) == 21
+          zec1s = {row['verse']: row for row in zechariah_semitic_1['verses']}
+          assert zec1s[17]['mapping_relationship'] == 'identity'
+          assert [(row['chapter'], row['verse']) for row in zec1s[17]['source_verses']] == [(1, 17)]
+          assert zec1s[18]['mapping_relationship'] == 'renumber'
+          assert [(row['chapter'], row['verse']) for row in zec1s[18]['source_verses']] == [(2, 1)]
+          assert [(row['chapter'], row['verse']) for row in zec1s[21]['source_verses']] == [(2, 4)]
+
+          zechariah_semitic_2 = _semitic_study_payload('Zechariah 2')
+          assert zechariah_semitic_2['alignment']['mode'] == 'verified-explicit-map'
+          assert zechariah_semitic_2['alignment']['verified_mapping'] is True
+          assert len(zechariah_semitic_2['verses']) == 13
+          zec2s = {row['verse']: row for row in zechariah_semitic_2['verses']}
+          assert zec2s[1]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in zec2s[1]['source_verses']] == [(2, 5)]
+          assert [(row['chapter'], row['verse']) for row in zec2s[13]['source_verses']] == [(2, 17)]
+
+          zechariah_greek_11 = _full_greek_study_payload('Zechariah 11')
+          assert zechariah_greek_11['alignment']['mode'] == 'verified-explicit-map'
+          assert zechariah_greek_11['alignment']['verified_mapping'] is True
+          assert len(zechariah_greek_11['verses']) == 17
+          zec11g = {row['verse']: row for row in zechariah_greek_11['verses']}
+          assert zec11g[16]['mapping_relationship'] == 'identity'
+          assert [(row['source_chapter'], row['source_verse']) for row in zec11g[16]['source_verses']] == [('11', '16')]
+          assert zec11g[17]['mapping_relationship'] == 'renumber'
+          assert [(row['source_chapter'], row['source_verse']) for row in zec11g[17]['source_verses']] == [('11', '18')]
+
+          zechariah_greek_12 = _full_greek_study_payload('Zechariah 12')
+          assert zechariah_greek_12['alignment']['mode'] == 'verified-explicit-map'
+          assert zechariah_greek_12['alignment']['verified_mapping'] is True
+          assert len(zechariah_greek_12['verses']) == 14
+          zec12g = {row['verse']: row for row in zechariah_greek_12['verses']}
+          for canonical in (11, 12):
+              assert zec12g[canonical]['mapping_relationship'] == 'split'
+              assert [(row['source_chapter'], row['source_verse']) for row in zec12g[canonical]['source_verses']] == [('12', '11')]
+              assert zec12g[canonical]['surface']
+          assert zec12g[13]['mapping_relationship'] == 'identity'
+          assert [(row['source_chapter'], row['source_verse']) for row in zec12g[13]['source_verses']] == [('12', '13')]
+          assert [(row['source_chapter'], row['source_verse']) for row in zec12g[14]['source_verses']] == [('12', '14')]
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah/Zephaniah/Malachi/Joel/Nahum/Haggai/Zechariah source versification + prayer/Mass/priest portal smoke test passed')
           PY

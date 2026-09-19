@@ -1,0 +1,338 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.19-zec-greek-v1",
+  "status": "verified",
+  "book_id": "ZEC",
+  "book": "Zechariah",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "first1kgreek-swete",
+    "reference_system": "swete-first1k-source-numbering",
+    "corpus_id": "grc_ot_catholic_full",
+    "corpus_version": "2026.09.17-catholic-lxx-full"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "11",
+      "12"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "11",
+      "segments": [
+        {
+          "id": "ZEC-11-1-16-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "1"
+            },
+            {
+              "chapter": "11",
+              "verse": "2"
+            },
+            {
+              "chapter": "11",
+              "verse": "3"
+            },
+            {
+              "chapter": "11",
+              "verse": "4"
+            },
+            {
+              "chapter": "11",
+              "verse": "5"
+            },
+            {
+              "chapter": "11",
+              "verse": "6"
+            },
+            {
+              "chapter": "11",
+              "verse": "7"
+            },
+            {
+              "chapter": "11",
+              "verse": "8"
+            },
+            {
+              "chapter": "11",
+              "verse": "9"
+            },
+            {
+              "chapter": "11",
+              "verse": "10"
+            },
+            {
+              "chapter": "11",
+              "verse": "11"
+            },
+            {
+              "chapter": "11",
+              "verse": "12"
+            },
+            {
+              "chapter": "11",
+              "verse": "13"
+            },
+            {
+              "chapter": "11",
+              "verse": "14"
+            },
+            {
+              "chapter": "11",
+              "verse": "15"
+            },
+            {
+              "chapter": "11",
+              "verse": "16"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "11",
+              "verse": "1"
+            },
+            {
+              "chapter": "11",
+              "verse": "2"
+            },
+            {
+              "chapter": "11",
+              "verse": "3"
+            },
+            {
+              "chapter": "11",
+              "verse": "4"
+            },
+            {
+              "chapter": "11",
+              "verse": "5"
+            },
+            {
+              "chapter": "11",
+              "verse": "6"
+            },
+            {
+              "chapter": "11",
+              "verse": "7"
+            },
+            {
+              "chapter": "11",
+              "verse": "8"
+            },
+            {
+              "chapter": "11",
+              "verse": "9"
+            },
+            {
+              "chapter": "11",
+              "verse": "10"
+            },
+            {
+              "chapter": "11",
+              "verse": "11"
+            },
+            {
+              "chapter": "11",
+              "verse": "12"
+            },
+            {
+              "chapter": "11",
+              "verse": "13"
+            },
+            {
+              "chapter": "11",
+              "verse": "14"
+            },
+            {
+              "chapter": "11",
+              "verse": "15"
+            },
+            {
+              "chapter": "11",
+              "verse": "16"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete Zechariah 11:1-16 preserve matching numbered source divisions."
+          }
+        },
+        {
+          "id": "ZEC-11-17-greek",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "17"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "11",
+              "verse": "18"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Zechariah 11:17 and pinned Swete 11:18 both contain the woe against the worthless shepherd, the sword on his arm/right eye, the withered arm, and blinded right eye. Swete has no 11:17 record in the pinned payload."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "12",
+      "segments": [
+        {
+          "id": "ZEC-12-1-10-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "12",
+              "verse": "1"
+            },
+            {
+              "chapter": "12",
+              "verse": "2"
+            },
+            {
+              "chapter": "12",
+              "verse": "3"
+            },
+            {
+              "chapter": "12",
+              "verse": "4"
+            },
+            {
+              "chapter": "12",
+              "verse": "5"
+            },
+            {
+              "chapter": "12",
+              "verse": "6"
+            },
+            {
+              "chapter": "12",
+              "verse": "7"
+            },
+            {
+              "chapter": "12",
+              "verse": "8"
+            },
+            {
+              "chapter": "12",
+              "verse": "9"
+            },
+            {
+              "chapter": "12",
+              "verse": "10"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "12",
+              "verse": "1"
+            },
+            {
+              "chapter": "12",
+              "verse": "2"
+            },
+            {
+              "chapter": "12",
+              "verse": "3"
+            },
+            {
+              "chapter": "12",
+              "verse": "4"
+            },
+            {
+              "chapter": "12",
+              "verse": "5"
+            },
+            {
+              "chapter": "12",
+              "verse": "6"
+            },
+            {
+              "chapter": "12",
+              "verse": "7"
+            },
+            {
+              "chapter": "12",
+              "verse": "8"
+            },
+            {
+              "chapter": "12",
+              "verse": "9"
+            },
+            {
+              "chapter": "12",
+              "verse": "10"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete Zechariah 12:1-10 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "ZEC-12-11-12-greek",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "12",
+              "verse": "11"
+            },
+            {
+              "chapter": "12",
+              "verse": "12"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "12",
+              "verse": "11"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Swete Zechariah 12:11 contains both the great lamentation material of Douay 12:11 and the beginning of the family-by-family mourning material of Douay 12:12. The intact Greek source verse is referenced by both canonical rows rather than split synthetically."
+          }
+        },
+        {
+          "id": "ZEC-12-13-14-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "12",
+              "verse": "13"
+            },
+            {
+              "chapter": "12",
+              "verse": "14"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "12",
+              "verse": "13"
+            },
+            {
+              "chapter": "12",
+              "verse": "14"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete Zechariah 12:13-14 preserve matching numbered divisions after the 12:11 split."
+          }
+        }
+      ]
+    }
+  ]
+}
