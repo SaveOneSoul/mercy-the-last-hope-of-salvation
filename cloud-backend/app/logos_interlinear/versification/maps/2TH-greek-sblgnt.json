@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.20-2th-greek-v1",
+  "status": "verified",
+  "book_id": "2TH",
+  "book": "2 Thessalonians",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "sblgnt",
+    "reference_system": "sblgnt",
+    "corpus_id": "grc_sblgnt_morphgnt",
+    "corpus_version": "2026.09.16-sblgnt-morphgnt-27",
+    "repository": "Faithlife/SBLGNT",
+    "commit": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "2"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "2",
+      "segments": [
+        {
+          "id": "2TH-2-1-9-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims 2 Thessalonians 2:1-9 and pinned SBLGNT preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "2TH-2-10-greek",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "10"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims 2 Thessalonians 2:10 contains both the refusal of the love of truth and God's sending of a deluding operation; the pinned SBLGNT records those clauses separately as 2:10 and 2:11."
+          }
+        },
+        {
+          "id": "2TH-2-11-16-greek",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            },
+            {
+              "chapter": "2",
+              "verse": "15"
+            },
+            {
+              "chapter": "2",
+              "verse": "16"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            },
+            {
+              "chapter": "2",
+              "verse": "15"
+            },
+            {
+              "chapter": "2",
+              "verse": "16"
+            },
+            {
+              "chapter": "2",
+              "verse": "17"
+            }
+          ],
+          "evidence": {
+            "citation": "After the Douay 2:10 / source 2:10-11 merge, Douay-Rheims 2 Thessalonians 2:11-16 corresponds sequentially to pinned SBLGNT 2:12-17."
+          }
+        }
+      ]
+    }
+  ]
+}
