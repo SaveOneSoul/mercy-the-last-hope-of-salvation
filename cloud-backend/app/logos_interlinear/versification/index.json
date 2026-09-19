@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.19-v16",
+  "registry_version": "2026.09.19-v17",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -152,6 +152,12 @@
       "lane": "greek",
       "status": "verified",
       "file": "maps/ROM-greek-sblgnt.json"
+    },
+    {
+      "book_id": "3JN",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/3JN-greek-sblgnt.json"
     }
   ]
 }
