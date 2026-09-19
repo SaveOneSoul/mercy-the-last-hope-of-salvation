@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 34
-          assert registry['verified_book_count'] >= 23
+          assert registry['verified_mapping_count'] >= 36
+          assert registry['verified_book_count'] >= 24
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -759,6 +759,44 @@ jobs:
           assert [(row['source_chapter'], row['source_verse']) for row in sa2g23[31]['source_verses']] == [('23', '31a'), ('23', '31')]
           assert [(row['source_chapter'], row['source_verse']) for row in sa2g23[32]['source_verses']] == [('23', '32')]
 
+          second_kings_semitic_11 = _semitic_study_payload('2 Kings 11')
+          assert second_kings_semitic_11['alignment']['mode'] == 'verified-explicit-map'
+          assert len(second_kings_semitic_11['verses']) == 21
+          ki2s11 = {row['verse']: row for row in second_kings_semitic_11['verses']}
+          assert ki2s11[21]['mapping_relationship'] == 'renumber'
+          assert [(row['chapter'], row['verse']) for row in ki2s11[21]['source_verses']] == [(12, 1)]
+
+          second_kings_semitic_12 = _semitic_study_payload('2 Kings 12')
+          assert second_kings_semitic_12['alignment']['mode'] == 'verified-explicit-map'
+          assert len(second_kings_semitic_12['verses']) == 21
+          ki2s12 = {row['verse']: row for row in second_kings_semitic_12['verses']}
+          assert ki2s12[1]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in ki2s12[1]['source_verses']] == [(12, 2)]
+          assert [(row['chapter'], row['verse']) for row in ki2s12[21]['source_verses']] == [(12, 22)]
+
+          second_kings_greek_1 = _full_greek_study_payload('2 Kings 1')
+          assert second_kings_greek_1['alignment']['mode'] == 'verified-explicit-map'
+          assert len(second_kings_greek_1['verses']) == 18
+          assert second_kings_greek_1['verses'][-1]['verse'] == 18
+
+          second_kings_greek_14 = _full_greek_study_payload('2 Kings 14')
+          assert second_kings_greek_14['alignment']['mode'] == 'verified-explicit-map'
+          assert len(second_kings_greek_14['verses']) == 29
+          ki2g14 = {row['verse']: row for row in second_kings_greek_14['verses']}
+          for canonical in (28, 29):
+              assert ki2g14[canonical]['mapping_relationship'] == 'split'
+              assert [(row['source_chapter'], row['source_verse']) for row in ki2g14[canonical]['source_verses']] == [('14', '28')]
+
+          second_kings_greek_25 = _full_greek_study_payload('2 Kings 25')
+          assert second_kings_greek_25['alignment']['mode'] == 'verified-explicit-map'
+          assert len(second_kings_greek_25['verses']) == 30
+          ki2g25 = {row['verse']: row for row in second_kings_greek_25['verses']}
+          assert ki2g25[10]['mapping_relationship'] == 'canonical-only'
+          assert ki2g25[10]['source_missing'] is True
+          assert ki2g25[10]['source_verses'] == []
+          assert ki2g25[10]['surface'] == ''
+          assert [(row['source_chapter'], row['source_verse']) for row in ki2g25[11]['source_verses']] == [('25', '11')]
+
           ezra_2 = _full_greek_study_payload('Ezra 2')
           assert ezra_2['alignment']['mode'] == 'verified-explicit-map'
           assert len(ezra_2['verses']) == 70
@@ -814,5 +852,5 @@ jobs:
               assert [(row['source_chapter'], row['source_verse']) for row in ezr10[canonical]['source_verses']] == [('10', '43')]
               assert ezr10[canonical]['surface']
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including Ezra, 2 Samuel, John, 2 Thessalonians, Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including Ezra, 2 Kings, 2 Samuel, John, 2 Thessalonians, Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
           PY
