@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.19-hag-greek-v1",
+  "status": "verified",
+  "book_id": "HAG",
+  "book": "Haggai",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "first1kgreek-swete",
+    "reference_system": "swete-first1k-source-numbering",
+    "corpus_id": "grc_ot_catholic_full",
+    "corpus_version": "2026.09.17-catholic-lxx-full"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "2"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "2",
+      "segments": [
+        {
+          "id": "HAG-2-1-2-greek",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Swete Haggai 2:1 contains both the twenty-fourth day of the sixth month clause printed as Douay 2:1 and the seventh-month prophecy introduction printed as Douay 2:2. The Greek source verse is kept intact and referenced by both canonical rows."
+          }
+        },
+        {
+          "id": "HAG-2-3-24-greek",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            },
+            {
+              "chapter": "2",
+              "verse": "15"
+            },
+            {
+              "chapter": "2",
+              "verse": "16"
+            },
+            {
+              "chapter": "2",
+              "verse": "17"
+            },
+            {
+              "chapter": "2",
+              "verse": "18"
+            },
+            {
+              "chapter": "2",
+              "verse": "19"
+            },
+            {
+              "chapter": "2",
+              "verse": "20"
+            },
+            {
+              "chapter": "2",
+              "verse": "21"
+            },
+            {
+              "chapter": "2",
+              "verse": "22"
+            },
+            {
+              "chapter": "2",
+              "verse": "23"
+            },
+            {
+              "chapter": "2",
+              "verse": "24"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            },
+            {
+              "chapter": "2",
+              "verse": "15"
+            },
+            {
+              "chapter": "2",
+              "verse": "16"
+            },
+            {
+              "chapter": "2",
+              "verse": "17"
+            },
+            {
+              "chapter": "2",
+              "verse": "18"
+            },
+            {
+              "chapter": "2",
+              "verse": "19"
+            },
+            {
+              "chapter": "2",
+              "verse": "20"
+            },
+            {
+              "chapter": "2",
+              "verse": "21"
+            },
+            {
+              "chapter": "2",
+              "verse": "22"
+            },
+            {
+              "chapter": "2",
+              "verse": "23"
+            }
+          ],
+          "evidence": {
+            "citation": "After the Douay 2:1-2 / Swete 2:1 split, Douay-Rheims Haggai 2:3-24 corresponds sequentially to pinned Swete 2:2-23."
+          }
+        }
+      ]
+    }
+  ]
+}
