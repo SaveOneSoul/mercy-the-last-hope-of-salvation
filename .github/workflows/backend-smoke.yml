@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 10
-          assert registry['verified_book_count'] >= 8
+          assert registry['verified_mapping_count'] >= 12
+          assert registry['verified_book_count'] >= 9
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -336,5 +336,43 @@ jobs:
           assert [(row['chapter'], row['verse']) for row in joel3[21]['source_verses']] == [(4, 21)]
           assert all(row['tokens'] for row in joel_3['verses'])
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah/Zephaniah/Malachi/Joel source versification + prayer/Mass/priest portal smoke test passed')
+          nahum_semitic_1 = _semitic_study_payload('Nahum 1')
+          assert nahum_semitic_1['alignment']['mode'] == 'verified-explicit-map'
+          assert nahum_semitic_1['alignment']['verified_mapping'] is True
+          assert len(nahum_semitic_1['verses']) == 15
+          nah1s = {row['verse']: row for row in nahum_semitic_1['verses']}
+          assert nah1s[14]['mapping_relationship'] == 'identity'
+          assert [(row['chapter'], row['verse']) for row in nah1s[14]['source_verses']] == [(1, 14)]
+          assert nah1s[15]['mapping_relationship'] == 'renumber'
+          assert [(row['chapter'], row['verse']) for row in nah1s[15]['source_verses']] == [(2, 1)]
+
+          nahum_semitic_2 = _semitic_study_payload('Nahum 2')
+          assert nahum_semitic_2['alignment']['mode'] == 'verified-explicit-map'
+          assert nahum_semitic_2['alignment']['verified_mapping'] is True
+          assert len(nahum_semitic_2['verses']) == 13
+          nah2s = {row['verse']: row for row in nahum_semitic_2['verses']}
+          assert nah2s[1]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in nah2s[1]['source_verses']] == [(2, 2)]
+          assert [(row['chapter'], row['verse']) for row in nah2s[13]['source_verses']] == [(2, 14)]
+
+          nahum_greek_1 = _full_greek_study_payload('Nahum 1')
+          assert nahum_greek_1['alignment']['mode'] == 'verified-explicit-map'
+          assert nahum_greek_1['alignment']['verified_mapping'] is True
+          assert nahum_greek_1['alignment']['numeric_identifier_identity'] is True
+          assert nahum_greek_1['alignment']['exact'] is False
+          assert len(nahum_greek_1['verses']) == 15
+          nah1g = {row['verse']: row for row in nahum_greek_1['verses']}
+          assert nah1g[15]['mapping_relationship'] == 'merge'
+          assert [(row['source_chapter'], row['source_verse']) for row in nah1g[15]['source_verses']] == [('1', '15'), ('2', '1')]
+
+          nahum_greek_2 = _full_greek_study_payload('Nahum 2')
+          assert nahum_greek_2['alignment']['mode'] == 'verified-explicit-map'
+          assert nahum_greek_2['alignment']['verified_mapping'] is True
+          assert len(nahum_greek_2['verses']) == 13
+          nah2g = {row['verse']: row for row in nahum_greek_2['verses']}
+          assert nah2g[1]['mapping_relationship'] == 'offset'
+          assert [(row['source_chapter'], row['source_verse']) for row in nah2g[1]['source_verses']] == [('2', '2')]
+          assert [(row['source_chapter'], row['source_verse']) for row in nah2g[13]['source_verses']] == [('2', '14')]
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah/Zephaniah/Malachi/Joel/Nahum source versification + prayer/Mass/priest portal smoke test passed')
           PY
