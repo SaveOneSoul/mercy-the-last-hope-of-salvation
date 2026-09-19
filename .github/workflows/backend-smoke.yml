@@ -43,7 +43,7 @@ jobs:
           from app.main import app
           from app.logos import _corpus_manifest
           from app.logos_context import BOOK_PROFILES, RESEARCH_LIBRARIES
-          from app.logos_greek import _greek_manifest
+          from app.logos_greek import _greek_manifest, _interlinear_payload as _greek_nt_interlinear_payload
           from app.logos_ot_greek import _ot_greek_manifest
           from app.logos_ot_greek_full import _study_payload as _full_greek_study_payload
           from app.logos_ot_latin import _study_payload as _latin_study_payload
@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 21
-          assert registry['verified_book_count'] >= 14
+          assert registry['verified_mapping_count'] >= 22
+          assert registry['verified_book_count'] >= 15
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -518,5 +518,30 @@ jobs:
               assert co2lat1[canonical]['surface']
           assert co2lat1[23]['surface'] == co2lat1[24]['surface']
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including 2 Corinthians Latin + prayer/Mass/priest portal smoke test passed')
+          romans_16 = _greek_nt_interlinear_payload('Romans 16')
+          assert romans_16['versification']['mode'] == 'verified-explicit-map'
+          assert romans_16['versification']['verified_mapping'] is True
+          assert len(romans_16['surface']['verses']) == 27
+          rom16_surface = {int(row['verse']): row for row in romans_16['surface']['verses']}
+          rom16_linguistics = {int(row['verse']): row for row in romans_16['linguistics']['verses']}
+          rom16_alignment = {int(row['verse']): row for row in romans_16['alignment']['verses']}
+          assert rom16_surface[24]['mapping_relationship'] == 'identity'
+          assert rom16_surface[24]['source_missing'] is False
+          assert [(row['chapter'], row['verse']) for row in rom16_surface[24]['source_verses']] == [(16, '24')]
+          assert rom16_surface[24]['text']
+          for canonical in (25, 26, 27):
+              assert rom16_surface[canonical]['mapping_relationship'] == 'canonical-only'
+              assert rom16_surface[canonical]['source_missing'] is True
+              assert rom16_surface[canonical]['source_verses'] == []
+              assert rom16_surface[canonical]['text'] == ''
+              assert rom16_surface[canonical]['tokens'] == []
+              assert rom16_linguistics[canonical]['annotation_status'] == 'canonical-only-source-gap'
+              assert rom16_linguistics[canonical]['tokens'] == []
+              assert rom16_alignment[canonical]['source_missing'] is True
+              assert rom16_alignment[canonical]['source_refs'] == []
+          assert all(int(token['verse']) <= 24 for token in romans_16['tokens'])
+          assert 'do not synthesize Greek text' not in romans_16['note']
+          assert 'do not synthesize Greek text, transliteration, lemma, POS, or morphology' in romans_16['note']
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including 2 Corinthians Latin and Romans 16 Greek + prayer/Mass/priest portal smoke test passed')
           PY
