@@ -5,10 +5,10 @@ Generated deterministically from `coverage-audit.json` plus the verified versifi
 ## Burn-down
 
 - Catholic books: **73**
-- Books with at least one unresolved lane: **39**
-- Books with all applicable lanes resolved/exact: **34**
-- Unresolved source lanes: **70**
-- Lanes resolved by new verified registry maps: **10**
+- Books with at least one unresolved lane: **38**
+- Books with all applicable lanes resolved/exact: **35**
+- Unresolved source lanes: **68**
+- Lanes resolved by new verified registry maps: **12**
 - Lanes already resolved by accepted component/explicit maps: **3**
 
 A book leaves the unresolved count only when every applicable Hebrew/Aramaic, Greek, and Latin lane is exact or backed by a verified explicit/component mapping.
@@ -57,7 +57,7 @@ A book leaves the unresolved count only when every applicable Hebrew/Aramaic, Gr
 | 38 | Obadiah | OT | Exact | Exact | Exact | Resolved |
 | 39 | Jonah | OT | Exact | Exact | Exact | Resolved |
 | 40 | Micah | OT | Verified map | Verified map | Exact | Resolved |
-| 41 | Nahum | OT | Unresolved (2 ch) | Unresolved (1 ch) | Exact | Unresolved |
+| 41 | Nahum | OT | Verified map | Verified map | Exact | Resolved |
 | 42 | Habakkuk | OT | Exact | Exact | Exact | Resolved |
 | 43 | Zephaniah | OT | Exact | Verified map | Exact | Resolved |
 | 44 | Haggai | OT | Unresolved (2 ch) | Unresolved (1 ch) | Exact | Unresolved |

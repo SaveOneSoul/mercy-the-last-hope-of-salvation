@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 39,
-    "books_resolved": 34,
-    "unresolved_lane_count": 70,
-    "verified_registry_lane_count": 10,
+    "books_unresolved": 38,
+    "books_resolved": 35,
+    "unresolved_lane_count": 68,
+    "verified_registry_lane_count": 12,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -1590,24 +1590,47 @@
       "id": "NAM",
       "book": "Nahum",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.19-nam-semitic-v1",
+          "file": "maps/NAM-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "1",
+            "2"
+          ],
+          "audited_mismatch_chapters": [
+            "1",
+            "2"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "1",
             "2"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.19-nam-greek-v1",
+          "file": "maps/NAM-greek-first1k-swete.json",
+          "covered_chapters": [
+            "1",
+            "2"
+          ],
+          "audited_mismatch_chapters": [
+            "2"
+          ],
+          "verified_override_chapters": [
+            "1"
+          ],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "2"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
