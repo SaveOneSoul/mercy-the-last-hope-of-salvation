@@ -111,16 +111,6 @@ def _numeric_verse_set(chapter: dict) -> set[int] | None:
 
 
 def _chapter_identity(book_id: str, chapter: int, surface: dict) -> dict:
-    source_chapter = ((surface.get("chapters") or {}).get(str(chapter)))
-    if not source_chapter:
-        return {
-            "exact": False,
-            "verified_mapping": False,
-            "reason": "source_chapter_missing_or_outside_masoretic_scope",
-            "source_verse_count": 0,
-            "dra_verse_count": 0,
-            "automatic_remapping": False,
-        }
     dra_meta = _dra_book_meta(book_id)
     dra_book = _corpus_book(str(dra_meta.get("filename")))
     dra_chapter = (dra_book.get("chapters") or {}).get(str(chapter))
@@ -129,24 +119,60 @@ def _chapter_identity(book_id: str, chapter: int, surface: dict) -> dict:
             "exact": False,
             "verified_mapping": False,
             "reason": "dra_chapter_missing",
-            "source_verse_count": len(source_chapter),
+            "source_verse_count": 0,
             "dra_verse_count": 0,
             "automatic_remapping": False,
         }
-    source_set = _numeric_verse_set(source_chapter)
+
+    registry = mapping_status(book_id, "semitic", chapter)
+    verified_map = bool(registry and registry.get("status") == "verified-map")
+    source_chapter = ((surface.get("chapters") or {}).get(str(chapter)))
     dra_set = _numeric_verse_set(dra_chapter)
-    if source_set is None or dra_set is None:
+
+    if not source_chapter:
+        if verified_map:
+            return {
+                "exact": False,
+                "numeric_identifier_identity": False,
+                "verified_mapping": True,
+                "reason": "verified_explicit_cross_chapter_map",
+                "mode": "verified-explicit-map",
+                "source_verse_count": 0,
+                "dra_verse_count": len(dra_set or set()),
+                "source_verse_min": None,
+                "source_verse_max": None,
+                "dra_verse_min": min(dra_set) if dra_set else None,
+                "dra_verse_max": max(dra_set) if dra_set else None,
+                "automatic_remapping": False,
+                "mapping": registry,
+            }
         return {
             "exact": False,
             "verified_mapping": False,
-            "reason": "compound_or_nonnumeric_verse_ids_require_explicit_mapping",
-            "source_verse_count": len(source_chapter),
+            "reason": "source_chapter_missing_or_outside_masoretic_scope",
+            "source_verse_count": 0,
             "dra_verse_count": len(dra_chapter),
             "automatic_remapping": False,
         }
+
+    source_set = _numeric_verse_set(source_chapter)
+    if source_set is None or dra_set is None:
+        return {
+            "exact": False,
+            "verified_mapping": verified_map,
+            "reason": (
+                "verified_explicit_map"
+                if verified_map
+                else "compound_or_nonnumeric_verse_ids_require_explicit_mapping"
+            ),
+            "mode": "verified-explicit-map" if verified_map else "explicit-mapping-required",
+            "source_verse_count": len(source_chapter),
+            "dra_verse_count": len(dra_chapter),
+            "automatic_remapping": False,
+            "mapping": registry if verified_map else None,
+        }
+
     numeric_identity = source_set == dra_set
-    registry = mapping_status(book_id, "semitic", chapter)
-    verified_map = bool(registry and registry.get("status") == "verified-map")
     exact = numeric_identity and not verified_map
     return {
         "exact": exact,
