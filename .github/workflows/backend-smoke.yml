@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 22
-          assert registry['verified_book_count'] >= 15
+          assert registry['verified_mapping_count'] >= 23
+          assert registry['verified_book_count'] >= 16
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -542,5 +542,27 @@ jobs:
           assert all(int(token['verse']) <= 24 for token in romans_16['tokens'])
           assert 'do not synthesize Greek text, transliteration, lemma, POS, or morphology' in romans_16['note']
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including 2 Corinthians Latin and Romans 16 Greek + prayer/Mass/priest portal smoke test passed')
+          third_john_1 = _greek_nt_interlinear_payload('3 John 1')
+          assert third_john_1['versification']['mode'] == 'verified-explicit-map'
+          assert third_john_1['versification']['verified_mapping'] is True
+          assert len(third_john_1['surface']['verses']) == 14
+          j3surface = {int(row['verse']): row for row in third_john_1['surface']['verses']}
+          assert j3surface[13]['mapping_relationship'] == 'identity'
+          assert [(row['chapter'], row['verse']) for row in j3surface[13]['source_verses']] == [(1, '13')]
+          assert j3surface[14]['mapping_relationship'] == 'merge'
+          assert [(row['chapter'], row['verse']) for row in j3surface[14]['source_verses']] == [(1, '14'), (1, '15')]
+          assert j3surface[14]['text']
+          j3alignment = {int(row['verse']): row for row in third_john_1['alignment']['verses']}
+          assert j3alignment[14]['source_missing'] is False
+          assert j3alignment[14]['source_refs'] == [{'chapter': 1, 'verse': '14'}, {'chapter': 1, 'verse': '15'}]
+          source_token_ids = [
+              token['id']
+              for row in j3surface[14]['source_verses']
+              for token in row['tokens']
+          ]
+          returned_token_ids = [token['id'] for token in third_john_1['tokens'] if int(token['verse']) == 14]
+          assert returned_token_ids == source_token_ids
+          assert len(returned_token_ids) == len(set(returned_token_ids))
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including Romans and 3 John Greek + prayer/Mass/priest portal smoke test passed')
           PY

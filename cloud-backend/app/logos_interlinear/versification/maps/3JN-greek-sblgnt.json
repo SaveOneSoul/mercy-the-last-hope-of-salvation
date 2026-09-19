@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.19-3jn-greek-v1",
+  "status": "verified",
+  "book_id": "3JN",
+  "book": "3 John",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "sblgnt",
+    "reference_system": "sblgnt",
+    "corpus_id": "grc_sblgnt_morphgnt",
+    "corpus_version": "2026.09.16-sblgnt-morphgnt-27",
+    "repository": "Faithlife/SBLGNT",
+    "commit": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c",
+    "source_path": "data/sblgnt/text/3John.txt"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "1"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "1",
+      "segments": [
+        {
+          "id": "3JN-1-1-13-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "1",
+              "verse": "1"
+            },
+            {
+              "chapter": "1",
+              "verse": "2"
+            },
+            {
+              "chapter": "1",
+              "verse": "3"
+            },
+            {
+              "chapter": "1",
+              "verse": "4"
+            },
+            {
+              "chapter": "1",
+              "verse": "5"
+            },
+            {
+              "chapter": "1",
+              "verse": "6"
+            },
+            {
+              "chapter": "1",
+              "verse": "7"
+            },
+            {
+              "chapter": "1",
+              "verse": "8"
+            },
+            {
+              "chapter": "1",
+              "verse": "9"
+            },
+            {
+              "chapter": "1",
+              "verse": "10"
+            },
+            {
+              "chapter": "1",
+              "verse": "11"
+            },
+            {
+              "chapter": "1",
+              "verse": "12"
+            },
+            {
+              "chapter": "1",
+              "verse": "13"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "1",
+              "verse": "1"
+            },
+            {
+              "chapter": "1",
+              "verse": "2"
+            },
+            {
+              "chapter": "1",
+              "verse": "3"
+            },
+            {
+              "chapter": "1",
+              "verse": "4"
+            },
+            {
+              "chapter": "1",
+              "verse": "5"
+            },
+            {
+              "chapter": "1",
+              "verse": "6"
+            },
+            {
+              "chapter": "1",
+              "verse": "7"
+            },
+            {
+              "chapter": "1",
+              "verse": "8"
+            },
+            {
+              "chapter": "1",
+              "verse": "9"
+            },
+            {
+              "chapter": "1",
+              "verse": "10"
+            },
+            {
+              "chapter": "1",
+              "verse": "11"
+            },
+            {
+              "chapter": "1",
+              "verse": "12"
+            },
+            {
+              "chapter": "1",
+              "verse": "13"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Faithlife/SBLGNT 3John.txt at commit c4d241a9c1c479a55b989ba35a4976c1d0b8052c contains 3 John 1:1-13 with the same numbered divisions as Douay-Rheims."
+          }
+        },
+        {
+          "id": "3JN-1-14-greek",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "1",
+              "verse": "14"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "1",
+              "verse": "14"
+            },
+            {
+              "chapter": "1",
+              "verse": "15"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims 3 John 1:14 contains both the face-to-face closing of pinned SBLGNT 1:14 and the peace/friends greetings of pinned SBLGNT 1:15. Both native Greek source verses are preserved and concatenated only for the canonical display row."
+          }
+        }
+      ]
+    }
+  ]
+}
