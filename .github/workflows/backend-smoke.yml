@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 27
-          assert registry['verified_book_count'] >= 19
+          assert registry['verified_mapping_count'] >= 29
+          assert registry['verified_book_count'] >= 20
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -669,5 +669,29 @@ jobs:
           assert [(row['chapter'], row['verse']) for row in mat23s[15]['source_verses']] == [(23, '15')]
           assert [(row['chapter'], row['verse']) for row in mat23s[39]['source_verses']] == [(23, '39')]
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
+          second_thessalonians_greek_2 = _greek_nt_interlinear_payload('2 Thessalonians 2')
+          assert second_thessalonians_greek_2['versification']['mode'] == 'verified-explicit-map'
+          assert second_thessalonians_greek_2['versification']['verified_mapping'] is True
+          assert len(second_thessalonians_greek_2['surface']['verses']) == 16
+          th2g = {int(row['verse']): row for row in second_thessalonians_greek_2['surface']['verses']}
+          assert th2g[9]['mapping_relationship'] == 'identity'
+          assert [(row['chapter'], row['verse']) for row in th2g[9]['source_verses']] == [(2, '9')]
+          assert th2g[10]['mapping_relationship'] == 'merge'
+          assert [(row['chapter'], row['verse']) for row in th2g[10]['source_verses']] == [(2, '10'), (2, '11')]
+          assert th2g[11]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in th2g[11]['source_verses']] == [(2, '12')]
+          assert [(row['chapter'], row['verse']) for row in th2g[16]['source_verses']] == [(2, '17')]
+
+          second_thessalonians_latin_2 = _latin_study_payload('2 Thessalonians 2')
+          assert second_thessalonians_latin_2['alignment']['mode'] == 'verified-explicit-map'
+          assert second_thessalonians_latin_2['alignment']['verified_mapping'] is True
+          assert len(second_thessalonians_latin_2['verses']) == 16
+          th2l = {row['verse']: row for row in second_thessalonians_latin_2['verses']}
+          assert th2l[10]['mapping_relationship'] == 'merge'
+          assert [(row['chapter'], row['verse']) for row in th2l[10]['source_verses']] == [(2, 10), (2, 11)]
+          assert th2l[11]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in th2l[11]['source_verses']] == [(2, 12)]
+          assert [(row['chapter'], row['verse']) for row in th2l[16]['source_verses']] == [(2, 17)]
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including 2 Thessalonians, Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
           PY
