@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 23,
-    "books_resolved": 50,
-    "unresolved_lane_count": 44,
-    "verified_registry_lane_count": 36,
+    "books_unresolved": 22,
+    "books_resolved": 51,
+    "unresolved_lane_count": 43,
+    "verified_registry_lane_count": 37,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -1456,10 +1456,28 @@
       "id": "DAN",
       "book": "Daniel",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.20-dan-semitic-v1",
+          "file": "maps/DAN-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "3",
+            "5",
+            "6",
+            "13",
+            "14"
+          ],
+          "audited_mismatch_chapters": [
+            "3",
+            "5",
+            "6",
+            "13",
+            "14"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "3",
@@ -1467,8 +1485,7 @@
             "6",
             "13",
             "14"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
           "status": "resolved-existing-map",
