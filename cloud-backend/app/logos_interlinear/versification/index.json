@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.19-v19",
+  "registry_version": "2026.09.19-v20",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -176,6 +176,12 @@
       "lane": "greek",
       "status": "verified",
       "file": "maps/LUK-greek-sblgnt.json"
+    },
+    {
+      "book_id": "MAT",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/MAT-greek-sblgnt.json"
     }
   ]
 }
