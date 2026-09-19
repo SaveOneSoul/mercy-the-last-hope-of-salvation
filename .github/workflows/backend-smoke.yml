@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 20
-          assert registry['verified_book_count'] >= 13
+          assert registry['verified_mapping_count'] >= 21
+          assert registry['verified_book_count'] >= 14
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -505,5 +505,18 @@ jobs:
           assert [(row['source_chapter'], row['source_verse']) for row in ecc7g[2]['source_verses']] == [('7', '1')]
           assert [(row['source_chapter'], row['source_verse']) for row in ecc7g[30]['source_verses']] == [('7', '29')]
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah/Zephaniah/Malachi/Joel/Nahum/Haggai/Zechariah/Judges/Ecclesiastes source versification + prayer/Mass/priest portal smoke test passed')
+          second_corinthians_latin_1 = _latin_study_payload('2 Corinthians 1')
+          assert second_corinthians_latin_1['alignment']['mode'] == 'verified-explicit-map'
+          assert second_corinthians_latin_1['alignment']['verified_mapping'] is True
+          assert len(second_corinthians_latin_1['verses']) == 24
+          co2lat1 = {row['verse']: row for row in second_corinthians_latin_1['verses']}
+          assert co2lat1[22]['mapping_relationship'] == 'identity'
+          assert [(row['chapter'], row['verse']) for row in co2lat1[22]['source_verses']] == [(1, 22)]
+          for canonical in (23, 24):
+              assert co2lat1[canonical]['mapping_relationship'] == 'split'
+              assert [(row['chapter'], row['verse']) for row in co2lat1[canonical]['source_verses']] == [(1, 23)]
+              assert co2lat1[canonical]['surface']
+          assert co2lat1[23]['surface'] == co2lat1[24]['surface']
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including 2 Corinthians Latin + prayer/Mass/priest portal smoke test passed')
           PY
