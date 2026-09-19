@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.19-v8",
+  "registry_version": "2026.09.19-v9",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -74,6 +74,12 @@
       "lane": "semitic",
       "status": "verified",
       "file": "maps/MAL-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "JOL",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/JOL-semitic-oshb-wlc.json"
     }
   ]
 }
