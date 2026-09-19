@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 32,
-    "books_resolved": 41,
-    "unresolved_lane_count": 58,
-    "verified_registry_lane_count": 22,
+    "books_unresolved": 31,
+    "books_resolved": 42,
+    "unresolved_lane_count": 57,
+    "verified_registry_lane_count": 23,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -2445,18 +2445,27 @@
       "id": "3JN",
       "book": "3 John",
       "testament": "NT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
           "status": "not-applicable"
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.19-3jn-greek-v1",
+          "file": "maps/3JN-greek-sblgnt.json",
+          "covered_chapters": [
+            "1"
+          ],
+          "audited_mismatch_chapters": [
+            "1"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "1"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
