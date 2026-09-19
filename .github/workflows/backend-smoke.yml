@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 16
-          assert registry['verified_book_count'] >= 11
+          assert registry['verified_mapping_count'] >= 18
+          assert registry['verified_book_count'] >= 12
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -448,5 +448,32 @@ jobs:
           assert [(row['source_chapter'], row['source_verse']) for row in zec12g[13]['source_verses']] == [('12', '13')]
           assert [(row['source_chapter'], row['source_verse']) for row in zec12g[14]['source_verses']] == [('12', '14')]
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah/Zephaniah/Malachi/Joel/Nahum/Haggai/Zechariah source versification + prayer/Mass/priest portal smoke test passed')
+          judges_greek_5 = _full_greek_study_payload('Judges 5')
+          assert judges_greek_5['alignment']['mode'] == 'verified-explicit-map'
+          assert judges_greek_5['alignment']['verified_mapping'] is True
+          assert len(judges_greek_5['verses']) == 32
+          jdg5g = {row['verse']: row for row in judges_greek_5['verses']}
+          for canonical in (31, 32):
+              assert jdg5g[canonical]['mapping_relationship'] == 'split'
+              assert [(row['source_chapter'], row['source_verse']) for row in jdg5g[canonical]['source_verses']] == [('5', '31')]
+          judges_greek_21 = _full_greek_study_payload('Judges 21')
+          assert judges_greek_21['alignment']['mode'] == 'verified-explicit-map'
+          jdg21g = {row['verse']: row for row in judges_greek_21['verses']}
+          assert jdg21g[24]['mapping_relationship'] == 'merge'
+          assert [(row['source_chapter'], row['source_verse']) for row in jdg21g[24]['source_verses']] == [('21', '24'), ('21', '25')]
+
+          judges_semitic_5 = _semitic_study_payload('Judges 5')
+          assert judges_semitic_5['alignment']['mode'] == 'verified-explicit-map'
+          assert len(judges_semitic_5['verses']) == 32
+          jdg5s = {row['verse']: row for row in judges_semitic_5['verses']}
+          for canonical in (31, 32):
+              assert jdg5s[canonical]['mapping_relationship'] == 'split'
+              assert [(row['chapter'], row['verse']) for row in jdg5s[canonical]['source_verses']] == [(5, 31)]
+          judges_semitic_21 = _semitic_study_payload('Judges 21')
+          assert judges_semitic_21['alignment']['mode'] == 'verified-explicit-map'
+          jdg21s = {row['verse']: row for row in judges_semitic_21['verses']}
+          assert jdg21s[24]['mapping_relationship'] == 'merge'
+          assert [(row['chapter'], row['verse']) for row in jdg21s[24]['source_verses']] == [(21, 24), (21, 25)]
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah/Zephaniah/Malachi/Joel/Nahum/Haggai/Zechariah/Judges source versification + prayer/Mass/priest portal smoke test passed')
           PY
