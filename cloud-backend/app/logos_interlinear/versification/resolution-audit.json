@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 25,
-    "books_resolved": 48,
-    "unresolved_lane_count": 47,
-    "verified_registry_lane_count": 33,
+    "books_unresolved": 24,
+    "books_resolved": 49,
+    "unresolved_lane_count": 45,
+    "verified_registry_lane_count": 35,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -471,26 +471,50 @@
       "id": "2KI",
       "book": "2 Kings",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.20-2ki-semitic-v1",
+          "file": "maps/2KI-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "11",
+            "12"
+          ],
+          "audited_mismatch_chapters": [
+            "11",
+            "12"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "11",
             "12"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.20-2ki-greek-v1",
+          "file": "maps/2KI-greek-first1k-swete.json",
+          "covered_chapters": [
+            "1",
+            "14",
+            "25"
+          ],
+          "audited_mismatch_chapters": [
+            "1",
+            "14",
+            "25"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "1",
             "14",
             "25"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
