@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 27,
-    "books_resolved": 46,
-    "unresolved_lane_count": 51,
-    "verified_registry_lane_count": 29,
+    "books_unresolved": 26,
+    "books_resolved": 47,
+    "unresolved_lane_count": 49,
+    "verified_registry_lane_count": 31,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -1989,27 +1989,47 @@
       "id": "JHN",
       "book": "John",
       "testament": "NT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
           "status": "not-applicable"
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.20-jhn-greek-v1",
+          "file": "maps/JHN-greek-sblgnt.json",
+          "covered_chapters": [
+            "5",
+            "6"
+          ],
+          "audited_mismatch_chapters": [
+            "5",
+            "6"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "5",
             "6"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.20-jhn-latin-v1",
+          "file": "maps/JHN-latin-vulgate-clementine.json",
+          "covered_chapters": [
+            "11"
+          ],
+          "audited_mismatch_chapters": [
+            "11"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "11"
-          ],
-          "registry": null
+          ]
         }
       }
     },
