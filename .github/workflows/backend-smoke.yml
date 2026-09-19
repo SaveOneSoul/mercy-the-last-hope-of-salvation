@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 31
-          assert registry['verified_book_count'] >= 21
+          assert registry['verified_mapping_count'] >= 33
+          assert registry['verified_book_count'] >= 22
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -724,5 +724,40 @@ jobs:
               assert [(row['chapter'], row['verse']) for row in john11l[canonical]['source_verses']] == [(11, 56)]
               assert john11l[canonical]['surface']
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including John, 2 Thessalonians, Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
+          second_samuel_semitic_18 = _semitic_study_payload('2 Samuel 18')
+          assert second_samuel_semitic_18['alignment']['mode'] == 'verified-explicit-map'
+          assert len(second_samuel_semitic_18['verses']) == 33
+          sa2s18 = {row['verse']: row for row in second_samuel_semitic_18['verses']}
+          assert sa2s18[32]['mapping_relationship'] == 'identity'
+          assert [(row['chapter'], row['verse']) for row in sa2s18[32]['source_verses']] == [(18, 32)]
+          assert sa2s18[33]['mapping_relationship'] == 'renumber'
+          assert [(row['chapter'], row['verse']) for row in sa2s18[33]['source_verses']] == [(19, 1)]
+
+          second_samuel_semitic_19 = _semitic_study_payload('2 Samuel 19')
+          assert second_samuel_semitic_19['alignment']['mode'] == 'verified-explicit-map'
+          assert len(second_samuel_semitic_19['verses']) == 43
+          sa2s19 = {row['verse']: row for row in second_samuel_semitic_19['verses']}
+          assert sa2s19[1]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in sa2s19[1]['source_verses']] == [(19, 2)]
+          assert [(row['chapter'], row['verse']) for row in sa2s19[43]['source_verses']] == [(19, 44)]
+
+          second_samuel_greek_19 = _full_greek_study_payload('2 Samuel 19')
+          assert second_samuel_greek_19['alignment']['mode'] == 'verified-explicit-map'
+          assert len(second_samuel_greek_19['verses']) == 43
+          sa2g19 = {row['verse']: row for row in second_samuel_greek_19['verses']}
+          for canonical in (42, 43):
+              assert sa2g19[canonical]['mapping_relationship'] == 'split'
+              assert [(row['source_chapter'], row['source_verse']) for row in sa2g19[canonical]['source_verses']] == [('19', '42')]
+
+          second_samuel_greek_23 = _full_greek_study_payload('2 Samuel 23')
+          assert second_samuel_greek_23['alignment']['mode'] == 'verified-explicit-map'
+          assert len(second_samuel_greek_23['verses']) == 39
+          sa2g23 = {row['verse']: row for row in second_samuel_greek_23['verses']}
+          assert sa2g23[30]['mapping_relationship'] == 'renumber'
+          assert [(row['source_chapter'], row['source_verse']) for row in sa2g23[30]['source_verses']] == [('23', '30a')]
+          assert sa2g23[31]['mapping_relationship'] == 'merge'
+          assert [(row['source_chapter'], row['source_verse']) for row in sa2g23[31]['source_verses']] == [('23', '31a'), ('23', '31')]
+          assert [(row['source_chapter'], row['source_verse']) for row in sa2g23[32]['source_verses']] == [('23', '32')]
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including 2 Samuel, John, 2 Thessalonians, Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
           PY

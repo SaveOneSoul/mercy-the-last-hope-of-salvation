@@ -1,0 +1,682 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.20-2sa-semitic-v1",
+  "status": "verified",
+  "book_id": "2SA",
+  "book": "2 Samuel",
+  "lane": "semitic",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "oshb",
+    "reference_system": "oshb-wlc-osis",
+    "corpus_id": "heb_arc_oshb_wlc",
+    "corpus_version": "2026.09.16-oshb-wlc-39",
+    "repository": "openscriptures/morphhb",
+    "commit": "3d15126fb1ef74867fc1434be1942e837932691f"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "18",
+      "19"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "18",
+      "segments": [
+        {
+          "id": "2SA-18-1-32-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "18",
+              "verse": "1"
+            },
+            {
+              "chapter": "18",
+              "verse": "2"
+            },
+            {
+              "chapter": "18",
+              "verse": "3"
+            },
+            {
+              "chapter": "18",
+              "verse": "4"
+            },
+            {
+              "chapter": "18",
+              "verse": "5"
+            },
+            {
+              "chapter": "18",
+              "verse": "6"
+            },
+            {
+              "chapter": "18",
+              "verse": "7"
+            },
+            {
+              "chapter": "18",
+              "verse": "8"
+            },
+            {
+              "chapter": "18",
+              "verse": "9"
+            },
+            {
+              "chapter": "18",
+              "verse": "10"
+            },
+            {
+              "chapter": "18",
+              "verse": "11"
+            },
+            {
+              "chapter": "18",
+              "verse": "12"
+            },
+            {
+              "chapter": "18",
+              "verse": "13"
+            },
+            {
+              "chapter": "18",
+              "verse": "14"
+            },
+            {
+              "chapter": "18",
+              "verse": "15"
+            },
+            {
+              "chapter": "18",
+              "verse": "16"
+            },
+            {
+              "chapter": "18",
+              "verse": "17"
+            },
+            {
+              "chapter": "18",
+              "verse": "18"
+            },
+            {
+              "chapter": "18",
+              "verse": "19"
+            },
+            {
+              "chapter": "18",
+              "verse": "20"
+            },
+            {
+              "chapter": "18",
+              "verse": "21"
+            },
+            {
+              "chapter": "18",
+              "verse": "22"
+            },
+            {
+              "chapter": "18",
+              "verse": "23"
+            },
+            {
+              "chapter": "18",
+              "verse": "24"
+            },
+            {
+              "chapter": "18",
+              "verse": "25"
+            },
+            {
+              "chapter": "18",
+              "verse": "26"
+            },
+            {
+              "chapter": "18",
+              "verse": "27"
+            },
+            {
+              "chapter": "18",
+              "verse": "28"
+            },
+            {
+              "chapter": "18",
+              "verse": "29"
+            },
+            {
+              "chapter": "18",
+              "verse": "30"
+            },
+            {
+              "chapter": "18",
+              "verse": "31"
+            },
+            {
+              "chapter": "18",
+              "verse": "32"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "18",
+              "verse": "1"
+            },
+            {
+              "chapter": "18",
+              "verse": "2"
+            },
+            {
+              "chapter": "18",
+              "verse": "3"
+            },
+            {
+              "chapter": "18",
+              "verse": "4"
+            },
+            {
+              "chapter": "18",
+              "verse": "5"
+            },
+            {
+              "chapter": "18",
+              "verse": "6"
+            },
+            {
+              "chapter": "18",
+              "verse": "7"
+            },
+            {
+              "chapter": "18",
+              "verse": "8"
+            },
+            {
+              "chapter": "18",
+              "verse": "9"
+            },
+            {
+              "chapter": "18",
+              "verse": "10"
+            },
+            {
+              "chapter": "18",
+              "verse": "11"
+            },
+            {
+              "chapter": "18",
+              "verse": "12"
+            },
+            {
+              "chapter": "18",
+              "verse": "13"
+            },
+            {
+              "chapter": "18",
+              "verse": "14"
+            },
+            {
+              "chapter": "18",
+              "verse": "15"
+            },
+            {
+              "chapter": "18",
+              "verse": "16"
+            },
+            {
+              "chapter": "18",
+              "verse": "17"
+            },
+            {
+              "chapter": "18",
+              "verse": "18"
+            },
+            {
+              "chapter": "18",
+              "verse": "19"
+            },
+            {
+              "chapter": "18",
+              "verse": "20"
+            },
+            {
+              "chapter": "18",
+              "verse": "21"
+            },
+            {
+              "chapter": "18",
+              "verse": "22"
+            },
+            {
+              "chapter": "18",
+              "verse": "23"
+            },
+            {
+              "chapter": "18",
+              "verse": "24"
+            },
+            {
+              "chapter": "18",
+              "verse": "25"
+            },
+            {
+              "chapter": "18",
+              "verse": "26"
+            },
+            {
+              "chapter": "18",
+              "verse": "27"
+            },
+            {
+              "chapter": "18",
+              "verse": "28"
+            },
+            {
+              "chapter": "18",
+              "verse": "29"
+            },
+            {
+              "chapter": "18",
+              "verse": "30"
+            },
+            {
+              "chapter": "18",
+              "verse": "31"
+            },
+            {
+              "chapter": "18",
+              "verse": "32"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims 2 Samuel 18:1-32 and OSHB/WLC preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "2SA-18-33-semitic-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "18",
+              "verse": "33"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "19",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned OSHB VerseMap explicitly maps WLC 2Sam.19.1 to KJV-style 2Sam.18.33; the verse is David's grief for Absalom, matching Douay-Rheims 18:33."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "19",
+      "segments": [
+        {
+          "id": "2SA-19-1-43-semitic",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "19",
+              "verse": "1"
+            },
+            {
+              "chapter": "19",
+              "verse": "2"
+            },
+            {
+              "chapter": "19",
+              "verse": "3"
+            },
+            {
+              "chapter": "19",
+              "verse": "4"
+            },
+            {
+              "chapter": "19",
+              "verse": "5"
+            },
+            {
+              "chapter": "19",
+              "verse": "6"
+            },
+            {
+              "chapter": "19",
+              "verse": "7"
+            },
+            {
+              "chapter": "19",
+              "verse": "8"
+            },
+            {
+              "chapter": "19",
+              "verse": "9"
+            },
+            {
+              "chapter": "19",
+              "verse": "10"
+            },
+            {
+              "chapter": "19",
+              "verse": "11"
+            },
+            {
+              "chapter": "19",
+              "verse": "12"
+            },
+            {
+              "chapter": "19",
+              "verse": "13"
+            },
+            {
+              "chapter": "19",
+              "verse": "14"
+            },
+            {
+              "chapter": "19",
+              "verse": "15"
+            },
+            {
+              "chapter": "19",
+              "verse": "16"
+            },
+            {
+              "chapter": "19",
+              "verse": "17"
+            },
+            {
+              "chapter": "19",
+              "verse": "18"
+            },
+            {
+              "chapter": "19",
+              "verse": "19"
+            },
+            {
+              "chapter": "19",
+              "verse": "20"
+            },
+            {
+              "chapter": "19",
+              "verse": "21"
+            },
+            {
+              "chapter": "19",
+              "verse": "22"
+            },
+            {
+              "chapter": "19",
+              "verse": "23"
+            },
+            {
+              "chapter": "19",
+              "verse": "24"
+            },
+            {
+              "chapter": "19",
+              "verse": "25"
+            },
+            {
+              "chapter": "19",
+              "verse": "26"
+            },
+            {
+              "chapter": "19",
+              "verse": "27"
+            },
+            {
+              "chapter": "19",
+              "verse": "28"
+            },
+            {
+              "chapter": "19",
+              "verse": "29"
+            },
+            {
+              "chapter": "19",
+              "verse": "30"
+            },
+            {
+              "chapter": "19",
+              "verse": "31"
+            },
+            {
+              "chapter": "19",
+              "verse": "32"
+            },
+            {
+              "chapter": "19",
+              "verse": "33"
+            },
+            {
+              "chapter": "19",
+              "verse": "34"
+            },
+            {
+              "chapter": "19",
+              "verse": "35"
+            },
+            {
+              "chapter": "19",
+              "verse": "36"
+            },
+            {
+              "chapter": "19",
+              "verse": "37"
+            },
+            {
+              "chapter": "19",
+              "verse": "38"
+            },
+            {
+              "chapter": "19",
+              "verse": "39"
+            },
+            {
+              "chapter": "19",
+              "verse": "40"
+            },
+            {
+              "chapter": "19",
+              "verse": "41"
+            },
+            {
+              "chapter": "19",
+              "verse": "42"
+            },
+            {
+              "chapter": "19",
+              "verse": "43"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "19",
+              "verse": "2"
+            },
+            {
+              "chapter": "19",
+              "verse": "3"
+            },
+            {
+              "chapter": "19",
+              "verse": "4"
+            },
+            {
+              "chapter": "19",
+              "verse": "5"
+            },
+            {
+              "chapter": "19",
+              "verse": "6"
+            },
+            {
+              "chapter": "19",
+              "verse": "7"
+            },
+            {
+              "chapter": "19",
+              "verse": "8"
+            },
+            {
+              "chapter": "19",
+              "verse": "9"
+            },
+            {
+              "chapter": "19",
+              "verse": "10"
+            },
+            {
+              "chapter": "19",
+              "verse": "11"
+            },
+            {
+              "chapter": "19",
+              "verse": "12"
+            },
+            {
+              "chapter": "19",
+              "verse": "13"
+            },
+            {
+              "chapter": "19",
+              "verse": "14"
+            },
+            {
+              "chapter": "19",
+              "verse": "15"
+            },
+            {
+              "chapter": "19",
+              "verse": "16"
+            },
+            {
+              "chapter": "19",
+              "verse": "17"
+            },
+            {
+              "chapter": "19",
+              "verse": "18"
+            },
+            {
+              "chapter": "19",
+              "verse": "19"
+            },
+            {
+              "chapter": "19",
+              "verse": "20"
+            },
+            {
+              "chapter": "19",
+              "verse": "21"
+            },
+            {
+              "chapter": "19",
+              "verse": "22"
+            },
+            {
+              "chapter": "19",
+              "verse": "23"
+            },
+            {
+              "chapter": "19",
+              "verse": "24"
+            },
+            {
+              "chapter": "19",
+              "verse": "25"
+            },
+            {
+              "chapter": "19",
+              "verse": "26"
+            },
+            {
+              "chapter": "19",
+              "verse": "27"
+            },
+            {
+              "chapter": "19",
+              "verse": "28"
+            },
+            {
+              "chapter": "19",
+              "verse": "29"
+            },
+            {
+              "chapter": "19",
+              "verse": "30"
+            },
+            {
+              "chapter": "19",
+              "verse": "31"
+            },
+            {
+              "chapter": "19",
+              "verse": "32"
+            },
+            {
+              "chapter": "19",
+              "verse": "33"
+            },
+            {
+              "chapter": "19",
+              "verse": "34"
+            },
+            {
+              "chapter": "19",
+              "verse": "35"
+            },
+            {
+              "chapter": "19",
+              "verse": "36"
+            },
+            {
+              "chapter": "19",
+              "verse": "37"
+            },
+            {
+              "chapter": "19",
+              "verse": "38"
+            },
+            {
+              "chapter": "19",
+              "verse": "39"
+            },
+            {
+              "chapter": "19",
+              "verse": "40"
+            },
+            {
+              "chapter": "19",
+              "verse": "41"
+            },
+            {
+              "chapter": "19",
+              "verse": "42"
+            },
+            {
+              "chapter": "19",
+              "verse": "43"
+            },
+            {
+              "chapter": "19",
+              "verse": "44"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned OSHB VerseMap maps WLC 2Sam.19.2-44 sequentially to KJV/Douay-style 2Sam.19.1-43 after WLC 19:1 is assigned to canonical 18:33."
+          }
+        }
+      ]
+    }
+  ]
+}
