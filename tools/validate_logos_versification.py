@@ -208,20 +208,30 @@ def validate_mapping(entry: dict[str, Any], book_index: dict[str, dict[str, Any]
     coverage = payload.get("coverage") or {}
     covered = {str(value) for value in coverage.get("audited_mismatch_chapters") or []}
     overrides = {str(value) for value in coverage.get("verified_override_chapters") or []}
-    declared = covered | overrides
+    structural_source = {str(value) for value in coverage.get("structural_source_chapters") or []}
+    require(structural_source <= covered, f"{filename}: structural source chapters must be a subset of audited mismatches")
+    declared = (covered - structural_source) | overrides
     require(not (covered & overrides), f"{filename}: audited mismatch and override chapter sets must be disjoint")
     chapters = payload.get("chapters") or []
     require(isinstance(chapters, list), f"{filename}: chapters must be a list")
     chapter_ids = {str(row.get("canonical_chapter") or "") for row in chapters}
     require("" not in chapter_ids, f"{filename}: canonical_chapter required")
-    require(chapter_ids == declared, f"{filename}: chapter inventory must equal audited mismatch plus verified override chapters")
+    require(chapter_ids == declared, f"{filename}: chapter inventory must equal canonical audited mismatches plus verified override chapters")
 
     audited = audited_mismatch_chapters(book_id, lane)
     verified = status == "verified"
     if verified:
         require(coverage.get("complete_for_audited_mismatches") is True, f"{filename}: verified mapping must declare complete audited coverage")
         require(covered == audited, f"{filename}: audited mapping coverage {sorted(covered)} does not equal structural audit mismatches {sorted(audited)}")
-        require(bool(declared), f"{filename}: verified mapping must cover at least one audited mismatch or evidenced numeric-identity override")
+        require(bool(declared or structural_source), f"{filename}: verified mapping must cover at least one audited mismatch or evidenced numeric-identity override")
+        if structural_source:
+            require(coverage.get("complete_for_structural_source_chapters") is True, f"{filename}: structural source chapters require complete_for_structural_source_chapters=true")
+            evidence = coverage.get("structural_source_chapter_evidence") or {}
+            require(isinstance(evidence, dict), f"{filename}: structural_source_chapter_evidence must be an object")
+            require(set(str(key) for key in evidence) == structural_source, f"{filename}: structural source evidence keys must equal structural_source_chapters")
+            for source_chapter in structural_source:
+                row = evidence.get(source_chapter) or {}
+                require(str(row.get("citation") or "").strip(), f"{filename}: structural source chapter {source_chapter} requires evidence.citation")
         if overrides:
             require(coverage.get("complete_for_numeric_identity_overrides") is True, f"{filename}: override chapters require complete_for_numeric_identity_overrides=true")
             evidence = coverage.get("numeric_identity_override_evidence") or {}
@@ -249,6 +259,16 @@ def validate_mapping(entry: dict[str, Any], book_index: dict[str, dict[str, Any]
                 lane_refs=lane_inventory,
                 seen_canonical=seen_canonical,
                 seen_source=seen_source,
+            )
+
+    if verified and structural_source:
+        for source_chapter in structural_source:
+            source_chapter_refs = {ref for ref in lane_inventory if ref[0] == source_chapter}
+            require(source_chapter_refs, f"{filename}: structural source chapter {source_chapter} does not exist in pinned corpus")
+            missing = source_chapter_refs - set(seen_source)
+            require(
+                not missing,
+                f"{filename}: structural source chapter {source_chapter} is not fully consumed by cross-chapter mappings: {sorted(missing)}",
             )
 
 

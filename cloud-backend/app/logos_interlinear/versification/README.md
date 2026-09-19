@@ -81,6 +81,8 @@ A `verified` file must provide evidence for every segment, must cover exactly th
 
 If a pinned source and Douay-Rheims have the same numeric verse identifiers but comparison proves that the content boundaries are shifted, the file may additionally declare `coverage.verified_override_chapters`. Such chapters require `complete_for_numeric_identity_overrides: true` plus a chapter-keyed `numeric_identity_override_evidence` citation. A verified override takes precedence over apparent numeric identity at runtime; equal verse counts alone are never sufficient evidence of alignment.
 
+If the source tradition contains a chapter that has no same-numbered Douay chapter because its verses are fully mapped into another canonical chapter, declare that source chapter in `coverage.structural_source_chapters`. A verified mapping must also set `complete_for_structural_source_chapters: true`, provide `structural_source_chapter_evidence`, and prove that every verse of that pinned source chapter is consumed by the enumerated cross-chapter mappings. This records chapter-structure differences without creating or deleting Scripture divisions.
+
 ## Integrity rules
 
 - Never edit or renumber the imported source corpora to make them match Douay-Rheims.
