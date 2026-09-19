@@ -1,0 +1,1748 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.20-ezr-greek-v1",
+  "status": "verified",
+  "book_id": "EZR",
+  "book": "Ezra",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "first1kgreek-swete",
+    "reference_system": "swete-first1k-source-numbering",
+    "corpus_id": "grc_ot_catholic_full",
+    "corpus_version": "2026.09.17-catholic-lxx-full"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "2",
+      "5",
+      "6",
+      "8",
+      "10"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "2",
+      "segments": [
+        {
+          "id": "EZR-2-1-12-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Ezra 2:1-12 and pinned Swete/First1KGreek Ezra 2:1-12 preserve matching numbered source divisions."
+          }
+        },
+        {
+          "id": "EZR-2-13-14-greek",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "13"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Swete Ezra 2:13 contains both the Adonicam total printed as Douay 2:13 and the Beguai total printed as Douay 2:14. The intact source verse is shared by both canonical rows."
+          }
+        },
+        {
+          "id": "EZR-2-15-16-greek",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "15"
+            },
+            {
+              "chapter": "2",
+              "verse": "16"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "14"
+            },
+            {
+              "chapter": "2",
+              "verse": "15"
+            }
+          ],
+          "evidence": {
+            "citation": "After the collapsed Swete 2:13 boundary, Douay Ezra 2:15-16 corresponds sequentially to pinned Swete 2:14-15 (Adin; Ather/Ezechias)."
+          }
+        },
+        {
+          "id": "EZR-2-17-20-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "17"
+            },
+            {
+              "chapter": "2",
+              "verse": "18"
+            },
+            {
+              "chapter": "2",
+              "verse": "19"
+            },
+            {
+              "chapter": "2",
+              "verse": "20"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "17"
+            },
+            {
+              "chapter": "2",
+              "verse": "18"
+            },
+            {
+              "chapter": "2",
+              "verse": "19"
+            },
+            {
+              "chapter": "2",
+              "verse": "20"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay and Swete Ezra 2:17-20 realign and preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "EZR-2-21-22-greek",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "21"
+            },
+            {
+              "chapter": "2",
+              "verse": "22"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "21"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Swete Ezra 2:21 contains both Bethlehem (Douay 2:21) and Netupha (Douay 2:22), with the native source boundary preserved as one source record."
+          }
+        },
+        {
+          "id": "EZR-2-23-38-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "23"
+            },
+            {
+              "chapter": "2",
+              "verse": "24"
+            },
+            {
+              "chapter": "2",
+              "verse": "25"
+            },
+            {
+              "chapter": "2",
+              "verse": "26"
+            },
+            {
+              "chapter": "2",
+              "verse": "27"
+            },
+            {
+              "chapter": "2",
+              "verse": "28"
+            },
+            {
+              "chapter": "2",
+              "verse": "29"
+            },
+            {
+              "chapter": "2",
+              "verse": "30"
+            },
+            {
+              "chapter": "2",
+              "verse": "31"
+            },
+            {
+              "chapter": "2",
+              "verse": "32"
+            },
+            {
+              "chapter": "2",
+              "verse": "33"
+            },
+            {
+              "chapter": "2",
+              "verse": "34"
+            },
+            {
+              "chapter": "2",
+              "verse": "35"
+            },
+            {
+              "chapter": "2",
+              "verse": "36"
+            },
+            {
+              "chapter": "2",
+              "verse": "37"
+            },
+            {
+              "chapter": "2",
+              "verse": "38"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "23"
+            },
+            {
+              "chapter": "2",
+              "verse": "24"
+            },
+            {
+              "chapter": "2",
+              "verse": "25"
+            },
+            {
+              "chapter": "2",
+              "verse": "26"
+            },
+            {
+              "chapter": "2",
+              "verse": "27"
+            },
+            {
+              "chapter": "2",
+              "verse": "28"
+            },
+            {
+              "chapter": "2",
+              "verse": "29"
+            },
+            {
+              "chapter": "2",
+              "verse": "30"
+            },
+            {
+              "chapter": "2",
+              "verse": "31"
+            },
+            {
+              "chapter": "2",
+              "verse": "32"
+            },
+            {
+              "chapter": "2",
+              "verse": "33"
+            },
+            {
+              "chapter": "2",
+              "verse": "34"
+            },
+            {
+              "chapter": "2",
+              "verse": "35"
+            },
+            {
+              "chapter": "2",
+              "verse": "36"
+            },
+            {
+              "chapter": "2",
+              "verse": "37"
+            },
+            {
+              "chapter": "2",
+              "verse": "38"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay and Swete Ezra 2:23-38 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "EZR-2-39-greek-gap",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "39"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "Douay Ezra 2:39 contains the sons of Harim, while the pinned Swete payload jumps from 2:38 (Pashur) to 2:40 (Levites). The registry records this canonical-only source gap and does not synthesize Greek text."
+          }
+        },
+        {
+          "id": "EZR-2-40-70-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "40"
+            },
+            {
+              "chapter": "2",
+              "verse": "41"
+            },
+            {
+              "chapter": "2",
+              "verse": "42"
+            },
+            {
+              "chapter": "2",
+              "verse": "43"
+            },
+            {
+              "chapter": "2",
+              "verse": "44"
+            },
+            {
+              "chapter": "2",
+              "verse": "45"
+            },
+            {
+              "chapter": "2",
+              "verse": "46"
+            },
+            {
+              "chapter": "2",
+              "verse": "47"
+            },
+            {
+              "chapter": "2",
+              "verse": "48"
+            },
+            {
+              "chapter": "2",
+              "verse": "49"
+            },
+            {
+              "chapter": "2",
+              "verse": "50"
+            },
+            {
+              "chapter": "2",
+              "verse": "51"
+            },
+            {
+              "chapter": "2",
+              "verse": "52"
+            },
+            {
+              "chapter": "2",
+              "verse": "53"
+            },
+            {
+              "chapter": "2",
+              "verse": "54"
+            },
+            {
+              "chapter": "2",
+              "verse": "55"
+            },
+            {
+              "chapter": "2",
+              "verse": "56"
+            },
+            {
+              "chapter": "2",
+              "verse": "57"
+            },
+            {
+              "chapter": "2",
+              "verse": "58"
+            },
+            {
+              "chapter": "2",
+              "verse": "59"
+            },
+            {
+              "chapter": "2",
+              "verse": "60"
+            },
+            {
+              "chapter": "2",
+              "verse": "61"
+            },
+            {
+              "chapter": "2",
+              "verse": "62"
+            },
+            {
+              "chapter": "2",
+              "verse": "63"
+            },
+            {
+              "chapter": "2",
+              "verse": "64"
+            },
+            {
+              "chapter": "2",
+              "verse": "65"
+            },
+            {
+              "chapter": "2",
+              "verse": "66"
+            },
+            {
+              "chapter": "2",
+              "verse": "67"
+            },
+            {
+              "chapter": "2",
+              "verse": "68"
+            },
+            {
+              "chapter": "2",
+              "verse": "69"
+            },
+            {
+              "chapter": "2",
+              "verse": "70"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "40"
+            },
+            {
+              "chapter": "2",
+              "verse": "41"
+            },
+            {
+              "chapter": "2",
+              "verse": "42"
+            },
+            {
+              "chapter": "2",
+              "verse": "43"
+            },
+            {
+              "chapter": "2",
+              "verse": "44"
+            },
+            {
+              "chapter": "2",
+              "verse": "45"
+            },
+            {
+              "chapter": "2",
+              "verse": "46"
+            },
+            {
+              "chapter": "2",
+              "verse": "47"
+            },
+            {
+              "chapter": "2",
+              "verse": "48"
+            },
+            {
+              "chapter": "2",
+              "verse": "49"
+            },
+            {
+              "chapter": "2",
+              "verse": "50"
+            },
+            {
+              "chapter": "2",
+              "verse": "51"
+            },
+            {
+              "chapter": "2",
+              "verse": "52"
+            },
+            {
+              "chapter": "2",
+              "verse": "53"
+            },
+            {
+              "chapter": "2",
+              "verse": "54"
+            },
+            {
+              "chapter": "2",
+              "verse": "55"
+            },
+            {
+              "chapter": "2",
+              "verse": "56"
+            },
+            {
+              "chapter": "2",
+              "verse": "57"
+            },
+            {
+              "chapter": "2",
+              "verse": "58"
+            },
+            {
+              "chapter": "2",
+              "verse": "59"
+            },
+            {
+              "chapter": "2",
+              "verse": "60"
+            },
+            {
+              "chapter": "2",
+              "verse": "61"
+            },
+            {
+              "chapter": "2",
+              "verse": "62"
+            },
+            {
+              "chapter": "2",
+              "verse": "63"
+            },
+            {
+              "chapter": "2",
+              "verse": "64"
+            },
+            {
+              "chapter": "2",
+              "verse": "65"
+            },
+            {
+              "chapter": "2",
+              "verse": "66"
+            },
+            {
+              "chapter": "2",
+              "verse": "67"
+            },
+            {
+              "chapter": "2",
+              "verse": "68"
+            },
+            {
+              "chapter": "2",
+              "verse": "69"
+            },
+            {
+              "chapter": "2",
+              "verse": "70"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay and Swete Ezra 2:40-70 preserve matching numbered divisions after the source gap at canonical 2:39."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "5",
+      "segments": [
+        {
+          "id": "EZR-5-1-3-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "1"
+            },
+            {
+              "chapter": "5",
+              "verse": "2"
+            },
+            {
+              "chapter": "5",
+              "verse": "3"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "5",
+              "verse": "1"
+            },
+            {
+              "chapter": "5",
+              "verse": "2"
+            },
+            {
+              "chapter": "5",
+              "verse": "3"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay and Swete Ezra 5:1-3 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "EZR-5-4-5-greek",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "4"
+            },
+            {
+              "chapter": "5",
+              "verse": "5"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "5",
+              "verse": "4"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Swete Ezra 5:4 contains both the builders' names material of Douay 5:4 and the eye-of-God / referral-to-Darius material of Douay 5:5. The source verse remains intact."
+          }
+        },
+        {
+          "id": "EZR-5-6-17-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "6"
+            },
+            {
+              "chapter": "5",
+              "verse": "7"
+            },
+            {
+              "chapter": "5",
+              "verse": "8"
+            },
+            {
+              "chapter": "5",
+              "verse": "9"
+            },
+            {
+              "chapter": "5",
+              "verse": "10"
+            },
+            {
+              "chapter": "5",
+              "verse": "11"
+            },
+            {
+              "chapter": "5",
+              "verse": "12"
+            },
+            {
+              "chapter": "5",
+              "verse": "13"
+            },
+            {
+              "chapter": "5",
+              "verse": "14"
+            },
+            {
+              "chapter": "5",
+              "verse": "15"
+            },
+            {
+              "chapter": "5",
+              "verse": "16"
+            },
+            {
+              "chapter": "5",
+              "verse": "17"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "5",
+              "verse": "6"
+            },
+            {
+              "chapter": "5",
+              "verse": "7"
+            },
+            {
+              "chapter": "5",
+              "verse": "8"
+            },
+            {
+              "chapter": "5",
+              "verse": "9"
+            },
+            {
+              "chapter": "5",
+              "verse": "10"
+            },
+            {
+              "chapter": "5",
+              "verse": "11"
+            },
+            {
+              "chapter": "5",
+              "verse": "12"
+            },
+            {
+              "chapter": "5",
+              "verse": "13"
+            },
+            {
+              "chapter": "5",
+              "verse": "14"
+            },
+            {
+              "chapter": "5",
+              "verse": "15"
+            },
+            {
+              "chapter": "5",
+              "verse": "16"
+            },
+            {
+              "chapter": "5",
+              "verse": "17"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay and Swete Ezra 5:6-17 preserve matching numbered divisions."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "6",
+      "segments": [
+        {
+          "id": "EZR-6-1-18-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "6",
+              "verse": "1"
+            },
+            {
+              "chapter": "6",
+              "verse": "2"
+            },
+            {
+              "chapter": "6",
+              "verse": "3"
+            },
+            {
+              "chapter": "6",
+              "verse": "4"
+            },
+            {
+              "chapter": "6",
+              "verse": "5"
+            },
+            {
+              "chapter": "6",
+              "verse": "6"
+            },
+            {
+              "chapter": "6",
+              "verse": "7"
+            },
+            {
+              "chapter": "6",
+              "verse": "8"
+            },
+            {
+              "chapter": "6",
+              "verse": "9"
+            },
+            {
+              "chapter": "6",
+              "verse": "10"
+            },
+            {
+              "chapter": "6",
+              "verse": "11"
+            },
+            {
+              "chapter": "6",
+              "verse": "12"
+            },
+            {
+              "chapter": "6",
+              "verse": "13"
+            },
+            {
+              "chapter": "6",
+              "verse": "14"
+            },
+            {
+              "chapter": "6",
+              "verse": "15"
+            },
+            {
+              "chapter": "6",
+              "verse": "16"
+            },
+            {
+              "chapter": "6",
+              "verse": "17"
+            },
+            {
+              "chapter": "6",
+              "verse": "18"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "6",
+              "verse": "1"
+            },
+            {
+              "chapter": "6",
+              "verse": "2"
+            },
+            {
+              "chapter": "6",
+              "verse": "3"
+            },
+            {
+              "chapter": "6",
+              "verse": "4"
+            },
+            {
+              "chapter": "6",
+              "verse": "5"
+            },
+            {
+              "chapter": "6",
+              "verse": "6"
+            },
+            {
+              "chapter": "6",
+              "verse": "7"
+            },
+            {
+              "chapter": "6",
+              "verse": "8"
+            },
+            {
+              "chapter": "6",
+              "verse": "9"
+            },
+            {
+              "chapter": "6",
+              "verse": "10"
+            },
+            {
+              "chapter": "6",
+              "verse": "11"
+            },
+            {
+              "chapter": "6",
+              "verse": "12"
+            },
+            {
+              "chapter": "6",
+              "verse": "13"
+            },
+            {
+              "chapter": "6",
+              "verse": "14"
+            },
+            {
+              "chapter": "6",
+              "verse": "15"
+            },
+            {
+              "chapter": "6",
+              "verse": "16"
+            },
+            {
+              "chapter": "6",
+              "verse": "17"
+            },
+            {
+              "chapter": "6",
+              "verse": "18"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay and Swete Ezra 6:1-18 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "EZR-6-19-20-greek",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "6",
+              "verse": "19"
+            },
+            {
+              "chapter": "6",
+              "verse": "20"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "6",
+              "verse": "19"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Swete Ezra 6:19 contains both the Passover date of Douay 6:19 and the priest/Levite purification and slaughter of the Passover of Douay 6:20. The intact Greek source record is shared by both canonical rows."
+          }
+        },
+        {
+          "id": "EZR-6-21-22-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "6",
+              "verse": "21"
+            },
+            {
+              "chapter": "6",
+              "verse": "22"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "6",
+              "verse": "21"
+            },
+            {
+              "chapter": "6",
+              "verse": "22"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay and Swete Ezra 6:21-22 preserve matching numbered divisions."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "8",
+      "segments": [
+        {
+          "id": "EZR-8-1-4-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "8",
+              "verse": "1"
+            },
+            {
+              "chapter": "8",
+              "verse": "2"
+            },
+            {
+              "chapter": "8",
+              "verse": "3"
+            },
+            {
+              "chapter": "8",
+              "verse": "4"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "8",
+              "verse": "1"
+            },
+            {
+              "chapter": "8",
+              "verse": "2"
+            },
+            {
+              "chapter": "8",
+              "verse": "3"
+            },
+            {
+              "chapter": "8",
+              "verse": "4"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay and Swete Ezra 8:1-4 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "EZR-8-5-greek-gap",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "8",
+              "verse": "5"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "Douay Ezra 8:5 lists the sons of Sechenias/Ezechiel with three hundred men, while the pinned Swete payload jumps from source 8:4 to 8:6. The registry records the source gap without fabricating Greek text."
+          }
+        },
+        {
+          "id": "EZR-8-6-36-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "8",
+              "verse": "6"
+            },
+            {
+              "chapter": "8",
+              "verse": "7"
+            },
+            {
+              "chapter": "8",
+              "verse": "8"
+            },
+            {
+              "chapter": "8",
+              "verse": "9"
+            },
+            {
+              "chapter": "8",
+              "verse": "10"
+            },
+            {
+              "chapter": "8",
+              "verse": "11"
+            },
+            {
+              "chapter": "8",
+              "verse": "12"
+            },
+            {
+              "chapter": "8",
+              "verse": "13"
+            },
+            {
+              "chapter": "8",
+              "verse": "14"
+            },
+            {
+              "chapter": "8",
+              "verse": "15"
+            },
+            {
+              "chapter": "8",
+              "verse": "16"
+            },
+            {
+              "chapter": "8",
+              "verse": "17"
+            },
+            {
+              "chapter": "8",
+              "verse": "18"
+            },
+            {
+              "chapter": "8",
+              "verse": "19"
+            },
+            {
+              "chapter": "8",
+              "verse": "20"
+            },
+            {
+              "chapter": "8",
+              "verse": "21"
+            },
+            {
+              "chapter": "8",
+              "verse": "22"
+            },
+            {
+              "chapter": "8",
+              "verse": "23"
+            },
+            {
+              "chapter": "8",
+              "verse": "24"
+            },
+            {
+              "chapter": "8",
+              "verse": "25"
+            },
+            {
+              "chapter": "8",
+              "verse": "26"
+            },
+            {
+              "chapter": "8",
+              "verse": "27"
+            },
+            {
+              "chapter": "8",
+              "verse": "28"
+            },
+            {
+              "chapter": "8",
+              "verse": "29"
+            },
+            {
+              "chapter": "8",
+              "verse": "30"
+            },
+            {
+              "chapter": "8",
+              "verse": "31"
+            },
+            {
+              "chapter": "8",
+              "verse": "32"
+            },
+            {
+              "chapter": "8",
+              "verse": "33"
+            },
+            {
+              "chapter": "8",
+              "verse": "34"
+            },
+            {
+              "chapter": "8",
+              "verse": "35"
+            },
+            {
+              "chapter": "8",
+              "verse": "36"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "8",
+              "verse": "6"
+            },
+            {
+              "chapter": "8",
+              "verse": "7"
+            },
+            {
+              "chapter": "8",
+              "verse": "8"
+            },
+            {
+              "chapter": "8",
+              "verse": "9"
+            },
+            {
+              "chapter": "8",
+              "verse": "10"
+            },
+            {
+              "chapter": "8",
+              "verse": "11"
+            },
+            {
+              "chapter": "8",
+              "verse": "12"
+            },
+            {
+              "chapter": "8",
+              "verse": "13"
+            },
+            {
+              "chapter": "8",
+              "verse": "14"
+            },
+            {
+              "chapter": "8",
+              "verse": "15"
+            },
+            {
+              "chapter": "8",
+              "verse": "16"
+            },
+            {
+              "chapter": "8",
+              "verse": "17"
+            },
+            {
+              "chapter": "8",
+              "verse": "18"
+            },
+            {
+              "chapter": "8",
+              "verse": "19"
+            },
+            {
+              "chapter": "8",
+              "verse": "20"
+            },
+            {
+              "chapter": "8",
+              "verse": "21"
+            },
+            {
+              "chapter": "8",
+              "verse": "22"
+            },
+            {
+              "chapter": "8",
+              "verse": "23"
+            },
+            {
+              "chapter": "8",
+              "verse": "24"
+            },
+            {
+              "chapter": "8",
+              "verse": "25"
+            },
+            {
+              "chapter": "8",
+              "verse": "26"
+            },
+            {
+              "chapter": "8",
+              "verse": "27"
+            },
+            {
+              "chapter": "8",
+              "verse": "28"
+            },
+            {
+              "chapter": "8",
+              "verse": "29"
+            },
+            {
+              "chapter": "8",
+              "verse": "30"
+            },
+            {
+              "chapter": "8",
+              "verse": "31"
+            },
+            {
+              "chapter": "8",
+              "verse": "32"
+            },
+            {
+              "chapter": "8",
+              "verse": "33"
+            },
+            {
+              "chapter": "8",
+              "verse": "34"
+            },
+            {
+              "chapter": "8",
+              "verse": "35"
+            },
+            {
+              "chapter": "8",
+              "verse": "36"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay and Swete Ezra 8:6-36 preserve matching numbered divisions after the canonical-only 8:5 gap."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "10",
+      "segments": [
+        {
+          "id": "EZR-10-1-42-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "10",
+              "verse": "1"
+            },
+            {
+              "chapter": "10",
+              "verse": "2"
+            },
+            {
+              "chapter": "10",
+              "verse": "3"
+            },
+            {
+              "chapter": "10",
+              "verse": "4"
+            },
+            {
+              "chapter": "10",
+              "verse": "5"
+            },
+            {
+              "chapter": "10",
+              "verse": "6"
+            },
+            {
+              "chapter": "10",
+              "verse": "7"
+            },
+            {
+              "chapter": "10",
+              "verse": "8"
+            },
+            {
+              "chapter": "10",
+              "verse": "9"
+            },
+            {
+              "chapter": "10",
+              "verse": "10"
+            },
+            {
+              "chapter": "10",
+              "verse": "11"
+            },
+            {
+              "chapter": "10",
+              "verse": "12"
+            },
+            {
+              "chapter": "10",
+              "verse": "13"
+            },
+            {
+              "chapter": "10",
+              "verse": "14"
+            },
+            {
+              "chapter": "10",
+              "verse": "15"
+            },
+            {
+              "chapter": "10",
+              "verse": "16"
+            },
+            {
+              "chapter": "10",
+              "verse": "17"
+            },
+            {
+              "chapter": "10",
+              "verse": "18"
+            },
+            {
+              "chapter": "10",
+              "verse": "19"
+            },
+            {
+              "chapter": "10",
+              "verse": "20"
+            },
+            {
+              "chapter": "10",
+              "verse": "21"
+            },
+            {
+              "chapter": "10",
+              "verse": "22"
+            },
+            {
+              "chapter": "10",
+              "verse": "23"
+            },
+            {
+              "chapter": "10",
+              "verse": "24"
+            },
+            {
+              "chapter": "10",
+              "verse": "25"
+            },
+            {
+              "chapter": "10",
+              "verse": "26"
+            },
+            {
+              "chapter": "10",
+              "verse": "27"
+            },
+            {
+              "chapter": "10",
+              "verse": "28"
+            },
+            {
+              "chapter": "10",
+              "verse": "29"
+            },
+            {
+              "chapter": "10",
+              "verse": "30"
+            },
+            {
+              "chapter": "10",
+              "verse": "31"
+            },
+            {
+              "chapter": "10",
+              "verse": "32"
+            },
+            {
+              "chapter": "10",
+              "verse": "33"
+            },
+            {
+              "chapter": "10",
+              "verse": "34"
+            },
+            {
+              "chapter": "10",
+              "verse": "35"
+            },
+            {
+              "chapter": "10",
+              "verse": "36"
+            },
+            {
+              "chapter": "10",
+              "verse": "37"
+            },
+            {
+              "chapter": "10",
+              "verse": "38"
+            },
+            {
+              "chapter": "10",
+              "verse": "39"
+            },
+            {
+              "chapter": "10",
+              "verse": "40"
+            },
+            {
+              "chapter": "10",
+              "verse": "41"
+            },
+            {
+              "chapter": "10",
+              "verse": "42"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "10",
+              "verse": "1"
+            },
+            {
+              "chapter": "10",
+              "verse": "2"
+            },
+            {
+              "chapter": "10",
+              "verse": "3"
+            },
+            {
+              "chapter": "10",
+              "verse": "4"
+            },
+            {
+              "chapter": "10",
+              "verse": "5"
+            },
+            {
+              "chapter": "10",
+              "verse": "6"
+            },
+            {
+              "chapter": "10",
+              "verse": "7"
+            },
+            {
+              "chapter": "10",
+              "verse": "8"
+            },
+            {
+              "chapter": "10",
+              "verse": "9"
+            },
+            {
+              "chapter": "10",
+              "verse": "10"
+            },
+            {
+              "chapter": "10",
+              "verse": "11"
+            },
+            {
+              "chapter": "10",
+              "verse": "12"
+            },
+            {
+              "chapter": "10",
+              "verse": "13"
+            },
+            {
+              "chapter": "10",
+              "verse": "14"
+            },
+            {
+              "chapter": "10",
+              "verse": "15"
+            },
+            {
+              "chapter": "10",
+              "verse": "16"
+            },
+            {
+              "chapter": "10",
+              "verse": "17"
+            },
+            {
+              "chapter": "10",
+              "verse": "18"
+            },
+            {
+              "chapter": "10",
+              "verse": "19"
+            },
+            {
+              "chapter": "10",
+              "verse": "20"
+            },
+            {
+              "chapter": "10",
+              "verse": "21"
+            },
+            {
+              "chapter": "10",
+              "verse": "22"
+            },
+            {
+              "chapter": "10",
+              "verse": "23"
+            },
+            {
+              "chapter": "10",
+              "verse": "24"
+            },
+            {
+              "chapter": "10",
+              "verse": "25"
+            },
+            {
+              "chapter": "10",
+              "verse": "26"
+            },
+            {
+              "chapter": "10",
+              "verse": "27"
+            },
+            {
+              "chapter": "10",
+              "verse": "28"
+            },
+            {
+              "chapter": "10",
+              "verse": "29"
+            },
+            {
+              "chapter": "10",
+              "verse": "30"
+            },
+            {
+              "chapter": "10",
+              "verse": "31"
+            },
+            {
+              "chapter": "10",
+              "verse": "32"
+            },
+            {
+              "chapter": "10",
+              "verse": "33"
+            },
+            {
+              "chapter": "10",
+              "verse": "34"
+            },
+            {
+              "chapter": "10",
+              "verse": "35"
+            },
+            {
+              "chapter": "10",
+              "verse": "36"
+            },
+            {
+              "chapter": "10",
+              "verse": "37"
+            },
+            {
+              "chapter": "10",
+              "verse": "38"
+            },
+            {
+              "chapter": "10",
+              "verse": "39"
+            },
+            {
+              "chapter": "10",
+              "verse": "40"
+            },
+            {
+              "chapter": "10",
+              "verse": "41"
+            },
+            {
+              "chapter": "10",
+              "verse": "42"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay and Swete Ezra 10:1-42 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "EZR-10-43-44-greek",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "10",
+              "verse": "43"
+            },
+            {
+              "chapter": "10",
+              "verse": "44"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "10",
+              "verse": "43"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Swete Ezra 10:43 contains both the sons-of-Nebo list of Douay 10:43 and the concluding statement of Douay 10:44 that these men had taken foreign wives and had children. The source record remains intact."
+          }
+        }
+      ]
+    }
+  ]
+}
