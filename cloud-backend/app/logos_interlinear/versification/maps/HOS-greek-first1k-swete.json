@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.20-hos-greek-v1",
+  "status": "verified",
+  "book_id": "HOS",
+  "book": "Hosea",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "first1kgreek-swete",
+    "reference_system": "swete-first1k-source-numbering",
+    "corpus_id": "grc_ot_catholic_full",
+    "corpus_version": "2026.09.17-catholic-lxx-full"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "2"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "2",
+      "segments": [
+        {
+          "id": "HOS-2-1-22-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            },
+            {
+              "chapter": "2",
+              "verse": "15"
+            },
+            {
+              "chapter": "2",
+              "verse": "16"
+            },
+            {
+              "chapter": "2",
+              "verse": "17"
+            },
+            {
+              "chapter": "2",
+              "verse": "18"
+            },
+            {
+              "chapter": "2",
+              "verse": "19"
+            },
+            {
+              "chapter": "2",
+              "verse": "20"
+            },
+            {
+              "chapter": "2",
+              "verse": "21"
+            },
+            {
+              "chapter": "2",
+              "verse": "22"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            },
+            {
+              "chapter": "2",
+              "verse": "15"
+            },
+            {
+              "chapter": "2",
+              "verse": "16"
+            },
+            {
+              "chapter": "2",
+              "verse": "17"
+            },
+            {
+              "chapter": "2",
+              "verse": "18"
+            },
+            {
+              "chapter": "2",
+              "verse": "19"
+            },
+            {
+              "chapter": "2",
+              "verse": "20"
+            },
+            {
+              "chapter": "2",
+              "verse": "21"
+            },
+            {
+              "chapter": "2",
+              "verse": "22"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete Hosea 2:1-22 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "HOS-2-23-24-greek",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "23"
+            },
+            {
+              "chapter": "2",
+              "verse": "24"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "23"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Swete Hosea 2:23 contains both Douay 2:23 ('sow her... love the unloved') and Douay 2:24 ('not my people... my people... Lord my God') in one intact Greek source verse."
+          }
+        }
+      ]
+    }
+  ]
+}
