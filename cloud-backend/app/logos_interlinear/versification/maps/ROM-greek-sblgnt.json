@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.19-rom-greek-v1",
+  "status": "verified",
+  "book_id": "ROM",
+  "book": "Romans",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "sblgnt",
+    "reference_system": "sblgnt",
+    "corpus_id": "grc_sblgnt_morphgnt",
+    "corpus_version": "2026.09.16-sblgnt-morphgnt-27",
+    "repository": "Faithlife/SBLGNT",
+    "commit": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c",
+    "source_path": "data/sblgnt/text/Rom.txt"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "16"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "16",
+      "segments": [
+        {
+          "id": "ROM-16-1-24-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "16",
+              "verse": "1"
+            },
+            {
+              "chapter": "16",
+              "verse": "2"
+            },
+            {
+              "chapter": "16",
+              "verse": "3"
+            },
+            {
+              "chapter": "16",
+              "verse": "4"
+            },
+            {
+              "chapter": "16",
+              "verse": "5"
+            },
+            {
+              "chapter": "16",
+              "verse": "6"
+            },
+            {
+              "chapter": "16",
+              "verse": "7"
+            },
+            {
+              "chapter": "16",
+              "verse": "8"
+            },
+            {
+              "chapter": "16",
+              "verse": "9"
+            },
+            {
+              "chapter": "16",
+              "verse": "10"
+            },
+            {
+              "chapter": "16",
+              "verse": "11"
+            },
+            {
+              "chapter": "16",
+              "verse": "12"
+            },
+            {
+              "chapter": "16",
+              "verse": "13"
+            },
+            {
+              "chapter": "16",
+              "verse": "14"
+            },
+            {
+              "chapter": "16",
+              "verse": "15"
+            },
+            {
+              "chapter": "16",
+              "verse": "16"
+            },
+            {
+              "chapter": "16",
+              "verse": "17"
+            },
+            {
+              "chapter": "16",
+              "verse": "18"
+            },
+            {
+              "chapter": "16",
+              "verse": "19"
+            },
+            {
+              "chapter": "16",
+              "verse": "20"
+            },
+            {
+              "chapter": "16",
+              "verse": "21"
+            },
+            {
+              "chapter": "16",
+              "verse": "22"
+            },
+            {
+              "chapter": "16",
+              "verse": "23"
+            },
+            {
+              "chapter": "16",
+              "verse": "24"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "16",
+              "verse": "1"
+            },
+            {
+              "chapter": "16",
+              "verse": "2"
+            },
+            {
+              "chapter": "16",
+              "verse": "3"
+            },
+            {
+              "chapter": "16",
+              "verse": "4"
+            },
+            {
+              "chapter": "16",
+              "verse": "5"
+            },
+            {
+              "chapter": "16",
+              "verse": "6"
+            },
+            {
+              "chapter": "16",
+              "verse": "7"
+            },
+            {
+              "chapter": "16",
+              "verse": "8"
+            },
+            {
+              "chapter": "16",
+              "verse": "9"
+            },
+            {
+              "chapter": "16",
+              "verse": "10"
+            },
+            {
+              "chapter": "16",
+              "verse": "11"
+            },
+            {
+              "chapter": "16",
+              "verse": "12"
+            },
+            {
+              "chapter": "16",
+              "verse": "13"
+            },
+            {
+              "chapter": "16",
+              "verse": "14"
+            },
+            {
+              "chapter": "16",
+              "verse": "15"
+            },
+            {
+              "chapter": "16",
+              "verse": "16"
+            },
+            {
+              "chapter": "16",
+              "verse": "17"
+            },
+            {
+              "chapter": "16",
+              "verse": "18"
+            },
+            {
+              "chapter": "16",
+              "verse": "19"
+            },
+            {
+              "chapter": "16",
+              "verse": "20"
+            },
+            {
+              "chapter": "16",
+              "verse": "21"
+            },
+            {
+              "chapter": "16",
+              "verse": "22"
+            },
+            {
+              "chapter": "16",
+              "verse": "23"
+            },
+            {
+              "chapter": "16",
+              "verse": "24"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Faithlife/SBLGNT Rom.txt at commit c4d241a9c1c479a55b989ba35a4976c1d0b8052c contains Romans 16:1-24 with matching numbered divisions."
+          }
+        },
+        {
+          "id": "ROM-16-25-27-greek-source-gap",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "16",
+              "verse": "25"
+            },
+            {
+              "chapter": "16",
+              "verse": "26"
+            },
+            {
+              "chapter": "16",
+              "verse": "27"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "Pinned Faithlife/SBLGNT Rom.txt at commit c4d241a9c1c479a55b989ba35a4976c1d0b8052c ends Romans 16 at 16:24; the same pinned file ends Romans 14 at 14:23. Douay-Rheims Romans 16:25-27 therefore have no verse records in this pinned SBLGNT witness. No Greek text or morphology is synthesized."
+          }
+        }
+      ]
+    }
+  ]
+}

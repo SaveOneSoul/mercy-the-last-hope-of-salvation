@@ -101,13 +101,21 @@ def source_refs(lane: str, book_id: str) -> set[tuple[str, str]]:
             for verse in (verses or {})
         }
     if lane == "greek":
-        path = CORPORA / "grc_ot_catholic_full" / "sharealike" / "catholic_lxx_cc-by-sa-4.0" / "books" / f"{book_id}.json"
-        require(path.exists(), f"generic Greek map currently requires complete OT Greek book payload: {book_id}")
-        payload = load(path)
+        ot_path = CORPORA / "grc_ot_catholic_full" / "sharealike" / "catholic_lxx_cc-by-sa-4.0" / "books" / f"{book_id}.json"
+        if ot_path.exists():
+            payload = load(ot_path)
+            return {
+                (str(row.get("source_chapter")), str(row.get("source_verse")))
+                for row in (payload.get("verses") or [])
+                if row.get("source_chapter") is not None and row.get("source_verse") is not None
+            }
+        nt_path = CORPORA / "grc_sblgnt_morphgnt" / "phase1" / "surface" / f"{book_id}.json"
+        require(nt_path.exists(), f"Greek map requires a pinned OT or NT Greek book payload: {book_id}")
+        payload = load(nt_path)
         return {
-            (str(row.get("source_chapter")), str(row.get("source_verse")))
-            for row in (payload.get("verses") or [])
-            if row.get("source_chapter") is not None and row.get("source_verse") is not None
+            (str(chapter), str(verse))
+            for chapter, verses in (payload.get("chapters") or {}).items()
+            for verse in (verses or {})
         }
     raise ValidationError(f"unsupported lane: {lane}")
 

@@ -4,7 +4,8 @@ from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, Query, Response
 
-from .logos import _parse_corpus_reference
+from .logos import _corpus_book, _corpus_manifest, _parse_corpus_reference
+from .logos_versification import canonical_source_mapping, mapping_status
 
 
 router = APIRouter(prefix="/greek", tags=["Logos Greek New Testament"])
@@ -71,6 +72,73 @@ def _selected_verse_ids(chapter: dict, verse_start: int | None, verse_end: int |
     return selected
 
 
+def _dra_book_meta(book_id: str) -> dict:
+    for row in _corpus_manifest().get("books") or []:
+        if str(row.get("id")) == book_id:
+            return row
+    raise HTTPException(status_code=404, detail="logos_book_not_in_catholic_canon")
+
+
+def _dra_chapter(book_id: str, chapter: int) -> dict:
+    meta = _dra_book_meta(book_id)
+    payload = _corpus_book(str(meta.get("filename")))
+    return (payload.get("chapters") or {}).get(str(chapter)) or {}
+
+
+def _numeric_keys(chapter: dict) -> set[int] | None:
+    out: set[int] = set()
+    for key in chapter:
+        text = str(key)
+        if not text.isdigit():
+            return None
+        out.add(int(text))
+    return out
+
+
+def _chapter_versification(book_id: str, chapter: int, surface_chapter: dict) -> dict:
+    dra_chapter = _dra_chapter(book_id, chapter)
+    source_set = _numeric_keys(surface_chapter)
+    dra_set = _numeric_keys(dra_chapter)
+    numeric_identity = bool(
+        surface_chapter
+        and dra_chapter
+        and source_set is not None
+        and dra_set is not None
+        and source_set == dra_set
+    )
+    registry = mapping_status(book_id, "greek", chapter)
+    verified_map = bool(registry and registry.get("status") == "verified-map")
+    exact = numeric_identity and not verified_map
+    return {
+        "exact": exact,
+        "numeric_identifier_identity": numeric_identity,
+        "verified_mapping": verified_map,
+        "mode": (
+            "verified-explicit-map"
+            if verified_map
+            else "exact-dra-sblgnt-chapter-verse-identity"
+            if exact
+            else "explicit-mapping-required"
+        ),
+        "source_verse_count": len(surface_chapter),
+        "dra_verse_count": len(dra_chapter),
+        "automatic_remapping": False,
+        "mapping": registry if verified_map else None,
+    }
+
+
+def _canonical_numbers(dra_chapter: dict, verse_start: int | None, verse_end: int | None) -> list[int]:
+    available = {int(key) for key in dra_chapter if str(key).isdigit()}
+    if verse_start is None:
+        return sorted(available)
+    selected: list[int] = []
+    for number in range(verse_start, (verse_end or verse_start) + 1):
+        if number not in available:
+            raise HTTPException(status_code=404, detail="logos_douay_verse_not_found")
+        selected.append(number)
+    return selected
+
+
 def _alignment_index(payload: dict) -> dict[tuple[int, str], dict]:
     return {
         (int(row.get("chapter")), str(row.get("verse"))): row
@@ -95,52 +163,185 @@ def _interlinear_payload(reference: str) -> dict:
         raise HTTPException(status_code=404, detail="logos_greek_chapter_not_found")
     linguistic_chapter = (linguistics.get("chapters") or {}).get(str(chapter_number)) or {}
     align_index = _alignment_index(alignment)
-    verse_ids = _selected_verse_ids(surface_chapter, verse_start, verse_end)
+    dra_chapter = _dra_chapter(book_id, chapter_number)
+    if not dra_chapter:
+        raise HTTPException(status_code=404, detail="logos_douay_chapter_not_found")
+
+    versification = _chapter_versification(book_id, chapter_number, surface_chapter)
+    canonical_ref = _canonical_reference(book_name, chapter_number, verse_start, verse_end)
+    if versification.get("exact") is not True and versification.get("verified_mapping") is not True:
+        raise HTTPException(
+            status_code=409,
+            detail={
+                "code": "logos_greek_nt_versification_mapping_required",
+                "reference": canonical_ref,
+                "versification": versification,
+                "message": "The pinned SBLGNT witness is installed, but this chapter is not rendered against Douay-Rheims until an explicit versification mapping is verified.",
+            },
+        )
 
     surface_verses = []
     linguistic_verses = []
     alignment_verses = []
     compatibility_tokens = []
+    compatibility_token_ids: set[str] = set()
 
-    for verse_id in verse_ids:
-        surface_row = surface_chapter[verse_id]
-        ling_row = linguistic_chapter.get(verse_id) or {
-            "annotation_status": "unavailable-in-pinned-morphgnt",
-            "tokens": [],
-        }
-        align_row = align_index.get((chapter_number, verse_id))
-        if not align_row:
-            raise HTTPException(status_code=500, detail="logos_greek_alignment_missing")
+    if versification.get("exact") is True:
+        verse_ids = _selected_verse_ids(surface_chapter, verse_start, verse_end)
+        work = [
+            {
+                "canonical_verse": int(verse_id),
+                "relationship": "identity",
+                "segment_id": None,
+                "mapping_version": None,
+                "source_refs": [{"chapter": str(chapter_number), "verse": str(verse_id)}],
+            }
+            for verse_id in verse_ids
+        ]
+    else:
+        work = []
+        for number in _canonical_numbers(dra_chapter, verse_start, verse_end):
+            mapped = canonical_source_mapping(book_id, "greek", chapter_number, number)
+            if mapped is None:
+                raise RuntimeError(
+                    f"Verified Greek NT chapter lacks canonical mapping for {book_id} {chapter_number}:{number}"
+                )
+            work.append(
+                {
+                    "canonical_verse": number,
+                    "relationship": str(mapped.get("relationship") or ""),
+                    "segment_id": mapped.get("segment_id"),
+                    "mapping_version": mapped.get("mapping_version"),
+                    "source_refs": list(mapped.get("source_refs") or []),
+                }
+            )
 
-        surface_tokens = surface_row.get("tokens") or []
-        linguistic_tokens = ling_row.get("tokens") or []
+    surface_chapters = surface.get("chapters") or {}
+    linguistic_chapters = linguistics.get("chapters") or {}
+    for item in work:
+        canonical_verse = int(item["canonical_verse"])
+        source_refs = item["source_refs"]
+        relationship = item["relationship"]
+        source_surface_rows = []
+        source_linguistic_rows = []
+        source_alignment_rows = []
+
+        for ref in source_refs:
+            source_chapter_number = int(str(ref.get("chapter")))
+            source_verse_id = str(ref.get("verse"))
+            source_surface = (surface_chapters.get(str(source_chapter_number)) or {}).get(source_verse_id)
+            if source_surface is None:
+                raise RuntimeError(
+                    f"Verified Greek NT mapping references missing SBLGNT verse {source_chapter_number}:{source_verse_id}"
+                )
+            source_linguistic = (linguistic_chapters.get(str(source_chapter_number)) or {}).get(source_verse_id) or {
+                "annotation_status": "unavailable-in-pinned-morphgnt",
+                "tokens": [],
+            }
+            source_align = align_index.get((source_chapter_number, source_verse_id))
+            if not source_align:
+                raise RuntimeError(
+                    f"Verified Greek NT mapping references missing alignment row {source_chapter_number}:{source_verse_id}"
+                )
+            source_surface_rows.append(
+                {
+                    "chapter": source_chapter_number,
+                    "verse": source_verse_id,
+                    "text": source_surface.get("text") or "",
+                    "tokens": source_surface.get("tokens") or [],
+                }
+            )
+            source_linguistic_rows.append(
+                {
+                    "chapter": source_chapter_number,
+                    "verse": source_verse_id,
+                    "annotation_status": source_linguistic.get("annotation_status") or "available",
+                    "reason": source_linguistic.get("reason"),
+                    "tokens": source_linguistic.get("tokens") or [],
+                }
+            )
+            source_alignment_rows.append(source_align)
+
+        source_missing = relationship == "canonical-only"
+        if not source_refs and not source_missing:
+            raise RuntimeError(
+                f"Verified Greek NT mapping produced no source rows for {book_id} {chapter_number}:{canonical_verse}"
+            )
+
+        surface_tokens = [
+            token
+            for row in source_surface_rows
+            for token in (row.get("tokens") or [])
+        ]
+        linguistic_tokens = [
+            token
+            for row in source_linguistic_rows
+            for token in (row.get("tokens") or [])
+        ]
         ling_by_id = {str(row.get("id")): row for row in linguistic_tokens}
-        annotation_status = ling_row.get("annotation_status") or "available"
+        annotation_statuses = {
+            str(row.get("annotation_status") or "available")
+            for row in source_linguistic_rows
+        }
+        annotation_status = (
+            "canonical-only-source-gap"
+            if source_missing
+            else "available"
+            if not annotation_statuses or annotation_statuses == {"available"}
+            else sorted(annotation_statuses)[0]
+        )
 
         surface_verses.append(
             {
-                "verse": verse_id,
-                "text": surface_row.get("text") or "",
+                "verse": str(canonical_verse),
+                "text": " ".join(str(row.get("text") or "") for row in source_surface_rows).strip(),
                 "tokens": surface_tokens,
+                "source_verses": source_surface_rows,
+                "source_missing": source_missing,
+                "mapping_relationship": relationship,
+                "mapping_segment": item["segment_id"],
+                "mapping_version": item["mapping_version"],
             }
         )
         linguistic_verses.append(
             {
-                "verse": verse_id,
+                "verse": str(canonical_verse),
                 "annotation_status": annotation_status,
-                "reason": ling_row.get("reason"),
+                "reason": (
+                    "No Greek source verse exists for this Douay-Rheims canonical row in the pinned SBLGNT witness."
+                    if source_missing
+                    else next((row.get("reason") for row in source_linguistic_rows if row.get("reason")), None)
+                ),
                 "tokens": linguistic_tokens,
+                "source_verses": source_linguistic_rows,
+                "source_missing": source_missing,
+                "mapping_relationship": relationship,
             }
         )
-        alignment_verses.append(align_row)
+        alignment_verses.append(
+            {
+                "chapter": chapter_number,
+                "verse": str(canonical_verse),
+                "mapping_relationship": relationship,
+                "source_refs": [
+                    {"chapter": row["chapter"], "verse": row["verse"]}
+                    for row in source_surface_rows
+                ],
+                "source_missing": source_missing,
+                "source_alignment_rows": source_alignment_rows,
+            }
+        )
 
         for token in surface_tokens:
             token_id = str(token.get("id"))
+            if token_id in compatibility_token_ids:
+                continue
+            compatibility_token_ids.add(token_id)
             ling_token = ling_by_id.get(token_id) or {}
             compatibility_tokens.append(
                 {
                     "id": token_id,
-                    "verse": verse_id,
+                    "verse": str(canonical_verse),
                     "position": token.get("position"),
                     "surface": token.get("surface"),
                     "transliteration": token.get("transliteration"),
@@ -155,8 +356,17 @@ def _interlinear_payload(reference: str) -> dict:
 
     partitions = manifest.get("partitions") or {}
     sources = manifest.get("sources") or {}
+    note = (
+        "SBLGNT surface text and MorphGNT linguistic annotations are served as separate license partitions. "
+        "John 7:53–8:11 preserves the SBLGNT surface while morphology remains explicitly unavailable in the pinned MorphGNT source."
+    )
+    if versification.get("verified_mapping") is True:
+        note += (
+            " A verified versification map aligns Douay-Rheims canonical rows to intact pinned SBLGNT source records. "
+            "Canonical-only rows remain empty and do not synthesize Greek text, transliteration, lemma, POS, or morphology."
+        )
     return {
-        "reference": _canonical_reference(book_name, chapter_number, verse_start, verse_end),
+        "reference": canonical_ref,
         "book": book_name,
         "book_id": book_id,
         "chapter": chapter_number,
@@ -166,6 +376,7 @@ def _interlinear_payload(reference: str) -> dict:
         "label": "Greek New Testament — SBLGNT + MorphGNT",
         "corpus_id": manifest.get("corpus_id"),
         "corpus_version": manifest.get("corpus_version"),
+        "versification": versification,
         "surface": {
             "source": sources.get("surface") or {},
             "license_partition": partitions.get("surface") or {},
@@ -183,10 +394,7 @@ def _interlinear_payload(reference: str) -> dict:
         "tokens": compatibility_tokens,
         "gloss_layer": manifest.get("gloss_layer") or {},
         "annotation_gap_policy": manifest.get("annotation_gap_policy") or {},
-        "note": (
-            "SBLGNT surface text and MorphGNT linguistic annotations are served as separate license partitions. "
-            "John 7:53–8:11 preserves the SBLGNT surface while morphology remains explicitly unavailable in the pinned MorphGNT source."
-        ),
+        "note": note,
     }
 
 
