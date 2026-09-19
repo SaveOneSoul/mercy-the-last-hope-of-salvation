@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.20-v23",
+  "registry_version": "2026.09.20-v24",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -206,6 +206,18 @@
       "lane": "latin",
       "status": "verified",
       "file": "maps/JHN-latin-vulgate-clementine.json"
+    },
+    {
+      "book_id": "2SA",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/2SA-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "2SA",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/2SA-greek-first1k-swete.json"
     }
   ]
 }
