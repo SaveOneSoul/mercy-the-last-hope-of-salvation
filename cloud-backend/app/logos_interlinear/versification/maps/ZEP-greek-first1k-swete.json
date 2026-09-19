@@ -1,0 +1,377 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.18-zep-greek-v1",
+  "status": "verified",
+  "book_id": "ZEP",
+  "book": "Zephaniah",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "first1kgreek-swete",
+    "reference_system": "swete-first1k-source-numbering",
+    "corpus_id": "grc_ot_catholic_full",
+    "corpus_version": "2026.09.17-catholic-lxx-full"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "2",
+      "3"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "2",
+      "segments": [
+        {
+          "id": "ZEP-2-1-14-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Zephaniah 2:1-14 and pinned First1KGreek/Swete 2:1-14 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "ZEP-2-15-greek-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "15"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "3",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Zephaniah 2:15 describes the secure/glorious city saying 'I am, and there is none beside me' and becoming a desert where passers-by hiss; pinned Swete 3:1 contains that same material, so the source chapter boundary is one verse later."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "3",
+      "segments": [
+        {
+          "id": "ZEP-3-1-2-greek",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "3",
+              "verse": "1"
+            },
+            {
+              "chapter": "3",
+              "verse": "2"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "3",
+              "verse": "2"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Swete Zephaniah 3:2 contains both Douay-Rheims 3:1 ('provoking/redeemed city, the dove') and 3:2 (failure to hear, receive discipline, trust the Lord, or draw near to God). The source verse remains intact and is referenced by both canonical rows."
+          }
+        },
+        {
+          "id": "ZEP-3-3-11-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "3",
+              "verse": "3"
+            },
+            {
+              "chapter": "3",
+              "verse": "4"
+            },
+            {
+              "chapter": "3",
+              "verse": "5"
+            },
+            {
+              "chapter": "3",
+              "verse": "6"
+            },
+            {
+              "chapter": "3",
+              "verse": "7"
+            },
+            {
+              "chapter": "3",
+              "verse": "8"
+            },
+            {
+              "chapter": "3",
+              "verse": "9"
+            },
+            {
+              "chapter": "3",
+              "verse": "10"
+            },
+            {
+              "chapter": "3",
+              "verse": "11"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "3",
+              "verse": "3"
+            },
+            {
+              "chapter": "3",
+              "verse": "4"
+            },
+            {
+              "chapter": "3",
+              "verse": "5"
+            },
+            {
+              "chapter": "3",
+              "verse": "6"
+            },
+            {
+              "chapter": "3",
+              "verse": "7"
+            },
+            {
+              "chapter": "3",
+              "verse": "8"
+            },
+            {
+              "chapter": "3",
+              "verse": "9"
+            },
+            {
+              "chapter": "3",
+              "verse": "10"
+            },
+            {
+              "chapter": "3",
+              "verse": "11"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete Zephaniah 3:3-11 preserve matching numbered divisions after the opening split."
+          }
+        },
+        {
+          "id": "ZEP-3-12-13-greek",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "3",
+              "verse": "12"
+            },
+            {
+              "chapter": "3",
+              "verse": "13"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "3",
+              "verse": "12"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Swete Zephaniah 3:12 contains both the poor/humble people material of Douay 3:12 and the remnant-of-Israel/no-deceit/feeding-and-rest material of Douay 3:13. No synthetic Greek 3:13 boundary is created."
+          }
+        },
+        {
+          "id": "ZEP-3-14-20-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "3",
+              "verse": "14"
+            },
+            {
+              "chapter": "3",
+              "verse": "15"
+            },
+            {
+              "chapter": "3",
+              "verse": "16"
+            },
+            {
+              "chapter": "3",
+              "verse": "17"
+            },
+            {
+              "chapter": "3",
+              "verse": "18"
+            },
+            {
+              "chapter": "3",
+              "verse": "19"
+            },
+            {
+              "chapter": "3",
+              "verse": "20"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "3",
+              "verse": "14"
+            },
+            {
+              "chapter": "3",
+              "verse": "15"
+            },
+            {
+              "chapter": "3",
+              "verse": "16"
+            },
+            {
+              "chapter": "3",
+              "verse": "17"
+            },
+            {
+              "chapter": "3",
+              "verse": "18"
+            },
+            {
+              "chapter": "3",
+              "verse": "19"
+            },
+            {
+              "chapter": "3",
+              "verse": "20"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete Zephaniah 3:14-20 realign and preserve matching numbered divisions."
+          }
+        }
+      ]
+    }
+  ]
+}

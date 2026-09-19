@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.18-v6",
+  "registry_version": "2026.09.18-v7",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -62,6 +62,12 @@
       "lane": "greek",
       "status": "verified",
       "file": "maps/MIC-greek-first1k-swete.json"
+    },
+    {
+      "book_id": "ZEP",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/ZEP-greek-first1k-swete.json"
     }
   ]
 }
