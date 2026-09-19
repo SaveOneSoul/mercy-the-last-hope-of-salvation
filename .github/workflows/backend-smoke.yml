@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 36
-          assert registry['verified_book_count'] >= 24
+          assert registry['verified_mapping_count'] >= 37
+          assert registry['verified_book_count'] >= 25
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -852,5 +852,47 @@ jobs:
               assert [(row['source_chapter'], row['source_verse']) for row in ezr10[canonical]['source_verses']] == [('10', '43')]
               assert ezr10[canonical]['surface']
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including Ezra, 2 Kings, 2 Samuel, John, 2 Thessalonians, Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
+          daniel_3 = _semitic_study_payload('Daniel 3')
+          assert daniel_3['alignment']['mode'] == 'verified-explicit-map'
+          assert len(daniel_3['verses']) == 100
+          dan3 = {row['verse']: row for row in daniel_3['verses']}
+          assert [(row['chapter'], row['verse']) for row in dan3[23]['source_verses']] == [(3, 23)]
+          for canonical in (24, 25, 50, 90):
+              assert dan3[canonical]['mapping_relationship'] == 'canonical-only'
+              assert dan3[canonical]['source_missing'] is True
+              assert dan3[canonical]['source_verses'] == []
+              assert dan3[canonical]['tokens'] == []
+          assert dan3[91]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in dan3[91]['source_verses']] == [(3, 24)]
+          assert [(row['chapter'], row['verse']) for row in dan3[100]['source_verses']] == [(3, 33)]
+
+          daniel_5 = _semitic_study_payload('Daniel 5')
+          assert daniel_5['alignment']['mode'] == 'verified-explicit-map'
+          assert len(daniel_5['verses']) == 31
+          dan5 = {row['verse']: row for row in daniel_5['verses']}
+          assert [(row['chapter'], row['verse']) for row in dan5[30]['source_verses']] == [(5, 30)]
+          assert dan5[31]['mapping_relationship'] == 'renumber'
+          assert [(row['chapter'], row['verse']) for row in dan5[31]['source_verses']] == [(6, 1)]
+
+          daniel_6 = _semitic_study_payload('Daniel 6')
+          assert daniel_6['alignment']['mode'] == 'verified-explicit-map'
+          assert len(daniel_6['verses']) == 28
+          dan6 = {row['verse']: row for row in daniel_6['verses']}
+          assert dan6[1]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in dan6[1]['source_verses']] == [(6, 2)]
+          assert [(row['chapter'], row['verse']) for row in dan6[28]['source_verses']] == [(6, 29)]
+
+          for chapter, verse_count in ((13, 65), (14, 42)):
+              payload = _semitic_study_payload(f'Daniel {chapter}')
+              assert payload['alignment']['mode'] == 'verified-explicit-map'
+              assert payload['alignment']['reason'] == 'verified_explicit_cross_chapter_map'
+              assert payload['alignment']['source_verse_count'] == 0
+              assert len(payload['verses']) == verse_count
+              for row in payload['verses']:
+                  assert row['mapping_relationship'] == 'canonical-only'
+                  assert row['source_missing'] is True
+                  assert row['source_verses'] == []
+                  assert row['tokens'] == []
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including Daniel, Ezra, 2 Kings, 2 Samuel, John, 2 Thessalonians, Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
           PY
