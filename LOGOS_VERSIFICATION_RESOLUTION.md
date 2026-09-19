@@ -5,10 +5,10 @@ Generated deterministically from `coverage-audit.json` plus the verified versifi
 ## Burn-down
 
 - Catholic books: **73**
-- Books with at least one unresolved lane: **36**
-- Books with all applicable lanes resolved/exact: **37**
-- Unresolved source lanes: **64**
-- Lanes resolved by new verified registry maps: **16**
+- Books with at least one unresolved lane: **35**
+- Books with all applicable lanes resolved/exact: **38**
+- Unresolved source lanes: **62**
+- Lanes resolved by new verified registry maps: **18**
 - Lanes already resolved by accepted component/explicit maps: **3**
 
 A book leaves the unresolved count only when every applicable Hebrew/Aramaic, Greek, and Latin lane is exact or backed by a verified explicit/component mapping.
@@ -23,7 +23,7 @@ A book leaves the unresolved count only when every applicable Hebrew/Aramaic, Gr
 | 4 | Numbers | OT | Unresolved (7 ch) | Unresolved (5 ch) | Exact | Unresolved |
 | 5 | Deuteronomy | OT | Unresolved (6 ch) | Unresolved (7 ch) | Exact | Unresolved |
 | 6 | Joshua | OT | Unresolved (3 ch) | Unresolved (11 ch) | Exact | Unresolved |
-| 7 | Judges | OT | Unresolved (2 ch) | Unresolved (2 ch) | Exact | Unresolved |
+| 7 | Judges | OT | Verified map | Verified map | Exact | Resolved |
 | 8 | Ruth | OT | Exact | Exact | Exact | Resolved |
 | 9 | 1 Samuel | OT | Unresolved (2 ch) | Unresolved (7 ch) | Exact | Unresolved |
 | 10 | 2 Samuel | OT | Unresolved (2 ch) | Unresolved (2 ch) | Exact | Unresolved |

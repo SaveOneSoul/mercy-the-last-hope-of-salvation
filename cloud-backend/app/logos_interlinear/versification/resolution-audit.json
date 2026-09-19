@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 36,
-    "books_resolved": 37,
-    "unresolved_lane_count": 64,
-    "verified_registry_lane_count": 16,
+    "books_unresolved": 35,
+    "books_resolved": 38,
+    "unresolved_lane_count": 62,
+    "verified_registry_lane_count": 18,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -263,25 +263,47 @@
       "id": "JDG",
       "book": "Judges",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.19-jdg-semitic-v1",
+          "file": "maps/JDG-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "5",
+            "21"
+          ],
+          "audited_mismatch_chapters": [
+            "5",
+            "21"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "5",
             "21"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.19-jdg-greek-v1",
+          "file": "maps/JDG-greek-first1k-swete.json",
+          "covered_chapters": [
+            "5",
+            "21"
+          ],
+          "audited_mismatch_chapters": [
+            "5",
+            "21"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "5",
             "21"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
