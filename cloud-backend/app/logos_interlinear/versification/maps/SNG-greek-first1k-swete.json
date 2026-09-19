@@ -1,0 +1,349 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.20-sng-greek-v1",
+  "status": "verified",
+  "book_id": "SNG",
+  "book": "Song of Songs",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "first1kgreek-swete",
+    "reference_system": "swete-first1k-source-numbering",
+    "corpus_id": "grc_ot_catholic_full",
+    "corpus_version": "2026.09.17-catholic-lxx-full"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "1",
+      "4"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "1",
+      "segments": [
+        {
+          "id": "SNG-1-title-greek",
+          "relationship": "source-only",
+          "canonical_refs": [],
+          "source_refs": [
+            {
+              "chapter": "1",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Swete Song 1:1 is the Greek superscription 'Song of Songs, which is Solomon's'; Douay numbered verse 1 begins with the kiss material found in Swete 1:2."
+          }
+        },
+        {
+          "id": "SNG-1-1-16-greek",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "1",
+              "verse": "1"
+            },
+            {
+              "chapter": "1",
+              "verse": "2"
+            },
+            {
+              "chapter": "1",
+              "verse": "3"
+            },
+            {
+              "chapter": "1",
+              "verse": "4"
+            },
+            {
+              "chapter": "1",
+              "verse": "5"
+            },
+            {
+              "chapter": "1",
+              "verse": "6"
+            },
+            {
+              "chapter": "1",
+              "verse": "7"
+            },
+            {
+              "chapter": "1",
+              "verse": "8"
+            },
+            {
+              "chapter": "1",
+              "verse": "9"
+            },
+            {
+              "chapter": "1",
+              "verse": "10"
+            },
+            {
+              "chapter": "1",
+              "verse": "11"
+            },
+            {
+              "chapter": "1",
+              "verse": "12"
+            },
+            {
+              "chapter": "1",
+              "verse": "13"
+            },
+            {
+              "chapter": "1",
+              "verse": "14"
+            },
+            {
+              "chapter": "1",
+              "verse": "15"
+            },
+            {
+              "chapter": "1",
+              "verse": "16"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "1",
+              "verse": "2"
+            },
+            {
+              "chapter": "1",
+              "verse": "3"
+            },
+            {
+              "chapter": "1",
+              "verse": "4"
+            },
+            {
+              "chapter": "1",
+              "verse": "5"
+            },
+            {
+              "chapter": "1",
+              "verse": "6"
+            },
+            {
+              "chapter": "1",
+              "verse": "7"
+            },
+            {
+              "chapter": "1",
+              "verse": "8"
+            },
+            {
+              "chapter": "1",
+              "verse": "9"
+            },
+            {
+              "chapter": "1",
+              "verse": "10"
+            },
+            {
+              "chapter": "1",
+              "verse": "11"
+            },
+            {
+              "chapter": "1",
+              "verse": "12"
+            },
+            {
+              "chapter": "1",
+              "verse": "13"
+            },
+            {
+              "chapter": "1",
+              "verse": "14"
+            },
+            {
+              "chapter": "1",
+              "verse": "15"
+            },
+            {
+              "chapter": "1",
+              "verse": "16"
+            },
+            {
+              "chapter": "1",
+              "verse": "17"
+            }
+          ],
+          "evidence": {
+            "citation": "After the pinned Swete superscription at 1:1, Douay-Rheims Song 1:1-16 corresponds sequentially to Swete 1:2-17."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "4",
+      "segments": [
+        {
+          "id": "SNG-4-1-6-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "4",
+              "verse": "1"
+            },
+            {
+              "chapter": "4",
+              "verse": "2"
+            },
+            {
+              "chapter": "4",
+              "verse": "3"
+            },
+            {
+              "chapter": "4",
+              "verse": "4"
+            },
+            {
+              "chapter": "4",
+              "verse": "5"
+            },
+            {
+              "chapter": "4",
+              "verse": "6"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "4",
+              "verse": "1"
+            },
+            {
+              "chapter": "4",
+              "verse": "2"
+            },
+            {
+              "chapter": "4",
+              "verse": "3"
+            },
+            {
+              "chapter": "4",
+              "verse": "4"
+            },
+            {
+              "chapter": "4",
+              "verse": "5"
+            },
+            {
+              "chapter": "4",
+              "verse": "6"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete Song 4:1-6 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "SNG-4-7-8-greek",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "4",
+              "verse": "7"
+            },
+            {
+              "chapter": "4",
+              "verse": "8"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "4",
+              "verse": "7"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Swete Song 4:7 contains both Douay 4:7 ('all fair... no spot') and Douay 4:8 ('come from Lebanon...') in one intact source verse; no artificial Greek 4:8 boundary is created."
+          }
+        },
+        {
+          "id": "SNG-4-9-16-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "4",
+              "verse": "9"
+            },
+            {
+              "chapter": "4",
+              "verse": "10"
+            },
+            {
+              "chapter": "4",
+              "verse": "11"
+            },
+            {
+              "chapter": "4",
+              "verse": "12"
+            },
+            {
+              "chapter": "4",
+              "verse": "13"
+            },
+            {
+              "chapter": "4",
+              "verse": "14"
+            },
+            {
+              "chapter": "4",
+              "verse": "15"
+            },
+            {
+              "chapter": "4",
+              "verse": "16"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "4",
+              "verse": "9"
+            },
+            {
+              "chapter": "4",
+              "verse": "10"
+            },
+            {
+              "chapter": "4",
+              "verse": "11"
+            },
+            {
+              "chapter": "4",
+              "verse": "12"
+            },
+            {
+              "chapter": "4",
+              "verse": "13"
+            },
+            {
+              "chapter": "4",
+              "verse": "14"
+            },
+            {
+              "chapter": "4",
+              "verse": "15"
+            },
+            {
+              "chapter": "4",
+              "verse": "16"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete Song 4:9-16 preserve matching numbered divisions after the source 4:7 split."
+          }
+        }
+      ]
+    }
+  ]
+}
