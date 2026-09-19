@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 12
-          assert registry['verified_book_count'] >= 9
+          assert registry['verified_mapping_count'] >= 14
+          assert registry['verified_book_count'] >= 10
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -374,5 +374,36 @@ jobs:
           assert [(row['source_chapter'], row['source_verse']) for row in nah2g[1]['source_verses']] == [('2', '2')]
           assert [(row['source_chapter'], row['source_verse']) for row in nah2g[13]['source_verses']] == [('2', '14')]
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah/Zephaniah/Malachi/Joel/Nahum source versification + prayer/Mass/priest portal smoke test passed')
+          haggai_semitic_1 = _semitic_study_payload('Haggai 1')
+          assert haggai_semitic_1['alignment']['mode'] == 'verified-explicit-map'
+          assert haggai_semitic_1['alignment']['verified_mapping'] is True
+          assert len(haggai_semitic_1['verses']) == 14
+          hag1s = {row['verse']: row for row in haggai_semitic_1['verses']}
+          assert [(row['chapter'], row['verse']) for row in hag1s[14]['source_verses']] == [(1, 14)]
+
+          haggai_semitic_2 = _semitic_study_payload('Haggai 2')
+          assert haggai_semitic_2['alignment']['mode'] == 'verified-explicit-map'
+          assert haggai_semitic_2['alignment']['verified_mapping'] is True
+          assert len(haggai_semitic_2['verses']) == 24
+          hag2s = {row['verse']: row for row in haggai_semitic_2['verses']}
+          assert hag2s[1]['mapping_relationship'] == 'renumber'
+          assert [(row['chapter'], row['verse']) for row in hag2s[1]['source_verses']] == [(1, 15)]
+          assert hag2s[2]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in hag2s[2]['source_verses']] == [(2, 1)]
+          assert [(row['chapter'], row['verse']) for row in hag2s[24]['source_verses']] == [(2, 23)]
+
+          haggai_greek_2 = _full_greek_study_payload('Haggai 2')
+          assert haggai_greek_2['alignment']['mode'] == 'verified-explicit-map'
+          assert haggai_greek_2['alignment']['verified_mapping'] is True
+          assert len(haggai_greek_2['verses']) == 24
+          hag2g = {row['verse']: row for row in haggai_greek_2['verses']}
+          for canonical in (1, 2):
+              assert hag2g[canonical]['mapping_relationship'] == 'split'
+              assert [(row['source_chapter'], row['source_verse']) for row in hag2g[canonical]['source_verses']] == [('2', '1')]
+              assert hag2g[canonical]['surface']
+          assert hag2g[3]['mapping_relationship'] == 'offset'
+          assert [(row['source_chapter'], row['source_verse']) for row in hag2g[3]['source_verses']] == [('2', '2')]
+          assert [(row['source_chapter'], row['source_verse']) for row in hag2g[24]['source_verses']] == [('2', '23')]
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah/Zephaniah/Malachi/Joel/Nahum/Haggai source versification + prayer/Mass/priest portal smoke test passed')
           PY

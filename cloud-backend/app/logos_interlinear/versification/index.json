@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.19-v10",
+  "registry_version": "2026.09.19-v11",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -92,6 +92,18 @@
       "lane": "greek",
       "status": "verified",
       "file": "maps/NAM-greek-first1k-swete.json"
+    },
+    {
+      "book_id": "HAG",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/HAG-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "HAG",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/HAG-greek-first1k-swete.json"
     }
   ]
 }
