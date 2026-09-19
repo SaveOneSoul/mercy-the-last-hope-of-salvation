@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 7
-          assert registry['verified_book_count'] >= 5
+          assert registry['verified_mapping_count'] >= 8
+          assert registry['verified_book_count'] >= 6
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -263,5 +263,34 @@ jobs:
           assert [(row['source_chapter'], row['source_verse']) for row in micah5g[12]['source_verses']] == [('5', '13')]
           assert [(row['source_chapter'], row['source_verse']) for row in micah5g[14]['source_verses']] == [('5', '15')]
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah source versification + prayer/Mass/priest portal smoke test passed')
+          zephaniah_2 = _full_greek_study_payload('Zephaniah 2')
+          assert zephaniah_2['alignment']['mode'] == 'verified-explicit-map'
+          assert zephaniah_2['alignment']['verified_mapping'] is True
+          assert len(zephaniah_2['verses']) == 15
+          zeph2 = {row['verse']: row for row in zephaniah_2['verses']}
+          assert zeph2[14]['mapping_relationship'] == 'identity'
+          assert [(row['source_chapter'], row['source_verse']) for row in zeph2[14]['source_verses']] == [('2', '14')]
+          assert zeph2[15]['mapping_relationship'] == 'renumber'
+          assert [(row['source_chapter'], row['source_verse']) for row in zeph2[15]['source_verses']] == [('3', '1')]
+
+          zephaniah_3 = _full_greek_study_payload('Zephaniah 3')
+          assert zephaniah_3['alignment']['mode'] == 'verified-explicit-map'
+          assert zephaniah_3['alignment']['verified_mapping'] is True
+          assert len(zephaniah_3['verses']) == 20
+          zeph3 = {row['verse']: row for row in zephaniah_3['verses']}
+          for canonical in (1, 2):
+              assert zeph3[canonical]['mapping_relationship'] == 'split'
+              assert [(row['source_chapter'], row['source_verse']) for row in zeph3[canonical]['source_verses']] == [('3', '2')]
+              assert zeph3[canonical]['surface']
+          assert zeph3[3]['mapping_relationship'] == 'identity'
+          assert [(row['source_chapter'], row['source_verse']) for row in zeph3[3]['source_verses']] == [('3', '3')]
+          for canonical in (12, 13):
+              assert zeph3[canonical]['mapping_relationship'] == 'split'
+              assert [(row['source_chapter'], row['source_verse']) for row in zeph3[canonical]['source_verses']] == [('3', '12')]
+              assert zeph3[canonical]['surface']
+          assert zeph3[14]['mapping_relationship'] == 'identity'
+          assert [(row['source_chapter'], row['source_verse']) for row in zeph3[14]['source_verses']] == [('3', '14')]
+          assert [(row['source_chapter'], row['source_verse']) for row in zeph3[20]['source_verses']] == [('3', '20')]
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah/Zephaniah source versification + prayer/Mass/priest portal smoke test passed')
           PY
