@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 37
-          assert registry['verified_book_count'] >= 25
+          assert registry['verified_mapping_count'] >= 39
+          assert registry['verified_book_count'] >= 26
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -894,5 +894,56 @@ jobs:
                   assert row['source_verses'] == []
                   assert row['tokens'] == []
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including Daniel, Ezra, 2 Kings, 2 Samuel, John, 2 Thessalonians, Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
+          song_semitic_1 = _semitic_study_payload('Song of Songs 1')
+          assert song_semitic_1['alignment']['mode'] == 'verified-explicit-map'
+          assert len(song_semitic_1['verses']) == 16
+          sng1s = {row['verse']: row for row in song_semitic_1['verses']}
+          assert sng1s[1]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in sng1s[1]['source_verses']] == [(1, 2)]
+          assert [(row['chapter'], row['verse']) for row in sng1s[16]['source_verses']] == [(1, 17)]
+
+          song_semitic_4 = _semitic_study_payload('Song of Songs 4')
+          assert song_semitic_4['alignment']['mode'] == 'verified-explicit-map'
+          assert song_semitic_4['alignment']['numeric_identifier_identity'] is True
+          sng4s = {row['verse']: row for row in song_semitic_4['verses']}
+          assert [(row['chapter'], row['verse']) for row in sng4s[16]['source_verses']] == [(4, 16)]
+
+          song_semitic_5 = _semitic_study_payload('Song of Songs 5')
+          assert len(song_semitic_5['verses']) == 17
+          sng5s = {row['verse']: row for row in song_semitic_5['verses']}
+          assert sng5s[1]['mapping_relationship'] == 'merge'
+          assert [(row['chapter'], row['verse']) for row in sng5s[1]['source_verses']] == [(4, 16), (5, 1)]
+          assert sng5s[17]['mapping_relationship'] == 'renumber'
+          assert [(row['chapter'], row['verse']) for row in sng5s[17]['source_verses']] == [(6, 1)]
+
+          song_semitic_6 = _semitic_study_payload('Song of Songs 6')
+          assert song_semitic_6['alignment']['mode'] == 'verified-explicit-map'
+          assert song_semitic_6['alignment']['numeric_identifier_identity'] is True
+          sng6s = {row['verse']: row for row in song_semitic_6['verses']}
+          assert [(row['chapter'], row['verse']) for row in sng6s[1]['source_verses']] == [(6, 2)]
+          assert [(row['chapter'], row['verse']) for row in sng6s[12]['source_verses']] == [(7, 1)]
+
+          song_semitic_7 = _semitic_study_payload('Song of Songs 7')
+          assert len(song_semitic_7['verses']) == 13
+          sng7s = {row['verse']: row for row in song_semitic_7['verses']}
+          assert sng7s[1]['mapping_relationship'] == 'merge'
+          assert [(row['chapter'], row['verse']) for row in sng7s[1]['source_verses']] == [(7, 1), (7, 2)]
+          assert [(row['chapter'], row['verse']) for row in sng7s[13]['source_verses']] == [(7, 14)]
+
+          song_greek_1 = _full_greek_study_payload('Song of Songs 1')
+          assert song_greek_1['alignment']['mode'] == 'verified-explicit-map'
+          assert len(song_greek_1['verses']) == 16
+          sng1g = {row['verse']: row for row in song_greek_1['verses']}
+          assert [(row['source_chapter'], row['source_verse']) for row in sng1g[1]['source_verses']] == [('1', '2')]
+          assert [(row['source_chapter'], row['source_verse']) for row in sng1g[16]['source_verses']] == [('1', '17')]
+
+          song_greek_4 = _full_greek_study_payload('Song of Songs 4')
+          assert len(song_greek_4['verses']) == 16
+          sng4g = {row['verse']: row for row in song_greek_4['verses']}
+          for canonical in (7, 8):
+              assert sng4g[canonical]['mapping_relationship'] == 'split'
+              assert [(row['source_chapter'], row['source_verse']) for row in sng4g[canonical]['source_verses']] == [('4', '7')]
+          assert [(row['source_chapter'], row['source_verse']) for row in sng4g[9]['source_verses']] == [('4', '9')]
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including Song of Songs, Daniel, Ezra, 2 Kings, 2 Samuel, John, 2 Thessalonians, Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
           PY
