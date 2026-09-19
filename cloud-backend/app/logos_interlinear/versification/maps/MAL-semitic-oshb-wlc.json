@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.19-mal-semitic-v1",
+  "status": "verified",
+  "book_id": "MAL",
+  "book": "Malachi",
+  "lane": "semitic",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "oshb",
+    "reference_system": "oshb-wlc-osis",
+    "corpus_id": "heb_arc_oshb_wlc",
+    "corpus_version": "2026.09.16-oshb-wlc-39"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "3",
+      "4"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "3",
+      "segments": [
+        {
+          "id": "MAL-3-1-18-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "3",
+              "verse": "1"
+            },
+            {
+              "chapter": "3",
+              "verse": "2"
+            },
+            {
+              "chapter": "3",
+              "verse": "3"
+            },
+            {
+              "chapter": "3",
+              "verse": "4"
+            },
+            {
+              "chapter": "3",
+              "verse": "5"
+            },
+            {
+              "chapter": "3",
+              "verse": "6"
+            },
+            {
+              "chapter": "3",
+              "verse": "7"
+            },
+            {
+              "chapter": "3",
+              "verse": "8"
+            },
+            {
+              "chapter": "3",
+              "verse": "9"
+            },
+            {
+              "chapter": "3",
+              "verse": "10"
+            },
+            {
+              "chapter": "3",
+              "verse": "11"
+            },
+            {
+              "chapter": "3",
+              "verse": "12"
+            },
+            {
+              "chapter": "3",
+              "verse": "13"
+            },
+            {
+              "chapter": "3",
+              "verse": "14"
+            },
+            {
+              "chapter": "3",
+              "verse": "15"
+            },
+            {
+              "chapter": "3",
+              "verse": "16"
+            },
+            {
+              "chapter": "3",
+              "verse": "17"
+            },
+            {
+              "chapter": "3",
+              "verse": "18"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "3",
+              "verse": "1"
+            },
+            {
+              "chapter": "3",
+              "verse": "2"
+            },
+            {
+              "chapter": "3",
+              "verse": "3"
+            },
+            {
+              "chapter": "3",
+              "verse": "4"
+            },
+            {
+              "chapter": "3",
+              "verse": "5"
+            },
+            {
+              "chapter": "3",
+              "verse": "6"
+            },
+            {
+              "chapter": "3",
+              "verse": "7"
+            },
+            {
+              "chapter": "3",
+              "verse": "8"
+            },
+            {
+              "chapter": "3",
+              "verse": "9"
+            },
+            {
+              "chapter": "3",
+              "verse": "10"
+            },
+            {
+              "chapter": "3",
+              "verse": "11"
+            },
+            {
+              "chapter": "3",
+              "verse": "12"
+            },
+            {
+              "chapter": "3",
+              "verse": "13"
+            },
+            {
+              "chapter": "3",
+              "verse": "14"
+            },
+            {
+              "chapter": "3",
+              "verse": "15"
+            },
+            {
+              "chapter": "3",
+              "verse": "16"
+            },
+            {
+              "chapter": "3",
+              "verse": "17"
+            },
+            {
+              "chapter": "3",
+              "verse": "18"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Malachi 3:1-18 and pinned OSHB/WLC Malachi 3:1-18 preserve matching numbered divisions. OSHB/WLC 3:19-24 contains the material printed as Douay-Rheims chapter 4 and is mapped there explicitly."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "4",
+      "segments": [
+        {
+          "id": "MAL-4-1-6-semitic-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "4",
+              "verse": "1"
+            },
+            {
+              "chapter": "4",
+              "verse": "2"
+            },
+            {
+              "chapter": "4",
+              "verse": "3"
+            },
+            {
+              "chapter": "4",
+              "verse": "4"
+            },
+            {
+              "chapter": "4",
+              "verse": "5"
+            },
+            {
+              "chapter": "4",
+              "verse": "6"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "3",
+              "verse": "19"
+            },
+            {
+              "chapter": "3",
+              "verse": "20"
+            },
+            {
+              "chapter": "3",
+              "verse": "21"
+            },
+            {
+              "chapter": "3",
+              "verse": "22"
+            },
+            {
+              "chapter": "3",
+              "verse": "23"
+            },
+            {
+              "chapter": "3",
+              "verse": "24"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Malachi 4:1-6 corresponds sequentially to pinned OSHB/WLC Malachi 3:19-24: the burning day, Sun of justice, treading the wicked, remembrance of Moses, sending Elijah, and turning fathers' and children's hearts. The Hebrew source remains a three-chapter book and is not renumbered."
+          }
+        }
+      ]
+    }
+  ]
+}
