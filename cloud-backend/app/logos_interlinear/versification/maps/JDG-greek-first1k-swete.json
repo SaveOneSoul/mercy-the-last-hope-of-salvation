@@ -1,0 +1,531 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.19-jdg-greek-v1",
+  "status": "verified",
+  "book_id": "JDG",
+  "book": "Judges",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "first1kgreek-swete",
+    "reference_system": "swete-first1k-source-numbering",
+    "corpus_id": "grc_ot_catholic_full",
+    "corpus_version": "2026.09.17-catholic-lxx-full"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "5",
+      "21"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "5",
+      "segments": [
+        {
+          "id": "JDG-5-1-30-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "1"
+            },
+            {
+              "chapter": "5",
+              "verse": "2"
+            },
+            {
+              "chapter": "5",
+              "verse": "3"
+            },
+            {
+              "chapter": "5",
+              "verse": "4"
+            },
+            {
+              "chapter": "5",
+              "verse": "5"
+            },
+            {
+              "chapter": "5",
+              "verse": "6"
+            },
+            {
+              "chapter": "5",
+              "verse": "7"
+            },
+            {
+              "chapter": "5",
+              "verse": "8"
+            },
+            {
+              "chapter": "5",
+              "verse": "9"
+            },
+            {
+              "chapter": "5",
+              "verse": "10"
+            },
+            {
+              "chapter": "5",
+              "verse": "11"
+            },
+            {
+              "chapter": "5",
+              "verse": "12"
+            },
+            {
+              "chapter": "5",
+              "verse": "13"
+            },
+            {
+              "chapter": "5",
+              "verse": "14"
+            },
+            {
+              "chapter": "5",
+              "verse": "15"
+            },
+            {
+              "chapter": "5",
+              "verse": "16"
+            },
+            {
+              "chapter": "5",
+              "verse": "17"
+            },
+            {
+              "chapter": "5",
+              "verse": "18"
+            },
+            {
+              "chapter": "5",
+              "verse": "19"
+            },
+            {
+              "chapter": "5",
+              "verse": "20"
+            },
+            {
+              "chapter": "5",
+              "verse": "21"
+            },
+            {
+              "chapter": "5",
+              "verse": "22"
+            },
+            {
+              "chapter": "5",
+              "verse": "23"
+            },
+            {
+              "chapter": "5",
+              "verse": "24"
+            },
+            {
+              "chapter": "5",
+              "verse": "25"
+            },
+            {
+              "chapter": "5",
+              "verse": "26"
+            },
+            {
+              "chapter": "5",
+              "verse": "27"
+            },
+            {
+              "chapter": "5",
+              "verse": "28"
+            },
+            {
+              "chapter": "5",
+              "verse": "29"
+            },
+            {
+              "chapter": "5",
+              "verse": "30"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "5",
+              "verse": "1"
+            },
+            {
+              "chapter": "5",
+              "verse": "2"
+            },
+            {
+              "chapter": "5",
+              "verse": "3"
+            },
+            {
+              "chapter": "5",
+              "verse": "4"
+            },
+            {
+              "chapter": "5",
+              "verse": "5"
+            },
+            {
+              "chapter": "5",
+              "verse": "6"
+            },
+            {
+              "chapter": "5",
+              "verse": "7"
+            },
+            {
+              "chapter": "5",
+              "verse": "8"
+            },
+            {
+              "chapter": "5",
+              "verse": "9"
+            },
+            {
+              "chapter": "5",
+              "verse": "10"
+            },
+            {
+              "chapter": "5",
+              "verse": "11"
+            },
+            {
+              "chapter": "5",
+              "verse": "12"
+            },
+            {
+              "chapter": "5",
+              "verse": "13"
+            },
+            {
+              "chapter": "5",
+              "verse": "14"
+            },
+            {
+              "chapter": "5",
+              "verse": "15"
+            },
+            {
+              "chapter": "5",
+              "verse": "16"
+            },
+            {
+              "chapter": "5",
+              "verse": "17"
+            },
+            {
+              "chapter": "5",
+              "verse": "18"
+            },
+            {
+              "chapter": "5",
+              "verse": "19"
+            },
+            {
+              "chapter": "5",
+              "verse": "20"
+            },
+            {
+              "chapter": "5",
+              "verse": "21"
+            },
+            {
+              "chapter": "5",
+              "verse": "22"
+            },
+            {
+              "chapter": "5",
+              "verse": "23"
+            },
+            {
+              "chapter": "5",
+              "verse": "24"
+            },
+            {
+              "chapter": "5",
+              "verse": "25"
+            },
+            {
+              "chapter": "5",
+              "verse": "26"
+            },
+            {
+              "chapter": "5",
+              "verse": "27"
+            },
+            {
+              "chapter": "5",
+              "verse": "28"
+            },
+            {
+              "chapter": "5",
+              "verse": "29"
+            },
+            {
+              "chapter": "5",
+              "verse": "30"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Judges 5:1-30 and pinned First1KGreek/Swete Judges 5:1-30 preserve matching numbered source divisions."
+          }
+        },
+        {
+          "id": "JDG-5-31-32-greek",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "31"
+            },
+            {
+              "chapter": "5",
+              "verse": "32"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "5",
+              "verse": "31"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Swete Judges 5:31 contains both the 'let all your enemies perish / those who love the Lord shine like the sun' material of Douay 5:31 and the 'land rested forty years' sentence printed separately as Douay 5:32. The Greek source verse is kept intact."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "21",
+      "segments": [
+        {
+          "id": "JDG-21-1-23-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "21",
+              "verse": "1"
+            },
+            {
+              "chapter": "21",
+              "verse": "2"
+            },
+            {
+              "chapter": "21",
+              "verse": "3"
+            },
+            {
+              "chapter": "21",
+              "verse": "4"
+            },
+            {
+              "chapter": "21",
+              "verse": "5"
+            },
+            {
+              "chapter": "21",
+              "verse": "6"
+            },
+            {
+              "chapter": "21",
+              "verse": "7"
+            },
+            {
+              "chapter": "21",
+              "verse": "8"
+            },
+            {
+              "chapter": "21",
+              "verse": "9"
+            },
+            {
+              "chapter": "21",
+              "verse": "10"
+            },
+            {
+              "chapter": "21",
+              "verse": "11"
+            },
+            {
+              "chapter": "21",
+              "verse": "12"
+            },
+            {
+              "chapter": "21",
+              "verse": "13"
+            },
+            {
+              "chapter": "21",
+              "verse": "14"
+            },
+            {
+              "chapter": "21",
+              "verse": "15"
+            },
+            {
+              "chapter": "21",
+              "verse": "16"
+            },
+            {
+              "chapter": "21",
+              "verse": "17"
+            },
+            {
+              "chapter": "21",
+              "verse": "18"
+            },
+            {
+              "chapter": "21",
+              "verse": "19"
+            },
+            {
+              "chapter": "21",
+              "verse": "20"
+            },
+            {
+              "chapter": "21",
+              "verse": "21"
+            },
+            {
+              "chapter": "21",
+              "verse": "22"
+            },
+            {
+              "chapter": "21",
+              "verse": "23"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "21",
+              "verse": "1"
+            },
+            {
+              "chapter": "21",
+              "verse": "2"
+            },
+            {
+              "chapter": "21",
+              "verse": "3"
+            },
+            {
+              "chapter": "21",
+              "verse": "4"
+            },
+            {
+              "chapter": "21",
+              "verse": "5"
+            },
+            {
+              "chapter": "21",
+              "verse": "6"
+            },
+            {
+              "chapter": "21",
+              "verse": "7"
+            },
+            {
+              "chapter": "21",
+              "verse": "8"
+            },
+            {
+              "chapter": "21",
+              "verse": "9"
+            },
+            {
+              "chapter": "21",
+              "verse": "10"
+            },
+            {
+              "chapter": "21",
+              "verse": "11"
+            },
+            {
+              "chapter": "21",
+              "verse": "12"
+            },
+            {
+              "chapter": "21",
+              "verse": "13"
+            },
+            {
+              "chapter": "21",
+              "verse": "14"
+            },
+            {
+              "chapter": "21",
+              "verse": "15"
+            },
+            {
+              "chapter": "21",
+              "verse": "16"
+            },
+            {
+              "chapter": "21",
+              "verse": "17"
+            },
+            {
+              "chapter": "21",
+              "verse": "18"
+            },
+            {
+              "chapter": "21",
+              "verse": "19"
+            },
+            {
+              "chapter": "21",
+              "verse": "20"
+            },
+            {
+              "chapter": "21",
+              "verse": "21"
+            },
+            {
+              "chapter": "21",
+              "verse": "22"
+            },
+            {
+              "chapter": "21",
+              "verse": "23"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Judges 21:1-23 and pinned First1KGreek/Swete Judges 21:1-23 preserve matching numbered source divisions."
+          }
+        },
+        {
+          "id": "JDG-21-24-greek",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "21",
+              "verse": "24"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "21",
+              "verse": "24"
+            },
+            {
+              "chapter": "21",
+              "verse": "25"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Judges 21:24 contains both Israel's return by tribe/family and the closing 'no king in Israel; every man did what was right in his own eyes' statement. Pinned Swete records those as separate source verses 21:24 and 21:25."
+          }
+        }
+      ]
+    }
+  ]
+}
