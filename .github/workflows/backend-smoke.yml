@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 18
-          assert registry['verified_book_count'] >= 12
+          assert registry['verified_mapping_count'] >= 20
+          assert registry['verified_book_count'] >= 13
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -475,5 +475,35 @@ jobs:
           assert jdg21s[24]['mapping_relationship'] == 'merge'
           assert [(row['chapter'], row['verse']) for row in jdg21s[24]['source_verses']] == [(21, 24), (21, 25)]
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah/Zephaniah/Malachi/Joel/Nahum/Haggai/Zechariah/Judges source versification + prayer/Mass/priest portal smoke test passed')
+          ecclesiastes_semitic_6 = _semitic_study_payload('Ecclesiastes 6')
+          assert ecclesiastes_semitic_6['alignment']['mode'] == 'verified-explicit-map'
+          ecc6s = {row['verse']: row for row in ecclesiastes_semitic_6['verses']}
+          assert len(ecc6s) == 11
+          assert [(row['chapter'], row['verse']) for row in ecc6s[11]['source_verses']] == [(6, 11)]
+          ecclesiastes_semitic_7 = _semitic_study_payload('Ecclesiastes 7')
+          assert ecclesiastes_semitic_7['alignment']['mode'] == 'verified-explicit-map'
+          ecc7s = {row['verse']: row for row in ecclesiastes_semitic_7['verses']}
+          assert len(ecc7s) == 30
+          assert ecc7s[1]['mapping_relationship'] == 'renumber'
+          assert [(row['chapter'], row['verse']) for row in ecc7s[1]['source_verses']] == [(6, 12)]
+          assert ecc7s[2]['mapping_relationship'] == 'offset'
+          assert [(row['chapter'], row['verse']) for row in ecc7s[2]['source_verses']] == [(7, 1)]
+          assert [(row['chapter'], row['verse']) for row in ecc7s[30]['source_verses']] == [(7, 29)]
+
+          ecclesiastes_greek_6 = _full_greek_study_payload('Ecclesiastes 6')
+          assert ecclesiastes_greek_6['alignment']['mode'] == 'verified-explicit-map'
+          ecc6g = {row['verse']: row for row in ecclesiastes_greek_6['verses']}
+          assert len(ecc6g) == 11
+          assert [(row['source_chapter'], row['source_verse']) for row in ecc6g[11]['source_verses']] == [('6', '11')]
+          ecclesiastes_greek_7 = _full_greek_study_payload('Ecclesiastes 7')
+          assert ecclesiastes_greek_7['alignment']['mode'] == 'verified-explicit-map'
+          ecc7g = {row['verse']: row for row in ecclesiastes_greek_7['verses']}
+          assert len(ecc7g) == 30
+          assert ecc7g[1]['mapping_relationship'] == 'renumber'
+          assert [(row['source_chapter'], row['source_verse']) for row in ecc7g[1]['source_verses']] == [('6', '12')]
+          assert ecc7g[2]['mapping_relationship'] == 'offset'
+          assert [(row['source_chapter'], row['source_verse']) for row in ecc7g[2]['source_verses']] == [('7', '1')]
+          assert [(row['source_chapter'], row['source_verse']) for row in ecc7g[30]['source_verses']] == [('7', '29')]
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified Judith/Sirach Latin + Lamentations/Amos/Micah/Zephaniah/Malachi/Joel/Nahum/Haggai/Zechariah/Judges/Ecclesiastes source versification + prayer/Mass/priest portal smoke test passed')
           PY

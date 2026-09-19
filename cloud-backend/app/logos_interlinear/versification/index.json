@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.19-v13",
+  "registry_version": "2026.09.19-v14",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -128,6 +128,18 @@
       "lane": "semitic",
       "status": "verified",
       "file": "maps/JDG-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "ECC",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/ECC-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "ECC",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/ECC-greek-wikisource.json"
     }
   ]
 }

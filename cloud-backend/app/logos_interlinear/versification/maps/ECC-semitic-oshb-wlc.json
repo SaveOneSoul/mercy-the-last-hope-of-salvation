@@ -1,0 +1,400 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.19-ecc-semitic-v1",
+  "status": "verified",
+  "book_id": "ECC",
+  "book": "Ecclesiastes",
+  "lane": "semitic",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "oshb",
+    "reference_system": "oshb-wlc-osis",
+    "corpus_id": "heb_arc_oshb_wlc",
+    "corpus_version": "2026.09.16-oshb-wlc-39"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "6",
+      "7"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "6",
+      "segments": [
+        {
+          "id": "ECC-6-1-11-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "6",
+              "verse": "1"
+            },
+            {
+              "chapter": "6",
+              "verse": "2"
+            },
+            {
+              "chapter": "6",
+              "verse": "3"
+            },
+            {
+              "chapter": "6",
+              "verse": "4"
+            },
+            {
+              "chapter": "6",
+              "verse": "5"
+            },
+            {
+              "chapter": "6",
+              "verse": "6"
+            },
+            {
+              "chapter": "6",
+              "verse": "7"
+            },
+            {
+              "chapter": "6",
+              "verse": "8"
+            },
+            {
+              "chapter": "6",
+              "verse": "9"
+            },
+            {
+              "chapter": "6",
+              "verse": "10"
+            },
+            {
+              "chapter": "6",
+              "verse": "11"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "6",
+              "verse": "1"
+            },
+            {
+              "chapter": "6",
+              "verse": "2"
+            },
+            {
+              "chapter": "6",
+              "verse": "3"
+            },
+            {
+              "chapter": "6",
+              "verse": "4"
+            },
+            {
+              "chapter": "6",
+              "verse": "5"
+            },
+            {
+              "chapter": "6",
+              "verse": "6"
+            },
+            {
+              "chapter": "6",
+              "verse": "7"
+            },
+            {
+              "chapter": "6",
+              "verse": "8"
+            },
+            {
+              "chapter": "6",
+              "verse": "9"
+            },
+            {
+              "chapter": "6",
+              "verse": "10"
+            },
+            {
+              "chapter": "6",
+              "verse": "11"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Ecclesiastes 6:1-11 and pinned OSHB/WLC Ecclesiastes 6:1-11 preserve matching numbered divisions. Source 6:12 belongs to the following Douay chapter and is mapped there."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "7",
+      "segments": [
+        {
+          "id": "ECC-7-1-semitic-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "7",
+              "verse": "1"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "6",
+              "verse": "12"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Ecclesiastes 7:1 corresponds to pinned OSHB/WLC Ecclesiastes 6:12: both contain the question of what is good/profitable for a person during the days of life, life as a shadow, and who can tell what comes afterward under the sun."
+          }
+        },
+        {
+          "id": "ECC-7-2-30-semitic",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "7",
+              "verse": "2"
+            },
+            {
+              "chapter": "7",
+              "verse": "3"
+            },
+            {
+              "chapter": "7",
+              "verse": "4"
+            },
+            {
+              "chapter": "7",
+              "verse": "5"
+            },
+            {
+              "chapter": "7",
+              "verse": "6"
+            },
+            {
+              "chapter": "7",
+              "verse": "7"
+            },
+            {
+              "chapter": "7",
+              "verse": "8"
+            },
+            {
+              "chapter": "7",
+              "verse": "9"
+            },
+            {
+              "chapter": "7",
+              "verse": "10"
+            },
+            {
+              "chapter": "7",
+              "verse": "11"
+            },
+            {
+              "chapter": "7",
+              "verse": "12"
+            },
+            {
+              "chapter": "7",
+              "verse": "13"
+            },
+            {
+              "chapter": "7",
+              "verse": "14"
+            },
+            {
+              "chapter": "7",
+              "verse": "15"
+            },
+            {
+              "chapter": "7",
+              "verse": "16"
+            },
+            {
+              "chapter": "7",
+              "verse": "17"
+            },
+            {
+              "chapter": "7",
+              "verse": "18"
+            },
+            {
+              "chapter": "7",
+              "verse": "19"
+            },
+            {
+              "chapter": "7",
+              "verse": "20"
+            },
+            {
+              "chapter": "7",
+              "verse": "21"
+            },
+            {
+              "chapter": "7",
+              "verse": "22"
+            },
+            {
+              "chapter": "7",
+              "verse": "23"
+            },
+            {
+              "chapter": "7",
+              "verse": "24"
+            },
+            {
+              "chapter": "7",
+              "verse": "25"
+            },
+            {
+              "chapter": "7",
+              "verse": "26"
+            },
+            {
+              "chapter": "7",
+              "verse": "27"
+            },
+            {
+              "chapter": "7",
+              "verse": "28"
+            },
+            {
+              "chapter": "7",
+              "verse": "29"
+            },
+            {
+              "chapter": "7",
+              "verse": "30"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "7",
+              "verse": "1"
+            },
+            {
+              "chapter": "7",
+              "verse": "2"
+            },
+            {
+              "chapter": "7",
+              "verse": "3"
+            },
+            {
+              "chapter": "7",
+              "verse": "4"
+            },
+            {
+              "chapter": "7",
+              "verse": "5"
+            },
+            {
+              "chapter": "7",
+              "verse": "6"
+            },
+            {
+              "chapter": "7",
+              "verse": "7"
+            },
+            {
+              "chapter": "7",
+              "verse": "8"
+            },
+            {
+              "chapter": "7",
+              "verse": "9"
+            },
+            {
+              "chapter": "7",
+              "verse": "10"
+            },
+            {
+              "chapter": "7",
+              "verse": "11"
+            },
+            {
+              "chapter": "7",
+              "verse": "12"
+            },
+            {
+              "chapter": "7",
+              "verse": "13"
+            },
+            {
+              "chapter": "7",
+              "verse": "14"
+            },
+            {
+              "chapter": "7",
+              "verse": "15"
+            },
+            {
+              "chapter": "7",
+              "verse": "16"
+            },
+            {
+              "chapter": "7",
+              "verse": "17"
+            },
+            {
+              "chapter": "7",
+              "verse": "18"
+            },
+            {
+              "chapter": "7",
+              "verse": "19"
+            },
+            {
+              "chapter": "7",
+              "verse": "20"
+            },
+            {
+              "chapter": "7",
+              "verse": "21"
+            },
+            {
+              "chapter": "7",
+              "verse": "22"
+            },
+            {
+              "chapter": "7",
+              "verse": "23"
+            },
+            {
+              "chapter": "7",
+              "verse": "24"
+            },
+            {
+              "chapter": "7",
+              "verse": "25"
+            },
+            {
+              "chapter": "7",
+              "verse": "26"
+            },
+            {
+              "chapter": "7",
+              "verse": "27"
+            },
+            {
+              "chapter": "7",
+              "verse": "28"
+            },
+            {
+              "chapter": "7",
+              "verse": "29"
+            }
+          ],
+          "evidence": {
+            "citation": "After the source 6:12 / Douay 7:1 chapter-boundary shift, Douay-Rheims Ecclesiastes 7:2-30 corresponds sequentially to pinned OSHB/WLC source 7:1-29, from the good-name saying through God's making humanity upright."
+          }
+        }
+      ]
+    }
+  ]
+}
