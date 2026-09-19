@@ -540,7 +540,6 @@ jobs:
               assert rom16_alignment[canonical]['source_missing'] is True
               assert rom16_alignment[canonical]['source_refs'] == []
           assert all(int(token['verse']) <= 24 for token in romans_16['tokens'])
-          assert 'do not synthesize Greek text' not in romans_16['note']
           assert 'do not synthesize Greek text, transliteration, lemma, POS, or morphology' in romans_16['note']
 
           print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including 2 Corinthians Latin and Romans 16 Greek + prayer/Mass/priest portal smoke test passed')
