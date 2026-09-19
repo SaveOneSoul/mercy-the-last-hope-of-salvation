@@ -1,0 +1,792 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.20-sng-semitic-v1",
+  "status": "verified",
+  "book_id": "SNG",
+  "book": "Song of Songs",
+  "lane": "semitic",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "oshb",
+    "reference_system": "oshb-wlc-osis",
+    "corpus_id": "heb_arc_oshb_wlc",
+    "corpus_version": "2026.09.16-oshb-wlc-39"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "1",
+      "5",
+      "7"
+    ],
+    "verified_override_chapters": [
+      "4",
+      "6"
+    ],
+    "complete_for_audited_mismatches": true,
+    "complete_for_numeric_identity_overrides": true,
+    "numeric_identity_override_evidence": {
+      "4": {
+        "citation": "Pinned OSHB/WLC Song 4:16 includes both the north/south-wind material printed as Douay 4:16 and the invitation for the beloved to enter the garden printed at the opening of Douay 5:1. Equal numeric verse inventories therefore do not imply a clean one-to-one boundary at 4:16."
+      },
+      "6": {
+        "citation": "Pinned OSHB/WLC Song 6:1 is the 'Whither is thy beloved gone?' material printed as Douay 5:17, while OSHB/WLC 7:1 begins with the 'Return, return, O Shulamite' material printed as Douay 6:12. Equal numeric verse counts in chapter 6 therefore mask a cross-chapter shift."
+      }
+    }
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "1",
+      "segments": [
+        {
+          "id": "SNG-1-title-semitic",
+          "relationship": "source-only",
+          "canonical_refs": [],
+          "source_refs": [
+            {
+              "chapter": "1",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned OSHB/WLC Song 1:1 is the superscription 'Song of Songs, which is Solomon's'; the Douay-Rheims chapter begins its numbered verse 1 with the kiss-of-his-mouth material corresponding to OSHB 1:2."
+          }
+        },
+        {
+          "id": "SNG-1-1-16-semitic",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "1",
+              "verse": "1"
+            },
+            {
+              "chapter": "1",
+              "verse": "2"
+            },
+            {
+              "chapter": "1",
+              "verse": "3"
+            },
+            {
+              "chapter": "1",
+              "verse": "4"
+            },
+            {
+              "chapter": "1",
+              "verse": "5"
+            },
+            {
+              "chapter": "1",
+              "verse": "6"
+            },
+            {
+              "chapter": "1",
+              "verse": "7"
+            },
+            {
+              "chapter": "1",
+              "verse": "8"
+            },
+            {
+              "chapter": "1",
+              "verse": "9"
+            },
+            {
+              "chapter": "1",
+              "verse": "10"
+            },
+            {
+              "chapter": "1",
+              "verse": "11"
+            },
+            {
+              "chapter": "1",
+              "verse": "12"
+            },
+            {
+              "chapter": "1",
+              "verse": "13"
+            },
+            {
+              "chapter": "1",
+              "verse": "14"
+            },
+            {
+              "chapter": "1",
+              "verse": "15"
+            },
+            {
+              "chapter": "1",
+              "verse": "16"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "1",
+              "verse": "2"
+            },
+            {
+              "chapter": "1",
+              "verse": "3"
+            },
+            {
+              "chapter": "1",
+              "verse": "4"
+            },
+            {
+              "chapter": "1",
+              "verse": "5"
+            },
+            {
+              "chapter": "1",
+              "verse": "6"
+            },
+            {
+              "chapter": "1",
+              "verse": "7"
+            },
+            {
+              "chapter": "1",
+              "verse": "8"
+            },
+            {
+              "chapter": "1",
+              "verse": "9"
+            },
+            {
+              "chapter": "1",
+              "verse": "10"
+            },
+            {
+              "chapter": "1",
+              "verse": "11"
+            },
+            {
+              "chapter": "1",
+              "verse": "12"
+            },
+            {
+              "chapter": "1",
+              "verse": "13"
+            },
+            {
+              "chapter": "1",
+              "verse": "14"
+            },
+            {
+              "chapter": "1",
+              "verse": "15"
+            },
+            {
+              "chapter": "1",
+              "verse": "16"
+            },
+            {
+              "chapter": "1",
+              "verse": "17"
+            }
+          ],
+          "evidence": {
+            "citation": "After the OSHB/WLC superscription at 1:1, Douay-Rheims Song 1:1-16 corresponds sequentially to pinned OSHB/WLC 1:2-17."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "4",
+      "segments": [
+        {
+          "id": "SNG-4-1-15-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "4",
+              "verse": "1"
+            },
+            {
+              "chapter": "4",
+              "verse": "2"
+            },
+            {
+              "chapter": "4",
+              "verse": "3"
+            },
+            {
+              "chapter": "4",
+              "verse": "4"
+            },
+            {
+              "chapter": "4",
+              "verse": "5"
+            },
+            {
+              "chapter": "4",
+              "verse": "6"
+            },
+            {
+              "chapter": "4",
+              "verse": "7"
+            },
+            {
+              "chapter": "4",
+              "verse": "8"
+            },
+            {
+              "chapter": "4",
+              "verse": "9"
+            },
+            {
+              "chapter": "4",
+              "verse": "10"
+            },
+            {
+              "chapter": "4",
+              "verse": "11"
+            },
+            {
+              "chapter": "4",
+              "verse": "12"
+            },
+            {
+              "chapter": "4",
+              "verse": "13"
+            },
+            {
+              "chapter": "4",
+              "verse": "14"
+            },
+            {
+              "chapter": "4",
+              "verse": "15"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "4",
+              "verse": "1"
+            },
+            {
+              "chapter": "4",
+              "verse": "2"
+            },
+            {
+              "chapter": "4",
+              "verse": "3"
+            },
+            {
+              "chapter": "4",
+              "verse": "4"
+            },
+            {
+              "chapter": "4",
+              "verse": "5"
+            },
+            {
+              "chapter": "4",
+              "verse": "6"
+            },
+            {
+              "chapter": "4",
+              "verse": "7"
+            },
+            {
+              "chapter": "4",
+              "verse": "8"
+            },
+            {
+              "chapter": "4",
+              "verse": "9"
+            },
+            {
+              "chapter": "4",
+              "verse": "10"
+            },
+            {
+              "chapter": "4",
+              "verse": "11"
+            },
+            {
+              "chapter": "4",
+              "verse": "12"
+            },
+            {
+              "chapter": "4",
+              "verse": "13"
+            },
+            {
+              "chapter": "4",
+              "verse": "14"
+            },
+            {
+              "chapter": "4",
+              "verse": "15"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and OSHB/WLC Song 4:1-15 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "SNG-4-16-semitic-shared-boundary",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "4",
+              "verse": "16"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "4",
+              "verse": "16"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay 4:16 is contained in pinned OSHB/WLC 4:16. The intact OSHB source verse also carries the opening invitation printed in Douay 5:1, so this source record is deliberately preserved whole and reused at the following canonical boundary."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "5",
+      "segments": [
+        {
+          "id": "SNG-5-1-semitic-cross-chapter",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "1"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "4",
+              "verse": "16"
+            },
+            {
+              "chapter": "5",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Song 5:1 begins with 'Let my beloved come into his garden...' from the tail of pinned OSHB/WLC 4:16 and continues with the 'I am come into my garden...' material of OSHB/WLC 5:1. Both native source verses remain intact."
+          }
+        },
+        {
+          "id": "SNG-5-2-16-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "2"
+            },
+            {
+              "chapter": "5",
+              "verse": "3"
+            },
+            {
+              "chapter": "5",
+              "verse": "4"
+            },
+            {
+              "chapter": "5",
+              "verse": "5"
+            },
+            {
+              "chapter": "5",
+              "verse": "6"
+            },
+            {
+              "chapter": "5",
+              "verse": "7"
+            },
+            {
+              "chapter": "5",
+              "verse": "8"
+            },
+            {
+              "chapter": "5",
+              "verse": "9"
+            },
+            {
+              "chapter": "5",
+              "verse": "10"
+            },
+            {
+              "chapter": "5",
+              "verse": "11"
+            },
+            {
+              "chapter": "5",
+              "verse": "12"
+            },
+            {
+              "chapter": "5",
+              "verse": "13"
+            },
+            {
+              "chapter": "5",
+              "verse": "14"
+            },
+            {
+              "chapter": "5",
+              "verse": "15"
+            },
+            {
+              "chapter": "5",
+              "verse": "16"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "5",
+              "verse": "2"
+            },
+            {
+              "chapter": "5",
+              "verse": "3"
+            },
+            {
+              "chapter": "5",
+              "verse": "4"
+            },
+            {
+              "chapter": "5",
+              "verse": "5"
+            },
+            {
+              "chapter": "5",
+              "verse": "6"
+            },
+            {
+              "chapter": "5",
+              "verse": "7"
+            },
+            {
+              "chapter": "5",
+              "verse": "8"
+            },
+            {
+              "chapter": "5",
+              "verse": "9"
+            },
+            {
+              "chapter": "5",
+              "verse": "10"
+            },
+            {
+              "chapter": "5",
+              "verse": "11"
+            },
+            {
+              "chapter": "5",
+              "verse": "12"
+            },
+            {
+              "chapter": "5",
+              "verse": "13"
+            },
+            {
+              "chapter": "5",
+              "verse": "14"
+            },
+            {
+              "chapter": "5",
+              "verse": "15"
+            },
+            {
+              "chapter": "5",
+              "verse": "16"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and OSHB/WLC Song 5:2-16 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "SNG-5-17-semitic-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "17"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "6",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Song 5:17 asks where the beloved has gone; pinned OSHB/WLC 6:1 contains that same question, placing the source chapter boundary before this canonical verse."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "6",
+      "segments": [
+        {
+          "id": "SNG-6-1-11-semitic",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "6",
+              "verse": "1"
+            },
+            {
+              "chapter": "6",
+              "verse": "2"
+            },
+            {
+              "chapter": "6",
+              "verse": "3"
+            },
+            {
+              "chapter": "6",
+              "verse": "4"
+            },
+            {
+              "chapter": "6",
+              "verse": "5"
+            },
+            {
+              "chapter": "6",
+              "verse": "6"
+            },
+            {
+              "chapter": "6",
+              "verse": "7"
+            },
+            {
+              "chapter": "6",
+              "verse": "8"
+            },
+            {
+              "chapter": "6",
+              "verse": "9"
+            },
+            {
+              "chapter": "6",
+              "verse": "10"
+            },
+            {
+              "chapter": "6",
+              "verse": "11"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "6",
+              "verse": "2"
+            },
+            {
+              "chapter": "6",
+              "verse": "3"
+            },
+            {
+              "chapter": "6",
+              "verse": "4"
+            },
+            {
+              "chapter": "6",
+              "verse": "5"
+            },
+            {
+              "chapter": "6",
+              "verse": "6"
+            },
+            {
+              "chapter": "6",
+              "verse": "7"
+            },
+            {
+              "chapter": "6",
+              "verse": "8"
+            },
+            {
+              "chapter": "6",
+              "verse": "9"
+            },
+            {
+              "chapter": "6",
+              "verse": "10"
+            },
+            {
+              "chapter": "6",
+              "verse": "11"
+            },
+            {
+              "chapter": "6",
+              "verse": "12"
+            }
+          ],
+          "evidence": {
+            "citation": "After OSHB/WLC 6:1 maps to Douay 5:17, Douay Song 6:1-11 corresponds sequentially to pinned OSHB/WLC 6:2-12."
+          }
+        },
+        {
+          "id": "SNG-6-12-semitic-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "6",
+              "verse": "12"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "7",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Song 6:12 contains the 'Return, return, O Shulamite' call found at the beginning of pinned OSHB/WLC 7:1. That intact source verse also contains the following 'What will you see in the Shulamite?' clause used by Douay 7:1."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "7",
+      "segments": [
+        {
+          "id": "SNG-7-1-semitic-shared-boundary",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "7",
+              "verse": "1"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "7",
+              "verse": "1"
+            },
+            {
+              "chapter": "7",
+              "verse": "2"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Song 7:1 combines the 'What shalt thou see in the Sulamitess?' clause contained in OSHB/WLC 7:1 with the 'How beautiful are thy steps...' material of OSHB/WLC 7:2. Native source verses are preserved whole."
+          }
+        },
+        {
+          "id": "SNG-7-2-13-semitic",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "7",
+              "verse": "2"
+            },
+            {
+              "chapter": "7",
+              "verse": "3"
+            },
+            {
+              "chapter": "7",
+              "verse": "4"
+            },
+            {
+              "chapter": "7",
+              "verse": "5"
+            },
+            {
+              "chapter": "7",
+              "verse": "6"
+            },
+            {
+              "chapter": "7",
+              "verse": "7"
+            },
+            {
+              "chapter": "7",
+              "verse": "8"
+            },
+            {
+              "chapter": "7",
+              "verse": "9"
+            },
+            {
+              "chapter": "7",
+              "verse": "10"
+            },
+            {
+              "chapter": "7",
+              "verse": "11"
+            },
+            {
+              "chapter": "7",
+              "verse": "12"
+            },
+            {
+              "chapter": "7",
+              "verse": "13"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "7",
+              "verse": "3"
+            },
+            {
+              "chapter": "7",
+              "verse": "4"
+            },
+            {
+              "chapter": "7",
+              "verse": "5"
+            },
+            {
+              "chapter": "7",
+              "verse": "6"
+            },
+            {
+              "chapter": "7",
+              "verse": "7"
+            },
+            {
+              "chapter": "7",
+              "verse": "8"
+            },
+            {
+              "chapter": "7",
+              "verse": "9"
+            },
+            {
+              "chapter": "7",
+              "verse": "10"
+            },
+            {
+              "chapter": "7",
+              "verse": "11"
+            },
+            {
+              "chapter": "7",
+              "verse": "12"
+            },
+            {
+              "chapter": "7",
+              "verse": "13"
+            },
+            {
+              "chapter": "7",
+              "verse": "14"
+            }
+          ],
+          "evidence": {
+            "citation": "Following the combined canonical 7:1 boundary, Douay-Rheims Song 7:2-13 corresponds sequentially to pinned OSHB/WLC 7:3-14."
+          }
+        }
+      ]
+    }
+  ]
+}
