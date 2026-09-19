@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 35,
-    "books_resolved": 38,
-    "unresolved_lane_count": 62,
-    "verified_registry_lane_count": 18,
+    "books_unresolved": 34,
+    "books_resolved": 39,
+    "unresolved_lane_count": 60,
+    "verified_registry_lane_count": 20,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -1041,25 +1041,47 @@
       "id": "ECC",
       "book": "Ecclesiastes",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.19-ecc-semitic-v1",
+          "file": "maps/ECC-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "6",
+            "7"
+          ],
+          "audited_mismatch_chapters": [
+            "6",
+            "7"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "6",
             "7"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.19-ecc-greek-v1",
+          "file": "maps/ECC-greek-wikisource.json",
+          "covered_chapters": [
+            "6",
+            "7"
+          ],
+          "audited_mismatch_chapters": [
+            "6",
+            "7"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "6",
             "7"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
