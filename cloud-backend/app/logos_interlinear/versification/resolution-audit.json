@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 33,
-    "books_resolved": 40,
-    "unresolved_lane_count": 59,
-    "verified_registry_lane_count": 21,
+    "books_unresolved": 32,
+    "books_resolved": 41,
+    "unresolved_lane_count": 58,
+    "verified_registry_lane_count": 22,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -2023,18 +2023,27 @@
       "id": "ROM",
       "book": "Romans",
       "testament": "NT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
           "status": "not-applicable"
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.19-rom-greek-v1",
+          "file": "maps/ROM-greek-sblgnt.json",
+          "covered_chapters": [
+            "16"
+          ],
+          "audited_mismatch_chapters": [
+            "16"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "16"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
