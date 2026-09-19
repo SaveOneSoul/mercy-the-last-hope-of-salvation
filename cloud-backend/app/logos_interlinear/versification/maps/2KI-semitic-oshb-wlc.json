@@ -1,0 +1,410 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.20-2ki-semitic-v1",
+  "status": "verified",
+  "book_id": "2KI",
+  "book": "2 Kings",
+  "lane": "semitic",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "oshb",
+    "reference_system": "oshb-wlc-osis",
+    "corpus_id": "heb_arc_oshb_wlc",
+    "corpus_version": "2026.09.16-oshb-wlc-39",
+    "repository": "openscriptures/morphhb",
+    "commit": "3d15126fb1ef74867fc1434be1942e837932691f"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "11",
+      "12"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "11",
+      "segments": [
+        {
+          "id": "2KI-11-1-20-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "1"
+            },
+            {
+              "chapter": "11",
+              "verse": "2"
+            },
+            {
+              "chapter": "11",
+              "verse": "3"
+            },
+            {
+              "chapter": "11",
+              "verse": "4"
+            },
+            {
+              "chapter": "11",
+              "verse": "5"
+            },
+            {
+              "chapter": "11",
+              "verse": "6"
+            },
+            {
+              "chapter": "11",
+              "verse": "7"
+            },
+            {
+              "chapter": "11",
+              "verse": "8"
+            },
+            {
+              "chapter": "11",
+              "verse": "9"
+            },
+            {
+              "chapter": "11",
+              "verse": "10"
+            },
+            {
+              "chapter": "11",
+              "verse": "11"
+            },
+            {
+              "chapter": "11",
+              "verse": "12"
+            },
+            {
+              "chapter": "11",
+              "verse": "13"
+            },
+            {
+              "chapter": "11",
+              "verse": "14"
+            },
+            {
+              "chapter": "11",
+              "verse": "15"
+            },
+            {
+              "chapter": "11",
+              "verse": "16"
+            },
+            {
+              "chapter": "11",
+              "verse": "17"
+            },
+            {
+              "chapter": "11",
+              "verse": "18"
+            },
+            {
+              "chapter": "11",
+              "verse": "19"
+            },
+            {
+              "chapter": "11",
+              "verse": "20"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "11",
+              "verse": "1"
+            },
+            {
+              "chapter": "11",
+              "verse": "2"
+            },
+            {
+              "chapter": "11",
+              "verse": "3"
+            },
+            {
+              "chapter": "11",
+              "verse": "4"
+            },
+            {
+              "chapter": "11",
+              "verse": "5"
+            },
+            {
+              "chapter": "11",
+              "verse": "6"
+            },
+            {
+              "chapter": "11",
+              "verse": "7"
+            },
+            {
+              "chapter": "11",
+              "verse": "8"
+            },
+            {
+              "chapter": "11",
+              "verse": "9"
+            },
+            {
+              "chapter": "11",
+              "verse": "10"
+            },
+            {
+              "chapter": "11",
+              "verse": "11"
+            },
+            {
+              "chapter": "11",
+              "verse": "12"
+            },
+            {
+              "chapter": "11",
+              "verse": "13"
+            },
+            {
+              "chapter": "11",
+              "verse": "14"
+            },
+            {
+              "chapter": "11",
+              "verse": "15"
+            },
+            {
+              "chapter": "11",
+              "verse": "16"
+            },
+            {
+              "chapter": "11",
+              "verse": "17"
+            },
+            {
+              "chapter": "11",
+              "verse": "18"
+            },
+            {
+              "chapter": "11",
+              "verse": "19"
+            },
+            {
+              "chapter": "11",
+              "verse": "20"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims 2 Kings 11:1-20 and OSHB/WLC preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "2KI-11-21-semitic-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "21"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "12",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned OSHB VerseMap explicitly maps WLC 2Kgs.12.1 to KJV-style 2Kgs.11.21; the verse gives Joas's age at accession, matching Douay-Rheims 11:21."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "12",
+      "segments": [
+        {
+          "id": "2KI-12-1-21-semitic",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "12",
+              "verse": "1"
+            },
+            {
+              "chapter": "12",
+              "verse": "2"
+            },
+            {
+              "chapter": "12",
+              "verse": "3"
+            },
+            {
+              "chapter": "12",
+              "verse": "4"
+            },
+            {
+              "chapter": "12",
+              "verse": "5"
+            },
+            {
+              "chapter": "12",
+              "verse": "6"
+            },
+            {
+              "chapter": "12",
+              "verse": "7"
+            },
+            {
+              "chapter": "12",
+              "verse": "8"
+            },
+            {
+              "chapter": "12",
+              "verse": "9"
+            },
+            {
+              "chapter": "12",
+              "verse": "10"
+            },
+            {
+              "chapter": "12",
+              "verse": "11"
+            },
+            {
+              "chapter": "12",
+              "verse": "12"
+            },
+            {
+              "chapter": "12",
+              "verse": "13"
+            },
+            {
+              "chapter": "12",
+              "verse": "14"
+            },
+            {
+              "chapter": "12",
+              "verse": "15"
+            },
+            {
+              "chapter": "12",
+              "verse": "16"
+            },
+            {
+              "chapter": "12",
+              "verse": "17"
+            },
+            {
+              "chapter": "12",
+              "verse": "18"
+            },
+            {
+              "chapter": "12",
+              "verse": "19"
+            },
+            {
+              "chapter": "12",
+              "verse": "20"
+            },
+            {
+              "chapter": "12",
+              "verse": "21"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "12",
+              "verse": "2"
+            },
+            {
+              "chapter": "12",
+              "verse": "3"
+            },
+            {
+              "chapter": "12",
+              "verse": "4"
+            },
+            {
+              "chapter": "12",
+              "verse": "5"
+            },
+            {
+              "chapter": "12",
+              "verse": "6"
+            },
+            {
+              "chapter": "12",
+              "verse": "7"
+            },
+            {
+              "chapter": "12",
+              "verse": "8"
+            },
+            {
+              "chapter": "12",
+              "verse": "9"
+            },
+            {
+              "chapter": "12",
+              "verse": "10"
+            },
+            {
+              "chapter": "12",
+              "verse": "11"
+            },
+            {
+              "chapter": "12",
+              "verse": "12"
+            },
+            {
+              "chapter": "12",
+              "verse": "13"
+            },
+            {
+              "chapter": "12",
+              "verse": "14"
+            },
+            {
+              "chapter": "12",
+              "verse": "15"
+            },
+            {
+              "chapter": "12",
+              "verse": "16"
+            },
+            {
+              "chapter": "12",
+              "verse": "17"
+            },
+            {
+              "chapter": "12",
+              "verse": "18"
+            },
+            {
+              "chapter": "12",
+              "verse": "19"
+            },
+            {
+              "chapter": "12",
+              "verse": "20"
+            },
+            {
+              "chapter": "12",
+              "verse": "21"
+            },
+            {
+              "chapter": "12",
+              "verse": "22"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned OSHB VerseMap maps WLC 2Kgs.12.2-22 sequentially to KJV/Douay-style 2Kgs.12.1-21 after WLC 12:1 is assigned to canonical 11:21."
+          }
+        }
+      ]
+    }
+  ]
+}
