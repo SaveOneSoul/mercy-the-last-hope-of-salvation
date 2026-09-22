@@ -1,0 +1,1015 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.22-lev-greek-v1",
+  "status": "verified",
+  "book_id": "LEV",
+  "book": "Leviticus",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "first1kgreek-swete",
+    "reference_system": "swete-first1k-source-numbering",
+    "corpus_id": "grc_ot_catholic_full",
+    "corpus_version": "2026.09.17-catholic-lxx-full"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "6",
+      "7",
+      "26"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "6",
+      "segments": [
+        {
+          "id": "LEV-6-1-30-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "6",
+              "verse": "1"
+            },
+            {
+              "chapter": "6",
+              "verse": "2"
+            },
+            {
+              "chapter": "6",
+              "verse": "3"
+            },
+            {
+              "chapter": "6",
+              "verse": "4"
+            },
+            {
+              "chapter": "6",
+              "verse": "5"
+            },
+            {
+              "chapter": "6",
+              "verse": "6"
+            },
+            {
+              "chapter": "6",
+              "verse": "7"
+            },
+            {
+              "chapter": "6",
+              "verse": "8"
+            },
+            {
+              "chapter": "6",
+              "verse": "9"
+            },
+            {
+              "chapter": "6",
+              "verse": "10"
+            },
+            {
+              "chapter": "6",
+              "verse": "11"
+            },
+            {
+              "chapter": "6",
+              "verse": "12"
+            },
+            {
+              "chapter": "6",
+              "verse": "13"
+            },
+            {
+              "chapter": "6",
+              "verse": "14"
+            },
+            {
+              "chapter": "6",
+              "verse": "15"
+            },
+            {
+              "chapter": "6",
+              "verse": "16"
+            },
+            {
+              "chapter": "6",
+              "verse": "17"
+            },
+            {
+              "chapter": "6",
+              "verse": "18"
+            },
+            {
+              "chapter": "6",
+              "verse": "19"
+            },
+            {
+              "chapter": "6",
+              "verse": "20"
+            },
+            {
+              "chapter": "6",
+              "verse": "21"
+            },
+            {
+              "chapter": "6",
+              "verse": "22"
+            },
+            {
+              "chapter": "6",
+              "verse": "23"
+            },
+            {
+              "chapter": "6",
+              "verse": "24"
+            },
+            {
+              "chapter": "6",
+              "verse": "25"
+            },
+            {
+              "chapter": "6",
+              "verse": "26"
+            },
+            {
+              "chapter": "6",
+              "verse": "27"
+            },
+            {
+              "chapter": "6",
+              "verse": "28"
+            },
+            {
+              "chapter": "6",
+              "verse": "29"
+            },
+            {
+              "chapter": "6",
+              "verse": "30"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "6",
+              "verse": "1"
+            },
+            {
+              "chapter": "6",
+              "verse": "2"
+            },
+            {
+              "chapter": "6",
+              "verse": "3"
+            },
+            {
+              "chapter": "6",
+              "verse": "4"
+            },
+            {
+              "chapter": "6",
+              "verse": "5"
+            },
+            {
+              "chapter": "6",
+              "verse": "6"
+            },
+            {
+              "chapter": "6",
+              "verse": "7"
+            },
+            {
+              "chapter": "6",
+              "verse": "8"
+            },
+            {
+              "chapter": "6",
+              "verse": "9"
+            },
+            {
+              "chapter": "6",
+              "verse": "10"
+            },
+            {
+              "chapter": "6",
+              "verse": "11"
+            },
+            {
+              "chapter": "6",
+              "verse": "12"
+            },
+            {
+              "chapter": "6",
+              "verse": "13"
+            },
+            {
+              "chapter": "6",
+              "verse": "14"
+            },
+            {
+              "chapter": "6",
+              "verse": "15"
+            },
+            {
+              "chapter": "6",
+              "verse": "16"
+            },
+            {
+              "chapter": "6",
+              "verse": "17"
+            },
+            {
+              "chapter": "6",
+              "verse": "18"
+            },
+            {
+              "chapter": "6",
+              "verse": "19"
+            },
+            {
+              "chapter": "6",
+              "verse": "20"
+            },
+            {
+              "chapter": "6",
+              "verse": "21"
+            },
+            {
+              "chapter": "6",
+              "verse": "22"
+            },
+            {
+              "chapter": "6",
+              "verse": "23"
+            },
+            {
+              "chapter": "6",
+              "verse": "24"
+            },
+            {
+              "chapter": "6",
+              "verse": "25"
+            },
+            {
+              "chapter": "6",
+              "verse": "26"
+            },
+            {
+              "chapter": "6",
+              "verse": "27"
+            },
+            {
+              "chapter": "6",
+              "verse": "28"
+            },
+            {
+              "chapter": "6",
+              "verse": "29"
+            },
+            {
+              "chapter": "6",
+              "verse": "30"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete Leviticus 6:1-30 preserve the same restitution, burnt-offering, grain-offering, and sin-offering sequence; Swete 6:31-40 continues into Douay chapter 7."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "7",
+      "segments": [
+        {
+          "id": "LEV-7-1-10-greek-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "7",
+              "verse": "1"
+            },
+            {
+              "chapter": "7",
+              "verse": "2"
+            },
+            {
+              "chapter": "7",
+              "verse": "3"
+            },
+            {
+              "chapter": "7",
+              "verse": "4"
+            },
+            {
+              "chapter": "7",
+              "verse": "5"
+            },
+            {
+              "chapter": "7",
+              "verse": "6"
+            },
+            {
+              "chapter": "7",
+              "verse": "7"
+            },
+            {
+              "chapter": "7",
+              "verse": "8"
+            },
+            {
+              "chapter": "7",
+              "verse": "9"
+            },
+            {
+              "chapter": "7",
+              "verse": "10"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "6",
+              "verse": "31"
+            },
+            {
+              "chapter": "6",
+              "verse": "32"
+            },
+            {
+              "chapter": "6",
+              "verse": "33"
+            },
+            {
+              "chapter": "6",
+              "verse": "34"
+            },
+            {
+              "chapter": "6",
+              "verse": "35"
+            },
+            {
+              "chapter": "6",
+              "verse": "36"
+            },
+            {
+              "chapter": "6",
+              "verse": "37"
+            },
+            {
+              "chapter": "6",
+              "verse": "38"
+            },
+            {
+              "chapter": "6",
+              "verse": "39"
+            },
+            {
+              "chapter": "6",
+              "verse": "40"
+            }
+          ],
+          "evidence": {
+            "citation": "Swete Leviticus 6:31-40 contains the trespass-offering and priestly-portion material printed as Douay-Rheims Leviticus 7:1-10."
+          }
+        },
+        {
+          "id": "LEV-7-11-36-greek-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "7",
+              "verse": "11"
+            },
+            {
+              "chapter": "7",
+              "verse": "12"
+            },
+            {
+              "chapter": "7",
+              "verse": "13"
+            },
+            {
+              "chapter": "7",
+              "verse": "14"
+            },
+            {
+              "chapter": "7",
+              "verse": "15"
+            },
+            {
+              "chapter": "7",
+              "verse": "16"
+            },
+            {
+              "chapter": "7",
+              "verse": "17"
+            },
+            {
+              "chapter": "7",
+              "verse": "18"
+            },
+            {
+              "chapter": "7",
+              "verse": "19"
+            },
+            {
+              "chapter": "7",
+              "verse": "20"
+            },
+            {
+              "chapter": "7",
+              "verse": "21"
+            },
+            {
+              "chapter": "7",
+              "verse": "22"
+            },
+            {
+              "chapter": "7",
+              "verse": "23"
+            },
+            {
+              "chapter": "7",
+              "verse": "24"
+            },
+            {
+              "chapter": "7",
+              "verse": "25"
+            },
+            {
+              "chapter": "7",
+              "verse": "26"
+            },
+            {
+              "chapter": "7",
+              "verse": "27"
+            },
+            {
+              "chapter": "7",
+              "verse": "28"
+            },
+            {
+              "chapter": "7",
+              "verse": "29"
+            },
+            {
+              "chapter": "7",
+              "verse": "30"
+            },
+            {
+              "chapter": "7",
+              "verse": "31"
+            },
+            {
+              "chapter": "7",
+              "verse": "32"
+            },
+            {
+              "chapter": "7",
+              "verse": "33"
+            },
+            {
+              "chapter": "7",
+              "verse": "34"
+            },
+            {
+              "chapter": "7",
+              "verse": "35"
+            },
+            {
+              "chapter": "7",
+              "verse": "36"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "7",
+              "verse": "1"
+            },
+            {
+              "chapter": "7",
+              "verse": "2"
+            },
+            {
+              "chapter": "7",
+              "verse": "3"
+            },
+            {
+              "chapter": "7",
+              "verse": "4"
+            },
+            {
+              "chapter": "7",
+              "verse": "5"
+            },
+            {
+              "chapter": "7",
+              "verse": "6"
+            },
+            {
+              "chapter": "7",
+              "verse": "7"
+            },
+            {
+              "chapter": "7",
+              "verse": "8"
+            },
+            {
+              "chapter": "7",
+              "verse": "9"
+            },
+            {
+              "chapter": "7",
+              "verse": "10"
+            },
+            {
+              "chapter": "7",
+              "verse": "11"
+            },
+            {
+              "chapter": "7",
+              "verse": "12"
+            },
+            {
+              "chapter": "7",
+              "verse": "13"
+            },
+            {
+              "chapter": "7",
+              "verse": "14"
+            },
+            {
+              "chapter": "7",
+              "verse": "15"
+            },
+            {
+              "chapter": "7",
+              "verse": "16"
+            },
+            {
+              "chapter": "7",
+              "verse": "17"
+            },
+            {
+              "chapter": "7",
+              "verse": "18"
+            },
+            {
+              "chapter": "7",
+              "verse": "19"
+            },
+            {
+              "chapter": "7",
+              "verse": "20"
+            },
+            {
+              "chapter": "7",
+              "verse": "21"
+            },
+            {
+              "chapter": "7",
+              "verse": "22"
+            },
+            {
+              "chapter": "7",
+              "verse": "23"
+            },
+            {
+              "chapter": "7",
+              "verse": "24"
+            },
+            {
+              "chapter": "7",
+              "verse": "25"
+            },
+            {
+              "chapter": "7",
+              "verse": "26"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Leviticus 7:11-36 corresponds sequentially to Swete Leviticus 7:1-26, beginning with the law of peace offerings."
+          }
+        },
+        {
+          "id": "LEV-7-37-38-greek-shared-close",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "7",
+              "verse": "37"
+            },
+            {
+              "chapter": "7",
+              "verse": "38"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "7",
+              "verse": "27"
+            }
+          ],
+          "evidence": {
+            "citation": "Swete Leviticus 7:27 preserves the combined concluding formula listing the sacrificial laws and stating that the Lord commanded them to Moses; Douay-Rheims divides that close across 7:37 and 7:38. The source verse is reused without splitting or rewriting its text."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "26",
+      "segments": [
+        {
+          "id": "LEV-26-1-44-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "26",
+              "verse": "1"
+            },
+            {
+              "chapter": "26",
+              "verse": "2"
+            },
+            {
+              "chapter": "26",
+              "verse": "3"
+            },
+            {
+              "chapter": "26",
+              "verse": "4"
+            },
+            {
+              "chapter": "26",
+              "verse": "5"
+            },
+            {
+              "chapter": "26",
+              "verse": "6"
+            },
+            {
+              "chapter": "26",
+              "verse": "7"
+            },
+            {
+              "chapter": "26",
+              "verse": "8"
+            },
+            {
+              "chapter": "26",
+              "verse": "9"
+            },
+            {
+              "chapter": "26",
+              "verse": "10"
+            },
+            {
+              "chapter": "26",
+              "verse": "11"
+            },
+            {
+              "chapter": "26",
+              "verse": "12"
+            },
+            {
+              "chapter": "26",
+              "verse": "13"
+            },
+            {
+              "chapter": "26",
+              "verse": "14"
+            },
+            {
+              "chapter": "26",
+              "verse": "15"
+            },
+            {
+              "chapter": "26",
+              "verse": "16"
+            },
+            {
+              "chapter": "26",
+              "verse": "17"
+            },
+            {
+              "chapter": "26",
+              "verse": "18"
+            },
+            {
+              "chapter": "26",
+              "verse": "19"
+            },
+            {
+              "chapter": "26",
+              "verse": "20"
+            },
+            {
+              "chapter": "26",
+              "verse": "21"
+            },
+            {
+              "chapter": "26",
+              "verse": "22"
+            },
+            {
+              "chapter": "26",
+              "verse": "23"
+            },
+            {
+              "chapter": "26",
+              "verse": "24"
+            },
+            {
+              "chapter": "26",
+              "verse": "25"
+            },
+            {
+              "chapter": "26",
+              "verse": "26"
+            },
+            {
+              "chapter": "26",
+              "verse": "27"
+            },
+            {
+              "chapter": "26",
+              "verse": "28"
+            },
+            {
+              "chapter": "26",
+              "verse": "29"
+            },
+            {
+              "chapter": "26",
+              "verse": "30"
+            },
+            {
+              "chapter": "26",
+              "verse": "31"
+            },
+            {
+              "chapter": "26",
+              "verse": "32"
+            },
+            {
+              "chapter": "26",
+              "verse": "33"
+            },
+            {
+              "chapter": "26",
+              "verse": "34"
+            },
+            {
+              "chapter": "26",
+              "verse": "35"
+            },
+            {
+              "chapter": "26",
+              "verse": "36"
+            },
+            {
+              "chapter": "26",
+              "verse": "37"
+            },
+            {
+              "chapter": "26",
+              "verse": "38"
+            },
+            {
+              "chapter": "26",
+              "verse": "39"
+            },
+            {
+              "chapter": "26",
+              "verse": "40"
+            },
+            {
+              "chapter": "26",
+              "verse": "41"
+            },
+            {
+              "chapter": "26",
+              "verse": "42"
+            },
+            {
+              "chapter": "26",
+              "verse": "43"
+            },
+            {
+              "chapter": "26",
+              "verse": "44"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "26",
+              "verse": "1"
+            },
+            {
+              "chapter": "26",
+              "verse": "2"
+            },
+            {
+              "chapter": "26",
+              "verse": "3"
+            },
+            {
+              "chapter": "26",
+              "verse": "4"
+            },
+            {
+              "chapter": "26",
+              "verse": "5"
+            },
+            {
+              "chapter": "26",
+              "verse": "6"
+            },
+            {
+              "chapter": "26",
+              "verse": "7"
+            },
+            {
+              "chapter": "26",
+              "verse": "8"
+            },
+            {
+              "chapter": "26",
+              "verse": "9"
+            },
+            {
+              "chapter": "26",
+              "verse": "10"
+            },
+            {
+              "chapter": "26",
+              "verse": "11"
+            },
+            {
+              "chapter": "26",
+              "verse": "12"
+            },
+            {
+              "chapter": "26",
+              "verse": "13"
+            },
+            {
+              "chapter": "26",
+              "verse": "14"
+            },
+            {
+              "chapter": "26",
+              "verse": "15"
+            },
+            {
+              "chapter": "26",
+              "verse": "16"
+            },
+            {
+              "chapter": "26",
+              "verse": "17"
+            },
+            {
+              "chapter": "26",
+              "verse": "18"
+            },
+            {
+              "chapter": "26",
+              "verse": "19"
+            },
+            {
+              "chapter": "26",
+              "verse": "20"
+            },
+            {
+              "chapter": "26",
+              "verse": "21"
+            },
+            {
+              "chapter": "26",
+              "verse": "22"
+            },
+            {
+              "chapter": "26",
+              "verse": "23"
+            },
+            {
+              "chapter": "26",
+              "verse": "24"
+            },
+            {
+              "chapter": "26",
+              "verse": "25"
+            },
+            {
+              "chapter": "26",
+              "verse": "26"
+            },
+            {
+              "chapter": "26",
+              "verse": "27"
+            },
+            {
+              "chapter": "26",
+              "verse": "28"
+            },
+            {
+              "chapter": "26",
+              "verse": "29"
+            },
+            {
+              "chapter": "26",
+              "verse": "30"
+            },
+            {
+              "chapter": "26",
+              "verse": "31"
+            },
+            {
+              "chapter": "26",
+              "verse": "32"
+            },
+            {
+              "chapter": "26",
+              "verse": "33"
+            },
+            {
+              "chapter": "26",
+              "verse": "34"
+            },
+            {
+              "chapter": "26",
+              "verse": "35"
+            },
+            {
+              "chapter": "26",
+              "verse": "36"
+            },
+            {
+              "chapter": "26",
+              "verse": "37"
+            },
+            {
+              "chapter": "26",
+              "verse": "38"
+            },
+            {
+              "chapter": "26",
+              "verse": "39"
+            },
+            {
+              "chapter": "26",
+              "verse": "40"
+            },
+            {
+              "chapter": "26",
+              "verse": "41"
+            },
+            {
+              "chapter": "26",
+              "verse": "42"
+            },
+            {
+              "chapter": "26",
+              "verse": "43"
+            },
+            {
+              "chapter": "26",
+              "verse": "44"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete Leviticus 26:1-44 preserve matching numbered records."
+          }
+        },
+        {
+          "id": "LEV-26-45-greek-merge",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "26",
+              "verse": "45"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "26",
+              "verse": "45"
+            },
+            {
+              "chapter": "26",
+              "verse": "46"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Leviticus 26:45 combines the covenant-remembrance sentence and concluding statutes/judgments formula that Swete preserves separately as 26:45 and 26:46. Both Greek source verses remain intact."
+          }
+        }
+      ]
+    }
+  ]
+}
