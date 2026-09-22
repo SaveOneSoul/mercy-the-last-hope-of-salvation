@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.22-v31",
+  "registry_version": "2026.09.22-v33",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -272,6 +272,12 @@
       "lane": "semitic",
       "status": "verified",
       "file": "maps/EST-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "ACT",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/ACT-greek-sblgnt.json"
     }
   ]
 }
