@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "phase": "Greek OT Linguistics Phase 2",
-  "status": "source-gate",
+  "status": "validated-awaiting-owner-acceptance",
   "production": {
-    "enabled": false,
-    "reason": "Pinned source inventory and CC BY 4.0 scope are verified. Production remains disabled while the 46-book validation package and cross-edition runtime boundary are tested."
+    "enabled": true,
+    "reason": "The pinned source inventory and 46-book validation corpus pass deterministic CI. Production package generation is enabled on the candidate branch, while merge still requires exact-head project-owner acceptance."
   },
   "source": {
     "source_id": "lxx-morph-rahlfs",
@@ -297,5 +297,13 @@
     "Run the 73-book coverage audit and report linguistic completeness independently from surface-text completeness.",
     "Require exact-head CI and project-owner acceptance before production import is enabled."
   ],
-  "quality_note": "The candidate dataset documents automated/tool-assisted analysis and editorial review. Treat it as useful open linguistic data, not as an infallible scholarly authority; provenance/confidence must remain available and specialist verification is appropriate for scholarly citation."
+  "quality_note": "The candidate dataset documents automated/tool-assisted analysis and editorial review. Treat it as useful open linguistic data, not as an infallible scholarly authority; provenance/confidence must remain available and specialist verification is appropriate for scholarly citation.",
+  "validation_evidence": {
+    "catholic_ot_books": 46,
+    "source_verse_records": 26900,
+    "word_tokens": 542394,
+    "archive_sha256": "b3c4861f47152ea8fab7d3ed78d807a9a0c2b35d07f2cb64fa9deefd6ac960a9",
+    "validation_run": 35759226983,
+    "result": "passed"
+  }
 }
