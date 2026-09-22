@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "foundation_version": "2026.09.17-logos-complete-ot-source-gates",
+  "foundation_version": "2026.09.22-greek-ot-linguistics-phase2-source-gate",
   "policy": {
     "canonical_data_format": "JSON",
     "primary_rendering": "HTML/CSS",
@@ -20,7 +20,9 @@
     {
       "id": "drb-challoner",
       "title": "Douay-Rheims American Edition (1899)",
-      "role": ["english-scripture"],
+      "role": [
+        "english-scripture"
+      ],
       "language": "en",
       "status": "installed",
       "production_import_allowed": true,
@@ -30,7 +32,10 @@
       "license": "Public Domain",
       "upstream_url": "https://ebible.org/details.php?all=1&id=engDRA",
       "local_manifest": "cloud-backend/app/logos_corpus/eng_douay_rheims_1899/manifest.json",
-      "pin": {"type": "mirror-commit", "value": "772e1ab2b13af88cde05237fb9a8218cee9261bb"},
+      "pin": {
+        "type": "mirror-commit",
+        "value": "772e1ab2b13af88cde05237fb9a8218cee9261bb"
+      },
       "integrity": {
         "git_blob_sha1": "b02336cd5db942f8ce6a2cede902f1b4d4927896",
         "sha256": "6e8ffab6dcdbbb11e881ec7bc2f518b11a86f3026b03acf7ec39dfc37ea37a12"
@@ -45,8 +50,15 @@
     {
       "id": "oshb",
       "title": "Open Scriptures Hebrew Bible",
-      "role": ["hebrew-scripture", "hebrew-lemma", "hebrew-morphology"],
-      "language": ["he", "arc"],
+      "role": [
+        "hebrew-scripture",
+        "hebrew-lemma",
+        "hebrew-morphology"
+      ],
+      "language": [
+        "he",
+        "arc"
+      ],
       "status": "approved-for-ingestion",
       "production_import_allowed": true,
       "license_verified": true,
@@ -56,8 +68,14 @@
       "base_text_rights": "Westminster Leningrad Codex: public domain",
       "upstream_repository": "https://github.com/openscriptures/morphhb",
       "license_url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/LICENSE.md",
-      "pin": {"type": "git-commit", "value": "3d15126fb1ef74867fc1434be1942e837932691f"},
-      "integrity": {"status": "required-at-vendor-time", "sha256": null},
+      "pin": {
+        "type": "git-commit",
+        "value": "3d15126fb1ef74867fc1434be1942e837932691f"
+      },
+      "integrity": {
+        "status": "required-at-vendor-time",
+        "sha256": null
+      },
       "attribution": "Original work of the Open Scriptures Hebrew Bible available at https://github.com/openscriptures/morphhb",
       "commercial_use": true,
       "modification_allowed": true,
@@ -68,7 +86,9 @@
     {
       "id": "sblgnt",
       "title": "SBL Greek New Testament",
-      "role": ["greek-new-testament"],
+      "role": [
+        "greek-new-testament"
+      ],
       "language": "grc",
       "status": "approved-for-ingestion",
       "production_import_allowed": true,
@@ -79,8 +99,14 @@
       "upstream_repository": "https://github.com/Faithlife/SBLGNT",
       "license_url": "https://github.com/Faithlife/SBLGNT/blob/c4d241a9c1c479a55b989ba35a4976c1d0b8052c/LICENSE",
       "version": "v1.2",
-      "pin": {"type": "git-commit", "value": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c"},
-      "integrity": {"status": "required-at-vendor-time", "sha256": null},
+      "pin": {
+        "type": "git-commit",
+        "value": "c4d241a9c1c479a55b989ba35a4976c1d0b8052c"
+      },
+      "integrity": {
+        "status": "required-at-vendor-time",
+        "sha256": null
+      },
       "attribution": "SBL Greek New Testament. Copyright 2010 Society of Biblical Literature and Logos Bible Software. Licensed CC BY 4.0.",
       "commercial_use": true,
       "modification_allowed": true,
@@ -91,9 +117,25 @@
     {
       "id": "stepbible-data",
       "title": "STEPBible Data",
-      "role": ["greek-nt-lemma", "greek-nt-morphology", "greek-context-gloss", "greek-lexicon", "hebrew-lexicon", "morphology-code-expansion"],
-      "datasets": ["TAGNT", "TBESG", "TBESH", "TEGMC", "TEHMC"],
-      "language": ["grc", "he"],
+      "role": [
+        "greek-nt-lemma",
+        "greek-nt-morphology",
+        "greek-context-gloss",
+        "greek-lexicon",
+        "hebrew-lexicon",
+        "morphology-code-expansion"
+      ],
+      "datasets": [
+        "TAGNT",
+        "TBESG",
+        "TBESH",
+        "TEGMC",
+        "TEHMC"
+      ],
+      "language": [
+        "grc",
+        "he"
+      ],
       "status": "approved-for-ingestion",
       "production_import_allowed": true,
       "license_verified": true,
@@ -102,20 +144,31 @@
       "license": "CC BY 4.0",
       "upstream_repository": "https://github.com/STEPBible/STEPBible-Data",
       "license_url": "https://github.com/STEPBible/STEPBible-Data/blob/ae39711d7843b2902d54993e432de9c12d6a4b9a/README.md",
-      "pin": {"type": "git-commit", "value": "ae39711d7843b2902d54993e432de9c12d6a4b9a"},
-      "integrity": {"status": "required-at-vendor-time", "sha256": null},
+      "pin": {
+        "type": "git-commit",
+        "value": "ae39711d7843b2902d54993e432de9c12d6a4b9a"
+      },
+      "integrity": {
+        "status": "required-at-vendor-time",
+        "sha256": null
+      },
       "attribution": "STEP Bible — https://www.STEPBible.org",
       "commercial_use": true,
       "modification_allowed": true,
       "share_alike": false,
       "isolation_required": false,
-      "excluded_datasets": {"TAGOT": "Upstream README currently lists TAGOT as a dataset still being finished/checked; it is not an approved production LXX source."},
+      "excluded_datasets": {
+        "TAGOT": "Upstream README currently lists TAGOT as a dataset still being finished/checked; it is not an approved production LXX source."
+      },
       "notes": "Record local modifications and preserve attribution. Only explicitly listed, presently published datasets are in scope."
     },
     {
       "id": "first1kgreek-swete",
       "title": "Swete Septuagint witnesses in OpenGreekAndLatin First1KGreek",
-      "role": ["septuagint", "deuterocanonical-greek"],
+      "role": [
+        "septuagint",
+        "deuterocanonical-greek"
+      ],
       "language": "grc",
       "status": "approved-for-production-ingestion",
       "production_import_allowed": true,
@@ -125,7 +178,10 @@
       "license": "CC BY-SA 4.0",
       "upstream_repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
       "license_url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/8ee111eb44ecef4120c844e10749178d95d1f30c/license.md",
-      "pin": {"type": "git-commit", "value": "8ee111eb44ecef4120c844e10749178d95d1f30c"},
+      "pin": {
+        "type": "git-commit",
+        "value": "8ee111eb44ecef4120c844e10749178d95d1f30c"
+      },
       "integrity": {
         "status": "verified-by-phase1b-source-lock",
         "source_lock": "cloud-backend/app/logos_interlinear/old_testament_phase1b/source-lock.json",
@@ -162,7 +218,9 @@
     {
       "id": "open-greek-ecclesiastes",
       "title": "Greek Wikisource Septuagint Ecclesiastes via Open Greek Corpus",
-      "role": ["septuagint-ecclesiastes-fallback"],
+      "role": [
+        "septuagint-ecclesiastes-fallback"
+      ],
       "language": "grc",
       "status": "approved-for-production-ingestion",
       "production_import_allowed": true,
@@ -173,7 +231,10 @@
       "license_detail": "PD (ancient LXX text); Wikisource transcription CC BY-SA 4.0",
       "upstream_repository": "https://github.com/open-greek/open-greek-corpus",
       "license_url": "https://github.com/open-greek/open-greek-corpus/blob/338aa27310b3cfe2588a993b4d113b503597d70f/LICENSE",
-      "pin": {"type": "git-commit", "value": "338aa27310b3cfe2588a993b4d113b503597d70f"},
+      "pin": {
+        "type": "git-commit",
+        "value": "338aa27310b3cfe2588a993b4d113b503597d70f"
+      },
       "integrity": {
         "path": "data/corpus/septuaginta.ecclesiastes.jsonl",
         "git_blob_sha1": "1659770789d318e7ee04f3ee03684bf880922bc4",
@@ -183,7 +244,10 @@
         "ingest_evidence_path": "scripts/ingest_wikisource_ecclesiastes.py",
         "ingest_evidence_git_blob_sha1": "cef0ca6d447741352c1d2c9924b6af46a3de3862"
       },
-      "inventory": {"chapter_count": 12, "verse_count": 222},
+      "inventory": {
+        "chapter_count": 12,
+        "verse_count": 222
+      },
       "attribution": "Greek Wikisource LXX Ecclesiastes transcription via open-greek/open-greek-corpus.",
       "commercial_use": true,
       "modification_allowed": true,
@@ -194,7 +258,9 @@
     {
       "id": "vulgate-clementine",
       "title": "Clementine Vulgate",
-      "role": ["latin-scripture"],
+      "role": [
+        "latin-scripture"
+      ],
       "language": "la",
       "status": "approved-for-production-ingestion",
       "production_import_allowed": true,
@@ -204,7 +270,10 @@
       "license": "Public Domain",
       "upstream_repository": "https://github.com/seven1m/open-bibles",
       "license_url": "https://github.com/seven1m/open-bibles/blob/f257a3559025c3f873b48a75019f53a9354ed7de/README.md",
-      "pin": {"type": "git-commit", "value": "f257a3559025c3f873b48a75019f53a9354ed7de"},
+      "pin": {
+        "type": "git-commit",
+        "value": "f257a3559025c3f873b48a75019f53a9354ed7de"
+      },
       "integrity": {
         "path": "lat-clementine.usfx.xml",
         "git_blob_sha1": "c0e65106383658fd914e90da4c82f2be48a0a762",
@@ -224,7 +293,9 @@
     {
       "id": "web-catholic",
       "title": "World English Bible — Catholic Edition",
-      "role": ["optional-english-scripture"],
+      "role": [
+        "optional-english-scripture"
+      ],
       "language": "en",
       "status": "pending-independent-verification",
       "production_import_allowed": false,
@@ -234,13 +305,67 @@
       "license": null,
       "upstream_repository": null,
       "pin": null,
-      "integrity": {"status": "pending", "sha256": null},
+      "integrity": {
+        "status": "pending",
+        "sha256": null
+      },
       "attribution": null,
       "commercial_use": null,
       "modification_allowed": null,
       "share_alike": false,
       "isolation_required": false,
       "notes": "Optional second English lane only. Existing Douay-Rheims remains authoritative until WEB Catholic provenance and immutable source data are independently pinned in this repository."
+    },
+    {
+      "id": "lxx-morph-rahlfs",
+      "title": "lxx-morph — Rahlfs Septuagint (1935) word-level morphology",
+      "role": [
+        "greek-ot-lemma",
+        "greek-ot-part-of-speech",
+        "greek-ot-morphology"
+      ],
+      "language": "grc",
+      "status": "candidate-validation-source",
+      "production_import_allowed": false,
+      "license_verified": true,
+      "source_inventory_verified": false,
+      "rights": "cc-by-4.0-morphology-on-public-domain-rahlfs-text",
+      "license": "CC BY 4.0",
+      "upstream_repository": "https://git.sr.ht/~sethkush/lxx-morph",
+      "pin": {
+        "type": "git-commit",
+        "value": "c91f6b1e8fb3ba37df701e6ae31f675ace71a2b2"
+      },
+      "integrity": {
+        "status": "phase2-source-inventory-pending",
+        "sha256": null,
+        "note": "Production remains blocked until CI retrieves the pinned revision, verifies the license/inventory, records exact source files and checksums, and validates the Catholic OT scope."
+      },
+      "edition": {
+        "text": "Rahlfs Septuagint (1935)",
+        "relationship_to_installed_greek_surface": "separate-witness",
+        "installed_surface_witnesses": [
+          "first1kgreek-swete",
+          "open-greek-ecclesiastes"
+        ]
+      },
+      "reported_scope": {
+        "greek_old_testament_book_count": 59,
+        "fields": [
+          "surface",
+          "lemma",
+          "parsing",
+          "pos",
+          "provenance",
+          "confidence"
+        ]
+      },
+      "attribution": "lxx-morph morphology by Seth Kushniryk, CC BY 4.0; Rahlfs Septuagint (1935) source text is public domain.",
+      "commercial_use": true,
+      "modification_allowed": true,
+      "share_alike": false,
+      "isolation_required": false,
+      "notes": "Candidate linguistic witness only. Rahlfs morphology must never be relabeled as Swete morphology. Production attachment to the installed Swete/Open Greek surface lanes is forbidden until deterministic verse/token alignment proves the relationship and preserves edition provenance. No lemma, POS, morphology, gloss, or token boundary may be fabricated."
     }
   ]
 }
