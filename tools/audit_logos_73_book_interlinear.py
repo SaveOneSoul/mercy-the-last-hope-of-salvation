@@ -16,7 +16,9 @@ DEFAULT_ENGLISH = CORPORA / "eng_douay_rheims_1899"
 DEFAULT_SEMITIC = CORPORA / "heb_arc_oshb_wlc"
 DEFAULT_GREEK_OT_FULL = CORPORA / "grc_ot_catholic_full"
 DEFAULT_GREEK_OT_ACCEPTED = CORPORA / "grc_ot_catholic_swete"
+DEFAULT_GREEK_OT_LINGUISTICS = CORPORA / "grc_ot_rahlfs_lxx_morph"
 DEFAULT_GREEK_NT = CORPORA / "grc_sblgnt_morphgnt"
+DEFAULT_GREEK_NT_TAGNT = CORPORA / "grc_nt_tagnt_john_pa"
 DEFAULT_LATIN = CORPORA / "lat_vulgate_clementine"
 DEFAULT_JSON = INTERLINEAR / "coverage-audit.json"
 DEFAULT_MARKDOWN = ROOT / "LOGOS_INTERLINEAR_COVERAGE.md"
@@ -135,14 +137,20 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
     greek_ot_full_manifest = load(args.greek_ot_full_root / "manifest.json")
     greek_ot_accepted_manifest = load(args.greek_ot_accepted_root / "manifest.json")
     greek_ot_map = load(args.greek_ot_accepted_root / "versification-map.json")
+    greek_ot_linguistics_manifest = load(args.greek_ot_linguistics_root / "manifest.json")
     greek_nt_manifest = load(args.greek_nt_root / "manifest.json")
+    greek_nt_tagnt_manifest = load(args.greek_nt_tagnt_root / "manifest.json")
     latin_manifest = load(args.latin_root / "manifest.json")
 
     require(int(english_manifest.get("book_count") or 0) == 73, "English corpus is not 73 books")
     require(int(latin_manifest.get("book_count") or 0) == 73, "Latin corpus is not 73 books")
     require(int((semitic_manifest.get("phase1a_acceptance") or {}).get("masoretic_book_witness_count") or 0) == 39, "Semitic corpus is not 39 witnesses")
     require(int(greek_ot_full_manifest.get("book_count") or 0) == 39, "Complete Greek OT protocanonical package is not 39 books")
+    require(int(greek_ot_linguistics_manifest.get("book_count") or 0) == 46, "Greek OT linguistic package is not 46 Catholic books")
+    require(greek_ot_linguistics_manifest.get("production_enabled") is True, "Greek OT linguistic package is not production-enabled")
     require(int((greek_nt_manifest.get("phase1_acceptance") or {}).get("book_count") or 0) == 27, "Greek NT package is not 27 books")
+    require(int(greek_nt_tagnt_manifest.get("verse_count") or 0) == 12, "TAGNT John supplement is not 12 verses")
+    require(greek_nt_tagnt_manifest.get("production_enabled") is True, "TAGNT John supplement is not production-enabled")
 
     english_index = {str(b.get("id")): b for b in (english_manifest.get("books") or [])}
     latin_index = {str(b.get("id")): b for b in (latin_manifest.get("books") or [])}
@@ -167,8 +175,10 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
     semitic_source = sources.get("oshb") or {}
     accepted_greek_source = sources.get("first1kgreek-swete") or {}
     ecc_source = sources.get("open-greek-ecclesiastes") or {}
+    greek_ot_linguistic_source = sources.get("lxx-morph-rahlfs") or {}
+    tagnt_source = sources.get("stepbible-data") or {}
     latin_source = sources.get("vulgate-clementine") or {}
-    for source_id, source in (("drb-challoner", english_source), ("oshb", semitic_source), ("first1kgreek-swete", accepted_greek_source), ("open-greek-ecclesiastes", ecc_source), ("vulgate-clementine", latin_source)):
+    for source_id, source in (("drb-challoner", english_source), ("oshb", semitic_source), ("first1kgreek-swete", accepted_greek_source), ("open-greek-ecclesiastes", ecc_source), ("lxx-morph-rahlfs", greek_ot_linguistic_source), ("stepbible-data", tagnt_source), ("vulgate-clementine", latin_source)):
         require(source and source.get("production_import_allowed") is True, f"source {source_id} is not production-approved")
         require(str(source.get("license") or "").strip(), f"source {source_id} has no license")
 
@@ -187,6 +197,7 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
     }
 
     full_greek_book_root = args.greek_ot_full_root / "sharealike" / "catholic_lxx_cc-by-sa-4.0" / "books"
+    ot_linguistics_book_root = args.greek_ot_linguistics_root / "books"
     nt_surface_root = args.greek_nt_root / "phase1" / "surface"
     nt_linguistics_root = args.greek_nt_root / "phase1" / "linguistics"
     semitic_surface_root = args.semitic_root / "phase1a" / "surface"
