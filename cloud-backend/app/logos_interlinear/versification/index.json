@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.22-v38",
+  "registry_version": "2026.09.22-v47",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -344,6 +344,114 @@
       "lane": "greek",
       "status": "verified",
       "file": "maps/NEH-greek-first1k-swete.json"
+    },
+    {
+      "book_id": "GEN",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/GEN-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "GEN",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/GEN-greek-first1k-swete.json"
+    },
+    {
+      "book_id": "EXO",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/EXO-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "EXO",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/EXO-greek-first1k-swete.json"
+    },
+    {
+      "book_id": "JOS",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/JOS-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "JOS",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/JOS-greek-first1k-swete.json"
+    },
+    {
+      "book_id": "1KI",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/1KI-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "1KI",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/1KI-greek-first1k-swete.json"
+    },
+    {
+      "book_id": "1CH",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/1CH-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "1CH",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/1CH-greek-first1k-swete.json"
+    },
+    {
+      "book_id": "2CH",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/2CH-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "2CH",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/2CH-greek-first1k-swete.json"
+    },
+    {
+      "book_id": "JOB",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/JOB-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "JOB",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/JOB-greek-first1k-swete.json"
+    },
+    {
+      "book_id": "ISA",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/ISA-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "ISA",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/ISA-greek-first1k-swete.json"
+    },
+    {
+      "book_id": "EZK",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/EZK-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "EZK",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/EZK-greek-first1k-swete.json"
     }
   ]
 }
