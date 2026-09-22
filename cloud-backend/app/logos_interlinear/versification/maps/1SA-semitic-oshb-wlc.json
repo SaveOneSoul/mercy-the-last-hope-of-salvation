@@ -1,0 +1,538 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.22-1sa-semitic-v1",
+  "status": "verified",
+  "book_id": "1SA",
+  "book": "1 Samuel",
+  "lane": "semitic",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "oshb",
+    "reference_system": "oshb-wlc-osis",
+    "corpus_id": "heb_arc_oshb_wlc",
+    "corpus_version": "2026.09.16-oshb-wlc-39",
+    "repository": "openscriptures/morphhb",
+    "commit": "3d15126fb1ef74867fc1434be1942e837932691f"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "20",
+      "21"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "20",
+      "segments": [
+        {
+          "id": "1SA-20-1-42-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "20",
+              "verse": "1"
+            },
+            {
+              "chapter": "20",
+              "verse": "2"
+            },
+            {
+              "chapter": "20",
+              "verse": "3"
+            },
+            {
+              "chapter": "20",
+              "verse": "4"
+            },
+            {
+              "chapter": "20",
+              "verse": "5"
+            },
+            {
+              "chapter": "20",
+              "verse": "6"
+            },
+            {
+              "chapter": "20",
+              "verse": "7"
+            },
+            {
+              "chapter": "20",
+              "verse": "8"
+            },
+            {
+              "chapter": "20",
+              "verse": "9"
+            },
+            {
+              "chapter": "20",
+              "verse": "10"
+            },
+            {
+              "chapter": "20",
+              "verse": "11"
+            },
+            {
+              "chapter": "20",
+              "verse": "12"
+            },
+            {
+              "chapter": "20",
+              "verse": "13"
+            },
+            {
+              "chapter": "20",
+              "verse": "14"
+            },
+            {
+              "chapter": "20",
+              "verse": "15"
+            },
+            {
+              "chapter": "20",
+              "verse": "16"
+            },
+            {
+              "chapter": "20",
+              "verse": "17"
+            },
+            {
+              "chapter": "20",
+              "verse": "18"
+            },
+            {
+              "chapter": "20",
+              "verse": "19"
+            },
+            {
+              "chapter": "20",
+              "verse": "20"
+            },
+            {
+              "chapter": "20",
+              "verse": "21"
+            },
+            {
+              "chapter": "20",
+              "verse": "22"
+            },
+            {
+              "chapter": "20",
+              "verse": "23"
+            },
+            {
+              "chapter": "20",
+              "verse": "24"
+            },
+            {
+              "chapter": "20",
+              "verse": "25"
+            },
+            {
+              "chapter": "20",
+              "verse": "26"
+            },
+            {
+              "chapter": "20",
+              "verse": "27"
+            },
+            {
+              "chapter": "20",
+              "verse": "28"
+            },
+            {
+              "chapter": "20",
+              "verse": "29"
+            },
+            {
+              "chapter": "20",
+              "verse": "30"
+            },
+            {
+              "chapter": "20",
+              "verse": "31"
+            },
+            {
+              "chapter": "20",
+              "verse": "32"
+            },
+            {
+              "chapter": "20",
+              "verse": "33"
+            },
+            {
+              "chapter": "20",
+              "verse": "34"
+            },
+            {
+              "chapter": "20",
+              "verse": "35"
+            },
+            {
+              "chapter": "20",
+              "verse": "36"
+            },
+            {
+              "chapter": "20",
+              "verse": "37"
+            },
+            {
+              "chapter": "20",
+              "verse": "38"
+            },
+            {
+              "chapter": "20",
+              "verse": "39"
+            },
+            {
+              "chapter": "20",
+              "verse": "40"
+            },
+            {
+              "chapter": "20",
+              "verse": "41"
+            },
+            {
+              "chapter": "20",
+              "verse": "42"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "20",
+              "verse": "1"
+            },
+            {
+              "chapter": "20",
+              "verse": "2"
+            },
+            {
+              "chapter": "20",
+              "verse": "3"
+            },
+            {
+              "chapter": "20",
+              "verse": "4"
+            },
+            {
+              "chapter": "20",
+              "verse": "5"
+            },
+            {
+              "chapter": "20",
+              "verse": "6"
+            },
+            {
+              "chapter": "20",
+              "verse": "7"
+            },
+            {
+              "chapter": "20",
+              "verse": "8"
+            },
+            {
+              "chapter": "20",
+              "verse": "9"
+            },
+            {
+              "chapter": "20",
+              "verse": "10"
+            },
+            {
+              "chapter": "20",
+              "verse": "11"
+            },
+            {
+              "chapter": "20",
+              "verse": "12"
+            },
+            {
+              "chapter": "20",
+              "verse": "13"
+            },
+            {
+              "chapter": "20",
+              "verse": "14"
+            },
+            {
+              "chapter": "20",
+              "verse": "15"
+            },
+            {
+              "chapter": "20",
+              "verse": "16"
+            },
+            {
+              "chapter": "20",
+              "verse": "17"
+            },
+            {
+              "chapter": "20",
+              "verse": "18"
+            },
+            {
+              "chapter": "20",
+              "verse": "19"
+            },
+            {
+              "chapter": "20",
+              "verse": "20"
+            },
+            {
+              "chapter": "20",
+              "verse": "21"
+            },
+            {
+              "chapter": "20",
+              "verse": "22"
+            },
+            {
+              "chapter": "20",
+              "verse": "23"
+            },
+            {
+              "chapter": "20",
+              "verse": "24"
+            },
+            {
+              "chapter": "20",
+              "verse": "25"
+            },
+            {
+              "chapter": "20",
+              "verse": "26"
+            },
+            {
+              "chapter": "20",
+              "verse": "27"
+            },
+            {
+              "chapter": "20",
+              "verse": "28"
+            },
+            {
+              "chapter": "20",
+              "verse": "29"
+            },
+            {
+              "chapter": "20",
+              "verse": "30"
+            },
+            {
+              "chapter": "20",
+              "verse": "31"
+            },
+            {
+              "chapter": "20",
+              "verse": "32"
+            },
+            {
+              "chapter": "20",
+              "verse": "33"
+            },
+            {
+              "chapter": "20",
+              "verse": "34"
+            },
+            {
+              "chapter": "20",
+              "verse": "35"
+            },
+            {
+              "chapter": "20",
+              "verse": "36"
+            },
+            {
+              "chapter": "20",
+              "verse": "37"
+            },
+            {
+              "chapter": "20",
+              "verse": "38"
+            },
+            {
+              "chapter": "20",
+              "verse": "39"
+            },
+            {
+              "chapter": "20",
+              "verse": "40"
+            },
+            {
+              "chapter": "20",
+              "verse": "41"
+            },
+            {
+              "chapter": "20",
+              "verse": "42"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and OSHB/WLC 1 Samuel 20:1-42 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "1SA-20-43-semitic-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "20",
+              "verse": "43"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "21",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned OSHB/WLC chapter boundary places David's departure and Jonathan's return at 1 Samuel 21:1; Douay-Rheims retains that closing sentence as 20:43."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "21",
+      "segments": [
+        {
+          "id": "1SA-21-1-15-semitic-offset",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "21",
+              "verse": "1"
+            },
+            {
+              "chapter": "21",
+              "verse": "2"
+            },
+            {
+              "chapter": "21",
+              "verse": "3"
+            },
+            {
+              "chapter": "21",
+              "verse": "4"
+            },
+            {
+              "chapter": "21",
+              "verse": "5"
+            },
+            {
+              "chapter": "21",
+              "verse": "6"
+            },
+            {
+              "chapter": "21",
+              "verse": "7"
+            },
+            {
+              "chapter": "21",
+              "verse": "8"
+            },
+            {
+              "chapter": "21",
+              "verse": "9"
+            },
+            {
+              "chapter": "21",
+              "verse": "10"
+            },
+            {
+              "chapter": "21",
+              "verse": "11"
+            },
+            {
+              "chapter": "21",
+              "verse": "12"
+            },
+            {
+              "chapter": "21",
+              "verse": "13"
+            },
+            {
+              "chapter": "21",
+              "verse": "14"
+            },
+            {
+              "chapter": "21",
+              "verse": "15"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "21",
+              "verse": "2"
+            },
+            {
+              "chapter": "21",
+              "verse": "3"
+            },
+            {
+              "chapter": "21",
+              "verse": "4"
+            },
+            {
+              "chapter": "21",
+              "verse": "5"
+            },
+            {
+              "chapter": "21",
+              "verse": "6"
+            },
+            {
+              "chapter": "21",
+              "verse": "7"
+            },
+            {
+              "chapter": "21",
+              "verse": "8"
+            },
+            {
+              "chapter": "21",
+              "verse": "9"
+            },
+            {
+              "chapter": "21",
+              "verse": "10"
+            },
+            {
+              "chapter": "21",
+              "verse": "11"
+            },
+            {
+              "chapter": "21",
+              "verse": "12"
+            },
+            {
+              "chapter": "21",
+              "verse": "13"
+            },
+            {
+              "chapter": "21",
+              "verse": "14"
+            },
+            {
+              "chapter": "21",
+              "verse": "15"
+            },
+            {
+              "chapter": "21",
+              "verse": "16"
+            }
+          ],
+          "evidence": {
+            "citation": "After the OSHB/WLC 21:1 boundary verse corresponding to Douay-Rheims 20:43, Douay-Rheims 21:1-15 proceeds sequentially through OSHB/WLC 21:2-16."
+          }
+        }
+      ]
+    }
+  ]
+}

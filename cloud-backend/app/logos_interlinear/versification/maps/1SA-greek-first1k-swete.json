@@ -1,0 +1,2080 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.22-1sa-greek-v1",
+  "status": "verified",
+  "book_id": "1SA",
+  "book": "1 Samuel",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "first1kgreek-swete",
+    "reference_system": "swete-first1k-source-numbering",
+    "corpus_id": "grc_ot_catholic_full",
+    "corpus_version": "2026.09.17-catholic-lxx-full"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "4",
+      "8",
+      "13",
+      "14",
+      "17",
+      "18",
+      "25"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "4",
+      "segments": [
+        {
+          "id": "1SA-4-1-21-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "4",
+              "verse": "1"
+            },
+            {
+              "chapter": "4",
+              "verse": "2"
+            },
+            {
+              "chapter": "4",
+              "verse": "3"
+            },
+            {
+              "chapter": "4",
+              "verse": "4"
+            },
+            {
+              "chapter": "4",
+              "verse": "5"
+            },
+            {
+              "chapter": "4",
+              "verse": "6"
+            },
+            {
+              "chapter": "4",
+              "verse": "7"
+            },
+            {
+              "chapter": "4",
+              "verse": "8"
+            },
+            {
+              "chapter": "4",
+              "verse": "9"
+            },
+            {
+              "chapter": "4",
+              "verse": "10"
+            },
+            {
+              "chapter": "4",
+              "verse": "11"
+            },
+            {
+              "chapter": "4",
+              "verse": "12"
+            },
+            {
+              "chapter": "4",
+              "verse": "13"
+            },
+            {
+              "chapter": "4",
+              "verse": "14"
+            },
+            {
+              "chapter": "4",
+              "verse": "15"
+            },
+            {
+              "chapter": "4",
+              "verse": "16"
+            },
+            {
+              "chapter": "4",
+              "verse": "17"
+            },
+            {
+              "chapter": "4",
+              "verse": "18"
+            },
+            {
+              "chapter": "4",
+              "verse": "19"
+            },
+            {
+              "chapter": "4",
+              "verse": "20"
+            },
+            {
+              "chapter": "4",
+              "verse": "21"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "4",
+              "verse": "1"
+            },
+            {
+              "chapter": "4",
+              "verse": "2"
+            },
+            {
+              "chapter": "4",
+              "verse": "3"
+            },
+            {
+              "chapter": "4",
+              "verse": "4"
+            },
+            {
+              "chapter": "4",
+              "verse": "5"
+            },
+            {
+              "chapter": "4",
+              "verse": "6"
+            },
+            {
+              "chapter": "4",
+              "verse": "7"
+            },
+            {
+              "chapter": "4",
+              "verse": "8"
+            },
+            {
+              "chapter": "4",
+              "verse": "9"
+            },
+            {
+              "chapter": "4",
+              "verse": "10"
+            },
+            {
+              "chapter": "4",
+              "verse": "11"
+            },
+            {
+              "chapter": "4",
+              "verse": "12"
+            },
+            {
+              "chapter": "4",
+              "verse": "13"
+            },
+            {
+              "chapter": "4",
+              "verse": "14"
+            },
+            {
+              "chapter": "4",
+              "verse": "15"
+            },
+            {
+              "chapter": "4",
+              "verse": "16"
+            },
+            {
+              "chapter": "4",
+              "verse": "17"
+            },
+            {
+              "chapter": "4",
+              "verse": "18"
+            },
+            {
+              "chapter": "4",
+              "verse": "19"
+            },
+            {
+              "chapter": "4",
+              "verse": "20"
+            },
+            {
+              "chapter": "4",
+              "verse": "21"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete 1 Samuel 4:1-21 align by numbered division through the naming of Ichabod."
+          }
+        },
+        {
+          "id": "1SA-4-22-greek-canonical-only",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "4",
+              "verse": "22"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "Douay-Rheims 4:22 repeats the statement that Israel's glory departed because the ark was taken; the pinned Swete witness ends chapter 4 at source 4:21 and contains no separate 4:22 record."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "8",
+      "segments": [
+        {
+          "id": "1SA-8-1-20-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "8",
+              "verse": "1"
+            },
+            {
+              "chapter": "8",
+              "verse": "2"
+            },
+            {
+              "chapter": "8",
+              "verse": "3"
+            },
+            {
+              "chapter": "8",
+              "verse": "4"
+            },
+            {
+              "chapter": "8",
+              "verse": "5"
+            },
+            {
+              "chapter": "8",
+              "verse": "6"
+            },
+            {
+              "chapter": "8",
+              "verse": "7"
+            },
+            {
+              "chapter": "8",
+              "verse": "8"
+            },
+            {
+              "chapter": "8",
+              "verse": "9"
+            },
+            {
+              "chapter": "8",
+              "verse": "10"
+            },
+            {
+              "chapter": "8",
+              "verse": "11"
+            },
+            {
+              "chapter": "8",
+              "verse": "12"
+            },
+            {
+              "chapter": "8",
+              "verse": "13"
+            },
+            {
+              "chapter": "8",
+              "verse": "14"
+            },
+            {
+              "chapter": "8",
+              "verse": "15"
+            },
+            {
+              "chapter": "8",
+              "verse": "16"
+            },
+            {
+              "chapter": "8",
+              "verse": "17"
+            },
+            {
+              "chapter": "8",
+              "verse": "18"
+            },
+            {
+              "chapter": "8",
+              "verse": "19"
+            },
+            {
+              "chapter": "8",
+              "verse": "20"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "8",
+              "verse": "1"
+            },
+            {
+              "chapter": "8",
+              "verse": "2"
+            },
+            {
+              "chapter": "8",
+              "verse": "3"
+            },
+            {
+              "chapter": "8",
+              "verse": "4"
+            },
+            {
+              "chapter": "8",
+              "verse": "5"
+            },
+            {
+              "chapter": "8",
+              "verse": "6"
+            },
+            {
+              "chapter": "8",
+              "verse": "7"
+            },
+            {
+              "chapter": "8",
+              "verse": "8"
+            },
+            {
+              "chapter": "8",
+              "verse": "9"
+            },
+            {
+              "chapter": "8",
+              "verse": "10"
+            },
+            {
+              "chapter": "8",
+              "verse": "11"
+            },
+            {
+              "chapter": "8",
+              "verse": "12"
+            },
+            {
+              "chapter": "8",
+              "verse": "13"
+            },
+            {
+              "chapter": "8",
+              "verse": "14"
+            },
+            {
+              "chapter": "8",
+              "verse": "15"
+            },
+            {
+              "chapter": "8",
+              "verse": "16"
+            },
+            {
+              "chapter": "8",
+              "verse": "17"
+            },
+            {
+              "chapter": "8",
+              "verse": "18"
+            },
+            {
+              "chapter": "8",
+              "verse": "19"
+            },
+            {
+              "chapter": "8",
+              "verse": "20"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete 1 Samuel 8:1-20 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "1SA-8-21-22-greek-merge",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "8",
+              "verse": "21"
+            },
+            {
+              "chapter": "8",
+              "verse": "22"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "8",
+              "verse": "21"
+            }
+          ],
+          "evidence": {
+            "citation": "Swete 8:21 preserves Samuel hearing the people, reporting their words to the Lord, the Lord's command to appoint a king, and Samuel dismissing Israel; Douay-Rheims divides the same closing sequence across 8:21-22."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "13",
+      "segments": [
+        {
+          "id": "1SA-13-1-greek-canonical-only",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "13",
+              "verse": "1"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "Douay-Rheims 13:1 contains Saul's regnal formula; the pinned Swete source preserves an explicitly empty 13:1 division and supplies no Greek surface text for that canonical sentence."
+          }
+        },
+        {
+          "id": "1SA-13-1-greek-empty-source",
+          "relationship": "source-only",
+          "canonical_refs": [],
+          "source_refs": [
+            {
+              "chapter": "13",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "The pinned Swete corpus explicitly preserves source 13:1 as an empty source verse division; it is retained rather than populated with fabricated Greek text."
+          }
+        },
+        {
+          "id": "1SA-13-2-20-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "13",
+              "verse": "2"
+            },
+            {
+              "chapter": "13",
+              "verse": "3"
+            },
+            {
+              "chapter": "13",
+              "verse": "4"
+            },
+            {
+              "chapter": "13",
+              "verse": "5"
+            },
+            {
+              "chapter": "13",
+              "verse": "6"
+            },
+            {
+              "chapter": "13",
+              "verse": "7"
+            },
+            {
+              "chapter": "13",
+              "verse": "8"
+            },
+            {
+              "chapter": "13",
+              "verse": "9"
+            },
+            {
+              "chapter": "13",
+              "verse": "10"
+            },
+            {
+              "chapter": "13",
+              "verse": "11"
+            },
+            {
+              "chapter": "13",
+              "verse": "12"
+            },
+            {
+              "chapter": "13",
+              "verse": "13"
+            },
+            {
+              "chapter": "13",
+              "verse": "14"
+            },
+            {
+              "chapter": "13",
+              "verse": "15"
+            },
+            {
+              "chapter": "13",
+              "verse": "16"
+            },
+            {
+              "chapter": "13",
+              "verse": "17"
+            },
+            {
+              "chapter": "13",
+              "verse": "18"
+            },
+            {
+              "chapter": "13",
+              "verse": "19"
+            },
+            {
+              "chapter": "13",
+              "verse": "20"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "13",
+              "verse": "2"
+            },
+            {
+              "chapter": "13",
+              "verse": "3"
+            },
+            {
+              "chapter": "13",
+              "verse": "4"
+            },
+            {
+              "chapter": "13",
+              "verse": "5"
+            },
+            {
+              "chapter": "13",
+              "verse": "6"
+            },
+            {
+              "chapter": "13",
+              "verse": "7"
+            },
+            {
+              "chapter": "13",
+              "verse": "8"
+            },
+            {
+              "chapter": "13",
+              "verse": "9"
+            },
+            {
+              "chapter": "13",
+              "verse": "10"
+            },
+            {
+              "chapter": "13",
+              "verse": "11"
+            },
+            {
+              "chapter": "13",
+              "verse": "12"
+            },
+            {
+              "chapter": "13",
+              "verse": "13"
+            },
+            {
+              "chapter": "13",
+              "verse": "14"
+            },
+            {
+              "chapter": "13",
+              "verse": "15"
+            },
+            {
+              "chapter": "13",
+              "verse": "16"
+            },
+            {
+              "chapter": "13",
+              "verse": "17"
+            },
+            {
+              "chapter": "13",
+              "verse": "18"
+            },
+            {
+              "chapter": "13",
+              "verse": "19"
+            },
+            {
+              "chapter": "13",
+              "verse": "20"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete 1 Samuel 13:2-20 preserve matching numbered narrative divisions."
+          }
+        },
+        {
+          "id": "1SA-13-21-23-greek-merge",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "13",
+              "verse": "21"
+            },
+            {
+              "chapter": "13",
+              "verse": "22"
+            },
+            {
+              "chapter": "13",
+              "verse": "23"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "13",
+              "verse": "21"
+            }
+          ],
+          "evidence": {
+            "citation": "Swete 13:21 contains the implement-sharpening close, the absence of swords and spears, and the Philistine advance at Machmas; Douay-Rheims prints those units separately as 13:21-23."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "14",
+      "segments": [
+        {
+          "id": "1SA-14-1-50-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "14",
+              "verse": "1"
+            },
+            {
+              "chapter": "14",
+              "verse": "2"
+            },
+            {
+              "chapter": "14",
+              "verse": "3"
+            },
+            {
+              "chapter": "14",
+              "verse": "4"
+            },
+            {
+              "chapter": "14",
+              "verse": "5"
+            },
+            {
+              "chapter": "14",
+              "verse": "6"
+            },
+            {
+              "chapter": "14",
+              "verse": "7"
+            },
+            {
+              "chapter": "14",
+              "verse": "8"
+            },
+            {
+              "chapter": "14",
+              "verse": "9"
+            },
+            {
+              "chapter": "14",
+              "verse": "10"
+            },
+            {
+              "chapter": "14",
+              "verse": "11"
+            },
+            {
+              "chapter": "14",
+              "verse": "12"
+            },
+            {
+              "chapter": "14",
+              "verse": "13"
+            },
+            {
+              "chapter": "14",
+              "verse": "14"
+            },
+            {
+              "chapter": "14",
+              "verse": "15"
+            },
+            {
+              "chapter": "14",
+              "verse": "16"
+            },
+            {
+              "chapter": "14",
+              "verse": "17"
+            },
+            {
+              "chapter": "14",
+              "verse": "18"
+            },
+            {
+              "chapter": "14",
+              "verse": "19"
+            },
+            {
+              "chapter": "14",
+              "verse": "20"
+            },
+            {
+              "chapter": "14",
+              "verse": "21"
+            },
+            {
+              "chapter": "14",
+              "verse": "22"
+            },
+            {
+              "chapter": "14",
+              "verse": "23"
+            },
+            {
+              "chapter": "14",
+              "verse": "24"
+            },
+            {
+              "chapter": "14",
+              "verse": "25"
+            },
+            {
+              "chapter": "14",
+              "verse": "26"
+            },
+            {
+              "chapter": "14",
+              "verse": "27"
+            },
+            {
+              "chapter": "14",
+              "verse": "28"
+            },
+            {
+              "chapter": "14",
+              "verse": "29"
+            },
+            {
+              "chapter": "14",
+              "verse": "30"
+            },
+            {
+              "chapter": "14",
+              "verse": "31"
+            },
+            {
+              "chapter": "14",
+              "verse": "32"
+            },
+            {
+              "chapter": "14",
+              "verse": "33"
+            },
+            {
+              "chapter": "14",
+              "verse": "34"
+            },
+            {
+              "chapter": "14",
+              "verse": "35"
+            },
+            {
+              "chapter": "14",
+              "verse": "36"
+            },
+            {
+              "chapter": "14",
+              "verse": "37"
+            },
+            {
+              "chapter": "14",
+              "verse": "38"
+            },
+            {
+              "chapter": "14",
+              "verse": "39"
+            },
+            {
+              "chapter": "14",
+              "verse": "40"
+            },
+            {
+              "chapter": "14",
+              "verse": "41"
+            },
+            {
+              "chapter": "14",
+              "verse": "42"
+            },
+            {
+              "chapter": "14",
+              "verse": "43"
+            },
+            {
+              "chapter": "14",
+              "verse": "44"
+            },
+            {
+              "chapter": "14",
+              "verse": "45"
+            },
+            {
+              "chapter": "14",
+              "verse": "46"
+            },
+            {
+              "chapter": "14",
+              "verse": "47"
+            },
+            {
+              "chapter": "14",
+              "verse": "48"
+            },
+            {
+              "chapter": "14",
+              "verse": "49"
+            },
+            {
+              "chapter": "14",
+              "verse": "50"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "14",
+              "verse": "1"
+            },
+            {
+              "chapter": "14",
+              "verse": "2"
+            },
+            {
+              "chapter": "14",
+              "verse": "3"
+            },
+            {
+              "chapter": "14",
+              "verse": "4"
+            },
+            {
+              "chapter": "14",
+              "verse": "5"
+            },
+            {
+              "chapter": "14",
+              "verse": "6"
+            },
+            {
+              "chapter": "14",
+              "verse": "7"
+            },
+            {
+              "chapter": "14",
+              "verse": "8"
+            },
+            {
+              "chapter": "14",
+              "verse": "9"
+            },
+            {
+              "chapter": "14",
+              "verse": "10"
+            },
+            {
+              "chapter": "14",
+              "verse": "11"
+            },
+            {
+              "chapter": "14",
+              "verse": "12"
+            },
+            {
+              "chapter": "14",
+              "verse": "13"
+            },
+            {
+              "chapter": "14",
+              "verse": "14"
+            },
+            {
+              "chapter": "14",
+              "verse": "15"
+            },
+            {
+              "chapter": "14",
+              "verse": "16"
+            },
+            {
+              "chapter": "14",
+              "verse": "17"
+            },
+            {
+              "chapter": "14",
+              "verse": "18"
+            },
+            {
+              "chapter": "14",
+              "verse": "19"
+            },
+            {
+              "chapter": "14",
+              "verse": "20"
+            },
+            {
+              "chapter": "14",
+              "verse": "21"
+            },
+            {
+              "chapter": "14",
+              "verse": "22"
+            },
+            {
+              "chapter": "14",
+              "verse": "23"
+            },
+            {
+              "chapter": "14",
+              "verse": "24"
+            },
+            {
+              "chapter": "14",
+              "verse": "25"
+            },
+            {
+              "chapter": "14",
+              "verse": "26"
+            },
+            {
+              "chapter": "14",
+              "verse": "27"
+            },
+            {
+              "chapter": "14",
+              "verse": "28"
+            },
+            {
+              "chapter": "14",
+              "verse": "29"
+            },
+            {
+              "chapter": "14",
+              "verse": "30"
+            },
+            {
+              "chapter": "14",
+              "verse": "31"
+            },
+            {
+              "chapter": "14",
+              "verse": "32"
+            },
+            {
+              "chapter": "14",
+              "verse": "33"
+            },
+            {
+              "chapter": "14",
+              "verse": "34"
+            },
+            {
+              "chapter": "14",
+              "verse": "35"
+            },
+            {
+              "chapter": "14",
+              "verse": "36"
+            },
+            {
+              "chapter": "14",
+              "verse": "37"
+            },
+            {
+              "chapter": "14",
+              "verse": "38"
+            },
+            {
+              "chapter": "14",
+              "verse": "39"
+            },
+            {
+              "chapter": "14",
+              "verse": "40"
+            },
+            {
+              "chapter": "14",
+              "verse": "41"
+            },
+            {
+              "chapter": "14",
+              "verse": "42"
+            },
+            {
+              "chapter": "14",
+              "verse": "43"
+            },
+            {
+              "chapter": "14",
+              "verse": "44"
+            },
+            {
+              "chapter": "14",
+              "verse": "45"
+            },
+            {
+              "chapter": "14",
+              "verse": "46"
+            },
+            {
+              "chapter": "14",
+              "verse": "47"
+            },
+            {
+              "chapter": "14",
+              "verse": "48"
+            },
+            {
+              "chapter": "14",
+              "verse": "49"
+            },
+            {
+              "chapter": "14",
+              "verse": "50"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete 1 Samuel 14:1-50 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "1SA-14-51-52-greek-merge",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "14",
+              "verse": "51"
+            },
+            {
+              "chapter": "14",
+              "verse": "52"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "14",
+              "verse": "51"
+            }
+          ],
+          "evidence": {
+            "citation": "Swete 14:51 contains both Saul/Abner's genealogy and the continuing account of Saul's hard war with the Philistines; Douay-Rheims divides those clauses as 14:51-52."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "17",
+      "segments": [
+        {
+          "id": "1SA-17-present-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "17",
+              "verse": "1"
+            },
+            {
+              "chapter": "17",
+              "verse": "2"
+            },
+            {
+              "chapter": "17",
+              "verse": "3"
+            },
+            {
+              "chapter": "17",
+              "verse": "4"
+            },
+            {
+              "chapter": "17",
+              "verse": "5"
+            },
+            {
+              "chapter": "17",
+              "verse": "6"
+            },
+            {
+              "chapter": "17",
+              "verse": "7"
+            },
+            {
+              "chapter": "17",
+              "verse": "8"
+            },
+            {
+              "chapter": "17",
+              "verse": "9"
+            },
+            {
+              "chapter": "17",
+              "verse": "10"
+            },
+            {
+              "chapter": "17",
+              "verse": "11"
+            },
+            {
+              "chapter": "17",
+              "verse": "32"
+            },
+            {
+              "chapter": "17",
+              "verse": "33"
+            },
+            {
+              "chapter": "17",
+              "verse": "34"
+            },
+            {
+              "chapter": "17",
+              "verse": "35"
+            },
+            {
+              "chapter": "17",
+              "verse": "36"
+            },
+            {
+              "chapter": "17",
+              "verse": "37"
+            },
+            {
+              "chapter": "17",
+              "verse": "38"
+            },
+            {
+              "chapter": "17",
+              "verse": "39"
+            },
+            {
+              "chapter": "17",
+              "verse": "40"
+            },
+            {
+              "chapter": "17",
+              "verse": "41"
+            },
+            {
+              "chapter": "17",
+              "verse": "42"
+            },
+            {
+              "chapter": "17",
+              "verse": "43"
+            },
+            {
+              "chapter": "17",
+              "verse": "44"
+            },
+            {
+              "chapter": "17",
+              "verse": "45"
+            },
+            {
+              "chapter": "17",
+              "verse": "46"
+            },
+            {
+              "chapter": "17",
+              "verse": "47"
+            },
+            {
+              "chapter": "17",
+              "verse": "48"
+            },
+            {
+              "chapter": "17",
+              "verse": "49"
+            },
+            {
+              "chapter": "17",
+              "verse": "51"
+            },
+            {
+              "chapter": "17",
+              "verse": "52"
+            },
+            {
+              "chapter": "17",
+              "verse": "53"
+            },
+            {
+              "chapter": "17",
+              "verse": "54"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "17",
+              "verse": "1"
+            },
+            {
+              "chapter": "17",
+              "verse": "2"
+            },
+            {
+              "chapter": "17",
+              "verse": "3"
+            },
+            {
+              "chapter": "17",
+              "verse": "4"
+            },
+            {
+              "chapter": "17",
+              "verse": "5"
+            },
+            {
+              "chapter": "17",
+              "verse": "6"
+            },
+            {
+              "chapter": "17",
+              "verse": "7"
+            },
+            {
+              "chapter": "17",
+              "verse": "8"
+            },
+            {
+              "chapter": "17",
+              "verse": "9"
+            },
+            {
+              "chapter": "17",
+              "verse": "10"
+            },
+            {
+              "chapter": "17",
+              "verse": "11"
+            },
+            {
+              "chapter": "17",
+              "verse": "32"
+            },
+            {
+              "chapter": "17",
+              "verse": "33"
+            },
+            {
+              "chapter": "17",
+              "verse": "34"
+            },
+            {
+              "chapter": "17",
+              "verse": "35"
+            },
+            {
+              "chapter": "17",
+              "verse": "36"
+            },
+            {
+              "chapter": "17",
+              "verse": "37"
+            },
+            {
+              "chapter": "17",
+              "verse": "38"
+            },
+            {
+              "chapter": "17",
+              "verse": "39"
+            },
+            {
+              "chapter": "17",
+              "verse": "40"
+            },
+            {
+              "chapter": "17",
+              "verse": "41"
+            },
+            {
+              "chapter": "17",
+              "verse": "42"
+            },
+            {
+              "chapter": "17",
+              "verse": "43"
+            },
+            {
+              "chapter": "17",
+              "verse": "44"
+            },
+            {
+              "chapter": "17",
+              "verse": "45"
+            },
+            {
+              "chapter": "17",
+              "verse": "46"
+            },
+            {
+              "chapter": "17",
+              "verse": "47"
+            },
+            {
+              "chapter": "17",
+              "verse": "48"
+            },
+            {
+              "chapter": "17",
+              "verse": "49"
+            },
+            {
+              "chapter": "17",
+              "verse": "51"
+            },
+            {
+              "chapter": "17",
+              "verse": "52"
+            },
+            {
+              "chapter": "17",
+              "verse": "53"
+            },
+            {
+              "chapter": "17",
+              "verse": "54"
+            }
+          ],
+          "evidence": {
+            "citation": "For every retained Swete division in 1 Samuel 17, the pinned witness and Douay-Rheims share the same verse identifier and narrative locus; the shorter Greek text omits the separately listed canonical units."
+          }
+        },
+        {
+          "id": "1SA-17-shorter-lxx-canonical-only",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "17",
+              "verse": "12"
+            },
+            {
+              "chapter": "17",
+              "verse": "13"
+            },
+            {
+              "chapter": "17",
+              "verse": "14"
+            },
+            {
+              "chapter": "17",
+              "verse": "15"
+            },
+            {
+              "chapter": "17",
+              "verse": "16"
+            },
+            {
+              "chapter": "17",
+              "verse": "17"
+            },
+            {
+              "chapter": "17",
+              "verse": "18"
+            },
+            {
+              "chapter": "17",
+              "verse": "19"
+            },
+            {
+              "chapter": "17",
+              "verse": "20"
+            },
+            {
+              "chapter": "17",
+              "verse": "21"
+            },
+            {
+              "chapter": "17",
+              "verse": "22"
+            },
+            {
+              "chapter": "17",
+              "verse": "23"
+            },
+            {
+              "chapter": "17",
+              "verse": "24"
+            },
+            {
+              "chapter": "17",
+              "verse": "25"
+            },
+            {
+              "chapter": "17",
+              "verse": "26"
+            },
+            {
+              "chapter": "17",
+              "verse": "27"
+            },
+            {
+              "chapter": "17",
+              "verse": "28"
+            },
+            {
+              "chapter": "17",
+              "verse": "29"
+            },
+            {
+              "chapter": "17",
+              "verse": "30"
+            },
+            {
+              "chapter": "17",
+              "verse": "31"
+            },
+            {
+              "chapter": "17",
+              "verse": "50"
+            },
+            {
+              "chapter": "17",
+              "verse": "55"
+            },
+            {
+              "chapter": "17",
+              "verse": "56"
+            },
+            {
+              "chapter": "17",
+              "verse": "57"
+            },
+            {
+              "chapter": "17",
+              "verse": "58"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "The pinned Swete 1 Samuel 17 witness is the shorter Greek form and has no source records for Douay-Rheims 17:12-31, 17:50, or 17:55-58. Those Catholic canonical rows remain explicit source gaps; no Greek text is synthesized."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "18",
+      "segments": [
+        {
+          "id": "1SA-18-present-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "18",
+              "verse": "1"
+            },
+            {
+              "chapter": "18",
+              "verse": "6"
+            },
+            {
+              "chapter": "18",
+              "verse": "7"
+            },
+            {
+              "chapter": "18",
+              "verse": "8"
+            },
+            {
+              "chapter": "18",
+              "verse": "9"
+            },
+            {
+              "chapter": "18",
+              "verse": "12"
+            },
+            {
+              "chapter": "18",
+              "verse": "13"
+            },
+            {
+              "chapter": "18",
+              "verse": "14"
+            },
+            {
+              "chapter": "18",
+              "verse": "15"
+            },
+            {
+              "chapter": "18",
+              "verse": "16"
+            },
+            {
+              "chapter": "18",
+              "verse": "20"
+            },
+            {
+              "chapter": "18",
+              "verse": "21"
+            },
+            {
+              "chapter": "18",
+              "verse": "22"
+            },
+            {
+              "chapter": "18",
+              "verse": "23"
+            },
+            {
+              "chapter": "18",
+              "verse": "24"
+            },
+            {
+              "chapter": "18",
+              "verse": "25"
+            },
+            {
+              "chapter": "18",
+              "verse": "26"
+            },
+            {
+              "chapter": "18",
+              "verse": "27"
+            },
+            {
+              "chapter": "18",
+              "verse": "28"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "18",
+              "verse": "1"
+            },
+            {
+              "chapter": "18",
+              "verse": "6"
+            },
+            {
+              "chapter": "18",
+              "verse": "7"
+            },
+            {
+              "chapter": "18",
+              "verse": "8"
+            },
+            {
+              "chapter": "18",
+              "verse": "9"
+            },
+            {
+              "chapter": "18",
+              "verse": "12"
+            },
+            {
+              "chapter": "18",
+              "verse": "13"
+            },
+            {
+              "chapter": "18",
+              "verse": "14"
+            },
+            {
+              "chapter": "18",
+              "verse": "15"
+            },
+            {
+              "chapter": "18",
+              "verse": "16"
+            },
+            {
+              "chapter": "18",
+              "verse": "20"
+            },
+            {
+              "chapter": "18",
+              "verse": "21"
+            },
+            {
+              "chapter": "18",
+              "verse": "22"
+            },
+            {
+              "chapter": "18",
+              "verse": "23"
+            },
+            {
+              "chapter": "18",
+              "verse": "24"
+            },
+            {
+              "chapter": "18",
+              "verse": "25"
+            },
+            {
+              "chapter": "18",
+              "verse": "26"
+            },
+            {
+              "chapter": "18",
+              "verse": "27"
+            },
+            {
+              "chapter": "18",
+              "verse": "28"
+            }
+          ],
+          "evidence": {
+            "citation": "The retained Swete divisions in 1 Samuel 18 align to the same-numbered Douay-Rheims narrative units; the shorter Greek witness omits the separately listed canonical rows."
+          }
+        },
+        {
+          "id": "1SA-18-shorter-lxx-canonical-only",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "18",
+              "verse": "2"
+            },
+            {
+              "chapter": "18",
+              "verse": "3"
+            },
+            {
+              "chapter": "18",
+              "verse": "4"
+            },
+            {
+              "chapter": "18",
+              "verse": "5"
+            },
+            {
+              "chapter": "18",
+              "verse": "10"
+            },
+            {
+              "chapter": "18",
+              "verse": "11"
+            },
+            {
+              "chapter": "18",
+              "verse": "17"
+            },
+            {
+              "chapter": "18",
+              "verse": "18"
+            },
+            {
+              "chapter": "18",
+              "verse": "19"
+            },
+            {
+              "chapter": "18",
+              "verse": "29"
+            },
+            {
+              "chapter": "18",
+              "verse": "30"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "The pinned Swete 1 Samuel 18 witness has no source records for Douay-Rheims 18:2-5, 18:10-11, 18:17-19, or 18:29-30. These remain explicit canonical-only source gaps without fabricated Greek."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "25",
+      "segments": [
+        {
+          "id": "1SA-25-1-42-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "25",
+              "verse": "1"
+            },
+            {
+              "chapter": "25",
+              "verse": "2"
+            },
+            {
+              "chapter": "25",
+              "verse": "3"
+            },
+            {
+              "chapter": "25",
+              "verse": "4"
+            },
+            {
+              "chapter": "25",
+              "verse": "5"
+            },
+            {
+              "chapter": "25",
+              "verse": "6"
+            },
+            {
+              "chapter": "25",
+              "verse": "7"
+            },
+            {
+              "chapter": "25",
+              "verse": "8"
+            },
+            {
+              "chapter": "25",
+              "verse": "9"
+            },
+            {
+              "chapter": "25",
+              "verse": "10"
+            },
+            {
+              "chapter": "25",
+              "verse": "11"
+            },
+            {
+              "chapter": "25",
+              "verse": "12"
+            },
+            {
+              "chapter": "25",
+              "verse": "13"
+            },
+            {
+              "chapter": "25",
+              "verse": "14"
+            },
+            {
+              "chapter": "25",
+              "verse": "15"
+            },
+            {
+              "chapter": "25",
+              "verse": "16"
+            },
+            {
+              "chapter": "25",
+              "verse": "17"
+            },
+            {
+              "chapter": "25",
+              "verse": "18"
+            },
+            {
+              "chapter": "25",
+              "verse": "19"
+            },
+            {
+              "chapter": "25",
+              "verse": "20"
+            },
+            {
+              "chapter": "25",
+              "verse": "21"
+            },
+            {
+              "chapter": "25",
+              "verse": "22"
+            },
+            {
+              "chapter": "25",
+              "verse": "23"
+            },
+            {
+              "chapter": "25",
+              "verse": "24"
+            },
+            {
+              "chapter": "25",
+              "verse": "25"
+            },
+            {
+              "chapter": "25",
+              "verse": "26"
+            },
+            {
+              "chapter": "25",
+              "verse": "27"
+            },
+            {
+              "chapter": "25",
+              "verse": "28"
+            },
+            {
+              "chapter": "25",
+              "verse": "29"
+            },
+            {
+              "chapter": "25",
+              "verse": "30"
+            },
+            {
+              "chapter": "25",
+              "verse": "31"
+            },
+            {
+              "chapter": "25",
+              "verse": "32"
+            },
+            {
+              "chapter": "25",
+              "verse": "33"
+            },
+            {
+              "chapter": "25",
+              "verse": "34"
+            },
+            {
+              "chapter": "25",
+              "verse": "35"
+            },
+            {
+              "chapter": "25",
+              "verse": "36"
+            },
+            {
+              "chapter": "25",
+              "verse": "37"
+            },
+            {
+              "chapter": "25",
+              "verse": "38"
+            },
+            {
+              "chapter": "25",
+              "verse": "39"
+            },
+            {
+              "chapter": "25",
+              "verse": "40"
+            },
+            {
+              "chapter": "25",
+              "verse": "41"
+            },
+            {
+              "chapter": "25",
+              "verse": "42"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "25",
+              "verse": "1"
+            },
+            {
+              "chapter": "25",
+              "verse": "2"
+            },
+            {
+              "chapter": "25",
+              "verse": "3"
+            },
+            {
+              "chapter": "25",
+              "verse": "4"
+            },
+            {
+              "chapter": "25",
+              "verse": "5"
+            },
+            {
+              "chapter": "25",
+              "verse": "6"
+            },
+            {
+              "chapter": "25",
+              "verse": "7"
+            },
+            {
+              "chapter": "25",
+              "verse": "8"
+            },
+            {
+              "chapter": "25",
+              "verse": "9"
+            },
+            {
+              "chapter": "25",
+              "verse": "10"
+            },
+            {
+              "chapter": "25",
+              "verse": "11"
+            },
+            {
+              "chapter": "25",
+              "verse": "12"
+            },
+            {
+              "chapter": "25",
+              "verse": "13"
+            },
+            {
+              "chapter": "25",
+              "verse": "14"
+            },
+            {
+              "chapter": "25",
+              "verse": "15"
+            },
+            {
+              "chapter": "25",
+              "verse": "16"
+            },
+            {
+              "chapter": "25",
+              "verse": "17"
+            },
+            {
+              "chapter": "25",
+              "verse": "18"
+            },
+            {
+              "chapter": "25",
+              "verse": "19"
+            },
+            {
+              "chapter": "25",
+              "verse": "20"
+            },
+            {
+              "chapter": "25",
+              "verse": "21"
+            },
+            {
+              "chapter": "25",
+              "verse": "22"
+            },
+            {
+              "chapter": "25",
+              "verse": "23"
+            },
+            {
+              "chapter": "25",
+              "verse": "24"
+            },
+            {
+              "chapter": "25",
+              "verse": "25"
+            },
+            {
+              "chapter": "25",
+              "verse": "26"
+            },
+            {
+              "chapter": "25",
+              "verse": "27"
+            },
+            {
+              "chapter": "25",
+              "verse": "28"
+            },
+            {
+              "chapter": "25",
+              "verse": "29"
+            },
+            {
+              "chapter": "25",
+              "verse": "30"
+            },
+            {
+              "chapter": "25",
+              "verse": "31"
+            },
+            {
+              "chapter": "25",
+              "verse": "32"
+            },
+            {
+              "chapter": "25",
+              "verse": "33"
+            },
+            {
+              "chapter": "25",
+              "verse": "34"
+            },
+            {
+              "chapter": "25",
+              "verse": "35"
+            },
+            {
+              "chapter": "25",
+              "verse": "36"
+            },
+            {
+              "chapter": "25",
+              "verse": "37"
+            },
+            {
+              "chapter": "25",
+              "verse": "38"
+            },
+            {
+              "chapter": "25",
+              "verse": "39"
+            },
+            {
+              "chapter": "25",
+              "verse": "40"
+            },
+            {
+              "chapter": "25",
+              "verse": "41"
+            },
+            {
+              "chapter": "25",
+              "verse": "42"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete 1 Samuel 25:1-42 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "1SA-25-43-44-greek-merge",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "25",
+              "verse": "43"
+            },
+            {
+              "chapter": "25",
+              "verse": "44"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "25",
+              "verse": "43"
+            }
+          ],
+          "evidence": {
+            "citation": "Swete 25:43 contains both David taking Achinoam and Saul giving Michol to Phalti; Douay-Rheims divides the same closing material as 25:43-44."
+          }
+        }
+      ]
+    }
+  ]
+}
