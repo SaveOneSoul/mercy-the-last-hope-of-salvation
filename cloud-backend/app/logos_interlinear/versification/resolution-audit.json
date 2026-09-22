@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 19,
-    "books_resolved": 54,
-    "unresolved_lane_count": 38,
-    "verified_registry_lane_count": 42,
+    "books_unresolved": 18,
+    "books_resolved": 55,
+    "unresolved_lane_count": 37,
+    "verified_registry_lane_count": 43,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -2081,13 +2081,33 @@
       "id": "MRK",
       "book": "Mark",
       "testament": "NT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
           "status": "not-applicable"
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-mrk-greek-v1",
+          "file": "maps/MRK-greek-sblgnt.json",
+          "covered_chapters": [
+            "4",
+            "7",
+            "8",
+            "9",
+            "11",
+            "15"
+          ],
+          "audited_mismatch_chapters": [
+            "4",
+            "7",
+            "8",
+            "9",
+            "11",
+            "15"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "4",
@@ -2096,8 +2116,7 @@
             "9",
             "11",
             "15"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
