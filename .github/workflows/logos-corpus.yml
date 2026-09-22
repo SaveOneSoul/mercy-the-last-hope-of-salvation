@@ -62,6 +62,9 @@ jobs:
           python tools/validate_logos_greek_ot_linguistics_phase2.py
           python tools/validate_logos_versification.py
 
+      - name: Discover pinned lxx-morph source inventory
+        run: python tools/probe_logos_lxx_morph_source.py
+
       - name: Compile Logos runtime modules
         run: |
           python -m py_compile \
