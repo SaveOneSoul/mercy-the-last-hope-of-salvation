@@ -4177,7 +4177,7 @@
       "segments": [
         {
           "id": "PSA-151-greek-lxx-range",
-          "relationship": "range",
+          "relationship": "source-only",
           "canonical_refs": [],
           "source_refs": [
             {
@@ -4210,7 +4210,7 @@
             }
           ],
           "evidence": {
-            "citation": "Douay-Rheims/Vulgate Psalm 151 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+            "citation": "The pinned Swete LXX contains Psalm 151 as a source-only psalm with seven native source verse divisions. The Douay-Rheims 1899 canonical inventory has no Psalm 151 counterpart, so the source locus is preserved without fabricating canonical references or verse boundaries."
           }
         }
       ]
