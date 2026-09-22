@@ -5,10 +5,10 @@ Generated deterministically from `coverage-audit.json` plus the verified versifi
 ## Burn-down
 
 - Catholic books: **73**
-- Books with at least one unresolved lane: **15**
-- Books with all applicable lanes resolved/exact: **58**
-- Unresolved source lanes: **32**
-- Lanes resolved by new verified registry maps: **48**
+- Books with at least one unresolved lane: **14**
+- Books with all applicable lanes resolved/exact: **59**
+- Unresolved source lanes: **30**
+- Lanes resolved by new verified registry maps: **50**
 - Lanes already resolved by accepted component/explicit maps: **3**
 
 A book leaves the unresolved count only when every applicable Hebrew/Aramaic, Greek, and Latin lane is exact or backed by a verified explicit/component mapping.
@@ -20,7 +20,7 @@ A book leaves the unresolved count only when every applicable Hebrew/Aramaic, Gr
 | 1 | Genesis | OT | Unresolved (4 ch) | Unresolved (10 ch) | Unresolved (1 ch) | Unresolved |
 | 2 | Exodus | OT | Unresolved (5 ch) | Unresolved (11 ch) | Exact | Unresolved |
 | 3 | Leviticus | OT | Verified map | Verified map | Exact | Resolved |
-| 4 | Numbers | OT | Unresolved (7 ch) | Unresolved (5 ch) | Exact | Unresolved |
+| 4 | Numbers | OT | Verified map | Verified map | Exact | Resolved |
 | 5 | Deuteronomy | OT | Unresolved (6 ch) | Unresolved (7 ch) | Exact | Unresolved |
 | 6 | Joshua | OT | Unresolved (3 ch) | Unresolved (11 ch) | Exact | Unresolved |
 | 7 | Judges | OT | Verified map | Verified map | Exact | Resolved |

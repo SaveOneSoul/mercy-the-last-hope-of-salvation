@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 15,
-    "books_resolved": 58,
-    "unresolved_lane_count": 32,
-    "verified_registry_lane_count": 48,
+    "books_unresolved": 14,
+    "books_resolved": 59,
+    "unresolved_lane_count": 30,
+    "verified_registry_lane_count": 50,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -169,10 +169,35 @@
       "id": "NUM",
       "book": "Numbers",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-num-semitic-v1",
+          "file": "maps/NUM-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "11",
+            "12",
+            "13",
+            "16",
+            "17",
+            "20",
+            "25",
+            "26"
+          ],
+          "audited_mismatch_chapters": [
+            "11",
+            "12",
+            "13",
+            "16",
+            "17",
+            "20",
+            "25"
+          ],
+          "verified_override_chapters": [
+            "26"
+          ],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "11",
@@ -182,11 +207,28 @@
             "17",
             "20",
             "25"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-num-greek-v1",
+          "file": "maps/NUM-greek-first1k-swete.json",
+          "covered_chapters": [
+            "11",
+            "20",
+            "21",
+            "27",
+            "30"
+          ],
+          "audited_mismatch_chapters": [
+            "11",
+            "20",
+            "21",
+            "27",
+            "30"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "11",
@@ -194,8 +236,7 @@
             "21",
             "27",
             "30"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
