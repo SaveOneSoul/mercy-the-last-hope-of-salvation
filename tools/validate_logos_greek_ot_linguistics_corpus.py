@@ -43,13 +43,15 @@ def load(path: Path) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=DEFAULT_ROOT)
+    parser.add_argument("--require-production", action="store_true")
     args = parser.parse_args()
     corpus = args.root.resolve()
     manifest = load(corpus / "manifest.json")
 
     require(manifest.get("corpus_id") == CORPUS_ID, "unexpected corpus id")
-    require(manifest.get("status") == "validation-only", "Phase 2 corpus must remain validation-only")
-    require(manifest.get("production_enabled") is False, "production cannot be enabled before owner acceptance")
+    expected_status = "production-installed" if args.require_production else "validation-only"
+    require(manifest.get("status") == expected_status, f"unexpected corpus status: {manifest.get('status')}")
+    require(manifest.get("production_enabled") is args.require_production, "production_enabled does not match validation mode")
     require(int(manifest.get("book_count") or 0) == 46, "generated corpus must contain 46 Catholic OT books")
     require(int(manifest.get("verse_record_count") or 0) > 0, "generated corpus has no verse records")
     require(int(manifest.get("token_count") or 0) > 0, "generated corpus has no word tokens")
@@ -100,8 +102,8 @@ def main() -> int:
         require(payload.get("corpus_id") == CORPUS_ID, f"{book_id}: corpus id changed")
         require(payload.get("book_id") == book_id, f"{book_id}: book id changed")
         require(payload.get("book") == meta.get("name"), f"{book_id}: canonical book label changed")
-        require(payload.get("status") == "validation-only", f"{book_id}: must remain validation-only")
-        require(payload.get("production_enabled") is False, f"{book_id}: production unexpectedly enabled")
+        require(payload.get("status") == expected_status, f"{book_id}: unexpected status")
+        require(payload.get("production_enabled") is args.require_production, f"{book_id}: production flag does not match validation mode")
         require(payload.get("text_edition") == "Rahlfs Septuagint (1935)", f"{book_id}: edition identity changed")
         require(payload.get("linguistic_source") == "lxx-morph-rahlfs", f"{book_id}: linguistic source changed")
         require(payload.get("license") == "CC BY 4.0", f"{book_id}: license changed")
