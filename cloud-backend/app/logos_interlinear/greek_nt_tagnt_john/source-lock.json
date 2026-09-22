@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "package": "Greek NT supplemental linguistics — John 7:53–8:11",
+  "status": "production-candidate",
+  "production_enabled": true,
+  "source": {
+    "source_id": "stepbible-data",
+    "dataset": "TAGNT",
+    "repository": "STEPBible/STEPBible-Data",
+    "commit": "ae39711d7843b2902d54993e432de9c12d6a4b9a",
+    "path": "Translators Amalgamated OT+NT/TAGNT Mat-Jhn - Translators Amalgamated Greek NT - STEPBible.org CC-BY.txt",
+    "git_blob_sha1": "705c1bc1cf752e013efcef99b8d9a3b7853bf843",
+    "license": "CC BY 4.0",
+    "attribution": "STEP Bible — https://www.STEPBible.org"
+  },
+  "scope": {
+    "book_id": "JHN",
+    "book": "John",
+    "source_locked_morphgnt_gap": [
+      "7:53",
+      "8:1",
+      "8:2",
+      "8:3",
+      "8:4",
+      "8:5",
+      "8:6",
+      "8:7",
+      "8:8",
+      "8:9",
+      "8:10",
+      "8:11"
+    ],
+    "verse_count": 12
+  },
+  "witness_policy": {
+    "relationship_to_sblgnt": "supplemental-parallel-linguistic-witness",
+    "automatic_attachment_to_sblgnt": false,
+    "automatic_reconstruction_of_sblgnt": false,
+    "preserve_tagnt_word_type": true,
+    "preserve_tagnt_edition_membership": true,
+    "preserve_tagnt_variant_fields": true,
+    "no_fabricated_pos_labels": true,
+    "no_fabricated_lemma": true,
+    "no_fabricated_morphology": true
+  },
+  "note": "TAGNT amalgamates standard Greek editions and supplies grammar/edition metadata for the MorphGNT-locked John 7:53–8:11 gap. It is served as a supplemental linguistic witness, not as MorphGNT and not as a claim of token identity with SBLGNT."
+}
