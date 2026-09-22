@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 20,
-    "books_resolved": 53,
-    "unresolved_lane_count": 39,
-    "verified_registry_lane_count": 41,
+    "books_unresolved": 19,
+    "books_resolved": 54,
+    "unresolved_lane_count": 38,
+    "verified_registry_lane_count": 42,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -748,10 +748,32 @@
       "id": "EST",
       "book": "Esther",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-est-semitic-v1",
+          "file": "maps/EST-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16"
+          ],
+          "audited_mismatch_chapters": [
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "10",
@@ -761,8 +783,7 @@
             "14",
             "15",
             "16"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
           "status": "resolved-existing-map",
