@@ -51,8 +51,8 @@ def main() -> int:
         fail("candidate Rahlfs morphology must remain production-blocked at the source gate")
     if source.get("license") != EXPECTED_LICENSE or source.get("license_verified") is not True:
         fail("candidate Rahlfs morphology license gate changed")
-    if source.get("source_inventory_verified") is not False:
-        fail("source inventory must remain unverified until pinned-revision inspection completes")
+    if source.get("source_inventory_verified") is not True:
+        fail("pinned lxx-morph source inventory must be verified")
     pin = source.get("pin") or {}
     if pin.get("type") != "git-commit" or pin.get("value") != EXPECTED_COMMIT:
         fail("candidate Rahlfs morphology immutable revision changed")
@@ -80,8 +80,12 @@ def main() -> int:
         fail("phase source license does not match source manifest")
     if lock_source.get("text_edition") != "Rahlfs Septuagint (1935)":
         fail("phase source edition must remain Rahlfs 1935")
-    if lock_source.get("inventory_status") != "pending-pinned-revision-inspection":
-        fail("source inventory may not be declared verified by the static gate")
+    if lock_source.get("inventory_status") != "verified-pinned-archive":
+        fail("pinned archive inventory verification is missing")
+    if lock_source.get("archive_sha256") != "b3c4861f47152ea8fab7d3ed78d807a9a0c2b35d07f2cb64fa9deefd6ac960a9":
+        fail("pinned archive SHA-256 changed")
+    if int(lock_source.get("archive_file_count") or 0) != 5966:
+        fail("pinned archive file inventory count changed")
 
     books = load(BOOKS).get("books") or []
     expected_ot = [(int(row["order"]), str(row["id"]), str(row["name"])) for row in books if row.get("testament") == "OT"]
