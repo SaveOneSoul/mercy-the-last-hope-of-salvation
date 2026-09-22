@@ -4,7 +4,7 @@
   "status": "source-gate",
   "production": {
     "enabled": false,
-    "reason": "The candidate morphology is based on Rahlfs 1935 while the installed Greek OT surface uses Swete/First1KGreek plus an Ecclesiastes fallback. Production remains blocked until the pinned lxx-morph revision is inventoried and deterministic cross-edition verse/token alignment is validated."
+    "reason": "Pinned source inventory and CC BY 4.0 scope are verified. Production remains disabled while the 46-book validation package and cross-edition runtime boundary are tested."
   },
   "source": {
     "source_id": "lxx-morph-rahlfs",
@@ -21,7 +21,14 @@
       "provenance",
       "confidence"
     ],
-    "inventory_status": "pending-pinned-revision-inspection"
+    "inventory_status": "verified-pinned-archive",
+    "archive_url": "https://git.sr.ht/~sethkush/lxx-morph/archive/c91f6b1e8fb3ba37df701e6ae31f675ace71a2b2.tar.gz",
+    "archive_sha256": "b3c4861f47152ea8fab7d3ed78d807a9a0c2b35d07f2cb64fa9deefd6ac960a9",
+    "archive_size_bytes": 63301390,
+    "archive_file_count": 5966,
+    "data_path": "db/seeds/lxx_morph/",
+    "license_path": "LICENSE-DATA",
+    "final_work_file_pattern": "db/seeds/lxx_morph/<work>.json"
   },
   "target": {
     "canon": "Catholic 73-book canon",
