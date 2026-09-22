@@ -1,0 +1,580 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.22-psa-latin-v1",
+  "status": "verified",
+  "book_id": "PSA",
+  "book": "Psalms",
+  "lane": "latin",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "clementine-vulgate",
+    "reference_system": "clementine-vulgate-source-numbering",
+    "corpus_id": "lat_vulgate_clementine",
+    "corpus_version": "2026.09.18-clementine-vulgate-73"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "15",
+      "19",
+      "42",
+      "125",
+      "135"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "15",
+      "segments": [
+        {
+          "id": "PSA-15-latin-clementine-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "15",
+              "verse": "1"
+            },
+            {
+              "chapter": "15",
+              "verse": "2"
+            },
+            {
+              "chapter": "15",
+              "verse": "3"
+            },
+            {
+              "chapter": "15",
+              "verse": "4"
+            },
+            {
+              "chapter": "15",
+              "verse": "5"
+            },
+            {
+              "chapter": "15",
+              "verse": "6"
+            },
+            {
+              "chapter": "15",
+              "verse": "7"
+            },
+            {
+              "chapter": "15",
+              "verse": "8"
+            },
+            {
+              "chapter": "15",
+              "verse": "9"
+            },
+            {
+              "chapter": "15",
+              "verse": "10"
+            },
+            {
+              "chapter": "15",
+              "verse": "11"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "15",
+              "verse": "1"
+            },
+            {
+              "chapter": "15",
+              "verse": "2"
+            },
+            {
+              "chapter": "15",
+              "verse": "3"
+            },
+            {
+              "chapter": "15",
+              "verse": "4"
+            },
+            {
+              "chapter": "15",
+              "verse": "5"
+            },
+            {
+              "chapter": "15",
+              "verse": "6"
+            },
+            {
+              "chapter": "15",
+              "verse": "7"
+            },
+            {
+              "chapter": "15",
+              "verse": "8"
+            },
+            {
+              "chapter": "15",
+              "verse": "9"
+            },
+            {
+              "chapter": "15",
+              "verse": "10"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Psalm 15 and pinned Clementine Vulgate Psalm 15 preserve the same psalm locus with different native verse segmentation. The complete Clementine source inventory is retained as a verified range without altering Latin text or source boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "19",
+      "segments": [
+        {
+          "id": "PSA-19-latin-clementine-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "19",
+              "verse": "1"
+            },
+            {
+              "chapter": "19",
+              "verse": "2"
+            },
+            {
+              "chapter": "19",
+              "verse": "3"
+            },
+            {
+              "chapter": "19",
+              "verse": "4"
+            },
+            {
+              "chapter": "19",
+              "verse": "5"
+            },
+            {
+              "chapter": "19",
+              "verse": "6"
+            },
+            {
+              "chapter": "19",
+              "verse": "7"
+            },
+            {
+              "chapter": "19",
+              "verse": "8"
+            },
+            {
+              "chapter": "19",
+              "verse": "9"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "19",
+              "verse": "1"
+            },
+            {
+              "chapter": "19",
+              "verse": "2"
+            },
+            {
+              "chapter": "19",
+              "verse": "3"
+            },
+            {
+              "chapter": "19",
+              "verse": "4"
+            },
+            {
+              "chapter": "19",
+              "verse": "5"
+            },
+            {
+              "chapter": "19",
+              "verse": "6"
+            },
+            {
+              "chapter": "19",
+              "verse": "7"
+            },
+            {
+              "chapter": "19",
+              "verse": "8"
+            },
+            {
+              "chapter": "19",
+              "verse": "9"
+            },
+            {
+              "chapter": "19",
+              "verse": "10"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Psalm 19 and pinned Clementine Vulgate Psalm 19 preserve the same psalm locus with different native verse segmentation. The complete Clementine source inventory is retained as a verified range without altering Latin text or source boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "42",
+      "segments": [
+        {
+          "id": "PSA-42-latin-clementine-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "42",
+              "verse": "1"
+            },
+            {
+              "chapter": "42",
+              "verse": "2"
+            },
+            {
+              "chapter": "42",
+              "verse": "3"
+            },
+            {
+              "chapter": "42",
+              "verse": "4"
+            },
+            {
+              "chapter": "42",
+              "verse": "5"
+            },
+            {
+              "chapter": "42",
+              "verse": "6"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "42",
+              "verse": "1"
+            },
+            {
+              "chapter": "42",
+              "verse": "2"
+            },
+            {
+              "chapter": "42",
+              "verse": "3"
+            },
+            {
+              "chapter": "42",
+              "verse": "4"
+            },
+            {
+              "chapter": "42",
+              "verse": "5"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Psalm 42 and pinned Clementine Vulgate Psalm 42 preserve the same psalm locus with different native verse segmentation. The complete Clementine source inventory is retained as a verified range without altering Latin text or source boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "125",
+      "segments": [
+        {
+          "id": "PSA-125-latin-clementine-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "125",
+              "verse": "1"
+            },
+            {
+              "chapter": "125",
+              "verse": "2"
+            },
+            {
+              "chapter": "125",
+              "verse": "3"
+            },
+            {
+              "chapter": "125",
+              "verse": "4"
+            },
+            {
+              "chapter": "125",
+              "verse": "5"
+            },
+            {
+              "chapter": "125",
+              "verse": "6"
+            },
+            {
+              "chapter": "125",
+              "verse": "7"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "125",
+              "verse": "1"
+            },
+            {
+              "chapter": "125",
+              "verse": "2"
+            },
+            {
+              "chapter": "125",
+              "verse": "3"
+            },
+            {
+              "chapter": "125",
+              "verse": "4"
+            },
+            {
+              "chapter": "125",
+              "verse": "5"
+            },
+            {
+              "chapter": "125",
+              "verse": "6"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Psalm 125 and pinned Clementine Vulgate Psalm 125 preserve the same psalm locus with different native verse segmentation. The complete Clementine source inventory is retained as a verified range without altering Latin text or source boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "135",
+      "segments": [
+        {
+          "id": "PSA-135-latin-clementine-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "135",
+              "verse": "1"
+            },
+            {
+              "chapter": "135",
+              "verse": "2"
+            },
+            {
+              "chapter": "135",
+              "verse": "3"
+            },
+            {
+              "chapter": "135",
+              "verse": "4"
+            },
+            {
+              "chapter": "135",
+              "verse": "5"
+            },
+            {
+              "chapter": "135",
+              "verse": "6"
+            },
+            {
+              "chapter": "135",
+              "verse": "7"
+            },
+            {
+              "chapter": "135",
+              "verse": "8"
+            },
+            {
+              "chapter": "135",
+              "verse": "9"
+            },
+            {
+              "chapter": "135",
+              "verse": "10"
+            },
+            {
+              "chapter": "135",
+              "verse": "11"
+            },
+            {
+              "chapter": "135",
+              "verse": "12"
+            },
+            {
+              "chapter": "135",
+              "verse": "13"
+            },
+            {
+              "chapter": "135",
+              "verse": "14"
+            },
+            {
+              "chapter": "135",
+              "verse": "15"
+            },
+            {
+              "chapter": "135",
+              "verse": "16"
+            },
+            {
+              "chapter": "135",
+              "verse": "17"
+            },
+            {
+              "chapter": "135",
+              "verse": "18"
+            },
+            {
+              "chapter": "135",
+              "verse": "19"
+            },
+            {
+              "chapter": "135",
+              "verse": "20"
+            },
+            {
+              "chapter": "135",
+              "verse": "21"
+            },
+            {
+              "chapter": "135",
+              "verse": "22"
+            },
+            {
+              "chapter": "135",
+              "verse": "23"
+            },
+            {
+              "chapter": "135",
+              "verse": "24"
+            },
+            {
+              "chapter": "135",
+              "verse": "25"
+            },
+            {
+              "chapter": "135",
+              "verse": "26"
+            },
+            {
+              "chapter": "135",
+              "verse": "27"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "135",
+              "verse": "1"
+            },
+            {
+              "chapter": "135",
+              "verse": "2"
+            },
+            {
+              "chapter": "135",
+              "verse": "3"
+            },
+            {
+              "chapter": "135",
+              "verse": "4"
+            },
+            {
+              "chapter": "135",
+              "verse": "5"
+            },
+            {
+              "chapter": "135",
+              "verse": "6"
+            },
+            {
+              "chapter": "135",
+              "verse": "7"
+            },
+            {
+              "chapter": "135",
+              "verse": "8"
+            },
+            {
+              "chapter": "135",
+              "verse": "9"
+            },
+            {
+              "chapter": "135",
+              "verse": "10"
+            },
+            {
+              "chapter": "135",
+              "verse": "11"
+            },
+            {
+              "chapter": "135",
+              "verse": "12"
+            },
+            {
+              "chapter": "135",
+              "verse": "13"
+            },
+            {
+              "chapter": "135",
+              "verse": "14"
+            },
+            {
+              "chapter": "135",
+              "verse": "15"
+            },
+            {
+              "chapter": "135",
+              "verse": "16"
+            },
+            {
+              "chapter": "135",
+              "verse": "17"
+            },
+            {
+              "chapter": "135",
+              "verse": "18"
+            },
+            {
+              "chapter": "135",
+              "verse": "19"
+            },
+            {
+              "chapter": "135",
+              "verse": "20"
+            },
+            {
+              "chapter": "135",
+              "verse": "21"
+            },
+            {
+              "chapter": "135",
+              "verse": "22"
+            },
+            {
+              "chapter": "135",
+              "verse": "23"
+            },
+            {
+              "chapter": "135",
+              "verse": "24"
+            },
+            {
+              "chapter": "135",
+              "verse": "25"
+            },
+            {
+              "chapter": "135",
+              "verse": "26"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Psalm 135 and pinned Clementine Vulgate Psalm 135 preserve the same psalm locus with different native verse segmentation. The complete Clementine source inventory is retained as a verified range without altering Latin text or source boundaries."
+          }
+        }
+      ]
+    }
+  ]
+}
