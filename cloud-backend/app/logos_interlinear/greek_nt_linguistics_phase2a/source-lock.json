@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "phase": "Greek NT Linguistics Completion Phase 2A",
+  "status": "validation-and-production-source-lock",
+  "purpose": "Fill the 12 MorphGNT-unavailable John verses with a separate TAGNT linguistic witness without altering SBLGNT or MorphGNT source data.",
+  "source": {
+    "id": "stepbible-tagnt-john-fallback",
+    "registry_source_id": "stepbible-data",
+    "repository": "STEPBible/STEPBible-Data",
+    "commit": "ae39711d7843b2902d54993e432de9c12d6a4b9a",
+    "path": "Translators Amalgamated OT+NT/TAGNT Mat-Jhn - Translators Amalgamated Greek NT - STEPBible.org CC-BY.txt",
+    "blob_sha1": "705c1bc1cf752e013efcef99b8d9a3b7853bf843",
+    "license": "CC BY 4.0",
+    "role": "supplemental lemma, POS/morphology and lexical metadata for John 7:53-8:11"
+  },
+  "coverage": {
+    "book_id": "JHN",
+    "references": [
+      "7:53",
+      "8:1",
+      "8:2",
+      "8:3",
+      "8:4",
+      "8:5",
+      "8:6",
+      "8:7",
+      "8:8",
+      "8:9",
+      "8:10",
+      "8:11"
+    ],
+    "expected_token_rows": 198,
+    "source_tokenization_preserved": true,
+    "cross_edition_token_identity_claimed": false
+  },
+  "integrity": {
+    "no_fabricated_linguistics": true,
+    "preserve_tagnt_rows": true,
+    "do_not_overwrite_morphgnt": true,
+    "do_not_force_sblgnt_token_alignment": true
+  }
+}
