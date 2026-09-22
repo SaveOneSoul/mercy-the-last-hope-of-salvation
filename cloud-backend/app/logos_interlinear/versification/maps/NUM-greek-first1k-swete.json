@@ -1,0 +1,1278 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.22-num-greek-v1",
+  "status": "verified",
+  "book_id": "NUM",
+  "book": "Numbers",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "first1kgreek-swete",
+    "reference_system": "swete-first1k-source-numbering",
+    "corpus_id": "grc_ot_catholic_full",
+    "corpus_version": "2026.09.17-catholic-lxx-full"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "11",
+      "20",
+      "21",
+      "27",
+      "30"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "11",
+      "segments": [
+        {
+          "id": "NUM-11-1-33-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "1"
+            },
+            {
+              "chapter": "11",
+              "verse": "2"
+            },
+            {
+              "chapter": "11",
+              "verse": "3"
+            },
+            {
+              "chapter": "11",
+              "verse": "4"
+            },
+            {
+              "chapter": "11",
+              "verse": "5"
+            },
+            {
+              "chapter": "11",
+              "verse": "6"
+            },
+            {
+              "chapter": "11",
+              "verse": "7"
+            },
+            {
+              "chapter": "11",
+              "verse": "8"
+            },
+            {
+              "chapter": "11",
+              "verse": "9"
+            },
+            {
+              "chapter": "11",
+              "verse": "10"
+            },
+            {
+              "chapter": "11",
+              "verse": "11"
+            },
+            {
+              "chapter": "11",
+              "verse": "12"
+            },
+            {
+              "chapter": "11",
+              "verse": "13"
+            },
+            {
+              "chapter": "11",
+              "verse": "14"
+            },
+            {
+              "chapter": "11",
+              "verse": "15"
+            },
+            {
+              "chapter": "11",
+              "verse": "16"
+            },
+            {
+              "chapter": "11",
+              "verse": "17"
+            },
+            {
+              "chapter": "11",
+              "verse": "18"
+            },
+            {
+              "chapter": "11",
+              "verse": "19"
+            },
+            {
+              "chapter": "11",
+              "verse": "20"
+            },
+            {
+              "chapter": "11",
+              "verse": "21"
+            },
+            {
+              "chapter": "11",
+              "verse": "22"
+            },
+            {
+              "chapter": "11",
+              "verse": "23"
+            },
+            {
+              "chapter": "11",
+              "verse": "24"
+            },
+            {
+              "chapter": "11",
+              "verse": "25"
+            },
+            {
+              "chapter": "11",
+              "verse": "26"
+            },
+            {
+              "chapter": "11",
+              "verse": "27"
+            },
+            {
+              "chapter": "11",
+              "verse": "28"
+            },
+            {
+              "chapter": "11",
+              "verse": "29"
+            },
+            {
+              "chapter": "11",
+              "verse": "30"
+            },
+            {
+              "chapter": "11",
+              "verse": "31"
+            },
+            {
+              "chapter": "11",
+              "verse": "32"
+            },
+            {
+              "chapter": "11",
+              "verse": "33"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "11",
+              "verse": "1"
+            },
+            {
+              "chapter": "11",
+              "verse": "2"
+            },
+            {
+              "chapter": "11",
+              "verse": "3"
+            },
+            {
+              "chapter": "11",
+              "verse": "4"
+            },
+            {
+              "chapter": "11",
+              "verse": "5"
+            },
+            {
+              "chapter": "11",
+              "verse": "6"
+            },
+            {
+              "chapter": "11",
+              "verse": "7"
+            },
+            {
+              "chapter": "11",
+              "verse": "8"
+            },
+            {
+              "chapter": "11",
+              "verse": "9"
+            },
+            {
+              "chapter": "11",
+              "verse": "10"
+            },
+            {
+              "chapter": "11",
+              "verse": "11"
+            },
+            {
+              "chapter": "11",
+              "verse": "12"
+            },
+            {
+              "chapter": "11",
+              "verse": "13"
+            },
+            {
+              "chapter": "11",
+              "verse": "14"
+            },
+            {
+              "chapter": "11",
+              "verse": "15"
+            },
+            {
+              "chapter": "11",
+              "verse": "16"
+            },
+            {
+              "chapter": "11",
+              "verse": "17"
+            },
+            {
+              "chapter": "11",
+              "verse": "18"
+            },
+            {
+              "chapter": "11",
+              "verse": "19"
+            },
+            {
+              "chapter": "11",
+              "verse": "20"
+            },
+            {
+              "chapter": "11",
+              "verse": "21"
+            },
+            {
+              "chapter": "11",
+              "verse": "22"
+            },
+            {
+              "chapter": "11",
+              "verse": "23"
+            },
+            {
+              "chapter": "11",
+              "verse": "24"
+            },
+            {
+              "chapter": "11",
+              "verse": "25"
+            },
+            {
+              "chapter": "11",
+              "verse": "26"
+            },
+            {
+              "chapter": "11",
+              "verse": "27"
+            },
+            {
+              "chapter": "11",
+              "verse": "28"
+            },
+            {
+              "chapter": "11",
+              "verse": "29"
+            },
+            {
+              "chapter": "11",
+              "verse": "30"
+            },
+            {
+              "chapter": "11",
+              "verse": "31"
+            },
+            {
+              "chapter": "11",
+              "verse": "32"
+            },
+            {
+              "chapter": "11",
+              "verse": "33"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete Numbers 11:1-33 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "NUM-11-34-greek-merge",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "34"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "11",
+              "verse": "34"
+            },
+            {
+              "chapter": "11",
+              "verse": "35"
+            }
+          ],
+          "evidence": {
+            "citation": "Swete Numbers 11:34 names the Graves of Lust and 11:35 records the departure to Haseroth; Douay-Rheims combines both clauses in 11:34."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "20",
+      "segments": [
+        {
+          "id": "NUM-20-1-27-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "20",
+              "verse": "1"
+            },
+            {
+              "chapter": "20",
+              "verse": "2"
+            },
+            {
+              "chapter": "20",
+              "verse": "3"
+            },
+            {
+              "chapter": "20",
+              "verse": "4"
+            },
+            {
+              "chapter": "20",
+              "verse": "5"
+            },
+            {
+              "chapter": "20",
+              "verse": "6"
+            },
+            {
+              "chapter": "20",
+              "verse": "7"
+            },
+            {
+              "chapter": "20",
+              "verse": "8"
+            },
+            {
+              "chapter": "20",
+              "verse": "9"
+            },
+            {
+              "chapter": "20",
+              "verse": "10"
+            },
+            {
+              "chapter": "20",
+              "verse": "11"
+            },
+            {
+              "chapter": "20",
+              "verse": "12"
+            },
+            {
+              "chapter": "20",
+              "verse": "13"
+            },
+            {
+              "chapter": "20",
+              "verse": "14"
+            },
+            {
+              "chapter": "20",
+              "verse": "15"
+            },
+            {
+              "chapter": "20",
+              "verse": "16"
+            },
+            {
+              "chapter": "20",
+              "verse": "17"
+            },
+            {
+              "chapter": "20",
+              "verse": "18"
+            },
+            {
+              "chapter": "20",
+              "verse": "19"
+            },
+            {
+              "chapter": "20",
+              "verse": "20"
+            },
+            {
+              "chapter": "20",
+              "verse": "21"
+            },
+            {
+              "chapter": "20",
+              "verse": "22"
+            },
+            {
+              "chapter": "20",
+              "verse": "23"
+            },
+            {
+              "chapter": "20",
+              "verse": "24"
+            },
+            {
+              "chapter": "20",
+              "verse": "25"
+            },
+            {
+              "chapter": "20",
+              "verse": "26"
+            },
+            {
+              "chapter": "20",
+              "verse": "27"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "20",
+              "verse": "1"
+            },
+            {
+              "chapter": "20",
+              "verse": "2"
+            },
+            {
+              "chapter": "20",
+              "verse": "3"
+            },
+            {
+              "chapter": "20",
+              "verse": "4"
+            },
+            {
+              "chapter": "20",
+              "verse": "5"
+            },
+            {
+              "chapter": "20",
+              "verse": "6"
+            },
+            {
+              "chapter": "20",
+              "verse": "7"
+            },
+            {
+              "chapter": "20",
+              "verse": "8"
+            },
+            {
+              "chapter": "20",
+              "verse": "9"
+            },
+            {
+              "chapter": "20",
+              "verse": "10"
+            },
+            {
+              "chapter": "20",
+              "verse": "11"
+            },
+            {
+              "chapter": "20",
+              "verse": "12"
+            },
+            {
+              "chapter": "20",
+              "verse": "13"
+            },
+            {
+              "chapter": "20",
+              "verse": "14"
+            },
+            {
+              "chapter": "20",
+              "verse": "15"
+            },
+            {
+              "chapter": "20",
+              "verse": "16"
+            },
+            {
+              "chapter": "20",
+              "verse": "17"
+            },
+            {
+              "chapter": "20",
+              "verse": "18"
+            },
+            {
+              "chapter": "20",
+              "verse": "19"
+            },
+            {
+              "chapter": "20",
+              "verse": "20"
+            },
+            {
+              "chapter": "20",
+              "verse": "21"
+            },
+            {
+              "chapter": "20",
+              "verse": "22"
+            },
+            {
+              "chapter": "20",
+              "verse": "23"
+            },
+            {
+              "chapter": "20",
+              "verse": "24"
+            },
+            {
+              "chapter": "20",
+              "verse": "25"
+            },
+            {
+              "chapter": "20",
+              "verse": "26"
+            },
+            {
+              "chapter": "20",
+              "verse": "27"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete Numbers 20:1-27 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "NUM-20-28-29-greek-split",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "20",
+              "verse": "28"
+            },
+            {
+              "chapter": "20",
+              "verse": "29"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "20",
+              "verse": "28"
+            }
+          ],
+          "evidence": {
+            "citation": "Swete 20:28 contains the vestment transfer, Aaron's death, and Moses/Eleazar's descent; Douay-Rheims divides the same material as 20:28-29."
+          }
+        },
+        {
+          "id": "NUM-20-30-greek-renumber",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "20",
+              "verse": "30"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "20",
+              "verse": "29"
+            }
+          ],
+          "evidence": {
+            "citation": "Swete 20:29 records Israel's thirty-day mourning for Aaron, printed as Douay-Rheims 20:30."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "21",
+      "segments": [
+        {
+          "id": "NUM-21-1-33-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "21",
+              "verse": "1"
+            },
+            {
+              "chapter": "21",
+              "verse": "2"
+            },
+            {
+              "chapter": "21",
+              "verse": "3"
+            },
+            {
+              "chapter": "21",
+              "verse": "4"
+            },
+            {
+              "chapter": "21",
+              "verse": "5"
+            },
+            {
+              "chapter": "21",
+              "verse": "6"
+            },
+            {
+              "chapter": "21",
+              "verse": "7"
+            },
+            {
+              "chapter": "21",
+              "verse": "8"
+            },
+            {
+              "chapter": "21",
+              "verse": "9"
+            },
+            {
+              "chapter": "21",
+              "verse": "10"
+            },
+            {
+              "chapter": "21",
+              "verse": "11"
+            },
+            {
+              "chapter": "21",
+              "verse": "12"
+            },
+            {
+              "chapter": "21",
+              "verse": "13"
+            },
+            {
+              "chapter": "21",
+              "verse": "14"
+            },
+            {
+              "chapter": "21",
+              "verse": "15"
+            },
+            {
+              "chapter": "21",
+              "verse": "16"
+            },
+            {
+              "chapter": "21",
+              "verse": "17"
+            },
+            {
+              "chapter": "21",
+              "verse": "18"
+            },
+            {
+              "chapter": "21",
+              "verse": "19"
+            },
+            {
+              "chapter": "21",
+              "verse": "20"
+            },
+            {
+              "chapter": "21",
+              "verse": "21"
+            },
+            {
+              "chapter": "21",
+              "verse": "22"
+            },
+            {
+              "chapter": "21",
+              "verse": "23"
+            },
+            {
+              "chapter": "21",
+              "verse": "24"
+            },
+            {
+              "chapter": "21",
+              "verse": "25"
+            },
+            {
+              "chapter": "21",
+              "verse": "26"
+            },
+            {
+              "chapter": "21",
+              "verse": "27"
+            },
+            {
+              "chapter": "21",
+              "verse": "28"
+            },
+            {
+              "chapter": "21",
+              "verse": "29"
+            },
+            {
+              "chapter": "21",
+              "verse": "30"
+            },
+            {
+              "chapter": "21",
+              "verse": "31"
+            },
+            {
+              "chapter": "21",
+              "verse": "32"
+            },
+            {
+              "chapter": "21",
+              "verse": "33"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "21",
+              "verse": "1"
+            },
+            {
+              "chapter": "21",
+              "verse": "2"
+            },
+            {
+              "chapter": "21",
+              "verse": "3"
+            },
+            {
+              "chapter": "21",
+              "verse": "4"
+            },
+            {
+              "chapter": "21",
+              "verse": "5"
+            },
+            {
+              "chapter": "21",
+              "verse": "6"
+            },
+            {
+              "chapter": "21",
+              "verse": "7"
+            },
+            {
+              "chapter": "21",
+              "verse": "8"
+            },
+            {
+              "chapter": "21",
+              "verse": "9"
+            },
+            {
+              "chapter": "21",
+              "verse": "10"
+            },
+            {
+              "chapter": "21",
+              "verse": "11"
+            },
+            {
+              "chapter": "21",
+              "verse": "12"
+            },
+            {
+              "chapter": "21",
+              "verse": "13"
+            },
+            {
+              "chapter": "21",
+              "verse": "14"
+            },
+            {
+              "chapter": "21",
+              "verse": "15"
+            },
+            {
+              "chapter": "21",
+              "verse": "16"
+            },
+            {
+              "chapter": "21",
+              "verse": "17"
+            },
+            {
+              "chapter": "21",
+              "verse": "18"
+            },
+            {
+              "chapter": "21",
+              "verse": "19"
+            },
+            {
+              "chapter": "21",
+              "verse": "20"
+            },
+            {
+              "chapter": "21",
+              "verse": "21"
+            },
+            {
+              "chapter": "21",
+              "verse": "22"
+            },
+            {
+              "chapter": "21",
+              "verse": "23"
+            },
+            {
+              "chapter": "21",
+              "verse": "24"
+            },
+            {
+              "chapter": "21",
+              "verse": "25"
+            },
+            {
+              "chapter": "21",
+              "verse": "26"
+            },
+            {
+              "chapter": "21",
+              "verse": "27"
+            },
+            {
+              "chapter": "21",
+              "verse": "28"
+            },
+            {
+              "chapter": "21",
+              "verse": "29"
+            },
+            {
+              "chapter": "21",
+              "verse": "30"
+            },
+            {
+              "chapter": "21",
+              "verse": "31"
+            },
+            {
+              "chapter": "21",
+              "verse": "32"
+            },
+            {
+              "chapter": "21",
+              "verse": "33"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete Numbers 21:1-33 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "NUM-21-34-35-greek-merge",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "21",
+              "verse": "34"
+            },
+            {
+              "chapter": "21",
+              "verse": "35"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "21",
+              "verse": "34"
+            }
+          ],
+          "evidence": {
+            "citation": "Swete 21:34 includes the Lord's assurance concerning Og and the resulting defeat/possession; Douay-Rheims divides those clauses as 21:34-35."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "27",
+      "segments": [
+        {
+          "id": "NUM-27-1-21-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "27",
+              "verse": "1"
+            },
+            {
+              "chapter": "27",
+              "verse": "2"
+            },
+            {
+              "chapter": "27",
+              "verse": "3"
+            },
+            {
+              "chapter": "27",
+              "verse": "4"
+            },
+            {
+              "chapter": "27",
+              "verse": "5"
+            },
+            {
+              "chapter": "27",
+              "verse": "6"
+            },
+            {
+              "chapter": "27",
+              "verse": "7"
+            },
+            {
+              "chapter": "27",
+              "verse": "8"
+            },
+            {
+              "chapter": "27",
+              "verse": "9"
+            },
+            {
+              "chapter": "27",
+              "verse": "10"
+            },
+            {
+              "chapter": "27",
+              "verse": "11"
+            },
+            {
+              "chapter": "27",
+              "verse": "12"
+            },
+            {
+              "chapter": "27",
+              "verse": "13"
+            },
+            {
+              "chapter": "27",
+              "verse": "14"
+            },
+            {
+              "chapter": "27",
+              "verse": "15"
+            },
+            {
+              "chapter": "27",
+              "verse": "16"
+            },
+            {
+              "chapter": "27",
+              "verse": "17"
+            },
+            {
+              "chapter": "27",
+              "verse": "18"
+            },
+            {
+              "chapter": "27",
+              "verse": "19"
+            },
+            {
+              "chapter": "27",
+              "verse": "20"
+            },
+            {
+              "chapter": "27",
+              "verse": "21"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "27",
+              "verse": "1"
+            },
+            {
+              "chapter": "27",
+              "verse": "2"
+            },
+            {
+              "chapter": "27",
+              "verse": "3"
+            },
+            {
+              "chapter": "27",
+              "verse": "4"
+            },
+            {
+              "chapter": "27",
+              "verse": "5"
+            },
+            {
+              "chapter": "27",
+              "verse": "6"
+            },
+            {
+              "chapter": "27",
+              "verse": "7"
+            },
+            {
+              "chapter": "27",
+              "verse": "8"
+            },
+            {
+              "chapter": "27",
+              "verse": "9"
+            },
+            {
+              "chapter": "27",
+              "verse": "10"
+            },
+            {
+              "chapter": "27",
+              "verse": "11"
+            },
+            {
+              "chapter": "27",
+              "verse": "12"
+            },
+            {
+              "chapter": "27",
+              "verse": "13"
+            },
+            {
+              "chapter": "27",
+              "verse": "14"
+            },
+            {
+              "chapter": "27",
+              "verse": "15"
+            },
+            {
+              "chapter": "27",
+              "verse": "16"
+            },
+            {
+              "chapter": "27",
+              "verse": "17"
+            },
+            {
+              "chapter": "27",
+              "verse": "18"
+            },
+            {
+              "chapter": "27",
+              "verse": "19"
+            },
+            {
+              "chapter": "27",
+              "verse": "20"
+            },
+            {
+              "chapter": "27",
+              "verse": "21"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete Numbers 27:1-21 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "NUM-27-22-23-greek-merge",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "27",
+              "verse": "22"
+            },
+            {
+              "chapter": "27",
+              "verse": "23"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "27",
+              "verse": "22"
+            }
+          ],
+          "evidence": {
+            "citation": "Swete 27:22 contains Moses taking Joshua, presenting him, laying hands on him, and commissioning him; Douay-Rheims divides this conclusion as 27:22-23."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "30",
+      "segments": [
+        {
+          "id": "NUM-30-1-15-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "30",
+              "verse": "1"
+            },
+            {
+              "chapter": "30",
+              "verse": "2"
+            },
+            {
+              "chapter": "30",
+              "verse": "3"
+            },
+            {
+              "chapter": "30",
+              "verse": "4"
+            },
+            {
+              "chapter": "30",
+              "verse": "5"
+            },
+            {
+              "chapter": "30",
+              "verse": "6"
+            },
+            {
+              "chapter": "30",
+              "verse": "7"
+            },
+            {
+              "chapter": "30",
+              "verse": "8"
+            },
+            {
+              "chapter": "30",
+              "verse": "9"
+            },
+            {
+              "chapter": "30",
+              "verse": "10"
+            },
+            {
+              "chapter": "30",
+              "verse": "11"
+            },
+            {
+              "chapter": "30",
+              "verse": "12"
+            },
+            {
+              "chapter": "30",
+              "verse": "13"
+            },
+            {
+              "chapter": "30",
+              "verse": "14"
+            },
+            {
+              "chapter": "30",
+              "verse": "15"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "30",
+              "verse": "1"
+            },
+            {
+              "chapter": "30",
+              "verse": "2"
+            },
+            {
+              "chapter": "30",
+              "verse": "3"
+            },
+            {
+              "chapter": "30",
+              "verse": "4"
+            },
+            {
+              "chapter": "30",
+              "verse": "5"
+            },
+            {
+              "chapter": "30",
+              "verse": "6"
+            },
+            {
+              "chapter": "30",
+              "verse": "7"
+            },
+            {
+              "chapter": "30",
+              "verse": "8"
+            },
+            {
+              "chapter": "30",
+              "verse": "9"
+            },
+            {
+              "chapter": "30",
+              "verse": "10"
+            },
+            {
+              "chapter": "30",
+              "verse": "11"
+            },
+            {
+              "chapter": "30",
+              "verse": "12"
+            },
+            {
+              "chapter": "30",
+              "verse": "13"
+            },
+            {
+              "chapter": "30",
+              "verse": "14"
+            },
+            {
+              "chapter": "30",
+              "verse": "15"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and Swete Numbers 30:1-15 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "NUM-30-16-17-greek-merge",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "30",
+              "verse": "16"
+            },
+            {
+              "chapter": "30",
+              "verse": "17"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "30",
+              "verse": "16"
+            }
+          ],
+          "evidence": {
+            "citation": "Swete 30:16 contains both the husband's later annulment liability and the concluding statute formula; Douay-Rheims divides them as 30:16-17."
+          }
+        }
+      ]
+    }
+  ]
+}
