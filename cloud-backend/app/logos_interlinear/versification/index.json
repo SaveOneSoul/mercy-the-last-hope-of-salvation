@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.22-v47",
+  "registry_version": "2026.09.22-v53",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -452,6 +452,54 @@
       "lane": "greek",
       "status": "verified",
       "file": "maps/EZK-greek-first1k-swete.json"
+    },
+    {
+      "book_id": "PRO",
+      "lane": "greek",
+      "file": "maps/PRO-greek-first1k-swete.json",
+      "status": "verified"
+    },
+    {
+      "book_id": "JER",
+      "lane": "semitic",
+      "file": "maps/JER-semitic-oshb-wlc.json",
+      "status": "verified"
+    },
+    {
+      "book_id": "JER",
+      "lane": "greek",
+      "file": "maps/JER-greek-first1k-swete.json",
+      "status": "verified"
+    },
+    {
+      "book_id": "PSA",
+      "lane": "semitic",
+      "file": "maps/PSA-semitic-oshb-wlc.json",
+      "status": "verified"
+    },
+    {
+      "book_id": "PSA",
+      "lane": "greek",
+      "file": "maps/PSA-greek-first1k-swete.json",
+      "status": "verified"
+    },
+    {
+      "book_id": "GEN",
+      "lane": "latin",
+      "status": "verified",
+      "file": "maps/GEN-latin-clementine.json"
+    },
+    {
+      "book_id": "PSA",
+      "lane": "latin",
+      "status": "verified",
+      "file": "maps/PSA-latin-clementine.json"
+    },
+    {
+      "book_id": "ISA",
+      "lane": "latin",
+      "status": "verified",
+      "file": "maps/ISA-latin-clementine.json"
     }
   ]
 }

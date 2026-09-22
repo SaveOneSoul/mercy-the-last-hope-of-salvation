@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.22-gen-latin-v1",
+  "status": "verified",
+  "book_id": "GEN",
+  "book": "Genesis",
+  "lane": "latin",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "clementine-vulgate",
+    "reference_system": "clementine-vulgate-source-numbering",
+    "corpus_id": "lat_vulgate_clementine",
+    "corpus_version": "2026.09.18-clementine-vulgate-73"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "5"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "5",
+      "segments": [
+        {
+          "id": "GEN-5-latin-clementine-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "5",
+              "verse": "1"
+            },
+            {
+              "chapter": "5",
+              "verse": "2"
+            },
+            {
+              "chapter": "5",
+              "verse": "3"
+            },
+            {
+              "chapter": "5",
+              "verse": "4"
+            },
+            {
+              "chapter": "5",
+              "verse": "5"
+            },
+            {
+              "chapter": "5",
+              "verse": "6"
+            },
+            {
+              "chapter": "5",
+              "verse": "7"
+            },
+            {
+              "chapter": "5",
+              "verse": "8"
+            },
+            {
+              "chapter": "5",
+              "verse": "9"
+            },
+            {
+              "chapter": "5",
+              "verse": "10"
+            },
+            {
+              "chapter": "5",
+              "verse": "11"
+            },
+            {
+              "chapter": "5",
+              "verse": "12"
+            },
+            {
+              "chapter": "5",
+              "verse": "13"
+            },
+            {
+              "chapter": "5",
+              "verse": "14"
+            },
+            {
+              "chapter": "5",
+              "verse": "15"
+            },
+            {
+              "chapter": "5",
+              "verse": "16"
+            },
+            {
+              "chapter": "5",
+              "verse": "17"
+            },
+            {
+              "chapter": "5",
+              "verse": "18"
+            },
+            {
+              "chapter": "5",
+              "verse": "19"
+            },
+            {
+              "chapter": "5",
+              "verse": "20"
+            },
+            {
+              "chapter": "5",
+              "verse": "21"
+            },
+            {
+              "chapter": "5",
+              "verse": "22"
+            },
+            {
+              "chapter": "5",
+              "verse": "23"
+            },
+            {
+              "chapter": "5",
+              "verse": "24"
+            },
+            {
+              "chapter": "5",
+              "verse": "25"
+            },
+            {
+              "chapter": "5",
+              "verse": "26"
+            },
+            {
+              "chapter": "5",
+              "verse": "27"
+            },
+            {
+              "chapter": "5",
+              "verse": "28"
+            },
+            {
+              "chapter": "5",
+              "verse": "29"
+            },
+            {
+              "chapter": "5",
+              "verse": "30"
+            },
+            {
+              "chapter": "5",
+              "verse": "31"
+            },
+            {
+              "chapter": "5",
+              "verse": "32"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "5",
+              "verse": "1"
+            },
+            {
+              "chapter": "5",
+              "verse": "2"
+            },
+            {
+              "chapter": "5",
+              "verse": "3"
+            },
+            {
+              "chapter": "5",
+              "verse": "4"
+            },
+            {
+              "chapter": "5",
+              "verse": "5"
+            },
+            {
+              "chapter": "5",
+              "verse": "6"
+            },
+            {
+              "chapter": "5",
+              "verse": "7"
+            },
+            {
+              "chapter": "5",
+              "verse": "8"
+            },
+            {
+              "chapter": "5",
+              "verse": "9"
+            },
+            {
+              "chapter": "5",
+              "verse": "10"
+            },
+            {
+              "chapter": "5",
+              "verse": "11"
+            },
+            {
+              "chapter": "5",
+              "verse": "12"
+            },
+            {
+              "chapter": "5",
+              "verse": "13"
+            },
+            {
+              "chapter": "5",
+              "verse": "14"
+            },
+            {
+              "chapter": "5",
+              "verse": "15"
+            },
+            {
+              "chapter": "5",
+              "verse": "16"
+            },
+            {
+              "chapter": "5",
+              "verse": "17"
+            },
+            {
+              "chapter": "5",
+              "verse": "18"
+            },
+            {
+              "chapter": "5",
+              "verse": "19"
+            },
+            {
+              "chapter": "5",
+              "verse": "20"
+            },
+            {
+              "chapter": "5",
+              "verse": "21"
+            },
+            {
+              "chapter": "5",
+              "verse": "22"
+            },
+            {
+              "chapter": "5",
+              "verse": "23"
+            },
+            {
+              "chapter": "5",
+              "verse": "24"
+            },
+            {
+              "chapter": "5",
+              "verse": "25"
+            },
+            {
+              "chapter": "5",
+              "verse": "26"
+            },
+            {
+              "chapter": "5",
+              "verse": "27"
+            },
+            {
+              "chapter": "5",
+              "verse": "28"
+            },
+            {
+              "chapter": "5",
+              "verse": "29"
+            },
+            {
+              "chapter": "5",
+              "verse": "30"
+            },
+            {
+              "chapter": "5",
+              "verse": "31"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Genesis 5 and pinned Clementine Vulgate Genesis 5 preserve the same chapter locus with different native verse segmentation. The complete Clementine source inventory is retained as a verified range without altering Latin text or boundaries."
+          }
+        }
+      ]
+    }
+  ]
+}

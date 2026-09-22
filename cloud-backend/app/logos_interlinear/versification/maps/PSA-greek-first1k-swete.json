@@ -1,0 +1,4219 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.22-psa-greek-v1",
+  "status": "verified",
+  "book_id": "PSA",
+  "book": "Psalms",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "first1kgreek-swete",
+    "reference_system": "swete-first1k-source-numbering",
+    "corpus_id": "grc_ot_catholic_full",
+    "corpus_version": "2026.09.17-catholic-lxx-full"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "2",
+      "4",
+      "10",
+      "19",
+      "24",
+      "42",
+      "43",
+      "47",
+      "54",
+      "55",
+      "63",
+      "88",
+      "91",
+      "115",
+      "117",
+      "118",
+      "119",
+      "125",
+      "129",
+      "135",
+      "151"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "2",
+      "segments": [
+        {
+          "id": "PSA-2-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 2 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "4",
+      "segments": [
+        {
+          "id": "PSA-4-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "4",
+              "verse": "1"
+            },
+            {
+              "chapter": "4",
+              "verse": "2"
+            },
+            {
+              "chapter": "4",
+              "verse": "3"
+            },
+            {
+              "chapter": "4",
+              "verse": "4"
+            },
+            {
+              "chapter": "4",
+              "verse": "5"
+            },
+            {
+              "chapter": "4",
+              "verse": "6"
+            },
+            {
+              "chapter": "4",
+              "verse": "7"
+            },
+            {
+              "chapter": "4",
+              "verse": "8"
+            },
+            {
+              "chapter": "4",
+              "verse": "9"
+            },
+            {
+              "chapter": "4",
+              "verse": "10"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "4",
+              "verse": "1"
+            },
+            {
+              "chapter": "4",
+              "verse": "2"
+            },
+            {
+              "chapter": "4",
+              "verse": "3"
+            },
+            {
+              "chapter": "4",
+              "verse": "4"
+            },
+            {
+              "chapter": "4",
+              "verse": "5"
+            },
+            {
+              "chapter": "4",
+              "verse": "6"
+            },
+            {
+              "chapter": "4",
+              "verse": "7"
+            },
+            {
+              "chapter": "4",
+              "verse": "8"
+            },
+            {
+              "chapter": "4",
+              "verse": "9"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 4 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "10",
+      "segments": [
+        {
+          "id": "PSA-10-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "10",
+              "verse": "1"
+            },
+            {
+              "chapter": "10",
+              "verse": "2"
+            },
+            {
+              "chapter": "10",
+              "verse": "3"
+            },
+            {
+              "chapter": "10",
+              "verse": "4"
+            },
+            {
+              "chapter": "10",
+              "verse": "5"
+            },
+            {
+              "chapter": "10",
+              "verse": "6"
+            },
+            {
+              "chapter": "10",
+              "verse": "7"
+            },
+            {
+              "chapter": "10",
+              "verse": "8"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "10",
+              "verse": "1"
+            },
+            {
+              "chapter": "10",
+              "verse": "2"
+            },
+            {
+              "chapter": "10",
+              "verse": "3"
+            },
+            {
+              "chapter": "10",
+              "verse": "4"
+            },
+            {
+              "chapter": "10",
+              "verse": "5"
+            },
+            {
+              "chapter": "10",
+              "verse": "6"
+            },
+            {
+              "chapter": "10",
+              "verse": "7"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 10 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "19",
+      "segments": [
+        {
+          "id": "PSA-19-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "19",
+              "verse": "1"
+            },
+            {
+              "chapter": "19",
+              "verse": "2"
+            },
+            {
+              "chapter": "19",
+              "verse": "3"
+            },
+            {
+              "chapter": "19",
+              "verse": "4"
+            },
+            {
+              "chapter": "19",
+              "verse": "5"
+            },
+            {
+              "chapter": "19",
+              "verse": "6"
+            },
+            {
+              "chapter": "19",
+              "verse": "7"
+            },
+            {
+              "chapter": "19",
+              "verse": "8"
+            },
+            {
+              "chapter": "19",
+              "verse": "9"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "19",
+              "verse": "1"
+            },
+            {
+              "chapter": "19",
+              "verse": "2"
+            },
+            {
+              "chapter": "19",
+              "verse": "3"
+            },
+            {
+              "chapter": "19",
+              "verse": "4"
+            },
+            {
+              "chapter": "19",
+              "verse": "5"
+            },
+            {
+              "chapter": "19",
+              "verse": "6"
+            },
+            {
+              "chapter": "19",
+              "verse": "7"
+            },
+            {
+              "chapter": "19",
+              "verse": "8"
+            },
+            {
+              "chapter": "19",
+              "verse": "9"
+            },
+            {
+              "chapter": "19",
+              "verse": "10"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 19 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "24",
+      "segments": [
+        {
+          "id": "PSA-24-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "24",
+              "verse": "1"
+            },
+            {
+              "chapter": "24",
+              "verse": "2"
+            },
+            {
+              "chapter": "24",
+              "verse": "3"
+            },
+            {
+              "chapter": "24",
+              "verse": "4"
+            },
+            {
+              "chapter": "24",
+              "verse": "5"
+            },
+            {
+              "chapter": "24",
+              "verse": "6"
+            },
+            {
+              "chapter": "24",
+              "verse": "7"
+            },
+            {
+              "chapter": "24",
+              "verse": "8"
+            },
+            {
+              "chapter": "24",
+              "verse": "9"
+            },
+            {
+              "chapter": "24",
+              "verse": "10"
+            },
+            {
+              "chapter": "24",
+              "verse": "11"
+            },
+            {
+              "chapter": "24",
+              "verse": "12"
+            },
+            {
+              "chapter": "24",
+              "verse": "13"
+            },
+            {
+              "chapter": "24",
+              "verse": "14"
+            },
+            {
+              "chapter": "24",
+              "verse": "15"
+            },
+            {
+              "chapter": "24",
+              "verse": "16"
+            },
+            {
+              "chapter": "24",
+              "verse": "17"
+            },
+            {
+              "chapter": "24",
+              "verse": "18"
+            },
+            {
+              "chapter": "24",
+              "verse": "19"
+            },
+            {
+              "chapter": "24",
+              "verse": "20"
+            },
+            {
+              "chapter": "24",
+              "verse": "21"
+            },
+            {
+              "chapter": "24",
+              "verse": "22"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "24",
+              "verse": "1"
+            },
+            {
+              "chapter": "24",
+              "verse": "2"
+            },
+            {
+              "chapter": "24",
+              "verse": "3"
+            },
+            {
+              "chapter": "24",
+              "verse": "4"
+            },
+            {
+              "chapter": "24",
+              "verse": "5"
+            },
+            {
+              "chapter": "24",
+              "verse": "6"
+            },
+            {
+              "chapter": "24",
+              "verse": "7"
+            },
+            {
+              "chapter": "24",
+              "verse": "8"
+            },
+            {
+              "chapter": "24",
+              "verse": "9"
+            },
+            {
+              "chapter": "24",
+              "verse": "10"
+            },
+            {
+              "chapter": "24",
+              "verse": "11"
+            },
+            {
+              "chapter": "24",
+              "verse": "12"
+            },
+            {
+              "chapter": "24",
+              "verse": "13"
+            },
+            {
+              "chapter": "24",
+              "verse": "15"
+            },
+            {
+              "chapter": "24",
+              "verse": "16"
+            },
+            {
+              "chapter": "24",
+              "verse": "17"
+            },
+            {
+              "chapter": "24",
+              "verse": "18"
+            },
+            {
+              "chapter": "24",
+              "verse": "19"
+            },
+            {
+              "chapter": "24",
+              "verse": "20"
+            },
+            {
+              "chapter": "24",
+              "verse": "21"
+            },
+            {
+              "chapter": "24",
+              "verse": "22"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 24 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "42",
+      "segments": [
+        {
+          "id": "PSA-42-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "42",
+              "verse": "1"
+            },
+            {
+              "chapter": "42",
+              "verse": "2"
+            },
+            {
+              "chapter": "42",
+              "verse": "3"
+            },
+            {
+              "chapter": "42",
+              "verse": "4"
+            },
+            {
+              "chapter": "42",
+              "verse": "5"
+            },
+            {
+              "chapter": "42",
+              "verse": "6"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "42",
+              "verse": "1"
+            },
+            {
+              "chapter": "42",
+              "verse": "2"
+            },
+            {
+              "chapter": "42",
+              "verse": "3"
+            },
+            {
+              "chapter": "42",
+              "verse": "4"
+            },
+            {
+              "chapter": "42",
+              "verse": "5"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 42 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "43",
+      "segments": [
+        {
+          "id": "PSA-43-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "43",
+              "verse": "1"
+            },
+            {
+              "chapter": "43",
+              "verse": "2"
+            },
+            {
+              "chapter": "43",
+              "verse": "3"
+            },
+            {
+              "chapter": "43",
+              "verse": "4"
+            },
+            {
+              "chapter": "43",
+              "verse": "5"
+            },
+            {
+              "chapter": "43",
+              "verse": "6"
+            },
+            {
+              "chapter": "43",
+              "verse": "7"
+            },
+            {
+              "chapter": "43",
+              "verse": "8"
+            },
+            {
+              "chapter": "43",
+              "verse": "9"
+            },
+            {
+              "chapter": "43",
+              "verse": "10"
+            },
+            {
+              "chapter": "43",
+              "verse": "11"
+            },
+            {
+              "chapter": "43",
+              "verse": "12"
+            },
+            {
+              "chapter": "43",
+              "verse": "13"
+            },
+            {
+              "chapter": "43",
+              "verse": "14"
+            },
+            {
+              "chapter": "43",
+              "verse": "15"
+            },
+            {
+              "chapter": "43",
+              "verse": "16"
+            },
+            {
+              "chapter": "43",
+              "verse": "17"
+            },
+            {
+              "chapter": "43",
+              "verse": "18"
+            },
+            {
+              "chapter": "43",
+              "verse": "19"
+            },
+            {
+              "chapter": "43",
+              "verse": "20"
+            },
+            {
+              "chapter": "43",
+              "verse": "21"
+            },
+            {
+              "chapter": "43",
+              "verse": "22"
+            },
+            {
+              "chapter": "43",
+              "verse": "23"
+            },
+            {
+              "chapter": "43",
+              "verse": "24"
+            },
+            {
+              "chapter": "43",
+              "verse": "25"
+            },
+            {
+              "chapter": "43",
+              "verse": "26"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "43",
+              "verse": "1"
+            },
+            {
+              "chapter": "43",
+              "verse": "2"
+            },
+            {
+              "chapter": "43",
+              "verse": "3"
+            },
+            {
+              "chapter": "43",
+              "verse": "4"
+            },
+            {
+              "chapter": "43",
+              "verse": "5"
+            },
+            {
+              "chapter": "43",
+              "verse": "6"
+            },
+            {
+              "chapter": "43",
+              "verse": "7"
+            },
+            {
+              "chapter": "43",
+              "verse": "9"
+            },
+            {
+              "chapter": "43",
+              "verse": "10"
+            },
+            {
+              "chapter": "43",
+              "verse": "11"
+            },
+            {
+              "chapter": "43",
+              "verse": "12"
+            },
+            {
+              "chapter": "43",
+              "verse": "13"
+            },
+            {
+              "chapter": "43",
+              "verse": "14"
+            },
+            {
+              "chapter": "43",
+              "verse": "15"
+            },
+            {
+              "chapter": "43",
+              "verse": "16"
+            },
+            {
+              "chapter": "43",
+              "verse": "17"
+            },
+            {
+              "chapter": "43",
+              "verse": "18"
+            },
+            {
+              "chapter": "43",
+              "verse": "19"
+            },
+            {
+              "chapter": "43",
+              "verse": "20"
+            },
+            {
+              "chapter": "43",
+              "verse": "21"
+            },
+            {
+              "chapter": "43",
+              "verse": "22"
+            },
+            {
+              "chapter": "43",
+              "verse": "23"
+            },
+            {
+              "chapter": "43",
+              "verse": "24"
+            },
+            {
+              "chapter": "43",
+              "verse": "25"
+            },
+            {
+              "chapter": "43",
+              "verse": "26"
+            },
+            {
+              "chapter": "43",
+              "verse": "27"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 43 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "47",
+      "segments": [
+        {
+          "id": "PSA-47-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "47",
+              "verse": "1"
+            },
+            {
+              "chapter": "47",
+              "verse": "2"
+            },
+            {
+              "chapter": "47",
+              "verse": "3"
+            },
+            {
+              "chapter": "47",
+              "verse": "4"
+            },
+            {
+              "chapter": "47",
+              "verse": "5"
+            },
+            {
+              "chapter": "47",
+              "verse": "6"
+            },
+            {
+              "chapter": "47",
+              "verse": "7"
+            },
+            {
+              "chapter": "47",
+              "verse": "8"
+            },
+            {
+              "chapter": "47",
+              "verse": "9"
+            },
+            {
+              "chapter": "47",
+              "verse": "10"
+            },
+            {
+              "chapter": "47",
+              "verse": "11"
+            },
+            {
+              "chapter": "47",
+              "verse": "12"
+            },
+            {
+              "chapter": "47",
+              "verse": "13"
+            },
+            {
+              "chapter": "47",
+              "verse": "14"
+            },
+            {
+              "chapter": "47",
+              "verse": "15"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "47",
+              "verse": "1"
+            },
+            {
+              "chapter": "47",
+              "verse": "2"
+            },
+            {
+              "chapter": "47",
+              "verse": "3"
+            },
+            {
+              "chapter": "47",
+              "verse": "4"
+            },
+            {
+              "chapter": "47",
+              "verse": "5"
+            },
+            {
+              "chapter": "47",
+              "verse": "6"
+            },
+            {
+              "chapter": "47",
+              "verse": "8"
+            },
+            {
+              "chapter": "47",
+              "verse": "9"
+            },
+            {
+              "chapter": "47",
+              "verse": "10"
+            },
+            {
+              "chapter": "47",
+              "verse": "11"
+            },
+            {
+              "chapter": "47",
+              "verse": "12"
+            },
+            {
+              "chapter": "47",
+              "verse": "13"
+            },
+            {
+              "chapter": "47",
+              "verse": "14"
+            },
+            {
+              "chapter": "47",
+              "verse": "15"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 47 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "54",
+      "segments": [
+        {
+          "id": "PSA-54-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "54",
+              "verse": "1"
+            },
+            {
+              "chapter": "54",
+              "verse": "2"
+            },
+            {
+              "chapter": "54",
+              "verse": "3"
+            },
+            {
+              "chapter": "54",
+              "verse": "4"
+            },
+            {
+              "chapter": "54",
+              "verse": "5"
+            },
+            {
+              "chapter": "54",
+              "verse": "6"
+            },
+            {
+              "chapter": "54",
+              "verse": "7"
+            },
+            {
+              "chapter": "54",
+              "verse": "8"
+            },
+            {
+              "chapter": "54",
+              "verse": "9"
+            },
+            {
+              "chapter": "54",
+              "verse": "10"
+            },
+            {
+              "chapter": "54",
+              "verse": "11"
+            },
+            {
+              "chapter": "54",
+              "verse": "12"
+            },
+            {
+              "chapter": "54",
+              "verse": "13"
+            },
+            {
+              "chapter": "54",
+              "verse": "14"
+            },
+            {
+              "chapter": "54",
+              "verse": "15"
+            },
+            {
+              "chapter": "54",
+              "verse": "16"
+            },
+            {
+              "chapter": "54",
+              "verse": "17"
+            },
+            {
+              "chapter": "54",
+              "verse": "18"
+            },
+            {
+              "chapter": "54",
+              "verse": "19"
+            },
+            {
+              "chapter": "54",
+              "verse": "20"
+            },
+            {
+              "chapter": "54",
+              "verse": "21"
+            },
+            {
+              "chapter": "54",
+              "verse": "22"
+            },
+            {
+              "chapter": "54",
+              "verse": "23"
+            },
+            {
+              "chapter": "54",
+              "verse": "24"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "54",
+              "verse": "1"
+            },
+            {
+              "chapter": "54",
+              "verse": "2"
+            },
+            {
+              "chapter": "54",
+              "verse": "3"
+            },
+            {
+              "chapter": "54",
+              "verse": "4"
+            },
+            {
+              "chapter": "54",
+              "verse": "5"
+            },
+            {
+              "chapter": "54",
+              "verse": "7"
+            },
+            {
+              "chapter": "54",
+              "verse": "8"
+            },
+            {
+              "chapter": "54",
+              "verse": "9"
+            },
+            {
+              "chapter": "54",
+              "verse": "10"
+            },
+            {
+              "chapter": "54",
+              "verse": "11"
+            },
+            {
+              "chapter": "54",
+              "verse": "12"
+            },
+            {
+              "chapter": "54",
+              "verse": "13"
+            },
+            {
+              "chapter": "54",
+              "verse": "14"
+            },
+            {
+              "chapter": "54",
+              "verse": "15"
+            },
+            {
+              "chapter": "54",
+              "verse": "16"
+            },
+            {
+              "chapter": "54",
+              "verse": "17"
+            },
+            {
+              "chapter": "54",
+              "verse": "18"
+            },
+            {
+              "chapter": "54",
+              "verse": "19"
+            },
+            {
+              "chapter": "54",
+              "verse": "20"
+            },
+            {
+              "chapter": "54",
+              "verse": "21"
+            },
+            {
+              "chapter": "54",
+              "verse": "22"
+            },
+            {
+              "chapter": "54",
+              "verse": "23"
+            },
+            {
+              "chapter": "54",
+              "verse": "24"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 54 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "55",
+      "segments": [
+        {
+          "id": "PSA-55-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "55",
+              "verse": "1"
+            },
+            {
+              "chapter": "55",
+              "verse": "2"
+            },
+            {
+              "chapter": "55",
+              "verse": "3"
+            },
+            {
+              "chapter": "55",
+              "verse": "4"
+            },
+            {
+              "chapter": "55",
+              "verse": "5"
+            },
+            {
+              "chapter": "55",
+              "verse": "6"
+            },
+            {
+              "chapter": "55",
+              "verse": "7"
+            },
+            {
+              "chapter": "55",
+              "verse": "8"
+            },
+            {
+              "chapter": "55",
+              "verse": "9"
+            },
+            {
+              "chapter": "55",
+              "verse": "10"
+            },
+            {
+              "chapter": "55",
+              "verse": "11"
+            },
+            {
+              "chapter": "55",
+              "verse": "12"
+            },
+            {
+              "chapter": "55",
+              "verse": "13"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "55",
+              "verse": "1"
+            },
+            {
+              "chapter": "55",
+              "verse": "2"
+            },
+            {
+              "chapter": "55",
+              "verse": "3"
+            },
+            {
+              "chapter": "55",
+              "verse": "4"
+            },
+            {
+              "chapter": "55",
+              "verse": "5"
+            },
+            {
+              "chapter": "55",
+              "verse": "6"
+            },
+            {
+              "chapter": "55",
+              "verse": "7"
+            },
+            {
+              "chapter": "55",
+              "verse": "8"
+            },
+            {
+              "chapter": "55",
+              "verse": "9"
+            },
+            {
+              "chapter": "55",
+              "verse": "10"
+            },
+            {
+              "chapter": "55",
+              "verse": "11"
+            },
+            {
+              "chapter": "55",
+              "verse": "12"
+            },
+            {
+              "chapter": "55",
+              "verse": "13"
+            },
+            {
+              "chapter": "55",
+              "verse": "14"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 55 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "63",
+      "segments": [
+        {
+          "id": "PSA-63-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "63",
+              "verse": "1"
+            },
+            {
+              "chapter": "63",
+              "verse": "2"
+            },
+            {
+              "chapter": "63",
+              "verse": "3"
+            },
+            {
+              "chapter": "63",
+              "verse": "4"
+            },
+            {
+              "chapter": "63",
+              "verse": "5"
+            },
+            {
+              "chapter": "63",
+              "verse": "6"
+            },
+            {
+              "chapter": "63",
+              "verse": "7"
+            },
+            {
+              "chapter": "63",
+              "verse": "8"
+            },
+            {
+              "chapter": "63",
+              "verse": "9"
+            },
+            {
+              "chapter": "63",
+              "verse": "10"
+            },
+            {
+              "chapter": "63",
+              "verse": "11"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "63",
+              "verse": "1"
+            },
+            {
+              "chapter": "63",
+              "verse": "2"
+            },
+            {
+              "chapter": "63",
+              "verse": "4"
+            },
+            {
+              "chapter": "63",
+              "verse": "5"
+            },
+            {
+              "chapter": "63",
+              "verse": "6"
+            },
+            {
+              "chapter": "63",
+              "verse": "7"
+            },
+            {
+              "chapter": "63",
+              "verse": "8"
+            },
+            {
+              "chapter": "63",
+              "verse": "9"
+            },
+            {
+              "chapter": "63",
+              "verse": "10"
+            },
+            {
+              "chapter": "63",
+              "verse": "11"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 63 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "88",
+      "segments": [
+        {
+          "id": "PSA-88-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "88",
+              "verse": "1"
+            },
+            {
+              "chapter": "88",
+              "verse": "2"
+            },
+            {
+              "chapter": "88",
+              "verse": "3"
+            },
+            {
+              "chapter": "88",
+              "verse": "4"
+            },
+            {
+              "chapter": "88",
+              "verse": "5"
+            },
+            {
+              "chapter": "88",
+              "verse": "6"
+            },
+            {
+              "chapter": "88",
+              "verse": "7"
+            },
+            {
+              "chapter": "88",
+              "verse": "8"
+            },
+            {
+              "chapter": "88",
+              "verse": "9"
+            },
+            {
+              "chapter": "88",
+              "verse": "10"
+            },
+            {
+              "chapter": "88",
+              "verse": "11"
+            },
+            {
+              "chapter": "88",
+              "verse": "12"
+            },
+            {
+              "chapter": "88",
+              "verse": "13"
+            },
+            {
+              "chapter": "88",
+              "verse": "14"
+            },
+            {
+              "chapter": "88",
+              "verse": "15"
+            },
+            {
+              "chapter": "88",
+              "verse": "16"
+            },
+            {
+              "chapter": "88",
+              "verse": "17"
+            },
+            {
+              "chapter": "88",
+              "verse": "18"
+            },
+            {
+              "chapter": "88",
+              "verse": "19"
+            },
+            {
+              "chapter": "88",
+              "verse": "20"
+            },
+            {
+              "chapter": "88",
+              "verse": "21"
+            },
+            {
+              "chapter": "88",
+              "verse": "22"
+            },
+            {
+              "chapter": "88",
+              "verse": "23"
+            },
+            {
+              "chapter": "88",
+              "verse": "24"
+            },
+            {
+              "chapter": "88",
+              "verse": "25"
+            },
+            {
+              "chapter": "88",
+              "verse": "26"
+            },
+            {
+              "chapter": "88",
+              "verse": "27"
+            },
+            {
+              "chapter": "88",
+              "verse": "28"
+            },
+            {
+              "chapter": "88",
+              "verse": "29"
+            },
+            {
+              "chapter": "88",
+              "verse": "30"
+            },
+            {
+              "chapter": "88",
+              "verse": "31"
+            },
+            {
+              "chapter": "88",
+              "verse": "32"
+            },
+            {
+              "chapter": "88",
+              "verse": "33"
+            },
+            {
+              "chapter": "88",
+              "verse": "34"
+            },
+            {
+              "chapter": "88",
+              "verse": "35"
+            },
+            {
+              "chapter": "88",
+              "verse": "36"
+            },
+            {
+              "chapter": "88",
+              "verse": "37"
+            },
+            {
+              "chapter": "88",
+              "verse": "38"
+            },
+            {
+              "chapter": "88",
+              "verse": "39"
+            },
+            {
+              "chapter": "88",
+              "verse": "40"
+            },
+            {
+              "chapter": "88",
+              "verse": "41"
+            },
+            {
+              "chapter": "88",
+              "verse": "42"
+            },
+            {
+              "chapter": "88",
+              "verse": "43"
+            },
+            {
+              "chapter": "88",
+              "verse": "44"
+            },
+            {
+              "chapter": "88",
+              "verse": "45"
+            },
+            {
+              "chapter": "88",
+              "verse": "46"
+            },
+            {
+              "chapter": "88",
+              "verse": "47"
+            },
+            {
+              "chapter": "88",
+              "verse": "48"
+            },
+            {
+              "chapter": "88",
+              "verse": "49"
+            },
+            {
+              "chapter": "88",
+              "verse": "50"
+            },
+            {
+              "chapter": "88",
+              "verse": "51"
+            },
+            {
+              "chapter": "88",
+              "verse": "52"
+            },
+            {
+              "chapter": "88",
+              "verse": "53"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "88",
+              "verse": "1"
+            },
+            {
+              "chapter": "88",
+              "verse": "2"
+            },
+            {
+              "chapter": "88",
+              "verse": "3"
+            },
+            {
+              "chapter": "88",
+              "verse": "4"
+            },
+            {
+              "chapter": "88",
+              "verse": "5"
+            },
+            {
+              "chapter": "88",
+              "verse": "6"
+            },
+            {
+              "chapter": "88",
+              "verse": "7"
+            },
+            {
+              "chapter": "88",
+              "verse": "8"
+            },
+            {
+              "chapter": "88",
+              "verse": "9"
+            },
+            {
+              "chapter": "88",
+              "verse": "10"
+            },
+            {
+              "chapter": "88",
+              "verse": "11"
+            },
+            {
+              "chapter": "88",
+              "verse": "12"
+            },
+            {
+              "chapter": "88",
+              "verse": "13"
+            },
+            {
+              "chapter": "88",
+              "verse": "14"
+            },
+            {
+              "chapter": "88",
+              "verse": "15"
+            },
+            {
+              "chapter": "88",
+              "verse": "16"
+            },
+            {
+              "chapter": "88",
+              "verse": "17"
+            },
+            {
+              "chapter": "88",
+              "verse": "18"
+            },
+            {
+              "chapter": "88",
+              "verse": "19"
+            },
+            {
+              "chapter": "88",
+              "verse": "20"
+            },
+            {
+              "chapter": "88",
+              "verse": "21"
+            },
+            {
+              "chapter": "88",
+              "verse": "22"
+            },
+            {
+              "chapter": "88",
+              "verse": "23"
+            },
+            {
+              "chapter": "88",
+              "verse": "24"
+            },
+            {
+              "chapter": "88",
+              "verse": "25"
+            },
+            {
+              "chapter": "88",
+              "verse": "26"
+            },
+            {
+              "chapter": "88",
+              "verse": "27"
+            },
+            {
+              "chapter": "88",
+              "verse": "28"
+            },
+            {
+              "chapter": "88",
+              "verse": "29"
+            },
+            {
+              "chapter": "88",
+              "verse": "30"
+            },
+            {
+              "chapter": "88",
+              "verse": "31"
+            },
+            {
+              "chapter": "88",
+              "verse": "32"
+            },
+            {
+              "chapter": "88",
+              "verse": "33"
+            },
+            {
+              "chapter": "88",
+              "verse": "34"
+            },
+            {
+              "chapter": "88",
+              "verse": "35"
+            },
+            {
+              "chapter": "88",
+              "verse": "36"
+            },
+            {
+              "chapter": "88",
+              "verse": "37"
+            },
+            {
+              "chapter": "88",
+              "verse": "38"
+            },
+            {
+              "chapter": "88",
+              "verse": "39"
+            },
+            {
+              "chapter": "88",
+              "verse": "40"
+            },
+            {
+              "chapter": "88",
+              "verse": "41"
+            },
+            {
+              "chapter": "88",
+              "verse": "42"
+            },
+            {
+              "chapter": "88",
+              "verse": "43"
+            },
+            {
+              "chapter": "88",
+              "verse": "44"
+            },
+            {
+              "chapter": "88",
+              "verse": "45"
+            },
+            {
+              "chapter": "88",
+              "verse": "46"
+            },
+            {
+              "chapter": "88",
+              "verse": "47"
+            },
+            {
+              "chapter": "88",
+              "verse": "84"
+            },
+            {
+              "chapter": "88",
+              "verse": "49"
+            },
+            {
+              "chapter": "88",
+              "verse": "50"
+            },
+            {
+              "chapter": "88",
+              "verse": "51"
+            },
+            {
+              "chapter": "88",
+              "verse": "52"
+            },
+            {
+              "chapter": "88",
+              "verse": "53"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 88 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "91",
+      "segments": [
+        {
+          "id": "PSA-91-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "91",
+              "verse": "1"
+            },
+            {
+              "chapter": "91",
+              "verse": "2"
+            },
+            {
+              "chapter": "91",
+              "verse": "3"
+            },
+            {
+              "chapter": "91",
+              "verse": "4"
+            },
+            {
+              "chapter": "91",
+              "verse": "5"
+            },
+            {
+              "chapter": "91",
+              "verse": "6"
+            },
+            {
+              "chapter": "91",
+              "verse": "7"
+            },
+            {
+              "chapter": "91",
+              "verse": "8"
+            },
+            {
+              "chapter": "91",
+              "verse": "9"
+            },
+            {
+              "chapter": "91",
+              "verse": "10"
+            },
+            {
+              "chapter": "91",
+              "verse": "11"
+            },
+            {
+              "chapter": "91",
+              "verse": "12"
+            },
+            {
+              "chapter": "91",
+              "verse": "13"
+            },
+            {
+              "chapter": "91",
+              "verse": "14"
+            },
+            {
+              "chapter": "91",
+              "verse": "15"
+            },
+            {
+              "chapter": "91",
+              "verse": "16"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "91",
+              "verse": "1"
+            },
+            {
+              "chapter": "91",
+              "verse": "2"
+            },
+            {
+              "chapter": "91",
+              "verse": "3"
+            },
+            {
+              "chapter": "91",
+              "verse": "4"
+            },
+            {
+              "chapter": "91",
+              "verse": "5"
+            },
+            {
+              "chapter": "91",
+              "verse": "6"
+            },
+            {
+              "chapter": "91",
+              "verse": "7"
+            },
+            {
+              "chapter": "91",
+              "verse": "8"
+            },
+            {
+              "chapter": "91",
+              "verse": "9"
+            },
+            {
+              "chapter": "91",
+              "verse": "10"
+            },
+            {
+              "chapter": "91",
+              "verse": "11"
+            },
+            {
+              "chapter": "91",
+              "verse": "12"
+            },
+            {
+              "chapter": "91",
+              "verse": "13"
+            },
+            {
+              "chapter": "91",
+              "verse": "14"
+            },
+            {
+              "chapter": "91",
+              "verse": "15"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 91 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "115",
+      "segments": [
+        {
+          "id": "PSA-115-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "115",
+              "verse": "1"
+            },
+            {
+              "chapter": "115",
+              "verse": "2"
+            },
+            {
+              "chapter": "115",
+              "verse": "3"
+            },
+            {
+              "chapter": "115",
+              "verse": "4"
+            },
+            {
+              "chapter": "115",
+              "verse": "5"
+            },
+            {
+              "chapter": "115",
+              "verse": "6"
+            },
+            {
+              "chapter": "115",
+              "verse": "7"
+            },
+            {
+              "chapter": "115",
+              "verse": "8"
+            },
+            {
+              "chapter": "115",
+              "verse": "9"
+            },
+            {
+              "chapter": "115",
+              "verse": "10"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "115",
+              "verse": "1"
+            },
+            {
+              "chapter": "115",
+              "verse": "2"
+            },
+            {
+              "chapter": "115",
+              "verse": "3"
+            },
+            {
+              "chapter": "115",
+              "verse": "4"
+            },
+            {
+              "chapter": "115",
+              "verse": "5"
+            },
+            {
+              "chapter": "115",
+              "verse": "7"
+            },
+            {
+              "chapter": "115",
+              "verse": "8"
+            },
+            {
+              "chapter": "115",
+              "verse": "9"
+            },
+            {
+              "chapter": "115",
+              "verse": "10"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 115 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "117",
+      "segments": [
+        {
+          "id": "PSA-117-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "117",
+              "verse": "1"
+            },
+            {
+              "chapter": "117",
+              "verse": "2"
+            },
+            {
+              "chapter": "117",
+              "verse": "3"
+            },
+            {
+              "chapter": "117",
+              "verse": "4"
+            },
+            {
+              "chapter": "117",
+              "verse": "5"
+            },
+            {
+              "chapter": "117",
+              "verse": "6"
+            },
+            {
+              "chapter": "117",
+              "verse": "7"
+            },
+            {
+              "chapter": "117",
+              "verse": "8"
+            },
+            {
+              "chapter": "117",
+              "verse": "9"
+            },
+            {
+              "chapter": "117",
+              "verse": "10"
+            },
+            {
+              "chapter": "117",
+              "verse": "11"
+            },
+            {
+              "chapter": "117",
+              "verse": "12"
+            },
+            {
+              "chapter": "117",
+              "verse": "13"
+            },
+            {
+              "chapter": "117",
+              "verse": "14"
+            },
+            {
+              "chapter": "117",
+              "verse": "15"
+            },
+            {
+              "chapter": "117",
+              "verse": "16"
+            },
+            {
+              "chapter": "117",
+              "verse": "17"
+            },
+            {
+              "chapter": "117",
+              "verse": "18"
+            },
+            {
+              "chapter": "117",
+              "verse": "19"
+            },
+            {
+              "chapter": "117",
+              "verse": "20"
+            },
+            {
+              "chapter": "117",
+              "verse": "21"
+            },
+            {
+              "chapter": "117",
+              "verse": "22"
+            },
+            {
+              "chapter": "117",
+              "verse": "23"
+            },
+            {
+              "chapter": "117",
+              "verse": "24"
+            },
+            {
+              "chapter": "117",
+              "verse": "25"
+            },
+            {
+              "chapter": "117",
+              "verse": "26"
+            },
+            {
+              "chapter": "117",
+              "verse": "27"
+            },
+            {
+              "chapter": "117",
+              "verse": "28"
+            },
+            {
+              "chapter": "117",
+              "verse": "29"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "117",
+              "verse": "1"
+            },
+            {
+              "chapter": "117",
+              "verse": "2"
+            },
+            {
+              "chapter": "117",
+              "verse": "3"
+            },
+            {
+              "chapter": "117",
+              "verse": "5"
+            },
+            {
+              "chapter": "117",
+              "verse": "6"
+            },
+            {
+              "chapter": "117",
+              "verse": "7"
+            },
+            {
+              "chapter": "117",
+              "verse": "8"
+            },
+            {
+              "chapter": "117",
+              "verse": "9"
+            },
+            {
+              "chapter": "117",
+              "verse": "10"
+            },
+            {
+              "chapter": "117",
+              "verse": "11"
+            },
+            {
+              "chapter": "117",
+              "verse": "12"
+            },
+            {
+              "chapter": "117",
+              "verse": "13"
+            },
+            {
+              "chapter": "117",
+              "verse": "14"
+            },
+            {
+              "chapter": "117",
+              "verse": "15"
+            },
+            {
+              "chapter": "117",
+              "verse": "16"
+            },
+            {
+              "chapter": "117",
+              "verse": "17"
+            },
+            {
+              "chapter": "117",
+              "verse": "18"
+            },
+            {
+              "chapter": "117",
+              "verse": "19"
+            },
+            {
+              "chapter": "117",
+              "verse": "20"
+            },
+            {
+              "chapter": "117",
+              "verse": "21"
+            },
+            {
+              "chapter": "117",
+              "verse": "22"
+            },
+            {
+              "chapter": "117",
+              "verse": "23"
+            },
+            {
+              "chapter": "117",
+              "verse": "24"
+            },
+            {
+              "chapter": "117",
+              "verse": "25"
+            },
+            {
+              "chapter": "117",
+              "verse": "26"
+            },
+            {
+              "chapter": "117",
+              "verse": "27"
+            },
+            {
+              "chapter": "117",
+              "verse": "28"
+            },
+            {
+              "chapter": "117",
+              "verse": "29"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 117 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "118",
+      "segments": [
+        {
+          "id": "PSA-118-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "118",
+              "verse": "1"
+            },
+            {
+              "chapter": "118",
+              "verse": "2"
+            },
+            {
+              "chapter": "118",
+              "verse": "3"
+            },
+            {
+              "chapter": "118",
+              "verse": "4"
+            },
+            {
+              "chapter": "118",
+              "verse": "5"
+            },
+            {
+              "chapter": "118",
+              "verse": "6"
+            },
+            {
+              "chapter": "118",
+              "verse": "7"
+            },
+            {
+              "chapter": "118",
+              "verse": "8"
+            },
+            {
+              "chapter": "118",
+              "verse": "9"
+            },
+            {
+              "chapter": "118",
+              "verse": "10"
+            },
+            {
+              "chapter": "118",
+              "verse": "11"
+            },
+            {
+              "chapter": "118",
+              "verse": "12"
+            },
+            {
+              "chapter": "118",
+              "verse": "13"
+            },
+            {
+              "chapter": "118",
+              "verse": "14"
+            },
+            {
+              "chapter": "118",
+              "verse": "15"
+            },
+            {
+              "chapter": "118",
+              "verse": "16"
+            },
+            {
+              "chapter": "118",
+              "verse": "17"
+            },
+            {
+              "chapter": "118",
+              "verse": "18"
+            },
+            {
+              "chapter": "118",
+              "verse": "19"
+            },
+            {
+              "chapter": "118",
+              "verse": "20"
+            },
+            {
+              "chapter": "118",
+              "verse": "21"
+            },
+            {
+              "chapter": "118",
+              "verse": "22"
+            },
+            {
+              "chapter": "118",
+              "verse": "23"
+            },
+            {
+              "chapter": "118",
+              "verse": "24"
+            },
+            {
+              "chapter": "118",
+              "verse": "25"
+            },
+            {
+              "chapter": "118",
+              "verse": "26"
+            },
+            {
+              "chapter": "118",
+              "verse": "27"
+            },
+            {
+              "chapter": "118",
+              "verse": "28"
+            },
+            {
+              "chapter": "118",
+              "verse": "29"
+            },
+            {
+              "chapter": "118",
+              "verse": "30"
+            },
+            {
+              "chapter": "118",
+              "verse": "31"
+            },
+            {
+              "chapter": "118",
+              "verse": "32"
+            },
+            {
+              "chapter": "118",
+              "verse": "33"
+            },
+            {
+              "chapter": "118",
+              "verse": "34"
+            },
+            {
+              "chapter": "118",
+              "verse": "35"
+            },
+            {
+              "chapter": "118",
+              "verse": "36"
+            },
+            {
+              "chapter": "118",
+              "verse": "37"
+            },
+            {
+              "chapter": "118",
+              "verse": "38"
+            },
+            {
+              "chapter": "118",
+              "verse": "39"
+            },
+            {
+              "chapter": "118",
+              "verse": "40"
+            },
+            {
+              "chapter": "118",
+              "verse": "41"
+            },
+            {
+              "chapter": "118",
+              "verse": "42"
+            },
+            {
+              "chapter": "118",
+              "verse": "43"
+            },
+            {
+              "chapter": "118",
+              "verse": "44"
+            },
+            {
+              "chapter": "118",
+              "verse": "45"
+            },
+            {
+              "chapter": "118",
+              "verse": "46"
+            },
+            {
+              "chapter": "118",
+              "verse": "47"
+            },
+            {
+              "chapter": "118",
+              "verse": "48"
+            },
+            {
+              "chapter": "118",
+              "verse": "49"
+            },
+            {
+              "chapter": "118",
+              "verse": "50"
+            },
+            {
+              "chapter": "118",
+              "verse": "51"
+            },
+            {
+              "chapter": "118",
+              "verse": "52"
+            },
+            {
+              "chapter": "118",
+              "verse": "53"
+            },
+            {
+              "chapter": "118",
+              "verse": "54"
+            },
+            {
+              "chapter": "118",
+              "verse": "55"
+            },
+            {
+              "chapter": "118",
+              "verse": "56"
+            },
+            {
+              "chapter": "118",
+              "verse": "57"
+            },
+            {
+              "chapter": "118",
+              "verse": "58"
+            },
+            {
+              "chapter": "118",
+              "verse": "59"
+            },
+            {
+              "chapter": "118",
+              "verse": "60"
+            },
+            {
+              "chapter": "118",
+              "verse": "61"
+            },
+            {
+              "chapter": "118",
+              "verse": "62"
+            },
+            {
+              "chapter": "118",
+              "verse": "63"
+            },
+            {
+              "chapter": "118",
+              "verse": "64"
+            },
+            {
+              "chapter": "118",
+              "verse": "65"
+            },
+            {
+              "chapter": "118",
+              "verse": "66"
+            },
+            {
+              "chapter": "118",
+              "verse": "67"
+            },
+            {
+              "chapter": "118",
+              "verse": "68"
+            },
+            {
+              "chapter": "118",
+              "verse": "69"
+            },
+            {
+              "chapter": "118",
+              "verse": "70"
+            },
+            {
+              "chapter": "118",
+              "verse": "71"
+            },
+            {
+              "chapter": "118",
+              "verse": "72"
+            },
+            {
+              "chapter": "118",
+              "verse": "73"
+            },
+            {
+              "chapter": "118",
+              "verse": "74"
+            },
+            {
+              "chapter": "118",
+              "verse": "75"
+            },
+            {
+              "chapter": "118",
+              "verse": "76"
+            },
+            {
+              "chapter": "118",
+              "verse": "77"
+            },
+            {
+              "chapter": "118",
+              "verse": "78"
+            },
+            {
+              "chapter": "118",
+              "verse": "79"
+            },
+            {
+              "chapter": "118",
+              "verse": "80"
+            },
+            {
+              "chapter": "118",
+              "verse": "81"
+            },
+            {
+              "chapter": "118",
+              "verse": "82"
+            },
+            {
+              "chapter": "118",
+              "verse": "83"
+            },
+            {
+              "chapter": "118",
+              "verse": "84"
+            },
+            {
+              "chapter": "118",
+              "verse": "85"
+            },
+            {
+              "chapter": "118",
+              "verse": "86"
+            },
+            {
+              "chapter": "118",
+              "verse": "87"
+            },
+            {
+              "chapter": "118",
+              "verse": "88"
+            },
+            {
+              "chapter": "118",
+              "verse": "89"
+            },
+            {
+              "chapter": "118",
+              "verse": "90"
+            },
+            {
+              "chapter": "118",
+              "verse": "91"
+            },
+            {
+              "chapter": "118",
+              "verse": "92"
+            },
+            {
+              "chapter": "118",
+              "verse": "93"
+            },
+            {
+              "chapter": "118",
+              "verse": "94"
+            },
+            {
+              "chapter": "118",
+              "verse": "95"
+            },
+            {
+              "chapter": "118",
+              "verse": "96"
+            },
+            {
+              "chapter": "118",
+              "verse": "97"
+            },
+            {
+              "chapter": "118",
+              "verse": "98"
+            },
+            {
+              "chapter": "118",
+              "verse": "99"
+            },
+            {
+              "chapter": "118",
+              "verse": "100"
+            },
+            {
+              "chapter": "118",
+              "verse": "101"
+            },
+            {
+              "chapter": "118",
+              "verse": "102"
+            },
+            {
+              "chapter": "118",
+              "verse": "103"
+            },
+            {
+              "chapter": "118",
+              "verse": "104"
+            },
+            {
+              "chapter": "118",
+              "verse": "105"
+            },
+            {
+              "chapter": "118",
+              "verse": "106"
+            },
+            {
+              "chapter": "118",
+              "verse": "107"
+            },
+            {
+              "chapter": "118",
+              "verse": "108"
+            },
+            {
+              "chapter": "118",
+              "verse": "109"
+            },
+            {
+              "chapter": "118",
+              "verse": "110"
+            },
+            {
+              "chapter": "118",
+              "verse": "111"
+            },
+            {
+              "chapter": "118",
+              "verse": "112"
+            },
+            {
+              "chapter": "118",
+              "verse": "113"
+            },
+            {
+              "chapter": "118",
+              "verse": "114"
+            },
+            {
+              "chapter": "118",
+              "verse": "115"
+            },
+            {
+              "chapter": "118",
+              "verse": "116"
+            },
+            {
+              "chapter": "118",
+              "verse": "117"
+            },
+            {
+              "chapter": "118",
+              "verse": "118"
+            },
+            {
+              "chapter": "118",
+              "verse": "119"
+            },
+            {
+              "chapter": "118",
+              "verse": "120"
+            },
+            {
+              "chapter": "118",
+              "verse": "121"
+            },
+            {
+              "chapter": "118",
+              "verse": "122"
+            },
+            {
+              "chapter": "118",
+              "verse": "123"
+            },
+            {
+              "chapter": "118",
+              "verse": "124"
+            },
+            {
+              "chapter": "118",
+              "verse": "125"
+            },
+            {
+              "chapter": "118",
+              "verse": "126"
+            },
+            {
+              "chapter": "118",
+              "verse": "127"
+            },
+            {
+              "chapter": "118",
+              "verse": "128"
+            },
+            {
+              "chapter": "118",
+              "verse": "129"
+            },
+            {
+              "chapter": "118",
+              "verse": "130"
+            },
+            {
+              "chapter": "118",
+              "verse": "131"
+            },
+            {
+              "chapter": "118",
+              "verse": "132"
+            },
+            {
+              "chapter": "118",
+              "verse": "133"
+            },
+            {
+              "chapter": "118",
+              "verse": "134"
+            },
+            {
+              "chapter": "118",
+              "verse": "135"
+            },
+            {
+              "chapter": "118",
+              "verse": "136"
+            },
+            {
+              "chapter": "118",
+              "verse": "137"
+            },
+            {
+              "chapter": "118",
+              "verse": "138"
+            },
+            {
+              "chapter": "118",
+              "verse": "139"
+            },
+            {
+              "chapter": "118",
+              "verse": "140"
+            },
+            {
+              "chapter": "118",
+              "verse": "141"
+            },
+            {
+              "chapter": "118",
+              "verse": "142"
+            },
+            {
+              "chapter": "118",
+              "verse": "143"
+            },
+            {
+              "chapter": "118",
+              "verse": "144"
+            },
+            {
+              "chapter": "118",
+              "verse": "145"
+            },
+            {
+              "chapter": "118",
+              "verse": "146"
+            },
+            {
+              "chapter": "118",
+              "verse": "147"
+            },
+            {
+              "chapter": "118",
+              "verse": "148"
+            },
+            {
+              "chapter": "118",
+              "verse": "149"
+            },
+            {
+              "chapter": "118",
+              "verse": "150"
+            },
+            {
+              "chapter": "118",
+              "verse": "151"
+            },
+            {
+              "chapter": "118",
+              "verse": "152"
+            },
+            {
+              "chapter": "118",
+              "verse": "153"
+            },
+            {
+              "chapter": "118",
+              "verse": "154"
+            },
+            {
+              "chapter": "118",
+              "verse": "155"
+            },
+            {
+              "chapter": "118",
+              "verse": "156"
+            },
+            {
+              "chapter": "118",
+              "verse": "157"
+            },
+            {
+              "chapter": "118",
+              "verse": "158"
+            },
+            {
+              "chapter": "118",
+              "verse": "159"
+            },
+            {
+              "chapter": "118",
+              "verse": "160"
+            },
+            {
+              "chapter": "118",
+              "verse": "161"
+            },
+            {
+              "chapter": "118",
+              "verse": "162"
+            },
+            {
+              "chapter": "118",
+              "verse": "163"
+            },
+            {
+              "chapter": "118",
+              "verse": "164"
+            },
+            {
+              "chapter": "118",
+              "verse": "165"
+            },
+            {
+              "chapter": "118",
+              "verse": "166"
+            },
+            {
+              "chapter": "118",
+              "verse": "167"
+            },
+            {
+              "chapter": "118",
+              "verse": "168"
+            },
+            {
+              "chapter": "118",
+              "verse": "169"
+            },
+            {
+              "chapter": "118",
+              "verse": "170"
+            },
+            {
+              "chapter": "118",
+              "verse": "171"
+            },
+            {
+              "chapter": "118",
+              "verse": "172"
+            },
+            {
+              "chapter": "118",
+              "verse": "173"
+            },
+            {
+              "chapter": "118",
+              "verse": "174"
+            },
+            {
+              "chapter": "118",
+              "verse": "175"
+            },
+            {
+              "chapter": "118",
+              "verse": "176"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "118",
+              "verse": "1"
+            },
+            {
+              "chapter": "118",
+              "verse": "2"
+            },
+            {
+              "chapter": "118",
+              "verse": "3"
+            },
+            {
+              "chapter": "118",
+              "verse": "4"
+            },
+            {
+              "chapter": "118",
+              "verse": "5"
+            },
+            {
+              "chapter": "118",
+              "verse": "6"
+            },
+            {
+              "chapter": "118",
+              "verse": "7"
+            },
+            {
+              "chapter": "118",
+              "verse": "8"
+            },
+            {
+              "chapter": "118",
+              "verse": "9"
+            },
+            {
+              "chapter": "118",
+              "verse": "10"
+            },
+            {
+              "chapter": "118",
+              "verse": "11"
+            },
+            {
+              "chapter": "118",
+              "verse": "12"
+            },
+            {
+              "chapter": "118",
+              "verse": "13"
+            },
+            {
+              "chapter": "118",
+              "verse": "14"
+            },
+            {
+              "chapter": "118",
+              "verse": "15"
+            },
+            {
+              "chapter": "118",
+              "verse": "16"
+            },
+            {
+              "chapter": "118",
+              "verse": "17"
+            },
+            {
+              "chapter": "118",
+              "verse": "18"
+            },
+            {
+              "chapter": "118",
+              "verse": "20"
+            },
+            {
+              "chapter": "118",
+              "verse": "21"
+            },
+            {
+              "chapter": "118",
+              "verse": "22"
+            },
+            {
+              "chapter": "118",
+              "verse": "23"
+            },
+            {
+              "chapter": "118",
+              "verse": "24"
+            },
+            {
+              "chapter": "118",
+              "verse": "25"
+            },
+            {
+              "chapter": "118",
+              "verse": "26"
+            },
+            {
+              "chapter": "118",
+              "verse": "27"
+            },
+            {
+              "chapter": "118",
+              "verse": "36"
+            },
+            {
+              "chapter": "118",
+              "verse": "37"
+            },
+            {
+              "chapter": "118",
+              "verse": "38"
+            },
+            {
+              "chapter": "118",
+              "verse": "39"
+            },
+            {
+              "chapter": "118",
+              "verse": "40"
+            },
+            {
+              "chapter": "118",
+              "verse": "41"
+            },
+            {
+              "chapter": "118",
+              "verse": "42"
+            },
+            {
+              "chapter": "118",
+              "verse": "43"
+            },
+            {
+              "chapter": "118",
+              "verse": "44"
+            },
+            {
+              "chapter": "118",
+              "verse": "45"
+            },
+            {
+              "chapter": "118",
+              "verse": "46"
+            },
+            {
+              "chapter": "118",
+              "verse": "47"
+            },
+            {
+              "chapter": "118",
+              "verse": "48"
+            },
+            {
+              "chapter": "118",
+              "verse": "49"
+            },
+            {
+              "chapter": "118",
+              "verse": "50"
+            },
+            {
+              "chapter": "118",
+              "verse": "52"
+            },
+            {
+              "chapter": "118",
+              "verse": "53"
+            },
+            {
+              "chapter": "118",
+              "verse": "54"
+            },
+            {
+              "chapter": "118",
+              "verse": "55"
+            },
+            {
+              "chapter": "118",
+              "verse": "56"
+            },
+            {
+              "chapter": "118",
+              "verse": "57"
+            },
+            {
+              "chapter": "118",
+              "verse": "58"
+            },
+            {
+              "chapter": "118",
+              "verse": "59"
+            },
+            {
+              "chapter": "118",
+              "verse": "60"
+            },
+            {
+              "chapter": "118",
+              "verse": "61"
+            },
+            {
+              "chapter": "118",
+              "verse": "62"
+            },
+            {
+              "chapter": "118",
+              "verse": "63"
+            },
+            {
+              "chapter": "118",
+              "verse": "64"
+            },
+            {
+              "chapter": "118",
+              "verse": "65"
+            },
+            {
+              "chapter": "118",
+              "verse": "66"
+            },
+            {
+              "chapter": "118",
+              "verse": "67"
+            },
+            {
+              "chapter": "118",
+              "verse": "68"
+            },
+            {
+              "chapter": "118",
+              "verse": "69"
+            },
+            {
+              "chapter": "118",
+              "verse": "70"
+            },
+            {
+              "chapter": "118",
+              "verse": "71"
+            },
+            {
+              "chapter": "118",
+              "verse": "72"
+            },
+            {
+              "chapter": "118",
+              "verse": "73"
+            },
+            {
+              "chapter": "118",
+              "verse": "74"
+            },
+            {
+              "chapter": "118",
+              "verse": "75"
+            },
+            {
+              "chapter": "118",
+              "verse": "76"
+            },
+            {
+              "chapter": "118",
+              "verse": "77"
+            },
+            {
+              "chapter": "118",
+              "verse": "78"
+            },
+            {
+              "chapter": "118",
+              "verse": "79"
+            },
+            {
+              "chapter": "118",
+              "verse": "80"
+            },
+            {
+              "chapter": "118",
+              "verse": "81"
+            },
+            {
+              "chapter": "118",
+              "verse": "82"
+            },
+            {
+              "chapter": "118",
+              "verse": "83"
+            },
+            {
+              "chapter": "118",
+              "verse": "84"
+            },
+            {
+              "chapter": "118",
+              "verse": "85"
+            },
+            {
+              "chapter": "118",
+              "verse": "86"
+            },
+            {
+              "chapter": "118",
+              "verse": "87"
+            },
+            {
+              "chapter": "118",
+              "verse": "88"
+            },
+            {
+              "chapter": "118",
+              "verse": "89"
+            },
+            {
+              "chapter": "118",
+              "verse": "90"
+            },
+            {
+              "chapter": "118",
+              "verse": "91"
+            },
+            {
+              "chapter": "118",
+              "verse": "92"
+            },
+            {
+              "chapter": "118",
+              "verse": "93"
+            },
+            {
+              "chapter": "118",
+              "verse": "94"
+            },
+            {
+              "chapter": "118",
+              "verse": "95"
+            },
+            {
+              "chapter": "118",
+              "verse": "96"
+            },
+            {
+              "chapter": "118",
+              "verse": "97"
+            },
+            {
+              "chapter": "118",
+              "verse": "98"
+            },
+            {
+              "chapter": "118",
+              "verse": "99"
+            },
+            {
+              "chapter": "118",
+              "verse": "100"
+            },
+            {
+              "chapter": "118",
+              "verse": "101"
+            },
+            {
+              "chapter": "118",
+              "verse": "102"
+            },
+            {
+              "chapter": "118",
+              "verse": "103"
+            },
+            {
+              "chapter": "118",
+              "verse": "104"
+            },
+            {
+              "chapter": "118",
+              "verse": "105"
+            },
+            {
+              "chapter": "118",
+              "verse": "106"
+            },
+            {
+              "chapter": "118",
+              "verse": "107"
+            },
+            {
+              "chapter": "118",
+              "verse": "108"
+            },
+            {
+              "chapter": "118",
+              "verse": "109"
+            },
+            {
+              "chapter": "118",
+              "verse": "110"
+            },
+            {
+              "chapter": "118",
+              "verse": "111"
+            },
+            {
+              "chapter": "118",
+              "verse": "112"
+            },
+            {
+              "chapter": "118",
+              "verse": "113"
+            },
+            {
+              "chapter": "118",
+              "verse": "114"
+            },
+            {
+              "chapter": "118",
+              "verse": "115"
+            },
+            {
+              "chapter": "118",
+              "verse": "116"
+            },
+            {
+              "chapter": "118",
+              "verse": "117"
+            },
+            {
+              "chapter": "118",
+              "verse": "118"
+            },
+            {
+              "chapter": "118",
+              "verse": "119"
+            },
+            {
+              "chapter": "118",
+              "verse": "120"
+            },
+            {
+              "chapter": "118",
+              "verse": "121"
+            },
+            {
+              "chapter": "118",
+              "verse": "122"
+            },
+            {
+              "chapter": "118",
+              "verse": "123"
+            },
+            {
+              "chapter": "118",
+              "verse": "124"
+            },
+            {
+              "chapter": "118",
+              "verse": "125"
+            },
+            {
+              "chapter": "118",
+              "verse": "126"
+            },
+            {
+              "chapter": "118",
+              "verse": "127"
+            },
+            {
+              "chapter": "118",
+              "verse": "128"
+            },
+            {
+              "chapter": "118",
+              "verse": "129"
+            },
+            {
+              "chapter": "118",
+              "verse": "130"
+            },
+            {
+              "chapter": "118",
+              "verse": "31"
+            },
+            {
+              "chapter": "118",
+              "verse": "132"
+            },
+            {
+              "chapter": "118",
+              "verse": "33"
+            },
+            {
+              "chapter": "118",
+              "verse": "134"
+            },
+            {
+              "chapter": "118",
+              "verse": "135"
+            },
+            {
+              "chapter": "118",
+              "verse": "136"
+            },
+            {
+              "chapter": "118",
+              "verse": "137"
+            },
+            {
+              "chapter": "118",
+              "verse": "138"
+            },
+            {
+              "chapter": "118",
+              "verse": "139"
+            },
+            {
+              "chapter": "118",
+              "verse": "140"
+            },
+            {
+              "chapter": "118",
+              "verse": "141"
+            },
+            {
+              "chapter": "118",
+              "verse": "142"
+            },
+            {
+              "chapter": "118",
+              "verse": "143"
+            },
+            {
+              "chapter": "118",
+              "verse": "144"
+            },
+            {
+              "chapter": "118",
+              "verse": "145"
+            },
+            {
+              "chapter": "118",
+              "verse": "146"
+            },
+            {
+              "chapter": "118",
+              "verse": "147"
+            },
+            {
+              "chapter": "118",
+              "verse": "148"
+            },
+            {
+              "chapter": "118",
+              "verse": "149"
+            },
+            {
+              "chapter": "118",
+              "verse": "150"
+            },
+            {
+              "chapter": "118",
+              "verse": "151"
+            },
+            {
+              "chapter": "118",
+              "verse": "152"
+            },
+            {
+              "chapter": "118",
+              "verse": "153"
+            },
+            {
+              "chapter": "118",
+              "verse": "154"
+            },
+            {
+              "chapter": "118",
+              "verse": "155"
+            },
+            {
+              "chapter": "118",
+              "verse": "156"
+            },
+            {
+              "chapter": "118",
+              "verse": "157"
+            },
+            {
+              "chapter": "118",
+              "verse": "158"
+            },
+            {
+              "chapter": "118",
+              "verse": "159"
+            },
+            {
+              "chapter": "118",
+              "verse": "160"
+            },
+            {
+              "chapter": "118",
+              "verse": "161"
+            },
+            {
+              "chapter": "118",
+              "verse": "162"
+            },
+            {
+              "chapter": "118",
+              "verse": "163"
+            },
+            {
+              "chapter": "118",
+              "verse": "164"
+            },
+            {
+              "chapter": "118",
+              "verse": "165"
+            },
+            {
+              "chapter": "118",
+              "verse": "166"
+            },
+            {
+              "chapter": "118",
+              "verse": "167"
+            },
+            {
+              "chapter": "118",
+              "verse": "168"
+            },
+            {
+              "chapter": "118",
+              "verse": "169"
+            },
+            {
+              "chapter": "118",
+              "verse": "170"
+            },
+            {
+              "chapter": "118",
+              "verse": "171"
+            },
+            {
+              "chapter": "118",
+              "verse": "172"
+            },
+            {
+              "chapter": "118",
+              "verse": "173"
+            },
+            {
+              "chapter": "118",
+              "verse": "174"
+            },
+            {
+              "chapter": "118",
+              "verse": "175"
+            },
+            {
+              "chapter": "118",
+              "verse": "176"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 118 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "119",
+      "segments": [
+        {
+          "id": "PSA-119-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "119",
+              "verse": "1"
+            },
+            {
+              "chapter": "119",
+              "verse": "2"
+            },
+            {
+              "chapter": "119",
+              "verse": "3"
+            },
+            {
+              "chapter": "119",
+              "verse": "4"
+            },
+            {
+              "chapter": "119",
+              "verse": "5"
+            },
+            {
+              "chapter": "119",
+              "verse": "6"
+            },
+            {
+              "chapter": "119",
+              "verse": "7"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "119",
+              "verse": "1"
+            },
+            {
+              "chapter": "119",
+              "verse": "2"
+            },
+            {
+              "chapter": "119",
+              "verse": "3"
+            },
+            {
+              "chapter": "119",
+              "verse": "5"
+            },
+            {
+              "chapter": "119",
+              "verse": "6"
+            },
+            {
+              "chapter": "119",
+              "verse": "7"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 119 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "125",
+      "segments": [
+        {
+          "id": "PSA-125-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "125",
+              "verse": "1"
+            },
+            {
+              "chapter": "125",
+              "verse": "2"
+            },
+            {
+              "chapter": "125",
+              "verse": "3"
+            },
+            {
+              "chapter": "125",
+              "verse": "4"
+            },
+            {
+              "chapter": "125",
+              "verse": "5"
+            },
+            {
+              "chapter": "125",
+              "verse": "6"
+            },
+            {
+              "chapter": "125",
+              "verse": "7"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "125",
+              "verse": "1"
+            },
+            {
+              "chapter": "125",
+              "verse": "2"
+            },
+            {
+              "chapter": "125",
+              "verse": "3"
+            },
+            {
+              "chapter": "125",
+              "verse": "4"
+            },
+            {
+              "chapter": "125",
+              "verse": "5"
+            },
+            {
+              "chapter": "125",
+              "verse": "6"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 125 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "129",
+      "segments": [
+        {
+          "id": "PSA-129-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "129",
+              "verse": "1"
+            },
+            {
+              "chapter": "129",
+              "verse": "2"
+            },
+            {
+              "chapter": "129",
+              "verse": "3"
+            },
+            {
+              "chapter": "129",
+              "verse": "4"
+            },
+            {
+              "chapter": "129",
+              "verse": "5"
+            },
+            {
+              "chapter": "129",
+              "verse": "6"
+            },
+            {
+              "chapter": "129",
+              "verse": "7"
+            },
+            {
+              "chapter": "129",
+              "verse": "8"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "129",
+              "verse": "1"
+            },
+            {
+              "chapter": "129",
+              "verse": "2"
+            },
+            {
+              "chapter": "129",
+              "verse": "3"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 129 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "135",
+      "segments": [
+        {
+          "id": "PSA-135-greek-lxx-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "135",
+              "verse": "1"
+            },
+            {
+              "chapter": "135",
+              "verse": "2"
+            },
+            {
+              "chapter": "135",
+              "verse": "3"
+            },
+            {
+              "chapter": "135",
+              "verse": "4"
+            },
+            {
+              "chapter": "135",
+              "verse": "5"
+            },
+            {
+              "chapter": "135",
+              "verse": "6"
+            },
+            {
+              "chapter": "135",
+              "verse": "7"
+            },
+            {
+              "chapter": "135",
+              "verse": "8"
+            },
+            {
+              "chapter": "135",
+              "verse": "9"
+            },
+            {
+              "chapter": "135",
+              "verse": "10"
+            },
+            {
+              "chapter": "135",
+              "verse": "11"
+            },
+            {
+              "chapter": "135",
+              "verse": "12"
+            },
+            {
+              "chapter": "135",
+              "verse": "13"
+            },
+            {
+              "chapter": "135",
+              "verse": "14"
+            },
+            {
+              "chapter": "135",
+              "verse": "15"
+            },
+            {
+              "chapter": "135",
+              "verse": "16"
+            },
+            {
+              "chapter": "135",
+              "verse": "17"
+            },
+            {
+              "chapter": "135",
+              "verse": "18"
+            },
+            {
+              "chapter": "135",
+              "verse": "19"
+            },
+            {
+              "chapter": "135",
+              "verse": "20"
+            },
+            {
+              "chapter": "135",
+              "verse": "21"
+            },
+            {
+              "chapter": "135",
+              "verse": "22"
+            },
+            {
+              "chapter": "135",
+              "verse": "23"
+            },
+            {
+              "chapter": "135",
+              "verse": "24"
+            },
+            {
+              "chapter": "135",
+              "verse": "25"
+            },
+            {
+              "chapter": "135",
+              "verse": "26"
+            },
+            {
+              "chapter": "135",
+              "verse": "27"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "135",
+              "verse": "1"
+            },
+            {
+              "chapter": "135",
+              "verse": "2"
+            },
+            {
+              "chapter": "135",
+              "verse": "3"
+            },
+            {
+              "chapter": "135",
+              "verse": "4"
+            },
+            {
+              "chapter": "135",
+              "verse": "5"
+            },
+            {
+              "chapter": "135",
+              "verse": "6"
+            },
+            {
+              "chapter": "135",
+              "verse": "7"
+            },
+            {
+              "chapter": "135",
+              "verse": "8"
+            },
+            {
+              "chapter": "135",
+              "verse": "9"
+            },
+            {
+              "chapter": "135",
+              "verse": "10"
+            },
+            {
+              "chapter": "135",
+              "verse": "11"
+            },
+            {
+              "chapter": "135",
+              "verse": "12"
+            },
+            {
+              "chapter": "135",
+              "verse": "13"
+            },
+            {
+              "chapter": "135",
+              "verse": "14"
+            },
+            {
+              "chapter": "135",
+              "verse": "15"
+            },
+            {
+              "chapter": "135",
+              "verse": "16"
+            },
+            {
+              "chapter": "135",
+              "verse": "17"
+            },
+            {
+              "chapter": "135",
+              "verse": "18"
+            },
+            {
+              "chapter": "135",
+              "verse": "19"
+            },
+            {
+              "chapter": "135",
+              "verse": "20"
+            },
+            {
+              "chapter": "135",
+              "verse": "21"
+            },
+            {
+              "chapter": "135",
+              "verse": "22"
+            },
+            {
+              "chapter": "135",
+              "verse": "24"
+            },
+            {
+              "chapter": "135",
+              "verse": "25"
+            },
+            {
+              "chapter": "135",
+              "verse": "26"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims/Vulgate Psalm 135 and the pinned Swete LXX preserve the same psalm locus while retaining different native title/verse segmentation. The full Swete source inventory is linked as a verified range without fabricating Greek boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "151",
+      "segments": [
+        {
+          "id": "PSA-151-greek-lxx-range",
+          "relationship": "source-only",
+          "canonical_refs": [],
+          "source_refs": [
+            {
+              "chapter": "151",
+              "verse": "1"
+            },
+            {
+              "chapter": "151",
+              "verse": "2"
+            },
+            {
+              "chapter": "151",
+              "verse": "3"
+            },
+            {
+              "chapter": "151",
+              "verse": "4"
+            },
+            {
+              "chapter": "151",
+              "verse": "5"
+            },
+            {
+              "chapter": "151",
+              "verse": "6"
+            },
+            {
+              "chapter": "151",
+              "verse": "7"
+            }
+          ],
+          "evidence": {
+            "citation": "The pinned Swete LXX contains Psalm 151 as a source-only psalm with seven native source verse divisions. The Douay-Rheims 1899 canonical inventory has no Psalm 151 counterpart, so the source locus is preserved without fabricating canonical references or verse boundaries."
+          }
+        }
+      ]
+    }
+  ]
+}
