@@ -325,8 +325,8 @@
         "greek-ot-morphology"
       ],
       "language": "grc",
-      "status": "validated-source-inventory",
-      "production_import_allowed": false,
+      "status": "approved-for-ingestion",
+      "production_import_allowed": true,
       "license_verified": true,
       "source_inventory_verified": true,
       "rights": "cc-by-4.0-morphology-on-public-domain-rahlfs-text",
@@ -337,7 +337,7 @@
         "value": "c91f6b1e8fb3ba37df701e6ae31f675ace71a2b2"
       },
       "integrity": {
-        "status": "verified-pinned-sourcehut-archive",
+        "status": "verified-production-source",
         "archive_url": "https://git.sr.ht/~sethkush/lxx-morph/archive/c91f6b1e8fb3ba37df701e6ae31f675ace71a2b2.tar.gz",
         "archive_sha256": "b3c4861f47152ea8fab7d3ed78d807a9a0c2b35d07f2cb64fa9deefd6ac960a9",
         "archive_size_bytes": 63301390,
@@ -345,7 +345,7 @@
         "data_path": "db/seeds/lxx_morph/",
         "license_path": "LICENSE-DATA",
         "license_scope_verified": true,
-        "note": "CI retrieved the exact pinned revision and verified that LICENSE-DATA applies CC BY 4.0 to db/seeds/lxx_morph/. Production remains disabled until the generated 46-book Catholic validation corpus passes."
+        "note": "Pinned archive, CC BY 4.0 data scope, exact Catholic 46-book component selection, and a 542,394-token validation build have passed CI. Runtime must retain Rahlfs as a separate witness from Swete/Open Greek."
       },
       "edition": {
         "text": "Rahlfs Septuagint (1935)",
