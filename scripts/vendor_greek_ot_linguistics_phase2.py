@@ -128,7 +128,9 @@ def members_by_suffix(tf: tarfile.TarFile) -> dict[str, tarfile.TarInfo]:
             raise BuildError(f"unsafe archive path: {member.name}")
         for suffix in ("LICENSE-DATA", "README.md"):
             if member.name.endswith("/" + suffix):
-                output[suffix] = member
+                current = output.get(suffix)
+                if current is None or len(PurePosixPath(member.name).parts) < len(PurePosixPath(current.name).parts):
+                    output[suffix] = member
         if "/db/seeds/lxx_morph/" in member.name:
             rel = member.name.split("/db/seeds/lxx_morph/", 1)[1]
             if "/" not in rel and rel.endswith(".json"):
