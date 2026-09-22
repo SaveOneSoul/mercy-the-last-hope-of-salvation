@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 17,
-    "books_resolved": 56,
-    "unresolved_lane_count": 36,
-    "verified_registry_lane_count": 44,
+    "books_unresolved": 16,
+    "books_resolved": 57,
+    "unresolved_lane_count": 34,
+    "verified_registry_lane_count": 46,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -110,27 +110,53 @@
       "id": "LEV",
       "book": "Leviticus",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-lev-semitic-v1",
+          "file": "maps/LEV-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "5",
+            "6",
+            "26"
+          ],
+          "audited_mismatch_chapters": [
+            "5",
+            "6",
+            "26"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "5",
             "6",
             "26"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-lev-greek-v1",
+          "file": "maps/LEV-greek-first1k-swete.json",
+          "covered_chapters": [
+            "6",
+            "7",
+            "26"
+          ],
+          "audited_mismatch_chapters": [
+            "6",
+            "7",
+            "26"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "6",
             "7",
             "26"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
