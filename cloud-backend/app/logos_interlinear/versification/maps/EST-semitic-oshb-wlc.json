@@ -1,0 +1,606 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.22-est-semitic-v1",
+  "status": "verified",
+  "book_id": "EST",
+  "book": "Esther",
+  "lane": "semitic",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "oshb",
+    "reference_system": "oshb-wlc-osis",
+    "corpus_id": "heb_arc_oshb_wlc",
+    "corpus_version": "2026.09.16-oshb-wlc-39"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "10",
+      "segments": [
+        {
+          "id": "EST-10-1-3-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "10",
+              "verse": "1"
+            },
+            {
+              "chapter": "10",
+              "verse": "2"
+            },
+            {
+              "chapter": "10",
+              "verse": "3"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "10",
+              "verse": "1"
+            },
+            {
+              "chapter": "10",
+              "verse": "2"
+            },
+            {
+              "chapter": "10",
+              "verse": "3"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and OSHB/WLC Esther 10:1-3 preserve the same numbered source records."
+          }
+        },
+        {
+          "id": "EST-10-4-13-semitic-catholic-addition",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "10",
+              "verse": "4"
+            },
+            {
+              "chapter": "10",
+              "verse": "5"
+            },
+            {
+              "chapter": "10",
+              "verse": "6"
+            },
+            {
+              "chapter": "10",
+              "verse": "7"
+            },
+            {
+              "chapter": "10",
+              "verse": "8"
+            },
+            {
+              "chapter": "10",
+              "verse": "9"
+            },
+            {
+              "chapter": "10",
+              "verse": "10"
+            },
+            {
+              "chapter": "10",
+              "verse": "11"
+            },
+            {
+              "chapter": "10",
+              "verse": "12"
+            },
+            {
+              "chapter": "10",
+              "verse": "13"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "Pinned OSHB/WLC Esther ends chapter 10 at verse 3; Douay-Rheims Esther 10 continues through verse 13. These Catholic addition verses therefore have no Semitic source records in the pinned OSHB/WLC witness."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "11",
+      "segments": [
+        {
+          "id": "EST-11-1-12-semitic-catholic-addition",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "1"
+            },
+            {
+              "chapter": "11",
+              "verse": "2"
+            },
+            {
+              "chapter": "11",
+              "verse": "3"
+            },
+            {
+              "chapter": "11",
+              "verse": "4"
+            },
+            {
+              "chapter": "11",
+              "verse": "5"
+            },
+            {
+              "chapter": "11",
+              "verse": "6"
+            },
+            {
+              "chapter": "11",
+              "verse": "7"
+            },
+            {
+              "chapter": "11",
+              "verse": "8"
+            },
+            {
+              "chapter": "11",
+              "verse": "9"
+            },
+            {
+              "chapter": "11",
+              "verse": "10"
+            },
+            {
+              "chapter": "11",
+              "verse": "11"
+            },
+            {
+              "chapter": "11",
+              "verse": "12"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "Pinned OSHB/WLC Esther contains no chapter 11; Douay-Rheims Esther 11:1-12 is part of the Catholic additions. No Hebrew text or verse boundary is synthesized."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "12",
+      "segments": [
+        {
+          "id": "EST-12-1-6-semitic-catholic-addition",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "12",
+              "verse": "1"
+            },
+            {
+              "chapter": "12",
+              "verse": "2"
+            },
+            {
+              "chapter": "12",
+              "verse": "3"
+            },
+            {
+              "chapter": "12",
+              "verse": "4"
+            },
+            {
+              "chapter": "12",
+              "verse": "5"
+            },
+            {
+              "chapter": "12",
+              "verse": "6"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "Pinned OSHB/WLC Esther contains no chapter 12; Douay-Rheims Esther 12:1-6 is part of the Catholic additions. No Hebrew text or verse boundary is synthesized."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "13",
+      "segments": [
+        {
+          "id": "EST-13-1-18-semitic-catholic-addition",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "13",
+              "verse": "1"
+            },
+            {
+              "chapter": "13",
+              "verse": "2"
+            },
+            {
+              "chapter": "13",
+              "verse": "3"
+            },
+            {
+              "chapter": "13",
+              "verse": "4"
+            },
+            {
+              "chapter": "13",
+              "verse": "5"
+            },
+            {
+              "chapter": "13",
+              "verse": "6"
+            },
+            {
+              "chapter": "13",
+              "verse": "7"
+            },
+            {
+              "chapter": "13",
+              "verse": "8"
+            },
+            {
+              "chapter": "13",
+              "verse": "9"
+            },
+            {
+              "chapter": "13",
+              "verse": "10"
+            },
+            {
+              "chapter": "13",
+              "verse": "11"
+            },
+            {
+              "chapter": "13",
+              "verse": "12"
+            },
+            {
+              "chapter": "13",
+              "verse": "13"
+            },
+            {
+              "chapter": "13",
+              "verse": "14"
+            },
+            {
+              "chapter": "13",
+              "verse": "15"
+            },
+            {
+              "chapter": "13",
+              "verse": "16"
+            },
+            {
+              "chapter": "13",
+              "verse": "17"
+            },
+            {
+              "chapter": "13",
+              "verse": "18"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "Pinned OSHB/WLC Esther contains no chapter 13; Douay-Rheims Esther 13:1-18 is part of the Catholic additions. No Hebrew text or verse boundary is synthesized."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "14",
+      "segments": [
+        {
+          "id": "EST-14-1-19-semitic-catholic-addition",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "14",
+              "verse": "1"
+            },
+            {
+              "chapter": "14",
+              "verse": "2"
+            },
+            {
+              "chapter": "14",
+              "verse": "3"
+            },
+            {
+              "chapter": "14",
+              "verse": "4"
+            },
+            {
+              "chapter": "14",
+              "verse": "5"
+            },
+            {
+              "chapter": "14",
+              "verse": "6"
+            },
+            {
+              "chapter": "14",
+              "verse": "7"
+            },
+            {
+              "chapter": "14",
+              "verse": "8"
+            },
+            {
+              "chapter": "14",
+              "verse": "9"
+            },
+            {
+              "chapter": "14",
+              "verse": "10"
+            },
+            {
+              "chapter": "14",
+              "verse": "11"
+            },
+            {
+              "chapter": "14",
+              "verse": "12"
+            },
+            {
+              "chapter": "14",
+              "verse": "13"
+            },
+            {
+              "chapter": "14",
+              "verse": "14"
+            },
+            {
+              "chapter": "14",
+              "verse": "15"
+            },
+            {
+              "chapter": "14",
+              "verse": "16"
+            },
+            {
+              "chapter": "14",
+              "verse": "17"
+            },
+            {
+              "chapter": "14",
+              "verse": "18"
+            },
+            {
+              "chapter": "14",
+              "verse": "19"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "Pinned OSHB/WLC Esther contains no chapter 14; Douay-Rheims Esther 14:1-19 is part of the Catholic additions. No Hebrew text or verse boundary is synthesized."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "15",
+      "segments": [
+        {
+          "id": "EST-15-1-19-semitic-catholic-addition",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "15",
+              "verse": "1"
+            },
+            {
+              "chapter": "15",
+              "verse": "2"
+            },
+            {
+              "chapter": "15",
+              "verse": "3"
+            },
+            {
+              "chapter": "15",
+              "verse": "4"
+            },
+            {
+              "chapter": "15",
+              "verse": "5"
+            },
+            {
+              "chapter": "15",
+              "verse": "6"
+            },
+            {
+              "chapter": "15",
+              "verse": "7"
+            },
+            {
+              "chapter": "15",
+              "verse": "8"
+            },
+            {
+              "chapter": "15",
+              "verse": "9"
+            },
+            {
+              "chapter": "15",
+              "verse": "10"
+            },
+            {
+              "chapter": "15",
+              "verse": "11"
+            },
+            {
+              "chapter": "15",
+              "verse": "12"
+            },
+            {
+              "chapter": "15",
+              "verse": "13"
+            },
+            {
+              "chapter": "15",
+              "verse": "14"
+            },
+            {
+              "chapter": "15",
+              "verse": "15"
+            },
+            {
+              "chapter": "15",
+              "verse": "16"
+            },
+            {
+              "chapter": "15",
+              "verse": "17"
+            },
+            {
+              "chapter": "15",
+              "verse": "18"
+            },
+            {
+              "chapter": "15",
+              "verse": "19"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "Pinned OSHB/WLC Esther contains no chapter 15; Douay-Rheims Esther 15:1-19 is part of the Catholic additions. No Hebrew text or verse boundary is synthesized."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "16",
+      "segments": [
+        {
+          "id": "EST-16-1-24-semitic-catholic-addition",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "16",
+              "verse": "1"
+            },
+            {
+              "chapter": "16",
+              "verse": "2"
+            },
+            {
+              "chapter": "16",
+              "verse": "3"
+            },
+            {
+              "chapter": "16",
+              "verse": "4"
+            },
+            {
+              "chapter": "16",
+              "verse": "5"
+            },
+            {
+              "chapter": "16",
+              "verse": "6"
+            },
+            {
+              "chapter": "16",
+              "verse": "7"
+            },
+            {
+              "chapter": "16",
+              "verse": "8"
+            },
+            {
+              "chapter": "16",
+              "verse": "9"
+            },
+            {
+              "chapter": "16",
+              "verse": "10"
+            },
+            {
+              "chapter": "16",
+              "verse": "11"
+            },
+            {
+              "chapter": "16",
+              "verse": "12"
+            },
+            {
+              "chapter": "16",
+              "verse": "13"
+            },
+            {
+              "chapter": "16",
+              "verse": "14"
+            },
+            {
+              "chapter": "16",
+              "verse": "15"
+            },
+            {
+              "chapter": "16",
+              "verse": "16"
+            },
+            {
+              "chapter": "16",
+              "verse": "17"
+            },
+            {
+              "chapter": "16",
+              "verse": "18"
+            },
+            {
+              "chapter": "16",
+              "verse": "19"
+            },
+            {
+              "chapter": "16",
+              "verse": "20"
+            },
+            {
+              "chapter": "16",
+              "verse": "21"
+            },
+            {
+              "chapter": "16",
+              "verse": "22"
+            },
+            {
+              "chapter": "16",
+              "verse": "23"
+            },
+            {
+              "chapter": "16",
+              "verse": "24"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "Pinned OSHB/WLC Esther contains no chapter 16; Douay-Rheims Esther 16:1-24 is part of the Catholic additions. No Hebrew text or verse boundary is synthesized."
+          }
+        }
+      ]
+    }
+  ]
+}
