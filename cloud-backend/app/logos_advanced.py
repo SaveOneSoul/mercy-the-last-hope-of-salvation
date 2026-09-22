@@ -6,6 +6,7 @@ from .logos_context import ADVANCED_AI_THEMES, build_background, build_chronolog
 from .logos_greek import router as logos_greek_router
 from .logos_ot_greek import router as logos_ot_greek_router
 from .logos_ot_greek_full import router as logos_ot_greek_full_router
+from .logos_ot_greek_linguistics import router as logos_ot_greek_linguistics_router
 from .logos_ot_interlinear import router as logos_ot_interlinear_router
 from .logos_ot_latin import router as logos_ot_latin_router
 from .logos_ot_semitic import router as logos_ot_semitic_router
@@ -16,6 +17,7 @@ router = APIRouter(prefix="/api/logos", tags=["Logos Advanced Study"])
 router.include_router(logos_greek_router)
 router.include_router(logos_ot_greek_router)
 router.include_router(logos_ot_greek_full_router)
+router.include_router(logos_ot_greek_linguistics_router)
 router.include_router(logos_ot_semitic_router)
 router.include_router(logos_ot_latin_router)
 router.include_router(logos_ot_interlinear_router)
