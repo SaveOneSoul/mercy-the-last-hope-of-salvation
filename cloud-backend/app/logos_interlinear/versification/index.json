@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.22-v34",
+  "registry_version": "2026.09.22-v35",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -296,6 +296,18 @@
       "lane": "semitic",
       "status": "verified",
       "file": "maps/LEV-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "1SA",
+      "lane": "semitic",
+      "status": "verified",
+      "file": "maps/1SA-semitic-oshb-wlc.json"
+    },
+    {
+      "book_id": "1SA",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/1SA-greek-first1k-swete.json"
     }
   ]
 }
