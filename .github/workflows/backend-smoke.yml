@@ -147,8 +147,8 @@ jobs:
               assert ot_semitic['versification']['automatic_remapping'] is False
 
           registry = registry_summary()
-          assert registry['verified_mapping_count'] >= 39
-          assert registry['verified_book_count'] >= 26
+          assert registry['verified_mapping_count'] >= 41
+          assert registry['verified_book_count'] >= 27
 
           judith = _latin_study_payload('Judith 4')
           assert judith['alignment']['mode'] == 'verified-explicit-map'
@@ -945,5 +945,47 @@ jobs:
               assert [(row['source_chapter'], row['source_verse']) for row in sng4g[canonical]['source_verses']] == [('4', '7')]
           assert [(row['source_chapter'], row['source_verse']) for row in sng4g[9]['source_verses']] == [('4', '9')]
 
-          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including Song of Songs, Daniel, Ezra, 2 Kings, 2 Samuel, John, 2 Thessalonians, Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
+          hosea_semitic_1 = _semitic_study_payload('Hosea 1')
+          assert hosea_semitic_1['alignment']['mode'] == 'verified-explicit-map'
+          hos1s = {row['verse']: row for row in hosea_semitic_1['verses']}
+          assert [(row['chapter'], row['verse']) for row in hos1s[9]['source_verses']] == [(1, 9)]
+          assert [(row['chapter'], row['verse']) for row in hos1s[10]['source_verses']] == [(2, 1)]
+          assert [(row['chapter'], row['verse']) for row in hos1s[11]['source_verses']] == [(2, 2)]
+
+          hosea_semitic_2 = _semitic_study_payload('Hosea 2')
+          assert len(hosea_semitic_2['verses']) == 24
+          hos2s = {row['verse']: row for row in hosea_semitic_2['verses']}
+          assert [(row['chapter'], row['verse']) for row in hos2s[1]['source_verses']] == [(2, 3)]
+          assert [(row['chapter'], row['verse']) for row in hos2s[22]['source_verses']] == [(2, 24)]
+          for canonical in (23, 24):
+              assert hos2s[canonical]['mapping_relationship'] == 'split'
+              assert [(row['chapter'], row['verse']) for row in hos2s[canonical]['source_verses']] == [(2, 25)]
+
+          hosea_semitic_10 = _semitic_study_payload('Hosea 10')
+          assert hosea_semitic_10['alignment']['mode'] == 'verified-explicit-map'
+          assert hosea_semitic_10['alignment']['numeric_identifier_identity'] is True
+          hos10s = {row['verse']: row for row in hosea_semitic_10['verses']}
+          assert [(row['chapter'], row['verse']) for row in hos10s[15]['source_verses']] == [(10, 15)]
+
+          hosea_semitic_11 = _semitic_study_payload('Hosea 11')
+          hos11s = {row['verse']: row for row in hosea_semitic_11['verses']}
+          assert hos11s[1]['mapping_relationship'] == 'merge'
+          assert [(row['chapter'], row['verse']) for row in hos11s[1]['source_verses']] == [(10, 15), (11, 1)]
+          assert [(row['chapter'], row['verse']) for row in hos11s[11]['source_verses']] == [(11, 11)]
+          assert [(row['chapter'], row['verse']) for row in hos11s[12]['source_verses']] == [(12, 1)]
+
+          hosea_semitic_12 = _semitic_study_payload('Hosea 12')
+          hos12s = {row['verse']: row for row in hosea_semitic_12['verses']}
+          assert [(row['chapter'], row['verse']) for row in hos12s[1]['source_verses']] == [(12, 2)]
+          assert [(row['chapter'], row['verse']) for row in hos12s[14]['source_verses']] == [(12, 15)]
+
+          hosea_greek_2 = _full_greek_study_payload('Hosea 2')
+          assert len(hosea_greek_2['verses']) == 24
+          hos2g = {row['verse']: row for row in hosea_greek_2['verses']}
+          assert [(row['source_chapter'], row['source_verse']) for row in hos2g[22]['source_verses']] == [('2', '22')]
+          for canonical in (23, 24):
+              assert hos2g[canonical]['mapping_relationship'] == 'split'
+              assert [(row['source_chapter'], row['source_verse']) for row in hos2g[canonical]['source_verses']] == [('2', '23')]
+
+          print('Mercy backend CMS SEO + Logos 73-book interlinear + verified OT/NT source versification including Hosea, Song of Songs, Daniel, Ezra, 2 Kings, 2 Samuel, John, 2 Thessalonians, Romans, 3 John, 1 Thessalonians, Luke, and Matthew + prayer/Mass/priest portal smoke test passed')
           PY
