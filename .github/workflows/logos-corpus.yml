@@ -62,9 +62,6 @@ jobs:
           python tools/validate_logos_greek_ot_linguistics_phase2.py
           python tools/validate_logos_versification.py
 
-      - name: Discover pinned lxx-morph source inventory
-        run: python tools/probe_logos_lxx_morph_source.py
-
       - name: Compile Logos runtime modules
         run: |
           python -m py_compile \
@@ -79,7 +76,14 @@ jobs:
             tools/audit_logos_73_book_interlinear.py \
             tools/audit_logos_versification_resolution.py \
             tools/validate_logos_greek_ot_linguistics_phase2.py \
+            tools/validate_logos_greek_ot_linguistics_corpus.py \
             tools/validate_logos_versification.py
+
+      - name: Build and validate Greek OT linguistic Phase 2 corpus
+        run: |
+          out="${RUNNER_TEMP}/logos-greek-ot-linguistics-phase2"
+          python scripts/vendor_greek_ot_linguistics_phase2.py --output "$out"
+          python tools/validate_logos_greek_ot_linguistics_corpus.py --root "$out"
 
       - name: Build and validate Greek NT Phase 1 corpus
         run: |
