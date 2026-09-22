@@ -160,7 +160,9 @@ jobs:
         if: github.event_name != 'pull_request'
         run: |
           python scripts/vendor_greek_ot_linguistics_phase2.py --production
-          python tools/validate_logos_greek_ot_linguistics_corpus.py --require-production
+          python tools/validate_logos_greek_ot_linguistics_corpus.py \
+            --root cloud-backend/app/logos_corpus/grc_ot_rahlfs_lxx_morph \
+            --require-production
 
       - name: Vendor TAGNT John linguistic supplement on main
         if: github.event_name != 'pull_request'
