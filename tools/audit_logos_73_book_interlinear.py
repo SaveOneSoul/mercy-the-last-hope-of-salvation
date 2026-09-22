@@ -440,7 +440,9 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
             "semitic": semitic_manifest.get("corpus_version"),
             "greek_ot_full": greek_ot_full_manifest.get("corpus_version"),
             "greek_ot_accepted": greek_ot_accepted_manifest.get("corpus_version"),
+            "greek_ot_linguistics": greek_ot_linguistics_manifest.get("corpus_version"),
             "greek_nt": greek_nt_manifest.get("corpus_version"),
+            "greek_nt_tagnt_john": greek_nt_tagnt_manifest.get("corpus_version"),
             "latin": latin_manifest.get("corpus_version"),
         },
         "summary": summary,
@@ -461,7 +463,7 @@ def render_markdown(report: dict[str, Any]) -> str:
         f"- Douay-Rheims English: **{summary['english_complete_books']}/73 books**",
         f"- Hebrew/Aramaic OSHB/WLC surface + lemma/morphology: **{summary['semitic_surface_books']} books**",
         f"- Greek surface witnesses represented: **{summary['greek_surface_books']}/73 books**",
-        f"- Greek lemma/POS/morphology: **{summary['greek_linguistics_complete_books']} NT books complete + {summary['greek_linguistics_partial_books']} NT book partial; OT Greek linguistic layer is not installed**",
+        f"- Greek word-level linguistic analysis: **{summary['greek_linguistics_complete_books']}/73 books complete; {summary['greek_linguistics_partial_books']} partial**",
         f"- Clementine Latin Vulgate: **{summary['latin_complete_books']}/73 books**",
         f"- Books with at least one explicit versification boundary/gap: **{summary['books_with_any_versification_gap']}**",
         f"- Books with recorded known gaps/limitations: **{summary['books_with_known_gaps']}**",
@@ -484,6 +486,8 @@ def render_markdown(report: dict[str, Any]) -> str:
             f"G: {gr['source']} ({gr['license']})",
             f"L: {lat['source']} ({lat['license']})",
         ]
+        if gr.get("linguistic_source"):
+            source_parts.append(f"G linguistics: {gr['linguistic_source']} ({gr.get('linguistic_license')})")
         if sem["status"] != "not-applicable":
             source_parts.append(f"H/A: {sem['source']} ({sem.get('linguistic_license')})")
         gaps = "; ".join(row.get("known_gaps") or []) or "—"
@@ -508,8 +512,8 @@ def render_markdown(report: dict[str, Any]) -> str:
             "",
             "- The **Douay-Rheims 1899** corpus is the primary Catholic 73-book reading/reference system.",
             "- **Hebrew/Aramaic** comes from OSHB/WLC where a Masoretic witness exists; source lemma and morphology are preserved.",
-            "- **Old Testament Greek** comes from pinned Septuagint witnesses. Greek additions and deuterocanonical material are treated as normal Catholic canonical material, while unsafe verse correspondences remain component-level or mapping-required.",
-            "- **New Testament Greek** uses SBLGNT surface text and MorphGNT lemma/POS/morphology; the known John 7:53–8:11 MorphGNT gap is preserved explicitly.",
+            "- **Old Testament Greek surface** comes from pinned Swete/Open Greek witnesses. Word-level OT lemma/POS/morphology comes from the separately labeled pinned Rahlfs 1935/lxx-morph witness; the audit never relabels Rahlfs annotations as Swete annotations.",
+            "- **New Testament Greek** uses SBLGNT surface text and MorphGNT lemma/POS/morphology. The pinned MorphGNT gap at John 7:53–8:11 remains disclosed and is covered for linguistic analysis by a separately labeled STEPBible TAGNT parallel witness.",
             "- **Clementine Latin** is available across all 73 books as a historic Catholic ecclesial witness, not as an original-language source.",
             "- The audit fails if a required corpus/book file disappears, a canonical inventory shrinks, or an expected production source/license gate is lost. Known textual/versification differences are reported rather than fabricated away.",
             "",
@@ -524,13 +528,15 @@ def main() -> int:
     parser.add_argument("--semitic-root", type=Path, default=DEFAULT_SEMITIC)
     parser.add_argument("--greek-ot-full-root", type=Path, default=DEFAULT_GREEK_OT_FULL)
     parser.add_argument("--greek-ot-accepted-root", type=Path, default=DEFAULT_GREEK_OT_ACCEPTED)
+    parser.add_argument("--greek-ot-linguistics-root", type=Path, default=DEFAULT_GREEK_OT_LINGUISTICS)
     parser.add_argument("--greek-nt-root", type=Path, default=DEFAULT_GREEK_NT)
+    parser.add_argument("--greek-nt-tagnt-root", type=Path, default=DEFAULT_GREEK_NT_TAGNT)
     parser.add_argument("--latin-root", type=Path, default=DEFAULT_LATIN)
     parser.add_argument("--json-output", type=Path, default=DEFAULT_JSON)
     parser.add_argument("--markdown-output", type=Path, default=DEFAULT_MARKDOWN)
     args = parser.parse_args()
 
-    for key in ("english_root", "semitic_root", "greek_ot_full_root", "greek_ot_accepted_root", "greek_nt_root", "latin_root"):
+    for key in ("english_root", "semitic_root", "greek_ot_full_root", "greek_ot_accepted_root", "greek_ot_linguistics_root", "greek_nt_root", "greek_nt_tagnt_root", "latin_root"):
         setattr(args, key, getattr(args, key).resolve())
 
     report = build(args)
