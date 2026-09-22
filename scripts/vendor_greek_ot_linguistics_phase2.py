@@ -29,7 +29,8 @@ ARCHIVE_URL = f"https://git.sr.ht/~sethkush/lxx-morph/archive/{COMMIT}.tar.gz"
 ARCHIVE_SHA256 = "b3c4861f47152ea8fab7d3ed78d807a9a0c2b35d07f2cb64fa9deefd6ac960a9"
 MAX_ARCHIVE_BYTES = 256 * 1024 * 1024
 CORPUS_ID = "grc_ot_rahlfs_lxx_morph"
-CORPUS_VERSION = "2026.09.22-c91f6b1-validation"
+VALIDATION_CORPUS_VERSION = "2026.09.22-c91f6b1-validation"
+PRODUCTION_CORPUS_VERSION = "2026.09.22-c91f6b1-production"
 REQUIRED_WORD_FIELDS = {"surface", "lemma", "parsing", "pos", "confidence", "source", "reasoning"}
 REF_RE = re.compile(r"^(.+?)\s+(\d+):(.+)$")
 
@@ -224,6 +225,7 @@ def write_json(path: Path, payload: dict, *, pretty: bool = False) -> None:
 
 
 def build(output: Path, *, production: bool = False) -> dict:
+    corpus_version = PRODUCTION_CORPUS_VERSION if production else VALIDATION_CORPUS_VERSION
     books = load_json(ROOT / "cloud-backend" / "app" / "logos_interlinear" / "books.json").get("books") or []
     ot = [row for row in books if row.get("testament") == "OT"]
     expected_ids = [str(row["id"]) for row in ot]
@@ -313,7 +315,7 @@ def build(output: Path, *, production: bool = False) -> dict:
         payload = {
             "schema_version": 1,
             "corpus_id": CORPUS_ID,
-            "corpus_version": CORPUS_VERSION,
+            "corpus_version": corpus_version,
             "status": "production-installed" if production else "validation-only",
             "production_enabled": production,
             "book_id": book_id,
@@ -350,7 +352,7 @@ def build(output: Path, *, production: bool = False) -> dict:
     manifest = {
         "schema_version": 1,
         "corpus_id": CORPUS_ID,
-        "corpus_version": CORPUS_VERSION,
+        "corpus_version": corpus_version,
         "status": "production-installed" if production else "validation-only",
         "production_enabled": production,
         "language": "grc",
