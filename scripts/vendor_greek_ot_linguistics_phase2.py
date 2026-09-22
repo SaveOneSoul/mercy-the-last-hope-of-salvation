@@ -23,6 +23,7 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT = ROOT / "build" / "logos-greek-ot-linguistics-phase2"
+PRODUCTION_OUTPUT = ROOT / "cloud-backend" / "app" / "logos_corpus" / "grc_ot_rahlfs_lxx_morph"
 COMMIT = "c91f6b1e8fb3ba37df701e6ae31f675ace71a2b2"
 ARCHIVE_URL = f"https://git.sr.ht/~sethkush/lxx-morph/archive/{COMMIT}.tar.gz"
 ARCHIVE_SHA256 = "b3c4861f47152ea8fab7d3ed78d807a9a0c2b35d07f2cb64fa9deefd6ac960a9"
@@ -222,7 +223,7 @@ def write_json(path: Path, payload: dict, *, pretty: bool = False) -> None:
     path.write_text(text, encoding="utf-8")
 
 
-def build(output: Path) -> dict:
+def build(output: Path, *, production: bool = False) -> dict:
     books = load_json(ROOT / "cloud-backend" / "app" / "logos_interlinear" / "books.json").get("books") or []
     ot = [row for row in books if row.get("testament") == "OT"]
     expected_ids = [str(row["id"]) for row in ot]
@@ -313,8 +314,8 @@ def build(output: Path) -> dict:
             "schema_version": 1,
             "corpus_id": CORPUS_ID,
             "corpus_version": CORPUS_VERSION,
-            "status": "validation-only",
-            "production_enabled": False,
+            "status": "production-installed" if production else "validation-only",
+            "production_enabled": production,
             "book_id": book_id,
             "book": book["name"],
             "language": "grc",
@@ -350,8 +351,8 @@ def build(output: Path) -> dict:
         "schema_version": 1,
         "corpus_id": CORPUS_ID,
         "corpus_version": CORPUS_VERSION,
-        "status": "validation-only",
-        "production_enabled": False,
+        "status": "production-installed" if production else "validation-only",
+        "production_enabled": production,
         "language": "grc",
         "scope": "All 46 Catholic Old Testament books as a separate Rahlfs 1935 word-level linguistic witness.",
         "book_count": 46,
@@ -400,14 +401,17 @@ def build(output: Path) -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--output", type=Path, default=None)
+    parser.add_argument("--production", action="store_true")
     args = parser.parse_args()
-    manifest = build(args.output.resolve())
+    output = args.output or (PRODUCTION_OUTPUT if args.production else DEFAULT_OUTPUT)
+    manifest = build(output.resolve(), production=args.production)
     print(
         "Greek OT linguistic validation corpus built: "
         f"{manifest['book_count']} Catholic OT books, "
         f"{manifest['verse_record_count']} source verse records, "
-        f"{manifest['token_count']} word tokens; Rahlfs witness kept separate from Swete"
+        f"{manifest['token_count']} word tokens; Rahlfs witness kept separate from Swete; "
+        f"production={manifest['production_enabled']}"
     )
     return 0
 
