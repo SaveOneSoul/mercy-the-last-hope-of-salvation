@@ -16,7 +16,9 @@ DEFAULT_ENGLISH = CORPORA / "eng_douay_rheims_1899"
 DEFAULT_SEMITIC = CORPORA / "heb_arc_oshb_wlc"
 DEFAULT_GREEK_OT_FULL = CORPORA / "grc_ot_catholic_full"
 DEFAULT_GREEK_OT_ACCEPTED = CORPORA / "grc_ot_catholic_swete"
+DEFAULT_GREEK_OT_LINGUISTICS = CORPORA / "grc_ot_rahlfs_lxx_morph"
 DEFAULT_GREEK_NT = CORPORA / "grc_sblgnt_morphgnt"
+DEFAULT_GREEK_NT_TAGNT = CORPORA / "grc_nt_tagnt_john_pa"
 DEFAULT_LATIN = CORPORA / "lat_vulgate_clementine"
 DEFAULT_JSON = INTERLINEAR / "coverage-audit.json"
 DEFAULT_MARKDOWN = ROOT / "LOGOS_INTERLINEAR_COVERAGE.md"
@@ -135,14 +137,20 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
     greek_ot_full_manifest = load(args.greek_ot_full_root / "manifest.json")
     greek_ot_accepted_manifest = load(args.greek_ot_accepted_root / "manifest.json")
     greek_ot_map = load(args.greek_ot_accepted_root / "versification-map.json")
+    greek_ot_linguistics_manifest = load(args.greek_ot_linguistics_root / "manifest.json")
     greek_nt_manifest = load(args.greek_nt_root / "manifest.json")
+    greek_nt_tagnt_manifest = load(args.greek_nt_tagnt_root / "manifest.json")
     latin_manifest = load(args.latin_root / "manifest.json")
 
     require(int(english_manifest.get("book_count") or 0) == 73, "English corpus is not 73 books")
     require(int(latin_manifest.get("book_count") or 0) == 73, "Latin corpus is not 73 books")
     require(int((semitic_manifest.get("phase1a_acceptance") or {}).get("masoretic_book_witness_count") or 0) == 39, "Semitic corpus is not 39 witnesses")
     require(int(greek_ot_full_manifest.get("book_count") or 0) == 39, "Complete Greek OT protocanonical package is not 39 books")
+    require(int(greek_ot_linguistics_manifest.get("book_count") or 0) == 46, "Greek OT linguistic package is not 46 Catholic books")
+    require(greek_ot_linguistics_manifest.get("production_enabled") is True, "Greek OT linguistic package is not production-enabled")
     require(int((greek_nt_manifest.get("phase1_acceptance") or {}).get("book_count") or 0) == 27, "Greek NT package is not 27 books")
+    require(int(greek_nt_tagnt_manifest.get("verse_count") or 0) == 12, "TAGNT John supplement is not 12 verses")
+    require(greek_nt_tagnt_manifest.get("production_enabled") is True, "TAGNT John supplement is not production-enabled")
 
     english_index = {str(b.get("id")): b for b in (english_manifest.get("books") or [])}
     latin_index = {str(b.get("id")): b for b in (latin_manifest.get("books") or [])}
@@ -167,8 +175,10 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
     semitic_source = sources.get("oshb") or {}
     accepted_greek_source = sources.get("first1kgreek-swete") or {}
     ecc_source = sources.get("open-greek-ecclesiastes") or {}
+    greek_ot_linguistic_source = sources.get("lxx-morph-rahlfs") or {}
+    tagnt_source = sources.get("stepbible-data") or {}
     latin_source = sources.get("vulgate-clementine") or {}
-    for source_id, source in (("drb-challoner", english_source), ("oshb", semitic_source), ("first1kgreek-swete", accepted_greek_source), ("open-greek-ecclesiastes", ecc_source), ("vulgate-clementine", latin_source)):
+    for source_id, source in (("drb-challoner", english_source), ("oshb", semitic_source), ("first1kgreek-swete", accepted_greek_source), ("open-greek-ecclesiastes", ecc_source), ("lxx-morph-rahlfs", greek_ot_linguistic_source), ("stepbible-data", tagnt_source), ("vulgate-clementine", latin_source)):
         require(source and source.get("production_import_allowed") is True, f"source {source_id} is not production-approved")
         require(str(source.get("license") or "").strip(), f"source {source_id} has no license")
 
@@ -187,6 +197,7 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
     }
 
     full_greek_book_root = args.greek_ot_full_root / "sharealike" / "catholic_lxx_cc-by-sa-4.0" / "books"
+    ot_linguistics_book_root = args.greek_ot_linguistics_root / "books"
     nt_surface_root = args.greek_nt_root / "phase1" / "surface"
     nt_linguistics_root = args.greek_nt_root / "phase1" / "linguistics"
     semitic_surface_root = args.semitic_root / "phase1a" / "surface"
@@ -278,22 +289,34 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
             require(gr_ling_path.exists(), f"missing Greek NT linguistic file {book_id}")
             gr_surface = load(gr_surface_path)
             gr_alignment = compare_chapter_sets(en_sets, chapter_sets(gr_surface))
-            linguistics_status = "partial" if book_id == "JHN" else "complete"
+            linguistic_source = "MorphGNT SBLGNT"
+            linguistic_license = str((greek_nt_manifest.get("sources", {}).get("linguistics") or {}).get("license"))
+            linguistic_relationship = "primary-sblgnt-morphgnt"
+            if book_id == "JHN":
+                expected_tagnt = {"7:53"} | {f"8:{i}" for i in range(1, 12)}
+                tagnt_refs = {str(row.get("reference")) for row in (greek_nt_tagnt_manifest.get("verses") or [])}
+                require(tagnt_refs == expected_tagnt, "TAGNT John supplement does not exactly cover the 12 MorphGNT gap verses")
+                require(int(greek_nt_tagnt_manifest.get("token_count") or 0) > 0, "TAGNT John supplement has no linguistic token rows")
+                linguistic_source = "MorphGNT SBLGNT + STEPBible TAGNT gap supplement"
+                linguistic_license = (
+                    f"{linguistic_license}; TAGNT {str((greek_nt_tagnt_manifest.get('source') or {}).get('license'))}"
+                )
+                linguistic_relationship = "primary-morphgnt-plus-supplemental-parallel-tagnt"
+                known_gaps.append(
+                    "Pinned MorphGNT remains unavailable for John 7:53–8:11; complete linguistic analysis coverage is supplied by a separately labeled TAGNT parallel witness without claiming SBLGNT token identity."
+                )
             greek = {
                 "status": "complete",
                 "source": "SBL Greek New Testament",
                 "source_id": "sblgnt",
                 "license": str((greek_nt_manifest.get("sources", {}).get("surface") or {}).get("license")),
-                "lemma_morphology": linguistics_status,
-                "linguistic_source": "MorphGNT SBLGNT",
-                "linguistic_license": str((greek_nt_manifest.get("sources", {}).get("linguistics") or {}).get("license")),
+                "lemma_morphology": "complete",
+                "linguistic_source": linguistic_source,
+                "linguistic_license": linguistic_license,
+                "linguistic_relationship": linguistic_relationship,
                 "versification": gr_alignment,
             }
-            if linguistics_status == "partial":
-                summary["greek_linguistics_partial_books"] += 1
-                known_gaps.append("Greek lemma/POS/morphology is unavailable for John 7:53–8:11 in the pinned MorphGNT source; surface Greek remains present.")
-            else:
-                summary["greek_linguistics_complete_books"] += 1
+            summary["greek_linguistics_complete_books"] += 1
             if not gr_alignment["exact"]:
                 known_gaps.append(f"SBLGNT and Douay verse identity differs in {gr_alignment['mismatch_chapter_count']} chapter(s).")
         else:
@@ -340,21 +363,34 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
                     known_gaps.append(f"Pinned Greek witness preserves {empty_count} explicitly empty source verse division(s); no Greek text is fabricated.")
                 if not gr_alignment["exact"]:
                     known_gaps.append(f"Greek/Douay verse identity differs in {gr_alignment['mismatch_chapter_count']} chapter(s); those chapters require explicit mapping.")
+            ot_ling_path = ot_linguistics_book_root / f"{book_id}.json"
+            require(ot_ling_path.exists(), f"missing Greek OT linguistic book file {book_id}")
+            ot_ling = load(ot_ling_path)
+            require(ot_ling.get("corpus_id") == "grc_ot_rahlfs_lxx_morph", f"{book_id}: unexpected Greek OT linguistic corpus id")
+            require(ot_ling.get("book_id") == book_id, f"{book_id}: Greek OT linguistic book id mismatch")
+            require(ot_ling.get("production_enabled") is True, f"{book_id}: Greek OT linguistic corpus is not production-enabled")
+            require(ot_ling.get("text_edition") == "Rahlfs Septuagint (1935)", f"{book_id}: Greek OT linguistic edition identity changed")
+            require(int(ot_ling.get("verse_count") or 0) > 0 and int(ot_ling.get("token_count") or 0) > 0, f"{book_id}: Greek OT linguistic corpus is empty")
+            policy = ot_ling.get("cross_edition_policy") or {}
+            require(policy.get("relationship") == "separate-witness", f"{book_id}: Rahlfs linguistic witness must remain separate from Swete")
+            require(policy.get("automatic_attachment_to_installed_surface") is False, f"{book_id}: unsafe automatic Rahlfs-to-Swete attachment enabled")
             greek = {
                 "status": "complete",
                 "source": gr_source,
                 "source_id": gr_source_id,
                 "license": gr_license,
-                "lemma_morphology": "not-installed",
-                "linguistic_source": None,
-                "linguistic_license": None,
+                "lemma_morphology": "complete",
+                "linguistic_source": "lxx-morph / Rahlfs Septuagint (1935)",
+                "linguistic_source_id": "lxx-morph-rahlfs",
+                "linguistic_license": str(greek_ot_linguistic_source.get("license")),
+                "linguistic_relationship": "separate-rahlfs-witness-not-token-attached-to-swete",
+                "linguistic_verse_count": int(ot_ling.get("verse_count") or 0),
+                "linguistic_token_count": int(ot_ling.get("token_count") or 0),
                 "versification": gr_alignment,
             }
+            summary["greek_linguistics_complete_books"] += 1
 
         summary["greek_surface_books"] += 1
-        if testament == "OT":
-            # This is a deliberate integrity boundary, not fabricated missing data.
-            pass
 
         if known_gaps:
             summary["books_with_known_gaps"] += 1
@@ -385,7 +421,8 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
     require(summary["semitic_surface_books"] == 39, "Semitic surface coverage is not exactly 39 books")
     require(summary["semitic_linguistics_books"] == 39, "Semitic linguistic coverage is not exactly 39 books")
     require(summary["greek_surface_books"] == 73, "Greek surface witness coverage is not represented for all 73 books")
-    require(summary["greek_linguistics_complete_books"] + summary["greek_linguistics_partial_books"] == 27, "Greek NT linguistic coverage is not represented for all 27 NT books")
+    require(summary["greek_linguistics_complete_books"] == 73, "Greek linguistic analysis coverage is not complete for all 73 books")
+    require(summary["greek_linguistics_partial_books"] == 0, "Greek linguistic audit must have no partial books after supplemental-witness integration")
 
     return {
         "schema_version": 1,
@@ -403,7 +440,9 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
             "semitic": semitic_manifest.get("corpus_version"),
             "greek_ot_full": greek_ot_full_manifest.get("corpus_version"),
             "greek_ot_accepted": greek_ot_accepted_manifest.get("corpus_version"),
+            "greek_ot_linguistics": greek_ot_linguistics_manifest.get("corpus_version"),
             "greek_nt": greek_nt_manifest.get("corpus_version"),
+            "greek_nt_tagnt_john": greek_nt_tagnt_manifest.get("corpus_version"),
             "latin": latin_manifest.get("corpus_version"),
         },
         "summary": summary,
@@ -424,7 +463,7 @@ def render_markdown(report: dict[str, Any]) -> str:
         f"- Douay-Rheims English: **{summary['english_complete_books']}/73 books**",
         f"- Hebrew/Aramaic OSHB/WLC surface + lemma/morphology: **{summary['semitic_surface_books']} books**",
         f"- Greek surface witnesses represented: **{summary['greek_surface_books']}/73 books**",
-        f"- Greek lemma/POS/morphology: **{summary['greek_linguistics_complete_books']} NT books complete + {summary['greek_linguistics_partial_books']} NT book partial; OT Greek linguistic layer is not installed**",
+        f"- Greek word-level linguistic analysis: **{summary['greek_linguistics_complete_books']}/73 books complete; {summary['greek_linguistics_partial_books']} partial**",
         f"- Clementine Latin Vulgate: **{summary['latin_complete_books']}/73 books**",
         f"- Books with at least one explicit versification boundary/gap: **{summary['books_with_any_versification_gap']}**",
         f"- Books with recorded known gaps/limitations: **{summary['books_with_known_gaps']}**",
@@ -447,6 +486,8 @@ def render_markdown(report: dict[str, Any]) -> str:
             f"G: {gr['source']} ({gr['license']})",
             f"L: {lat['source']} ({lat['license']})",
         ]
+        if gr.get("linguistic_source"):
+            source_parts.append(f"G linguistics: {gr['linguistic_source']} ({gr.get('linguistic_license')})")
         if sem["status"] != "not-applicable":
             source_parts.append(f"H/A: {sem['source']} ({sem.get('linguistic_license')})")
         gaps = "; ".join(row.get("known_gaps") or []) or "—"
@@ -471,8 +512,8 @@ def render_markdown(report: dict[str, Any]) -> str:
             "",
             "- The **Douay-Rheims 1899** corpus is the primary Catholic 73-book reading/reference system.",
             "- **Hebrew/Aramaic** comes from OSHB/WLC where a Masoretic witness exists; source lemma and morphology are preserved.",
-            "- **Old Testament Greek** comes from pinned Septuagint witnesses. Greek additions and deuterocanonical material are treated as normal Catholic canonical material, while unsafe verse correspondences remain component-level or mapping-required.",
-            "- **New Testament Greek** uses SBLGNT surface text and MorphGNT lemma/POS/morphology; the known John 7:53–8:11 MorphGNT gap is preserved explicitly.",
+            "- **Old Testament Greek surface** comes from pinned Swete/Open Greek witnesses. Word-level OT lemma/POS/morphology comes from the separately labeled pinned Rahlfs 1935/lxx-morph witness; the audit never relabels Rahlfs annotations as Swete annotations.",
+            "- **New Testament Greek** uses SBLGNT surface text and MorphGNT lemma/POS/morphology. The pinned MorphGNT gap at John 7:53–8:11 remains disclosed and is covered for linguistic analysis by a separately labeled STEPBible TAGNT parallel witness.",
             "- **Clementine Latin** is available across all 73 books as a historic Catholic ecclesial witness, not as an original-language source.",
             "- The audit fails if a required corpus/book file disappears, a canonical inventory shrinks, or an expected production source/license gate is lost. Known textual/versification differences are reported rather than fabricated away.",
             "",
@@ -487,13 +528,15 @@ def main() -> int:
     parser.add_argument("--semitic-root", type=Path, default=DEFAULT_SEMITIC)
     parser.add_argument("--greek-ot-full-root", type=Path, default=DEFAULT_GREEK_OT_FULL)
     parser.add_argument("--greek-ot-accepted-root", type=Path, default=DEFAULT_GREEK_OT_ACCEPTED)
+    parser.add_argument("--greek-ot-linguistics-root", type=Path, default=DEFAULT_GREEK_OT_LINGUISTICS)
     parser.add_argument("--greek-nt-root", type=Path, default=DEFAULT_GREEK_NT)
+    parser.add_argument("--greek-nt-tagnt-root", type=Path, default=DEFAULT_GREEK_NT_TAGNT)
     parser.add_argument("--latin-root", type=Path, default=DEFAULT_LATIN)
     parser.add_argument("--json-output", type=Path, default=DEFAULT_JSON)
     parser.add_argument("--markdown-output", type=Path, default=DEFAULT_MARKDOWN)
     args = parser.parse_args()
 
-    for key in ("english_root", "semitic_root", "greek_ot_full_root", "greek_ot_accepted_root", "greek_nt_root", "latin_root"):
+    for key in ("english_root", "semitic_root", "greek_ot_full_root", "greek_ot_accepted_root", "greek_ot_linguistics_root", "greek_nt_root", "greek_nt_tagnt_root", "latin_root"):
         setattr(args, key, getattr(args, key).resolve())
 
     report = build(args)

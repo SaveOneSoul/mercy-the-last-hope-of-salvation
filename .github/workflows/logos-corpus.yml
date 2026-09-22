@@ -59,6 +59,7 @@ jobs:
           python tools/validate_logos_greek_nt_phase1.py
           python tools/validate_logos_old_testament_phase1.py
           python tools/validate_logos_old_testament_phase1b.py
+          python tools/validate_logos_greek_ot_linguistics_phase2.py
           python tools/validate_logos_versification.py
 
       - name: Compile Logos runtime modules
@@ -70,17 +71,36 @@ jobs:
             cloud-backend/app/logos_ot_semitic.py \
             cloud-backend/app/logos_ot_latin.py \
             cloud-backend/app/logos_ot_interlinear.py \
+            cloud-backend/app/logos_ot_greek_linguistics.py \
+            cloud-backend/app/logos_nt_tagnt_linguistics.py \
             cloud-backend/app/logos_versification.py \
             cloud-backend/app/logos_advanced.py \
             tools/audit_logos_73_book_interlinear.py \
             tools/audit_logos_versification_resolution.py \
+            tools/validate_logos_greek_ot_linguistics_phase2.py \
+            tools/validate_logos_greek_ot_linguistics_corpus.py \
+            tools/validate_logos_greek_nt_tagnt_john.py \
             tools/validate_logos_versification.py
+
+      - name: Build and validate Greek OT linguistic Phase 2 production candidate
+        if: github.event_name == 'pull_request'
+        run: |
+          out="${RUNNER_TEMP}/logos-greek-ot-linguistics-phase2"
+          python scripts/vendor_greek_ot_linguistics_phase2.py --output "$out" --production
+          python tools/validate_logos_greek_ot_linguistics_corpus.py --root "$out" --require-production
 
       - name: Build and validate Greek NT Phase 1 corpus
         run: |
           out="${RUNNER_TEMP}/logos-greek-nt-phase1"
           python scripts/vendor_greek_nt_phase1.py --output "$out"
           python tools/validate_logos_greek_nt_phase1.py --generated "$out"
+
+      - name: Build and validate TAGNT John linguistic supplement
+        if: github.event_name == 'pull_request'
+        run: |
+          out="${RUNNER_TEMP}/logos-greek-nt-tagnt-john"
+          python scripts/vendor_greek_nt_tagnt_john.py --output "$out"
+          python tools/validate_logos_greek_nt_tagnt_john.py --root "$out"
 
       - name: Build and validate Old Testament Phase 1A corpus
         run: |
@@ -135,6 +155,18 @@ jobs:
         run: |
           python scripts/vendor_greek_nt_production.py
           python tools/validate_logos_greek_nt_production.py
+
+      - name: Vendor Greek OT word-level linguistic package on main
+        if: github.event_name != 'pull_request'
+        run: |
+          python scripts/vendor_greek_ot_linguistics_phase2.py --production
+          python tools/validate_logos_greek_ot_linguistics_corpus.py --require-production
+
+      - name: Vendor TAGNT John linguistic supplement on main
+        if: github.event_name != 'pull_request'
+        run: |
+          python scripts/vendor_greek_nt_tagnt_john.py
+          python tools/validate_logos_greek_nt_tagnt_john.py
 
       - name: Vendor accepted OT Greek production package on main
         if: github.event_name != 'pull_request'
@@ -206,8 +238,10 @@ jobs:
           mkdir -p "$audit"
           python tools/audit_logos_73_book_interlinear.py \
             --greek-nt-root "${RUNNER_TEMP}/logos-greek-nt-production" \
+            --greek-nt-tagnt-root "${RUNNER_TEMP}/logos-greek-nt-tagnt-john" \
             --greek-ot-accepted-root "${RUNNER_TEMP}/logos-ot-greek-production" \
             --greek-ot-full-root "${RUNNER_TEMP}/logos-ot-greek-full" \
+            --greek-ot-linguistics-root "${RUNNER_TEMP}/logos-greek-ot-linguistics-phase2" \
             --semitic-root "${RUNNER_TEMP}/logos-ot-semitic-production" \
             --latin-root "${RUNNER_TEMP}/logos-vulgate-clementine" \
             --json-output "$audit/coverage-audit.json" \
@@ -250,8 +284,10 @@ jobs:
         run: |
           english_path='cloud-backend/app/logos_corpus/eng_douay_rheims_1899'
           greek_nt_path='cloud-backend/app/logos_corpus/grc_sblgnt_morphgnt'
+          greek_nt_tagnt_path='cloud-backend/app/logos_corpus/grc_nt_tagnt_john_pa'
           greek_ot_path='cloud-backend/app/logos_corpus/grc_ot_catholic_swete'
           greek_ot_full_path='cloud-backend/app/logos_corpus/grc_ot_catholic_full'
+          greek_ot_linguistics_path='cloud-backend/app/logos_corpus/grc_ot_rahlfs_lxx_morph'
           semitic_ot_path='cloud-backend/app/logos_corpus/heb_arc_oshb_wlc'
           latin_path='cloud-backend/app/logos_corpus/lat_vulgate_clementine'
           audit_json='cloud-backend/app/logos_interlinear/coverage-audit.json'
@@ -259,12 +295,12 @@ jobs:
           resolution_json='cloud-backend/app/logos_interlinear/versification/resolution-audit.json'
           resolution_md='LOGOS_VERSIFICATION_RESOLUTION.md'
           git add --all -- \
-            "$english_path" "$greek_nt_path" "$greek_ot_path" \
-            "$greek_ot_full_path" "$semitic_ot_path" "$latin_path" \
+            "$english_path" "$greek_nt_path" "$greek_nt_tagnt_path" "$greek_ot_path" \
+            "$greek_ot_full_path" "$greek_ot_linguistics_path" "$semitic_ot_path" "$latin_path" \
             "$audit_json" "$audit_md" "$resolution_json" "$resolution_md"
           if git diff --cached --quiet -- \
-            "$english_path" "$greek_nt_path" "$greek_ot_path" \
-            "$greek_ot_full_path" "$semitic_ot_path" "$latin_path" \
+            "$english_path" "$greek_nt_path" "$greek_nt_tagnt_path" "$greek_ot_path" \
+            "$greek_ot_full_path" "$greek_ot_linguistics_path" "$semitic_ot_path" "$latin_path" \
             "$audit_json" "$audit_md" "$resolution_json" "$resolution_md"; then
             echo "Corpora and Logos coverage/resolution audits are already current."
             exit 0

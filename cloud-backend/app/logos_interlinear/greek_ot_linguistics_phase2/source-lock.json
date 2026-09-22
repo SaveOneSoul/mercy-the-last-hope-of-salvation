@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "phase": "Greek OT Linguistics Phase 2",
+  "status": "validated-awaiting-owner-acceptance",
+  "production": {
+    "enabled": true,
+    "reason": "The pinned source inventory and 46-book validation corpus pass deterministic CI. Production package generation is enabled on the candidate branch, while merge still requires exact-head project-owner acceptance."
+  },
+  "source": {
+    "source_id": "lxx-morph-rahlfs",
+    "repository": "https://git.sr.ht/~sethkush/lxx-morph",
+    "commit": "c91f6b1e8fb3ba37df701e6ae31f675ace71a2b2",
+    "license": "CC BY 4.0",
+    "text_edition": "Rahlfs Septuagint (1935)",
+    "reported_upstream_book_count": 59,
+    "reported_fields": [
+      "surface",
+      "lemma",
+      "parsing",
+      "pos",
+      "provenance",
+      "confidence"
+    ],
+    "inventory_status": "verified-pinned-archive",
+    "archive_url": "https://git.sr.ht/~sethkush/lxx-morph/archive/c91f6b1e8fb3ba37df701e6ae31f675ace71a2b2.tar.gz",
+    "archive_sha256": "b3c4861f47152ea8fab7d3ed78d807a9a0c2b35d07f2cb64fa9deefd6ac960a9",
+    "archive_size_bytes": 63301390,
+    "archive_file_count": 5966,
+    "data_path": "db/seeds/lxx_morph/",
+    "license_path": "LICENSE-DATA",
+    "final_work_file_pattern": "db/seeds/lxx_morph/<work>.json"
+  },
+  "target": {
+    "canon": "Catholic 73-book canon",
+    "testament": "OT",
+    "catholic_ot_book_count": 46,
+    "books": [
+      {
+        "order": 1,
+        "book_id": "GEN",
+        "name": "Genesis"
+      },
+      {
+        "order": 2,
+        "book_id": "EXO",
+        "name": "Exodus"
+      },
+      {
+        "order": 3,
+        "book_id": "LEV",
+        "name": "Leviticus"
+      },
+      {
+        "order": 4,
+        "book_id": "NUM",
+        "name": "Numbers"
+      },
+      {
+        "order": 5,
+        "book_id": "DEU",
+        "name": "Deuteronomy"
+      },
+      {
+        "order": 6,
+        "book_id": "JOS",
+        "name": "Joshua"
+      },
+      {
+        "order": 7,
+        "book_id": "JDG",
+        "name": "Judges"
+      },
+      {
+        "order": 8,
+        "book_id": "RUT",
+        "name": "Ruth"
+      },
+      {
+        "order": 9,
+        "book_id": "1SA",
+        "name": "1 Samuel"
+      },
+      {
+        "order": 10,
+        "book_id": "2SA",
+        "name": "2 Samuel"
+      },
+      {
+        "order": 11,
+        "book_id": "1KI",
+        "name": "1 Kings"
+      },
+      {
+        "order": 12,
+        "book_id": "2KI",
+        "name": "2 Kings"
+      },
+      {
+        "order": 13,
+        "book_id": "1CH",
+        "name": "1 Chronicles"
+      },
+      {
+        "order": 14,
+        "book_id": "2CH",
+        "name": "2 Chronicles"
+      },
+      {
+        "order": 15,
+        "book_id": "EZR",
+        "name": "Ezra"
+      },
+      {
+        "order": 16,
+        "book_id": "NEH",
+        "name": "Nehemiah"
+      },
+      {
+        "order": 17,
+        "book_id": "TOB",
+        "name": "Tobit"
+      },
+      {
+        "order": 18,
+        "book_id": "JDT",
+        "name": "Judith"
+      },
+      {
+        "order": 19,
+        "book_id": "EST",
+        "name": "Esther"
+      },
+      {
+        "order": 20,
+        "book_id": "1MA",
+        "name": "1 Maccabees"
+      },
+      {
+        "order": 21,
+        "book_id": "2MA",
+        "name": "2 Maccabees"
+      },
+      {
+        "order": 22,
+        "book_id": "JOB",
+        "name": "Job"
+      },
+      {
+        "order": 23,
+        "book_id": "PSA",
+        "name": "Psalms"
+      },
+      {
+        "order": 24,
+        "book_id": "PRO",
+        "name": "Proverbs"
+      },
+      {
+        "order": 25,
+        "book_id": "ECC",
+        "name": "Ecclesiastes"
+      },
+      {
+        "order": 26,
+        "book_id": "SNG",
+        "name": "Song of Songs"
+      },
+      {
+        "order": 27,
+        "book_id": "WIS",
+        "name": "Wisdom"
+      },
+      {
+        "order": 28,
+        "book_id": "SIR",
+        "name": "Sirach"
+      },
+      {
+        "order": 29,
+        "book_id": "ISA",
+        "name": "Isaiah"
+      },
+      {
+        "order": 30,
+        "book_id": "JER",
+        "name": "Jeremiah"
+      },
+      {
+        "order": 31,
+        "book_id": "LAM",
+        "name": "Lamentations"
+      },
+      {
+        "order": 32,
+        "book_id": "BAR",
+        "name": "Baruch"
+      },
+      {
+        "order": 33,
+        "book_id": "EZK",
+        "name": "Ezekiel"
+      },
+      {
+        "order": 34,
+        "book_id": "DAN",
+        "name": "Daniel"
+      },
+      {
+        "order": 35,
+        "book_id": "HOS",
+        "name": "Hosea"
+      },
+      {
+        "order": 36,
+        "book_id": "JOL",
+        "name": "Joel"
+      },
+      {
+        "order": 37,
+        "book_id": "AMO",
+        "name": "Amos"
+      },
+      {
+        "order": 38,
+        "book_id": "OBA",
+        "name": "Obadiah"
+      },
+      {
+        "order": 39,
+        "book_id": "JON",
+        "name": "Jonah"
+      },
+      {
+        "order": 40,
+        "book_id": "MIC",
+        "name": "Micah"
+      },
+      {
+        "order": 41,
+        "book_id": "NAM",
+        "name": "Nahum"
+      },
+      {
+        "order": 42,
+        "book_id": "HAB",
+        "name": "Habakkuk"
+      },
+      {
+        "order": 43,
+        "book_id": "ZEP",
+        "name": "Zephaniah"
+      },
+      {
+        "order": 44,
+        "book_id": "HAG",
+        "name": "Haggai"
+      },
+      {
+        "order": 45,
+        "book_id": "ZEC",
+        "name": "Zechariah"
+      },
+      {
+        "order": 46,
+        "book_id": "MAL",
+        "name": "Malachi"
+      }
+    ]
+  },
+  "installed_surface_witnesses": {
+    "primary": "first1kgreek-swete",
+    "ecclesiastes_fallback": "open-greek-ecclesiastes",
+    "policy": "Existing Greek surface corpora remain authoritative for their own edition identity. Rahlfs linguistic data is a separate witness unless and until deterministic alignment establishes token correspondence."
+  },
+  "integrity_policy": {
+    "source_text_immutable": true,
+    "no_fabricated_linguistics": true,
+    "no_fabricated_token_boundaries": true,
+    "no_cross_edition_relabeling": true,
+    "exact_revision_required": true,
+    "source_inventory_required_before_import": true,
+    "per_file_checksum_required_before_import": true,
+    "verse_alignment_required_before_attachment": true,
+    "token_alignment_required_before_attachment": true,
+    "lexical_mismatch_must_block_attachment": true,
+    "edition_provenance_required_in_runtime": true,
+    "scholarly_quality_caveat_required": true
+  },
+  "acceptance_gates": [
+    "Verify the pinned lxx-morph revision and its CC BY 4.0 license evidence.",
+    "Record the exact upstream file inventory and immutable checksums used by the importer.",
+    "Map all 46 Catholic Old Testament books to explicit source files/identifiers without guessing names.",
+    "Build Rahlfs morphology as its own source-derived partition.",
+    "Compare Rahlfs verse/token inventories with each installed Greek surface witness.",
+    "Attach linguistic tokens to an installed surface token only when deterministic lexical alignment passes; otherwise preserve a separate Rahlfs witness or explicit gap.",
+    "Reject any fabricated lemma, POS, morphology, gloss, token, verse boundary, or edition identity.",
+    "Run the 73-book coverage audit and report linguistic completeness independently from surface-text completeness.",
+    "Require exact-head CI and project-owner acceptance before production import is enabled."
+  ],
+  "quality_note": "The candidate dataset documents automated/tool-assisted analysis and editorial review. Treat it as useful open linguistic data, not as an infallible scholarly authority; provenance/confidence must remain available and specialist verification is appropriate for scholarly citation.",
+  "validation_evidence": {
+    "catholic_ot_books": 46,
+    "source_verse_records": 26900,
+    "word_tokens": 542394,
+    "archive_sha256": "b3c4861f47152ea8fab7d3ed78d807a9a0c2b35d07f2cb64fa9deefd6ac960a9",
+    "validation_run": 35759226983,
+    "result": "passed"
+  }
+}
