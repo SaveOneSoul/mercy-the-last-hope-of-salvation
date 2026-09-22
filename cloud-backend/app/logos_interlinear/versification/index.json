@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.20-v30",
+  "registry_version": "2026.09.22-v31",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -266,6 +266,12 @@
       "lane": "greek",
       "status": "verified",
       "file": "maps/HOS-greek-first1k-swete.json"
+    },
+    {
+      "book_id": "MRK",
+      "lane": "greek",
+      "status": "verified",
+      "file": "maps/MRK-greek-sblgnt.json"
     }
   ]
 }
