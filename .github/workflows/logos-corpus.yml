@@ -57,6 +57,7 @@ jobs:
           python tools/validate_logos_interlinear.py
           python tools/validate_logos_interlinear_prototype.py
           python tools/validate_logos_greek_nt_phase1.py
+          python tools/validate_logos_greek_nt_tagnt_john_fallback.py --static-only
           python tools/validate_logos_old_testament_phase1.py
           python tools/validate_logos_old_testament_phase1b.py
           python tools/validate_logos_versification.py
@@ -74,7 +75,8 @@ jobs:
             cloud-backend/app/logos_advanced.py \
             tools/audit_logos_73_book_interlinear.py \
             tools/audit_logos_versification_resolution.py \
-            tools/validate_logos_versification.py
+            tools/validate_logos_versification.py \
+            tools/validate_logos_greek_nt_tagnt_john_fallback.py
 
       - name: Build and validate Greek NT Phase 1 corpus
         run: |
@@ -93,6 +95,12 @@ jobs:
           out="${RUNNER_TEMP}/logos-old-testament-phase1b"
           python scripts/vendor_old_testament_phase1b.py --output "$out"
           python tools/validate_logos_old_testament_phase1b.py --generated "$out"
+
+      - name: Build and validate TAGNT John linguistic fallback
+        run: |
+          out="${RUNNER_TEMP}/logos-tagnt-john-fallback"
+          python scripts/vendor_greek_nt_tagnt_john_fallback.py --output "$out"
+          python tools/validate_logos_greek_nt_tagnt_john_fallback.py --root "$out"
 
       - name: Build and validate Greek NT production package for PR
         if: github.event_name == 'pull_request'
@@ -135,6 +143,8 @@ jobs:
         run: |
           python scripts/vendor_greek_nt_production.py
           python tools/validate_logos_greek_nt_production.py
+          python scripts/vendor_greek_nt_tagnt_john_fallback.py
+          python tools/validate_logos_greek_nt_tagnt_john_fallback.py
 
       - name: Vendor accepted OT Greek production package on main
         if: github.event_name != 'pull_request'
@@ -206,6 +216,7 @@ jobs:
           mkdir -p "$audit"
           python tools/audit_logos_73_book_interlinear.py \
             --greek-nt-root "${RUNNER_TEMP}/logos-greek-nt-production" \
+            --greek-nt-fallback-root "${RUNNER_TEMP}/logos-tagnt-john-fallback" \
             --greek-ot-accepted-root "${RUNNER_TEMP}/logos-ot-greek-production" \
             --greek-ot-full-root "${RUNNER_TEMP}/logos-ot-greek-full" \
             --semitic-root "${RUNNER_TEMP}/logos-ot-semitic-production" \
@@ -250,6 +261,7 @@ jobs:
         run: |
           english_path='cloud-backend/app/logos_corpus/eng_douay_rheims_1899'
           greek_nt_path='cloud-backend/app/logos_corpus/grc_sblgnt_morphgnt'
+          greek_nt_fallback_path='cloud-backend/app/logos_corpus/grc_tagnt_john_fallback'
           greek_ot_path='cloud-backend/app/logos_corpus/grc_ot_catholic_swete'
           greek_ot_full_path='cloud-backend/app/logos_corpus/grc_ot_catholic_full'
           semitic_ot_path='cloud-backend/app/logos_corpus/heb_arc_oshb_wlc'
@@ -259,11 +271,11 @@ jobs:
           resolution_json='cloud-backend/app/logos_interlinear/versification/resolution-audit.json'
           resolution_md='LOGOS_VERSIFICATION_RESOLUTION.md'
           git add --all -- \
-            "$english_path" "$greek_nt_path" "$greek_ot_path" \
+            "$english_path" "$greek_nt_path" "$greek_nt_fallback_path" "$greek_ot_path" \
             "$greek_ot_full_path" "$semitic_ot_path" "$latin_path" \
             "$audit_json" "$audit_md" "$resolution_json" "$resolution_md"
           if git diff --cached --quiet -- \
-            "$english_path" "$greek_nt_path" "$greek_ot_path" \
+            "$english_path" "$greek_nt_path" "$greek_nt_fallback_path" "$greek_ot_path" \
             "$greek_ot_full_path" "$semitic_ot_path" "$latin_path" \
             "$audit_json" "$audit_md" "$resolution_json" "$resolution_md"; then
             echo "Corpora and Logos coverage/resolution audits are already current."
