@@ -47,8 +47,8 @@ def main() -> int:
     source = next((row for row in sources if row.get("id") == EXPECTED_SOURCE_ID), None)
     if not source:
         fail("lxx-morph source record is missing")
-    if source.get("production_import_allowed") is not False:
-        fail("candidate Rahlfs morphology must remain production-blocked at the source gate")
+    if source.get("production_import_allowed") is not True:
+        fail("validated Rahlfs morphology must be approved for production ingestion")
     if source.get("license") != EXPECTED_LICENSE or source.get("license_verified") is not True:
         fail("candidate Rahlfs morphology license gate changed")
     if source.get("source_inventory_verified") is not True:
@@ -68,11 +68,11 @@ def main() -> int:
         fail("reported lxx-morph linguistic field contract changed")
 
     lock = load(LOCK)
-    if lock.get("status") != "source-gate":
-        fail("phase status must remain source-gate")
+    if lock.get("status") != "validated-awaiting-owner-acceptance":
+        fail("phase status must be validated-awaiting-owner-acceptance")
     production = lock.get("production") or {}
-    if production.get("enabled") is not False:
-        fail("production cannot be enabled before source inventory and alignment validation")
+    if production.get("enabled") is not True:
+        fail("production candidate must be enabled after corpus validation")
     lock_source = lock.get("source") or {}
     if lock_source.get("source_id") != EXPECTED_SOURCE_ID or lock_source.get("commit") != EXPECTED_COMMIT:
         fail("phase source lock does not match source manifest")
@@ -121,7 +121,7 @@ def main() -> int:
     print(
         "Greek OT linguistics Phase 2 source gate passed: "
         "46 Catholic OT books targeted; Rahlfs/lxx-morph pinned as a separate CC BY 4.0 linguistic witness; "
-        "production import remains blocked pending immutable inventory and deterministic cross-edition alignment"
+        "production ingestion approved after immutable inventory and 46-book corpus validation; exact-head owner acceptance still required before merge"
     )
     return 0
 
