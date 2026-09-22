@@ -1,0 +1,2202 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.22-mrk-greek-v1",
+  "status": "verified",
+  "book_id": "MRK",
+  "book": "Mark",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "sblgnt",
+    "reference_system": "sblgnt-source-numbering",
+    "corpus_id": "grc_sblgnt_morphgnt",
+    "corpus_version": "2026.09.16-sblgnt-morphgnt-27"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "4",
+      "7",
+      "8",
+      "9",
+      "11",
+      "15"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "4",
+      "segments": [
+        {
+          "id": "MRK-4-1-39-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "4",
+              "verse": "1"
+            },
+            {
+              "chapter": "4",
+              "verse": "2"
+            },
+            {
+              "chapter": "4",
+              "verse": "3"
+            },
+            {
+              "chapter": "4",
+              "verse": "4"
+            },
+            {
+              "chapter": "4",
+              "verse": "5"
+            },
+            {
+              "chapter": "4",
+              "verse": "6"
+            },
+            {
+              "chapter": "4",
+              "verse": "7"
+            },
+            {
+              "chapter": "4",
+              "verse": "8"
+            },
+            {
+              "chapter": "4",
+              "verse": "9"
+            },
+            {
+              "chapter": "4",
+              "verse": "10"
+            },
+            {
+              "chapter": "4",
+              "verse": "11"
+            },
+            {
+              "chapter": "4",
+              "verse": "12"
+            },
+            {
+              "chapter": "4",
+              "verse": "13"
+            },
+            {
+              "chapter": "4",
+              "verse": "14"
+            },
+            {
+              "chapter": "4",
+              "verse": "15"
+            },
+            {
+              "chapter": "4",
+              "verse": "16"
+            },
+            {
+              "chapter": "4",
+              "verse": "17"
+            },
+            {
+              "chapter": "4",
+              "verse": "18"
+            },
+            {
+              "chapter": "4",
+              "verse": "19"
+            },
+            {
+              "chapter": "4",
+              "verse": "20"
+            },
+            {
+              "chapter": "4",
+              "verse": "21"
+            },
+            {
+              "chapter": "4",
+              "verse": "22"
+            },
+            {
+              "chapter": "4",
+              "verse": "23"
+            },
+            {
+              "chapter": "4",
+              "verse": "24"
+            },
+            {
+              "chapter": "4",
+              "verse": "25"
+            },
+            {
+              "chapter": "4",
+              "verse": "26"
+            },
+            {
+              "chapter": "4",
+              "verse": "27"
+            },
+            {
+              "chapter": "4",
+              "verse": "28"
+            },
+            {
+              "chapter": "4",
+              "verse": "29"
+            },
+            {
+              "chapter": "4",
+              "verse": "30"
+            },
+            {
+              "chapter": "4",
+              "verse": "31"
+            },
+            {
+              "chapter": "4",
+              "verse": "32"
+            },
+            {
+              "chapter": "4",
+              "verse": "33"
+            },
+            {
+              "chapter": "4",
+              "verse": "34"
+            },
+            {
+              "chapter": "4",
+              "verse": "35"
+            },
+            {
+              "chapter": "4",
+              "verse": "36"
+            },
+            {
+              "chapter": "4",
+              "verse": "37"
+            },
+            {
+              "chapter": "4",
+              "verse": "38"
+            },
+            {
+              "chapter": "4",
+              "verse": "39"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "4",
+              "verse": "1"
+            },
+            {
+              "chapter": "4",
+              "verse": "2"
+            },
+            {
+              "chapter": "4",
+              "verse": "3"
+            },
+            {
+              "chapter": "4",
+              "verse": "4"
+            },
+            {
+              "chapter": "4",
+              "verse": "5"
+            },
+            {
+              "chapter": "4",
+              "verse": "6"
+            },
+            {
+              "chapter": "4",
+              "verse": "7"
+            },
+            {
+              "chapter": "4",
+              "verse": "8"
+            },
+            {
+              "chapter": "4",
+              "verse": "9"
+            },
+            {
+              "chapter": "4",
+              "verse": "10"
+            },
+            {
+              "chapter": "4",
+              "verse": "11"
+            },
+            {
+              "chapter": "4",
+              "verse": "12"
+            },
+            {
+              "chapter": "4",
+              "verse": "13"
+            },
+            {
+              "chapter": "4",
+              "verse": "14"
+            },
+            {
+              "chapter": "4",
+              "verse": "15"
+            },
+            {
+              "chapter": "4",
+              "verse": "16"
+            },
+            {
+              "chapter": "4",
+              "verse": "17"
+            },
+            {
+              "chapter": "4",
+              "verse": "18"
+            },
+            {
+              "chapter": "4",
+              "verse": "19"
+            },
+            {
+              "chapter": "4",
+              "verse": "20"
+            },
+            {
+              "chapter": "4",
+              "verse": "21"
+            },
+            {
+              "chapter": "4",
+              "verse": "22"
+            },
+            {
+              "chapter": "4",
+              "verse": "23"
+            },
+            {
+              "chapter": "4",
+              "verse": "24"
+            },
+            {
+              "chapter": "4",
+              "verse": "25"
+            },
+            {
+              "chapter": "4",
+              "verse": "26"
+            },
+            {
+              "chapter": "4",
+              "verse": "27"
+            },
+            {
+              "chapter": "4",
+              "verse": "28"
+            },
+            {
+              "chapter": "4",
+              "verse": "29"
+            },
+            {
+              "chapter": "4",
+              "verse": "30"
+            },
+            {
+              "chapter": "4",
+              "verse": "31"
+            },
+            {
+              "chapter": "4",
+              "verse": "32"
+            },
+            {
+              "chapter": "4",
+              "verse": "33"
+            },
+            {
+              "chapter": "4",
+              "verse": "34"
+            },
+            {
+              "chapter": "4",
+              "verse": "35"
+            },
+            {
+              "chapter": "4",
+              "verse": "36"
+            },
+            {
+              "chapter": "4",
+              "verse": "37"
+            },
+            {
+              "chapter": "4",
+              "verse": "38"
+            },
+            {
+              "chapter": "4",
+              "verse": "39"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and SBLGNT Mark 4:1-39 preserve matching numbered records."
+          }
+        },
+        {
+          "id": "MRK-4-40-greek-merge",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "4",
+              "verse": "40"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "4",
+              "verse": "40"
+            },
+            {
+              "chapter": "4",
+              "verse": "41"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Mark 4:40 contains both Jesus' question about fear/faith and the disciples' ensuing great fear and question; SBLGNT prints those clauses as 4:40 and 4:41. Both source verses remain intact."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "7",
+      "segments": [
+        {
+          "id": "MRK-7-1-15-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "7",
+              "verse": "1"
+            },
+            {
+              "chapter": "7",
+              "verse": "2"
+            },
+            {
+              "chapter": "7",
+              "verse": "3"
+            },
+            {
+              "chapter": "7",
+              "verse": "4"
+            },
+            {
+              "chapter": "7",
+              "verse": "5"
+            },
+            {
+              "chapter": "7",
+              "verse": "6"
+            },
+            {
+              "chapter": "7",
+              "verse": "7"
+            },
+            {
+              "chapter": "7",
+              "verse": "8"
+            },
+            {
+              "chapter": "7",
+              "verse": "9"
+            },
+            {
+              "chapter": "7",
+              "verse": "10"
+            },
+            {
+              "chapter": "7",
+              "verse": "11"
+            },
+            {
+              "chapter": "7",
+              "verse": "12"
+            },
+            {
+              "chapter": "7",
+              "verse": "13"
+            },
+            {
+              "chapter": "7",
+              "verse": "14"
+            },
+            {
+              "chapter": "7",
+              "verse": "15"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "7",
+              "verse": "1"
+            },
+            {
+              "chapter": "7",
+              "verse": "2"
+            },
+            {
+              "chapter": "7",
+              "verse": "3"
+            },
+            {
+              "chapter": "7",
+              "verse": "4"
+            },
+            {
+              "chapter": "7",
+              "verse": "5"
+            },
+            {
+              "chapter": "7",
+              "verse": "6"
+            },
+            {
+              "chapter": "7",
+              "verse": "7"
+            },
+            {
+              "chapter": "7",
+              "verse": "8"
+            },
+            {
+              "chapter": "7",
+              "verse": "9"
+            },
+            {
+              "chapter": "7",
+              "verse": "10"
+            },
+            {
+              "chapter": "7",
+              "verse": "11"
+            },
+            {
+              "chapter": "7",
+              "verse": "12"
+            },
+            {
+              "chapter": "7",
+              "verse": "13"
+            },
+            {
+              "chapter": "7",
+              "verse": "14"
+            },
+            {
+              "chapter": "7",
+              "verse": "15"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and SBLGNT Mark 7:1-15 preserve matching numbered records."
+          }
+        },
+        {
+          "id": "MRK-7-16-greek-source-gap",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "7",
+              "verse": "16"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "Pinned SBLGNT Mark 7 has no 7:16 source record; Douay-Rheims contains 7:16. No Greek text is synthesized."
+          }
+        },
+        {
+          "id": "MRK-7-17-37-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "7",
+              "verse": "17"
+            },
+            {
+              "chapter": "7",
+              "verse": "18"
+            },
+            {
+              "chapter": "7",
+              "verse": "19"
+            },
+            {
+              "chapter": "7",
+              "verse": "20"
+            },
+            {
+              "chapter": "7",
+              "verse": "21"
+            },
+            {
+              "chapter": "7",
+              "verse": "22"
+            },
+            {
+              "chapter": "7",
+              "verse": "23"
+            },
+            {
+              "chapter": "7",
+              "verse": "24"
+            },
+            {
+              "chapter": "7",
+              "verse": "25"
+            },
+            {
+              "chapter": "7",
+              "verse": "26"
+            },
+            {
+              "chapter": "7",
+              "verse": "27"
+            },
+            {
+              "chapter": "7",
+              "verse": "28"
+            },
+            {
+              "chapter": "7",
+              "verse": "29"
+            },
+            {
+              "chapter": "7",
+              "verse": "30"
+            },
+            {
+              "chapter": "7",
+              "verse": "31"
+            },
+            {
+              "chapter": "7",
+              "verse": "32"
+            },
+            {
+              "chapter": "7",
+              "verse": "33"
+            },
+            {
+              "chapter": "7",
+              "verse": "34"
+            },
+            {
+              "chapter": "7",
+              "verse": "35"
+            },
+            {
+              "chapter": "7",
+              "verse": "36"
+            },
+            {
+              "chapter": "7",
+              "verse": "37"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "7",
+              "verse": "17"
+            },
+            {
+              "chapter": "7",
+              "verse": "18"
+            },
+            {
+              "chapter": "7",
+              "verse": "19"
+            },
+            {
+              "chapter": "7",
+              "verse": "20"
+            },
+            {
+              "chapter": "7",
+              "verse": "21"
+            },
+            {
+              "chapter": "7",
+              "verse": "22"
+            },
+            {
+              "chapter": "7",
+              "verse": "23"
+            },
+            {
+              "chapter": "7",
+              "verse": "24"
+            },
+            {
+              "chapter": "7",
+              "verse": "25"
+            },
+            {
+              "chapter": "7",
+              "verse": "26"
+            },
+            {
+              "chapter": "7",
+              "verse": "27"
+            },
+            {
+              "chapter": "7",
+              "verse": "28"
+            },
+            {
+              "chapter": "7",
+              "verse": "29"
+            },
+            {
+              "chapter": "7",
+              "verse": "30"
+            },
+            {
+              "chapter": "7",
+              "verse": "31"
+            },
+            {
+              "chapter": "7",
+              "verse": "32"
+            },
+            {
+              "chapter": "7",
+              "verse": "33"
+            },
+            {
+              "chapter": "7",
+              "verse": "34"
+            },
+            {
+              "chapter": "7",
+              "verse": "35"
+            },
+            {
+              "chapter": "7",
+              "verse": "36"
+            },
+            {
+              "chapter": "7",
+              "verse": "37"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and SBLGNT Mark 7:17-37 preserve matching numbered records after the explicit 7:16 source gap."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "8",
+      "segments": [
+        {
+          "id": "MRK-8-1-38-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "8",
+              "verse": "1"
+            },
+            {
+              "chapter": "8",
+              "verse": "2"
+            },
+            {
+              "chapter": "8",
+              "verse": "3"
+            },
+            {
+              "chapter": "8",
+              "verse": "4"
+            },
+            {
+              "chapter": "8",
+              "verse": "5"
+            },
+            {
+              "chapter": "8",
+              "verse": "6"
+            },
+            {
+              "chapter": "8",
+              "verse": "7"
+            },
+            {
+              "chapter": "8",
+              "verse": "8"
+            },
+            {
+              "chapter": "8",
+              "verse": "9"
+            },
+            {
+              "chapter": "8",
+              "verse": "10"
+            },
+            {
+              "chapter": "8",
+              "verse": "11"
+            },
+            {
+              "chapter": "8",
+              "verse": "12"
+            },
+            {
+              "chapter": "8",
+              "verse": "13"
+            },
+            {
+              "chapter": "8",
+              "verse": "14"
+            },
+            {
+              "chapter": "8",
+              "verse": "15"
+            },
+            {
+              "chapter": "8",
+              "verse": "16"
+            },
+            {
+              "chapter": "8",
+              "verse": "17"
+            },
+            {
+              "chapter": "8",
+              "verse": "18"
+            },
+            {
+              "chapter": "8",
+              "verse": "19"
+            },
+            {
+              "chapter": "8",
+              "verse": "20"
+            },
+            {
+              "chapter": "8",
+              "verse": "21"
+            },
+            {
+              "chapter": "8",
+              "verse": "22"
+            },
+            {
+              "chapter": "8",
+              "verse": "23"
+            },
+            {
+              "chapter": "8",
+              "verse": "24"
+            },
+            {
+              "chapter": "8",
+              "verse": "25"
+            },
+            {
+              "chapter": "8",
+              "verse": "26"
+            },
+            {
+              "chapter": "8",
+              "verse": "27"
+            },
+            {
+              "chapter": "8",
+              "verse": "28"
+            },
+            {
+              "chapter": "8",
+              "verse": "29"
+            },
+            {
+              "chapter": "8",
+              "verse": "30"
+            },
+            {
+              "chapter": "8",
+              "verse": "31"
+            },
+            {
+              "chapter": "8",
+              "verse": "32"
+            },
+            {
+              "chapter": "8",
+              "verse": "33"
+            },
+            {
+              "chapter": "8",
+              "verse": "34"
+            },
+            {
+              "chapter": "8",
+              "verse": "35"
+            },
+            {
+              "chapter": "8",
+              "verse": "36"
+            },
+            {
+              "chapter": "8",
+              "verse": "37"
+            },
+            {
+              "chapter": "8",
+              "verse": "38"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "8",
+              "verse": "1"
+            },
+            {
+              "chapter": "8",
+              "verse": "2"
+            },
+            {
+              "chapter": "8",
+              "verse": "3"
+            },
+            {
+              "chapter": "8",
+              "verse": "4"
+            },
+            {
+              "chapter": "8",
+              "verse": "5"
+            },
+            {
+              "chapter": "8",
+              "verse": "6"
+            },
+            {
+              "chapter": "8",
+              "verse": "7"
+            },
+            {
+              "chapter": "8",
+              "verse": "8"
+            },
+            {
+              "chapter": "8",
+              "verse": "9"
+            },
+            {
+              "chapter": "8",
+              "verse": "10"
+            },
+            {
+              "chapter": "8",
+              "verse": "11"
+            },
+            {
+              "chapter": "8",
+              "verse": "12"
+            },
+            {
+              "chapter": "8",
+              "verse": "13"
+            },
+            {
+              "chapter": "8",
+              "verse": "14"
+            },
+            {
+              "chapter": "8",
+              "verse": "15"
+            },
+            {
+              "chapter": "8",
+              "verse": "16"
+            },
+            {
+              "chapter": "8",
+              "verse": "17"
+            },
+            {
+              "chapter": "8",
+              "verse": "18"
+            },
+            {
+              "chapter": "8",
+              "verse": "19"
+            },
+            {
+              "chapter": "8",
+              "verse": "20"
+            },
+            {
+              "chapter": "8",
+              "verse": "21"
+            },
+            {
+              "chapter": "8",
+              "verse": "22"
+            },
+            {
+              "chapter": "8",
+              "verse": "23"
+            },
+            {
+              "chapter": "8",
+              "verse": "24"
+            },
+            {
+              "chapter": "8",
+              "verse": "25"
+            },
+            {
+              "chapter": "8",
+              "verse": "26"
+            },
+            {
+              "chapter": "8",
+              "verse": "27"
+            },
+            {
+              "chapter": "8",
+              "verse": "28"
+            },
+            {
+              "chapter": "8",
+              "verse": "29"
+            },
+            {
+              "chapter": "8",
+              "verse": "30"
+            },
+            {
+              "chapter": "8",
+              "verse": "31"
+            },
+            {
+              "chapter": "8",
+              "verse": "32"
+            },
+            {
+              "chapter": "8",
+              "verse": "33"
+            },
+            {
+              "chapter": "8",
+              "verse": "34"
+            },
+            {
+              "chapter": "8",
+              "verse": "35"
+            },
+            {
+              "chapter": "8",
+              "verse": "36"
+            },
+            {
+              "chapter": "8",
+              "verse": "37"
+            },
+            {
+              "chapter": "8",
+              "verse": "38"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and SBLGNT Mark 8:1-38 preserve matching numbered records."
+          }
+        },
+        {
+          "id": "MRK-8-39-greek-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "8",
+              "verse": "39"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "9",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Mark 8:39 ('some ... shall not taste death ... kingdom of God coming in power') is printed as SBLGNT Mark 9:1, immediately before the Transfiguration narrative."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "9",
+      "segments": [
+        {
+          "id": "MRK-9-1-42-greek-offset",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "9",
+              "verse": "1"
+            },
+            {
+              "chapter": "9",
+              "verse": "2"
+            },
+            {
+              "chapter": "9",
+              "verse": "3"
+            },
+            {
+              "chapter": "9",
+              "verse": "4"
+            },
+            {
+              "chapter": "9",
+              "verse": "5"
+            },
+            {
+              "chapter": "9",
+              "verse": "6"
+            },
+            {
+              "chapter": "9",
+              "verse": "7"
+            },
+            {
+              "chapter": "9",
+              "verse": "8"
+            },
+            {
+              "chapter": "9",
+              "verse": "9"
+            },
+            {
+              "chapter": "9",
+              "verse": "10"
+            },
+            {
+              "chapter": "9",
+              "verse": "11"
+            },
+            {
+              "chapter": "9",
+              "verse": "12"
+            },
+            {
+              "chapter": "9",
+              "verse": "13"
+            },
+            {
+              "chapter": "9",
+              "verse": "14"
+            },
+            {
+              "chapter": "9",
+              "verse": "15"
+            },
+            {
+              "chapter": "9",
+              "verse": "16"
+            },
+            {
+              "chapter": "9",
+              "verse": "17"
+            },
+            {
+              "chapter": "9",
+              "verse": "18"
+            },
+            {
+              "chapter": "9",
+              "verse": "19"
+            },
+            {
+              "chapter": "9",
+              "verse": "20"
+            },
+            {
+              "chapter": "9",
+              "verse": "21"
+            },
+            {
+              "chapter": "9",
+              "verse": "22"
+            },
+            {
+              "chapter": "9",
+              "verse": "23"
+            },
+            {
+              "chapter": "9",
+              "verse": "24"
+            },
+            {
+              "chapter": "9",
+              "verse": "25"
+            },
+            {
+              "chapter": "9",
+              "verse": "26"
+            },
+            {
+              "chapter": "9",
+              "verse": "27"
+            },
+            {
+              "chapter": "9",
+              "verse": "28"
+            },
+            {
+              "chapter": "9",
+              "verse": "29"
+            },
+            {
+              "chapter": "9",
+              "verse": "30"
+            },
+            {
+              "chapter": "9",
+              "verse": "31"
+            },
+            {
+              "chapter": "9",
+              "verse": "32"
+            },
+            {
+              "chapter": "9",
+              "verse": "33"
+            },
+            {
+              "chapter": "9",
+              "verse": "34"
+            },
+            {
+              "chapter": "9",
+              "verse": "35"
+            },
+            {
+              "chapter": "9",
+              "verse": "36"
+            },
+            {
+              "chapter": "9",
+              "verse": "37"
+            },
+            {
+              "chapter": "9",
+              "verse": "38"
+            },
+            {
+              "chapter": "9",
+              "verse": "39"
+            },
+            {
+              "chapter": "9",
+              "verse": "40"
+            },
+            {
+              "chapter": "9",
+              "verse": "41"
+            },
+            {
+              "chapter": "9",
+              "verse": "42"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "9",
+              "verse": "2"
+            },
+            {
+              "chapter": "9",
+              "verse": "3"
+            },
+            {
+              "chapter": "9",
+              "verse": "4"
+            },
+            {
+              "chapter": "9",
+              "verse": "5"
+            },
+            {
+              "chapter": "9",
+              "verse": "6"
+            },
+            {
+              "chapter": "9",
+              "verse": "7"
+            },
+            {
+              "chapter": "9",
+              "verse": "8"
+            },
+            {
+              "chapter": "9",
+              "verse": "9"
+            },
+            {
+              "chapter": "9",
+              "verse": "10"
+            },
+            {
+              "chapter": "9",
+              "verse": "11"
+            },
+            {
+              "chapter": "9",
+              "verse": "12"
+            },
+            {
+              "chapter": "9",
+              "verse": "13"
+            },
+            {
+              "chapter": "9",
+              "verse": "14"
+            },
+            {
+              "chapter": "9",
+              "verse": "15"
+            },
+            {
+              "chapter": "9",
+              "verse": "16"
+            },
+            {
+              "chapter": "9",
+              "verse": "17"
+            },
+            {
+              "chapter": "9",
+              "verse": "18"
+            },
+            {
+              "chapter": "9",
+              "verse": "19"
+            },
+            {
+              "chapter": "9",
+              "verse": "20"
+            },
+            {
+              "chapter": "9",
+              "verse": "21"
+            },
+            {
+              "chapter": "9",
+              "verse": "22"
+            },
+            {
+              "chapter": "9",
+              "verse": "23"
+            },
+            {
+              "chapter": "9",
+              "verse": "24"
+            },
+            {
+              "chapter": "9",
+              "verse": "25"
+            },
+            {
+              "chapter": "9",
+              "verse": "26"
+            },
+            {
+              "chapter": "9",
+              "verse": "27"
+            },
+            {
+              "chapter": "9",
+              "verse": "28"
+            },
+            {
+              "chapter": "9",
+              "verse": "29"
+            },
+            {
+              "chapter": "9",
+              "verse": "30"
+            },
+            {
+              "chapter": "9",
+              "verse": "31"
+            },
+            {
+              "chapter": "9",
+              "verse": "32"
+            },
+            {
+              "chapter": "9",
+              "verse": "33"
+            },
+            {
+              "chapter": "9",
+              "verse": "34"
+            },
+            {
+              "chapter": "9",
+              "verse": "35"
+            },
+            {
+              "chapter": "9",
+              "verse": "36"
+            },
+            {
+              "chapter": "9",
+              "verse": "37"
+            },
+            {
+              "chapter": "9",
+              "verse": "38"
+            },
+            {
+              "chapter": "9",
+              "verse": "39"
+            },
+            {
+              "chapter": "9",
+              "verse": "40"
+            },
+            {
+              "chapter": "9",
+              "verse": "41"
+            },
+            {
+              "chapter": "9",
+              "verse": "42"
+            },
+            {
+              "chapter": "9",
+              "verse": "43"
+            }
+          ],
+          "evidence": {
+            "citation": "After SBLGNT 9:1 maps to Douay-Rheims 8:39, Douay Mark 9:1-42 corresponds sequentially to SBLGNT 9:2-43."
+          }
+        },
+        {
+          "id": "MRK-9-43-45-47-greek-refrain",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "9",
+              "verse": "43"
+            },
+            {
+              "chapter": "9",
+              "verse": "45"
+            },
+            {
+              "chapter": "9",
+              "verse": "47"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "9",
+              "verse": "48"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims repeats the 'worm dieth not / fire is not extinguished' saying at 9:43, 9:45 and 9:47; pinned SBLGNT preserves that saying once at 9:48. The single source verse is reused without fabrication."
+          }
+        },
+        {
+          "id": "MRK-9-44-greek-renumber",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "9",
+              "verse": "44"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "9",
+              "verse": "45"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims 9:44 is the foot-stumbling saying printed as SBLGNT 9:45."
+          }
+        },
+        {
+          "id": "MRK-9-46-greek-renumber",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "9",
+              "verse": "46"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "9",
+              "verse": "47"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims 9:46 is the eye-stumbling saying printed as SBLGNT 9:47."
+          }
+        },
+        {
+          "id": "MRK-9-48-49-greek-offset",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "9",
+              "verse": "48"
+            },
+            {
+              "chapter": "9",
+              "verse": "49"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "9",
+              "verse": "49"
+            },
+            {
+              "chapter": "9",
+              "verse": "50"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims 9:48-49 (salted with fire; salt is good) corresponds sequentially to SBLGNT 9:49-50."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "11",
+      "segments": [
+        {
+          "id": "MRK-11-1-25-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "1"
+            },
+            {
+              "chapter": "11",
+              "verse": "2"
+            },
+            {
+              "chapter": "11",
+              "verse": "3"
+            },
+            {
+              "chapter": "11",
+              "verse": "4"
+            },
+            {
+              "chapter": "11",
+              "verse": "5"
+            },
+            {
+              "chapter": "11",
+              "verse": "6"
+            },
+            {
+              "chapter": "11",
+              "verse": "7"
+            },
+            {
+              "chapter": "11",
+              "verse": "8"
+            },
+            {
+              "chapter": "11",
+              "verse": "9"
+            },
+            {
+              "chapter": "11",
+              "verse": "10"
+            },
+            {
+              "chapter": "11",
+              "verse": "11"
+            },
+            {
+              "chapter": "11",
+              "verse": "12"
+            },
+            {
+              "chapter": "11",
+              "verse": "13"
+            },
+            {
+              "chapter": "11",
+              "verse": "14"
+            },
+            {
+              "chapter": "11",
+              "verse": "15"
+            },
+            {
+              "chapter": "11",
+              "verse": "16"
+            },
+            {
+              "chapter": "11",
+              "verse": "17"
+            },
+            {
+              "chapter": "11",
+              "verse": "18"
+            },
+            {
+              "chapter": "11",
+              "verse": "19"
+            },
+            {
+              "chapter": "11",
+              "verse": "20"
+            },
+            {
+              "chapter": "11",
+              "verse": "21"
+            },
+            {
+              "chapter": "11",
+              "verse": "22"
+            },
+            {
+              "chapter": "11",
+              "verse": "23"
+            },
+            {
+              "chapter": "11",
+              "verse": "24"
+            },
+            {
+              "chapter": "11",
+              "verse": "25"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "11",
+              "verse": "1"
+            },
+            {
+              "chapter": "11",
+              "verse": "2"
+            },
+            {
+              "chapter": "11",
+              "verse": "3"
+            },
+            {
+              "chapter": "11",
+              "verse": "4"
+            },
+            {
+              "chapter": "11",
+              "verse": "5"
+            },
+            {
+              "chapter": "11",
+              "verse": "6"
+            },
+            {
+              "chapter": "11",
+              "verse": "7"
+            },
+            {
+              "chapter": "11",
+              "verse": "8"
+            },
+            {
+              "chapter": "11",
+              "verse": "9"
+            },
+            {
+              "chapter": "11",
+              "verse": "10"
+            },
+            {
+              "chapter": "11",
+              "verse": "11"
+            },
+            {
+              "chapter": "11",
+              "verse": "12"
+            },
+            {
+              "chapter": "11",
+              "verse": "13"
+            },
+            {
+              "chapter": "11",
+              "verse": "14"
+            },
+            {
+              "chapter": "11",
+              "verse": "15"
+            },
+            {
+              "chapter": "11",
+              "verse": "16"
+            },
+            {
+              "chapter": "11",
+              "verse": "17"
+            },
+            {
+              "chapter": "11",
+              "verse": "18"
+            },
+            {
+              "chapter": "11",
+              "verse": "19"
+            },
+            {
+              "chapter": "11",
+              "verse": "20"
+            },
+            {
+              "chapter": "11",
+              "verse": "21"
+            },
+            {
+              "chapter": "11",
+              "verse": "22"
+            },
+            {
+              "chapter": "11",
+              "verse": "23"
+            },
+            {
+              "chapter": "11",
+              "verse": "24"
+            },
+            {
+              "chapter": "11",
+              "verse": "25"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and SBLGNT Mark 11:1-25 preserve matching numbered records."
+          }
+        },
+        {
+          "id": "MRK-11-26-greek-source-gap",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "26"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "Pinned SBLGNT Mark 11 has no 11:26 source record; Douay-Rheims contains 11:26. No Greek text is synthesized."
+          }
+        },
+        {
+          "id": "MRK-11-27-33-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "27"
+            },
+            {
+              "chapter": "11",
+              "verse": "28"
+            },
+            {
+              "chapter": "11",
+              "verse": "29"
+            },
+            {
+              "chapter": "11",
+              "verse": "30"
+            },
+            {
+              "chapter": "11",
+              "verse": "31"
+            },
+            {
+              "chapter": "11",
+              "verse": "32"
+            },
+            {
+              "chapter": "11",
+              "verse": "33"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "11",
+              "verse": "27"
+            },
+            {
+              "chapter": "11",
+              "verse": "28"
+            },
+            {
+              "chapter": "11",
+              "verse": "29"
+            },
+            {
+              "chapter": "11",
+              "verse": "30"
+            },
+            {
+              "chapter": "11",
+              "verse": "31"
+            },
+            {
+              "chapter": "11",
+              "verse": "32"
+            },
+            {
+              "chapter": "11",
+              "verse": "33"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and SBLGNT Mark 11:27-33 preserve matching numbered records after the explicit 11:26 source gap."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "15",
+      "segments": [
+        {
+          "id": "MRK-15-1-27-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "15",
+              "verse": "1"
+            },
+            {
+              "chapter": "15",
+              "verse": "2"
+            },
+            {
+              "chapter": "15",
+              "verse": "3"
+            },
+            {
+              "chapter": "15",
+              "verse": "4"
+            },
+            {
+              "chapter": "15",
+              "verse": "5"
+            },
+            {
+              "chapter": "15",
+              "verse": "6"
+            },
+            {
+              "chapter": "15",
+              "verse": "7"
+            },
+            {
+              "chapter": "15",
+              "verse": "8"
+            },
+            {
+              "chapter": "15",
+              "verse": "9"
+            },
+            {
+              "chapter": "15",
+              "verse": "10"
+            },
+            {
+              "chapter": "15",
+              "verse": "11"
+            },
+            {
+              "chapter": "15",
+              "verse": "12"
+            },
+            {
+              "chapter": "15",
+              "verse": "13"
+            },
+            {
+              "chapter": "15",
+              "verse": "14"
+            },
+            {
+              "chapter": "15",
+              "verse": "15"
+            },
+            {
+              "chapter": "15",
+              "verse": "16"
+            },
+            {
+              "chapter": "15",
+              "verse": "17"
+            },
+            {
+              "chapter": "15",
+              "verse": "18"
+            },
+            {
+              "chapter": "15",
+              "verse": "19"
+            },
+            {
+              "chapter": "15",
+              "verse": "20"
+            },
+            {
+              "chapter": "15",
+              "verse": "21"
+            },
+            {
+              "chapter": "15",
+              "verse": "22"
+            },
+            {
+              "chapter": "15",
+              "verse": "23"
+            },
+            {
+              "chapter": "15",
+              "verse": "24"
+            },
+            {
+              "chapter": "15",
+              "verse": "25"
+            },
+            {
+              "chapter": "15",
+              "verse": "26"
+            },
+            {
+              "chapter": "15",
+              "verse": "27"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "15",
+              "verse": "1"
+            },
+            {
+              "chapter": "15",
+              "verse": "2"
+            },
+            {
+              "chapter": "15",
+              "verse": "3"
+            },
+            {
+              "chapter": "15",
+              "verse": "4"
+            },
+            {
+              "chapter": "15",
+              "verse": "5"
+            },
+            {
+              "chapter": "15",
+              "verse": "6"
+            },
+            {
+              "chapter": "15",
+              "verse": "7"
+            },
+            {
+              "chapter": "15",
+              "verse": "8"
+            },
+            {
+              "chapter": "15",
+              "verse": "9"
+            },
+            {
+              "chapter": "15",
+              "verse": "10"
+            },
+            {
+              "chapter": "15",
+              "verse": "11"
+            },
+            {
+              "chapter": "15",
+              "verse": "12"
+            },
+            {
+              "chapter": "15",
+              "verse": "13"
+            },
+            {
+              "chapter": "15",
+              "verse": "14"
+            },
+            {
+              "chapter": "15",
+              "verse": "15"
+            },
+            {
+              "chapter": "15",
+              "verse": "16"
+            },
+            {
+              "chapter": "15",
+              "verse": "17"
+            },
+            {
+              "chapter": "15",
+              "verse": "18"
+            },
+            {
+              "chapter": "15",
+              "verse": "19"
+            },
+            {
+              "chapter": "15",
+              "verse": "20"
+            },
+            {
+              "chapter": "15",
+              "verse": "21"
+            },
+            {
+              "chapter": "15",
+              "verse": "22"
+            },
+            {
+              "chapter": "15",
+              "verse": "23"
+            },
+            {
+              "chapter": "15",
+              "verse": "24"
+            },
+            {
+              "chapter": "15",
+              "verse": "25"
+            },
+            {
+              "chapter": "15",
+              "verse": "26"
+            },
+            {
+              "chapter": "15",
+              "verse": "27"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and SBLGNT Mark 15:1-27 preserve matching numbered records."
+          }
+        },
+        {
+          "id": "MRK-15-28-greek-source-gap",
+          "relationship": "canonical-only",
+          "canonical_refs": [
+            {
+              "chapter": "15",
+              "verse": "28"
+            }
+          ],
+          "source_refs": [],
+          "evidence": {
+            "citation": "Pinned SBLGNT Mark 15 has no 15:28 source record; Douay-Rheims contains 15:28. No Greek text is synthesized."
+          }
+        },
+        {
+          "id": "MRK-15-29-47-greek",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "15",
+              "verse": "29"
+            },
+            {
+              "chapter": "15",
+              "verse": "30"
+            },
+            {
+              "chapter": "15",
+              "verse": "31"
+            },
+            {
+              "chapter": "15",
+              "verse": "32"
+            },
+            {
+              "chapter": "15",
+              "verse": "33"
+            },
+            {
+              "chapter": "15",
+              "verse": "34"
+            },
+            {
+              "chapter": "15",
+              "verse": "35"
+            },
+            {
+              "chapter": "15",
+              "verse": "36"
+            },
+            {
+              "chapter": "15",
+              "verse": "37"
+            },
+            {
+              "chapter": "15",
+              "verse": "38"
+            },
+            {
+              "chapter": "15",
+              "verse": "39"
+            },
+            {
+              "chapter": "15",
+              "verse": "40"
+            },
+            {
+              "chapter": "15",
+              "verse": "41"
+            },
+            {
+              "chapter": "15",
+              "verse": "42"
+            },
+            {
+              "chapter": "15",
+              "verse": "43"
+            },
+            {
+              "chapter": "15",
+              "verse": "44"
+            },
+            {
+              "chapter": "15",
+              "verse": "45"
+            },
+            {
+              "chapter": "15",
+              "verse": "46"
+            },
+            {
+              "chapter": "15",
+              "verse": "47"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "15",
+              "verse": "29"
+            },
+            {
+              "chapter": "15",
+              "verse": "30"
+            },
+            {
+              "chapter": "15",
+              "verse": "31"
+            },
+            {
+              "chapter": "15",
+              "verse": "32"
+            },
+            {
+              "chapter": "15",
+              "verse": "33"
+            },
+            {
+              "chapter": "15",
+              "verse": "34"
+            },
+            {
+              "chapter": "15",
+              "verse": "35"
+            },
+            {
+              "chapter": "15",
+              "verse": "36"
+            },
+            {
+              "chapter": "15",
+              "verse": "37"
+            },
+            {
+              "chapter": "15",
+              "verse": "38"
+            },
+            {
+              "chapter": "15",
+              "verse": "39"
+            },
+            {
+              "chapter": "15",
+              "verse": "40"
+            },
+            {
+              "chapter": "15",
+              "verse": "41"
+            },
+            {
+              "chapter": "15",
+              "verse": "42"
+            },
+            {
+              "chapter": "15",
+              "verse": "43"
+            },
+            {
+              "chapter": "15",
+              "verse": "44"
+            },
+            {
+              "chapter": "15",
+              "verse": "45"
+            },
+            {
+              "chapter": "15",
+              "verse": "46"
+            },
+            {
+              "chapter": "15",
+              "verse": "47"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and SBLGNT Mark 15:29-47 preserve matching numbered records after the explicit 15:28 source gap."
+          }
+        }
+      ]
+    }
+  ]
+}
