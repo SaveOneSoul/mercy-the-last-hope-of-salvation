@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 12,
-    "books_resolved": 61,
-    "unresolved_lane_count": 26,
-    "verified_registry_lane_count": 54,
+    "books_unresolved": 5,
+    "books_resolved": 68,
+    "unresolved_lane_count": 8,
+    "verified_registry_lane_count": 72,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -25,18 +25,61 @@
       "unresolved": true,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-gen-semitic-v1",
+          "file": "maps/GEN-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "31",
+            "32",
+            "49",
+            "50"
+          ],
+          "audited_mismatch_chapters": [
+            "31",
+            "32",
+            "49",
+            "50"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "31",
             "32",
             "49",
             "50"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-gen-greek-v1",
+          "file": "maps/GEN-greek-first1k-swete.json",
+          "covered_chapters": [
+            "2",
+            "5",
+            "15",
+            "16",
+            "31",
+            "36",
+            "37",
+            "45",
+            "49",
+            "50"
+          ],
+          "audited_mismatch_chapters": [
+            "2",
+            "5",
+            "15",
+            "16",
+            "31",
+            "36",
+            "37",
+            "45",
+            "49",
+            "50"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "2",
@@ -49,8 +92,7 @@
             "45",
             "49",
             "50"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "unresolved",
@@ -67,10 +109,28 @@
       "id": "EXO",
       "book": "Exodus",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-exo-semitic-v1",
+          "file": "maps/EXO-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "7",
+            "8",
+            "21",
+            "22",
+            "40"
+          ],
+          "audited_mismatch_chapters": [
+            "7",
+            "8",
+            "21",
+            "22",
+            "40"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "7",
@@ -78,11 +138,40 @@
             "21",
             "22",
             "40"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-exo-greek-v1",
+          "file": "maps/EXO-greek-first1k-swete.json",
+          "covered_chapters": [
+            "4",
+            "17",
+            "24",
+            "25",
+            "28",
+            "29",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40"
+          ],
+          "audited_mismatch_chapters": [
+            "4",
+            "17",
+            "24",
+            "25",
+            "28",
+            "29",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "4",
@@ -96,8 +185,7 @@
             "38",
             "39",
             "40"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
@@ -329,20 +417,63 @@
       "id": "JOS",
       "book": "Joshua",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-jos-semitic-v1",
+          "file": "maps/JOS-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "4",
+            "5",
+            "21"
+          ],
+          "audited_mismatch_chapters": [
+            "4",
+            "5",
+            "21"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "4",
             "5",
             "21"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-jos-greek-v1",
+          "file": "maps/JOS-greek-first1k-swete.json",
+          "covered_chapters": [
+            "4",
+            "5",
+            "8",
+            "9",
+            "10",
+            "13",
+            "15",
+            "19",
+            "20",
+            "21",
+            "24"
+          ],
+          "audited_mismatch_chapters": [
+            "4",
+            "5",
+            "8",
+            "9",
+            "10",
+            "13",
+            "15",
+            "19",
+            "20",
+            "21",
+            "24"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "4",
@@ -356,8 +487,7 @@
             "20",
             "21",
             "24"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
@@ -565,19 +695,70 @@
       "id": "1KI",
       "book": "1 Kings",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-1ki-semitic-v1",
+          "file": "maps/1KI-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "4",
+            "5"
+          ],
+          "audited_mismatch_chapters": [
+            "4",
+            "5"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "4",
             "5"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-1ki-greek-v1",
+          "file": "maps/1KI-greek-first1k-swete.json",
+          "covered_chapters": [
+            "2",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "20",
+            "21",
+            "22"
+          ],
+          "audited_mismatch_chapters": [
+            "2",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "20",
+            "21",
+            "22"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "2",
@@ -596,8 +777,7 @@
             "20",
             "21",
             "22"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
@@ -666,10 +846,28 @@
       "id": "1CH",
       "book": "1 Chronicles",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-1ch-semitic-v1",
+          "file": "maps/1CH-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "5",
+            "6",
+            "11",
+            "12",
+            "20"
+          ],
+          "audited_mismatch_chapters": [
+            "5",
+            "6",
+            "11",
+            "12",
+            "20"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "5",
@@ -677,11 +875,36 @@
             "11",
             "12",
             "20"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-1ch-greek-v1",
+          "file": "maps/1CH-greek-first1k-swete.json",
+          "covered_chapters": [
+            "1",
+            "6",
+            "11",
+            "12",
+            "16",
+            "20",
+            "24",
+            "27",
+            "28"
+          ],
+          "audited_mismatch_chapters": [
+            "1",
+            "6",
+            "11",
+            "12",
+            "16",
+            "20",
+            "24",
+            "27",
+            "28"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "1",
@@ -693,8 +916,7 @@
             "24",
             "27",
             "28"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
@@ -707,21 +929,64 @@
       "id": "2CH",
       "book": "2 Chronicles",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-2ch-semitic-v1",
+          "file": "maps/2CH-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "1",
+            "2",
+            "13",
+            "14"
+          ],
+          "audited_mismatch_chapters": [
+            "1",
+            "2",
+            "13",
+            "14"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "1",
             "2",
             "13",
             "14"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-2ch-greek-v1",
+          "file": "maps/2CH-greek-first1k-swete.json",
+          "covered_chapters": [
+            "3",
+            "4",
+            "11",
+            "17",
+            "24",
+            "27",
+            "31",
+            "33",
+            "35",
+            "36"
+          ],
+          "audited_mismatch_chapters": [
+            "3",
+            "4",
+            "11",
+            "17",
+            "24",
+            "27",
+            "31",
+            "33",
+            "35",
+            "36"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "3",
@@ -734,8 +999,7 @@
             "33",
             "35",
             "36"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
@@ -1020,10 +1284,28 @@
       "id": "JOB",
       "book": "Job",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-job-semitic-v1",
+          "file": "maps/JOB-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "16",
+            "39",
+            "40",
+            "41",
+            "42"
+          ],
+          "audited_mismatch_chapters": [
+            "16",
+            "39",
+            "40",
+            "41",
+            "42"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "16",
@@ -1031,11 +1313,38 @@
             "40",
             "41",
             "42"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-job-greek-v1",
+          "file": "maps/JOB-greek-first1k-swete.json",
+          "covered_chapters": [
+            "2",
+            "7",
+            "10",
+            "14",
+            "19",
+            "33",
+            "35",
+            "36",
+            "40",
+            "42"
+          ],
+          "audited_mismatch_chapters": [
+            "2",
+            "7",
+            "10",
+            "14",
+            "19",
+            "33",
+            "35",
+            "36",
+            "40",
+            "42"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "2",
@@ -1048,8 +1357,7 @@
             "36",
             "40",
             "42"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
@@ -1474,7 +1782,25 @@
       "unresolved": true,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-isa-semitic-v1",
+          "file": "maps/ISA-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "8",
+            "9",
+            "45",
+            "46",
+            "64"
+          ],
+          "audited_mismatch_chapters": [
+            "8",
+            "9",
+            "45",
+            "46",
+            "64"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "8",
@@ -1482,11 +1808,50 @@
             "45",
             "46",
             "64"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-isa-greek-v1",
+          "file": "maps/ISA-greek-first1k-swete.json",
+          "covered_chapters": [
+            "2",
+            "9",
+            "13",
+            "22",
+            "32",
+            "35",
+            "37",
+            "38",
+            "43",
+            "45",
+            "46",
+            "47",
+            "49",
+            "52",
+            "56",
+            "65"
+          ],
+          "audited_mismatch_chapters": [
+            "2",
+            "9",
+            "13",
+            "22",
+            "32",
+            "35",
+            "37",
+            "38",
+            "43",
+            "45",
+            "46",
+            "47",
+            "49",
+            "52",
+            "56",
+            "65"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "2",
@@ -1505,8 +1870,7 @@
             "52",
             "56",
             "65"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "unresolved",
@@ -1644,20 +2008,63 @@
       "id": "EZK",
       "book": "Ezekiel",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-ezk-semitic-v1",
+          "file": "maps/EZK-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "2",
+            "20",
+            "21"
+          ],
+          "audited_mismatch_chapters": [
+            "2",
+            "20",
+            "21"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "2",
             "20",
             "21"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-ezk-greek-v1",
+          "file": "maps/EZK-greek-first1k-swete.json",
+          "covered_chapters": [
+            "1",
+            "2",
+            "7",
+            "8",
+            "10",
+            "11",
+            "23",
+            "27",
+            "32",
+            "33",
+            "40"
+          ],
+          "audited_mismatch_chapters": [
+            "1",
+            "2",
+            "7",
+            "8",
+            "10",
+            "11",
+            "23",
+            "27",
+            "32",
+            "33",
+            "40"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "1",
@@ -1671,8 +2078,7 @@
             "32",
             "33",
             "40"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",

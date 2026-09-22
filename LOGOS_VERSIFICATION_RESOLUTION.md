@@ -5,10 +5,10 @@ Generated deterministically from `coverage-audit.json` plus the verified versifi
 ## Burn-down
 
 - Catholic books: **73**
-- Books with at least one unresolved lane: **12**
-- Books with all applicable lanes resolved/exact: **61**
-- Unresolved source lanes: **26**
-- Lanes resolved by new verified registry maps: **54**
+- Books with at least one unresolved lane: **5**
+- Books with all applicable lanes resolved/exact: **68**
+- Unresolved source lanes: **8**
+- Lanes resolved by new verified registry maps: **72**
 - Lanes already resolved by accepted component/explicit maps: **3**
 
 A book leaves the unresolved count only when every applicable Hebrew/Aramaic, Greek, and Latin lane is exact or backed by a verified explicit/component mapping.
@@ -17,20 +17,20 @@ A book leaves the unresolved count only when every applicable Hebrew/Aramaic, Gr
 
 | # | Book | T | Semitic | Greek | Latin | Overall |
 |---:|---|:--:|---|---|---|---|
-| 1 | Genesis | OT | Unresolved (4 ch) | Unresolved (10 ch) | Unresolved (1 ch) | Unresolved |
-| 2 | Exodus | OT | Unresolved (5 ch) | Unresolved (11 ch) | Exact | Unresolved |
+| 1 | Genesis | OT | Verified map | Verified map | Unresolved (1 ch) | Unresolved |
+| 2 | Exodus | OT | Verified map | Verified map | Exact | Resolved |
 | 3 | Leviticus | OT | Verified map | Verified map | Exact | Resolved |
 | 4 | Numbers | OT | Verified map | Verified map | Exact | Resolved |
 | 5 | Deuteronomy | OT | Verified map | Verified map | Exact | Resolved |
-| 6 | Joshua | OT | Unresolved (3 ch) | Unresolved (11 ch) | Exact | Unresolved |
+| 6 | Joshua | OT | Verified map | Verified map | Exact | Resolved |
 | 7 | Judges | OT | Verified map | Verified map | Exact | Resolved |
 | 8 | Ruth | OT | Exact | Exact | Exact | Resolved |
 | 9 | 1 Samuel | OT | Verified map | Verified map | Exact | Resolved |
 | 10 | 2 Samuel | OT | Verified map | Verified map | Exact | Resolved |
-| 11 | 1 Kings | OT | Unresolved (2 ch) | Unresolved (16 ch) | Exact | Unresolved |
+| 11 | 1 Kings | OT | Verified map | Verified map | Exact | Resolved |
 | 12 | 2 Kings | OT | Verified map | Verified map | Exact | Resolved |
-| 13 | 1 Chronicles | OT | Unresolved (5 ch) | Unresolved (9 ch) | Exact | Unresolved |
-| 14 | 2 Chronicles | OT | Unresolved (4 ch) | Unresolved (10 ch) | Exact | Unresolved |
+| 13 | 1 Chronicles | OT | Verified map | Verified map | Exact | Resolved |
+| 14 | 2 Chronicles | OT | Verified map | Verified map | Exact | Resolved |
 | 15 | Ezra | OT | Exact | Verified map | Exact | Resolved |
 | 16 | Nehemiah | OT | Verified map | Verified map | Exact | Resolved |
 | 17 | Tobit | OT | — | Exact | Exact | Resolved |
@@ -38,18 +38,18 @@ A book leaves the unresolved count only when every applicable Hebrew/Aramaic, Gr
 | 19 | Esther | OT | Verified map | Existing verified/component map | Exact | Resolved |
 | 20 | 1 Maccabees | OT | — | Exact | Exact | Resolved |
 | 21 | 2 Maccabees | OT | — | Exact | Exact | Resolved |
-| 22 | Job | OT | Unresolved (5 ch) | Unresolved (10 ch) | Exact | Unresolved |
+| 22 | Job | OT | Verified map | Verified map | Exact | Resolved |
 | 23 | Psalms | OT | Unresolved (135 ch) | Unresolved (21 ch) | Unresolved (5 ch) | Unresolved |
 | 24 | Proverbs | OT | Exact | Unresolved (27 ch) | Exact | Unresolved |
 | 25 | Ecclesiastes | OT | Verified map | Verified map | Exact | Resolved |
 | 26 | Song of Songs | OT | Verified map | Verified map | Exact | Resolved |
 | 27 | Wisdom | OT | — | Exact | Exact | Resolved |
 | 28 | Sirach | OT | — | Exact | Verified map | Resolved |
-| 29 | Isaiah | OT | Unresolved (5 ch) | Unresolved (16 ch) | Unresolved (2 ch) | Unresolved |
+| 29 | Isaiah | OT | Verified map | Verified map | Unresolved (2 ch) | Unresolved |
 | 30 | Jeremiah | OT | Unresolved (3 ch) | Unresolved (35 ch) | Exact | Unresolved |
 | 31 | Lamentations | OT | Exact | Verified map | Exact | Resolved |
 | 32 | Baruch | OT | — | Existing verified/component map | Exact | Resolved |
-| 33 | Ezekiel | OT | Unresolved (3 ch) | Unresolved (11 ch) | Exact | Unresolved |
+| 33 | Ezekiel | OT | Verified map | Verified map | Exact | Resolved |
 | 34 | Daniel | OT | Verified map | Existing verified/component map | Exact | Resolved |
 | 35 | Hosea | OT | Verified map | Verified map | Exact | Resolved |
 | 36 | Joel | OT | Verified map | Exact | Exact | Resolved |
