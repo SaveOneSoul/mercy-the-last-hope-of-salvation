@@ -1,0 +1,858 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.22-isa-semitic-v1",
+  "status": "verified",
+  "book_id": "ISA",
+  "book": "Isaiah",
+  "lane": "semitic",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "oshb",
+    "reference_system": "oshb-wlc-osis",
+    "corpus_id": "heb_arc_oshb_wlc",
+    "corpus_version": "2026.09.16-oshb-wlc-39",
+    "repository": "openscriptures/morphhb",
+    "commit": "3d15126fb1ef74867fc1434be1942e837932691f"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "8",
+      "9",
+      "45",
+      "46",
+      "64"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "8",
+      "segments": [
+        {
+          "id": "ISA-8-semitic-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "8",
+              "verse": "1"
+            },
+            {
+              "chapter": "8",
+              "verse": "2"
+            },
+            {
+              "chapter": "8",
+              "verse": "3"
+            },
+            {
+              "chapter": "8",
+              "verse": "4"
+            },
+            {
+              "chapter": "8",
+              "verse": "5"
+            },
+            {
+              "chapter": "8",
+              "verse": "6"
+            },
+            {
+              "chapter": "8",
+              "verse": "7"
+            },
+            {
+              "chapter": "8",
+              "verse": "8"
+            },
+            {
+              "chapter": "8",
+              "verse": "9"
+            },
+            {
+              "chapter": "8",
+              "verse": "10"
+            },
+            {
+              "chapter": "8",
+              "verse": "11"
+            },
+            {
+              "chapter": "8",
+              "verse": "12"
+            },
+            {
+              "chapter": "8",
+              "verse": "13"
+            },
+            {
+              "chapter": "8",
+              "verse": "14"
+            },
+            {
+              "chapter": "8",
+              "verse": "15"
+            },
+            {
+              "chapter": "8",
+              "verse": "16"
+            },
+            {
+              "chapter": "8",
+              "verse": "17"
+            },
+            {
+              "chapter": "8",
+              "verse": "18"
+            },
+            {
+              "chapter": "8",
+              "verse": "19"
+            },
+            {
+              "chapter": "8",
+              "verse": "20"
+            },
+            {
+              "chapter": "8",
+              "verse": "21"
+            },
+            {
+              "chapter": "8",
+              "verse": "22"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "8",
+              "verse": "1"
+            },
+            {
+              "chapter": "8",
+              "verse": "2"
+            },
+            {
+              "chapter": "8",
+              "verse": "3"
+            },
+            {
+              "chapter": "8",
+              "verse": "4"
+            },
+            {
+              "chapter": "8",
+              "verse": "5"
+            },
+            {
+              "chapter": "8",
+              "verse": "6"
+            },
+            {
+              "chapter": "8",
+              "verse": "7"
+            },
+            {
+              "chapter": "8",
+              "verse": "8"
+            },
+            {
+              "chapter": "8",
+              "verse": "9"
+            },
+            {
+              "chapter": "8",
+              "verse": "10"
+            },
+            {
+              "chapter": "8",
+              "verse": "11"
+            },
+            {
+              "chapter": "8",
+              "verse": "12"
+            },
+            {
+              "chapter": "8",
+              "verse": "13"
+            },
+            {
+              "chapter": "8",
+              "verse": "14"
+            },
+            {
+              "chapter": "8",
+              "verse": "15"
+            },
+            {
+              "chapter": "8",
+              "verse": "16"
+            },
+            {
+              "chapter": "8",
+              "verse": "17"
+            },
+            {
+              "chapter": "8",
+              "verse": "18"
+            },
+            {
+              "chapter": "8",
+              "verse": "19"
+            },
+            {
+              "chapter": "8",
+              "verse": "20"
+            },
+            {
+              "chapter": "8",
+              "verse": "21"
+            },
+            {
+              "chapter": "8",
+              "verse": "22"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 8 and pinned OSHB/WLC are related through the UBS Vulgate-to-original exception table plus unchanged identity loci; the complete structural source range is preserved without inventing Hebrew verse boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "9",
+      "segments": [
+        {
+          "id": "ISA-9-semitic-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "9",
+              "verse": "1"
+            },
+            {
+              "chapter": "9",
+              "verse": "2"
+            },
+            {
+              "chapter": "9",
+              "verse": "3"
+            },
+            {
+              "chapter": "9",
+              "verse": "4"
+            },
+            {
+              "chapter": "9",
+              "verse": "5"
+            },
+            {
+              "chapter": "9",
+              "verse": "6"
+            },
+            {
+              "chapter": "9",
+              "verse": "7"
+            },
+            {
+              "chapter": "9",
+              "verse": "8"
+            },
+            {
+              "chapter": "9",
+              "verse": "9"
+            },
+            {
+              "chapter": "9",
+              "verse": "10"
+            },
+            {
+              "chapter": "9",
+              "verse": "11"
+            },
+            {
+              "chapter": "9",
+              "verse": "12"
+            },
+            {
+              "chapter": "9",
+              "verse": "13"
+            },
+            {
+              "chapter": "9",
+              "verse": "14"
+            },
+            {
+              "chapter": "9",
+              "verse": "15"
+            },
+            {
+              "chapter": "9",
+              "verse": "16"
+            },
+            {
+              "chapter": "9",
+              "verse": "17"
+            },
+            {
+              "chapter": "9",
+              "verse": "18"
+            },
+            {
+              "chapter": "9",
+              "verse": "19"
+            },
+            {
+              "chapter": "9",
+              "verse": "20"
+            },
+            {
+              "chapter": "9",
+              "verse": "21"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "9",
+              "verse": "1"
+            },
+            {
+              "chapter": "9",
+              "verse": "2"
+            },
+            {
+              "chapter": "9",
+              "verse": "3"
+            },
+            {
+              "chapter": "9",
+              "verse": "4"
+            },
+            {
+              "chapter": "9",
+              "verse": "5"
+            },
+            {
+              "chapter": "9",
+              "verse": "6"
+            },
+            {
+              "chapter": "9",
+              "verse": "7"
+            },
+            {
+              "chapter": "9",
+              "verse": "8"
+            },
+            {
+              "chapter": "9",
+              "verse": "9"
+            },
+            {
+              "chapter": "9",
+              "verse": "10"
+            },
+            {
+              "chapter": "9",
+              "verse": "11"
+            },
+            {
+              "chapter": "9",
+              "verse": "12"
+            },
+            {
+              "chapter": "9",
+              "verse": "13"
+            },
+            {
+              "chapter": "9",
+              "verse": "14"
+            },
+            {
+              "chapter": "9",
+              "verse": "15"
+            },
+            {
+              "chapter": "9",
+              "verse": "16"
+            },
+            {
+              "chapter": "9",
+              "verse": "17"
+            },
+            {
+              "chapter": "9",
+              "verse": "18"
+            },
+            {
+              "chapter": "9",
+              "verse": "19"
+            },
+            {
+              "chapter": "9",
+              "verse": "20"
+            },
+            {
+              "chapter": "8",
+              "verse": "23"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 9 and pinned OSHB/WLC are related through the UBS Vulgate-to-original exception table plus unchanged identity loci; the complete structural source range is preserved without inventing Hebrew verse boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "45",
+      "segments": [
+        {
+          "id": "ISA-45-semitic-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "45",
+              "verse": "1"
+            },
+            {
+              "chapter": "45",
+              "verse": "2"
+            },
+            {
+              "chapter": "45",
+              "verse": "3"
+            },
+            {
+              "chapter": "45",
+              "verse": "4"
+            },
+            {
+              "chapter": "45",
+              "verse": "5"
+            },
+            {
+              "chapter": "45",
+              "verse": "6"
+            },
+            {
+              "chapter": "45",
+              "verse": "7"
+            },
+            {
+              "chapter": "45",
+              "verse": "8"
+            },
+            {
+              "chapter": "45",
+              "verse": "9"
+            },
+            {
+              "chapter": "45",
+              "verse": "10"
+            },
+            {
+              "chapter": "45",
+              "verse": "11"
+            },
+            {
+              "chapter": "45",
+              "verse": "12"
+            },
+            {
+              "chapter": "45",
+              "verse": "13"
+            },
+            {
+              "chapter": "45",
+              "verse": "14"
+            },
+            {
+              "chapter": "45",
+              "verse": "15"
+            },
+            {
+              "chapter": "45",
+              "verse": "16"
+            },
+            {
+              "chapter": "45",
+              "verse": "17"
+            },
+            {
+              "chapter": "45",
+              "verse": "18"
+            },
+            {
+              "chapter": "45",
+              "verse": "19"
+            },
+            {
+              "chapter": "45",
+              "verse": "20"
+            },
+            {
+              "chapter": "45",
+              "verse": "21"
+            },
+            {
+              "chapter": "45",
+              "verse": "22"
+            },
+            {
+              "chapter": "45",
+              "verse": "23"
+            },
+            {
+              "chapter": "45",
+              "verse": "24"
+            },
+            {
+              "chapter": "45",
+              "verse": "25"
+            },
+            {
+              "chapter": "45",
+              "verse": "26"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "45",
+              "verse": "1"
+            },
+            {
+              "chapter": "45",
+              "verse": "2"
+            },
+            {
+              "chapter": "45",
+              "verse": "3"
+            },
+            {
+              "chapter": "45",
+              "verse": "4"
+            },
+            {
+              "chapter": "45",
+              "verse": "5"
+            },
+            {
+              "chapter": "45",
+              "verse": "6"
+            },
+            {
+              "chapter": "45",
+              "verse": "7"
+            },
+            {
+              "chapter": "45",
+              "verse": "8"
+            },
+            {
+              "chapter": "45",
+              "verse": "9"
+            },
+            {
+              "chapter": "45",
+              "verse": "10"
+            },
+            {
+              "chapter": "45",
+              "verse": "11"
+            },
+            {
+              "chapter": "45",
+              "verse": "12"
+            },
+            {
+              "chapter": "45",
+              "verse": "13"
+            },
+            {
+              "chapter": "45",
+              "verse": "14"
+            },
+            {
+              "chapter": "45",
+              "verse": "15"
+            },
+            {
+              "chapter": "45",
+              "verse": "16"
+            },
+            {
+              "chapter": "45",
+              "verse": "17"
+            },
+            {
+              "chapter": "45",
+              "verse": "18"
+            },
+            {
+              "chapter": "45",
+              "verse": "19"
+            },
+            {
+              "chapter": "45",
+              "verse": "20"
+            },
+            {
+              "chapter": "45",
+              "verse": "21"
+            },
+            {
+              "chapter": "45",
+              "verse": "22"
+            },
+            {
+              "chapter": "45",
+              "verse": "23"
+            },
+            {
+              "chapter": "45",
+              "verse": "24"
+            },
+            {
+              "chapter": "45",
+              "verse": "25"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 45 and pinned OSHB/WLC are related through the UBS Vulgate-to-original exception table plus unchanged identity loci; the complete structural source range is preserved without inventing Hebrew verse boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "46",
+      "segments": [
+        {
+          "id": "ISA-46-semitic-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "46",
+              "verse": "1"
+            },
+            {
+              "chapter": "46",
+              "verse": "2"
+            },
+            {
+              "chapter": "46",
+              "verse": "3"
+            },
+            {
+              "chapter": "46",
+              "verse": "4"
+            },
+            {
+              "chapter": "46",
+              "verse": "5"
+            },
+            {
+              "chapter": "46",
+              "verse": "6"
+            },
+            {
+              "chapter": "46",
+              "verse": "7"
+            },
+            {
+              "chapter": "46",
+              "verse": "8"
+            },
+            {
+              "chapter": "46",
+              "verse": "9"
+            },
+            {
+              "chapter": "46",
+              "verse": "10"
+            },
+            {
+              "chapter": "46",
+              "verse": "11"
+            },
+            {
+              "chapter": "46",
+              "verse": "12"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "46",
+              "verse": "1"
+            },
+            {
+              "chapter": "46",
+              "verse": "2"
+            },
+            {
+              "chapter": "46",
+              "verse": "3"
+            },
+            {
+              "chapter": "46",
+              "verse": "4"
+            },
+            {
+              "chapter": "46",
+              "verse": "5"
+            },
+            {
+              "chapter": "46",
+              "verse": "6"
+            },
+            {
+              "chapter": "46",
+              "verse": "7"
+            },
+            {
+              "chapter": "46",
+              "verse": "8"
+            },
+            {
+              "chapter": "46",
+              "verse": "9"
+            },
+            {
+              "chapter": "46",
+              "verse": "10"
+            },
+            {
+              "chapter": "46",
+              "verse": "11"
+            },
+            {
+              "chapter": "46",
+              "verse": "12"
+            },
+            {
+              "chapter": "46",
+              "verse": "13"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 46 and pinned OSHB/WLC are related through the UBS Vulgate-to-original exception table plus unchanged identity loci; the complete structural source range is preserved without inventing Hebrew verse boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "64",
+      "segments": [
+        {
+          "id": "ISA-64-semitic-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "64",
+              "verse": "1"
+            },
+            {
+              "chapter": "64",
+              "verse": "2"
+            },
+            {
+              "chapter": "64",
+              "verse": "3"
+            },
+            {
+              "chapter": "64",
+              "verse": "4"
+            },
+            {
+              "chapter": "64",
+              "verse": "5"
+            },
+            {
+              "chapter": "64",
+              "verse": "6"
+            },
+            {
+              "chapter": "64",
+              "verse": "7"
+            },
+            {
+              "chapter": "64",
+              "verse": "8"
+            },
+            {
+              "chapter": "64",
+              "verse": "9"
+            },
+            {
+              "chapter": "64",
+              "verse": "10"
+            },
+            {
+              "chapter": "64",
+              "verse": "11"
+            },
+            {
+              "chapter": "64",
+              "verse": "12"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "64",
+              "verse": "1"
+            },
+            {
+              "chapter": "64",
+              "verse": "2"
+            },
+            {
+              "chapter": "64",
+              "verse": "3"
+            },
+            {
+              "chapter": "64",
+              "verse": "4"
+            },
+            {
+              "chapter": "64",
+              "verse": "5"
+            },
+            {
+              "chapter": "64",
+              "verse": "6"
+            },
+            {
+              "chapter": "64",
+              "verse": "7"
+            },
+            {
+              "chapter": "64",
+              "verse": "8"
+            },
+            {
+              "chapter": "64",
+              "verse": "9"
+            },
+            {
+              "chapter": "64",
+              "verse": "10"
+            },
+            {
+              "chapter": "64",
+              "verse": "11"
+            },
+            {
+              "chapter": "63",
+              "verse": "19"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 64 and pinned OSHB/WLC are related through the UBS Vulgate-to-original exception table plus unchanged identity loci; the complete structural source range is preserved without inventing Hebrew verse boundaries."
+          }
+        }
+      ]
+    }
+  ]
+}

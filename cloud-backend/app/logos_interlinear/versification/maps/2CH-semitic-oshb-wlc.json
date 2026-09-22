@@ -1,0 +1,673 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.22-2ch-semitic-v1",
+  "status": "verified",
+  "book_id": "2CH",
+  "book": "2 Chronicles",
+  "lane": "semitic",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "oshb",
+    "reference_system": "oshb-wlc-osis",
+    "corpus_id": "heb_arc_oshb_wlc",
+    "corpus_version": "2026.09.16-oshb-wlc-39",
+    "repository": "openscriptures/morphhb",
+    "commit": "3d15126fb1ef74867fc1434be1942e837932691f"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "1",
+      "2",
+      "13",
+      "14"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "1",
+      "segments": [
+        {
+          "id": "2CH-1-semitic-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "1",
+              "verse": "1"
+            },
+            {
+              "chapter": "1",
+              "verse": "2"
+            },
+            {
+              "chapter": "1",
+              "verse": "3"
+            },
+            {
+              "chapter": "1",
+              "verse": "4"
+            },
+            {
+              "chapter": "1",
+              "verse": "5"
+            },
+            {
+              "chapter": "1",
+              "verse": "6"
+            },
+            {
+              "chapter": "1",
+              "verse": "7"
+            },
+            {
+              "chapter": "1",
+              "verse": "8"
+            },
+            {
+              "chapter": "1",
+              "verse": "9"
+            },
+            {
+              "chapter": "1",
+              "verse": "10"
+            },
+            {
+              "chapter": "1",
+              "verse": "11"
+            },
+            {
+              "chapter": "1",
+              "verse": "12"
+            },
+            {
+              "chapter": "1",
+              "verse": "13"
+            },
+            {
+              "chapter": "1",
+              "verse": "14"
+            },
+            {
+              "chapter": "1",
+              "verse": "15"
+            },
+            {
+              "chapter": "1",
+              "verse": "16"
+            },
+            {
+              "chapter": "1",
+              "verse": "17"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "1",
+              "verse": "1"
+            },
+            {
+              "chapter": "1",
+              "verse": "2"
+            },
+            {
+              "chapter": "1",
+              "verse": "3"
+            },
+            {
+              "chapter": "1",
+              "verse": "4"
+            },
+            {
+              "chapter": "1",
+              "verse": "5"
+            },
+            {
+              "chapter": "1",
+              "verse": "6"
+            },
+            {
+              "chapter": "1",
+              "verse": "7"
+            },
+            {
+              "chapter": "1",
+              "verse": "8"
+            },
+            {
+              "chapter": "1",
+              "verse": "9"
+            },
+            {
+              "chapter": "1",
+              "verse": "10"
+            },
+            {
+              "chapter": "1",
+              "verse": "11"
+            },
+            {
+              "chapter": "1",
+              "verse": "12"
+            },
+            {
+              "chapter": "1",
+              "verse": "13"
+            },
+            {
+              "chapter": "1",
+              "verse": "14"
+            },
+            {
+              "chapter": "1",
+              "verse": "15"
+            },
+            {
+              "chapter": "1",
+              "verse": "16"
+            },
+            {
+              "chapter": "1",
+              "verse": "17"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims 2 Chronicles 1 and the pinned OSHB/WLC inventory are related through the UBS Vulgate-to-original exception table plus unchanged identity loci. This verified chapter-level range preserves every referenced WLC source division while representing the audited boundary/count difference without inventing Hebrew verse boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "2",
+      "segments": [
+        {
+          "id": "2CH-2-semitic-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            },
+            {
+              "chapter": "2",
+              "verse": "15"
+            },
+            {
+              "chapter": "2",
+              "verse": "16"
+            },
+            {
+              "chapter": "2",
+              "verse": "17"
+            },
+            {
+              "chapter": "2",
+              "verse": "18"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            },
+            {
+              "chapter": "2",
+              "verse": "15"
+            },
+            {
+              "chapter": "2",
+              "verse": "16"
+            },
+            {
+              "chapter": "2",
+              "verse": "17"
+            },
+            {
+              "chapter": "1",
+              "verse": "18"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims 2 Chronicles 2 and the pinned OSHB/WLC inventory are related through the UBS Vulgate-to-original exception table plus unchanged identity loci. This verified chapter-level range preserves every referenced WLC source division while representing the audited boundary/count difference without inventing Hebrew verse boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "13",
+      "segments": [
+        {
+          "id": "2CH-13-semitic-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "13",
+              "verse": "1"
+            },
+            {
+              "chapter": "13",
+              "verse": "2"
+            },
+            {
+              "chapter": "13",
+              "verse": "3"
+            },
+            {
+              "chapter": "13",
+              "verse": "4"
+            },
+            {
+              "chapter": "13",
+              "verse": "5"
+            },
+            {
+              "chapter": "13",
+              "verse": "6"
+            },
+            {
+              "chapter": "13",
+              "verse": "7"
+            },
+            {
+              "chapter": "13",
+              "verse": "8"
+            },
+            {
+              "chapter": "13",
+              "verse": "9"
+            },
+            {
+              "chapter": "13",
+              "verse": "10"
+            },
+            {
+              "chapter": "13",
+              "verse": "11"
+            },
+            {
+              "chapter": "13",
+              "verse": "12"
+            },
+            {
+              "chapter": "13",
+              "verse": "13"
+            },
+            {
+              "chapter": "13",
+              "verse": "14"
+            },
+            {
+              "chapter": "13",
+              "verse": "15"
+            },
+            {
+              "chapter": "13",
+              "verse": "16"
+            },
+            {
+              "chapter": "13",
+              "verse": "17"
+            },
+            {
+              "chapter": "13",
+              "verse": "18"
+            },
+            {
+              "chapter": "13",
+              "verse": "19"
+            },
+            {
+              "chapter": "13",
+              "verse": "20"
+            },
+            {
+              "chapter": "13",
+              "verse": "21"
+            },
+            {
+              "chapter": "13",
+              "verse": "22"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "13",
+              "verse": "1"
+            },
+            {
+              "chapter": "13",
+              "verse": "2"
+            },
+            {
+              "chapter": "13",
+              "verse": "3"
+            },
+            {
+              "chapter": "13",
+              "verse": "4"
+            },
+            {
+              "chapter": "13",
+              "verse": "5"
+            },
+            {
+              "chapter": "13",
+              "verse": "6"
+            },
+            {
+              "chapter": "13",
+              "verse": "7"
+            },
+            {
+              "chapter": "13",
+              "verse": "8"
+            },
+            {
+              "chapter": "13",
+              "verse": "9"
+            },
+            {
+              "chapter": "13",
+              "verse": "10"
+            },
+            {
+              "chapter": "13",
+              "verse": "11"
+            },
+            {
+              "chapter": "13",
+              "verse": "12"
+            },
+            {
+              "chapter": "13",
+              "verse": "13"
+            },
+            {
+              "chapter": "13",
+              "verse": "14"
+            },
+            {
+              "chapter": "13",
+              "verse": "15"
+            },
+            {
+              "chapter": "13",
+              "verse": "16"
+            },
+            {
+              "chapter": "13",
+              "verse": "17"
+            },
+            {
+              "chapter": "13",
+              "verse": "18"
+            },
+            {
+              "chapter": "13",
+              "verse": "19"
+            },
+            {
+              "chapter": "13",
+              "verse": "20"
+            },
+            {
+              "chapter": "13",
+              "verse": "21"
+            },
+            {
+              "chapter": "13",
+              "verse": "22"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims 2 Chronicles 13 and the pinned OSHB/WLC inventory are related through the UBS Vulgate-to-original exception table plus unchanged identity loci. This verified chapter-level range preserves every referenced WLC source division while representing the audited boundary/count difference without inventing Hebrew verse boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "14",
+      "segments": [
+        {
+          "id": "2CH-14-semitic-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "14",
+              "verse": "1"
+            },
+            {
+              "chapter": "14",
+              "verse": "2"
+            },
+            {
+              "chapter": "14",
+              "verse": "3"
+            },
+            {
+              "chapter": "14",
+              "verse": "4"
+            },
+            {
+              "chapter": "14",
+              "verse": "5"
+            },
+            {
+              "chapter": "14",
+              "verse": "6"
+            },
+            {
+              "chapter": "14",
+              "verse": "7"
+            },
+            {
+              "chapter": "14",
+              "verse": "8"
+            },
+            {
+              "chapter": "14",
+              "verse": "9"
+            },
+            {
+              "chapter": "14",
+              "verse": "10"
+            },
+            {
+              "chapter": "14",
+              "verse": "11"
+            },
+            {
+              "chapter": "14",
+              "verse": "12"
+            },
+            {
+              "chapter": "14",
+              "verse": "13"
+            },
+            {
+              "chapter": "14",
+              "verse": "14"
+            },
+            {
+              "chapter": "14",
+              "verse": "15"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "14",
+              "verse": "1"
+            },
+            {
+              "chapter": "14",
+              "verse": "2"
+            },
+            {
+              "chapter": "14",
+              "verse": "3"
+            },
+            {
+              "chapter": "14",
+              "verse": "4"
+            },
+            {
+              "chapter": "14",
+              "verse": "5"
+            },
+            {
+              "chapter": "14",
+              "verse": "6"
+            },
+            {
+              "chapter": "14",
+              "verse": "7"
+            },
+            {
+              "chapter": "14",
+              "verse": "8"
+            },
+            {
+              "chapter": "14",
+              "verse": "9"
+            },
+            {
+              "chapter": "14",
+              "verse": "10"
+            },
+            {
+              "chapter": "14",
+              "verse": "11"
+            },
+            {
+              "chapter": "14",
+              "verse": "12"
+            },
+            {
+              "chapter": "14",
+              "verse": "13"
+            },
+            {
+              "chapter": "14",
+              "verse": "14"
+            },
+            {
+              "chapter": "13",
+              "verse": "23"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims 2 Chronicles 14 and the pinned OSHB/WLC inventory are related through the UBS Vulgate-to-original exception table plus unchanged identity loci. This verified chapter-level range preserves every referenced WLC source division while representing the audited boundary/count difference without inventing Hebrew verse boundaries."
+          }
+        }
+      ]
+    }
+  ]
+}

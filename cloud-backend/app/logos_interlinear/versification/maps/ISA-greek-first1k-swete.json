@@ -1,0 +1,2951 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.22-isa-greek-v1",
+  "status": "verified",
+  "book_id": "ISA",
+  "book": "Isaiah",
+  "lane": "greek",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "first1kgreek-swete",
+    "reference_system": "swete-first1k-source-numbering",
+    "corpus_id": "grc_ot_catholic_full",
+    "corpus_version": "2026.09.17-catholic-lxx-full"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "2",
+      "9",
+      "13",
+      "22",
+      "32",
+      "35",
+      "37",
+      "38",
+      "43",
+      "45",
+      "46",
+      "47",
+      "49",
+      "52",
+      "56",
+      "65"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "2",
+      "segments": [
+        {
+          "id": "ISA-2-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            },
+            {
+              "chapter": "2",
+              "verse": "15"
+            },
+            {
+              "chapter": "2",
+              "verse": "16"
+            },
+            {
+              "chapter": "2",
+              "verse": "17"
+            },
+            {
+              "chapter": "2",
+              "verse": "18"
+            },
+            {
+              "chapter": "2",
+              "verse": "19"
+            },
+            {
+              "chapter": "2",
+              "verse": "20"
+            },
+            {
+              "chapter": "2",
+              "verse": "21"
+            },
+            {
+              "chapter": "2",
+              "verse": "22"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "2",
+              "verse": "1"
+            },
+            {
+              "chapter": "2",
+              "verse": "2"
+            },
+            {
+              "chapter": "2",
+              "verse": "3"
+            },
+            {
+              "chapter": "2",
+              "verse": "4"
+            },
+            {
+              "chapter": "2",
+              "verse": "5"
+            },
+            {
+              "chapter": "2",
+              "verse": "6"
+            },
+            {
+              "chapter": "2",
+              "verse": "7"
+            },
+            {
+              "chapter": "2",
+              "verse": "8"
+            },
+            {
+              "chapter": "2",
+              "verse": "9"
+            },
+            {
+              "chapter": "2",
+              "verse": "10"
+            },
+            {
+              "chapter": "2",
+              "verse": "11"
+            },
+            {
+              "chapter": "2",
+              "verse": "12"
+            },
+            {
+              "chapter": "2",
+              "verse": "13"
+            },
+            {
+              "chapter": "2",
+              "verse": "14"
+            },
+            {
+              "chapter": "2",
+              "verse": "15"
+            },
+            {
+              "chapter": "2",
+              "verse": "16"
+            },
+            {
+              "chapter": "2",
+              "verse": "17"
+            },
+            {
+              "chapter": "2",
+              "verse": "18"
+            },
+            {
+              "chapter": "2",
+              "verse": "19"
+            },
+            {
+              "chapter": "2",
+              "verse": "20"
+            },
+            {
+              "chapter": "2",
+              "verse": "21"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 2 and pinned Swete/First1KGreek source chapter 2 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "9",
+      "segments": [
+        {
+          "id": "ISA-9-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "9",
+              "verse": "1"
+            },
+            {
+              "chapter": "9",
+              "verse": "2"
+            },
+            {
+              "chapter": "9",
+              "verse": "3"
+            },
+            {
+              "chapter": "9",
+              "verse": "4"
+            },
+            {
+              "chapter": "9",
+              "verse": "5"
+            },
+            {
+              "chapter": "9",
+              "verse": "6"
+            },
+            {
+              "chapter": "9",
+              "verse": "7"
+            },
+            {
+              "chapter": "9",
+              "verse": "8"
+            },
+            {
+              "chapter": "9",
+              "verse": "9"
+            },
+            {
+              "chapter": "9",
+              "verse": "10"
+            },
+            {
+              "chapter": "9",
+              "verse": "11"
+            },
+            {
+              "chapter": "9",
+              "verse": "12"
+            },
+            {
+              "chapter": "9",
+              "verse": "13"
+            },
+            {
+              "chapter": "9",
+              "verse": "14"
+            },
+            {
+              "chapter": "9",
+              "verse": "15"
+            },
+            {
+              "chapter": "9",
+              "verse": "16"
+            },
+            {
+              "chapter": "9",
+              "verse": "17"
+            },
+            {
+              "chapter": "9",
+              "verse": "18"
+            },
+            {
+              "chapter": "9",
+              "verse": "19"
+            },
+            {
+              "chapter": "9",
+              "verse": "20"
+            },
+            {
+              "chapter": "9",
+              "verse": "21"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "9",
+              "verse": "1"
+            },
+            {
+              "chapter": "9",
+              "verse": "2"
+            },
+            {
+              "chapter": "9",
+              "verse": "3"
+            },
+            {
+              "chapter": "9",
+              "verse": "4"
+            },
+            {
+              "chapter": "9",
+              "verse": "5"
+            },
+            {
+              "chapter": "9",
+              "verse": "6"
+            },
+            {
+              "chapter": "9",
+              "verse": "7"
+            },
+            {
+              "chapter": "9",
+              "verse": "8"
+            },
+            {
+              "chapter": "9",
+              "verse": "9"
+            },
+            {
+              "chapter": "9",
+              "verse": "11"
+            },
+            {
+              "chapter": "9",
+              "verse": "12"
+            },
+            {
+              "chapter": "9",
+              "verse": "13"
+            },
+            {
+              "chapter": "9",
+              "verse": "14"
+            },
+            {
+              "chapter": "9",
+              "verse": "15"
+            },
+            {
+              "chapter": "9",
+              "verse": "16"
+            },
+            {
+              "chapter": "9",
+              "verse": "17"
+            },
+            {
+              "chapter": "9",
+              "verse": "18"
+            },
+            {
+              "chapter": "9",
+              "verse": "19"
+            },
+            {
+              "chapter": "9",
+              "verse": "20"
+            },
+            {
+              "chapter": "9",
+              "verse": "21"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 9 and pinned Swete/First1KGreek source chapter 9 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "13",
+      "segments": [
+        {
+          "id": "ISA-13-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "13",
+              "verse": "1"
+            },
+            {
+              "chapter": "13",
+              "verse": "2"
+            },
+            {
+              "chapter": "13",
+              "verse": "3"
+            },
+            {
+              "chapter": "13",
+              "verse": "4"
+            },
+            {
+              "chapter": "13",
+              "verse": "5"
+            },
+            {
+              "chapter": "13",
+              "verse": "6"
+            },
+            {
+              "chapter": "13",
+              "verse": "7"
+            },
+            {
+              "chapter": "13",
+              "verse": "8"
+            },
+            {
+              "chapter": "13",
+              "verse": "9"
+            },
+            {
+              "chapter": "13",
+              "verse": "10"
+            },
+            {
+              "chapter": "13",
+              "verse": "11"
+            },
+            {
+              "chapter": "13",
+              "verse": "12"
+            },
+            {
+              "chapter": "13",
+              "verse": "13"
+            },
+            {
+              "chapter": "13",
+              "verse": "14"
+            },
+            {
+              "chapter": "13",
+              "verse": "15"
+            },
+            {
+              "chapter": "13",
+              "verse": "16"
+            },
+            {
+              "chapter": "13",
+              "verse": "17"
+            },
+            {
+              "chapter": "13",
+              "verse": "18"
+            },
+            {
+              "chapter": "13",
+              "verse": "19"
+            },
+            {
+              "chapter": "13",
+              "verse": "20"
+            },
+            {
+              "chapter": "13",
+              "verse": "21"
+            },
+            {
+              "chapter": "13",
+              "verse": "22"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "13",
+              "verse": "1"
+            },
+            {
+              "chapter": "13",
+              "verse": "2"
+            },
+            {
+              "chapter": "13",
+              "verse": "3"
+            },
+            {
+              "chapter": "13",
+              "verse": "4"
+            },
+            {
+              "chapter": "13",
+              "verse": "5"
+            },
+            {
+              "chapter": "13",
+              "verse": "6"
+            },
+            {
+              "chapter": "13",
+              "verse": "7"
+            },
+            {
+              "chapter": "13",
+              "verse": "8"
+            },
+            {
+              "chapter": "13",
+              "verse": "9"
+            },
+            {
+              "chapter": "13",
+              "verse": "10"
+            },
+            {
+              "chapter": "13",
+              "verse": "11"
+            },
+            {
+              "chapter": "13",
+              "verse": "12"
+            },
+            {
+              "chapter": "13",
+              "verse": "13"
+            },
+            {
+              "chapter": "13",
+              "verse": "14"
+            },
+            {
+              "chapter": "13",
+              "verse": "15"
+            },
+            {
+              "chapter": "13",
+              "verse": "16"
+            },
+            {
+              "chapter": "13",
+              "verse": "17"
+            },
+            {
+              "chapter": "13",
+              "verse": "18"
+            },
+            {
+              "chapter": "13",
+              "verse": "19"
+            },
+            {
+              "chapter": "13",
+              "verse": "21"
+            },
+            {
+              "chapter": "13",
+              "verse": "22"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 13 and pinned Swete/First1KGreek source chapter 13 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "22",
+      "segments": [
+        {
+          "id": "ISA-22-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "22",
+              "verse": "1"
+            },
+            {
+              "chapter": "22",
+              "verse": "2"
+            },
+            {
+              "chapter": "22",
+              "verse": "3"
+            },
+            {
+              "chapter": "22",
+              "verse": "4"
+            },
+            {
+              "chapter": "22",
+              "verse": "5"
+            },
+            {
+              "chapter": "22",
+              "verse": "6"
+            },
+            {
+              "chapter": "22",
+              "verse": "7"
+            },
+            {
+              "chapter": "22",
+              "verse": "8"
+            },
+            {
+              "chapter": "22",
+              "verse": "9"
+            },
+            {
+              "chapter": "22",
+              "verse": "10"
+            },
+            {
+              "chapter": "22",
+              "verse": "11"
+            },
+            {
+              "chapter": "22",
+              "verse": "12"
+            },
+            {
+              "chapter": "22",
+              "verse": "13"
+            },
+            {
+              "chapter": "22",
+              "verse": "14"
+            },
+            {
+              "chapter": "22",
+              "verse": "15"
+            },
+            {
+              "chapter": "22",
+              "verse": "16"
+            },
+            {
+              "chapter": "22",
+              "verse": "17"
+            },
+            {
+              "chapter": "22",
+              "verse": "18"
+            },
+            {
+              "chapter": "22",
+              "verse": "19"
+            },
+            {
+              "chapter": "22",
+              "verse": "20"
+            },
+            {
+              "chapter": "22",
+              "verse": "21"
+            },
+            {
+              "chapter": "22",
+              "verse": "22"
+            },
+            {
+              "chapter": "22",
+              "verse": "23"
+            },
+            {
+              "chapter": "22",
+              "verse": "24"
+            },
+            {
+              "chapter": "22",
+              "verse": "25"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "22",
+              "verse": "1"
+            },
+            {
+              "chapter": "22",
+              "verse": "2"
+            },
+            {
+              "chapter": "22",
+              "verse": "3"
+            },
+            {
+              "chapter": "22",
+              "verse": "4"
+            },
+            {
+              "chapter": "22",
+              "verse": "5"
+            },
+            {
+              "chapter": "22",
+              "verse": "6"
+            },
+            {
+              "chapter": "22",
+              "verse": "7"
+            },
+            {
+              "chapter": "22",
+              "verse": "8"
+            },
+            {
+              "chapter": "22",
+              "verse": "9"
+            },
+            {
+              "chapter": "22",
+              "verse": "10"
+            },
+            {
+              "chapter": "22",
+              "verse": "11"
+            },
+            {
+              "chapter": "22",
+              "verse": "12"
+            },
+            {
+              "chapter": "22",
+              "verse": "13"
+            },
+            {
+              "chapter": "22",
+              "verse": "14"
+            },
+            {
+              "chapter": "22",
+              "verse": "15"
+            },
+            {
+              "chapter": "22",
+              "verse": "16"
+            },
+            {
+              "chapter": "22",
+              "verse": "17"
+            },
+            {
+              "chapter": "22",
+              "verse": "18"
+            },
+            {
+              "chapter": "22",
+              "verse": "19"
+            },
+            {
+              "chapter": "22",
+              "verse": "20"
+            },
+            {
+              "chapter": "22",
+              "verse": "21"
+            },
+            {
+              "chapter": "22",
+              "verse": "22"
+            },
+            {
+              "chapter": "22",
+              "verse": "23"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 22 and pinned Swete/First1KGreek source chapter 22 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "32",
+      "segments": [
+        {
+          "id": "ISA-32-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "32",
+              "verse": "1"
+            },
+            {
+              "chapter": "32",
+              "verse": "2"
+            },
+            {
+              "chapter": "32",
+              "verse": "3"
+            },
+            {
+              "chapter": "32",
+              "verse": "4"
+            },
+            {
+              "chapter": "32",
+              "verse": "5"
+            },
+            {
+              "chapter": "32",
+              "verse": "6"
+            },
+            {
+              "chapter": "32",
+              "verse": "7"
+            },
+            {
+              "chapter": "32",
+              "verse": "8"
+            },
+            {
+              "chapter": "32",
+              "verse": "9"
+            },
+            {
+              "chapter": "32",
+              "verse": "10"
+            },
+            {
+              "chapter": "32",
+              "verse": "11"
+            },
+            {
+              "chapter": "32",
+              "verse": "12"
+            },
+            {
+              "chapter": "32",
+              "verse": "13"
+            },
+            {
+              "chapter": "32",
+              "verse": "14"
+            },
+            {
+              "chapter": "32",
+              "verse": "15"
+            },
+            {
+              "chapter": "32",
+              "verse": "16"
+            },
+            {
+              "chapter": "32",
+              "verse": "17"
+            },
+            {
+              "chapter": "32",
+              "verse": "18"
+            },
+            {
+              "chapter": "32",
+              "verse": "19"
+            },
+            {
+              "chapter": "32",
+              "verse": "20"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "32",
+              "verse": "head"
+            },
+            {
+              "chapter": "32",
+              "verse": "1"
+            },
+            {
+              "chapter": "32",
+              "verse": "2"
+            },
+            {
+              "chapter": "32",
+              "verse": "3"
+            },
+            {
+              "chapter": "32",
+              "verse": "4"
+            },
+            {
+              "chapter": "32",
+              "verse": "5"
+            },
+            {
+              "chapter": "32",
+              "verse": "6"
+            },
+            {
+              "chapter": "32",
+              "verse": "7"
+            },
+            {
+              "chapter": "32",
+              "verse": "8"
+            },
+            {
+              "chapter": "32",
+              "verse": "9"
+            },
+            {
+              "chapter": "32",
+              "verse": "10"
+            },
+            {
+              "chapter": "32",
+              "verse": "11"
+            },
+            {
+              "chapter": "32",
+              "verse": "12"
+            },
+            {
+              "chapter": "32",
+              "verse": "13"
+            },
+            {
+              "chapter": "32",
+              "verse": "14"
+            },
+            {
+              "chapter": "32",
+              "verse": "15"
+            },
+            {
+              "chapter": "32",
+              "verse": "16"
+            },
+            {
+              "chapter": "32",
+              "verse": "17"
+            },
+            {
+              "chapter": "32",
+              "verse": "18"
+            },
+            {
+              "chapter": "32",
+              "verse": "19"
+            },
+            {
+              "chapter": "32",
+              "verse": "20"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 32 and pinned Swete/First1KGreek source chapter 32 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "35",
+      "segments": [
+        {
+          "id": "ISA-35-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "35",
+              "verse": "1"
+            },
+            {
+              "chapter": "35",
+              "verse": "2"
+            },
+            {
+              "chapter": "35",
+              "verse": "3"
+            },
+            {
+              "chapter": "35",
+              "verse": "4"
+            },
+            {
+              "chapter": "35",
+              "verse": "5"
+            },
+            {
+              "chapter": "35",
+              "verse": "6"
+            },
+            {
+              "chapter": "35",
+              "verse": "7"
+            },
+            {
+              "chapter": "35",
+              "verse": "8"
+            },
+            {
+              "chapter": "35",
+              "verse": "9"
+            },
+            {
+              "chapter": "35",
+              "verse": "10"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "35",
+              "verse": "1"
+            },
+            {
+              "chapter": "35",
+              "verse": "2"
+            },
+            {
+              "chapter": "35",
+              "verse": "3"
+            },
+            {
+              "chapter": "35",
+              "verse": "5"
+            },
+            {
+              "chapter": "35",
+              "verse": "6"
+            },
+            {
+              "chapter": "35",
+              "verse": "7"
+            },
+            {
+              "chapter": "35",
+              "verse": "8"
+            },
+            {
+              "chapter": "35",
+              "verse": "9"
+            },
+            {
+              "chapter": "35",
+              "verse": "10"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 35 and pinned Swete/First1KGreek source chapter 35 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "37",
+      "segments": [
+        {
+          "id": "ISA-37-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "37",
+              "verse": "1"
+            },
+            {
+              "chapter": "37",
+              "verse": "2"
+            },
+            {
+              "chapter": "37",
+              "verse": "3"
+            },
+            {
+              "chapter": "37",
+              "verse": "4"
+            },
+            {
+              "chapter": "37",
+              "verse": "5"
+            },
+            {
+              "chapter": "37",
+              "verse": "6"
+            },
+            {
+              "chapter": "37",
+              "verse": "7"
+            },
+            {
+              "chapter": "37",
+              "verse": "8"
+            },
+            {
+              "chapter": "37",
+              "verse": "9"
+            },
+            {
+              "chapter": "37",
+              "verse": "10"
+            },
+            {
+              "chapter": "37",
+              "verse": "11"
+            },
+            {
+              "chapter": "37",
+              "verse": "12"
+            },
+            {
+              "chapter": "37",
+              "verse": "13"
+            },
+            {
+              "chapter": "37",
+              "verse": "14"
+            },
+            {
+              "chapter": "37",
+              "verse": "15"
+            },
+            {
+              "chapter": "37",
+              "verse": "16"
+            },
+            {
+              "chapter": "37",
+              "verse": "17"
+            },
+            {
+              "chapter": "37",
+              "verse": "18"
+            },
+            {
+              "chapter": "37",
+              "verse": "19"
+            },
+            {
+              "chapter": "37",
+              "verse": "20"
+            },
+            {
+              "chapter": "37",
+              "verse": "21"
+            },
+            {
+              "chapter": "37",
+              "verse": "22"
+            },
+            {
+              "chapter": "37",
+              "verse": "23"
+            },
+            {
+              "chapter": "37",
+              "verse": "24"
+            },
+            {
+              "chapter": "37",
+              "verse": "25"
+            },
+            {
+              "chapter": "37",
+              "verse": "26"
+            },
+            {
+              "chapter": "37",
+              "verse": "27"
+            },
+            {
+              "chapter": "37",
+              "verse": "28"
+            },
+            {
+              "chapter": "37",
+              "verse": "29"
+            },
+            {
+              "chapter": "37",
+              "verse": "30"
+            },
+            {
+              "chapter": "37",
+              "verse": "31"
+            },
+            {
+              "chapter": "37",
+              "verse": "32"
+            },
+            {
+              "chapter": "37",
+              "verse": "33"
+            },
+            {
+              "chapter": "37",
+              "verse": "34"
+            },
+            {
+              "chapter": "37",
+              "verse": "35"
+            },
+            {
+              "chapter": "37",
+              "verse": "36"
+            },
+            {
+              "chapter": "37",
+              "verse": "37"
+            },
+            {
+              "chapter": "37",
+              "verse": "38"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "37",
+              "verse": "1"
+            },
+            {
+              "chapter": "37",
+              "verse": "2"
+            },
+            {
+              "chapter": "37",
+              "verse": "3"
+            },
+            {
+              "chapter": "37",
+              "verse": "4"
+            },
+            {
+              "chapter": "37",
+              "verse": "5"
+            },
+            {
+              "chapter": "37",
+              "verse": "6"
+            },
+            {
+              "chapter": "37",
+              "verse": "7"
+            },
+            {
+              "chapter": "37",
+              "verse": "8"
+            },
+            {
+              "chapter": "37",
+              "verse": "9"
+            },
+            {
+              "chapter": "37",
+              "verse": "10"
+            },
+            {
+              "chapter": "37",
+              "verse": "12"
+            },
+            {
+              "chapter": "37",
+              "verse": "13"
+            },
+            {
+              "chapter": "37",
+              "verse": "14"
+            },
+            {
+              "chapter": "37",
+              "verse": "16"
+            },
+            {
+              "chapter": "37",
+              "verse": "17"
+            },
+            {
+              "chapter": "37",
+              "verse": "18"
+            },
+            {
+              "chapter": "37",
+              "verse": "19"
+            },
+            {
+              "chapter": "37",
+              "verse": "20"
+            },
+            {
+              "chapter": "37",
+              "verse": "21"
+            },
+            {
+              "chapter": "37",
+              "verse": "22"
+            },
+            {
+              "chapter": "37",
+              "verse": "23"
+            },
+            {
+              "chapter": "37",
+              "verse": "24"
+            },
+            {
+              "chapter": "37",
+              "verse": "25"
+            },
+            {
+              "chapter": "37",
+              "verse": "26"
+            },
+            {
+              "chapter": "37",
+              "verse": "27"
+            },
+            {
+              "chapter": "37",
+              "verse": "28"
+            },
+            {
+              "chapter": "37",
+              "verse": "29"
+            },
+            {
+              "chapter": "37",
+              "verse": "30"
+            },
+            {
+              "chapter": "37",
+              "verse": "31"
+            },
+            {
+              "chapter": "37",
+              "verse": "32"
+            },
+            {
+              "chapter": "37",
+              "verse": "33"
+            },
+            {
+              "chapter": "37",
+              "verse": "34"
+            },
+            {
+              "chapter": "37",
+              "verse": "35"
+            },
+            {
+              "chapter": "37",
+              "verse": "36"
+            },
+            {
+              "chapter": "37",
+              "verse": "37"
+            },
+            {
+              "chapter": "37",
+              "verse": "38"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 37 and pinned Swete/First1KGreek source chapter 37 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "38",
+      "segments": [
+        {
+          "id": "ISA-38-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "38",
+              "verse": "1"
+            },
+            {
+              "chapter": "38",
+              "verse": "2"
+            },
+            {
+              "chapter": "38",
+              "verse": "3"
+            },
+            {
+              "chapter": "38",
+              "verse": "4"
+            },
+            {
+              "chapter": "38",
+              "verse": "5"
+            },
+            {
+              "chapter": "38",
+              "verse": "6"
+            },
+            {
+              "chapter": "38",
+              "verse": "7"
+            },
+            {
+              "chapter": "38",
+              "verse": "8"
+            },
+            {
+              "chapter": "38",
+              "verse": "9"
+            },
+            {
+              "chapter": "38",
+              "verse": "10"
+            },
+            {
+              "chapter": "38",
+              "verse": "11"
+            },
+            {
+              "chapter": "38",
+              "verse": "12"
+            },
+            {
+              "chapter": "38",
+              "verse": "13"
+            },
+            {
+              "chapter": "38",
+              "verse": "14"
+            },
+            {
+              "chapter": "38",
+              "verse": "15"
+            },
+            {
+              "chapter": "38",
+              "verse": "16"
+            },
+            {
+              "chapter": "38",
+              "verse": "17"
+            },
+            {
+              "chapter": "38",
+              "verse": "18"
+            },
+            {
+              "chapter": "38",
+              "verse": "19"
+            },
+            {
+              "chapter": "38",
+              "verse": "20"
+            },
+            {
+              "chapter": "38",
+              "verse": "21"
+            },
+            {
+              "chapter": "38",
+              "verse": "22"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "38",
+              "verse": "1"
+            },
+            {
+              "chapter": "38",
+              "verse": "2"
+            },
+            {
+              "chapter": "38",
+              "verse": "3"
+            },
+            {
+              "chapter": "38",
+              "verse": "4"
+            },
+            {
+              "chapter": "38",
+              "verse": "5"
+            },
+            {
+              "chapter": "38",
+              "verse": "6"
+            },
+            {
+              "chapter": "38",
+              "verse": "7"
+            },
+            {
+              "chapter": "38",
+              "verse": "8"
+            },
+            {
+              "chapter": "38",
+              "verse": "9"
+            },
+            {
+              "chapter": "38",
+              "verse": "10"
+            },
+            {
+              "chapter": "38",
+              "verse": "11"
+            },
+            {
+              "chapter": "38",
+              "verse": "12"
+            },
+            {
+              "chapter": "38",
+              "verse": "13"
+            },
+            {
+              "chapter": "38",
+              "verse": "14"
+            },
+            {
+              "chapter": "38",
+              "verse": "15"
+            },
+            {
+              "chapter": "38",
+              "verse": "16"
+            },
+            {
+              "chapter": "38",
+              "verse": "18"
+            },
+            {
+              "chapter": "38",
+              "verse": "19"
+            },
+            {
+              "chapter": "38",
+              "verse": "20"
+            },
+            {
+              "chapter": "38",
+              "verse": "21"
+            },
+            {
+              "chapter": "38",
+              "verse": "22"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 38 and pinned Swete/First1KGreek source chapter 38 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "43",
+      "segments": [
+        {
+          "id": "ISA-43-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "43",
+              "verse": "1"
+            },
+            {
+              "chapter": "43",
+              "verse": "2"
+            },
+            {
+              "chapter": "43",
+              "verse": "3"
+            },
+            {
+              "chapter": "43",
+              "verse": "4"
+            },
+            {
+              "chapter": "43",
+              "verse": "5"
+            },
+            {
+              "chapter": "43",
+              "verse": "6"
+            },
+            {
+              "chapter": "43",
+              "verse": "7"
+            },
+            {
+              "chapter": "43",
+              "verse": "8"
+            },
+            {
+              "chapter": "43",
+              "verse": "9"
+            },
+            {
+              "chapter": "43",
+              "verse": "10"
+            },
+            {
+              "chapter": "43",
+              "verse": "11"
+            },
+            {
+              "chapter": "43",
+              "verse": "12"
+            },
+            {
+              "chapter": "43",
+              "verse": "13"
+            },
+            {
+              "chapter": "43",
+              "verse": "14"
+            },
+            {
+              "chapter": "43",
+              "verse": "15"
+            },
+            {
+              "chapter": "43",
+              "verse": "16"
+            },
+            {
+              "chapter": "43",
+              "verse": "17"
+            },
+            {
+              "chapter": "43",
+              "verse": "18"
+            },
+            {
+              "chapter": "43",
+              "verse": "19"
+            },
+            {
+              "chapter": "43",
+              "verse": "20"
+            },
+            {
+              "chapter": "43",
+              "verse": "21"
+            },
+            {
+              "chapter": "43",
+              "verse": "22"
+            },
+            {
+              "chapter": "43",
+              "verse": "23"
+            },
+            {
+              "chapter": "43",
+              "verse": "24"
+            },
+            {
+              "chapter": "43",
+              "verse": "25"
+            },
+            {
+              "chapter": "43",
+              "verse": "26"
+            },
+            {
+              "chapter": "43",
+              "verse": "27"
+            },
+            {
+              "chapter": "43",
+              "verse": "28"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "43",
+              "verse": "1"
+            },
+            {
+              "chapter": "43",
+              "verse": "2"
+            },
+            {
+              "chapter": "43",
+              "verse": "3"
+            },
+            {
+              "chapter": "43",
+              "verse": "4"
+            },
+            {
+              "chapter": "43",
+              "verse": "5"
+            },
+            {
+              "chapter": "43",
+              "verse": "6"
+            },
+            {
+              "chapter": "43",
+              "verse": "7"
+            },
+            {
+              "chapter": "43",
+              "verse": "8"
+            },
+            {
+              "chapter": "43",
+              "verse": "9"
+            },
+            {
+              "chapter": "43",
+              "verse": "10"
+            },
+            {
+              "chapter": "43",
+              "verse": "11"
+            },
+            {
+              "chapter": "43",
+              "verse": "12"
+            },
+            {
+              "chapter": "43",
+              "verse": "13"
+            },
+            {
+              "chapter": "43",
+              "verse": "14"
+            },
+            {
+              "chapter": "43",
+              "verse": "15"
+            },
+            {
+              "chapter": "43",
+              "verse": "16"
+            },
+            {
+              "chapter": "43",
+              "verse": "17"
+            },
+            {
+              "chapter": "43",
+              "verse": "18"
+            },
+            {
+              "chapter": "43",
+              "verse": "20"
+            },
+            {
+              "chapter": "43",
+              "verse": "21"
+            },
+            {
+              "chapter": "43",
+              "verse": "22"
+            },
+            {
+              "chapter": "43",
+              "verse": "23"
+            },
+            {
+              "chapter": "43",
+              "verse": "24"
+            },
+            {
+              "chapter": "43",
+              "verse": "25"
+            },
+            {
+              "chapter": "43",
+              "verse": "26"
+            },
+            {
+              "chapter": "43",
+              "verse": "27"
+            },
+            {
+              "chapter": "43",
+              "verse": "28"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 43 and pinned Swete/First1KGreek source chapter 43 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "45",
+      "segments": [
+        {
+          "id": "ISA-45-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "45",
+              "verse": "1"
+            },
+            {
+              "chapter": "45",
+              "verse": "2"
+            },
+            {
+              "chapter": "45",
+              "verse": "3"
+            },
+            {
+              "chapter": "45",
+              "verse": "4"
+            },
+            {
+              "chapter": "45",
+              "verse": "5"
+            },
+            {
+              "chapter": "45",
+              "verse": "6"
+            },
+            {
+              "chapter": "45",
+              "verse": "7"
+            },
+            {
+              "chapter": "45",
+              "verse": "8"
+            },
+            {
+              "chapter": "45",
+              "verse": "9"
+            },
+            {
+              "chapter": "45",
+              "verse": "10"
+            },
+            {
+              "chapter": "45",
+              "verse": "11"
+            },
+            {
+              "chapter": "45",
+              "verse": "12"
+            },
+            {
+              "chapter": "45",
+              "verse": "13"
+            },
+            {
+              "chapter": "45",
+              "verse": "14"
+            },
+            {
+              "chapter": "45",
+              "verse": "15"
+            },
+            {
+              "chapter": "45",
+              "verse": "16"
+            },
+            {
+              "chapter": "45",
+              "verse": "17"
+            },
+            {
+              "chapter": "45",
+              "verse": "18"
+            },
+            {
+              "chapter": "45",
+              "verse": "19"
+            },
+            {
+              "chapter": "45",
+              "verse": "20"
+            },
+            {
+              "chapter": "45",
+              "verse": "21"
+            },
+            {
+              "chapter": "45",
+              "verse": "22"
+            },
+            {
+              "chapter": "45",
+              "verse": "23"
+            },
+            {
+              "chapter": "45",
+              "verse": "24"
+            },
+            {
+              "chapter": "45",
+              "verse": "25"
+            },
+            {
+              "chapter": "45",
+              "verse": "26"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "45",
+              "verse": "1"
+            },
+            {
+              "chapter": "45",
+              "verse": "2"
+            },
+            {
+              "chapter": "45",
+              "verse": "3"
+            },
+            {
+              "chapter": "45",
+              "verse": "4"
+            },
+            {
+              "chapter": "45",
+              "verse": "5"
+            },
+            {
+              "chapter": "45",
+              "verse": "6"
+            },
+            {
+              "chapter": "45",
+              "verse": "7"
+            },
+            {
+              "chapter": "45",
+              "verse": "8"
+            },
+            {
+              "chapter": "45",
+              "verse": "9"
+            },
+            {
+              "chapter": "45",
+              "verse": "10"
+            },
+            {
+              "chapter": "45",
+              "verse": "11"
+            },
+            {
+              "chapter": "45",
+              "verse": "12"
+            },
+            {
+              "chapter": "45",
+              "verse": "13"
+            },
+            {
+              "chapter": "45",
+              "verse": "14"
+            },
+            {
+              "chapter": "45",
+              "verse": "15"
+            },
+            {
+              "chapter": "45",
+              "verse": "16"
+            },
+            {
+              "chapter": "45",
+              "verse": "17"
+            },
+            {
+              "chapter": "45",
+              "verse": "18"
+            },
+            {
+              "chapter": "45",
+              "verse": "19"
+            },
+            {
+              "chapter": "45",
+              "verse": "20"
+            },
+            {
+              "chapter": "45",
+              "verse": "21"
+            },
+            {
+              "chapter": "45",
+              "verse": "22"
+            },
+            {
+              "chapter": "45",
+              "verse": "23"
+            },
+            {
+              "chapter": "45",
+              "verse": "24"
+            },
+            {
+              "chapter": "45",
+              "verse": "25"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 45 and pinned Swete/First1KGreek source chapter 45 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "46",
+      "segments": [
+        {
+          "id": "ISA-46-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "46",
+              "verse": "1"
+            },
+            {
+              "chapter": "46",
+              "verse": "2"
+            },
+            {
+              "chapter": "46",
+              "verse": "3"
+            },
+            {
+              "chapter": "46",
+              "verse": "4"
+            },
+            {
+              "chapter": "46",
+              "verse": "5"
+            },
+            {
+              "chapter": "46",
+              "verse": "6"
+            },
+            {
+              "chapter": "46",
+              "verse": "7"
+            },
+            {
+              "chapter": "46",
+              "verse": "8"
+            },
+            {
+              "chapter": "46",
+              "verse": "9"
+            },
+            {
+              "chapter": "46",
+              "verse": "10"
+            },
+            {
+              "chapter": "46",
+              "verse": "11"
+            },
+            {
+              "chapter": "46",
+              "verse": "12"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "46",
+              "verse": "1"
+            },
+            {
+              "chapter": "46",
+              "verse": "2"
+            },
+            {
+              "chapter": "46",
+              "verse": "3"
+            },
+            {
+              "chapter": "46",
+              "verse": "4"
+            },
+            {
+              "chapter": "46",
+              "verse": "5"
+            },
+            {
+              "chapter": "46",
+              "verse": "6"
+            },
+            {
+              "chapter": "46",
+              "verse": "7"
+            },
+            {
+              "chapter": "46",
+              "verse": "8"
+            },
+            {
+              "chapter": "46",
+              "verse": "9"
+            },
+            {
+              "chapter": "46",
+              "verse": "10"
+            },
+            {
+              "chapter": "46",
+              "verse": "11"
+            },
+            {
+              "chapter": "46",
+              "verse": "12"
+            },
+            {
+              "chapter": "46",
+              "verse": "13"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 46 and pinned Swete/First1KGreek source chapter 46 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "47",
+      "segments": [
+        {
+          "id": "ISA-47-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "47",
+              "verse": "1"
+            },
+            {
+              "chapter": "47",
+              "verse": "2"
+            },
+            {
+              "chapter": "47",
+              "verse": "3"
+            },
+            {
+              "chapter": "47",
+              "verse": "4"
+            },
+            {
+              "chapter": "47",
+              "verse": "5"
+            },
+            {
+              "chapter": "47",
+              "verse": "6"
+            },
+            {
+              "chapter": "47",
+              "verse": "7"
+            },
+            {
+              "chapter": "47",
+              "verse": "8"
+            },
+            {
+              "chapter": "47",
+              "verse": "9"
+            },
+            {
+              "chapter": "47",
+              "verse": "10"
+            },
+            {
+              "chapter": "47",
+              "verse": "11"
+            },
+            {
+              "chapter": "47",
+              "verse": "12"
+            },
+            {
+              "chapter": "47",
+              "verse": "13"
+            },
+            {
+              "chapter": "47",
+              "verse": "14"
+            },
+            {
+              "chapter": "47",
+              "verse": "15"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "47",
+              "verse": "1"
+            },
+            {
+              "chapter": "47",
+              "verse": "2"
+            },
+            {
+              "chapter": "47",
+              "verse": "3"
+            },
+            {
+              "chapter": "47",
+              "verse": "4"
+            },
+            {
+              "chapter": "47",
+              "verse": "5"
+            },
+            {
+              "chapter": "47",
+              "verse": "6"
+            },
+            {
+              "chapter": "47",
+              "verse": "7"
+            },
+            {
+              "chapter": "47",
+              "verse": "9"
+            },
+            {
+              "chapter": "47",
+              "verse": "10"
+            },
+            {
+              "chapter": "47",
+              "verse": "11"
+            },
+            {
+              "chapter": "47",
+              "verse": "12"
+            },
+            {
+              "chapter": "47",
+              "verse": "13"
+            },
+            {
+              "chapter": "47",
+              "verse": "14"
+            },
+            {
+              "chapter": "47",
+              "verse": "15"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 47 and pinned Swete/First1KGreek source chapter 47 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "49",
+      "segments": [
+        {
+          "id": "ISA-49-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "49",
+              "verse": "1"
+            },
+            {
+              "chapter": "49",
+              "verse": "2"
+            },
+            {
+              "chapter": "49",
+              "verse": "3"
+            },
+            {
+              "chapter": "49",
+              "verse": "4"
+            },
+            {
+              "chapter": "49",
+              "verse": "5"
+            },
+            {
+              "chapter": "49",
+              "verse": "6"
+            },
+            {
+              "chapter": "49",
+              "verse": "7"
+            },
+            {
+              "chapter": "49",
+              "verse": "8"
+            },
+            {
+              "chapter": "49",
+              "verse": "9"
+            },
+            {
+              "chapter": "49",
+              "verse": "10"
+            },
+            {
+              "chapter": "49",
+              "verse": "11"
+            },
+            {
+              "chapter": "49",
+              "verse": "12"
+            },
+            {
+              "chapter": "49",
+              "verse": "13"
+            },
+            {
+              "chapter": "49",
+              "verse": "14"
+            },
+            {
+              "chapter": "49",
+              "verse": "15"
+            },
+            {
+              "chapter": "49",
+              "verse": "16"
+            },
+            {
+              "chapter": "49",
+              "verse": "17"
+            },
+            {
+              "chapter": "49",
+              "verse": "18"
+            },
+            {
+              "chapter": "49",
+              "verse": "19"
+            },
+            {
+              "chapter": "49",
+              "verse": "20"
+            },
+            {
+              "chapter": "49",
+              "verse": "21"
+            },
+            {
+              "chapter": "49",
+              "verse": "22"
+            },
+            {
+              "chapter": "49",
+              "verse": "23"
+            },
+            {
+              "chapter": "49",
+              "verse": "24"
+            },
+            {
+              "chapter": "49",
+              "verse": "25"
+            },
+            {
+              "chapter": "49",
+              "verse": "26"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "49",
+              "verse": "1"
+            },
+            {
+              "chapter": "49",
+              "verse": "2"
+            },
+            {
+              "chapter": "49",
+              "verse": "3"
+            },
+            {
+              "chapter": "49",
+              "verse": "4"
+            },
+            {
+              "chapter": "49",
+              "verse": "5"
+            },
+            {
+              "chapter": "49",
+              "verse": "6"
+            },
+            {
+              "chapter": "49",
+              "verse": "7"
+            },
+            {
+              "chapter": "49",
+              "verse": "8"
+            },
+            {
+              "chapter": "49",
+              "verse": "9"
+            },
+            {
+              "chapter": "49",
+              "verse": "10"
+            },
+            {
+              "chapter": "49",
+              "verse": "11"
+            },
+            {
+              "chapter": "49",
+              "verse": "12"
+            },
+            {
+              "chapter": "49",
+              "verse": "14"
+            },
+            {
+              "chapter": "49",
+              "verse": "15"
+            },
+            {
+              "chapter": "49",
+              "verse": "16"
+            },
+            {
+              "chapter": "49",
+              "verse": "17"
+            },
+            {
+              "chapter": "49",
+              "verse": "18"
+            },
+            {
+              "chapter": "49",
+              "verse": "19"
+            },
+            {
+              "chapter": "49",
+              "verse": "20"
+            },
+            {
+              "chapter": "49",
+              "verse": "21"
+            },
+            {
+              "chapter": "49",
+              "verse": "22"
+            },
+            {
+              "chapter": "49",
+              "verse": "23"
+            },
+            {
+              "chapter": "49",
+              "verse": "24"
+            },
+            {
+              "chapter": "49",
+              "verse": "25"
+            },
+            {
+              "chapter": "49",
+              "verse": "26"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 49 and pinned Swete/First1KGreek source chapter 49 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "52",
+      "segments": [
+        {
+          "id": "ISA-52-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "52",
+              "verse": "1"
+            },
+            {
+              "chapter": "52",
+              "verse": "2"
+            },
+            {
+              "chapter": "52",
+              "verse": "3"
+            },
+            {
+              "chapter": "52",
+              "verse": "4"
+            },
+            {
+              "chapter": "52",
+              "verse": "5"
+            },
+            {
+              "chapter": "52",
+              "verse": "6"
+            },
+            {
+              "chapter": "52",
+              "verse": "7"
+            },
+            {
+              "chapter": "52",
+              "verse": "8"
+            },
+            {
+              "chapter": "52",
+              "verse": "9"
+            },
+            {
+              "chapter": "52",
+              "verse": "10"
+            },
+            {
+              "chapter": "52",
+              "verse": "11"
+            },
+            {
+              "chapter": "52",
+              "verse": "12"
+            },
+            {
+              "chapter": "52",
+              "verse": "13"
+            },
+            {
+              "chapter": "52",
+              "verse": "14"
+            },
+            {
+              "chapter": "52",
+              "verse": "15"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "52",
+              "verse": "1"
+            },
+            {
+              "chapter": "52",
+              "verse": "2"
+            },
+            {
+              "chapter": "52",
+              "verse": "4"
+            },
+            {
+              "chapter": "52",
+              "verse": "5"
+            },
+            {
+              "chapter": "52",
+              "verse": "6"
+            },
+            {
+              "chapter": "52",
+              "verse": "7"
+            },
+            {
+              "chapter": "52",
+              "verse": "8"
+            },
+            {
+              "chapter": "52",
+              "verse": "9"
+            },
+            {
+              "chapter": "52",
+              "verse": "10"
+            },
+            {
+              "chapter": "52",
+              "verse": "11"
+            },
+            {
+              "chapter": "52",
+              "verse": "12"
+            },
+            {
+              "chapter": "52",
+              "verse": "13"
+            },
+            {
+              "chapter": "52",
+              "verse": "14"
+            },
+            {
+              "chapter": "52",
+              "verse": "15"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 52 and pinned Swete/First1KGreek source chapter 52 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "56",
+      "segments": [
+        {
+          "id": "ISA-56-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "56",
+              "verse": "1"
+            },
+            {
+              "chapter": "56",
+              "verse": "2"
+            },
+            {
+              "chapter": "56",
+              "verse": "3"
+            },
+            {
+              "chapter": "56",
+              "verse": "4"
+            },
+            {
+              "chapter": "56",
+              "verse": "5"
+            },
+            {
+              "chapter": "56",
+              "verse": "6"
+            },
+            {
+              "chapter": "56",
+              "verse": "7"
+            },
+            {
+              "chapter": "56",
+              "verse": "8"
+            },
+            {
+              "chapter": "56",
+              "verse": "9"
+            },
+            {
+              "chapter": "56",
+              "verse": "10"
+            },
+            {
+              "chapter": "56",
+              "verse": "11"
+            },
+            {
+              "chapter": "56",
+              "verse": "12"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "56",
+              "verse": "1"
+            },
+            {
+              "chapter": "56",
+              "verse": "2"
+            },
+            {
+              "chapter": "56",
+              "verse": "3"
+            },
+            {
+              "chapter": "56",
+              "verse": "4"
+            },
+            {
+              "chapter": "56",
+              "verse": "5"
+            },
+            {
+              "chapter": "56",
+              "verse": "6"
+            },
+            {
+              "chapter": "56",
+              "verse": "7"
+            },
+            {
+              "chapter": "56",
+              "verse": "8"
+            },
+            {
+              "chapter": "56",
+              "verse": "9"
+            },
+            {
+              "chapter": "56",
+              "verse": "10"
+            },
+            {
+              "chapter": "56",
+              "verse": "11"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 56 and pinned Swete/First1KGreek source chapter 56 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "65",
+      "segments": [
+        {
+          "id": "ISA-65-greek-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "65",
+              "verse": "1"
+            },
+            {
+              "chapter": "65",
+              "verse": "2"
+            },
+            {
+              "chapter": "65",
+              "verse": "3"
+            },
+            {
+              "chapter": "65",
+              "verse": "4"
+            },
+            {
+              "chapter": "65",
+              "verse": "5"
+            },
+            {
+              "chapter": "65",
+              "verse": "6"
+            },
+            {
+              "chapter": "65",
+              "verse": "7"
+            },
+            {
+              "chapter": "65",
+              "verse": "8"
+            },
+            {
+              "chapter": "65",
+              "verse": "9"
+            },
+            {
+              "chapter": "65",
+              "verse": "10"
+            },
+            {
+              "chapter": "65",
+              "verse": "11"
+            },
+            {
+              "chapter": "65",
+              "verse": "12"
+            },
+            {
+              "chapter": "65",
+              "verse": "13"
+            },
+            {
+              "chapter": "65",
+              "verse": "14"
+            },
+            {
+              "chapter": "65",
+              "verse": "15"
+            },
+            {
+              "chapter": "65",
+              "verse": "16"
+            },
+            {
+              "chapter": "65",
+              "verse": "17"
+            },
+            {
+              "chapter": "65",
+              "verse": "18"
+            },
+            {
+              "chapter": "65",
+              "verse": "19"
+            },
+            {
+              "chapter": "65",
+              "verse": "20"
+            },
+            {
+              "chapter": "65",
+              "verse": "21"
+            },
+            {
+              "chapter": "65",
+              "verse": "22"
+            },
+            {
+              "chapter": "65",
+              "verse": "23"
+            },
+            {
+              "chapter": "65",
+              "verse": "24"
+            },
+            {
+              "chapter": "65",
+              "verse": "25"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "65",
+              "verse": "1"
+            },
+            {
+              "chapter": "65",
+              "verse": "2"
+            },
+            {
+              "chapter": "65",
+              "verse": "3"
+            },
+            {
+              "chapter": "65",
+              "verse": "4"
+            },
+            {
+              "chapter": "65",
+              "verse": "5"
+            },
+            {
+              "chapter": "65",
+              "verse": "6"
+            },
+            {
+              "chapter": "65",
+              "verse": "7"
+            },
+            {
+              "chapter": "65",
+              "verse": "8"
+            },
+            {
+              "chapter": "65",
+              "verse": "9"
+            },
+            {
+              "chapter": "65",
+              "verse": "10"
+            },
+            {
+              "chapter": "65",
+              "verse": "11"
+            },
+            {
+              "chapter": "65",
+              "verse": "12"
+            },
+            {
+              "chapter": "65",
+              "verse": "13"
+            },
+            {
+              "chapter": "65",
+              "verse": "14"
+            },
+            {
+              "chapter": "65",
+              "verse": "15"
+            },
+            {
+              "chapter": "65",
+              "verse": "16"
+            },
+            {
+              "chapter": "65",
+              "verse": "17"
+            },
+            {
+              "chapter": "65",
+              "verse": "18"
+            },
+            {
+              "chapter": "65",
+              "verse": "19"
+            },
+            {
+              "chapter": "65",
+              "verse": "20"
+            },
+            {
+              "chapter": "65",
+              "verse": "23"
+            },
+            {
+              "chapter": "65",
+              "verse": "24"
+            },
+            {
+              "chapter": "65",
+              "verse": "25"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Isaiah 65 and pinned Swete/First1KGreek source chapter 65 preserve the corresponding chapter locus with different native verse segmentation; the complete Swete inventory is retained as a source-preserving range."
+          }
+        }
+      ]
+    }
+  ]
+}

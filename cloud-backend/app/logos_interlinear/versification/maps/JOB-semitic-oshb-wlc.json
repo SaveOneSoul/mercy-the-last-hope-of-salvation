@@ -1,0 +1,1130 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.22-job-semitic-v1",
+  "status": "verified",
+  "book_id": "JOB",
+  "book": "Job",
+  "lane": "semitic",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "oshb",
+    "reference_system": "oshb-wlc-osis",
+    "corpus_id": "heb_arc_oshb_wlc",
+    "corpus_version": "2026.09.16-oshb-wlc-39",
+    "repository": "openscriptures/morphhb",
+    "commit": "3d15126fb1ef74867fc1434be1942e837932691f"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "16",
+      "39",
+      "40",
+      "41",
+      "42"
+    ],
+    "complete_for_audited_mismatches": true
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "16",
+      "segments": [
+        {
+          "id": "JOB-16-semitic-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "16",
+              "verse": "1"
+            },
+            {
+              "chapter": "16",
+              "verse": "2"
+            },
+            {
+              "chapter": "16",
+              "verse": "3"
+            },
+            {
+              "chapter": "16",
+              "verse": "4"
+            },
+            {
+              "chapter": "16",
+              "verse": "5"
+            },
+            {
+              "chapter": "16",
+              "verse": "6"
+            },
+            {
+              "chapter": "16",
+              "verse": "7"
+            },
+            {
+              "chapter": "16",
+              "verse": "8"
+            },
+            {
+              "chapter": "16",
+              "verse": "9"
+            },
+            {
+              "chapter": "16",
+              "verse": "10"
+            },
+            {
+              "chapter": "16",
+              "verse": "11"
+            },
+            {
+              "chapter": "16",
+              "verse": "12"
+            },
+            {
+              "chapter": "16",
+              "verse": "13"
+            },
+            {
+              "chapter": "16",
+              "verse": "14"
+            },
+            {
+              "chapter": "16",
+              "verse": "15"
+            },
+            {
+              "chapter": "16",
+              "verse": "16"
+            },
+            {
+              "chapter": "16",
+              "verse": "17"
+            },
+            {
+              "chapter": "16",
+              "verse": "18"
+            },
+            {
+              "chapter": "16",
+              "verse": "19"
+            },
+            {
+              "chapter": "16",
+              "verse": "20"
+            },
+            {
+              "chapter": "16",
+              "verse": "21"
+            },
+            {
+              "chapter": "16",
+              "verse": "22"
+            },
+            {
+              "chapter": "16",
+              "verse": "23"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "16",
+              "verse": "1"
+            },
+            {
+              "chapter": "16",
+              "verse": "2"
+            },
+            {
+              "chapter": "16",
+              "verse": "3"
+            },
+            {
+              "chapter": "16",
+              "verse": "4"
+            },
+            {
+              "chapter": "16",
+              "verse": "5"
+            },
+            {
+              "chapter": "16",
+              "verse": "6"
+            },
+            {
+              "chapter": "16",
+              "verse": "7"
+            },
+            {
+              "chapter": "16",
+              "verse": "8"
+            },
+            {
+              "chapter": "16",
+              "verse": "9"
+            },
+            {
+              "chapter": "16",
+              "verse": "10"
+            },
+            {
+              "chapter": "16",
+              "verse": "11"
+            },
+            {
+              "chapter": "16",
+              "verse": "12"
+            },
+            {
+              "chapter": "16",
+              "verse": "13"
+            },
+            {
+              "chapter": "16",
+              "verse": "14"
+            },
+            {
+              "chapter": "16",
+              "verse": "15"
+            },
+            {
+              "chapter": "16",
+              "verse": "16"
+            },
+            {
+              "chapter": "16",
+              "verse": "17"
+            },
+            {
+              "chapter": "16",
+              "verse": "18"
+            },
+            {
+              "chapter": "16",
+              "verse": "19"
+            },
+            {
+              "chapter": "16",
+              "verse": "20"
+            },
+            {
+              "chapter": "16",
+              "verse": "21"
+            },
+            {
+              "chapter": "16",
+              "verse": "22"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Job 16 and pinned OSHB/WLC are related through the UBS Vulgate-to-original exception table plus unchanged identity loci; the complete structural source range is preserved without inventing Hebrew verse boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "39",
+      "segments": [
+        {
+          "id": "JOB-39-semitic-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "39",
+              "verse": "1"
+            },
+            {
+              "chapter": "39",
+              "verse": "2"
+            },
+            {
+              "chapter": "39",
+              "verse": "3"
+            },
+            {
+              "chapter": "39",
+              "verse": "4"
+            },
+            {
+              "chapter": "39",
+              "verse": "5"
+            },
+            {
+              "chapter": "39",
+              "verse": "6"
+            },
+            {
+              "chapter": "39",
+              "verse": "7"
+            },
+            {
+              "chapter": "39",
+              "verse": "8"
+            },
+            {
+              "chapter": "39",
+              "verse": "9"
+            },
+            {
+              "chapter": "39",
+              "verse": "10"
+            },
+            {
+              "chapter": "39",
+              "verse": "11"
+            },
+            {
+              "chapter": "39",
+              "verse": "12"
+            },
+            {
+              "chapter": "39",
+              "verse": "13"
+            },
+            {
+              "chapter": "39",
+              "verse": "14"
+            },
+            {
+              "chapter": "39",
+              "verse": "15"
+            },
+            {
+              "chapter": "39",
+              "verse": "16"
+            },
+            {
+              "chapter": "39",
+              "verse": "17"
+            },
+            {
+              "chapter": "39",
+              "verse": "18"
+            },
+            {
+              "chapter": "39",
+              "verse": "19"
+            },
+            {
+              "chapter": "39",
+              "verse": "20"
+            },
+            {
+              "chapter": "39",
+              "verse": "21"
+            },
+            {
+              "chapter": "39",
+              "verse": "22"
+            },
+            {
+              "chapter": "39",
+              "verse": "23"
+            },
+            {
+              "chapter": "39",
+              "verse": "24"
+            },
+            {
+              "chapter": "39",
+              "verse": "25"
+            },
+            {
+              "chapter": "39",
+              "verse": "26"
+            },
+            {
+              "chapter": "39",
+              "verse": "27"
+            },
+            {
+              "chapter": "39",
+              "verse": "28"
+            },
+            {
+              "chapter": "39",
+              "verse": "29"
+            },
+            {
+              "chapter": "39",
+              "verse": "30"
+            },
+            {
+              "chapter": "39",
+              "verse": "31"
+            },
+            {
+              "chapter": "39",
+              "verse": "32"
+            },
+            {
+              "chapter": "39",
+              "verse": "33"
+            },
+            {
+              "chapter": "39",
+              "verse": "34"
+            },
+            {
+              "chapter": "39",
+              "verse": "35"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "39",
+              "verse": "1"
+            },
+            {
+              "chapter": "39",
+              "verse": "2"
+            },
+            {
+              "chapter": "39",
+              "verse": "3"
+            },
+            {
+              "chapter": "39",
+              "verse": "4"
+            },
+            {
+              "chapter": "39",
+              "verse": "5"
+            },
+            {
+              "chapter": "39",
+              "verse": "6"
+            },
+            {
+              "chapter": "39",
+              "verse": "7"
+            },
+            {
+              "chapter": "39",
+              "verse": "8"
+            },
+            {
+              "chapter": "39",
+              "verse": "9"
+            },
+            {
+              "chapter": "39",
+              "verse": "10"
+            },
+            {
+              "chapter": "39",
+              "verse": "11"
+            },
+            {
+              "chapter": "39",
+              "verse": "12"
+            },
+            {
+              "chapter": "39",
+              "verse": "13"
+            },
+            {
+              "chapter": "39",
+              "verse": "14"
+            },
+            {
+              "chapter": "39",
+              "verse": "15"
+            },
+            {
+              "chapter": "39",
+              "verse": "16"
+            },
+            {
+              "chapter": "39",
+              "verse": "17"
+            },
+            {
+              "chapter": "39",
+              "verse": "18"
+            },
+            {
+              "chapter": "39",
+              "verse": "19"
+            },
+            {
+              "chapter": "39",
+              "verse": "20"
+            },
+            {
+              "chapter": "39",
+              "verse": "21"
+            },
+            {
+              "chapter": "39",
+              "verse": "22"
+            },
+            {
+              "chapter": "39",
+              "verse": "23"
+            },
+            {
+              "chapter": "39",
+              "verse": "24"
+            },
+            {
+              "chapter": "39",
+              "verse": "25"
+            },
+            {
+              "chapter": "39",
+              "verse": "26"
+            },
+            {
+              "chapter": "39",
+              "verse": "27"
+            },
+            {
+              "chapter": "39",
+              "verse": "28"
+            },
+            {
+              "chapter": "39",
+              "verse": "29"
+            },
+            {
+              "chapter": "39",
+              "verse": "30"
+            },
+            {
+              "chapter": "40",
+              "verse": "1"
+            },
+            {
+              "chapter": "40",
+              "verse": "2"
+            },
+            {
+              "chapter": "40",
+              "verse": "3"
+            },
+            {
+              "chapter": "40",
+              "verse": "4"
+            },
+            {
+              "chapter": "40",
+              "verse": "5"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Job 39 and pinned OSHB/WLC are related through the UBS Vulgate-to-original exception table plus unchanged identity loci; the complete structural source range is preserved without inventing Hebrew verse boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "40",
+      "segments": [
+        {
+          "id": "JOB-40-semitic-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "40",
+              "verse": "1"
+            },
+            {
+              "chapter": "40",
+              "verse": "2"
+            },
+            {
+              "chapter": "40",
+              "verse": "3"
+            },
+            {
+              "chapter": "40",
+              "verse": "4"
+            },
+            {
+              "chapter": "40",
+              "verse": "5"
+            },
+            {
+              "chapter": "40",
+              "verse": "6"
+            },
+            {
+              "chapter": "40",
+              "verse": "7"
+            },
+            {
+              "chapter": "40",
+              "verse": "8"
+            },
+            {
+              "chapter": "40",
+              "verse": "9"
+            },
+            {
+              "chapter": "40",
+              "verse": "10"
+            },
+            {
+              "chapter": "40",
+              "verse": "11"
+            },
+            {
+              "chapter": "40",
+              "verse": "12"
+            },
+            {
+              "chapter": "40",
+              "verse": "13"
+            },
+            {
+              "chapter": "40",
+              "verse": "14"
+            },
+            {
+              "chapter": "40",
+              "verse": "15"
+            },
+            {
+              "chapter": "40",
+              "verse": "16"
+            },
+            {
+              "chapter": "40",
+              "verse": "17"
+            },
+            {
+              "chapter": "40",
+              "verse": "18"
+            },
+            {
+              "chapter": "40",
+              "verse": "19"
+            },
+            {
+              "chapter": "40",
+              "verse": "20"
+            },
+            {
+              "chapter": "40",
+              "verse": "21"
+            },
+            {
+              "chapter": "40",
+              "verse": "22"
+            },
+            {
+              "chapter": "40",
+              "verse": "23"
+            },
+            {
+              "chapter": "40",
+              "verse": "24"
+            },
+            {
+              "chapter": "40",
+              "verse": "25"
+            },
+            {
+              "chapter": "40",
+              "verse": "26"
+            },
+            {
+              "chapter": "40",
+              "verse": "27"
+            },
+            {
+              "chapter": "40",
+              "verse": "28"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "40",
+              "verse": "6"
+            },
+            {
+              "chapter": "40",
+              "verse": "7"
+            },
+            {
+              "chapter": "40",
+              "verse": "8"
+            },
+            {
+              "chapter": "40",
+              "verse": "9"
+            },
+            {
+              "chapter": "40",
+              "verse": "10"
+            },
+            {
+              "chapter": "40",
+              "verse": "11"
+            },
+            {
+              "chapter": "40",
+              "verse": "12"
+            },
+            {
+              "chapter": "40",
+              "verse": "13"
+            },
+            {
+              "chapter": "40",
+              "verse": "14"
+            },
+            {
+              "chapter": "40",
+              "verse": "15"
+            },
+            {
+              "chapter": "40",
+              "verse": "16"
+            },
+            {
+              "chapter": "40",
+              "verse": "17"
+            },
+            {
+              "chapter": "40",
+              "verse": "18"
+            },
+            {
+              "chapter": "40",
+              "verse": "19"
+            },
+            {
+              "chapter": "40",
+              "verse": "20"
+            },
+            {
+              "chapter": "40",
+              "verse": "21"
+            },
+            {
+              "chapter": "40",
+              "verse": "22"
+            },
+            {
+              "chapter": "40",
+              "verse": "23"
+            },
+            {
+              "chapter": "40",
+              "verse": "24"
+            },
+            {
+              "chapter": "40",
+              "verse": "25"
+            },
+            {
+              "chapter": "40",
+              "verse": "26"
+            },
+            {
+              "chapter": "40",
+              "verse": "27"
+            },
+            {
+              "chapter": "40",
+              "verse": "28"
+            },
+            {
+              "chapter": "40",
+              "verse": "29"
+            },
+            {
+              "chapter": "40",
+              "verse": "30"
+            },
+            {
+              "chapter": "40",
+              "verse": "31"
+            },
+            {
+              "chapter": "40",
+              "verse": "32"
+            },
+            {
+              "chapter": "41",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Job 40 and pinned OSHB/WLC are related through the UBS Vulgate-to-original exception table plus unchanged identity loci; the complete structural source range is preserved without inventing Hebrew verse boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "41",
+      "segments": [
+        {
+          "id": "JOB-41-semitic-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "41",
+              "verse": "1"
+            },
+            {
+              "chapter": "41",
+              "verse": "2"
+            },
+            {
+              "chapter": "41",
+              "verse": "3"
+            },
+            {
+              "chapter": "41",
+              "verse": "4"
+            },
+            {
+              "chapter": "41",
+              "verse": "5"
+            },
+            {
+              "chapter": "41",
+              "verse": "6"
+            },
+            {
+              "chapter": "41",
+              "verse": "7"
+            },
+            {
+              "chapter": "41",
+              "verse": "8"
+            },
+            {
+              "chapter": "41",
+              "verse": "9"
+            },
+            {
+              "chapter": "41",
+              "verse": "10"
+            },
+            {
+              "chapter": "41",
+              "verse": "11"
+            },
+            {
+              "chapter": "41",
+              "verse": "12"
+            },
+            {
+              "chapter": "41",
+              "verse": "13"
+            },
+            {
+              "chapter": "41",
+              "verse": "14"
+            },
+            {
+              "chapter": "41",
+              "verse": "15"
+            },
+            {
+              "chapter": "41",
+              "verse": "16"
+            },
+            {
+              "chapter": "41",
+              "verse": "17"
+            },
+            {
+              "chapter": "41",
+              "verse": "18"
+            },
+            {
+              "chapter": "41",
+              "verse": "19"
+            },
+            {
+              "chapter": "41",
+              "verse": "20"
+            },
+            {
+              "chapter": "41",
+              "verse": "21"
+            },
+            {
+              "chapter": "41",
+              "verse": "22"
+            },
+            {
+              "chapter": "41",
+              "verse": "23"
+            },
+            {
+              "chapter": "41",
+              "verse": "24"
+            },
+            {
+              "chapter": "41",
+              "verse": "25"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "41",
+              "verse": "2"
+            },
+            {
+              "chapter": "41",
+              "verse": "3"
+            },
+            {
+              "chapter": "41",
+              "verse": "4"
+            },
+            {
+              "chapter": "41",
+              "verse": "5"
+            },
+            {
+              "chapter": "41",
+              "verse": "6"
+            },
+            {
+              "chapter": "41",
+              "verse": "7"
+            },
+            {
+              "chapter": "41",
+              "verse": "8"
+            },
+            {
+              "chapter": "41",
+              "verse": "9"
+            },
+            {
+              "chapter": "41",
+              "verse": "10"
+            },
+            {
+              "chapter": "41",
+              "verse": "11"
+            },
+            {
+              "chapter": "41",
+              "verse": "12"
+            },
+            {
+              "chapter": "41",
+              "verse": "13"
+            },
+            {
+              "chapter": "41",
+              "verse": "14"
+            },
+            {
+              "chapter": "41",
+              "verse": "15"
+            },
+            {
+              "chapter": "41",
+              "verse": "16"
+            },
+            {
+              "chapter": "41",
+              "verse": "17"
+            },
+            {
+              "chapter": "41",
+              "verse": "18"
+            },
+            {
+              "chapter": "41",
+              "verse": "19"
+            },
+            {
+              "chapter": "41",
+              "verse": "20"
+            },
+            {
+              "chapter": "41",
+              "verse": "21"
+            },
+            {
+              "chapter": "41",
+              "verse": "22"
+            },
+            {
+              "chapter": "41",
+              "verse": "23"
+            },
+            {
+              "chapter": "41",
+              "verse": "24"
+            },
+            {
+              "chapter": "41",
+              "verse": "25"
+            },
+            {
+              "chapter": "41",
+              "verse": "26"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Job 41 and pinned OSHB/WLC are related through the UBS Vulgate-to-original exception table plus unchanged identity loci; the complete structural source range is preserved without inventing Hebrew verse boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "42",
+      "segments": [
+        {
+          "id": "JOB-42-semitic-structural-range",
+          "relationship": "range",
+          "canonical_refs": [
+            {
+              "chapter": "42",
+              "verse": "1"
+            },
+            {
+              "chapter": "42",
+              "verse": "2"
+            },
+            {
+              "chapter": "42",
+              "verse": "3"
+            },
+            {
+              "chapter": "42",
+              "verse": "4"
+            },
+            {
+              "chapter": "42",
+              "verse": "5"
+            },
+            {
+              "chapter": "42",
+              "verse": "6"
+            },
+            {
+              "chapter": "42",
+              "verse": "7"
+            },
+            {
+              "chapter": "42",
+              "verse": "8"
+            },
+            {
+              "chapter": "42",
+              "verse": "9"
+            },
+            {
+              "chapter": "42",
+              "verse": "10"
+            },
+            {
+              "chapter": "42",
+              "verse": "11"
+            },
+            {
+              "chapter": "42",
+              "verse": "12"
+            },
+            {
+              "chapter": "42",
+              "verse": "13"
+            },
+            {
+              "chapter": "42",
+              "verse": "14"
+            },
+            {
+              "chapter": "42",
+              "verse": "15"
+            },
+            {
+              "chapter": "42",
+              "verse": "16"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "42",
+              "verse": "1"
+            },
+            {
+              "chapter": "42",
+              "verse": "2"
+            },
+            {
+              "chapter": "42",
+              "verse": "3"
+            },
+            {
+              "chapter": "42",
+              "verse": "4"
+            },
+            {
+              "chapter": "42",
+              "verse": "5"
+            },
+            {
+              "chapter": "42",
+              "verse": "6"
+            },
+            {
+              "chapter": "42",
+              "verse": "7"
+            },
+            {
+              "chapter": "42",
+              "verse": "8"
+            },
+            {
+              "chapter": "42",
+              "verse": "9"
+            },
+            {
+              "chapter": "42",
+              "verse": "10"
+            },
+            {
+              "chapter": "42",
+              "verse": "11"
+            },
+            {
+              "chapter": "42",
+              "verse": "12"
+            },
+            {
+              "chapter": "42",
+              "verse": "13"
+            },
+            {
+              "chapter": "42",
+              "verse": "14"
+            },
+            {
+              "chapter": "42",
+              "verse": "15"
+            },
+            {
+              "chapter": "42",
+              "verse": "16"
+            },
+            {
+              "chapter": "42",
+              "verse": "17"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims Job 42 and pinned OSHB/WLC are related through the UBS Vulgate-to-original exception table plus unchanged identity loci; the complete structural source range is preserved without inventing Hebrew verse boundaries."
+          }
+        }
+      ]
+    }
+  ]
+}
