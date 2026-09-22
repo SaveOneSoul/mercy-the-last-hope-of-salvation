@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 21,
-    "books_resolved": 52,
-    "unresolved_lane_count": 41,
-    "verified_registry_lane_count": 39,
+    "books_unresolved": 20,
+    "books_resolved": 53,
+    "unresolved_lane_count": 39,
+    "verified_registry_lane_count": 41,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -1532,26 +1532,53 @@
       "id": "HOS",
       "book": "Hosea",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.20-hos-semitic-v1",
+          "file": "maps/HOS-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "1",
+            "2",
+            "10",
+            "11",
+            "12"
+          ],
+          "audited_mismatch_chapters": [
+            "1",
+            "2",
+            "11",
+            "12"
+          ],
+          "verified_override_chapters": [
+            "10"
+          ],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "1",
             "2",
             "11",
             "12"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.20-hos-greek-v1",
+          "file": "maps/HOS-greek-first1k-swete.json",
+          "covered_chapters": [
+            "2"
+          ],
+          "audited_mismatch_chapters": [
+            "2"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "2"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
