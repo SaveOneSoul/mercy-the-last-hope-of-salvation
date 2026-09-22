@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 16,
-    "books_resolved": 57,
-    "unresolved_lane_count": 34,
-    "verified_registry_lane_count": 46,
+    "books_unresolved": 15,
+    "books_resolved": 58,
+    "unresolved_lane_count": 32,
+    "verified_registry_lane_count": 48,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -363,19 +363,52 @@
       "id": "1SA",
       "book": "1 Samuel",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-1sa-semitic-v1",
+          "file": "maps/1SA-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "20",
+            "21"
+          ],
+          "audited_mismatch_chapters": [
+            "20",
+            "21"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "20",
             "21"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-1sa-greek-v1",
+          "file": "maps/1SA-greek-first1k-swete.json",
+          "covered_chapters": [
+            "4",
+            "8",
+            "13",
+            "14",
+            "17",
+            "18",
+            "25"
+          ],
+          "audited_mismatch_chapters": [
+            "4",
+            "8",
+            "13",
+            "14",
+            "17",
+            "18",
+            "25"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "4",
@@ -385,8 +418,7 @@
             "17",
             "18",
             "25"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
