@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "registry_version": "2026.09.22-v52",
+  "registry_version": "2026.09.22-v53",
   "canonical_reference_system": "douay-rheims-1899",
   "policy": {
     "source_text_immutable": true,
@@ -482,6 +482,24 @@
       "lane": "greek",
       "file": "maps/PSA-greek-first1k-swete.json",
       "status": "verified"
+    },
+    {
+      "book_id": "GEN",
+      "lane": "latin",
+      "status": "verified",
+      "file": "maps/GEN-latin-clementine.json"
+    },
+    {
+      "book_id": "PSA",
+      "lane": "latin",
+      "status": "verified",
+      "file": "maps/PSA-latin-clementine.json"
+    },
+    {
+      "book_id": "ISA",
+      "lane": "latin",
+      "status": "verified",
+      "file": "maps/ISA-latin-clementine.json"
     }
   ]
 }
