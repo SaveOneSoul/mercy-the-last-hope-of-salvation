@@ -54,3 +54,14 @@ The following are deliberately blocked from bulk import by `sources-manifest.jso
 - World English Bible Catholic Edition — optional lane; independent repository-level provenance pin not yet recorded here.
 
 Do not bypass these gates by copying text from an arbitrary website.
+
+
+## lxx-morph / Rahlfs Greek OT morphology — Phase 2 candidate
+
+Candidate pinned revision: `c91f6b1e8fb3ba37df701e6ae31f675ace71a2b2`
+
+The Phase 2 linguistic source gate records **lxx-morph** as a CC BY 4.0 word-level morphology dataset for the public-domain Rahlfs Septuagint (1935). It is not the same textual edition as the installed Swete/First1KGreek surface witness and must never be presented as if its lemma/POS/morphology were native Swete annotations.
+
+Production import is deliberately disabled until the pinned revision's exact file inventory, license evidence and checksums are verified and deterministic verse/token alignment is demonstrated. Where Rahlfs and the installed Greek surface differ, Logos must preserve separate witness identity or an explicit linguistic gap rather than synthesizing tokens or annotations.
+
+The dataset itself carries a documented quality caveat: it is useful open linguistic data but should not be treated as infallible scholarly authority. Provenance/confidence metadata must remain available when the corpus is eventually integrated.
