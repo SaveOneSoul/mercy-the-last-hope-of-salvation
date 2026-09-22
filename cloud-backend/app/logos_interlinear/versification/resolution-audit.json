@@ -9,10 +9,10 @@
   },
   "summary": {
     "book_count": 73,
-    "books_unresolved": 13,
-    "books_resolved": 60,
-    "unresolved_lane_count": 28,
-    "verified_registry_lane_count": 52,
+    "books_unresolved": 12,
+    "books_resolved": 61,
+    "unresolved_lane_count": 26,
+    "verified_registry_lane_count": 54,
     "native_resolved_lane_count": 3,
     "exact_lane_count": 102
   },
@@ -794,10 +794,30 @@
       "id": "NEH",
       "book": "Nehemiah",
       "testament": "OT",
-      "unresolved": true,
+      "unresolved": false,
       "lanes": {
         "semitic": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-neh-semitic-v1",
+          "file": "maps/NEH-semitic-oshb-wlc.json",
+          "covered_chapters": [
+            "3",
+            "4",
+            "7",
+            "9",
+            "10",
+            "12"
+          ],
+          "audited_mismatch_chapters": [
+            "3",
+            "4",
+            "7",
+            "9",
+            "10",
+            "12"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "3",
@@ -806,11 +826,32 @@
             "9",
             "10",
             "12"
-          ],
-          "registry": null
+          ]
         },
         "greek": {
-          "status": "unresolved",
+          "status": "verified-registry-map",
+          "verified": true,
+          "mapping_version": "2026.09.22-neh-greek-v1",
+          "file": "maps/NEH-greek-first1k-swete.json",
+          "covered_chapters": [
+            "3",
+            "4",
+            "7",
+            "8",
+            "10",
+            "11",
+            "12"
+          ],
+          "audited_mismatch_chapters": [
+            "3",
+            "4",
+            "7",
+            "8",
+            "10",
+            "11",
+            "12"
+          ],
+          "verified_override_chapters": [],
           "source_status": "mapping-required",
           "mismatch_chapters": [
             "3",
@@ -820,8 +861,7 @@
             "10",
             "11",
             "12"
-          ],
-          "registry": null
+          ]
         },
         "latin": {
           "status": "exact",
