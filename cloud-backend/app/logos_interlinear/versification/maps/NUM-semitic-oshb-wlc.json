@@ -1,0 +1,2315 @@
+{
+  "schema_version": 1,
+  "mapping_version": "2026.09.22-num-semitic-v1",
+  "status": "verified",
+  "book_id": "NUM",
+  "book": "Numbers",
+  "lane": "semitic",
+  "canonical_reference_system": "douay-rheims-1899",
+  "source": {
+    "source_id": "oshb",
+    "reference_system": "oshb-wlc-osis",
+    "corpus_id": "heb_arc_oshb_wlc",
+    "corpus_version": "2026.09.16-oshb-wlc-39",
+    "repository": "openscriptures/morphhb",
+    "commit": "3d15126fb1ef74867fc1434be1942e837932691f"
+  },
+  "policy": {
+    "source_text_immutable": true,
+    "fabricated_boundaries_forbidden": true,
+    "bidirectional_validation_required": true
+  },
+  "coverage": {
+    "audited_mismatch_chapters": [
+      "11",
+      "12",
+      "13",
+      "16",
+      "17",
+      "20",
+      "25"
+    ],
+    "verified_override_chapters": [
+      "26"
+    ],
+    "complete_for_audited_mismatches": true,
+    "complete_for_numeric_identity_overrides": true,
+    "numeric_identity_override_evidence": {
+      "26": {
+        "citation": "Pinned OSHB VerseMap maps WLC Numbers 25:19 into the opening KJV-style Numbers 26:1 unit; Douay-Rheims 26:1 likewise combines the post-plague transition with the Lord's command, so numeric identity alone would lose the preceding source component."
+      }
+    }
+  },
+  "chapters": [
+    {
+      "canonical_chapter": "11",
+      "segments": [
+        {
+          "id": "NUM-11-1-33-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "1"
+            },
+            {
+              "chapter": "11",
+              "verse": "2"
+            },
+            {
+              "chapter": "11",
+              "verse": "3"
+            },
+            {
+              "chapter": "11",
+              "verse": "4"
+            },
+            {
+              "chapter": "11",
+              "verse": "5"
+            },
+            {
+              "chapter": "11",
+              "verse": "6"
+            },
+            {
+              "chapter": "11",
+              "verse": "7"
+            },
+            {
+              "chapter": "11",
+              "verse": "8"
+            },
+            {
+              "chapter": "11",
+              "verse": "9"
+            },
+            {
+              "chapter": "11",
+              "verse": "10"
+            },
+            {
+              "chapter": "11",
+              "verse": "11"
+            },
+            {
+              "chapter": "11",
+              "verse": "12"
+            },
+            {
+              "chapter": "11",
+              "verse": "13"
+            },
+            {
+              "chapter": "11",
+              "verse": "14"
+            },
+            {
+              "chapter": "11",
+              "verse": "15"
+            },
+            {
+              "chapter": "11",
+              "verse": "16"
+            },
+            {
+              "chapter": "11",
+              "verse": "17"
+            },
+            {
+              "chapter": "11",
+              "verse": "18"
+            },
+            {
+              "chapter": "11",
+              "verse": "19"
+            },
+            {
+              "chapter": "11",
+              "verse": "20"
+            },
+            {
+              "chapter": "11",
+              "verse": "21"
+            },
+            {
+              "chapter": "11",
+              "verse": "22"
+            },
+            {
+              "chapter": "11",
+              "verse": "23"
+            },
+            {
+              "chapter": "11",
+              "verse": "24"
+            },
+            {
+              "chapter": "11",
+              "verse": "25"
+            },
+            {
+              "chapter": "11",
+              "verse": "26"
+            },
+            {
+              "chapter": "11",
+              "verse": "27"
+            },
+            {
+              "chapter": "11",
+              "verse": "28"
+            },
+            {
+              "chapter": "11",
+              "verse": "29"
+            },
+            {
+              "chapter": "11",
+              "verse": "30"
+            },
+            {
+              "chapter": "11",
+              "verse": "31"
+            },
+            {
+              "chapter": "11",
+              "verse": "32"
+            },
+            {
+              "chapter": "11",
+              "verse": "33"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "11",
+              "verse": "1"
+            },
+            {
+              "chapter": "11",
+              "verse": "2"
+            },
+            {
+              "chapter": "11",
+              "verse": "3"
+            },
+            {
+              "chapter": "11",
+              "verse": "4"
+            },
+            {
+              "chapter": "11",
+              "verse": "5"
+            },
+            {
+              "chapter": "11",
+              "verse": "6"
+            },
+            {
+              "chapter": "11",
+              "verse": "7"
+            },
+            {
+              "chapter": "11",
+              "verse": "8"
+            },
+            {
+              "chapter": "11",
+              "verse": "9"
+            },
+            {
+              "chapter": "11",
+              "verse": "10"
+            },
+            {
+              "chapter": "11",
+              "verse": "11"
+            },
+            {
+              "chapter": "11",
+              "verse": "12"
+            },
+            {
+              "chapter": "11",
+              "verse": "13"
+            },
+            {
+              "chapter": "11",
+              "verse": "14"
+            },
+            {
+              "chapter": "11",
+              "verse": "15"
+            },
+            {
+              "chapter": "11",
+              "verse": "16"
+            },
+            {
+              "chapter": "11",
+              "verse": "17"
+            },
+            {
+              "chapter": "11",
+              "verse": "18"
+            },
+            {
+              "chapter": "11",
+              "verse": "19"
+            },
+            {
+              "chapter": "11",
+              "verse": "20"
+            },
+            {
+              "chapter": "11",
+              "verse": "21"
+            },
+            {
+              "chapter": "11",
+              "verse": "22"
+            },
+            {
+              "chapter": "11",
+              "verse": "23"
+            },
+            {
+              "chapter": "11",
+              "verse": "24"
+            },
+            {
+              "chapter": "11",
+              "verse": "25"
+            },
+            {
+              "chapter": "11",
+              "verse": "26"
+            },
+            {
+              "chapter": "11",
+              "verse": "27"
+            },
+            {
+              "chapter": "11",
+              "verse": "28"
+            },
+            {
+              "chapter": "11",
+              "verse": "29"
+            },
+            {
+              "chapter": "11",
+              "verse": "30"
+            },
+            {
+              "chapter": "11",
+              "verse": "31"
+            },
+            {
+              "chapter": "11",
+              "verse": "32"
+            },
+            {
+              "chapter": "11",
+              "verse": "33"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and OSHB/WLC Numbers 11:1-33 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "NUM-11-34-semitic-merge",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "11",
+              "verse": "34"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "11",
+              "verse": "34"
+            },
+            {
+              "chapter": "11",
+              "verse": "35"
+            }
+          ],
+          "evidence": {
+            "citation": "Douay-Rheims Numbers 11:34 combines the naming/burial at the Graves of Lust with the departure to Haseroth; OSHB/WLC preserves those clauses as 11:34 and 11:35."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "12",
+      "segments": [
+        {
+          "id": "NUM-12-1-15-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "12",
+              "verse": "1"
+            },
+            {
+              "chapter": "12",
+              "verse": "2"
+            },
+            {
+              "chapter": "12",
+              "verse": "3"
+            },
+            {
+              "chapter": "12",
+              "verse": "4"
+            },
+            {
+              "chapter": "12",
+              "verse": "5"
+            },
+            {
+              "chapter": "12",
+              "verse": "6"
+            },
+            {
+              "chapter": "12",
+              "verse": "7"
+            },
+            {
+              "chapter": "12",
+              "verse": "8"
+            },
+            {
+              "chapter": "12",
+              "verse": "9"
+            },
+            {
+              "chapter": "12",
+              "verse": "10"
+            },
+            {
+              "chapter": "12",
+              "verse": "11"
+            },
+            {
+              "chapter": "12",
+              "verse": "12"
+            },
+            {
+              "chapter": "12",
+              "verse": "13"
+            },
+            {
+              "chapter": "12",
+              "verse": "14"
+            },
+            {
+              "chapter": "12",
+              "verse": "15"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "12",
+              "verse": "1"
+            },
+            {
+              "chapter": "12",
+              "verse": "2"
+            },
+            {
+              "chapter": "12",
+              "verse": "3"
+            },
+            {
+              "chapter": "12",
+              "verse": "4"
+            },
+            {
+              "chapter": "12",
+              "verse": "5"
+            },
+            {
+              "chapter": "12",
+              "verse": "6"
+            },
+            {
+              "chapter": "12",
+              "verse": "7"
+            },
+            {
+              "chapter": "12",
+              "verse": "8"
+            },
+            {
+              "chapter": "12",
+              "verse": "9"
+            },
+            {
+              "chapter": "12",
+              "verse": "10"
+            },
+            {
+              "chapter": "12",
+              "verse": "11"
+            },
+            {
+              "chapter": "12",
+              "verse": "12"
+            },
+            {
+              "chapter": "12",
+              "verse": "13"
+            },
+            {
+              "chapter": "12",
+              "verse": "14"
+            },
+            {
+              "chapter": "12",
+              "verse": "15"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and OSHB/WLC Numbers 12:1-15 preserve matching numbered divisions; the following WLC 12:16 transition belongs to Douay-Rheims 13:1."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "13",
+      "segments": [
+        {
+          "id": "NUM-13-1-semitic-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "13",
+              "verse": "1"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "12",
+              "verse": "16"
+            }
+          ],
+          "evidence": {
+            "citation": "The departure from Haseroth to the wilderness of Pharan is Douay-Rheims Numbers 13:1 and OSHB/WLC Numbers 12:16."
+          }
+        },
+        {
+          "id": "NUM-13-2-34-semitic-offset",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "13",
+              "verse": "2"
+            },
+            {
+              "chapter": "13",
+              "verse": "3"
+            },
+            {
+              "chapter": "13",
+              "verse": "4"
+            },
+            {
+              "chapter": "13",
+              "verse": "5"
+            },
+            {
+              "chapter": "13",
+              "verse": "6"
+            },
+            {
+              "chapter": "13",
+              "verse": "7"
+            },
+            {
+              "chapter": "13",
+              "verse": "8"
+            },
+            {
+              "chapter": "13",
+              "verse": "9"
+            },
+            {
+              "chapter": "13",
+              "verse": "10"
+            },
+            {
+              "chapter": "13",
+              "verse": "11"
+            },
+            {
+              "chapter": "13",
+              "verse": "12"
+            },
+            {
+              "chapter": "13",
+              "verse": "13"
+            },
+            {
+              "chapter": "13",
+              "verse": "14"
+            },
+            {
+              "chapter": "13",
+              "verse": "15"
+            },
+            {
+              "chapter": "13",
+              "verse": "16"
+            },
+            {
+              "chapter": "13",
+              "verse": "17"
+            },
+            {
+              "chapter": "13",
+              "verse": "18"
+            },
+            {
+              "chapter": "13",
+              "verse": "19"
+            },
+            {
+              "chapter": "13",
+              "verse": "20"
+            },
+            {
+              "chapter": "13",
+              "verse": "21"
+            },
+            {
+              "chapter": "13",
+              "verse": "22"
+            },
+            {
+              "chapter": "13",
+              "verse": "23"
+            },
+            {
+              "chapter": "13",
+              "verse": "24"
+            },
+            {
+              "chapter": "13",
+              "verse": "25"
+            },
+            {
+              "chapter": "13",
+              "verse": "26"
+            },
+            {
+              "chapter": "13",
+              "verse": "27"
+            },
+            {
+              "chapter": "13",
+              "verse": "28"
+            },
+            {
+              "chapter": "13",
+              "verse": "29"
+            },
+            {
+              "chapter": "13",
+              "verse": "30"
+            },
+            {
+              "chapter": "13",
+              "verse": "31"
+            },
+            {
+              "chapter": "13",
+              "verse": "32"
+            },
+            {
+              "chapter": "13",
+              "verse": "33"
+            },
+            {
+              "chapter": "13",
+              "verse": "34"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "13",
+              "verse": "1"
+            },
+            {
+              "chapter": "13",
+              "verse": "2"
+            },
+            {
+              "chapter": "13",
+              "verse": "3"
+            },
+            {
+              "chapter": "13",
+              "verse": "4"
+            },
+            {
+              "chapter": "13",
+              "verse": "5"
+            },
+            {
+              "chapter": "13",
+              "verse": "6"
+            },
+            {
+              "chapter": "13",
+              "verse": "7"
+            },
+            {
+              "chapter": "13",
+              "verse": "8"
+            },
+            {
+              "chapter": "13",
+              "verse": "9"
+            },
+            {
+              "chapter": "13",
+              "verse": "10"
+            },
+            {
+              "chapter": "13",
+              "verse": "11"
+            },
+            {
+              "chapter": "13",
+              "verse": "12"
+            },
+            {
+              "chapter": "13",
+              "verse": "13"
+            },
+            {
+              "chapter": "13",
+              "verse": "14"
+            },
+            {
+              "chapter": "13",
+              "verse": "15"
+            },
+            {
+              "chapter": "13",
+              "verse": "16"
+            },
+            {
+              "chapter": "13",
+              "verse": "17"
+            },
+            {
+              "chapter": "13",
+              "verse": "18"
+            },
+            {
+              "chapter": "13",
+              "verse": "19"
+            },
+            {
+              "chapter": "13",
+              "verse": "20"
+            },
+            {
+              "chapter": "13",
+              "verse": "21"
+            },
+            {
+              "chapter": "13",
+              "verse": "22"
+            },
+            {
+              "chapter": "13",
+              "verse": "23"
+            },
+            {
+              "chapter": "13",
+              "verse": "24"
+            },
+            {
+              "chapter": "13",
+              "verse": "25"
+            },
+            {
+              "chapter": "13",
+              "verse": "26"
+            },
+            {
+              "chapter": "13",
+              "verse": "27"
+            },
+            {
+              "chapter": "13",
+              "verse": "28"
+            },
+            {
+              "chapter": "13",
+              "verse": "29"
+            },
+            {
+              "chapter": "13",
+              "verse": "30"
+            },
+            {
+              "chapter": "13",
+              "verse": "31"
+            },
+            {
+              "chapter": "13",
+              "verse": "32"
+            },
+            {
+              "chapter": "13",
+              "verse": "33"
+            }
+          ],
+          "evidence": {
+            "citation": "After the Haseroth boundary shift, Douay-Rheims Numbers 13:2-34 proceeds sequentially through OSHB/WLC Numbers 13:1-33."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "16",
+      "segments": [
+        {
+          "id": "NUM-16-1-35-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "16",
+              "verse": "1"
+            },
+            {
+              "chapter": "16",
+              "verse": "2"
+            },
+            {
+              "chapter": "16",
+              "verse": "3"
+            },
+            {
+              "chapter": "16",
+              "verse": "4"
+            },
+            {
+              "chapter": "16",
+              "verse": "5"
+            },
+            {
+              "chapter": "16",
+              "verse": "6"
+            },
+            {
+              "chapter": "16",
+              "verse": "7"
+            },
+            {
+              "chapter": "16",
+              "verse": "8"
+            },
+            {
+              "chapter": "16",
+              "verse": "9"
+            },
+            {
+              "chapter": "16",
+              "verse": "10"
+            },
+            {
+              "chapter": "16",
+              "verse": "11"
+            },
+            {
+              "chapter": "16",
+              "verse": "12"
+            },
+            {
+              "chapter": "16",
+              "verse": "13"
+            },
+            {
+              "chapter": "16",
+              "verse": "14"
+            },
+            {
+              "chapter": "16",
+              "verse": "15"
+            },
+            {
+              "chapter": "16",
+              "verse": "16"
+            },
+            {
+              "chapter": "16",
+              "verse": "17"
+            },
+            {
+              "chapter": "16",
+              "verse": "18"
+            },
+            {
+              "chapter": "16",
+              "verse": "19"
+            },
+            {
+              "chapter": "16",
+              "verse": "20"
+            },
+            {
+              "chapter": "16",
+              "verse": "21"
+            },
+            {
+              "chapter": "16",
+              "verse": "22"
+            },
+            {
+              "chapter": "16",
+              "verse": "23"
+            },
+            {
+              "chapter": "16",
+              "verse": "24"
+            },
+            {
+              "chapter": "16",
+              "verse": "25"
+            },
+            {
+              "chapter": "16",
+              "verse": "26"
+            },
+            {
+              "chapter": "16",
+              "verse": "27"
+            },
+            {
+              "chapter": "16",
+              "verse": "28"
+            },
+            {
+              "chapter": "16",
+              "verse": "29"
+            },
+            {
+              "chapter": "16",
+              "verse": "30"
+            },
+            {
+              "chapter": "16",
+              "verse": "31"
+            },
+            {
+              "chapter": "16",
+              "verse": "32"
+            },
+            {
+              "chapter": "16",
+              "verse": "33"
+            },
+            {
+              "chapter": "16",
+              "verse": "34"
+            },
+            {
+              "chapter": "16",
+              "verse": "35"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "16",
+              "verse": "1"
+            },
+            {
+              "chapter": "16",
+              "verse": "2"
+            },
+            {
+              "chapter": "16",
+              "verse": "3"
+            },
+            {
+              "chapter": "16",
+              "verse": "4"
+            },
+            {
+              "chapter": "16",
+              "verse": "5"
+            },
+            {
+              "chapter": "16",
+              "verse": "6"
+            },
+            {
+              "chapter": "16",
+              "verse": "7"
+            },
+            {
+              "chapter": "16",
+              "verse": "8"
+            },
+            {
+              "chapter": "16",
+              "verse": "9"
+            },
+            {
+              "chapter": "16",
+              "verse": "10"
+            },
+            {
+              "chapter": "16",
+              "verse": "11"
+            },
+            {
+              "chapter": "16",
+              "verse": "12"
+            },
+            {
+              "chapter": "16",
+              "verse": "13"
+            },
+            {
+              "chapter": "16",
+              "verse": "14"
+            },
+            {
+              "chapter": "16",
+              "verse": "15"
+            },
+            {
+              "chapter": "16",
+              "verse": "16"
+            },
+            {
+              "chapter": "16",
+              "verse": "17"
+            },
+            {
+              "chapter": "16",
+              "verse": "18"
+            },
+            {
+              "chapter": "16",
+              "verse": "19"
+            },
+            {
+              "chapter": "16",
+              "verse": "20"
+            },
+            {
+              "chapter": "16",
+              "verse": "21"
+            },
+            {
+              "chapter": "16",
+              "verse": "22"
+            },
+            {
+              "chapter": "16",
+              "verse": "23"
+            },
+            {
+              "chapter": "16",
+              "verse": "24"
+            },
+            {
+              "chapter": "16",
+              "verse": "25"
+            },
+            {
+              "chapter": "16",
+              "verse": "26"
+            },
+            {
+              "chapter": "16",
+              "verse": "27"
+            },
+            {
+              "chapter": "16",
+              "verse": "28"
+            },
+            {
+              "chapter": "16",
+              "verse": "29"
+            },
+            {
+              "chapter": "16",
+              "verse": "30"
+            },
+            {
+              "chapter": "16",
+              "verse": "31"
+            },
+            {
+              "chapter": "16",
+              "verse": "32"
+            },
+            {
+              "chapter": "16",
+              "verse": "33"
+            },
+            {
+              "chapter": "16",
+              "verse": "34"
+            },
+            {
+              "chapter": "16",
+              "verse": "35"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and OSHB/WLC Numbers 16:1-35 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "NUM-16-36-50-semitic-cross-chapter",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "16",
+              "verse": "36"
+            },
+            {
+              "chapter": "16",
+              "verse": "37"
+            },
+            {
+              "chapter": "16",
+              "verse": "38"
+            },
+            {
+              "chapter": "16",
+              "verse": "39"
+            },
+            {
+              "chapter": "16",
+              "verse": "40"
+            },
+            {
+              "chapter": "16",
+              "verse": "41"
+            },
+            {
+              "chapter": "16",
+              "verse": "42"
+            },
+            {
+              "chapter": "16",
+              "verse": "43"
+            },
+            {
+              "chapter": "16",
+              "verse": "44"
+            },
+            {
+              "chapter": "16",
+              "verse": "45"
+            },
+            {
+              "chapter": "16",
+              "verse": "46"
+            },
+            {
+              "chapter": "16",
+              "verse": "47"
+            },
+            {
+              "chapter": "16",
+              "verse": "48"
+            },
+            {
+              "chapter": "16",
+              "verse": "49"
+            },
+            {
+              "chapter": "16",
+              "verse": "50"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "17",
+              "verse": "1"
+            },
+            {
+              "chapter": "17",
+              "verse": "2"
+            },
+            {
+              "chapter": "17",
+              "verse": "3"
+            },
+            {
+              "chapter": "17",
+              "verse": "4"
+            },
+            {
+              "chapter": "17",
+              "verse": "5"
+            },
+            {
+              "chapter": "17",
+              "verse": "6"
+            },
+            {
+              "chapter": "17",
+              "verse": "7"
+            },
+            {
+              "chapter": "17",
+              "verse": "8"
+            },
+            {
+              "chapter": "17",
+              "verse": "9"
+            },
+            {
+              "chapter": "17",
+              "verse": "10"
+            },
+            {
+              "chapter": "17",
+              "verse": "11"
+            },
+            {
+              "chapter": "17",
+              "verse": "12"
+            },
+            {
+              "chapter": "17",
+              "verse": "13"
+            },
+            {
+              "chapter": "17",
+              "verse": "14"
+            },
+            {
+              "chapter": "17",
+              "verse": "15"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned OSHB VerseMap maps WLC Numbers 17:1-15 to KJV-style Numbers 16:36-50; Douay-Rheims preserves the same canonical placement for the censers and plague narrative."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "17",
+      "segments": [
+        {
+          "id": "NUM-17-1-13-semitic-offset",
+          "relationship": "offset",
+          "canonical_refs": [
+            {
+              "chapter": "17",
+              "verse": "1"
+            },
+            {
+              "chapter": "17",
+              "verse": "2"
+            },
+            {
+              "chapter": "17",
+              "verse": "3"
+            },
+            {
+              "chapter": "17",
+              "verse": "4"
+            },
+            {
+              "chapter": "17",
+              "verse": "5"
+            },
+            {
+              "chapter": "17",
+              "verse": "6"
+            },
+            {
+              "chapter": "17",
+              "verse": "7"
+            },
+            {
+              "chapter": "17",
+              "verse": "8"
+            },
+            {
+              "chapter": "17",
+              "verse": "9"
+            },
+            {
+              "chapter": "17",
+              "verse": "10"
+            },
+            {
+              "chapter": "17",
+              "verse": "11"
+            },
+            {
+              "chapter": "17",
+              "verse": "12"
+            },
+            {
+              "chapter": "17",
+              "verse": "13"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "17",
+              "verse": "16"
+            },
+            {
+              "chapter": "17",
+              "verse": "17"
+            },
+            {
+              "chapter": "17",
+              "verse": "18"
+            },
+            {
+              "chapter": "17",
+              "verse": "19"
+            },
+            {
+              "chapter": "17",
+              "verse": "20"
+            },
+            {
+              "chapter": "17",
+              "verse": "21"
+            },
+            {
+              "chapter": "17",
+              "verse": "22"
+            },
+            {
+              "chapter": "17",
+              "verse": "23"
+            },
+            {
+              "chapter": "17",
+              "verse": "24"
+            },
+            {
+              "chapter": "17",
+              "verse": "25"
+            },
+            {
+              "chapter": "17",
+              "verse": "26"
+            },
+            {
+              "chapter": "17",
+              "verse": "27"
+            },
+            {
+              "chapter": "17",
+              "verse": "28"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned OSHB VerseMap maps WLC Numbers 17:16-28 sequentially to KJV-style 17:1-13, matching Douay-Rheims Aaron's-rod chapter."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "20",
+      "segments": [
+        {
+          "id": "NUM-20-1-27-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "20",
+              "verse": "1"
+            },
+            {
+              "chapter": "20",
+              "verse": "2"
+            },
+            {
+              "chapter": "20",
+              "verse": "3"
+            },
+            {
+              "chapter": "20",
+              "verse": "4"
+            },
+            {
+              "chapter": "20",
+              "verse": "5"
+            },
+            {
+              "chapter": "20",
+              "verse": "6"
+            },
+            {
+              "chapter": "20",
+              "verse": "7"
+            },
+            {
+              "chapter": "20",
+              "verse": "8"
+            },
+            {
+              "chapter": "20",
+              "verse": "9"
+            },
+            {
+              "chapter": "20",
+              "verse": "10"
+            },
+            {
+              "chapter": "20",
+              "verse": "11"
+            },
+            {
+              "chapter": "20",
+              "verse": "12"
+            },
+            {
+              "chapter": "20",
+              "verse": "13"
+            },
+            {
+              "chapter": "20",
+              "verse": "14"
+            },
+            {
+              "chapter": "20",
+              "verse": "15"
+            },
+            {
+              "chapter": "20",
+              "verse": "16"
+            },
+            {
+              "chapter": "20",
+              "verse": "17"
+            },
+            {
+              "chapter": "20",
+              "verse": "18"
+            },
+            {
+              "chapter": "20",
+              "verse": "19"
+            },
+            {
+              "chapter": "20",
+              "verse": "20"
+            },
+            {
+              "chapter": "20",
+              "verse": "21"
+            },
+            {
+              "chapter": "20",
+              "verse": "22"
+            },
+            {
+              "chapter": "20",
+              "verse": "23"
+            },
+            {
+              "chapter": "20",
+              "verse": "24"
+            },
+            {
+              "chapter": "20",
+              "verse": "25"
+            },
+            {
+              "chapter": "20",
+              "verse": "26"
+            },
+            {
+              "chapter": "20",
+              "verse": "27"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "20",
+              "verse": "1"
+            },
+            {
+              "chapter": "20",
+              "verse": "2"
+            },
+            {
+              "chapter": "20",
+              "verse": "3"
+            },
+            {
+              "chapter": "20",
+              "verse": "4"
+            },
+            {
+              "chapter": "20",
+              "verse": "5"
+            },
+            {
+              "chapter": "20",
+              "verse": "6"
+            },
+            {
+              "chapter": "20",
+              "verse": "7"
+            },
+            {
+              "chapter": "20",
+              "verse": "8"
+            },
+            {
+              "chapter": "20",
+              "verse": "9"
+            },
+            {
+              "chapter": "20",
+              "verse": "10"
+            },
+            {
+              "chapter": "20",
+              "verse": "11"
+            },
+            {
+              "chapter": "20",
+              "verse": "12"
+            },
+            {
+              "chapter": "20",
+              "verse": "13"
+            },
+            {
+              "chapter": "20",
+              "verse": "14"
+            },
+            {
+              "chapter": "20",
+              "verse": "15"
+            },
+            {
+              "chapter": "20",
+              "verse": "16"
+            },
+            {
+              "chapter": "20",
+              "verse": "17"
+            },
+            {
+              "chapter": "20",
+              "verse": "18"
+            },
+            {
+              "chapter": "20",
+              "verse": "19"
+            },
+            {
+              "chapter": "20",
+              "verse": "20"
+            },
+            {
+              "chapter": "20",
+              "verse": "21"
+            },
+            {
+              "chapter": "20",
+              "verse": "22"
+            },
+            {
+              "chapter": "20",
+              "verse": "23"
+            },
+            {
+              "chapter": "20",
+              "verse": "24"
+            },
+            {
+              "chapter": "20",
+              "verse": "25"
+            },
+            {
+              "chapter": "20",
+              "verse": "26"
+            },
+            {
+              "chapter": "20",
+              "verse": "27"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and OSHB/WLC Numbers 20:1-27 preserve matching numbered divisions."
+          }
+        },
+        {
+          "id": "NUM-20-28-29-semitic-split",
+          "relationship": "split",
+          "canonical_refs": [
+            {
+              "chapter": "20",
+              "verse": "28"
+            },
+            {
+              "chapter": "20",
+              "verse": "29"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "20",
+              "verse": "28"
+            }
+          ],
+          "evidence": {
+            "citation": "OSHB/WLC Numbers 20:28 contains both the transfer of Aaron's vestments and Aaron's death/descent sequence; Douay-Rheims divides those clauses as 20:28-29."
+          }
+        },
+        {
+          "id": "NUM-20-30-semitic-renumber",
+          "relationship": "renumber",
+          "canonical_refs": [
+            {
+              "chapter": "20",
+              "verse": "30"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "20",
+              "verse": "29"
+            }
+          ],
+          "evidence": {
+            "citation": "The thirty-day mourning for Aaron is Douay-Rheims Numbers 20:30 and OSHB/WLC Numbers 20:29."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "25",
+      "segments": [
+        {
+          "id": "NUM-25-1-18-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "25",
+              "verse": "1"
+            },
+            {
+              "chapter": "25",
+              "verse": "2"
+            },
+            {
+              "chapter": "25",
+              "verse": "3"
+            },
+            {
+              "chapter": "25",
+              "verse": "4"
+            },
+            {
+              "chapter": "25",
+              "verse": "5"
+            },
+            {
+              "chapter": "25",
+              "verse": "6"
+            },
+            {
+              "chapter": "25",
+              "verse": "7"
+            },
+            {
+              "chapter": "25",
+              "verse": "8"
+            },
+            {
+              "chapter": "25",
+              "verse": "9"
+            },
+            {
+              "chapter": "25",
+              "verse": "10"
+            },
+            {
+              "chapter": "25",
+              "verse": "11"
+            },
+            {
+              "chapter": "25",
+              "verse": "12"
+            },
+            {
+              "chapter": "25",
+              "verse": "13"
+            },
+            {
+              "chapter": "25",
+              "verse": "14"
+            },
+            {
+              "chapter": "25",
+              "verse": "15"
+            },
+            {
+              "chapter": "25",
+              "verse": "16"
+            },
+            {
+              "chapter": "25",
+              "verse": "17"
+            },
+            {
+              "chapter": "25",
+              "verse": "18"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "25",
+              "verse": "1"
+            },
+            {
+              "chapter": "25",
+              "verse": "2"
+            },
+            {
+              "chapter": "25",
+              "verse": "3"
+            },
+            {
+              "chapter": "25",
+              "verse": "4"
+            },
+            {
+              "chapter": "25",
+              "verse": "5"
+            },
+            {
+              "chapter": "25",
+              "verse": "6"
+            },
+            {
+              "chapter": "25",
+              "verse": "7"
+            },
+            {
+              "chapter": "25",
+              "verse": "8"
+            },
+            {
+              "chapter": "25",
+              "verse": "9"
+            },
+            {
+              "chapter": "25",
+              "verse": "10"
+            },
+            {
+              "chapter": "25",
+              "verse": "11"
+            },
+            {
+              "chapter": "25",
+              "verse": "12"
+            },
+            {
+              "chapter": "25",
+              "verse": "13"
+            },
+            {
+              "chapter": "25",
+              "verse": "14"
+            },
+            {
+              "chapter": "25",
+              "verse": "15"
+            },
+            {
+              "chapter": "25",
+              "verse": "16"
+            },
+            {
+              "chapter": "25",
+              "verse": "17"
+            },
+            {
+              "chapter": "25",
+              "verse": "18"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned Douay-Rheims and OSHB/WLC Numbers 25:1-18 preserve matching numbered divisions."
+          }
+        }
+      ]
+    },
+    {
+      "canonical_chapter": "26",
+      "segments": [
+        {
+          "id": "NUM-26-1-semitic-merge",
+          "relationship": "merge",
+          "canonical_refs": [
+            {
+              "chapter": "26",
+              "verse": "1"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "25",
+              "verse": "19"
+            },
+            {
+              "chapter": "26",
+              "verse": "1"
+            }
+          ],
+          "evidence": {
+            "citation": "Pinned OSHB VerseMap identifies WLC 25:19 as part of KJV-style Numbers 26:1; Douay-Rheims 26:1 contains both the post-plague transition and the Lord's command preserved across WLC 25:19 and 26:1."
+          }
+        },
+        {
+          "id": "NUM-26-2-65-semitic",
+          "relationship": "identity",
+          "canonical_refs": [
+            {
+              "chapter": "26",
+              "verse": "2"
+            },
+            {
+              "chapter": "26",
+              "verse": "3"
+            },
+            {
+              "chapter": "26",
+              "verse": "4"
+            },
+            {
+              "chapter": "26",
+              "verse": "5"
+            },
+            {
+              "chapter": "26",
+              "verse": "6"
+            },
+            {
+              "chapter": "26",
+              "verse": "7"
+            },
+            {
+              "chapter": "26",
+              "verse": "8"
+            },
+            {
+              "chapter": "26",
+              "verse": "9"
+            },
+            {
+              "chapter": "26",
+              "verse": "10"
+            },
+            {
+              "chapter": "26",
+              "verse": "11"
+            },
+            {
+              "chapter": "26",
+              "verse": "12"
+            },
+            {
+              "chapter": "26",
+              "verse": "13"
+            },
+            {
+              "chapter": "26",
+              "verse": "14"
+            },
+            {
+              "chapter": "26",
+              "verse": "15"
+            },
+            {
+              "chapter": "26",
+              "verse": "16"
+            },
+            {
+              "chapter": "26",
+              "verse": "17"
+            },
+            {
+              "chapter": "26",
+              "verse": "18"
+            },
+            {
+              "chapter": "26",
+              "verse": "19"
+            },
+            {
+              "chapter": "26",
+              "verse": "20"
+            },
+            {
+              "chapter": "26",
+              "verse": "21"
+            },
+            {
+              "chapter": "26",
+              "verse": "22"
+            },
+            {
+              "chapter": "26",
+              "verse": "23"
+            },
+            {
+              "chapter": "26",
+              "verse": "24"
+            },
+            {
+              "chapter": "26",
+              "verse": "25"
+            },
+            {
+              "chapter": "26",
+              "verse": "26"
+            },
+            {
+              "chapter": "26",
+              "verse": "27"
+            },
+            {
+              "chapter": "26",
+              "verse": "28"
+            },
+            {
+              "chapter": "26",
+              "verse": "29"
+            },
+            {
+              "chapter": "26",
+              "verse": "30"
+            },
+            {
+              "chapter": "26",
+              "verse": "31"
+            },
+            {
+              "chapter": "26",
+              "verse": "32"
+            },
+            {
+              "chapter": "26",
+              "verse": "33"
+            },
+            {
+              "chapter": "26",
+              "verse": "34"
+            },
+            {
+              "chapter": "26",
+              "verse": "35"
+            },
+            {
+              "chapter": "26",
+              "verse": "36"
+            },
+            {
+              "chapter": "26",
+              "verse": "37"
+            },
+            {
+              "chapter": "26",
+              "verse": "38"
+            },
+            {
+              "chapter": "26",
+              "verse": "39"
+            },
+            {
+              "chapter": "26",
+              "verse": "40"
+            },
+            {
+              "chapter": "26",
+              "verse": "41"
+            },
+            {
+              "chapter": "26",
+              "verse": "42"
+            },
+            {
+              "chapter": "26",
+              "verse": "43"
+            },
+            {
+              "chapter": "26",
+              "verse": "44"
+            },
+            {
+              "chapter": "26",
+              "verse": "45"
+            },
+            {
+              "chapter": "26",
+              "verse": "46"
+            },
+            {
+              "chapter": "26",
+              "verse": "47"
+            },
+            {
+              "chapter": "26",
+              "verse": "48"
+            },
+            {
+              "chapter": "26",
+              "verse": "49"
+            },
+            {
+              "chapter": "26",
+              "verse": "50"
+            },
+            {
+              "chapter": "26",
+              "verse": "51"
+            },
+            {
+              "chapter": "26",
+              "verse": "52"
+            },
+            {
+              "chapter": "26",
+              "verse": "53"
+            },
+            {
+              "chapter": "26",
+              "verse": "54"
+            },
+            {
+              "chapter": "26",
+              "verse": "55"
+            },
+            {
+              "chapter": "26",
+              "verse": "56"
+            },
+            {
+              "chapter": "26",
+              "verse": "57"
+            },
+            {
+              "chapter": "26",
+              "verse": "58"
+            },
+            {
+              "chapter": "26",
+              "verse": "59"
+            },
+            {
+              "chapter": "26",
+              "verse": "60"
+            },
+            {
+              "chapter": "26",
+              "verse": "61"
+            },
+            {
+              "chapter": "26",
+              "verse": "62"
+            },
+            {
+              "chapter": "26",
+              "verse": "63"
+            },
+            {
+              "chapter": "26",
+              "verse": "64"
+            },
+            {
+              "chapter": "26",
+              "verse": "65"
+            }
+          ],
+          "source_refs": [
+            {
+              "chapter": "26",
+              "verse": "2"
+            },
+            {
+              "chapter": "26",
+              "verse": "3"
+            },
+            {
+              "chapter": "26",
+              "verse": "4"
+            },
+            {
+              "chapter": "26",
+              "verse": "5"
+            },
+            {
+              "chapter": "26",
+              "verse": "6"
+            },
+            {
+              "chapter": "26",
+              "verse": "7"
+            },
+            {
+              "chapter": "26",
+              "verse": "8"
+            },
+            {
+              "chapter": "26",
+              "verse": "9"
+            },
+            {
+              "chapter": "26",
+              "verse": "10"
+            },
+            {
+              "chapter": "26",
+              "verse": "11"
+            },
+            {
+              "chapter": "26",
+              "verse": "12"
+            },
+            {
+              "chapter": "26",
+              "verse": "13"
+            },
+            {
+              "chapter": "26",
+              "verse": "14"
+            },
+            {
+              "chapter": "26",
+              "verse": "15"
+            },
+            {
+              "chapter": "26",
+              "verse": "16"
+            },
+            {
+              "chapter": "26",
+              "verse": "17"
+            },
+            {
+              "chapter": "26",
+              "verse": "18"
+            },
+            {
+              "chapter": "26",
+              "verse": "19"
+            },
+            {
+              "chapter": "26",
+              "verse": "20"
+            },
+            {
+              "chapter": "26",
+              "verse": "21"
+            },
+            {
+              "chapter": "26",
+              "verse": "22"
+            },
+            {
+              "chapter": "26",
+              "verse": "23"
+            },
+            {
+              "chapter": "26",
+              "verse": "24"
+            },
+            {
+              "chapter": "26",
+              "verse": "25"
+            },
+            {
+              "chapter": "26",
+              "verse": "26"
+            },
+            {
+              "chapter": "26",
+              "verse": "27"
+            },
+            {
+              "chapter": "26",
+              "verse": "28"
+            },
+            {
+              "chapter": "26",
+              "verse": "29"
+            },
+            {
+              "chapter": "26",
+              "verse": "30"
+            },
+            {
+              "chapter": "26",
+              "verse": "31"
+            },
+            {
+              "chapter": "26",
+              "verse": "32"
+            },
+            {
+              "chapter": "26",
+              "verse": "33"
+            },
+            {
+              "chapter": "26",
+              "verse": "34"
+            },
+            {
+              "chapter": "26",
+              "verse": "35"
+            },
+            {
+              "chapter": "26",
+              "verse": "36"
+            },
+            {
+              "chapter": "26",
+              "verse": "37"
+            },
+            {
+              "chapter": "26",
+              "verse": "38"
+            },
+            {
+              "chapter": "26",
+              "verse": "39"
+            },
+            {
+              "chapter": "26",
+              "verse": "40"
+            },
+            {
+              "chapter": "26",
+              "verse": "41"
+            },
+            {
+              "chapter": "26",
+              "verse": "42"
+            },
+            {
+              "chapter": "26",
+              "verse": "43"
+            },
+            {
+              "chapter": "26",
+              "verse": "44"
+            },
+            {
+              "chapter": "26",
+              "verse": "45"
+            },
+            {
+              "chapter": "26",
+              "verse": "46"
+            },
+            {
+              "chapter": "26",
+              "verse": "47"
+            },
+            {
+              "chapter": "26",
+              "verse": "48"
+            },
+            {
+              "chapter": "26",
+              "verse": "49"
+            },
+            {
+              "chapter": "26",
+              "verse": "50"
+            },
+            {
+              "chapter": "26",
+              "verse": "51"
+            },
+            {
+              "chapter": "26",
+              "verse": "52"
+            },
+            {
+              "chapter": "26",
+              "verse": "53"
+            },
+            {
+              "chapter": "26",
+              "verse": "54"
+            },
+            {
+              "chapter": "26",
+              "verse": "55"
+            },
+            {
+              "chapter": "26",
+              "verse": "56"
+            },
+            {
+              "chapter": "26",
+              "verse": "57"
+            },
+            {
+              "chapter": "26",
+              "verse": "58"
+            },
+            {
+              "chapter": "26",
+              "verse": "59"
+            },
+            {
+              "chapter": "26",
+              "verse": "60"
+            },
+            {
+              "chapter": "26",
+              "verse": "61"
+            },
+            {
+              "chapter": "26",
+              "verse": "62"
+            },
+            {
+              "chapter": "26",
+              "verse": "63"
+            },
+            {
+              "chapter": "26",
+              "verse": "64"
+            },
+            {
+              "chapter": "26",
+              "verse": "65"
+            }
+          ],
+          "evidence": {
+            "citation": "After the split opening unit, pinned Douay-Rheims and OSHB/WLC Numbers 26:2-65 preserve matching numbered divisions."
+          }
+        }
+      ]
+    }
+  ]
+}
