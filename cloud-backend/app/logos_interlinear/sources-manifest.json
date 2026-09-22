@@ -325,7 +325,7 @@
         "greek-ot-morphology"
       ],
       "language": "grc",
-      "status": "approved-for-ingestion",
+      "status": "approved-for-production-ingestion",
       "production_import_allowed": true,
       "license_verified": true,
       "source_inventory_verified": true,
@@ -371,7 +371,7 @@
       "modification_allowed": true,
       "share_alike": false,
       "isolation_required": false,
-      "notes": "Candidate linguistic witness only. Rahlfs morphology must never be relabeled as Swete morphology. Production attachment to the installed Swete/Open Greek surface lanes is forbidden until deterministic verse/token alignment proves the relationship and preserves edition provenance. No lemma, POS, morphology, gloss, or token boundary may be fabricated."
+      "notes": "Production-approved separate Rahlfs 1935 linguistic witness. Its lemma/POS/morphology must never be relabeled as Swete/Open Greek annotations or automatically token-attached across editions. The pinned 46-book Catholic corpus is generated only from verified source files; no lemma, POS, morphology, gloss, transliteration, token boundary, or verse boundary is fabricated."
     }
   ]
 }
