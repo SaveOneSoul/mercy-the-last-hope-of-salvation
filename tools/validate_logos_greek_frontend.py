@@ -113,7 +113,8 @@ def main() -> None:
     require(ot_script, "data.alignment.exact!==true&&data.alignment.verified_mapping!==true", "exact-or-verified Semitic mapping gate")
     require(ot_script, "source.source_osis_id", "Semitic native source deduplication gate")
     require(ot_script, "mapping.exact_verse_alignment===true", "accepted deuterocanonical exact-mapping gate")
-    require(ot_script, "No unavailable Greek linguistic annotation is invented", "OT Greek derived-layer boundary")
+    require(ot_script, "separate Rahlfs/lxx-morph linguistic witness", "OT Greek semantic witness boundary")
+    require(ot_script, "without relabeling it as this surface witness", "OT Greek no-cross-edition relabeling rule")
     require(ot_script, "No Latin lemma, morphology, gloss or transliteration is fabricated", "Latin derived-layer boundary")
 
     # Regression gate for the chapter-level failure observed after the full OT corpora
