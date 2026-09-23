@@ -28,7 +28,19 @@ def _greek_lane(reference: str) -> dict:
         return accepted
     if accepted["status"] == "mapping-required":
         return accepted
-    full = _lane(_full_greek_payload, reference)
+    try:
+        full = _lane(_full_greek_payload, reference)
+    except RuntimeError as exc:
+        if str(exc) != "Ambiguous verified range mapping requires a lane-specific resolver":
+            raise
+        return {
+            "status": "mapping-required",
+            "detail": {
+                "code": "logos_full_lxx_verse_mapping_required",
+                "reference": reference,
+                "message": "The Greek source is installed, but this chapter has a verified structural range whose individual source verses cannot be aligned to Douay verses. Select the Greek witness by its native divisions when available; no verse equivalence is inferred.",
+            },
+        }
     if full["status"] == "available":
         full["source_scope"] = "complete-protocanonical-greek-ot"
     return full
