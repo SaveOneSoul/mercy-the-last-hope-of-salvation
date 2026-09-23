@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "phase": "semantic-interlinear-73-v1",
+  "corpus_id": "logos_stepbible_semantics",
+  "upstream": {
+    "repository": "STEPBible/STEPBible-Data",
+    "commit": "b99716b0cddb648ddb95cc786a197180f2f97d48",
+    "license": "CC BY 4.0",
+    "attribution": "STEP Bible (www.STEPBible.org), data based on work at Tyndale House Cambridge"
+  },
+  "files": {
+    "tbesg": {
+      "path": "Lexicons/TBESG - Translators Brief lexicon of Extended Strongs for Greek - STEPBible.org CC BY.txt",
+      "blob_sha1": "efe271a1dbb73fa01f8fa6e0f164c6687757a9ae"
+    },
+    "tbesh": {
+      "path": "Lexicons/TBESH - Translators Brief lexicon of Extended Strongs for Hebrew - STEPBible.org CC BY.txt",
+      "blob_sha1": "a64990a674d13245ae1e9ed426bc69197c2fbad5"
+    },
+    "tegmc": {
+      "path": "Morphology codes/TEGMC - Translators Expansion of Greek Morphhology Codes - STEPBible.org CC BY.txt",
+      "blob_sha1": "314ac3d791df69c0736b1df8aabca7ac0956b1e1"
+    },
+    "tehmc": {
+      "path": "Morphology codes/TEHMC - Translators Expansion of Hebrew Morphology Codes - STEPBible.org CC BY.txt",
+      "blob_sha1": "fa08a680ed8084e8041bdfd6e6ac6d93a00f2efb"
+    },
+    "tagnt_mat_jhn": {
+      "path": "Translators Amalgamated OT+NT/TAGNT Mat-Jhn - Translators Amalgamated Greek NT - STEPBible.org CC-BY.txt",
+      "blob_sha1": "705c1bc1cf752e013efcef99b8d9a3b7853bf843"
+    },
+    "tagnt_act_rev": {
+      "path": "Translators Amalgamated OT+NT/TAGNT Act-Rev - Translators Amalgamated Greek NT - STEPBible.org CC-BY.txt",
+      "blob_sha1": "4bbea2c14681b01eb889d5a2d1dc0856858a32de"
+    },
+    "tahot_gen_deu": {
+      "path": "Translators Amalgamated OT+NT/TAHOT Gen-Deu - Translators Amalgamated Hebrew OT - STEPBible.org CC BY.txt",
+      "blob_sha1": "eb051292f8cee648c4f3eaf1b48cd0f1f30dc1d5"
+    },
+    "tahot_jos_est": {
+      "path": "Translators Amalgamated OT+NT/TAHOT Jos-Est - Translators Amalgamated Hebrew OT - STEPBible.org CC BY.txt",
+      "blob_sha1": "e3824344f6dea1a3f51932d1b0a53537c3c2023e"
+    },
+    "tahot_job_sng": {
+      "path": "Translators Amalgamated OT+NT/TAHOT Job-Sng - Translators Amalgamated Hebrew OT - STEPBible.org CC BY.txt",
+      "blob_sha1": "3d7af689417b54ebc468700b2bd86a8ba5377530"
+    },
+    "tahot_isa_mal": {
+      "path": "Translators Amalgamated OT+NT/TAHOT Isa-Mal - Translators Amalgamated Hebrew OT - STEPBible.org CC BY.txt",
+      "blob_sha1": "1cfe6718a1dae0d5d45a57a942d3f7f716ac6342"
+    }
+  },
+  "rights_policy": {
+    "include_greek_tbesg_gloss": true,
+    "include_greek_tbesg_meaning": true,
+    "include_hebrew_tbesh_gloss": true,
+    "include_hebrew_tbesh_transliteration": true,
+    "include_hebrew_tbesh_meaning": false,
+    "hebrew_meaning_reason": "TBESH explicitly says its long Meaning field is based on Abridged BDB/Online Bible and should not be applied without separate permission.",
+    "context_sensitive_translation_sources": [
+      "TAGNT",
+      "TAHOT"
+    ],
+    "no_cross_edition_attachment": true,
+    "no_fabricated_contextual_meaning": true
+  },
+  "coverage_contract": {
+    "catholic_book_count": 73,
+    "greek_nt_books": 27,
+    "catholic_ot_books": 46,
+    "masoretic_hebrew_aramaic_books": 39,
+    "semantic_book_coverage": 73
+  }
+}
