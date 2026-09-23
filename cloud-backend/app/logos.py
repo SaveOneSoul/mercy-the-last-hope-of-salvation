@@ -268,6 +268,7 @@ def _passage_payload(item: dict) -> dict:
     return {
         "reference": item.get("reference"),
         "book": item.get("book"),
+        "book_id": item.get("book_id"),
         "testament": item.get("testament"),
         "chapter": item.get("chapter"),
         "verse_start": item.get("verse_start"),
