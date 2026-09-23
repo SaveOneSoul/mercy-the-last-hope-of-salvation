@@ -1,9 +1,10 @@
 (() => {
   const entries = [...document.querySelectorAll('.saint-list article.saint-item[id]')].map(article => {
-    const source = article.querySelector('.saint-source a')?.href || '';
-    const match = source.match(/\/saints\/(\d{2})\/(\d{2})\.html/);
+    const feast = article.querySelector('.badge')?.textContent || '';
+    const match = feast.match(/^Feast:\s+([A-Za-z]+)\s+(\d{1,2})/);
+    const month = match ? ['January','February','March','April','May','June','July','August','September','October','November','December'].indexOf(match[1])+1 : 0;
     return { id: article.id, name: article.querySelector('h3')?.textContent.trim() || '',
-      date: match ? `${match[1]}-${match[2]}` : null,
+      date: month ? `${String(month).padStart(2,'0')}-${match[2].padStart(2,'0')}` : null,
       summary: [...article.querySelectorAll(':scope > p')].find(p => !p.classList.contains('saint-source'))?.textContent.trim() || '' };
   });
   const now = new Date(), today = `${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
