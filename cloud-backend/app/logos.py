@@ -279,6 +279,33 @@ def _passage_payload(item: dict) -> dict:
     }
 
 
+@lru_cache(maxsize=1)
+def _search_rows() -> tuple[dict, ...]:
+    rows: list[dict] = []
+    for meta in _corpus_manifest().get("books") or []:
+        book = _corpus_book(str(meta.get("filename")))
+        for chapter_id, verses in (book.get("chapters") or {}).items():
+            if not isinstance(verses, dict):
+                continue
+            for verse_id, text in verses.items():
+                rendered = str(text or "").strip()
+                if not rendered:
+                    continue
+                rows.append(
+                    {
+                        "reference": f"{meta.get('name')} {chapter_id}:{verse_id}",
+                        "book": meta.get("name"),
+                        "book_id": meta.get("id"),
+                        "testament": meta.get("testament"),
+                        "chapter": str(chapter_id),
+                        "verse": str(verse_id),
+                        "text": rendered,
+                        "_search": rendered.casefold(),
+                    }
+                )
+    return tuple(rows)
+
+
 def _all_media() -> list[dict]:
     return list(_data().get("media") or [])
 
@@ -306,6 +333,66 @@ def logos_catalog(response: Response):
         "curated_parallel_references": [row.get("reference") for row in (data.get("passages") or {}).values()],
         "ai_themes": data.get("ai_themes") or [],
         "editorial_policy": data.get("editorial_policy") or {},
+    }
+
+
+@router.get("/search")
+def logos_search(
+    q: str = Query(min_length=2, max_length=120),
+    limit: int = Query(default=40, ge=1, le=100),
+    response: Response = None,
+):
+    if response is not None:
+        response.headers["Cache-Control"] = "public, max-age=120"
+
+    query = re.sub(r"\s+", " ", q.strip())
+    if not query:
+        raise HTTPException(status_code=400, detail="logos_search_query_required")
+
+    # Prefer canonical reference resolution when the query is itself a reference.
+    if any(ch.isdigit() for ch in query):
+        try:
+            passage = _corpus_passage(query)
+        except HTTPException:
+            passage = None
+        if passage:
+            results = [
+                {
+                    "reference": f"{passage['book']} {passage['chapter']}:{row['verse']}",
+                    "book": passage["book"],
+                    "book_id": passage["book_id"],
+                    "testament": passage["testament"],
+                    "chapter": str(passage["chapter"]),
+                    "verse": str(row["verse"]),
+                    "text": row["text"],
+                }
+                for row in passage.get("verses") or []
+            ]
+            return {
+                "query": query,
+                "mode": "reference",
+                "count": len(results),
+                "has_more": False,
+                "results": results[:limit],
+            }
+
+    terms = [term for term in query.casefold().split(" ") if term]
+    results: list[dict] = []
+    has_more = False
+    for row in _search_rows():
+        haystack = row["_search"]
+        if all(term in haystack for term in terms):
+            if len(results) >= limit:
+                has_more = True
+                break
+            results.append({key: value for key, value in row.items() if key != "_search"})
+
+    return {
+        "query": query,
+        "mode": "text",
+        "count": len(results),
+        "has_more": has_more,
+        "results": results,
     }
 
 
