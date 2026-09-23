@@ -1,0 +1,1133 @@
+{
+  "schema_version": 1,
+  "corpus_id": "logos_stepbible_semantics",
+  "corpus_version": "2026.09.23-b99716b-production",
+  "status": "production-installed",
+  "production_enabled": true,
+  "scope": "Semantic/lexical support for all 73 Catholic books: contextual Greek NT, contextual Hebrew/Aramaic where Masoretic witnesses exist, and a separate Rahlfs Greek OT lexical/grammar witness for all 46 OT books.",
+  "source": {
+    "repository": "STEPBible/STEPBible-Data",
+    "commit": "b99716b0cddb648ddb95cc786a197180f2f97d48",
+    "license": "CC BY 4.0",
+    "attribution": "STEP Bible (www.STEPBible.org), data based on work at Tyndale House Cambridge",
+    "files": {
+      "tagnt_act_rev": {
+        "path": "Translators Amalgamated OT+NT/TAGNT Act-Rev - Translators Amalgamated Greek NT - STEPBible.org CC-BY.txt",
+        "blob_sha1": "4bbea2c14681b01eb889d5a2d1dc0856858a32de",
+        "sha256": "524e32375361e6d3fa2f7ef00b87605fdc4317a762f395651a05fdc31ad031b7"
+      },
+      "tagnt_mat_jhn": {
+        "path": "Translators Amalgamated OT+NT/TAGNT Mat-Jhn - Translators Amalgamated Greek NT - STEPBible.org CC-BY.txt",
+        "blob_sha1": "705c1bc1cf752e013efcef99b8d9a3b7853bf843",
+        "sha256": "ab8eaaeb68e17a1dcfa34e1e9350358f22f03bc2a97244d848750ad81044bc8e"
+      },
+      "tahot_gen_deu": {
+        "path": "Translators Amalgamated OT+NT/TAHOT Gen-Deu - Translators Amalgamated Hebrew OT - STEPBible.org CC BY.txt",
+        "blob_sha1": "eb051292f8cee648c4f3eaf1b48cd0f1f30dc1d5",
+        "sha256": "e9b8546ee48fe0bfc57c3b70f5f40e98d96580e803526d19026224e31753368b"
+      },
+      "tahot_isa_mal": {
+        "path": "Translators Amalgamated OT+NT/TAHOT Isa-Mal - Translators Amalgamated Hebrew OT - STEPBible.org CC BY.txt",
+        "blob_sha1": "1cfe6718a1dae0d5d45a57a942d3f7f716ac6342",
+        "sha256": "f3ded203d2a74d6368932c97ae550d1d0754b271af491dc0dedf36fe3ba0bcc5"
+      },
+      "tahot_job_sng": {
+        "path": "Translators Amalgamated OT+NT/TAHOT Job-Sng - Translators Amalgamated Hebrew OT - STEPBible.org CC BY.txt",
+        "blob_sha1": "3d7af689417b54ebc468700b2bd86a8ba5377530",
+        "sha256": "84e118a97e5725e3847cdfdd593873513021c790c63cc91a0d41fca2b5db2ed5"
+      },
+      "tahot_jos_est": {
+        "path": "Translators Amalgamated OT+NT/TAHOT Jos-Est - Translators Amalgamated Hebrew OT - STEPBible.org CC BY.txt",
+        "blob_sha1": "e3824344f6dea1a3f51932d1b0a53537c3c2023e",
+        "sha256": "195fee1dc3653bab33701f170734eb894ed647c10cd08cc61749375fe8b73775"
+      },
+      "tbesg": {
+        "path": "Lexicons/TBESG - Translators Brief lexicon of Extended Strongs for Greek - STEPBible.org CC BY.txt",
+        "blob_sha1": "efe271a1dbb73fa01f8fa6e0f164c6687757a9ae",
+        "sha256": "312f723d7b8ef263bbdfb0451c9b8057125804dfff390b6f8544cff2a84b57f4"
+      },
+      "tbesh": {
+        "path": "Lexicons/TBESH - Translators Brief lexicon of Extended Strongs for Hebrew - STEPBible.org CC BY.txt",
+        "blob_sha1": "a64990a674d13245ae1e9ed426bc69197c2fbad5",
+        "sha256": "464dccadd95fd8620dd05fa0d7a4caba58ec3c4d5db3ebf38e43d046ca25b591"
+      },
+      "tegmc": {
+        "path": "Morphology codes/TEGMC - Translators Expansion of Greek Morphhology Codes - STEPBible.org CC BY.txt",
+        "blob_sha1": "314ac3d791df69c0736b1df8aabca7ac0956b1e1",
+        "sha256": "5f0416f7617019a6082285214903bde569a980d5fd3b88b8d7020d944e94de82"
+      },
+      "tehmc": {
+        "path": "Morphology codes/TEHMC - Translators Expansion of Hebrew Morphology Codes - STEPBible.org CC BY.txt",
+        "blob_sha1": "fa08a680ed8084e8041bdfd6e6ac6d93a00f2efb",
+        "sha256": "78779bea824b31d4467dec0161d547481c86f266bc39def12cd11dc7dcbe6da7"
+      }
+    }
+  },
+  "rights_policy": {
+    "include_greek_tbesg_gloss": true,
+    "include_greek_tbesg_meaning": true,
+    "include_hebrew_tbesh_gloss": true,
+    "include_hebrew_tbesh_transliteration": true,
+    "include_hebrew_tbesh_meaning": false,
+    "hebrew_meaning_reason": "TBESH explicitly says its long Meaning field is based on Abridged BDB/Online Bible and should not be applied without separate permission.",
+    "context_sensitive_translation_sources": [
+      "TAGNT",
+      "TAHOT"
+    ],
+    "no_cross_edition_attachment": true,
+    "no_fabricated_contextual_meaning": true
+  },
+  "coverage": {
+    "catholic_book_count": 73,
+    "nt_context_book_count": 27,
+    "hebrew_aramaic_context_book_count": 39,
+    "greek_ot_rahlfs_book_count": 46,
+    "semantic_book_coverage": 73,
+    "greek_lexicon_entry_count": 11035,
+    "hebrew_lexicon_entry_count": 10258,
+    "greek_morphology_code_count": 1644,
+    "hebrew_morphology_code_count": 921,
+    "nt_context_token_count": 136944,
+    "hebrew_aramaic_context_token_count": 283734,
+    "greek_ot_non_name_lexicon_match_ratio": 0.984873
+  },
+  "greek_ot_lexical_audit": {
+    "book_count": 46,
+    "token_count": 542394,
+    "proper_name_token_count": 28490,
+    "lexicon_matched_non_name_tokens": 506130,
+    "non_name_match_ratio": 0.984873,
+    "books": [
+      {
+        "book_id": "GEN",
+        "token_count": 32566,
+        "proper_name_token_count": 2514,
+        "lexicon_matched_non_name_tokens": 29741,
+        "non_name_match_ratio": 0.989651
+      },
+      {
+        "book_id": "EXO",
+        "token_count": 24816,
+        "proper_name_token_count": 1116,
+        "lexicon_matched_non_name_tokens": 23316,
+        "non_name_match_ratio": 0.983797
+      },
+      {
+        "book_id": "LEV",
+        "token_count": 19082,
+        "proper_name_token_count": 294,
+        "lexicon_matched_non_name_tokens": 18604,
+        "non_name_match_ratio": 0.990207
+      },
+      {
+        "book_id": "NUM",
+        "token_count": 25059,
+        "proper_name_token_count": 1882,
+        "lexicon_matched_non_name_tokens": 22879,
+        "non_name_match_ratio": 0.987142
+      },
+      {
+        "book_id": "DEU",
+        "token_count": 22990,
+        "proper_name_token_count": 564,
+        "lexicon_matched_non_name_tokens": 22072,
+        "non_name_match_ratio": 0.984215
+      },
+      {
+        "book_id": "JOS",
+        "token_count": 1064,
+        "proper_name_token_count": 307,
+        "lexicon_matched_non_name_tokens": 753,
+        "non_name_match_ratio": 0.994716
+      },
+      {
+        "book_id": "JDG",
+        "token_count": 15947,
+        "proper_name_token_count": 1280,
+        "lexicon_matched_non_name_tokens": 14459,
+        "non_name_match_ratio": 0.985819
+      },
+      {
+        "book_id": "RUT",
+        "token_count": 2072,
+        "proper_name_token_count": 132,
+        "lexicon_matched_non_name_tokens": 1893,
+        "non_name_match_ratio": 0.975773
+      },
+      {
+        "book_id": "1SA",
+        "token_count": 20131,
+        "proper_name_token_count": 1588,
+        "lexicon_matched_non_name_tokens": 18294,
+        "non_name_match_ratio": 0.986572
+      },
+      {
+        "book_id": "2SA",
+        "token_count": 17927,
+        "proper_name_token_count": 1707,
+        "lexicon_matched_non_name_tokens": 16015,
+        "non_name_match_ratio": 0.987361
+      },
+      {
+        "book_id": "1KI",
+        "token_count": 20803,
+        "proper_name_token_count": 1702,
+        "lexicon_matched_non_name_tokens": 18830,
+        "non_name_match_ratio": 0.985812
+      },
+      {
+        "book_id": "2KI",
+        "token_count": 18853,
+        "proper_name_token_count": 1659,
+        "lexicon_matched_non_name_tokens": 16902,
+        "non_name_match_ratio": 0.983017
+      },
+      {
+        "book_id": "1CH",
+        "token_count": 16247,
+        "proper_name_token_count": 2966,
+        "lexicon_matched_non_name_tokens": 13138,
+        "non_name_match_ratio": 0.989233
+      },
+      {
+        "book_id": "2CH",
+        "token_count": 21355,
+        "proper_name_token_count": 1728,
+        "lexicon_matched_non_name_tokens": 19452,
+        "non_name_match_ratio": 0.991084
+      },
+      {
+        "book_id": "EZR",
+        "token_count": 5588,
+        "proper_name_token_count": 650,
+        "lexicon_matched_non_name_tokens": 4899,
+        "non_name_match_ratio": 0.992102
+      },
+      {
+        "book_id": "NEH",
+        "token_count": 7678,
+        "proper_name_token_count": 754,
+        "lexicon_matched_non_name_tokens": 6861,
+        "non_name_match_ratio": 0.990901
+      },
+      {
+        "book_id": "TOB",
+        "token_count": 5503,
+        "proper_name_token_count": 241,
+        "lexicon_matched_non_name_tokens": 5153,
+        "non_name_match_ratio": 0.979285
+      },
+      {
+        "book_id": "JDT",
+        "token_count": 9174,
+        "proper_name_token_count": 417,
+        "lexicon_matched_non_name_tokens": 8636,
+        "non_name_match_ratio": 0.986182
+      },
+      {
+        "book_id": "EST",
+        "token_count": 5843,
+        "proper_name_token_count": 328,
+        "lexicon_matched_non_name_tokens": 5368,
+        "non_name_match_ratio": 0.973345
+      },
+      {
+        "book_id": "1MA",
+        "token_count": 18292,
+        "proper_name_token_count": 1098,
+        "lexicon_matched_non_name_tokens": 16829,
+        "non_name_match_ratio": 0.978772
+      },
+      {
+        "book_id": "2MA",
+        "token_count": 11917,
+        "proper_name_token_count": 521,
+        "lexicon_matched_non_name_tokens": 10708,
+        "non_name_match_ratio": 0.939628
+      },
+      {
+        "book_id": "JOB",
+        "token_count": 13561,
+        "proper_name_token_count": 158,
+        "lexicon_matched_non_name_tokens": 13219,
+        "non_name_match_ratio": 0.986272
+      },
+      {
+        "book_id": "PSA",
+        "token_count": 34964,
+        "proper_name_token_count": 508,
+        "lexicon_matched_non_name_tokens": 34067,
+        "non_name_match_ratio": 0.98871
+      },
+      {
+        "book_id": "PRO",
+        "token_count": 11164,
+        "proper_name_token_count": 11,
+        "lexicon_matched_non_name_tokens": 11006,
+        "non_name_match_ratio": 0.98682
+      },
+      {
+        "book_id": "ECC",
+        "token_count": 4546,
+        "proper_name_token_count": 9,
+        "lexicon_matched_non_name_tokens": 4474,
+        "non_name_match_ratio": 0.986114
+      },
+      {
+        "book_id": "SNG",
+        "token_count": 2025,
+        "proper_name_token_count": 47,
+        "lexicon_matched_non_name_tokens": 1942,
+        "non_name_match_ratio": 0.9818
+      },
+      {
+        "book_id": "WIS",
+        "token_count": 6943,
+        "proper_name_token_count": 0,
+        "lexicon_matched_non_name_tokens": 6655,
+        "non_name_match_ratio": 0.958519
+      },
+      {
+        "book_id": "SIR",
+        "token_count": 18658,
+        "proper_name_token_count": 140,
+        "lexicon_matched_non_name_tokens": 18048,
+        "non_name_match_ratio": 0.974619
+      },
+      {
+        "book_id": "ISA",
+        "token_count": 27076,
+        "proper_name_token_count": 745,
+        "lexicon_matched_non_name_tokens": 26015,
+        "non_name_match_ratio": 0.987999
+      },
+      {
+        "book_id": "JER",
+        "token_count": 28952,
+        "proper_name_token_count": 1354,
+        "lexicon_matched_non_name_tokens": 27277,
+        "non_name_match_ratio": 0.988369
+      },
+      {
+        "book_id": "LAM",
+        "token_count": 2369,
+        "proper_name_token_count": 38,
+        "lexicon_matched_non_name_tokens": 2300,
+        "non_name_match_ratio": 0.986701
+      },
+      {
+        "book_id": "BAR",
+        "token_count": 3869,
+        "proper_name_token_count": 96,
+        "lexicon_matched_non_name_tokens": 3699,
+        "non_name_match_ratio": 0.980387
+      },
+      {
+        "book_id": "EZK",
+        "token_count": 29658,
+        "proper_name_token_count": 742,
+        "lexicon_matched_non_name_tokens": 28548,
+        "non_name_match_ratio": 0.987273
+      },
+      {
+        "book_id": "DAN",
+        "token_count": 12458,
+        "proper_name_token_count": 416,
+        "lexicon_matched_non_name_tokens": 11891,
+        "non_name_match_ratio": 0.987461
+      },
+      {
+        "book_id": "HOS",
+        "token_count": 3933,
+        "proper_name_token_count": 177,
+        "lexicon_matched_non_name_tokens": 3702,
+        "non_name_match_ratio": 0.985623
+      },
+      {
+        "book_id": "JOL",
+        "token_count": 1580,
+        "proper_name_token_count": 32,
+        "lexicon_matched_non_name_tokens": 1533,
+        "non_name_match_ratio": 0.99031
+      },
+      {
+        "book_id": "AMO",
+        "token_count": 3210,
+        "proper_name_token_count": 139,
+        "lexicon_matched_non_name_tokens": 3035,
+        "non_name_match_ratio": 0.988277
+      },
+      {
+        "book_id": "OBA",
+        "token_count": 472,
+        "proper_name_token_count": 30,
+        "lexicon_matched_non_name_tokens": 439,
+        "non_name_match_ratio": 0.993213
+      },
+      {
+        "book_id": "JON",
+        "token_count": 1090,
+        "proper_name_token_count": 35,
+        "lexicon_matched_non_name_tokens": 1040,
+        "non_name_match_ratio": 0.985782
+      },
+      {
+        "book_id": "MIC",
+        "token_count": 2368,
+        "proper_name_token_count": 85,
+        "lexicon_matched_non_name_tokens": 2247,
+        "non_name_match_ratio": 0.984231
+      },
+      {
+        "book_id": "NAM",
+        "token_count": 937,
+        "proper_name_token_count": 15,
+        "lexicon_matched_non_name_tokens": 911,
+        "non_name_match_ratio": 0.988069
+      },
+      {
+        "book_id": "HAB",
+        "token_count": 1105,
+        "proper_name_token_count": 8,
+        "lexicon_matched_non_name_tokens": 1083,
+        "non_name_match_ratio": 0.987238
+      },
+      {
+        "book_id": "ZEP",
+        "token_count": 1223,
+        "proper_name_token_count": 42,
+        "lexicon_matched_non_name_tokens": 1172,
+        "non_name_match_ratio": 0.992379
+      },
+      {
+        "book_id": "HAG",
+        "token_count": 947,
+        "proper_name_token_count": 40,
+        "lexicon_matched_non_name_tokens": 896,
+        "non_name_match_ratio": 0.987872
+      },
+      {
+        "book_id": "ZEC",
+        "token_count": 4963,
+        "proper_name_token_count": 152,
+        "lexicon_matched_non_name_tokens": 4746,
+        "non_name_match_ratio": 0.986489
+      },
+      {
+        "book_id": "MAL",
+        "token_count": 1416,
+        "proper_name_token_count": 23,
+        "lexicon_matched_non_name_tokens": 1383,
+        "non_name_match_ratio": 0.992821
+      }
+    ]
+  },
+  "books": [
+    {
+      "order": 1,
+      "book_id": "GEN",
+      "book": "Genesis",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 2,
+      "book_id": "EXO",
+      "book": "Exodus",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 3,
+      "book_id": "LEV",
+      "book": "Leviticus",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 4,
+      "book_id": "NUM",
+      "book": "Numbers",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 5,
+      "book_id": "DEU",
+      "book": "Deuteronomy",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 6,
+      "book_id": "JOS",
+      "book": "Joshua",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 7,
+      "book_id": "JDG",
+      "book": "Judges",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 8,
+      "book_id": "RUT",
+      "book": "Ruth",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 9,
+      "book_id": "1SA",
+      "book": "1 Samuel",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 10,
+      "book_id": "2SA",
+      "book": "2 Samuel",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 11,
+      "book_id": "1KI",
+      "book": "1 Kings",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 12,
+      "book_id": "2KI",
+      "book": "2 Kings",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 13,
+      "book_id": "1CH",
+      "book": "1 Chronicles",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 14,
+      "book_id": "2CH",
+      "book": "2 Chronicles",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 15,
+      "book_id": "EZR",
+      "book": "Ezra",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 16,
+      "book_id": "NEH",
+      "book": "Nehemiah",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 17,
+      "book_id": "TOB",
+      "book": "Tobit",
+      "testament": "OT",
+      "semantic_lanes": [
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 18,
+      "book_id": "JDT",
+      "book": "Judith",
+      "testament": "OT",
+      "semantic_lanes": [
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 19,
+      "book_id": "EST",
+      "book": "Esther",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 20,
+      "book_id": "1MA",
+      "book": "1 Maccabees",
+      "testament": "OT",
+      "semantic_lanes": [
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 21,
+      "book_id": "2MA",
+      "book": "2 Maccabees",
+      "testament": "OT",
+      "semantic_lanes": [
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 22,
+      "book_id": "JOB",
+      "book": "Job",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 23,
+      "book_id": "PSA",
+      "book": "Psalms",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 24,
+      "book_id": "PRO",
+      "book": "Proverbs",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 25,
+      "book_id": "ECC",
+      "book": "Ecclesiastes",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 26,
+      "book_id": "SNG",
+      "book": "Song of Songs",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 27,
+      "book_id": "WIS",
+      "book": "Wisdom",
+      "testament": "OT",
+      "semantic_lanes": [
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 28,
+      "book_id": "SIR",
+      "book": "Sirach",
+      "testament": "OT",
+      "semantic_lanes": [
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 29,
+      "book_id": "ISA",
+      "book": "Isaiah",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 30,
+      "book_id": "JER",
+      "book": "Jeremiah",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 31,
+      "book_id": "LAM",
+      "book": "Lamentations",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 32,
+      "book_id": "BAR",
+      "book": "Baruch",
+      "testament": "OT",
+      "semantic_lanes": [
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 33,
+      "book_id": "EZK",
+      "book": "Ezekiel",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 34,
+      "book_id": "DAN",
+      "book": "Daniel",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 35,
+      "book_id": "HOS",
+      "book": "Hosea",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 36,
+      "book_id": "JOL",
+      "book": "Joel",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 37,
+      "book_id": "AMO",
+      "book": "Amos",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 38,
+      "book_id": "OBA",
+      "book": "Obadiah",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 39,
+      "book_id": "JON",
+      "book": "Jonah",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 40,
+      "book_id": "MIC",
+      "book": "Micah",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 41,
+      "book_id": "NAM",
+      "book": "Nahum",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 42,
+      "book_id": "HAB",
+      "book": "Habakkuk",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 43,
+      "book_id": "ZEP",
+      "book": "Zephaniah",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 44,
+      "book_id": "HAG",
+      "book": "Haggai",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 45,
+      "book_id": "ZEC",
+      "book": "Zechariah",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 46,
+      "book_id": "MAL",
+      "book": "Malachi",
+      "testament": "OT",
+      "semantic_lanes": [
+        "hebrew-aramaic-contextual",
+        "greek-ot-rahlfs-lexical"
+      ]
+    },
+    {
+      "order": 47,
+      "book_id": "MAT",
+      "book": "Matthew",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 48,
+      "book_id": "MRK",
+      "book": "Mark",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 49,
+      "book_id": "LUK",
+      "book": "Luke",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 50,
+      "book_id": "JHN",
+      "book": "John",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 51,
+      "book_id": "ACT",
+      "book": "Acts",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 52,
+      "book_id": "ROM",
+      "book": "Romans",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 53,
+      "book_id": "1CO",
+      "book": "1 Corinthians",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 54,
+      "book_id": "2CO",
+      "book": "2 Corinthians",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 55,
+      "book_id": "GAL",
+      "book": "Galatians",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 56,
+      "book_id": "EPH",
+      "book": "Ephesians",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 57,
+      "book_id": "PHP",
+      "book": "Philippians",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 58,
+      "book_id": "COL",
+      "book": "Colossians",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 59,
+      "book_id": "1TH",
+      "book": "1 Thessalonians",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 60,
+      "book_id": "2TH",
+      "book": "2 Thessalonians",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 61,
+      "book_id": "1TI",
+      "book": "1 Timothy",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 62,
+      "book_id": "2TI",
+      "book": "2 Timothy",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 63,
+      "book_id": "TIT",
+      "book": "Titus",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 64,
+      "book_id": "PHM",
+      "book": "Philemon",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 65,
+      "book_id": "HEB",
+      "book": "Hebrews",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 66,
+      "book_id": "JAS",
+      "book": "James",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 67,
+      "book_id": "1PE",
+      "book": "1 Peter",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 68,
+      "book_id": "2PE",
+      "book": "2 Peter",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 69,
+      "book_id": "1JN",
+      "book": "1 John",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 70,
+      "book_id": "2JN",
+      "book": "2 John",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 71,
+      "book_id": "3JN",
+      "book": "3 John",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 72,
+      "book_id": "JUD",
+      "book": "Jude",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    },
+    {
+      "order": 73,
+      "book_id": "REV",
+      "book": "Revelation",
+      "testament": "NT",
+      "semantic_lanes": [
+        "greek-nt-contextual"
+      ]
+    }
+  ],
+  "runtime_contract": {
+    "english_primary_text": "Douay-Rheims 1899",
+    "tagnt_attaches_only_after_surface_verification": true,
+    "tahot_attaches_only_after_surface_verification": true,
+    "rahlfs_remains_separate_from_swete": true,
+    "rahlfs_canonical_verse_identity_not_implied": true,
+    "hebrew_restricted_meaning_field_excluded": true,
+    "no_fabricated_contextual_meaning": true,
+    "contextual_gloss_is_not_douay_token_alignment": true
+  }
+}
