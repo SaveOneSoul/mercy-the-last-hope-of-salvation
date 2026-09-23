@@ -28,6 +28,8 @@ The advanced workspace remains fully available behind **Study** with parallel Sc
 - `cloud-backend/app/logos_seed.json` remains the source-rights registry and curated parallel/interlinear study seed.
 - `cloud-backend/app/logos_corpus/eng_douay_rheims_1899/` contains the vendored full English Catholic Bible corpus.
 - `scripts/vendor_douay_rheims.py` reproduces the corpus from the pinned source and verifies source integrity and the 73-book canon.
+- `scripts/vendor_logos_semantic_phase1.py` builds the pinned 73-book semantic support corpus from STEPBible lexical, morphology and tagged-text datasets.
+- `cloud-backend/app/logos_semantic.py` exposes deterministic full word-study routes while preserving SBLGNT/MorphGNT, OSHB/WLC and Rahlfs witness boundaries.
 - Magisterium AI is invoked only through the server-side Mercy backend; no provider secret is exposed to GitHub Pages.
 
 ## Full English Catholic corpus
@@ -45,6 +47,32 @@ The ingestion gate requires:
 - one deterministic JSON file per book plus `manifest.json`.
 
 The API accepts canonical names and common abbreviations and can resolve a chapter, a single verse or a short same-chapter range, for example `Genesis 10:10`, `John 3:16-18`, `Tobit 4` and `2 Maccabees 7:9`.
+
+## Full original-language semantic interlinear
+
+For a **single verse**, the Interlinear tab now expands into a full word study:
+
+`Original → Transliteration → Lemma → Strong tag → Grammar → Lexical gloss/range → Contextual meaning`
+
+The Douay-Rheims 1899 verse remains the English comparison text. A context-sensitive STEPBible gloss is **not** represented as a one-to-one Douay-Rheims token alignment.
+
+Coverage is canonical at the book level:
+
+- **27 New Testament books** — SBLGNT surface + MorphGNT linguistics, enriched with surface-verified STEPBible TAGNT context, TBESG lexical data and TEGMC grammar explanations.
+- **39 Masoretic Old Testament books** — OSHB/WLC Hebrew/Aramaic surface + linguistics, enriched with surface-verified STEPBible TAHOT context, TBESH safe lexical/transliteration fields and TEHMC grammar explanations.
+- **All 46 Catholic Old Testament books** — the separate Rahlfs 1935/lxx-morph Greek linguistic witness supplies word-level lemma, part of speech and morphology; TBESG supplies lexical support. This witness is never relabeled as the installed Swete/Open Greek surface and same-number source references are not asserted to be Douay-Rheims versification identity.
+- Therefore **all 73 Catholic books** have at least one source-backed original-language semantic study lane.
+
+“Lexical meaning” and “meaning here” are deliberately separate. A lexicon gives a word’s semantic range; a contextual gloss appears only when a pinned context-sensitive source supports that occurrence. Logos does not use AI to invent missing word meanings.
+
+The STEPBible semantic source family is pinned to a specific repository commit and Git blob for every ingested file. The source declares CC BY 4.0 for the retained data. One additional rights boundary is enforced: **TBESH’s long “Meaning” field is excluded**, because TBESH itself says that field is based on Abridged BDB/Online Bible and should not be applied without separate permission. The Tyndale-created Hebrew gloss, transliteration and morphology fields remain usable under the recorded STEPBible terms.
+
+Acceptance verses are:
+
+- `John 1:1` — λόγος / θεός and the full Greek clause;
+- `John 21:19` — σημαίνων, θανάτῳ, δοξάσει, ἀκολούθει;
+- `Deuteronomy 6:4` — שְׁמַע, יהוה, אֱלֹהֵינוּ, אֶחָד;
+- `Tobit 1:1` — deuterocanonical Greek semantic coverage through the separate Rahlfs/lxx-morph witness.
 
 ## Advanced study layers
 
@@ -105,6 +133,9 @@ Core routes:
 - `GET /api/logos/source-rights`
 - `GET /api/logos/passage?reference=John%203:16`
 - `GET /api/logos/interlinear?reference=John%201:1`
+- `GET /api/logos/semantic/catalog`
+- `GET /api/logos/semantic/source-rights`
+- `GET /api/logos/semantic/word-study?reference=John%201:1`
 - `GET /api/logos/commentary?reference=John%203:16`
 - `GET /api/logos/fathers?reference=John%203:16`
 - `GET /api/logos/preacher?reference=John%203:16`
@@ -138,15 +169,16 @@ Public-domain or explicitly licensed sources may be imported after provenance lo
 
 ## Original-language policy
 
-The interface exposes study lanes for English, Hebrew, Latin, Aramaic/Syriac and Greek, but the UI distinguishes an original-language witness from a later translation.
+The interface distinguishes each textual witness, linguistic annotation layer and later translation rather than merging them into an artificial “original text.”
 
-- The full **English** 73-book corpus is installed.
-- Hebrew/Aramaic are relevant to parts of the Old Testament, but their full digital corpus remains edition/license gated.
-- Greek is the principal original-language lane for the New Testament and is also relevant to Septuagint/deuterocanonical study; full bulk ingestion remains provenance gated.
-- Latin is a historic ecclesial translation tradition rather than an original biblical language; its complete corpus is a later ingestion milestone.
-- Aramaic/Syriac editions must be provenance- and license-locked before a full corpus is imported.
+- **English:** complete 73-book Douay-Rheims 1899 primary Catholic reading corpus.
+- **New Testament Greek:** complete 27-book SBLGNT surface layer with MorphGNT linguistics; the John 7:53–8:11 annotation gap remains separately supplemented by pinned TAGNT evidence without claiming MorphGNT coverage there.
+- **Old Testament Hebrew/Aramaic:** complete installed Masoretic-scope OSHB/WLC package for the 39 applicable Catholic OT books, with lemma and morphology.
+- **Old Testament Greek:** complete Catholic OT Greek surface coverage uses explicitly identified installed witnesses; the 46-book Rahlfs 1935/lxx-morph linguistic corpus remains a separate witness and is not token-attached or relabeled as Swete.
+- **Latin:** complete 73-book Clementine Vulgate historical ecclesial translation lane.
+- **Semantic enrichment:** all 73 books have a source-backed original-language semantic study lane under the source and alignment rules above.
 
-The curated Genesis 1:1 and John 1:1 records continue to demonstrate parallel-language and interlinear functionality while the original-language corpora are independently approved.
+No layer may fabricate unavailable morphology, contextual meaning, text, token identity or verse equivalence.
 
 ## AI policy
 
