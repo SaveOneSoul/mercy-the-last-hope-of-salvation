@@ -16,6 +16,8 @@
 .formation-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
 .formation-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
 .formation-card{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:1.05rem;box-shadow:0 8px 24px rgba(63,29,39,.06)}
+a.formation-card{text-decoration:none;color:inherit;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+a.formation-card:hover,a.formation-card:focus-visible{transform:translateY(-2px);border-color:#bd8a97;box-shadow:0 12px 28px rgba(63,29,39,.11)}
 .formation-card h3{margin:.1rem 0 .45rem;color:var(--wine);font-size:1.03rem}
 .formation-card p{margin:.35rem 0;line-height:1.62}
 .formation-card .meta{display:block;margin-top:.6rem;color:var(--muted);font:700 .72rem/1.4 system-ui}
