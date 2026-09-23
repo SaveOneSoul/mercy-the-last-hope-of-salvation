@@ -11,6 +11,7 @@ from .logos_ot_interlinear import router as logos_ot_interlinear_router
 from .logos_ot_latin import router as logos_ot_latin_router
 from .logos_nt_tagnt_linguistics import router as logos_nt_tagnt_linguistics_router
 from .logos_ot_semitic import router as logos_ot_semitic_router
+from .logos_semantic import router as logos_semantic_router
 from .magisterium import CatholicChatIn, ask_magisterium
 
 
@@ -23,6 +24,7 @@ router.include_router(logos_ot_semitic_router)
 router.include_router(logos_ot_latin_router)
 router.include_router(logos_nt_tagnt_linguistics_router)
 router.include_router(logos_ot_interlinear_router)
+router.include_router(logos_semantic_router)
 ADVANCED_THEME_MAP = {str(row["id"]): str(row["label"]) for row in ADVANCED_AI_THEMES}
 
 
