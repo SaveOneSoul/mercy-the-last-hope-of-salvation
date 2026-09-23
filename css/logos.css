@@ -86,6 +86,7 @@
 .logos-highlight-palette button[aria-pressed="true"]{border-color:#56162c;outline:2px solid #fff;box-shadow:0 0 0 3px #56162c}
 [data-verse-highlight="yellow"]{background:#ffe48a}[data-verse-highlight="rose"]{background:#ffd0d9}[data-verse-highlight="mint"]{background:#b5f1d6}[data-verse-highlight="blue"]{background:#c7e5ff}[data-verse-highlight="none"]{background:#eee}
 .logos-share-links{display:flex;gap:1rem;margin-top:.8rem;font:700 .85rem system-ui}.logos-share-links a{color:#76152d;text-decoration:underline}.logos-share-status{font:600 .8rem system-ui;min-height:1em}
+.logos-art-choice{display:grid;gap:.25rem;margin:.7rem 0;font:700 .8rem system-ui;color:var(--wine)}.logos-art-choice select{width:100%;max-width:330px;border:1px solid var(--line);border-radius:9px;background:#fff;color:#321f29;padding:.55rem;font:inherit}
 .logos-sheet-card{max-height:95vh;overflow:auto}
 .logos-sheet-actions{display:grid;gap:.5rem;margin-top:.85rem}
 .logos-sheet-actions button{display:grid;gap:.18rem;text-align:left;border:1px solid var(--line);background:#fffdfb;border-radius:14px;padding:.8rem .9rem;color:inherit;cursor:pointer}
