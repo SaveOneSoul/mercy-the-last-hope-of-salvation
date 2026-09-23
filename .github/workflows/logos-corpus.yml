@@ -73,6 +73,7 @@ jobs:
             cloud-backend/app/logos_ot_interlinear.py \
             cloud-backend/app/logos_ot_greek_linguistics.py \
             cloud-backend/app/logos_nt_tagnt_linguistics.py \
+            cloud-backend/app/logos_semantic.py \
             cloud-backend/app/logos_versification.py \
             cloud-backend/app/logos_advanced.py \
             tools/audit_logos_73_book_interlinear.py \
@@ -80,6 +81,7 @@ jobs:
             tools/validate_logos_greek_ot_linguistics_phase2.py \
             tools/validate_logos_greek_ot_linguistics_corpus.py \
             tools/validate_logos_greek_nt_tagnt_john.py \
+            tools/validate_logos_semantic_phase1.py \
             tools/validate_logos_versification.py
 
       - name: Build and validate Greek OT linguistic Phase 2 production candidate
@@ -150,6 +152,13 @@ jobs:
           python scripts/vendor_vulgate_clementine.py --output "$out"
           python tools/validate_logos_vulgate_clementine.py --root "$out"
 
+      - name: Build and validate 73-book semantic interlinear package for PR
+        if: github.event_name == 'pull_request'
+        run: |
+          out="${RUNNER_TEMP}/logos-semantic-interlinear-73"
+          python scripts/vendor_logos_semantic_phase1.py --output "$out" --production
+          python tools/validate_logos_semantic_phase1.py --root "$out" --require-production
+
       - name: Vendor Greek NT production package on main
         if: github.event_name != 'pull_request'
         run: |
@@ -194,6 +203,12 @@ jobs:
         run: |
           python scripts/vendor_vulgate_clementine.py
           python tools/validate_logos_vulgate_clementine.py
+
+      - name: Vendor 73-book semantic interlinear package on main
+        if: github.event_name != 'pull_request'
+        run: |
+          python scripts/vendor_logos_semantic_phase1.py --production
+          python tools/validate_logos_semantic_phase1.py --require-production
 
       - name: Vendor pinned Douay-Rheims 1899 corpus
         run: python scripts/vendor_douay_rheims.py
@@ -292,22 +307,23 @@ jobs:
           greek_ot_linguistics_path='cloud-backend/app/logos_corpus/grc_ot_rahlfs_lxx_morph'
           semitic_ot_path='cloud-backend/app/logos_corpus/heb_arc_oshb_wlc'
           latin_path='cloud-backend/app/logos_corpus/lat_vulgate_clementine'
+          semantic_path='cloud-backend/app/logos_corpus/semantic_stepbible'
           audit_json='cloud-backend/app/logos_interlinear/coverage-audit.json'
           audit_md='LOGOS_INTERLINEAR_COVERAGE.md'
           resolution_json='cloud-backend/app/logos_interlinear/versification/resolution-audit.json'
           resolution_md='LOGOS_VERSIFICATION_RESOLUTION.md'
           git add --all -- \
             "$english_path" "$greek_nt_path" "$greek_nt_tagnt_path" "$greek_ot_path" \
-            "$greek_ot_full_path" "$greek_ot_linguistics_path" "$semitic_ot_path" "$latin_path" \
+            "$greek_ot_full_path" "$greek_ot_linguistics_path" "$semitic_ot_path" "$latin_path" "$semantic_path" \
             "$audit_json" "$audit_md" "$resolution_json" "$resolution_md"
           if git diff --cached --quiet -- \
             "$english_path" "$greek_nt_path" "$greek_nt_tagnt_path" "$greek_ot_path" \
-            "$greek_ot_full_path" "$greek_ot_linguistics_path" "$semitic_ot_path" "$latin_path" \
+            "$greek_ot_full_path" "$greek_ot_linguistics_path" "$semitic_ot_path" "$latin_path" "$semantic_path" \
             "$audit_json" "$audit_md" "$resolution_json" "$resolution_md"; then
             echo "Corpora and Logos coverage/resolution audits are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "data: vendor Logos corpora and coverage resolution audits"
+          git commit -m "data: vendor Logos corpora, semantic interlinear and coverage audits"
           git push origin HEAD:main
