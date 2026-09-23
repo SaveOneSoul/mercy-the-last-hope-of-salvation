@@ -19,6 +19,7 @@ from .priest_portal import router as priest_portal_router
 from .seo import router as seo_router
 from .logos import router as logos_router
 from .logos_advanced import router as logos_advanced_router
+from .logos_semantic import router as logos_semantic_router
 from .db import Base, SessionLocal, database_state, engine, get_db
 from .magisterium import CatholicChatIn, ask_magisterium, magisterium_state
 from .models import PrayerIntention, ContactMessage, SaveOneSoulParticipant
@@ -65,6 +66,7 @@ app.include_router(priest_portal_router)
 app.include_router(seo_router)
 app.include_router(logos_router)
 app.include_router(logos_advanced_router)
+app.include_router(logos_semantic_router, prefix="/api/logos")
 
 
 class PrayerIn(BaseModel):
