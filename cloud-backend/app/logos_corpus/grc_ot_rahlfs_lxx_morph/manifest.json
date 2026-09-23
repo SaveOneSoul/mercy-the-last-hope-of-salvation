@@ -1,0 +1,1110 @@
+{
+  "schema_version": 1,
+  "corpus_id": "grc_ot_rahlfs_lxx_morph",
+  "corpus_version": "2026.09.22-c91f6b1-production",
+  "status": "production-installed",
+  "production_enabled": true,
+  "language": "grc",
+  "scope": "All 46 Catholic Old Testament books as a separate Rahlfs 1935 word-level linguistic witness.",
+  "book_count": 46,
+  "verse_record_count": 26900,
+  "token_count": 542394,
+  "source": {
+    "source_id": "lxx-morph-rahlfs",
+    "repository": "https://git.sr.ht/~sethkush/lxx-morph",
+    "commit": "c91f6b1e8fb3ba37df701e6ae31f675ace71a2b2",
+    "archive_url": "https://git.sr.ht/~sethkush/lxx-morph/archive/c91f6b1e8fb3ba37df701e6ae31f675ace71a2b2.tar.gz",
+    "archive_sha256": "b3c4861f47152ea8fab7d3ed78d807a9a0c2b35d07f2cb64fa9deefd6ac960a9",
+    "license": "CC BY 4.0",
+    "license_path": "LICENSE-DATA",
+    "data_path": "db/seeds/lxx_morph/",
+    "text_edition": "Rahlfs Septuagint (1935)",
+    "attribution": "lxx-morph morphology by Seth Kushniryk; Rahlfs 1935 source text is public domain."
+  },
+  "source_file_inventory": {
+    "genesis.json": {
+      "path": "db/seeds/lxx_morph/genesis.json",
+      "sha256": "5fe6e515f018585edb59bd3aa0a9a81f22cd6a87a4d10d02723423ea9329f93c",
+      "full_file_verse_count": 1531
+    },
+    "exodus.json": {
+      "path": "db/seeds/lxx_morph/exodus.json",
+      "sha256": "c5a775d14720b26c70dfcdb72c3c473ac21c33894714ebd85d03f132ebf45267",
+      "full_file_verse_count": 1165
+    },
+    "leviticus.json": {
+      "path": "db/seeds/lxx_morph/leviticus.json",
+      "sha256": "1d8804b122df867eede51dee6086b1f4d36b7f43b0b11b77a6bffa6d3753a57c",
+      "full_file_verse_count": 859
+    },
+    "numbers.json": {
+      "path": "db/seeds/lxx_morph/numbers.json",
+      "sha256": "4c9ad08ef76e632ca6a6e90e7ad81d162831a856489d5febf672ac705c30e2a9",
+      "full_file_verse_count": 1287
+    },
+    "deuteronomy.json": {
+      "path": "db/seeds/lxx_morph/deuteronomy.json",
+      "sha256": "4f3f3251a5182071d3482753ba9c7208d527705dee418846499134cd19aa46dc",
+      "full_file_verse_count": 959
+    },
+    "joshua.json": {
+      "path": "db/seeds/lxx_morph/joshua.json",
+      "sha256": "e557c47fff22f12cfe3fc88ca06f19d4cf0058e29119700360a104d4c97cafe4",
+      "full_file_verse_count": 96
+    },
+    "judges.json": {
+      "path": "db/seeds/lxx_morph/judges.json",
+      "sha256": "837ced839fb303041a19a1132d9ea80de2a297f6db3b41ea9d8643d59db41dbc",
+      "full_file_verse_count": 618
+    },
+    "ruth.json": {
+      "path": "db/seeds/lxx_morph/ruth.json",
+      "sha256": "12a6e181fca2a04b6f073974af676a9c6a32f144062541d370d20af6c3d6e249",
+      "full_file_verse_count": 85
+    },
+    "1-samuel.json": {
+      "path": "db/seeds/lxx_morph/1-samuel.json",
+      "sha256": "8bd1346509aaa9804a92a7ebc3c0f2812cb4fb35e61f2d41c14b482e95fd70c5",
+      "full_file_verse_count": 773
+    },
+    "2-samuel.json": {
+      "path": "db/seeds/lxx_morph/2-samuel.json",
+      "sha256": "680b221e16b413d0de812444cd427c5ed353961606941d60ff188d1de739a884",
+      "full_file_verse_count": 696
+    },
+    "1-kings.json": {
+      "path": "db/seeds/lxx_morph/1-kings.json",
+      "sha256": "dd0a7d3a64a6915c750dd99b506ee028bf8146a4a4d2f17ee5c3ce14fc092d7b",
+      "full_file_verse_count": 825
+    },
+    "2-kings.json": {
+      "path": "db/seeds/lxx_morph/2-kings.json",
+      "sha256": "cdaefb4ae43086630fff9acc31c15e29162a906f901c4abe508c30e10f2d8d19",
+      "full_file_verse_count": 723
+    },
+    "1-chronicles.json": {
+      "path": "db/seeds/lxx_morph/1-chronicles.json",
+      "sha256": "e77183a6cbc4f3ef63d3207e237ca8b294ad4f94b5983599b1fc3f7ed1039d6a",
+      "full_file_verse_count": 930
+    },
+    "2-chronicles.json": {
+      "path": "db/seeds/lxx_morph/2-chronicles.json",
+      "sha256": "b3b52dcd2b60c9881155891a4b309cda85ad5199e980d71f7a78966b87f714de",
+      "full_file_verse_count": 833
+    },
+    "2-esdras.json": {
+      "path": "db/seeds/lxx_morph/2-esdras.json",
+      "sha256": "24177f83c16734702e6f6648887282f56188beff6da1253445fd05fe6f86a55c",
+      "full_file_verse_count": 672
+    },
+    "tobit.json": {
+      "path": "db/seeds/lxx_morph/tobit.json",
+      "sha256": "a9db93bc059087940c9a81060a4df706583548841b44b9c0e74f7cfe6dcf4f6e",
+      "full_file_verse_count": 248
+    },
+    "judith.json": {
+      "path": "db/seeds/lxx_morph/judith.json",
+      "sha256": "5287aa38c8d1f69f21dccf7ac09c1b729cdda5a950130e495216b696d715d9fd",
+      "full_file_verse_count": 340
+    },
+    "esther-greek.json": {
+      "path": "db/seeds/lxx_morph/esther-greek.json",
+      "sha256": "debe93c2db86a880f4753398bcf55693dc27393b8d0a6ef41930aef78e359071",
+      "full_file_verse_count": 252
+    },
+    "1-maccabees.json": {
+      "path": "db/seeds/lxx_morph/1-maccabees.json",
+      "sha256": "a89c5af1c74838aad604a39bc970330822c209c3311ce8613402ca6ca1da3fcb",
+      "full_file_verse_count": 924
+    },
+    "2-maccabees.json": {
+      "path": "db/seeds/lxx_morph/2-maccabees.json",
+      "sha256": "516c92310f1c42fb534df956e609c21218f2ae13f419b044041c4bd358ce37c7",
+      "full_file_verse_count": 555
+    },
+    "job-lxx.json": {
+      "path": "db/seeds/lxx_morph/job-lxx.json",
+      "sha256": "f58e3906448a5e892da5d8b6dcc01a732284c68985d926e2d1517e6eea61e837",
+      "full_file_verse_count": 1083
+    },
+    "psalms-lxx.json": {
+      "path": "db/seeds/lxx_morph/psalms-lxx.json",
+      "sha256": "a34b87a5fbe2857fb453c3bd1bcd2cb0408bb2522b409b6e44d678356ee08103",
+      "full_file_verse_count": 2534
+    },
+    "proverbs.json": {
+      "path": "db/seeds/lxx_morph/proverbs.json",
+      "sha256": "7791907ce0c410bdb99502db909bd417d3dc26261b4959aa1f6f02033d8e5de5",
+      "full_file_verse_count": 939
+    },
+    "ecclesiastes.json": {
+      "path": "db/seeds/lxx_morph/ecclesiastes.json",
+      "sha256": "0ec029295874df2ef0d6b6742abf8cb62dc045136187eed19a73e6d9a3a1da24",
+      "full_file_verse_count": 222
+    },
+    "song-of-solomon.json": {
+      "path": "db/seeds/lxx_morph/song-of-solomon.json",
+      "sha256": "8efc4e63e397f3fe5fb72780c760ab6934bfafafea0c61799e26abe90ecf955e",
+      "full_file_verse_count": 117
+    },
+    "wisdom.json": {
+      "path": "db/seeds/lxx_morph/wisdom.json",
+      "sha256": "7f9d3b980434866bfa6fcf4cb6e2cd772e7956e88da7002efaa0e84378a494fa",
+      "full_file_verse_count": 435
+    },
+    "sirach.json": {
+      "path": "db/seeds/lxx_morph/sirach.json",
+      "sha256": "638ba7116a5b83a3b4ab33a61bf49234187788c876d2b1d0c0ecced7e6c38671",
+      "full_file_verse_count": 1402
+    },
+    "isaiah.json": {
+      "path": "db/seeds/lxx_morph/isaiah.json",
+      "sha256": "c60980806a91bfde385004f5bbc030268f95803503527224ba760330390bed56",
+      "full_file_verse_count": 1289
+    },
+    "jeremiah-lxx.json": {
+      "path": "db/seeds/lxx_morph/jeremiah-lxx.json",
+      "sha256": "a4a26e8cc396d3c810872cf6d0f0705de215a8580e1faea6232402c0009086e1",
+      "full_file_verse_count": 1298
+    },
+    "lamentations.json": {
+      "path": "db/seeds/lxx_morph/lamentations.json",
+      "sha256": "246d5e7108b349d8a6bb77b950db2537bce1e5b4f47e1b6e3c6e93149eecffae",
+      "full_file_verse_count": 150
+    },
+    "baruch.json": {
+      "path": "db/seeds/lxx_morph/baruch.json",
+      "sha256": "79815eead7e72b7aeba13da4ca5eec3d0c60ac9da40c04f7b667cdc8d0da4f44",
+      "full_file_verse_count": 141
+    },
+    "letter-of-jeremiah.json": {
+      "path": "db/seeds/lxx_morph/letter-of-jeremiah.json",
+      "sha256": "b6ad7058973e5f6e86fcaf69a7e85d82107a4663bb680f7c516544d92fda66fc",
+      "full_file_verse_count": 72
+    },
+    "ezekiel.json": {
+      "path": "db/seeds/lxx_morph/ezekiel.json",
+      "sha256": "06f1b82b9c95fc5c2c1735c928cdb44299fea2f8d9b9fc68eda0e14118920a1f",
+      "full_file_verse_count": 1267
+    },
+    "daniel-theodotion.json": {
+      "path": "db/seeds/lxx_morph/daniel-theodotion.json",
+      "sha256": "d762228b344c90b862038bc6da3c22e1a600453f083dcaeda9afe34c47f7c844",
+      "full_file_verse_count": 424
+    },
+    "susanna-theodotion.json": {
+      "path": "db/seeds/lxx_morph/susanna-theodotion.json",
+      "sha256": "8b9ea448e3b747184a7233591f6a596d8b4ba228f9c26acf63d58e62a8914bfc",
+      "full_file_verse_count": 64
+    },
+    "bel-and-the-dragon-theodotion.json": {
+      "path": "db/seeds/lxx_morph/bel-and-the-dragon-theodotion.json",
+      "sha256": "a7a32901b57b1e5d351cc1c28a8533ad5503bc1bce9d5fe1c48091b67ad79fbb",
+      "full_file_verse_count": 42
+    },
+    "hosea.json": {
+      "path": "db/seeds/lxx_morph/hosea.json",
+      "sha256": "763cc20b7e5ed28e5fa9df6ef7d75e2fa3a0b569e8a72b1239ba07faa55eec00",
+      "full_file_verse_count": 197
+    },
+    "joel.json": {
+      "path": "db/seeds/lxx_morph/joel.json",
+      "sha256": "4b58a84db9cb7fd55cb86dfa59ee156353f99f2f8f4204f9f56651bd3a478951",
+      "full_file_verse_count": 73
+    },
+    "amos.json": {
+      "path": "db/seeds/lxx_morph/amos.json",
+      "sha256": "2ab673cf0da4e9f6cac8189ee52c2c02c067135121d26825867cbec65060baf1",
+      "full_file_verse_count": 146
+    },
+    "obadiah.json": {
+      "path": "db/seeds/lxx_morph/obadiah.json",
+      "sha256": "18b0b99642017122009ab3ae27c60c01e1cf7dd30b81ba165b19af4e7042363c",
+      "full_file_verse_count": 21
+    },
+    "jonah.json": {
+      "path": "db/seeds/lxx_morph/jonah.json",
+      "sha256": "39418f1e1eba39407ce3b57e6d93c6e3262ec3429d5159d2e6b622fdaa4351e0",
+      "full_file_verse_count": 48
+    },
+    "micah.json": {
+      "path": "db/seeds/lxx_morph/micah.json",
+      "sha256": "16867e697de12111501605376392a1e719443e01ca9442be1df92cab4455c263",
+      "full_file_verse_count": 105
+    },
+    "nahum.json": {
+      "path": "db/seeds/lxx_morph/nahum.json",
+      "sha256": "c7f807601d0e3f96324a2d3722d87d18abae71bd877ef5c1ef70cb002f64d817",
+      "full_file_verse_count": 47
+    },
+    "habakkuk.json": {
+      "path": "db/seeds/lxx_morph/habakkuk.json",
+      "sha256": "b9152de8edb5bd52f16d6b4c307c034f57fa92540a5b80bd43c3a779740827de",
+      "full_file_verse_count": 56
+    },
+    "zephaniah.json": {
+      "path": "db/seeds/lxx_morph/zephaniah.json",
+      "sha256": "56c9b5d8f351e938b4568e13acb2993fbaff1319852d8648af1ee66e870a216b",
+      "full_file_verse_count": 53
+    },
+    "haggai.json": {
+      "path": "db/seeds/lxx_morph/haggai.json",
+      "sha256": "3af627ccbb5fb24410d28a6d056706b4503a6bf763329e734aaaf91d5ddc0f6c",
+      "full_file_verse_count": 38
+    },
+    "zechariah.json": {
+      "path": "db/seeds/lxx_morph/zechariah.json",
+      "sha256": "9075dbcffbcbe5f2ad0f03a51e428a5804b4d49eeeea11aec470c1b1bcc0dc34",
+      "full_file_verse_count": 211
+    },
+    "malachi.json": {
+      "path": "db/seeds/lxx_morph/malachi.json",
+      "sha256": "0077c77b19e9636a58cd07ae168c9032d7773403627ee169b712da962e7b1eb8",
+      "full_file_verse_count": 55
+    }
+  },
+  "books": [
+    {
+      "order": 1,
+      "book_id": "GEN",
+      "book": "Genesis",
+      "component_count": 1,
+      "verse_count": 1531,
+      "token_count": 32566,
+      "components": [
+        {
+          "component": "genesis",
+          "source_file": "genesis.json",
+          "source_file_sha256": "5fe6e515f018585edb59bd3aa0a9a81f22cd6a87a4d10d02723423ea9329f93c",
+          "verse_count": 1531,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "book_id": "EXO",
+      "book": "Exodus",
+      "component_count": 1,
+      "verse_count": 1165,
+      "token_count": 24816,
+      "components": [
+        {
+          "component": "exodus",
+          "source_file": "exodus.json",
+          "source_file_sha256": "c5a775d14720b26c70dfcdb72c3c473ac21c33894714ebd85d03f132ebf45267",
+          "verse_count": 1165,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "book_id": "LEV",
+      "book": "Leviticus",
+      "component_count": 1,
+      "verse_count": 859,
+      "token_count": 19082,
+      "components": [
+        {
+          "component": "leviticus",
+          "source_file": "leviticus.json",
+          "source_file_sha256": "1d8804b122df867eede51dee6086b1f4d36b7f43b0b11b77a6bffa6d3753a57c",
+          "verse_count": 859,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "book_id": "NUM",
+      "book": "Numbers",
+      "component_count": 1,
+      "verse_count": 1287,
+      "token_count": 25059,
+      "components": [
+        {
+          "component": "numbers",
+          "source_file": "numbers.json",
+          "source_file_sha256": "4c9ad08ef76e632ca6a6e90e7ad81d162831a856489d5febf672ac705c30e2a9",
+          "verse_count": 1287,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "book_id": "DEU",
+      "book": "Deuteronomy",
+      "component_count": 1,
+      "verse_count": 959,
+      "token_count": 22990,
+      "components": [
+        {
+          "component": "deuteronomy",
+          "source_file": "deuteronomy.json",
+          "source_file_sha256": "4f3f3251a5182071d3482753ba9c7208d527705dee418846499134cd19aa46dc",
+          "verse_count": 959,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "book_id": "JOS",
+      "book": "Joshua",
+      "component_count": 1,
+      "verse_count": 96,
+      "token_count": 1064,
+      "components": [
+        {
+          "component": "joshua",
+          "source_file": "joshua.json",
+          "source_file_sha256": "e557c47fff22f12cfe3fc88ca06f19d4cf0058e29119700360a104d4c97cafe4",
+          "verse_count": 96,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "book_id": "JDG",
+      "book": "Judges",
+      "component_count": 1,
+      "verse_count": 618,
+      "token_count": 15947,
+      "components": [
+        {
+          "component": "judges",
+          "source_file": "judges.json",
+          "source_file_sha256": "837ced839fb303041a19a1132d9ea80de2a297f6db3b41ea9d8643d59db41dbc",
+          "verse_count": 618,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "book_id": "RUT",
+      "book": "Ruth",
+      "component_count": 1,
+      "verse_count": 85,
+      "token_count": 2072,
+      "components": [
+        {
+          "component": "ruth",
+          "source_file": "ruth.json",
+          "source_file_sha256": "12a6e181fca2a04b6f073974af676a9c6a32f144062541d370d20af6c3d6e249",
+          "verse_count": 85,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "book_id": "1SA",
+      "book": "1 Samuel",
+      "component_count": 1,
+      "verse_count": 773,
+      "token_count": 20131,
+      "components": [
+        {
+          "component": "1-samuel",
+          "source_file": "1-samuel.json",
+          "source_file_sha256": "8bd1346509aaa9804a92a7ebc3c0f2812cb4fb35e61f2d41c14b482e95fd70c5",
+          "verse_count": 773,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "book_id": "2SA",
+      "book": "2 Samuel",
+      "component_count": 1,
+      "verse_count": 696,
+      "token_count": 17927,
+      "components": [
+        {
+          "component": "2-samuel",
+          "source_file": "2-samuel.json",
+          "source_file_sha256": "680b221e16b413d0de812444cd427c5ed353961606941d60ff188d1de739a884",
+          "verse_count": 696,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "book_id": "1KI",
+      "book": "1 Kings",
+      "component_count": 1,
+      "verse_count": 825,
+      "token_count": 20803,
+      "components": [
+        {
+          "component": "1-kings",
+          "source_file": "1-kings.json",
+          "source_file_sha256": "dd0a7d3a64a6915c750dd99b506ee028bf8146a4a4d2f17ee5c3ce14fc092d7b",
+          "verse_count": 825,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "book_id": "2KI",
+      "book": "2 Kings",
+      "component_count": 1,
+      "verse_count": 723,
+      "token_count": 18853,
+      "components": [
+        {
+          "component": "2-kings",
+          "source_file": "2-kings.json",
+          "source_file_sha256": "cdaefb4ae43086630fff9acc31c15e29162a906f901c4abe508c30e10f2d8d19",
+          "verse_count": 723,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 13,
+      "book_id": "1CH",
+      "book": "1 Chronicles",
+      "component_count": 1,
+      "verse_count": 930,
+      "token_count": 16247,
+      "components": [
+        {
+          "component": "1-chronicles",
+          "source_file": "1-chronicles.json",
+          "source_file_sha256": "e77183a6cbc4f3ef63d3207e237ca8b294ad4f94b5983599b1fc3f7ed1039d6a",
+          "verse_count": 930,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 14,
+      "book_id": "2CH",
+      "book": "2 Chronicles",
+      "component_count": 1,
+      "verse_count": 833,
+      "token_count": 21355,
+      "components": [
+        {
+          "component": "2-chronicles",
+          "source_file": "2-chronicles.json",
+          "source_file_sha256": "b3b52dcd2b60c9881155891a4b309cda85ad5199e980d71f7a78966b87f714de",
+          "verse_count": 833,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 15,
+      "book_id": "EZR",
+      "book": "Ezra",
+      "component_count": 1,
+      "verse_count": 280,
+      "token_count": 5588,
+      "components": [
+        {
+          "component": "2-esdras",
+          "source_file": "2-esdras.json",
+          "source_file_sha256": "24177f83c16734702e6f6648887282f56188beff6da1253445fd05fe6f86a55c",
+          "verse_count": 280,
+          "chapter_filter": [
+            1,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "order": 16,
+      "book_id": "NEH",
+      "book": "Nehemiah",
+      "component_count": 1,
+      "verse_count": 392,
+      "token_count": 7678,
+      "components": [
+        {
+          "component": "2-esdras",
+          "source_file": "2-esdras.json",
+          "source_file_sha256": "24177f83c16734702e6f6648887282f56188beff6da1253445fd05fe6f86a55c",
+          "verse_count": 392,
+          "chapter_filter": [
+            11,
+            23
+          ]
+        }
+      ]
+    },
+    {
+      "order": 17,
+      "book_id": "TOB",
+      "book": "Tobit",
+      "component_count": 1,
+      "verse_count": 248,
+      "token_count": 5503,
+      "components": [
+        {
+          "component": "tobit",
+          "source_file": "tobit.json",
+          "source_file_sha256": "a9db93bc059087940c9a81060a4df706583548841b44b9c0e74f7cfe6dcf4f6e",
+          "verse_count": 248,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 18,
+      "book_id": "JDT",
+      "book": "Judith",
+      "component_count": 1,
+      "verse_count": 340,
+      "token_count": 9174,
+      "components": [
+        {
+          "component": "judith",
+          "source_file": "judith.json",
+          "source_file_sha256": "5287aa38c8d1f69f21dccf7ac09c1b729cdda5a950130e495216b696d715d9fd",
+          "verse_count": 340,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 19,
+      "book_id": "EST",
+      "book": "Esther",
+      "component_count": 1,
+      "verse_count": 252,
+      "token_count": 5843,
+      "components": [
+        {
+          "component": "esther-greek",
+          "source_file": "esther-greek.json",
+          "source_file_sha256": "debe93c2db86a880f4753398bcf55693dc27393b8d0a6ef41930aef78e359071",
+          "verse_count": 252,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 20,
+      "book_id": "1MA",
+      "book": "1 Maccabees",
+      "component_count": 1,
+      "verse_count": 924,
+      "token_count": 18292,
+      "components": [
+        {
+          "component": "1-maccabees",
+          "source_file": "1-maccabees.json",
+          "source_file_sha256": "a89c5af1c74838aad604a39bc970330822c209c3311ce8613402ca6ca1da3fcb",
+          "verse_count": 924,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 21,
+      "book_id": "2MA",
+      "book": "2 Maccabees",
+      "component_count": 1,
+      "verse_count": 555,
+      "token_count": 11917,
+      "components": [
+        {
+          "component": "2-maccabees",
+          "source_file": "2-maccabees.json",
+          "source_file_sha256": "516c92310f1c42fb534df956e609c21218f2ae13f419b044041c4bd358ce37c7",
+          "verse_count": 555,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 22,
+      "book_id": "JOB",
+      "book": "Job",
+      "component_count": 1,
+      "verse_count": 1083,
+      "token_count": 13561,
+      "components": [
+        {
+          "component": "job-lxx",
+          "source_file": "job-lxx.json",
+          "source_file_sha256": "f58e3906448a5e892da5d8b6dcc01a732284c68985d926e2d1517e6eea61e837",
+          "verse_count": 1083,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 23,
+      "book_id": "PSA",
+      "book": "Psalms",
+      "component_count": 1,
+      "verse_count": 2534,
+      "token_count": 34964,
+      "components": [
+        {
+          "component": "psalms-lxx",
+          "source_file": "psalms-lxx.json",
+          "source_file_sha256": "a34b87a5fbe2857fb453c3bd1bcd2cb0408bb2522b409b6e44d678356ee08103",
+          "verse_count": 2534,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 24,
+      "book_id": "PRO",
+      "book": "Proverbs",
+      "component_count": 1,
+      "verse_count": 939,
+      "token_count": 11164,
+      "components": [
+        {
+          "component": "proverbs",
+          "source_file": "proverbs.json",
+          "source_file_sha256": "7791907ce0c410bdb99502db909bd417d3dc26261b4959aa1f6f02033d8e5de5",
+          "verse_count": 939,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 25,
+      "book_id": "ECC",
+      "book": "Ecclesiastes",
+      "component_count": 1,
+      "verse_count": 222,
+      "token_count": 4546,
+      "components": [
+        {
+          "component": "ecclesiastes",
+          "source_file": "ecclesiastes.json",
+          "source_file_sha256": "0ec029295874df2ef0d6b6742abf8cb62dc045136187eed19a73e6d9a3a1da24",
+          "verse_count": 222,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 26,
+      "book_id": "SNG",
+      "book": "Song of Songs",
+      "component_count": 1,
+      "verse_count": 117,
+      "token_count": 2025,
+      "components": [
+        {
+          "component": "song-of-solomon",
+          "source_file": "song-of-solomon.json",
+          "source_file_sha256": "8efc4e63e397f3fe5fb72780c760ab6934bfafafea0c61799e26abe90ecf955e",
+          "verse_count": 117,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 27,
+      "book_id": "WIS",
+      "book": "Wisdom",
+      "component_count": 1,
+      "verse_count": 435,
+      "token_count": 6943,
+      "components": [
+        {
+          "component": "wisdom",
+          "source_file": "wisdom.json",
+          "source_file_sha256": "7f9d3b980434866bfa6fcf4cb6e2cd772e7956e88da7002efaa0e84378a494fa",
+          "verse_count": 435,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 28,
+      "book_id": "SIR",
+      "book": "Sirach",
+      "component_count": 1,
+      "verse_count": 1402,
+      "token_count": 18658,
+      "components": [
+        {
+          "component": "sirach",
+          "source_file": "sirach.json",
+          "source_file_sha256": "638ba7116a5b83a3b4ab33a61bf49234187788c876d2b1d0c0ecced7e6c38671",
+          "verse_count": 1402,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 29,
+      "book_id": "ISA",
+      "book": "Isaiah",
+      "component_count": 1,
+      "verse_count": 1289,
+      "token_count": 27076,
+      "components": [
+        {
+          "component": "isaiah",
+          "source_file": "isaiah.json",
+          "source_file_sha256": "c60980806a91bfde385004f5bbc030268f95803503527224ba760330390bed56",
+          "verse_count": 1289,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 30,
+      "book_id": "JER",
+      "book": "Jeremiah",
+      "component_count": 1,
+      "verse_count": 1298,
+      "token_count": 28952,
+      "components": [
+        {
+          "component": "jeremiah-lxx",
+          "source_file": "jeremiah-lxx.json",
+          "source_file_sha256": "a4a26e8cc396d3c810872cf6d0f0705de215a8580e1faea6232402c0009086e1",
+          "verse_count": 1298,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 31,
+      "book_id": "LAM",
+      "book": "Lamentations",
+      "component_count": 1,
+      "verse_count": 150,
+      "token_count": 2369,
+      "components": [
+        {
+          "component": "lamentations",
+          "source_file": "lamentations.json",
+          "source_file_sha256": "246d5e7108b349d8a6bb77b950db2537bce1e5b4f47e1b6e3c6e93149eecffae",
+          "verse_count": 150,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 32,
+      "book_id": "BAR",
+      "book": "Baruch",
+      "component_count": 2,
+      "verse_count": 213,
+      "token_count": 3869,
+      "components": [
+        {
+          "component": "baruch",
+          "source_file": "baruch.json",
+          "source_file_sha256": "79815eead7e72b7aeba13da4ca5eec3d0c60ac9da40c04f7b667cdc8d0da4f44",
+          "verse_count": 141,
+          "chapter_filter": null
+        },
+        {
+          "component": "letter-of-jeremiah",
+          "source_file": "letter-of-jeremiah.json",
+          "source_file_sha256": "b6ad7058973e5f6e86fcaf69a7e85d82107a4663bb680f7c516544d92fda66fc",
+          "verse_count": 72,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 33,
+      "book_id": "EZK",
+      "book": "Ezekiel",
+      "component_count": 1,
+      "verse_count": 1267,
+      "token_count": 29658,
+      "components": [
+        {
+          "component": "ezekiel",
+          "source_file": "ezekiel.json",
+          "source_file_sha256": "06f1b82b9c95fc5c2c1735c928cdb44299fea2f8d9b9fc68eda0e14118920a1f",
+          "verse_count": 1267,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 34,
+      "book_id": "DAN",
+      "book": "Daniel",
+      "component_count": 3,
+      "verse_count": 530,
+      "token_count": 12458,
+      "components": [
+        {
+          "component": "daniel-theodotion",
+          "source_file": "daniel-theodotion.json",
+          "source_file_sha256": "d762228b344c90b862038bc6da3c22e1a600453f083dcaeda9afe34c47f7c844",
+          "verse_count": 424,
+          "chapter_filter": null
+        },
+        {
+          "component": "susanna-theodotion",
+          "source_file": "susanna-theodotion.json",
+          "source_file_sha256": "8b9ea448e3b747184a7233591f6a596d8b4ba228f9c26acf63d58e62a8914bfc",
+          "verse_count": 64,
+          "chapter_filter": null
+        },
+        {
+          "component": "bel-and-the-dragon-theodotion",
+          "source_file": "bel-and-the-dragon-theodotion.json",
+          "source_file_sha256": "a7a32901b57b1e5d351cc1c28a8533ad5503bc1bce9d5fe1c48091b67ad79fbb",
+          "verse_count": 42,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 35,
+      "book_id": "HOS",
+      "book": "Hosea",
+      "component_count": 1,
+      "verse_count": 197,
+      "token_count": 3933,
+      "components": [
+        {
+          "component": "hosea",
+          "source_file": "hosea.json",
+          "source_file_sha256": "763cc20b7e5ed28e5fa9df6ef7d75e2fa3a0b569e8a72b1239ba07faa55eec00",
+          "verse_count": 197,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 36,
+      "book_id": "JOL",
+      "book": "Joel",
+      "component_count": 1,
+      "verse_count": 73,
+      "token_count": 1580,
+      "components": [
+        {
+          "component": "joel",
+          "source_file": "joel.json",
+          "source_file_sha256": "4b58a84db9cb7fd55cb86dfa59ee156353f99f2f8f4204f9f56651bd3a478951",
+          "verse_count": 73,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 37,
+      "book_id": "AMO",
+      "book": "Amos",
+      "component_count": 1,
+      "verse_count": 146,
+      "token_count": 3210,
+      "components": [
+        {
+          "component": "amos",
+          "source_file": "amos.json",
+          "source_file_sha256": "2ab673cf0da4e9f6cac8189ee52c2c02c067135121d26825867cbec65060baf1",
+          "verse_count": 146,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 38,
+      "book_id": "OBA",
+      "book": "Obadiah",
+      "component_count": 1,
+      "verse_count": 21,
+      "token_count": 472,
+      "components": [
+        {
+          "component": "obadiah",
+          "source_file": "obadiah.json",
+          "source_file_sha256": "18b0b99642017122009ab3ae27c60c01e1cf7dd30b81ba165b19af4e7042363c",
+          "verse_count": 21,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 39,
+      "book_id": "JON",
+      "book": "Jonah",
+      "component_count": 1,
+      "verse_count": 48,
+      "token_count": 1090,
+      "components": [
+        {
+          "component": "jonah",
+          "source_file": "jonah.json",
+          "source_file_sha256": "39418f1e1eba39407ce3b57e6d93c6e3262ec3429d5159d2e6b622fdaa4351e0",
+          "verse_count": 48,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 40,
+      "book_id": "MIC",
+      "book": "Micah",
+      "component_count": 1,
+      "verse_count": 105,
+      "token_count": 2368,
+      "components": [
+        {
+          "component": "micah",
+          "source_file": "micah.json",
+          "source_file_sha256": "16867e697de12111501605376392a1e719443e01ca9442be1df92cab4455c263",
+          "verse_count": 105,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 41,
+      "book_id": "NAM",
+      "book": "Nahum",
+      "component_count": 1,
+      "verse_count": 47,
+      "token_count": 937,
+      "components": [
+        {
+          "component": "nahum",
+          "source_file": "nahum.json",
+          "source_file_sha256": "c7f807601d0e3f96324a2d3722d87d18abae71bd877ef5c1ef70cb002f64d817",
+          "verse_count": 47,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 42,
+      "book_id": "HAB",
+      "book": "Habakkuk",
+      "component_count": 1,
+      "verse_count": 56,
+      "token_count": 1105,
+      "components": [
+        {
+          "component": "habakkuk",
+          "source_file": "habakkuk.json",
+          "source_file_sha256": "b9152de8edb5bd52f16d6b4c307c034f57fa92540a5b80bd43c3a779740827de",
+          "verse_count": 56,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 43,
+      "book_id": "ZEP",
+      "book": "Zephaniah",
+      "component_count": 1,
+      "verse_count": 53,
+      "token_count": 1223,
+      "components": [
+        {
+          "component": "zephaniah",
+          "source_file": "zephaniah.json",
+          "source_file_sha256": "56c9b5d8f351e938b4568e13acb2993fbaff1319852d8648af1ee66e870a216b",
+          "verse_count": 53,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 44,
+      "book_id": "HAG",
+      "book": "Haggai",
+      "component_count": 1,
+      "verse_count": 38,
+      "token_count": 947,
+      "components": [
+        {
+          "component": "haggai",
+          "source_file": "haggai.json",
+          "source_file_sha256": "3af627ccbb5fb24410d28a6d056706b4503a6bf763329e734aaaf91d5ddc0f6c",
+          "verse_count": 38,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 45,
+      "book_id": "ZEC",
+      "book": "Zechariah",
+      "component_count": 1,
+      "verse_count": 211,
+      "token_count": 4963,
+      "components": [
+        {
+          "component": "zechariah",
+          "source_file": "zechariah.json",
+          "source_file_sha256": "9075dbcffbcbe5f2ad0f03a51e428a5804b4d49eeeea11aec470c1b1bcc0dc34",
+          "verse_count": 211,
+          "chapter_filter": null
+        }
+      ]
+    },
+    {
+      "order": 46,
+      "book_id": "MAL",
+      "book": "Malachi",
+      "component_count": 1,
+      "verse_count": 55,
+      "token_count": 1416,
+      "components": [
+        {
+          "component": "malachi",
+          "source_file": "malachi.json",
+          "source_file_sha256": "0077c77b19e9636a58cd07ae168c9032d7773403627ee169b712da962e7b1eb8",
+          "verse_count": 55,
+          "chapter_filter": null
+        }
+      ]
+    }
+  ],
+  "field_provenance": {
+    "surface": "lxx-morph final work JSON / Rahlfs 1935",
+    "lemma": "lxx-morph",
+    "part_of_speech": "lxx-morph",
+    "morphology": "lxx-morph parsing",
+    "confidence": "lxx-morph",
+    "provenance_source": "lxx-morph source field",
+    "reasoning": "lxx-morph reasoning field"
+  },
+  "confidence_counts": {
+    "high": 343341,
+    "low": 1414,
+    "medium": 197639
+  },
+  "provenance_source_counts": {
+    "augmented": 128713,
+    "context_resolved": 191113,
+    "explicitly_specified": 1016,
+    "first_candidate": 43535,
+    "morpheus": 153379,
+    "post_processed": 24638
+  },
+  "runtime_contract": {
+    "source_native_references_preserved": true,
+    "source_token_order_preserved": true,
+    "automatic_attachment_to_swete": false,
+    "automatic_canonical_remapping": false,
+    "cross_edition_relabeling_forbidden": true,
+    "no_fabricated_linguistics": true,
+    "no_glosses_added": true,
+    "no_transliteration_added": true
+  },
+  "quality_note": "Open linguistic data with per-token provenance/confidence; preserve those fields and verify against an authoritative edition for scholarly citation."
+}

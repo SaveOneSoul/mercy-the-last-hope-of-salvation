@@ -1,0 +1,4290 @@
+{
+  "schema_version": 1,
+  "corpus_id": "grc_nt_tagnt_john_pa",
+  "corpus_version": "2026.09.22-tagnt-john-pa-v1",
+  "status": "production-installed",
+  "production_enabled": true,
+  "language": "grc",
+  "book_id": "JHN",
+  "book": "John",
+  "scope": "Supplemental TAGNT linguistic witness for the 12 verses absent from pinned MorphGNT: John 7:53 and 8:1-11.",
+  "verse_count": 12,
+  "token_count": 198,
+  "source": {
+    "source_id": "stepbible-data",
+    "dataset": "TAGNT",
+    "repository": "STEPBible/STEPBible-Data",
+    "commit": "ae39711d7843b2902d54993e432de9c12d6a4b9a",
+    "path": "Translators Amalgamated OT+NT/TAGNT Mat-Jhn - Translators Amalgamated Greek NT - STEPBible.org CC-BY.txt",
+    "git_blob_sha1": "705c1bc1cf752e013efcef99b8d9a3b7853bf843",
+    "sha256": "ab8eaaeb68e17a1dcfa34e1e9350358f22f03bc2a97244d848750ad81044bc8e",
+    "license": "CC BY 4.0",
+    "attribution": "STEP Bible — https://www.STEPBible.org"
+  },
+  "witness_policy": {
+    "relationship_to_sblgnt": "supplemental-parallel-linguistic-witness",
+    "automatic_attachment_to_sblgnt": false,
+    "automatic_reconstruction_of_sblgnt": false,
+    "tagnt_is_amalgamated": true,
+    "edition_membership_preserved_per_token": true,
+    "word_type_preserved_per_token": true,
+    "variant_fields_preserved_per_token": true,
+    "no_fabricated_pos_labels": true,
+    "no_fabricated_lemma": true,
+    "no_fabricated_morphology": true
+  },
+  "field_contract": {
+    "surface": "TAGNT Greek column, transliteration display suffix removed only for the convenience surface field; greek_raw remains preserved",
+    "lemma": "TAGNT Dictionary form field preserved as dictionary_raw/dictionary_forms",
+    "part_of_speech": "TAGNT source grammar codes preserved as part_of_speech_codes; no normalized POS label invented",
+    "morphology": "TAGNT dStrongs = Grammar field preserved verbatim",
+    "edition_membership": "TAGNT editions field preserved verbatim"
+  },
+  "verses": [
+    {
+      "reference": "7:53",
+      "canonical_reference": "John 7:53",
+      "tokens": [
+        {
+          "position": 1,
+          "raw_reference": "Jhn.7.53{8.1}#01=KO",
+          "word_type": "KO",
+          "surface": "[[Καὶ",
+          "greek_raw": "[[Καὶ (Kai)",
+          "dstrongs_grammar": "G2532=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "καί=and",
+          "dictionary_forms": [
+            "καί"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "{8.1} And",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2532",
+          "alt_strongs": ""
+        },
+        {
+          "position": 2,
+          "raw_reference": "Jhn.7.53{8.1}#02=K(o)",
+          "word_type": "K(o)",
+          "surface": "ἐπορεύθη",
+          "greek_raw": "ἐπορεύθη (eporeuthē)",
+          "dstrongs_grammar": "G4198=V-AOI-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "πορεύω=to travel",
+          "dictionary_forms": [
+            "πορεύω"
+          ],
+          "editions": "Tyn+TR+Byz",
+          "english_translation": "he went",
+          "meaning_variants": "ἐπορεύθησαν (o=eporeuthēsan) they went - G4198=V-AOI-3P in: NA28+NA27+WH",
+          "spelling_variants": "",
+          "sstrong_instance": "G4198",
+          "alt_strongs": ""
+        },
+        {
+          "position": 3,
+          "raw_reference": "Jhn.7.53{8.1}#03=KO",
+          "word_type": "KO",
+          "surface": "ἕκαστος",
+          "greek_raw": "ἕκαστος (hekastos)",
+          "dstrongs_grammar": "G1538=A-NSM",
+          "part_of_speech_codes": [
+            "A"
+          ],
+          "dictionary_raw": "ἕκαστος=each",
+          "dictionary_forms": [
+            "ἕκαστος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "each",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1538",
+          "alt_strongs": ""
+        },
+        {
+          "position": 4,
+          "raw_reference": "Jhn.7.53{8.1}#04=KO",
+          "word_type": "KO",
+          "surface": "εἰς",
+          "greek_raw": "εἰς (eis)",
+          "dstrongs_grammar": "G1519=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "εἰς=toward",
+          "dictionary_forms": [
+            "εἰς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "to",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1519",
+          "alt_strongs": ""
+        },
+        {
+          "position": 5,
+          "raw_reference": "Jhn.7.53{8.1}#05=KO",
+          "word_type": "KO",
+          "surface": "τὸν",
+          "greek_raw": "τὸν (ton)",
+          "dstrongs_grammar": "G3588=T-ASM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "the",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588",
+          "alt_strongs": ""
+        },
+        {
+          "position": 6,
+          "raw_reference": "Jhn.7.53{8.1}#06=KO",
+          "word_type": "KO",
+          "surface": "οἶκον",
+          "greek_raw": "οἶκον (oikon)",
+          "dstrongs_grammar": "G3624G=N-ASM",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "οἶκος=house",
+          "dictionary_forms": [
+            "οἶκος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "home",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3624",
+          "alt_strongs": ""
+        },
+        {
+          "position": 7,
+          "raw_reference": "Jhn.7.53{8.1}#07=KO",
+          "word_type": "KO",
+          "surface": "αὐτοῦ,",
+          "greek_raw": "αὐτοῦ, (autou)",
+          "dstrongs_grammar": "G0846=P-GSM",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "αὐτός=he/she/it/self",
+          "dictionary_forms": [
+            "αὐτός"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "of him,",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0846",
+          "alt_strongs": "G3778"
+        }
+      ],
+      "token_count": 7
+    },
+    {
+      "reference": "8:1",
+      "canonical_reference": "John 8:1",
+      "tokens": [
+        {
+          "position": 1,
+          "raw_reference": "Jhn.8.1#01=KO",
+          "word_type": "KO",
+          "surface": "Ἰησοῦς",
+          "greek_raw": "Ἰησοῦς (Iēsous)",
+          "dstrongs_grammar": "G2424G=N-NSM-P",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "Ἰησοῦς=Jesus/Joshua",
+          "dictionary_forms": [
+            "Ἰησοῦς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "Jesus",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2424",
+          "alt_strongs": ""
+        },
+        {
+          "position": 2,
+          "raw_reference": "Jhn.8.1#02=KO",
+          "word_type": "KO",
+          "surface": "δὲ",
+          "greek_raw": "δὲ (de)",
+          "dstrongs_grammar": "G1161=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "δέ=but/and",
+          "dictionary_forms": [
+            "δέ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "however",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1161",
+          "alt_strongs": ""
+        },
+        {
+          "position": 3,
+          "raw_reference": "Jhn.8.1#03=KO",
+          "word_type": "KO",
+          "surface": "ἐπορεύθη",
+          "greek_raw": "ἐπορεύθη (eporeuthē)",
+          "dstrongs_grammar": "G4198=V-AOI-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "πορεύω=to travel",
+          "dictionary_forms": [
+            "πορεύω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "went",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G4198",
+          "alt_strongs": ""
+        },
+        {
+          "position": 4,
+          "raw_reference": "Jhn.8.1#04=KO",
+          "word_type": "KO",
+          "surface": "εἰς",
+          "greek_raw": "εἰς (eis)",
+          "dstrongs_grammar": "G1519=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "εἰς=toward",
+          "dictionary_forms": [
+            "εἰς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "to",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1519",
+          "alt_strongs": ""
+        },
+        {
+          "position": 5,
+          "raw_reference": "Jhn.8.1#05=KO",
+          "word_type": "KO",
+          "surface": "τὸ",
+          "greek_raw": "τὸ (to)",
+          "dstrongs_grammar": "G3588=T-ASN",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "the",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 6,
+          "raw_reference": "Jhn.8.1#06=KO",
+          "word_type": "KO",
+          "surface": "ὄρος",
+          "greek_raw": "ὄρος (oros)",
+          "dstrongs_grammar": "G3735=N-ASN-L",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "ὄρος=mountain",
+          "dictionary_forms": [
+            "ὄρος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "Mount",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3735",
+          "alt_strongs": ""
+        },
+        {
+          "position": 7,
+          "raw_reference": "Jhn.8.1#07=KO",
+          "word_type": "KO",
+          "surface": "τῶν",
+          "greek_raw": "τῶν (tōn)",
+          "dstrongs_grammar": "G3588=T-GPF",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "<the>",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 8,
+          "raw_reference": "Jhn.8.1#08=KO",
+          "word_type": "KO",
+          "surface": "ἐλαιῶν.",
+          "greek_raw": "ἐλαιῶν. (elaiōn)",
+          "dstrongs_grammar": "G1638=N-GPF-L",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "ἐλαιών=Olivet",
+          "dictionary_forms": [
+            "ἐλαιών"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "of Olives.",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1638",
+          "alt_strongs": "G1636"
+        }
+      ],
+      "token_count": 8
+    },
+    {
+      "reference": "8:2",
+      "canonical_reference": "John 8:2",
+      "tokens": [
+        {
+          "position": 1,
+          "raw_reference": "Jhn.8.2#01=KO",
+          "word_type": "KO",
+          "surface": "ὄρθρου",
+          "greek_raw": "ὄρθρου (orthrou)",
+          "dstrongs_grammar": "G3722=N-GSM",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "ὄρθρος=dawn",
+          "dictionary_forms": [
+            "ὄρθρος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "Early in the morning",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3722",
+          "alt_strongs": ""
+        },
+        {
+          "position": 2,
+          "raw_reference": "Jhn.8.2#02=KO",
+          "word_type": "KO",
+          "surface": "δὲ",
+          "greek_raw": "δὲ (de)",
+          "dstrongs_grammar": "G1161=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "δέ=but/and",
+          "dictionary_forms": [
+            "δέ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "then",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1161",
+          "alt_strongs": ""
+        },
+        {
+          "position": 3,
+          "raw_reference": "Jhn.8.2#03=KO",
+          "word_type": "KO",
+          "surface": "πάλιν",
+          "greek_raw": "πάλιν (palin)",
+          "dstrongs_grammar": "G3825=ADV",
+          "part_of_speech_codes": [
+            "ADV"
+          ],
+          "dictionary_raw": "πάλιν=again",
+          "dictionary_forms": [
+            "πάλιν"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "again",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3825",
+          "alt_strongs": ""
+        },
+        {
+          "position": 4,
+          "raw_reference": "Jhn.8.2#04=KO",
+          "word_type": "KO",
+          "surface": "παρεγένετο",
+          "greek_raw": "παρεγένετο (paregeneto)",
+          "dstrongs_grammar": "G3854=V-2ADI-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "παραγίνομαι=to come",
+          "dictionary_forms": [
+            "παραγίνομαι"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "He came",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3854",
+          "alt_strongs": ""
+        },
+        {
+          "position": 5,
+          "raw_reference": "Jhn.8.2#05=KO",
+          "word_type": "KO",
+          "surface": "εἰς",
+          "greek_raw": "εἰς (eis)",
+          "dstrongs_grammar": "G1519=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "εἰς=toward",
+          "dictionary_forms": [
+            "εἰς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "into",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1519",
+          "alt_strongs": ""
+        },
+        {
+          "position": 6,
+          "raw_reference": "Jhn.8.2#06=KO",
+          "word_type": "KO",
+          "surface": "τὸ",
+          "greek_raw": "τὸ (to)",
+          "dstrongs_grammar": "G3588=T-ASN",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "the",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 7,
+          "raw_reference": "Jhn.8.2#07=KO",
+          "word_type": "KO",
+          "surface": "ἱερὸν,",
+          "greek_raw": "ἱερὸν, (hi'eron)",
+          "dstrongs_grammar": "G2411=N-ASN",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "ἱερόν=temple",
+          "dictionary_forms": [
+            "ἱερόν"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "temple,",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2411",
+          "alt_strongs": ""
+        },
+        {
+          "position": 8,
+          "raw_reference": "Jhn.8.2#08=KO",
+          "word_type": "KO",
+          "surface": "καὶ",
+          "greek_raw": "καὶ (kai)",
+          "dstrongs_grammar": "G2532=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "καί=and",
+          "dictionary_forms": [
+            "καί"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "and",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2532_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 9,
+          "raw_reference": "Jhn.8.2#09=KO",
+          "word_type": "KO",
+          "surface": "πᾶς",
+          "greek_raw": "πᾶς (pas)",
+          "dstrongs_grammar": "G3956=A-NSM",
+          "part_of_speech_codes": [
+            "A"
+          ],
+          "dictionary_raw": "πᾶς=all",
+          "dictionary_forms": [
+            "πᾶς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "all",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3956",
+          "alt_strongs": ""
+        },
+        {
+          "position": 10,
+          "raw_reference": "Jhn.8.2#10=KO",
+          "word_type": "KO",
+          "surface": "ὁ",
+          "greek_raw": "ὁ (ho)",
+          "dstrongs_grammar": "G3588=T-NSM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "the",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 11,
+          "raw_reference": "Jhn.8.2#11=KO",
+          "word_type": "KO",
+          "surface": "λαὸς",
+          "greek_raw": "λαὸς (laos)",
+          "dstrongs_grammar": "G2992=N-NSM",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "λαός=a people",
+          "dictionary_forms": [
+            "λαός"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "people",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2992",
+          "alt_strongs": ""
+        },
+        {
+          "position": 12,
+          "raw_reference": "Jhn.8.2#12=KO",
+          "word_type": "KO",
+          "surface": "ἤρχετο",
+          "greek_raw": "ἤρχετο (ērcheto)",
+          "dstrongs_grammar": "G2064=V-IMI-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἔρχομαι=to come/go",
+          "dictionary_forms": [
+            "ἔρχομαι"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "were coming",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2064",
+          "alt_strongs": ""
+        },
+        {
+          "position": 13,
+          "raw_reference": "Jhn.8.2#13=KO",
+          "word_type": "KO",
+          "surface": "πρὸς",
+          "greek_raw": "πρὸς (pros)",
+          "dstrongs_grammar": "G4314=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "πρός=to/with",
+          "dictionary_forms": [
+            "πρός"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR",
+          "english_translation": "to",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G4314",
+          "alt_strongs": ""
+        },
+        {
+          "position": 14,
+          "raw_reference": "Jhn.8.2#14=KO",
+          "word_type": "KO",
+          "surface": "αὐτόν,",
+          "greek_raw": "αὐτόν, (auton)",
+          "dstrongs_grammar": "G0846=P-ASM",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "αὐτός=he/she/it/self",
+          "dictionary_forms": [
+            "αὐτός"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR",
+          "english_translation": "Him,",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0846_a",
+          "alt_strongs": "G3778"
+        },
+        {
+          "position": 15,
+          "raw_reference": "Jhn.8.2#15=KO",
+          "word_type": "KO",
+          "surface": "καὶ",
+          "greek_raw": "καὶ (kai)",
+          "dstrongs_grammar": "G2532=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "καί=and",
+          "dictionary_forms": [
+            "καί"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "And",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2532_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 16,
+          "raw_reference": "Jhn.8.2#16=KO",
+          "word_type": "KO",
+          "surface": "καθίσας",
+          "greek_raw": "καθίσας (kathisas)",
+          "dstrongs_grammar": "G2523=V-AAP-NSM",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "καθίζω=to seat",
+          "dictionary_forms": [
+            "καθίζω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "having sat down",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2523",
+          "alt_strongs": ""
+        },
+        {
+          "position": 17,
+          "raw_reference": "Jhn.8.2#17=KO",
+          "word_type": "KO",
+          "surface": "ἐδίδασκεν",
+          "greek_raw": "ἐδίδασκεν (edidasken)",
+          "dstrongs_grammar": "G1321=V-IAI-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "διδάσκω=to teach",
+          "dictionary_forms": [
+            "διδάσκω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "He was teaching",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1321",
+          "alt_strongs": ""
+        },
+        {
+          "position": 18,
+          "raw_reference": "Jhn.8.2#18=KO",
+          "word_type": "KO",
+          "surface": "αὐτούς.",
+          "greek_raw": "αὐτούς. (autous)",
+          "dstrongs_grammar": "G0846=P-APM",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "αὐτός=he/she/it/self",
+          "dictionary_forms": [
+            "αὐτός"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "them.",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0846_b",
+          "alt_strongs": "G3778"
+        }
+      ],
+      "token_count": 18
+    },
+    {
+      "reference": "8:3",
+      "canonical_reference": "John 8:3",
+      "tokens": [
+        {
+          "position": 1,
+          "raw_reference": "Jhn.8.3#01=KO",
+          "word_type": "KO",
+          "surface": "ἄγουσιν",
+          "greek_raw": "ἄγουσιν (agousin)",
+          "dstrongs_grammar": "G0071=V-PAI-3P",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἄγω=to bring",
+          "dictionary_forms": [
+            "ἄγω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "Bring",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0071",
+          "alt_strongs": ""
+        },
+        {
+          "position": 2,
+          "raw_reference": "Jhn.8.3#02=KO",
+          "word_type": "KO",
+          "surface": "δὲ",
+          "greek_raw": "δὲ (de)",
+          "dstrongs_grammar": "G1161=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "δέ=but/and",
+          "dictionary_forms": [
+            "δέ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "now",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1161",
+          "alt_strongs": ""
+        },
+        {
+          "position": 3,
+          "raw_reference": "Jhn.8.3#03=KO",
+          "word_type": "KO",
+          "surface": "οἱ",
+          "greek_raw": "οἱ (hoi)",
+          "dstrongs_grammar": "G3588=T-NPM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "the",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 4,
+          "raw_reference": "Jhn.8.3#04=KO",
+          "word_type": "KO",
+          "surface": "γραμματεῖς",
+          "greek_raw": "γραμματεῖς (grammateis)",
+          "dstrongs_grammar": "G1122=N-NPM",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "γραμματεύς=scribe",
+          "dictionary_forms": [
+            "γραμματεύς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "scribes",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1122",
+          "alt_strongs": ""
+        },
+        {
+          "position": 5,
+          "raw_reference": "Jhn.8.3#05=KO",
+          "word_type": "KO",
+          "surface": "καὶ",
+          "greek_raw": "καὶ (kai)",
+          "dstrongs_grammar": "G2532=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "καί=and",
+          "dictionary_forms": [
+            "καί"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "and",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2532_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 6,
+          "raw_reference": "Jhn.8.3#06=KO",
+          "word_type": "KO",
+          "surface": "οἱ",
+          "greek_raw": "οἱ (hoi)",
+          "dstrongs_grammar": "G3588=T-NPM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "the",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 7,
+          "raw_reference": "Jhn.8.3#07=KO",
+          "word_type": "KO",
+          "surface": "Φαρισαῖοι",
+          "greek_raw": "Φαρισαῖοι (Pharisaioi)",
+          "dstrongs_grammar": "G5330=N-NPM-T",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "Φαρισαῖος=Pharisee",
+          "dictionary_forms": [
+            "Φαρισαῖος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "Pharisees",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G5330",
+          "alt_strongs": ""
+        },
+        {
+          "position": 8,
+          "raw_reference": "Jhn.8.3#08=K",
+          "word_type": "K",
+          "surface": "πρὸς",
+          "greek_raw": "πρὸς (pros)",
+          "dstrongs_grammar": "G4314=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "πρός=to/with",
+          "dictionary_forms": [
+            "πρός"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "to",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G4314",
+          "alt_strongs": ""
+        },
+        {
+          "position": 9,
+          "raw_reference": "Jhn.8.3#09=K",
+          "word_type": "K",
+          "surface": "αὐτὸν",
+          "greek_raw": "αὐτὸν (auton)",
+          "dstrongs_grammar": "G0846=P-ASM",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "αὐτός=he/she/it/self",
+          "dictionary_forms": [
+            "αὐτός"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "him",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0846_a",
+          "alt_strongs": "G3778"
+        },
+        {
+          "position": 10,
+          "raw_reference": "Jhn.8.3#10=KO",
+          "word_type": "KO",
+          "surface": "γυναῖκα",
+          "greek_raw": "γυναῖκα (gunaika)",
+          "dstrongs_grammar": "G1135G=N-ASF",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "γυνή=woman",
+          "dictionary_forms": [
+            "γυνή"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "a woman",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1135",
+          "alt_strongs": ""
+        },
+        {
+          "position": 11,
+          "raw_reference": "Jhn.8.3#11=K(o)",
+          "word_type": "K(o)",
+          "surface": "ἐν",
+          "greek_raw": "ἐν (en)",
+          "dstrongs_grammar": "G1722=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "ἐν=in/on/among",
+          "dictionary_forms": [
+            "ἐν"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "in",
+          "meaning_variants": "ἐπὶ (o=epi) in - G1909=PREP in: NA28+NA27+Tyn+WH",
+          "spelling_variants": "",
+          "sstrong_instance": "G1722_a",
+          "alt_strongs": "G1909"
+        },
+        {
+          "position": 12,
+          "raw_reference": "Jhn.8.3#12=KO",
+          "word_type": "KO",
+          "surface": "μοιχείᾳ",
+          "greek_raw": "μοιχείᾳ (moicheia)",
+          "dstrongs_grammar": "G3430=N-DSF",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "μοιχεία=adultery",
+          "dictionary_forms": [
+            "μοιχεία"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "adultery",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3430",
+          "alt_strongs": ""
+        },
+        {
+          "position": 13,
+          "raw_reference": "Jhn.8.3#13=K(o)",
+          "word_type": "K(o)",
+          "surface": "κατειλημμένην",
+          "greek_raw": "κατειλημμένην (kateilēmmenēn)",
+          "dstrongs_grammar": "G2638=V-RPP-ASF",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "καταλαμβάνω=to grasp",
+          "dictionary_forms": [
+            "καταλαμβάνω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR",
+          "english_translation": "having been grasped",
+          "meaning_variants": "καταλήφθεισαν (o=katalēphtheisan) being grasped - G2638=V-APP-ASF in: Tyn",
+          "spelling_variants": "",
+          "sstrong_instance": "G2638",
+          "alt_strongs": ""
+        },
+        {
+          "position": 14,
+          "raw_reference": "Jhn.8.3#14=KO",
+          "word_type": "KO",
+          "surface": "καὶ",
+          "greek_raw": "καὶ (kai)",
+          "dstrongs_grammar": "G2532=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "καί=and",
+          "dictionary_forms": [
+            "καί"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "and",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2532_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 15,
+          "raw_reference": "Jhn.8.3#15=KO",
+          "word_type": "KO",
+          "surface": "στήσαντες",
+          "greek_raw": "στήσαντες (stēsantes)",
+          "dstrongs_grammar": "G2476=V-AAP-NPM",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἵστημι=to stand",
+          "dictionary_forms": [
+            "ἵστημι"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "having set",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2476",
+          "alt_strongs": ""
+        },
+        {
+          "position": 16,
+          "raw_reference": "Jhn.8.3#16=KO",
+          "word_type": "KO",
+          "surface": "αὐτὴν",
+          "greek_raw": "αὐτὴν (autēn)",
+          "dstrongs_grammar": "G0846=P-ASF",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "αὐτός=he/she/it/self",
+          "dictionary_forms": [
+            "αὐτός"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "her",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0846_b",
+          "alt_strongs": "G3778"
+        },
+        {
+          "position": 17,
+          "raw_reference": "Jhn.8.3#17=KO",
+          "word_type": "KO",
+          "surface": "ἐν",
+          "greek_raw": "ἐν (en)",
+          "dstrongs_grammar": "G1722=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "ἐν=in/on/among",
+          "dictionary_forms": [
+            "ἐν"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "in",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1722_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 18,
+          "raw_reference": "Jhn.8.3#18=KO",
+          "word_type": "KO",
+          "surface": "μέσῳ",
+          "greek_raw": "μέσῳ (mesō)",
+          "dstrongs_grammar": "G3319=A-DSN",
+          "part_of_speech_codes": [
+            "A"
+          ],
+          "dictionary_raw": "μέσος=midst",
+          "dictionary_forms": [
+            "μέσος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "[the] midst",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3319",
+          "alt_strongs": ""
+        }
+      ],
+      "token_count": 18
+    },
+    {
+      "reference": "8:4",
+      "canonical_reference": "John 8:4",
+      "tokens": [
+        {
+          "position": 1,
+          "raw_reference": "Jhn.8.4#01=KO",
+          "word_type": "KO",
+          "surface": "λέγουσιν",
+          "greek_raw": "λέγουσιν (legousin)",
+          "dstrongs_grammar": "G3004G=V-PAI-3P",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "λέγω=to speak",
+          "dictionary_forms": [
+            "λέγω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "they say",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3004",
+          "alt_strongs": ""
+        },
+        {
+          "position": 2,
+          "raw_reference": "Jhn.8.4#02=KO",
+          "word_type": "KO",
+          "surface": "αὐτῷ,",
+          "greek_raw": "αὐτῷ, (autō)",
+          "dstrongs_grammar": "G0846=P-DSM",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "αὐτός=he/she/it/self",
+          "dictionary_forms": [
+            "αὐτός"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "to Him,",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0846",
+          "alt_strongs": "G3778"
+        },
+        {
+          "position": 3,
+          "raw_reference": "Jhn.8.4#03=O",
+          "word_type": "O",
+          "surface": "πειράζοντες",
+          "greek_raw": "πειράζοντες (peirazontes)",
+          "dstrongs_grammar": "G3985H=V-PAP-NPM",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "πειράζω=to test/tempt",
+          "dictionary_forms": [
+            "πειράζω"
+          ],
+          "editions": "Byz",
+          "english_translation": "testing",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3985",
+          "alt_strongs": ""
+        },
+        {
+          "position": 4,
+          "raw_reference": "Jhn.8.4#04=KO",
+          "word_type": "KO",
+          "surface": "διδάσκαλε,",
+          "greek_raw": "διδάσκαλε, (didaskale)",
+          "dstrongs_grammar": "G1320=N-VSM-T",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "διδάσκαλος=teacher",
+          "dictionary_forms": [
+            "διδάσκαλος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "Teacher,",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1320",
+          "alt_strongs": ""
+        },
+        {
+          "position": 5,
+          "raw_reference": "Jhn.8.4#05=KO",
+          "word_type": "KO",
+          "surface": "αὕτη",
+          "greek_raw": "αὕτη (hautē)",
+          "dstrongs_grammar": "G3778=D-NSF",
+          "part_of_speech_codes": [
+            "D"
+          ],
+          "dictionary_raw": "οὗτος=this/he/she/it",
+          "dictionary_forms": [
+            "οὗτος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "this",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3778",
+          "alt_strongs": ""
+        },
+        {
+          "position": 6,
+          "raw_reference": "Jhn.8.4#06=KO",
+          "word_type": "KO",
+          "surface": "ἡ",
+          "greek_raw": "ἡ (hē)",
+          "dstrongs_grammar": "G3588=T-NSF",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "<the>",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588",
+          "alt_strongs": ""
+        },
+        {
+          "position": 7,
+          "raw_reference": "Jhn.8.4#07=KO",
+          "word_type": "KO",
+          "surface": "γυνὴ",
+          "greek_raw": "γυνὴ (gunē)",
+          "dstrongs_grammar": "G1135G=N-NSF",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "γυνή=woman",
+          "dictionary_forms": [
+            "γυνή"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "woman",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1135",
+          "alt_strongs": ""
+        },
+        {
+          "position": 8,
+          "raw_reference": "Jhn.8.4#08=K(o)",
+          "word_type": "K(o)",
+          "surface": "κατείληφθη",
+          "greek_raw": "κατείληφθη (kateilēphthē)",
+          "dstrongs_grammar": "G2638=V-2API-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "καταλαμβάνω=to grasp",
+          "dictionary_forms": [
+            "καταλαμβάνω"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "was grasped",
+          "meaning_variants": "κατείληπται (o=kateilēptai) has been grasped - G2638=V-RPI-3S in: NA28+NA27+Tyn+WH",
+          "spelling_variants": "Byz: κατελήφθη ;",
+          "sstrong_instance": "G2638",
+          "alt_strongs": ""
+        },
+        {
+          "position": 9,
+          "raw_reference": "Jhn.8.4#09=ko",
+          "word_type": "ko",
+          "surface": "ἐπ᾽",
+          "greek_raw": "ἐπ᾽ (ep᾽)",
+          "dstrongs_grammar": "G1909=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "ἐπί=upon/to/against",
+          "dictionary_forms": [
+            "ἐπί"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR»0+Byz",
+          "english_translation": "in",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1909",
+          "alt_strongs": ""
+        },
+        {
+          "position": 10,
+          "raw_reference": "Jhn.8.4#10=KO",
+          "word_type": "KO",
+          "surface": "αὐτοφώρῳ",
+          "greek_raw": "αὐτοφώρῳ (autophōrō)",
+          "dstrongs_grammar": "G1888=A-DSM",
+          "part_of_speech_codes": [
+            "A"
+          ],
+          "dictionary_raw": "ἐπαυτόφωρος, αὐτόφωρος=in the very act",
+          "dictionary_forms": [
+            "ἐπαυτόφωρος, αὐτόφωρος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "[the] very act",
+          "meaning_variants": "",
+          "spelling_variants": "TR: ἐπαυτοφώρῳ ; +Byz: αὐτοφόρῳ ;",
+          "sstrong_instance": "G1888",
+          "alt_strongs": ""
+        },
+        {
+          "position": 11,
+          "raw_reference": "Jhn.8.4#11=KO",
+          "word_type": "KO",
+          "surface": "μοιχευομένη·",
+          "greek_raw": "μοιχευομένη· (moicheuomenē)",
+          "dstrongs_grammar": "G3431=V-PPP-NSF",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "μοιχεύω=to commit adultery",
+          "dictionary_forms": [
+            "μοιχεύω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "committing adultery;",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3431",
+          "alt_strongs": ""
+        }
+      ],
+      "token_count": 11
+    },
+    {
+      "reference": "8:5",
+      "canonical_reference": "John 8:5",
+      "tokens": [
+        {
+          "position": 1,
+          "raw_reference": "Jhn.8.5#01=KO",
+          "word_type": "KO",
+          "surface": "ἐν",
+          "greek_raw": "ἐν (en)",
+          "dstrongs_grammar": "G1722=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "ἐν=in/on/among",
+          "dictionary_forms": [
+            "ἐν"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "In",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1722",
+          "alt_strongs": ""
+        },
+        {
+          "position": 2,
+          "raw_reference": "Jhn.8.5#02=KO",
+          "word_type": "KO",
+          "surface": "δὲ",
+          "greek_raw": "δὲ (de)",
+          "dstrongs_grammar": "G1161=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "δέ=but/and",
+          "dictionary_forms": [
+            "δέ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "now",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1161",
+          "alt_strongs": ""
+        },
+        {
+          "position": 3,
+          "raw_reference": "Jhn.8.5#03=KO",
+          "word_type": "KO",
+          "surface": "τῷ",
+          "greek_raw": "τῷ (tō)",
+          "dstrongs_grammar": "G3588=T-DSM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "the",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 4,
+          "raw_reference": "Jhn.8.5#04=KO",
+          "word_type": "KO",
+          "surface": "νόμῳ",
+          "greek_raw": "νόμῳ (nomō)",
+          "dstrongs_grammar": "G3551=N-DSM",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "νόμος=law",
+          "dictionary_forms": [
+            "νόμος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "law",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3551",
+          "alt_strongs": ""
+        },
+        {
+          "position": 5,
+          "raw_reference": "Jhn.8.5#05=KO",
+          "word_type": "KO",
+          "surface": "ἡμῖν",
+          "greek_raw": "ἡμῖν (hēmin)",
+          "dstrongs_grammar": "G3165=P-1DP",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "ἐγώ=I/we",
+          "dictionary_forms": [
+            "ἐγώ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR»1+Byz»1",
+          "english_translation": "us",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3165",
+          "alt_strongs": "G2254"
+        },
+        {
+          "position": 6,
+          "raw_reference": "Jhn.8.5#06=KO",
+          "word_type": "KO",
+          "surface": "Μωϋσῆς",
+          "greek_raw": "Μωϋσῆς (Mōusēs)",
+          "dstrongs_grammar": "G3475=N-NSM-P",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "Μωϋσῆς, Μωσῆς=Moses",
+          "dictionary_forms": [
+            "Μωϋσῆς, Μωσῆς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "Moses",
+          "meaning_variants": "",
+          "spelling_variants": "TR+Byz: Μωσῆς ;",
+          "sstrong_instance": "G3475",
+          "alt_strongs": ""
+        },
+        {
+          "position": 7,
+          "raw_reference": "Jhn.8.5#07=KO",
+          "word_type": "KO",
+          "surface": "ἐνετείλατο",
+          "greek_raw": "ἐνετείλατο (eneteilato)",
+          "dstrongs_grammar": "G1781=V-ADI-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἐντέλλω=to order",
+          "dictionary_forms": [
+            "ἐντέλλω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "commanded",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1781",
+          "alt_strongs": ""
+        },
+        {
+          "position": 8,
+          "raw_reference": "Jhn.8.5#08=KO",
+          "word_type": "KO",
+          "surface": "τὰς",
+          "greek_raw": "τὰς (tas)",
+          "dstrongs_grammar": "G3588=T-APF",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "<the>",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 9,
+          "raw_reference": "Jhn.8.5#09=KO",
+          "word_type": "KO",
+          "surface": "τοιαύτας",
+          "greek_raw": "τοιαύτας (toiautas)",
+          "dstrongs_grammar": "G5108=D-APF",
+          "part_of_speech_codes": [
+            "D"
+          ],
+          "dictionary_raw": "τοιοῦτος=such as this",
+          "dictionary_forms": [
+            "τοιοῦτος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "such",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G5108",
+          "alt_strongs": ""
+        },
+        {
+          "position": 10,
+          "raw_reference": "Jhn.8.5#10=K(o)",
+          "word_type": "K(o)",
+          "surface": "λιθοβολεῖσθαι·",
+          "greek_raw": "λιθοβολεῖσθαι· (lithoboleisthai)",
+          "dstrongs_grammar": "G3036=V-PPN",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "λιθοβολέω=to stone",
+          "dictionary_forms": [
+            "λιθοβολέω"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "to be stoned;",
+          "meaning_variants": "λιθάζειν (o=lithazein) to stone - G3034=V-PAN in: NA28+NA27+Tyn+WH",
+          "spelling_variants": "",
+          "sstrong_instance": "G3036",
+          "alt_strongs": "G3034"
+        },
+        {
+          "position": 11,
+          "raw_reference": "Jhn.8.5#11=KO",
+          "word_type": "KO",
+          "surface": "σὺ",
+          "greek_raw": "σὺ (su)",
+          "dstrongs_grammar": "G4771=P-2NS",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "σύ=you",
+          "dictionary_forms": [
+            "σύ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "You yourself",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G4771",
+          "alt_strongs": ""
+        },
+        {
+          "position": 12,
+          "raw_reference": "Jhn.8.5#12=KO",
+          "word_type": "KO",
+          "surface": "οὖν",
+          "greek_raw": "οὖν (oun)",
+          "dstrongs_grammar": "G3767=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "οὖν=therefore/then",
+          "dictionary_forms": [
+            "οὖν"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "therefore",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3767",
+          "alt_strongs": ""
+        },
+        {
+          "position": 13,
+          "raw_reference": "Jhn.8.5#13=KO",
+          "word_type": "KO",
+          "surface": "τί",
+          "greek_raw": "τί (ti)",
+          "dstrongs_grammar": "G5101=I-ASN",
+          "part_of_speech_codes": [
+            "I"
+          ],
+          "dictionary_raw": "τίς=which?",
+          "dictionary_forms": [
+            "τίς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "what",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G5101",
+          "alt_strongs": ""
+        },
+        {
+          "position": 14,
+          "raw_reference": "Jhn.8.5#14=KO",
+          "word_type": "KO",
+          "surface": "λέγεις;",
+          "greek_raw": "λέγεις; (legeis)",
+          "dstrongs_grammar": "G3004G=V-PAI-2S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "λέγω=to speak",
+          "dictionary_forms": [
+            "λέγω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "say You?",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3004",
+          "alt_strongs": ""
+        }
+      ],
+      "token_count": 14
+    },
+    {
+      "reference": "8:6",
+      "canonical_reference": "John 8:6",
+      "tokens": [
+        {
+          "position": 1,
+          "raw_reference": "Jhn.8.6#01=KO",
+          "word_type": "KO",
+          "surface": "τοῦτο",
+          "greek_raw": "τοῦτο (touto)",
+          "dstrongs_grammar": "G3778=D-ASN",
+          "part_of_speech_codes": [
+            "D"
+          ],
+          "dictionary_raw": "οὗτος=this/he/she/it",
+          "dictionary_forms": [
+            "οὗτος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "This",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3778",
+          "alt_strongs": "G5124"
+        },
+        {
+          "position": 2,
+          "raw_reference": "Jhn.8.6#02=KO",
+          "word_type": "KO",
+          "surface": "δὲ",
+          "greek_raw": "δὲ (de)",
+          "dstrongs_grammar": "G1161=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "δέ=but/and",
+          "dictionary_forms": [
+            "δέ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "now",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1161_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 3,
+          "raw_reference": "Jhn.8.6#03=KO",
+          "word_type": "KO",
+          "surface": "ἔλεγον",
+          "greek_raw": "ἔλεγον (elegon)",
+          "dstrongs_grammar": "G3004G=V-IAI-3P",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "λέγω=to speak",
+          "dictionary_forms": [
+            "λέγω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "they were saying",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3004",
+          "alt_strongs": ""
+        },
+        {
+          "position": 4,
+          "raw_reference": "Jhn.8.6#04=KO",
+          "word_type": "KO",
+          "surface": "πειράζοντες",
+          "greek_raw": "πειράζοντες (peirazontes)",
+          "dstrongs_grammar": "G3985H=V-PAP-NPM",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "πειράζω=to test/tempt",
+          "dictionary_forms": [
+            "πειράζω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "testing",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3985",
+          "alt_strongs": ""
+        },
+        {
+          "position": 5,
+          "raw_reference": "Jhn.8.6#05=KO",
+          "word_type": "KO",
+          "surface": "αὐτόν,",
+          "greek_raw": "αὐτόν, (auton)",
+          "dstrongs_grammar": "G0846=P-ASM",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "αὐτός=he/she/it/self",
+          "dictionary_forms": [
+            "αὐτός"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "Him",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0846_a",
+          "alt_strongs": "G3778"
+        },
+        {
+          "position": 6,
+          "raw_reference": "Jhn.8.6#06=KO",
+          "word_type": "KO",
+          "surface": "ἵνα",
+          "greek_raw": "ἵνα (ina)",
+          "dstrongs_grammar": "G2443=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "ἵνα=in order that/to",
+          "dictionary_forms": [
+            "ἵνα"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "so that",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2443",
+          "alt_strongs": "G3363"
+        },
+        {
+          "position": 7,
+          "raw_reference": "Jhn.8.6#07=KO",
+          "word_type": "KO",
+          "surface": "ἔχωσιν",
+          "greek_raw": "ἔχωσιν (echōsin)",
+          "dstrongs_grammar": "G2192=V-PAS-3P",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἔχω=to have/be",
+          "dictionary_forms": [
+            "ἔχω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "they may have [grounds]",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2192",
+          "alt_strongs": ""
+        },
+        {
+          "position": 8,
+          "raw_reference": "Jhn.8.6#08=KO",
+          "word_type": "KO",
+          "surface": "κατηγορεῖν",
+          "greek_raw": "κατηγορεῖν (katēgorein)",
+          "dstrongs_grammar": "G2723=V-PAN",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "κατηγορέω=to accuse",
+          "dictionary_forms": [
+            "κατηγορέω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "to accuse",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2723",
+          "alt_strongs": ""
+        },
+        {
+          "position": 9,
+          "raw_reference": "Jhn.8.6#09=KO",
+          "word_type": "KO",
+          "surface": "αὐτοῦ.",
+          "greek_raw": "αὐτοῦ. (autou)",
+          "dstrongs_grammar": "G0846=P-GSM",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "αὐτός=he/she/it/self",
+          "dictionary_forms": [
+            "αὐτός"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "Him.",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0846_b",
+          "alt_strongs": "G3778"
+        },
+        {
+          "position": 10,
+          "raw_reference": "Jhn.8.6#10=KO",
+          "word_type": "KO",
+          "surface": "ὁ",
+          "greek_raw": "ὁ (ho)",
+          "dstrongs_grammar": "G3588=T-NSM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "<the>",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 11,
+          "raw_reference": "Jhn.8.6#11=KO",
+          "word_type": "KO",
+          "surface": "δὲ",
+          "greek_raw": "δὲ (de)",
+          "dstrongs_grammar": "G1161=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "δέ=but/and",
+          "dictionary_forms": [
+            "δέ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "But",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1161_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 12,
+          "raw_reference": "Jhn.8.6#12=KO",
+          "word_type": "KO",
+          "surface": "Ἰησοῦς",
+          "greek_raw": "Ἰησοῦς (Iēsous)",
+          "dstrongs_grammar": "G2424G=N-NSM-P",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "Ἰησοῦς=Jesus/Joshua",
+          "dictionary_forms": [
+            "Ἰησοῦς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "Jesus",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2424",
+          "alt_strongs": ""
+        },
+        {
+          "position": 13,
+          "raw_reference": "Jhn.8.6#13=KO",
+          "word_type": "KO",
+          "surface": "κάτω",
+          "greek_raw": "κάτω (katō)",
+          "dstrongs_grammar": "G2736=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "κάτω=under",
+          "dictionary_forms": [
+            "κάτω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "down",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2736",
+          "alt_strongs": ""
+        },
+        {
+          "position": 14,
+          "raw_reference": "Jhn.8.6#14=KO",
+          "word_type": "KO",
+          "surface": "κύψας",
+          "greek_raw": "κύψας (kupsas)",
+          "dstrongs_grammar": "G2955=V-AAP-NSM",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "κύπτω=to stoop/bend down",
+          "dictionary_forms": [
+            "κύπτω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "having stooped",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2955",
+          "alt_strongs": "G6049"
+        },
+        {
+          "position": 15,
+          "raw_reference": "Jhn.8.6#15=KO",
+          "word_type": "KO",
+          "surface": "τῷ",
+          "greek_raw": "τῷ (tō)",
+          "dstrongs_grammar": "G3588=T-DSM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "<the>",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 16,
+          "raw_reference": "Jhn.8.6#16=KO",
+          "word_type": "KO",
+          "surface": "δακτύλῳ",
+          "greek_raw": "δακτύλῳ (daktulō)",
+          "dstrongs_grammar": "G1147=N-DSM",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "δάκτυλος=finger",
+          "dictionary_forms": [
+            "δάκτυλος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "with [His] finger",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1147",
+          "alt_strongs": ""
+        },
+        {
+          "position": 17,
+          "raw_reference": "Jhn.8.6#17=K(o)",
+          "word_type": "K(o)",
+          "surface": "ἔγραφεν",
+          "greek_raw": "ἔγραφεν (egraphen)",
+          "dstrongs_grammar": "G1125=V-IAI-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "γράφω=to write",
+          "dictionary_forms": [
+            "γράφω"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "he was writing",
+          "meaning_variants": "κατέγραφεν (o=kategraphen) he was delineating - G6047=V-IAI-3S in: NA28+NA27+Tyn+WH",
+          "spelling_variants": "",
+          "sstrong_instance": "G1125",
+          "alt_strongs": "G6047"
+        },
+        {
+          "position": 18,
+          "raw_reference": "Jhn.8.6#18=KO",
+          "word_type": "KO",
+          "surface": "εἰς",
+          "greek_raw": "εἰς (eis)",
+          "dstrongs_grammar": "G1519=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "εἰς=toward",
+          "dictionary_forms": [
+            "εἰς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "on",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1519",
+          "alt_strongs": ""
+        },
+        {
+          "position": 19,
+          "raw_reference": "Jhn.8.6#19=KO",
+          "word_type": "KO",
+          "surface": "τὴν",
+          "greek_raw": "τὴν (tēn)",
+          "dstrongs_grammar": "G3588=T-ASF",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "the",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_c",
+          "alt_strongs": ""
+        },
+        {
+          "position": 20,
+          "raw_reference": "Jhn.8.6#20=KO",
+          "word_type": "KO",
+          "surface": "γῆν.",
+          "greek_raw": "γῆν. (gēn)",
+          "dstrongs_grammar": "G1093I=N-ASF",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "γῆ=earth",
+          "dictionary_forms": [
+            "γῆ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "ground.",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1093",
+          "alt_strongs": ""
+        },
+        {
+          "position": 21,
+          "raw_reference": "Jhn.8.6#21=K",
+          "word_type": "K",
+          "surface": "μὴ",
+          "greek_raw": "μὴ (mē)",
+          "dstrongs_grammar": "G3361=PRT-N",
+          "part_of_speech_codes": [
+            "PRT"
+          ],
+          "dictionary_raw": "μή=not",
+          "dictionary_forms": [
+            "μή"
+          ],
+          "editions": "Byz+KJV",
+          "english_translation": "not",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3361",
+          "alt_strongs": ""
+        },
+        {
+          "position": 22,
+          "raw_reference": "Jhn.8.6#22=K",
+          "word_type": "K",
+          "surface": "προσποιούμενος",
+          "greek_raw": "προσποιούμενος (prospoioumenos)",
+          "dstrongs_grammar": "G4364=V-PMP-NSM",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "προσποιέω=to pretend",
+          "dictionary_forms": [
+            "προσποιέω"
+          ],
+          "editions": "Byz+KJV",
+          "english_translation": "pretending",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G4364",
+          "alt_strongs": ""
+        }
+      ],
+      "token_count": 22
+    },
+    {
+      "reference": "8:7",
+      "canonical_reference": "John 8:7",
+      "tokens": [
+        {
+          "position": 1,
+          "raw_reference": "Jhn.8.7#01=KO",
+          "word_type": "KO",
+          "surface": "ὡς",
+          "greek_raw": "ὡς (hōs)",
+          "dstrongs_grammar": "G5613=PRT",
+          "part_of_speech_codes": [
+            "PRT"
+          ],
+          "dictionary_raw": "ὡς=which/how",
+          "dictionary_forms": [
+            "ὡς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "As",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G5613",
+          "alt_strongs": ""
+        },
+        {
+          "position": 2,
+          "raw_reference": "Jhn.8.7#02=KO",
+          "word_type": "KO",
+          "surface": "δὲ",
+          "greek_raw": "δὲ (de)",
+          "dstrongs_grammar": "G1161=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "δέ=but/and",
+          "dictionary_forms": [
+            "δέ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "however",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1161",
+          "alt_strongs": ""
+        },
+        {
+          "position": 3,
+          "raw_reference": "Jhn.8.7#03=KO",
+          "word_type": "KO",
+          "surface": "ἐπέμενον",
+          "greek_raw": "ἐπέμενον (epemenon)",
+          "dstrongs_grammar": "G1961=V-IAI-3P",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἐπιμένω=to remain/keep on",
+          "dictionary_forms": [
+            "ἐπιμένω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "they were continuing",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1961",
+          "alt_strongs": ""
+        },
+        {
+          "position": 4,
+          "raw_reference": "Jhn.8.7#04=KO",
+          "word_type": "KO",
+          "surface": "ἐρωτῶντες",
+          "greek_raw": "ἐρωτῶντες (erōtōntes)",
+          "dstrongs_grammar": "G2065=V-PAP-NPM",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἐρωτάω=to ask",
+          "dictionary_forms": [
+            "ἐρωτάω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "asking",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2065",
+          "alt_strongs": ""
+        },
+        {
+          "position": 5,
+          "raw_reference": "Jhn.8.7#05=KO",
+          "word_type": "KO",
+          "surface": "αὐτόν,",
+          "greek_raw": "αὐτόν, (auton)",
+          "dstrongs_grammar": "G0846=P-ASM",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "αὐτός=he/she/it/self",
+          "dictionary_forms": [
+            "αὐτός"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "Him,",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0846_a",
+          "alt_strongs": "G3778"
+        },
+        {
+          "position": 6,
+          "raw_reference": "Jhn.8.7#06=K(o)",
+          "word_type": "K(o)",
+          "surface": "ἀνακύψας",
+          "greek_raw": "ἀνακύψας (anakupsas)",
+          "dstrongs_grammar": "G0352=V-AAP-NSM",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἀνακύπτω=to straighten up",
+          "dictionary_forms": [
+            "ἀνακύπτω"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "having stood up",
+          "meaning_variants": "ἀνέκυψεν (o=anekupsen) he stood up - G0352=V-AAI-3S in: NA28+NA27+Tyn+WH",
+          "spelling_variants": "",
+          "sstrong_instance": "G0352",
+          "alt_strongs": ""
+        },
+        {
+          "position": 7,
+          "raw_reference": "Jhn.8.7#07=o",
+          "word_type": "o",
+          "surface": "καὶ",
+          "greek_raw": "καὶ (kai)",
+          "dstrongs_grammar": "G2532=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "καί=and",
+          "dictionary_forms": [
+            "καί"
+          ],
+          "editions": "NA28+NA27+Tyn+WH",
+          "english_translation": "also",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2532",
+          "alt_strongs": ""
+        },
+        {
+          "position": 8,
+          "raw_reference": "Jhn.8.7#08=KO",
+          "word_type": "KO",
+          "surface": "εἶπεν",
+          "greek_raw": "εἶπεν (eipen)",
+          "dstrongs_grammar": "G2036=V-2AAI-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἔπω, ἐρῶ, εἶπον=to say",
+          "dictionary_forms": [
+            "ἔπω, ἐρῶ, εἶπον"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "He said",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2036",
+          "alt_strongs": ""
+        },
+        {
+          "position": 9,
+          "raw_reference": "Jhn.8.7#09=K",
+          "word_type": "K",
+          "surface": "πρὸς",
+          "greek_raw": "πρὸς (pros)",
+          "dstrongs_grammar": "G4314=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "πρός=to/with",
+          "dictionary_forms": [
+            "πρός"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "to",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G4314",
+          "alt_strongs": ""
+        },
+        {
+          "position": 10,
+          "raw_reference": "Jhn.8.7#10=K(o)",
+          "word_type": "K(o)",
+          "surface": "αὐτούς,",
+          "greek_raw": "αὐτούς, (autous)",
+          "dstrongs_grammar": "G0846=P-APM",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "αὐτός=he/she/it/self",
+          "dictionary_forms": [
+            "αὐτός"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "them",
+          "meaning_variants": "αὐτοῖς (o=autois) to them - G0846=P-DPM in: NA28+NA27+Tyn+WH",
+          "spelling_variants": "",
+          "sstrong_instance": "G0846_b",
+          "alt_strongs": "G3778"
+        },
+        {
+          "position": 11,
+          "raw_reference": "Jhn.8.7#11=KO",
+          "word_type": "KO",
+          "surface": "ὁ",
+          "greek_raw": "ὁ (ho)",
+          "dstrongs_grammar": "G3588=T-NSM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "The [one]",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 12,
+          "raw_reference": "Jhn.8.7#12=KO",
+          "word_type": "KO",
+          "surface": "ἀναμάρτητος",
+          "greek_raw": "ἀναμάρτητος (anamartētos)",
+          "dstrongs_grammar": "G0361=A-NSM",
+          "part_of_speech_codes": [
+            "A"
+          ],
+          "dictionary_raw": "ἀναμάρτητος=sinless",
+          "dictionary_forms": [
+            "ἀναμάρτητος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "sinless",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0361",
+          "alt_strongs": ""
+        },
+        {
+          "position": 13,
+          "raw_reference": "Jhn.8.7#13=KO",
+          "word_type": "KO",
+          "surface": "ὑμῶν,",
+          "greek_raw": "ὑμῶν, (humōn)",
+          "dstrongs_grammar": "G4771=P-2GP",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "σύ=you",
+          "dictionary_forms": [
+            "σύ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "among you,",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G4771",
+          "alt_strongs": "G5216"
+        },
+        {
+          "position": 14,
+          "raw_reference": "Jhn.8.7#14=K(o)",
+          "word_type": "K(o)",
+          "surface": "πρῶτος",
+          "greek_raw": "πρῶτος (prōtos)",
+          "dstrongs_grammar": "G4413G=A-NSM",
+          "part_of_speech_codes": [
+            "A"
+          ],
+          "dictionary_raw": "πρῶτος=first",
+          "dictionary_forms": [
+            "πρῶτος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR",
+          "english_translation": "[the] first",
+          "meaning_variants": "πρῶτον (o=prōton) first - G4413=A-ASN in: Byz",
+          "spelling_variants": "",
+          "sstrong_instance": "G4413",
+          "alt_strongs": "G4412"
+        },
+        {
+          "position": 15,
+          "raw_reference": "Jhn.8.7#15=KO",
+          "word_type": "KO",
+          "surface": "ἐπ᾽",
+          "greek_raw": "ἐπ᾽ (ep᾽)",
+          "dstrongs_grammar": "G1909=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "ἐπί=upon/to/against",
+          "dictionary_forms": [
+            "ἐπί"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "at",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1909",
+          "alt_strongs": ""
+        },
+        {
+          "position": 16,
+          "raw_reference": "Jhn.8.7#16=KO",
+          "word_type": "KO",
+          "surface": "αὐτὴν",
+          "greek_raw": "αὐτὴν (autēn)",
+          "dstrongs_grammar": "G0846=P-ASF",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "αὐτός=he/she/it/self",
+          "dictionary_forms": [
+            "αὐτός"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "her",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0846_c",
+          "alt_strongs": "G3778"
+        },
+        {
+          "position": 17,
+          "raw_reference": "Jhn.8.7#17=K",
+          "word_type": "K",
+          "surface": "τὸν",
+          "greek_raw": "τὸν (ton)",
+          "dstrongs_grammar": "G3588=T-ASM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "<the>",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 18,
+          "raw_reference": "Jhn.8.7#18=KO",
+          "word_type": "KO",
+          "surface": "βαλέτω",
+          "greek_raw": "βαλέτω (baletō)",
+          "dstrongs_grammar": "G0906G=V-2AAM-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "βάλλω=to throw",
+          "dictionary_forms": [
+            "βάλλω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "he should cast",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0906",
+          "alt_strongs": ""
+        },
+        {
+          "position": 19,
+          "raw_reference": "Jhn.8.7#19=KO",
+          "word_type": "KO",
+          "surface": "λίθον·",
+          "greek_raw": "λίθον· (lithon)",
+          "dstrongs_grammar": "G3037=N-ASM",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "λίθος=stone",
+          "dictionary_forms": [
+            "λίθος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR«2+Byz«2",
+          "english_translation": "stone;",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3037",
+          "alt_strongs": ""
+        }
+      ],
+      "token_count": 19
+    },
+    {
+      "reference": "8:8",
+      "canonical_reference": "John 8:8",
+      "tokens": [
+        {
+          "position": 1,
+          "raw_reference": "Jhn.8.8#01=KO",
+          "word_type": "KO",
+          "surface": "καὶ",
+          "greek_raw": "καὶ (kai)",
+          "dstrongs_grammar": "G2532=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "καί=and",
+          "dictionary_forms": [
+            "καί"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "And",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2532",
+          "alt_strongs": ""
+        },
+        {
+          "position": 2,
+          "raw_reference": "Jhn.8.8#02=KO",
+          "word_type": "KO",
+          "surface": "πάλιν",
+          "greek_raw": "πάλιν (palin)",
+          "dstrongs_grammar": "G3825=ADV",
+          "part_of_speech_codes": [
+            "ADV"
+          ],
+          "dictionary_raw": "πάλιν=again",
+          "dictionary_forms": [
+            "πάλιν"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "again",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3825",
+          "alt_strongs": ""
+        },
+        {
+          "position": 3,
+          "raw_reference": "Jhn.8.8#03=KO",
+          "word_type": "KO",
+          "surface": "κατακύψας",
+          "greek_raw": "κατακύψας (katakupsas)",
+          "dstrongs_grammar": "G2736=PREP + G2955=V-AAP-NSM",
+          "part_of_speech_codes": [
+            "PREP",
+            "V"
+          ],
+          "dictionary_raw": "κάτω=under + κύπτω=to stoop/bend down",
+          "dictionary_forms": [
+            "κάτω",
+            "κύπτω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "being stooped low",
+          "meaning_variants": "",
+          "spelling_variants": "TR+Byz: κάτω κύψας ;",
+          "sstrong_instance": "G2955, G2736",
+          "alt_strongs": ""
+        },
+        {
+          "position": 4,
+          "raw_reference": "Jhn.8.8#04=KO",
+          "word_type": "KO",
+          "surface": "ἔγραφεν",
+          "greek_raw": "ἔγραφεν (egraphen)",
+          "dstrongs_grammar": "G1125=V-IAI-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "γράφω=to write",
+          "dictionary_forms": [
+            "γράφω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "He was writing",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1125",
+          "alt_strongs": ""
+        },
+        {
+          "position": 5,
+          "raw_reference": "Jhn.8.8#05=KO",
+          "word_type": "KO",
+          "surface": "εἰς",
+          "greek_raw": "εἰς (eis)",
+          "dstrongs_grammar": "G1519=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "εἰς=toward",
+          "dictionary_forms": [
+            "εἰς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "on",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1519",
+          "alt_strongs": ""
+        },
+        {
+          "position": 6,
+          "raw_reference": "Jhn.8.8#06=KO",
+          "word_type": "KO",
+          "surface": "τὴν",
+          "greek_raw": "τὴν (tēn)",
+          "dstrongs_grammar": "G3588=T-ASF",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "the",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588",
+          "alt_strongs": ""
+        },
+        {
+          "position": 7,
+          "raw_reference": "Jhn.8.8#07=KO",
+          "word_type": "KO",
+          "surface": "γῆν.",
+          "greek_raw": "γῆν. (gēn)",
+          "dstrongs_grammar": "G1093I=N-ASF",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "γῆ=earth",
+          "dictionary_forms": [
+            "γῆ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "ground.",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1093",
+          "alt_strongs": ""
+        }
+      ],
+      "token_count": 7
+    },
+    {
+      "reference": "8:9",
+      "canonical_reference": "John 8:9",
+      "tokens": [
+        {
+          "position": 1,
+          "raw_reference": "Jhn.8.9#01=KO",
+          "word_type": "KO",
+          "surface": "οἱ",
+          "greek_raw": "οἱ (hoi)",
+          "dstrongs_grammar": "G3588=T-NPM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "<the>",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 2,
+          "raw_reference": "Jhn.8.9#02=KO",
+          "word_type": "KO",
+          "surface": "δὲ",
+          "greek_raw": "δὲ (de)",
+          "dstrongs_grammar": "G1161=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "δέ=but/and",
+          "dictionary_forms": [
+            "δέ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "And",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1161",
+          "alt_strongs": ""
+        },
+        {
+          "position": 3,
+          "raw_reference": "Jhn.8.9#03=KO",
+          "word_type": "KO",
+          "surface": "ἀκούσαντες",
+          "greek_raw": "ἀκούσαντες (akousantes)",
+          "dstrongs_grammar": "G0191=V-AAP-NPM",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἀκούω=to hear",
+          "dictionary_forms": [
+            "ἀκούω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "having heard",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0191",
+          "alt_strongs": ""
+        },
+        {
+          "position": 4,
+          "raw_reference": "Jhn.8.9#04=K",
+          "word_type": "K",
+          "surface": "καὶ",
+          "greek_raw": "καὶ (kai)",
+          "dstrongs_grammar": "G2532=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "καί=and",
+          "dictionary_forms": [
+            "καί"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "and",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2532_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 5,
+          "raw_reference": "Jhn.8.9#05=K",
+          "word_type": "K",
+          "surface": "ὑπὸ",
+          "greek_raw": "ὑπὸ (hupo)",
+          "dstrongs_grammar": "G5259G=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "ὑπό=by/under",
+          "dictionary_forms": [
+            "ὑπό"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "by",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G5259",
+          "alt_strongs": ""
+        },
+        {
+          "position": 6,
+          "raw_reference": "Jhn.8.9#06=K",
+          "word_type": "K",
+          "surface": "τῆς",
+          "greek_raw": "τῆς (tēs)",
+          "dstrongs_grammar": "G3588=T-GSF",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "<the>",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 7,
+          "raw_reference": "Jhn.8.9#07=K",
+          "word_type": "K",
+          "surface": "συνειδήσεως",
+          "greek_raw": "συνειδήσεως (suneidēseōs)",
+          "dstrongs_grammar": "G4893=N-GSF",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "συνείδησις=conscience",
+          "dictionary_forms": [
+            "συνείδησις"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "conscience",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G4893",
+          "alt_strongs": ""
+        },
+        {
+          "position": 8,
+          "raw_reference": "Jhn.8.9#08=K",
+          "word_type": "K",
+          "surface": "ἐλεγχόμενοι",
+          "greek_raw": "ἐλεγχόμενοι (elegchomenoi)",
+          "dstrongs_grammar": "G1651=V-PPP-NPM",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἐλέγχω=to rebuke",
+          "dictionary_forms": [
+            "ἐλέγχω"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "being convicted",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1651",
+          "alt_strongs": ""
+        },
+        {
+          "position": 9,
+          "raw_reference": "Jhn.8.9#09=KO",
+          "word_type": "KO",
+          "surface": "ἐξήρχοντο",
+          "greek_raw": "ἐξήρχοντο (exērchonto)",
+          "dstrongs_grammar": "G1831=V-INI-3P",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἐξέρχομαι=to go out",
+          "dictionary_forms": [
+            "ἐξέρχομαι"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "they were going away",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1831",
+          "alt_strongs": ""
+        },
+        {
+          "position": 10,
+          "raw_reference": "Jhn.8.9#10=KO",
+          "word_type": "KO",
+          "surface": "εἷς",
+          "greek_raw": "εἷς (heis)",
+          "dstrongs_grammar": "G1520=A-NSM",
+          "part_of_speech_codes": [
+            "A"
+          ],
+          "dictionary_raw": "εἷς=one",
+          "dictionary_forms": [
+            "εἷς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "one",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1520_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 11,
+          "raw_reference": "Jhn.8.9#11=KO",
+          "word_type": "KO",
+          "surface": "καθ",
+          "greek_raw": "καθ (kath)",
+          "dstrongs_grammar": "G2596=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "κατά=according to",
+          "dictionary_forms": [
+            "κατά"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "by",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2596",
+          "alt_strongs": ""
+        },
+        {
+          "position": 12,
+          "raw_reference": "Jhn.8.9#12=KO",
+          "word_type": "KO",
+          "surface": "εἷς",
+          "greek_raw": "εἷς (heis)",
+          "dstrongs_grammar": "G1520=A-NSM",
+          "part_of_speech_codes": [
+            "A"
+          ],
+          "dictionary_raw": "εἷς=one",
+          "dictionary_forms": [
+            "εἷς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "one",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1520_b",
+          "alt_strongs": "G1527"
+        },
+        {
+          "position": 13,
+          "raw_reference": "Jhn.8.9#13=KO",
+          "word_type": "KO",
+          "surface": "ἀρξάμενοι",
+          "greek_raw": "ἀρξάμενοι (arxamenoi)",
+          "dstrongs_grammar": "G0757=V-AMP-NPM",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἄρχω=be first",
+          "dictionary_forms": [
+            "ἄρχω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "having begun",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0757",
+          "alt_strongs": "G0756"
+        },
+        {
+          "position": 14,
+          "raw_reference": "Jhn.8.9#14=KO",
+          "word_type": "KO",
+          "surface": "ἀπὸ",
+          "greek_raw": "ἀπὸ (apo)",
+          "dstrongs_grammar": "G0575=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "ἀπό=away from",
+          "dictionary_forms": [
+            "ἀπό"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "from",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0575",
+          "alt_strongs": ""
+        },
+        {
+          "position": 15,
+          "raw_reference": "Jhn.8.9#15=KO",
+          "word_type": "KO",
+          "surface": "τῶν",
+          "greek_raw": "τῶν (tōn)",
+          "dstrongs_grammar": "G3588=T-GPM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "the",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_c",
+          "alt_strongs": ""
+        },
+        {
+          "position": 16,
+          "raw_reference": "Jhn.8.9#16=KO",
+          "word_type": "KO",
+          "surface": "πρεσβυτέρων",
+          "greek_raw": "πρεσβυτέρων (presbuterōn)",
+          "dstrongs_grammar": "G4245H=N-GPM",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "πρεσβύτερος=elder",
+          "dictionary_forms": [
+            "πρεσβύτερος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "elder ones",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G4245",
+          "alt_strongs": ""
+        },
+        {
+          "position": 17,
+          "raw_reference": "Jhn.8.9#17=K",
+          "word_type": "K",
+          "surface": "ἕως",
+          "greek_raw": "ἕως (he'ōs)",
+          "dstrongs_grammar": "G2193=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "ἕως=until",
+          "dictionary_forms": [
+            "ἕως"
+          ],
+          "editions": "TR",
+          "english_translation": "until",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2193",
+          "alt_strongs": "G3755"
+        },
+        {
+          "position": 18,
+          "raw_reference": "Jhn.8.9#18=K",
+          "word_type": "K",
+          "surface": "τῶν",
+          "greek_raw": "τῶν (tōn)",
+          "dstrongs_grammar": "G3588=T-GPM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "TR",
+          "english_translation": "of the",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_d",
+          "alt_strongs": ""
+        },
+        {
+          "position": 19,
+          "raw_reference": "Jhn.8.9#19=K",
+          "word_type": "K",
+          "surface": "ἐσχάτων,",
+          "greek_raw": "ἐσχάτων, (eschatōn)",
+          "dstrongs_grammar": "G2078=A-GPM-S",
+          "part_of_speech_codes": [
+            "A"
+          ],
+          "dictionary_raw": "ἔσχατος=last/least",
+          "dictionary_forms": [
+            "ἔσχατος"
+          ],
+          "editions": "TR",
+          "english_translation": "last",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2078",
+          "alt_strongs": ""
+        },
+        {
+          "position": 20,
+          "raw_reference": "Jhn.8.9#20=KO",
+          "word_type": "KO",
+          "surface": "καὶ",
+          "greek_raw": "καὶ (kai)",
+          "dstrongs_grammar": "G2532=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "καί=and",
+          "dictionary_forms": [
+            "καί"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "and",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2532_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 21,
+          "raw_reference": "Jhn.8.9#21=KO",
+          "word_type": "KO",
+          "surface": "κατελείφθη",
+          "greek_raw": "κατελείφθη (kateleiphthē)",
+          "dstrongs_grammar": "G2641=V-API-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "καταλείπω=to leave behind",
+          "dictionary_forms": [
+            "καταλείπω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "He was left",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2641",
+          "alt_strongs": ""
+        },
+        {
+          "position": 22,
+          "raw_reference": "Jhn.8.9#22=KO",
+          "word_type": "KO",
+          "surface": "μόνος,",
+          "greek_raw": "μόνος, (monos)",
+          "dstrongs_grammar": "G3441=A-NSM",
+          "part_of_speech_codes": [
+            "A"
+          ],
+          "dictionary_raw": "μόνος=alone",
+          "dictionary_forms": [
+            "μόνος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "alone,",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3441",
+          "alt_strongs": ""
+        },
+        {
+          "position": 23,
+          "raw_reference": "Jhn.8.9#23=K",
+          "word_type": "K",
+          "surface": "ὁ",
+          "greek_raw": "ὁ (ho)",
+          "dstrongs_grammar": "G3588=T-NSM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "<the>",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_e",
+          "alt_strongs": ""
+        },
+        {
+          "position": 24,
+          "raw_reference": "Jhn.8.9#24=K",
+          "word_type": "K",
+          "surface": "Ἰησοῦς",
+          "greek_raw": "Ἰησοῦς (Iēsous)",
+          "dstrongs_grammar": "G2424G=N-NSM-P",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "Ἰησοῦς=Jesus/Joshua",
+          "dictionary_forms": [
+            "Ἰησοῦς"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "Jesus",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2424",
+          "alt_strongs": ""
+        },
+        {
+          "position": 25,
+          "raw_reference": "Jhn.8.9#25=KO",
+          "word_type": "KO",
+          "surface": "καὶ",
+          "greek_raw": "καὶ (kai)",
+          "dstrongs_grammar": "G2532=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "καί=and",
+          "dictionary_forms": [
+            "καί"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "and",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2532_c",
+          "alt_strongs": ""
+        },
+        {
+          "position": 26,
+          "raw_reference": "Jhn.8.9#26=KO",
+          "word_type": "KO",
+          "surface": "ἡ",
+          "greek_raw": "ἡ (hē)",
+          "dstrongs_grammar": "G3588=T-NSF",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "the",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_f",
+          "alt_strongs": ""
+        },
+        {
+          "position": 27,
+          "raw_reference": "Jhn.8.9#27=KO",
+          "word_type": "KO",
+          "surface": "γυνὴ",
+          "greek_raw": "γυνὴ (gunē)",
+          "dstrongs_grammar": "G1135G=N-NSF",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "γυνή=woman",
+          "dictionary_forms": [
+            "γυνή"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "woman",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1135",
+          "alt_strongs": ""
+        },
+        {
+          "position": 28,
+          "raw_reference": "Jhn.8.9#28=KO",
+          "word_type": "KO",
+          "surface": "ἐν",
+          "greek_raw": "ἐν (en)",
+          "dstrongs_grammar": "G1722=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "ἐν=in/on/among",
+          "dictionary_forms": [
+            "ἐν"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "in",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1722",
+          "alt_strongs": ""
+        },
+        {
+          "position": 29,
+          "raw_reference": "Jhn.8.9#29=KO",
+          "word_type": "KO",
+          "surface": "μέσῳ",
+          "greek_raw": "μέσῳ (mesō)",
+          "dstrongs_grammar": "G3319=A-DSN",
+          "part_of_speech_codes": [
+            "A"
+          ],
+          "dictionary_raw": "μέσος=midst",
+          "dictionary_forms": [
+            "μέσος"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "[the] midst",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3319",
+          "alt_strongs": ""
+        },
+        {
+          "position": 30,
+          "raw_reference": "Jhn.8.9#30=K(o)",
+          "word_type": "K(o)",
+          "surface": "ἑστῶσα.",
+          "greek_raw": "ἑστῶσα. (hestōsa)",
+          "dstrongs_grammar": "G2476=V-RAP-NSF",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἵστημι=to stand",
+          "dictionary_forms": [
+            "ἵστημι"
+          ],
+          "editions": "TR",
+          "english_translation": "already standing.",
+          "meaning_variants": "οὖσα (o=ousa) being - G1510=V-PAP-NSF in: NA28+NA27+Tyn+WH+Byz",
+          "spelling_variants": "",
+          "sstrong_instance": "G2476",
+          "alt_strongs": "G1510, G5607"
+        }
+      ],
+      "token_count": 30
+    },
+    {
+      "reference": "8:10",
+      "canonical_reference": "John 8:10",
+      "tokens": [
+        {
+          "position": 1,
+          "raw_reference": "Jhn.8.10#01=KO",
+          "word_type": "KO",
+          "surface": "ἀνακύψας",
+          "greek_raw": "ἀνακύψας (anakupsas)",
+          "dstrongs_grammar": "G0352=V-AAP-NSM",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἀνακύπτω=to straighten up",
+          "dictionary_forms": [
+            "ἀνακύπτω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "Having lifted up",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0352",
+          "alt_strongs": ""
+        },
+        {
+          "position": 2,
+          "raw_reference": "Jhn.8.10#02=KO",
+          "word_type": "KO",
+          "surface": "δὲ",
+          "greek_raw": "δὲ (de)",
+          "dstrongs_grammar": "G1161=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "δέ=but/and",
+          "dictionary_forms": [
+            "δέ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "then",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1161",
+          "alt_strongs": ""
+        },
+        {
+          "position": 3,
+          "raw_reference": "Jhn.8.10#03=KO",
+          "word_type": "KO",
+          "surface": "ὁ",
+          "greek_raw": "ὁ (ho)",
+          "dstrongs_grammar": "G3588=T-NSM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "<the>",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 4,
+          "raw_reference": "Jhn.8.10#04=KO",
+          "word_type": "KO",
+          "surface": "Ἰησοῦς",
+          "greek_raw": "Ἰησοῦς (Iēsous)",
+          "dstrongs_grammar": "G2424G=N-NSM-P",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "Ἰησοῦς=Jesus/Joshua",
+          "dictionary_forms": [
+            "Ἰησοῦς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "Jesus",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2424",
+          "alt_strongs": ""
+        },
+        {
+          "position": 5,
+          "raw_reference": "Jhn.8.10#05=K",
+          "word_type": "K",
+          "surface": "καὶ",
+          "greek_raw": "καὶ (kai)",
+          "dstrongs_grammar": "G2532=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "καί=and",
+          "dictionary_forms": [
+            "καί"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "and",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2532",
+          "alt_strongs": ""
+        },
+        {
+          "position": 6,
+          "raw_reference": "Jhn.8.10#06=K",
+          "word_type": "K",
+          "surface": "μηδένα",
+          "greek_raw": "μηδένα (mēdena)",
+          "dstrongs_grammar": "G3367=A-ASM",
+          "part_of_speech_codes": [
+            "A"
+          ],
+          "dictionary_raw": "μηδείς=nothing",
+          "dictionary_forms": [
+            "μηδείς"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "no one",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3367",
+          "alt_strongs": ""
+        },
+        {
+          "position": 7,
+          "raw_reference": "Jhn.8.10#07=K",
+          "word_type": "K",
+          "surface": "θεασάμενος",
+          "greek_raw": "θεασάμενος (theasamenos)",
+          "dstrongs_grammar": "G2300=V-ADP-NSM",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "θεάομαι=to look at",
+          "dictionary_forms": [
+            "θεάομαι"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "having seen",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2300",
+          "alt_strongs": ""
+        },
+        {
+          "position": 8,
+          "raw_reference": "Jhn.8.10#08=K",
+          "word_type": "K",
+          "surface": "πλὴν",
+          "greek_raw": "πλὴν (plēn)",
+          "dstrongs_grammar": "G4133=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "πλήν=but/however",
+          "dictionary_forms": [
+            "πλήν"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "only",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G4133",
+          "alt_strongs": ""
+        },
+        {
+          "position": 9,
+          "raw_reference": "Jhn.8.10#09=K",
+          "word_type": "K",
+          "surface": "τὴς",
+          "greek_raw": "τὴς (tēs)",
+          "dstrongs_grammar": "G3588=T-GSF",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "<the>",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 10,
+          "raw_reference": "Jhn.8.10#10=K",
+          "word_type": "K",
+          "surface": "γυναικός",
+          "greek_raw": "γυναικός (gunaikos)",
+          "dstrongs_grammar": "G1135G=N-GSF",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "γυνή=woman",
+          "dictionary_forms": [
+            "γυνή"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "woman",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1135_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 11,
+          "raw_reference": "Jhn.8.10#11=KO",
+          "word_type": "KO",
+          "surface": "εἶπεν",
+          "greek_raw": "εἶπεν (eipen)",
+          "dstrongs_grammar": "G2036=V-2AAI-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἔπω, ἐρῶ, εἶπον=to say",
+          "dictionary_forms": [
+            "ἔπω, ἐρῶ, εἶπον"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "said",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2036",
+          "alt_strongs": ""
+        },
+        {
+          "position": 12,
+          "raw_reference": "Jhn.8.10#12=KO",
+          "word_type": "KO",
+          "surface": "αὐτῇ·",
+          "greek_raw": "αὐτῇ· (autēa)",
+          "dstrongs_grammar": "G0846=P-DSF",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "αὐτός=he/she/it/self",
+          "dictionary_forms": [
+            "αὐτός"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "to her,",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0846",
+          "alt_strongs": "G3778"
+        },
+        {
+          "position": 13,
+          "raw_reference": "Jhn.8.10#13=K",
+          "word_type": "K",
+          "surface": "ἡ",
+          "greek_raw": "ἡ (hē)",
+          "dstrongs_grammar": "G3588=T-VSF",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "TR",
+          "english_translation": "the",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_c",
+          "alt_strongs": ""
+        },
+        {
+          "position": 14,
+          "raw_reference": "Jhn.8.10#14=K(o)",
+          "word_type": "K(o)",
+          "surface": "γυνή,",
+          "greek_raw": "γυνή, (gunē)",
+          "dstrongs_grammar": "G1135G=N-NSF",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "γυνή=woman",
+          "dictionary_forms": [
+            "γυνή"
+          ],
+          "editions": "TR",
+          "english_translation": "woman,",
+          "meaning_variants": "Γύναι (o=Gunai) O woman - G1135=N-VSF in: NA28+NA27+Tyn+WH",
+          "spelling_variants": "",
+          "sstrong_instance": "G1135_B",
+          "alt_strongs": ""
+        },
+        {
+          "position": 15,
+          "raw_reference": "Jhn.8.10#15=KO",
+          "word_type": "KO",
+          "surface": "ποῦ",
+          "greek_raw": "ποῦ (pou)",
+          "dstrongs_grammar": "G4226=ADV-I",
+          "part_of_speech_codes": [
+            "ADV"
+          ],
+          "dictionary_raw": "ποῦ=where?",
+          "dictionary_forms": [
+            "ποῦ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "where",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G4226",
+          "alt_strongs": ""
+        },
+        {
+          "position": 16,
+          "raw_reference": "Jhn.8.10#16=KO",
+          "word_type": "KO",
+          "surface": "εἰσιν",
+          "greek_raw": "εἰσιν (eisin)",
+          "dstrongs_grammar": "G1510=V-PAI-3P",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "εἰμί=to be",
+          "dictionary_forms": [
+            "εἰμί"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "are they",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1510",
+          "alt_strongs": "G1526"
+        },
+        {
+          "position": 17,
+          "raw_reference": "Jhn.8.10#17=K",
+          "word_type": "K",
+          "surface": "ἐκεῖνοι",
+          "greek_raw": "ἐκεῖνοι (ekeinoi)",
+          "dstrongs_grammar": "G1565=D-NPM",
+          "part_of_speech_codes": [
+            "D"
+          ],
+          "dictionary_raw": "ἐκεῖνος=that",
+          "dictionary_forms": [
+            "ἐκεῖνος"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "they",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1565",
+          "alt_strongs": ""
+        },
+        {
+          "position": 18,
+          "raw_reference": "Jhn.8.10#18=K",
+          "word_type": "K",
+          "surface": "οἱ",
+          "greek_raw": "οἱ (hoi)",
+          "dstrongs_grammar": "G3588=T-NPM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "the",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_d",
+          "alt_strongs": ""
+        },
+        {
+          "position": 19,
+          "raw_reference": "Jhn.8.10#19=K",
+          "word_type": "K",
+          "surface": "κατήγοροί",
+          "greek_raw": "κατήγοροί (katēgoroi)",
+          "dstrongs_grammar": "G2725=N-NPM",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "κατήγορος=accuser",
+          "dictionary_forms": [
+            "κατήγορος"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "accusers",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2725",
+          "alt_strongs": ""
+        },
+        {
+          "position": 20,
+          "raw_reference": "Jhn.8.10#20=K",
+          "word_type": "K",
+          "surface": "σου",
+          "greek_raw": "σου (sou)",
+          "dstrongs_grammar": "G4771=P-2GS",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "σύ=you",
+          "dictionary_forms": [
+            "σύ"
+          ],
+          "editions": "TR+Byz",
+          "english_translation": "of you",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G4771_a",
+          "alt_strongs": "G4675"
+        },
+        {
+          "position": 21,
+          "raw_reference": "Jhn.8.10#21=KO",
+          "word_type": "KO",
+          "surface": "οὐδείς",
+          "greek_raw": "οὐδείς (oudeis)",
+          "dstrongs_grammar": "G3762=A-NSM",
+          "part_of_speech_codes": [
+            "A"
+          ],
+          "dictionary_raw": "οὐδείς=none",
+          "dictionary_forms": [
+            "οὐδείς"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "No [one]",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3762",
+          "alt_strongs": ""
+        },
+        {
+          "position": 22,
+          "raw_reference": "Jhn.8.10#22=KO",
+          "word_type": "KO",
+          "surface": "σε",
+          "greek_raw": "σε (se)",
+          "dstrongs_grammar": "G4771=P-2AS",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "σύ=you",
+          "dictionary_forms": [
+            "σύ"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "you",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G4771_b",
+          "alt_strongs": "G4571"
+        },
+        {
+          "position": 23,
+          "raw_reference": "Jhn.8.10#23=KO",
+          "word_type": "KO",
+          "surface": "κατέκρινεν;",
+          "greek_raw": "κατέκρινεν; (katekrinen)",
+          "dstrongs_grammar": "G2632=V-AAI-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "κατακρίνω=to condemn",
+          "dictionary_forms": [
+            "κατακρίνω"
+          ],
+          "editions": "NA28+NA27+Tyn+WH+TR+Byz",
+          "english_translation": "has condemned?",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2632",
+          "alt_strongs": ""
+        }
+      ],
+      "token_count": 23
+    },
+    {
+      "reference": "8:11",
+      "canonical_reference": "John 8:11",
+      "tokens": [
+        {
+          "position": 1,
+          "raw_reference": "Jhn.8.11#01=KO",
+          "word_type": "KO",
+          "surface": "ἡ",
+          "greek_raw": "ἡ (hē)",
+          "dstrongs_grammar": "G3588=T-NSF",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+WH+TR+Byz",
+          "english_translation": "<the>",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 2,
+          "raw_reference": "Jhn.8.11#02=KO",
+          "word_type": "KO",
+          "surface": "δὲ",
+          "greek_raw": "δὲ (de)",
+          "dstrongs_grammar": "G1161=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "δέ=but/and",
+          "dictionary_forms": [
+            "δέ"
+          ],
+          "editions": "NA28+NA27+WH+TR+Byz",
+          "english_translation": "And",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1161_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 3,
+          "raw_reference": "Jhn.8.11#03=KO",
+          "word_type": "KO",
+          "surface": "εἶπεν,",
+          "greek_raw": "εἶπεν, (eipen)",
+          "dstrongs_grammar": "G2036=V-2AAI-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἔπω, ἐρῶ, εἶπον=to say",
+          "dictionary_forms": [
+            "ἔπω, ἐρῶ, εἶπον"
+          ],
+          "editions": "NA28+NA27+WH+TR+Byz",
+          "english_translation": "she said,",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2036_a",
+          "alt_strongs": ""
+        },
+        {
+          "position": 4,
+          "raw_reference": "Jhn.8.11#04=KO",
+          "word_type": "KO",
+          "surface": "οὐδείς,",
+          "greek_raw": "οὐδείς, (oudeis)",
+          "dstrongs_grammar": "G3762=A-NSM",
+          "part_of_speech_codes": [
+            "A"
+          ],
+          "dictionary_raw": "οὐδείς=none",
+          "dictionary_forms": [
+            "οὐδείς"
+          ],
+          "editions": "NA28+NA27+WH+TR+Byz",
+          "english_translation": "No [one],",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3762",
+          "alt_strongs": ""
+        },
+        {
+          "position": 5,
+          "raw_reference": "Jhn.8.11#05=KO",
+          "word_type": "KO",
+          "surface": "κύριε.",
+          "greek_raw": "κύριε. (kurie)",
+          "dstrongs_grammar": "G2962H=N-VSM",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "κύριος=lord",
+          "dictionary_forms": [
+            "κύριος"
+          ],
+          "editions": "NA28+NA27+WH+TR+Byz",
+          "english_translation": "Sir.",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2962",
+          "alt_strongs": ""
+        },
+        {
+          "position": 6,
+          "raw_reference": "Jhn.8.11#06=KO",
+          "word_type": "KO",
+          "surface": "εἶπεν",
+          "greek_raw": "εἶπεν (eipen)",
+          "dstrongs_grammar": "G2036=V-2AAI-3S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἔπω, ἐρῶ, εἶπον=to say",
+          "dictionary_forms": [
+            "ἔπω, ἐρῶ, εἶπον"
+          ],
+          "editions": "NA28+NA27+WH+TR+Byz",
+          "english_translation": "Said",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2036_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 7,
+          "raw_reference": "Jhn.8.11#07=KO",
+          "word_type": "KO",
+          "surface": "δὲ",
+          "greek_raw": "δὲ (de)",
+          "dstrongs_grammar": "G1161=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "δέ=but/and",
+          "dictionary_forms": [
+            "δέ"
+          ],
+          "editions": "NA28+NA27+WH+TR+Byz",
+          "english_translation": "then",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1161_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 8,
+          "raw_reference": "Jhn.8.11#08=K",
+          "word_type": "K",
+          "surface": "αὐτῇ",
+          "greek_raw": "αὐτῇ (autēa)",
+          "dstrongs_grammar": "G0846=P-DSF",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "αὐτός=he/she/it/self",
+          "dictionary_forms": [
+            "αὐτός"
+          ],
+          "editions": "TR",
+          "english_translation": "to her",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0846",
+          "alt_strongs": "G3778"
+        },
+        {
+          "position": 9,
+          "raw_reference": "Jhn.8.11#09=KO",
+          "word_type": "KO",
+          "surface": "ὁ",
+          "greek_raw": "ὁ (ho)",
+          "dstrongs_grammar": "G3588=T-NSM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+WH+TR+Byz",
+          "english_translation": "<the>",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_b",
+          "alt_strongs": ""
+        },
+        {
+          "position": 10,
+          "raw_reference": "Jhn.8.11#10=KO",
+          "word_type": "KO",
+          "surface": "Ἰησοῦς,",
+          "greek_raw": "Ἰησοῦς, (Iēsous)",
+          "dstrongs_grammar": "G2424G=N-NSM-P",
+          "part_of_speech_codes": [
+            "N"
+          ],
+          "dictionary_raw": "Ἰησοῦς=Jesus/Joshua",
+          "dictionary_forms": [
+            "Ἰησοῦς"
+          ],
+          "editions": "NA28+NA27+WH+TR+Byz",
+          "english_translation": "Jesus,",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2424",
+          "alt_strongs": ""
+        },
+        {
+          "position": 11,
+          "raw_reference": "Jhn.8.11#11=KO",
+          "word_type": "KO",
+          "surface": "οὐδὲ",
+          "greek_raw": "οὐδὲ (oude)",
+          "dstrongs_grammar": "G3761=CONJ-N",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "οὐδέ=and not",
+          "dictionary_forms": [
+            "οὐδέ"
+          ],
+          "editions": "NA28+NA27+WH+TR+Byz",
+          "english_translation": "Neither",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3761",
+          "alt_strongs": ""
+        },
+        {
+          "position": 12,
+          "raw_reference": "Jhn.8.11#12=KO",
+          "word_type": "KO",
+          "surface": "ἐγώ",
+          "greek_raw": "ἐγώ (egō)",
+          "dstrongs_grammar": "G1473=P-1NS",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "ἐγώ=I/we",
+          "dictionary_forms": [
+            "ἐγώ"
+          ],
+          "editions": "NA28+NA27+WH+TR+Byz",
+          "english_translation": "I myself",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G1473",
+          "alt_strongs": ""
+        },
+        {
+          "position": 13,
+          "raw_reference": "Jhn.8.11#13=KO",
+          "word_type": "KO",
+          "surface": "σε",
+          "greek_raw": "σε (se)",
+          "dstrongs_grammar": "G4771=P-2AS",
+          "part_of_speech_codes": [
+            "P"
+          ],
+          "dictionary_raw": "σύ=you",
+          "dictionary_forms": [
+            "σύ"
+          ],
+          "editions": "NA28+NA27+WH+TR+Byz",
+          "english_translation": "you",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G4771",
+          "alt_strongs": "G4571"
+        },
+        {
+          "position": 14,
+          "raw_reference": "Jhn.8.11#14=K(O)",
+          "word_type": "K(O)",
+          "surface": "κατακρίνω·",
+          "greek_raw": "κατακρίνω· (katakrinō)",
+          "dstrongs_grammar": "G2632=V-PAI-1S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "κατακρίνω=to condemn",
+          "dictionary_forms": [
+            "κατακρίνω"
+          ],
+          "editions": "NA28+NA27+WH+TR",
+          "english_translation": "do condemn;",
+          "meaning_variants": "κρίνω (O=krinō) do judge - G2919=V-PAI-1S in: Byz",
+          "spelling_variants": "",
+          "sstrong_instance": "G2632",
+          "alt_strongs": "G2919"
+        },
+        {
+          "position": 15,
+          "raw_reference": "Jhn.8.11#15=KO",
+          "word_type": "KO",
+          "surface": "πορεύου",
+          "greek_raw": "πορεύου (poreuou)",
+          "dstrongs_grammar": "G4198=V-PNM-2S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "πορεύω=to travel",
+          "dictionary_forms": [
+            "πορεύω"
+          ],
+          "editions": "NA28+NA27+WH+TR+Byz",
+          "english_translation": "do go",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G4198",
+          "alt_strongs": ""
+        },
+        {
+          "position": 16,
+          "raw_reference": "Jhn.8.11#16=KO",
+          "word_type": "KO",
+          "surface": "καὶ",
+          "greek_raw": "καὶ (kai)",
+          "dstrongs_grammar": "G2532=CONJ",
+          "part_of_speech_codes": [
+            "CONJ"
+          ],
+          "dictionary_raw": "καί=and",
+          "dictionary_forms": [
+            "καί"
+          ],
+          "editions": "NA28+NA27+TR+Byz",
+          "english_translation": "and",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G2532",
+          "alt_strongs": ""
+        },
+        {
+          "position": 17,
+          "raw_reference": "Jhn.8.11#17=O",
+          "word_type": "O",
+          "surface": "ἀπὸ",
+          "greek_raw": "ἀπὸ (apo)",
+          "dstrongs_grammar": "G0575=PREP",
+          "part_of_speech_codes": [
+            "PREP"
+          ],
+          "dictionary_raw": "ἀπό=away from",
+          "dictionary_forms": [
+            "ἀπό"
+          ],
+          "editions": "NA28+NA27+WH",
+          "english_translation": "from",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0575",
+          "alt_strongs": ""
+        },
+        {
+          "position": 18,
+          "raw_reference": "Jhn.8.11#18=O",
+          "word_type": "O",
+          "surface": "τοῦ",
+          "greek_raw": "τοῦ (tou)",
+          "dstrongs_grammar": "G3588=T-GSM",
+          "part_of_speech_codes": [
+            "T"
+          ],
+          "dictionary_raw": "ὁ=the/this/who",
+          "dictionary_forms": [
+            "ὁ"
+          ],
+          "editions": "NA28+NA27+WH",
+          "english_translation": "<the>",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3588_c",
+          "alt_strongs": ""
+        },
+        {
+          "position": 19,
+          "raw_reference": "Jhn.8.11#19=O",
+          "word_type": "O",
+          "surface": "νῦν",
+          "greek_raw": "νῦν (nun)",
+          "dstrongs_grammar": "G3568=ADV",
+          "part_of_speech_codes": [
+            "ADV"
+          ],
+          "dictionary_raw": "νῦν=now",
+          "dictionary_forms": [
+            "νῦν"
+          ],
+          "editions": "NA28+NA27+WH",
+          "english_translation": "now [on]",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3568",
+          "alt_strongs": "G3569"
+        },
+        {
+          "position": 20,
+          "raw_reference": "Jhn.8.11#20=KO",
+          "word_type": "KO",
+          "surface": "μηκέτι",
+          "greek_raw": "μηκέτι (mēketi)",
+          "dstrongs_grammar": "G3371=ADV-N",
+          "part_of_speech_codes": [
+            "ADV"
+          ],
+          "dictionary_raw": "μηκέτι=never again",
+          "dictionary_forms": [
+            "μηκέτι"
+          ],
+          "editions": "NA28+NA27+WH+TR+Byz",
+          "english_translation": "no more",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G3371",
+          "alt_strongs": ""
+        },
+        {
+          "position": 21,
+          "raw_reference": "Jhn.8.11#21=KO",
+          "word_type": "KO",
+          "surface": "ἁμάρτανε.¶]]",
+          "greek_raw": "ἁμάρτανε.¶]] (hamartane)",
+          "dstrongs_grammar": "G0264=V-PAM-2S",
+          "part_of_speech_codes": [
+            "V"
+          ],
+          "dictionary_raw": "ἁμαρτάνω=to sin",
+          "dictionary_forms": [
+            "ἁμαρτάνω"
+          ],
+          "editions": "NA28+NA27+WH+TR+Byz",
+          "english_translation": "do sin.",
+          "meaning_variants": "",
+          "spelling_variants": "",
+          "sstrong_instance": "G0264",
+          "alt_strongs": ""
+        }
+      ],
+      "token_count": 21
+    }
+  ],
+  "note": "This package completes linguistic analysis availability for the MorphGNT-locked passage gap without representing TAGNT as MorphGNT or claiming token identity with SBLGNT."
+}
