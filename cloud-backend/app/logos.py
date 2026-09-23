@@ -240,6 +240,7 @@ def _passage(reference: str) -> dict:
     # references, but make the vendored English corpus authoritative for English.
     seed_item["reference"] = corpus_item["reference"]
     seed_item["book"] = corpus_item["book"]
+    seed_item["book_id"] = corpus_item["book_id"]
     seed_item["testament"] = corpus_item["testament"]
     seed_item["chapter"] = corpus_item.get("chapter")
     seed_item["verse_start"] = corpus_item.get("verse_start")
