@@ -6,6 +6,18 @@ Logos is the biblical-study section of **Mercy – The Last Hope of Salvation**.
 
 `/pages/logos.html`
 
+## Product model — Bible-First, Study-Deep
+
+The public Logos experience is now organized around a reader-first flow:
+
+`Bible → Testament → Book → Chapter → Verse → Study`
+
+The default screen is the Catholic Bible reader rather than the advanced research workspace. The five primary destinations are **Bible**, **Search**, **Study**, **Saved**, and **More**. A verse tap exposes Study, Bookmark and Copy actions; **Study** hands the exact selected verse to the existing advanced Logos workspace without changing corpus identity, versification or source provenance.
+
+Search supports both canonical references and full-text word/phrase lookup across the vendored Douay-Rheims 1899 corpus. Saved verses are browser-local only and are not uploaded to the Mercy backend.
+
+The advanced workspace remains fully available behind **Study** with parallel Scripture, interlinear tools, Catholic exegesis, Fathers & Catena, background, archaeology, chronology, commentary traditions, preacher tools, maps/media, source rights and Magisterium AI.
+
 ## Current architecture
 
 - GitHub Pages serves the responsive study shell.
@@ -89,6 +101,7 @@ The e-Catholic 2000 host currently displays an **all-rights-reserved** site noti
 Core routes:
 
 - `GET /api/logos/catalog`
+- `GET /api/logos/search?q=bread%20of%20life`
 - `GET /api/logos/source-rights`
 - `GET /api/logos/passage?reference=John%203:16`
 - `GET /api/logos/interlinear?reference=John%201:1`
