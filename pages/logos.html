@@ -11,7 +11,7 @@
 <title>Logos · Catholic Biblical Study · Mercy</title>
 <link rel="manifest" href="../mercy-manifest.webmanifest">
 <link rel="stylesheet" href="../css/mercy.css">
-<link rel="stylesheet" href="../css/logos.css?v=2">
+<link rel="stylesheet" href="../css/logos.css?v=3">
 <link rel="stylesheet" href="../css/logos-greek-integration.css?v=3">
 </head>
 <body>
@@ -98,11 +98,16 @@
     <div class="logos-sheet-handle" aria-hidden="true"></div>
     <div class="logos-sheet-head"><div><span class="logos-kicker">Selected verse</span><h2 id="logosVerseSheetRef"></h2></div><button type="button" class="logos-sheet-close" data-close-verse-sheet aria-label="Close">×</button></div>
     <p id="logosVerseSheetText" class="logos-sheet-text"></p>
+    <fieldset class="logos-highlight-palette"><legend>Highlight this verse</legend><button type="button" data-verse-highlight="yellow">Yellow</button><button type="button" data-verse-highlight="rose">Rose</button><button type="button" data-verse-highlight="mint">Mint</button><button type="button" data-verse-highlight="blue">Blue</button><button type="button" data-verse-highlight="none">Clear</button></fieldset>
     <div class="logos-sheet-actions">
       <button type="button" id="logosVerseStudyAction"><strong>Study</strong><span>Open languages, word analysis and Catholic study tools</span></button>
       <button type="button" id="logosVerseBookmarkAction"><strong>Bookmark</strong><span>Save privately on this device</span></button>
       <button type="button" id="logosVerseCopyAction"><strong>Copy</strong><span>Copy verse text and reference</span></button>
+      <button type="button" id="logosVerseShareText"><strong>Share text</strong><span>Send the verse as words through your device</span></button>
+      <button type="button" id="logosVerseShareImage"><strong>Share image</strong><span>Send a verse card or download its PNG</span></button>
     </div>
+    <div class="logos-share-links"><a id="logosVerseWhatsApp" target="_blank" rel="noopener noreferrer">WhatsApp text</a><a id="logosVerseFacebook" target="_blank" rel="noopener noreferrer">Facebook link</a></div>
+    <p id="logosVerseShareStatus" role="status" aria-live="polite" class="logos-share-status"></p>
   </section>
 </div>
 
@@ -145,7 +150,7 @@
 </main>
 <footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Logos is the biblical-study section of the Mercy Catholic digital mission.</p></div><div><a href="logos.html">Logos</a><a href="catholic-ai.html">Catholic AI</a><a href="sources.html">Sources & editorial policy</a><a href="https://www.vatican.va/" target="_blank" rel="noopener">Holy See</a></div><p class="copyright">© <span data-year></span> Mercy – The Last Hope of Salvation.</p></footer>
 <script src="../javascript/mobile-nav.js?v=2"></script>
-<script src="../javascript/logos.js?v=9"></script>
+<script src="../javascript/logos.js?v=10"></script>
 <script src="../javascript/logos-ot-unified-integration.js?v=5"></script>
 <script src="../javascript/mercy.js?v=12"></script>
 </body>
