@@ -8,6 +8,7 @@
 <title>Saint Profile · Mercy – The Last Hope of Salvation</title>
 <link rel="manifest" href="../mercy-manifest.webmanifest">
 <link rel="stylesheet" href="../css/mercy.css">
+<style>.saint-portrait{max-width:420px;margin:1.5rem auto}.saint-portrait img{display:block;width:100%;max-height:520px;object-fit:contain;border-radius:18px}.saint-portrait figcaption{font: .8rem/1.5 system-ui;color:var(--muted);margin-top:.5rem}.saint-story{max-width:72ch;margin:0 auto}.saint-story p{line-height:1.85}.saint-story h3{margin-top:2rem}.saint-share-options{border:1px solid var(--line);border-radius:18px;padding:1.5rem;max-width:460px;width:calc(100% - 2rem);background:var(--paper);color:var(--ink)}.saint-share-options::backdrop{background:#1d1118a6}.saint-share-options .btn{margin:.25rem}.saint-share-options h2{margin-top:0}</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -31,7 +32,8 @@
 <h2>Loading profile</h2>
 <p>This profile is stored within Mercy – The Last Hope of Salvation, so it does not depend on a third-party saint URL.</p>
 </div>
-<div class="btns" id="saint-share" hidden><a class="btn secondary" id="saint-share-whatsapp" target="_blank" rel="noopener">Share on WhatsApp</a><a class="btn secondary" id="saint-share-facebook" target="_blank" rel="noopener">Share on Facebook</a><button class="btn secondary" id="saint-copy-link" type="button">Copy profile link</button></div>
+<div class="btns" id="saint-share" hidden><button class="btn primary" id="saint-share-open" type="button">Share this saint</button></div>
+<dialog class="saint-share-options" id="saint-share-dialog" aria-labelledby="saint-share-title"><h2 id="saint-share-title">Share this saint</h2><p>Choose where to share the story.</p><div class="btns"><a class="btn secondary" id="saint-share-whatsapp" target="_blank" rel="noopener">WhatsApp</a><a class="btn secondary" id="saint-share-facebook" target="_blank" rel="noopener">Facebook</a><button class="btn secondary" id="saint-share-instagram" type="button">Instagram / phone share</button><button class="btn secondary" id="saint-copy-link" type="button">Copy link</button></div><p id="saint-share-note" aria-live="polite"></p><button class="btn secondary" type="button" id="saint-share-close">Close</button></dialog>
 <div class="callout"><strong>Catholic reference policy.</strong> The biography and feast information displayed here comes from this site's curated Saints directory. For further research, use authoritative Catholic sources such as the Holy See and the Vatican News Saints calendar; external links are supplementary and may change independently of this website.</div>
 <div class="btns"><a class="btn primary" href="https://www.vaticannews.va/en/saints.html" target="_blank" rel="noopener">Vatican News Saints Calendar</a><a class="btn secondary" href="https://www.vatican.va/" target="_blank" rel="noopener">Holy See</a></div>
 </div>
@@ -45,20 +47,34 @@
   if(!id||!/^st-[a-z0-9-]+$/.test(id)){nameEl.textContent='Saint profile not found';feastEl.textContent='No valid saint was selected.';box.innerHTML='<h2>Invalid profile link</h2><p>Please return to the Saints directory and choose a saint.</p>';return}
   try{
     const response=await fetch('saints.html?v=4',{cache:'no-store'});if(!response.ok)throw new Error('directory unavailable');
-    const html=await response.text(),doc=new DOMParser().parseFromString(html,'text/html'),article=doc.getElementById(id);if(!article)throw new Error('saint not found');
+    const [html,detailsResponse,profilesResponse]=await Promise.all([response.text(),fetch('../data/saint-details.json'),fetch('../data/saint-profiles.json')]);
+    const doc=new DOMParser().parseFromString(html,'text/html'),article=doc.getElementById(id);if(!article)throw new Error('saint not found');
+    const details=detailsResponse.ok?(await detailsResponse.json())[id]||{}:{},profile=profilesResponse.ok?(await profilesResponse.json())[id]||null:null;
     const saintName=article.querySelector('h3')?.textContent?.trim()||'Saint',feast=article.querySelector('.badge')?.textContent?.trim()||'Feast information unavailable';
     const bio=[...article.querySelectorAll(':scope > p')].find(p=>!p.classList.contains('saint-source'))?.textContent?.trim()||'';
     const source=article.querySelector('.saint-source a')?.href;
     const themes=(article.dataset.saint||'').split(/\s+/).filter(Boolean).slice(1).map(x=>x.replace(/-/g,' '));
     nameEl.textContent=saintName;feastEl.textContent=feast;document.title=saintName+' · Mercy – The Last Hope of Salvation';box.innerHTML='';
-    const h2=document.createElement('h2');h2.textContent=saintName;box.appendChild(h2);const badge=document.createElement('span');badge.className='badge';badge.textContent=feast;box.appendChild(badge);
-    const h3=document.createElement('h3');h3.textContent='Life and witness';box.appendChild(h3);const p=document.createElement('p');p.textContent=bio;box.appendChild(p);
-    if(themes.length){const th=document.createElement('h3');th.textContent='Themes & context';box.appendChild(th);const tp=document.createElement('p');tp.textContent=themes.join(' · ');box.appendChild(tp)}
-    if(source){const p=document.createElement('p'),a=document.createElement('a');a.href=source;a.target='_blank';a.rel='noopener';a.textContent='Explore the feast date at Vatican News';p.append(a);box.append(p)}
+    const story=document.createElement('div');story.className='saint-story';box.append(story);
+    const badge=document.createElement('span');badge.className='badge';badge.textContent=feast+(details.rank?' · '+details.rank:'');story.append(badge);
+    const add=(tag,text)=>{const el=document.createElement(tag);el.textContent=text;story.append(el);return el};
+    if(profile?.image){const figure=document.createElement('figure');figure.className='saint-portrait';const img=document.createElement('img');img.src='https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(profile.image)+'?width=700';img.alt='Historical image or artwork associated with '+saintName;img.loading='lazy';figure.append(img);const cap=document.createElement('figcaption');cap.textContent=profile.imageCredit||'Image via Wikimedia Commons';cap.append(' · ');const link=document.createElement('a');link.href=profile.imageSource;link.target='_blank';link.rel='noopener';link.textContent='Image source and license';cap.append(link);figure.append(cap);story.append(figure)}
+    add('h3','Famous for');add('p',profile?.famousFor||bio);
+    add('h3','Patronage');add('p',profile?.patronage||details.patronage||'No specific patronage is recorded in this profile.');
+    add('h3','Life and witness');
+    if(profile?.sections){profile.sections.forEach(([heading,paragraph])=>{add('h3',heading);add('p',paragraph)})}
+    else {add('p',bio);add('p','This profile currently has a brief introduction. A longer researched life story will be added as sources are verified.');}
+    if(!profile&&themes.length){add('h3','Themes and context');add('p',themes.join(' · '))}
+    add('h3','Read further');
+    for(const [i,url] of (profile?.sources||[source]).filter(Boolean).entries()){const p=document.createElement('p'),a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';a.textContent=profile?'Church source '+(i+1):'Explore the feast date at Vatican News';p.append(a);story.append(p)}
     const url=new URL(location.href);url.searchParams.set('id',id);const text=`${saintName} — ${feast}. ${bio} ${url.href}`;
     document.getElementById('saint-share-whatsapp').href='https://api.whatsapp.com/send?text='+encodeURIComponent(text);
     document.getElementById('saint-share-facebook').href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(url.href);
-    document.getElementById('saint-copy-link').addEventListener('click',async e=>{try{await navigator.clipboard.writeText(url.href);e.target.textContent='Link copied'}catch{e.target.textContent='Copy the address from your browser'}});
+    const dialog=document.getElementById('saint-share-dialog'),note=document.getElementById('saint-share-note');
+    document.getElementById('saint-share-open').addEventListener('click',()=>dialog.showModal());
+    document.getElementById('saint-share-close').addEventListener('click',()=>dialog.close());
+    document.getElementById('saint-share-instagram').addEventListener('click',async()=>{if(navigator.share){try{await navigator.share({title:saintName,text:`${saintName} — ${feast}`,url:url.href});return}catch(e){if(e.name==='AbortError')return}}try{await navigator.clipboard.writeText(url.href);note.textContent='Link copied. Open Instagram and paste it into a message or your story.'}catch{note.textContent='Copy the page address from your browser to share on Instagram.'}});
+    document.getElementById('saint-copy-link').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(url.href);note.textContent='Profile link copied'}catch{note.textContent='Copy the address from your browser'}});
     document.getElementById('saint-share').hidden=false;
   }catch(err){nameEl.textContent='Saint profile unavailable';feastEl.textContent='The internal directory could not be loaded.';box.innerHTML='<h2>Profile could not be loaded</h2><p>Please return to the Saints directory and try again.</p>'}
 })();
