@@ -19,7 +19,7 @@ def main() -> None:
     style = STYLE.read_text(encoding="utf-8")
 
     require(page, 'data-logos-tab="interlinear"', "normal Interlinear tab")
-    require(page, "logos.js?v=8", "cache-busted unified Logos script")
+    require(page, "logos.js?v=9", "cache-busted unified Logos script")
     require(page, "logos-ot-unified-integration.js?v=5", "cache-busted unified OT recovery script")
     require(page, "logos-greek-integration.css?v=3", "semantic interlinear stylesheet")
     require(page, "complete 73-book Douay-Rheims", "73-book English primary corpus wording")
