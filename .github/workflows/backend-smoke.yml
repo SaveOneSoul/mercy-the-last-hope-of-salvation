@@ -60,6 +60,7 @@ jobs:
           from app.priest_portal import PriestPortalInvite, PriestPortalSession
 
           assert app.version == '2.10.0'
+          assert '/api/logos/semantic/word-study' in {route.path for route in app.routes}
           assert len(BOOK_PROFILES) == 73
           assert len(RESEARCH_LIBRARIES) >= 8
           assert CMSPublication.__tablename__ == 'cms_publications'
