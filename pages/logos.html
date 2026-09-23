@@ -68,10 +68,10 @@
 
 <section class="logos-view-panel logos-search-view" id="logosSearchView" data-logos-view-panel="search" hidden>
   <header class="logos-reader-intro"><div><span class="logos-kicker">Find Scripture</span><h2>Search the Catholic Bible</h2><p>Enter a reference such as <b>John 3:16</b>, or search words and phrases across the complete Douay-Rheims corpus.</p></div></header>
-  <form id="logosBibleSearchForm" class="logos-bible-search">
+  <div id="logosBibleSearchControl" class="logos-bible-search" role="search">
     <label for="logosBibleSearch">Reference, word or phrase</label>
-    <div><input id="logosBibleSearch" autocomplete="off" maxlength="120" placeholder="e.g. John 3:16 or bread of life"><button type="submit">Search</button></div>
-  </form>
+    <div><input id="logosBibleSearch" autocomplete="off" maxlength="120" placeholder="e.g. John 3:16 or bread of life"><button type="button" id="logosBibleSearchBtn">Search</button></div>
+  </div>
   <div id="logosSearchResults" class="logos-search-results" aria-live="polite"><p class="logos-empty-state">Search results will appear here.</p></div>
 </section>
 
