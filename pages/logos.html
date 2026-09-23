@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#5a1020">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
-<meta name="description" content="Logos is the Catholic biblical study section of Mercy, with the complete 73-book Douay-Rheims Catholic Bible, Greek New Testament tools, and Old Testament study lanes for Hebrew/Aramaic, Septuagint Greek, the Clementine Vulgate and English, plus Catholic exegesis, history, chronology and Magisterium AI.">
+<meta name="description" content="Logos is a Bible-first Catholic Scripture reader for the complete 73-book Douay-Rheims Bible, with verse-level access to original-language study, Catholic exegesis, Fathers, history and Magisterium AI.">
 <link rel="canonical" href="https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/pages/logos.html">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Mercy – The Last Hope of Salvation"><meta property="og:title" content="Logos · Catholic Biblical Study"><meta property="og:description" content="Complete 73-book Catholic Bible with Greek New Testament study and unified Old Testament English, Hebrew/Aramaic, Septuagint Greek and Clementine Latin source lanes, plus Catholic exegesis, history, archaeology and commentary traditions."><meta property="og:url" content="https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/pages/logos.html">
 <title>Logos · Catholic Biblical Study · Mercy</title>
 <link rel="manifest" href="../mercy-manifest.webmanifest">
 <link rel="stylesheet" href="../css/mercy.css">
-<link rel="stylesheet" href="../css/logos.css">
+<link rel="stylesheet" href="../css/logos.css?v=2">
 <link rel="stylesheet" href="../css/logos-greek-integration.css?v=1">
 </head>
 <body>
@@ -23,6 +23,90 @@
 <button class="theme-btn" aria-label="Toggle theme">◐</button>
 </header>
 <main id="main">
+<section class="logos-reader-app" aria-label="Logos Catholic Bible">
+<div class="logos-reader-bar">
+  <div class="logos-reader-brand"><span class="logos-reader-mark" aria-hidden="true">✠</span><span><b>LOGOS BIBLE</b><small>Catholic Scripture · Read first, study deeply</small></span></div>
+  <button type="button" class="logos-reader-icon-btn" id="logosSearchShortcut" aria-label="Search the Bible">⌕</button>
+</div>
+
+<nav class="logos-primary-nav" aria-label="Logos primary navigation">
+  <button type="button" class="active" data-logos-view="bible"><span aria-hidden="true">▤</span>Bible</button>
+  <button type="button" data-logos-view="search"><span aria-hidden="true">⌕</span>Search</button>
+  <button type="button" data-logos-view="study"><span aria-hidden="true">✦</span>Study</button>
+  <button type="button" data-logos-view="saved"><span aria-hidden="true">♡</span>Saved</button>
+  <button type="button" data-logos-view="more"><span aria-hidden="true">☰</span>More</button>
+</nav>
+
+<section class="logos-view-panel logos-bible-view" id="logosBibleView" data-logos-view-panel="bible">
+  <header class="logos-reader-intro">
+    <div><span class="logos-kicker">73-book Catholic canon</span><h1>Read the Bible</h1><p>Choose a testament, book and chapter. Tap any verse whenever you want the deeper Logos study tools.</p></div>
+    <button type="button" class="logos-continue-btn" id="logosContinueBtn" hidden>Continue reading</button>
+  </header>
+
+  <div class="logos-testament-toggle" role="tablist" aria-label="Choose testament">
+    <button type="button" class="active" data-testament="OT" role="tab" aria-selected="true">Old Testament</button>
+    <button type="button" data-testament="NT" role="tab" aria-selected="false">New Testament</button>
+  </div>
+
+  <div id="logosBookBrowser" class="logos-book-browser" aria-live="polite"></div>
+
+  <section id="logosChapterPanel" class="logos-chapter-panel" hidden>
+    <div class="logos-reader-panel-head"><button type="button" class="logos-back-btn" id="logosBackToBooks">← Books</button><div><span class="logos-kicker">Choose chapter</span><h2 id="logosChapterBookTitle">Genesis</h2></div></div>
+    <div id="logosChapterGrid" class="logos-chapter-grid"></div>
+  </section>
+
+  <article id="logosReaderPanel" class="logos-scripture-reader" hidden>
+    <header class="logos-scripture-head">
+      <button type="button" class="logos-back-btn" id="logosBackToChapters">← Chapters</button>
+      <div><span class="logos-kicker">Douay-Rheims 1899</span><h2 id="logosReaderHeading">Genesis 1</h2></div>
+      <div class="logos-chapter-nav"><button type="button" id="logosPrevChapter" aria-label="Previous chapter">‹</button><button type="button" id="logosNextChapter" aria-label="Next chapter">›</button></div>
+    </header>
+    <p class="logos-reader-note">Tap a verse for Study, Bookmark or Copy.</p>
+    <div id="logosReaderVerses" class="logos-reader-verses"></div>
+  </article>
+</section>
+
+<section class="logos-view-panel logos-search-view" id="logosSearchView" data-logos-view-panel="search" hidden>
+  <header class="logos-reader-intro"><div><span class="logos-kicker">Find Scripture</span><h2>Search the Catholic Bible</h2><p>Enter a reference such as <b>John 3:16</b>, or search words and phrases across the complete Douay-Rheims corpus.</p></div></header>
+  <div id="logosBibleSearchControl" class="logos-bible-search" role="search">
+    <label for="logosBibleSearch">Reference, word or phrase</label>
+    <div><input id="logosBibleSearch" autocomplete="off" maxlength="120" placeholder="e.g. John 3:16 or bread of life"><button type="button" id="logosBibleSearchBtn">Search</button></div>
+  </div>
+  <div id="logosSearchResults" class="logos-search-results" aria-live="polite"><p class="logos-empty-state">Search results will appear here.</p></div>
+</section>
+
+<section class="logos-view-panel logos-saved-view" id="logosSavedView" data-logos-view-panel="saved" hidden>
+  <header class="logos-reader-intro"><div><span class="logos-kicker">Private on this device</span><h2>Saved verses</h2><p>Bookmarks are stored only in this browser. They are not uploaded to the Mercy backend.</p></div></header>
+  <div id="logosSavedList" class="logos-saved-list"></div>
+</section>
+
+<section class="logos-view-panel logos-more-view" id="logosMoreView" data-logos-view-panel="more" hidden>
+  <header class="logos-reader-intro"><div><span class="logos-kicker">Logos</span><h2>More</h2><p>Open advanced study tools, source records and the wider Mercy mission.</p></div></header>
+  <div class="logos-more-grid">
+    <button type="button" data-open-logos-study><strong>Advanced Study</strong><span>Interlinear, Catholic Exegesis, Fathers, history, archaeology, traditions and Magisterium AI.</span></button>
+    <button type="button" data-open-logos-sources><strong>Sources & Rights</strong><span>Inspect corpus provenance, licences and witness boundaries.</span></button>
+    <a href="catholic-ai.html"><strong>Catholic AI</strong><span>Open the wider Catholic AI workspace.</span></a>
+    <a href="sources.html"><strong>Editorial Sources</strong><span>Read Mercy's source and copyright policy.</span></a>
+    <a href="about.html"><strong>About Mercy</strong><span>Mission, purpose and project information.</span></a>
+  </div>
+</section>
+</section>
+
+<div id="logosVerseSheet" class="logos-verse-sheet" hidden aria-hidden="true">
+  <button type="button" class="logos-sheet-backdrop" data-close-verse-sheet aria-label="Close verse tools"></button>
+  <section class="logos-sheet-card" role="dialog" aria-modal="true" aria-labelledby="logosVerseSheetRef">
+    <div class="logos-sheet-handle" aria-hidden="true"></div>
+    <div class="logos-sheet-head"><div><span class="logos-kicker">Selected verse</span><h2 id="logosVerseSheetRef"></h2></div><button type="button" class="logos-sheet-close" data-close-verse-sheet aria-label="Close">×</button></div>
+    <p id="logosVerseSheetText" class="logos-sheet-text"></p>
+    <div class="logos-sheet-actions">
+      <button type="button" id="logosVerseStudyAction"><strong>Study</strong><span>Open languages, word analysis and Catholic study tools</span></button>
+      <button type="button" id="logosVerseBookmarkAction"><strong>Bookmark</strong><span>Save privately on this device</span></button>
+      <button type="button" id="logosVerseCopyAction"><strong>Copy</strong><span>Copy verse text and reference</span></button>
+    </div>
+  </section>
+</div>
+
+<div id="logosStudyView" class="logos-view-panel logos-study-view" data-logos-view-panel="study" hidden>
 <section class="page-hero logos-hero"><div class="crumb">Mercy · Sacred Scripture</div><h1>Logos</h1><p>Catholic biblical study and exegesis with the complete 73-book English Catholic Bible, a production Greek New Testament study layer, and a unified Old Testament workspace drawing from Hebrew/Aramaic, Septuagint Greek, Clementine Latin and Douay-Rheims English. Source rights, witness boundaries and versification differences are kept explicit while historical, theological, patristic and comparative study tools remain available.</p><div class="logos-language-row" aria-label="Study languages"><span>English</span><span dir="rtl">עברית</span><span>Latina</span><span dir="rtl">ܐܪܡܝܐ</span><span>Ἑλληνικά</span></div></section>
 
 <section class="logos-shell" aria-label="Logos study workspace">
@@ -55,12 +139,13 @@
 <section class="logos-panel logos-ai" aria-labelledby="logosAiHeading"><div class="logos-panel-head"><div><span class="logos-kicker">Magisterium AI</span><h2 id="logosAiHeading">Study this passage by theme</h2></div></div><p class="logos-note">AI explains and synthesizes; it does not replace deterministic Scripture text, source records, historical evidence or the distinction between Catholic teaching and comparative interpretations.</p><div id="logosThemes" class="logos-theme-grid"></div><label class="logos-question">Optional focus or question<textarea id="logosQuestion" rows="3" maxlength="1000" placeholder="For example: explain the first audience, historical setting, Catholic interpretation and what secular evidence actually supports"></textarea></label><div class="logos-ai-actions"><button type="button" class="btn primary" id="logosAskBtn" disabled>Ask Magisterium AI</button><span id="logosSelectedTheme" class="logos-theme-selected">Choose a theme</span></div><div id="logosAiResponse" class="logos-ai-response" aria-live="polite"></div></section>
 </div>
 </section>
+</div>
 
-<section class="section logos-about"><div class="eyebrow">Catholic biblical method</div><h2>Literal sense, source languages, Tradition and history kept distinct</h2><div class="grid"><div class="card"><h3>Complete Catholic English canon</h3><p>The public-domain Douay-Rheims 1899 corpus provides all 73 Catholic books locally from a pinned, integrity-verified source and remains the primary Bible layer.</p></div><div class="card"><h3>Original-language Old Testament workspace</h3><p>Old Testament study can combine OSHB/WLC Hebrew-Aramaic, Septuagint Greek, the Clementine Latin Vulgate and Douay-Rheims English. Greek provenance is book-specific: First1K/Swete is used where its pinned text exists, while Ecclesiastes is identified separately as the pinned Greek Wikisource ecclesiastical LXX witness. The Greek ShareAlike corpus stays isolated, and verse alignment is shown only when verified rather than guessed.</p></div><div class="card"><h3>History, archives & archaeology</h3><p>Secular sources, royal annals, inscriptions, coins and archaeology are classified as direct attestation, synchronism, contextual evidence, disputed identification or reconstruction. They are never treated as automatic proof of theology.</p></div><div class="card"><h3>Commentary traditions</h3><p>Catholic, Jewish, Eastern Christian, Protestant/Evangelical and ecumenical scholarship can be compared while Catholic Magisterial teaching remains clearly identified and distinct.</p></div></div></section>
+<section class="section logos-about" id="logosAboutSection" hidden><div class="eyebrow">Catholic biblical method</div><h2>Literal sense, source languages, Tradition and history kept distinct</h2><div class="grid"><div class="card"><h3>Complete Catholic English canon</h3><p>The public-domain Douay-Rheims 1899 corpus provides all 73 Catholic books locally from a pinned, integrity-verified source and remains the primary Bible layer.</p></div><div class="card"><h3>Original-language Old Testament workspace</h3><p>Old Testament study can combine OSHB/WLC Hebrew-Aramaic, Septuagint Greek, the Clementine Latin Vulgate and Douay-Rheims English. Greek provenance is book-specific: First1K/Swete is used where its pinned text exists, while Ecclesiastes is identified separately as the pinned Greek Wikisource ecclesiastical LXX witness. The Greek ShareAlike corpus stays isolated, and verse alignment is shown only when verified rather than guessed.</p></div><div class="card"><h3>History, archives & archaeology</h3><p>Secular sources, royal annals, inscriptions, coins and archaeology are classified as direct attestation, synchronism, contextual evidence, disputed identification or reconstruction. They are never treated as automatic proof of theology.</p></div><div class="card"><h3>Commentary traditions</h3><p>Catholic, Jewish, Eastern Christian, Protestant/Evangelical and ecumenical scholarship can be compared while Catholic Magisterial teaching remains clearly identified and distinct.</p></div></div></section>
 </main>
 <footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Logos is the biblical-study section of the Mercy Catholic digital mission.</p></div><div><a href="logos.html">Logos</a><a href="catholic-ai.html">Catholic AI</a><a href="sources.html">Sources & editorial policy</a><a href="https://www.vatican.va/" target="_blank" rel="noopener">Holy See</a></div><p class="copyright">© <span data-year></span> Mercy – The Last Hope of Salvation.</p></footer>
 <script src="../javascript/mobile-nav.js?v=2"></script>
-<script src="../javascript/logos.js?v=5"></script>
+<script src="../javascript/logos.js?v=6"></script>
 <script src="../javascript/logos-ot-unified-integration.js?v=4"></script>
 <script src="../javascript/mercy.js?v=12"></script>
 </body>
