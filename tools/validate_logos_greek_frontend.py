@@ -76,7 +76,7 @@ def main() -> None:
     require(script, "Lexical range", "lexical-range disclosure")
     require(script, "contextual sense are kept distinct", "lexical/context distinction")
     require(script, "contextual sense", "contextual semantic wording")
-    require(script, "No morphology is fabricated", "NT annotation-gap rule")
+    require(script, "No morphology or semantic attachment is fabricated", "NT annotation-gap and semantic no-fabrication rule")
     require(script, "Pinned Greek source gap", "NT canonical-only Greek source-gap disclosure")
     require(script, "no Greek text or linguistic annotation is fabricated", "NT source-gap no-fabrication rule")
     require(script, "ShareAlike partition preserved", "NT ShareAlike frontend notice")
