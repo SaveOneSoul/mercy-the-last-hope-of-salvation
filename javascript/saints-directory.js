@@ -5,7 +5,7 @@
   const articles=[...document.querySelectorAll('.saint-list article.saint-item[id]')];
   for(const article of articles){
     const detail=details[article.id]||{},profile=profiles[article.id];
-    if(profile?.image){const img=document.createElement('img');img.className='saint-thumb';img.src='https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(profile.image)+'?width=360';img.alt='Historical image or artwork associated with '+article.querySelector('h3').textContent;img.loading='lazy';article.prepend(img)}
+    if(profile?.image){const img=document.createElement('img');img.className='saint-thumb';img.src='https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(profile.image)+'?width=360';img.alt='Historical image or artwork associated with '+article.querySelector('h3').textContent;img.loading='lazy';img.addEventListener('error',()=>img.remove());article.prepend(img)}
     if(detail.patronage||profile?.patronage){const p=document.createElement('p');p.textContent='Patronage: '+(profile?.patronage||detail.patronage);article.querySelector('.badge').after(p);article.dataset.saint+=' '+p.textContent.toLowerCase()}
     if(detail.rank){const rank=document.createElement('span');rank.className='badge';rank.textContent=detail.rank;article.querySelector('.badge').after(rank)}
   }
