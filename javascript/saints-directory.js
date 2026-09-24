@@ -3,6 +3,7 @@
   if(!detailsResponse.ok||!profilesResponse.ok)return;
   const details=await detailsResponse.json(),profiles=await profilesResponse.json();
   const articles=[...document.querySelectorAll('.saint-list article.saint-item[id]')];
+  const count=document.getElementById('saint-expanded-count');if(count)count.textContent=String(articles.filter(article=>profiles[article.id]?.sections?.length).length);
   for(const article of articles){
     const detail=details[article.id]||{},profile=profiles[article.id];
     if(profile?.image){const img=document.createElement('img');img.className='saint-thumb';img.src='https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(profile.image)+'?width=360';img.alt='Historical image or artwork associated with '+article.querySelector('h3').textContent;img.loading='lazy';img.addEventListener('error',()=>img.remove());article.prepend(img)}
