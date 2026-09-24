@@ -1,0 +1,26 @@
+name: Daily featured saint reminder
+on:
+  schedule:
+    - cron: '30 2 * * *' # 08:00 in India Standard Time
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reminder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Send only when approved credentials are configured
+        env:
+          WHATSAPP_API_URL: ${{ secrets.WHATSAPP_API_URL }}
+          WHATSAPP_ACCESS_TOKEN: ${{ secrets.WHATSAPP_ACCESS_TOKEN }}
+          SAINT_REMINDER_WHATSAPP_RECIPIENT: ${{ secrets.SAINT_REMINDER_WHATSAPP_RECIPIENT }}
+          SAINT_REMINDER_WHATSAPP_TEMPLATE: ${{ vars.SAINT_REMINDER_WHATSAPP_TEMPLATE }}
+          SAINT_REMINDER_WHATSAPP_LANGUAGE: ${{ vars.SAINT_REMINDER_WHATSAPP_LANGUAGE }}
+          SAINT_REMINDER_FACEBOOK_PAGE_ID: ${{ vars.SAINT_REMINDER_FACEBOOK_PAGE_ID }}
+          SAINT_REMINDER_FACEBOOK_PAGE_TOKEN: ${{ secrets.SAINT_REMINDER_FACEBOOK_PAGE_TOKEN }}
+          SAINT_REMINDER_GRAPH_VERSION: ${{ vars.SAINT_REMINDER_GRAPH_VERSION }}
+        run: python scripts/daily_saint_reminder.py ${{ github.event_name == 'workflow_dispatch' && '--dry-run' || '' }}
