@@ -166,6 +166,37 @@ def _live_out(row: LiveBroadcast, include_secret: bool = False):
     return data
 
 
+
+def _youtube_api_error(prefix: str, response: httpx.Response) -> str:
+    """Return a safe, useful YouTube API error without leaking credentials."""
+    reason = None
+    message = None
+    status = None
+    try:
+        payload = response.json()
+        error = payload.get("error")
+        if isinstance(error, dict):
+            status = error.get("status")
+            message = error.get("message")
+            errors = error.get("errors") or []
+            if errors and isinstance(errors[0], dict):
+                reason = errors[0].get("reason")
+        elif isinstance(error, str):
+            reason = error
+            message = payload.get("error_description")
+    except Exception:
+        pass
+
+    parts = [prefix]
+    if reason:
+        parts.append(str(reason)[:120])
+    elif status:
+        parts.append(str(status)[:120])
+    if message:
+        parts.append(str(message).replace("\n", " ")[:300])
+    return ": ".join(parts)
+
+
 def _youtube_configured():
     return all(os.getenv(k, "").strip() for k in (
         "YOUTUBE_CLIENT_ID", "YOUTUBE_CLIENT_SECRET", "YOUTUBE_REFRESH_TOKEN"
@@ -183,7 +214,7 @@ def _youtube_access_token() -> str:
             "grant_type": "refresh_token",
         })
     if r.status_code >= 400:
-        raise HTTPException(status_code=502, detail="youtube_token_refresh_failed")
+        raise HTTPException(status_code=502, detail=_youtube_api_error("youtube_token_refresh_failed", r))
     token = r.json().get("access_token")
     if not token:
         raise HTTPException(status_code=502, detail="youtube_access_token_missing")
@@ -209,7 +240,7 @@ def _youtube_create(title: str, description: str | None, start: datetime | None,
             },
         )
         if b.status_code >= 400:
-            raise HTTPException(status_code=502, detail="youtube_broadcast_create_failed")
+            raise HTTPException(status_code=502, detail=_youtube_api_error("youtube_broadcast_create_failed", b))
         broadcast_id = b.json().get("id")
 
         s = client.post(
@@ -221,7 +252,7 @@ def _youtube_create(title: str, description: str | None, start: datetime | None,
             },
         )
         if s.status_code >= 400:
-            raise HTTPException(status_code=502, detail="youtube_stream_create_failed")
+            raise HTTPException(status_code=502, detail=_youtube_api_error("youtube_stream_create_failed", s))
         stream = s.json()
         stream_id = stream.get("id")
         ingestion = ((stream.get("cdn") or {}).get("ingestionInfo") or {})
@@ -231,7 +262,7 @@ def _youtube_create(title: str, description: str | None, start: datetime | None,
             headers=headers,
         )
         if bind.status_code >= 400:
-            raise HTTPException(status_code=502, detail="youtube_broadcast_bind_failed")
+            raise HTTPException(status_code=502, detail=_youtube_api_error("youtube_broadcast_bind_failed", bind))
     return {
         "broadcast_id": broadcast_id,
         "stream_id": stream_id,
