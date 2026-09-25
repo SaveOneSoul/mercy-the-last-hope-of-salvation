@@ -23,6 +23,26 @@
 <link rel="manifest" href="mercy-manifest.webmanifest">
 <link rel="stylesheet" href="css/mercy.css">
 <link rel="stylesheet" href="css/cms-content.css">
+<style>
+/* Clean umbrella navigation */
+#main-nav{display:flex;align-items:center;gap:.35rem;flex-wrap:wrap;justify-content:center}
+#main-nav>a,.nav-group>summary{display:inline-flex;align-items:center;gap:.25rem;padding:.55rem .65rem;border-radius:999px;text-decoration:none;cursor:pointer;font:700 .86rem/1.2 system-ui;color:inherit}
+.nav-group{position:relative}
+.nav-group>summary{list-style:none}
+.nav-group>summary::-webkit-details-marker{display:none}
+.nav-group>summary::after{content:"⌄";font-size:.8em;opacity:.65}
+.nav-group[open]>summary{background:rgba(90,16,32,.08)}
+.nav-menu{position:absolute;z-index:40;top:calc(100% + .4rem);left:0;min-width:240px;padding:.45rem;border:1px solid var(--line);border-radius:16px;background:var(--card);box-shadow:var(--shadow)}
+.nav-menu a{display:block;padding:.62rem .75rem;border-radius:10px;text-decoration:none;white-space:nowrap}
+.nav-menu a:hover,.nav-menu a:focus{background:rgba(90,16,32,.08)}
+@media(max-width:900px){
+  #main-nav{align-items:stretch}
+  .nav-group{width:100%}
+  .nav-group>summary{width:100%;justify-content:space-between}
+  .nav-menu{position:static;min-width:0;margin:.25rem 0 .4rem .65rem;box-shadow:none}
+  .nav-menu a{white-space:normal}
+}
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -53,7 +73,42 @@
 <header class="topbar">
 <a class="brand" href="index.html"><span class="cross">✠</span><span><b>Save One Soul</b><small>Mercy · The Last Hope of Salvation</small></span></a>
 <button class="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button>
-<nav id="main-nav"><a href="index.html">Home</a><a href="pages/save-one-soul.html">Save One Soul</a><a href="pages/intentions.html">Intentions</a><a href="pages/posts.html">Posts</a><a href="pages/logos.html">Logos</a><a href="pages/codex-fidei.html">Codex Fidei</a><a href="pages/formation-dashboard.html">Formation</a><a href="pages/pro-life.html">Pro-Life</a><a href="pages/saints.html">Saints</a><a href="pages/rosary.html">Rosary</a><a href="pages/prayer.html">Prayer</a><a href="pages/seven-sorrows.html">Seven Sorrows</a><a href="pages/divine-mercy.html">Divine Mercy</a><a href="pages/divine-mercy-chaplet.html">Divine Mercy Chaplet</a><a href="pages/precious-blood.html">Precious Blood</a><a href="pages/eucharistic-miracles.html">Eucharist</a><a href="pages/charis.html">CHARIS</a><a href="pages/deliverance.html">Deliverance</a><a href="pages/catholic-ai.html">Catholic AI</a><a href="pages/about.html">About</a><a href="pages/sources.html">Sources</a></nav>
+<nav id="main-nav">
+<a href="index.html" aria-current="page">Home</a>
+<details class="nav-group"><summary>Mission</summary><div class="nav-menu">
+<a href="pages/save-one-soul.html">Save One Soul</a>
+<a href="pages/intentions.html">Prayer &amp; Mass Intentions</a>
+<a href="pages/posts.html">Posts &amp; Reflections</a>
+</div></details>
+<details class="nav-group"><summary>Codex Fidei</summary><div class="nav-menu">
+<a href="pages/codex-fidei.html">Codex Fidei Home</a>
+<a href="pages/logos.html">Sacred Scripture — Logos</a>
+<a href="pages/theology.html">Theology</a>
+<a href="pages/fathers.html">Church Fathers</a>
+<a href="pages/formation-dashboard.html">Formation Dashboard</a>
+<a href="pages/theology-library.html">Research Library</a>
+</div></details>
+<details class="nav-group"><summary>Devotions</summary><div class="nav-menu">
+<a href="pages/prayer.html">Prayer &amp; Spiritual Life</a>
+<a href="pages/rosary.html">Holy Rosary</a>
+<a href="pages/seven-sorrows.html">Seven Sorrows</a>
+<a href="pages/divine-mercy.html">Divine Mercy</a>
+<a href="pages/divine-mercy-chaplet.html">Divine Mercy Chaplet</a>
+<a href="pages/precious-blood.html">Precious Blood</a>
+<a href="pages/eucharistic-miracles.html">Eucharist</a>
+<a href="pages/deliverance.html">Deliverance &amp; Exorcism Resources</a>
+</div></details>
+<details class="nav-group"><summary>Life &amp; Ministry</summary><div class="nav-menu">
+<a href="pages/saints.html">Saints</a>
+<a href="pages/charis.html">CHARIS &amp; Holy Spirit</a>
+<a href="pages/pro-life.html">Pro-Life</a>
+</div></details>
+<a href="pages/catholic-ai.html">Catholic AI</a>
+<details class="nav-group"><summary>About</summary><div class="nav-menu">
+<a href="pages/about.html">About the Mission</a>
+<a href="pages/sources.html">Sources &amp; Editorial Policy</a>
+</div></details>
+</nav>
 <button class="theme-btn" aria-label="Toggle theme">◐</button>
 </header>
 <main id="main">
