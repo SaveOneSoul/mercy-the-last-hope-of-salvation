@@ -1,4 +1,5 @@
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGE = ROOT / "pages" / "theology.html"
@@ -42,6 +43,22 @@ def main() -> None:
 
     for discipline in DISCIPLINES:
         require(page, f'id="{discipline}"', f"{discipline} discipline section")
+
+    scripture_paths = {
+        "foundations": "Luke 1:1", "trinity": "Matthew 28:19",
+        "christology": "John 1:1", "pneumatology": "Acts 2:4",
+        "ecclesiology": "Matthew 16:18", "mariology": "Luke 1:28",
+        "sacraments": "John 6:51", "moral": "Deuteronomy 6:4",
+        "spiritual": "John 15:5", "eschatology": "1 Corinthians 15:20",
+    }
+    for discipline, reference in scripture_paths.items():
+        start = page.index(f'id="{discipline}"')
+        next_section = page.find('<section class="formation-section"', start + 1)
+        section = page[start:next_section if next_section != -1 else len(page)]
+        require(section, f'href="logos.html#verse={quote(reference, safe="")}"', f"{discipline} Scripture link")
+    logos = (ROOT / "javascript" / "logos.js").read_text(encoding="utf-8")
+    require(logos, "theology.html#", "Logos to Theology return link")
+    require(logos, "?tools=", "native Verse tools fallback link")
 
     for link, label in [
         ('href="logos.html"', "Logos cross-link"),

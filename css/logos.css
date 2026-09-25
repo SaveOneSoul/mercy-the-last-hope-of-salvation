@@ -41,6 +41,11 @@
 .logos-chapter-nav button:disabled{opacity:.35;cursor:not-allowed}
 .logos-reader-note{margin:.2rem 0 1rem;color:var(--muted);font:600 .76rem system-ui}
 .logos-reader-verses{display:grid;gap:.12rem;max-width:820px;margin:0 auto}
+.logos-reader-row,.logos-study-verse-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.45rem;align-items:start}
+.logos-verse-tools{display:inline-flex;align-items:center;justify-content:center;align-self:center;min-height:44px;min-width:100px;padding:.5rem .65rem;border:1px solid #b57f8b;border-radius:10px;background:#fff8f5;color:#681a32;text-decoration:none;text-align:center;font:800 .76rem/1.2 system-ui;touch-action:manipulation}
+.logos-verse-tools:focus-visible,.logos-verse-tools:hover{outline:2px solid #9a4760;outline-offset:2px}
+.logos-theology-guide{display:flex;align-items:center;flex-wrap:wrap;gap:.4rem .6rem;padding:.65rem .8rem;margin:.7rem 0;background:#fff5e3;border:1px solid #e8d0a0;border-radius:12px;font:700 .76rem/1.4 system-ui}
+.logos-theology-guide strong{color:#563044;margin-right:.2rem}.logos-theology-guide a{color:#741c39;text-decoration:underline}
 .logos-reader-verse{display:block;width:100%;border:0;background:transparent;text-align:left;padding:.48rem .42rem;border-radius:10px;color:inherit;font:400 1.12rem/1.82 Georgia,"Times New Roman",serif;cursor:pointer}
 .logos-reader-verse,.logos-study-verse{touch-action:manipulation;-webkit-tap-highlight-color:rgba(118,21,45,.18)}
 .logos-reader-verse:hover,.logos-reader-verse:focus-visible{background:#fbf0ed}
