@@ -87,12 +87,13 @@
 [data-verse-highlight="yellow"]{background:#ffe48a}[data-verse-highlight="rose"]{background:#ffd0d9}[data-verse-highlight="mint"]{background:#b5f1d6}[data-verse-highlight="blue"]{background:#c7e5ff}[data-verse-highlight="none"]{background:#eee}
 .logos-share-links{display:flex;gap:1rem;margin-top:.8rem;font:700 .85rem system-ui}.logos-share-links a{color:#76152d;text-decoration:underline}.logos-share-status{font:600 .8rem system-ui;min-height:1em}
 .logos-art-choice{display:grid;gap:.25rem;margin:.7rem 0;font:700 .8rem system-ui;color:var(--wine)}.logos-art-choice select{width:100%;max-width:330px;border:1px solid var(--line);border-radius:9px;background:#fff;color:#321f29;padding:.55rem;font:inherit}
-.logos-sheet-card{max-height:95vh;overflow:auto}
+.logos-sheet-card{max-height:95vh;max-height:calc(100dvh - env(safe-area-inset-top) - 8px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 .logos-sheet-actions{display:grid;gap:.5rem;margin-top:.85rem}
 .logos-sheet-actions button{display:grid;gap:.18rem;text-align:left;border:1px solid var(--line);background:#fffdfb;border-radius:14px;padding:.8rem .9rem;color:inherit;cursor:pointer}
 .logos-sheet-actions button:first-child{background:#76152d;color:#fff;border-color:#76152d}
 .logos-sheet-actions strong{font:800 .86rem system-ui}
 .logos-sheet-actions span{font:600 .72rem/1.35 system-ui;opacity:.82}
+@media(max-width:800px){.logos-verse-sheet{height:100vh;height:100dvh}.logos-sheet-card{width:100%;padding:.75rem .85rem max(.85rem,env(safe-area-inset-bottom));border-radius:18px 18px 0 0}.logos-sheet-actions{grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem}.logos-sheet-actions button{min-width:0;padding:.65rem}.logos-sheet-actions #logosVerseStudyAction{order:-2}.logos-sheet-actions #logosVerseShareImage{order:-1}.logos-sheet-text{max-height:5.7rem;overflow-y:auto;margin:.4rem 0}.logos-sheet-actions span{font-size:.68rem}.logos-sheet-head{position:sticky;top:-.75rem;z-index:2;background:inherit;padding-top:.4rem}}
 body.logos-sheet-open{overflow:hidden}
 
 body.dark .logos-primary-nav,body.dark .logos-bible-view,body.dark .logos-search-view,body.dark .logos-saved-view,body.dark .logos-more-view,body.dark .logos-book-btn,body.dark .logos-search-result,body.dark .logos-saved-open,body.dark .logos-more-grid button,body.dark .logos-more-grid a,body.dark .logos-sheet-card,body.dark .logos-sheet-actions button,body.dark .logos-empty-state{background:#251c1e;color:#f6efeb}
