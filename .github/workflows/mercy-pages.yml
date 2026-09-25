@@ -36,6 +36,7 @@ jobs:
           cp -R css javascript pages kh _site/
           mkdir -p _site/data
           cp data/saint-details.json data/saint-profiles.json _site/data/
+          cp data/formation-courses.json _site/data/
           if [ -d data/patristic-corpus ]; then
             cp -R data/patristic-corpus _site/data/
           fi
