@@ -9,7 +9,11 @@
       "fathers": [
         "clement-rome",
         "ignatius",
-        "polycarp"
+        "polycarp",
+        "papias",
+        "didache",
+        "hermas",
+        "hippolytus"
       ]
     },
     {
@@ -21,7 +25,18 @@
         "clement-alexandria",
         "origen",
         "athanasius",
-        "cyril-alexandria"
+        "cyril-alexandria",
+        "gregory-thaumaturgus"
+      ]
+    },
+    {
+      "id": "greek-apologists",
+      "name": "Greek Apologists & Early Eastern Writers",
+      "period": "2nd–3rd centuries",
+      "summary": "Greek-speaking apologists and early Eastern writers defended Christianity before pagan and Jewish audiences, developed Logos theology, explained worship and morality, and prepared vocabulary later refined by the great councils.",
+      "fathers": [
+        "athenagoras",
+        "methodius"
       ]
     },
     {
@@ -31,7 +46,8 @@
       "summary": "The Antiochene stream is especially associated with attention to the historical and grammatical sense of Scripture, concrete preaching, and a strong concern to preserve the full reality of Christ's humanity. Its history also contains major Christological controversies, so individual writers must be distinguished carefully.",
       "fathers": [
         "ignatius",
-        "chrysostom"
+        "chrysostom",
+        "theophilus-antioch"
       ]
     },
     {
@@ -51,7 +67,8 @@
       "period": "4th century and beyond",
       "summary": "Syriac theology often teaches through hymn, poetry, symbol and biblical typology. It preserves a Semitic Christian imagination in which worship and theology are deeply interwoven.",
       "fathers": [
-        "ephrem"
+        "ephrem",
+        "isaac-nineveh"
       ]
     },
     {
@@ -76,7 +93,16 @@
         "jerome",
         "augustine",
         "leo",
-        "gregory-great"
+        "gregory-great",
+        "optatus",
+        "rufinus",
+        "paulinus-nola",
+        "peter-chrysologus",
+        "vincent-lerins",
+        "prosper-aquitaine",
+        "caesarius-arles",
+        "isidore-seville",
+        "bede"
       ]
     },
     {
@@ -86,7 +112,18 @@
       "summary": "Later Eastern Fathers received the great councils and developed Christology, spirituality, icon theology and synthesis of earlier patristic thought. In the East, the patristic period is often extended later than in Western periodizations.",
       "fathers": [
         "maximus",
-        "john-damascene"
+        "john-damascene",
+        "epiphanius",
+        "pseudo-dionysius"
+      ]
+    },
+    {
+      "id": "palestinian",
+      "name": "Palestinian & Holy Land Monastic Writers",
+      "period": "5th–7th centuries",
+      "summary": "Writers associated with Palestine and the Holy Land preserve important traditions of monastic biography, ascetic theology, ecclesiastical history and the reception of the ecumenical councils.",
+      "fathers": [
+        "cyril-scythopolis"
       ]
     }
   ],
@@ -166,6 +203,69 @@
     ],
     "john-damascene": [
       "byzantine"
+    ],
+    "papias": [
+      "apostolic"
+    ],
+    "didache": [
+      "apostolic"
+    ],
+    "hermas": [
+      "apostolic"
+    ],
+    "athenagoras": [
+      "greek-apologists"
+    ],
+    "theophilus-antioch": [
+      "antiochene"
+    ],
+    "hippolytus": [
+      "apostolic"
+    ],
+    "methodius": [
+      "greek-apologists"
+    ],
+    "gregory-thaumaturgus": [
+      "alexandrian"
+    ],
+    "optatus": [
+      "latin"
+    ],
+    "rufinus": [
+      "latin"
+    ],
+    "paulinus-nola": [
+      "latin"
+    ],
+    "peter-chrysologus": [
+      "latin"
+    ],
+    "vincent-lerins": [
+      "latin"
+    ],
+    "prosper-aquitaine": [
+      "latin"
+    ],
+    "caesarius-arles": [
+      "latin"
+    ],
+    "isidore-seville": [
+      "latin"
+    ],
+    "bede": [
+      "latin"
+    ],
+    "epiphanius": [
+      "byzantine"
+    ],
+    "cyril-scythopolis": [
+      "palestinian"
+    ],
+    "pseudo-dionysius": [
+      "byzantine"
+    ],
+    "isaac-nineveh": [
+      "syriac"
     ]
   },
   "supplemental": [
@@ -285,6 +385,279 @@
       "bio": "A monk of Mar Saba and major synthesizer of Greek patristic theology. He defended the veneration of icons and organized earlier doctrinal tradition in a form that deeply influenced Byzantine theology.",
       "works": "The Fountain of Knowledge, including On the Orthodox Faith; Three Treatises on the Divine Images; homilies and hymns.",
       "saintLink": null
+    },
+    {
+      "id": "papias",
+      "era": "earliest",
+      "name": "Papias of Hierapolis",
+      "dates": "c. 60–c. 130",
+      "status": "Early bishop and Apostolic Father; saint in some ancient traditions, but status varies by calendar",
+      "school": "Apostolic & Roman",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "A bishop of Hierapolis remembered chiefly through fragments quoted by later writers. Papias valued testimony traced to the elders and preserves important early traditions about apostolic preaching and the origins of Gospel traditions.",
+      "works": "Expositions of the Sayings of the Lord (lost except for fragments).",
+      "saintLink": null
+    },
+    {
+      "id": "didache",
+      "era": "earliest",
+      "name": "The Didache (anonymous early Church manual)",
+      "dates": "late 1st–early 2nd century",
+      "status": "Anonymous apostolic-era Church document; not a personal Father or canonized saint",
+      "school": "Apostolic & Roman",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "An anonymous early Christian church order whose title means 'Teaching.' It preserves instruction on the Two Ways, Baptism, fasting, prayer, Eucharistic thanksgiving, itinerant ministers and local bishops and deacons.",
+      "works": "The Didache / Teaching of the Twelve Apostles.",
+      "saintLink": null
+    },
+    {
+      "id": "hermas",
+      "era": "earliest",
+      "name": "The Shepherd of Hermas",
+      "dates": "2nd century",
+      "status": "Early Christian prophetic-apocalyptic work; author traditionally called Hermas, not securely identified as a canonized saint",
+      "school": "Apostolic & Roman",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "A major early Christian work from Rome combining visions, commandments and parables. It is especially important for repentance after Baptism, moral formation, ecclesial imagery and the spiritual struggle against double-mindedness.",
+      "works": "The Shepherd: Visions, Mandates and Similitudes.",
+      "saintLink": null
+    },
+    {
+      "id": "athenagoras",
+      "era": "early",
+      "name": "Athenagoras of Athens",
+      "dates": "2nd century",
+      "status": "Christian apologist; ecclesiastical writer, not normally listed as a canonized saint",
+      "school": "Greek Apologists & Early Eastern Writers",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "A philosophically trained Christian apologist who defended Christians against charges of atheism, immorality and disloyalty, and gave an early reasoned account of monotheism, the Logos, resurrection and Christian ethics.",
+      "works": "Plea for the Christians; On the Resurrection of the Dead.",
+      "saintLink": null
+    },
+    {
+      "id": "theophilus-antioch",
+      "era": "early",
+      "name": "St. Theophilus of Antioch",
+      "dates": "2nd century; bishop c. 169–c. 183",
+      "status": "Saint · Bishop · early Christian apologist",
+      "school": "Antiochene Tradition",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "Bishop of Antioch and an early apologist whose surviving work addresses pagan criticism, creation, Scripture, providence and moral life. He is notable for an early Christian use of Trinitarian language.",
+      "works": "To Autolycus.",
+      "saintLink": null
+    },
+    {
+      "id": "hippolytus",
+      "era": "early",
+      "name": "St. Hippolytus of Rome",
+      "dates": "c. 170–235",
+      "status": "Saint · priest/theologian · martyr; attribution of several works remains debated",
+      "school": "Apostolic & Roman",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "A prolific Roman Christian writer associated with biblical exegesis, chronology, anti-heretical polemic and early liturgical tradition. Modern scholarship treats the authorship of several works once assigned to him with caution.",
+      "works": "Refutation of All Heresies; Commentary on Daniel; Apostolic Tradition (traditional attribution disputed).",
+      "saintLink": null
+    },
+    {
+      "id": "methodius",
+      "era": "early",
+      "name": "St. Methodius of Olympus",
+      "dates": "d. c. 311",
+      "status": "Saint · Bishop · Martyr · Greek Father",
+      "school": "Greek Apologists & Early Eastern Writers",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "A Greek bishop and martyr who engaged critically with Origen while developing theology of resurrection, virginity, freedom and the goodness of embodied creation.",
+      "works": "Symposium / Banquet of the Ten Virgins; On the Resurrection; other fragments.",
+      "saintLink": null
+    },
+    {
+      "id": "gregory-thaumaturgus",
+      "era": "early",
+      "name": "St. Gregory Thaumaturgus",
+      "dates": "c. 213–c. 270",
+      "status": "Saint · Bishop · early Eastern Father",
+      "school": "Alexandrian Tradition",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "A student of Origen who later became bishop of Neocaesarea in Pontus. He is remembered for missionary leadership, Trinitarian confession and the transmission of Alexandrian theological learning into Asia Minor.",
+      "works": "Address of Thanksgiving to Origen; Canonical Letter; Trinitarian confession attributed in tradition.",
+      "saintLink": null
+    },
+    {
+      "id": "optatus",
+      "era": "nicene",
+      "name": "St. Optatus of Milevis",
+      "dates": "4th century",
+      "status": "Saint · Bishop · Latin/North African Father",
+      "school": "Latin / Western Fathers",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "A North African bishop whose anti-Donatist work defended the universality of the Church, sacramental communion and ecclesial unity during a major schism.",
+      "works": "Against the Donatists (De schismate Donatistarum).",
+      "saintLink": null
+    },
+    {
+      "id": "rufinus",
+      "era": "nicene",
+      "name": "Rufinus of Aquileia",
+      "dates": "c. 344–411",
+      "status": "Priest · translator · ecclesiastical writer; not normally listed as a canonized saint",
+      "school": "Latin / Western Fathers",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "A Latin priest, translator and historian who transmitted major Greek patristic works to the West. His translations of Origen, Eusebius and monastic literature profoundly shaped Latin reception of Eastern theology.",
+      "works": "Latin translations of Origen; continuation/translation of Eusebius's Ecclesiastical History; Commentary on the Apostles' Creed.",
+      "saintLink": null
+    },
+    {
+      "id": "paulinus-nola",
+      "era": "later",
+      "name": "St. Paulinus of Nola",
+      "dates": "c. 354–431",
+      "status": "Saint · Bishop · Latin Father",
+      "school": "Latin / Western Fathers",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "A wealthy Roman aristocrat who embraced ascetic Christian life and became bishop of Nola. His letters and poems reveal theology of friendship, poverty, pilgrimage, relics and the communion of saints.",
+      "works": "Letters; Carmina / Poems.",
+      "saintLink": null
+    },
+    {
+      "id": "peter-chrysologus",
+      "era": "later",
+      "name": "St. Peter Chrysologus",
+      "dates": "c. 380–c. 450",
+      "status": "Saint · Bishop · Doctor of the Church · Latin Father",
+      "school": "Latin / Western Fathers",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "Bishop of Ravenna and celebrated preacher whose compact sermons teach Christology, Baptism, repentance, prayer, fasting and almsgiving in a strongly pastoral style.",
+      "works": "Sermons.",
+      "saintLink": null
+    },
+    {
+      "id": "vincent-lerins",
+      "era": "later",
+      "name": "St. Vincent of Lérins",
+      "dates": "d. c. 445",
+      "status": "Saint · monk · Latin ecclesiastical writer",
+      "school": "Latin / Western Fathers",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "A monk of Lérins best known for reflecting on how authentic doctrine develops while remaining faithful to the apostolic faith received by the universal Church.",
+      "works": "Commonitorium.",
+      "saintLink": null
+    },
+    {
+      "id": "prosper-aquitaine",
+      "era": "later",
+      "name": "St. Prosper of Aquitaine",
+      "dates": "c. 390–c. 455",
+      "status": "Saint · lay theologian and ecclesiastical writer",
+      "school": "Latin / Western Fathers",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "A defender and interpreter of Augustine's theology of grace who later served in the papal chancery. His writings are important for the Western reception of anti-Pelagian theology.",
+      "works": "On the Call of All Nations; anti-Pelagian writings; Chronicle.",
+      "saintLink": null
+    },
+    {
+      "id": "caesarius-arles",
+      "era": "later",
+      "name": "St. Caesarius of Arles",
+      "dates": "c. 470–542",
+      "status": "Saint · Bishop · Latin Father",
+      "school": "Latin / Western Fathers",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "A major pastoral bishop in Gaul whose sermons, monastic rules and conciliar leadership helped form ordinary Christian life after the collapse of Roman rule in the West.",
+      "works": "Sermons; Rule for Virgins; Rule for Monks; conciliar texts associated with Orange II.",
+      "saintLink": null
+    },
+    {
+      "id": "isidore-seville",
+      "era": "later",
+      "name": "St. Isidore of Seville",
+      "dates": "c. 560–636",
+      "status": "Saint · Bishop · Doctor of the Church · late Latin Father",
+      "school": "Latin / Western Fathers",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "Bishop of Seville and encyclopedic scholar whose works preserved and organized biblical, theological and classical learning for the early medieval West.",
+      "works": "Etymologies; Sentences; biblical works; On Ecclesiastical Offices.",
+      "saintLink": null
+    },
+    {
+      "id": "bede",
+      "era": "later",
+      "name": "St. Bede the Venerable",
+      "dates": "c. 673–735",
+      "status": "Saint · Priest · Monk · Doctor of the Church · late Western patristic/early medieval writer",
+      "school": "Latin / Western Fathers",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "Northumbrian monk, biblical commentator and historian whose scholarship joined patristic exegesis, chronology, hagiography and the history of the English Church.",
+      "works": "Ecclesiastical History of the English People; biblical commentaries; On the Reckoning of Time.",
+      "saintLink": null
+    },
+    {
+      "id": "epiphanius",
+      "era": "later",
+      "name": "St. Epiphanius of Salamis",
+      "dates": "c. 315–403",
+      "status": "Saint · Bishop · Greek Father",
+      "school": "Later Greek & Byzantine Tradition",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "Bishop of Salamis in Cyprus and vigorous defender of Nicene orthodoxy. His writings preserve extensive information about ancient sects and theological controversies, though his polemical judgments require careful historical use.",
+      "works": "Panarion; Ancoratus.",
+      "saintLink": null
+    },
+    {
+      "id": "cyril-scythopolis",
+      "era": "later",
+      "name": "Cyril of Scythopolis",
+      "dates": "c. 525–c. 559",
+      "status": "Monk · hagiographer · ecclesiastical writer; not normally listed as a canonized saint in the Latin Church",
+      "school": "Palestinian & Holy Land Monastic Writers",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "A Palestinian monk and biographer whose Lives of monks such as Euthymius and Sabas are indispensable sources for sixth-century Palestinian monasticism and the reception of Chalcedonian Christianity.",
+      "works": "Lives of the Monks of Palestine.",
+      "saintLink": null
+    },
+    {
+      "id": "pseudo-dionysius",
+      "era": "later",
+      "name": "Pseudo-Dionysius the Areopagite",
+      "dates": "late 5th–early 6th century",
+      "status": "Anonymous Christian theologian writing under the name Dionysius; not identifiable with the New Testament convert",
+      "school": "Later Greek & Byzantine Tradition",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "An anonymous Syrian/Byzantine Christian author whose writings profoundly influenced mystical theology, angelology, liturgical symbolism and apophatic theology in East and West.",
+      "works": "Divine Names; Mystical Theology; Celestial Hierarchy; Ecclesiastical Hierarchy; Letters.",
+      "saintLink": null
+    },
+    {
+      "id": "isaac-nineveh",
+      "era": "later",
+      "name": "St. Isaac of Nineveh (Isaac the Syrian)",
+      "dates": "7th century",
+      "status": "Saint in Syriac and Eastern traditions · Bishop briefly · ascetical writer",
+      "school": "Syriac Tradition",
+      "image": "",
+      "imageCredit": "No secure contemporary portrait; historical image to be added when verified.",
+      "bio": "A Syriac ascetical writer renowned for teaching on prayer, compunction, mercy, stillness and the transformation of the heart. His works became influential far beyond the Church of the East in which he lived.",
+      "works": "Ascetical Homilies / Ascetical Discourses.",
+      "saintLink": null
     }
   ],
   "primarySchool": {
@@ -312,6 +685,27 @@
     "leo": "latin",
     "gregory-great": "latin",
     "maximus": "byzantine",
-    "john-damascene": "byzantine"
+    "john-damascene": "byzantine",
+    "papias": "apostolic",
+    "didache": "apostolic",
+    "hermas": "apostolic",
+    "athenagoras": "greek-apologists",
+    "theophilus-antioch": "antiochene",
+    "hippolytus": "apostolic",
+    "methodius": "greek-apologists",
+    "gregory-thaumaturgus": "alexandrian",
+    "optatus": "latin",
+    "rufinus": "latin",
+    "paulinus-nola": "latin",
+    "peter-chrysologus": "latin",
+    "vincent-lerins": "latin",
+    "prosper-aquitaine": "latin",
+    "caesarius-arles": "latin",
+    "isidore-seville": "latin",
+    "bede": "latin",
+    "epiphanius": "byzantine",
+    "cyril-scythopolis": "palestinian",
+    "pseudo-dionysius": "byzantine",
+    "isaac-nineveh": "syriac"
   }
 }
