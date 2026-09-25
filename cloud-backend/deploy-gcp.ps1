@@ -11,6 +11,9 @@ param(
     [ValidateNotNullOrEmpty()][string]$DbPasswordSecretName = "mercy-db-password",
     [ValidateNotNullOrEmpty()][string]$AdminPasswordSecretName = "mercy-admin-password",
     [ValidateNotNullOrEmpty()][string]$AdminSessionSecretName = "mercy-admin-session-secret",
+    [ValidateNotNullOrEmpty()][string]$YouTubeClientIdSecretName = "mercy-youtube-client-id",
+    [ValidateNotNullOrEmpty()][string]$YouTubeClientSecretSecretName = "mercy-youtube-client-secret",
+    [ValidateNotNullOrEmpty()][string]$YouTubeRefreshTokenSecretName = "mercy-youtube-refresh-token",
     [string]$CmsBucketName = "",
     [ValidateNotNullOrEmpty()][string]$DbTier = "db-f1-micro",
     [switch]$RotateDatabasePassword,
@@ -259,6 +262,32 @@ if (-not $adminSessionSecretExists) {
     Write-Host "Admin session-signing secret already exists." -ForegroundColor Green
 }
 
+Write-Host "`nPreparing YouTube Live OAuth credentials..." -ForegroundColor Cyan
+$youtubeSecrets = @(
+    @{ Env = "YOUTUBE_CLIENT_ID"; Secret = $YouTubeClientIdSecretName; Label = "YouTube OAuth Client ID" },
+    @{ Env = "YOUTUBE_CLIENT_SECRET"; Secret = $YouTubeClientSecretSecretName; Label = "YouTube OAuth Client secret" },
+    @{ Env = "YOUTUBE_REFRESH_TOKEN"; Secret = $YouTubeRefreshTokenSecretName; Label = "YouTube OAuth Refresh token" }
+)
+foreach ($entry in $youtubeSecrets) {
+    $exists = Test-GCloudResource @("secrets", "describe", $entry.Secret, "--project", $ProjectId)
+    if (-not $exists) {
+        Write-Host "Enter $($entry.Label). It will NOT be printed or committed to GitHub." -ForegroundColor Yellow
+        $secureValue = Read-Host $entry.Env -AsSecureString
+        $plainValue = Convert-SecureToPlain $secureValue
+        try {
+            if ([string]::IsNullOrWhiteSpace($plainValue)) {
+                throw "$($entry.Env) cannot be empty."
+            }
+            Write-SecretVersion -Secret $entry.Secret -Value $plainValue -Exists $false
+        }
+        finally {
+            $plainValue = $null
+        }
+    } else {
+        Write-Host "YouTube secret already exists: $($entry.Secret)" -ForegroundColor Green
+    }
+}
+
 Write-Host "`nPreparing Cloud Storage for CMS images..." -ForegroundColor Cyan
 $bucketUri = "gs://$CmsBucketName"
 $bucketExists = Test-GCloudResource @("storage", "buckets", "describe", $bucketUri, "--project", $ProjectId)
@@ -293,7 +322,7 @@ Invoke-GCloud projects add-iam-policy-binding $ProjectId `
     --role roles/cloudsql.client `
     --quiet
 
-foreach ($secretToGrant in @($SecretName, $DbPasswordSecretName, $AdminPasswordSecretName, $AdminSessionSecretName)) {
+foreach ($secretToGrant in @($SecretName, $DbPasswordSecretName, $AdminPasswordSecretName, $AdminSessionSecretName, $YouTubeClientIdSecretName, $YouTubeClientSecretSecretName, $YouTubeRefreshTokenSecretName)) {
     Invoke-GCloud secrets add-iam-policy-binding $secretToGrant `
         --project $ProjectId `
         --member "serviceAccount:$runtimeEmail" `
@@ -312,7 +341,7 @@ try {
         --allow-unauthenticated `
         --service-account $runtimeEmail `
         --add-cloudsql-instances $instanceConnectionName `
-        --set-secrets "MAGISTERIUM_API_KEY=${SecretName}:latest,DB_PASS=${DbPasswordSecretName}:latest,ADMIN_PASSWORD=${AdminPasswordSecretName}:latest,ADMIN_SESSION_SECRET=${AdminSessionSecretName}:latest" `
+        --set-secrets "MAGISTERIUM_API_KEY=${SecretName}:latest,DB_PASS=${DbPasswordSecretName}:latest,ADMIN_PASSWORD=${AdminPasswordSecretName}:latest,ADMIN_SESSION_SECRET=${AdminSessionSecretName}:latest,YOUTUBE_CLIENT_ID=${YouTubeClientIdSecretName}:latest,YOUTUBE_CLIENT_SECRET=${YouTubeClientSecretSecretName}:latest,YOUTUBE_REFRESH_TOKEN=${YouTubeRefreshTokenSecretName}:latest" `
         --set-env-vars "CORS_ORIGINS=https://saveonesoul.github.io,PUBLIC_SITE_BASE=https://saveonesoul.github.io/mercy-the-last-hope-of-salvation,MAGISTERIUM_MODEL=magisterium-1,MAGISTERIUM_TIMEOUT_SECONDS=90,ENABLE_DOCS=false,DB_USER=$DbUser,DB_NAME=$DbName,INSTANCE_UNIX_SOCKET=$instanceUnixSocket,DB_POOL_SIZE=5,DB_MAX_OVERFLOW=2,DB_POOL_RECYCLE_SECONDS=1800,CMS_BUCKET=$CmsBucketName" `
         --memory 512Mi `
         --cpu 1 `
@@ -372,6 +401,7 @@ Write-Host "`nPRODUCTION BACKEND + ADMIN CMS READY" -ForegroundColor Green
 Write-Host "Cloud SQL connection : $instanceConnectionName"
 Write-Host "Database             : $DbName"
 Write-Host "CMS image bucket     : $bucketUri"
+Write-Host "YouTube Live OAuth   : configured through Secret Manager"
 Write-Host "Backend              : $serviceUrl"
 Write-Host "Admin Dashboard      : $serviceUrl/admin"
 Write-Host "Frontend origin      : https://saveonesoul.github.io"
