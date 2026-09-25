@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "policy": {
+    "purpose": "Vendor public-domain patristic editions into the repository so readers do not depend on external sites at runtime.",
+    "rules": [
+      "Only import editions verified as public domain or otherwise explicitly licensed for redistribution.",
+      "Preserve edition, translator, publication year, upstream identifier, and provenance.",
+      "Do not represent fragmentary works as complete.",
+      "Do not import modern copyrighted translations without permission."
+    ]
+  },
+  "sources": [
+    {
+      "id": "apostolic-fathers-1870",
+      "corpus": "apostolic",
+      "title": "The Writings of the Apostolic Fathers",
+      "author_label": "Apostolic Fathers",
+      "edition": "Ante-Nicene Christian Library, vol. I",
+      "translators": "Alexander Roberts, James Donaldson, F. Crombie",
+      "publication_year": 1870,
+      "rights": "Public domain edition; Project Gutenberg eBook 77576",
+      "source_url": "https://www.gutenberg.org/files/77576/77576-h/77576-h.htm",
+      "gutenberg_id": 77576,
+      "expected_works": [
+        "1 Clement",
+        "2 Clement",
+        "Polycarp to the Philippians",
+        "Martyrdom of Polycarp",
+        "Epistle of Barnabas",
+        "Ignatius: Ephesians",
+        "Ignatius: Magnesians",
+        "Ignatius: Trallians",
+        "Ignatius: Romans",
+        "Ignatius: Philadelphians",
+        "Ignatius: Smyrnaeans",
+        "Ignatius: Polycarp",
+        "Epistle to Diognetus",
+        "Shepherd of Hermas",
+        "Fragments of Papias"
+      ]
+    },
+    {
+      "id": "didache-1884",
+      "corpus": "apostolic",
+      "title": "Teaching of the Twelve Apostles (Didache)",
+      "author_label": "Anonymous",
+      "edition": "Hitchcock and Brown edition",
+      "publication_year": 1884,
+      "rights": "Public domain edition; Project Gutenberg eBook 42053",
+      "source_url": "https://www.gutenberg.org/files/42053/42053-h/42053-h.htm",
+      "gutenberg_id": 42053,
+      "expected_works": [
+        "Didache"
+      ]
+    },
+    {
+      "id": "origen-vol-1-1869",
+      "corpus": "alexandrian",
+      "title": "The Writings of Origen, Vol. I",
+      "author_label": "Origen",
+      "edition": "Ante-Nicene Christian Library",
+      "translators": "Frederick Crombie",
+      "publication_year": 1869,
+      "rights": "Public domain edition; Project Gutenberg eBook 70561",
+      "source_url": "https://www.gutenberg.org/files/70561/70561-h/70561-h.htm",
+      "gutenberg_id": 70561,
+      "expected_works": [
+        "De Principiis",
+        "Letter to Africanus",
+        "Letter to Gregory",
+        "Against Celsus Book I"
+      ]
+    },
+    {
+      "id": "origen-vol-2-1872",
+      "corpus": "alexandrian",
+      "title": "The Writings of Origen, Vol. II",
+      "author_label": "Origen",
+      "edition": "Ante-Nicene Christian Library, vol. XXIII",
+      "translators": "Frederick Crombie; W. H. Cairns",
+      "publication_year": 1872,
+      "rights": "Public domain edition; Project Gutenberg eBook 70693",
+      "source_url": "https://www.gutenberg.org/files/70693/70693-h/70693-h.htm",
+      "gutenberg_id": 70693,
+      "expected_works": [
+        "Against Celsus Books II–VIII"
+      ]
+    },
+    {
+      "id": "hippolytus-apostolic-tradition-1934",
+      "corpus": "apostolic",
+      "title": "The Apostolic Tradition",
+      "author_label": "Traditionally attributed to Hippolytus",
+      "edition": "Burton Scott Easton translation",
+      "publication_year": 1934,
+      "rights": "Public domain in the United States; Project Gutenberg eBook 61614",
+      "source_url": "https://www.gutenberg.org/files/61614/61614-h/61614-h.htm",
+      "gutenberg_id": 61614,
+      "caution": "Modern scholarship disputes direct attribution of the whole text to Hippolytus.",
+      "expected_works": [
+        "Apostolic Tradition"
+      ]
+    }
+  ],
+  "lost_or_fragmentary": [
+    {
+      "id": "hexapla",
+      "author_label": "Origen",
+      "title": "Hexapla",
+      "status": "lost-fragmentary",
+      "note": "The original Hexapla does not survive complete. The local library must contain only verified surviving fragments/reconstructions and must never label them as the complete Hexapla.",
+      "preferred_public_domain_edition": "Frederick Field, Origenis Hexaplorum quae supersunt (1875), 2 vols."
+    }
+  ]
+}

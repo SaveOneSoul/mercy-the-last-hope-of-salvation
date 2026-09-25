@@ -1,0 +1,57 @@
+name: Vendor Patristic Corpus
+
+on:
+  push:
+    paths:
+      - "scripts/vendor_patristic_corpus.py"
+      - "data/patristic-corpus-sources.json"
+      - ".github/workflows/vendor-patristic-corpus.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  vendor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Vendor verified public-domain texts
+        run: python scripts/vendor_patristic_corpus.py
+
+      - name: Validate generated corpus
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path("data/patristic-corpus")
+          index = json.loads((root / "index.json").read_text(encoding="utf-8"))
+          assert index["runtime_network_required"] is False
+          assert len(index["sources"]) >= 5
+          for row in index["sources"]:
+              source = json.loads((root / row["index"]).read_text(encoding="utf-8"))
+              assert source["section_count"] > 4
+              assert source["word_count"] > 1000
+          print("Validated", len(index["sources"]), "local source volumes")
+          PY
+
+      - name: Commit vendored corpus
+        run: |
+          if git diff --quiet -- data/patristic-corpus; then
+            echo "Corpus already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/patristic-corpus
+          git commit -m "Vendor public-domain patristic corpus [skip ci]"
+          git push
