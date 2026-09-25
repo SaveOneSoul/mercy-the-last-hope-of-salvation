@@ -415,7 +415,12 @@ def admin_delete_live(live_id: int, request: Request, session: dict = Depends(re
 def public_live(db: Session = Depends(get_db)):
     current = db.query(LiveBroadcast).filter(
         LiveBroadcast.show_on_homepage.is_(True),
-        LiveBroadcast.status.in_(["live", "ready", "scheduled"])
-    ).order_by(LiveBroadcast.status.desc(), LiveBroadcast.scheduled_start.asc()).first()
+        LiveBroadcast.status == "live",
+    ).order_by(LiveBroadcast.scheduled_start.asc()).first()
+    if current is None:
+        current = db.query(LiveBroadcast).filter(
+            LiveBroadcast.show_on_homepage.is_(True),
+            LiveBroadcast.status.in_(["ready", "scheduled"]),
+        ).order_by(LiveBroadcast.scheduled_start.asc()).first()
     recent = db.query(LiveBroadcast).filter(LiveBroadcast.status == "completed").order_by(LiveBroadcast.updated_at.desc()).limit(12).all()
     return {"current": _live_out(current) if current else None, "recent": [_live_out(x) for x in recent]}
