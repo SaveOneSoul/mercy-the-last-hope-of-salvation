@@ -286,5 +286,32 @@
       "works": "The Fountain of Knowledge, including On the Orthodox Faith; Three Treatises on the Divine Images; homilies and hymns.",
       "saintLink": null
     }
-  ]
+  ],
+  "primarySchool": {
+    "clement-rome": "apostolic",
+    "ignatius": "apostolic",
+    "polycarp": "apostolic",
+    "justin": "apostolic",
+    "irenaeus": "apostolic",
+    "clement-alexandria": "alexandrian",
+    "origen": "alexandrian",
+    "athanasius": "alexandrian",
+    "cyril-alexandria": "alexandrian",
+    "chrysostom": "antiochene",
+    "basil": "cappadocian",
+    "gregory-nazianzen": "cappadocian",
+    "gregory-nyssa": "cappadocian",
+    "ephrem": "syriac",
+    "cyril-jerusalem": "jerusalem",
+    "tertullian": "latin",
+    "cyprian": "latin",
+    "hilary": "latin",
+    "ambrose": "latin",
+    "jerome": "latin",
+    "augustine": "latin",
+    "leo": "latin",
+    "gregory-great": "latin",
+    "maximus": "byzantine",
+    "john-damascene": "byzantine"
+  }
 }
