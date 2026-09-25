@@ -1,0 +1,290 @@
+{
+  "note": "The labels below describe broad intellectual, exegetical, linguistic and regional traditions. They are study aids, not rigid denominational boxes. A Father may belong to more than one stream, and 'Alexandrian' or 'Antiochene' can refer to methods and networks as well as a formal school.",
+  "schools": [
+    {
+      "id": "apostolic",
+      "name": "Apostolic & Roman",
+      "period": "1st–2nd centuries",
+      "summary": "The earliest post-apostolic witnesses emphasize continuity with the apostles, ordered ministry, unity, moral formation, martyrdom and the common life of the local Church.",
+      "fathers": [
+        "clement-rome",
+        "ignatius",
+        "polycarp"
+      ]
+    },
+    {
+      "id": "alexandrian",
+      "name": "Alexandrian Tradition",
+      "period": "2nd–5th centuries",
+      "summary": "Alexandrian theology is marked by strong interest in Christ as the divine Logos, the spiritual unity of Scripture, typology and allegorical interpretation, theological synthesis, and later a powerful defense of Nicene and incarnational faith.",
+      "fathers": [
+        "clement-alexandria",
+        "origen",
+        "athanasius",
+        "cyril-alexandria"
+      ]
+    },
+    {
+      "id": "antiochene",
+      "name": "Antiochene Tradition",
+      "period": "4th–5th centuries",
+      "summary": "The Antiochene stream is especially associated with attention to the historical and grammatical sense of Scripture, concrete preaching, and a strong concern to preserve the full reality of Christ's humanity. Its history also contains major Christological controversies, so individual writers must be distinguished carefully.",
+      "fathers": [
+        "ignatius",
+        "chrysostom"
+      ]
+    },
+    {
+      "id": "cappadocian",
+      "name": "Cappadocian Fathers",
+      "period": "4th century",
+      "summary": "Basil of Caesarea, Gregory of Nazianzus and Gregory of Nyssa gave decisive precision to Trinitarian language while uniting doctrine with monastic, pastoral and spiritual theology.",
+      "fathers": [
+        "basil",
+        "gregory-nazianzen",
+        "gregory-nyssa"
+      ]
+    },
+    {
+      "id": "syriac",
+      "name": "Syriac Tradition",
+      "period": "4th century and beyond",
+      "summary": "Syriac theology often teaches through hymn, poetry, symbol and biblical typology. It preserves a Semitic Christian imagination in which worship and theology are deeply interwoven.",
+      "fathers": [
+        "ephrem"
+      ]
+    },
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem Catechetical Tradition",
+      "period": "4th century",
+      "summary": "Jerusalem's surviving catechetical tradition is especially important for Creed, Baptism, chrismation, Eucharist and mystagogy, showing doctrine as initiation into the sacramental life of the Church.",
+      "fathers": [
+        "cyril-jerusalem"
+      ]
+    },
+    {
+      "id": "latin",
+      "name": "Latin / Western Fathers",
+      "period": "3rd–7th centuries",
+      "summary": "The Latin West developed major traditions of biblical interpretation, sacramental theology, grace, pastoral ministry, ecclesiology and moral teaching. It includes North African, Italian, Gallic and Roman streams rather than one uniform school.",
+      "fathers": [
+        "tertullian",
+        "cyprian",
+        "hilary",
+        "ambrose",
+        "jerome",
+        "augustine",
+        "leo",
+        "gregory-great"
+      ]
+    },
+    {
+      "id": "byzantine",
+      "name": "Later Greek & Byzantine Tradition",
+      "period": "5th–8th centuries",
+      "summary": "Later Eastern Fathers received the great councils and developed Christology, spirituality, icon theology and synthesis of earlier patristic thought. In the East, the patristic period is often extended later than in Western periodizations.",
+      "fathers": [
+        "maximus",
+        "john-damascene"
+      ]
+    }
+  ],
+  "assignments": {
+    "ignatius": [
+      "apostolic",
+      "antiochene"
+    ],
+    "polycarp": [
+      "apostolic"
+    ],
+    "justin": [
+      "apostolic"
+    ],
+    "irenaeus": [
+      "apostolic"
+    ],
+    "athanasius": [
+      "alexandrian"
+    ],
+    "basil": [
+      "cappadocian"
+    ],
+    "gregory-nazianzen": [
+      "cappadocian"
+    ],
+    "ephrem": [
+      "syriac"
+    ],
+    "cyril-jerusalem": [
+      "jerusalem"
+    ],
+    "ambrose": [
+      "latin"
+    ],
+    "jerome": [
+      "latin"
+    ],
+    "chrysostom": [
+      "antiochene"
+    ],
+    "augustine": [
+      "latin"
+    ],
+    "cyril-alexandria": [
+      "alexandrian"
+    ],
+    "leo": [
+      "latin"
+    ],
+    "gregory-great": [
+      "latin"
+    ],
+    "clement-rome": [
+      "apostolic"
+    ],
+    "clement-alexandria": [
+      "alexandrian"
+    ],
+    "origen": [
+      "alexandrian"
+    ],
+    "tertullian": [
+      "latin"
+    ],
+    "cyprian": [
+      "latin"
+    ],
+    "hilary": [
+      "latin"
+    ],
+    "gregory-nyssa": [
+      "cappadocian"
+    ],
+    "maximus": [
+      "byzantine"
+    ],
+    "john-damascene": [
+      "byzantine"
+    ]
+  },
+  "supplemental": [
+    {
+      "id": "clement-rome",
+      "era": "earliest",
+      "name": "St. Clement of Rome",
+      "dates": "1st century; pope c. 88–97",
+      "status": "Saint · Pope · Apostolic Father",
+      "school": "Apostolic & Roman",
+      "image": "4-St.Clement I.jpg",
+      "imageCredit": "Papal medallion mosaic, Basilica of St Paul Outside the Walls; public domain via Wikimedia Commons",
+      "bio": "An early bishop of Rome traditionally identified as a successor of St. Peter. First Clement, written in the name of the Roman Church to Corinth, is among the most important witnesses to post-apostolic ministry, ecclesial order, repentance and unity.",
+      "works": "First Letter of Clement to the Corinthians (1 Clement).",
+      "saintLink": null
+    },
+    {
+      "id": "clement-alexandria",
+      "era": "early",
+      "name": "Clement of Alexandria",
+      "dates": "c. 150–c. 215",
+      "status": "Early Christian theologian · Alexandrian teacher; not presented here as a canonized saint",
+      "school": "Alexandrian",
+      "image": "Clement alexandrin.jpg",
+      "imageCredit": "André Thévet, 1584; public domain via Wikimedia Commons",
+      "bio": "A major teacher at Alexandria who sought to show that Christian faith is the true philosophy and that disciplined use of reason can serve growth toward mature knowledge of God.",
+      "works": "Protrepticus (Exhortation to the Greeks); Paedagogus (Instructor); Stromata (Miscellanies); Who Is the Rich Man That Is Saved?",
+      "saintLink": null
+    },
+    {
+      "id": "origen",
+      "era": "early",
+      "name": "Origen of Alexandria",
+      "dates": "c. 185–c. 253",
+      "status": "Ecclesiastical writer and theologian · not a saint; some later propositions associated with Origenism were condemned",
+      "school": "Alexandrian",
+      "image": "Grec 945 48r.jpg",
+      "imageCredit": "15th-century manuscript of Origen's Contra Celsum; public domain via Wikimedia Commons",
+      "bio": "One of the most influential early biblical scholars and theologians. Origen developed large-scale textual, exegetical and theological projects. His legacy must be read critically: his immense contribution to Scripture study coexists with speculative positions that were not received by the Church.",
+      "works": "On First Principles; Contra Celsum; biblical homilies and commentaries; Hexapla (text-critical project).",
+      "saintLink": null
+    },
+    {
+      "id": "tertullian",
+      "era": "early",
+      "name": "Tertullian",
+      "dates": "c. 155–c. 220",
+      "status": "Early Latin theologian · not a saint; later associated with Montanism",
+      "school": "Latin / North African",
+      "image": "Tertullian2.png",
+      "imageCredit": "André Thévet, 1584; public domain via Wikimedia Commons",
+      "bio": "A prolific Christian writer from Carthage and a foundational figure in Latin theological vocabulary. His rigorous apologetics and Trinitarian/Christological terminology were influential, but his later separation from the Catholic communion requires careful historical qualification.",
+      "works": "Apology; Against Praxeas; On Baptism; On Prayer; On the Prescription of Heretics.",
+      "saintLink": null
+    },
+    {
+      "id": "cyprian",
+      "era": "early",
+      "name": "St. Cyprian of Carthage",
+      "dates": "c. 210–258",
+      "status": "Saint · Bishop · Martyr · Latin Father",
+      "school": "Latin / North African",
+      "image": "Stcyprian.jpg",
+      "imageCredit": "Traditional icon of St. Cyprian; public domain via Wikimedia Commons",
+      "bio": "Bishop of Carthage and martyr whose writings address Church unity, episcopal responsibility, persecution, reconciliation of the lapsed, prayer and sacramental life.",
+      "works": "On the Unity of the Catholic Church; On the Lord's Prayer; letters and treatises.",
+      "saintLink": null
+    },
+    {
+      "id": "hilary",
+      "era": "nicene",
+      "name": "St. Hilary of Poitiers",
+      "dates": "c. 310–367",
+      "status": "Saint · Bishop · Doctor of the Church · Latin Father",
+      "school": "Latin / Gallic",
+      "image": "Hilaryofpoitiers.jpg",
+      "imageCredit": "14th-century depiction of the ordination of St. Hilary; public domain via Wikimedia Commons",
+      "bio": "A Western bishop deeply engaged with Greek Trinitarian theology during the Arian crisis. His work helped transmit and defend Nicene faith in the Latin-speaking Church.",
+      "works": "On the Trinity (De Trinitate); On the Councils; biblical commentaries and hymns.",
+      "saintLink": null
+    },
+    {
+      "id": "gregory-nyssa",
+      "era": "nicene",
+      "name": "St. Gregory of Nyssa",
+      "dates": "c. 335–c. 395",
+      "status": "Saint · Bishop · Cappadocian Father",
+      "school": "Cappadocian",
+      "image": "Gregory of Nyssa.jpg",
+      "imageCredit": "Traditional icon attributed to Theophanes the Greek; public domain via Wikimedia Commons",
+      "bio": "Brother of St. Basil and one of the three Cappadocian Fathers. Gregory developed profound Trinitarian theology, spiritual anthropology, biblical exegesis and a theology of the soul's endless growth into God.",
+      "works": "Life of Moses; Great Catechism; On the Making of Man; Against Eunomius; homilies on the Song of Songs.",
+      "saintLink": null
+    },
+    {
+      "id": "maximus",
+      "era": "later",
+      "name": "St. Maximus the Confessor",
+      "dates": "c. 580–662",
+      "status": "Saint · Monk · Confessor · Later Eastern Father",
+      "school": "Byzantine",
+      "image": "Maximus Confessor.jpg",
+      "imageCredit": "Traditional icon; public domain via Wikimedia Commons",
+      "bio": "Monk and theologian who defended the fullness of Christ's humanity, including a real human will, during the Monothelite controversy. His synthesis joins Christology, cosmic theology, asceticism and spiritual interpretation of Scripture.",
+      "works": "Ambigua; Questions to Thalassius; Mystagogy; Centuries on Love; theological and polemical writings.",
+      "saintLink": null
+    },
+    {
+      "id": "john-damascene",
+      "era": "later",
+      "name": "St. John Damascene",
+      "dates": "c. 675–749",
+      "status": "Saint · Priest · Monk · Doctor of the Church · Later Eastern Father",
+      "school": "Byzantine / Syriac-Palestinian",
+      "image": "John of Damascus.jpg",
+      "imageCredit": "Historical icon; public domain via Wikimedia Commons",
+      "bio": "A monk of Mar Saba and major synthesizer of Greek patristic theology. He defended the veneration of icons and organized earlier doctrinal tradition in a form that deeply influenced Byzantine theology.",
+      "works": "The Fountain of Knowledge, including On the Orthodox Faith; Three Treatises on the Divine Images; homilies and hymns.",
+      "saintLink": null
+    }
+  ]
+}
