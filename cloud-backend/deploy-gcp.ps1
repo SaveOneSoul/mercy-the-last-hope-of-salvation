@@ -35,8 +35,22 @@ function Invoke-GCloud {
 
 function Test-GCloudResource {
     param([Parameter(Mandatory = $true)][string[]]$Args)
-    & gcloud @Args *> $null
-    return ($LASTEXITCODE -eq 0)
+
+    # Resource-existence probes are expected to return a non-zero exit code
+    # when the resource does not exist yet. With $ErrorActionPreference = "Stop",
+    # the gcloud.ps1 shim can otherwise turn that expected NOT_FOUND response
+    # into a terminating PowerShell error before we can inspect $LASTEXITCODE.
+    $previousErrorActionPreference = $ErrorActionPreference
+    try {
+        $ErrorActionPreference = "SilentlyContinue"
+        & gcloud @Args *> $null
+        $exitCode = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $previousErrorActionPreference
+    }
+
+    return ($exitCode -eq 0)
 }
 
 function New-StrongSecret {
