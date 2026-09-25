@@ -19,6 +19,15 @@ document.addEventListener('DOMContentLoaded',function(){
   'charis.html':['charis']
  };
  const file=location.pathname.split('/').pop(),ids=map[file];if(!ids)return;
+ function labelFor(id,n){
+  if(id==='divine-mercy'){if(n===6)return 'Private revelation';if([7,8,9].includes(n))return 'Devotional practice';return 'Authoritative teaching';}
+  if(id==='charis')return 'Common theological teaching';
+  if(id==='trinity'&&[3,4,5].includes(n))return 'Dogma';
+  if(id==='christology'&&[2,3,4,5,6].includes(n))return 'Dogma';
+  if(id==='mariology'&&[2,3,4,5].includes(n))return 'Dogma';
+  if(id==='foundations'&&n===6)return 'Common theological teaching';
+  return 'Authoritative teaching';
+ }
  fetch('../data/formation-courses.json').then(r=>r.json()).then(cfg=>{
   const courses=cfg.courses.filter(c=>ids.includes(c.id));
   const shell=document.querySelector('.formation-shell')||document.querySelector('main');if(!shell)return;
@@ -30,6 +39,9 @@ document.addEventListener('DOMContentLoaded',function(){
    const course=document.querySelector(c.courseSelector);if(!course)return;
    const units=[...course.querySelectorAll(c.unitSelector)];
    units.forEach((u,i)=>{
+    if(!u.querySelector('.lesson-badge[data-doctrine-label]')){
+      const badge=document.createElement('span');badge.className='lesson-badge';badge.dataset.doctrineLabel='true';badge.textContent=labelFor(c.id,i+1);const head=u.querySelector('.theology-unit-head,.credit-unit-head');if(head)head.appendChild(badge);else u.insertBefore(badge,u.firstChild);
+    }
     if(u.querySelector('.formation-lesson-link'))return;
     const a=document.createElement('a');a.className='btn secondary formation-lesson-link';a.href='formation-lesson.html?course='+encodeURIComponent(c.id)+'&unit='+(i+1);a.textContent='Open full lesson →';u.appendChild(a);
    });
