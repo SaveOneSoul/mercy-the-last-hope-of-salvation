@@ -178,3 +178,82 @@ body.dark .logos-chapter-grid button,body.dark .logos-chapter-nav button,body.da
   .logos-action-icon{width:1.8rem;height:1.8rem}
   .logos-action-copy small{font-size:.61rem}
 }
+
+
+/* Logos mobile verse sheet layout correction */
+@media(max-width:800px){
+  .logos-sheet-actions,
+  .logos-verse-sheet.is-inline .logos-sheet-actions{
+    display:grid !important;
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:.5rem !important;
+    width:100% !important;
+  }
+  .logos-sheet-actions .logos-action-primary,
+  .logos-sheet-actions .logos-action-share{
+    grid-column:auto !important;
+  }
+  .logos-sheet-actions button{
+    width:100% !important;
+    min-width:0 !important;
+    display:flex !important;
+    align-items:center !important;
+    gap:.5rem !important;
+    padding:.7rem !important;
+    border-radius:12px !important;
+  }
+  .logos-sheet-actions button .logos-action-copy{
+    min-width:0 !important;
+    display:block !important;
+  }
+  .logos-sheet-actions button .logos-action-copy strong{
+    display:block !important;
+    font-size:.84rem !important;
+    line-height:1.15 !important;
+  }
+  .logos-sheet-actions button .logos-action-copy small{
+    display:none !important;
+  }
+  .logos-action-icon{
+    flex:0 0 1.9rem !important;
+    width:1.9rem !important;
+    height:1.9rem !important;
+  }
+  .logos-theology-guide{
+    display:block !important;
+    padding:.7rem !important;
+  }
+  .logos-theology-guide strong{
+    display:block !important;
+    margin:0 0 .45rem !important;
+  }
+  .logos-theology-guide a{
+    display:inline-flex !important;
+    margin:.15rem .25rem .1rem 0 !important;
+    padding:.45rem .65rem !important;
+    border:1px solid var(--line) !important;
+    border-radius:10px !important;
+    background:#fff !important;
+    text-decoration:none !important;
+  }
+  .logos-highlight-palette{
+    display:flex !important;
+    align-items:center !important;
+    flex-wrap:wrap !important;
+    gap:.45rem !important;
+    padding:.45rem 0 !important;
+  }
+  .logos-highlight-palette legend{
+    width:100% !important;
+    margin:0 0 .15rem !important;
+  }
+  .logos-highlight-palette button:not(.logos-highlight-clear){
+    width:2.15rem !important;
+    height:2.15rem !important;
+    flex:0 0 2.15rem !important;
+  }
+  .logos-highlight-palette .logos-highlight-clear{
+    min-height:2.15rem !important;
+    padding:.3rem .65rem !important;
+  }
+}
