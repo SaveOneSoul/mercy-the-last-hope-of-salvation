@@ -139,3 +139,42 @@ body.dark .logos-chapter-grid button,body.dark .logos-chapter-nav button,body.da
 .logos-verse-sheet.is-inline .logos-sheet-card{width:100%;max-height:none;overflow:visible;border:1px solid var(--line);border-radius:16px;padding:1rem;box-shadow:0 8px 24px rgba(63,29,39,.08)}
 .logos-verse-sheet.is-inline .logos-sheet-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
 .logos-verse-sheet.is-inline .logos-sheet-text{max-height:none;overflow:visible}
+
+
+/* Logos verse sheet compact mobile refresh */
+.logos-sheet-actions{grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem}
+.logos-sheet-actions button{display:grid;grid-template-columns:2rem minmax(0,1fr);align-items:center;gap:.65rem;min-width:0;text-align:left;padding:.72rem .78rem;border-radius:13px}
+.logos-sheet-actions button:first-child{background:#76152d;color:#fff;border-color:#76152d}
+.logos-sheet-actions .logos-action-share{background:#fff7f1;border-color:#c9909d;color:#5d1830}
+.logos-action-icon{display:grid;place-items:center;width:2rem;height:2rem;border-radius:10px;background:rgba(118,21,45,.09);font:800 1rem/1 system-ui}
+.logos-sheet-actions button:first-child .logos-action-icon{background:rgba(255,255,255,.16)}
+.logos-action-copy{display:grid;gap:.1rem;min-width:0}
+.logos-action-copy strong{font:800 .9rem/1.15 system-ui}
+.logos-action-copy small{display:block;min-width:0;color:inherit;opacity:.72;font:600 .67rem/1.25 system-ui;white-space:normal}
+.logos-theology-guide{margin:.65rem 0;padding:.58rem .7rem}
+.logos-highlight-palette{align-items:center;gap:.5rem;padding:.35rem 0;margin:.15rem 0}
+.logos-highlight-palette legend{margin-right:.2rem}
+.logos-highlight-palette button:not(.logos-highlight-clear){width:2rem;height:2rem;padding:0;border-radius:50%;border:2px solid rgba(72,40,48,.16)}
+.logos-highlight-palette .logos-highlight-clear{min-height:2rem;padding:.28rem .58rem;border-radius:999px}
+.logos-art-details{margin:.45rem 0;border-top:1px solid var(--line);padding-top:.5rem}
+.logos-art-details summary{cursor:pointer;color:var(--wine);font:800 .76rem/1.3 system-ui}
+.logos-art-details .logos-art-choice{margin:.45rem 0 0}
+.logos-share-status{margin:.35rem 0 0}
+@media(max-width:800px){
+  .logos-sheet-card{padding:.72rem .8rem max(.8rem,env(safe-area-inset-bottom))}
+  .logos-sheet-head h2{font-size:1.2rem}
+  .logos-sheet-text{font-size:1rem;line-height:1.55;max-height:4.9rem;margin:.35rem 0 .45rem}
+  .logos-sheet-actions{grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem;margin-top:.55rem}
+  .logos-sheet-actions .logos-action-primary,
+  .logos-sheet-actions .logos-action-share{grid-column:1/-1}
+  .logos-sheet-actions button{padding:.62rem .68rem;gap:.55rem}
+  .logos-action-copy strong{font-size:.86rem}
+  .logos-action-copy small{font-size:.64rem}
+  .logos-theology-guide{font-size:.7rem;gap:.3rem .45rem}
+  .logos-highlight-palette{flex-wrap:nowrap}
+}
+@media(max-width:380px){
+  .logos-sheet-actions button{grid-template-columns:1.8rem minmax(0,1fr);padding:.58rem}
+  .logos-action-icon{width:1.8rem;height:1.8rem}
+  .logos-action-copy small{font-size:.61rem}
+}
