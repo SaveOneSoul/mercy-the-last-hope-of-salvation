@@ -142,3 +142,66 @@ After deployment, `/health` should report API version `2.5.0` and:
 ```
 
 The new `cms_publications` and `cms_media` tables are created automatically by SQLAlchemy on first startup. Existing Save One Soul data remains untouched.
+
+
+## Video Studio, Homiletics and Live
+
+Mercy Admin now contains three additional publishing areas.
+
+### Course Videos
+
+Use **Course Videos** to assign a video to a Codex course, topic and lesson.
+Supported sources are YouTube, an uploaded video file, or an HTTPS external host.
+Course videos are exposed publicly through:
+
+```text
+GET /api/content/course-videos?course=<course-key>
+```
+
+and rendered at:
+
+```text
+/pages/course-videos.html?course=<course-key>
+```
+
+Direct video uploads accept MP4, WebM and QuickTime/MOV files up to 30 MB.
+Larger recordings should be hosted on YouTube or a dedicated streaming/video
+service and entered by URL so Cloud Run is not used as a large-file transport.
+
+### Homiletics
+
+Use **Homiletics** for sermons, preaching, exhortations, retreat talks and
+Scripture reflections that must remain separate from formal courses.
+
+Public endpoint and page:
+
+```text
+GET /api/content/homiletics
+/pages/homiletics.html
+```
+
+### Live Studio
+
+Use **Live Studio** to schedule/register a YouTube Live event and expose the same
+broadcast on the Save One Soul website.
+
+Without YouTube OAuth configured, paste an existing YouTube Live URL or video ID.
+With these server-side secrets configured, Admin can create a YouTube broadcast
+and RTMP stream automatically and show the encoder ingestion address/stream key
+only inside the authenticated Admin session:
+
+```text
+YOUTUBE_CLIENT_ID
+YOUTUBE_CLIENT_SECRET
+YOUTUBE_REFRESH_TOKEN
+```
+
+Public live state:
+
+```text
+GET /api/content/live
+/pages/live.html
+```
+
+A scheduled or active broadcast marked **Show on homepage** is also rendered on
+the public homepage. Stream keys are never included in the public API.

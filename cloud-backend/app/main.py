@@ -10,6 +10,7 @@ from sqlalchemy.orm import Session
 
 from .cms_admin import router as cms_admin_router
 from .cms_publish import router as cms_publish_router
+from .media_studio import router as media_studio_router
 from .prayer_network import (
     PrayerDistributionLog,
     PrayerNetworkRequest,
@@ -27,7 +28,7 @@ from .models import PrayerIntention, ContactMessage, SaveOneSoulParticipant
 Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="Mercy API",
-    version="2.10.0",
+    version="2.11.0",
     docs_url="/docs" if os.getenv("ENABLE_DOCS", "true").lower() == "true" else None,
 )
 origins = [x.strip() for x in os.getenv("CORS_ORIGINS", "http://localhost:5500").split(',') if x.strip()]
@@ -61,6 +62,7 @@ async def honor_forwarded_https(request: Request, call_next):
 
 app.include_router(cms_admin_router)
 app.include_router(cms_publish_router)
+app.include_router(media_studio_router)
 app.include_router(prayer_network_router)
 app.include_router(priest_portal_router)
 app.include_router(seo_router)
@@ -183,7 +185,7 @@ def health():
     return {
         'status': 'ok' if db_state['reachable'] else 'degraded',
         'service': 'mercy-api',
-        'version': '2.10.0',
+        'version': '2.11.0',
         'database': db_state,
         'admin_cms': {
             'configured': bool(os.getenv('ADMIN_PASSWORD') and os.getenv('ADMIN_SESSION_SECRET')),
@@ -197,6 +199,9 @@ def health():
             'logos_source_rights_gate': True,
             'logos_full_english_catholic_corpus': True,
             'logos_advanced_study_context': True,
+            'course_video_cms_enabled': True,
+            'homiletics_enabled': True,
+            'live_studio_enabled': True,
         },
         'catholic_ai': magisterium_state(),
     }

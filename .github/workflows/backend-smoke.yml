@@ -49,7 +49,7 @@ jobs:
           from app.logos_ot_latin import _study_payload as _latin_study_payload
           from app.logos_ot_semitic import _ot_semitic_manifest, _study_payload as _semitic_study_payload
           from app.logos_versification import registry_summary
-          from app.models import CMSMedia, CMSPublication
+          from app.models import CMSMedia, CMSPublication, CourseVideo, HomileticVideo, LiveBroadcast
           from app.prayer_network import (
               MassAssignment,
               MassIntentionRequest,
@@ -59,12 +59,15 @@ jobs:
           )
           from app.priest_portal import PriestPortalInvite, PriestPortalSession
 
-          assert app.version == '2.10.0'
+          assert app.version == '2.11.0'
           assert '/api/logos/semantic/word-study' in {route.path for route in app.routes}
           assert len(BOOK_PROFILES) == 73
           assert len(RESEARCH_LIBRARIES) >= 8
           assert CMSPublication.__tablename__ == 'cms_publications'
           assert CMSMedia.__tablename__ == 'cms_media'
+          assert CourseVideo.__tablename__ == 'course_videos'
+          assert HomileticVideo.__tablename__ == 'homiletic_videos'
+          assert LiveBroadcast.__tablename__ == 'live_broadcasts'
           assert PrayerNetworkRequest.__tablename__ == 'prayer_network_requests'
           assert PrayerDistributionLog.__tablename__ == 'prayer_distribution_logs'
           assert MassIntentionRequest.__tablename__ == 'mass_intention_requests'
@@ -75,6 +78,12 @@ jobs:
           paths = {route.path for route in app.routes}
           for required in (
               '/api/content/seo-manifest',
+              '/api/admin/course-videos',
+              '/api/admin/homiletics',
+              '/api/admin/live',
+              '/api/content/course-videos',
+              '/api/content/homiletics',
+              '/api/content/live',
               '/api/prayer-network/requests',
               '/api/mass-intentions',
               '/api/priest-network/register',
