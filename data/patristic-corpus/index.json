@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "generated_by": "scripts/vendor_patristic_corpus.py",
+  "runtime_network_required": false,
+  "sources": [
+    {
+      "id": "apostolic-fathers-1870",
+      "corpus": "apostolic",
+      "title": "The Writings of the Apostolic Fathers",
+      "index": "apostolic/apostolic-fathers-1870/index.json",
+      "sections": 518,
+      "words": 151986,
+      "sha256": "93018cb2d934b5e68004b1202241aab1a790c378a18778b95131a31c830eeda5"
+    },
+    {
+      "id": "didache-1884",
+      "corpus": "apostolic",
+      "title": "Teaching of the Twelve Apostles (Didache)",
+      "index": "apostolic/didache-1884/index.json",
+      "sections": 33,
+      "words": 7070,
+      "sha256": "b6beca3a66ed43cda4be24c08c01edd952a93041b561ed588e9f164cb90ad208"
+    },
+    {
+      "id": "origen-vol-1-1869",
+      "corpus": "alexandrian",
+      "title": "The Writings of Origen, Vol. I",
+      "index": "alexandrian/origen-vol-1-1869/index.json",
+      "sections": 210,
+      "words": 179751,
+      "sha256": "ef97e5bdffa87504063f1550efde56e0e990215523d1e9cb41400d6e399937cc"
+    },
+    {
+      "id": "origen-vol-2-1872",
+      "corpus": "alexandrian",
+      "title": "The Writings of Origen, Vol. II",
+      "index": "alexandrian/origen-vol-2-1872/index.json",
+      "sections": 574,
+      "words": 244048,
+      "sha256": "0d28344b200d7b9a363bf8512fe11373c4a40cdf129dbafcee0a48a48936fe8a"
+    },
+    {
+      "id": "hippolytus-apostolic-tradition-1934",
+      "corpus": "apostolic",
+      "title": "The Apostolic Tradition",
+      "index": "apostolic/hippolytus-apostolic-tradition-1934/index.json",
+      "sections": 51,
+      "words": 27048,
+      "sha256": "a741cfe28e33030e54515fd423a3c3c023953e876221df01006aed39327a8e78"
+    }
+  ],
+  "lost_or_fragmentary": [
+    {
+      "id": "hexapla",
+      "author_label": "Origen",
+      "title": "Hexapla",
+      "status": "lost-fragmentary",
+      "note": "The original Hexapla does not survive complete. The local library must contain only verified surviving fragments/reconstructions and must never label them as the complete Hexapla.",
+      "preferred_public_domain_edition": "Frederick Field, Origenis Hexaplorum quae supersunt (1875), 2 vols."
+    }
+  ]
+}

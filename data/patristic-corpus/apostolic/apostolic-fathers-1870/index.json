@@ -1,0 +1,3142 @@
+{
+  "id": "apostolic-fathers-1870",
+  "title": "The Writings of the Apostolic Fathers",
+  "author_label": "Apostolic Fathers",
+  "edition": "Ante-Nicene Christian Library, vol. I",
+  "translators": "Alexander Roberts, James Donaldson, F. Crombie",
+  "publication_year": 1870,
+  "rights": "Public domain edition; Project Gutenberg eBook 77576",
+  "source_url": "https://www.gutenberg.org/files/77576/77576-h/77576-h.htm",
+  "gutenberg_id": 77576,
+  "caution": null,
+  "expected_works": [
+    "1 Clement",
+    "2 Clement",
+    "Polycarp to the Philippians",
+    "Martyrdom of Polycarp",
+    "Epistle of Barnabas",
+    "Ignatius: Ephesians",
+    "Ignatius: Magnesians",
+    "Ignatius: Trallians",
+    "Ignatius: Romans",
+    "Ignatius: Philadelphians",
+    "Ignatius: Smyrnaeans",
+    "Ignatius: Polycarp",
+    "Epistle to Diognetus",
+    "Shepherd of Hermas",
+    "Fragments of Papias"
+  ],
+  "sha256": "93018cb2d934b5e68004b1202241aab1a790c378a18778b95131a31c830eeda5",
+  "section_count": 518,
+  "word_count": 151986,
+  "toc": [
+    {
+      "index": 1,
+      "heading": "The Writings of the Apostolic Fathers",
+      "file": "0001-the-writings-of-the-apostolic-fathers.json",
+      "words": 0
+    },
+    {
+      "index": 2,
+      "heading": "NOTE BY THE EDITORS TO VOL. I.",
+      "file": "0002-note-by-the-editors-to-vol-i.json",
+      "words": 199
+    },
+    {
+      "index": 3,
+      "heading": "CONTENTS OF VOL. I.",
+      "file": "0003-contents-of-vol-i.json",
+      "words": 257
+    },
+    {
+      "index": 4,
+      "heading": "THE FIRST EPISTLE OF CLEMENT.",
+      "file": "0004-the-first-epistle-of-clement.json",
+      "words": 0
+    },
+    {
+      "index": 5,
+      "heading": "INTRODUCTORY NOTICE.",
+      "file": "0005-introductory-notice.json",
+      "words": 818
+    },
+    {
+      "index": 6,
+      "heading": "THE FIRST EPISTLE OF CLEMENT TO THE CORINTHIANS.[1]",
+      "file": "0006-the-first-epistle-of-clement-to-the-corinthians-1.json",
+      "words": 0
+    },
+    {
+      "index": 7,
+      "heading": "Chap. i.—The Salutation. Praise of the Corinthians before the breaking forth of schism among them.",
+      "file": "0007-chap-i-the-salutation-praise-of-the-corinthians-before-the-breaking-forth-of-schism-among-them.json",
+      "words": 284
+    },
+    {
+      "index": 8,
+      "heading": "Chap. ii.—Praise of the Corinthians continued.",
+      "file": "0008-chap-ii-praise-of-the-corinthians-continued.json",
+      "words": 239
+    },
+    {
+      "index": 9,
+      "heading": "Chap. iii.—The sad state of the Corinthian church after sedition arose in it from envy and emulation.",
+      "file": "0009-chap-iii-the-sad-state-of-the-corinthian-church-after-sedition-arose-in-it-from-envy-and-emulati.json",
+      "words": 142
+    },
+    {
+      "index": 10,
+      "heading": "Chap. iv.—Many evils have already flowed from this source in ancient times.",
+      "file": "0010-chap-iv-many-evils-have-already-flowed-from-this-source-in-ancient-times.json",
+      "words": 281
+    },
+    {
+      "index": 11,
+      "heading": "Chap. v.—No less evils have arisen from the same source in the most recent times. The martyrdom of Peter and Paul.",
+      "file": "0011-chap-v-no-less-evils-have-arisen-from-the-same-source-in-the-most-recent-times-the-martyrdom-of-.json",
+      "words": 168
+    },
+    {
+      "index": 12,
+      "heading": "Chap. vi.—Continuation. Several other martyrs.",
+      "file": "0012-chap-vi-continuation-several-other-martyrs.json",
+      "words": 113
+    },
+    {
+      "index": 13,
+      "heading": "Chap. vii.—An exhortation to repentance.",
+      "file": "0013-chap-vii-an-exhortation-to-repentance.json",
+      "words": 185
+    },
+    {
+      "index": 14,
+      "heading": "Chap. viii.—Continuation respecting repentance.",
+      "file": "0014-chap-viii-continuation-respecting-repentance.json",
+      "words": 254
+    },
+    {
+      "index": 15,
+      "heading": "Chap. ix.—Examples of the saints.",
+      "file": "0015-chap-ix-examples-of-the-saints.json",
+      "words": 104
+    },
+    {
+      "index": 16,
+      "heading": "Chap. x.—Continuation of the above.",
+      "file": "0016-chap-x-continuation-of-the-above.json",
+      "words": 303
+    },
+    {
+      "index": 17,
+      "heading": "Chap. xi.—Continuation. Lot.",
+      "file": "0017-chap-xi-continuation-lot.json",
+      "words": 136
+    },
+    {
+      "index": 18,
+      "heading": "Chap. xii.—The rewards of faith and hospitality. Rahab.",
+      "file": "0018-chap-xii-the-rewards-of-faith-and-hospitality-rahab.json",
+      "words": 291
+    },
+    {
+      "index": 19,
+      "heading": "Chap. xiii.—An exhortation to humility.",
+      "file": "0019-chap-xiii-an-exhortation-to-humility.json",
+      "words": 207
+    },
+    {
+      "index": 20,
+      "heading": "Chap. xiv.—We should obey God rather than the authors of sedition.",
+      "file": "0020-chap-xiv-we-should-obey-god-rather-than-the-authors-of-sedition.json",
+      "words": 170
+    },
+    {
+      "index": 21,
+      "heading": "Chap. xv.—We must adhere to those who cultivate peace, not to those who merely pretend to do so.",
+      "file": "0021-chap-xv-we-must-adhere-to-those-who-cultivate-peace-not-to-those-who-merely-pretend-to-do-so.json",
+      "words": 158
+    },
+    {
+      "index": 22,
+      "heading": "Chap. xvi.—Christ as an example of humility.",
+      "file": "0022-chap-xvi-christ-as-an-example-of-humility.json",
+      "words": 534
+    },
+    {
+      "index": 23,
+      "heading": "Chap. xvii.—The saints as examples of humility.",
+      "file": "0023-chap-xvii-the-saints-as-examples-of-humility.json",
+      "words": 189
+    },
+    {
+      "index": 24,
+      "heading": "Chap. xviii.—David as an example of humility.",
+      "file": "0024-chap-xviii-david-as-an-example-of-humility.json",
+      "words": 337
+    },
+    {
+      "index": 25,
+      "heading": "Chap. xix.—Imitating these examples, let us seek after peace.",
+      "file": "0025-chap-xix-imitating-these-examples-let-us-seek-after-peace.json",
+      "words": 126
+    },
+    {
+      "index": 26,
+      "heading": "Chap. xx.—The peace and harmony of the universe.",
+      "file": "0026-chap-xx-the-peace-and-harmony-of-the-universe.json",
+      "words": 284
+    },
+    {
+      "index": 27,
+      "heading": "Chap. xxi.—Let us obey God, and not the authors of sedition.",
+      "file": "0027-chap-xxi-let-us-obey-god-and-not-the-authors-of-sedition.json",
+      "words": 318
+    },
+    {
+      "index": 28,
+      "heading": "Chap. xxii.—These exhortations are confirmed by the Christian faith, which proclaims the misery of sinful conduct.",
+      "file": "0028-chap-xxii-these-exhortations-are-confirmed-by-the-christian-faith-which-proclaims-the-misery-of-.json",
+      "words": 144
+    },
+    {
+      "index": 29,
+      "heading": "Chap. xxiii.—Be humble, and believe that Christ will come again.",
+      "file": "0029-chap-xxiii-be-humble-and-believe-that-christ-will-come-again.json",
+      "words": 205
+    },
+    {
+      "index": 30,
+      "heading": "Chap. xxiv.—God continually shows us in nature that there will be a resurrection.",
+      "file": "0030-chap-xxiv-god-continually-shows-us-in-nature-that-there-will-be-a-resurrection.json",
+      "words": 146
+    },
+    {
+      "index": 31,
+      "heading": "Chap. xxv.—The phœnix an emblem of our resurrection.",
+      "file": "0031-chap-xxv-the-ph-nix-an-emblem-of-our-resurrection.json",
+      "words": 197
+    },
+    {
+      "index": 32,
+      "heading": "Chap. xxvi.—We shall rise again, then, as the Scripture also testifies.",
+      "file": "0032-chap-xxvi-we-shall-rise-again-then-as-the-scripture-also-testifies.json",
+      "words": 102
+    },
+    {
+      "index": 33,
+      "heading": "Chap. xxvii.—In the hope of the resurrection, let us cleave to the omnipotent and omniscient God.",
+      "file": "0033-chap-xxvii-in-the-hope-of-the-resurrection-let-us-cleave-to-the-omnipotent-and-omniscient-god.json",
+      "words": 175
+    },
+    {
+      "index": 34,
+      "heading": "Chap. xxviii.—God sees all things: therefore let us avoid transgression.",
+      "file": "0034-chap-xxviii-god-sees-all-things-therefore-let-us-avoid-transgression.json",
+      "words": 137
+    },
+    {
+      "index": 35,
+      "heading": "Chap. xxix.—Let us also draw near to God in purity of heart.",
+      "file": "0035-chap-xxix-let-us-also-draw-near-to-god-in-purity-of-heart.json",
+      "words": 128
+    },
+    {
+      "index": 36,
+      "heading": "Chap. xxx.—Let us do those things that please God, and flee from those He hates, that we may be blessed.",
+      "file": "0036-chap-xxx-let-us-do-those-things-that-please-god-and-flee-from-those-he-hates-that-we-may-be-bles.json",
+      "words": 207
+    },
+    {
+      "index": 37,
+      "heading": "Chap. xxxi.—Let us see by what means we may obtain the divine blessing.",
+      "file": "0037-chap-xxxi-let-us-see-by-what-means-we-may-obtain-the-divine-blessing.json",
+      "words": 100
+    },
+    {
+      "index": 38,
+      "heading": "Chap. xxxii.—We are justified not by our own works, but by faith.",
+      "file": "0038-chap-xxxii-we-are-justified-not-by-our-own-works-but-by-faith.json",
+      "words": 175
+    },
+    {
+      "index": 39,
+      "heading": "Chap. xxxiii.—But let us not give up the practice of good works and love. God Himself is an example to us of good works.",
+      "file": "0039-chap-xxxiii-but-let-us-not-give-up-the-practice-of-good-works-and-love-god-himself-is-an-example.json",
+      "words": 263
+    },
+    {
+      "index": 40,
+      "heading": "Chap. xxxiv.—Great is the reward of good works with God. Joined together in harmony, let us implore that reward from Him.",
+      "file": "0040-chap-xxxiv-great-is-the-reward-of-good-works-with-god-joined-together-in-harmony-let-us-implore-.json",
+      "words": 221
+    },
+    {
+      "index": 41,
+      "heading": "Chap. xxxv.—Immense is this reward. How shall we obtain it?",
+      "file": "0041-chap-xxxv-immense-is-this-reward-how-shall-we-obtain-it.json",
+      "words": 351
+    },
+    {
+      "index": 42,
+      "heading": "Chap. xxxvi.—All blessings are given to us through Christ.",
+      "file": "0042-chap-xxxvi-all-blessings-are-given-to-us-through-christ.json",
+      "words": 210
+    },
+    {
+      "index": 43,
+      "heading": "Chap. xxxvii.—Christ is our Leader, and we His soldiers.",
+      "file": "0043-chap-xxxvii-christ-is-our-leader-and-we-his-soldiers.json",
+      "words": 163
+    },
+    {
+      "index": 44,
+      "heading": "Chap. xxxviii.—Let the members of the church submit themselves, and no one exalt himself above another.",
+      "file": "0044-chap-xxxviii-let-the-members-of-the-church-submit-themselves-and-no-one-exalt-himself-above-anot.json",
+      "words": 216
+    },
+    {
+      "index": 45,
+      "heading": "Chap. xxxix.—There is no reason for self-conceit.",
+      "file": "0045-chap-xxxix-there-is-no-reason-for-self-conceit.json",
+      "words": 252
+    },
+    {
+      "index": 46,
+      "heading": "Chap. xl.—Let us preserve in the church the order appointed by God.",
+      "file": "0046-chap-xl-let-us-preserve-in-the-church-the-order-appointed-by-god.json",
+      "words": 173
+    },
+    {
+      "index": 47,
+      "heading": "Chap. xli.—Continuation of the same subject.",
+      "file": "0047-chap-xli-continuation-of-the-same-subject.json",
+      "words": 134
+    },
+    {
+      "index": 48,
+      "heading": "Chap. xlii.—The order of ministers in the church.",
+      "file": "0048-chap-xlii-the-order-of-ministers-in-the-church.json",
+      "words": 163
+    },
+    {
+      "index": 49,
+      "heading": "Chap. xliii.—Moses of old stilled the contention which arose concerning the priestly dignity.",
+      "file": "0049-chap-xliii-moses-of-old-stilled-the-contention-which-arose-concerning-the-priestly-dignity.json",
+      "words": 300
+    },
+    {
+      "index": 50,
+      "heading": "Chap. xliv.—The ordinances of the apostles, that there might be no contention respecting the priestly office.",
+      "file": "0050-chap-xliv-the-ordinances-of-the-apostles-that-there-might-be-no-contention-respecting-the-priest.json",
+      "words": 200
+    },
+    {
+      "index": 51,
+      "heading": "Chap. xlv.—It is the part of the wicked to vex the righteous.",
+      "file": "0051-chap-xlv-it-is-the-part-of-the-wicked-to-vex-the-righteous.json",
+      "words": 272
+    },
+    {
+      "index": 52,
+      "heading": "Chap. xlvi.—Let us cleave to the righteous: your strife is pernicious.",
+      "file": "0052-chap-xlvi-let-us-cleave-to-the-righteous-your-strife-is-pernicious.json",
+      "words": 273
+    },
+    {
+      "index": 53,
+      "heading": "Chap. xlvii.—Your recent discord is worse than the former which took place in the times of Paul.",
+      "file": "0053-chap-xlvii-your-recent-discord-is-worse-than-the-former-which-took-place-in-the-times-of-paul.json",
+      "words": 185
+    },
+    {
+      "index": 54,
+      "heading": "Chap. xlviii.—Let us return to the practice of brotherly love.",
+      "file": "0054-chap-xlviii-let-us-return-to-the-practice-of-brotherly-love.json",
+      "words": 207
+    },
+    {
+      "index": 55,
+      "heading": "Chap. xlix.—The praise of love.",
+      "file": "0055-chap-xlix-the-praise-of-love.json",
+      "words": 153
+    },
+    {
+      "index": 56,
+      "heading": "Chap. l.—Let us pray to be thought worthy of love.",
+      "file": "0056-chap-l-let-us-pray-to-be-thought-worthy-of-love.json",
+      "words": 231
+    },
+    {
+      "index": 57,
+      "heading": "Chap. li.—Let the partakers in strife acknowledge their sins.",
+      "file": "0057-chap-li-let-the-partakers-in-strife-acknowledge-their-sins.json",
+      "words": 196
+    },
+    {
+      "index": 58,
+      "heading": "Chap. lii.—Such a confession is pleasing to God.",
+      "file": "0058-chap-lii-such-a-confession-is-pleasing-to-god.json",
+      "words": 103
+    },
+    {
+      "index": 59,
+      "heading": "Chap. liii.—The love of Moses towards his people.",
+      "file": "0059-chap-liii-the-love-of-moses-towards-his-people.json",
+      "words": 207
+    },
+    {
+      "index": 60,
+      "heading": "Chap. liv.—He who is full of love will incur every loss, that peace may be restored to the church.",
+      "file": "0060-chap-liv-he-who-is-full-of-love-will-incur-every-loss-that-peace-may-be-restored-to-the-church.json",
+      "words": 112
+    },
+    {
+      "index": 61,
+      "heading": "Chap. lv.—Examples of such love.",
+      "file": "0061-chap-lv-examples-of-such-love.json",
+      "words": 230
+    },
+    {
+      "index": 62,
+      "heading": "Chap. lvi.—Let us admonish and correct one another.",
+      "file": "0062-chap-lvi-let-us-admonish-and-correct-one-another.json",
+      "words": 390
+    },
+    {
+      "index": 63,
+      "heading": "Chap. lvii.—Let the authors of sedition submit themselves.",
+      "file": "0063-chap-lvii-let-the-authors-of-sedition-submit-themselves.json",
+      "words": 239
+    },
+    {
+      "index": 64,
+      "heading": "Chap. lviii.—Blessings sought for all that call upon God.",
+      "file": "0064-chap-lviii-blessings-sought-for-all-that-call-upon-god.json",
+      "words": 86
+    },
+    {
+      "index": 65,
+      "heading": "Chap. lix.—The Corinthians are exhorted speedily to send back word that peace has been restored. The benediction.",
+      "file": "0065-chap-lix-the-corinthians-are-exhorted-speedily-to-send-back-word-that-peace-has-been-restored-th.json",
+      "words": 97
+    },
+    {
+      "index": 66,
+      "heading": "THE SECOND EPISTLE OF CLEMENT.",
+      "file": "0066-the-second-epistle-of-clement.json",
+      "words": 0
+    },
+    {
+      "index": 67,
+      "heading": "INTRODUCTORY NOTICE.",
+      "file": "0067-introductory-notice-2.json",
+      "words": 250
+    },
+    {
+      "index": 68,
+      "heading": "THE SECOND EPISTLE OF CLEMENT.[259]",
+      "file": "0068-the-second-epistle-of-clement-259.json",
+      "words": 0
+    },
+    {
+      "index": 69,
+      "heading": "Chap. i.—We ought to think highly of Christ.",
+      "file": "0069-chap-i-we-ought-to-think-highly-of-christ.json",
+      "words": 296
+    },
+    {
+      "index": 70,
+      "heading": "Chap. ii.—The church, formerly barren, is now fruitful.",
+      "file": "0070-chap-ii-the-church-formerly-barren-is-now-fruitful.json",
+      "words": 206
+    },
+    {
+      "index": 71,
+      "heading": "Chap. iii.—The duty of confessing Christ.",
+      "file": "0071-chap-iii-the-duty-of-confessing-christ.json",
+      "words": 155
+    },
+    {
+      "index": 72,
+      "heading": "Chap. iv.—True confession of Christ.",
+      "file": "0072-chap-iv-true-confession-of-christ.json",
+      "words": 166
+    },
+    {
+      "index": 73,
+      "heading": "Chap. v.—This world should be despised.",
+      "file": "0073-chap-v-this-world-should-be-despised.json",
+      "words": 206
+    },
+    {
+      "index": 74,
+      "heading": "Chap. vi.—The present and future worlds are enemies to each other.",
+      "file": "0074-chap-vi-the-present-and-future-worlds-are-enemies-to-each-other.json",
+      "words": 225
+    },
+    {
+      "index": 75,
+      "heading": "Chap. vii.—We must strive in order to be crowned.",
+      "file": "0075-chap-vii-we-must-strive-in-order-to-be-crowned.json",
+      "words": 188
+    },
+    {
+      "index": 76,
+      "heading": "Chap. viii.—The necessity of repentance while we are on earth.",
+      "file": "0076-chap-viii-the-necessity-of-repentance-while-we-are-on-earth.json",
+      "words": 217
+    },
+    {
+      "index": 77,
+      "heading": "Chap. ix.—We shall be judged in the flesh.",
+      "file": "0077-chap-ix-we-shall-be-judged-in-the-flesh.json",
+      "words": 199
+    },
+    {
+      "index": 78,
+      "heading": "Chap. x.—Vice is to be forsaken, and virtue followed.",
+      "file": "0078-chap-x-vice-is-to-be-forsaken-and-virtue-followed.json",
+      "words": 146
+    },
+    {
+      "index": 79,
+      "heading": "Chap. xi.—We ought to serve God, trusting in His promises.",
+      "file": "0079-chap-xi-we-ought-to-serve-god-trusting-in-his-promises.json",
+      "words": 214
+    },
+    {
+      "index": 80,
+      "heading": "Chap. xii.—We are constantly to look for the kingdom of God.",
+      "file": "0080-chap-xii-we-are-constantly-to-look-for-the-kingdom-of-god.json",
+      "words": 142
+    },
+    {
+      "index": 81,
+      "heading": "THE EPISTLE OF POLYCARP.",
+      "file": "0081-the-epistle-of-polycarp.json",
+      "words": 0
+    },
+    {
+      "index": 82,
+      "heading": "INTRODUCTORY NOTICE.",
+      "file": "0082-introductory-notice-3.json",
+      "words": 342
+    },
+    {
+      "index": 83,
+      "heading": "THE EPISTLE OF POLYCARP TO THE PHILIPPIANS.[316]",
+      "file": "0083-the-epistle-of-polycarp-to-the-philippians-316.json",
+      "words": 32
+    },
+    {
+      "index": 84,
+      "heading": "Chap. i.—Praise of the Philippians.",
+      "file": "0084-chap-i-praise-of-the-philippians.json",
+      "words": 152
+    },
+    {
+      "index": 85,
+      "heading": "Chap. ii.—An exhortation to virtue.",
+      "file": "0085-chap-ii-an-exhortation-to-virtue.json",
+      "words": 214
+    },
+    {
+      "index": 86,
+      "heading": "Chap. iii.—Expressions of personal unworthiness.",
+      "file": "0086-chap-iii-expressions-of-personal-unworthiness.json",
+      "words": 150
+    },
+    {
+      "index": 87,
+      "heading": "Chap. iv.—Various exhortations.",
+      "file": "0087-chap-iv-various-exhortations.json",
+      "words": 165
+    },
+    {
+      "index": 88,
+      "heading": "Chap. v.—The duties of deacons, youths, and virgins.",
+      "file": "0088-chap-v-the-duties-of-deacons-youths-and-virgins.json",
+      "words": 239
+    },
+    {
+      "index": 89,
+      "heading": "Chap. vi.—The duties of presbyters and others.",
+      "file": "0089-chap-vi-the-duties-of-presbyters-and-others.json",
+      "words": 212
+    },
+    {
+      "index": 90,
+      "heading": "Chap. vii.—Avoid the Docetæ, and persevere in fasting and prayer.",
+      "file": "0090-chap-vii-avoid-the-docet-and-persevere-in-fasting-and-prayer.json",
+      "words": 119
+    },
+    {
+      "index": 91,
+      "heading": "Chap. viii.—Persevere in hope and patience.",
+      "file": "0091-chap-viii-persevere-in-hope-and-patience.json",
+      "words": 90
+    },
+    {
+      "index": 92,
+      "heading": "Chap. ix.—Patience inculcated.",
+      "file": "0092-chap-ix-patience-inculcated.json",
+      "words": 119
+    },
+    {
+      "index": 93,
+      "heading": "Chap. x.—Exhortation to the practice of virtue.[369]",
+      "file": "0093-chap-x-exhortation-to-the-practice-of-virtue-369.json",
+      "words": 123
+    },
+    {
+      "index": 94,
+      "heading": "Chap. xi.—Expression of grief on account of Valens.",
+      "file": "0094-chap-xi-expression-of-grief-on-account-of-valens.json",
+      "words": 233
+    },
+    {
+      "index": 95,
+      "heading": "Chap. xii.—Exhortation to various graces.",
+      "file": "0095-chap-xii-exhortation-to-various-graces.json",
+      "words": 196
+    },
+    {
+      "index": 96,
+      "heading": "Chap. xiii.—Concerning the transmission of epistles.",
+      "file": "0096-chap-xiii-concerning-the-transmission-of-epistles.json",
+      "words": 136
+    },
+    {
+      "index": 97,
+      "heading": "Chap. xiv.—Conclusion.",
+      "file": "0097-chap-xiv-conclusion.json",
+      "words": 64
+    },
+    {
+      "index": 98,
+      "heading": "THE MARTYRDOM OF POLYCARP.",
+      "file": "0098-the-martyrdom-of-polycarp.json",
+      "words": 0
+    },
+    {
+      "index": 99,
+      "heading": "INTRODUCTORY NOTICE.",
+      "file": "0099-introductory-notice-4.json",
+      "words": 207
+    },
+    {
+      "index": 100,
+      "heading": "THE ENCYCLICAL EPISTLE OF THE CHURCH AT SMYRNA\nCONCERNING THE MARTYRDOM OF THE HOLY POLYCARP.",
+      "file": "0100-the-encyclical-epistle-of-the-church-at-smyrna-concerning-the-martyrdom-of-the-holy-polycarp.json",
+      "words": 45
+    },
+    {
+      "index": 101,
+      "heading": "Chap. i.—Subject of which we write.",
+      "file": "0101-chap-i-subject-of-which-we-write.json",
+      "words": 125
+    },
+    {
+      "index": 102,
+      "heading": "Chap. ii.—The wonderful constancy of the martyrs.",
+      "file": "0102-chap-ii-the-wonderful-constancy-of-the-martyrs.json",
+      "words": 323
+    },
+    {
+      "index": 103,
+      "heading": "Chap. iii.—The constancy of Germanicus. The death of Polycarp is demanded.",
+      "file": "0103-chap-iii-the-constancy-of-germanicus-the-death-of-polycarp-is-demanded.json",
+      "words": 115
+    },
+    {
+      "index": 104,
+      "heading": "Chap. iv.—Quintus the apostate.",
+      "file": "0104-chap-iv-quintus-the-apostate.json",
+      "words": 72
+    },
+    {
+      "index": 105,
+      "heading": "Chap. v.—The departure and vision of Polycarp.",
+      "file": "0105-chap-v-the-departure-and-vision-of-polycarp.json",
+      "words": 132
+    },
+    {
+      "index": 106,
+      "heading": "Chap. vi.—Polycarp is betrayed by a servant.",
+      "file": "0106-chap-vi-polycarp-is-betrayed-by-a-servant.json",
+      "words": 115
+    },
+    {
+      "index": 107,
+      "heading": "Chap. vii.—Polycarp is found by his pursuers.",
+      "file": "0107-chap-vii-polycarp-is-found-by-his-pursuers.json",
+      "words": 212
+    },
+    {
+      "index": 108,
+      "heading": "Chap. viii.—Polycarp is brought into the city.",
+      "file": "0108-chap-viii-polycarp-is-brought-into-the-city.json",
+      "words": 226
+    },
+    {
+      "index": 109,
+      "heading": "Chap. ix.—Polycarp refuses to revile Christ.",
+      "file": "0109-chap-ix-polycarp-refuses-to-revile-christ.json",
+      "words": 204
+    },
+    {
+      "index": 110,
+      "heading": "Chap. x.—Polycarp confesses himself a Christian.",
+      "file": "0110-chap-x-polycarp-confesses-himself-a-christian.json",
+      "words": 139
+    },
+    {
+      "index": 111,
+      "heading": "Chap. xi.—No threats have any effect on Polycarp.",
+      "file": "0111-chap-xi-no-threats-have-any-effect-on-polycarp.json",
+      "words": 136
+    },
+    {
+      "index": 112,
+      "heading": "Chap. xii.—Polycarp is sentenced to be burned.",
+      "file": "0112-chap-xii-polycarp-is-sentenced-to-be-burned.json",
+      "words": 234
+    },
+    {
+      "index": 113,
+      "heading": "Chap. xiii.—The funeral pile is erected.",
+      "file": "0113-chap-xiii-the-funeral-pile-is-erected.json",
+      "words": 165
+    },
+    {
+      "index": 114,
+      "heading": "Chap. xiv.—The prayer of Polycarp.",
+      "file": "0114-chap-xiv-the-prayer-of-polycarp.json",
+      "words": 221
+    },
+    {
+      "index": 115,
+      "heading": "Chap. xv.—Polycarp is not injured by the fire.",
+      "file": "0115-chap-xv-polycarp-is-not-injured-by-the-fire.json",
+      "words": 137
+    },
+    {
+      "index": 116,
+      "heading": "Chap. xvi.—Polycarp is pierced by a dagger.",
+      "file": "0116-chap-xvi-polycarp-is-pierced-by-a-dagger.json",
+      "words": 117
+    },
+    {
+      "index": 117,
+      "heading": "Chap. xvii.—The Christians are refused Polycarp’s body.",
+      "file": "0117-chap-xvii-the-christians-are-refused-polycarp-s-body.json",
+      "words": 239
+    },
+    {
+      "index": 118,
+      "heading": "Chap. xviii.—The body of Polycarp is burned.",
+      "file": "0118-chap-xviii-the-body-of-polycarp-is-burned.json",
+      "words": 100
+    },
+    {
+      "index": 119,
+      "heading": "Chap. xix.—Praise of the martyr Polycarp.",
+      "file": "0119-chap-xix-praise-of-the-martyr-polycarp.json",
+      "words": 133
+    },
+    {
+      "index": 120,
+      "heading": "Chap. xx.—This epistle is to be transmitted to the brethren.",
+      "file": "0120-chap-xx-this-epistle-is-to-be-transmitted-to-the-brethren.json",
+      "words": 124
+    },
+    {
+      "index": 121,
+      "heading": "Chap. xxi.—The date of the martyrdom.",
+      "file": "0121-chap-xxi-the-date-of-the-martyrdom.json",
+      "words": 69
+    },
+    {
+      "index": 122,
+      "heading": "Chap. xxii.—Salutation.",
+      "file": "0122-chap-xxii-salutation.json",
+      "words": 183
+    },
+    {
+      "index": 123,
+      "heading": "THE EPISTLE OF BARNABAS.",
+      "file": "0123-the-epistle-of-barnabas.json",
+      "words": 0
+    },
+    {
+      "index": 124,
+      "heading": "INTRODUCTORY NOTICE.",
+      "file": "0124-introductory-notice-5.json",
+      "words": 599
+    },
+    {
+      "index": 125,
+      "heading": "THE EPISTLE OF BARNABAS.[457]",
+      "file": "0125-the-epistle-of-barnabas-457.json",
+      "words": 0
+    },
+    {
+      "index": 126,
+      "heading": "Chap. i.—After the salutation, the writer declares that he would communicate to his brethren something of that which he had himself received.",
+      "file": "0126-chap-i-after-the-salutation-the-writer-declares-that-he-would-communicate-to-his-brethren-someth.json",
+      "words": 328
+    },
+    {
+      "index": 127,
+      "heading": "Chap. ii.—The Jewish sacrifices are now abolished.",
+      "file": "0127-chap-ii-the-jewish-sacrifices-are-now-abolished.json",
+      "words": 341
+    },
+    {
+      "index": 128,
+      "heading": "Chap. iii.—The fasts of the Jews are not true fasts, nor acceptable to God.",
+      "file": "0128-chap-iii-the-fasts-of-the-jews-are-not-true-fasts-nor-acceptable-to-god.json",
+      "words": 297
+    },
+    {
+      "index": 129,
+      "heading": "Chap. iv.—Antichrist is at hand: let us therefore avoid Jewish errors.",
+      "file": "0129-chap-iv-antichrist-is-at-hand-let-us-therefore-avoid-jewish-errors.json",
+      "words": 724
+    },
+    {
+      "index": 130,
+      "heading": "Chap. v.—The new covenant, founded on the sufferings of Christ, tends to our salvation, but to the Jews’ destruction.",
+      "file": "0130-chap-v-the-new-covenant-founded-on-the-sufferings-of-christ-tends-to-our-salvation-but-to-the-je.json",
+      "words": 552
+    },
+    {
+      "index": 131,
+      "heading": "Chap. vi.—The sufferings of Christ, and the new covenant, were announced by the prophets.",
+      "file": "0131-chap-vi-the-sufferings-of-christ-and-the-new-covenant-were-announced-by-the-prophets.json",
+      "words": 839
+    },
+    {
+      "index": 132,
+      "heading": "Chap. vii.—Fasting, and the goat sent away, were types of Christ.",
+      "file": "0132-chap-vii-fasting-and-the-goat-sent-away-were-types-of-christ.json",
+      "words": 614
+    },
+    {
+      "index": 133,
+      "heading": "Chap. viii.—The red heifer a type of Christ.",
+      "file": "0133-chap-viii-the-red-heifer-a-type-of-christ.json",
+      "words": 275
+    },
+    {
+      "index": 134,
+      "heading": "Chap. ix.—The spiritual meaning of circumcision.",
+      "file": "0134-chap-ix-the-spiritual-meaning-of-circumcision.json",
+      "words": 461
+    },
+    {
+      "index": 135,
+      "heading": "Chap. x.—Spiritual significance of the precepts of Moses respecting different kinds of food.",
+      "file": "0135-chap-x-spiritual-significance-of-the-precepts-of-moses-respecting-different-kinds-of-food.json",
+      "words": 755
+    },
+    {
+      "index": 136,
+      "heading": "Chap. xi.—Baptism and the cross prefigured in the Old Testament.",
+      "file": "0136-chap-xi-baptism-and-the-cross-prefigured-in-the-old-testament.json",
+      "words": 505
+    },
+    {
+      "index": 137,
+      "heading": "Chap. xii.—The cross of Christ frequently announced in the Old Testament.",
+      "file": "0137-chap-xii-the-cross-of-christ-frequently-announced-in-the-old-testament.json",
+      "words": 664
+    },
+    {
+      "index": 138,
+      "heading": "Chap. xiii.—Christians, and not Jews, the heirs of the covenant.",
+      "file": "0138-chap-xiii-christians-and-not-jews-the-heirs-of-the-covenant.json",
+      "words": 338
+    },
+    {
+      "index": 139,
+      "heading": "Chap. xiv.—The Lord hath given us the testament which Moses received and broke.",
+      "file": "0139-chap-xiv-the-lord-hath-given-us-the-testament-which-moses-received-and-broke.json",
+      "words": 477
+    },
+    {
+      "index": 140,
+      "heading": "Chap. xv.—The false and the true Sabbath.",
+      "file": "0140-chap-xv-the-false-and-the-true-sabbath.json",
+      "words": 385
+    },
+    {
+      "index": 141,
+      "heading": "Chap. xvi.—The spiritual temple of God.",
+      "file": "0141-chap-xvi-the-spiritual-temple-of-god.json",
+      "words": 512
+    },
+    {
+      "index": 142,
+      "heading": "Chap. xvii.—Conclusion of the first part of the epistle.",
+      "file": "0142-chap-xvii-conclusion-of-the-first-part-of-the-epistle.json",
+      "words": 62
+    },
+    {
+      "index": 143,
+      "heading": "Chap. xviii.—Second part of the epistle. The two ways.",
+      "file": "0143-chap-xviii-second-part-of-the-epistle-the-two-ways.json",
+      "words": 79
+    },
+    {
+      "index": 144,
+      "heading": "Chap. xix.—The way of light.",
+      "file": "0144-chap-xix-the-way-of-light.json",
+      "words": 691
+    },
+    {
+      "index": 145,
+      "heading": "Chap. xx.—The way of darkness.",
+      "file": "0145-chap-xx-the-way-of-darkness.json",
+      "words": 203
+    },
+    {
+      "index": 146,
+      "heading": "Chap. xxi.—Conclusion.",
+      "file": "0146-chap-xxi-conclusion.json",
+      "words": 298
+    },
+    {
+      "index": 147,
+      "heading": "THE EPISTLES OF IGNATIUS.\n(SHORTER AND LONGER.)",
+      "file": "0147-the-epistles-of-ignatius-shorter-and-longer.json",
+      "words": 0
+    },
+    {
+      "index": 148,
+      "heading": "INTRODUCTORY NOTICE.",
+      "file": "0148-introductory-notice-6.json",
+      "words": 1796
+    },
+    {
+      "index": 149,
+      "heading": "THE EPISTLE OF IGNATIUS TO THE EPHESIANS.",
+      "file": "0149-the-epistle-of-ignatius-to-the-ephesians.json",
+      "words": 156
+    },
+    {
+      "index": 150,
+      "heading": "Chap. i.—Praise of the Ephesians.",
+      "file": "0150-chap-i-praise-of-the-ephesians.json",
+      "words": 354
+    },
+    {
+      "index": 151,
+      "heading": "Chap. ii.—Congratulations and entreaties.",
+      "file": "0151-chap-ii-congratulations-and-entreaties.json",
+      "words": 353
+    },
+    {
+      "index": 152,
+      "heading": "Chap. iii.—Exhortations to unity.",
+      "file": "0152-chap-iii-exhortations-to-unity.json",
+      "words": 308
+    },
+    {
+      "index": 153,
+      "heading": "Chap. iv.—The same continued.",
+      "file": "0153-chap-iv-the-same-continued.json",
+      "words": 304
+    },
+    {
+      "index": 154,
+      "heading": "Chap. v.—The praise of unity.",
+      "file": "0154-chap-v-the-praise-of-unity.json",
+      "words": 473
+    },
+    {
+      "index": 155,
+      "heading": "Chap. vi.—Have respect to the bishop as to Christ Himself.",
+      "file": "0155-chap-vi-have-respect-to-the-bishop-as-to-christ-himself.json",
+      "words": 319
+    },
+    {
+      "index": 156,
+      "heading": "Chap. vii.—Beware of false teachers.",
+      "file": "0156-chap-vii-beware-of-false-teachers.json",
+      "words": 332
+    },
+    {
+      "index": 157,
+      "heading": "Chap. viii.—Renewed praise of the Ephesians.",
+      "file": "0157-chap-viii-renewed-praise-of-the-ephesians.json",
+      "words": 276
+    },
+    {
+      "index": 158,
+      "heading": "Chap. ix.—Ye have given no heed to false teachers.",
+      "file": "0158-chap-ix-ye-have-given-no-heed-to-false-teachers.json",
+      "words": 618
+    },
+    {
+      "index": 159,
+      "heading": "Chap. x.—Exhortations to prayer, humility, etc.",
+      "file": "0159-chap-x-exhortations-to-prayer-humility-etc.json",
+      "words": 471
+    },
+    {
+      "index": 160,
+      "heading": "Chap. xi.—An exhortation to fear God, etc.",
+      "file": "0160-chap-xi-an-exhortation-to-fear-god-etc.json",
+      "words": 335
+    },
+    {
+      "index": 161,
+      "heading": "Chap. xii.—Praise of the Ephesians.",
+      "file": "0161-chap-xii-praise-of-the-ephesians.json",
+      "words": 228
+    },
+    {
+      "index": 162,
+      "heading": "Chap. xiii.—Exhortation to meet together frequently for the worship of God.",
+      "file": "0162-chap-xiii-exhortation-to-meet-together-frequently-for-the-worship-of-god.json",
+      "words": 182
+    },
+    {
+      "index": 163,
+      "heading": "Chap. xiv.—Exhortations to faith and love.",
+      "file": "0163-chap-xiv-exhortations-to-faith-and-love.json",
+      "words": 266
+    },
+    {
+      "index": 164,
+      "heading": "Chap. xv.—Exhortation to confess Christ by silence as well as speech.",
+      "file": "0164-chap-xv-exhortation-to-confess-christ-by-silence-as-well-as-speech.json",
+      "words": 335
+    },
+    {
+      "index": 165,
+      "heading": "Chap. xvi.—The fate of false teachers.",
+      "file": "0165-chap-xvi-the-fate-of-false-teachers.json",
+      "words": 239
+    },
+    {
+      "index": 166,
+      "heading": "Chap. xvii.—Beware of false doctrines.",
+      "file": "0166-chap-xvii-beware-of-false-doctrines.json",
+      "words": 237
+    },
+    {
+      "index": 167,
+      "heading": "Chap. xviii.—The glory of the cross.",
+      "file": "0167-chap-xviii-the-glory-of-the-cross.json",
+      "words": 221
+    },
+    {
+      "index": 168,
+      "heading": "Chap. xix.—Three celebrated mysteries.",
+      "file": "0168-chap-xix-three-celebrated-mysteries.json",
+      "words": 377
+    },
+    {
+      "index": 169,
+      "heading": "Chap. xx.—Promise of another letter.—Shorter.",
+      "file": "0169-chap-xx-promise-of-another-letter-shorter.json",
+      "words": 167
+    },
+    {
+      "index": 170,
+      "heading": "Chap. xx.—Exhortations to stedfastness and unity.—Longer.",
+      "file": "0170-chap-xx-exhortations-to-stedfastness-and-unity-longer.json",
+      "words": 119
+    },
+    {
+      "index": 171,
+      "heading": "Chap. xxi.—Conclusion.",
+      "file": "0171-chap-xxi-conclusion-2.json",
+      "words": 221
+    },
+    {
+      "index": 172,
+      "heading": "THE EPISTLE OF IGNATIUS TO THE MAGNESIANS.",
+      "file": "0172-the-epistle-of-ignatius-to-the-magnesians.json",
+      "words": 110
+    },
+    {
+      "index": 173,
+      "heading": "Chap. i.—Reason of writing the epistle.",
+      "file": "0173-chap-i-reason-of-writing-the-epistle.json",
+      "words": 241
+    },
+    {
+      "index": 174,
+      "heading": "Chap. ii.—I rejoice in your messengers.",
+      "file": "0174-chap-ii-i-rejoice-in-your-messengers.json",
+      "words": 132
+    },
+    {
+      "index": 175,
+      "heading": "Chap. iii.—Honour your youthful bishop.",
+      "file": "0175-chap-iii-honour-your-youthful-bishop.json",
+      "words": 674
+    },
+    {
+      "index": 176,
+      "heading": "Chap. iv.—Some wickedly act independently of the bishop.",
+      "file": "0176-chap-iv-some-wickedly-act-independently-of-the-bishop.json",
+      "words": 156
+    },
+    {
+      "index": 177,
+      "heading": "Chap. v.—Death is the fate of all such.",
+      "file": "0177-chap-v-death-is-the-fate-of-all-such.json",
+      "words": 310
+    },
+    {
+      "index": 178,
+      "heading": "Chap. vi.—Preserve harmony.",
+      "file": "0178-chap-vi-preserve-harmony.json",
+      "words": 313
+    },
+    {
+      "index": 179,
+      "heading": "Chap. vii.—Do nothing without the bishop and presbyters.",
+      "file": "0179-chap-vii-do-nothing-without-the-bishop-and-presbyters.json",
+      "words": 235
+    },
+    {
+      "index": 180,
+      "heading": "Chap. viii.—Caution against false doctrines.",
+      "file": "0180-chap-viii-caution-against-false-doctrines.json",
+      "words": 226
+    },
+    {
+      "index": 181,
+      "heading": "Chap. ix.—Let us live with Christ.",
+      "file": "0181-chap-ix-let-us-live-with-christ.json",
+      "words": 478
+    },
+    {
+      "index": 182,
+      "heading": "Chap. x.—Beware of Judaizing.",
+      "file": "0182-chap-x-beware-of-judaizing.json",
+      "words": 373
+    },
+    {
+      "index": 183,
+      "heading": "Chap. xi.—I write these things to warn you.",
+      "file": "0183-chap-xi-i-write-these-things-to-warn-you.json",
+      "words": 346
+    },
+    {
+      "index": 184,
+      "heading": "Chap. xii.—Ye are superior to me.",
+      "file": "0184-chap-xii-ye-are-superior-to-me.json",
+      "words": 287
+    },
+    {
+      "index": 185,
+      "heading": "Chap. xiii.—Be established in faith and unity.",
+      "file": "0185-chap-xiii-be-established-in-faith-and-unity.json",
+      "words": 198
+    },
+    {
+      "index": 186,
+      "heading": "Chap. xiv.—Your prayers requested.",
+      "file": "0186-chap-xiv-your-prayers-requested.json",
+      "words": 168
+    },
+    {
+      "index": 187,
+      "heading": "Chap. xv.—Salutations.",
+      "file": "0187-chap-xv-salutations.json",
+      "words": 141
+    },
+    {
+      "index": 188,
+      "heading": "THE EPISTLE OF IGNATIUS TO THE TRALLIANS.",
+      "file": "0188-the-epistle-of-ignatius-to-the-trallians.json",
+      "words": 140
+    },
+    {
+      "index": 189,
+      "heading": "Chap. i.—Acknowledgment of their excellence.",
+      "file": "0189-chap-i-acknowledgment-of-their-excellence.json",
+      "words": 202
+    },
+    {
+      "index": 190,
+      "heading": "Chap. ii.—Be subject to the bishop, etc.",
+      "file": "0190-chap-ii-be-subject-to-the-bishop-etc.json",
+      "words": 323
+    },
+    {
+      "index": 191,
+      "heading": "Chap. iii.—Honour the deacons, etc.",
+      "file": "0191-chap-iii-honour-the-deacons-etc.json",
+      "words": 317
+    },
+    {
+      "index": 192,
+      "heading": "Chap. iv.—I have need of humility.",
+      "file": "0192-chap-iv-i-have-need-of-humility.json",
+      "words": 217
+    },
+    {
+      "index": 193,
+      "heading": "Chap. v.—I will not teach you profound doctrines.",
+      "file": "0193-chap-v-i-will-not-teach-you-profound-doctrines.json",
+      "words": 283
+    },
+    {
+      "index": 194,
+      "heading": "Chap. vi.—Abstain from the poison of heretics.",
+      "file": "0194-chap-vi-abstain-from-the-poison-of-heretics.json",
+      "words": 360
+    },
+    {
+      "index": 195,
+      "heading": "Chap. vii.—The same continued.",
+      "file": "0195-chap-vii-the-same-continued.json",
+      "words": 395
+    },
+    {
+      "index": 196,
+      "heading": "Chap. viii.—Be on your guard against the snares of the devil.",
+      "file": "0196-chap-viii-be-on-your-guard-against-the-snares-of-the-devil.json",
+      "words": 343
+    },
+    {
+      "index": 197,
+      "heading": "Chap. ix.—Reference to the history of Christ.",
+      "file": "0197-chap-ix-reference-to-the-history-of-christ.json",
+      "words": 504
+    },
+    {
+      "index": 198,
+      "heading": "Chap. x.—The reality of Christ’s passion.",
+      "file": "0198-chap-x-the-reality-of-christ-s-passion.json",
+      "words": 570
+    },
+    {
+      "index": 199,
+      "heading": "Chap. xi.—Avoid the deadly errors of the Docetæ.",
+      "file": "0199-chap-xi-avoid-the-deadly-errors-of-the-docet.json",
+      "words": 295
+    },
+    {
+      "index": 200,
+      "heading": "Chap. xii.—Continue in unity and love.",
+      "file": "0200-chap-xii-continue-in-unity-and-love.json",
+      "words": 312
+    },
+    {
+      "index": 201,
+      "heading": "Chap. xiii.—Conclusion.",
+      "file": "0201-chap-xiii-conclusion.json",
+      "words": 251
+    },
+    {
+      "index": 202,
+      "heading": "THE EPISTLE OF IGNATIUS TO THE ROMANS.",
+      "file": "0202-the-epistle-of-ignatius-to-the-romans.json",
+      "words": 351
+    },
+    {
+      "index": 203,
+      "heading": "Chap. i.—As a prisoner, I hope to see you.",
+      "file": "0203-chap-i-as-a-prisoner-i-hope-to-see-you.json",
+      "words": 240
+    },
+    {
+      "index": 204,
+      "heading": "Chap. ii.—Do not save me from martyrdom.",
+      "file": "0204-chap-ii-do-not-save-me-from-martyrdom.json",
+      "words": 333
+    },
+    {
+      "index": 205,
+      "heading": "Chap. iii.—Pray rather that I may attain to martyrdom.",
+      "file": "0205-chap-iii-pray-rather-that-i-may-attain-to-martyrdom.json",
+      "words": 324
+    },
+    {
+      "index": 206,
+      "heading": "Chap. iv.—Allow me to fall a prey to the wild beasts.",
+      "file": "0206-chap-iv-allow-me-to-fall-a-prey-to-the-wild-beasts.json",
+      "words": 449
+    },
+    {
+      "index": 207,
+      "heading": "Chap. v.—I desire to die.",
+      "file": "0207-chap-v-i-desire-to-die.json",
+      "words": 422
+    },
+    {
+      "index": 208,
+      "heading": "Chap. vi.—By death I shall attain true life.",
+      "file": "0208-chap-vi-by-death-i-shall-attain-true-life.json",
+      "words": 371
+    },
+    {
+      "index": 209,
+      "heading": "Chap. vii.—Reason of desiring to die.",
+      "file": "0209-chap-vii-reason-of-desiring-to-die.json",
+      "words": 419
+    },
+    {
+      "index": 210,
+      "heading": "Chap. viii.—Be ye favourable to me.",
+      "file": "0210-chap-viii-be-ye-favourable-to-me.json",
+      "words": 279
+    },
+    {
+      "index": 211,
+      "heading": "Chap. ix.—Pray for the church in Syria.",
+      "file": "0211-chap-ix-pray-for-the-church-in-syria.json",
+      "words": 268
+    },
+    {
+      "index": 212,
+      "heading": "Chap. x.—Conclusion.",
+      "file": "0212-chap-x-conclusion.json",
+      "words": 254
+    },
+    {
+      "index": 213,
+      "heading": "THE EPISTLE OF IGNATIUS TO THE PHILADELPHIANS.",
+      "file": "0213-the-epistle-of-ignatius-to-the-philadelphians.json",
+      "words": 278
+    },
+    {
+      "index": 214,
+      "heading": "Chap. i.—Praise of the bishop.",
+      "file": "0214-chap-i-praise-of-the-bishop.json",
+      "words": 265
+    },
+    {
+      "index": 215,
+      "heading": "Chap. ii.—Maintain union with the bishop.",
+      "file": "0215-chap-ii-maintain-union-with-the-bishop.json",
+      "words": 135
+    },
+    {
+      "index": 216,
+      "heading": "Chap. iii.—Avoid schismatics.",
+      "file": "0216-chap-iii-avoid-schismatics.json",
+      "words": 593
+    },
+    {
+      "index": 217,
+      "heading": "Chap. iv.—Have but one Eucharist, etc.",
+      "file": "0217-chap-iv-have-but-one-eucharist-etc.json",
+      "words": 751
+    },
+    {
+      "index": 218,
+      "heading": "Chap. v.—Pray for me.",
+      "file": "0218-chap-v-pray-for-me.json",
+      "words": 420
+    },
+    {
+      "index": 219,
+      "heading": "Chap. vi.—Do not accept Judaism.",
+      "file": "0219-chap-vi-do-not-accept-judaism.json",
+      "words": 702
+    },
+    {
+      "index": 220,
+      "heading": "Chap. vii.—I have exhorted you to unity.",
+      "file": "0220-chap-vii-i-have-exhorted-you-to-unity.json",
+      "words": 301
+    },
+    {
+      "index": 221,
+      "heading": "Chap. viii.—The same continued.",
+      "file": "0221-chap-viii-the-same-continued.json",
+      "words": 367
+    },
+    {
+      "index": 222,
+      "heading": "Chap. ix.—The Old Testament is good: the New Testament is better.",
+      "file": "0222-chap-ix-the-old-testament-is-good-the-new-testament-is-better.json",
+      "words": 382
+    },
+    {
+      "index": 223,
+      "heading": "Chap. x.—Congratulate the inhabitants of Antioch on the close of the persecution.",
+      "file": "0223-chap-x-congratulate-the-inhabitants-of-antioch-on-the-close-of-the-persecution.json",
+      "words": 271
+    },
+    {
+      "index": 224,
+      "heading": "Chap. xi.—Thanks and salutation.",
+      "file": "0224-chap-xi-thanks-and-salutation.json",
+      "words": 304
+    },
+    {
+      "index": 225,
+      "heading": "THE EPISTLE OF IGNATIUS TO THE SMYRNÆANS.",
+      "file": "0225-the-epistle-of-ignatius-to-the-smyrn-ans.json",
+      "words": 142
+    },
+    {
+      "index": 226,
+      "heading": "Chap. i.—Thanks to God for your faith.",
+      "file": "0226-chap-i-thanks-to-god-for-your-faith.json",
+      "words": 364
+    },
+    {
+      "index": 227,
+      "heading": "Chap. ii.—Christ’s true passion.",
+      "file": "0227-chap-ii-christ-s-true-passion.json",
+      "words": 244
+    },
+    {
+      "index": 228,
+      "heading": "Chap. iii.—Christ was possessed of a body after His resurrection.",
+      "file": "0228-chap-iii-christ-was-possessed-of-a-body-after-his-resurrection.json",
+      "words": 395
+    },
+    {
+      "index": 229,
+      "heading": "Chap. iv.—Beware of these heretics.",
+      "file": "0229-chap-iv-beware-of-these-heretics.json",
+      "words": 320
+    },
+    {
+      "index": 230,
+      "heading": "Chap. v.—Their dangerous errors.",
+      "file": "0230-chap-v-their-dangerous-errors.json",
+      "words": 263
+    },
+    {
+      "index": 231,
+      "heading": "Chap. vi.—Unbelievers in the blood of Christ shall be condemned.",
+      "file": "0231-chap-vi-unbelievers-in-the-blood-of-christ-shall-be-condemned.json",
+      "words": 394
+    },
+    {
+      "index": 232,
+      "heading": "Chap. vii.—Let us stand aloof from such heretics.",
+      "file": "0232-chap-vii-let-us-stand-aloof-from-such-heretics.json",
+      "words": 335
+    },
+    {
+      "index": 233,
+      "heading": "Chap. viii.—Let nothing be done without the bishop.",
+      "file": "0233-chap-viii-let-nothing-be-done-without-the-bishop.json",
+      "words": 295
+    },
+    {
+      "index": 234,
+      "heading": "Chap. ix.—Honour the bishop.",
+      "file": "0234-chap-ix-honour-the-bishop.json",
+      "words": 550
+    },
+    {
+      "index": 235,
+      "heading": "Chap. x.—Acknowledgment of their kindness.",
+      "file": "0235-chap-x-acknowledgment-of-their-kindness.json",
+      "words": 190
+    },
+    {
+      "index": 236,
+      "heading": "Chap. xi.—Request to them to send a messenger to Antioch.",
+      "file": "0236-chap-xi-request-to-them-to-send-a-messenger-to-antioch.json",
+      "words": 483
+    },
+    {
+      "index": 237,
+      "heading": "Chap. xii.—Salutations.",
+      "file": "0237-chap-xii-salutations.json",
+      "words": 253
+    },
+    {
+      "index": 238,
+      "heading": "Conclusion.",
+      "file": "0238-conclusion.json",
+      "words": 187
+    },
+    {
+      "index": 239,
+      "heading": "THE EPISTLE OF IGNATIUS TO POLYCARP.",
+      "file": "0239-the-epistle-of-ignatius-to-polycarp.json",
+      "words": 74
+    },
+    {
+      "index": 240,
+      "heading": "Chap. i.—Commendation and exhortation.",
+      "file": "0240-chap-i-commendation-and-exhortation.json",
+      "words": 342
+    },
+    {
+      "index": 241,
+      "heading": "Chap. ii.—Exhortations.",
+      "file": "0241-chap-ii-exhortations.json",
+      "words": 385
+    },
+    {
+      "index": 242,
+      "heading": "Chap. iii.—Exhortations.",
+      "file": "0242-chap-iii-exhortations.json",
+      "words": 290
+    },
+    {
+      "index": 243,
+      "heading": "Chap. iv.—Exhortations.",
+      "file": "0243-chap-iv-exhortations.json",
+      "words": 233
+    },
+    {
+      "index": 244,
+      "heading": "Chap. v.—The duties of husbands and wives.",
+      "file": "0244-chap-v-the-duties-of-husbands-and-wives.json",
+      "words": 296
+    },
+    {
+      "index": 245,
+      "heading": "Chap. vi.—The duties of the Christian flock.",
+      "file": "0245-chap-vi-the-duties-of-the-christian-flock.json",
+      "words": 309
+    },
+    {
+      "index": 246,
+      "heading": "Chap. vii.—Request that Polycarp would send a messenger to Antioch.",
+      "file": "0246-chap-vii-request-that-polycarp-would-send-a-messenger-to-antioch.json",
+      "words": 372
+    },
+    {
+      "index": 247,
+      "heading": "Chap. viii.—Let other churches also send to Antioch.",
+      "file": "0247-chap-viii-let-other-churches-also-send-to-antioch.json",
+      "words": 377
+    },
+    {
+      "index": 248,
+      "heading": "THE EPISTLES OF IGNATIUS AFTER THE SYRIAC VERSION.",
+      "file": "0248-the-epistles-of-ignatius-after-the-syriac-version.json",
+      "words": 0
+    },
+    {
+      "index": 249,
+      "heading": "INTRODUCTORY NOTICE.",
+      "file": "0249-introductory-notice-7.json",
+      "words": 200
+    },
+    {
+      "index": 250,
+      "heading": "THE EPISTLE OF IGNATIUS TO POLYCARP.[1384]",
+      "file": "0250-the-epistle-of-ignatius-to-polycarp-1384.json",
+      "words": 31
+    },
+    {
+      "index": 251,
+      "heading": "Chap. i.",
+      "file": "0251-chap-i.json",
+      "words": 177
+    },
+    {
+      "index": 252,
+      "heading": "Chap. ii.",
+      "file": "0252-chap-ii.json",
+      "words": 188
+    },
+    {
+      "index": 253,
+      "heading": "Chap. iii.",
+      "file": "0253-chap-iii.json",
+      "words": 125
+    },
+    {
+      "index": 254,
+      "heading": "Chap. iv.",
+      "file": "0254-chap-iv.json",
+      "words": 113
+    },
+    {
+      "index": 255,
+      "heading": "Chap. v.",
+      "file": "0255-chap-v.json",
+      "words": 141
+    },
+    {
+      "index": 256,
+      "heading": "Chap. vi.",
+      "file": "0256-chap-vi.json",
+      "words": 160
+    },
+    {
+      "index": 257,
+      "heading": "Chap. vii.",
+      "file": "0257-chap-vii.json",
+      "words": 16
+    },
+    {
+      "index": 258,
+      "heading": "Chap. viii.",
+      "file": "0258-chap-viii.json",
+      "words": 18
+    },
+    {
+      "index": 259,
+      "heading": "THE SECOND EPISTLE OF IGNATIUS: TO THE EPHESIANS.[1398]",
+      "file": "0259-the-second-epistle-of-ignatius-to-the-ephesians-1398.json",
+      "words": 88
+    },
+    {
+      "index": 260,
+      "heading": "Chap. i.",
+      "file": "0260-chap-i-2.json",
+      "words": 198
+    },
+    {
+      "index": 261,
+      "heading": "Chap. iii.[1404]",
+      "file": "0261-chap-iii-1404.json",
+      "words": 36
+    },
+    {
+      "index": 262,
+      "heading": "Chap. viii.[1405]",
+      "file": "0262-chap-viii-1405.json",
+      "words": 109
+    },
+    {
+      "index": 263,
+      "heading": "Chap. ix.",
+      "file": "0263-chap-ix.json",
+      "words": 59
+    },
+    {
+      "index": 264,
+      "heading": "Chap. x.",
+      "file": "0264-chap-x.json",
+      "words": 96
+    },
+    {
+      "index": 265,
+      "heading": "Chap. xiv.[1407]",
+      "file": "0265-chap-xiv-1407.json",
+      "words": 20
+    },
+    {
+      "index": 266,
+      "heading": "Chap. xv.",
+      "file": "0266-chap-xv.json",
+      "words": 46
+    },
+    {
+      "index": 267,
+      "heading": "Chap. xviii.[1409]",
+      "file": "0267-chap-xviii-1409.json",
+      "words": 27
+    },
+    {
+      "index": 268,
+      "heading": "Chap. xix.",
+      "file": "0268-chap-xix.json",
+      "words": 90
+    },
+    {
+      "index": 269,
+      "heading": "THE THIRD EPISTLE OF THE SAME ST IGNATIUS.[1412]",
+      "file": "0269-the-third-epistle-of-the-same-st-ignatius-1412.json",
+      "words": 71
+    },
+    {
+      "index": 270,
+      "heading": "Chap. i.",
+      "file": "0270-chap-i-3.json",
+      "words": 128
+    },
+    {
+      "index": 271,
+      "heading": "Chap. ii.",
+      "file": "0271-chap-ii-2.json",
+      "words": 139
+    },
+    {
+      "index": 272,
+      "heading": "Chap. iii.",
+      "file": "0272-chap-iii-2.json",
+      "words": 109
+    },
+    {
+      "index": 273,
+      "heading": "Chap. iv.",
+      "file": "0273-chap-iv-2.json",
+      "words": 230
+    },
+    {
+      "index": 274,
+      "heading": "Chap. v.",
+      "file": "0274-chap-v-2.json",
+      "words": 211
+    },
+    {
+      "index": 275,
+      "heading": "Chap. vi.",
+      "file": "0275-chap-vi-2.json",
+      "words": 9
+    },
+    {
+      "index": 276,
+      "heading": "Chap. vii.",
+      "file": "0276-chap-vii-2.json",
+      "words": 53
+    },
+    {
+      "index": 277,
+      "heading": "Chap. ix.[1424]",
+      "file": "0277-chap-ix-1424.json",
+      "words": 255
+    },
+    {
+      "index": 278,
+      "heading": "THE MARTYRDOM OF IGNATIUS.",
+      "file": "0278-the-martyrdom-of-ignatius.json",
+      "words": 0
+    },
+    {
+      "index": 279,
+      "heading": "INTRODUCTORY NOTICE.",
+      "file": "0279-introductory-notice-8.json",
+      "words": 408
+    },
+    {
+      "index": 280,
+      "heading": "THE MARTYRDOM OF IGNATIUS.",
+      "file": "0280-the-martyrdom-of-ignatius-2.json",
+      "words": 0
+    },
+    {
+      "index": 281,
+      "heading": "Chap. i.—Desire of Ignatius for martyrdom.",
+      "file": "0281-chap-i-desire-of-ignatius-for-martyrdom.json",
+      "words": 206
+    },
+    {
+      "index": 282,
+      "heading": "Chap. ii.—Ignatius is condemned by Trajan.",
+      "file": "0282-chap-ii-ignatius-is-condemned-by-trajan.json",
+      "words": 560
+    },
+    {
+      "index": 283,
+      "heading": "Chap. iii.—Ignatius sails to Smyrna.",
+      "file": "0283-chap-iii-ignatius-sails-to-smyrna.json",
+      "words": 174
+    },
+    {
+      "index": 284,
+      "heading": "Chap. iv.—Ignatius writes to the churches.",
+      "file": "0284-chap-iv-ignatius-writes-to-the-churches.json",
+      "words": 133
+    },
+    {
+      "index": 285,
+      "heading": "Chap. v.—Ignatius is brought to Rome.",
+      "file": "0285-chap-v-ignatius-is-brought-to-rome.json",
+      "words": 287
+    },
+    {
+      "index": 286,
+      "heading": "Chap. vi.—Ignatius is devoured by the beasts at Rome.",
+      "file": "0286-chap-vi-ignatius-is-devoured-by-the-beasts-at-rome.json",
+      "words": 362
+    },
+    {
+      "index": 287,
+      "heading": "Chap. vii.—Ignatius appears in a vision after his death.",
+      "file": "0287-chap-vii-ignatius-appears-in-a-vision-after-his-death.json",
+      "words": 259
+    },
+    {
+      "index": 288,
+      "heading": "THE EPISTLE TO DIOGNETUS.",
+      "file": "0288-the-epistle-to-diognetus.json",
+      "words": 0
+    },
+    {
+      "index": 289,
+      "heading": "Introductory Notice.",
+      "file": "0289-introductory-notice-9.json",
+      "words": 512
+    },
+    {
+      "index": 290,
+      "heading": "THE EPISTLE TO DIOGNETUS.",
+      "file": "0290-the-epistle-to-diognetus-2.json",
+      "words": 0
+    },
+    {
+      "index": 291,
+      "heading": "Chap. i.—Occasion of the Epistle.",
+      "file": "0291-chap-i-occasion-of-the-epistle.json",
+      "words": 164
+    },
+    {
+      "index": 292,
+      "heading": "Chap. ii.—The vanity of idols.",
+      "file": "0292-chap-ii-the-vanity-of-idols.json",
+      "words": 596
+    },
+    {
+      "index": 293,
+      "heading": "Chap. iii.—Superstitions of the Jews.",
+      "file": "0293-chap-iii-superstitions-of-the-jews.json",
+      "words": 248
+    },
+    {
+      "index": 294,
+      "heading": "Chap. iv.—The other observances of the Jews.",
+      "file": "0294-chap-iv-the-other-observances-of-the-jews.json",
+      "words": 248
+    },
+    {
+      "index": 295,
+      "heading": "Chap. v.—The manners of the Christians.",
+      "file": "0295-chap-v-the-manners-of-the-christians.json",
+      "words": 363
+    },
+    {
+      "index": 296,
+      "heading": "Chap. vi.—The relation of Christians to the world.",
+      "file": "0296-chap-vi-the-relation-of-christians-to-the-world.json",
+      "words": 243
+    },
+    {
+      "index": 297,
+      "heading": "Chap. vii.—The manifestation of Christ.",
+      "file": "0297-chap-vii-the-manifestation-of-christ.json",
+      "words": 449
+    },
+    {
+      "index": 298,
+      "heading": "Chap. viii.—The miserable state of men before the coming of the Word.",
+      "file": "0298-chap-viii-the-miserable-state-of-men-before-the-coming-of-the-word.json",
+      "words": 321
+    },
+    {
+      "index": 299,
+      "heading": "Chap. ix.—Why the Son was sent so late.",
+      "file": "0299-chap-ix-why-the-son-was-sent-so-late.json",
+      "words": 404
+    },
+    {
+      "index": 300,
+      "heading": "Chap. x.—The blessings that will flow from faith.",
+      "file": "0300-chap-x-the-blessings-that-will-flow-from-faith.json",
+      "words": 421
+    },
+    {
+      "index": 301,
+      "heading": "Chap. xi.—These things are worthy to be known and believed.",
+      "file": "0301-chap-xi-these-things-are-worthy-to-be-known-and-believed.json",
+      "words": 344
+    },
+    {
+      "index": 302,
+      "heading": "Chap. xii.—The importance of knowledge to true spiritual life.",
+      "file": "0302-chap-xii-the-importance-of-knowledge-to-true-spiritual-life.json",
+      "words": 336
+    },
+    {
+      "index": 303,
+      "heading": "THE PASTOR OF HERMAS.",
+      "file": "0303-the-pastor-of-hermas.json",
+      "words": 0
+    },
+    {
+      "index": 304,
+      "heading": "Introductory Notice.",
+      "file": "0304-introductory-notice-10.json",
+      "words": 915
+    },
+    {
+      "index": 305,
+      "heading": "BOOK FIRST.—VISIONS.",
+      "file": "0305-book-first-visions.json",
+      "words": 0
+    },
+    {
+      "index": 306,
+      "heading": "VISION FIRST.\nAGAINST FILTHY AND PROUD THOUGHTS, AND THE CARELESSNESS OF HERMAS IN CHASTISING HIS SONS.",
+      "file": "0306-vision-first-against-filthy-and-proud-thoughts-and-the-carelessness-of-hermas-in-chastising-his-.json",
+      "words": 0
+    },
+    {
+      "index": 307,
+      "heading": "Chap. i.",
+      "file": "0307-chap-i-4.json",
+      "words": 536
+    },
+    {
+      "index": 308,
+      "heading": "Chap. ii.",
+      "file": "0308-chap-ii-3.json",
+      "words": 265
+    },
+    {
+      "index": 309,
+      "heading": "Chap. iii.",
+      "file": "0309-chap-iii-3.json",
+      "words": 375
+    },
+    {
+      "index": 310,
+      "heading": "Chap. iv.",
+      "file": "0310-chap-iv-3.json",
+      "words": 129
+    },
+    {
+      "index": 311,
+      "heading": "VISION SECOND.\nAGAIN, OF HIS NEGLECT IN CHASTISING HIS TALKATIVE WIFE AND HIS LUSTFUL SONS, AND OF HIS CHARACTER.",
+      "file": "0311-vision-second-again-of-his-neglect-in-chastising-his-talkative-wife-and-his-lustful-sons-and-of-.json",
+      "words": 0
+    },
+    {
+      "index": 312,
+      "heading": "Chap. i.",
+      "file": "0312-chap-i-5.json",
+      "words": 226
+    },
+    {
+      "index": 313,
+      "heading": "Chap. ii.",
+      "file": "0313-chap-ii-4.json",
+      "words": 384
+    },
+    {
+      "index": 314,
+      "heading": "Chap. iii.",
+      "file": "0314-chap-iii-4.json",
+      "words": 207
+    },
+    {
+      "index": 315,
+      "heading": "Chap. iv.",
+      "file": "0315-chap-iv-4.json",
+      "words": 233
+    },
+    {
+      "index": 316,
+      "heading": "VISION THIRD.\nCONCERNING THE BUILDING OF THE TRIUMPHANT CHURCH, AND THE VARIOUS CLASSES OF REPROBATE MEN.",
+      "file": "0316-vision-third-concerning-the-building-of-the-triumphant-church-and-the-various-classes-of-reproba.json",
+      "words": 0
+    },
+    {
+      "index": 317,
+      "heading": "Chap. i.",
+      "file": "0317-chap-i-6.json",
+      "words": 509
+    },
+    {
+      "index": 318,
+      "heading": "Chap. ii.",
+      "file": "0318-chap-ii-5.json",
+      "words": 512
+    },
+    {
+      "index": 319,
+      "heading": "Chap. iii.",
+      "file": "0319-chap-iii-5.json",
+      "words": 318
+    },
+    {
+      "index": 320,
+      "heading": "Chap. iv.",
+      "file": "0320-chap-iv-5.json",
+      "words": 258
+    },
+    {
+      "index": 321,
+      "heading": "Chap. v.",
+      "file": "0321-chap-v-3.json",
+      "words": 335
+    },
+    {
+      "index": 322,
+      "heading": "Chap. vi.",
+      "file": "0322-chap-vi-3.json",
+      "words": 417
+    },
+    {
+      "index": 323,
+      "heading": "Chap. vii.",
+      "file": "0323-chap-vii-3.json",
+      "words": 325
+    },
+    {
+      "index": 324,
+      "heading": "Chap. viii.",
+      "file": "0324-chap-viii-2.json",
+      "words": 462
+    },
+    {
+      "index": 325,
+      "heading": "Chap. ix.",
+      "file": "0325-chap-ix-2.json",
+      "words": 372
+    },
+    {
+      "index": 326,
+      "heading": "Chap. x.",
+      "file": "0326-chap-x-2.json",
+      "words": 367
+    },
+    {
+      "index": 327,
+      "heading": "Chap. xi.",
+      "file": "0327-chap-xi.json",
+      "words": 150
+    },
+    {
+      "index": 328,
+      "heading": "Chap. xii.",
+      "file": "0328-chap-xii.json",
+      "words": 191
+    },
+    {
+      "index": 329,
+      "heading": "Chap. xiii.",
+      "file": "0329-chap-xiii.json",
+      "words": 173
+    },
+    {
+      "index": 330,
+      "heading": "VISION FOURTH.\nCONCERNING THE TRIAL AND TRIBULATION THAT ARE TO COME UPON MEN.",
+      "file": "0330-vision-fourth-concerning-the-trial-and-tribulation-that-are-to-come-upon-men.json",
+      "words": 0
+    },
+    {
+      "index": 331,
+      "heading": "Chap. i.",
+      "file": "0331-chap-i-7.json",
+      "words": 375
+    },
+    {
+      "index": 332,
+      "heading": "Chap. ii.",
+      "file": "0332-chap-ii-6.json",
+      "words": 361
+    },
+    {
+      "index": 333,
+      "heading": "Chap. iii.",
+      "file": "0333-chap-iii-6.json",
+      "words": 254
+    },
+    {
+      "index": 334,
+      "heading": "VISION FIFTH.\nCONCERNING THE COMMANDMENTS.",
+      "file": "0334-vision-fifth-concerning-the-commandments.json",
+      "words": 371
+    },
+    {
+      "index": 335,
+      "heading": "BOOK SECOND.—COMMANDMENTS.",
+      "file": "0335-book-second-commandments.json",
+      "words": 0
+    },
+    {
+      "index": 336,
+      "heading": "COMMANDMENT FIRST.\nOn Faith in God.",
+      "file": "0336-commandment-first-on-faith-in-god.json",
+      "words": 76
+    },
+    {
+      "index": 337,
+      "heading": "COMMANDMENT SECOND.\nOn avoiding evil-speaking, and on giving alms in simplicity.",
+      "file": "0337-commandment-second-on-avoiding-evil-speaking-and-on-giving-alms-in-simplicity.json",
+      "words": 318
+    },
+    {
+      "index": 338,
+      "heading": "COMMANDMENT THIRD.\nOn avoiding falsehood, and on the repentance of Hermas for his dissimulation.",
+      "file": "0338-commandment-third-on-avoiding-falsehood-and-on-the-repentance-of-hermas-for-his-dissimulation.json",
+      "words": 349
+    },
+    {
+      "index": 339,
+      "heading": "COMMANDMENT FOURTH.\nOn putting one’s wife away for adultery.",
+      "file": "0339-commandment-fourth-on-putting-one-s-wife-away-for-adultery.json",
+      "words": 0
+    },
+    {
+      "index": 340,
+      "heading": "Chap. i.",
+      "file": "0340-chap-i-8.json",
+      "words": 529
+    },
+    {
+      "index": 341,
+      "heading": "Chap. ii.",
+      "file": "0341-chap-ii-7.json",
+      "words": 218
+    },
+    {
+      "index": 342,
+      "heading": "Chap. iii.",
+      "file": "0342-chap-iii-7.json",
+      "words": 348
+    },
+    {
+      "index": 343,
+      "heading": "Chap. iv.",
+      "file": "0343-chap-iv-6.json",
+      "words": 150
+    },
+    {
+      "index": 344,
+      "heading": "COMMANDMENT FIFTH.\nOf sadness of heart, and of patience.",
+      "file": "0344-commandment-fifth-of-sadness-of-heart-and-of-patience.json",
+      "words": 0
+    },
+    {
+      "index": 345,
+      "heading": "Chap. i.",
+      "file": "0345-chap-i-9.json",
+      "words": 370
+    },
+    {
+      "index": 346,
+      "heading": "Chap. ii.",
+      "file": "0346-chap-ii-8.json",
+      "words": 443
+    },
+    {
+      "index": 347,
+      "heading": "COMMANDMENT SIXTH.\nHow to recognise the two spirits attendant on each man, and how to distinguish the suggestions of the one from those of the other.",
+      "file": "0347-commandment-sixth-how-to-recognise-the-two-spirits-attendant-on-each-man-and-how-to-distinguish-.json",
+      "words": 0
+    },
+    {
+      "index": 348,
+      "heading": "Chap. i.",
+      "file": "0348-chap-i-10.json",
+      "words": 188
+    },
+    {
+      "index": 349,
+      "heading": "Chap. ii.",
+      "file": "0349-chap-ii-9.json",
+      "words": 444
+    },
+    {
+      "index": 350,
+      "heading": "COMMANDMENT SEVENTH.\nOn fearing God, and not fearing the devil.",
+      "file": "0350-commandment-seventh-on-fearing-god-and-not-fearing-the-devil.json",
+      "words": 305
+    },
+    {
+      "index": 351,
+      "heading": "COMMANDMENT EIGHTH.\nWe ought to shun that which is evil, and do that which is good.",
+      "file": "0351-commandment-eighth-we-ought-to-shun-that-which-is-evil-and-do-that-which-is-good.json",
+      "words": 670
+    },
+    {
+      "index": 352,
+      "heading": "COMMANDMENT NINTH.\nPrayer must be made to God without ceasing, and with unwavering confidence.",
+      "file": "0352-commandment-ninth-prayer-must-be-made-to-god-without-ceasing-and-with-unwavering-confidence.json",
+      "words": 500
+    },
+    {
+      "index": 353,
+      "heading": "COMMANDMENT TENTH.\nOf grief, and not grieving the Spirit of God which is in us.",
+      "file": "0353-commandment-tenth-of-grief-and-not-grieving-the-spirit-of-god-which-is-in-us.json",
+      "words": 0
+    },
+    {
+      "index": 354,
+      "heading": "Chap. i.",
+      "file": "0354-chap-i-11.json",
+      "words": 315
+    },
+    {
+      "index": 355,
+      "heading": "Chap. ii.",
+      "file": "0355-chap-ii-10.json",
+      "words": 407
+    },
+    {
+      "index": 356,
+      "heading": "COMMANDMENT ELEVENTH.\nThe Spirit and prophets to be tried by their works; also of the two kinds of spirit.",
+      "file": "0356-commandment-eleventh-the-spirit-and-prophets-to-be-tried-by-their-works-also-of-the-two-kinds-of.json",
+      "words": 1072
+    },
+    {
+      "index": 357,
+      "heading": "COMMANDMENT TWELFTH.\nOn the twofold desire. The commandments of God can be kept, and believers ought not to fear the devil.",
+      "file": "0357-commandment-twelfth-on-the-twofold-desire-the-commandments-of-god-can-be-kept-and-believers-ough.json",
+      "words": 0
+    },
+    {
+      "index": 358,
+      "heading": "Chap. i.",
+      "file": "0358-chap-i-12.json",
+      "words": 151
+    },
+    {
+      "index": 359,
+      "heading": "Chap. ii.",
+      "file": "0359-chap-ii-11.json",
+      "words": 222
+    },
+    {
+      "index": 360,
+      "heading": "Chap. iii.",
+      "file": "0360-chap-iii-8.json",
+      "words": 283
+    },
+    {
+      "index": 361,
+      "heading": "Chap. iv.",
+      "file": "0361-chap-iv-7.json",
+      "words": 282
+    },
+    {
+      "index": 362,
+      "heading": "Chap. v.",
+      "file": "0362-chap-v-4.json",
+      "words": 262
+    },
+    {
+      "index": 363,
+      "heading": "Chap. vi.",
+      "file": "0363-chap-vi-4.json",
+      "words": 265
+    },
+    {
+      "index": 364,
+      "heading": "BOOK THIRD.—SIMILITUDES.\nSIMILITUDES WHICH HE SPAKE WITH ME.",
+      "file": "0364-book-third-similitudes-similitudes-which-he-spake-with-me.json",
+      "words": 0
+    },
+    {
+      "index": 365,
+      "heading": "SIMILITUDE FIRST.\nAs in this world we have no abiding city, we ought to seek one to come.",
+      "file": "0365-similitude-first-as-in-this-world-we-have-no-abiding-city-we-ought-to-seek-one-to-come.json",
+      "words": 543
+    },
+    {
+      "index": 366,
+      "heading": "SIMILITUDE SECOND.\nAs the vine is supported by the elm, so is the rich man helped by the prayer of the poor.",
+      "file": "0366-similitude-second-as-the-vine-is-supported-by-the-elm-so-is-the-rich-man-helped-by-the-prayer-of.json",
+      "words": 643
+    },
+    {
+      "index": 367,
+      "heading": "SIMILITUDE THIRD.\nAs in winter green trees cannot be distinguished from withered, so in this world neither can the just from the unjust.",
+      "file": "0367-similitude-third-as-in-winter-green-trees-cannot-be-distinguished-from-withered-so-in-this-world.json",
+      "words": 150
+    },
+    {
+      "index": 368,
+      "heading": "SIMILITUDE FOURTH.\nAs in summer living trees are distinguished from withered by fruit and living leaves, so in the world to come the just differ from the unjust in happiness.",
+      "file": "0368-similitude-fourth-as-in-summer-living-trees-are-distinguished-from-withered-by-fruit-and-living-.json",
+      "words": 357
+    },
+    {
+      "index": 369,
+      "heading": "SIMILITUDE FIFTH.\nOf true fasting and its reward: also of purity of body.",
+      "file": "0369-similitude-fifth-of-true-fasting-and-its-reward-also-of-purity-of-body.json",
+      "words": 0
+    },
+    {
+      "index": 370,
+      "heading": "Chap. i.",
+      "file": "0370-chap-i-13.json",
+      "words": 252
+    },
+    {
+      "index": 371,
+      "heading": "Chap. ii.",
+      "file": "0371-chap-ii-12.json",
+      "words": 539
+    },
+    {
+      "index": 372,
+      "heading": "Chap. iii.",
+      "file": "0372-chap-iii-9.json",
+      "words": 419
+    },
+    {
+      "index": 373,
+      "heading": "Chap. iv.",
+      "file": "0373-chap-iv-8.json",
+      "words": 316
+    },
+    {
+      "index": 374,
+      "heading": "Chap. v.",
+      "file": "0374-chap-v-5.json",
+      "words": 256
+    },
+    {
+      "index": 375,
+      "heading": "Chap. vi.",
+      "file": "0375-chap-vi-5.json",
+      "words": 331
+    },
+    {
+      "index": 376,
+      "heading": "Chap. vii.",
+      "file": "0376-chap-vii-4.json",
+      "words": 186
+    },
+    {
+      "index": 377,
+      "heading": "SIMILITUDE SIXTH.\nOf the two classes of voluptuous men, and of their death, falling away, and the duration of their punishment.",
+      "file": "0377-similitude-sixth-of-the-two-classes-of-voluptuous-men-and-of-their-death-falling-away-and-the-du.json",
+      "words": 0
+    },
+    {
+      "index": 378,
+      "heading": "Chap. i.",
+      "file": "0378-chap-i-14.json",
+      "words": 336
+    },
+    {
+      "index": 379,
+      "heading": "Chap. ii.",
+      "file": "0379-chap-ii-13.json",
+      "words": 393
+    },
+    {
+      "index": 380,
+      "heading": "Chap. iii.",
+      "file": "0380-chap-iii-10.json",
+      "words": 304
+    },
+    {
+      "index": 381,
+      "heading": "Chap. iv.",
+      "file": "0381-chap-iv-9.json",
+      "words": 208
+    },
+    {
+      "index": 382,
+      "heading": "Chap. v.",
+      "file": "0382-chap-v-6.json",
+      "words": 379
+    },
+    {
+      "index": 383,
+      "heading": "SIMILITUDE SEVENTH.\nThey who repent must bring forth fruits worthy of repentance.",
+      "file": "0383-similitude-seventh-they-who-repent-must-bring-forth-fruits-worthy-of-repentance.json",
+      "words": 555
+    },
+    {
+      "index": 384,
+      "heading": "SIMILITUDE EIGHTH.\nThe sins of the elect and of the penitent are of many kinds, but all will be rewarded according to the measure of their repentance and good works.",
+      "file": "0384-similitude-eighth-the-sins-of-the-elect-and-of-the-penitent-are-of-many-kinds-but-all-will-be-re.json",
+      "words": 0
+    },
+    {
+      "index": 385,
+      "heading": "Chap. i.",
+      "file": "0385-chap-i-15.json",
+      "words": 498
+    },
+    {
+      "index": 386,
+      "heading": "Chap. ii.",
+      "file": "0386-chap-ii-14.json",
+      "words": 417
+    },
+    {
+      "index": 387,
+      "heading": "Chap. iii.",
+      "file": "0387-chap-iii-11.json",
+      "words": 374
+    },
+    {
+      "index": 388,
+      "heading": "Chap. iv.",
+      "file": "0388-chap-iv-10.json",
+      "words": 282
+    },
+    {
+      "index": 389,
+      "heading": "Chap. v.",
+      "file": "0389-chap-v-7.json",
+      "words": 229
+    },
+    {
+      "index": 390,
+      "heading": "Chap. vi.",
+      "file": "0390-chap-vi-6.json",
+      "words": 422
+    },
+    {
+      "index": 391,
+      "heading": "Chap. vii.",
+      "file": "0391-chap-vii-5.json",
+      "words": 282
+    },
+    {
+      "index": 392,
+      "heading": "Chap. viii.",
+      "file": "0392-chap-viii-3.json",
+      "words": 211
+    },
+    {
+      "index": 393,
+      "heading": "Chap. ix.",
+      "file": "0393-chap-ix-3.json",
+      "words": 203
+    },
+    {
+      "index": 394,
+      "heading": "Chap. x.",
+      "file": "0394-chap-x-3.json",
+      "words": 190
+    },
+    {
+      "index": 395,
+      "heading": "Chap. xi.",
+      "file": "0395-chap-xi-2.json",
+      "words": 197
+    },
+    {
+      "index": 396,
+      "heading": "SIMILITUDE NINTH.\nThe great mysteries in the building of the militant and triumphant church.",
+      "file": "0396-similitude-ninth-the-great-mysteries-in-the-building-of-the-militant-and-triumphant-church.json",
+      "words": 0
+    },
+    {
+      "index": 397,
+      "heading": "Chap. i.",
+      "file": "0397-chap-i-16.json",
+      "words": 476
+    },
+    {
+      "index": 398,
+      "heading": "Chap. ii.",
+      "file": "0398-chap-ii-15.json",
+      "words": 318
+    },
+    {
+      "index": 399,
+      "heading": "Chap. iii.",
+      "file": "0399-chap-iii-12.json",
+      "words": 200
+    },
+    {
+      "index": 400,
+      "heading": "Chap. iv.",
+      "file": "0400-chap-iv-11.json",
+      "words": 466
+    },
+    {
+      "index": 401,
+      "heading": "Chap. v.",
+      "file": "0401-chap-v-8.json",
+      "words": 379
+    },
+    {
+      "index": 402,
+      "heading": "Chap. vi.",
+      "file": "0402-chap-vi-7.json",
+      "words": 338
+    },
+    {
+      "index": 403,
+      "heading": "Chap. vii.",
+      "file": "0403-chap-vii-6.json",
+      "words": 328
+    },
+    {
+      "index": 404,
+      "heading": "Chap. viii.",
+      "file": "0404-chap-viii-4.json",
+      "words": 460
+    },
+    {
+      "index": 405,
+      "heading": "Chap. ix.",
+      "file": "0405-chap-ix-4.json",
+      "words": 395
+    },
+    {
+      "index": 406,
+      "heading": "Chap. x.",
+      "file": "0406-chap-x-4.json",
+      "words": 305
+    },
+    {
+      "index": 407,
+      "heading": "Chap. xi.",
+      "file": "0407-chap-xi-3.json",
+      "words": 464
+    },
+    {
+      "index": 408,
+      "heading": "Chap. xii.",
+      "file": "0408-chap-xii-2.json",
+      "words": 425
+    },
+    {
+      "index": 409,
+      "heading": "Chap. xiii.",
+      "file": "0409-chap-xiii-2.json",
+      "words": 465
+    },
+    {
+      "index": 410,
+      "heading": "Chap. xiv.",
+      "file": "0410-chap-xiv.json",
+      "words": 340
+    },
+    {
+      "index": 411,
+      "heading": "Chap. xv.[1759]",
+      "file": "0411-chap-xv-1759.json",
+      "words": 321
+    },
+    {
+      "index": 412,
+      "heading": "Chap. xvi.",
+      "file": "0412-chap-xvi.json",
+      "words": 343
+    },
+    {
+      "index": 413,
+      "heading": "Chap. xvii.",
+      "file": "0413-chap-xvii.json",
+      "words": 270
+    },
+    {
+      "index": 414,
+      "heading": "Chap. xviii.",
+      "file": "0414-chap-xviii.json",
+      "words": 323
+    },
+    {
+      "index": 415,
+      "heading": "Chap. xix.",
+      "file": "0415-chap-xix-2.json",
+      "words": 224
+    },
+    {
+      "index": 416,
+      "heading": "Chap. xx.",
+      "file": "0416-chap-xx.json",
+      "words": 188
+    },
+    {
+      "index": 417,
+      "heading": "Chap. xxi.",
+      "file": "0417-chap-xxi.json",
+      "words": 170
+    },
+    {
+      "index": 418,
+      "heading": "Chap. xxii.",
+      "file": "0418-chap-xxii.json",
+      "words": 165
+    },
+    {
+      "index": 419,
+      "heading": "Chap. xxiii.",
+      "file": "0419-chap-xxiii.json",
+      "words": 225
+    },
+    {
+      "index": 420,
+      "heading": "Chap. xxiv.",
+      "file": "0420-chap-xxiv.json",
+      "words": 198
+    },
+    {
+      "index": 421,
+      "heading": "Chap. xxv.",
+      "file": "0421-chap-xxv.json",
+      "words": 80
+    },
+    {
+      "index": 422,
+      "heading": "Chap. xxvi.",
+      "file": "0422-chap-xxvi.json",
+      "words": 421
+    },
+    {
+      "index": 423,
+      "heading": "Chap. xxvii.",
+      "file": "0423-chap-xxvii.json",
+      "words": 95
+    },
+    {
+      "index": 424,
+      "heading": "Chap. xxviii.",
+      "file": "0424-chap-xxviii.json",
+      "words": 376
+    },
+    {
+      "index": 425,
+      "heading": "Chap. xxix.",
+      "file": "0425-chap-xxix.json",
+      "words": 196
+    },
+    {
+      "index": 426,
+      "heading": "Chap. xxx.",
+      "file": "0426-chap-xxx.json",
+      "words": 292
+    },
+    {
+      "index": 427,
+      "heading": "Chap. xxxi.",
+      "file": "0427-chap-xxxi.json",
+      "words": 317
+    },
+    {
+      "index": 428,
+      "heading": "Chap. xxxii.",
+      "file": "0428-chap-xxxii.json",
+      "words": 284
+    },
+    {
+      "index": 429,
+      "heading": "Chap. xxxiii.",
+      "file": "0429-chap-xxxiii.json",
+      "words": 203
+    },
+    {
+      "index": 430,
+      "heading": "SIMILITUDE TENTH.\nConcerning Repentance and Alms-giving.",
+      "file": "0430-similitude-tenth-concerning-repentance-and-alms-giving.json",
+      "words": 0
+    },
+    {
+      "index": 431,
+      "heading": "Chap. i.",
+      "file": "0431-chap-i-17.json",
+      "words": 219
+    },
+    {
+      "index": 432,
+      "heading": "Chap. ii.",
+      "file": "0432-chap-ii-16.json",
+      "words": 238
+    },
+    {
+      "index": 433,
+      "heading": "Chap. iii.",
+      "file": "0433-chap-iii-13.json",
+      "words": 275
+    },
+    {
+      "index": 434,
+      "heading": "Chap. iv.",
+      "file": "0434-chap-iv-12.json",
+      "words": 307
+    },
+    {
+      "index": 435,
+      "heading": "FRAGMENTS OF PAPIAS.",
+      "file": "0435-fragments-of-papias.json",
+      "words": 0
+    },
+    {
+      "index": 436,
+      "heading": "INTRODUCTORY NOTICE.",
+      "file": "0436-introductory-notice-11.json",
+      "words": 184
+    },
+    {
+      "index": 437,
+      "heading": "I.\nFrom the Exposition of the Oracles of the Lord.[1784]",
+      "file": "0437-i-from-the-exposition-of-the-oracles-of-the-lord-1784.json",
+      "words": 304
+    },
+    {
+      "index": 438,
+      "heading": "II.[1790]",
+      "file": "0438-ii-1790.json",
+      "words": 31
+    },
+    {
+      "index": 439,
+      "heading": "III.[1792]",
+      "file": "0439-iii-1792.json",
+      "words": 43
+    },
+    {
+      "index": 440,
+      "heading": "IV.[1795]",
+      "file": "0440-iv-1795.json",
+      "words": 293
+    },
+    {
+      "index": 441,
+      "heading": "V.[1796]",
+      "file": "0441-v-1796.json",
+      "words": 339
+    },
+    {
+      "index": 442,
+      "heading": "VI.[1804]",
+      "file": "0442-vi-1804.json",
+      "words": 521
+    },
+    {
+      "index": 443,
+      "heading": "VII.[1807]",
+      "file": "0443-vii-1807.json",
+      "words": 44
+    },
+    {
+      "index": 444,
+      "heading": "VIII.[1809]",
+      "file": "0444-viii-1809.json",
+      "words": 42
+    },
+    {
+      "index": 445,
+      "heading": "IX.[1810]",
+      "file": "0445-ix-1810.json",
+      "words": 62
+    },
+    {
+      "index": 446,
+      "heading": "X.[1811]",
+      "file": "0446-x-1811.json",
+      "words": 156
+    },
+    {
+      "index": 447,
+      "heading": "APPENDIX.\nTHE SPURIOUS EPISTLES OF IGNATIUS.",
+      "file": "0447-appendix-the-spurious-epistles-of-ignatius.json",
+      "words": 0
+    },
+    {
+      "index": 448,
+      "heading": "INTRODUCTORY NOTICE.",
+      "file": "0448-introductory-notice-12.json",
+      "words": 738
+    },
+    {
+      "index": 449,
+      "heading": "THE EPISTLE OF IGNATIUS TO THE TARSIANS.",
+      "file": "0449-the-epistle-of-ignatius-to-the-tarsians.json",
+      "words": 41
+    },
+    {
+      "index": 450,
+      "heading": "Chap. i.—His own sufferings: exhortation to stedfastness.",
+      "file": "0450-chap-i-his-own-sufferings-exhortation-to-stedfastness.json",
+      "words": 163
+    },
+    {
+      "index": 451,
+      "heading": "Chap. ii.—Cautions against false doctrine.",
+      "file": "0451-chap-ii-cautions-against-false-doctrine.json",
+      "words": 163
+    },
+    {
+      "index": 452,
+      "heading": "Chap. iii.—The true doctrine respecting Christ.",
+      "file": "0452-chap-iii-the-true-doctrine-respecting-christ.json",
+      "words": 172
+    },
+    {
+      "index": 453,
+      "heading": "Chap. iv.—Continuation.",
+      "file": "0453-chap-iv-continuation.json",
+      "words": 109
+    },
+    {
+      "index": 454,
+      "heading": "Chap. v.—Refutation of the previously mentioned errors.",
+      "file": "0454-chap-v-refutation-of-the-previously-mentioned-errors.json",
+      "words": 104
+    },
+    {
+      "index": 455,
+      "heading": "Chap. vi.—Continuation.",
+      "file": "0455-chap-vi-continuation.json",
+      "words": 247
+    },
+    {
+      "index": 456,
+      "heading": "Chap. vii.—Continuation.",
+      "file": "0456-chap-vii-continuation.json",
+      "words": 223
+    },
+    {
+      "index": 457,
+      "heading": "Chap. viii.—Exhortations to holiness and good order.",
+      "file": "0457-chap-viii-exhortations-to-holiness-and-good-order.json",
+      "words": 101
+    },
+    {
+      "index": 458,
+      "heading": "Chap. ix.—Exhortations to the discharge of relative duties.",
+      "file": "0458-chap-ix-exhortations-to-the-discharge-of-relative-duties.json",
+      "words": 122
+    },
+    {
+      "index": 459,
+      "heading": "Chap. x.—Salutations.",
+      "file": "0459-chap-x-salutations.json",
+      "words": 111
+    },
+    {
+      "index": 460,
+      "heading": "THE EPISTLE OF IGNATIUS TO THE ANTIOCHIANS.",
+      "file": "0460-the-epistle-of-ignatius-to-the-antiochians.json",
+      "words": 42
+    },
+    {
+      "index": 461,
+      "heading": "Chap. i.—Cautions against error.",
+      "file": "0461-chap-i-cautions-against-error.json",
+      "words": 122
+    },
+    {
+      "index": 462,
+      "heading": "Chap. ii.—The true doctrine respecting God and Christ.",
+      "file": "0462-chap-ii-the-true-doctrine-respecting-god-and-christ.json",
+      "words": 115
+    },
+    {
+      "index": 463,
+      "heading": "Chap. iii.—The same continued.",
+      "file": "0463-chap-iii-the-same-continued.json",
+      "words": 138
+    },
+    {
+      "index": 464,
+      "heading": "Chap. iv.—Continuation.",
+      "file": "0464-chap-iv-continuation-2.json",
+      "words": 149
+    },
+    {
+      "index": 465,
+      "heading": "Chap. v.—Denunciation of false teachers.",
+      "file": "0465-chap-v-denunciation-of-false-teachers.json",
+      "words": 130
+    },
+    {
+      "index": 466,
+      "heading": "Chap. vi.—Renewed cautions.",
+      "file": "0466-chap-vi-renewed-cautions.json",
+      "words": 92
+    },
+    {
+      "index": 467,
+      "heading": "Chap. vii.—Exhortation to consistency of conduct.",
+      "file": "0467-chap-vii-exhortation-to-consistency-of-conduct.json",
+      "words": 115
+    },
+    {
+      "index": 468,
+      "heading": "Chap. viii.—Exhortations to the presbyters and others.",
+      "file": "0468-chap-viii-exhortations-to-the-presbyters-and-others.json",
+      "words": 79
+    },
+    {
+      "index": 469,
+      "heading": "Chap. ix.—Duties of husbands, wives, parents, and children.",
+      "file": "0469-chap-ix-duties-of-husbands-wives-parents-and-children.json",
+      "words": 88
+    },
+    {
+      "index": 470,
+      "heading": "Chap. x.—Duties of masters and servants.",
+      "file": "0470-chap-x-duties-of-masters-and-servants.json",
+      "words": 75
+    },
+    {
+      "index": 471,
+      "heading": "Chap. xi.—Inculcation of various moral duties.",
+      "file": "0471-chap-xi-inculcation-of-various-moral-duties.json",
+      "words": 143
+    },
+    {
+      "index": 472,
+      "heading": "Chap. xii.—Salutations.",
+      "file": "0472-chap-xii-salutations-2.json",
+      "words": 106
+    },
+    {
+      "index": 473,
+      "heading": "Chap. xiii.—Salutations continued.",
+      "file": "0473-chap-xiii-salutations-continued.json",
+      "words": 92
+    },
+    {
+      "index": 474,
+      "heading": "Chap. xiv.—Conclusion.",
+      "file": "0474-chap-xiv-conclusion-2.json",
+      "words": 79
+    },
+    {
+      "index": 475,
+      "heading": "THE EPISTLE OF IGNATIUS TO HERO, A DEACON OF ANTIOCH.",
+      "file": "0475-the-epistle-of-ignatius-to-hero-a-deacon-of-antioch.json",
+      "words": 87
+    },
+    {
+      "index": 476,
+      "heading": "Chap. i.—Exhortations to earnestness and moderation.",
+      "file": "0476-chap-i-exhortations-to-earnestness-and-moderation.json",
+      "words": 235
+    },
+    {
+      "index": 477,
+      "heading": "Chap. ii.—Cautions against false teachers.",
+      "file": "0477-chap-ii-cautions-against-false-teachers.json",
+      "words": 153
+    },
+    {
+      "index": 478,
+      "heading": "Chap. iii.—Exhortations as to ecclesiastical duties.",
+      "file": "0478-chap-iii-exhortations-as-to-ecclesiastical-duties.json",
+      "words": 101
+    },
+    {
+      "index": 479,
+      "heading": "Chap. iv.—Servants and women are not to be despised.",
+      "file": "0479-chap-iv-servants-and-women-are-not-to-be-despised.json",
+      "words": 190
+    },
+    {
+      "index": 480,
+      "heading": "Chap. v.—Various relative duties.",
+      "file": "0480-chap-v-various-relative-duties.json",
+      "words": 114
+    },
+    {
+      "index": 481,
+      "heading": "Chap. vi.—Exhortations to purity and caution.",
+      "file": "0481-chap-vi-exhortations-to-purity-and-caution.json",
+      "words": 141
+    },
+    {
+      "index": 482,
+      "heading": "Chap. vii.—Solemn charge to Hero, as future bishop of Antioch.",
+      "file": "0482-chap-vii-solemn-charge-to-hero-as-future-bishop-of-antioch.json",
+      "words": 132
+    },
+    {
+      "index": 483,
+      "heading": "Chap. viii.—Salutations.",
+      "file": "0483-chap-viii-salutations.json",
+      "words": 168
+    },
+    {
+      "index": 484,
+      "heading": "Chap. ix.—Concluding salutations and instructions.",
+      "file": "0484-chap-ix-concluding-salutations-and-instructions.json",
+      "words": 169
+    },
+    {
+      "index": 485,
+      "heading": "THE EPISTLE OF IGNATIUS TO THE PHILIPPIANS.",
+      "file": "0485-the-epistle-of-ignatius-to-the-philippians.json",
+      "words": 50
+    },
+    {
+      "index": 486,
+      "heading": "Chap. i.—Reason for writing the epistle.",
+      "file": "0486-chap-i-reason-for-writing-the-epistle.json",
+      "words": 174
+    },
+    {
+      "index": 487,
+      "heading": "Chap. ii.—Unity of the three Divine Persons.",
+      "file": "0487-chap-ii-unity-of-the-three-divine-persons.json",
+      "words": 230
+    },
+    {
+      "index": 488,
+      "heading": "Chap. iii.—Christ was truly born, and died, etc.",
+      "file": "0488-chap-iii-christ-was-truly-born-and-died-etc.json",
+      "words": 182
+    },
+    {
+      "index": 489,
+      "heading": "Chap. iv.—The malignity and folly of Satan.",
+      "file": "0489-chap-iv-the-malignity-and-folly-of-satan.json",
+      "words": 323
+    },
+    {
+      "index": 490,
+      "heading": "Chap. v.—Apostrophe to Satan.",
+      "file": "0490-chap-v-apostrophe-to-satan.json",
+      "words": 177
+    },
+    {
+      "index": 491,
+      "heading": "Chap. vi.—Continuation.",
+      "file": "0491-chap-vi-continuation-2.json",
+      "words": 177
+    },
+    {
+      "index": 492,
+      "heading": "Chap. vii.—Continuation: inconsistency of Satan.",
+      "file": "0492-chap-vii-continuation-inconsistency-of-satan.json",
+      "words": 132
+    },
+    {
+      "index": 493,
+      "heading": "Chap. viii.—Continuation: ignorance of Satan.",
+      "file": "0493-chap-viii-continuation-ignorance-of-satan.json",
+      "words": 276
+    },
+    {
+      "index": 494,
+      "heading": "Chap. ix.—Continuation: ignorance of Satan.",
+      "file": "0494-chap-ix-continuation-ignorance-of-satan.json",
+      "words": 358
+    },
+    {
+      "index": 495,
+      "heading": "Chap. x.—Continuation: audacity of Satan.",
+      "file": "0495-chap-x-continuation-audacity-of-satan.json",
+      "words": 133
+    },
+    {
+      "index": 496,
+      "heading": "Chap. xi.—Continuation: audacity of Satan.",
+      "file": "0496-chap-xi-continuation-audacity-of-satan.json",
+      "words": 292
+    },
+    {
+      "index": 497,
+      "heading": "Chap. xii.—The meek reply of Christ.",
+      "file": "0497-chap-xii-the-meek-reply-of-christ.json",
+      "words": 144
+    },
+    {
+      "index": 498,
+      "heading": "Chap. xiii.—Various exhortations and directions.",
+      "file": "0498-chap-xiii-various-exhortations-and-directions.json",
+      "words": 192
+    },
+    {
+      "index": 499,
+      "heading": "Chap. xiv.—Farewells and cautions.",
+      "file": "0499-chap-xiv-farewells-and-cautions.json",
+      "words": 95
+    },
+    {
+      "index": 500,
+      "heading": "Chap. xv.—Salutations. Conclusion.",
+      "file": "0500-chap-xv-salutations-conclusion.json",
+      "words": 125
+    },
+    {
+      "index": 501,
+      "heading": "THE EPISTLE OF MARIA THE PROSELYTE TO IGNATIUS.",
+      "file": "0501-the-epistle-of-maria-the-proselyte-to-ignatius.json",
+      "words": 45
+    },
+    {
+      "index": 502,
+      "heading": "Chap. i.—Occasion of the epistle.",
+      "file": "0502-chap-i-occasion-of-the-epistle-2.json",
+      "words": 134
+    },
+    {
+      "index": 503,
+      "heading": "Chap. ii.—Youth may be allied with piety and discretion.",
+      "file": "0503-chap-ii-youth-may-be-allied-with-piety-and-discretion.json",
+      "words": 152
+    },
+    {
+      "index": 504,
+      "heading": "Chap. iii.—Examples of youthful devotedness.",
+      "file": "0504-chap-iii-examples-of-youthful-devotedness.json",
+      "words": 203
+    },
+    {
+      "index": 505,
+      "heading": "Chap. iv.—The same subject continued.",
+      "file": "0505-chap-iv-the-same-subject-continued.json",
+      "words": 194
+    },
+    {
+      "index": 506,
+      "heading": "Chap. v.—Expressions of respect for Ignatius.",
+      "file": "0506-chap-v-expressions-of-respect-for-ignatius.json",
+      "words": 145
+    },
+    {
+      "index": 507,
+      "heading": "THE EPISTLE OF IGNATIUS TO MARY AT NEAPOLIS, NEAR ZARBUS.",
+      "file": "0507-the-epistle-of-ignatius-to-mary-at-neapolis-near-zarbus.json",
+      "words": 52
+    },
+    {
+      "index": 508,
+      "heading": "Chap. i.—Acknowledgment of her excellence and wisdom.",
+      "file": "0508-chap-i-acknowledgment-of-her-excellence-and-wisdom.json",
+      "words": 151
+    },
+    {
+      "index": 509,
+      "heading": "Chap. ii.—His own condition.",
+      "file": "0509-chap-ii-his-own-condition.json",
+      "words": 113
+    },
+    {
+      "index": 510,
+      "heading": "Chap. iii.—He had complied with her request.",
+      "file": "0510-chap-iii-he-had-complied-with-her-request.json",
+      "words": 142
+    },
+    {
+      "index": 511,
+      "heading": "Chap. iv.—Commendation and exhortation.",
+      "file": "0511-chap-iv-commendation-and-exhortation.json",
+      "words": 165
+    },
+    {
+      "index": 512,
+      "heading": "Chap. v.—Salutations and good wishes.",
+      "file": "0512-chap-v-salutations-and-good-wishes.json",
+      "words": 127
+    },
+    {
+      "index": 513,
+      "heading": "THE EPISTLE OF IGNATIUS TO ST JOHN THE APOSTLE.",
+      "file": "0513-the-epistle-of-ignatius-to-st-john-the-apostle.json",
+      "words": 395
+    },
+    {
+      "index": 514,
+      "heading": "A SECOND EPISTLE OF IGNATIUS TO ST JOHN.",
+      "file": "0514-a-second-epistle-of-ignatius-to-st-john.json",
+      "words": 178
+    },
+    {
+      "index": 515,
+      "heading": "THE EPISTLE OF IGNATIUS TO THE VIRGIN MARY.",
+      "file": "0515-the-epistle-of-ignatius-to-the-virgin-mary.json",
+      "words": 120
+    },
+    {
+      "index": 516,
+      "heading": "REPLY OF THE BLESSED VIRGIN TO THIS LETTER.",
+      "file": "0516-reply-of-the-blessed-virgin-to-this-letter.json",
+      "words": 99
+    },
+    {
+      "index": 517,
+      "heading": "INDEX OF SUBJECTS.",
+      "file": "0517-index-of-subjects.json",
+      "words": 2286
+    },
+    {
+      "index": 518,
+      "heading": "INDEX OF TEXTS.",
+      "file": "0518-index-of-texts.json",
+      "words": 23361
+    }
+  ]
+}
