@@ -14,8 +14,15 @@
       const videoRow=document.createElement('p');videoRow.className='saint-video-row';
       const videoLink=document.createElement('a');videoLink.className='btn secondary saint-video-link';
       videoLink.href='saint.html?id='+encodeURIComponent(article.id)+'#saint-video';
-      videoLink.textContent='▶ Watch '+(video.kind||'video')+' here';
-      videoRow.append(videoLink);article.append(videoRow);
+      videoLink.textContent='▶ Watch video / movie';
+      videoRow.append(videoLink);
+      if(video.licensedMovieUrl){
+        const movieLink=document.createElement('a');movieLink.className='btn primary saint-movie-link';movieLink.target='_blank';movieLink.rel='noopener';
+        movieLink.href=video.licensedMovieUrl;
+        movieLink.textContent='🎬 '+(video.licensedMovieLabel||'Watch licensed full movie');
+        videoRow.append(document.createTextNode(' '),movieLink);
+      }
+      article.append(videoRow);
       article.dataset.saint+=' youtube video movie';
       article.dataset.hasVideo='true';
     }
