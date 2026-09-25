@@ -5,78 +5,151 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#5a1020">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-<meta name="description" content="Save One Soul Catholic Mission — Mercy: The Last Hope of Salvation is a Catholic digital mission for Divine Mercy, prayer, Scripture study through Logos, Catholic theology, Mass intentions, the Eucharist, Mary, saints, pro-life formation, CHARIS and Catholic AI.">
+<meta name="description" content="Save One Soul Catholic Mission — Mercy: The Last Hope of Salvation. Catholic prayer, Scripture, formation, devotions, evangelization and works of mercy.">
 <link rel="canonical" href="https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/">
 <link rel="alternate" hreflang="en" href="https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/">
 <link rel="alternate" hreflang="kha" href="https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/kh/index.html">
 <link rel="alternate" hreflang="x-default" href="https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Save One Soul Catholic Mission — Mercy: The Last Hope of Salvation">
+<meta property="og:site_name" content="Save One Soul Catholic Mission">
 <meta property="og:title" content="Save One Soul Catholic Mission | Mercy: The Last Hope of Salvation">
-<meta property="og:description" content="A Catholic digital mission for Divine Mercy, prayer, Scripture study through Logos, Catholic theology, Mass intentions, Eucharistic formation, Marian devotion, saints, pro-life resources, CHARIS and Catholic AI.">
+<meta property="og:description" content="Catholic prayer, Scripture, formation, devotions, evangelization and works of mercy.">
 <meta property="og:url" content="https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/">
 <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/4/49/Divina_Misericordia_%28Eugeniusz_Kazimirowski%2C_Vilnius_original%2C_1934%29.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Save One Soul Catholic Mission | Mercy: The Last Hope of Salvation">
-<meta name="twitter:description" content="A Catholic digital mission for Divine Mercy, Sacred Scripture, prayer, the Eucharist, Mary, saints, pro-life formation and evangelization.">
 <title>Save One Soul Catholic Mission | Mercy: The Last Hope of Salvation</title>
 <link rel="manifest" href="mercy-manifest.webmanifest">
 <link rel="stylesheet" href="css/mercy.css">
 <link rel="stylesheet" href="css/cms-content.css">
 <style>
-/* Clean umbrella navigation */
-#main-nav{display:flex;align-items:center;gap:.35rem;flex-wrap:wrap;justify-content:center}
-#main-nav>a,.nav-group>summary{display:inline-flex;align-items:center;gap:.25rem;padding:.55rem .65rem;border-radius:999px;text-decoration:none;cursor:pointer;font:700 .86rem/1.2 system-ui;color:inherit}
+:root{--home-max:1220px}
+.home-topbar{padding:.72rem max(1rem,calc((100vw - var(--home-max))/2));box-shadow:0 1px 0 rgba(90,16,32,.04)}
+.home-topbar .brand{min-width:260px}
+#main-nav{display:flex;align-items:center;justify-content:center;gap:.25rem;flex-wrap:wrap}
+#main-nav>a,.nav-group>summary{display:inline-flex;align-items:center;gap:.3rem;padding:.62rem .72rem;border-radius:999px;text-decoration:none;cursor:pointer;font:700 .79rem/1 system-ui;color:#4a3034}
 .nav-group{position:relative}
 .nav-group>summary{list-style:none}
 .nav-group>summary::-webkit-details-marker{display:none}
-.nav-group>summary::after{content:"⌄";font-size:.8em;opacity:.65}
-.nav-group[open]>summary{background:rgba(90,16,32,.08)}
-.nav-menu{position:absolute;z-index:40;top:calc(100% + .4rem);left:0;min-width:240px;padding:.45rem;border:1px solid var(--line);border-radius:16px;background:var(--card);box-shadow:var(--shadow)}
-.nav-menu a{display:block;padding:.62rem .75rem;border-radius:10px;text-decoration:none;white-space:nowrap}
-.nav-menu a:hover,.nav-menu a:focus{background:rgba(90,16,32,.08)}
-@media(max-width:900px){
-  #main-nav{align-items:stretch}
+.nav-group>summary::after{content:"⌄";font-size:.78em;opacity:.65}
+.nav-group[open]>summary,#main-nav>a:hover,.nav-group>summary:hover{background:#f1e5dd;color:var(--wine)}
+.nav-menu{position:absolute;z-index:50;top:calc(100% + .5rem);left:0;min-width:250px;padding:.5rem;border:1px solid var(--line);border-radius:16px;background:var(--card);box-shadow:0 18px 50px rgba(76,27,36,.16)}
+.nav-menu a{display:block;padding:.66rem .74rem;border-radius:10px;text-decoration:none;white-space:nowrap;font:650 .8rem/1.25 system-ui;color:#4a3034}
+.nav-menu a:hover{background:#f7eee7;color:var(--wine)}
+.header-actions{display:flex;align-items:center;gap:.45rem}
+.lang-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:.5rem .8rem;border:1px solid var(--line);border-radius:999px;background:#fff;text-decoration:none;font:700 .78rem system-ui;color:var(--wine)}
+.home-hero-pro{position:relative;overflow:hidden;background:
+radial-gradient(circle at 12% 18%,rgba(212,173,89,.22),transparent 30%),
+linear-gradient(135deg,#fffaf1 0%,#f8eee8 52%,#eee1d6 100%);
+border-bottom:1px solid var(--line)}
+.home-hero-inner{max-width:var(--home-max);margin:auto;min-height:720px;padding:5.2rem 1.2rem 4.8rem;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);gap:4.5rem;align-items:center}
+.home-kicker{display:inline-flex;align-items:center;gap:.5rem;padding:.38rem .65rem;border:1px solid rgba(90,16,32,.15);border-radius:999px;background:rgba(255,255,255,.68);font:800 .72rem/1 system-ui;letter-spacing:.12em;text-transform:uppercase;color:var(--wine)}
+.home-kicker::before{content:"✠";color:var(--gold)}
+.home-title{font-size:clamp(3.3rem,7vw,6.9rem);line-height:.88;letter-spacing:-.055em;color:var(--wine);margin:.9rem 0 1.2rem;max-width:830px}
+.home-subtitle{font-size:1.18rem;line-height:1.75;max-width:720px;color:#4b3b3d}
+.home-quote{margin:1.7rem 0 2rem;padding:1rem 1.2rem;border-left:3px solid var(--gold);background:rgba(255,255,255,.5);border-radius:0 14px 14px 0;max-width:700px}
+.home-quote p{margin:0;font-size:1.05rem;font-style:italic}
+.home-quote cite{display:block;margin-top:.45rem;font:650 .75rem system-ui;color:var(--muted)}
+.hero-actions{display:flex;gap:.65rem;flex-wrap:wrap}
+.hero-actions .btn{padding:.9rem 1.2rem}
+.hero-visual{position:relative;display:grid;place-items:center}
+.hero-frame{position:relative;width:min(100%,440px);padding:14px;border-radius:220px 220px 30px 30px;background:rgba(255,255,255,.72);box-shadow:0 28px 85px rgba(73,26,34,.2)}
+.hero-frame img{display:block;width:100%;height:610px;object-fit:cover;object-position:center top;border-radius:205px 205px 20px 20px}
+.hero-seal{position:absolute;left:-28px;bottom:54px;width:122px;height:122px;border-radius:50%;display:grid;place-items:center;text-align:center;background:var(--wine);color:white;border:6px solid #f5eadf;box-shadow:0 18px 45px rgba(52,16,22,.25);font:800 .75rem/1.25 system-ui;letter-spacing:.06em;text-transform:uppercase;padding:1rem}
+.home-section{max-width:var(--home-max);margin:auto;padding:4.6rem 1.2rem}
+.section-intro{max-width:760px;margin-bottom:2rem}
+.section-intro h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.05;color:var(--wine);margin:.45rem 0 .8rem}
+.section-intro p{font-size:1.08rem;color:#5a4a4c;margin:0}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.pillar-card{position:relative;display:flex;flex-direction:column;min-height:310px;padding:1.5rem;border:1px solid var(--line);border-radius:24px;background:var(--card);box-shadow:0 16px 45px rgba(76,27,36,.08);text-decoration:none;color:inherit;overflow:hidden;transition:.2s ease}
+.pillar-card:hover{transform:translateY(-4px);border-color:#d3b79e}
+.pillar-no{font:800 .72rem system-ui;letter-spacing:.12em;color:var(--wine2);text-transform:uppercase}
+.pillar-card h3{font-size:1.75rem;line-height:1.05;color:var(--wine);margin:.75rem 0 .6rem}
+.pillar-card p{margin:0;color:#5a4a4c}
+.pillar-link{margin-top:auto;padding-top:1.2rem;font:800 .78rem system-ui;color:var(--wine)}
+.pillar-link::after{content:" →"}
+.pillar-card::after{content:"";position:absolute;right:-45px;bottom:-55px;width:150px;height:150px;border-radius:50%;background:rgba(212,173,89,.11)}
+.utility-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1rem}
+.utility-card{display:flex;gap:.9rem;align-items:flex-start;padding:1.15rem;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.72);text-decoration:none;color:inherit}
+.utility-icon{flex:0 0 42px;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:#f3e7dd;color:var(--wine);font:800 1rem system-ui}
+.utility-card h3{font-size:1rem;color:var(--wine);margin:0 0 .25rem}
+.utility-card p{font-size:.9rem;line-height:1.55;color:var(--muted);margin:0}
+.home-band{background:#2a1a1d;color:#f7ece8}
+.home-band-inner{max-width:var(--home-max);margin:auto;padding:4.3rem 1.2rem}
+.home-band .eyebrow{color:#e6bf73}
+.home-band h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.06;margin:.5rem 0 .7rem;color:#fff}
+.home-band .lead{color:#d8c8c9;max-width:760px}
+.home-band .cms-feed{margin-top:1.6rem}
+.prayer-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:2.2rem;align-items:start}
+.prayer-copy{position:sticky;top:7rem}
+.prayer-copy h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;color:var(--wine);margin:.45rem 0 .8rem}
+.prayer-copy p{color:#5a4a4c}
+.home-form{box-shadow:0 18px 55px rgba(76,27,36,.08)}
+.editorial-note{margin-top:1rem;padding:1rem 1.1rem;border:1px solid #e9d7b5;border-radius:16px;background:#fff8e8;font-size:.92rem;color:#5a4a4c}
+.home-footer{margin-top:0}
+body.dark .lang-btn{background:#251c1e;color:#f6efeb}
+body.dark #main-nav>a,body.dark .nav-group>summary,body.dark .nav-menu a{color:#eadcda}
+body.dark .nav-menu{background:#251c1e}
+body.dark .home-hero-pro{background:linear-gradient(135deg,#2b1e20,#1b1516)}
+body.dark .home-subtitle,body.dark .section-intro p,body.dark .pillar-card p,body.dark .prayer-copy p{color:#d4c7c5}
+body.dark .home-kicker,body.dark .home-quote{background:rgba(45,33,35,.8)}
+body.dark .utility-card{background:#251c1e}
+body.dark .editorial-note{background:#302725;color:#dccfca;border-color:#5e493d}
+@media(max-width:1050px){
+  .home-topbar{flex-wrap:wrap}
+  .home-topbar .menu-btn{display:inline-flex;margin-left:auto}
+  .header-actions{margin-left:0}
+  #main-nav{display:none;order:5;width:100%;justify-content:flex-start;padding:.7rem 0 .2rem}
+  #main-nav.open{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem}
+  #main-nav>a,.nav-group>summary{width:100%;justify-content:space-between;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:.75rem .85rem}
   .nav-group{width:100%}
-  .nav-group>summary{width:100%;justify-content:space-between}
-  .nav-menu{position:static;min-width:0;margin:.25rem 0 .4rem .65rem;box-shadow:none}
+  .nav-menu{position:static;min-width:0;margin:.25rem 0 .2rem .5rem;box-shadow:none}
   .nav-menu a{white-space:normal}
+  .home-hero-inner{grid-template-columns:1fr .72fr;gap:2.3rem}
+  .hero-frame img{height:520px}
+}
+@media(max-width:820px){
+  .home-hero-inner{grid-template-columns:1fr;min-height:auto;padding-top:3.5rem}
+  .hero-visual{max-width:460px;margin:auto}
+  .hero-frame img{height:560px}
+  .pillar-grid,.utility-grid{grid-template-columns:1fr 1fr}
+  .prayer-wrap{grid-template-columns:1fr}
+  .prayer-copy{position:static}
+}
+@media(max-width:560px){
+  .home-topbar .brand small{display:none}
+  .home-topbar .brand{min-width:0}
+  #main-nav.open{grid-template-columns:1fr}
+  .lang-btn{padding:.45rem .65rem}
+  .home-hero-inner{padding:2.7rem 1rem 3.2rem}
+  .home-title{font-size:clamp(2.7rem,14vw,4rem)}
+  .home-subtitle{font-size:1.03rem}
+  .hero-frame{width:min(92vw,370px);padding:9px}
+  .hero-frame img{height:485px}
+  .hero-seal{width:96px;height:96px;left:-8px;bottom:34px;font-size:.62rem}
+  .home-section,.home-band-inner{padding:3.2rem 1rem}
+  .pillar-grid,.utility-grid{grid-template-columns:1fr}
+  .pillar-card{min-height:250px}
+  .hero-actions .btn{width:100%}
 }
 </style>
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/#website",
-      "name": "Save One Soul Catholic Mission — Mercy: The Last Hope of Salvation",
-      "alternateName": ["Save One Soul Catholic Mission", "Save One Soul Mercy", "Mercy — The Last Hope of Salvation"],
-      "url": "https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/",
-      "inLanguage": ["en", "kha"],
-      "description": "A Catholic digital mission for Divine Mercy, Sacred Scripture study, prayer, Mass intentions, Eucharistic formation, Marian devotion, saints, pro-life formation, CHARIS and Catholic AI."
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/#mission",
-      "name": "Save One Soul Catholic Mission",
-      "alternateName": "Save One Soul Mercy",
-      "url": "https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/",
-      "description": "Catholic digital evangelization and formation centered on Divine Mercy, prayer, Sacred Scripture and works of mercy."
-    }
-  ]
-}
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/#website","name":"Save One Soul Catholic Mission — Mercy: The Last Hope of Salvation","url":"https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/","inLanguage":["en","kha"]},
+{"@type":"Organization","@id":"https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/#mission","name":"Save One Soul Catholic Mission","url":"https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/"}
+]}
 </script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="topbar">
+
+<header class="topbar home-topbar">
 <a class="brand" href="index.html"><span class="cross">✠</span><span><b>Save One Soul</b><small>Mercy · The Last Hope of Salvation</small></span></a>
 <button class="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button>
+
 <nav id="main-nav">
 <a href="index.html" aria-current="page">Home</a>
 <details class="nav-group"><summary>Mission</summary><div class="nav-menu">
-<a href="pages/save-one-soul.html">Save One Soul</a>
+<a href="pages/save-one-soul.html">Save One Soul Mission</a>
 <a href="pages/intentions.html">Prayer &amp; Mass Intentions</a>
 <a href="pages/posts.html">Posts &amp; Reflections</a>
 </div></details>
@@ -84,11 +157,11 @@
 <a href="pages/codex-fidei.html">Codex Fidei Home</a>
 <a href="pages/logos.html">Sacred Scripture — Logos</a>
 <a href="pages/theology.html">Theology</a>
-<a href="pages/fathers.html">Church Fathers</a>
 <a href="pages/pneumatology.html">Pneumatology</a>
 <a href="pages/charismatic-renewal.html">Charismatic Renewal</a>
+<a href="pages/angelology-demonology.html">Angelology &amp; Demonology</a>
+<a href="pages/fathers.html">Church Fathers</a>
 <a href="pages/formation-dashboard.html">Formation Dashboard</a>
-<a href="pages/theology-library.html">Research Library</a>
 </div></details>
 <details class="nav-group"><summary>Devotions</summary><div class="nav-menu">
 <a href="pages/devotions.html">Devotions Home</a>
@@ -99,8 +172,8 @@
 <a href="pages/divine-mercy-chaplet.html">Divine Mercy Chaplet</a>
 <a href="pages/precious-blood.html">Precious Blood</a>
 <a href="pages/eucharistic-miracles.html">Eucharist</a>
-<a href="pages/deliverance.html">Deliverance &amp; Exorcism Resources</a>
 <a href="pages/charis.html">Baptism in the Holy Spirit Prayers</a>
+<a href="pages/deliverance.html">Deliverance &amp; Exorcism</a>
 </div></details>
 <details class="nav-group"><summary>Life &amp; Ministry</summary><div class="nav-menu">
 <a href="pages/life-ministry.html">Life &amp; Ministry Home</a>
@@ -113,38 +186,118 @@
 <a href="pages/sources.html">Sources &amp; Editorial Policy</a>
 </div></details>
 </nav>
+
+<div class="header-actions">
+<a class="lang-btn" href="kh/index.html" hreflang="kha">Khasi</a>
 <button class="theme-btn" aria-label="Toggle theme">◐</button>
+</div>
 </header>
+
 <main id="main">
-<section class="home-hero">
-<div class="hero-copy"><div class="eyebrow">Save One Soul Catholic Mission · Jesus, I trust in You</div><h1>Save One Soul Catholic Mission — Mercy: The Last Hope of Salvation</h1><div class="quote">“I am giving mankind the last hope of salvation; that is, recourse to My mercy.”<cite>Words of Jesus recorded by St. Faustina, Diary §998</cite></div><p>Save One Soul Catholic Mission is a Catholic digital mission for prayer, formation, Sacred Scripture, the Eucharist, Mary, the saints, the Gospel of Life and evangelization.</p><div class="btns"><a class="btn primary" href="pages/save-one-soul.html">Mission</a><a class="btn secondary" href="pages/codex-fidei.html">Codex Fidei</a><a class="btn secondary" href="pages/devotions.html">Devotions</a></div></div>
-<div class="hero-image"><div class="rays"></div><img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Divina_Misericordia_%28Eugeniusz_Kazimirowski%2C_Vilnius_original%2C_1934%29.jpg" alt="Original 1934 Divine Mercy painting by Eugeniusz Kazimirowski"></div>
-</section>
-<section class="section">
-<div class="eyebrow">Prayer · Formation · Evangelization</div>
-<h2>Enter the Save One Soul Catholic mission</h2>
-<p class="lead">Catholic prayer and formation resources for learning, devotion, evangelization and spiritual growth.</p>
-<div class="grid">
-<a class="card" href="pages/save-one-soul.html"><span class="icon">❤</span><h3>Mission</h3><p>Save One Soul, prayer and Mass intentions, posts, evangelization and works of mercy.</p></a>
-<a class="card" href="pages/codex-fidei.html"><span class="icon">✠</span><h3>Codex Fidei</h3><p>Theology, Philosophy, Logos, Pneumatology, Charismatic Renewal, Angelology, Fathers, Magisterium, Canon Law, Spiritual Theology, Apologetics, Mariology, Church History and Formation.</p></a>
-<a class="card" href="pages/devotions.html"><span class="icon">🕯</span><h3>Devotions</h3><p>Rosary, Divine Mercy, Chaplets, Precious Blood, Seven Sorrows, Eucharistic devotion, Holy Spirit prayers, deliverance and other prayer resources.</p></a>
-<a class="card" href="pages/life-ministry.html"><span class="icon">★</span><h3>Life &amp; Ministry</h3><p>Saints, Pro-Life, Christian witness, service and the active mission of Save One Soul.</p></a>
-<a class="card" href="pages/catholic-ai.html"><span class="icon">✦</span><h3>Catholic AI</h3><p>Ask Catholic questions with source-aware answers through the Mercy backend.</p></a>
-<a class="card" href="pages/about.html"><span class="icon">i</span><h3>About</h3><p>About the mission, founder information, sources and editorial policy.</p></a>
+<section class="home-hero-pro">
+<div class="home-hero-inner">
+<div>
+<span class="home-kicker">Catholic Digital Mission</span>
+<h1 class="home-title">Save One Soul</h1>
+<p class="home-subtitle"><strong>Mercy: The Last Hope of Salvation.</strong> A Catholic mission for prayer, Sacred Scripture, theological formation, the Eucharist, Marian devotion, the saints, evangelization and works of mercy.</p>
+<div class="home-quote">
+<p>“I am giving mankind the last hope of salvation; that is, recourse to My mercy.”</p>
+<cite>Words of Jesus recorded by St. Faustina · Diary §998</cite>
+</div>
+<div class="hero-actions">
+<a class="btn primary" href="pages/save-one-soul.html">Enter the Mission</a>
+<a class="btn secondary" href="pages/codex-fidei.html">Explore Codex Fidei</a>
+<a class="btn secondary" href="pages/devotions.html">Pray &amp; Devotions</a>
+</div>
+</div>
+<div class="hero-visual" aria-label="Divine Mercy">
+<div class="hero-frame">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Divina_Misericordia_%28Eugeniusz_Kazimirowski%2C_Vilnius_original%2C_1934%29.jpg" alt="Original 1934 Divine Mercy painting by Eugeniusz Kazimirowski">
+<div class="hero-seal">Jesus<br>I Trust<br>in You</div>
+</div>
+</div>
 </div>
 </section>
-<section class="section">
-<div class="eyebrow">From Mercy Admin</div><h2>Latest from Save One Soul Catholic Mission</h2><p class="lead">New reflections, prayers, teaching, announcements and ministry updates appear here automatically when published.</p><div class="cms-feed" data-cms-latest data-limit="3"><div class="cms-empty cms-loading">Loading latest posts…</div></div><p style="margin-top:18px"><a class="btn secondary" href="pages/posts.html">View all posts</a></p>
+
+<section class="home-section">
+<div class="section-intro">
+<div class="eyebrow">Prayer · Formation · Mission</div>
+<h2>Three clear paths through the mission</h2>
+<p>Everything on the website is organized under these principal areas, so prayer, study and mission remain easy to find.</p>
+</div>
+<div class="pillar-grid">
+<a class="pillar-card" href="pages/save-one-soul.html">
+<span class="pillar-no">01 · Mission</span>
+<h3>Save One Soul</h3>
+<p>Intercession for conversion, Mass intentions, reflections, evangelization, accompaniment and works of mercy.</p>
+<span class="pillar-link">Enter Mission</span>
+</a>
+<a class="pillar-card" href="pages/codex-fidei.html">
+<span class="pillar-no">02 · Formation</span>
+<h3>Codex Fidei</h3>
+<p>Theology, Philosophy, Logos Scripture, Pneumatology, Charismatic Renewal, Angelology, Patristics, Mariology, Church History and more.</p>
+<span class="pillar-link">Begin Formation</span>
+</a>
+<a class="pillar-card" href="pages/devotions.html">
+<span class="pillar-no">03 · Prayer</span>
+<h3>Devotions</h3>
+<p>Rosary, Divine Mercy, Precious Blood, Seven Sorrows, Eucharistic devotion, Holy Spirit prayers and deliverance resources.</p>
+<span class="pillar-link">Open Devotions</span>
+</a>
+</div>
+
+<div class="utility-grid" aria-label="Additional sections">
+<a class="utility-card" href="pages/life-ministry.html"><span class="utility-icon">★</span><span><h3>Life &amp; Ministry</h3><p>Saints, Pro-Life resources, service and Christian witness.</p></span></a>
+<a class="utility-card" href="pages/catholic-ai.html"><span class="utility-icon">✦</span><span><h3>Catholic AI</h3><p>Ask questions and explore Catholic sources through the Mercy platform.</p></span></a>
+<a class="utility-card" href="pages/about.html"><span class="utility-icon">i</span><span><h3>About &amp; Sources</h3><p>Mission information, editorial policy and source transparency.</p></span></a>
+</div>
 </section>
-<section class="section">
-<div class="callout"><strong>Editorial principle.</strong> The site distinguishes Catholic doctrine from private revelation and devotional tradition. St. Faustina quotations are identified by Diary paragraph number; historical and formation claims link to primary or authoritative Catholic sources.</div>
-<h2>Prayer intention</h2>
-<p>Send your prayer intention securely to Mercy Admin. If you explicitly choose worldwide sharing, your name and intention may also be shared with approved Catholic prayer partners.</p>
-<form class="form" data-prayer-network-form><label>Name <input name="name" required minlength="2" maxlength="120" autocomplete="name"></label><label>Country (optional)<input name="country" maxlength="100" autocomplete="country-name"></label><label>Prayer intention<textarea name="intention" required minlength="2" maxlength="2000" rows="5" placeholder="Write your prayer intention here…"></textarea></label><label style="display:flex;gap:10px;align-items:flex-start"><input type="checkbox" name="share_worldwide" value="yes" style="width:auto;margin-top:6px"> <span>Share my <strong>name and prayer intention</strong> with approved Catholic prayer partners worldwide. I understand that this sends my request outside the Mercy website.</span></label><input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><button type="submit">Send prayer intention</button><div class="status" role="status" aria-live="polite"></div></form>
-<p style="margin-top:16px"><a class="btn secondary" href="pages/intentions.html">Mass intentions & priest registration</a></p>
+
+<section class="home-band">
+<div class="home-band-inner">
+<div class="eyebrow">From Mercy Admin</div>
+<h2>Latest from the mission</h2>
+<p class="lead">Recent reflections, prayers, Catholic teaching, announcements and ministry updates.</p>
+<div class="cms-feed" data-cms-latest data-limit="3"><div class="cms-empty cms-loading">Loading latest posts…</div></div>
+<p style="margin-top:1.35rem"><a class="btn secondary" href="pages/posts.html">View all posts</a></p>
+</div>
+</section>
+
+<section class="home-section">
+<div class="prayer-wrap">
+<div class="prayer-copy">
+<div class="eyebrow">Intercession</div>
+<h2>Send a prayer intention</h2>
+<p>Entrust your intention to the Save One Soul prayer network. You may also request Masses through the dedicated intentions page.</p>
+<p><a class="btn secondary" href="pages/intentions.html">Prayer &amp; Mass Intentions</a></p>
+<div class="editorial-note"><strong>Privacy &amp; editorial care.</strong> Worldwide sharing occurs only when you explicitly select it. Catholic doctrine, private revelation and devotional tradition are identified distinctly across the site.</div>
+</div>
+<form class="form home-form" data-prayer-network-form>
+<label>Name <input name="name" required minlength="2" maxlength="120" autocomplete="name"></label>
+<label>Country (optional)<input name="country" maxlength="100" autocomplete="country-name"></label>
+<label>Prayer intention<textarea name="intention" required minlength="2" maxlength="2000" rows="6" placeholder="Write your prayer intention here…"></textarea></label>
+<label style="display:flex;gap:10px;align-items:flex-start"><input type="checkbox" name="share_worldwide" value="yes" style="width:auto;margin-top:6px"> <span>Share my <strong>name and prayer intention</strong> with approved Catholic prayer partners worldwide.</span></label>
+<input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+<button type="submit">Send prayer intention</button>
+<div class="status" role="status" aria-live="polite"></div>
+</form>
+</div>
 </section>
 </main>
-<footer><div><strong>Save One Soul Catholic Mission — Mercy: The Last Hope of Salvation</strong><p>Catholic prayer, formation and evangelization. Private revelation is presented in harmony with Sacred Scripture, Sacred Tradition and the Magisterium.</p></div><div><a href="pages/save-one-soul.html">Save One Soul Catholic Mission</a><a href="pages/logos.html">Logos Biblical Study</a><a href="pages/intentions.html">Prayer & Mass Intentions</a><a href="pages/posts.html">Posts</a><a href="pages/about.html">About Rivaldo Kurbah</a><a href="pages/sources.html">Sources & editorial policy</a><a href="https://www.vatican.va/" target="_blank" rel="noopener">Holy See</a><a href="https://www.charis.international/" target="_blank" rel="noopener">CHARIS International</a></div><p class="copyright">© <span data-year></span> Save One Soul Catholic Mission · Mercy: The Last Hope of Salvation · Built for GitHub Pages + cloud API.</p></footer>
+
+<footer class="home-footer">
+<div><strong>Save One Soul Catholic Mission</strong><p>Mercy: The Last Hope of Salvation · Catholic prayer, formation and evangelization.</p></div>
+<div>
+<a href="pages/save-one-soul.html">Mission</a>
+<a href="pages/codex-fidei.html">Codex Fidei</a>
+<a href="pages/devotions.html">Devotions</a>
+<a href="pages/about.html">About</a>
+<a href="pages/sources.html">Sources &amp; editorial policy</a>
+<a href="https://www.vatican.va/" target="_blank" rel="noopener">Holy See</a>
+</div>
+<p class="copyright">© <span data-year></span> Save One Soul Catholic Mission · Mercy: The Last Hope of Salvation.</p>
+</footer>
+
 <script src="javascript/cms-feed.js?v=1"></script>
 <script src="javascript/public-forms.js?v=2"></script>
 <script src="javascript/mercy.js?v=12"></script>
