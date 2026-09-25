@@ -9,7 +9,7 @@
 <style>
 .fathers-intro{max-width:980px}.father-controls{display:flex;gap:.5rem;flex-wrap:wrap;margin:1.2rem 0}.father-controls button[aria-pressed="true"]{background:var(--wine);color:#fff}.father-search{width:100%;padding:1rem;border:1px solid #d7c5b6;border-radius:14px;font:16px system-ui;margin:.5rem 0 1rem}.father-era{margin:2.7rem 0}.father-era>h2{scroll-margin-top:6rem}.father-grid{display:grid;gap:1rem}.father-card{display:grid;grid-template-columns:220px minmax(0,1fr);gap:1.25rem;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:1.1rem;box-shadow:var(--shadow)}.father-card[hidden]{display:none}.father-portrait{margin:0}.father-portrait img,.father-image-fallback{width:100%;height:260px;object-fit:contain;background:#f7eee6;border-radius:14px}.father-image-fallback{display:grid;place-items:center;text-align:center;padding:1rem;color:var(--wine);font-weight:800}.father-portrait figcaption{font:600 .68rem/1.35 system-ui;color:var(--muted);margin-top:.4rem}.father-body h2{margin:.35rem 0 .5rem;color:var(--wine);font-size:1.65rem}.father-meta{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}.father-status{font:750 .76rem/1.35 system-ui;color:var(--muted)}.father-teaching{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:.7rem 0;margin:.9rem 0}.father-teaching summary{cursor:pointer;color:var(--wine);font:800 .9rem system-ui}.father-teaching li{margin:.55rem 0}.father-links{display:flex;gap:.5rem;flex-wrap:wrap}.fathers-note{background:#fff5df;border:1px solid #edd4a3;border-radius:18px;padding:1rem 1.2rem}.era-nav{display:flex;gap:.45rem;flex-wrap:wrap;margin:1rem 0}.era-nav a{border:1px solid var(--line);background:var(--card);padding:.55rem .75rem;border-radius:999px;text-decoration:none;font:750 .78rem system-ui}
 @media(max-width:720px){.father-card{grid-template-columns:1fr}.father-portrait{max-width:260px}.father-portrait img,.father-image-fallback{height:230px}.father-body h2{font-size:1.45rem}.father-teaching[open] summary{margin-bottom:.4rem}.father-links .btn{width:100%}}
-body.dark .father-image-fallback,body.dark .father-portrait img{background:#302326}.father-study-expanded{margin:1rem 0}.father-deep-study{border:1px solid var(--line);border-radius:16px;background:#fffaf6;overflow:hidden}.father-deep-study>summary{cursor:pointer;padding:.9rem 1rem;font:800 .9rem/1.35 system-ui;color:var(--wine);background:#fbefe7}.father-deep-study[open]>summary{border-bottom:1px solid var(--line)}.father-study-inner{padding:1rem}.father-study-inner>p:first-of-type{font-size:1.04rem}.father-study-section{border-left:3px solid var(--gold);padding-left:1rem;margin:1.15rem 0}.father-study-section h3{margin:.15rem 0 .35rem}.father-reading-list{padding-left:1.2rem}.father-source-links{display:grid;gap:.4rem}.father-source-links a{word-break:break-word}.father-study-label{display:inline-block;margin-bottom:.55rem;font:800 .7rem system-ui;text-transform:uppercase;letter-spacing:.08em;color:var(--wine)}body.dark .father-deep-study{background:#251c1e}body.dark .father-deep-study>summary{background:#302326}
+body.dark .father-image-fallback,body.dark .father-portrait img{background:#302326}.patristic-schools{margin:2rem 0}.school-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}.school-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1rem}.school-card h3{margin:.15rem 0 .35rem;color:var(--wine)}.school-card .school-period{font:800 .72rem system-ui;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}.school-fathers{font:700 .78rem/1.45 system-ui;color:var(--wine)}.school-controls{display:flex;gap:.45rem;flex-wrap:wrap;margin:.2rem 0 1rem}.school-controls button[aria-pressed="true"]{background:#6b3345;color:#fff}.father-school-badges{display:flex;flex-wrap:wrap;gap:.3rem;margin:.35rem 0}.father-school-badge{display:inline-flex;padding:.25rem .5rem;border-radius:999px;background:#f2e8f4;color:#5d2f68;font:800 .68rem/1.2 system-ui}@media(max-width:720px){.school-grid{grid-template-columns:1fr}}.father-study-expanded{margin:1rem 0}.father-deep-study{border:1px solid var(--line);border-radius:16px;background:#fffaf6;overflow:hidden}.father-deep-study>summary{cursor:pointer;padding:.9rem 1rem;font:800 .9rem/1.35 system-ui;color:var(--wine);background:#fbefe7}.father-deep-study[open]>summary{border-bottom:1px solid var(--line)}.father-study-inner{padding:1rem}.father-study-inner>p:first-of-type{font-size:1.04rem}.father-study-section{border-left:3px solid var(--gold);padding-left:1rem;margin:1.15rem 0}.father-study-section h3{margin:.15rem 0 .35rem}.father-reading-list{padding-left:1.2rem}.father-source-links{display:grid;gap:.4rem}.father-source-links a{word-break:break-word}.father-study-label{display:inline-block;margin-bottom:.55rem;font:800 .7rem system-ui;text-transform:uppercase;letter-spacing:.08em;color:var(--wine)}body.dark .father-deep-study{background:#251c1e}body.dark .father-deep-study>summary{background:#302326}
 </style>
 </head>
 <body>
@@ -20,9 +20,11 @@ body.dark .father-image-fallback,body.dark .father-portrait img{background:#3023
 <div class="content">
 <div class="fathers-note"><strong>About the title “Father of the Church.”</strong> It is a historical-theological designation rather than a single formal canon. Lists vary somewhat across Catholic reference works. This page concentrates on widely recognized patristic figures and separates historical biography from a summary of their theological contribution. “Doctor of the Church” is a distinct ecclesial title and is identified where applicable.</div>
 <div class="fathers-note"><strong>Study integrity.</strong> The extended notes are original editorial syntheses written for study, not copied passages. They are grounded in each Father’s surviving works and checked against Catholic reference material. Each profile names primary works to read and provides Church-source links. Paraphrase is clearly separated from primary-text reading so students can return to the Father’s own words.</div>
-<div class="era-nav"><a href="#earliest">Apostolic &amp; earliest</a><a href="#early">Early / Ante-Nicene</a><a href="#nicene">Nicene &amp; Golden Age</a><a href="#later">Later patristic</a></div>
+<div class="era-nav"><a href="#schools">Schools &amp; traditions</a><a href="#earliest">Apostolic &amp; earliest</a><a href="#early">Early / Ante-Nicene</a><a href="#nicene">Nicene &amp; Golden Age</a><a href="#later">Later patristic</a></div>
+<section id="schools" class="patristic-schools" aria-labelledby="schoolsTitle"><div class="eyebrow">How the Fathers are related</div><h2 id="schoolsTitle">Patristic schools &amp; theological traditions</h2><p>The word <em>school</em> is used here carefully. Some were real centers of teaching or exegetical networks; others are later historical groupings by region, language or theological method. These categories overlap and should never replace reading each author in his own historical context.</p><div id="schoolGrid" class="school-grid"><p class="status">Loading patristic traditions…</p></div></section>
 <input class="father-search" id="fatherSearch" placeholder="Search a Father, doctrine, work, Eucharist, Trinity, Scripture…" aria-label="Search Fathers of the Church">
-<div class="father-controls" role="group" aria-label="Filter Fathers by era"><button class="btn secondary" type="button" data-era-filter="all" aria-pressed="true">All</button><button class="btn secondary" type="button" data-era-filter="earliest">Apostolic &amp; earliest</button><button class="btn secondary" type="button" data-era-filter="early">Early</button><button class="btn secondary" type="button" data-era-filter="nicene">Nicene</button><button class="btn secondary" type="button" data-era-filter="later">Later</button></div>
+<div class="father-controls" role="group" aria-label="Filter Fathers by era"><button class="btn secondary" type="button" data-era-filter="all" aria-pressed="true">All eras</button><button class="btn secondary" type="button" data-era-filter="earliest">Apostolic &amp; earliest</button><button class="btn secondary" type="button" data-era-filter="early">Early</button><button class="btn secondary" type="button" data-era-filter="nicene">Nicene</button><button class="btn secondary" type="button" data-era-filter="later">Later</button></div>
+<div class="school-controls" id="schoolControls" role="group" aria-label="Filter Fathers by patristic school"><button class="btn secondary" type="button" data-school-filter="all" aria-pressed="true">All traditions</button></div>
 <p class="status" id="fatherCount">16 profiles shown.</p>
 <section class="father-era" id="earliest"><div class="eyebrow">1st–2nd centuries</div><h2>Apostolic &amp; earliest Fathers</h2><div class="father-grid"><article class="father-card" data-era="earliest" data-search="St. Ignatius of Antioch Saint · Bishop · Martyr · Apostolic Father Letters to the Ephesians, Magnesians, Trallians, Romans, Philadelphians, Smyrnaeans and Polycarp. Jesus Christ is truly God and truly man; Ignatius opposes views that reduced the Incarnation and Passion to mere appearance. The local Church gathers around the bishop with presbyters and deacons; ecclesial unity is inseparable from fidelity to apostolic faith. He speaks of the Eucharist as the flesh of Jesus Christ and connects Eucharistic communion with doctrinal and ecclesial communion. Martyrdom is not sought as self-destruction but received as a final act of discipleship and union with Christ. He uses the expression “Catholic Church” in an early surviving Christian text, linking the Church’s fullness with the presence of Christ. Christian love, humility, prayer and mutual obedience are practical marks of unity, not merely institutional ideas.">
 <figure class="father-portrait"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ignatius%20of%20Antioch%20(Menologion%20of%20Basil%20II).jpg?width=640" alt="Historical artwork associated with St. Ignatius of Antioch" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="father-image-fallback" hidden>✠<br>St. Ignatius of Antioch</div><figcaption>Menologion of Basil II; public-domain image via Wikimedia Commons</figcaption></figure>
@@ -108,6 +110,7 @@ body.dark .father-image-fallback,body.dark .father-portrait img{background:#3023
 <p><strong>Major surviving works:</strong> Pastoral Rule; Moralia on Job; Homilies on the Gospels; Dialogues; Letters.</p>
 <details class="father-teaching" open><summary>Teaching and theological contribution</summary><ul><li>Pastoral authority is a burden of service; the shepherd must know different personalities and apply one Gospel with prudent adaptation.</li><li>The preacher must practice what he teaches, because moral contradiction weakens pastoral credibility.</li><li>Contemplation and action are not enemies: mature ministry returns from prayer to service and carries the burdens of others back into prayer.</li><li>His spiritual exegesis of Job reads Scripture morally and Christologically while drawing lessons for perseverance and pastoral discernment.</li><li>He strongly emphasized care for the poor and responsible administration of Church goods as a form of stewardship.</li><li>Mission should be pastorally intelligent; Gregory’s instructions concerning the evangelization of the English show concern for gradual conversion and adaptation of nonessential customs.</li></ul></details>
 <div class="father-study-expanded" data-father-study="gregory-great"><p class="status">Loading extended study notes…</p></div><div class="father-links"><a class="btn secondary" href="saint.html?id=st-gregory-the-great">Life &amp; feast profile</a><a class="btn secondary" target="_blank" rel="noopener" href="https://commons.wikimedia.org/wiki/File:Gregorythegreat.jpg">Image source</a></div></div></article></div></section>
+<section class="father-era" id="additional-fathers"><div class="eyebrow">Broader patristic map</div><h2>Additional major Fathers &amp; patristic writers</h2><p>These profiles broaden the page beyond the original selection so the major Alexandrian, Cappadocian, North African, Latin and Byzantine streams can be studied together. Writers who are not canonized saints are identified explicitly.</p><div class="father-grid" id="supplementalFatherGrid"><p class="status">Loading additional profiles…</p></div></section>
 <section class="prayer"><h2>How to read the Fathers</h2><p>Read a Father in historical context, distinguish his personal theological opinions from doctrines received by the whole Church, and compare individual passages with Scripture, councils and later Magisterial teaching. Patristic consensus has special importance, but no single Father by himself is the Magisterium.</p><div class="btns"><a class="btn primary" href="theology.html">Return to Catholic Theology</a><a class="btn secondary" href="logos.html">Study Scripture in Logos</a><a class="btn secondary" href="saints.html">Browse Saints</a></div></section>
 </div>
 </main>
@@ -115,45 +118,75 @@ body.dark .father-image-fallback,body.dark .father-portrait img{background:#3023
 <script src="../javascript/mobile-nav.js?v=2"></script><script src="../javascript/mercy.js?v=12"></script>
 <script>
 (function(){
-var q=document.getElementById('fatherSearch'),buttons=[].slice.call(document.querySelectorAll('[data-era-filter]')),active='all';
-function apply(){var term=(q.value||'').trim().toLowerCase(),shown=0;document.querySelectorAll('.father-card').forEach(function(card){var era=card.dataset.era,okEra=active==='all'||era===active,okTerm=!term||(card.dataset.search||'').toLowerCase().indexOf(term)>=0;card.hidden=!(okEra&&okTerm);if(!card.hidden)shown++;});document.getElementById('fatherCount').textContent=shown+' profile'+(shown===1?'':'s')+' shown.';}
-q.addEventListener('input',apply);buttons.forEach(function(b){b.addEventListener('click',function(){active=b.dataset.eraFilter;buttons.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});apply();});});
+var q=document.getElementById('fatherSearch'),
+    eraButtons=[].slice.call(document.querySelectorAll('[data-era-filter]')),
+    schoolControls=document.getElementById('schoolControls'),
+    activeEra='all',activeSchool='all',studyData=null,schoolData=null;
 
 function make(tag,text,cls){var n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;}
+function esc(value){return String(value==null?'':value);}
+function apply(){
+  var term=(q.value||'').trim().toLowerCase(),shown=0;
+  document.querySelectorAll('.father-card').forEach(function(card){
+    var era=card.dataset.era||'',schools=(card.dataset.school||'').split(' ').filter(Boolean);
+    var okEra=activeEra==='all'||era===activeEra;
+    var okSchool=activeSchool==='all'||schools.indexOf(activeSchool)>=0;
+    var okTerm=!term||(card.dataset.search||card.textContent||'').toLowerCase().indexOf(term)>=0;
+    card.hidden=!(okEra&&okSchool&&okTerm);if(!card.hidden)shown++;
+  });
+  document.getElementById('fatherCount').textContent=shown+' profile'+(shown===1?'':'s')+' shown.';
+}
+q.addEventListener('input',apply);
+eraButtons.forEach(function(b){b.addEventListener('click',function(){activeEra=b.dataset.eraFilter;eraButtons.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});apply();});});
+
 function renderStudy(root,data){
   root.textContent='';
-  var details=make('details',null,'father-deep-study');
-  var summary=make('summary','Open extended study notes');
-  details.appendChild(summary);
-  var inner=make('div',null,'father-study-inner');
-  inner.appendChild(make('span','Original study synthesis · source-backed','father-study-label'));
-  inner.appendChild(make('h3',data.title||'Extended study'));
-  inner.appendChild(make('p',data.orientation||''));
-  (data.sections||[]).forEach(function(section){
-    var block=make('section',null,'father-study-section');
-    block.appendChild(make('h3',section.heading||'Study point'));
-    block.appendChild(make('p',section.text||''));
-    inner.appendChild(block);
-  });
-  inner.appendChild(make('h3','Primary works to read'));
-  var ul=make('ul',null,'father-reading-list');
-  (data.primary||[]).forEach(function(item){ul.appendChild(make('li',item));});
-  inner.appendChild(ul);
-  inner.appendChild(make('h3','Catholic reference sources'));
-  var sources=make('div',null,'father-source-links');
-  (data.sources||[]).forEach(function(url,index){
-    var a=make('a','Church reference '+(index+1));
-    a.href=url;a.target='_blank';a.rel='noopener noreferrer';
-    sources.appendChild(a);
-  });
-  inner.appendChild(sources);
-  details.appendChild(inner);
-  root.appendChild(details);
+  var details=make('details',null,'father-deep-study'),summary=make('summary','Open extended study notes'),inner=make('div',null,'father-study-inner');
+  details.appendChild(summary);inner.appendChild(make('span','Original study synthesis · source-backed','father-study-label'));
+  inner.appendChild(make('h3',data.title||'Extended study'));inner.appendChild(make('p',data.orientation||''));
+  (data.sections||[]).forEach(function(section){var block=make('section',null,'father-study-section');block.appendChild(make('h3',section.heading||'Study point'));block.appendChild(make('p',section.text||''));inner.appendChild(block);});
+  inner.appendChild(make('h3','Primary works to read'));var ul=make('ul',null,'father-reading-list');(data.primary||[]).forEach(function(item){ul.appendChild(make('li',item));});inner.appendChild(ul);
+  inner.appendChild(make('h3','Catholic reference sources'));var sources=make('div',null,'father-source-links');(data.sources||[]).forEach(function(url,index){var a=make('a','Church reference '+(index+1));a.href=url;a.target='_blank';a.rel='noopener noreferrer';sources.appendChild(a);});inner.appendChild(sources);
+  details.appendChild(inner);root.appendChild(details);
 }
-fetch('../data/fathers-study.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('study_data');return r.json();}).then(function(data){
-  document.querySelectorAll('[data-father-study]').forEach(function(root){var row=data[root.dataset.fatherStudy];if(row)renderStudy(root,row);else root.innerHTML='<p class="status">Extended study notes are not yet available for this profile.</p>';});
+function addSchoolBadges(card,id){
+  var ids=(schoolData.assignments&&schoolData.assignments[id])||[];card.dataset.school=ids.join(' ');
+  if(!ids.length)return;var body=card.querySelector('.father-body'),meta=body&&body.querySelector('.father-meta');if(!meta)return;
+  var row=make('div',null,'father-school-badges');ids.forEach(function(sid){var school=(schoolData.schools||[]).find(function(x){return x.id===sid;});if(school)row.appendChild(make('span',school.name,'father-school-badge'));});meta.insertAdjacentElement('afterend',row);
+}
+function supplementalCard(row){
+  var card=make('article',null,'father-card');card.dataset.era=row.era;card.dataset.search=(row.name+' '+row.status+' '+row.school+' '+row.bio+' '+row.works).toLowerCase();
+  var fig=make('figure',null,'father-portrait'),img=document.createElement('img');img.loading='lazy';img.src='https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(row.image)+'?width=640';img.alt='Historical artwork associated with '+row.name;
+  var fallback=make('div','✠ '+row.name,'father-image-fallback');fallback.hidden=true;img.addEventListener('error',function(){img.hidden=true;fallback.hidden=false;});fig.appendChild(img);fig.appendChild(fallback);fig.appendChild(make('figcaption',row.imageCredit||'Image via Wikimedia Commons'));
+  var body=make('div',null,'father-body'),meta=make('div',null,'father-meta');meta.appendChild(make('span',row.dates,'badge'));meta.appendChild(make('span',row.status,'father-status'));body.appendChild(meta);body.appendChild(make('h2',row.name));body.appendChild(make('p',row.bio));
+  var works=make('p');works.appendChild(make('strong','Major surviving works: '));works.append(row.works);body.appendChild(works);
+  var study=make('div',null,'father-study-expanded');study.dataset.fatherStudy=row.id;study.appendChild(make('p','Loading extended study notes…','status'));body.appendChild(study);
+  var links=make('div',null,'father-links');var imageLink=make('a','Image source','btn secondary');imageLink.href='https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(row.image);imageLink.target='_blank';imageLink.rel='noopener';links.appendChild(imageLink);body.appendChild(links);
+  card.appendChild(fig);card.appendChild(body);return card;
+}
+function renderSchools(){
+  var grid=document.getElementById('schoolGrid');grid.textContent='';
+  (schoolData.schools||[]).forEach(function(sc){
+    var card=make('article',null,'school-card');card.appendChild(make('span',sc.period,'school-period'));card.appendChild(make('h3',sc.name));card.appendChild(make('p',sc.summary));
+    var names=(sc.fathers||[]).map(function(id){var extra=(schoolData.supplemental||[]).find(function(x){return x.id===id;});if(extra)return extra.name;var existing=document.querySelector('[data-father-study="'+id+'"]');return existing&&existing.closest('.father-card')?existing.closest('.father-card').querySelector('h2').textContent:id;});
+    card.appendChild(make('p','Key figures: '+names.join(' · '),'school-fathers'));grid.appendChild(card);
+    var b=make('button',sc.name,'btn secondary');b.type='button';b.dataset.schoolFilter=sc.id;b.setAttribute('aria-pressed','false');b.addEventListener('click',function(){activeSchool=sc.id;[].slice.call(schoolControls.querySelectorAll('[data-school-filter]')).forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});apply();});schoolControls.appendChild(b);
+  });
+  schoolControls.querySelector('[data-school-filter="all"]').addEventListener('click',function(e){activeSchool='all';[].slice.call(schoolControls.querySelectorAll('[data-school-filter]')).forEach(function(x){x.setAttribute('aria-pressed',x===e.currentTarget?'true':'false');});apply();});
+}
+Promise.all([
+  fetch('../data/fathers-study.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('study_data');return r.json();}),
+  fetch('../data/fathers-schools.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('school_data');return r.json();})
+]).then(function(rows){
+  studyData=rows[0];schoolData=rows[1];
+  document.querySelectorAll('.father-card [data-father-study]').forEach(function(root){addSchoolBadges(root.closest('.father-card'),root.dataset.fatherStudy);});
+  var supplemental=document.getElementById('supplementalFatherGrid');supplemental.textContent='';
+  (schoolData.supplemental||[]).forEach(function(row){var card=supplementalCard(row);supplemental.appendChild(card);addSchoolBadges(card,row.id);});
+  document.querySelectorAll('[data-father-study]').forEach(function(root){var row=studyData[root.dataset.fatherStudy];if(row)renderStudy(root,row);else root.innerHTML='<p class="status">Extended study notes are not yet available for this profile.</p>';});
+  renderSchools();apply();
 }).catch(function(){
   document.querySelectorAll('[data-father-study]').forEach(function(root){root.innerHTML='<p class="status">Extended study notes are temporarily unavailable. The core teaching summary above remains available.</p>';});
+  document.getElementById('schoolGrid').innerHTML='<p class="status">Patristic school guide is temporarily unavailable.</p>';apply();
 });
 })();
 </script>
