@@ -70,7 +70,7 @@
       const videoTitle=document.createElement('h3');videoTitle.textContent=video.title||('Film about '+saintName);videoSection.append(videoTitle);
       const videoText=document.createElement('p');videoText.textContent='Watch this curated YouTube '+(video.kind||'video')+' directly on this saint profile.';videoSection.append(videoText);
       const frame=document.createElement('div');frame.className='saint-video-frame';const iframe=document.createElement('iframe');
-      iframe.src='https://www.youtube-nocookie.com/embed/'+encodeURIComponent(video.youtubeVideoId)+'?rel=0';
+      let embedUrl='https://www.youtube-nocookie.com/embed/'+encodeURIComponent(video.youtubeVideoId)+'?rel=0';if(video.startSeconds)embedUrl+='&start='+encodeURIComponent(video.startSeconds);iframe.src=embedUrl;
       iframe.title=video.title||('Video about '+saintName);iframe.loading='lazy';iframe.referrerPolicy='strict-origin-when-cross-origin';
       iframe.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';iframe.allowFullscreen=true;
       frame.append(iframe);videoSection.append(frame);
