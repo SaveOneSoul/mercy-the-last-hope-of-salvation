@@ -134,3 +134,8 @@ body.dark .logos-chapter-grid button,body.dark .logos-chapter-nav button,body.da
 .logos-chapter-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
 .logos-primary-nav button{font-size:.66rem}
 }
+.logos-verse-sheet.is-inline{position:static;inset:auto;z-index:auto;height:auto;display:block;margin:1rem 0}
+.logos-verse-sheet.is-inline .logos-sheet-backdrop,.logos-verse-sheet.is-inline .logos-sheet-handle{display:none}
+.logos-verse-sheet.is-inline .logos-sheet-card{width:100%;max-height:none;overflow:visible;border:1px solid var(--line);border-radius:16px;padding:1rem;box-shadow:0 8px 24px rgba(63,29,39,.08)}
+.logos-verse-sheet.is-inline .logos-sheet-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+.logos-verse-sheet.is-inline .logos-sheet-text{max-height:none;overflow:visible}
