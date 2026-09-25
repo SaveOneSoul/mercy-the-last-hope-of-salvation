@@ -23,6 +23,9 @@
 <button class="btn secondary" data-view="create">Create</button>
 <button class="btn secondary" data-view="library">Posts & Pages</button>
 <button class="btn secondary" data-view="media">Media</button>
+<button class="btn secondary" data-view="courses">Course Videos</button>
+<button class="btn secondary" data-view="homiletics">Homiletics</button>
+<button class="btn secondary" data-view="live">Live Studio</button>
 <button class="btn secondary" data-view="content">Existing Pages</button>
 </nav>
 <p id="globalStatus" class="status"></p>
@@ -53,6 +56,100 @@
 
 <section id="mediaView" class="hidden"><div class="panel"><div class="section-head"><div><h2 style="margin-bottom:3px">Media Library</h2><p class="muted" style="margin-top:0">Upload once, reuse in posts and pages.</p></div></div><div class="toolbar"><input id="mediaFile" type="file" accept="image/jpeg,image/png,image/webp,image/gif"><button id="mediaUploadBtn" class="btn primary">Upload image</button><button id="refreshMediaBtn" class="btn secondary">Refresh</button></div><p id="mediaStatus" class="status"></p><div id="mediaGrid" class="media-grid"></div></div></section>
 
+<section id="coursesView" class="hidden">
+<div class="panel">
+<div class="section-head"><div><h2 style="margin-bottom:3px">Course Video Library</h2><p class="muted" style="margin-top:0">Assign YouTube, uploaded or externally hosted videos to a specific Codex course, topic and lesson.</p></div></div>
+<div class="note"><strong>Course media only.</strong> Homilies and preaching belong in Homiletics, not in formal courses. For large video files, YouTube or an external streaming host is preferred; direct Admin upload currently supports MP4/WebM/MOV up to 30 MB.</div>
+<div class="three">
+<label class="field"><span>Course</span><select id="courseKey"></select></label>
+<label class="field"><span>Topic</span><input id="courseTopic" placeholder="e.g. Immaculate Conception"></label>
+<label class="field"><span>Lesson</span><input id="courseLesson" placeholder="e.g. Lesson 4"></label>
+</div>
+<div class="two">
+<label class="field"><span>Video title</span><input id="courseVideoTitle" maxlength="240"></label>
+<label class="field"><span>Speaker / teacher</span><input id="courseSpeaker" maxlength="180"></label>
+</div>
+<label class="field"><span>Description</span><textarea id="courseDescription"></textarea></label>
+<div class="three">
+<label class="field"><span>Source type</span><select id="courseSourceType"><option value="youtube">YouTube</option><option value="uploaded">Uploaded file</option><option value="external">External host</option></select></label>
+<label class="field"><span>Source / organization</span><input id="courseSourceName" placeholder="Franciscan Friars, CHARIS, etc."></label>
+<label class="field"><span>Language</span><select id="courseLanguage"><option value="en">English</option><option value="kha">Khasi</option><option value="hi">Hindi</option><option value="la">Latin</option></select></label>
+</div>
+<label class="field"><span>Video URL</span><input id="courseVideoUrl" placeholder="https://youtube.com/watch?v=... or uploaded video URL"></label>
+<div class="toolbar"><input id="courseVideoFile" type="file" accept="video/mp4,video/webm,video/quicktime"><button id="courseVideoUploadBtn" class="btn secondary" type="button">Upload video file</button></div>
+<div class="two">
+<label class="field"><span>Doctrinal classification</span><select id="courseDoctrine"><option value="">Choose…</option><option>Official Church source</option><option>Magisterial teaching</option><option>Catholic educational source</option><option>Theological commentary</option><option>Devotional material</option><option>Private revelation / testimony</option></select></label>
+<label class="field"><span>Sort order</span><input id="courseSort" type="number" value="0"></label>
+</div>
+<div class="checkrow"><label><input id="courseFeatured" type="checkbox"> Featured</label><label><input id="coursePublished" type="checkbox" checked> Published</label></div>
+<p id="courseStatus" class="status"></p>
+<div class="composer-actions"><button id="courseSaveBtn" class="btn primary" type="button">Add to Course</button><a class="btn secondary" href="https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/pages/course-videos.html" target="_blank" rel="noopener">Open public library</a></div>
+<div class="table-wrap"><table><thead><tr><th>Course</th><th>Topic</th><th>Title</th><th>Source</th><th>Status</th><th></th></tr></thead><tbody id="courseVideoRows"></tbody></table></div>
+</div>
+</section>
+
+<section id="homileticsView" class="hidden">
+<div class="panel">
+<div class="section-head"><div><h2 style="margin-bottom:3px">Homiletics</h2><p class="muted" style="margin-top:0">Publish preaching and teaching here without adding it to formal courses.</p></div><a class="btn secondary" href="https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/pages/homiletics.html" target="_blank" rel="noopener">Open Homiletics</a></div>
+<div class="three">
+<label class="field"><span>Title</span><input id="homTitle" maxlength="240"></label>
+<label class="field"><span>Preacher / speaker</span><input id="homSpeaker" maxlength="180"></label>
+<label class="field"><span>Occasion</span><select id="homOccasion"><option>Sunday Homily</option><option>Weekday Homily</option><option>Retreat Talk</option><option>Youth Preaching</option><option>Prayer Meeting</option><option>Eucharistic Adoration</option><option>Healing Service</option><option>Evangelization</option><option>Feast / Solemnity</option><option>Funeral</option><option>Wedding</option><option>Special Event</option></select></label>
+</div>
+<div class="three">
+<label class="field"><span>Liturgical season</span><select id="homSeason"><option value="">Not specified</option><option>Advent</option><option>Christmas</option><option>Lent</option><option>Easter</option><option>Ordinary Time</option></select></label>
+<label class="field"><span>Cycle</span><select id="homCycle"><option value="">—</option><option>Year A</option><option>Year B</option><option>Year C</option></select></label>
+<label class="field"><span>Scripture / Gospel</span><input id="homScripture" placeholder="John 3:16"></label>
+</div>
+<div class="two">
+<label class="field"><span>Main theme</span><input id="homTheme"></label>
+<label class="field"><span>Date preached</span><input id="homDate" type="datetime-local"></label>
+</div>
+<label class="field"><span>Summary</span><textarea id="homSummary"></textarea></label>
+<label class="field"><span>Teaching / preaching text or outline (optional)</span><textarea id="homBody" style="min-height:180px"></textarea></label>
+<div class="three">
+<label class="field"><span>Source type</span><select id="homSourceType"><option value="youtube">YouTube</option><option value="uploaded">Uploaded file</option><option value="external">External host</option></select></label>
+<label class="field"><span>Language</span><select id="homLanguage"><option value="en">English</option><option value="kha">Khasi</option><option value="hi">Hindi</option></select></label>
+<label class="field"><span>Video URL</span><input id="homVideoUrl" placeholder="https://..."></label>
+</div>
+<div class="toolbar"><input id="homVideoFile" type="file" accept="video/mp4,video/webm,video/quicktime"><button id="homVideoUploadBtn" class="btn secondary" type="button">Upload video file</button></div>
+<div class="checkrow"><label><input id="homFeatured" type="checkbox"> Featured</label><label><input id="homPublished" type="checkbox" checked> Published</label></div>
+<p id="homStatus" class="status"></p>
+<div class="composer-actions"><button id="homSaveBtn" class="btn primary" type="button">Publish to Homiletics</button></div>
+<div class="table-wrap"><table><thead><tr><th>Date</th><th>Title</th><th>Speaker</th><th>Occasion</th><th>Status</th><th></th></tr></thead><tbody id="homRows"></tbody></table></div>
+</div>
+</section>
+
+<section id="liveView" class="hidden">
+<div class="panel">
+<div class="section-head"><div><h2 style="margin-bottom:3px">Live Studio</h2><p class="muted" style="margin-top:0">Create or register YouTube Live broadcasts and display the same live stream on Save One Soul.</p></div><a class="btn secondary" href="https://saveonesoul.github.io/mercy-the-last-hope-of-salvation/pages/live.html" target="_blank" rel="noopener">Open public live page</a></div>
+<div id="youtubeState" class="note">Checking YouTube connection…</div>
+<div class="two">
+<label class="field"><span>Live title</span><input id="liveTitle" maxlength="240"></label>
+<label class="field"><span>Speaker / preacher</span><input id="liveSpeaker" maxlength="180"></label>
+</div>
+<label class="field"><span>Description</span><textarea id="liveDescription"></textarea></label>
+<div class="three">
+<label class="field"><span>Category</span><select id="liveCategory"><option value="homiletics">Homiletics</option><option value="retreat">Retreat</option><option value="eucharistic-adoration">Eucharistic Adoration</option><option value="prayer-meeting">Prayer Meeting</option><option value="bible-study">Bible Study</option><option value="charismatic-renewal">Charismatic Renewal</option><option value="mass">Mass / Liturgical Event</option><option value="special-event">Special Event</option></select></label>
+<label class="field"><span>Schedule</span><input id="liveSchedule" type="datetime-local"></label>
+<label class="field"><span>Visibility</span><select id="liveVisibility"><option value="public">Public</option><option value="unlisted">Unlisted</option><option value="private">Private</option></select></label>
+</div>
+<div class="two">
+<label class="field"><span>Scripture reference</span><input id="liveScripture"></label>
+<label class="field"><span>YouTube live URL / video ID</span><input id="liveYoutube" placeholder="Leave blank when creating automatically"></label>
+</div>
+<div class="two">
+<label class="field"><span>After live, file under</span><select id="liveArchive"><option value="">Past broadcasts only</option><option value="homiletics">Homiletics</option><option value="charismatic-renewal">Charismatic Renewal</option><option value="devotions">Devotions</option></select></label>
+<label class="field"><span>Language</span><select id="liveLanguage"><option value="en">English</option><option value="kha">Khasi</option></select></label>
+</div>
+<div class="checkrow"><label><input id="liveHome" type="checkbox" checked> Show on homepage</label><label><input id="liveCreateYoutube" type="checkbox"> Create YouTube broadcast + stream automatically</label></div>
+<p class="muted">Automatic YouTube creation requires YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET and YOUTUBE_REFRESH_TOKEN on the backend. If they are not configured, create the live event in YouTube Studio and paste its URL above.</p>
+<p id="liveStatus" class="status"></p>
+<div class="composer-actions"><button id="liveSaveBtn" class="btn primary" type="button">Create Live Event</button></div>
+<div class="table-wrap"><table><thead><tr><th>Schedule</th><th>Title</th><th>Status</th><th>YouTube</th><th>Encoder</th><th>Actions</th></tr></thead><tbody id="liveRows"></tbody></table></div>
+</div>
+</section>
+
 <section id="contentView" class="hidden"><div class="panel"><h2>Existing Page Editor</h2><div class="note"><strong>Editorial changes only.</strong> Use this area to update text, links and images already present in technical pages. For new articles, prayers, announcements or permanent pages, use <strong>Create</strong>.</div><div class="content-toolbar"><select id="pageSelect"><option value="">Choose a page…</option></select><button id="loadPageBtn" class="btn secondary">Load page</button><button id="savePageBtn" class="btn primary" disabled>Save changes</button><button id="resetPageBtn" class="btn danger" disabled>Reset page overrides</button><a id="previewPageBtn" class="btn secondary hidden" target="_blank" rel="noopener">Open live page</a></div><p id="contentStatus" class="status"></p><div id="editorList" class="editor-list"></div></div></section>
 </section>
 </div>
@@ -67,7 +164,7 @@ function status(el,text,kind){el.textContent=text||'';el.className='status '+(ki
 function api(path,options){options=options||{};options.headers=options.headers||{};if(options.body&&!(options.body instanceof FormData))options.headers['Content-Type']='application/json';if(options.method&&options.method!=='GET')options.headers['X-CSRF-Token']=csrf;return fetch(path,options).then(function(r){if(r.status===401){showLogin();throw new Error('Admin session expired. Sign in again.');}return r.text().then(function(t){var d={};try{d=t?JSON.parse(t):{};}catch(e){}if(!r.ok)throw new Error(d.detail||('Request failed: '+r.status));return d;});});}
 function showLogin(){$('appView').classList.add('hidden');$('loginView').classList.remove('hidden');csrf='';}
 function showApp(){$('loginView').classList.add('hidden');$('appView').classList.remove('hidden');}
-function switchView(name){document.querySelectorAll('[data-view]').forEach(function(b){b.classList.toggle('active',b.dataset.view===name);});['dashboard','create','library','media','content'].forEach(function(v){$(v+'View').classList.toggle('hidden',v!==name);});if(name==='dashboard')loadDashboard();if(name==='library')loadLibrary();if(name==='media')loadMedia();}
+function switchView(name){document.querySelectorAll('[data-view]').forEach(function(b){b.classList.toggle('active',b.dataset.view===name);});['dashboard','create','library','media','courses','homiletics','live','content'].forEach(function(v){$(v+'View').classList.toggle('hidden',v!==name);});if(name==='dashboard')loadDashboard();if(name==='library')loadLibrary();if(name==='media')loadMedia();if(name==='courses')loadCourseVideos();if(name==='homiletics')loadHomiletics();if(name==='live')loadLive();}
 
 document.querySelectorAll('[data-view]').forEach(function(b){b.addEventListener('click',function(){switchView(b.dataset.view);});});
 $('loginForm').addEventListener('submit',function(e){e.preventDefault();status($('loginStatus'),'Signing in…');fetch('/api/admin/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:$('password').value})}).then(function(r){return r.json().then(function(j){if(!r.ok)throw new Error(j.detail||'Sign in failed');return j;});}).then(function(j){csrf=j.csrf;$('password').value='';showApp();boot();}).catch(function(err){status($('loginStatus'),err.message,'error');});});
@@ -109,6 +206,19 @@ $('refreshLibraryBtn').addEventListener('click',loadLibrary);$('libraryKind').ad
 function loadMedia(){api('/api/admin/media').then(function(d){mediaCache=d.items||[];var root=$('mediaGrid');root.innerHTML='';mediaCache.forEach(function(m){var c=document.createElement('div');c.className='card media-item';c.innerHTML='<img src="'+esc(m.url)+'" alt=""><code>'+esc(m.filename)+'</code><div class="pub-actions"><button class="btn primary" data-use>Use as cover</button><button class="btn secondary" data-copy>Copy URL</button></div>';c.querySelector('[data-use]').addEventListener('click',function(){$('coverImage').value=m.url;showCover();switchView('create');status($('composerStatus'),'Media image selected as cover.','success');});c.querySelector('[data-copy]').addEventListener('click',function(){navigator.clipboard&&navigator.clipboard.writeText(m.url);status($('mediaStatus'),'Image URL copied.','success');});root.appendChild(c);});if(!mediaCache.length)root.innerHTML='<p class="muted">No media uploaded through the new Media Library yet.</p>';}).catch(function(e){status($('mediaStatus'),e.message,'error');});}
 $('mediaUploadBtn').addEventListener('click',function(){var f=$('mediaFile').files&&$('mediaFile').files[0];if(!f){status($('mediaStatus'),'Choose an image first.','error');return;}var b=this;b.disabled=true;b.textContent='Uploading…';uploadFile(f,function(){status($('mediaStatus'),'Image uploaded.','success');$('mediaFile').value='';loadMedia();},function(e){status($('mediaStatus'),e.message,'error');});setTimeout(function(){b.disabled=false;b.textContent='Upload image';},700);});$('refreshMediaBtn').addEventListener('click',loadMedia);
 
+function uploadVideoFile(file,onDone,statusEl){if(!file){status(statusEl,'Choose a video file first.','error');return;}var fd=new FormData();fd.append('file',file);status(statusEl,'Uploading video…');api('/api/admin/media/video-upload',{method:'POST',body:fd}).then(function(m){status(statusEl,'Video uploaded.','success');onDone(m.url);}).catch(function(e){status(statusEl,e.message,'error');});}
+
+function loadCourseVideos(){api('/api/admin/video-studio/state').then(function(s){var sel=$('courseKey');if(!sel.options.length){(s.courses||[]).forEach(function(k){var o=document.createElement('option');o.value=k;o.textContent=k.replace(/-/g,' ');sel.appendChild(o);});}});api('/api/admin/course-videos').then(function(d){var rows='';(d.items||[]).forEach(function(v){rows+='<tr><td>'+esc(v.course_key)+'</td><td>'+esc(v.topic||'—')+'</td><td>'+esc(v.title)+'</td><td>'+esc(v.source_type)+'</td><td><span class="pill '+(v.published?'done':'draft')+'">'+(v.published?'Published':'Draft')+'</span></td><td><button class="btn danger" data-del-course="'+v.id+'">Delete</button></td></tr>';});$('courseVideoRows').innerHTML=rows||'<tr><td colspan="6">No course videos yet.</td></tr>';document.querySelectorAll('[data-del-course]').forEach(function(b){b.onclick=function(){if(!confirm('Delete this course video?'))return;api('/api/admin/course-videos/'+b.dataset.delCourse,{method:'DELETE'}).then(loadCourseVideos).catch(function(e){status($('courseStatus'),e.message,'error');});};});}).catch(function(e){status($('courseStatus'),e.message,'error');});}
+$('courseVideoUploadBtn').addEventListener('click',function(){var f=$('courseVideoFile').files&&$('courseVideoFile').files[0];uploadVideoFile(f,function(url){$('courseVideoUrl').value=url;$('courseSourceType').value='uploaded';},$('courseStatus'));});
+$('courseSaveBtn').addEventListener('click',function(){var payload={course_key:$('courseKey').value,topic:$('courseTopic').value,lesson:$('courseLesson').value,title:$('courseVideoTitle').value,description:$('courseDescription').value,speaker:$('courseSpeaker').value,source_name:$('courseSourceName').value,source_type:$('courseSourceType').value,video_url:$('courseVideoUrl').value,language:$('courseLanguage').value,doctrinal_classification:$('courseDoctrine').value,sort_order:Number($('courseSort').value||0),featured:$('courseFeatured').checked,published:$('coursePublished').checked};status($('courseStatus'),'Saving…');api('/api/admin/course-videos',{method:'POST',body:JSON.stringify(payload)}).then(function(){$('courseVideoTitle').value='';$('courseVideoUrl').value='';$('courseDescription').value='';status($('courseStatus'),'Video added to the selected course.','success');loadCourseVideos();}).catch(function(e){status($('courseStatus'),e.message,'error');});});
+
+function loadHomiletics(){api('/api/admin/homiletics').then(function(d){var rows='';(d.items||[]).forEach(function(v){rows+='<tr><td>'+esc(fmtDate(v.preached_at||v.created_at))+'</td><td>'+esc(v.title)+'</td><td>'+esc(v.speaker||'—')+'</td><td>'+esc(v.occasion||'—')+'</td><td><span class="pill '+(v.published?'done':'draft')+'">'+(v.published?'Published':'Draft')+'</span></td><td><button class="btn danger" data-del-hom="'+v.id+'">Delete</button></td></tr>';});$('homRows').innerHTML=rows||'<tr><td colspan="6">No homiletic videos yet.</td></tr>';document.querySelectorAll('[data-del-hom]').forEach(function(b){b.onclick=function(){if(!confirm('Delete this homiletic entry?'))return;api('/api/admin/homiletics/'+b.dataset.delHom,{method:'DELETE'}).then(loadHomiletics).catch(function(e){status($('homStatus'),e.message,'error');});};});}).catch(function(e){status($('homStatus'),e.message,'error');});}
+$('homVideoUploadBtn').addEventListener('click',function(){var f=$('homVideoFile').files&&$('homVideoFile').files[0];uploadVideoFile(f,function(url){$('homVideoUrl').value=url;$('homSourceType').value='uploaded';},$('homStatus'));});
+$('homSaveBtn').addEventListener('click',function(){var dt=$('homDate').value;var payload={title:$('homTitle').value,speaker:$('homSpeaker').value,occasion:$('homOccasion').value,liturgical_season:$('homSeason').value,liturgical_cycle:$('homCycle').value,scripture_reference:$('homScripture').value,theme:$('homTheme').value,summary:$('homSummary').value,body:$('homBody').value,source_type:$('homSourceType').value,video_url:$('homVideoUrl').value,language:$('homLanguage').value,featured:$('homFeatured').checked,published:$('homPublished').checked,preached_at:dt?new Date(dt).toISOString():null};status($('homStatus'),'Publishing…');api('/api/admin/homiletics',{method:'POST',body:JSON.stringify(payload)}).then(function(){$('homTitle').value='';$('homVideoUrl').value='';$('homSummary').value='';$('homBody').value='';status($('homStatus'),'Published to Homiletics.','success');loadHomiletics();}).catch(function(e){status($('homStatus'),e.message,'error');});});
+
+function loadLive(){api('/api/admin/live').then(function(d){$('youtubeState').innerHTML=d.youtube_oauth_configured?'<strong>YouTube connected.</strong> Admin can create and bind YouTube Live broadcasts automatically.':'<strong>YouTube OAuth not configured yet.</strong> You can still paste an existing YouTube Live URL/ID. Automatic broadcast creation becomes available after the three YouTube OAuth secrets are added to the backend.';var rows='';(d.items||[]).forEach(function(v){var encoder=(v.ingestion_address&&v.stream_key)?'<details><summary>Show encoder details</summary><code>'+esc(v.ingestion_address)+'</code><br><code>'+esc(v.stream_key)+'</code></details>':'—';var yt=v.youtube_video_url?'<a target="_blank" rel="noopener" href="'+esc(v.youtube_video_url)+'">Open</a>':'—';rows+='<tr><td>'+esc(fmtDate(v.scheduled_start))+'</td><td>'+esc(v.title)+'</td><td><span class="pill '+(v.status==='live'?'done':'scheduled')+'">'+esc(v.status)+'</span></td><td>'+yt+'</td><td>'+encoder+'</td><td><button class="btn successbtn" data-live-go="'+v.id+'">Live</button> <button class="btn secondary" data-live-done="'+v.id+'">Complete</button> <button class="btn danger" data-live-del="'+v.id+'">Delete</button></td></tr>';});$('liveRows').innerHTML=rows||'<tr><td colspan="6">No live events yet.</td></tr>';document.querySelectorAll('[data-live-go]').forEach(function(b){b.onclick=function(){api('/api/admin/live/'+b.dataset.liveGo+'/status',{method:'PUT',body:JSON.stringify({status:'live'})}).then(loadLive);};});document.querySelectorAll('[data-live-done]').forEach(function(b){b.onclick=function(){api('/api/admin/live/'+b.dataset.liveDone+'/status',{method:'PUT',body:JSON.stringify({status:'completed'})}).then(loadLive);};});document.querySelectorAll('[data-live-del]').forEach(function(b){b.onclick=function(){if(!confirm('Delete this live event?'))return;api('/api/admin/live/'+b.dataset.liveDel,{method:'DELETE'}).then(loadLive);};});}).catch(function(e){status($('liveStatus'),e.message,'error');});}
+$('liveSaveBtn').addEventListener('click',function(){var dt=$('liveSchedule').value;var payload={title:$('liveTitle').value,description:$('liveDescription').value,category:$('liveCategory').value,speaker:$('liveSpeaker').value,scripture_reference:$('liveScripture').value,language:$('liveLanguage').value,scheduled_start:dt?new Date(dt).toISOString():null,visibility:$('liveVisibility').value,youtube_url_or_id:$('liveYoutube').value,show_on_homepage:$('liveHome').checked,archive_destination:$('liveArchive').value,create_on_youtube:$('liveCreateYoutube').checked};status($('liveStatus'),'Creating live event…');api('/api/admin/live',{method:'POST',body:JSON.stringify(payload)}).then(function(v){status($('liveStatus'),'Live event created.'+(v.stream_key?' Encoder details are now available below.':''),'success');$('liveTitle').value='';loadLive();}).catch(function(e){status($('liveStatus'),e.message,'error');});});
+
 function key(selector,field){return selector+'\u0000'+field;}function markDirty(selector,field,value){dirty[key(selector,field)]={selector:selector,field:field,value:value};$('savePageBtn').disabled=false;}
 function loadPageList(){api('/api/admin/pages').then(function(d){var s=$('pageSelect');s.innerHTML='<option value="">Choose a page…</option>';(d.pages||[]).forEach(function(p){var o=document.createElement('option');o.value=p.path;o.textContent=p.title+(p.overrides?' · '+p.overrides+' saved changes':'');s.appendChild(o);});}).catch(function(e){status($('contentStatus'),e.message,'error');});}
 $('loadPageBtn').addEventListener('click',function(){if($('pageSelect').value)loadPage($('pageSelect').value);});$('pageSelect').addEventListener('change',function(){if(this.value)loadPage(this.value);});
@@ -117,7 +227,7 @@ function renderExisting(list){var out=$('editorList');out.innerHTML='';list.forE
 $('savePageBtn').addEventListener('click',function(){var edits=Object.keys(dirty).map(function(k){return dirty[k];});if(!currentPath||!edits.length)return;this.disabled=true;api('/api/admin/content/batch',{method:'PUT',body:JSON.stringify({page_path:currentPath,edits:edits})}).then(function(r){dirty={};status($('contentStatus'),'Saved '+r.saved+' change(s).','success');loadPageList();}).catch(function(e){$('savePageBtn').disabled=false;status($('contentStatus'),e.message,'error');});});
 $('resetPageBtn').addEventListener('click',function(){if(!currentPath||!confirm('Remove all CMS overrides for this page?'))return;api('/api/admin/content/page?path='+encodeURIComponent(currentPath),{method:'DELETE'}).then(function(r){status($('contentStatus'),'Removed '+r.deleted+' override(s).','success');loadPage(currentPath);loadPageList();}).catch(function(e){status($('contentStatus'),e.message,'error');});});
 
-function boot(){loadDashboard();loadPageList();loadLibrary();loadMedia();clearComposer();}
+function boot(){loadDashboard();loadPageList();loadLibrary();loadMedia();loadCourseVideos();loadHomiletics();loadLive();clearComposer();}
 fetch('/api/admin/me',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error();return r.json();}).then(function(j){csrf=j.csrf;showApp();boot();}).catch(showLogin);
 })();
 </script>
