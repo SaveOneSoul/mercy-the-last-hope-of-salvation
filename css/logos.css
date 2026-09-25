@@ -42,6 +42,7 @@
 .logos-reader-note{margin:.2rem 0 1rem;color:var(--muted);font:600 .76rem system-ui}
 .logos-reader-verses{display:grid;gap:.12rem;max-width:820px;margin:0 auto}
 .logos-reader-verse{display:block;width:100%;border:0;background:transparent;text-align:left;padding:.48rem .42rem;border-radius:10px;color:inherit;font:400 1.12rem/1.82 Georgia,"Times New Roman",serif;cursor:pointer}
+.logos-reader-verse,.logos-study-verse{touch-action:manipulation;-webkit-tap-highlight-color:rgba(118,21,45,.18)}
 .logos-reader-verse:hover,.logos-reader-verse:focus-visible{background:#fbf0ed}
 .logos-reader-verse.is-target{background:#fff0c9;outline:2px solid #e4c16e}
 .logos-reader-verse-number{display:inline-block;min-width:1.75rem;margin-right:.3rem;color:#9b5365;font:800 .68rem/1 system-ui;vertical-align:super}
