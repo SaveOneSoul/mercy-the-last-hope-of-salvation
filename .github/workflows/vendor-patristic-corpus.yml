@@ -46,7 +46,7 @@ jobs:
 
       - name: Commit vendored corpus
         run: |
-          if git diff --quiet -- data/patristic-corpus; then
+          if [ -z "$(git status --porcelain -- data/patristic-corpus)" ]; then
             echo "Corpus already current."
             exit 0
           fi
