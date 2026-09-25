@@ -19,7 +19,7 @@
     article.dataset.saint+=' youtube video movie';
   }
   let active='all';const search=document.querySelector('[data-saint-search]');
-  const render=()=>{const q=search.value.trim().toLowerCase();articles.forEach(a=>{const matchesFilter=active==='all'||(active==='india'&&/india|kerala|goa|vasai|calcutta|kolkata|sri lanka/.test(a.dataset.saint+' '+a.textContent.toLowerCase()))||(active==='feast'&&/\b(feast|solemnity)\b/i.test(details[a.id]?.rank||''))||(active==='story'&&!!profiles[a.id]);a.hidden=!matchesFilter||!!q&&!a.dataset.saint.includes(q)&&!a.textContent.toLowerCase().includes(q)})};
+  const render=()=>{const q=search.value.trim().toLowerCase();articles.forEach(a=>{const matchesFilter=active==='all'||(active==='india'&&/india|kerala|goa|vasai|calcutta|kolkata|sri lanka/.test(a.dataset.saint+' '+a.textContent.toLowerCase()))||(active==='feast'&&/\b(feast|solemnity)\b/i.test(details[a.id]?.rank||''))||(active==='story'&&!!profiles[a.id])||(active==='video');a.hidden=!matchesFilter||!!q&&!a.dataset.saint.includes(q)&&!a.textContent.toLowerCase().includes(q)})};
   search.addEventListener('input',render);
   document.querySelectorAll('[data-saint-filter]').forEach(button=>button.addEventListener('click',()=>{active=button.dataset.saintFilter;document.querySelectorAll('[data-saint-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));render()}));
 })();
