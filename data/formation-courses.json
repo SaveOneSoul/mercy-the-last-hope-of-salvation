@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "credit_policy": "Internal Save One Soul formation credits only; not academic, seminary, ECTS, university, or government accreditation.",
+  "courses": [
+    {
+      "id": "foundations",
+      "title": "Foundations of Theology",
+      "credits": 20,
+      "source": "theology.html",
+      "courseSelector": "#foundations-course",
+      "unitSelector": ".theology-unit",
+      "fatherIds": [
+        "irenaeus",
+        "augustine",
+        "vincent-lerins"
+      ],
+      "magisterial": [
+        "Dei Verbum",
+        "Fides et Ratio",
+        "Catechism of the Catholic Church"
+      ]
+    },
+    {
+      "id": "trinity",
+      "title": "Trinitarian Theology",
+      "credits": 20,
+      "source": "theology.html",
+      "courseSelector": "#trinity-course",
+      "unitSelector": ".theology-unit",
+      "fatherIds": [
+        "athanasius",
+        "basil",
+        "gregory-nazianzen",
+        "gregory-nyssa",
+        "augustine"
+      ],
+      "magisterial": [
+        "Nicaea I",
+        "Constantinople I",
+        "Catechism §§232–267"
+      ]
+    },
+    {
+      "id": "christology",
+      "title": "Christology & Soteriology",
+      "credits": 20,
+      "source": "theology.html",
+      "courseSelector": "#christology-course",
+      "unitSelector": ".theology-unit",
+      "fatherIds": [
+        "athanasius",
+        "cyril-alexandria",
+        "leo",
+        "maximus"
+      ],
+      "magisterial": [
+        "Council of Ephesus",
+        "Council of Chalcedon",
+        "Constantinople III",
+        "Catechism §§422–682"
+      ]
+    },
+    {
+      "id": "pneumatology",
+      "title": "Pneumatology",
+      "credits": 20,
+      "source": "theology.html",
+      "courseSelector": "#pneumatology-course",
+      "unitSelector": ".theology-unit",
+      "fatherIds": [
+        "basil",
+        "gregory-nazianzen",
+        "augustine"
+      ],
+      "magisterial": [
+        "Constantinople I",
+        "Dominum et Vivificantem",
+        "Catechism §§683–747"
+      ]
+    },
+    {
+      "id": "ecclesiology",
+      "title": "Ecclesiology",
+      "credits": 20,
+      "source": "theology.html",
+      "courseSelector": "#ecclesiology-course",
+      "unitSelector": ".theology-unit",
+      "fatherIds": [
+        "ignatius",
+        "cyprian",
+        "augustine",
+        "gregory-great"
+      ],
+      "magisterial": [
+        "Lumen Gentium",
+        "Unitatis Redintegratio",
+        "Catechism §§748–975"
+      ]
+    },
+    {
+      "id": "mariology",
+      "title": "Mariology",
+      "credits": 20,
+      "source": "theology.html",
+      "courseSelector": "#mariology-course",
+      "unitSelector": ".theology-unit",
+      "fatherIds": [
+        "irenaeus",
+        "cyril-alexandria",
+        "ephrem"
+      ],
+      "magisterial": [
+        "Council of Ephesus",
+        "Lumen Gentium VIII",
+        "Ineffabilis Deus",
+        "Munificentissimus Deus"
+      ]
+    },
+    {
+      "id": "sacraments",
+      "title": "Sacramental & Liturgical Theology",
+      "credits": 20,
+      "source": "theology.html",
+      "courseSelector": "#sacraments-course",
+      "unitSelector": ".theology-unit",
+      "fatherIds": [
+        "cyril-jerusalem",
+        "ambrose",
+        "augustine",
+        "chrysostom"
+      ],
+      "magisterial": [
+        "Council of Trent",
+        "Sacrosanctum Concilium",
+        "Catechism Part Two"
+      ]
+    },
+    {
+      "id": "moral",
+      "title": "Moral Theology",
+      "credits": 20,
+      "source": "theology.html",
+      "courseSelector": "#moral-course",
+      "unitSelector": ".theology-unit",
+      "fatherIds": [
+        "augustine",
+        "gregory-great"
+      ],
+      "magisterial": [
+        "Veritatis Splendor",
+        "Catechism Part Three",
+        "Compendium of the Social Doctrine of the Church"
+      ]
+    },
+    {
+      "id": "spiritual",
+      "title": "Spiritual & Mystical Theology",
+      "credits": 20,
+      "source": "theology.html",
+      "courseSelector": "#spiritual-course",
+      "unitSelector": ".theology-unit",
+      "fatherIds": [
+        "gregory-nyssa",
+        "augustine",
+        "gregory-great",
+        "pseudo-dionysius",
+        "isaac-nineveh"
+      ],
+      "magisterial": [
+        "Lumen Gentium V",
+        "Catechism Part Four"
+      ]
+    },
+    {
+      "id": "eschatology",
+      "title": "Eschatology",
+      "credits": 20,
+      "source": "theology.html",
+      "courseSelector": "#eschatology-course",
+      "unitSelector": ".theology-unit",
+      "fatherIds": [
+        "irenaeus",
+        "augustine",
+        "gregory-nyssa"
+      ],
+      "magisterial": [
+        "Benedictus Deus",
+        "Spe Salvi",
+        "Catechism §§988–1065"
+      ]
+    },
+    {
+      "id": "divine-mercy",
+      "title": "Divine Mercy Formation",
+      "credits": 20,
+      "source": "divine-mercy.html",
+      "courseSelector": "#course",
+      "unitSelector": ".credit-unit",
+      "fatherIds": [
+        "augustine"
+      ],
+      "magisterial": [
+        "Dives in Misericordia",
+        "Catechism §§1846–1876",
+        "St. Faustina canonization homily"
+      ]
+    },
+    {
+      "id": "charis",
+      "title": "CHARIS & Life in the Holy Spirit",
+      "credits": 20,
+      "source": "charis.html",
+      "courseSelector": "#formation-course",
+      "unitSelector": ".credit-unit",
+      "fatherIds": [
+        "basil",
+        "gregory-nazianzen",
+        "augustine"
+      ],
+      "magisterial": [
+        "Lumen Gentium 12",
+        "Dominum et Vivificantem",
+        "CHARIS Statutes"
+      ]
+    }
+  ],
+  "glossary": [
+    "homoousios",
+    "hypostasis",
+    "ousia",
+    "theosis",
+    "transubstantiation",
+    "epiclesis",
+    "anamnesis",
+    "justification",
+    "sanctification",
+    "charism",
+    "kerygma",
+    "mystagogy",
+    "soteriology",
+    "eschatology"
+  ],
+  "advanced_disciplines": [
+    "Fundamental Theology",
+    "Biblical Theology",
+    "Patrology",
+    "Dogmatic Theology",
+    "Creation & Theological Anthropology",
+    "Theology of Grace",
+    "Theology of Religions",
+    "Ecumenical Theology",
+    "Missiology",
+    "Canon Law Foundations",
+    "Catholic Social Teaching",
+    "Bioethics",
+    "Apologetics",
+    "Liturgical Studies",
+    "Church History"
+  ]
+}
