@@ -53,5 +53,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/patristic-corpus
-          git commit -m "Vendor public-domain patristic corpus [skip ci]"
+          git commit -m "Vendor public-domain patristic corpus"
           git push
