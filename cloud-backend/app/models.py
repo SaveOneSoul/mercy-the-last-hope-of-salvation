@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 
-from sqlalchemy import Boolean, DateTime, String, Text, UniqueConstraint
+from sqlalchemy import Boolean, DateTime, Integer, String, Text, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column
 
 from .db import Base
@@ -122,3 +122,82 @@ class CMSMedia(Base):
     content_type: Mapped[str] = mapped_column(String(100))
     size_bytes: Mapped[int] = mapped_column(default=0)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
+class CourseVideo(Base):
+    """Video assigned to a Codex/formation course without hard-coding page HTML."""
+
+    __tablename__ = "course_videos"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    course_key: Mapped[str] = mapped_column(String(80), index=True)
+    topic: Mapped[str | None] = mapped_column(String(180), nullable=True, index=True)
+    lesson: Mapped[str | None] = mapped_column(String(180), nullable=True)
+    title: Mapped[str] = mapped_column(String(240))
+    description: Mapped[str | None] = mapped_column(Text, nullable=True)
+    speaker: Mapped[str | None] = mapped_column(String(180), nullable=True)
+    source_name: Mapped[str | None] = mapped_column(String(180), nullable=True)
+    source_type: Mapped[str] = mapped_column(String(24), default="youtube")
+    video_url: Mapped[str] = mapped_column(Text)
+    thumbnail_url: Mapped[str | None] = mapped_column(Text, nullable=True)
+    language: Mapped[str] = mapped_column(String(16), default="en")
+    doctrinal_classification: Mapped[str | None] = mapped_column(String(80), nullable=True)
+    sort_order: Mapped[int] = mapped_column(Integer, default=0)
+    featured: Mapped[bool] = mapped_column(Boolean, default=False)
+    published: Mapped[bool] = mapped_column(Boolean, default=True, index=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, onupdate=utcnow)
+
+
+class HomileticVideo(Base):
+    """Preaching and homiletic media kept separate from formal course material."""
+
+    __tablename__ = "homiletic_videos"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    title: Mapped[str] = mapped_column(String(240))
+    speaker: Mapped[str | None] = mapped_column(String(180), nullable=True)
+    occasion: Mapped[str | None] = mapped_column(String(100), nullable=True, index=True)
+    liturgical_season: Mapped[str | None] = mapped_column(String(80), nullable=True, index=True)
+    liturgical_cycle: Mapped[str | None] = mapped_column(String(16), nullable=True)
+    scripture_reference: Mapped[str | None] = mapped_column(String(240), nullable=True)
+    theme: Mapped[str | None] = mapped_column(String(180), nullable=True)
+    summary: Mapped[str | None] = mapped_column(Text, nullable=True)
+    body: Mapped[str | None] = mapped_column(Text, nullable=True)
+    source_type: Mapped[str] = mapped_column(String(24), default="youtube")
+    video_url: Mapped[str] = mapped_column(Text)
+    audio_url: Mapped[str | None] = mapped_column(Text, nullable=True)
+    thumbnail_url: Mapped[str | None] = mapped_column(Text, nullable=True)
+    language: Mapped[str] = mapped_column(String(16), default="en")
+    featured: Mapped[bool] = mapped_column(Boolean, default=False)
+    published: Mapped[bool] = mapped_column(Boolean, default=True, index=True)
+    preached_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, onupdate=utcnow)
+
+
+class LiveBroadcast(Base):
+    """Metadata and YouTube binding for a Save One Soul live event."""
+
+    __tablename__ = "live_broadcasts"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    title: Mapped[str] = mapped_column(String(240))
+    description: Mapped[str | None] = mapped_column(Text, nullable=True)
+    category: Mapped[str] = mapped_column(String(80), default="special-event", index=True)
+    speaker: Mapped[str | None] = mapped_column(String(180), nullable=True)
+    scripture_reference: Mapped[str | None] = mapped_column(String(240), nullable=True)
+    language: Mapped[str] = mapped_column(String(16), default="en")
+    scheduled_start: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True, index=True)
+    status: Mapped[str] = mapped_column(String(24), default="scheduled", index=True)
+    visibility: Mapped[str] = mapped_column(String(16), default="public")
+    youtube_broadcast_id: Mapped[str | None] = mapped_column(String(120), nullable=True, index=True)
+    youtube_stream_id: Mapped[str | None] = mapped_column(String(120), nullable=True)
+    youtube_video_url: Mapped[str | None] = mapped_column(Text, nullable=True)
+    stream_key: Mapped[str | None] = mapped_column(Text, nullable=True)
+    ingestion_address: Mapped[str | None] = mapped_column(Text, nullable=True)
+    thumbnail_url: Mapped[str | None] = mapped_column(Text, nullable=True)
+    show_on_homepage: Mapped[bool] = mapped_column(Boolean, default=True)
+    archive_destination: Mapped[str | None] = mapped_column(String(80), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, onupdate=utcnow)
