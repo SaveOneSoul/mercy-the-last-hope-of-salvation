@@ -1,0 +1,3464 @@
+{
+  "id": "origen-vol-2-1872",
+  "title": "The Writings of Origen, Vol. II",
+  "author_label": "Origen",
+  "edition": "Ante-Nicene Christian Library, vol. XXIII",
+  "translators": "Frederick Crombie; W. H. Cairns",
+  "publication_year": 1872,
+  "rights": "Public domain edition; Project Gutenberg eBook 70693",
+  "source_url": "https://www.gutenberg.org/files/70693/70693-h/70693-h.htm",
+  "gutenberg_id": 70693,
+  "caution": null,
+  "expected_works": [
+    "Against Celsus Books II–VIII"
+  ],
+  "sha256": "0d28344b200d7b9a363bf8512fe11373c4a40cdf129dbafcee0a48a48936fe8a",
+  "section_count": 574,
+  "word_count": 244048,
+  "toc": [
+    {
+      "index": 1,
+      "heading": "Front matter",
+      "file": "0001-front-matter.json",
+      "words": 65
+    },
+    {
+      "index": 2,
+      "heading": "The writings of Origen, Vol. 2 of 2",
+      "file": "0002-the-writings-of-origen-vol-2-of-2.json",
+      "words": 25
+    },
+    {
+      "index": 3,
+      "heading": "ANALYSIS OF CONTENTS.",
+      "file": "0003-analysis-of-contents.json",
+      "words": 8124
+    },
+    {
+      "index": 4,
+      "heading": "LIFE OF ORIGEN.",
+      "file": "0004-life-of-origen.json",
+      "words": 3819
+    },
+    {
+      "index": 5,
+      "heading": "EXEGETICAL WORKS.",
+      "file": "0005-exegetical-works.json",
+      "words": 170
+    },
+    {
+      "index": 6,
+      "heading": "CRITICAL WORKS.",
+      "file": "0006-critical-works.json",
+      "words": 476
+    },
+    {
+      "index": 7,
+      "heading": "APOLOGETICAL WORKS.",
+      "file": "0007-apologetical-works.json",
+      "words": 363
+    },
+    {
+      "index": 8,
+      "heading": "DOGMATIC WORKS.",
+      "file": "0008-dogmatic-works.json",
+      "words": 165
+    },
+    {
+      "index": 9,
+      "heading": "PRACTICAL WORKS.",
+      "file": "0009-practical-works.json",
+      "words": 237
+    },
+    {
+      "index": 10,
+      "heading": "EDITIONS OF ORIGEN.",
+      "file": "0010-editions-of-origen.json",
+      "words": 429
+    },
+    {
+      "index": 11,
+      "heading": "BOOK II.",
+      "file": "0011-book-ii.json",
+      "words": 0
+    },
+    {
+      "index": 12,
+      "heading": "Chapter I.",
+      "file": "0012-chapter-i.json",
+      "words": 817
+    },
+    {
+      "index": 13,
+      "heading": "Chapter II.",
+      "file": "0013-chapter-ii.json",
+      "words": 675
+    },
+    {
+      "index": 14,
+      "heading": "Chapter III.",
+      "file": "0014-chapter-iii.json",
+      "words": 413
+    },
+    {
+      "index": 15,
+      "heading": "Chapter IV.",
+      "file": "0015-chapter-iv.json",
+      "words": 449
+    },
+    {
+      "index": 16,
+      "heading": "Chapter V.",
+      "file": "0016-chapter-v.json",
+      "words": 271
+    },
+    {
+      "index": 17,
+      "heading": "Chapter VI.",
+      "file": "0017-chapter-vi.json",
+      "words": 180
+    },
+    {
+      "index": 18,
+      "heading": "Chapter VII.",
+      "file": "0018-chapter-vii.json",
+      "words": 323
+    },
+    {
+      "index": 19,
+      "heading": "Chapter VIII.",
+      "file": "0019-chapter-viii.json",
+      "words": 621
+    },
+    {
+      "index": 20,
+      "heading": "Chapter IX.",
+      "file": "0020-chapter-ix.json",
+      "words": 950
+    },
+    {
+      "index": 21,
+      "heading": "Chapter X.",
+      "file": "0021-chapter-x.json",
+      "words": 608
+    },
+    {
+      "index": 22,
+      "heading": "Chapter XI.",
+      "file": "0022-chapter-xi.json",
+      "words": 787
+    },
+    {
+      "index": 23,
+      "heading": "Chapter XII.",
+      "file": "0023-chapter-xii.json",
+      "words": 422
+    },
+    {
+      "index": 24,
+      "heading": "Chapter XIII.",
+      "file": "0024-chapter-xiii.json",
+      "words": 940
+    },
+    {
+      "index": 25,
+      "heading": "Chapter XIV.",
+      "file": "0025-chapter-xiv.json",
+      "words": 189
+    },
+    {
+      "index": 26,
+      "heading": "Chapter XV.",
+      "file": "0026-chapter-xv.json",
+      "words": 219
+    },
+    {
+      "index": 27,
+      "heading": "Chapter XVI.",
+      "file": "0027-chapter-xvi.json",
+      "words": 768
+    },
+    {
+      "index": 28,
+      "heading": "Chapter XVII.",
+      "file": "0028-chapter-xvii.json",
+      "words": 287
+    },
+    {
+      "index": 29,
+      "heading": "Chapter XVIII.",
+      "file": "0029-chapter-xviii.json",
+      "words": 316
+    },
+    {
+      "index": 30,
+      "heading": "Chapter XIX.",
+      "file": "0030-chapter-xix.json",
+      "words": 262
+    },
+    {
+      "index": 31,
+      "heading": "Chapter XX.",
+      "file": "0031-chapter-xx.json",
+      "words": 1196
+    },
+    {
+      "index": 32,
+      "heading": "Chapter XXI.",
+      "file": "0032-chapter-xxi.json",
+      "words": 173
+    },
+    {
+      "index": 33,
+      "heading": "Chapter XXII.",
+      "file": "0033-chapter-xxii.json",
+      "words": 82
+    },
+    {
+      "index": 34,
+      "heading": "Chapter XXIII.",
+      "file": "0034-chapter-xxiii.json",
+      "words": 292
+    },
+    {
+      "index": 35,
+      "heading": "Chapter XXIV.",
+      "file": "0035-chapter-xxiv.json",
+      "words": 561
+    },
+    {
+      "index": 36,
+      "heading": "Chapter XXV.",
+      "file": "0036-chapter-xxv.json",
+      "words": 479
+    },
+    {
+      "index": 37,
+      "heading": "Chapter XXVI.",
+      "file": "0037-chapter-xxvi.json",
+      "words": 182
+    },
+    {
+      "index": 38,
+      "heading": "Chapter XXVII.",
+      "file": "0038-chapter-xxvii.json",
+      "words": 159
+    },
+    {
+      "index": 39,
+      "heading": "Chapter XXVIII.",
+      "file": "0039-chapter-xxviii.json",
+      "words": 265
+    },
+    {
+      "index": 40,
+      "heading": "Chapter XXIX.",
+      "file": "0040-chapter-xxix.json",
+      "words": 141
+    },
+    {
+      "index": 41,
+      "heading": "Chapter XXX.",
+      "file": "0041-chapter-xxx.json",
+      "words": 396
+    },
+    {
+      "index": 42,
+      "heading": "Chapter XXXI.",
+      "file": "0042-chapter-xxxi.json",
+      "words": 245
+    },
+    {
+      "index": 43,
+      "heading": "Chapter XXXII.",
+      "file": "0043-chapter-xxxii.json",
+      "words": 312
+    },
+    {
+      "index": 44,
+      "heading": "Chapter XXXIII.",
+      "file": "0044-chapter-xxxiii.json",
+      "words": 269
+    },
+    {
+      "index": 45,
+      "heading": "Chapter XXXIV.",
+      "file": "0045-chapter-xxxiv.json",
+      "words": 494
+    },
+    {
+      "index": 46,
+      "heading": "Chapter XXXV.",
+      "file": "0046-chapter-xxxv.json",
+      "words": 146
+    },
+    {
+      "index": 47,
+      "heading": "Chapter XXXVI.",
+      "file": "0047-chapter-xxxvi.json",
+      "words": 238
+    },
+    {
+      "index": 48,
+      "heading": "Chapter XXXVII.",
+      "file": "0048-chapter-xxxvii.json",
+      "words": 241
+    },
+    {
+      "index": 49,
+      "heading": "Chapter XXXVIII.",
+      "file": "0049-chapter-xxxviii.json",
+      "words": 329
+    },
+    {
+      "index": 50,
+      "heading": "Chapter XXXIX.",
+      "file": "0050-chapter-xxxix.json",
+      "words": 236
+    },
+    {
+      "index": 51,
+      "heading": "Chapter XL.",
+      "file": "0051-chapter-xl.json",
+      "words": 182
+    },
+    {
+      "index": 52,
+      "heading": "Chapter XLI.",
+      "file": "0052-chapter-xli.json",
+      "words": 220
+    },
+    {
+      "index": 53,
+      "heading": "Chapter XLII.",
+      "file": "0053-chapter-xlii.json",
+      "words": 381
+    },
+    {
+      "index": 54,
+      "heading": "Chapter XLIII.",
+      "file": "0054-chapter-xliii.json",
+      "words": 138
+    },
+    {
+      "index": 55,
+      "heading": "Chapter XLIV.",
+      "file": "0055-chapter-xliv.json",
+      "words": 458
+    },
+    {
+      "index": 56,
+      "heading": "Chapter XLV.",
+      "file": "0056-chapter-xlv.json",
+      "words": 334
+    },
+    {
+      "index": 57,
+      "heading": "Chapter XLVI.",
+      "file": "0057-chapter-xlvi.json",
+      "words": 289
+    },
+    {
+      "index": 58,
+      "heading": "Chapter XLVII.",
+      "file": "0058-chapter-xlvii.json",
+      "words": 195
+    },
+    {
+      "index": 59,
+      "heading": "Chapter XLVIII.",
+      "file": "0059-chapter-xlviii.json",
+      "words": 620
+    },
+    {
+      "index": 60,
+      "heading": "Chapter XLIX.",
+      "file": "0060-chapter-xlix.json",
+      "words": 646
+    },
+    {
+      "index": 61,
+      "heading": "Chapter L.",
+      "file": "0061-chapter-l.json",
+      "words": 432
+    },
+    {
+      "index": 62,
+      "heading": "Chapter LI.",
+      "file": "0062-chapter-li.json",
+      "words": 654
+    },
+    {
+      "index": 63,
+      "heading": "Chapter LII.",
+      "file": "0063-chapter-lii.json",
+      "words": 378
+    },
+    {
+      "index": 64,
+      "heading": "Chapter LIII.",
+      "file": "0064-chapter-liii.json",
+      "words": 634
+    },
+    {
+      "index": 65,
+      "heading": "Chapter LIV.",
+      "file": "0065-chapter-liv.json",
+      "words": 217
+    },
+    {
+      "index": 66,
+      "heading": "Chapter LV.",
+      "file": "0066-chapter-lv.json",
+      "words": 644
+    },
+    {
+      "index": 67,
+      "heading": "Chapter LVI.",
+      "file": "0067-chapter-lvi.json",
+      "words": 433
+    },
+    {
+      "index": 68,
+      "heading": "Chapter LVII.",
+      "file": "0068-chapter-lvii.json",
+      "words": 168
+    },
+    {
+      "index": 69,
+      "heading": "Chapter LVIII.",
+      "file": "0069-chapter-lviii.json",
+      "words": 268
+    },
+    {
+      "index": 70,
+      "heading": "Chapter LIX.",
+      "file": "0070-chapter-lix.json",
+      "words": 300
+    },
+    {
+      "index": 71,
+      "heading": "Chapter LX.",
+      "file": "0071-chapter-lx.json",
+      "words": 319
+    },
+    {
+      "index": 72,
+      "heading": "Chapter LXI.",
+      "file": "0072-chapter-lxi.json",
+      "words": 244
+    },
+    {
+      "index": 73,
+      "heading": "Chapter LXII.",
+      "file": "0073-chapter-lxii.json",
+      "words": 301
+    },
+    {
+      "index": 74,
+      "heading": "Chapter LXIII.",
+      "file": "0074-chapter-lxiii.json",
+      "words": 403
+    },
+    {
+      "index": 75,
+      "heading": "Chapter LXIV.",
+      "file": "0075-chapter-lxiv.json",
+      "words": 547
+    },
+    {
+      "index": 76,
+      "heading": "Chapter LXV.",
+      "file": "0076-chapter-lxv.json",
+      "words": 570
+    },
+    {
+      "index": 77,
+      "heading": "Chapter LXVI.",
+      "file": "0077-chapter-lxvi.json",
+      "words": 180
+    },
+    {
+      "index": 78,
+      "heading": "Chapter LXVII.",
+      "file": "0078-chapter-lxvii.json",
+      "words": 374
+    },
+    {
+      "index": 79,
+      "heading": "Chapter LXVIII.",
+      "file": "0079-chapter-lxviii.json",
+      "words": 263
+    },
+    {
+      "index": 80,
+      "heading": "Chapter LXIX.",
+      "file": "0080-chapter-lxix.json",
+      "words": 805
+    },
+    {
+      "index": 81,
+      "heading": "Chapter LXX.",
+      "file": "0081-chapter-lxx.json",
+      "words": 480
+    },
+    {
+      "index": 82,
+      "heading": "Chapter LXXI.",
+      "file": "0082-chapter-lxxi.json",
+      "words": 216
+    },
+    {
+      "index": 83,
+      "heading": "Chapter LXXII.",
+      "file": "0083-chapter-lxxii.json",
+      "words": 331
+    },
+    {
+      "index": 84,
+      "heading": "Chapter LXXIII.",
+      "file": "0084-chapter-lxxiii.json",
+      "words": 174
+    },
+    {
+      "index": 85,
+      "heading": "Chapter LXXIV.",
+      "file": "0085-chapter-lxxiv.json",
+      "words": 339
+    },
+    {
+      "index": 86,
+      "heading": "Chapter LXXV.",
+      "file": "0086-chapter-lxxv.json",
+      "words": 363
+    },
+    {
+      "index": 87,
+      "heading": "Chapter LXXVI.",
+      "file": "0087-chapter-lxxvi.json",
+      "words": 934
+    },
+    {
+      "index": 88,
+      "heading": "Chapter LXXVII.",
+      "file": "0088-chapter-lxxvii.json",
+      "words": 387
+    },
+    {
+      "index": 89,
+      "heading": "Chapter LXXVIII.",
+      "file": "0089-chapter-lxxviii.json",
+      "words": 414
+    },
+    {
+      "index": 90,
+      "heading": "Chapter LXXIX.",
+      "file": "0090-chapter-lxxix.json",
+      "words": 465
+    },
+    {
+      "index": 91,
+      "heading": "BOOK III.",
+      "file": "0091-book-iii.json",
+      "words": 0
+    },
+    {
+      "index": 92,
+      "heading": "Chapter I.",
+      "file": "0092-chapter-i-2.json",
+      "words": 357
+    },
+    {
+      "index": 93,
+      "heading": "Chapter II.",
+      "file": "0093-chapter-ii-2.json",
+      "words": 426
+    },
+    {
+      "index": 94,
+      "heading": "Chapter III.",
+      "file": "0094-chapter-iii-2.json",
+      "words": 307
+    },
+    {
+      "index": 95,
+      "heading": "Chapter IV.",
+      "file": "0095-chapter-iv-2.json",
+      "words": 216
+    },
+    {
+      "index": 96,
+      "heading": "Chapter V.",
+      "file": "0096-chapter-v-2.json",
+      "words": 302
+    },
+    {
+      "index": 97,
+      "heading": "Chapter VI.",
+      "file": "0097-chapter-vi-2.json",
+      "words": 262
+    },
+    {
+      "index": 98,
+      "heading": "Chapter VII.",
+      "file": "0098-chapter-vii-2.json",
+      "words": 294
+    },
+    {
+      "index": 99,
+      "heading": "Chapter VIII.",
+      "file": "0099-chapter-viii-2.json",
+      "words": 382
+    },
+    {
+      "index": 100,
+      "heading": "Chapter IX.",
+      "file": "0100-chapter-ix-2.json",
+      "words": 313
+    },
+    {
+      "index": 101,
+      "heading": "Chapter X.",
+      "file": "0101-chapter-x-2.json",
+      "words": 247
+    },
+    {
+      "index": 102,
+      "heading": "Chapter XI.",
+      "file": "0102-chapter-xi-2.json",
+      "words": 215
+    },
+    {
+      "index": 103,
+      "heading": "Chapter XII.",
+      "file": "0103-chapter-xii-2.json",
+      "words": 461
+    },
+    {
+      "index": 104,
+      "heading": "Chapter XIII.",
+      "file": "0104-chapter-xiii-2.json",
+      "words": 265
+    },
+    {
+      "index": 105,
+      "heading": "Chapter XIV.",
+      "file": "0105-chapter-xiv-2.json",
+      "words": 248
+    },
+    {
+      "index": 106,
+      "heading": "Chapter XV.",
+      "file": "0106-chapter-xv-2.json",
+      "words": 245
+    },
+    {
+      "index": 107,
+      "heading": "Chapter XVI.",
+      "file": "0107-chapter-xvi-2.json",
+      "words": 241
+    },
+    {
+      "index": 108,
+      "heading": "Chapter XVII.",
+      "file": "0108-chapter-xvii-2.json",
+      "words": 228
+    },
+    {
+      "index": 109,
+      "heading": "Chapter XVIII.",
+      "file": "0109-chapter-xviii-2.json",
+      "words": 189
+    },
+    {
+      "index": 110,
+      "heading": "Chapter XIX.",
+      "file": "0110-chapter-xix-2.json",
+      "words": 234
+    },
+    {
+      "index": 111,
+      "heading": "Chapter XX.",
+      "file": "0111-chapter-xx-2.json",
+      "words": 203
+    },
+    {
+      "index": 112,
+      "heading": "Chapter XXI.",
+      "file": "0112-chapter-xxi-2.json",
+      "words": 243
+    },
+    {
+      "index": 113,
+      "heading": "Chapter XXII.",
+      "file": "0113-chapter-xxii-2.json",
+      "words": 456
+    },
+    {
+      "index": 114,
+      "heading": "Chapter XXIII.",
+      "file": "0114-chapter-xxiii-2.json",
+      "words": 322
+    },
+    {
+      "index": 115,
+      "heading": "Chapter XXIV.",
+      "file": "0115-chapter-xxiv-2.json",
+      "words": 243
+    },
+    {
+      "index": 116,
+      "heading": "Chapter XXV.",
+      "file": "0116-chapter-xxv-2.json",
+      "words": 467
+    },
+    {
+      "index": 117,
+      "heading": "Chapter XXVI.",
+      "file": "0117-chapter-xxvi-2.json",
+      "words": 538
+    },
+    {
+      "index": 118,
+      "heading": "Chapter XXVII.",
+      "file": "0118-chapter-xxvii-2.json",
+      "words": 362
+    },
+    {
+      "index": 119,
+      "heading": "Chapter XXVIII.",
+      "file": "0119-chapter-xxviii-2.json",
+      "words": 560
+    },
+    {
+      "index": 120,
+      "heading": "Chapter XXIX.",
+      "file": "0120-chapter-xxix-2.json",
+      "words": 337
+    },
+    {
+      "index": 121,
+      "heading": "Chapter XXX.",
+      "file": "0121-chapter-xxx-2.json",
+      "words": 317
+    },
+    {
+      "index": 122,
+      "heading": "Chapter XXXI.",
+      "file": "0122-chapter-xxxi-2.json",
+      "words": 275
+    },
+    {
+      "index": 123,
+      "heading": "Chapter XXXII.",
+      "file": "0123-chapter-xxxii-2.json",
+      "words": 331
+    },
+    {
+      "index": 124,
+      "heading": "Chapter XXXIII.",
+      "file": "0124-chapter-xxxiii-2.json",
+      "words": 406
+    },
+    {
+      "index": 125,
+      "heading": "Chapter XXXIV.",
+      "file": "0125-chapter-xxxiv-2.json",
+      "words": 327
+    },
+    {
+      "index": 126,
+      "heading": "Chapter XXXV.",
+      "file": "0126-chapter-xxxv-2.json",
+      "words": 362
+    },
+    {
+      "index": 127,
+      "heading": "Chapter XXXVI.",
+      "file": "0127-chapter-xxxvi-2.json",
+      "words": 482
+    },
+    {
+      "index": 128,
+      "heading": "Chapter XXXVII.",
+      "file": "0128-chapter-xxxvii-2.json",
+      "words": 472
+    },
+    {
+      "index": 129,
+      "heading": "Chapter XXXVIII.",
+      "file": "0129-chapter-xxxviii-2.json",
+      "words": 378
+    },
+    {
+      "index": 130,
+      "heading": "Chapter XXXIX.",
+      "file": "0130-chapter-xxxix-2.json",
+      "words": 311
+    },
+    {
+      "index": 131,
+      "heading": "Chapter XL.",
+      "file": "0131-chapter-xl-2.json",
+      "words": 251
+    },
+    {
+      "index": 132,
+      "heading": "Chapter XLI.",
+      "file": "0132-chapter-xli-2.json",
+      "words": 246
+    },
+    {
+      "index": 133,
+      "heading": "Chapter XLII.",
+      "file": "0133-chapter-xlii-2.json",
+      "words": 407
+    },
+    {
+      "index": 134,
+      "heading": "Chapter XLIII.",
+      "file": "0134-chapter-xliii-2.json",
+      "words": 392
+    },
+    {
+      "index": 135,
+      "heading": "Chapter XLIV.",
+      "file": "0135-chapter-xliv-2.json",
+      "words": 279
+    },
+    {
+      "index": 136,
+      "heading": "Chapter XLV.",
+      "file": "0136-chapter-xlv-2.json",
+      "words": 585
+    },
+    {
+      "index": 137,
+      "heading": "Chapter XLVI.",
+      "file": "0137-chapter-xlvi-2.json",
+      "words": 294
+    },
+    {
+      "index": 138,
+      "heading": "Chapter XLVII.",
+      "file": "0138-chapter-xlvii-2.json",
+      "words": 371
+    },
+    {
+      "index": 139,
+      "heading": "Chapter XLVIII.",
+      "file": "0139-chapter-xlviii-2.json",
+      "words": 383
+    },
+    {
+      "index": 140,
+      "heading": "Chapter XLIX.",
+      "file": "0140-chapter-xlix-2.json",
+      "words": 331
+    },
+    {
+      "index": 141,
+      "heading": "Chapter L.",
+      "file": "0141-chapter-l-2.json",
+      "words": 282
+    },
+    {
+      "index": 142,
+      "heading": "Chapter LI.",
+      "file": "0142-chapter-li-2.json",
+      "words": 367
+    },
+    {
+      "index": 143,
+      "heading": "Chapter LII.",
+      "file": "0143-chapter-lii-2.json",
+      "words": 217
+    },
+    {
+      "index": 144,
+      "heading": "Chapter LIII.",
+      "file": "0144-chapter-liii-2.json",
+      "words": 272
+    },
+    {
+      "index": 145,
+      "heading": "Chapter LIV.",
+      "file": "0145-chapter-liv-2.json",
+      "words": 349
+    },
+    {
+      "index": 146,
+      "heading": "Chapter LV.",
+      "file": "0146-chapter-lv-2.json",
+      "words": 331
+    },
+    {
+      "index": 147,
+      "heading": "Chapter LVI.",
+      "file": "0147-chapter-lvi-2.json",
+      "words": 302
+    },
+    {
+      "index": 148,
+      "heading": "Chapter LVII.",
+      "file": "0148-chapter-lvii-2.json",
+      "words": 286
+    },
+    {
+      "index": 149,
+      "heading": "Chapter LVIII.",
+      "file": "0149-chapter-lviii-2.json",
+      "words": 426
+    },
+    {
+      "index": 150,
+      "heading": "Chapter LIX.",
+      "file": "0150-chapter-lix-2.json",
+      "words": 367
+    },
+    {
+      "index": 151,
+      "heading": "Chapter LX.",
+      "file": "0151-chapter-lx-2.json",
+      "words": 317
+    },
+    {
+      "index": 152,
+      "heading": "Chapter LXI.",
+      "file": "0152-chapter-lxi-2.json",
+      "words": 316
+    },
+    {
+      "index": 153,
+      "heading": "Chapter LXII.",
+      "file": "0153-chapter-lxii-2.json",
+      "words": 405
+    },
+    {
+      "index": 154,
+      "heading": "Chapter LXIII.",
+      "file": "0154-chapter-lxiii-2.json",
+      "words": 374
+    },
+    {
+      "index": 155,
+      "heading": "Chapter LXIV.",
+      "file": "0155-chapter-lxiv-2.json",
+      "words": 271
+    },
+    {
+      "index": 156,
+      "heading": "Chapter LXV.",
+      "file": "0156-chapter-lxv-2.json",
+      "words": 314
+    },
+    {
+      "index": 157,
+      "heading": "Chapter LXVI.",
+      "file": "0157-chapter-lxvi-2.json",
+      "words": 265
+    },
+    {
+      "index": 158,
+      "heading": "Chapter LXVII.",
+      "file": "0158-chapter-lxvii-2.json",
+      "words": 306
+    },
+    {
+      "index": 159,
+      "heading": "Chapter LXVIII.",
+      "file": "0159-chapter-lxviii-2.json",
+      "words": 271
+    },
+    {
+      "index": 160,
+      "heading": "Chapter LXIX.",
+      "file": "0160-chapter-lxix-2.json",
+      "words": 486
+    },
+    {
+      "index": 161,
+      "heading": "Chapter LXX.",
+      "file": "0161-chapter-lxx-2.json",
+      "words": 274
+    },
+    {
+      "index": 162,
+      "heading": "Chapter LXXI.",
+      "file": "0162-chapter-lxxi-2.json",
+      "words": 268
+    },
+    {
+      "index": 163,
+      "heading": "Chapter LXXII.",
+      "file": "0163-chapter-lxxii-2.json",
+      "words": 251
+    },
+    {
+      "index": 164,
+      "heading": "Chapter LXXIII.",
+      "file": "0164-chapter-lxxiii-2.json",
+      "words": 331
+    },
+    {
+      "index": 165,
+      "heading": "Chapter LXXIV.",
+      "file": "0165-chapter-lxxiv-2.json",
+      "words": 252
+    },
+    {
+      "index": 166,
+      "heading": "Chapter LXXV.",
+      "file": "0166-chapter-lxxv-2.json",
+      "words": 738
+    },
+    {
+      "index": 167,
+      "heading": "Chapter LXXVI.",
+      "file": "0167-chapter-lxxvi-2.json",
+      "words": 203
+    },
+    {
+      "index": 168,
+      "heading": "Chapter LXXVII.",
+      "file": "0168-chapter-lxxvii-2.json",
+      "words": 239
+    },
+    {
+      "index": 169,
+      "heading": "Chapter LXXVIII.",
+      "file": "0169-chapter-lxxviii-2.json",
+      "words": 331
+    },
+    {
+      "index": 170,
+      "heading": "Chapter LXXIX.",
+      "file": "0170-chapter-lxxix-2.json",
+      "words": 251
+    },
+    {
+      "index": 171,
+      "heading": "Chapter LXXX.",
+      "file": "0171-chapter-lxxx.json",
+      "words": 344
+    },
+    {
+      "index": 172,
+      "heading": "Chapter LXXXI.",
+      "file": "0172-chapter-lxxxi.json",
+      "words": 421
+    },
+    {
+      "index": 173,
+      "heading": "BOOK IV.",
+      "file": "0173-book-iv.json",
+      "words": 0
+    },
+    {
+      "index": 174,
+      "heading": "Chapter I.",
+      "file": "0174-chapter-i-3.json",
+      "words": 414
+    },
+    {
+      "index": 175,
+      "heading": "Chapter II.",
+      "file": "0175-chapter-ii-3.json",
+      "words": 435
+    },
+    {
+      "index": 176,
+      "heading": "Chapter III.",
+      "file": "0176-chapter-iii-3.json",
+      "words": 679
+    },
+    {
+      "index": 177,
+      "heading": "Chapter IV.",
+      "file": "0177-chapter-iv-3.json",
+      "words": 265
+    },
+    {
+      "index": 178,
+      "heading": "Chapter V.",
+      "file": "0178-chapter-v-3.json",
+      "words": 449
+    },
+    {
+      "index": 179,
+      "heading": "Chapter VI.",
+      "file": "0179-chapter-vi-3.json",
+      "words": 346
+    },
+    {
+      "index": 180,
+      "heading": "Chapter VII.",
+      "file": "0180-chapter-vii-3.json",
+      "words": 235
+    },
+    {
+      "index": 181,
+      "heading": "Chapter VIII.",
+      "file": "0181-chapter-viii-3.json",
+      "words": 368
+    },
+    {
+      "index": 182,
+      "heading": "Chapter IX.",
+      "file": "0182-chapter-ix-3.json",
+      "words": 202
+    },
+    {
+      "index": 183,
+      "heading": "Chapter X.",
+      "file": "0183-chapter-x-3.json",
+      "words": 225
+    },
+    {
+      "index": 184,
+      "heading": "Chapter XI.",
+      "file": "0184-chapter-xi-3.json",
+      "words": 303
+    },
+    {
+      "index": 185,
+      "heading": "Chapter XII.",
+      "file": "0185-chapter-xii-3.json",
+      "words": 316
+    },
+    {
+      "index": 186,
+      "heading": "Chapter XIII.",
+      "file": "0186-chapter-xiii-3.json",
+      "words": 458
+    },
+    {
+      "index": 187,
+      "heading": "Chapter XIV.",
+      "file": "0187-chapter-xiv-3.json",
+      "words": 348
+    },
+    {
+      "index": 188,
+      "heading": "Chapter XV.",
+      "file": "0188-chapter-xv-3.json",
+      "words": 320
+    },
+    {
+      "index": 189,
+      "heading": "Chapter XVI.",
+      "file": "0189-chapter-xvi-3.json",
+      "words": 239
+    },
+    {
+      "index": 190,
+      "heading": "Chapter XVII.",
+      "file": "0190-chapter-xvii-3.json",
+      "words": 274
+    },
+    {
+      "index": 191,
+      "heading": "Chapter XVIII.",
+      "file": "0191-chapter-xviii-3.json",
+      "words": 620
+    },
+    {
+      "index": 192,
+      "heading": "Chapter XIX.",
+      "file": "0192-chapter-xix-3.json",
+      "words": 379
+    },
+    {
+      "index": 193,
+      "heading": "Chapter XX.",
+      "file": "0193-chapter-xx-3.json",
+      "words": 316
+    },
+    {
+      "index": 194,
+      "heading": "Chapter XXI.",
+      "file": "0194-chapter-xxi-3.json",
+      "words": 481
+    },
+    {
+      "index": 195,
+      "heading": "Chapter XXII.",
+      "file": "0195-chapter-xxii-3.json",
+      "words": 363
+    },
+    {
+      "index": 196,
+      "heading": "Chapter XXIII.",
+      "file": "0196-chapter-xxiii-3.json",
+      "words": 258
+    },
+    {
+      "index": 197,
+      "heading": "Chapter XXIV.",
+      "file": "0197-chapter-xxiv-3.json",
+      "words": 319
+    },
+    {
+      "index": 198,
+      "heading": "Chapter XXV.",
+      "file": "0198-chapter-xxv-3.json",
+      "words": 361
+    },
+    {
+      "index": 199,
+      "heading": "Chapter XXVI.",
+      "file": "0199-chapter-xxvi-3.json",
+      "words": 577
+    },
+    {
+      "index": 200,
+      "heading": "Chapter XXVII.",
+      "file": "0200-chapter-xxvii-3.json",
+      "words": 324
+    },
+    {
+      "index": 201,
+      "heading": "Chapter XXVIII.",
+      "file": "0201-chapter-xxviii-3.json",
+      "words": 440
+    },
+    {
+      "index": 202,
+      "heading": "Chapter XXIX.",
+      "file": "0202-chapter-xxix-3.json",
+      "words": 488
+    },
+    {
+      "index": 203,
+      "heading": "Chapter XXX.",
+      "file": "0203-chapter-xxx-3.json",
+      "words": 749
+    },
+    {
+      "index": 204,
+      "heading": "Chapter XXXI.",
+      "file": "0204-chapter-xxxi-3.json",
+      "words": 582
+    },
+    {
+      "index": 205,
+      "heading": "Chapter XXXII.",
+      "file": "0205-chapter-xxxii-3.json",
+      "words": 481
+    },
+    {
+      "index": 206,
+      "heading": "Chapter XXXIII.",
+      "file": "0206-chapter-xxxiii-3.json",
+      "words": 337
+    },
+    {
+      "index": 207,
+      "heading": "Chapter XXXIV.",
+      "file": "0207-chapter-xxxiv-3.json",
+      "words": 392
+    },
+    {
+      "index": 208,
+      "heading": "Chapter XXXV.",
+      "file": "0208-chapter-xxxv-3.json",
+      "words": 442
+    },
+    {
+      "index": 209,
+      "heading": "Chapter XXXVI.",
+      "file": "0209-chapter-xxxvi-3.json",
+      "words": 440
+    },
+    {
+      "index": 210,
+      "heading": "Chapter XXXVII.",
+      "file": "0210-chapter-xxxvii-3.json",
+      "words": 354
+    },
+    {
+      "index": 211,
+      "heading": "Chapter XXXVIII.",
+      "file": "0211-chapter-xxxviii-3.json",
+      "words": 446
+    },
+    {
+      "index": 212,
+      "heading": "Chapter XXXIX.",
+      "file": "0212-chapter-xxxix-3.json",
+      "words": 878
+    },
+    {
+      "index": 213,
+      "heading": "Chapter XL.",
+      "file": "0213-chapter-xl-3.json",
+      "words": 331
+    },
+    {
+      "index": 214,
+      "heading": "Chapter XLI.",
+      "file": "0214-chapter-xli-3.json",
+      "words": 376
+    },
+    {
+      "index": 215,
+      "heading": "Chapter XLII.",
+      "file": "0215-chapter-xlii-3.json",
+      "words": 283
+    },
+    {
+      "index": 216,
+      "heading": "Chapter XLIII.",
+      "file": "0216-chapter-xliii-3.json",
+      "words": 302
+    },
+    {
+      "index": 217,
+      "heading": "Chapter XLIV.",
+      "file": "0217-chapter-xliv-3.json",
+      "words": 429
+    },
+    {
+      "index": 218,
+      "heading": "Chapter XLV.",
+      "file": "0218-chapter-xlv-3.json",
+      "words": 563
+    },
+    {
+      "index": 219,
+      "heading": "Chapter XLVI.",
+      "file": "0219-chapter-xlvi-3.json",
+      "words": 267
+    },
+    {
+      "index": 220,
+      "heading": "Chapter XLVII.",
+      "file": "0220-chapter-xlvii-3.json",
+      "words": 412
+    },
+    {
+      "index": 221,
+      "heading": "Chapter XLVIII.",
+      "file": "0221-chapter-xlviii-3.json",
+      "words": 423
+    },
+    {
+      "index": 222,
+      "heading": "Chapter XLIX.",
+      "file": "0222-chapter-xlix-3.json",
+      "words": 487
+    },
+    {
+      "index": 223,
+      "heading": "Chapter L.",
+      "file": "0223-chapter-l-3.json",
+      "words": 394
+    },
+    {
+      "index": 224,
+      "heading": "Chapter LI.",
+      "file": "0224-chapter-li-3.json",
+      "words": 350
+    },
+    {
+      "index": 225,
+      "heading": "Chapter LII.",
+      "file": "0225-chapter-lii-3.json",
+      "words": 335
+    },
+    {
+      "index": 226,
+      "heading": "Chapter LIII.",
+      "file": "0226-chapter-liii-3.json",
+      "words": 403
+    },
+    {
+      "index": 227,
+      "heading": "Chapter LIV.",
+      "file": "0227-chapter-liv-3.json",
+      "words": 569
+    },
+    {
+      "index": 228,
+      "heading": "Chapter LV.",
+      "file": "0228-chapter-lv-3.json",
+      "words": 328
+    },
+    {
+      "index": 229,
+      "heading": "Chapter LVI.",
+      "file": "0229-chapter-lvi-3.json",
+      "words": 386
+    },
+    {
+      "index": 230,
+      "heading": "Chapter LVII.",
+      "file": "0230-chapter-lvii-3.json",
+      "words": 413
+    },
+    {
+      "index": 231,
+      "heading": "Chapter LVIII.",
+      "file": "0231-chapter-lviii-3.json",
+      "words": 328
+    },
+    {
+      "index": 232,
+      "heading": "Chapter LIX.",
+      "file": "0232-chapter-lix-3.json",
+      "words": 284
+    },
+    {
+      "index": 233,
+      "heading": "Chapter LX.",
+      "file": "0233-chapter-lx-3.json",
+      "words": 267
+    },
+    {
+      "index": 234,
+      "heading": "Chapter LXI.",
+      "file": "0234-chapter-lxi-3.json",
+      "words": 361
+    },
+    {
+      "index": 235,
+      "heading": "Chapter LXII.",
+      "file": "0235-chapter-lxii-3.json",
+      "words": 241
+    },
+    {
+      "index": 236,
+      "heading": "Chapter LXIII.",
+      "file": "0236-chapter-lxiii-3.json",
+      "words": 385
+    },
+    {
+      "index": 237,
+      "heading": "Chapter LXIV.",
+      "file": "0237-chapter-lxiv-3.json",
+      "words": 349
+    },
+    {
+      "index": 238,
+      "heading": "Chapter LXV.",
+      "file": "0238-chapter-lxv-3.json",
+      "words": 463
+    },
+    {
+      "index": 239,
+      "heading": "Chapter LXVI.",
+      "file": "0239-chapter-lxvi-3.json",
+      "words": 212
+    },
+    {
+      "index": 240,
+      "heading": "Chapter LXVII.",
+      "file": "0240-chapter-lxvii-3.json",
+      "words": 345
+    },
+    {
+      "index": 241,
+      "heading": "Chapter LXVIII.",
+      "file": "0241-chapter-lxviii-3.json",
+      "words": 249
+    },
+    {
+      "index": 242,
+      "heading": "Chapter LXIX.",
+      "file": "0242-chapter-lxix-3.json",
+      "words": 401
+    },
+    {
+      "index": 243,
+      "heading": "Chapter LXX.",
+      "file": "0243-chapter-lxx-3.json",
+      "words": 468
+    },
+    {
+      "index": 244,
+      "heading": "Chapter LXXI.",
+      "file": "0244-chapter-lxxi-3.json",
+      "words": 308
+    },
+    {
+      "index": 245,
+      "heading": "Chapter LXXII.",
+      "file": "0245-chapter-lxxii-3.json",
+      "words": 601
+    },
+    {
+      "index": 246,
+      "heading": "Chapter LXXIII.",
+      "file": "0246-chapter-lxxiii-3.json",
+      "words": 303
+    },
+    {
+      "index": 247,
+      "heading": "Chapter LXXIV.",
+      "file": "0247-chapter-lxxiv-3.json",
+      "words": 369
+    },
+    {
+      "index": 248,
+      "heading": "Chapter LXXV.",
+      "file": "0248-chapter-lxxv-3.json",
+      "words": 520
+    },
+    {
+      "index": 249,
+      "heading": "Chapter LXXVI.",
+      "file": "0249-chapter-lxxvi-3.json",
+      "words": 428
+    },
+    {
+      "index": 250,
+      "heading": "Chapter LXXVII.",
+      "file": "0250-chapter-lxxvii-3.json",
+      "words": 338
+    },
+    {
+      "index": 251,
+      "heading": "Chapter LXXVIII.",
+      "file": "0251-chapter-lxxviii-3.json",
+      "words": 358
+    },
+    {
+      "index": 252,
+      "heading": "Chapter LXXIX.",
+      "file": "0252-chapter-lxxix-3.json",
+      "words": 357
+    },
+    {
+      "index": 253,
+      "heading": "Chapter LXXX.",
+      "file": "0253-chapter-lxxx-2.json",
+      "words": 238
+    },
+    {
+      "index": 254,
+      "heading": "Chapter LXXXI.",
+      "file": "0254-chapter-lxxxi-2.json",
+      "words": 511
+    },
+    {
+      "index": 255,
+      "heading": "Chapter LXXXII.",
+      "file": "0255-chapter-lxxxii.json",
+      "words": 174
+    },
+    {
+      "index": 256,
+      "heading": "Chapter LXXXIII.",
+      "file": "0256-chapter-lxxxiii.json",
+      "words": 636
+    },
+    {
+      "index": 257,
+      "heading": "Chapter LXXXIV.",
+      "file": "0257-chapter-lxxxiv.json",
+      "words": 261
+    },
+    {
+      "index": 258,
+      "heading": "Chapter LXXXV.",
+      "file": "0258-chapter-lxxxv.json",
+      "words": 288
+    },
+    {
+      "index": 259,
+      "heading": "Chapter LXXXVI.",
+      "file": "0259-chapter-lxxxvi.json",
+      "words": 385
+    },
+    {
+      "index": 260,
+      "heading": "Chapter LXXXVII.",
+      "file": "0260-chapter-lxxxvii.json",
+      "words": 474
+    },
+    {
+      "index": 261,
+      "heading": "Chapter LXXXVIII.",
+      "file": "0261-chapter-lxxxviii.json",
+      "words": 510
+    },
+    {
+      "index": 262,
+      "heading": "Chapter LXXXIX.",
+      "file": "0262-chapter-lxxxix.json",
+      "words": 423
+    },
+    {
+      "index": 263,
+      "heading": "Chapter XC.",
+      "file": "0263-chapter-xc.json",
+      "words": 464
+    },
+    {
+      "index": 264,
+      "heading": "Chapter XCI.",
+      "file": "0264-chapter-xci.json",
+      "words": 247
+    },
+    {
+      "index": 265,
+      "heading": "Chapter XCII.",
+      "file": "0265-chapter-xcii.json",
+      "words": 261
+    },
+    {
+      "index": 266,
+      "heading": "Chapter XCIII.",
+      "file": "0266-chapter-xciii.json",
+      "words": 373
+    },
+    {
+      "index": 267,
+      "heading": "Chapter XCIV.",
+      "file": "0267-chapter-xciv.json",
+      "words": 175
+    },
+    {
+      "index": 268,
+      "heading": "Chapter XCV.",
+      "file": "0268-chapter-xcv.json",
+      "words": 298
+    },
+    {
+      "index": 269,
+      "heading": "Chapter XCVI.",
+      "file": "0269-chapter-xcvi.json",
+      "words": 271
+    },
+    {
+      "index": 270,
+      "heading": "Chapter XCVII.",
+      "file": "0270-chapter-xcvii.json",
+      "words": 523
+    },
+    {
+      "index": 271,
+      "heading": "Chapter XCVIII.",
+      "file": "0271-chapter-xcviii.json",
+      "words": 435
+    },
+    {
+      "index": 272,
+      "heading": "Chapter XCIX.",
+      "file": "0272-chapter-xcix.json",
+      "words": 519
+    },
+    {
+      "index": 273,
+      "heading": "BOOK V.",
+      "file": "0273-book-v.json",
+      "words": 0
+    },
+    {
+      "index": 274,
+      "heading": "Chapter I.",
+      "file": "0274-chapter-i-4.json",
+      "words": 456
+    },
+    {
+      "index": 275,
+      "heading": "Chapter II.",
+      "file": "0275-chapter-ii-4.json",
+      "words": 374
+    },
+    {
+      "index": 276,
+      "heading": "Chapter III.",
+      "file": "0276-chapter-iii-4.json",
+      "words": 285
+    },
+    {
+      "index": 277,
+      "heading": "Chapter IV.",
+      "file": "0277-chapter-iv-4.json",
+      "words": 284
+    },
+    {
+      "index": 278,
+      "heading": "Chapter V.",
+      "file": "0278-chapter-v-4.json",
+      "words": 376
+    },
+    {
+      "index": 279,
+      "heading": "Chapter VI.",
+      "file": "0279-chapter-vi-4.json",
+      "words": 444
+    },
+    {
+      "index": 280,
+      "heading": "Chapter VII.",
+      "file": "0280-chapter-vii-4.json",
+      "words": 436
+    },
+    {
+      "index": 281,
+      "heading": "Chapter VIII.",
+      "file": "0281-chapter-viii-4.json",
+      "words": 380
+    },
+    {
+      "index": 282,
+      "heading": "Chapter IX.",
+      "file": "0282-chapter-ix-4.json",
+      "words": 254
+    },
+    {
+      "index": 283,
+      "heading": "Chapter X.",
+      "file": "0283-chapter-x-4.json",
+      "words": 721
+    },
+    {
+      "index": 284,
+      "heading": "Chapter XI.",
+      "file": "0284-chapter-xi-4.json",
+      "words": 499
+    },
+    {
+      "index": 285,
+      "heading": "Chapter XII.",
+      "file": "0285-chapter-xii-4.json",
+      "words": 471
+    },
+    {
+      "index": 286,
+      "heading": "Chapter XIII.",
+      "file": "0286-chapter-xiii-4.json",
+      "words": 235
+    },
+    {
+      "index": 287,
+      "heading": "Chapter XIV.",
+      "file": "0287-chapter-xiv-4.json",
+      "words": 359
+    },
+    {
+      "index": 288,
+      "heading": "Chapter XV.",
+      "file": "0288-chapter-xv-4.json",
+      "words": 475
+    },
+    {
+      "index": 289,
+      "heading": "Chapter XVI.",
+      "file": "0289-chapter-xvi-4.json",
+      "words": 397
+    },
+    {
+      "index": 290,
+      "heading": "Chapter XVII.",
+      "file": "0290-chapter-xvii-4.json",
+      "words": 345
+    },
+    {
+      "index": 291,
+      "heading": "Chapter XVIII.",
+      "file": "0291-chapter-xviii-4.json",
+      "words": 368
+    },
+    {
+      "index": 292,
+      "heading": "Chapter XIX.",
+      "file": "0292-chapter-xix-4.json",
+      "words": 620
+    },
+    {
+      "index": 293,
+      "heading": "Chapter XX.",
+      "file": "0293-chapter-xx-4.json",
+      "words": 504
+    },
+    {
+      "index": 294,
+      "heading": "Chapter XXI.",
+      "file": "0294-chapter-xxi-4.json",
+      "words": 237
+    },
+    {
+      "index": 295,
+      "heading": "Chapter XXII.",
+      "file": "0295-chapter-xxii-4.json",
+      "words": 259
+    },
+    {
+      "index": 296,
+      "heading": "Chapter XXIII.",
+      "file": "0296-chapter-xxiii-4.json",
+      "words": 408
+    },
+    {
+      "index": 297,
+      "heading": "Chapter XXIV.",
+      "file": "0297-chapter-xxiv-4.json",
+      "words": 389
+    },
+    {
+      "index": 298,
+      "heading": "Chapter XXV.",
+      "file": "0298-chapter-xxv-4.json",
+      "words": 367
+    },
+    {
+      "index": 299,
+      "heading": "Chapter XXVI.",
+      "file": "0299-chapter-xxvi-4.json",
+      "words": 385
+    },
+    {
+      "index": 300,
+      "heading": "Chapter XXVII.",
+      "file": "0300-chapter-xxvii-4.json",
+      "words": 402
+    },
+    {
+      "index": 301,
+      "heading": "Chapter XXVIII.",
+      "file": "0301-chapter-xxviii-4.json",
+      "words": 318
+    },
+    {
+      "index": 302,
+      "heading": "Chapter XXIX.",
+      "file": "0302-chapter-xxix-4.json",
+      "words": 687
+    },
+    {
+      "index": 303,
+      "heading": "Chapter XXX.",
+      "file": "0303-chapter-xxx-4.json",
+      "words": 396
+    },
+    {
+      "index": 304,
+      "heading": "Chapter XXXI.",
+      "file": "0304-chapter-xxxi-4.json",
+      "words": 431
+    },
+    {
+      "index": 305,
+      "heading": "Chapter XXXII.",
+      "file": "0305-chapter-xxxii-4.json",
+      "words": 413
+    },
+    {
+      "index": 306,
+      "heading": "Chapter XXXIII.",
+      "file": "0306-chapter-xxxiii-4.json",
+      "words": 502
+    },
+    {
+      "index": 307,
+      "heading": "Chapter XXXIV.",
+      "file": "0307-chapter-xxxiv-4.json",
+      "words": 613
+    },
+    {
+      "index": 308,
+      "heading": "Chapter XXXV.",
+      "file": "0308-chapter-xxxv-4.json",
+      "words": 419
+    },
+    {
+      "index": 309,
+      "heading": "Chapter XXXVI.",
+      "file": "0309-chapter-xxxvi-4.json",
+      "words": 416
+    },
+    {
+      "index": 310,
+      "heading": "Chapter XXXVII.",
+      "file": "0310-chapter-xxxvii-4.json",
+      "words": 520
+    },
+    {
+      "index": 311,
+      "heading": "Chapter XXXVIII.",
+      "file": "0311-chapter-xxxviii-4.json",
+      "words": 512
+    },
+    {
+      "index": 312,
+      "heading": "Chapter XXXIX.",
+      "file": "0312-chapter-xxxix-4.json",
+      "words": 328
+    },
+    {
+      "index": 313,
+      "heading": "Chapter XL.",
+      "file": "0313-chapter-xl-4.json",
+      "words": 202
+    },
+    {
+      "index": 314,
+      "heading": "Chapter XLI.",
+      "file": "0314-chapter-xli-4.json",
+      "words": 373
+    },
+    {
+      "index": 315,
+      "heading": "Chapter XLII.",
+      "file": "0315-chapter-xlii-4.json",
+      "words": 483
+    },
+    {
+      "index": 316,
+      "heading": "Chapter XLIII.",
+      "file": "0316-chapter-xliii-4.json",
+      "words": 289
+    },
+    {
+      "index": 317,
+      "heading": "Chapter XLIV.",
+      "file": "0317-chapter-xliv-4.json",
+      "words": 247
+    },
+    {
+      "index": 318,
+      "heading": "Chapter XLV.",
+      "file": "0318-chapter-xlv-4.json",
+      "words": 683
+    },
+    {
+      "index": 319,
+      "heading": "Chapter XLVI.",
+      "file": "0319-chapter-xlvi-4.json",
+      "words": 254
+    },
+    {
+      "index": 320,
+      "heading": "Chapter XLVII.",
+      "file": "0320-chapter-xlvii-4.json",
+      "words": 354
+    },
+    {
+      "index": 321,
+      "heading": "Chapter XLVIII.",
+      "file": "0321-chapter-xlviii-4.json",
+      "words": 410
+    },
+    {
+      "index": 322,
+      "heading": "Chapter XLIX.",
+      "file": "0322-chapter-xlix-4.json",
+      "words": 291
+    },
+    {
+      "index": 323,
+      "heading": "Chapter L.",
+      "file": "0323-chapter-l-4.json",
+      "words": 357
+    },
+    {
+      "index": 324,
+      "heading": "Chapter LI.",
+      "file": "0324-chapter-li-4.json",
+      "words": 324
+    },
+    {
+      "index": 325,
+      "heading": "Chapter LII.",
+      "file": "0325-chapter-lii-4.json",
+      "words": 300
+    },
+    {
+      "index": 326,
+      "heading": "Chapter LIII.",
+      "file": "0326-chapter-liii-4.json",
+      "words": 446
+    },
+    {
+      "index": 327,
+      "heading": "Chapter LIV.",
+      "file": "0327-chapter-liv-4.json",
+      "words": 371
+    },
+    {
+      "index": 328,
+      "heading": "Chapter LV.",
+      "file": "0328-chapter-lv-4.json",
+      "words": 343
+    },
+    {
+      "index": 329,
+      "heading": "Chapter LVI.",
+      "file": "0329-chapter-lvi-4.json",
+      "words": 202
+    },
+    {
+      "index": 330,
+      "heading": "Chapter LVII.",
+      "file": "0330-chapter-lvii-4.json",
+      "words": 443
+    },
+    {
+      "index": 331,
+      "heading": "Chapter LVIII.",
+      "file": "0331-chapter-lviii-4.json",
+      "words": 547
+    },
+    {
+      "index": 332,
+      "heading": "Chapter LIX.",
+      "file": "0332-chapter-lix-4.json",
+      "words": 381
+    },
+    {
+      "index": 333,
+      "heading": "Chapter LX.",
+      "file": "0333-chapter-lx-4.json",
+      "words": 232
+    },
+    {
+      "index": 334,
+      "heading": "Chapter LXI.",
+      "file": "0334-chapter-lxi-4.json",
+      "words": 476
+    },
+    {
+      "index": 335,
+      "heading": "Chapter LXII.",
+      "file": "0335-chapter-lxii-4.json",
+      "words": 260
+    },
+    {
+      "index": 336,
+      "heading": "Chapter LXIII.",
+      "file": "0336-chapter-lxiii-4.json",
+      "words": 380
+    },
+    {
+      "index": 337,
+      "heading": "Chapter LXIV.",
+      "file": "0337-chapter-lxiv-4.json",
+      "words": 328
+    },
+    {
+      "index": 338,
+      "heading": "Chapter LXV.",
+      "file": "0338-chapter-lxv-4.json",
+      "words": 363
+    },
+    {
+      "index": 339,
+      "heading": "BOOK VI.",
+      "file": "0339-book-vi.json",
+      "words": 0
+    },
+    {
+      "index": 340,
+      "heading": "Chapter I.",
+      "file": "0340-chapter-i-5.json",
+      "words": 262
+    },
+    {
+      "index": 341,
+      "heading": "Chapter II.",
+      "file": "0341-chapter-ii-5.json",
+      "words": 470
+    },
+    {
+      "index": 342,
+      "heading": "Chapter III.",
+      "file": "0342-chapter-iii-5.json",
+      "words": 347
+    },
+    {
+      "index": 343,
+      "heading": "Chapter IV.",
+      "file": "0343-chapter-iv-5.json",
+      "words": 467
+    },
+    {
+      "index": 344,
+      "heading": "Chapter V.",
+      "file": "0344-chapter-v-5.json",
+      "words": 403
+    },
+    {
+      "index": 345,
+      "heading": "Chapter VI.",
+      "file": "0345-chapter-vi-5.json",
+      "words": 402
+    },
+    {
+      "index": 346,
+      "heading": "Chapter VII.",
+      "file": "0346-chapter-vii-5.json",
+      "words": 388
+    },
+    {
+      "index": 347,
+      "heading": "Chapter VIII.",
+      "file": "0347-chapter-viii-5.json",
+      "words": 481
+    },
+    {
+      "index": 348,
+      "heading": "Chapter IX.",
+      "file": "0348-chapter-ix-5.json",
+      "words": 292
+    },
+    {
+      "index": 349,
+      "heading": "Chapter X.",
+      "file": "0349-chapter-x-5.json",
+      "words": 488
+    },
+    {
+      "index": 350,
+      "heading": "Chapter XI.",
+      "file": "0350-chapter-xi-5.json",
+      "words": 547
+    },
+    {
+      "index": 351,
+      "heading": "Chapter XII.",
+      "file": "0351-chapter-xii-5.json",
+      "words": 392
+    },
+    {
+      "index": 352,
+      "heading": "Chapter XIII.",
+      "file": "0352-chapter-xiii-5.json",
+      "words": 401
+    },
+    {
+      "index": 353,
+      "heading": "Chapter XIV.",
+      "file": "0353-chapter-xiv-5.json",
+      "words": 357
+    },
+    {
+      "index": 354,
+      "heading": "Chapter XV.",
+      "file": "0354-chapter-xv-5.json",
+      "words": 499
+    },
+    {
+      "index": 355,
+      "heading": "Chapter XVI.",
+      "file": "0355-chapter-xvi-5.json",
+      "words": 479
+    },
+    {
+      "index": 356,
+      "heading": "Chapter XVII.",
+      "file": "0356-chapter-xvii-5.json",
+      "words": 489
+    },
+    {
+      "index": 357,
+      "heading": "Chapter XVIII.",
+      "file": "0357-chapter-xviii-5.json",
+      "words": 264
+    },
+    {
+      "index": 358,
+      "heading": "Chapter XIX.",
+      "file": "0358-chapter-xix-5.json",
+      "words": 449
+    },
+    {
+      "index": 359,
+      "heading": "Chapter XX.",
+      "file": "0359-chapter-xx-5.json",
+      "words": 345
+    },
+    {
+      "index": 360,
+      "heading": "Chapter XXI.",
+      "file": "0360-chapter-xxi-5.json",
+      "words": 157
+    },
+    {
+      "index": 361,
+      "heading": "Chapter XXII.",
+      "file": "0361-chapter-xxii-5.json",
+      "words": 527
+    },
+    {
+      "index": 362,
+      "heading": "Chapter XXIII.",
+      "file": "0362-chapter-xxiii-5.json",
+      "words": 349
+    },
+    {
+      "index": 363,
+      "heading": "Chapter XXIV.",
+      "file": "0363-chapter-xxiv-5.json",
+      "words": 289
+    },
+    {
+      "index": 364,
+      "heading": "Chapter XXV.",
+      "file": "0364-chapter-xxv-5.json",
+      "words": 388
+    },
+    {
+      "index": 365,
+      "heading": "Chapter XXVI.",
+      "file": "0365-chapter-xxvi-5.json",
+      "words": 327
+    },
+    {
+      "index": 366,
+      "heading": "Chapter XXVII.",
+      "file": "0366-chapter-xxvii-5.json",
+      "words": 425
+    },
+    {
+      "index": 367,
+      "heading": "Chapter XXVIII.",
+      "file": "0367-chapter-xxviii-5.json",
+      "words": 383
+    },
+    {
+      "index": 368,
+      "heading": "Chapter XXIX.",
+      "file": "0368-chapter-xxix-5.json",
+      "words": 357
+    },
+    {
+      "index": 369,
+      "heading": "Chapter XXX.",
+      "file": "0369-chapter-xxx-5.json",
+      "words": 325
+    },
+    {
+      "index": 370,
+      "heading": "Chapter XXXI.",
+      "file": "0370-chapter-xxxi-5.json",
+      "words": 627
+    },
+    {
+      "index": 371,
+      "heading": "Chapter XXXII.",
+      "file": "0371-chapter-xxxii-5.json",
+      "words": 293
+    },
+    {
+      "index": 372,
+      "heading": "Chapter XXXIII.",
+      "file": "0372-chapter-xxxiii-5.json",
+      "words": 163
+    },
+    {
+      "index": 373,
+      "heading": "Chapter XXXIV.",
+      "file": "0373-chapter-xxxiv-5.json",
+      "words": 328
+    },
+    {
+      "index": 374,
+      "heading": "Chapter XXXV.",
+      "file": "0374-chapter-xxxv-5.json",
+      "words": 335
+    },
+    {
+      "index": 375,
+      "heading": "Chapter XXXVI.",
+      "file": "0375-chapter-xxxvi-5.json",
+      "words": 425
+    },
+    {
+      "index": 376,
+      "heading": "Chapter XXXVII.",
+      "file": "0376-chapter-xxxvii-5.json",
+      "words": 331
+    },
+    {
+      "index": 377,
+      "heading": "Chapter XXXVIII.",
+      "file": "0377-chapter-xxxviii-5.json",
+      "words": 384
+    },
+    {
+      "index": 378,
+      "heading": "Chapter XXXIX.",
+      "file": "0378-chapter-xxxix-5.json",
+      "words": 474
+    },
+    {
+      "index": 379,
+      "heading": "Chapter XL.",
+      "file": "0379-chapter-xl-5.json",
+      "words": 207
+    },
+    {
+      "index": 380,
+      "heading": "Chapter XLI.",
+      "file": "0380-chapter-xli-5.json",
+      "words": 332
+    },
+    {
+      "index": 381,
+      "heading": "Chapter XLII.",
+      "file": "0381-chapter-xlii-5.json",
+      "words": 757
+    },
+    {
+      "index": 382,
+      "heading": "Chapter XLIII.",
+      "file": "0382-chapter-xliii-5.json",
+      "words": 504
+    },
+    {
+      "index": 383,
+      "heading": "Chapter XLIV.",
+      "file": "0383-chapter-xliv-5.json",
+      "words": 532
+    },
+    {
+      "index": 384,
+      "heading": "Chapter XLV.",
+      "file": "0384-chapter-xlv-5.json",
+      "words": 446
+    },
+    {
+      "index": 385,
+      "heading": "Chapter XLVI.",
+      "file": "0385-chapter-xlvi-5.json",
+      "words": 594
+    },
+    {
+      "index": 386,
+      "heading": "Chapter XLVII.",
+      "file": "0386-chapter-xlvii-5.json",
+      "words": 400
+    },
+    {
+      "index": 387,
+      "heading": "Chapter XLVIII.",
+      "file": "0387-chapter-xlviii-5.json",
+      "words": 315
+    },
+    {
+      "index": 388,
+      "heading": "Chapter XLIX.",
+      "file": "0388-chapter-xlix-5.json",
+      "words": 522
+    },
+    {
+      "index": 389,
+      "heading": "Chapter L.",
+      "file": "0389-chapter-l-5.json",
+      "words": 361
+    },
+    {
+      "index": 390,
+      "heading": "Chapter LI.",
+      "file": "0390-chapter-li-5.json",
+      "words": 323
+    },
+    {
+      "index": 391,
+      "heading": "Chapter LII.",
+      "file": "0391-chapter-lii-5.json",
+      "words": 303
+    },
+    {
+      "index": 392,
+      "heading": "Chapter LIII.",
+      "file": "0392-chapter-liii-5.json",
+      "words": 533
+    },
+    {
+      "index": 393,
+      "heading": "Chapter LIV.",
+      "file": "0393-chapter-liv-5.json",
+      "words": 259
+    },
+    {
+      "index": 394,
+      "heading": "Chapter LV.",
+      "file": "0394-chapter-lv-5.json",
+      "words": 459
+    },
+    {
+      "index": 395,
+      "heading": "Chapter LVI.",
+      "file": "0395-chapter-lvi-5.json",
+      "words": 299
+    },
+    {
+      "index": 396,
+      "heading": "Chapter LVII.",
+      "file": "0396-chapter-lvii-5.json",
+      "words": 501
+    },
+    {
+      "index": 397,
+      "heading": "Chapter LVIII.",
+      "file": "0397-chapter-lviii-5.json",
+      "words": 281
+    },
+    {
+      "index": 398,
+      "heading": "Chapter LIX.",
+      "file": "0398-chapter-lix-5.json",
+      "words": 329
+    },
+    {
+      "index": 399,
+      "heading": "Chapter LX.",
+      "file": "0399-chapter-lx-5.json",
+      "words": 402
+    },
+    {
+      "index": 400,
+      "heading": "Chapter LXI.",
+      "file": "0400-chapter-lxi-5.json",
+      "words": 489
+    },
+    {
+      "index": 401,
+      "heading": "Chapter LXII.",
+      "file": "0401-chapter-lxii-5.json",
+      "words": 398
+    },
+    {
+      "index": 402,
+      "heading": "Chapter LXIII.",
+      "file": "0402-chapter-lxiii-5.json",
+      "words": 422
+    },
+    {
+      "index": 403,
+      "heading": "Chapter LXIV.",
+      "file": "0403-chapter-lxiv-5.json",
+      "words": 356
+    },
+    {
+      "index": 404,
+      "heading": "Chapter LXV.",
+      "file": "0404-chapter-lxv-5.json",
+      "words": 418
+    },
+    {
+      "index": 405,
+      "heading": "Chapter LXVI.",
+      "file": "0405-chapter-lxvi-4.json",
+      "words": 387
+    },
+    {
+      "index": 406,
+      "heading": "Chapter LXVII.",
+      "file": "0406-chapter-lxvii-4.json",
+      "words": 398
+    },
+    {
+      "index": 407,
+      "heading": "Chapter LXVIII.",
+      "file": "0407-chapter-lxviii-4.json",
+      "words": 410
+    },
+    {
+      "index": 408,
+      "heading": "Chapter LXIX.",
+      "file": "0408-chapter-lxix-4.json",
+      "words": 409
+    },
+    {
+      "index": 409,
+      "heading": "Chapter LXX.",
+      "file": "0409-chapter-lxx-4.json",
+      "words": 530
+    },
+    {
+      "index": 410,
+      "heading": "Chapter LXXI.",
+      "file": "0410-chapter-lxxi-4.json",
+      "words": 340
+    },
+    {
+      "index": 411,
+      "heading": "Chapter LXXII.",
+      "file": "0411-chapter-lxxii-4.json",
+      "words": 260
+    },
+    {
+      "index": 412,
+      "heading": "Chapter LXXIII.",
+      "file": "0412-chapter-lxxiii-4.json",
+      "words": 481
+    },
+    {
+      "index": 413,
+      "heading": "Chapter LXXIV.",
+      "file": "0413-chapter-lxxiv-4.json",
+      "words": 368
+    },
+    {
+      "index": 414,
+      "heading": "Chapter LXXV.",
+      "file": "0414-chapter-lxxv-4.json",
+      "words": 336
+    },
+    {
+      "index": 415,
+      "heading": "Chapter LXXVI.",
+      "file": "0415-chapter-lxxvi-4.json",
+      "words": 281
+    },
+    {
+      "index": 416,
+      "heading": "Chapter LXXVII.",
+      "file": "0416-chapter-lxxvii-4.json",
+      "words": 564
+    },
+    {
+      "index": 417,
+      "heading": "Chapter LXXVIII.",
+      "file": "0417-chapter-lxxviii-4.json",
+      "words": 334
+    },
+    {
+      "index": 418,
+      "heading": "Chapter LXXIX.",
+      "file": "0418-chapter-lxxix-4.json",
+      "words": 476
+    },
+    {
+      "index": 419,
+      "heading": "Chapter LXXX.",
+      "file": "0419-chapter-lxxx-3.json",
+      "words": 321
+    },
+    {
+      "index": 420,
+      "heading": "Chapter LXXXI.",
+      "file": "0420-chapter-lxxxi-3.json",
+      "words": 216
+    },
+    {
+      "index": 421,
+      "heading": "BOOK VII.",
+      "file": "0421-book-vii.json",
+      "words": 0
+    },
+    {
+      "index": 422,
+      "heading": "Chapter I.",
+      "file": "0422-chapter-i-6.json",
+      "words": 159
+    },
+    {
+      "index": 423,
+      "heading": "Chapter II.",
+      "file": "0423-chapter-ii-6.json",
+      "words": 240
+    },
+    {
+      "index": 424,
+      "heading": "Chapter III.",
+      "file": "0424-chapter-iii-6.json",
+      "words": 507
+    },
+    {
+      "index": 425,
+      "heading": "Chapter IV.",
+      "file": "0425-chapter-iv-6.json",
+      "words": 266
+    },
+    {
+      "index": 426,
+      "heading": "Chapter V.",
+      "file": "0426-chapter-v-6.json",
+      "words": 401
+    },
+    {
+      "index": 427,
+      "heading": "Chapter VI.",
+      "file": "0427-chapter-vi-6.json",
+      "words": 519
+    },
+    {
+      "index": 428,
+      "heading": "Chapter VII.",
+      "file": "0428-chapter-vii-6.json",
+      "words": 437
+    },
+    {
+      "index": 429,
+      "heading": "Chapter VIII.",
+      "file": "0429-chapter-viii-6.json",
+      "words": 309
+    },
+    {
+      "index": 430,
+      "heading": "Chapter IX.",
+      "file": "0430-chapter-ix-6.json",
+      "words": 310
+    },
+    {
+      "index": 431,
+      "heading": "Chapter X.",
+      "file": "0431-chapter-x-6.json",
+      "words": 403
+    },
+    {
+      "index": 432,
+      "heading": "Chapter XI.",
+      "file": "0432-chapter-xi-6.json",
+      "words": 372
+    },
+    {
+      "index": 433,
+      "heading": "Chapter XII.",
+      "file": "0433-chapter-xii-6.json",
+      "words": 281
+    },
+    {
+      "index": 434,
+      "heading": "Chapter XIII.",
+      "file": "0434-chapter-xiii-6.json",
+      "words": 293
+    },
+    {
+      "index": 435,
+      "heading": "Chapter XIV.",
+      "file": "0435-chapter-xiv-6.json",
+      "words": 349
+    },
+    {
+      "index": 436,
+      "heading": "Chapter XV.",
+      "file": "0436-chapter-xv-6.json",
+      "words": 468
+    },
+    {
+      "index": 437,
+      "heading": "Chapter XVI.",
+      "file": "0437-chapter-xvi-6.json",
+      "words": 349
+    },
+    {
+      "index": 438,
+      "heading": "Chapter XVII.",
+      "file": "0438-chapter-xvii-6.json",
+      "words": 398
+    },
+    {
+      "index": 439,
+      "heading": "Chapter XVIII.",
+      "file": "0439-chapter-xviii-6.json",
+      "words": 653
+    },
+    {
+      "index": 440,
+      "heading": "Chapter XIX.",
+      "file": "0440-chapter-xix-6.json",
+      "words": 315
+    },
+    {
+      "index": 441,
+      "heading": "Chapter XX.",
+      "file": "0441-chapter-xx-6.json",
+      "words": 351
+    },
+    {
+      "index": 442,
+      "heading": "Chapter XXI.",
+      "file": "0442-chapter-xxi-6.json",
+      "words": 365
+    },
+    {
+      "index": 443,
+      "heading": "Chapter XXII.",
+      "file": "0443-chapter-xxii-6.json",
+      "words": 406
+    },
+    {
+      "index": 444,
+      "heading": "Chapter XXIII.",
+      "file": "0444-chapter-xxiii-6.json",
+      "words": 353
+    },
+    {
+      "index": 445,
+      "heading": "Chapter XXIV.",
+      "file": "0445-chapter-xxiv-6.json",
+      "words": 318
+    },
+    {
+      "index": 446,
+      "heading": "Chapter XXV.",
+      "file": "0446-chapter-xxv-6.json",
+      "words": 279
+    },
+    {
+      "index": 447,
+      "heading": "Chapter XXVI.",
+      "file": "0447-chapter-xxvi-6.json",
+      "words": 396
+    },
+    {
+      "index": 448,
+      "heading": "Chapter XXVII.",
+      "file": "0448-chapter-xxvii-6.json",
+      "words": 241
+    },
+    {
+      "index": 449,
+      "heading": "Chapter XXVIII.",
+      "file": "0449-chapter-xxviii-6.json",
+      "words": 531
+    },
+    {
+      "index": 450,
+      "heading": "Chapter XXIX.",
+      "file": "0450-chapter-xxix-6.json",
+      "words": 390
+    },
+    {
+      "index": 451,
+      "heading": "Chapter XXX.",
+      "file": "0451-chapter-xxx-6.json",
+      "words": 276
+    },
+    {
+      "index": 452,
+      "heading": "Chapter XXXI.",
+      "file": "0452-chapter-xxxi-6.json",
+      "words": 298
+    },
+    {
+      "index": 453,
+      "heading": "Chapter XXXII.",
+      "file": "0453-chapter-xxxii-6.json",
+      "words": 485
+    },
+    {
+      "index": 454,
+      "heading": "Chapter XXXIII.",
+      "file": "0454-chapter-xxxiii-6.json",
+      "words": 255
+    },
+    {
+      "index": 455,
+      "heading": "Chapter XXXIV.",
+      "file": "0455-chapter-xxxiv-6.json",
+      "words": 394
+    },
+    {
+      "index": 456,
+      "heading": "Chapter XXXV.",
+      "file": "0456-chapter-xxxv-6.json",
+      "words": 302
+    },
+    {
+      "index": 457,
+      "heading": "Chapter XXXVI.",
+      "file": "0457-chapter-xxxvi-6.json",
+      "words": 450
+    },
+    {
+      "index": 458,
+      "heading": "Chapter XXXVII.",
+      "file": "0458-chapter-xxxvii-6.json",
+      "words": 393
+    },
+    {
+      "index": 459,
+      "heading": "Chapter XXXVIII.",
+      "file": "0459-chapter-xxxviii-6.json",
+      "words": 290
+    },
+    {
+      "index": 460,
+      "heading": "Chapter XXXIX.",
+      "file": "0460-chapter-xxxix-6.json",
+      "words": 585
+    },
+    {
+      "index": 461,
+      "heading": "Chapter XL.",
+      "file": "0461-chapter-xl-6.json",
+      "words": 504
+    },
+    {
+      "index": 462,
+      "heading": "Chapter XLI.",
+      "file": "0462-chapter-xli-6.json",
+      "words": 403
+    },
+    {
+      "index": 463,
+      "heading": "Chapter XLII.",
+      "file": "0463-chapter-xlii-6.json",
+      "words": 481
+    },
+    {
+      "index": 464,
+      "heading": "Chapter XLIII.",
+      "file": "0464-chapter-xliii-6.json",
+      "words": 429
+    },
+    {
+      "index": 465,
+      "heading": "Chapter XLIV.",
+      "file": "0465-chapter-xliv-6.json",
+      "words": 539
+    },
+    {
+      "index": 466,
+      "heading": "Chapter XLV.",
+      "file": "0466-chapter-xlv-6.json",
+      "words": 435
+    },
+    {
+      "index": 467,
+      "heading": "Chapter XLVI.",
+      "file": "0467-chapter-xlvi-6.json",
+      "words": 607
+    },
+    {
+      "index": 468,
+      "heading": "Chapter XLVII.",
+      "file": "0468-chapter-xlvii-6.json",
+      "words": 192
+    },
+    {
+      "index": 469,
+      "heading": "Chapter XLVIII.",
+      "file": "0469-chapter-xlviii-6.json",
+      "words": 285
+    },
+    {
+      "index": 470,
+      "heading": "Chapter XLIX.",
+      "file": "0470-chapter-xlix-6.json",
+      "words": 204
+    },
+    {
+      "index": 471,
+      "heading": "Chapter L.",
+      "file": "0471-chapter-l-6.json",
+      "words": 412
+    },
+    {
+      "index": 472,
+      "heading": "Chapter LI.",
+      "file": "0472-chapter-li-6.json",
+      "words": 431
+    },
+    {
+      "index": 473,
+      "heading": "Chapter LII.",
+      "file": "0473-chapter-lii-6.json",
+      "words": 232
+    },
+    {
+      "index": 474,
+      "heading": "Chapter LIII.",
+      "file": "0474-chapter-liii-6.json",
+      "words": 307
+    },
+    {
+      "index": 475,
+      "heading": "Chapter LIV.",
+      "file": "0475-chapter-liv-6.json",
+      "words": 356
+    },
+    {
+      "index": 476,
+      "heading": "Chapter LV.",
+      "file": "0476-chapter-lv-6.json",
+      "words": 339
+    },
+    {
+      "index": 477,
+      "heading": "Chapter LVI.",
+      "file": "0477-chapter-lvi-6.json",
+      "words": 332
+    },
+    {
+      "index": 478,
+      "heading": "Chapter LVII.",
+      "file": "0478-chapter-lvii-6.json",
+      "words": 248
+    },
+    {
+      "index": 479,
+      "heading": "Chapter LVIII.",
+      "file": "0479-chapter-lviii-6.json",
+      "words": 334
+    },
+    {
+      "index": 480,
+      "heading": "Chapter LIX.",
+      "file": "0480-chapter-lix-6.json",
+      "words": 479
+    },
+    {
+      "index": 481,
+      "heading": "Chapter LX.",
+      "file": "0481-chapter-lx-6.json",
+      "words": 444
+    },
+    {
+      "index": 482,
+      "heading": "Chapter LXI.",
+      "file": "0482-chapter-lxi-6.json",
+      "words": 201
+    },
+    {
+      "index": 483,
+      "heading": "Chapter LXII.",
+      "file": "0483-chapter-lxii-6.json",
+      "words": 371
+    },
+    {
+      "index": 484,
+      "heading": "Chapter LXIII.",
+      "file": "0484-chapter-lxiii-6.json",
+      "words": 438
+    },
+    {
+      "index": 485,
+      "heading": "Chapter LXIV.",
+      "file": "0485-chapter-lxiv-6.json",
+      "words": 314
+    },
+    {
+      "index": 486,
+      "heading": "Chapter LXV.",
+      "file": "0486-chapter-lxv-6.json",
+      "words": 289
+    },
+    {
+      "index": 487,
+      "heading": "Chapter LXVI.",
+      "file": "0487-chapter-lxvi-5.json",
+      "words": 398
+    },
+    {
+      "index": 488,
+      "heading": "Chapter LXVII.",
+      "file": "0488-chapter-lxvii-5.json",
+      "words": 205
+    },
+    {
+      "index": 489,
+      "heading": "Chapter LXVIII.",
+      "file": "0489-chapter-lxviii-5.json",
+      "words": 526
+    },
+    {
+      "index": 490,
+      "heading": "Chapter LXIX.",
+      "file": "0490-chapter-lxix-5.json",
+      "words": 353
+    },
+    {
+      "index": 491,
+      "heading": "Chapter LXX.",
+      "file": "0491-chapter-lxx-5.json",
+      "words": 398
+    },
+    {
+      "index": 492,
+      "heading": "BOOK VIII.",
+      "file": "0492-book-viii.json",
+      "words": 0
+    },
+    {
+      "index": 493,
+      "heading": "Chapter I.",
+      "file": "0493-chapter-i-7.json",
+      "words": 182
+    },
+    {
+      "index": 494,
+      "heading": "Chapter II.",
+      "file": "0494-chapter-ii-7.json",
+      "words": 290
+    },
+    {
+      "index": 495,
+      "heading": "Chapter III.",
+      "file": "0495-chapter-iii-7.json",
+      "words": 236
+    },
+    {
+      "index": 496,
+      "heading": "Chapter IV.",
+      "file": "0496-chapter-iv-7.json",
+      "words": 415
+    },
+    {
+      "index": 497,
+      "heading": "Chapter V.",
+      "file": "0497-chapter-v-7.json",
+      "words": 358
+    },
+    {
+      "index": 498,
+      "heading": "Chapter VI.",
+      "file": "0498-chapter-vi-7.json",
+      "words": 259
+    },
+    {
+      "index": 499,
+      "heading": "Chapter VII.",
+      "file": "0499-chapter-vii-7.json",
+      "words": 244
+    },
+    {
+      "index": 500,
+      "heading": "Chapter VIII.",
+      "file": "0500-chapter-viii-7.json",
+      "words": 228
+    },
+    {
+      "index": 501,
+      "heading": "Chapter IX.",
+      "file": "0501-chapter-ix-7.json",
+      "words": 379
+    },
+    {
+      "index": 502,
+      "heading": "Chapter X.",
+      "file": "0502-chapter-x-7.json",
+      "words": 231
+    },
+    {
+      "index": 503,
+      "heading": "Chapter XI.",
+      "file": "0503-chapter-xi-7.json",
+      "words": 258
+    },
+    {
+      "index": 504,
+      "heading": "Chapter XII.",
+      "file": "0504-chapter-xii-7.json",
+      "words": 355
+    },
+    {
+      "index": 505,
+      "heading": "Chapter XIII.",
+      "file": "0505-chapter-xiii-7.json",
+      "words": 365
+    },
+    {
+      "index": 506,
+      "heading": "Chapter XIV.",
+      "file": "0506-chapter-xiv-7.json",
+      "words": 455
+    },
+    {
+      "index": 507,
+      "heading": "Chapter XV.",
+      "file": "0507-chapter-xv-7.json",
+      "words": 551
+    },
+    {
+      "index": 508,
+      "heading": "Chapter XVI.",
+      "file": "0508-chapter-xvi-7.json",
+      "words": 293
+    },
+    {
+      "index": 509,
+      "heading": "Chapter XVII.",
+      "file": "0509-chapter-xvii-7.json",
+      "words": 416
+    },
+    {
+      "index": 510,
+      "heading": "Chapter XVIII.",
+      "file": "0510-chapter-xviii-7.json",
+      "words": 281
+    },
+    {
+      "index": 511,
+      "heading": "Chapter XIX.",
+      "file": "0511-chapter-xix-7.json",
+      "words": 394
+    },
+    {
+      "index": 512,
+      "heading": "Chapter XX.",
+      "file": "0512-chapter-xx-7.json",
+      "words": 342
+    },
+    {
+      "index": 513,
+      "heading": "Chapter XXI.",
+      "file": "0513-chapter-xxi-7.json",
+      "words": 362
+    },
+    {
+      "index": 514,
+      "heading": "Chapter XXII.",
+      "file": "0514-chapter-xxii-7.json",
+      "words": 289
+    },
+    {
+      "index": 515,
+      "heading": "Chapter XXIII.",
+      "file": "0515-chapter-xxiii-7.json",
+      "words": 290
+    },
+    {
+      "index": 516,
+      "heading": "Chapter XXIV.",
+      "file": "0516-chapter-xxiv-7.json",
+      "words": 383
+    },
+    {
+      "index": 517,
+      "heading": "Chapter XXV.",
+      "file": "0517-chapter-xxv-7.json",
+      "words": 293
+    },
+    {
+      "index": 518,
+      "heading": "Chapter XXVI.",
+      "file": "0518-chapter-xxvi-7.json",
+      "words": 324
+    },
+    {
+      "index": 519,
+      "heading": "Chapter XXVII.",
+      "file": "0519-chapter-xxvii-7.json",
+      "words": 191
+    },
+    {
+      "index": 520,
+      "heading": "Chapter XXVIII.",
+      "file": "0520-chapter-xxviii-7.json",
+      "words": 273
+    },
+    {
+      "index": 521,
+      "heading": "Chapter XXIX.",
+      "file": "0521-chapter-xxix-7.json",
+      "words": 289
+    },
+    {
+      "index": 522,
+      "heading": "Chapter XXX.",
+      "file": "0522-chapter-xxx-7.json",
+      "words": 441
+    },
+    {
+      "index": 523,
+      "heading": "Chapter XXXI.",
+      "file": "0523-chapter-xxxi-7.json",
+      "words": 435
+    },
+    {
+      "index": 524,
+      "heading": "Chapter XXXII.",
+      "file": "0524-chapter-xxxii-7.json",
+      "words": 391
+    },
+    {
+      "index": 525,
+      "heading": "Chapter XXXIII.",
+      "file": "0525-chapter-xxxiii-7.json",
+      "words": 349
+    },
+    {
+      "index": 526,
+      "heading": "Chapter XXXIV.",
+      "file": "0526-chapter-xxxiv-7.json",
+      "words": 394
+    },
+    {
+      "index": 527,
+      "heading": "Chapter XXXV.",
+      "file": "0527-chapter-xxxv-7.json",
+      "words": 375
+    },
+    {
+      "index": 528,
+      "heading": "Chapter XXXVI.",
+      "file": "0528-chapter-xxxvi-7.json",
+      "words": 337
+    },
+    {
+      "index": 529,
+      "heading": "Chapter XXXVII.",
+      "file": "0529-chapter-xxxvii-7.json",
+      "words": 207
+    },
+    {
+      "index": 530,
+      "heading": "Chapter XXXVIII.",
+      "file": "0530-chapter-xxxviii-7.json",
+      "words": 306
+    },
+    {
+      "index": 531,
+      "heading": "Chapter XXXIX.",
+      "file": "0531-chapter-xxxix-7.json",
+      "words": 232
+    },
+    {
+      "index": 532,
+      "heading": "Chapter XL.",
+      "file": "0532-chapter-xl-7.json",
+      "words": 280
+    },
+    {
+      "index": 533,
+      "heading": "Chapter XLI.",
+      "file": "0533-chapter-xli-7.json",
+      "words": 433
+    },
+    {
+      "index": 534,
+      "heading": "Chapter XLII.",
+      "file": "0534-chapter-xlii-7.json",
+      "words": 398
+    },
+    {
+      "index": 535,
+      "heading": "Chapter XLIII.",
+      "file": "0535-chapter-xliii-7.json",
+      "words": 436
+    },
+    {
+      "index": 536,
+      "heading": "Chapter XLIV.",
+      "file": "0536-chapter-xliv-7.json",
+      "words": 370
+    },
+    {
+      "index": 537,
+      "heading": "Chapter XLV.",
+      "file": "0537-chapter-xlv-7.json",
+      "words": 385
+    },
+    {
+      "index": 538,
+      "heading": "Chapter XLVI.",
+      "file": "0538-chapter-xlvi-7.json",
+      "words": 310
+    },
+    {
+      "index": 539,
+      "heading": "Chapter XLVII.",
+      "file": "0539-chapter-xlvii-7.json",
+      "words": 352
+    },
+    {
+      "index": 540,
+      "heading": "Chapter XLVIII.",
+      "file": "0540-chapter-xlviii-7.json",
+      "words": 411
+    },
+    {
+      "index": 541,
+      "heading": "Chapter XLIX.",
+      "file": "0541-chapter-xlix-7.json",
+      "words": 349
+    },
+    {
+      "index": 542,
+      "heading": "Chapter L.",
+      "file": "0542-chapter-l-7.json",
+      "words": 300
+    },
+    {
+      "index": 543,
+      "heading": "Chapter LI.",
+      "file": "0543-chapter-li-7.json",
+      "words": 457
+    },
+    {
+      "index": 544,
+      "heading": "Chapter LII.",
+      "file": "0544-chapter-lii-7.json",
+      "words": 361
+    },
+    {
+      "index": 545,
+      "heading": "Chapter LIII.",
+      "file": "0545-chapter-liii-7.json",
+      "words": 571
+    },
+    {
+      "index": 546,
+      "heading": "Chapter LIV.",
+      "file": "0546-chapter-liv-7.json",
+      "words": 586
+    },
+    {
+      "index": 547,
+      "heading": "Chapter LV.",
+      "file": "0547-chapter-lv-7.json",
+      "words": 354
+    },
+    {
+      "index": 548,
+      "heading": "Chapter LVI.",
+      "file": "0548-chapter-lvi-7.json",
+      "words": 394
+    },
+    {
+      "index": 549,
+      "heading": "Chapter LVII.",
+      "file": "0549-chapter-lvii-7.json",
+      "words": 377
+    },
+    {
+      "index": 550,
+      "heading": "Chapter LVIII.",
+      "file": "0550-chapter-lviii-7.json",
+      "words": 332
+    },
+    {
+      "index": 551,
+      "heading": "Chapter LIX.",
+      "file": "0551-chapter-lix-7.json",
+      "words": 259
+    },
+    {
+      "index": 552,
+      "heading": "Chapter LX.",
+      "file": "0552-chapter-lx-7.json",
+      "words": 355
+    },
+    {
+      "index": 553,
+      "heading": "Chapter LXI.",
+      "file": "0553-chapter-lxi-7.json",
+      "words": 295
+    },
+    {
+      "index": 554,
+      "heading": "Chapter LXII.",
+      "file": "0554-chapter-lxii-7.json",
+      "words": 396
+    },
+    {
+      "index": 555,
+      "heading": "Chapter LXIII.",
+      "file": "0555-chapter-lxiii-7.json",
+      "words": 377
+    },
+    {
+      "index": 556,
+      "heading": "Chapter LXIV.",
+      "file": "0556-chapter-lxiv-7.json",
+      "words": 295
+    },
+    {
+      "index": 557,
+      "heading": "Chapter LXV.",
+      "file": "0557-chapter-lxv-7.json",
+      "words": 436
+    },
+    {
+      "index": 558,
+      "heading": "Chapter LXVI.",
+      "file": "0558-chapter-lxvi-6.json",
+      "words": 339
+    },
+    {
+      "index": 559,
+      "heading": "Chapter LXVII.",
+      "file": "0559-chapter-lxvii-6.json",
+      "words": 361
+    },
+    {
+      "index": 560,
+      "heading": "Chapter LXVIII.",
+      "file": "0560-chapter-lxviii-6.json",
+      "words": 427
+    },
+    {
+      "index": 561,
+      "heading": "Chapter LXIX.",
+      "file": "0561-chapter-lxix-6.json",
+      "words": 452
+    },
+    {
+      "index": 562,
+      "heading": "Chapter LXX.",
+      "file": "0562-chapter-lxx-6.json",
+      "words": 307
+    },
+    {
+      "index": 563,
+      "heading": "Chapter LXXI.",
+      "file": "0563-chapter-lxxi-5.json",
+      "words": 226
+    },
+    {
+      "index": 564,
+      "heading": "Chapter LXXII.",
+      "file": "0564-chapter-lxxii-5.json",
+      "words": 721
+    },
+    {
+      "index": 565,
+      "heading": "Chapter LXXIII.",
+      "file": "0565-chapter-lxxiii-5.json",
+      "words": 424
+    },
+    {
+      "index": 566,
+      "heading": "Chapter LXXIV.",
+      "file": "0566-chapter-lxxiv-5.json",
+      "words": 156
+    },
+    {
+      "index": 567,
+      "heading": "Chapter LXXV.",
+      "file": "0567-chapter-lxxv-5.json",
+      "words": 316
+    },
+    {
+      "index": 568,
+      "heading": "Chapter LXXVI.",
+      "file": "0568-chapter-lxxvi-5.json",
+      "words": 225
+    },
+    {
+      "index": 569,
+      "heading": "INDEXES.",
+      "file": "0569-indexes.json",
+      "words": 0
+    },
+    {
+      "index": 570,
+      "heading": "I.—INDEX OF PASSAGES OF SCRIPTURE.",
+      "file": "0570-i-index-of-passages-of-scripture.json",
+      "words": 0
+    },
+    {
+      "index": 571,
+      "heading": "OLD TESTAMENT.",
+      "file": "0571-old-testament.json",
+      "words": 2032
+    },
+    {
+      "index": 572,
+      "heading": "APOCRYPHA.",
+      "file": "0572-apocrypha.json",
+      "words": 150
+    },
+    {
+      "index": 573,
+      "heading": "NEW TESTAMENT.",
+      "file": "0573-new-testament.json",
+      "words": 2736
+    },
+    {
+      "index": 574,
+      "heading": "II.—INDEX OF PRINCIPAL SUBJECTS.",
+      "file": "0574-ii-index-of-principal-subjects.json",
+      "words": 18504
+    }
+  ]
+}
