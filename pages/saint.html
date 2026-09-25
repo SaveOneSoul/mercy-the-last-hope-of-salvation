@@ -46,13 +46,22 @@
   const box=document.getElementById('saint-profile'),nameEl=document.getElementById('saint-name'),feastEl=document.getElementById('saint-feast');
   if(!id||!/^st-[a-z0-9-]+$/.test(id)){nameEl.textContent='Saint profile not found';feastEl.textContent='No valid saint was selected.';box.innerHTML='<h2>Invalid profile link</h2><p>Please return to the Saints directory and choose a saint.</p>';return}
   try{
-    const response=await fetch('saints.html?v=4',{cache:'no-store'});if(!response.ok)throw new Error('directory unavailable');
-    const [html,detailsResponse,profilesResponse,videosResponse]=await Promise.all([response.text(),fetch('../data/saint-details.json'),fetch('../data/saint-profiles.json'),fetch('../data/saint-videos.json')]);
-    const doc=new DOMParser().parseFromString(html,'text/html'),article=doc.getElementById(id);if(!article)throw new Error('saint not found');
-    const details=detailsResponse.ok?(await detailsResponse.json())[id]||{}:{},profile=profilesResponse.ok?(await profilesResponse.json())[id]||null:null,videos=videosResponse.ok?await videosResponse.json():{},video=videos[id]||null;
-    const saintName=article.querySelector('h3')?.textContent?.trim()||'Saint',feast=article.querySelector('.badge')?.textContent?.trim()||'Feast information unavailable';
-    const bio=[...article.querySelectorAll(':scope > p')].find(p=>!p.classList.contains('saint-source'))?.textContent?.trim()||'';
-    const source=article.querySelector('.saint-source a')?.href;
+    const [directoryResult,detailsResult,profilesResult,videosResult]=await Promise.allSettled([
+      fetch('saints.html?v=4',{cache:'no-store'}).then(async r=>r.ok?await r.text():''),
+      fetch('../data/saint-details.json',{cache:'no-store'}).then(async r=>r.ok?await r.json():{}),
+      fetch('../data/saint-profiles.json',{cache:'no-store'}).then(async r=>r.ok?await r.json():{}),
+      fetch('../data/saint-videos.json',{cache:'no-store'}).then(async r=>r.ok?await r.json():{})
+    ]);
+    const html=directoryResult.status==='fulfilled'?directoryResult.value:'';
+    const doc=new DOMParser().parseFromString(html||'','text/html'),article=doc.getElementById(id);
+    const detailsAll=detailsResult.status==='fulfilled'?detailsResult.value:{},profilesAll=profilesResult.status==='fulfilled'?profilesResult.value:{},videos=videosResult.status==='fulfilled'?videosResult.value:{};
+    const details=detailsAll[id]||{},profile=profilesAll[id]||null,video=videos[id]||null;
+    if(!article&&!profile)throw new Error('saint not found');
+    const fallbackName=id.replace(/^st-/,'').split('-').map(w=>w.charAt(0).toUpperCase()+w.slice(1)).join(' ');
+    const saintName=article?.querySelector('h3')?.textContent?.trim()||profile?.name||fallbackName;
+    const feast=article?.querySelector('.badge')?.textContent?.trim()||details.feast||details.rank||'Feast information unavailable';
+    const bio=article?[...article.querySelectorAll(':scope > p')].find(p=>!p.classList.contains('saint-source'))?.textContent?.trim()||'':(profile?.famousFor||'');
+    const source=article?.querySelector('.saint-source a')?.href;
     const themes=(article.dataset.saint||'').split(/\s+/).filter(Boolean).slice(1).map(x=>x.replace(/-/g,' '));
     nameEl.textContent=saintName;feastEl.textContent=feast;document.title=saintName+' · Mercy – The Last Hope of Salvation';box.innerHTML='';
     const story=document.createElement('div');story.className='saint-story';box.append(story);
@@ -77,6 +86,8 @@
       const meta=document.createElement('p');meta.className='saint-video-note';meta.textContent=(video.channel?'YouTube channel: '+video.channel+'. ':'')+'Availability is controlled by the video owner and YouTube.';videoSection.append(meta);
       const direct=document.createElement('a');direct.className='btn secondary';direct.target='_blank';direct.rel='noopener';direct.href='https://www.youtube.com/watch?v='+encodeURIComponent(video.youtubeVideoId);direct.textContent='Open this exact video on YouTube';videoSection.append(direct);
       if(video.licensedMovieUrl){const licensed=document.createElement('a');licensed.className='btn primary';licensed.target='_blank';licensed.rel='noopener';licensed.href=video.licensedMovieUrl;licensed.textContent=video.licensedMovieLabel||'Watch licensed full movie';videoSection.append(licensed);}
+      if(video.officialTrailerVideoId){const trailer=document.createElement('a');trailer.className='btn secondary';trailer.target='_blank';trailer.rel='noopener';trailer.href='https://www.youtube.com/watch?v='+encodeURIComponent(video.officialTrailerVideoId);trailer.textContent=video.officialTrailerLabel||'Watch official trailer';videoSection.append(trailer);}
+      if(video.officialMovieSite){const site=document.createElement('a');site.className='btn secondary';site.target='_blank';site.rel='noopener';site.href=video.officialMovieSite;site.textContent='Official movie site';videoSection.append(site);}
       story.append(videoSection);
     }
     add('h3','Read further');
