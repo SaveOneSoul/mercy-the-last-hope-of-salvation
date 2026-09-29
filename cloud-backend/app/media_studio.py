@@ -472,10 +472,12 @@ async def admin_live_publish(websocket: WebSocket, live_id: int):
         await websocket.close(code=4403)
         return
     origin = (websocket.headers.get("origin") or "").rstrip("/")
-    expected = f"{websocket.url.scheme.replace('ws', 'http')}://{websocket.url.netloc}".rstrip("/")
-    # Cloud Run terminates TLS, so accept the forwarded HTTPS origin for this same host.
-    expected_https = f"https://{websocket.url.netloc}".rstrip("/")
-    if origin and origin not in {expected, expected_https}:
+    if not origin:
+        await websocket.close(code=4403)
+        return
+    forwarded_host = (websocket.headers.get("x-forwarded-host") or websocket.headers.get("host") or "").split(",")[0].strip()
+    origin_host = urlparse(origin).netloc
+    if not forwarded_host or origin_host != forwarded_host:
         await websocket.close(code=4403)
         return
 
@@ -550,6 +552,13 @@ async def admin_live_publish(websocket: WebSocket, live_id: int):
         except Exception:
             pass
     finally:
+        was_live = False
+        db = SessionLocal()
+        try:
+            current = db.get(LiveBroadcast, live_id)
+            was_live = bool(current and current.status == "live")
+        finally:
+            db.close()
         if transition_task and not transition_task.done():
             transition_task.cancel()
         if process:
@@ -564,12 +573,13 @@ async def admin_live_publish(websocket: WebSocket, live_id: int):
             except asyncio.TimeoutError:
                 process.kill()
                 await process.wait()
-        try:
-            if _youtube_configured():
-                await asyncio.to_thread(_youtube_transition, broadcast_id, "complete")
-        except Exception:
-            pass
-        _set_live_status(live_id, "completed")
+        if was_live:
+            try:
+                if _youtube_configured():
+                    await asyncio.to_thread(_youtube_transition, broadcast_id, "complete")
+            except Exception:
+                pass
+            _set_live_status(live_id, "completed")
         try:
             await websocket.send_json({"type": "gateway", "state": "completed"})
             await websocket.close(code=1000)
