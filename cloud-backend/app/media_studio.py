@@ -1,3 +1,4 @@
+import asyncio
 import os
 import re
 import uuid
@@ -5,13 +6,13 @@ from datetime import datetime, timezone
 from urllib.parse import urlparse, parse_qs
 
 import httpx
-from fastapi import APIRouter, Depends, File, HTTPException, Query, Request, UploadFile
+from fastapi import APIRouter, Depends, File, HTTPException, Query, Request, UploadFile, WebSocket, WebSocketDisconnect
 from google.cloud import storage
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
-from .cms_admin import _require_write_guard, require_admin
-from .db import get_db
+from .cms_admin import ADMIN_COOKIE, _read_session, _require_write_guard, require_admin
+from .db import SessionLocal, get_db
 from .models import CourseVideo, HomileticVideo, LiveBroadcast, CMSMedia
 
 router = APIRouter()
@@ -162,7 +163,7 @@ def _live_out(row: LiveBroadcast, include_secret: bool = False):
     if include_secret:
         data["youtube_stream_id"] = row.youtube_stream_id
         data["ingestion_address"] = row.ingestion_address
-        data["stream_key"] = row.stream_key
+        data["stream_ready"] = bool(row.ingestion_address and row.stream_key)
     return data
 
 
@@ -388,6 +389,202 @@ async def admin_video_upload(request: Request, file: UploadFile = File(...), ses
     media = CMSMedia(object_name=object_name, url=url, filename=(file.filename or f"video.{ext}")[:255], content_type=content_type, size_bytes=len(data))
     db.add(media); db.commit(); db.refresh(media)
     return {"id": media.id, "url": media.url, "filename": media.filename, "content_type": media.content_type, "size_bytes": media.size_bytes}
+
+
+
+def _youtube_stream_status(stream_id: str) -> str:
+    token = _youtube_access_token()
+    with httpx.Client(timeout=20) as client:
+        response = client.get(
+            "https://www.googleapis.com/youtube/v3/liveStreams",
+            params={"part": "status", "id": stream_id},
+            headers={"Authorization": f"Bearer {token}"},
+        )
+    if response.status_code >= 400:
+        raise HTTPException(status_code=502, detail=_youtube_api_error("youtube_stream_status_failed", response))
+    items = response.json().get("items") or []
+    return (((items[0] if items else {}).get("status") or {}).get("streamStatus") or "unknown")
+
+
+def _youtube_transition(broadcast_id: str, status: str) -> None:
+    token = _youtube_access_token()
+    with httpx.Client(timeout=20) as client:
+        response = client.post(
+            "https://www.googleapis.com/youtube/v3/liveBroadcasts/transition",
+            params={"part": "status", "id": broadcast_id, "broadcastStatus": status},
+            headers={"Authorization": f"Bearer {token}"},
+        )
+    if response.status_code >= 400:
+        raise HTTPException(status_code=502, detail=_youtube_api_error(f"youtube_transition_{status}_failed", response))
+
+
+def _set_live_status(live_id: int, status: str) -> None:
+    db = SessionLocal()
+    try:
+        row = db.get(LiveBroadcast, live_id)
+        if row:
+            row.status = status
+            row.updated_at = _now()
+            db.commit()
+    finally:
+        db.close()
+
+
+async def _wait_for_youtube_active(stream_id: str, attempts: int = 45) -> bool:
+    for _ in range(attempts):
+        try:
+            state = await asyncio.to_thread(_youtube_stream_status, stream_id)
+            if state == "active":
+                return True
+        except Exception:
+            pass
+        await asyncio.sleep(2)
+    return False
+
+
+@router.get("/api/admin/live/{live_id}/health")
+def admin_live_health(live_id: int, session: dict = Depends(require_admin), db: Session = Depends(get_db)):
+    row = db.get(LiveBroadcast, live_id)
+    if not row:
+        raise HTTPException(status_code=404, detail="live_not_found")
+    stream_status = "not_configured"
+    if row.youtube_stream_id and _youtube_configured():
+        stream_status = _youtube_stream_status(row.youtube_stream_id)
+    return {
+        "id": row.id,
+        "mercy_status": row.status,
+        "youtube_stream_status": stream_status,
+        "youtube_ready": stream_status == "active",
+        "publisher_ready": bool(row.ingestion_address and row.stream_key),
+    }
+
+
+@router.websocket("/api/admin/live/{live_id}/publish")
+async def admin_live_publish(websocket: WebSocket, live_id: int):
+    # WebSocket publishing is same-origin and authenticated by the signed Admin cookie.
+    try:
+        session = _read_session(websocket)
+    except HTTPException:
+        await websocket.close(code=4401)
+        return
+    csrf = websocket.query_params.get("csrf", "")
+    if not csrf or csrf != str(session.get("csrf", "")):
+        await websocket.close(code=4403)
+        return
+    origin = (websocket.headers.get("origin") or "").rstrip("/")
+    if not origin:
+        await websocket.close(code=4403)
+        return
+    forwarded_host = (websocket.headers.get("x-forwarded-host") or websocket.headers.get("host") or "").split(",")[0].strip()
+    origin_host = urlparse(origin).netloc
+    if not forwarded_host or origin_host != forwarded_host:
+        await websocket.close(code=4403)
+        return
+
+    db = SessionLocal()
+    try:
+        row = db.get(LiveBroadcast, live_id)
+        if not row or not row.youtube_broadcast_id or not row.youtube_stream_id:
+            await websocket.close(code=4404)
+            return
+        if not row.ingestion_address or not row.stream_key:
+            await websocket.close(code=4409)
+            return
+        broadcast_id = row.youtube_broadcast_id
+        stream_id = row.youtube_stream_id
+        target = f"{row.ingestion_address.rstrip('/')}/{row.stream_key}"
+    finally:
+        db.close()
+
+    await websocket.accept()
+    process = None
+    transition_task = None
+    try:
+        process = await asyncio.create_subprocess_exec(
+            "ffmpeg", "-hide_banner", "-loglevel", "warning",
+            "-fflags", "+genpts+nobuffer", "-i", "pipe:0",
+            "-c:v", "libx264", "-preset", "veryfast", "-tune", "zerolatency",
+            "-pix_fmt", "yuv420p", "-g", "60", "-keyint_min", "60",
+            "-b:v", "2500k", "-maxrate", "2500k", "-bufsize", "5000k",
+            "-c:a", "aac", "-b:a", "128k", "-ar", "44100",
+            "-f", "flv", target,
+            stdin=asyncio.subprocess.PIPE,
+            stdout=asyncio.subprocess.DEVNULL,
+            stderr=asyncio.subprocess.PIPE,
+        )
+        await websocket.send_json({"type": "gateway", "state": "connecting"})
+
+        async def activate_when_ready():
+            active = await _wait_for_youtube_active(stream_id)
+            if not active:
+                await websocket.send_json({"type": "gateway", "state": "timeout"})
+                return
+            await websocket.send_json({"type": "gateway", "state": "youtube-active"})
+            try:
+                await asyncio.to_thread(_youtube_transition, broadcast_id, "live")
+            except HTTPException as exc:
+                # enableAutoStart may already have transitioned it; report but keep publishing.
+                await websocket.send_json({"type": "transition-warning", "detail": str(exc.detail)})
+            _set_live_status(live_id, "live")
+            await websocket.send_json({"type": "gateway", "state": "live"})
+
+        transition_task = asyncio.create_task(activate_when_ready())
+
+        while True:
+            message = await websocket.receive()
+            if message.get("type") == "websocket.disconnect":
+                break
+            chunk = message.get("bytes")
+            if chunk:
+                if process.stdin is None or process.returncode is not None:
+                    raise RuntimeError("ffmpeg_not_running")
+                process.stdin.write(chunk)
+                await process.stdin.drain()
+                continue
+            command = message.get("text")
+            if command == "stop":
+                break
+    except WebSocketDisconnect:
+        pass
+    except Exception as exc:
+        try:
+            await websocket.send_json({"type": "gateway", "state": "error", "detail": str(exc)[:180]})
+        except Exception:
+            pass
+    finally:
+        was_live = False
+        db = SessionLocal()
+        try:
+            current = db.get(LiveBroadcast, live_id)
+            was_live = bool(current and current.status == "live")
+        finally:
+            db.close()
+        if transition_task and not transition_task.done():
+            transition_task.cancel()
+        if process:
+            if process.stdin:
+                try:
+                    process.stdin.close()
+                    await process.stdin.wait_closed()
+                except Exception:
+                    pass
+            try:
+                await asyncio.wait_for(process.wait(), timeout=8)
+            except asyncio.TimeoutError:
+                process.kill()
+                await process.wait()
+        if was_live:
+            try:
+                if _youtube_configured():
+                    await asyncio.to_thread(_youtube_transition, broadcast_id, "complete")
+            except Exception:
+                pass
+            _set_live_status(live_id, "completed")
+        try:
+            await websocket.send_json({"type": "gateway", "state": "completed"})
+            await websocket.close(code=1000)
+        except Exception:
+            pass
 
 
 @router.get("/api/admin/live")

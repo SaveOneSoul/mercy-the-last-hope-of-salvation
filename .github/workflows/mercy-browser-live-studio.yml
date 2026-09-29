@@ -1,0 +1,30 @@
+name: Mercy Browser Live Studio
+
+on:
+  pull_request:
+    paths:
+      - 'cloud-backend/**'
+      - 'tests/test_mercy_browser_live_studio.py'
+      - '.github/workflows/mercy-browser-live-studio.yml'
+  push:
+    branches: [ main ]
+    paths:
+      - 'cloud-backend/**'
+      - 'tests/test_mercy_browser_live_studio.py'
+
+jobs:
+  live-studio-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install test runner
+        run: python -m pip install pytest
+      - name: Run Live Studio security and contract tests
+        run: pytest -q tests/test_mercy_browser_live_studio.py
+      - name: Compile backend Python
+        run: python -m py_compile cloud-backend/app/media_studio.py
+      - name: Build Cloud Run image
+        run: docker build -t mercy-live-studio-ci cloud-backend
