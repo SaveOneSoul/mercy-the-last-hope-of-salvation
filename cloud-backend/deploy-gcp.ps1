@@ -361,7 +361,7 @@ try {
         --cpu 1 `
         --concurrency 40 `
         --max-instances 3 `
-        --timeout 120 `
+        --timeout 3600 `
         --quiet
 }
 finally {
