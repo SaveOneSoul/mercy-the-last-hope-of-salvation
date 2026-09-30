@@ -61,3 +61,31 @@ private system internals.
   support where browser voices are unavailable.
 - Red-team tests for prompt injection, doctrinal bypass, counselling dependence,
   secret extraction and code-generation requests.
+
+
+## Phase 2 — WebGL humanoid and voice animation
+
+Implemented on the same feature branch:
+
+- dependency-free WebGL humanoid bust renderer with lighting and depth;
+- explicit idle, listening, thinking and speaking animation states;
+- natural idle head motion and blinking;
+- speech-boundary-driven mouth/viseme activity;
+- `prefers-reduced-motion` support;
+- automatic CSS avatar fallback when WebGL is unavailable;
+- stable `window.MercyAvatar3D` adapter so a reviewed GLB/VRM model can replace
+  the procedural bust without coupling the model to chat or safety code.
+
+### Lip-sync limitation
+
+Browser `SpeechSynthesisUtterance` does not provide portable phoneme/viseme timing
+across all engines. Phase 2 therefore uses word/speech boundary events to animate
+the mouth. True phoneme-level lip synchronization should be added only when the
+server TTS provider returns timing metadata (phonemes/visemes or word timestamps).
+
+### Photorealistic model gate
+
+Do not add an arbitrary third-party human model by URL. A later GLB/VRM asset must
+have documented redistribution/commercial rights, an acceptable polygon/texture
+budget, facial blend shapes, mobile performance validation, and a neutral digital
+identity that does not impersonate clergy, saints, Jesus, Mary or a real person.
