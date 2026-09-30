@@ -89,3 +89,20 @@ Do not add an arbitrary third-party human model by URL. A later GLB/VRM asset mu
 have documented redistribution/commercial rights, an acceptable polygon/texture
 budget, facial blend shapes, mobile performance validation, and a neutral digital
 identity that does not impersonate clergy, saints, Jesus, Mary or a real person.
+
+
+## Phase 3 — authority-aware multi-agent orchestration
+
+The avatar now supports a bounded specialist evidence layer for philosophy, logic,
+science and psychology. Configure `AVATAR_MULTI_AGENT_PROVIDERS=gemini,ollama`
+to run both configured providers. Each specialist returns a compact evidence
+object with claims, confidence, caveats and verified HTTPS source URLs.
+
+The final synthesis is authority-weighted, not majority voting. Pure doctrinal
+questions continue to route directly to Magisterium AI. Logic evaluates inference;
+science contributes empirical claims; philosophy clarifies arguments; psychology
+is educational/supportive only. Missing or failed specialists degrade to the
+existing single-provider path rather than being treated as agreement.
+
+CyberSecGPT and kurbah_ai_sovereign_brain remain outside this public orchestrator.
+They require a separate capability contract before activation.
