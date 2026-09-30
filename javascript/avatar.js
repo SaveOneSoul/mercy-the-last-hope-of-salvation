@@ -28,9 +28,10 @@
     window.speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text);
     u.lang=document.documentElement.lang==='kha'?'en-IN':'en-IN';
-    u.rate=.96;u.pitch=1;
+    var voices=window.speechSynthesis.getVoices?window.speechSynthesis.getVoices():[];\n    var preferred=voices.find(function(v){return /female|woman|zira|samantha|veena|google uk english female/i.test((v.name||"")+" "+(v.voiceURI||""));})||voices.find(function(v){return /^en[-_](IN|GB|US)/i.test(v.lang||"");});\n    if(preferred)u.voice=preferred;\n    u.rate=.9;u.pitch=1.08;u.volume=.92;
     u.onstart=function(){speaking=true;setState('speaking','Speaking…');if(window.MercyAvatar3D)window.MercyAvatar3D.setViseme(.55);};
-    u.onboundary=function(){if(window.MercyAvatar3D)window.MercyAvatar3D.pulseSpeech();};\n    u.onend=function(){speaking=false;if(window.MercyAvatar3D)window.MercyAvatar3D.setViseme(0);setState('idle','Ready.');};
+    u.onboundary=function(){if(window.MercyAvatar3D)window.MercyAvatar3D.pulseSpeech();};
+    u.onend=function(){speaking=false;if(window.MercyAvatar3D)window.MercyAvatar3D.setViseme(0);setState('idle','Ready.');};
     u.onerror=function(){speaking=false;if(window.MercyAvatar3D)window.MercyAvatar3D.setViseme(0);setState('idle','Speech output stopped.');};
     window.speechSynthesis.speak(u);
   }
