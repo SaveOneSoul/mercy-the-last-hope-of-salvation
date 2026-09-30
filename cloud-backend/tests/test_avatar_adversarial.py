@@ -102,6 +102,20 @@ class AgentContractTests(unittest.IsolatedAsyncioTestCase):
         ]}
         self.assertEqual(agents.detect_disagreements(evidence),[])
 
+    def test_trusted_grounding_rejects_model_and_unapproved_sources(self):
+        evidence={"agents":[{"domain":"science","sources":[
+            {"title":"Fake","url":"https://fake.invalid/x","origin":"provider_citation","verified":True},
+            {"title":"Model hint","url":"https://www.who.int/x","origin":"model_suggested","verified":True},
+            {"title":"WHO","url":"https://www.who.int/x","origin":"provider_citation","verified":True,"authority":"WHO"},
+        ]}]}
+        grounded=agents.ground_evidence(evidence)
+        self.assertEqual(len(grounded["agents"][0]["sources"]),1)
+        self.assertEqual(grounded["agents"][0]["sources"][0]["authority"],"WHO")
+
+    def test_trusted_grounding_requires_https_and_verified_flag(self):
+        self.assertIsNone(agents.trusted_source({"url":"http://www.who.int/x","origin":"retrieved_source","verified":True},"science"))
+        self.assertIsNone(agents.trusted_source({"url":"https://www.who.int/x","origin":"retrieved_source","verified":False},"science"))
+
     def test_synthesis_contract_forbids_majority_vote(self):
         prompt=agents.synthesis_prompt("question","en",{"agents":[{"summary":"A"},{"summary":"B"}]})
         self.assertIn("Never decide disagreement by majority vote",prompt)
