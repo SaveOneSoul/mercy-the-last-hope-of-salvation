@@ -12,7 +12,7 @@
   var face=document.querySelector('[data-avatar-face]');
   if(!form||!input||!log||!status)return;
 
-  var history=[],lastReply='',recognition=null,listening=false,speaking=false;
+  var history=[],lastReply='',recognition=null,listening=false,speaking=false,currentAudio=null;
   function add(role,text){
     var wrap=document.createElement('div');wrap.className='avatar-msg '+role;
     var who=document.createElement('strong');who.textContent=role==='user'?'You':'Mercy Avatar';
@@ -23,20 +23,37 @@
     if(face)face.dataset.state=name;
     status.textContent=text||name;
   }
-  function speakText(text){
+  function browserSpeak(text){
     if(!('speechSynthesis' in window)){setState('idle','Speech output is not supported by this browser.');return;}
     window.speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(text);
-    u.lang=document.documentElement.lang==='kha'?'en-IN':'en-IN';
-    var voices=window.speechSynthesis.getVoices?window.speechSynthesis.getVoices():[];\n    var preferred=voices.find(function(v){return /female|woman|zira|samantha|veena|google uk english female/i.test((v.name||"")+" "+(v.voiceURI||""));})||voices.find(function(v){return /^en[-_](IN|GB|US)/i.test(v.lang||"");});\n    if(preferred)u.voice=preferred;\n    u.rate=.9;u.pitch=1.08;u.volume=.92;
+    u.lang='en-IN';
+    var voices=window.speechSynthesis.getVoices?window.speechSynthesis.getVoices():[];
+    var preferred=voices.find(function(v){return /female|woman|zira|samantha|veena|google uk english female/i.test((v.name||"")+" "+(v.voiceURI||""));})||voices.find(function(v){return /^en[-_](IN|GB|US)/i.test(v.lang||"");});
+    if(preferred)u.voice=preferred;
+    u.rate=.9;u.pitch=1.08;u.volume=.92;
     u.onstart=function(){speaking=true;setState('speaking','Speaking…');if(window.MercyAvatar3D)window.MercyAvatar3D.setViseme(.55);};
     u.onboundary=function(){if(window.MercyAvatar3D)window.MercyAvatar3D.pulseSpeech();};
     u.onend=function(){speaking=false;if(window.MercyAvatar3D)window.MercyAvatar3D.setViseme(0);setState('idle','Ready.');};
     u.onerror=function(){speaking=false;if(window.MercyAvatar3D)window.MercyAvatar3D.setViseme(0);setState('idle','Speech output stopped.');};
     window.speechSynthesis.speak(u);
   }
+  async function speakText(text){
+    if(currentAudio){try{currentAudio.pause();}catch(e){}currentAudio=null;}
+    try{
+      var r=await fetch(base+'/api/avatar/speak',{method:'POST',cache:'no-store',credentials:'omit',referrerPolicy:'no-referrer',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:text,language:document.documentElement.lang==='kha'?'kha':'en',history:[],faith_encouragement:true})});
+      if(!r.ok)throw new Error('tts unavailable');
+      var data=await r.json();if(!data.audio_base64)throw new Error('empty tts');
+      var audio=new Audio('data:'+(data.mime_type||'audio/mpeg')+';base64,'+data.audio_base64);currentAudio=audio;
+      var timers=[];(data.timings||[]).forEach(function(t,i){if(i%3!==0)return;timers.push(setTimeout(function(){if(window.MercyAvatar3D)window.MercyAvatar3D.pulseSpeech();},Math.max(0,Number(t.start)||0)*1000));});
+      audio.onplay=function(){speaking=true;setState('speaking','Speaking…');};
+      audio.onended=function(){timers.forEach(clearTimeout);speaking=false;currentAudio=null;if(window.MercyAvatar3D)window.MercyAvatar3D.setViseme(0);setState('idle','Ready.');};
+      audio.onerror=function(){timers.forEach(clearTimeout);currentAudio=null;browserSpeak(text);};
+      await audio.play();
+    }catch(err){browserSpeak(text);}
+  }
   if(speak)speak.addEventListener('click',function(){
-    if(speaking){window.speechSynthesis.cancel();speaking=false;setState('idle','Speech stopped.');}
+    if(speaking){if(currentAudio){try{currentAudio.pause();}catch(e){}currentAudio=null;}window.speechSynthesis&&window.speechSynthesis.cancel();speaking=false;if(window.MercyAvatar3D)window.MercyAvatar3D.setViseme(0);setState('idle','Speech stopped.');}
     else if(lastReply)speakText(lastReply);
   });
 
@@ -56,7 +73,7 @@
   }else if(mic){mic.disabled=true;mic.title='Speech recognition is not supported by this browser';}
 
   if(clear)clear.addEventListener('click',function(){
-    history=[];lastReply='';log.replaceChildren();window.speechSynthesis&&window.speechSynthesis.cancel();
+    history=[];lastReply='';log.replaceChildren();if(currentAudio){try{currentAudio.pause();}catch(e){}currentAudio=null;}window.speechSynthesis&&window.speechSynthesis.cancel();
     add('assistant','Conversation cleared. I do not keep a transcript on this page.');setState('idle','Ready.');
   });
 
