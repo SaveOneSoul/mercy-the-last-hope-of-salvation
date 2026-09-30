@@ -1,0 +1,534 @@
+{
+  "id": "counselling-foundations",
+  "title": "Counselling Foundations",
+  "version": 1,
+  "reviewed": "2026-09-29",
+  "description": "Introductory self-study with source readings, case exercises and knowledge checks.",
+  "creditNote": "20 internal formation credits. Non-accredited education; not a qualification, licence or evidence of competence to practise counselling, psychology or psychotherapy.",
+  "units": [
+    {
+      "title": "Helping roles and professional boundaries",
+      "label": "Educational study",
+      "objectives": [
+        "Distinguish supportive listening, psychotherapy and spiritual direction.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "A caring conversation can offer attention, encouragement and practical help. Psychotherapy involves an agreed therapeutic relationship with an appropriately trained practitioner. Spiritual direction focuses on faith and the spiritual life. A person may benefit from more than one kind of support, but the roles should be named honestly.",
+        "Before helping, explain what you can offer, how long you are available and when another person or service may be needed. Do not claim clinical expertise after an introductory course. Avoid making promises about recovery, confidentiality or availability that you cannot keep. In a fictional practice conversation, start by asking what the person hopes for: listening, practical information or help finding a professional. Their answer should shape the next step, while an immediate safety concern requires urgent human assistance."
+      ],
+      "sources": [
+        {
+          "title": "NIMH: Psychotherapies",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        }
+      ],
+      "assignment": "Write a 100-word introduction for a volunteer listener that states role, limits and referral options without claiming to be a therapist.",
+      "quiz": [
+        {
+          "question": "Which role can an introductory learner responsibly claim?",
+          "options": [
+            "An emergency clinician available through a chatbot.",
+            "A learner practising supportive listening within clear limits.",
+            "A licensed therapist because this course awards credits."
+          ],
+          "correct": 1,
+          "explanation": "Course completion does not confer clinical qualifications."
+        },
+        {
+          "question": "What should happen at the start of support?",
+          "options": [
+            "Clarify the person’s needs and the helper’s role.",
+            "Promise guaranteed recovery.",
+            "Assume the helper knows the person’s goals."
+          ],
+          "correct": 0,
+          "explanation": "A clear role and shared expectations protect autonomy."
+        }
+      ]
+    },
+    {
+      "title": "Empathy and attentive listening",
+      "label": "Educational study",
+      "objectives": [
+        "Reflect meaning while checking your understanding.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Empathy is an effort to understand another person’s experience without assuming it is identical to your own. Give time, reduce avoidable distractions and listen for what the person wants you to understand. A reflection might be: “You have been carrying a lot, and the uncertainty feels exhausting. Have I understood?” The checking question matters.",
+        "Listening does not require agreement with every interpretation, and it does not require a story about your own life. Avoid rushing towards advice or spiritual explanations. Notice when you are preparing a reply instead of listening. In a practice pair, the speaker should use a fictional, low-stakes situation and may stop at any time. The listener then summarises the concern without adding a diagnosis, a moral judgment or an unasked-for solution."
+      ],
+      "sources": [
+        {
+          "title": "WHO: Psychological First Aid",
+          "url": "https://www.who.int/publications/i/item/9789241548205"
+        }
+      ],
+      "assignment": "Write an empathic reflection and a checking question for a fictional student disappointed by an exam result.",
+      "quiz": [
+        {
+          "question": "Which response checks understanding?",
+          "options": [
+            "“It sounds disappointing. Have I understood what matters most?”",
+            "“I know exactly how you feel.”",
+            "“Your problem is definitely a disorder.”"
+          ],
+          "correct": 0,
+          "explanation": "Checking leaves the person free to correct your interpretation."
+        },
+        {
+          "question": "What can empathy coexist with?",
+          "options": [
+            "A guarantee that every belief is factually true.",
+            "An obligation to solve every difficulty.",
+            "Uncertainty and respectful disagreement."
+          ],
+          "correct": 2,
+          "explanation": "You can acknowledge feelings without endorsing every conclusion."
+        }
+      ]
+    },
+    {
+      "title": "Questions, silence and summaries",
+      "label": "Educational study",
+      "objectives": [
+        "Use questions to support understanding rather than interrogation.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "An open question invites a person to describe what matters: “What has this week been like?” A focused question can clarify a practical fact. Neither is always better; their value depends on purpose and timing. Ask one question at a time and avoid steering the answer towards your preferred explanation.",
+        "Silence can give room for thought, but it should not become a test of endurance. Offer choice if someone seems uncomfortable: “Would you like a pause or a different question?” A summary gathers what you have heard and invites correction. It should not include facts the person has not provided. In your practice notes, identify which words came from the speaker and which were your interpretation. This helps prevent confident assumptions from replacing listening."
+      ],
+      "sources": [
+        {
+          "title": "BACP: Ethical Framework",
+          "url": "https://www.bacp.co.uk/events-and-resources/ethics-and-standards/ethical-framework-for-the-counselling-professions/"
+        }
+      ],
+      "assignment": "Turn “Why do you always make bad decisions?” into an open, non-judgmental question, then write a two-sentence summary for a fictional reply.",
+      "quiz": [
+        {
+          "question": "Which question is least leading?",
+          "options": [
+            "“You agree your family is the problem, don’t you?”",
+            "“Why are you always unreasonable?”",
+            "“What would you like me to understand about the situation?”"
+          ],
+          "correct": 2,
+          "explanation": "An open invitation does not supply the expected answer."
+        },
+        {
+          "question": "What belongs at the end of a summary?",
+          "options": [
+            "A demand to accept the helper’s version.",
+            "An invitation to correct or add to it.",
+            "A diagnosis inferred from a pause."
+          ],
+          "correct": 1,
+          "explanation": "The speaker should remain the authority on what they meant."
+        }
+      ]
+    },
+    {
+      "title": "Consent, privacy and confidentiality",
+      "label": "Educational study",
+      "objectives": [
+        "Explain privacy limits before inviting disclosure.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Consent is an ongoing agreement, not merely a box checked at the beginning. Explain the purpose of a conversation and let the person choose whether to continue. Use fictional cases for this course; do not upload identifiable client or parishioner information to an AI tool.",
+        "Confidentiality has limits that depend on the service, role and local requirements. Never promise absolute secrecy, particularly where a person may be at risk of serious harm or a safeguarding duty may apply. A volunteer should follow the organisation’s safeguarding procedures and seek appropriate supervision rather than improvise legal advice. Record only what a legitimate role requires, store it securely and explain who can access it. An AI conversation may be processed by a service provider even when it is not saved in your browser."
+      ],
+      "sources": [
+        {
+          "title": "BACP: Ethical Framework",
+          "url": "https://www.bacp.co.uk/events-and-resources/ethics-and-standards/ethical-framework-for-the-counselling-professions/"
+        }
+      ],
+      "assignment": "Write a plain-language explanation of consent and privacy for a fictional support group. State that real cases must not be entered into course exercises.",
+      "quiz": [
+        {
+          "question": "Which privacy promise is appropriate?",
+          "options": [
+            "Assume an online chat can never be retained.",
+            "Explain actual handling and limits before disclosure.",
+            "Promise absolute secrecy in every circumstance."
+          ],
+          "correct": 1,
+          "explanation": "Privacy claims must reflect how the service really operates."
+        },
+        {
+          "question": "What should course practice cases contain?",
+          "options": [
+            "Fictional or fully non-identifying material.",
+            "A parishioner’s name and medical history.",
+            "A client’s confidential transcript without consent."
+          ],
+          "correct": 0,
+          "explanation": "Practice does not justify disclosure of other people’s information."
+        }
+      ]
+    },
+    {
+      "title": "Collaborative goals and strengths",
+      "label": "Educational study",
+      "objectives": [
+        "Agree one manageable step chosen by the person.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "A helpful goal describes something meaningful and feasible for the person, not a demand imposed by the helper. “Contact the college support office this week” is more actionable than “Never feel anxious again.” Ask what has helped before, what resources are available and what might make the next step difficult.",
+        "Strengths include relationships, skills, values and access to practical support; they are not reasons to dismiss suffering. A plan can be revised or declined. At a follow-up, ask what happened without turning a missed step into a character judgment. Keep the goal within your role: a volunteer can help someone prepare questions for a professional, but should not design a treatment plan. In course practice, record the person’s choice, a possible obstacle and an alternative small step."
+      ],
+      "sources": [
+        {
+          "title": "NIMH: Psychotherapies",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        }
+      ],
+      "assignment": "Help a fictional learner who feels overwhelmed choose one small action, identify an obstacle and suggest a less demanding alternative.",
+      "quiz": [
+        {
+          "question": "Which goal is most workable?",
+          "options": [
+            "Prepare two questions for a support appointment this week.",
+            "Never experience sadness again.",
+            "Follow the helper’s plan regardless of consent."
+          ],
+          "correct": 0,
+          "explanation": "A concrete, chosen action can be reviewed and adjusted."
+        },
+        {
+          "question": "How should a missed step be discussed?",
+          "options": [
+            "Shame the person into compliance.",
+            "Declare that support has permanently failed.",
+            "Explore barriers and revise the plan collaboratively."
+          ],
+          "correct": 2,
+          "explanation": "A review should provide information and preserve agency."
+        }
+      ]
+    },
+    {
+      "title": "Stress support and practical coping",
+      "label": "Educational study",
+      "objectives": [
+        "Offer low-risk practices as choices.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Stress support can begin with practical needs: a quiet place, a drink of water, clear information or contact with someone trusted. Ask before offering an exercise. Grounding can involve noticing the room or the contact of feet with the floor, without requiring closed eyes or controlled breathing.",
+        "A coping tool is an option, not a test of obedience. Some people find a particular exercise unhelpful; stop or adapt it. Do not encourage someone to face a traumatic memory as a practice exercise or suggest they stop medication. When distress persists, worsens or affects daily functioning, help them find qualified care. If there is immediate danger or a medical emergency, seek urgent services. Your role is to support a safe next step, not to establish a diagnosis from the person’s reaction to an exercise."
+      ],
+      "sources": [
+        {
+          "title": "WHO: Doing What Matters in Times of Stress",
+          "url": "https://www.who.int/publications/i/item/9789240003927"
+        }
+      ],
+      "assignment": "Write an invitation to a brief grounding practice that includes permission to decline or stop and a route to further help.",
+      "quiz": [
+        {
+          "question": "Before offering grounding, what is helpful?",
+          "options": [
+            "Insist everyone close their eyes.",
+            "Promise the exercise will cure the problem.",
+            "Ask whether the person would like to try it."
+          ],
+          "correct": 2,
+          "explanation": "Choice and adaptation matter in supportive practice."
+        },
+        {
+          "question": "What is outside a volunteer’s role?",
+          "options": [
+            "Helping locate qualified care.",
+            "Advising someone to stop prescribed medication.",
+            "Offering water with consent."
+          ],
+          "correct": 1,
+          "explanation": "Medication decisions belong with an appropriate clinician."
+        }
+      ]
+    },
+    {
+      "title": "Grief and loss",
+      "label": "Educational study",
+      "objectives": [
+        "Support the person’s own experience without imposing a timeline.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Loss can affect emotions, sleep, concentration, relationships and daily routines. People grieve differently; a stage model should not become a schedule they are required to follow. Ask what support is wanted now instead of telling someone how they ought to feel.",
+        "Useful help may be ordinary and specific: bringing a meal, helping with an errand or sitting together if invited. Avoid explanations that minimise pain, including “At least…” or a demand to be grateful. Spiritual language can comfort some people and hurt others when imposed. Follow their preference. If grief brings serious difficulty functioning, persistent overwhelming distress or concerns about safety, encourage qualified support. A listener does not need to solve grief to be present with respect and reliability."
+      ],
+      "sources": [
+        {
+          "title": "NIMH: Caring for Your Mental Health",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "assignment": "A bereaved friend says others are telling them to “move on.” Write a response that offers presence and a practical choice without prescribing a grief timeline.",
+      "quiz": [
+        {
+          "question": "Which assumption should be avoided?",
+          "options": [
+            "That the person may prefer silence.",
+            "That everyone must pass through the same stages on schedule.",
+            "That people may want practical help."
+          ],
+          "correct": 1,
+          "explanation": "Grief varies; a model is not a required timetable."
+        },
+        {
+          "question": "What is a respectful offer?",
+          "options": [
+            "“Would a meal or some company be helpful?”",
+            "“You should feel grateful instead.”",
+            "“I can make the grief disappear today.”"
+          ],
+          "correct": 0,
+          "explanation": "A specific offer with choice respects the person’s experience."
+        }
+      ]
+    },
+    {
+      "title": "Safety, safeguarding and urgent help",
+      "label": "Educational study",
+      "objectives": [
+        "Prioritise immediate safety and qualified assistance.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "A disclosure of danger needs a calm and direct response. Listen without blame and take statements about suicide, violence, abuse or urgent medical needs seriously. An introductory course cannot train you to make a complete risk assessment. Do not rely on a chatbot or a checklist to decide that someone is safe.",
+        "When there is immediate danger, contact local emergency services and seek nearby trusted help when safe to do so. In India, call 112; Tele-MANAS at 14416 provides mental-health support but is not a replacement for emergency response. Avoid promises of secrecy, confronting an alleged abuser or asking for graphic details. Follow your organisation’s safeguarding procedure and involve the appropriate trained people. Record factual information only as required by your role and process."
+      ],
+      "sources": [
+        {
+          "title": "India: Emergency Response Support System",
+          "url": "https://www.mha.gov.in/en/commoncontent/emergency-response-support-system-erss"
+        },
+        {
+          "title": "India: National Mental Health Programme",
+          "url": "https://dghs.mohfw.gov.in/national-mental-health-programme.php"
+        }
+      ],
+      "assignment": "In a fictional practice case someone says they cannot stay safe tonight. Describe the immediate human-help route and what you would not promise.",
+      "quiz": [
+        {
+          "question": "What takes priority if someone cannot stay safe?",
+          "options": [
+            "Immediate local emergency and trusted human support.",
+            "Finishing an online assessment.",
+            "A promise to keep everything secret."
+          ],
+          "correct": 0,
+          "explanation": "Urgent safety needs require real human assistance."
+        },
+        {
+          "question": "What should a helper avoid after an abuse disclosure?",
+          "options": [
+            "Listening without blame.",
+            "Following a safeguarding procedure.",
+            "Pressuring for graphic detail or confronting the alleged abuser."
+          ],
+          "correct": 2,
+          "explanation": "Untrained investigation or confrontation can increase risk."
+        }
+      ]
+    },
+    {
+      "title": "Referral, collaboration and supervision",
+      "label": "Educational study",
+      "objectives": [
+        "Make a referral supportive and practical.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "A referral should not sound like rejection. Explain why a service may be useful and, with consent, help the person identify a practical next step. Ask about barriers such as cost, language, transport, disability access and privacy. Do not assume that a phone number alone solves access.",
+        "Supervision allows helpers to review boundaries, uncertainty and their own reactions with an appropriate supervisor. It is not permission to share identifying details casually. Use the minimum information needed within the agreed process. Be clear about what happens after a referral and avoid claiming that an appointment has been booked when it has not. If the person declines, respect their autonomy while responding appropriately to immediate danger or safeguarding obligations through the relevant service procedures."
+      ],
+      "sources": [
+        {
+          "title": "BACP: Ethical Framework",
+          "url": "https://www.bacp.co.uk/events-and-resources/ethics-and-standards/ethical-framework-for-the-counselling-professions/"
+        },
+        {
+          "title": "NIMH: Psychotherapies",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        }
+      ],
+      "assignment": "Write a warm referral for a fictional person needing specialist care, including one access question and an honest description of what has and has not been arranged.",
+      "quiz": [
+        {
+          "question": "What improves a referral?",
+          "options": [
+            "Assuming every service is affordable and available.",
+            "Saying an appointment is booked without checking.",
+            "Discussing access barriers and a realistic next step."
+          ],
+          "correct": 2,
+          "explanation": "Practical access and accurate information matter."
+        },
+        {
+          "question": "What is supervision for?",
+          "options": [
+            "Replacing professional training entirely.",
+            "Reviewing practice, limits and uncertainties appropriately.",
+            "Sharing private stories for entertainment."
+          ],
+          "correct": 1,
+          "explanation": "Supervision supports accountable practice within a role."
+        }
+      ]
+    },
+    {
+      "title": "A bounded helping conversation",
+      "label": "Educational study",
+      "objectives": [
+        "Integrate listening, consent, goals and referral in a fictional case.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "A simple conversation can move through welcome, understanding, agreement on a next step and a clear ending. These are guideposts rather than a rigid script. The speaker may need time, a pause or a different kind of help. At each point, check whether your understanding still fits.",
+        "For this final practice, use a fictional adult facing a manageable everyday difficulty. State your role, reflect the concern, ask one useful question and agree one small action. Explain when professional or emergency help would be needed. End by summarising the person’s chosen step and the limits of your availability. Review your performance for assumptions, pressure and unsupported promises. Completing this course records introductory learning only; it does not authorise you to practise counselling, diagnose or provide treatment."
+      ],
+      "sources": [
+        {
+          "title": "BACP: Ethical Framework",
+          "url": "https://www.bacp.co.uk/events-and-resources/ethics-and-standards/ethical-framework-for-the-counselling-professions/"
+        }
+      ],
+      "assignment": "Write a fictional dialogue of 12–16 lines showing role clarity, consent, reflection, a chosen step, referral limits and a respectful ending.",
+      "quiz": [
+        {
+          "question": "What makes a closing summary useful?",
+          "options": [
+            "It invents a diagnosis to sound confident.",
+            "It checks the agreed step and clarifies availability.",
+            "It promises unlimited contact."
+          ],
+          "correct": 1,
+          "explanation": "A clear ending supports expectations and autonomy."
+        },
+        {
+          "question": "What does this certificate represent?",
+          "options": [
+            "Completion of internal educational exercises.",
+            "Professional counselling registration.",
+            "Independent clinical competence."
+          ],
+          "correct": 0,
+          "explanation": "An internal certificate is not a licence or qualification to practise."
+        }
+      ]
+    }
+  ],
+  "assessments": {
+    "mid": [
+      {
+        "question": "Which role can an introductory learner responsibly claim?",
+        "options": [
+          "An emergency clinician available through a chatbot.",
+          "A learner practising supportive listening within clear limits.",
+          "A licensed therapist because this course awards credits."
+        ],
+        "correct": 1,
+        "explanation": "Course completion does not confer clinical qualifications."
+      },
+      {
+        "question": "Which response checks understanding?",
+        "options": [
+          "“It sounds disappointing. Have I understood what matters most?”",
+          "“I know exactly how you feel.”",
+          "“Your problem is definitely a disorder.”"
+        ],
+        "correct": 0,
+        "explanation": "Checking leaves the person free to correct your interpretation."
+      },
+      {
+        "question": "Which question is least leading?",
+        "options": [
+          "“You agree your family is the problem, don’t you?”",
+          "“Why are you always unreasonable?”",
+          "“What would you like me to understand about the situation?”"
+        ],
+        "correct": 2,
+        "explanation": "An open invitation does not supply the expected answer."
+      },
+      {
+        "question": "Which privacy promise is appropriate?",
+        "options": [
+          "Assume an online chat can never be retained.",
+          "Explain actual handling and limits before disclosure.",
+          "Promise absolute secrecy in every circumstance."
+        ],
+        "correct": 1,
+        "explanation": "Privacy claims must reflect how the service really operates."
+      },
+      {
+        "question": "Which goal is most workable?",
+        "options": [
+          "Prepare two questions for a support appointment this week.",
+          "Never experience sadness again.",
+          "Follow the helper’s plan regardless of consent."
+        ],
+        "correct": 0,
+        "explanation": "A concrete, chosen action can be reviewed and adjusted."
+      }
+    ],
+    "final": [
+      {
+        "question": "What is outside a volunteer’s role?",
+        "options": [
+          "Helping locate qualified care.",
+          "Advising someone to stop prescribed medication.",
+          "Offering water with consent."
+        ],
+        "correct": 1,
+        "explanation": "Medication decisions belong with an appropriate clinician."
+      },
+      {
+        "question": "What is a respectful offer?",
+        "options": [
+          "“Would a meal or some company be helpful?”",
+          "“You should feel grateful instead.”",
+          "“I can make the grief disappear today.”"
+        ],
+        "correct": 0,
+        "explanation": "A specific offer with choice respects the person’s experience."
+      },
+      {
+        "question": "What should a helper avoid after an abuse disclosure?",
+        "options": [
+          "Listening without blame.",
+          "Following a safeguarding procedure.",
+          "Pressuring for graphic detail or confronting the alleged abuser."
+        ],
+        "correct": 2,
+        "explanation": "Untrained investigation or confrontation can increase risk."
+      },
+      {
+        "question": "What is supervision for?",
+        "options": [
+          "Replacing professional training entirely.",
+          "Reviewing practice, limits and uncertainties appropriately.",
+          "Sharing private stories for entertainment."
+        ],
+        "correct": 1,
+        "explanation": "Supervision supports accountable practice within a role."
+      },
+      {
+        "question": "What does this certificate represent?",
+        "options": [
+          "Completion of internal educational exercises.",
+          "Professional counselling registration.",
+          "Independent clinical competence."
+        ],
+        "correct": 0,
+        "explanation": "An internal certificate is not a licence or qualification to practise."
+      }
+    ]
+  }
+}

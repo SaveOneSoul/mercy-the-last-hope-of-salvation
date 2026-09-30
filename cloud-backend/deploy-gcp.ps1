@@ -16,11 +16,17 @@ param(
     [ValidateNotNullOrEmpty()][string]$YouTubeRefreshTokenSecretName = "mercy-youtube-refresh-token",
     [string]$CmsBucketName = "",
     [ValidateNotNullOrEmpty()][string]$DbTier = "db-f1-micro",
+    [switch]$EnableCounselling,
+    [ValidatePattern("^[a-zA-Z0-9:/._-]*$")][string]$CounsellingModel = "",
+    [ValidateNotNullOrEmpty()][string]$CounsellingSecretName = "mercy-counselling-api-key",
     [switch]$RotateDatabasePassword,
     [switch]$RotateAdminPassword
 )
 
 $ErrorActionPreference = "Stop"
+if ($EnableCounselling -and [string]::IsNullOrWhiteSpace($CounsellingModel)) {
+    throw "Supply -CounsellingModel with an approved model ID when using -EnableCounselling."
+}
 if ([string]::IsNullOrWhiteSpace($CmsBucketName)) {
     $CmsBucketName = "$ProjectId-mercy-cms-assets"
 }
@@ -344,6 +350,29 @@ foreach ($secretToGrant in @($SecretName, $DbPasswordSecretName, $AdminPasswordS
         --quiet
 }
 
+# The optional support service uses its own credential, never Magisterium's key.
+$counsellingEnabled = "false"
+$counsellingSecretBinding = ""
+$maxInstances = 3
+if ($EnableCounselling) {
+    $exists = Test-GCloudResource @("secrets", "describe", $CounsellingSecretName, "--project", $ProjectId)
+    if (-not $exists) {
+        $secureValue = Read-Host "OpenAI API key for adult support (hidden)" -AsSecureString
+        $plainValue = Convert-SecureToPlain $secureValue
+        try {
+            if ([string]::IsNullOrWhiteSpace($plainValue)) { throw "Counselling API key cannot be empty." }
+            Write-SecretVersion -Secret $CounsellingSecretName -Value $plainValue -Exists $false
+        } finally { $plainValue = $null; $secureValue = $null }
+    }
+    Invoke-GCloud secrets add-iam-policy-binding $CounsellingSecretName `
+        --project $ProjectId --member "serviceAccount:$runtimeEmail" `
+        --role roles/secretmanager.secretAccessor --quiet
+    $counsellingEnabled = "true"
+    $counsellingSecretBinding = ",COUNSELLING_API_KEY=${CounsellingSecretName}:latest"
+    # In-memory limits are per process; constrain this initial support deployment.
+    $maxInstances = 1
+}
+
 Write-Host "`nDeploying cloud-backend to Cloud Run with Cloud SQL and Admin CMS..." -ForegroundColor Cyan
 Push-Location $PSScriptRoot
 try {
@@ -355,12 +384,12 @@ try {
         --allow-unauthenticated `
         --service-account $runtimeEmail `
         --add-cloudsql-instances $instanceConnectionName `
-        --set-secrets "MAGISTERIUM_API_KEY=${SecretName}:latest,DB_PASS=${DbPasswordSecretName}:latest,ADMIN_PASSWORD=${AdminPasswordSecretName}:latest,ADMIN_SESSION_SECRET=${AdminSessionSecretName}:latest,YOUTUBE_CLIENT_ID=${YouTubeClientIdSecretName}:latest,YOUTUBE_CLIENT_SECRET=${YouTubeClientSecretSecretName}:latest,YOUTUBE_REFRESH_TOKEN=${YouTubeRefreshTokenSecretName}:latest" `
-        --set-env-vars "CORS_ORIGINS=https://saveonesoul.github.io,PUBLIC_SITE_BASE=https://saveonesoul.github.io/mercy-the-last-hope-of-salvation,MAGISTERIUM_MODEL=magisterium-1,MAGISTERIUM_TIMEOUT_SECONDS=90,ENABLE_DOCS=false,DB_USER=$DbUser,DB_NAME=$DbName,INSTANCE_UNIX_SOCKET=$instanceUnixSocket,DB_POOL_SIZE=5,DB_MAX_OVERFLOW=2,DB_POOL_RECYCLE_SECONDS=1800,CMS_BUCKET=$CmsBucketName" `
+        --set-secrets "MAGISTERIUM_API_KEY=${SecretName}:latest,DB_PASS=${DbPasswordSecretName}:latest,ADMIN_PASSWORD=${AdminPasswordSecretName}:latest,ADMIN_SESSION_SECRET=${AdminSessionSecretName}:latest,YOUTUBE_CLIENT_ID=${YouTubeClientIdSecretName}:latest,YOUTUBE_CLIENT_SECRET=${YouTubeClientSecretSecretName}:latest,YOUTUBE_REFRESH_TOKEN=${YouTubeRefreshTokenSecretName}:latest$counsellingSecretBinding" `
+        --set-env-vars "CORS_ORIGINS=https://saveonesoul.github.io,PUBLIC_SITE_BASE=https://saveonesoul.github.io/mercy-the-last-hope-of-salvation,MAGISTERIUM_MODEL=magisterium-1,MAGISTERIUM_TIMEOUT_SECONDS=90,ENABLE_DOCS=false,DB_USER=$DbUser,DB_NAME=$DbName,INSTANCE_UNIX_SOCKET=$instanceUnixSocket,DB_POOL_SIZE=5,DB_MAX_OVERFLOW=2,DB_POOL_RECYCLE_SECONDS=1800,CMS_BUCKET=$CmsBucketName,COUNSELLING_ENABLED=$counsellingEnabled,COUNSELLING_MODEL=$CounsellingModel" `
         --memory 512Mi `
         --cpu 1 `
         --concurrency 40 `
-        --max-instances 3 `
+        --max-instances $maxInstances `
         --timeout 120 `
         --quiet
 }
@@ -399,6 +428,10 @@ if (-not $health.admin_cms.bucket_configured) {
 Write-Host "`nChecking Save One Soul aggregate endpoint ..." -ForegroundColor Cyan
 $stats = Invoke-RestMethod -Uri "$serviceUrl/api/save-one-soul/stats" -Method Get -TimeoutSec 30
 $stats | ConvertTo-Json -Depth 8
+
+Write-Host "`nChecking adult support availability..."
+$support = Invoke-RestMethod -Uri "$serviceUrl/api/counselling/status" -Method Get -TimeoutSec 30
+if ($EnableCounselling -and -not $support.available) { throw "Counselling was requested but is not configured." }
 
 Write-Host "`nTesting Catholic AI..." -ForegroundColor Cyan
 try {

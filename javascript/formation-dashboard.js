@@ -3,7 +3,7 @@ const app=document.getElementById('dashboardApp');
 function el(tag,text,cls){const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n}
 async function load(){
  const cfg=await fetch('../data/formation-courses.json').then(r=>r.json());app.textContent='';
- const intro=el('section',null,'lesson-head');intro.innerHTML='<div class="eyebrow">Save One Soul Formation</div><h1>Formation Dashboard</h1><p>Track unit completion, internal credits, assessments and certificate eligibility. Progress is stored privately in this browser.</p><div class="btns"><a class="btn secondary" href="study-tracks.html">Guided study tracks</a><a class="btn secondary" href="theology-library.html">Theology Library</a><a class="btn secondary" href="theology-glossary.html">Glossary</a></div>';app.append(intro);
+ const intro=el('section',null,'lesson-head');intro.innerHTML='<div class="eyebrow">Save One Soul Formation</div><h1>Formation Dashboard</h1><p>Track unit completion, internal credits, assessments and certificate eligibility. Progress is stored on this device and is visible to other users of this browser.</p><div class="btns"><a class="btn secondary" href="psychology.html">Psychology</a><a class="btn secondary" href="counselling-courses.html">Counselling courses</a><a class="btn secondary" href="study-tracks.html">Guided study tracks</a><a class="btn secondary" href="theology-library.html">Theology Library</a><a class="btn secondary" href="theology-glossary.html">Glossary</a></div>';app.append(intro);
  const grid=el('div',null,'dashboard-grid');
  for(const c of cfg.courses){
   const s=SaveOneSoulFormation.courseState(c.id),earned=SaveOneSoulFormation.credits(c.id),card=el('article',null,'dashboard-card');

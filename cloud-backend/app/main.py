@@ -23,6 +23,7 @@ from .logos_advanced import router as logos_advanced_router
 from .logos_semantic import router as logos_semantic_router
 from .db import Base, SessionLocal, database_state, engine, get_db
 from .magisterium import CatholicChatIn, ask_magisterium, magisterium_state
+from .counselling import router as counselling_router
 from .models import PrayerIntention, ContactMessage, SaveOneSoulParticipant
 
 Base.metadata.create_all(bind=engine)
@@ -60,6 +61,7 @@ async def honor_forwarded_https(request: Request, call_next):
     return await call_next(request)
 
 
+app.include_router(counselling_router)
 app.include_router(cms_admin_router)
 app.include_router(cms_publish_router)
 app.include_router(media_studio_router)

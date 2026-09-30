@@ -1,4 +1,5 @@
 from pathlib import Path
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGE = ROOT / "pages" / "logos.html"
@@ -20,7 +21,9 @@ def main() -> None:
 
     require(page, 'data-logos-tab="interlinear"', "normal Interlinear tab")
     require(page, "logos-share-art.js?v=1", "curated Catholic illustration script")
-    require(page, "logos.js?v=16", "cache-busted unified Logos script")
+    match = re.search(r"logos\.js\?v=(\d+)", page)
+    if not match or int(match.group(1)) < 16:
+        raise SystemExit("Missing cache-busted unified Logos script (v16 or later)")
     require(page, "logos-ot-unified-integration.js?v=6", "cache-busted unified OT recovery script")
     require(page, "logos-greek-integration.css?v=4", "semantic interlinear stylesheet")
     require(page, "complete 73-book Douay-Rheims", "73-book English primary corpus wording")

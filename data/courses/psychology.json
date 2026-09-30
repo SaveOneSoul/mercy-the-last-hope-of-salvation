@@ -1,0 +1,542 @@
+{
+  "id": "psychology",
+  "title": "Psychology Foundations",
+  "version": 1,
+  "reviewed": "2026-09-29",
+  "description": "Introductory self-study with source readings, case exercises and knowledge checks.",
+  "creditNote": "20 internal formation credits. Non-accredited education; not a qualification, licence or evidence of competence to practise counselling, psychology or psychotherapy.",
+  "units": [
+    {
+      "title": "Psychology as a science",
+      "label": "Educational study",
+      "objectives": [
+        "Distinguish evidence, interpretation and personal opinion.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Psychology studies behaviour and mental processes using systematic methods. A useful question must be clear enough to investigate: “Does practising recall improve next-week test performance?” is more testable than “What unlocks the whole mind?” Define what you mean by practice and performance before comparing results.",
+        "A correlation describes an association; it does not by itself establish that one thing caused another. Sleep, workload and health could affect both study habits and marks. Controlled studies can address some alternatives, while interviews and observation answer different questions. Sample size, representativeness, measurement and replication matter. Be cautious with a dramatic claim based on one small study or a testimonial. This course introduces ways to think critically; it does not prepare you to diagnose people or conduct unsupervised experiments on vulnerable participants."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e, 2.1–2.3",
+          "url": "https://openstax.org/books/psychology-2e/pages/2-introduction"
+        }
+      ],
+      "assignment": "A post claims that people who pray daily always have better memory. Identify two alternative explanations and describe an ethical way to study the association.",
+      "quiz": [
+        {
+          "question": "A correlation between sleep and grades proves what?",
+          "options": [
+            "Sleep is the only cause of grades.",
+            "Every student needs identical sleep.",
+            "An association, without establishing causation by itself."
+          ],
+          "correct": 2,
+          "explanation": "Other variables and study design affect causal conclusions."
+        },
+        {
+          "question": "Which question is most testable?",
+          "options": [
+            "What single habit cures every problem?",
+            "Does a defined recall exercise change scores after one week?",
+            "Which method unlocks all human potential?"
+          ],
+          "correct": 1,
+          "explanation": "A testable question specifies observable variables."
+        }
+      ]
+    },
+    {
+      "title": "Brain, body and behaviour",
+      "label": "Educational study",
+      "objectives": [
+        "Describe interacting systems without assigning a vice to one brain region.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "The nervous system coordinates sensing, movement and many aspects of thinking and feeling. Different brain regions contribute to different functions, but complex experiences arise through interacting networks, the body and the environment. The prefrontal cortex contributes to planning and control; the hippocampus is important for forming some kinds of memory; the amygdala participates in learning about significance and threat. None is a single switch for virtue or sin.",
+        "Neuroplasticity refers to changes in neural functioning or structure with experience, development or injury. It does not mean anyone can rewire every difficulty by willpower alone. A brain image is a measurement interpreted through a study design, not a photograph of someone’s character. For your notes, connect a biological process with a psychological experience and a social context. This integrated approach avoids reducing a person to a chemical, a scan or a moral label."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax, Biopsychology",
+          "url": "https://openstax.org/books/psychology-2e/pages/3-introduction"
+        }
+      ],
+      "assignment": "Respond to a diagram labelling the amygdala “the sin centre.” Explain one real function and why that label overreaches.",
+      "quiz": [
+        {
+          "question": "Complex behaviour is best understood through what?",
+          "options": [
+            "A brain scan that directly shows someone’s character.",
+            "Interacting neural, bodily and environmental processes.",
+            "One brain area for every moral quality."
+          ],
+          "correct": 1,
+          "explanation": "Complex functions depend on networks and context."
+        },
+        {
+          "question": "What does neuroplasticity imply?",
+          "options": [
+            "Experience can change aspects of the nervous system.",
+            "Every condition can be cured through willpower.",
+            "All change follows a fixed 21-day schedule."
+          ],
+          "correct": 0,
+          "explanation": "Plasticity is real but does not justify universal timelines or cures."
+        }
+      ]
+    },
+    {
+      "title": "Attention, consciousness and sleep",
+      "label": "Educational study",
+      "objectives": [
+        "Differentiate everyday automatic processing from theoretical accounts of the unconscious.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Attention selects some information for further processing while other activity continues without deliberate awareness. Driving a familiar route or reaching for a phone can involve learned automatic responses. Limited attention means that distraction can reduce what is encoded in memory even when a person feels present.",
+        "Conscious, preconscious and unconscious have specific meanings in some psychological traditions; everyday uses of “subconscious” are often less precise. Do not treat these labels as three clearly separated anatomical chambers. Sleep and wakefulness also involve changing patterns of awareness. A helpful study exercise is to note when concentration becomes difficult and consider practical conditions such as fatigue, interruptions and task difficulty. A brief observation can guide a routine change, but it cannot diagnose a sleep or attention disorder. Persistent difficulty deserves assessment rather than blame."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax, States of Consciousness",
+          "url": "https://openstax.org/books/psychology-2e/pages/4-introduction"
+        }
+      ],
+      "assignment": "Compare an automatic phone-checking habit with the psychoanalytic concept of the unconscious. Explain why neither is a separate “subconscious brain part.”",
+      "quiz": [
+        {
+          "question": "How should the word subconscious be used in study?",
+          "options": [
+            "Define the intended meaning and theoretical context.",
+            "Assume it names one anatomical chamber.",
+            "Use it as proof that all behaviour is uncontrollable."
+          ],
+          "correct": 0,
+          "explanation": "Terms differ across theories and everyday speech."
+        },
+        {
+          "question": "Why might distraction reduce later recall?",
+          "options": [
+            "Memory stores every event perfectly anyway.",
+            "Distraction proves a permanent disorder.",
+            "Information may receive less attention during encoding."
+          ],
+          "correct": 2,
+          "explanation": "Attention affects what is encoded; a single lapse is not a diagnosis."
+        }
+      ]
+    },
+    {
+      "title": "Learning and habits",
+      "label": "Educational study",
+      "objectives": [
+        "Explain cues, consequences and repetition without universal promises.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Classical conditioning concerns associations between stimuli. Operant conditioning concerns how consequences influence the likelihood of behaviour. Observational learning highlights learning through seeing others. These are useful frameworks, not competing explanations that each account for everything a person does.",
+        "A habit exercise can begin with one small behaviour and a clear cue: after opening a textbook, attempt one recall question. Make the action manageable and review the conditions when it does not happen. A pleasant consequence may make repetition easier, but reward is not identical to pleasure and dopamine is not simply a “happiness chemical.” Keep experiments low-risk: do not use deprivation, self-punishment or abrupt changes to prescribed treatment. There is no single number of days that guarantees a new habit for everyone. A setback offers information about context rather than proof of a defective character."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax, Learning",
+          "url": "https://openstax.org/books/psychology-2e/pages/6-introduction"
+        }
+      ],
+      "assignment": "Create a seven-day plan for a two-minute study habit, with a cue, an action and a compassionate response to a missed day. Do not promise a permanent change.",
+      "quiz": [
+        {
+          "question": "What is an example of a clear habit cue?",
+          "options": [
+            "Be a perfect learner from now on.",
+            "Punish yourself whenever you feel distracted.",
+            "After opening the textbook, answer one recall question."
+          ],
+          "correct": 2,
+          "explanation": "A specific cue and manageable action make a plan observable."
+        },
+        {
+          "question": "What does a missed day establish?",
+          "options": [
+            "The brain is permanently damaged.",
+            "The plan may need adjustment; it does not define the person.",
+            "The person can never change."
+          ],
+          "correct": 1,
+          "explanation": "Review context and barriers before drawing broad conclusions."
+        }
+      ]
+    },
+    {
+      "title": "Memory and effective study",
+      "label": "Educational study",
+      "objectives": [
+        "Distinguish encoding, storage and retrieval.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Remembering involves encoding information, retaining it over time and retrieving it when needed. These processes are related but not identical. Familiarity with a page can feel like mastery even when a learner cannot explain it without looking. Retrieval practice reveals what can actually be recalled.",
+        "Try reading a short section, closing it and writing a brief explanation in your own words. Check against the source, correct errors and revisit the material over several sessions. Varying examples can help distinguish understanding from memorising one phrase. Memory is reconstructive and can be affected by suggestion; confidence alone does not establish accuracy. In counselling or pastoral conversations, do not pressure someone to recover hidden memories or tell them what must have happened. For study purposes, compare your own recall with the text rather than judging other people’s reliability from confidence or emotion."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax, Memory",
+          "url": "https://openstax.org/books/psychology-2e/pages/8-introduction"
+        }
+      ],
+      "assignment": "Design a short recall-and-review activity for a Mariology lesson. Explain why repeatedly rereading the same page is not enough to check understanding.",
+      "quiz": [
+        {
+          "question": "Which activity directly checks retrieval?",
+          "options": [
+            "Count how familiar the page seems.",
+            "Explain a passage with the book closed, then verify it.",
+            "Look at a highlighted page without attempting recall."
+          ],
+          "correct": 1,
+          "explanation": "Retrieval practice checks access to the material."
+        },
+        {
+          "question": "Does a confident memory guarantee accuracy?",
+          "options": [
+            "No; confidence and accuracy can differ.",
+            "Yes, in every case.",
+            "Only when the speaker is emotional."
+          ],
+          "correct": 0,
+          "explanation": "Memory is reconstructive, so confidence is not conclusive evidence."
+        }
+      ]
+    },
+    {
+      "title": "Emotion, stress and regulation",
+      "label": "Educational study",
+      "objectives": [
+        "Use simple coping skills without suppressing or moralising feelings.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Emotions involve subjective experience, bodily changes and tendencies to act. Feeling anger is different from acting violently; experiencing fear does not by itself establish cowardice or guilt. Situations are also interpreted differently according to learning, context, health and current demands.",
+        "When stress rises, a small pause can create room to choose the next step. You might notice the support of a chair, orient to the room and name a manageable task. If a grounding exercise feels uncomfortable, stop and choose another form of support. Coping is not the obligation to feel calm at all times, and persistent distress is not a spiritual failure. Practical help with workload, finances, safety or relationships may matter as much as an individual exercise. Use the WHO guide as a practice resource and professional support when difficulties persist or interfere with daily life."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax, Emotion and Motivation",
+          "url": "https://openstax.org/books/psychology-2e/pages/10-introduction"
+        },
+        {
+          "title": "WHO: Doing What Matters in Times of Stress",
+          "url": "https://www.who.int/publications/i/item/9789240003927"
+        }
+      ],
+      "assignment": "Write a supportive response to a friend who says “Feeling afraid means I have no faith.” Include one optional grounding step and one practical source of help.",
+      "quiz": [
+        {
+          "question": "Which statement distinguishes emotion from behaviour?",
+          "options": [
+            "Anger can be felt without choosing violence.",
+            "Anger always makes violence inevitable.",
+            "Fear always proves moral failure."
+          ],
+          "correct": 0,
+          "explanation": "An emotion and the action taken in response are different."
+        },
+        {
+          "question": "If grounding feels uncomfortable, what is reasonable?",
+          "options": [
+            "Continue regardless of distress.",
+            "Assume you are doing faith incorrectly.",
+            "Stop and choose another support."
+          ],
+          "correct": 2,
+          "explanation": "Coping practices should remain voluntary and adaptable."
+        }
+      ]
+    },
+    {
+      "title": "Development across the lifespan",
+      "label": "Educational study",
+      "objectives": [
+        "Explain variation without using a stage model as a diagnosis.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Development includes physical, cognitive and social changes across life. Researchers use different models to describe patterns, and each model has limits. A developmental milestone is a useful reference point; it is not a complete account of a person’s abilities or future.",
+        "Relationships, opportunity, culture, disability, health and economic conditions shape experience. Avoid judging an adult by one childhood event or treating older people as incapable of learning. When a child struggles, describe the observed difficulty instead of assigning a label after a brief encounter. A caregiver can seek advice from a qualified professional while also noticing the child’s strengths. In a learning journal, separate an observation (“needed the instruction repeated”) from an inference (“has no motivation”). That discipline matters at every age and protects against turning a general developmental theory into a stereotype."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax, Lifespan Development",
+          "url": "https://openstax.org/books/psychology-2e/pages/9-introduction"
+        }
+      ],
+      "assignment": "Rewrite “This child is lazy” as a neutral observation and two possible questions for a caregiver or qualified professional.",
+      "quiz": [
+        {
+          "question": "What is a developmental model?",
+          "options": [
+            "A diagnosis for every individual.",
+            "A guarantee of one life outcome.",
+            "A framework describing patterns with limits and variation."
+          ],
+          "correct": 2,
+          "explanation": "Models support inquiry but do not replace individual assessment."
+        },
+        {
+          "question": "Which is an observation rather than a label?",
+          "options": [
+            "The learner will never improve.",
+            "The learner asked for the instruction to be repeated.",
+            "The learner is lazy."
+          ],
+          "correct": 1,
+          "explanation": "Observable descriptions avoid unsupported character judgments."
+        }
+      ]
+    },
+    {
+      "title": "Personality, social influence and culture",
+      "label": "Educational study",
+      "objectives": [
+        "Notice situational explanations and avoid stereotyping.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Personality describes relatively enduring patterns, while behaviour also changes with circumstances. A quiet person in one meeting may be talkative with trusted friends. Informal quizzes and personality labels should not become a diagnosis, a hiring rule or an explanation for every relationship problem.",
+        "Social psychology examines how other people and social settings affect thinking and action. People may underestimate situational pressures when explaining someone else’s behaviour. A missed appointment could involve transport, caregiving or confusion rather than indifference. Culture influences meanings and expectations, but membership of a group does not tell you an individual’s beliefs. Ask respectful questions and let the person describe their own experience. In a disagreement, distinguish the behaviour you observed, the interpretation you made and the additional information you would need before drawing a conclusion."
+      ],
+      "sources": [
+        {
+          "title": "OpenStax, Personality",
+          "url": "https://openstax.org/books/psychology-2e/pages/11-introduction"
+        },
+        {
+          "title": "OpenStax, Social Psychology",
+          "url": "https://openstax.org/books/psychology-2e/pages/12-introduction"
+        }
+      ],
+      "assignment": "A volunteer misses two meetings. Write a curious, respectful conversation starter and identify an assumption you should avoid.",
+      "quiz": [
+        {
+          "question": "A missed appointment should first invite what?",
+          "options": [
+            "A judgment about an entire cultural group.",
+            "A respectful inquiry into circumstances.",
+            "An immediate personality diagnosis."
+          ],
+          "correct": 1,
+          "explanation": "Context may explain a behaviour better than a label."
+        },
+        {
+          "question": "How should a personality quiz be treated?",
+          "options": [
+            "As limited information, not a clinical diagnosis.",
+            "As a complete prediction of all relationships.",
+            "As proof someone cannot change."
+          ],
+          "correct": 0,
+          "explanation": "Informal categories do not establish clinical conclusions."
+        }
+      ]
+    },
+    {
+      "title": "Mental health literacy and help-seeking",
+      "label": "Educational study",
+      "objectives": [
+        "Recognise when education should lead to qualified assessment.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Mental health difficulties can affect feelings, thoughts, relationships and everyday functioning. Similar experiences can arise in different conditions or in response to stressful circumstances. Reading a symptom list is not enough to diagnose yourself or someone else. A qualified assessment considers duration, severity, context, physical health and other explanations.",
+        "Seeking help can begin with a primary-care professional or a qualified mental-health practitioner. Ask about credentials, experience, methods, fees, confidentiality and emergency arrangements. If someone is in immediate danger, needs urgent medical care or may act on thoughts of suicide, use emergency services rather than waiting for an online reply. In India, 112 is the emergency number; Tele-MANAS offers mental-health support at 14416. Outside India, use local services. Faith and community support can accompany treatment, but they do not replace needed clinical care."
+      ],
+      "sources": [
+        {
+          "title": "NIMH: Caring for Your Mental Health",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        },
+        {
+          "title": "India: National Mental Health Programme",
+          "url": "https://dghs.mohfw.gov.in/national-mental-health-programme.php"
+        }
+      ],
+      "assignment": "Prepare three questions to ask a prospective therapist, and explain what you would do differently if there were an immediate safety emergency.",
+      "quiz": [
+        {
+          "question": "What can a symptom checklist establish on its own?",
+          "options": [
+            "It can prompt further assessment, but cannot establish a diagnosis alone.",
+            "A definitive diagnosis for anyone.",
+            "The only appropriate treatment."
+          ],
+          "correct": 0,
+          "explanation": "Diagnosis requires context and qualified assessment."
+        },
+        {
+          "question": "What takes priority in immediate danger?",
+          "options": [
+            "Waiting for a course quiz result.",
+            "Continuing a long chatbot conversation.",
+            "Local emergency help and nearby human support."
+          ],
+          "correct": 2,
+          "explanation": "An educational website cannot provide emergency response."
+        }
+      ]
+    },
+    {
+      "title": "Integrating psychology, ethics and faith",
+      "label": "Educational study",
+      "objectives": [
+        "Keep scientific, moral and spiritual questions distinct and in dialogue.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "A scientific account can describe patterns of attention, learning or emotion. A moral reflection asks about responsibility and the good; spiritual accompaniment concerns a person’s relationship with God. These questions can inform one another without being interchangeable. A symptom is not a reliable sign of sin, demonic influence or lack of faith.",
+        "Work through a fictional case with four headings: observations, possible explanations, practical support and the limits of your role. Avoid diagnoses and identify what further information a qualified practitioner would need. A helpful plan respects the person’s consent and cultural context, includes achievable steps and names a human source of support. Review your own assumptions, especially when a familiar religious or psychological label feels like a complete explanation. The aim of introductory study is better judgment and more respectful help-seeking, not authority over another person’s inner life."
+      ],
+      "sources": [
+        {
+          "title": "NIMH: Psychotherapies",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        },
+        {
+          "title": "OpenStax: Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Case: a student feels anxious, sleeps poorly and fears God is punishing them. Write a response with empathy, practical support, optional faith support and a referral boundary.",
+      "quiz": [
+        {
+          "question": "What does a mental-health symptom prove about someone’s faith?",
+          "options": [
+            "It proves possession.",
+            "It proves prayer has failed.",
+            "It does not establish spiritual failure or moral guilt."
+          ],
+          "correct": 2,
+          "explanation": "Clinical experiences should not be treated as evidence of spiritual guilt."
+        },
+        {
+          "question": "What is a responsible outcome of this introductory course?",
+          "options": [
+            "Authority to stop someone’s medication.",
+            "Better understanding and appropriate help-seeking.",
+            "Permission to diagnose or practise psychotherapy."
+          ],
+          "correct": 1,
+          "explanation": "Education does not confer clinical competence or registration."
+        }
+      ]
+    }
+  ],
+  "assessments": {
+    "mid": [
+      {
+        "question": "A correlation between sleep and grades proves what?",
+        "options": [
+          "Sleep is the only cause of grades.",
+          "Every student needs identical sleep.",
+          "An association, without establishing causation by itself."
+        ],
+        "correct": 2,
+        "explanation": "Other variables and study design affect causal conclusions."
+      },
+      {
+        "question": "Complex behaviour is best understood through what?",
+        "options": [
+          "A brain scan that directly shows someone’s character.",
+          "Interacting neural, bodily and environmental processes.",
+          "One brain area for every moral quality."
+        ],
+        "correct": 1,
+        "explanation": "Complex functions depend on networks and context."
+      },
+      {
+        "question": "How should the word subconscious be used in study?",
+        "options": [
+          "Define the intended meaning and theoretical context.",
+          "Assume it names one anatomical chamber.",
+          "Use it as proof that all behaviour is uncontrollable."
+        ],
+        "correct": 0,
+        "explanation": "Terms differ across theories and everyday speech."
+      },
+      {
+        "question": "What is an example of a clear habit cue?",
+        "options": [
+          "Be a perfect learner from now on.",
+          "Punish yourself whenever you feel distracted.",
+          "After opening the textbook, answer one recall question."
+        ],
+        "correct": 2,
+        "explanation": "A specific cue and manageable action make a plan observable."
+      },
+      {
+        "question": "Which activity directly checks retrieval?",
+        "options": [
+          "Count how familiar the page seems.",
+          "Explain a passage with the book closed, then verify it.",
+          "Look at a highlighted page without attempting recall."
+        ],
+        "correct": 1,
+        "explanation": "Retrieval practice checks access to the material."
+      }
+    ],
+    "final": [
+      {
+        "question": "If grounding feels uncomfortable, what is reasonable?",
+        "options": [
+          "Continue regardless of distress.",
+          "Assume you are doing faith incorrectly.",
+          "Stop and choose another support."
+        ],
+        "correct": 2,
+        "explanation": "Coping practices should remain voluntary and adaptable."
+      },
+      {
+        "question": "Which is an observation rather than a label?",
+        "options": [
+          "The learner will never improve.",
+          "The learner asked for the instruction to be repeated.",
+          "The learner is lazy."
+        ],
+        "correct": 1,
+        "explanation": "Observable descriptions avoid unsupported character judgments."
+      },
+      {
+        "question": "How should a personality quiz be treated?",
+        "options": [
+          "As limited information, not a clinical diagnosis.",
+          "As a complete prediction of all relationships.",
+          "As proof someone cannot change."
+        ],
+        "correct": 0,
+        "explanation": "Informal categories do not establish clinical conclusions."
+      },
+      {
+        "question": "What takes priority in immediate danger?",
+        "options": [
+          "Waiting for a course quiz result.",
+          "Continuing a long chatbot conversation.",
+          "Local emergency help and nearby human support."
+        ],
+        "correct": 2,
+        "explanation": "An educational website cannot provide emergency response."
+      },
+      {
+        "question": "What is a responsible outcome of this introductory course?",
+        "options": [
+          "Authority to stop someone’s medication.",
+          "Better understanding and appropriate help-seeking.",
+          "Permission to diagnose or practise psychotherapy."
+        ],
+        "correct": 1,
+        "explanation": "Education does not confer clinical competence or registration."
+      }
+    ]
+  }
+}

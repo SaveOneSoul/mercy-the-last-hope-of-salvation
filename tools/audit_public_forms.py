@@ -79,6 +79,14 @@ def audit_form(rel: str, attrs: str, body: str, page: str, errors: list[str]) ->
         require("public-forms.js" in page_l or "main.js" in page_l, f"{marker} contact form does not load an approved contact handler", errors)
         return
 
+    if "data-counselling-form" in attrs_l:
+        for hook in ("supportinput", "supportconsent", "supportadult", "supportstatus"):
+            require(hook in body_l, f"{marker} counselling form missing {hook}", errors)
+        require('type="submit"' in body_l, f"{marker} counselling form missing submit button", errors)
+        require("counselling-support.js" in page_l, f"{marker} counselling form missing handler", errors)
+        require("mercy.js" not in page_l, f"{marker} counselling page must not load CMS/analytics script", errors)
+        return
+
     if "data-catholic-ai-form" in attrs_l:
         require("data-catholic-ai-input" in body_l, f"{marker} Catholic AI form missing input hook", errors)
         require("data-catholic-ai-status" in body_l, f"{marker} Catholic AI form missing status hook", errors)

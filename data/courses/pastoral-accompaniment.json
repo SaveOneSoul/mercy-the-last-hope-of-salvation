@@ -1,0 +1,540 @@
+{
+  "id": "pastoral-accompaniment",
+  "title": "Pastoral Accompaniment",
+  "version": 1,
+  "reviewed": "2026-09-29",
+  "description": "Introductory self-study with source readings, case exercises and knowledge checks.",
+  "creditNote": "20 internal formation credits. Non-accredited education; not a qualification, licence or evidence of competence to practise counselling, psychology or psychotherapy.",
+  "units": [
+    {
+      "title": "Pastoral presence and role clarity",
+      "label": "Pastoral education",
+      "objectives": [
+        "Explain the distinction between spiritual accompaniment and clinical care.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "A pastoral companion can listen, pray when invited and help someone connect with parish life. The role should be clear before sensitive sharing begins. A priest, a spiritual director, a volunteer listener and a mental-health professional have different responsibilities; one person should not silently move between roles.",
+        "A person may want company without religious advice. Ask what they are hoping for and respect the answer. When clinical needs appear, support access to qualified care alongside any chosen spiritual support. Never suggest that seeking treatment shows weak faith.",
+        "Practice case: someone asks a parish volunteer whether a recurring panic-like experience means God is displeased. A bounded response can acknowledge fear, decline to identify its cause and offer help arranging a professional consultation. If the person wants prayer, ask what form would feel supportive rather than imposing a ritual."
+      ],
+      "sources": [
+        {
+          "title": "NIMH: Psychotherapies",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        }
+      ],
+      "assignment": "Write a welcome that explains a volunteer pastoral role and asks whether prayer is wanted.",
+      "quiz": [
+        {
+          "question": "What should guide whether you offer prayer?",
+          "options": [
+            "The person’s preference and consent.",
+            "The helper’s desire to demonstrate authority.",
+            "A belief that everyone must accept the same devotion."
+          ],
+          "correct": 0,
+          "explanation": "The person’s preference and consent."
+        },
+        {
+          "question": "What is appropriate when clinical needs arise?",
+          "options": [
+            "Replace treatment with a compulsory novena.",
+            "Assume every symptom is spiritual.",
+            "Help the person access qualified care."
+          ],
+          "correct": 2,
+          "explanation": "Help the person access qualified care."
+        }
+      ]
+    },
+    {
+      "title": "Spiritual listening without pressure",
+      "label": "Pastoral education",
+      "objectives": [
+        "Listen to faith questions without forcing a conclusion.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "People can experience doubt, anger, hope and silence within their spiritual lives. Listening begins with their words, not with an explanation you have prepared. Reflect what you hear and ask whether it captures their experience. Avoid treating every doubt as disobedience or every emotional high as evidence of spiritual certainty.",
+        "A useful fictional exercise is to practise staying with a question for a moment before answering. You may offer a scriptural or pastoral resource if requested, while acknowledging when a matter needs a priest or trained spiritual director. The person retains freedom to disagree, pause or choose another companion.",
+        "Practice case: a student says they no longer feel anything at Mass. First ask what that change means to them. Do not assume depression, loss of faith or a special spiritual stage. A careful conversation leaves room for ordinary fatigue, questions about belief and other explanations that require more information."
+      ],
+      "sources": [
+        {
+          "title": "Evangelii Gaudium, 169–173",
+          "url": "https://www.vatican.va/content/francesco/en/apost_exhortations/documents/papa-francesco_esortazione-ap_20131124_evangelii-gaudium.html"
+        }
+      ],
+      "assignment": "Respond to “I cannot pray after what happened” with a reflection and an optional invitation.",
+      "quiz": [
+        {
+          "question": "What is the first helpful response to spiritual distress?",
+          "options": [
+            "Assign guilt immediately.",
+            "Insist on a particular emotional response.",
+            "Listen and check what the person means."
+          ],
+          "correct": 2,
+          "explanation": "Listen and check what the person means."
+        },
+        {
+          "question": "What freedom should remain with the person?",
+          "options": [
+            "To stop medication without clinical advice.",
+            "To pause, decline or choose another source of support.",
+            "Only to accept the helper’s interpretation."
+          ],
+          "correct": 1,
+          "explanation": "To pause, decline or choose another source of support."
+        }
+      ]
+    },
+    {
+      "title": "Conscience, guilt and persistent distress",
+      "label": "Pastoral education",
+      "objectives": [
+        "Avoid diagnosing or reinforcing cycles of reassurance.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Conscience involves moral judgment, while distressing thoughts can arise without being chosen or desired. A thought’s appearance is not the same as consent to act on it. A volunteer should avoid detailed judgments about another person’s guilt or repeated reassurance presented as a cure.",
+        "If fears about sin or ritual become repetitive, overwhelming or disruptive, suggest support from a qualified mental-health professional and, if the person wishes, a consistent trusted confessor. Do not diagnose scrupulosity or obsessive-compulsive disorder from a brief exchange. Keep the conversation compassionate and focused on appropriate help.",
+        "Practice case: a person asks the same question about an unwanted thought many times. Acknowledge the distress without providing repeated certainty about moral or clinical status. Suggest a stable human support relationship and qualified assessment if the pattern is disrupting life; avoid setting new ritual rules to neutralise the fear."
+      ],
+      "sources": [
+        {
+          "title": "NIMH: Obsessive-Compulsive Disorder",
+          "url": "https://www.nimh.nih.gov/health/topics/obsessive-compulsive-disorder-ocd"
+        }
+      ],
+      "assignment": "Write a response to a fictional person distressed by unwanted thoughts, without diagnosing or declaring guilt.",
+      "quiz": [
+        {
+          "question": "An unwanted thought is equivalent to what?",
+          "options": [
+            "Proof of demonic activity.",
+            "It is not automatically a chosen action or moral consent.",
+            "A deliberate act in every case."
+          ],
+          "correct": 1,
+          "explanation": "It is not automatically a chosen action or moral consent."
+        },
+        {
+          "question": "Persistent disruptive fears call for what?",
+          "options": [
+            "Qualified assessment and chosen pastoral support.",
+            "Endless AI assurances as treatment.",
+            "More severe ritual demands."
+          ],
+          "correct": 0,
+          "explanation": "Qualified assessment and chosen pastoral support."
+        }
+      ]
+    },
+    {
+      "title": "Illness, disability and healing prayer",
+      "label": "Pastoral education",
+      "objectives": [
+        "Offer prayer alongside practical and professional care.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Healing prayer can express hope and solidarity. It should never become a test that a sick person must pass to deserve support. Do not promise a cure or attribute lack of improvement to insufficient faith. Illness and disability do not reduce a person’s dignity.",
+        "Ask before touching, gathering a group or sharing someone’s story publicly. Practical help may include transport, accessible participation or support contacting a clinician. Continue to respect prescribed care. In a parish plan, name who will check access needs and how privacy will be protected rather than making the event depend on a dramatic testimony.",
+        "Practice case: a person declines a public healing prayer but accepts a quiet visit. Respect both decisions. Do not interpret refusal as rejection of God or the community. Ask about practical needs and whether they want someone contacted, then honour the scope of that consent."
+      ],
+      "sources": [
+        {
+          "title": "NIMH: Caring for Your Mental Health",
+          "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+        }
+      ],
+      "assignment": "Plan a prayer visit that includes consent, access needs and continuing healthcare.",
+      "quiz": [
+        {
+          "question": "Which statement is appropriate?",
+          "options": [
+            "Prayer can accompany medical care without guaranteeing a cure.",
+            "A person who remains ill lacks faith.",
+            "A healing event replaces treatment."
+          ],
+          "correct": 0,
+          "explanation": "Prayer can accompany medical care without guaranteeing a cure."
+        },
+        {
+          "question": "Before public testimony or physical contact, what is required?",
+          "options": [
+            "Only the organiser’s enthusiasm.",
+            "An assumption based on parish membership.",
+            "The person’s informed and freely given consent."
+          ],
+          "correct": 2,
+          "explanation": "The person’s informed and freely given consent."
+        }
+      ]
+    },
+    {
+      "title": "Bereavement and lament",
+      "label": "Pastoral education",
+      "objectives": [
+        "Make room for grief without requiring an explanation.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Pastoral care after a death can begin with presence and practical kindness. Lament is part of the biblical tradition: grief need not be hidden in order to express faith. Avoid claiming to know why a particular death happened or using spiritual language to silence pain.",
+        "Ask whether the person wants prayer, quiet company or help with a task. Respect differences in cultural practice and family relationships. A funeral or memorial does not mark a deadline for grief to end. If distress becomes overwhelming or safety is in question, connect the person with qualified support and urgent help when needed.",
+        "Practice case: two siblings mourn differently after the same death. One wants a Rosary; the other wants quiet. Offer each a choice without declaring one response more faithful. A shared loss does not erase different needs, and support need not require them to grieve in the same way."
+      ],
+      "sources": [
+        {
+          "title": "Psalm 13 in Logos",
+          "url": "logos.html#verse=Psalms%2013%3A1"
+        }
+      ],
+      "assignment": "Write a brief pastoral visit plan including a choice between prayer, silence and practical help.",
+      "quiz": [
+        {
+          "question": "What does lament allow?",
+          "options": [
+            "Proof that faith has failed.",
+            "A timetable for everyone’s mourning.",
+            "An honest expression of grief within prayer."
+          ],
+          "correct": 2,
+          "explanation": "An honest expression of grief within prayer."
+        },
+        {
+          "question": "Which response should be avoided?",
+          "options": [
+            "Respecting a wish for silence.",
+            "Claiming certainty about why a specific death happened.",
+            "Offering practical help."
+          ],
+          "correct": 1,
+          "explanation": "Claiming certainty about why a specific death happened."
+        }
+      ]
+    },
+    {
+      "title": "Family conflict, abuse and safeguarding",
+      "label": "Pastoral education",
+      "objectives": [
+        "Distinguish ordinary disagreement from danger requiring specialist help.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Conflict can involve misunderstanding, but abuse involves harm and may include coercion or control. A pastoral helper should not assume every situation can be solved by asking both people to compromise. Do not pressure someone to return to an unsafe setting or frame immediate reconciliation as a duty.",
+        "Listen without blaming the person reporting harm. Avoid investigating, confronting an alleged abuser or sharing the disclosure casually. Follow the relevant safeguarding process and connect with trained services. Where danger is immediate, use emergency help. A spiritual conversation must support safety and dignity, not excuse violence or minimise coercion.",
+        "Practice case: someone fears retaliation if a family member discovers the conversation. Consider how contact itself might affect safety and use the appropriate safeguarding pathway. Do not promise a particular legal outcome or tell the person to gather evidence in a way that could place them at greater risk."
+      ],
+      "sources": [
+        {
+          "title": "India: ERSS",
+          "url": "https://www.mha.gov.in/en/commoncontent/emergency-response-support-system-erss"
+        }
+      ],
+      "assignment": "Write a response to a fictional disclosure of violence that avoids pressure to reconcile and identifies a human-help route.",
+      "quiz": [
+        {
+          "question": "What should take priority after a disclosure of immediate danger?",
+          "options": [
+            "Protecting an institution’s reputation.",
+            "Safety and appropriate emergency or safeguarding help.",
+            "A joint reconciliation meeting immediately."
+          ],
+          "correct": 1,
+          "explanation": "Safety and appropriate emergency or safeguarding help."
+        },
+        {
+          "question": "What is unsafe pastoral advice?",
+          "options": [
+            "Pressuring someone to return to an abusive situation.",
+            "Listening without blame.",
+            "Connecting with trained support."
+          ],
+          "correct": 0,
+          "explanation": "Pressuring someone to return to an abusive situation."
+        }
+      ]
+    },
+    {
+      "title": "Discernment and unusual experiences",
+      "label": "Pastoral education",
+      "objectives": [
+        "Respect spiritual meaning without diagnosing supernatural causes.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "People may describe experiences through religious language. Ask what the experience is like for them and whether it affects sleep, functioning or safety, while remaining within your role. Neither a volunteer nor an AI can determine possession, diagnose a mental disorder or verify supernatural events from a conversation.",
+        "If experiences are distressing, persistent or associated with risk, encourage qualified healthcare and appropriate pastoral guidance. Do not intensify fear by confirming a demonic explanation. Formal exorcism is governed by the Church’s procedures and is not a volunteer counselling technique. Ordinary prayer may be offered by consent alongside practical support.",
+        "Practice case: a person says a frightening experience must be a supernatural attack. You can acknowledge that it feels frightening without agreeing about its cause. Encourage safe, qualified support and help them identify a trusted person nearby, especially if the experience is interfering with sleep or daily functioning."
+      ],
+      "sources": [
+        {
+          "title": "Church guidance on exorcism",
+          "url": "exorcism-guidelines.html"
+        }
+      ],
+      "assignment": "Respond to “My distress proves I am possessed” without confirming the claim or dismissing the person’s fear.",
+      "quiz": [
+        {
+          "question": "What can a volunteer establish from a short chat?",
+          "options": [
+            "Their understanding is limited; they cannot diagnose possession.",
+            "A definitive supernatural cause.",
+            "A clinical diagnosis without assessment."
+          ],
+          "correct": 0,
+          "explanation": "Their understanding is limited; they cannot diagnose possession."
+        },
+        {
+          "question": "What is a responsible response to distressing experiences?",
+          "options": [
+            "Intensify fear with certainty about demons.",
+            "Stop all medical care.",
+            "Encourage qualified care and appropriate pastoral help."
+          ],
+          "correct": 2,
+          "explanation": "Encourage qualified care and appropriate pastoral help."
+        }
+      ]
+    },
+    {
+      "title": "Cultural humility and inclusive welcome",
+      "label": "Pastoral education",
+      "objectives": [
+        "Ask about the person’s preferences rather than making group assumptions.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Language, culture, disability, age and family context affect how support is experienced. Ask how a person prefers to communicate and what would make a meeting accessible. Do not assume that shared religion means shared customs, literacy or comfort with public prayer.",
+        "An interpreter or support person may help, but privacy and consent must be considered. Use clear language and check understanding without embarrassing the person. A parish welcome should avoid tying access to help to agreement with a particular devotional practice. Reflect on whose voices are missing when a group plans a service, and invite feedback in a way people can safely decline.",
+        "Practice case: a visitor does not want a relative translating a sensitive conversation. Respect that preference and explore an appropriate alternative rather than treating family involvement as automatic consent. Check understanding using plain language, and avoid demanding disclosure before accessible support has been arranged."
+      ],
+      "sources": [
+        {
+          "title": "WHO: Psychological First Aid",
+          "url": "https://www.who.int/publications/i/item/9789241548205"
+        }
+      ],
+      "assignment": "Adapt a fictional parish support meeting for a person who prefers Khasi and wants privacy from relatives.",
+      "quiz": [
+        {
+          "question": "What is cultural humility in practice?",
+          "options": [
+            "Assuming a group label predicts every belief.",
+            "Treating unfamiliar customs as symptoms.",
+            "Asking about individual preferences and checking assumptions."
+          ],
+          "correct": 2,
+          "explanation": "Asking about individual preferences and checking assumptions."
+        },
+        {
+          "question": "Before involving an interpreter or relative, consider what?",
+          "options": [
+            "Whether the helper prefers public disclosure.",
+            "Consent, privacy and communication needs.",
+            "Convenience alone."
+          ],
+          "correct": 1,
+          "explanation": "Consent, privacy and communication needs."
+        }
+      ]
+    },
+    {
+      "title": "Helper wellbeing, supervision and limits",
+      "label": "Pastoral education",
+      "objectives": [
+        "Plan sustainable service with clear boundaries.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "Helpers can feel affected by the stories they hear. Notice changes in your own sleep, concentration, irritability or ability to be present. These observations are invitations to seek support and adjust demands, not evidence that you should work harder without rest.",
+        "Agree service hours, referral routes and access to appropriate supervision. Do not make one person dependent on your constant availability. Use non-identifying information when discussing learning outside a formal confidential process. Time away, ordinary relationships and professional support when needed help sustain a bounded role. The goal is reliable care within capacity, not becoming indispensable.",
+        "Practice case: a volunteer receives late-night messages and feels responsible for replying immediately. Agree a clear availability boundary in advance and provide appropriate emergency information. Discuss the situation with a supervisor through the agreed confidential process; do not turn a private personal phone into an unstaffed emergency service."
+      ],
+      "sources": [
+        {
+          "title": "BACP: Ethical Framework",
+          "url": "https://www.bacp.co.uk/events-and-resources/ethics-and-standards/ethical-framework-for-the-counselling-professions/"
+        }
+      ],
+      "assignment": "Create a weekly boundary plan with service hours, one supervision route and what happens outside those hours.",
+      "quiz": [
+        {
+          "question": "Which availability promise is sustainable?",
+          "options": [
+            "An AI companion as the only relationship needed.",
+            "Clear hours and an alternative human-help route.",
+            "Unlimited personal access at all times."
+          ],
+          "correct": 1,
+          "explanation": "Clear hours and an alternative human-help route."
+        },
+        {
+          "question": "What should rising helper distress prompt?",
+          "options": [
+            "Reflection, support and possible adjustment of duties.",
+            "More secrecy and longer hours automatically.",
+            "A claim of unlimited resilience."
+          ],
+          "correct": 0,
+          "explanation": "Reflection, support and possible adjustment of duties."
+        }
+      ]
+    },
+    {
+      "title": "An integrated pastoral care plan",
+      "label": "Pastoral education",
+      "objectives": [
+        "Combine chosen spiritual support with practical help and referral.",
+        "Apply the lesson to the case study and explain the limits of your conclusion."
+      ],
+      "paragraphs": [
+        "A useful care plan is modest, specific and agreed with the person. It names their concern in their own words, the support they want, one feasible action and the boundaries of the helper’s role. It should not contain an unqualified diagnosis or a prediction of guaranteed healing.",
+        "Use a fictional case for your final assignment: an adult who feels isolated after a loss. Include practical companionship, optional prayer, access to qualified help if needed and a review point that can be declined. Explain what changes if safety becomes urgent. Completion records your learning in this introductory course; it does not confer professional counselling status, safeguarding authority or ecclesiastical appointment.",
+        "In reviewing the final case, check every promise against what is actually available. A proposed referral is not a booked appointment, and a plan to ask a friend is not confirmed support. Honest wording allows the person to make informed choices and prevents a written plan from creating false reassurance."
+      ],
+      "sources": [
+        {
+          "title": "NIMH: Psychotherapies",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        },
+        {
+          "title": "BACP: Ethical Framework",
+          "url": "https://www.bacp.co.uk/events-and-resources/ethics-and-standards/ethical-framework-for-the-counselling-professions/"
+        }
+      ],
+      "assignment": "Write a fictional care plan with consent, one practical step, optional faith support, referral criteria and a clear ending.",
+      "quiz": [
+        {
+          "question": "What should an integrated plan preserve?",
+          "options": [
+            "The person’s choices and the helper’s limits.",
+            "A guarantee of healing through one method.",
+            "Dependence on one volunteer."
+          ],
+          "correct": 0,
+          "explanation": "The person’s choices and the helper’s limits."
+        },
+        {
+          "question": "What does this course authorise?",
+          "options": [
+            "Independent clinical practice.",
+            "Authority to conduct exorcisms.",
+            "No professional or ecclesiastical role; it records introductory learning."
+          ],
+          "correct": 2,
+          "explanation": "No professional or ecclesiastical role; it records introductory learning."
+        }
+      ]
+    }
+  ],
+  "assessments": {
+    "mid": [
+      {
+        "question": "What should guide whether you offer prayer?",
+        "options": [
+          "The person’s preference and consent.",
+          "The helper’s desire to demonstrate authority.",
+          "A belief that everyone must accept the same devotion."
+        ],
+        "correct": 0,
+        "explanation": "The person’s preference and consent."
+      },
+      {
+        "question": "What is the first helpful response to spiritual distress?",
+        "options": [
+          "Assign guilt immediately.",
+          "Insist on a particular emotional response.",
+          "Listen and check what the person means."
+        ],
+        "correct": 2,
+        "explanation": "Listen and check what the person means."
+      },
+      {
+        "question": "An unwanted thought is equivalent to what?",
+        "options": [
+          "Proof of demonic activity.",
+          "It is not automatically a chosen action or moral consent.",
+          "A deliberate act in every case."
+        ],
+        "correct": 1,
+        "explanation": "It is not automatically a chosen action or moral consent."
+      },
+      {
+        "question": "Which statement is appropriate?",
+        "options": [
+          "Prayer can accompany medical care without guaranteeing a cure.",
+          "A person who remains ill lacks faith.",
+          "A healing event replaces treatment."
+        ],
+        "correct": 0,
+        "explanation": "Prayer can accompany medical care without guaranteeing a cure."
+      },
+      {
+        "question": "What does lament allow?",
+        "options": [
+          "Proof that faith has failed.",
+          "A timetable for everyone’s mourning.",
+          "An honest expression of grief within prayer."
+        ],
+        "correct": 2,
+        "explanation": "An honest expression of grief within prayer."
+      }
+    ],
+    "final": [
+      {
+        "question": "What is unsafe pastoral advice?",
+        "options": [
+          "Pressuring someone to return to an abusive situation.",
+          "Listening without blame.",
+          "Connecting with trained support."
+        ],
+        "correct": 0,
+        "explanation": "Pressuring someone to return to an abusive situation."
+      },
+      {
+        "question": "What is a responsible response to distressing experiences?",
+        "options": [
+          "Intensify fear with certainty about demons.",
+          "Stop all medical care.",
+          "Encourage qualified care and appropriate pastoral help."
+        ],
+        "correct": 2,
+        "explanation": "Encourage qualified care and appropriate pastoral help."
+      },
+      {
+        "question": "Before involving an interpreter or relative, consider what?",
+        "options": [
+          "Whether the helper prefers public disclosure.",
+          "Consent, privacy and communication needs.",
+          "Convenience alone."
+        ],
+        "correct": 1,
+        "explanation": "Consent, privacy and communication needs."
+      },
+      {
+        "question": "What should rising helper distress prompt?",
+        "options": [
+          "Reflection, support and possible adjustment of duties.",
+          "More secrecy and longer hours automatically.",
+          "A claim of unlimited resilience."
+        ],
+        "correct": 0,
+        "explanation": "Reflection, support and possible adjustment of duties."
+      },
+      {
+        "question": "What does this course authorise?",
+        "options": [
+          "Independent clinical practice.",
+          "Authority to conduct exorcisms.",
+          "No professional or ecclesiastical role; it records introductory learning."
+        ],
+        "correct": 2,
+        "explanation": "No professional or ecclesiastical role; it records introductory learning."
+      }
+    ]
+  }
+}
