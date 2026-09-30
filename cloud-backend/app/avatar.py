@@ -20,6 +20,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from .magisterium import CatholicChatIn, ask_magisterium
 from .counselling import safety_route
+from .avatar_agents import collect_evidence, configured_providers, synthesis_prompt
 
 router = APIRouter(prefix="/api/avatar", tags=["humanoid-avatar"])
 
@@ -218,6 +219,8 @@ async def avatar_status():
         "available": bool(os.getenv("MAGISTERIUM_API_KEY", "").strip() or _provider_config() != "none"),
         "doctrinal_authority": "Magisterium AI gateway",
         "reasoning_provider": _provider_config(),
+        "multi_agent_providers": configured_providers(),
+        "orchestration": "authority_weighted_evidence_synthesis",
         "voice_input": "browser_speech_recognition_when_supported",
         "voice_output": "browser_speech_synthesis_when_supported",
         "touch": True,
@@ -276,19 +279,31 @@ async def avatar_chat(payload: AvatarIn, request: Request):
             "doctrinal_authority": "Magisterium AI gateway",
         }
 
-    # Non-doctrinal mission reasoning may use a configured secondary model.
-    try:
-        reply, provider = await _reason_with_provider(payload, domain)
-    except HTTPException as exc:
-        if domain in {"philosophy", "logic", "science", "mission"}:
-            raise exc
-        raise
+    # Specialist agents contribute bounded evidence. The synthesis provider does
+    # not use majority voting; authority and domain boundaries are explicit.
+    evidence = await collect_evidence(message, domain, payload.language)
+    if evidence["agents"]:
+        synthesis_payload = payload.model_copy(update={"message": synthesis_prompt(message, payload.language, evidence)})
+        reply, provider = await _reason_with_provider(synthesis_payload, domain)
+        sources = []
+        seen = set()
+        for agent in evidence["agents"]:
+            for source in agent.get("sources", []):
+                url = str(source.get("url", ""))
+                if url and url not in seen:
+                    seen.add(url); sources.append(source)
+        return {
+            "reply": reply, "domain": domain, "provider": provider,
+            "sources": sources[:10], "agent_provenance": evidence["agents"],
+            "consensus": "authority_weighted", "needs_human_follow_up": domain == "counselling",
+            "doctrinal_authority": "Catholic mission guardrails; theology is routed to Magisterium AI",
+        }
 
+    # Graceful single-provider fallback when multi-agent providers are unavailable.
+    reply, provider = await _reason_with_provider(payload, domain)
     return {
-        "reply": reply,
-        "domain": domain,
-        "provider": provider,
-        "sources": [],
+        "reply": reply, "domain": domain, "provider": provider, "sources": [],
+        "agent_provenance": [], "consensus": "single_provider_fallback",
         "needs_human_follow_up": domain == "counselling",
         "doctrinal_authority": "Catholic mission guardrails; theology is routed to Magisterium AI",
     }
