@@ -116,6 +116,19 @@ class AgentContractTests(unittest.IsolatedAsyncioTestCase):
         self.assertIsNone(agents.trusted_source({"url":"http://www.who.int/x","origin":"retrieved_source","verified":True},"science"))
         self.assertIsNone(agents.trusted_source({"url":"https://www.who.int/x","origin":"retrieved_source","verified":False},"science"))
 
+    def test_tts_is_disabled_without_server_configuration(self):
+        from app import avatar_tts
+        with patch.dict(os.environ,{"AVATAR_TTS_PROVIDER":"none","ELEVENLABS_API_KEY":"","ELEVENLABS_VOICE_ID":""},clear=False):
+            self.assertFalse(avatar_tts.tts_enabled())
+
+    async def test_tts_adapter_makes_no_call_when_disabled(self):
+        from app import avatar_tts
+        with patch.dict(os.environ,{"AVATAR_TTS_PROVIDER":"none","ELEVENLABS_API_KEY":"","ELEVENLABS_VOICE_ID":""},clear=False):
+            with patch("app.avatar_tts.httpx.AsyncClient") as client:
+                result=await avatar_tts.synthesize_with_timing("Peace be with you")
+        self.assertIsNone(result)
+        client.assert_not_called()
+
     def test_synthesis_contract_forbids_majority_vote(self):
         prompt=agents.synthesis_prompt("question","en",{"agents":[{"summary":"A"},{"summary":"B"}]})
         self.assertIn("Never decide disagreement by majority vote",prompt)
