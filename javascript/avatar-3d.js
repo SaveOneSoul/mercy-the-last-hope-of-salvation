@@ -40,13 +40,13 @@
     if(state==='thinking')turn+=Math.sin(t*1.6)*.06;if(state==='listening')turn*=.3;
     viseme+=(targetViseme-viseme)*.22;
     blink=reduced?0:(Math.sin(t*.83)>0.996?1:Math.max(0,blink-.16));
-    var skin=[.72,.49,.38],hair=[.10,.065,.06],robe=[.20,.09,.12],white=[.92,.89,.84],eye=[.08,.055,.05],gold=[.72,.53,.22];
+    var skin=[.76,.56,.46],hair=[.08,.045,.04],robe=[.18,.08,.16],veil=[.86,.82,.76],white=[.95,.93,.89],eye=[.07,.045,.04],gold=[.76,.58,.28];
     drawPart(0,-1.7+bob,.05,1.35,1.35,.62,robe,turn);
     drawPart(0,.15+bob,0,1.04,1.22,.92,skin,turn);
     drawPart(0,.77+bob,-.02,1.07,.48,.93,hair,turn);
     drawPart(-.39,.25+bob,.82,.17,.075*(1-blink),.055,white,turn);drawPart(.39,.25+bob,.82,.17,.075*(1-blink),.055,white,turn);
     drawPart(-.39,.25+bob,.88,.055,.055,.035,eye,turn);drawPart(.39,.25+bob,.88,.055,.055,.035,eye,turn);
-    drawPart(0,-.26+bob,.88,.26,.035+viseme*.14,.045,[.36,.11,.14],turn);
+    drawPart(0,-.26+bob,.88,.24,.028+viseme*.13,.042,[.36,.11,.14],turn);
     drawPart(0,-.76+bob,.91,.035,.24,.025,gold,turn);drawPart(0,-.76+bob,.91,.17,.035,.025,gold,turn);
     requestAnimationFrame(frame);
   }
