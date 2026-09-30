@@ -85,6 +85,23 @@ class AgentContractTests(unittest.IsolatedAsyncioTestCase):
             result=await agents.run_agent("ollama","logic","question","en")
         self.assertIsNone(result)
 
+    def test_explicit_agent_disagreement_is_structured_without_winner(self):
+        evidence={"agents":[
+            {"agent":"Science specialist","domain":"science","provider":"Gemini","claims":[{"topic":"claim-x","statement":"X is supported","stance":"supports"}]},
+            {"agent":"Logic specialist","domain":"logic","provider":"Ollama","claims":[{"topic":"claim-x","statement":"X is not established","stance":"opposes"}]},
+        ]}
+        disagreements=agents.detect_disagreements(evidence)
+        self.assertEqual(len(disagreements),1)
+        self.assertEqual(disagreements[0]["state"],"mixed")
+        self.assertNotIn("winner",disagreements[0])
+
+    def test_disagreement_detector_does_not_infer_conflict_from_free_text(self):
+        evidence={"agents":[
+            {"agent":"A","claims":["X is true"]},
+            {"agent":"B","claims":["X is false"]},
+        ]}
+        self.assertEqual(agents.detect_disagreements(evidence),[])
+
     def test_synthesis_contract_forbids_majority_vote(self):
         prompt=agents.synthesis_prompt("question","en",{"agents":[{"summary":"A"},{"summary":"B"}]})
         self.assertIn("Never decide disagreement by majority vote",prompt)
