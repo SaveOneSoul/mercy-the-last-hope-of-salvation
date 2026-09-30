@@ -21,6 +21,7 @@ async function load(){
  if(!courseId){app.innerHTML='<div class="lesson-status">Choose a course from the formation dashboard.</div>';return;}
  const cfg=await fetch('../data/formation-courses.json').then(r=>r.json()),course=cfg.courses.find(c=>c.id===courseId);
  if(!course)throw new Error('Unknown course');
+ if(course.contentFile)return MercyRichFormation.lesson(app,course,unitNo);
  const src=await fetch(course.source,{cache:'no-store'}).then(r=>r.text()),doc=new DOMParser().parseFromString(src,'text/html'),root=doc.querySelector(course.courseSelector),units=root?[...root.querySelectorAll(course.unitSelector)]:[];
  const unit=units[unitNo-1];if(!unit)throw new Error('Unit not found');
  const title=(unit.querySelector('h3')||{}).textContent||('Unit '+unitNo);

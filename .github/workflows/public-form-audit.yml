@@ -15,12 +15,18 @@ jobs:
           python-version: '3.12'
       - name: Verify every public form has a submission handler
         run: python tools/audit_public_forms.py
+      - name: Validate prayer and learning routes
+        run: python tools/validate_prayer_formation_care.py
       - name: Validate Catholic Theology hub
         run: python tools/validate_theology_hub.py
       - name: Validate Logos corpus and source-rights metadata
         run: python tools/validate_logos.py
       - name: Syntax-check unified Logos frontend
         run: |
+          node --check javascript/formation-rich.js
+          node --check javascript/counselling-support.js
+          node --check javascript/prayer-reader.js
+          node --check javascript/learning-ui.js
           node --check javascript/logos.js
           node --check javascript/logos-ot-unified-integration.js
       - name: Validate Logos unified Interlinear + Greek NT + OT integration

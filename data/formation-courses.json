@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "credit_policy": "Internal Save One Soul formation credits only; not academic, seminary, ECTS, university, or government accreditation.",
   "courses": [
     {
@@ -114,7 +114,9 @@
         "Lumen Gentium VIII",
         "Ineffabilis Deus",
         "Munificentissimus Deus"
-      ]
+      ],
+      "contentFile": "../data/courses/mariology.json",
+      "overview": "mariology.html"
     },
     {
       "id": "sacraments",
@@ -222,6 +224,36 @@
         "Dominum et Vivificantem",
         "CHARIS Statutes"
       ]
+    },
+    {
+      "id": "psychology",
+      "title": "Psychology Foundations",
+      "credits": 20,
+      "source": "psychology.html",
+      "overview": "psychology.html",
+      "contentFile": "../data/courses/psychology.json",
+      "fatherIds": [],
+      "magisterial": []
+    },
+    {
+      "id": "counselling-foundations",
+      "title": "Counselling Foundations",
+      "credits": 20,
+      "source": "counselling-courses.html",
+      "overview": "counselling-courses.html",
+      "contentFile": "../data/courses/counselling-foundations.json",
+      "fatherIds": [],
+      "magisterial": []
+    },
+    {
+      "id": "pastoral-accompaniment",
+      "title": "Pastoral Accompaniment",
+      "credits": 20,
+      "source": "counselling-courses.html",
+      "overview": "counselling-courses.html",
+      "contentFile": "../data/courses/pastoral-accompaniment.json",
+      "fatherIds": [],
+      "magisterial": []
     }
   ],
   "glossary": [

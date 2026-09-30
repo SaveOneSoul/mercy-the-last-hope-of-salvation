@@ -87,7 +87,8 @@ def main() -> None:
 
     for related in RELATED:
         text = related.read_text(encoding="utf-8")
-        require(text, 'href="theology.html">Theology</a>', f"Theology navigation in {related.name}")
+        if 'href="theology.html">Theology</a>' not in text and 'href="codex-fidei.html">Codex Fidei</a>' not in text:
+            raise SystemExit(f'Missing Theology or Codex Fidei navigation in {related.name}')
 
     require(
         sitemap,

@@ -4,6 +4,7 @@ const app=document.getElementById('assessmentApp');
 function el(tag,text,cls){const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n}
 async function load(){
  const cfg=await fetch('../data/formation-courses.json').then(r=>r.json()),course=cfg.courses.find(c=>c.id===courseId);if(!course)throw new Error('Unknown course');
+ if(course.contentFile)return MercyRichFormation.assessment(app,course,type);
  const src=await fetch(course.source,{cache:'no-store'}).then(r=>r.text()),doc=new DOMParser().parseFromString(src,'text/html'),root=doc.querySelector(course.courseSelector),units=root?[...root.querySelectorAll(course.unitSelector)]:[];
  const chosen=type==='mid'?units.slice(0,5):units.slice(5,10);
  document.title=(type==='mid'?'Mid-course assessment':'Final synthesis assessment')+' · '+course.title;

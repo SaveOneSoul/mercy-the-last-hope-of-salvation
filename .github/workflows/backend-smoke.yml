@@ -31,6 +31,8 @@ jobs:
           cache-dependency-path: cloud-backend/requirements.txt
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Test counselling safety and privacy contract
+        run: python -m unittest discover -s tests -p "test_counselling.py" -v
       - name: Compile backend
         run: python -m compileall -q app
       - name: Import application, CMS, SEO, Logos and intention-network models
