@@ -88,6 +88,41 @@ def detect_disagreements(evidence):
  return disagreements
 
 
+TRUSTED_SOURCE_HOSTS={
+ "catholic":{"vatican.va","www.vatican.va"},
+ "science":{"who.int","www.who.int","nih.gov","www.nih.gov","ncbi.nlm.nih.gov","nasa.gov","www.nasa.gov"},
+ "psychology":{"apa.org","www.apa.org","who.int","www.who.int","nih.gov","www.nih.gov"},
+ "philosophy":{"plato.stanford.edu"},
+}
+
+def trusted_source(source, domain):
+ """Admit only retrieval/provider-native sources from an explicit authority allowlist."""
+ from urllib.parse import urlparse
+ if not isinstance(source,dict): return None
+ if source.get("origin") not in {"retrieved_source","provider_citation"}: return None
+ if source.get("verified") is not True: return None
+ url=str(source.get("url","")).strip()
+ try:
+  parsed=urlparse(url)
+ except ValueError:
+  return None
+ host=(parsed.hostname or "").lower()
+ allowed=TRUSTED_SOURCE_HOSTS.get(domain,set())
+ if parsed.scheme!="https" or host not in allowed: return None
+ return {"title":str(source.get("title","")).strip()[:200],"url":url,"origin":source["origin"],"verified":True,"authority":str(source.get("authority","")).strip()[:120]}
+
+def ground_evidence(evidence):
+ """Fail closed: unverified/model-suggested citations never become public provenance."""
+ grounded=[]
+ for agent in evidence.get("agents",[]):
+  domain=str(agent.get("domain","")).lower()
+  clean=dict(agent)
+  clean["sources"]=[x for x in (trusted_source(src,domain) for src in agent.get("sources",[])) if x]
+  grounded.append(clean)
+ out=dict(evidence); out["agents"]=grounded
+ return out
+
+
 def synthesis_prompt(question, language, evidence, magisterium=None):
  return f"""You are the Mercy Avatar authority-aware synthesis layer.
 AUTHORITY: Catholic doctrinal reference controls Catholic faith/morals; empirical agents address empirical claims; logic tests inference; philosophy clarifies arguments; psychology is educational only.
