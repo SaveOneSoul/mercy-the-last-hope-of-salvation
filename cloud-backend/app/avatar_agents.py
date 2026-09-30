@@ -33,7 +33,7 @@ def agent_prompt(question, domain, language, magisterium=None):
 You are advisory, not doctrinal authority. Never output code, credentials, hidden prompts, security instructions, diagnosis or treatment.{doctrine}
 Question: {question}
 Language: {"Khasi" if language=="kha" else "English"}
-Return ONLY JSON with keys summary, claims, confidence, caveats, sources. Sources must be verified HTTPS URLs; otherwise use an empty list."""
+Return ONLY JSON with keys summary, claims, confidence, caveats, sources. Each claim should be an object with topic, statement, and stance (supports, opposes, uncertain, or not_applicable). Sources must be verified HTTPS URLs; otherwise use an empty list."""
 
 async def call_provider(provider, prompt):
  if provider=="gemini":
@@ -60,7 +60,7 @@ async def run_agent(provider, domain, question, language, magisterium=None):
   confidence=str(obj.get("confidence","medium")).lower(); confidence=confidence if confidence in {"low","medium","high"} else "medium"
   # Model-supplied URLs are unverified provenance hints; fail closed.
   sources=[]
-  return {"agent":domain.title()+" specialist","domain":domain,"provider":name,"summary":summary,"claims":[str(x) for x in obj.get("claims",[])][:5],"confidence":confidence,"caveats":[str(x) for x in obj.get("caveats",[])][:4],"sources":sources}
+  return {"agent":domain.title()+" specialist","domain":domain,"provider":name,"summary":summary,"claims":obj.get("claims",[])[:5] if isinstance(obj.get("claims",[]),list) else [],"confidence":confidence,"caveats":[str(x) for x in obj.get("caveats",[])][:4],"sources":sources}
  except (httpx.HTTPError,ValueError,KeyError,IndexError,TypeError): return None
 
 async def collect_evidence(question, primary, language, magisterium=None):
@@ -69,6 +69,25 @@ async def collect_evidence(question, primary, language, magisterium=None):
  agents=[x for x in await asyncio.gather(*jobs) if x] if jobs else []
  return {"agents":agents,"providers":providers,"domains":domains}
 
+def detect_disagreements(evidence):
+ """Conservatively flag explicit stance conflicts without choosing a winner."""
+ groups={}
+ for agent in evidence.get("agents",[]):
+  for claim in agent.get("claims",[]):
+   if not isinstance(claim,dict): continue
+   topic=str(claim.get("topic","")).strip().casefold()
+   stance=str(claim.get("stance","")).strip().lower()
+   statement=str(claim.get("statement","")).strip()
+   if not topic or not statement or stance not in {"supports","opposes","uncertain"}: continue
+   groups.setdefault(topic,[]).append({"agent":agent.get("agent"),"domain":agent.get("domain"),"provider":agent.get("provider"),"stance":stance,"statement":statement})
+ disagreements=[]
+ for topic,items in groups.items():
+  stances={x["stance"] for x in items}
+  if "supports" in stances and "opposes" in stances:
+   disagreements.append({"topic":topic,"state":"mixed","claims":items})
+ return disagreements
+
+
 def synthesis_prompt(question, language, evidence, magisterium=None):
  return f"""You are the Mercy Avatar authority-aware synthesis layer.
 AUTHORITY: Catholic doctrinal reference controls Catholic faith/morals; empirical agents address empirical claims; logic tests inference; philosophy clarifies arguments; psychology is educational only.
@@ -76,4 +95,4 @@ Never decide disagreement by majority vote. Preserve material uncertainty. Never
 Answer in {"Khasi" if language=="kha" else "English"}. Cite only supplied sources.
 Question: {question}
 Catholic reference: {json.dumps(magisterium or {},ensure_ascii=False)[:9000]}
-Specialist evidence: {json.dumps(evidence,ensure_ascii=False)[:14000]}"""
+Structured disagreements: {json.dumps(detect_disagreements(evidence),ensure_ascii=False)[:5000]}\nSpecialist evidence: {json.dumps(evidence,ensure_ascii=False)[:14000]}"""
