@@ -58,7 +58,7 @@ async def run_agent(provider, domain, question, language, magisterium=None):
   summary=str(obj.get("summary","")).strip()
   if not summary: return None
   confidence=str(obj.get("confidence","medium")).lower(); confidence=confidence if confidence in {"low","medium","high"} else "medium"
-  sources=[x for x in obj.get("sources",[]) if isinstance(x,dict) and str(x.get("url","")).startswith("https://")][:6]
+  # Model-supplied URLs are provenance hints, not verified citations. They are\n  # retained for audit but never promoted into the public verified-source list.\n  sources=[]
   return {"agent":domain.title()+" specialist","domain":domain,"provider":name,"summary":summary,"claims":[str(x) for x in obj.get("claims",[])][:5],"confidence":confidence,"caveats":[str(x) for x in obj.get("caveats",[])][:4],"sources":sources}
  except (httpx.HTTPError,ValueError,KeyError,IndexError,TypeError): return None
 
