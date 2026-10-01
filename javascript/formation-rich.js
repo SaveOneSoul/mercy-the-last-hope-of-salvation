@@ -6,7 +6,7 @@
   function link(text, href) { const a = node('a', text, 'btn secondary'); a.href = href; return a; }
   function section(parent, title) { const s = node('section', null, 'lesson-section'); s.append(node('h2', title)); parent.append(s); return s; }
   function list(parent, values) { const ul = node('ul'); values.forEach(x => ul.append(node('li', x))); parent.append(ul); }
-  function creditValue(course,total){ const n=Number(course.credits||0)/(total||1); return Number.isInteger(n)?n:Number(n.toFixed(2)); }
+  function creditValue(course,total){ const n=Number(course.credits||0)/(total||1); return Number.isInteger(n)?n:Number(n.toFixed(4)); }
   function richSections(parent, unit){
     (unit.lectureSections||[]).forEach(block=>{ const sec=section(parent,block.title); (block.paragraphs||[]).forEach(p=>sec.append(node('p',p))); if(block.points?.length) list(sec,block.points); });
     if(unit.keyTerms?.length){ const sec=section(parent,'Key terms'); list(sec,unit.keyTerms.map(x=>typeof x==='string'?x:(x.term+': '+x.definition))); }
