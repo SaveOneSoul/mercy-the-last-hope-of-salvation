@@ -49,5 +49,5 @@
     (async()=>{await loadStats();const token=getToken();if(!token){render({joined:false});setStatus(msg('No personal data is requested. Your progress is tied only to a random token stored in this browser.','Ym kyrpad personal data. Ka progress ka shong tang ha random token ba la buh ha kane ka browser.'));return}try{const state=await apiCall('/api/save-one-soul/status/'+encodeURIComponent(token));render(state)}catch(e){render({joined:false})}})();
   }
 
-  if('serviceWorker'in navigator&&scriptUrl){window.addEventListener('load',()=>navigator.serviceWorker.register(new URL('../mercy-sw.js',scriptUrl)).catch(()=>{}))}
+  if('serviceWorker'in navigator&&scriptUrl){window.addEventListener('load',()=>{let reloadingForWorker=false;if(/\/pages\/logos\.html$/.test(location.pathname)){navigator.serviceWorker.addEventListener('controllerchange',()=>{if(reloadingForWorker)return;reloadingForWorker=true;location.reload()})}navigator.serviceWorker.register(new URL('../mercy-sw.js',scriptUrl)).catch(()=>{})})}
 })();

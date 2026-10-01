@@ -90,6 +90,9 @@ def main():
     assert 'Bible lands overview' in logos_html
     assert 'logos-atlas-sticky-bar' in logos_js
     assert 'logos-atlas-map-thumb' in logos_js
+    mercy_js = (ROOT / 'javascript/mercy.js').read_text()
+    assert 'controllerchange' in mercy_js
+    assert "pages\\/logos\\.html" in mercy_js
     assert 'atlasChapterCard(ch,data)' in logos_js
     assert "atlasPreview.hidden=false" in logos_js
     assert "createElementNS('http://www.w3.org/2000/svg'" in logos_js
