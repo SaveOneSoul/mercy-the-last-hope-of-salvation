@@ -68,7 +68,7 @@ jobs:
           CSS_SHA="$(openssl dgst -sha256 -binary _site/vendor/leaflet/leaflet.css | openssl base64 -A)"
           echo "Leaflet JS SHA256(base64): $JS_SHA"
           echo "Leaflet CSS SHA256(base64): $CSS_SHA"
-          test "$JS_SHA" = "20nQCchB9coqIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          test "$JS_SHA" = "hdRVtFIkFfa63EKg59F8kZ0QA0fWuJWL0Nxzj97NbVA="
           test "$CSS_SHA" = "p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
           curl -fsSL --retry 3 --retry-delay 2 \
             https://raw.githubusercontent.com/Leaflet/Leaflet/v1.9.4/LICENSE \
