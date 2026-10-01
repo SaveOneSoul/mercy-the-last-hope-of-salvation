@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "credit_policy": "Internal Save One Soul formation credits only; not academic, seminary, ECTS, university, or government accreditation.",
   "courses": [
     {
@@ -254,6 +254,54 @@
       "contentFile": "../data/courses/pastoral-accompaniment.json",
       "fatherIds": [],
       "magisterial": []
+    },
+    {
+      "id": "theology-professional",
+      "title": "Catholic Theology: Professional Foundations",
+      "credits": 46,
+      "source": "theology.html",
+      "overview": "theology.html",
+      "contentFile": "../data/courses/theology-professional.json",
+      "fatherIds": [],
+      "magisterial": [
+        "Dei Verbum",
+        "Lumen Gentium",
+        "Catechism of the Catholic Church"
+      ]
+    },
+    {
+      "id": "philosophy",
+      "title": "Catholic Philosophy: Professional Foundations",
+      "credits": 42,
+      "source": "codex-fidei.html",
+      "overview": "codex-fidei.html",
+      "contentFile": "../data/courses/philosophy.json",
+      "fatherIds": [],
+      "magisterial": []
+    },
+    {
+      "id": "psychology-professional",
+      "title": "Psychology: Professional Foundations",
+      "credits": 48,
+      "source": "psychology.html",
+      "overview": "psychology.html",
+      "contentFile": "../data/courses/psychology-professional.json",
+      "fatherIds": [],
+      "magisterial": []
+    },
+    {
+      "id": "scripture-professional",
+      "title": "Sacred Scripture: Catholic Biblical Studies",
+      "credits": 54,
+      "source": "scripture-course.html",
+      "overview": "scripture-course.html",
+      "contentFile": "../data/courses/scripture-professional.json",
+      "fatherIds": [],
+      "magisterial": [
+        "Dei Verbum",
+        "Catechism §§101–141",
+        "Pontifical Biblical Commission"
+      ]
     }
   ],
   "glossary": [
