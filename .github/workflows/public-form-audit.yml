@@ -31,3 +31,18 @@ jobs:
           node --check javascript/logos-ot-unified-integration.js
       - name: Validate Logos unified Interlinear + Greek NT + OT integration
         run: python tools/validate_logos_greek_frontend.py
+      - name: Verify pinned Leaflet release for interactive Atlas
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 3 --retry-delay 2 \
+            https://github.com/Leaflet/Leaflet/releases/download/v1.9.4/leaflet.zip \
+            -o /tmp/leaflet-1.9.4.zip
+          rm -rf /tmp/leaflet-audit
+          mkdir -p /tmp/leaflet-audit
+          unzip -q /tmp/leaflet-1.9.4.zip -d /tmp/leaflet-audit
+          test -f /tmp/leaflet-audit/leaflet.js
+          test -f /tmp/leaflet-audit/leaflet.css
+          JS_SHA="$(openssl dgst -sha256 -binary /tmp/leaflet-audit/leaflet.js | openssl base64 -A)"
+          CSS_SHA="$(openssl dgst -sha256 -binary /tmp/leaflet-audit/leaflet.css | openssl base64 -A)"
+          test "$JS_SHA" = "20nQCchB9coqIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          test "$CSS_SHA" = "p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
