@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "reviewed": "2026-10-01",
   "source": {
     "title": "Bible Atlas",
@@ -1201,7 +1201,8 @@
           "title": "Ancient Near East in the 3rd Millennium",
           "page": 31
         }
-      ]
+      ],
+      "visual_map": "ancient-near-east"
     },
     {
       "book": "Genesis",
@@ -1229,7 +1230,8 @@
           "title": "Abraham in Canaan",
           "page": 37
         }
-      ]
+      ],
+      "visual_map": "patriarchs"
     },
     {
       "book": "Genesis",
@@ -1247,7 +1249,8 @@
           "title": "Travels of Jacob",
           "page": 39
         }
-      ]
+      ],
+      "visual_map": "patriarchs"
     },
     {
       "book": "Genesis",
@@ -1265,7 +1268,8 @@
           "title": "Egypt: Land of Bondage",
           "page": 10
         }
-      ]
+      ],
+      "visual_map": "patriarchs"
     },
     {
       "book": "Exodus",
@@ -1283,7 +1287,8 @@
           "title": "The Route of the Exodus",
           "page": 49
         }
-      ]
+      ],
+      "visual_map": "exodus"
     },
     {
       "book": "Exodus",
@@ -1301,7 +1306,8 @@
           "title": "The Journey from Kadesh-Barnea to the Plains of Moab",
           "page": 53
         }
-      ]
+      ],
+      "visual_map": "exodus"
     },
     {
       "book": "Numbers",
@@ -1324,7 +1330,8 @@
           "title": "The Journey from Kadesh-Barnea to the Plains of Moab",
           "page": 53
         }
-      ]
+      ],
+      "visual_map": "exodus"
     },
     {
       "book": "Deuteronomy",
@@ -1342,7 +1349,8 @@
           "title": "International Routes, The King's Highway",
           "page": 12
         }
-      ]
+      ],
+      "visual_map": "exodus"
     },
     {
       "book": "Joshua",
@@ -1370,7 +1378,8 @@
           "title": "The Tribal Allotments of Israel",
           "page": 64
         }
-      ]
+      ],
+      "visual_map": "conquest"
     },
     {
       "book": "Judges",
@@ -1388,7 +1397,8 @@
           "title": "The Period of the Judges",
           "page": 69
         }
-      ]
+      ],
+      "visual_map": "conquest"
     },
     {
       "book": "1 Samuel",
@@ -1406,7 +1416,8 @@
           "title": "The Kingdom of Saul and His Wars",
           "page": 77
         }
-      ]
+      ],
+      "visual_map": "monarchy"
     },
     {
       "book": "1 Samuel",
@@ -1424,7 +1435,8 @@
           "title": "David's Rise to Power",
           "page": 81
         }
-      ]
+      ],
+      "visual_map": "monarchy"
     },
     {
       "book": "2 Samuel",
@@ -1447,7 +1459,8 @@
           "title": "Kingdom of David and Solomon",
           "page": 84
         }
-      ]
+      ],
+      "visual_map": "monarchy"
     },
     {
       "book": "1 Kings",
@@ -1475,7 +1488,8 @@
           "title": "Jerusalem in the Time of David and Solomon",
           "page": 90
         }
-      ]
+      ],
+      "visual_map": "monarchy"
     },
     {
       "book": "1 Kings",
@@ -1498,7 +1512,8 @@
           "title": "Elijah and Elisha",
           "page": 102
         }
-      ]
+      ],
+      "visual_map": "monarchy"
     },
     {
       "book": "2 Kings",
@@ -1521,7 +1536,8 @@
           "title": "The Fall of the Kingdom of Israel",
           "page": 110
         }
-      ]
+      ],
+      "visual_map": "monarchy"
     },
     {
       "book": "2 Kings",
@@ -1544,7 +1560,8 @@
           "title": "Nebuchadnezzar's Campaigns against Judah",
           "page": 123
         }
-      ]
+      ],
+      "visual_map": "monarchy"
     },
     {
       "book": "Ezra",
@@ -1562,7 +1579,8 @@
           "title": "Judah in the 5th century BCE",
           "page": 135
         }
-      ]
+      ],
+      "visual_map": "exile-return"
     },
     {
       "book": "Nehemiah",
@@ -1580,7 +1598,8 @@
           "title": "Palestine after the Exile",
           "page": 136
         }
-      ]
+      ],
+      "visual_map": "exile-return"
     },
     {
       "book": "1 Maccabees",
@@ -1603,7 +1622,8 @@
           "title": "Jewish Expansion under the Hasmonean Dynasty",
           "page": 145
         }
-      ]
+      ],
+      "visual_map": "monarchy"
     },
     {
       "book": "2 Maccabees",
@@ -1626,7 +1646,8 @@
           "title": "Selected Events in the Maccabean Revolt",
           "page": 144
         }
-      ]
+      ],
+      "visual_map": "monarchy"
     },
     {
       "book": "Matthew",
@@ -1644,7 +1665,8 @@
           "title": "The Birth, Childhood, and Baptism of Jesus",
           "page": 165
         }
-      ]
+      ],
+      "visual_map": "jesus"
     },
     {
       "book": "Matthew",
@@ -1667,7 +1689,8 @@
           "title": "The Ministry of Jesus around the Sea of Galilee",
           "page": 169
         }
-      ]
+      ],
+      "visual_map": "jesus"
     },
     {
       "book": "Matthew",
@@ -1690,7 +1713,8 @@
           "title": "The Passion Week in Jerusalem",
           "page": 175
         }
-      ]
+      ],
+      "visual_map": "jesus"
     },
     {
       "book": "Mark",
@@ -1708,7 +1732,8 @@
           "title": "The Ministry of Jesus around the Sea of Galilee",
           "page": 169
         }
-      ]
+      ],
+      "visual_map": "jesus"
     },
     {
       "book": "Mark",
@@ -1731,7 +1756,8 @@
           "title": "The Passion Week in Jerusalem",
           "page": 175
         }
-      ]
+      ],
+      "visual_map": "jesus"
     },
     {
       "book": "Luke",
@@ -1749,7 +1775,8 @@
           "title": "The Birth, Childhood, and Baptism of Jesus",
           "page": 165
         }
-      ]
+      ],
+      "visual_map": "jesus"
     },
     {
       "book": "Luke",
@@ -1772,7 +1799,8 @@
           "title": "The Ministry of Jesus around the Sea of Galilee",
           "page": 169
         }
-      ]
+      ],
+      "visual_map": "jesus"
     },
     {
       "book": "Luke",
@@ -1790,7 +1818,8 @@
           "title": "Jesus' Journeys from Galilee to Judea",
           "page": 172
         }
-      ]
+      ],
+      "visual_map": "jesus"
     },
     {
       "book": "Luke",
@@ -1813,7 +1842,8 @@
           "title": "The Passion Week in Jerusalem",
           "page": 175
         }
-      ]
+      ],
+      "visual_map": "jesus"
     },
     {
       "book": "John",
@@ -1831,7 +1861,8 @@
           "title": "Palestine in the Time of Jesus I",
           "page": 160
         }
-      ]
+      ],
+      "visual_map": "jesus"
     },
     {
       "book": "John",
@@ -1849,7 +1880,8 @@
           "title": "The Passion Week in Jerusalem",
           "page": 175
         }
-      ]
+      ],
+      "visual_map": "jesus"
     },
     {
       "book": "Acts",
@@ -1872,7 +1904,8 @@
           "title": "Paul's Conversion and Early Ministry",
           "page": 181
         }
-      ]
+      ],
+      "visual_map": "paul"
     },
     {
       "book": "Acts",
@@ -1885,7 +1918,8 @@
           "title": "The First Missionary Journey of Paul",
           "page": 183
         }
-      ]
+      ],
+      "visual_map": "paul"
     },
     {
       "book": "Acts",
@@ -1898,7 +1932,8 @@
           "title": "The Second Missionary Journey of Paul",
           "page": 184
         }
-      ]
+      ],
+      "visual_map": "paul"
     },
     {
       "book": "Acts",
@@ -1911,7 +1946,8 @@
           "title": "The Third Missionary Journey of Paul",
           "page": 185
         }
-      ]
+      ],
+      "visual_map": "paul"
     },
     {
       "book": "Acts",
@@ -1924,7 +1960,8 @@
           "title": "Paul's Arrest and Imprisonment",
           "page": 186
         }
-      ]
+      ],
+      "visual_map": "paul"
     },
     {
       "book": "Acts",
@@ -1942,7 +1979,8 @@
           "title": "Roman Empire in the Age of Augustus",
           "page": 152
         }
-      ]
+      ],
+      "visual_map": "paul"
     },
     {
       "book": "Revelation",
@@ -1960,7 +1998,8 @@
           "title": "The Roman Empire ca. 117 CE",
           "page": 195
         }
-      ]
+      ],
+      "visual_map": "revelation"
     },
     {
       "book": "Revelation",
@@ -1983,7 +2022,1132 @@
           "title": "Christian Expansion in the 2nd & 3rd Century",
           "page": 199
         }
+      ],
+      "visual_map": "revelation"
+    }
+  ],
+  "visual_maps": {
+    "ancient-near-east": {
+      "title": "Ancient Near East",
+      "subtitle": "Genesis 1–11 · regional historical-geographical orientation",
+      "bounds": {
+        "minLat": 22,
+        "maxLat": 41,
+        "minLon": 25,
+        "maxLon": 50
+      },
+      "note": "Original schematic map for orientation; not a reconstruction of Genesis 1 events and not copied from the source atlas.",
+      "regions": [
+        {
+          "name": "EGYPT",
+          "lat": 27.5,
+          "lon": 30.5
+        },
+        {
+          "name": "CANAAN",
+          "lat": 31.7,
+          "lon": 35.1
+        },
+        {
+          "name": "MESOPOTAMIA",
+          "lat": 34,
+          "lon": 44
+        },
+        {
+          "name": "ANATOLIA",
+          "lat": 38.6,
+          "lon": 35
+        }
+      ],
+      "waters": [
+        {
+          "name": "Mediterranean Sea",
+          "lat": 34.6,
+          "lon": 29
+        },
+        {
+          "name": "Red Sea",
+          "lat": 25.8,
+          "lon": 35.2
+        },
+        {
+          "name": "Persian Gulf",
+          "lat": 27.3,
+          "lon": 49
+        }
+      ],
+      "rivers": [
+        {
+          "name": "Nile",
+          "coords": [
+            [
+              31.2,
+              30
+            ],
+            [
+              30.2,
+              30.5
+            ],
+            [
+              29,
+              31
+            ],
+            [
+              27,
+              31.2
+            ],
+            [
+              24,
+              32.2
+            ]
+          ]
+        },
+        {
+          "name": "Euphrates",
+          "coords": [
+            [
+              38.5,
+              38
+            ],
+            [
+              36.5,
+              39.7
+            ],
+            [
+              34.7,
+              40.6
+            ],
+            [
+              33.4,
+              43.2
+            ],
+            [
+              31,
+              45.2
+            ]
+          ]
+        },
+        {
+          "name": "Tigris",
+          "coords": [
+            [
+              38.6,
+              42
+            ],
+            [
+              36.3,
+              43.1
+            ],
+            [
+              34.3,
+              44.4
+            ],
+            [
+              32,
+              46
+            ]
+          ]
+        }
+      ],
+      "points": [
+        {
+          "name": "Jerusalem",
+          "lat": 31.778,
+          "lon": 35.235
+        },
+        {
+          "name": "Memphis",
+          "lat": 29.85,
+          "lon": 31.25
+        },
+        {
+          "name": "Babylon",
+          "lat": 32.54,
+          "lon": 44.42
+        },
+        {
+          "name": "Nineveh",
+          "lat": 36.36,
+          "lon": 43.15
+        },
+        {
+          "name": "Ur",
+          "lat": 30.96,
+          "lon": 46.1
+        },
+        {
+          "name": "Haran",
+          "lat": 36.86,
+          "lon": 39.03
+        }
+      ]
+    },
+    "patriarchs": {
+      "title": "Patriarchal Journeys",
+      "subtitle": "Genesis 12–50 · Abraham, Isaac, Jacob and Joseph",
+      "bounds": {
+        "minLat": 27,
+        "maxLat": 38,
+        "maxLon": 47,
+        "minLon": 29
+      },
+      "note": "Original schematic route map. It illustrates the narrative geography; exact ancient routes and site identifications may be debated.",
+      "regions": [
+        {
+          "name": "EGYPT",
+          "lat": 29.4,
+          "lon": 31
+        },
+        {
+          "name": "CANAAN",
+          "lat": 31.8,
+          "lon": 35
+        },
+        {
+          "name": "MESOPOTAMIA",
+          "lat": 33.4,
+          "lon": 44.2
+        }
+      ],
+      "waters": [
+        {
+          "name": "Mediterranean Sea",
+          "lat": 34,
+          "lon": 30.1
+        }
+      ],
+      "rivers": [
+        {
+          "name": "Euphrates",
+          "coords": [
+            [
+              37.2,
+              38.4
+            ],
+            [
+              35.5,
+              40
+            ],
+            [
+              33.7,
+              42.2
+            ],
+            [
+              31.2,
+              45
+            ]
+          ]
+        }
+      ],
+      "routes": [
+        {
+          "name": "Patriarchal route",
+          "coords": [
+            [
+              30.96,
+              46.1
+            ],
+            [
+              36.86,
+              39.03
+            ],
+            [
+              32.21,
+              35.29
+            ],
+            [
+              31.93,
+              35.22
+            ],
+            [
+              31.53,
+              35.1
+            ],
+            [
+              31.25,
+              34.79
+            ],
+            [
+              30.9,
+              31
+            ]
+          ]
+        }
+      ],
+      "points": [
+        {
+          "name": "Ur",
+          "lat": 30.96,
+          "lon": 46.1
+        },
+        {
+          "name": "Haran",
+          "lat": 36.86,
+          "lon": 39.03
+        },
+        {
+          "name": "Shechem",
+          "lat": 32.21,
+          "lon": 35.29
+        },
+        {
+          "name": "Bethel",
+          "lat": 31.93,
+          "lon": 35.22
+        },
+        {
+          "name": "Hebron",
+          "lat": 31.53,
+          "lon": 35.1
+        },
+        {
+          "name": "Beersheba",
+          "lat": 31.25,
+          "lon": 34.79
+        },
+        {
+          "name": "Egypt",
+          "lat": 30.9,
+          "lon": 31
+        }
+      ]
+    },
+    "exodus": {
+      "title": "Exodus & Wilderness",
+      "subtitle": "Exodus–Deuteronomy · Egypt, Sinai, Kadesh and Moab",
+      "bounds": {
+        "minLat": 27,
+        "maxLat": 33.2,
+        "minLon": 30,
+        "maxLon": 36.8
+      },
+      "note": "Original schematic route. The precise route of the Exodus and location of Sinai are debated; this map is a study orientation, not a claim of certainty.",
+      "regions": [
+        {
+          "name": "EGYPT",
+          "lat": 30.1,
+          "lon": 31
+        },
+        {
+          "name": "SINAI",
+          "lat": 29.3,
+          "lon": 33.4
+        },
+        {
+          "name": "CANAAN",
+          "lat": 31.8,
+          "lon": 35.2
+        },
+        {
+          "name": "MOAB",
+          "lat": 31.3,
+          "lon": 35.8
+        }
+      ],
+      "waters": [
+        {
+          "name": "Mediterranean Sea",
+          "lat": 32.5,
+          "lon": 32
+        },
+        {
+          "name": "Red Sea",
+          "lat": 28.1,
+          "lon": 34.1
+        },
+        {
+          "name": "Dead Sea",
+          "lat": 31.4,
+          "lon": 35.5
+        }
+      ],
+      "routes": [
+        {
+          "name": "Schematic wilderness route",
+          "coords": [
+            [
+              30.95,
+              31.1
+            ],
+            [
+              30,
+              32.6
+            ],
+            [
+              29.6,
+              33.9
+            ],
+            [
+              30.6,
+              34.45
+            ],
+            [
+              30.8,
+              35.7
+            ],
+            [
+              31.35,
+              35.75
+            ],
+            [
+              31.87,
+              35.44
+            ]
+          ]
+        }
+      ],
+      "points": [
+        {
+          "name": "Goshen",
+          "lat": 30.95,
+          "lon": 31.1
+        },
+        {
+          "name": "Sinai region",
+          "lat": 29.6,
+          "lon": 33.9
+        },
+        {
+          "name": "Kadesh-Barnea",
+          "lat": 30.6,
+          "lon": 34.45
+        },
+        {
+          "name": "Moab",
+          "lat": 31.35,
+          "lon": 35.75
+        },
+        {
+          "name": "Jericho",
+          "lat": 31.87,
+          "lon": 35.44
+        }
+      ]
+    },
+    "conquest": {
+      "title": "Conquest & Settlement",
+      "subtitle": "Joshua–Judges · central, southern and northern Canaan",
+      "bounds": {
+        "minLat": 30.5,
+        "maxLat": 33.5,
+        "minLon": 34.2,
+        "maxLon": 36.1
+      },
+      "note": "Original schematic map showing major narrative locations and directions of movement.",
+      "regions": [
+        {
+          "name": "CANAAN",
+          "lat": 31.8,
+          "lon": 35
+        },
+        {
+          "name": "TRANSJORDAN",
+          "lat": 31.7,
+          "lon": 35.8
+        }
+      ],
+      "waters": [
+        {
+          "name": "Mediterranean Sea",
+          "lat": 32.1,
+          "lon": 34.35
+        },
+        {
+          "name": "Dead Sea",
+          "lat": 31.45,
+          "lon": 35.48
+        },
+        {
+          "name": "Sea of Galilee",
+          "lat": 32.82,
+          "lon": 35.58
+        }
+      ],
+      "routes": [
+        {
+          "name": "Central/Southern campaign",
+          "coords": [
+            [
+              31.87,
+              35.44
+            ],
+            [
+              31.92,
+              35.26
+            ],
+            [
+              31.78,
+              35.23
+            ],
+            [
+              31.53,
+              35.1
+            ]
+          ]
+        },
+        {
+          "name": "Northern campaign",
+          "coords": [
+            [
+              31.87,
+              35.44
+            ],
+            [
+              32.21,
+              35.29
+            ],
+            [
+              32.82,
+              35.5
+            ],
+            [
+              33.02,
+              35.57
+            ]
+          ]
+        }
+      ],
+      "points": [
+        {
+          "name": "Jericho",
+          "lat": 31.87,
+          "lon": 35.44
+        },
+        {
+          "name": "Ai",
+          "lat": 31.92,
+          "lon": 35.26
+        },
+        {
+          "name": "Jerusalem",
+          "lat": 31.778,
+          "lon": 35.235
+        },
+        {
+          "name": "Hebron",
+          "lat": 31.53,
+          "lon": 35.1
+        },
+        {
+          "name": "Shechem",
+          "lat": 32.21,
+          "lon": 35.29
+        },
+        {
+          "name": "Hazor",
+          "lat": 33.02,
+          "lon": 35.57
+        }
+      ]
+    },
+    "monarchy": {
+      "title": "United & Divided Monarchy",
+      "subtitle": "Samuel–Kings · Jerusalem, Samaria and neighboring powers",
+      "bounds": {
+        "minLat": 30.5,
+        "maxLat": 34.2,
+        "minLon": 34.1,
+        "maxLon": 36.9
+      },
+      "note": "Original schematic political-geography map; borders changed repeatedly and are shown only as broad study regions.",
+      "regions": [
+        {
+          "name": "JUDAH",
+          "lat": 31.4,
+          "lon": 35
+        },
+        {
+          "name": "ISRAEL",
+          "lat": 32.4,
+          "lon": 35.15
+        },
+        {
+          "name": "ARAM",
+          "lat": 33.5,
+          "lon": 36
+        },
+        {
+          "name": "PHOENICIA",
+          "lat": 33.5,
+          "lon": 35.2
+        }
+      ],
+      "waters": [
+        {
+          "name": "Mediterranean Sea",
+          "lat": 32.5,
+          "lon": 34.35
+        },
+        {
+          "name": "Dead Sea",
+          "lat": 31.4,
+          "lon": 35.5
+        },
+        {
+          "name": "Sea of Galilee",
+          "lat": 32.82,
+          "lon": 35.58
+        }
+      ],
+      "routes": [],
+      "points": [
+        {
+          "name": "Jerusalem",
+          "lat": 31.778,
+          "lon": 35.235
+        },
+        {
+          "name": "Hebron",
+          "lat": 31.53,
+          "lon": 35.1
+        },
+        {
+          "name": "Samaria",
+          "lat": 32.28,
+          "lon": 35.2
+        },
+        {
+          "name": "Dan",
+          "lat": 33.25,
+          "lon": 35.65
+        },
+        {
+          "name": "Beersheba",
+          "lat": 31.25,
+          "lon": 34.79
+        },
+        {
+          "name": "Damascus",
+          "lat": 33.51,
+          "lon": 36.29
+        },
+        {
+          "name": "Tyre",
+          "lat": 33.27,
+          "lon": 35.2
+        }
+      ]
+    },
+    "exile-return": {
+      "title": "Exile & Return",
+      "subtitle": "Kings, Chronicles, Ezra–Nehemiah · Jerusalem, Babylon and Persia",
+      "bounds": {
+        "minLat": 29,
+        "maxLat": 36.8,
+        "minLon": 34,
+        "maxLon": 49.5
+      },
+      "note": "Original schematic route map showing the broad deportation/return corridor between Judah and Mesopotamia.",
+      "regions": [
+        {
+          "name": "JUDAH",
+          "lat": 31.8,
+          "lon": 35.1
+        },
+        {
+          "name": "BABYLONIA",
+          "lat": 32.6,
+          "lon": 44.5
+        },
+        {
+          "name": "PERSIA",
+          "lat": 32.8,
+          "lon": 48.5
+        }
+      ],
+      "waters": [
+        {
+          "name": "Mediterranean Sea",
+          "lat": 35,
+          "lon": 34.7
+        },
+        {
+          "name": "Persian Gulf",
+          "lat": 29.4,
+          "lon": 48.5
+        }
+      ],
+      "rivers": [
+        {
+          "name": "Euphrates",
+          "coords": [
+            [
+              36,
+              38.5
+            ],
+            [
+              34.5,
+              40
+            ],
+            [
+              33,
+              42.5
+            ],
+            [
+              32.5,
+              44.5
+            ],
+            [
+              31,
+              46
+            ]
+          ]
+        }
+      ],
+      "routes": [
+        {
+          "name": "Exile / return corridor",
+          "coords": [
+            [
+              31.78,
+              35.23
+            ],
+            [
+              33.5,
+              36.3
+            ],
+            [
+              36,
+              38.5
+            ],
+            [
+              34,
+              42
+            ],
+            [
+              32.54,
+              44.42
+            ],
+            [
+              32.2,
+              48.3
+            ]
+          ]
+        }
+      ],
+      "points": [
+        {
+          "name": "Jerusalem",
+          "lat": 31.778,
+          "lon": 35.235
+        },
+        {
+          "name": "Damascus",
+          "lat": 33.51,
+          "lon": 36.29
+        },
+        {
+          "name": "Babylon",
+          "lat": 32.54,
+          "lon": 44.42
+        },
+        {
+          "name": "Susa",
+          "lat": 32.19,
+          "lon": 48.26
+        }
+      ]
+    },
+    "jesus": {
+      "title": "Palestine in the Time of Jesus",
+      "subtitle": "Gospels · Galilee, Samaria, Judea and Jerusalem",
+      "bounds": {
+        "minLat": 31.1,
+        "maxLat": 33.5,
+        "minLon": 34.4,
+        "maxLon": 36.2
+      },
+      "note": "Original schematic Gospel geography map with major ministry locations.",
+      "regions": [
+        {
+          "name": "GALILEE",
+          "lat": 32.8,
+          "lon": 35.35
+        },
+        {
+          "name": "SAMARIA",
+          "lat": 32.2,
+          "lon": 35.2
+        },
+        {
+          "name": "JUDEA",
+          "lat": 31.65,
+          "lon": 35.15
+        }
+      ],
+      "waters": [
+        {
+          "name": "Mediterranean Sea",
+          "lat": 32.2,
+          "lon": 34.55
+        },
+        {
+          "name": "Sea of Galilee",
+          "lat": 32.82,
+          "lon": 35.58
+        },
+        {
+          "name": "Dead Sea",
+          "lat": 31.45,
+          "lon": 35.5
+        }
+      ],
+      "routes": [
+        {
+          "name": "Galilee to Jerusalem",
+          "coords": [
+            [
+              32.7,
+              35.3
+            ],
+            [
+              32.21,
+              35.29
+            ],
+            [
+              31.87,
+              35.44
+            ],
+            [
+              31.78,
+              35.23
+            ]
+          ]
+        }
+      ],
+      "points": [
+        {
+          "name": "Nazareth",
+          "lat": 32.7,
+          "lon": 35.3
+        },
+        {
+          "name": "Capernaum",
+          "lat": 32.88,
+          "lon": 35.58
+        },
+        {
+          "name": "Bethlehem",
+          "lat": 31.7,
+          "lon": 35.2
+        },
+        {
+          "name": "Jerusalem",
+          "lat": 31.778,
+          "lon": 35.235
+        },
+        {
+          "name": "Jericho",
+          "lat": 31.87,
+          "lon": 35.44
+        },
+        {
+          "name": "Caesarea Philippi",
+          "lat": 33.25,
+          "lon": 35.69
+        }
+      ]
+    },
+    "paul": {
+      "title": "Paul's Missionary World",
+      "subtitle": "Acts & Pauline Letters · eastern Mediterranean routes",
+      "bounds": {
+        "minLat": 30,
+        "maxLat": 43,
+        "minLon": 12,
+        "maxLon": 37.5
+      },
+      "note": "Original schematic missionary-route map; individual journey segments are simplified for readability.",
+      "regions": [
+        {
+          "name": "ITALY",
+          "lat": 41.5,
+          "lon": 13.5
+        },
+        {
+          "name": "GREECE",
+          "lat": 39,
+          "lon": 22.5
+        },
+        {
+          "name": "ASIA MINOR",
+          "lat": 38.7,
+          "lon": 29
+        },
+        {
+          "name": "SYRIA",
+          "lat": 35,
+          "lon": 36
+        },
+        {
+          "name": "JUDEA",
+          "lat": 31.7,
+          "lon": 35.3
+        }
+      ],
+      "waters": [
+        {
+          "name": "Mediterranean Sea",
+          "lat": 34.5,
+          "lon": 22
+        },
+        {
+          "name": "Aegean Sea",
+          "lat": 38,
+          "lon": 24.8
+        }
+      ],
+      "routes": [
+        {
+          "name": "Missionary corridor",
+          "coords": [
+            [
+              31.78,
+              35.23
+            ],
+            [
+              36.2,
+              36.16
+            ],
+            [
+              36.99,
+              35.32
+            ],
+            [
+              35.17,
+              33.36
+            ],
+            [
+              37.94,
+              27.34
+            ],
+            [
+              40.64,
+              22.94
+            ],
+            [
+              37.98,
+              23.72
+            ],
+            [
+              41.9,
+              12.5
+            ]
+          ]
+        }
+      ],
+      "points": [
+        {
+          "name": "Jerusalem",
+          "lat": 31.778,
+          "lon": 35.235
+        },
+        {
+          "name": "Antioch",
+          "lat": 36.2,
+          "lon": 36.16
+        },
+        {
+          "name": "Tarsus",
+          "lat": 36.92,
+          "lon": 34.89
+        },
+        {
+          "name": "Cyprus",
+          "lat": 35.17,
+          "lon": 33.36
+        },
+        {
+          "name": "Ephesus",
+          "lat": 37.94,
+          "lon": 27.34
+        },
+        {
+          "name": "Philippi",
+          "lat": 41.01,
+          "lon": 24.29
+        },
+        {
+          "name": "Thessalonica",
+          "lat": 40.64,
+          "lon": 22.94
+        },
+        {
+          "name": "Corinth",
+          "lat": 37.94,
+          "lon": 22.93
+        },
+        {
+          "name": "Rome",
+          "lat": 41.9,
+          "lon": 12.5
+        }
+      ]
+    },
+    "revelation": {
+      "title": "Seven Churches of Revelation",
+      "subtitle": "Revelation 1–3 · Roman Asia",
+      "bounds": {
+        "minLat": 36.8,
+        "maxLat": 39.6,
+        "minLon": 26,
+        "maxLon": 30.5
+      },
+      "note": "Original schematic map of the seven churches addressed in Revelation 1–3.",
+      "regions": [
+        {
+          "name": "ROMAN ASIA",
+          "lat": 38.3,
+          "lon": 28.5
+        }
+      ],
+      "waters": [
+        {
+          "name": "Aegean Sea",
+          "lat": 38.5,
+          "lon": 26.4
+        }
+      ],
+      "routes": [
+        {
+          "name": "Seven-church circuit",
+          "coords": [
+            [
+              37.94,
+              27.34
+            ],
+            [
+              38.42,
+              27.14
+            ],
+            [
+              39.12,
+              27.18
+            ],
+            [
+              38.93,
+              27.85
+            ],
+            [
+              38.48,
+              28.04
+            ],
+            [
+              38.35,
+              28.52
+            ],
+            [
+              37.84,
+              29.11
+            ]
+          ]
+        }
+      ],
+      "points": [
+        {
+          "name": "Ephesus",
+          "lat": 37.94,
+          "lon": 27.34
+        },
+        {
+          "name": "Smyrna",
+          "lat": 38.42,
+          "lon": 27.14
+        },
+        {
+          "name": "Pergamum",
+          "lat": 39.12,
+          "lon": 27.18
+        },
+        {
+          "name": "Thyatira",
+          "lat": 38.93,
+          "lon": 27.85
+        },
+        {
+          "name": "Sardis",
+          "lat": 38.48,
+          "lon": 28.04
+        },
+        {
+          "name": "Philadelphia",
+          "lat": 38.35,
+          "lon": 28.52
+        },
+        {
+          "name": "Laodicea",
+          "lat": 37.84,
+          "lon": 29.11
+        }
       ]
     }
-  ]
+  },
+  "book_visual_map": {
+    "Genesis": "ancient-near-east",
+    "Exodus": "exodus",
+    "Leviticus": "exodus",
+    "Numbers": "exodus",
+    "Deuteronomy": "exodus",
+    "Joshua": "conquest",
+    "Judges": "conquest",
+    "Ruth": "conquest",
+    "1 Samuel": "monarchy",
+    "2 Samuel": "monarchy",
+    "1 Kings": "monarchy",
+    "2 Kings": "monarchy",
+    "1 Chronicles": "monarchy",
+    "2 Chronicles": "monarchy",
+    "Ezra": "exile-return",
+    "Nehemiah": "exile-return",
+    "Tobit": "exile-return",
+    "Judith": "exile-return",
+    "Esther": "exile-return",
+    "1 Maccabees": "monarchy",
+    "2 Maccabees": "monarchy",
+    "Isaiah": "monarchy",
+    "Jeremiah": "exile-return",
+    "Lamentations": "exile-return",
+    "Baruch": "exile-return",
+    "Ezekiel": "exile-return",
+    "Daniel": "exile-return",
+    "Hosea": "monarchy",
+    "Joel": "monarchy",
+    "Amos": "monarchy",
+    "Obadiah": "monarchy",
+    "Jonah": "monarchy",
+    "Micah": "monarchy",
+    "Nahum": "monarchy",
+    "Habakkuk": "monarchy",
+    "Zephaniah": "monarchy",
+    "Haggai": "exile-return",
+    "Zechariah": "exile-return",
+    "Malachi": "exile-return",
+    "Matthew": "jesus",
+    "Mark": "jesus",
+    "Luke": "jesus",
+    "John": "jesus",
+    "Acts": "paul",
+    "Romans": "paul",
+    "1 Corinthians": "paul",
+    "2 Corinthians": "paul",
+    "Galatians": "paul",
+    "Ephesians": "paul",
+    "Philippians": "paul",
+    "Colossians": "paul",
+    "1 Thessalonians": "paul",
+    "2 Thessalonians": "paul",
+    "1 Timothy": "paul",
+    "2 Timothy": "paul",
+    "Titus": "paul",
+    "Philemon": "paul",
+    "Hebrews": "paul",
+    "James": "paul",
+    "1 Peter": "paul",
+    "2 Peter": "paul",
+    "1 John": "revelation",
+    "2 John": "revelation",
+    "3 John": "revelation",
+    "Jude": "revelation",
+    "Revelation": "revelation"
+  }
 }

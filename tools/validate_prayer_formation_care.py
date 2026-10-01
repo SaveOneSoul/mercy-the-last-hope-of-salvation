@@ -73,10 +73,18 @@ def main():
     assert len(genesis_creation) == 1
     assert any(topic['title'] == 'The Ancient Near East'
                for topic in genesis_creation[0]['topics'])
+    assert len(atlas.get('visual_maps', {})) >= 9
+    assert genesis_creation[0].get('visual_map') == 'ancient-near-east'
+    ancient_map = atlas['visual_maps']['ancient-near-east']
+    assert ancient_map['points'] and ancient_map['regions'] and ancient_map['bounds']
+    assert any(point['name'] == 'Ur' for point in ancient_map['points'])
+    assert any(point['name'] == 'Jerusalem' for point in ancient_map['points'])
     logos_html = (ROOT / 'pages/logos.html').read_text()
     logos_js = (ROOT / 'javascript/logos.js').read_text()
     assert 'id="logosAtlasPreview"' in logos_html
     assert 'loadAtlasPreview(data)' in logos_js
+    assert 'renderAtlasVisualMap' in logos_js
+    assert "createElementNS('http://www.w3.org/2000/svg'" in logos_js
     assert "currentTab='atlas'" in logos_js
 
     manifest = json.loads((ROOT / 'data/prayers/sources.json').read_text())

@@ -271,3 +271,40 @@ body.dark .logos-chapter-grid button,body.dark .logos-chapter-nav button,body.da
 body.dark .logos-atlas-preview{background:linear-gradient(135deg,#29221d,#251c1e)}
 body.dark .logos-atlas-preview-item{background:#21191b}
 @media(max-width:760px){.logos-atlas-preview-grid{grid-template-columns:1fr}}
+
+/* Original visual Bible Atlas maps */
+.logos-atlas-map{margin:.85rem 0 1rem;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#f4ead7;box-shadow:0 10px 28px rgba(66,40,21,.09)}
+.logos-atlas-map svg{display:block;width:100%;height:auto;aspect-ratio:5/3;background:#f4ead7}
+.logos-atlas-map figcaption{display:grid;gap:.15rem;padding:.7rem .85rem;background:#fffdf8;border-top:1px solid var(--line)}
+.logos-atlas-map figcaption strong{color:var(--wine);font:800 .95rem/1.35 Georgia,serif}
+.logos-atlas-map figcaption span{font:650 .78rem/1.4 system-ui;color:#4f4440}
+.logos-atlas-map figcaption small{font:600 .7rem/1.45 system-ui;color:var(--muted)}
+.logos-atlas-map-bg{fill:#f4ead7}
+.logos-atlas-map-frame{stroke:#a88b69;stroke-width:2}
+.logos-atlas-gridline{stroke:#b9a58b;stroke-width:1;stroke-dasharray:5 8;opacity:.32}
+.logos-atlas-water-shape{fill:#dcebf0;stroke:#aac7cf;stroke-width:1.5;opacity:.9}
+.logos-atlas-water-label{fill:#5e8592;font:italic 700 15px Georgia,serif}
+.logos-atlas-river{stroke:#6d9eb2;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;opacity:.92}
+.logos-atlas-river-label{fill:#5e8592;font:italic 700 13px system-ui}
+.logos-atlas-route{stroke:#9a2e39;stroke-width:4;stroke-dasharray:10 8;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#atlasArrow)}
+.logos-atlas-arrow{fill:#9a2e39}
+.logos-atlas-route-label{fill:#842530;font:800 12px system-ui}
+.logos-atlas-region{fill:#7d6348;font:800 21px/1 Georgia,serif;letter-spacing:2px;opacity:.52}
+.logos-atlas-point{fill:#681426;stroke:#fff8ed;stroke-width:3}
+.logos-atlas-point-label{fill:#301f1d;font:800 14px system-ui;paint-order:stroke;stroke:#fff8ed;stroke-width:4px;stroke-linejoin:round}
+body.dark .logos-atlas-map{background:#231d19;border-color:#4b3b32}
+body.dark .logos-atlas-map svg{background:#231d19}
+body.dark .logos-atlas-map-bg{fill:#2a211c}
+body.dark .logos-atlas-map-frame{stroke:#765f50}
+body.dark .logos-atlas-gridline{stroke:#8c7566}
+body.dark .logos-atlas-water-shape{fill:#243842;stroke:#41616d}
+body.dark .logos-atlas-water-label,body.dark .logos-atlas-river-label{fill:#93bdcc}
+body.dark .logos-atlas-region{fill:#d7b990}
+body.dark .logos-atlas-point-label{fill:#f8eee4;stroke:#2a211c}
+body.dark .logos-atlas-map figcaption{background:#20191b;border-color:#49383a}
+@media(max-width:760px){
+  .logos-atlas-map{border-radius:14px}
+  .logos-atlas-map svg{min-height:320px}
+  .logos-atlas-region{font-size:18px}
+  .logos-atlas-point-label{font-size:13px}
+}
