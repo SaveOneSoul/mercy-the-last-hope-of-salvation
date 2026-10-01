@@ -88,3 +88,16 @@ body>main#main>.content{box-sizing:border-box}
 @keyframes mercy-svg-think{50%{transform:rotate(-1deg) translateY(-3px)}}@keyframes mercy-svg-blink{0%,46%,48%,100%{transform:scaleY(1)}47%{transform:scaleY(.08)}}
 @media(max-width:980px){.mercy-avatar-v7{height:460px!important;min-height:460px!important}}
 @media(max-width:600px){.mercy-avatar-v7{height:390px!important;min-height:390px!important}}
+
+/* Mercy VRM renderer v8: neutral fallback; no synthetic face. */
+.mercy-avatar-vrm{position:relative;width:min(100%,500px)!important;height:520px!important;min-height:520px!important;overflow:hidden;background:radial-gradient(circle at 50% 28%,#fffaf1 0,#eee0d2 56%,#d3bca7 100%)}
+.mercy-vrm-canvas{display:block!important;width:100%!important;height:100%!important;touch-action:manipulation}
+.mercy-vrm-canvas[hidden]{display:none!important}
+.mercy-vrm-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.65rem;padding:2rem;text-align:center;color:var(--wine);background:linear-gradient(180deg,rgba(255,255,255,.45),rgba(255,248,239,.72))}
+.mercy-vrm-placeholder[hidden]{display:none!important}
+.mercy-vrm-mark{display:grid;place-items:center;width:72px;height:72px;border:1px solid rgba(90,16,32,.18);border-radius:50%;font:700 2rem Georgia;color:#a77b31;background:rgba(255,255,255,.55)}
+.mercy-vrm-placeholder strong{font:700 1rem/1.25 system-ui}.mercy-vrm-placeholder span{max-width:340px;font:.86rem/1.55 system-ui;color:var(--muted)}
+.mercy-avatar-vrm[data-state="listening"]{box-shadow:inset 0 0 0 3px rgba(75,145,215,.22)}
+.mercy-avatar-vrm[data-state="speaking"]{box-shadow:inset 0 0 0 3px rgba(212,173,89,.28)}
+@media(max-width:980px){.mercy-avatar-vrm{height:460px!important;min-height:460px!important}}
+@media(max-width:600px){.mercy-avatar-vrm{height:390px!important;min-height:390px!important}}
