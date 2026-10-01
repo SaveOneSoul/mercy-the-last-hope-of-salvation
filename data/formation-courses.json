@@ -259,8 +259,8 @@
       "id": "theology-professional",
       "title": "Catholic Theology: Professional Foundations",
       "credits": 46,
-      "source": "theology.html",
-      "overview": "theology.html",
+      "source": "theology-professional.html",
+      "overview": "theology-professional.html",
       "contentFile": "../data/courses/theology-professional.json",
       "fatherIds": [],
       "magisterial": [
@@ -273,8 +273,8 @@
       "id": "philosophy",
       "title": "Catholic Philosophy: Professional Foundations",
       "credits": 42,
-      "source": "codex-fidei.html",
-      "overview": "codex-fidei.html",
+      "source": "philosophy.html",
+      "overview": "philosophy.html",
       "contentFile": "../data/courses/philosophy.json",
       "fatherIds": [],
       "magisterial": []
@@ -283,8 +283,8 @@
       "id": "psychology-professional",
       "title": "Psychology: Professional Foundations",
       "credits": 48,
-      "source": "psychology.html",
-      "overview": "psychology.html",
+      "source": "psychology-professional.html",
+      "overview": "psychology-professional.html",
       "contentFile": "../data/courses/psychology-professional.json",
       "fatherIds": [],
       "magisterial": []
