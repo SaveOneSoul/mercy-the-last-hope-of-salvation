@@ -49,3 +49,15 @@ def test_contract_audio_is_labeled_non_speech(monkeypatch):
     assert body["engine"] == "contract_only"
     assert body["mime_type"] == "audio/wav"
     assert base64.b64decode(body["audio_base64"], validate=True).startswith(b"RIFF")
+
+
+def test_kokoro_rejects_khasi_before_engine_call(monkeypatch):
+    monkeypatch.setenv("MERCY_VOICE_SERVICE_TOKEN", "test-only-token")
+    monkeypatch.setenv("MERCY_VOICE_ENGINE", "kokoro")
+    response = client.post(
+        "/v1/synthesize",
+        headers={"Authorization": "Bearer test-only-token"},
+        json={"text": "Khublei.", "language": "kha"},
+    )
+    assert response.status_code == 422
+    assert response.json()["detail"] == "language_not_supported_by_engine"
