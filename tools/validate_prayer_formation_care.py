@@ -96,8 +96,9 @@ def main():
     assert "el('details','logos-policy logos-atlas-rights')" in logos_js
     assert 'tile.openstreetmap.org/{z}/{x}/{y}.png' in logos_js
     assert 'OpenStreetMap' in logos_js
-    assert 'leaflet@1.9.4/dist/leaflet.css' in logos_html
-    assert 'leaflet@1.9.4/dist/leaflet.js' in logos_html
+    assert '../vendor/leaflet/leaflet.css' in logos_html
+    assert '../vendor/leaflet/leaflet.js' in logos_html
+    assert 'unpkg.com/leaflet' not in logos_html
     assert 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=' in logos_html
     assert 'sha256-20nQCchB9coqIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=' in logos_html
     mercy_js = (ROOT / 'javascript/mercy.js').read_text()
@@ -120,6 +121,10 @@ def main():
     deploy = (ROOT / '.github/workflows/mercy-pages.yml').read_text()
     assert 'cp -R data/courses data/prayers _site/data/' in deploy
     assert 'cp data/logos-bible-atlas.json _site/data/' in deploy
+    assert 'Vendor Leaflet 1.9.4 for interactive Bible maps' in deploy
+    assert 'releases/download/v1.9.4/leaflet.zip' in deploy
+    assert '20nQCchB9coqIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=' in deploy
+    assert 'p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=' in deploy
     print('Prayer, formation and support validation passed: routes, variable-length professional courses, Bible Atlas index, source PDFs, safety links and deployment data.')
 
 
