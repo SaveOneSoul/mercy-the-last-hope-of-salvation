@@ -325,3 +325,28 @@ body.dark .logos-atlas-sticky-bar{background:rgba(32,25,27,.95)}
 @media(max-width:760px){
   .logos-atlas-map-thumb svg{height:190px}
 }
+
+/* Interactive Logos Bible Atlas */
+.logos-atlas-interactive{position:relative;background:#fff}
+.logos-leaflet-canvas{width:100%;height:520px;background:#e9e2d7}
+.logos-atlas-map-thumb .logos-leaflet-canvas{height:220px}
+.logos-atlas-map-tools{position:absolute;top:.75rem;right:.75rem;z-index:650;display:flex;gap:.4rem;pointer-events:auto}
+.logos-atlas-map-tools .logos-small-btn{background:rgba(255,255,255,.94);box-shadow:0 3px 12px rgba(0,0,0,.12)}
+.logos-atlas-interactive:fullscreen{width:100vw;height:100vh;margin:0;border:0;border-radius:0;background:#fff}
+.logos-atlas-interactive:fullscreen .logos-leaflet-canvas{height:calc(100vh - 92px)}
+.logos-atlas-interactive:fullscreen figcaption{display:none}
+.logos-leaflet-region-icon{background:transparent;border:0}
+.logos-leaflet-region-icon span{display:block;width:120px;text-align:center;font:800 13px/1.2 system-ui;letter-spacing:1.2px;color:#5b4636;text-shadow:0 1px 2px #fff,0 -1px 2px #fff}
+.logos-map-popup{display:grid;gap:.2rem;min-width:130px}
+.logos-map-popup strong{color:#681426;font:800 14px/1.25 system-ui}
+.logos-map-popup small{color:#65565a;font:600 11px/1.35 system-ui}
+.logos-open-interactive-map{margin:.05rem 0 .75rem}
+.logos-atlas-interactive .leaflet-control-layers,.logos-atlas-interactive .leaflet-bar{border-color:rgba(93,64,45,.24);box-shadow:0 2px 10px rgba(49,34,27,.14)}
+.logos-atlas-interactive .leaflet-control-attribution{font-size:10px}
+body.dark .logos-atlas-interactive{background:#20191b}
+body.dark .logos-leaflet-region-icon span{color:#f0ddc4;text-shadow:0 1px 2px #1f1819,0 -1px 2px #1f1819}
+@media(max-width:760px){
+  .logos-leaflet-canvas{height:390px}
+  .logos-atlas-map-tools{top:.5rem;right:.5rem}
+  .logos-atlas-map-tools .logos-small-btn{min-height:38px;padding:.45rem .6rem;font-size:.72rem}
+}
