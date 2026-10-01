@@ -8,7 +8,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = ['mary-our-help','rosary-novena-54','healing-sessions','holy-wounds','prayer-protection',
          'prayer-conversion','mariology','psychology','counselling-courses','counselling',
-         'counselling-ai','personal-counselling']
+         'counselling-ai','personal-counselling','scripture-course','purgatory']
 
 
 class Links(HTMLParser):
@@ -40,7 +40,7 @@ def main():
         if not course.get('contentFile'):
             continue
         data = json.loads((ROOT / 'pages' / course['contentFile']).read_text())
-        assert len(data['units']) == 10 and course['credits'] == 20
+        assert len(data['units']) >= 10 and course['credits'] == len(data['units']) * 2
         for unit in data['units']:
             assert len(' '.join(unit['paragraphs']).split()) >= 90, unit['title']
             assert unit['sources'] and unit['assignment'] and len(unit['quiz']) == 2
@@ -49,8 +49,8 @@ def main():
             assert len(data['assessments'][kind]) == 5
             quizzes += data['assessments'][kind]
         for q in quizzes:
-            assert len(q['options']) == 3 and len(set(q['options'])) == 3
-            assert q['correct'] in range(3) and q['explanation']
+            assert len(q['options']) >= 2 and len(set(q['options'])) == len(q['options'])
+            assert q['correct'] in range(len(q['options'])) and q['explanation']
     manifest = json.loads((ROOT / 'data/prayers/sources.json').read_text())
     for source in manifest['sources']:
         if source['file'].endswith('.pdf'):
@@ -62,7 +62,7 @@ def main():
         assert '14416' in content and 'tel:112' in content and 'Privacy before you send' in content
     deploy = (ROOT / '.github/workflows/mercy-pages.yml').read_text()
     assert 'cp -R data/courses data/prayers _site/data/' in deploy
-    print('Prayer, formation and support validation passed: 12 routes, 40 lessons, source PDFs, safety links and deployment data.')
+    print('Prayer, formation and support validation passed: routes, variable-length professional courses, source PDFs, safety links and deployment data.')
 
 
 if __name__ == '__main__':
