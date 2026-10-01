@@ -61,3 +61,19 @@ body>main#main>.content{box-sizing:border-box}
 .avatar-canvas{display:none!important}
 @media(max-width:600px){.mercy-face-shape{left:25%;width:50%}.mercy-hair-side.left{left:14%}.mercy-hair-side.right{right:14%}}
 @media(prefers-reduced-motion:reduce){.mercy-eye,.mercy-face-shape{animation:none!important}}
+
+/* v6 specificity fix: mercy.css responsive rule sets div height:auto via
+   img,video,svg,canvas only; force the digital-human scene dimensions and
+   visible layers for local/staging preview. */
+.avatar-viewport>.mercy-digital-human{display:block!important;position:relative!important;width:100%!important;height:100%!important;min-height:520px!important;overflow:hidden!important}
+.avatar-viewport>.mercy-digital-human>*{box-sizing:border-box}
+.avatar-viewport>.mercy-digital-human .mercy-hair-back,
+.avatar-viewport>.mercy-digital-human .mercy-neck,
+.avatar-viewport>.mercy-digital-human .mercy-shoulders,
+.avatar-viewport>.mercy-digital-human .mercy-face-shape,
+.avatar-viewport>.mercy-digital-human .mercy-hair-side,
+.avatar-viewport>.mercy-digital-human .mercy-necklace,
+.avatar-viewport>.mercy-digital-human .mercy-pendant,
+.avatar-viewport>.mercy-digital-human .mercy-state-badge{display:block!important;visibility:visible!important}
+@media(max-width:980px){.avatar-viewport>.mercy-digital-human{min-height:460px!important}}
+@media(max-width:600px){.avatar-viewport>.mercy-digital-human{min-height:390px!important}}
