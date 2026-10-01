@@ -46,6 +46,26 @@ jobs:
           mkdir -p _site/data/logos-interlinear
           cp cloud-backend/app/logos_interlinear/prototypes/john-1-1/JHN-1-1.json _site/data/logos-interlinear/
           cp cloud-backend/app/logos_interlinear/prototypes/john-1-1/sources-manifest.json _site/data/logos-interlinear/
+      - name: Vendor Leaflet 1.9.4 for interactive Bible maps
+        run: |
+          set -euo pipefail
+          mkdir -p _site/vendor/leaflet
+          curl -fsSL --retry 3 --retry-delay 2 \
+            https://github.com/Leaflet/Leaflet/releases/download/v1.9.4/leaflet.zip \
+            -o /tmp/leaflet-1.9.4.zip
+          unzip -q /tmp/leaflet-1.9.4.zip -d /tmp/leaflet-dist
+          cp /tmp/leaflet-dist/leaflet.js _site/vendor/leaflet/leaflet.js
+          cp /tmp/leaflet-dist/leaflet.css _site/vendor/leaflet/leaflet.css
+          if [ -d /tmp/leaflet-dist/images ]; then
+            cp -R /tmp/leaflet-dist/images _site/vendor/leaflet/
+          fi
+          JS_SHA="$(openssl dgst -sha256 -binary _site/vendor/leaflet/leaflet.js | openssl base64 -A)"
+          CSS_SHA="$(openssl dgst -sha256 -binary _site/vendor/leaflet/leaflet.css | openssl base64 -A)"
+          test "$JS_SHA" = "20nQCchB9coqIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          test "$CSS_SHA" = "p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          curl -fsSL --retry 3 --retry-delay 2 \
+            https://raw.githubusercontent.com/Leaflet/Leaflet/v1.9.4/LICENSE \
+            -o _site/vendor/leaflet/LICENSE
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
