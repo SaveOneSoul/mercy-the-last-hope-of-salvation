@@ -40,14 +40,30 @@
     if(state==='thinking')turn+=Math.sin(t*1.6)*.06;if(state==='listening')turn*=.3;
     viseme+=(targetViseme-viseme)*.22;
     blink=reduced?0:(Math.sin(t*.83)>0.996?1:Math.max(0,blink-.16));
-    var skin=[.76,.56,.46],hair=[.08,.045,.04],robe=[.18,.08,.16],veil=[.86,.82,.76],white=[.95,.93,.89],eye=[.07,.045,.04],gold=[.76,.58,.28];
-    drawPart(0,-1.7+bob,.05,1.35,1.35,.62,robe,turn);
-    drawPart(0,.15+bob,0,1.04,1.22,.92,skin,turn);
-    drawPart(0,.77+bob,-.02,1.07,.48,.93,hair,turn);
-    drawPart(-.39,.25+bob,.82,.17,.075*(1-blink),.055,white,turn);drawPart(.39,.25+bob,.82,.17,.075*(1-blink),.055,white,turn);
-    drawPart(-.39,.25+bob,.88,.055,.055,.035,eye,turn);drawPart(.39,.25+bob,.88,.055,.055,.035,eye,turn);
-    drawPart(0,-.26+bob,.88,.24,.028+viseme*.13,.042,[.36,.11,.14],turn);
-    drawPart(0,-.76+bob,.91,.035,.24,.025,gold,turn);drawPart(0,-.76+bob,.91,.17,.035,.025,gold,turn);
+    // Stylised fictional lay Catholic guide: feminine proportions without
+    // imitating Mary, a saint, a religious sister, or a real person.
+    var skin=[.82,.64,.54],skinSoft=[.88,.70,.61],hair=[.11,.065,.055],dress=[.28,.075,.13],white=[.98,.97,.94],eye=[.10,.065,.055],iris=[.24,.16,.12],lip=[.52,.17,.23],gold=[.78,.60,.30];
+    // Upper torso and shoulders: fitted modest lay clothing, not a habit/veil.
+    drawPart(0,-1.72+bob,.00,1.20,1.08,.58,dress,turn);
+    drawPart(-.88,-1.32+bob,.02,.52,.45,.48,dress,turn);drawPart(.88,-1.32+bob,.02,.52,.45,.48,dress,turn);
+    // Neck and softly tapered face.
+    drawPart(0,-.73+bob,.04,.32,.42,.32,skinSoft,turn);
+    drawPart(0,.12+bob,0,.82,1.06,.78,skin,turn);
+    drawPart(0,-.43+bob,.06,.69,.49,.69,skinSoft,turn);
+    // Long side/back hair framing the face; no head covering.
+    drawPart(0,.68+bob,-.25,.88,.58,.72,hair,turn);
+    drawPart(-.73,.02+bob,-.12,.25,.91,.50,hair,turn);drawPart(.73,.02+bob,-.12,.25,.91,.50,hair,turn);
+    drawPart(0,.91+bob,.02,.68,.26,.65,hair,turn);
+    // Eyes, irises and subtle brows.
+    drawPart(-.30,.27+bob,.70,.18,.075*(1-blink),.050,white,turn);drawPart(.30,.27+bob,.70,.18,.075*(1-blink),.050,white,turn);
+    drawPart(-.30,.27+bob,.755,.066,.066,.035,iris,turn);drawPart(.30,.27+bob,.755,.066,.066,.035,iris,turn);
+    drawPart(-.30,.40+bob,.69,.22,.027,.035,eye,turn-.04);drawPart(.30,.40+bob,.69,.22,.027,.035,eye,turn+.04);
+    // Small nose, cheek warmth and animated lips.
+    drawPart(0,.00+bob,.76,.075,.16,.055,skinSoft,turn);
+    drawPart(-.39,-.02+bob,.69,.16,.09,.025,[.88,.54,.53],turn);drawPart(.39,-.02+bob,.69,.16,.09,.025,[.88,.54,.53],turn);
+    drawPart(0,-.31+bob,.77,.22,.035+viseme*.105,.038,lip,turn);
+    // Small cross pendant: Catholic identity without religious-habit styling.
+    drawPart(0,-.94+bob,.61,.025,.17,.020,gold,turn);drawPart(0,-.94+bob,.61,.115,.025,.020,gold,turn);
     requestAnimationFrame(frame);
   }
   window.MercyAvatar3D={
