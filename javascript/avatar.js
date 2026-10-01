@@ -21,6 +21,9 @@
   }
   function setState(name,text){
     if(face)face.dataset.state=name;
+    if(window.MercyAvatar3D&&typeof window.MercyAvatar3D.setState==='function'){
+      window.MercyAvatar3D.setState(name);
+    }
     status.textContent=text||name;
   }
   function browserSpeak(text){
