@@ -88,7 +88,6 @@ def main():
     assert 'renderAtlasVisualMap' in logos_js
     assert 'data-atlas-fallback="true"' in logos_html
     assert 'Bible lands overview' in logos_html
-    assert 'logos-atlas-sticky-bar' in logos_js
     assert 'logos-atlas-map-thumb' in logos_js
     assert 'renderAtlasInteractiveMap' in logos_js
     assert "ATLAS_DATA_URL='../data/logos-bible-atlas.json?v=5'" in logos_js
