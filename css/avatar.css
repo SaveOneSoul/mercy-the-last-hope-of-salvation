@@ -25,3 +25,14 @@
 .avatar-viewport .avatar-face[hidden]{display:none}
 @media(max-width:780px){.avatar-viewport{height:390px;width:min(350px,88vw)}}
 @media(prefers-reduced-motion:reduce){.avatar-face,.avatar-mouth{animation:none!important;transition:none!important}}
+
+/* Desktop preview hardening: use the available viewport instead of inheriting
+   a narrow content column from older page layout rules. */
+body>main#main{width:100%;max-width:none}
+body>main#main>.page-hero,body>main#main>.content{width:min(1440px,calc(100% - 40px));max-width:1440px;margin-left:auto;margin-right:auto}
+body>main#main>.content{box-sizing:border-box}
+.avatar-shell{width:100%;max-width:1320px;grid-template-columns:minmax(360px,.9fr) minmax(480px,1.35fr);align-items:stretch}
+.avatar-stage,.avatar-panel{min-width:0}
+.avatar-viewport{width:min(100%,500px);height:520px}
+@media(max-width:980px){.avatar-shell{grid-template-columns:1fr}.avatar-stage,.avatar-panel{min-height:auto}.avatar-viewport{height:460px}}
+@media(max-width:600px){body>main#main>.page-hero,body>main#main>.content{width:min(100% - 20px,1440px)}.avatar-viewport{height:390px}.avatar-stage{padding:1rem}.avatar-panel{padding:.8rem}}
