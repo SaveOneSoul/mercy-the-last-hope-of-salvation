@@ -1,0 +1,2098 @@
+{
+  "id": "psychology-professional",
+  "title": "Psychology: Professional Foundations",
+  "version": 1,
+  "reviewed": "2026-10-01",
+  "description": "Twenty-four-unit professional-style psychology curriculum covering research methods, neuroscience, cognition, learning, development, social and clinical psychology, ethics, and Catholic human-formation integration.",
+  "creditNote": "48 internal Save One Soul formation credits (24 units × 2). Professional-style in breadth and study method; non-accredited and not a psychology degree, licence or clinical qualification.",
+  "units": [
+    {
+      "title": "Foundations of psychological science",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in scientific method, operational definitions, replication and limits.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies scientific method, operational definitions, replication and limits. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is research methods. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "research methods",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on foundations of psychological science, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving foundations of psychological science. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Research design, statistics and causal inference",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in experiments, correlation, sampling, effect size and uncertainty.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies experiments, correlation, sampling, effect size and uncertainty. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is methodology. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "methodology",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on research design, statistics and causal inference, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: Psychological Research",
+          "url": "https://openstax.org/books/psychology-2e/pages/2-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving research design, statistics and causal inference. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Neuroscience and behaviour",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in neurons, networks, prefrontal systems, limbic structures, basal ganglia and plasticity.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies neurons, networks, prefrontal systems, limbic structures, basal ganglia and plasticity. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is biopsychology. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "biopsychology",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on neuroscience and behaviour, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: Biopsychology",
+          "url": "https://openstax.org/books/psychology-2e/pages/3-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving neuroscience and behaviour. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Sensation and perception",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in sensory systems, thresholds, attention and perceptual construction.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies sensory systems, thresholds, attention and perceptual construction. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is perception. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "perception",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on sensation and perception, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: Sensation and Perception",
+          "url": "https://openstax.org/books/psychology-2e/pages/5-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving sensation and perception. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Consciousness, automaticity and sleep",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in conscious awareness, automatic processing, sleep architecture and circadian rhythm.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies conscious awareness, automatic processing, sleep architecture and circadian rhythm. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is consciousness. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "consciousness",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on consciousness, automaticity and sleep, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: States of Consciousness",
+          "url": "https://openstax.org/books/psychology-2e/pages/4-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving consciousness, automaticity and sleep. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Learning theory",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in classical conditioning, operant conditioning, observational learning and extinction.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies classical conditioning, operant conditioning, observational learning and extinction. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is learning. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "learning",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on learning theory, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: Learning",
+          "url": "https://openstax.org/books/psychology-2e/pages/6-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving learning theory. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Habits, reward and behaviour change",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in cue-behaviour-consequence loops, reinforcement, dopamine, friction and relapse.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies cue-behaviour-consequence loops, reinforcement, dopamine, friction and relapse. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is habit science. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "habit science",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on habits, reward and behaviour change, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: Learning",
+          "url": "https://openstax.org/books/psychology-2e/pages/6-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving habits, reward and behaviour change. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Memory systems",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in encoding, consolidation, working memory, retrieval and reconstruction.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies encoding, consolidation, working memory, retrieval and reconstruction. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is memory. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "memory",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on memory systems, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: Memory",
+          "url": "https://openstax.org/books/psychology-2e/pages/8-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving memory systems. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Cognition, language and reasoning",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in concepts, heuristics, biases, language and problem-solving.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies concepts, heuristics, biases, language and problem-solving. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is cognition. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "cognition",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on cognition, language and reasoning, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: Thinking and Intelligence",
+          "url": "https://openstax.org/books/psychology-2e/pages/7-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving cognition, language and reasoning. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Intelligence and assessment",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in measurement, psychometrics, reliability, validity and cultural limits.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies measurement, psychometrics, reliability, validity and cultural limits. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is assessment. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "assessment",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on intelligence and assessment, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: Thinking and Intelligence",
+          "url": "https://openstax.org/books/psychology-2e/pages/7-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving intelligence and assessment. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Motivation and reward",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in biological drives, incentives, goals, reward prediction and self-determination.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies biological drives, incentives, goals, reward prediction and self-determination. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is motivation. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "motivation",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on motivation and reward, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: Emotion and Motivation",
+          "url": "https://openstax.org/books/psychology-2e/pages/10-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving motivation and reward. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Emotion, fear and anger",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in appraisal, autonomic arousal, threat systems, regulation and action tendencies.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies appraisal, autonomic arousal, threat systems, regulation and action tendencies. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is emotion. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "emotion",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on emotion, fear and anger, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: Emotion and Motivation",
+          "url": "https://openstax.org/books/psychology-2e/pages/10-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving emotion, fear and anger. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Stress, coping and resilience",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in stress physiology, appraisal, coping, social support and limits of self-help.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies stress physiology, appraisal, coping, social support and limits of self-help. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is stress. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "stress",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on stress, coping and resilience, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "WHO: Doing What Matters in Times of Stress",
+          "url": "https://www.who.int/publications/i/item/9789240003927"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving stress, coping and resilience. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Development: infancy and childhood",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in attachment, cognition, language, temperament and contextual development.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies attachment, cognition, language, temperament and contextual development. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is development. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "development",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on development: infancy and childhood, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: Lifespan Development",
+          "url": "https://openstax.org/books/psychology-2e/pages/9-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving development: infancy and childhood. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Development: adolescence and adulthood",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in identity, executive development, relationships, work and ageing.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies identity, executive development, relationships, work and ageing. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is development. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "development",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on development: adolescence and adulthood, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: Lifespan Development",
+          "url": "https://openstax.org/books/psychology-2e/pages/9-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving development: adolescence and adulthood. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Personality theories and measurement",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in trait, psychodynamic, humanistic, social-cognitive and biological perspectives.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies trait, psychodynamic, humanistic, social-cognitive and biological perspectives. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is personality. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "personality",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on personality theories and measurement, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: Personality",
+          "url": "https://openstax.org/books/psychology-2e/pages/11-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving personality theories and measurement. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Social psychology",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in attribution, conformity, prejudice, groups, prosocial behaviour and persuasion.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies attribution, conformity, prejudice, groups, prosocial behaviour and persuasion. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is social psychology. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "social psychology",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on social psychology, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: Social Psychology",
+          "url": "https://openstax.org/books/psychology-2e/pages/12-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving social psychology. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Culture, family and relationships",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in cultural psychology, family systems, communication and contextual interpretation.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies cultural psychology, family systems, communication and contextual interpretation. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is culture. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "culture",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on culture, family and relationships, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving culture, family and relationships. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Psychopathology and classification",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in symptoms, impairment, differential diagnosis, classification limits and stigma.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies symptoms, impairment, differential diagnosis, classification limits and stigma. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is abnormal psychology. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "abnormal psychology",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on psychopathology and classification, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e: Psychological Disorders",
+          "url": "https://openstax.org/books/psychology-2e/pages/15-introduction"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving psychopathology and classification. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Psychotherapies and evidence",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in major therapy families, therapeutic alliance, outcome evidence and referral.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies major therapy families, therapeutic alliance, outcome evidence and referral. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is treatment. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "treatment",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on psychotherapies and evidence, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "NIMH: Psychotherapies",
+          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving psychotherapies and evidence. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Trauma, grief and loss",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in trauma responses, grief variation, safety, stabilization and referral boundaries.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies trauma responses, grief variation, safety, stabilization and referral boundaries. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is trauma-informed care. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "trauma-informed care",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on trauma, grief and loss, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "WHO Psychological First Aid",
+          "url": "https://www.who.int/publications/i/item/9789241548205"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving trauma, grief and loss. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Ethics, consent and professional boundaries",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in competence, confidentiality, informed consent, dual roles and safeguarding.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies competence, confidentiality, informed consent, dual roles and safeguarding. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is ethics. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "ethics",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on ethics, consent and professional boundaries, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "WHO: Ethics and mental health resources",
+          "url": "https://www.who.int/health-topics/mental-health"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving ethics, consent and professional boundaries. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Psychology, morality and Catholic anthropology",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in passions, freedom, consent, virtue, vice and the distinction between mechanism and moral responsibility.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies passions, freedom, consent, virtue, vice and the distinction between mechanism and moral responsibility. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is integration. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "integration",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on psychology, morality and catholic anthropology, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "Catechism: Human freedom and passions",
+          "url": "https://www.vatican.va/archive/ENG0015/_INDEX.HTM"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving psychology, morality and catholic anthropology. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    },
+    {
+      "title": "Capstone: integrated psychological case formulation",
+      "label": "Professional-style psychology formation",
+      "objectives": [
+        "Explain the major concepts and evidence in biological, psychological, social, cultural, ethical and spiritual dimensions with role limits.",
+        "Distinguish established findings, plausible interpretations and unsupported claims.",
+        "Apply the material to a fictional case while respecting clinical and ethical limits."
+      ],
+      "paragraphs": [
+        "This unit studies biological, psychological, social, cultural, ethical and spiritual dimensions with role limits. Professional psychological reasoning begins by defining constructs carefully, examining evidence and specifying the population and context to which a conclusion applies. It avoids turning one experiment, brain image, personal story or theoretical school into a total explanation of a person.",
+        "The central disciplinary lens is integration. Students should compare competing explanations, identify measurement limits and ask what evidence would change the conclusion. Biological, cognitive, behavioural, developmental, social and cultural accounts can be complementary rather than mutually exclusive.",
+        "Application requires role clarity. Educational study can improve observation, communication and help-seeking, but it does not confer authority to diagnose, prescribe, conduct psychotherapy or replace qualified assessment. Where distress, impairment, safeguarding concerns or medical questions arise, professional referral takes priority."
+      ],
+      "lectureSections": [
+        {
+          "title": "Professional study method",
+          "paragraphs": [
+            "For each topic, move from definition to evidence, from evidence to interpretation, and from interpretation to bounded application. Record limitations and alternative explanations explicitly."
+          ],
+          "points": [
+            "Core theory and competing models",
+            "Landmark findings and replication issues",
+            "Measurement and validity",
+            "Cultural and developmental context",
+            "Ethical and clinical boundaries"
+          ]
+        },
+        {
+          "title": "Integration with human formation",
+          "paragraphs": [
+            "When psychology intersects with moral or spiritual language, distinguish spontaneous emotion and automatic processing from deliberate judgment and choice. Avoid using neuroscience to assign guilt, sanctity, vice or virtue."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "integration",
+        "evidence",
+        "validity",
+        "context",
+        "professional boundary"
+      ],
+      "methodNotes": [
+        "Use peer-reviewed or authoritative educational sources where possible.",
+        "Do not infer diagnosis from a vignette, symptom list or brain region.",
+        "Separate description of mechanisms from moral or spiritual evaluation."
+      ],
+      "researchTask": "Prepare a 1,000-word literature-style note on capstone: integrated psychological case formulation, summarizing evidence, limitations, one controversy and one practical implication.",
+      "sources": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "furtherReading": [
+        {
+          "title": "OpenStax Psychology 2e",
+          "url": "https://openstax.org/details/books/psychology-2e"
+        }
+      ],
+      "assignment": "Write a 700–1,000 word professional-style response to a fictional case involving capstone: integrated psychological case formulation. Include observations, hypotheses, evidence needed, ethical limits and an appropriate next step.",
+      "quiz": [
+        {
+          "question": "Which approach best fits professional psychological study?",
+          "options": [
+            "Define constructs, evaluate evidence and state limits",
+            "Assign a diagnosis from one clue",
+            "Treat one theory as explaining every person"
+          ],
+          "correct": 0,
+          "explanation": "Professional reasoning requires operational clarity, evidence and explicit limits."
+        },
+        {
+          "question": "What does completion of this self-study course authorize?",
+          "options": [
+            "Independent clinical practice",
+            "No clinical licence; it supports education and appropriate referral",
+            "Prescription of treatment"
+          ],
+          "correct": 1,
+          "explanation": "This is non-accredited education and does not confer clinical competence."
+        }
+      ]
+    }
+  ],
+  "assessments": {
+    "mid": [
+      {
+        "question": "Correlation by itself establishes causation.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "explanation": "Causal inference requires design and alternative explanations."
+      },
+      {
+        "question": "A brain region can directly reveal moral guilt.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "explanation": "Neuroscience does not measure moral culpability."
+      },
+      {
+        "question": "A valid assessment requires attention to reliability and validity.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "explanation": "Both are central psychometric concerns."
+      },
+      {
+        "question": "Automatic processing means all later behaviour is uncontrollable.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "explanation": "Automaticity and absence of agency are not identical."
+      },
+      {
+        "question": "Culture and context can alter how behaviour is interpreted.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "explanation": "Context is essential to responsible interpretation."
+      }
+    ],
+    "final": [
+      {
+        "question": "Professional role boundaries require referral when needs exceed competence.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "explanation": "Referral protects the person and the helper."
+      },
+      {
+        "question": "A symptom list alone is enough for diagnosis.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "explanation": "Diagnosis requires qualified contextual assessment."
+      },
+      {
+        "question": "Evidence-based care means one method works equally for everyone.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "explanation": "Evidence, clinical expertise and individual context all matter."
+      },
+      {
+        "question": "Psychological mechanisms and moral evaluation are related but not interchangeable.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "explanation": "They address different levels of explanation."
+      },
+      {
+        "question": "The capstone should include biological, psychological, social, cultural and ethical dimensions.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "explanation": "Integrated formulation avoids reductionism."
+      }
+    ]
+  }
+}

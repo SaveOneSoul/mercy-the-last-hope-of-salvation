@@ -8,7 +8,8 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = ['mary-our-help','rosary-novena-54','healing-sessions','holy-wounds','prayer-protection',
          'prayer-conversion','mariology','psychology','counselling-courses','counselling',
-         'counselling-ai','personal-counselling']
+         'counselling-ai','personal-counselling','theology-professional','philosophy',
+         'psychology-professional','scripture-course','purgatory']
 
 
 class Links(HTMLParser):
@@ -40,17 +41,32 @@ def main():
         if not course.get('contentFile'):
             continue
         data = json.loads((ROOT / 'pages' / course['contentFile']).read_text())
-        assert len(data['units']) == 10 and course['credits'] == 20
+        assert len(data['units']) >= 10 and course['credits'] == len(data['units']) * 2
         for unit in data['units']:
-            assert len(' '.join(unit['paragraphs']).split()) >= 90, unit['title']
+            lesson_parts = list(unit.get('paragraphs', []))
+            for section in unit.get('lectureSections', []):
+                lesson_parts.extend(section.get('paragraphs', []))
+                lesson_parts.extend(section.get('points', []))
+            lesson_parts.extend(unit.get('methodNotes', []))
+            assert len(' '.join(lesson_parts).split()) >= 90, unit['title']
             assert unit['sources'] and unit['assignment'] and len(unit['quiz']) == 2
         quizzes = [q for u in data['units'] for q in u['quiz']]
         for kind in ('mid', 'final'):
-            assert len(data['assessments'][kind]) == 5
+            assert len(data['assessments'][kind]) >= 5
             quizzes += data['assessments'][kind]
         for q in quizzes:
-            assert len(q['options']) == 3 and len(set(q['options'])) == 3
-            assert q['correct'] in range(3) and q['explanation']
+            assert len(q['options']) >= 2 and len(set(q['options'])) == len(q['options'])
+            assert q['correct'] in range(len(q['options'])) and q['explanation']
+    atlas = json.loads((ROOT / 'data/logos-bible-atlas.json').read_text())
+    atlas_chapters = [chapter for part in atlas['parts'] for chapter in part['chapters']]
+    atlas_maps = [item for chapter in atlas_chapters for item in chapter['maps']]
+    assert len(atlas_chapters) == 21
+    assert len(atlas_maps) == 172
+    assert len(atlas['book_index']) == 73
+    assert atlas['source']['rights_status'] == 'Reuse licence not stated in the uploaded PDF.'
+    assert all(chapter['page'] >= 1 and chapter['maps'] for chapter in atlas_chapters)
+    assert all(item['page'] >= 1 and item['title'] for item in atlas_maps)
+
     manifest = json.loads((ROOT / 'data/prayers/sources.json').read_text())
     for source in manifest['sources']:
         if source['file'].endswith('.pdf'):
@@ -62,7 +78,8 @@ def main():
         assert '14416' in content and 'tel:112' in content and 'Privacy before you send' in content
     deploy = (ROOT / '.github/workflows/mercy-pages.yml').read_text()
     assert 'cp -R data/courses data/prayers _site/data/' in deploy
-    print('Prayer, formation and support validation passed: 12 routes, 40 lessons, source PDFs, safety links and deployment data.')
+    assert 'cp data/logos-bible-atlas.json _site/data/' in deploy
+    print('Prayer, formation and support validation passed: routes, variable-length professional courses, Bible Atlas index, source PDFs, safety links and deployment data.')
 
 
 if __name__ == '__main__':

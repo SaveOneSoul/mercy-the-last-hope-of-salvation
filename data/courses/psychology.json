@@ -1,10 +1,10 @@
 {
   "id": "psychology",
   "title": "Psychology Foundations",
-  "version": 1,
-  "reviewed": "2026-09-29",
-  "description": "Introductory self-study with source readings, case exercises and knowledge checks.",
-  "creditNote": "20 internal formation credits. Non-accredited education; not a qualification, licence or evidence of competence to practise counselling, psychology or psychotherapy.",
+  "version": 4,
+  "reviewed": "2026-10-01",
+  "description": "Ten-unit Psychology Foundations prerequisite covering scientific method, brain and behaviour, consciousness, learning and habits, memory, emotion, development, social and cultural psychology, mental-health literacy, and careful integration of psychology, ethics and Catholic faith.",
+  "creditNote": "20 internal formation credits (10 units × 2). Non-accredited education; not a qualification, licence or evidence of competence to practise counselling, psychology or psychotherapy. Continue to the separate 24-unit Professional Foundations track for advanced study.",
   "units": [
     {
       "title": "Psychology as a science",
@@ -51,20 +51,26 @@
       "title": "Brain, body and behaviour",
       "label": "Educational study",
       "objectives": [
-        "Describe interacting systems without assigning a vice to one brain region.",
+        "Name major brain systems involved in planning, memory, emotion, reward, bodily drives and habit learning.",
+        "Explain why complex experiences such as fear, anger, lust, pride or addiction cannot be assigned to one brain region.",
         "Apply the lesson to the case study and explain the limits of your conclusion."
       ],
       "paragraphs": [
-        "The nervous system coordinates sensing, movement and many aspects of thinking and feeling. Different brain regions contribute to different functions, but complex experiences arise through interacting networks, the body and the environment. The prefrontal cortex contributes to planning and control; the hippocampus is important for forming some kinds of memory; the amygdala participates in learning about significance and threat. None is a single switch for virtue or sin.",
-        "Neuroplasticity refers to changes in neural functioning or structure with experience, development or injury. It does not mean anyone can rewire every difficulty by willpower alone. A brain image is a measurement interpreted through a study design, not a photograph of someone’s character. For your notes, connect a biological process with a psychological experience and a social context. This integrated approach avoids reducing a person to a chemical, a scan or a moral label."
+        "The brain works through interacting networks rather than isolated moral modules. The prefrontal cortex contributes to planning, inhibition, attention and long-term goals. The orbitofrontal and ventromedial prefrontal regions help evaluate reward, risk and social value. The anterior cingulate cortex contributes to conflict monitoring and error detection. The amygdala is important for threat and emotional salience; the hippocampus supports memory and context; the insula helps represent internal bodily states, disgust and craving; and the hypothalamus helps regulate hunger, thirst, sexual drive, hormones and autonomic responses.",
+        "Habit and reward learning involve the basal ganglia and striatum. The ventral striatum, including the nucleus accumbens, participates in motivation and reward anticipation. Dopamine is important for learning, motivation and reward prediction; it is not simply a 'pleasure chemical.' The thalamus contributes to sensory relay and awareness, while brainstem systems are essential for arousal, breathing and wakefulness. The default mode network contributes to self-referential and autobiographical thought. These systems can influence pride, fear, lust, anger, greed, gluttony, envy or avoidance only indirectly through broader patterns of attention, motivation, memory, interpretation and choice; neuroscience cannot identify a 'sin centre' or measure moral guilt from a scan.",
+        "Neuroplasticity refers to changes in neural functioning or structure with experience, development or injury. Repeated practice can strengthen some patterns and make behaviours easier to initiate, but plasticity does not mean every difficulty can be changed by willpower alone. A sound account keeps biological, psychological, social and moral levels distinct while recognising that they interact."
       ],
       "sources": [
         {
-          "title": "OpenStax, Biopsychology",
+          "title": "OpenStax Psychology 2e, Biopsychology",
           "url": "https://openstax.org/books/psychology-2e/pages/3-introduction"
+        },
+        {
+          "title": "OpenStax Psychology 2e, Emotion and Motivation",
+          "url": "https://openstax.org/books/psychology-2e/pages/10-introduction"
         }
       ],
-      "assignment": "Respond to a diagram labelling the amygdala “the sin centre.” Explain one real function and why that label overreaches.",
+      "assignment": "Create a table with six brain systems (for example: prefrontal cortex, amygdala, hippocampus, striatum, hypothalamus and insula). For each, state one supported function and one claim you should avoid. Include why no region should be labelled 'the pride centre,' 'the lust centre' or 'the sin centre.'",
       "quiz": [
         {
           "question": "Complex behaviour is best understood through what?",
@@ -92,20 +98,26 @@
       "title": "Attention, consciousness and sleep",
       "label": "Educational study",
       "objectives": [
-        "Differentiate everyday automatic processing from theoretical accounts of the unconscious.",
+        "Differentiate conscious awareness, easily retrievable preconscious information, automatic processing and theoretical uses of the term unconscious.",
+        "Explain why conscious, preconscious and unconscious are not three anatomical brain compartments.",
         "Apply the lesson to the case study and explain the limits of your conclusion."
       ],
       "paragraphs": [
-        "Attention selects some information for further processing while other activity continues without deliberate awareness. Driving a familiar route or reaching for a phone can involve learned automatic responses. Limited attention means that distraction can reduce what is encoded in memory even when a person feels present.",
-        "Conscious, preconscious and unconscious have specific meanings in some psychological traditions; everyday uses of “subconscious” are often less precise. Do not treat these labels as three clearly separated anatomical chambers. Sleep and wakefulness also involve changing patterns of awareness. A helpful study exercise is to note when concentration becomes difficult and consider practical conditions such as fatigue, interruptions and task difficulty. A brief observation can guide a routine change, but it cannot diagnose a sleep or attention disorder. Persistent difficulty deserves assessment rather than blame."
+        "Conscious processing refers to what is presently available to awareness: current perceptions, thoughts, choices and deliberate attention. Conscious experience depends on distributed brain systems rather than one small location. Frontal and parietal association networks, thalamic interactions and brainstem arousal systems all contribute to the conditions under which experience can become conscious.",
+        "Preconscious is a historical psychological term for information that is not currently in awareness but can become available readily, such as a familiar phone number or a remembered appointment. Unconscious processing is broader and includes activity that influences behaviour without deliberate awareness, such as some learned associations, priming, emotional appraisals, procedural routines and automatic habits. 'Subconscious' is common in everyday speech but is not a single, precisely defined neuroscientific system.",
+        "A useful distinction is between automaticity and helplessness. A person may reach for a phone before fully noticing the urge, or feel fear before consciously identifying the trigger. That does not mean every later action is uncontrollable. Awareness can create an opportunity for reflection, inhibition and a different response. Sleep, fatigue, stress and divided attention can reduce this capacity, which is one reason behaviour should be understood in context rather than moralised immediately."
       ],
       "sources": [
         {
-          "title": "OpenStax, States of Consciousness",
+          "title": "OpenStax Psychology 2e, States of Consciousness",
           "url": "https://openstax.org/books/psychology-2e/pages/4-introduction"
+        },
+        {
+          "title": "OpenStax Psychology 2e, Learning",
+          "url": "https://openstax.org/books/psychology-2e/pages/6-introduction"
         }
       ],
-      "assignment": "Compare an automatic phone-checking habit with the psychoanalytic concept of the unconscious. Explain why neither is a separate “subconscious brain part.”",
+      "assignment": "Draw a four-level diagram labelled conscious awareness, readily retrievable information, automatic processing, and theoretical unconscious processes. Explain why this is a functional model rather than a map of four separate brain locations.",
       "quiz": [
         {
           "question": "How should the word subconscious be used in study?",
@@ -133,20 +145,26 @@
       "title": "Learning and habits",
       "label": "Educational study",
       "objectives": [
-        "Explain cues, consequences and repetition without universal promises.",
-        "Apply the lesson to the case study and explain the limits of your conclusion."
+        "Explain cue, behaviour and consequence loops in habit formation.",
+        "Describe the roles of repetition, context, reward learning and automaticity without promising a fixed habit timeline.",
+        "Design low-risk habits for prayer, study/work and physical health."
       ],
       "paragraphs": [
-        "Classical conditioning concerns associations between stimuli. Operant conditioning concerns how consequences influence the likelihood of behaviour. Observational learning highlights learning through seeing others. These are useful frameworks, not competing explanations that each account for everything a person does.",
-        "A habit exercise can begin with one small behaviour and a clear cue: after opening a textbook, attempt one recall question. Make the action manageable and review the conditions when it does not happen. A pleasant consequence may make repetition easier, but reward is not identical to pleasure and dopamine is not simply a “happiness chemical.” Keep experiments low-risk: do not use deprivation, self-punishment or abrupt changes to prescribed treatment. There is no single number of days that guarantees a new habit for everyone. A setback offers information about context rather than proof of a defective character."
+        "Habits are learned patterns that become easier to trigger in familiar contexts. A practical model is cue → behaviour → consequence. The cue may be a time, place, emotion, preceding action or social context. The behaviour is the routine itself. The consequence may be pleasure, relief, completion, social approval or another outcome that affects future repetition. Basal-ganglia and striatal systems are strongly involved in habit learning, while prefrontal systems remain important for planning, monitoring and changing behaviour.",
+        "Reward learning is not the same as chasing pleasure. Dopamine helps encode prediction, salience and learning from outcomes. Some habits are reinforced because they produce pleasure; others because they remove discomfort. This is why stress can trigger scrolling, avoidance or compulsive behaviour even when the person no longer finds the behaviour deeply satisfying. Repeated pairings can make a cue evoke craving or action before conscious reflection is fully engaged.",
+        "For behaviour change, make the desired action small, attach it to a stable cue and reduce friction. A three-domain exercise can use: after morning washing → five minutes of prayer; after breakfast → ten minutes of focused study or work; after the main work block → five to ten minutes of movement. Record completion without self-punishment. On difficult days, preserve the minimum version. Missing once is information about context, not proof of a defective character or a failed brain."
       ],
       "sources": [
         {
-          "title": "OpenStax, Learning",
+          "title": "OpenStax Psychology 2e, Learning",
           "url": "https://openstax.org/books/psychology-2e/pages/6-introduction"
+        },
+        {
+          "title": "OpenStax Psychology 2e, Biopsychology",
+          "url": "https://openstax.org/books/psychology-2e/pages/3-introduction"
         }
       ],
-      "assignment": "Create a seven-day plan for a two-minute study habit, with a cue, an action and a compassionate response to a missed day. Do not promise a permanent change.",
+      "assignment": "Design a 30-day three-domain habit plan for spiritual life, study/work and physical health. For each, state the cue, minimum action, likely reward or relief, one friction-reduction step, and what you will do after a missed day.",
       "quiz": [
         {
           "question": "What is an example of a clear habit cue?",
@@ -215,16 +233,18 @@
       "title": "Emotion, stress and regulation",
       "label": "Educational study",
       "objectives": [
-        "Use simple coping skills without suppressing or moralising feelings.",
-        "Apply the lesson to the case study and explain the limits of your conclusion."
+        "Distinguish emotion, bodily arousal, impulse, deliberate action and moral evaluation.",
+        "Explain fear and anger as normal affective responses that can be regulated without treating the emotion itself as guilt.",
+        "Use simple coping skills without suppressing or moralising feelings."
       ],
       "paragraphs": [
-        "Emotions involve subjective experience, bodily changes and tendencies to act. Feeling anger is different from acting violently; experiencing fear does not by itself establish cowardice or guilt. Situations are also interpreted differently according to learning, context, health and current demands.",
-        "When stress rises, a small pause can create room to choose the next step. You might notice the support of a chair, orient to the room and name a manageable task. If a grounding exercise feels uncomfortable, stop and choose another form of support. Coping is not the obligation to feel calm at all times, and persistent distress is not a spiritual failure. Practical help with workload, finances, safety or relationships may matter as much as an individual exercise. Use the WHO guide as a practice resource and professional support when difficulties persist or interfere with daily life."
+        "Emotions involve subjective experience, bodily changes, appraisal and tendencies to act. Fear often recruits threat-detection systems including the amygdala, while hypothalamic and autonomic systems prepare the body for action. Anger may arise when a person perceives threat, injustice, frustration or insult. None of these responses is identical to the action that follows. Feeling fear does not by itself prove cowardice, and feeling anger does not by itself equal violence or hatred.",
+        "The prefrontal cortex and anterior cingulate cortex contribute to monitoring conflict, reappraising situations and inhibiting actions. This means a useful practical sequence is: notice the trigger → notice bodily activation → name the emotion → pause → consider the situation → choose the next action. This sequence can fail under exhaustion, intoxication, severe stress or illness, so context matters. Regulation is not emotional suppression; it is increasing the range of possible responses.",
+        "When stress rises, a small pause can create room to choose the next step. You might notice the support of a chair, orient to the room, slow your breathing if comfortable, and name one manageable task. If grounding feels uncomfortable, stop and choose another form of support. Persistent distress is not a spiritual failure. Practical help with workload, safety, finances, sleep or relationships may be as important as an individual coping technique."
       ],
       "sources": [
         {
-          "title": "OpenStax, Emotion and Motivation",
+          "title": "OpenStax Psychology 2e, Emotion and Motivation",
           "url": "https://openstax.org/books/psychology-2e/pages/10-introduction"
         },
         {
@@ -232,7 +252,7 @@
           "url": "https://www.who.int/publications/i/item/9789240003927"
         }
       ],
-      "assignment": "Write a supportive response to a friend who says “Feeling afraid means I have no faith.” Include one optional grounding step and one practical source of help.",
+      "assignment": "Use the sequence trigger → bodily response → emotion → conscious consideration → choice → action for one fictional fear or anger situation. Identify where regulation can enter without calling the emotion itself sinful.",
       "quiz": [
         {
           "question": "Which statement distinguishes emotion from behaviour?",
@@ -391,24 +411,39 @@
       "title": "Integrating psychology, ethics and faith",
       "label": "Educational study",
       "objectives": [
-        "Keep scientific, moral and spiritual questions distinct and in dialogue.",
-        "Apply the lesson to the case study and explain the limits of your conclusion."
+        "Keep scientific, psychological, moral and spiritual questions distinct and in dialogue.",
+        "Distinguish spontaneous emotion or temptation from deliberate consent and repeated chosen behaviour.",
+        "Explain how repeated actions can contribute to habits, virtues or vices without reducing moral responsibility to neuroscience."
       ],
       "paragraphs": [
-        "A scientific account can describe patterns of attention, learning or emotion. A moral reflection asks about responsibility and the good; spiritual accompaniment concerns a person’s relationship with God. These questions can inform one another without being interchangeable. A symptom is not a reliable sign of sin, demonic influence or lack of faith.",
-        "Work through a fictional case with four headings: observations, possible explanations, practical support and the limits of your role. Avoid diagnoses and identify what further information a qualified practitioner would need. A helpful plan respects the person’s consent and cultural context, includes achievable steps and names a human source of support. Review your own assumptions, especially when a familiar religious or psychological label feels like a complete explanation. The aim of introductory study is better judgment and more respectful help-seeking, not authority over another person’s inner life."
+        "Psychology can describe patterns of attention, learning, motivation, emotion, memory and automaticity. Moral theology asks about the human act, freedom, knowledge, consent and the good. Spiritual accompaniment concerns a person’s relationship with God. These questions can illuminate one another without being interchangeable. A symptom is not a reliable sign of sin, demonic influence or lack of faith, and a brain scan cannot determine guilt, virtue or sanctity.",
+        "A useful integrative sequence is: trigger or situation → automatic bodily or emotional response → thought, image or desire → conscious consideration → consent or refusal → action → repetition → habit. The early stages can arise without deliberate choice. This is important when considering fear, anger, sexual arousal, intrusive thoughts or cravings. From a Catholic moral perspective, temptation or spontaneous passion is not identical to deliberate consent. Moral responsibility concerns the human act as a whole and is affected by knowledge, freedom and circumstances.",
+        "Repeated chosen actions can form stable dispositions. Psychology describes learned automaticity and reinforcement; classical moral theology speaks of habits, virtues and vices. These are related but not identical vocabularies. Pride, greed, lust, envy, gluttony, anger and sloth should therefore be discussed as moral patterns involving the person, not as labels attached to a single brain structure. For example, reward systems may participate in craving, hypothalamic systems in appetite, and threat systems in anger or fear, but the moral evaluation of a human act cannot be read directly from those mechanisms.",
+        "Catholic teaching also distinguishes the passions from sin itself: emotions can incline action but are not morally good or evil in themselves apart from their relation to reason and will. A responsible formation approach therefore avoids shaming involuntary reactions, strengthens reflective freedom, encourages virtue through repeated good action, and recognises when psychological or medical help is needed."
       ],
       "sources": [
         {
-          "title": "NIMH: Psychotherapies",
-          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
+          "title": "Catechism of the Catholic Church §§1730–1742: Human freedom",
+          "url": "https://www.vatican.va/archive/ENG0015/__P5N.HTM"
         },
         {
-          "title": "OpenStax: Psychology 2e",
+          "title": "Catechism of the Catholic Church §§1762–1775: The passions",
+          "url": "https://www.vatican.va/archive/ENG0015/__P5P.HTM"
+        },
+        {
+          "title": "Catechism of the Catholic Church §§1803–1845: Virtues",
+          "url": "https://www.vatican.va/archive/ENG0015/__P65.HTM"
+        },
+        {
+          "title": "Catechism of the Catholic Church §§1846–1876: Sin",
+          "url": "https://www.vatican.va/archive/ENG0015/__P69.HTM"
+        },
+        {
+          "title": "OpenStax Psychology 2e",
           "url": "https://openstax.org/details/books/psychology-2e"
         }
       ],
-      "assignment": "Case: a student feels anxious, sleeps poorly and fears God is punishing them. Write a response with empathy, practical support, optional faith support and a referral boundary.",
+      "assignment": "Case: a person feels a sudden surge of anger and has an insulting thought, but pauses before acting. Analyse the case under five headings: automatic response, conscious awareness, possible consent, chosen action, and habit formation. Then explain why neither the emotion nor one brain region determines moral guilt.",
       "quiz": [
         {
           "question": "What does a mental-health symptom prove about someone’s faith?",
@@ -436,106 +471,106 @@
   "assessments": {
     "mid": [
       {
-        "question": "A correlation between sleep and grades proves what?",
+        "question": "Which statement best fits Unit 1: Psychology as a science?",
         "options": [
-          "Sleep is the only cause of grades.",
-          "Every student needs identical sleep.",
-          "An association, without establishing causation by itself."
-        ],
-        "correct": 2,
-        "explanation": "Other variables and study design affect causal conclusions."
-      },
-      {
-        "question": "Complex behaviour is best understood through what?",
-        "options": [
-          "A brain scan that directly shows someone’s character.",
-          "Interacting neural, bodily and environmental processes.",
-          "One brain area for every moral quality."
-        ],
-        "correct": 1,
-        "explanation": "Complex functions depend on networks and context."
-      },
-      {
-        "question": "How should the word subconscious be used in study?",
-        "options": [
-          "Define the intended meaning and theoretical context.",
-          "Assume it names one anatomical chamber.",
-          "Use it as proof that all behaviour is uncontrollable."
+          "Distinguish evidence, interpretation and personal opinion.",
+          "The unit authorizes diagnosis after self-study.",
+          "The unit treats one brain region as a complete explanation of character."
         ],
         "correct": 0,
-        "explanation": "Terms differ across theories and everyday speech."
+        "explanation": "The first option reflects the unit's actual learning objective."
       },
       {
-        "question": "What is an example of a clear habit cue?",
+        "question": "Which statement best fits Unit 2: Brain, body and behaviour?",
         "options": [
-          "Be a perfect learner from now on.",
-          "Punish yourself whenever you feel distracted.",
-          "After opening the textbook, answer one recall question."
+          "Name major brain systems involved in planning, memory, emotion, reward, bodily drives and habit learning.",
+          "The unit authorizes diagnosis after self-study.",
+          "The unit treats one brain region as a complete explanation of character."
         ],
-        "correct": 2,
-        "explanation": "A specific cue and manageable action make a plan observable."
+        "correct": 0,
+        "explanation": "The first option reflects the unit's actual learning objective."
       },
       {
-        "question": "Which activity directly checks retrieval?",
+        "question": "Which statement best fits Unit 3: Attention, consciousness and sleep?",
         "options": [
-          "Count how familiar the page seems.",
-          "Explain a passage with the book closed, then verify it.",
-          "Look at a highlighted page without attempting recall."
+          "Differentiate conscious awareness, easily retrievable preconscious information, automatic processing and theoretical uses of the term unconscious.",
+          "The unit authorizes diagnosis after self-study.",
+          "The unit treats one brain region as a complete explanation of character."
         ],
-        "correct": 1,
-        "explanation": "Retrieval practice checks access to the material."
+        "correct": 0,
+        "explanation": "The first option reflects the unit's actual learning objective."
+      },
+      {
+        "question": "Which statement best fits Unit 4: Learning and habits?",
+        "options": [
+          "Explain cue, behaviour and consequence loops in habit formation.",
+          "The unit authorizes diagnosis after self-study.",
+          "The unit treats one brain region as a complete explanation of character."
+        ],
+        "correct": 0,
+        "explanation": "The first option reflects the unit's actual learning objective."
+      },
+      {
+        "question": "Which statement best fits Unit 5: Memory and effective study?",
+        "options": [
+          "Distinguish encoding, storage and retrieval.",
+          "The unit authorizes diagnosis after self-study.",
+          "The unit treats one brain region as a complete explanation of character."
+        ],
+        "correct": 0,
+        "explanation": "The first option reflects the unit's actual learning objective."
       }
     ],
     "final": [
       {
-        "question": "If grounding feels uncomfortable, what is reasonable?",
+        "question": "Which statement best fits Unit 6: Emotion, stress and regulation?",
         "options": [
-          "Continue regardless of distress.",
-          "Assume you are doing faith incorrectly.",
-          "Stop and choose another support."
-        ],
-        "correct": 2,
-        "explanation": "Coping practices should remain voluntary and adaptable."
-      },
-      {
-        "question": "Which is an observation rather than a label?",
-        "options": [
-          "The learner will never improve.",
-          "The learner asked for the instruction to be repeated.",
-          "The learner is lazy."
-        ],
-        "correct": 1,
-        "explanation": "Observable descriptions avoid unsupported character judgments."
-      },
-      {
-        "question": "How should a personality quiz be treated?",
-        "options": [
-          "As limited information, not a clinical diagnosis.",
-          "As a complete prediction of all relationships.",
-          "As proof someone cannot change."
+          "Distinguish emotion, bodily arousal, impulse, deliberate action and moral evaluation.",
+          "The unit eliminates the need for context.",
+          "The unit permits unlicensed psychotherapy."
         ],
         "correct": 0,
-        "explanation": "Informal categories do not establish clinical conclusions."
+        "explanation": "The first option reflects the unit's actual learning objective."
       },
       {
-        "question": "What takes priority in immediate danger?",
+        "question": "Which statement best fits Unit 7: Development across the lifespan?",
         "options": [
-          "Waiting for a course quiz result.",
-          "Continuing a long chatbot conversation.",
-          "Local emergency help and nearby human support."
+          "Explain variation without using a stage model as a diagnosis.",
+          "The unit eliminates the need for context.",
+          "The unit permits unlicensed psychotherapy."
         ],
-        "correct": 2,
-        "explanation": "An educational website cannot provide emergency response."
+        "correct": 0,
+        "explanation": "The first option reflects the unit's actual learning objective."
       },
       {
-        "question": "What is a responsible outcome of this introductory course?",
+        "question": "Which statement best fits Unit 8: Personality, social influence and culture?",
         "options": [
-          "Authority to stop someone’s medication.",
-          "Better understanding and appropriate help-seeking.",
-          "Permission to diagnose or practise psychotherapy."
+          "Notice situational explanations and avoid stereotyping.",
+          "The unit eliminates the need for context.",
+          "The unit permits unlicensed psychotherapy."
         ],
-        "correct": 1,
-        "explanation": "Education does not confer clinical competence or registration."
+        "correct": 0,
+        "explanation": "The first option reflects the unit's actual learning objective."
+      },
+      {
+        "question": "Which statement best fits Unit 9: Mental health literacy and help-seeking?",
+        "options": [
+          "Recognise when education should lead to qualified assessment.",
+          "The unit eliminates the need for context.",
+          "The unit permits unlicensed psychotherapy."
+        ],
+        "correct": 0,
+        "explanation": "The first option reflects the unit's actual learning objective."
+      },
+      {
+        "question": "Which statement best fits Unit 10: Integrating psychology, ethics and faith?",
+        "options": [
+          "Keep scientific, psychological, moral and spiritual questions distinct and in dialogue.",
+          "The unit eliminates the need for context.",
+          "The unit permits unlicensed psychotherapy."
+        ],
+        "correct": 0,
+        "explanation": "The first option reflects the unit's actual learning objective."
       }
     ]
   }

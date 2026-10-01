@@ -4,7 +4,7 @@ function read(){try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){
 function write(v){localStorage.setItem(KEY,JSON.stringify(v))}
 function courseState(id){const all=read();return all[id]||{units:{},mid:false,final:false}}
 function saveCourse(id,state){const all=read();all[id]=state;write(all)}
-function credits(id){const s=courseState(id);return Object.values(s.units||{}).filter(x=>x&&x.complete).length*2}
+function credits(id){const s=courseState(id);return Object.values(s.units||{}).reduce((sum,x)=>sum+(x&&x.complete?Number(x.creditValue||2):0),0)}
 function completeUnit(id,n,payload){const s=courseState(id);s.units=s.units||{};s.units[n]=Object.assign({},s.units[n],payload,{complete:true,completedAt:new Date().toISOString()});saveCourse(id,s)}
 function saveDraft(id,n,text){const s=courseState(id);s.units=s.units||{};s.units[n]=Object.assign({},s.units[n],{assignment:text});saveCourse(id,s)}
 function setAssessment(id,type,passed,score){const s=courseState(id);s[type]=!!passed;s[type+'Score']=score;s[type+'At']=passed?new Date().toISOString():null;saveCourse(id,s)}
