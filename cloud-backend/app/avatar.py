@@ -21,7 +21,7 @@ from pydantic import BaseModel, ConfigDict, Field
 from .magisterium import CatholicChatIn, ask_magisterium
 from .counselling import safety_route
 from .avatar_agents import collect_evidence, configured_providers, synthesis_prompt
-from .avatar_tts import synthesize_with_timing, tts_enabled
+from .avatar_tts import synthesize_with_timing, tts_status_label
 
 router = APIRouter(prefix="/api/avatar", tags=["humanoid-avatar"])
 
@@ -223,7 +223,7 @@ async def avatar_status():
         "multi_agent_providers": configured_providers(),
         "orchestration": "authority_weighted_evidence_synthesis",
         "voice_input": "browser_speech_recognition_when_supported",
-        "voice_output": "elevenlabs_with_browser_fallback" if tts_enabled() else "browser_speech_synthesis_when_supported",
+        "voice_output": tts_status_label(),
         "touch": True,
         "stores_transcript": False,
         "future_integrations": ["CyberSecGPT", "kurbah_ai_sovereign_brain"],
@@ -235,7 +235,7 @@ async def avatar_status():
 async def avatar_speak(payload: AvatarIn, request: Request):
     if not _allow(_client_key(request)):
         raise HTTPException(status_code=429, detail="avatar_rate_limit")
-    result=await synthesize_with_timing(payload.message.strip())
+    result=await synthesize_with_timing(payload.message.strip(), payload.language)
     if not result:
         raise HTTPException(status_code=503, detail="avatar_tts_unavailable")
     return result
