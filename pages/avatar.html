@@ -62,6 +62,17 @@
 </main>
 <footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Catholic prayer, formation and evangelization.</p></div></footer>
 <script src="../javascript/config.js"></script>
+<script>
+(function () {
+  'use strict';
+  var params = new URLSearchParams(window.location.search);
+  if (params.get('staging') !== '1') return;
+  var cfg = window.MERCY_SITE_CONFIG || {};
+  cfg.apiBaseUrl = 'https://mercy-api-live-staging-1004142248441.asia-south1.run.app';
+  window.MERCY_SITE_CONFIG = cfg;
+  document.documentElement.dataset.avatarEnvironment = 'staging';
+})();
+</script>
 <script src="../javascript/avatar-3d.js?v=3"></script>
 <script src="../javascript/avatar.js?v=3"></script>
 <script src="../javascript/mercy.js?v=11"></script>
