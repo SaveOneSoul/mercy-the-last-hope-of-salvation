@@ -17,7 +17,7 @@ def test_tts_disabled_by_default(monkeypatch):
 def test_mercy_voice_requires_https(monkeypatch):
     monkeypatch.setenv("AVATAR_TTS_PROVIDER", "mercy_voice")
     monkeypatch.setenv("MERCY_VOICE_URL", "http://voice.internal")
-    assert avatar_tts.tts_enabled() is True
+    assert avatar_tts.tts_enabled() is False
     assert avatar_tts._mercy_voice_url() is None
 
 
@@ -50,3 +50,17 @@ async def test_disabled_synthesis_makes_no_provider_call(monkeypatch):
 
     monkeypatch.setattr(avatar_tts.httpx, "AsyncClient", ForbiddenClient)
     assert await avatar_tts.synthesize_with_timing("Peace be with you.", "en") is None
+
+
+def test_mercy_voice_iam_mode_is_enabled_for_https_url(monkeypatch):
+    monkeypatch.setenv("AVATAR_TTS_PROVIDER", "mercy_voice")
+    monkeypatch.setenv("MERCY_VOICE_URL", "https://voice.example.run.app")
+    monkeypatch.setenv("MERCY_VOICE_AUTH_MODE", "cloud_run_iam")
+    assert avatar_tts.tts_enabled() is True
+
+
+def test_mercy_voice_invalid_auth_mode_fails_closed(monkeypatch):
+    monkeypatch.setenv("AVATAR_TTS_PROVIDER", "mercy_voice")
+    monkeypatch.setenv("MERCY_VOICE_URL", "https://voice.example.run.app")
+    monkeypatch.setenv("MERCY_VOICE_AUTH_MODE", "unexpected")
+    assert avatar_tts.tts_enabled() is False
