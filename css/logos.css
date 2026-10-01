@@ -257,3 +257,6 @@ body.dark .logos-chapter-grid button,body.dark .logos-chapter-nav button,body.da
     padding:.3rem .65rem !important;
   }
 }
+
+/* Rights-safe Bible Atlas index */
+.logos-atlas-related{margin:1rem 0}.logos-atlas-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin-top:.75rem}.logos-atlas-chapter{min-width:0}.logos-atlas-head{display:flex;align-items:flex-start;justify-content:space-between;gap:.65rem}.logos-atlas-head h3{margin:0}.logos-atlas-controls{display:flex;gap:.55rem;flex-wrap:wrap;margin:1rem 0}.logos-atlas-controls input,.logos-atlas-controls select{min-height:44px;border:1px solid var(--line);border-radius:12px;background:#fff;color:#2b2024;padding:.7rem .8rem;font:inherit}.logos-atlas-controls input{flex:1 1 280px}.logos-atlas-controls select{flex:0 1 210px}.logos-atlas-page{white-space:nowrap;color:var(--muted);font-weight:700}body.dark .logos-atlas-controls input,body.dark .logos-atlas-controls select{background:#1f1819;color:#f6efeb;border-color:#4d383b}@media(max-width:760px){.logos-atlas-grid{grid-template-columns:1fr}.logos-atlas-controls{display:grid}.logos-atlas-controls select{width:100%}}
