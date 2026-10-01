@@ -90,6 +90,13 @@ def main():
     assert 'Bible lands overview' in logos_html
     assert 'logos-atlas-sticky-bar' in logos_js
     assert 'logos-atlas-map-thumb' in logos_js
+    assert 'renderAtlasInteractiveMap' in logos_js
+    assert 'tile.openstreetmap.org/{z}/{x}/{y}.png' in logos_js
+    assert 'OpenStreetMap' in logos_js
+    assert 'leaflet@1.9.4/dist/leaflet.css' in logos_html
+    assert 'leaflet@1.9.4/dist/leaflet.js' in logos_html
+    assert 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=' in logos_html
+    assert 'sha256-20nQCchB9coqIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=' in logos_html
     mercy_js = (ROOT / 'javascript/mercy.js').read_text()
     assert 'controllerchange' in mercy_js
     assert "pages\\/logos\\.html" in mercy_js
