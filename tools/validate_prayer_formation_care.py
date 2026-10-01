@@ -91,6 +91,9 @@ def main():
     assert 'logos-atlas-sticky-bar' in logos_js
     assert 'logos-atlas-map-thumb' in logos_js
     assert 'renderAtlasInteractiveMap' in logos_js
+    assert 'logos-atlas-related-primary' in logos_js
+    assert 'Interactive map · drag · zoom · click places' in logos_js
+    assert "el('details','logos-policy logos-atlas-rights')" in logos_js
     assert 'tile.openstreetmap.org/{z}/{x}/{y}.png' in logos_js
     assert 'OpenStreetMap' in logos_js
     assert 'leaflet@1.9.4/dist/leaflet.css' in logos_html
