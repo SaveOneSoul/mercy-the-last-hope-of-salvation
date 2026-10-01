@@ -46,6 +46,33 @@ jobs:
           mkdir -p _site/data/logos-interlinear
           cp cloud-backend/app/logos_interlinear/prototypes/john-1-1/JHN-1-1.json _site/data/logos-interlinear/
           cp cloud-backend/app/logos_interlinear/prototypes/john-1-1/sources-manifest.json _site/data/logos-interlinear/
+      - name: Vendor Leaflet 1.9.4 for interactive Bible maps
+        run: |
+          set -euo pipefail
+          mkdir -p _site/vendor/leaflet
+          curl -fsSL --retry 3 --retry-delay 2 \
+            https://github.com/Leaflet/Leaflet/releases/download/v1.9.4/leaflet.zip \
+            -o /tmp/leaflet-1.9.4.zip
+          unzip -q /tmp/leaflet-1.9.4.zip -d /tmp/leaflet-dist
+          LEAFLET_JS="$(find /tmp/leaflet-dist -type f -name leaflet.js -print -quit)"
+          LEAFLET_CSS="$(find /tmp/leaflet-dist -type f -name leaflet.css -print -quit)"
+          test -n "$LEAFLET_JS"
+          test -n "$LEAFLET_CSS"
+          cp "$LEAFLET_JS" _site/vendor/leaflet/leaflet.js
+          cp "$LEAFLET_CSS" _site/vendor/leaflet/leaflet.css
+          LEAFLET_DIR="$(dirname "$LEAFLET_CSS")"
+          if [ -d "$LEAFLET_DIR/images" ]; then
+            cp -R "$LEAFLET_DIR/images" _site/vendor/leaflet/
+          fi
+          JS_SHA="$(openssl dgst -sha256 -binary _site/vendor/leaflet/leaflet.js | openssl base64 -A)"
+          CSS_SHA="$(openssl dgst -sha256 -binary _site/vendor/leaflet/leaflet.css | openssl base64 -A)"
+          echo "Leaflet JS SHA256(base64): $JS_SHA"
+          echo "Leaflet CSS SHA256(base64): $CSS_SHA"
+          test "$JS_SHA" = "hdRVtFIkFfa63EKg59F8kZ0QA0fWuJWL0Nxzj97NbVA="
+          test "$CSS_SHA" = "p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          curl -fsSL --retry 3 --retry-delay 2 \
+            https://raw.githubusercontent.com/Leaflet/Leaflet/v1.9.4/LICENSE \
+            -o _site/vendor/leaflet/LICENSE
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

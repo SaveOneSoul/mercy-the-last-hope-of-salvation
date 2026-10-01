@@ -31,3 +31,34 @@ jobs:
           node --check javascript/logos-ot-unified-integration.js
       - name: Validate Logos unified Interlinear + Greek NT + OT integration
         run: python tools/validate_logos_greek_frontend.py
+      - name: Verify pinned Leaflet release for interactive Atlas
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 3 --retry-delay 2 \
+            https://github.com/Leaflet/Leaflet/releases/download/v1.9.4/leaflet.zip \
+            -o /tmp/leaflet-1.9.4.zip
+          rm -rf /tmp/leaflet-audit
+          mkdir -p /tmp/leaflet-audit
+          unzip -q /tmp/leaflet-1.9.4.zip -d /tmp/leaflet-audit
+          echo "Leaflet release contents:"
+          find /tmp/leaflet-audit -maxdepth 3 -type f -print | sort
+          LEAFLET_JS="$(find /tmp/leaflet-audit -type f -name leaflet.js -print -quit || true)"
+          LEAFLET_CSS="$(find /tmp/leaflet-audit -type f -name leaflet.css -print -quit || true)"
+          echo "Resolved Leaflet JS: $LEAFLET_JS"
+          echo "Resolved Leaflet CSS: $LEAFLET_CSS"
+          if [ -z "$LEAFLET_JS" ] || [ -z "$LEAFLET_CSS" ]; then
+            echo "Leaflet release did not contain the expected dist files."
+            exit 1
+          fi
+          JS_SHA="$(openssl dgst -sha256 -binary "$LEAFLET_JS" | openssl base64 -A)"
+          CSS_SHA="$(openssl dgst -sha256 -binary "$LEAFLET_CSS" | openssl base64 -A)"
+          echo "Leaflet JS SHA256(base64): $JS_SHA"
+          echo "Leaflet CSS SHA256(base64): $CSS_SHA"
+          if [ "$JS_SHA" != "hdRVtFIkFfa63EKg59F8kZ0QA0fWuJWL0Nxzj97NbVA=" ]; then
+            echo "Unexpected Leaflet JS hash"
+            exit 1
+          fi
+          if [ "$CSS_SHA" != "p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" ]; then
+            echo "Unexpected Leaflet CSS hash"
+            exit 1
+          fi
