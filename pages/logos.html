@@ -11,7 +11,7 @@
 <title>Logos · Catholic Biblical Study · Mercy</title>
 <link rel="manifest" href="../mercy-manifest.webmanifest">
 <link rel="stylesheet" href="../css/mercy.css">
-<link rel="stylesheet" href="../css/logos.css?v=12">
+<link rel="stylesheet" href="../css/logos.css?v=13">
 <link rel="stylesheet" href="../css/logos-greek-integration.css?v=4">
 </head>
 <body>
@@ -130,7 +130,24 @@
 <div class="logos-workspace">
 <section class="logos-panel" aria-labelledby="passageHeading"><div class="logos-panel-head"><div><span class="logos-kicker">Parallel Scripture</span><h2 id="passageHeading">John 1:1</h2></div><button type="button" class="logos-small-btn" id="reloadLogos">Refresh</button></div><div id="logosParallel" class="logos-parallel"><div class="logos-loading">Loading Scripture lanes…</div></div></section>
 
-<section class="logos-panel logos-atlas-preview" id="logosAtlasPreview" aria-labelledby="logosAtlasPreviewHeading" hidden><div class="logos-panel-head"><div><span class="logos-kicker">Atlas for this passage</span><h2 id="logosAtlasPreviewHeading">Historical-geographical context</h2></div><button type="button" class="logos-small-btn" id="logosOpenAtlasFull">Open full Atlas</button></div><p id="logosAtlasPreviewNote" class="logos-note"></p><div id="logosAtlasPreviewItems" class="logos-atlas-preview-grid"></div></section>
+<section class="logos-panel logos-atlas-preview" id="logosAtlasPreview" aria-labelledby="logosAtlasPreviewHeading"><div class="logos-panel-head"><div><span class="logos-kicker">Atlas for this passage</span><h2 id="logosAtlasPreviewHeading">Bible lands overview</h2></div><button type="button" class="logos-small-btn" id="logosOpenAtlasFull">Open full Atlas</button></div>
+<figure class="logos-atlas-map logos-atlas-static-fallback" data-atlas-fallback="true">
+<svg viewBox="0 0 1000 600" role="img" aria-label="Bible lands overview showing Egypt, Canaan and Mesopotamia">
+<rect x="0" y="0" width="1000" height="600" rx="28" class="logos-atlas-map-bg"></rect>
+<line x1="54" y1="177" x2="946" y2="177" class="logos-atlas-gridline"></line><line x1="54" y1="300" x2="946" y2="300" class="logos-atlas-gridline"></line><line x1="54" y1="423" x2="946" y2="423" class="logos-atlas-gridline"></line>
+<ellipse cx="175" cy="170" rx="95" ry="32" class="logos-atlas-water-shape"></ellipse><text x="175" y="176" class="logos-atlas-water-label" text-anchor="middle">Mediterranean Sea</text>
+<polyline points="250,360 268,315 282,270 292,225" class="logos-atlas-river" fill="none"></polyline><text x="300" y="275" class="logos-atlas-river-label">Nile</text>
+<polyline points="700,120 730,190 760,270 805,360" class="logos-atlas-river" fill="none"></polyline><text x="745" y="210" class="logos-atlas-river-label">Euphrates</text>
+<polyline points="780,115 792,190 820,265 842,345" class="logos-atlas-river" fill="none"></polyline><text x="815" y="205" class="logos-atlas-river-label">Tigris</text>
+<text x="245" y="410" class="logos-atlas-region" text-anchor="middle">EGYPT</text><text x="455" y="320" class="logos-atlas-region" text-anchor="middle">CANAAN</text><text x="780" y="390" class="logos-atlas-region" text-anchor="middle">MESOPOTAMIA</text>
+<circle cx="450" cy="330" r="5" class="logos-atlas-point"></circle><text x="462" y="323" class="logos-atlas-point-label">Jerusalem</text>
+<circle cx="805" cy="365" r="5" class="logos-atlas-point"></circle><text x="817" y="358" class="logos-atlas-point-label">Babylon</text>
+<circle cx="860" cy="420" r="5" class="logos-atlas-point"></circle><text x="848" y="443" class="logos-atlas-point-label" text-anchor="end">Ur</text>
+<circle cx="735" cy="145" r="5" class="logos-atlas-point"></circle><text x="746" y="138" class="logos-atlas-point-label">Haran</text>
+<rect x="54" y="54" width="892" height="492" rx="14" class="logos-atlas-map-frame" fill="none"></rect>
+</svg>
+<figcaption><strong>Bible lands overview</strong><span>Fallback map shown immediately; Logos replaces it with the passage-specific map when study data loads.</span><small>Original schematic visual · not copied from the uploaded atlas.</small></figcaption></figure>
+<p id="logosAtlasPreviewNote" class="logos-note">Loading passage-specific historical-geographical context…</p><div id="logosAtlasPreviewItems" class="logos-atlas-preview-grid"></div></section>
 
 <nav class="logos-tabs" aria-label="Logos study layers">
 <button class="active" type="button" data-logos-tab="interlinear">Interlinear</button>
@@ -158,7 +175,7 @@
 <footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Logos is the biblical-study section of the Mercy Catholic digital mission.</p></div><div><a href="logos.html">Logos</a><a href="catholic-ai.html">Catholic AI</a><a href="sources.html">Sources & editorial policy</a><a href="https://www.vatican.va/" target="_blank" rel="noopener">Holy See</a></div><p class="copyright">© <span data-year></span> Mercy – The Last Hope of Salvation.</p></footer>
 <script src="../javascript/mobile-nav.js?v=2"></script>
 <script src="../javascript/logos-share-art.js?v=1"></script>
-<script src="../javascript/logos.js?v=21"></script>
+<script src="../javascript/logos.js?v=22"></script>
 <script src="../javascript/logos-ot-unified-integration.js?v=6"></script>
 <script src="../javascript/mercy.js?v=12"></script>
 </body>
