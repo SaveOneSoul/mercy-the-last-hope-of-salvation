@@ -40,9 +40,15 @@ jobs:
           rm -rf /tmp/leaflet-audit
           mkdir -p /tmp/leaflet-audit
           unzip -q /tmp/leaflet-1.9.4.zip -d /tmp/leaflet-audit
-          test -f /tmp/leaflet-audit/leaflet.js
-          test -f /tmp/leaflet-audit/leaflet.css
-          JS_SHA="$(openssl dgst -sha256 -binary /tmp/leaflet-audit/leaflet.js | openssl base64 -A)"
-          CSS_SHA="$(openssl dgst -sha256 -binary /tmp/leaflet-audit/leaflet.css | openssl base64 -A)"
+          LEAFLET_JS="$(find /tmp/leaflet-audit -type f -name leaflet.js -print -quit)"
+          LEAFLET_CSS="$(find /tmp/leaflet-audit -type f -name leaflet.css -print -quit)"
+          test -n "$LEAFLET_JS"
+          test -n "$LEAFLET_CSS"
+          JS_SHA="$(openssl dgst -sha256 -binary "$LEAFLET_JS" | openssl base64 -A)"
+          CSS_SHA="$(openssl dgst -sha256 -binary "$LEAFLET_CSS" | openssl base64 -A)"
+          echo "Leaflet JS: $LEAFLET_JS"
+          echo "Leaflet CSS: $LEAFLET_CSS"
+          echo "Leaflet JS SHA256(base64): $JS_SHA"
+          echo "Leaflet CSS SHA256(base64): $CSS_SHA"
           test "$JS_SHA" = "20nQCchB9coqIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
           test "$CSS_SHA" = "p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
