@@ -8,7 +8,8 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = ['mary-our-help','rosary-novena-54','healing-sessions','holy-wounds','prayer-protection',
          'prayer-conversion','mariology','psychology','counselling-courses','counselling',
-         'counselling-ai','personal-counselling','scripture-course','purgatory']
+         'counselling-ai','personal-counselling','theology-professional','philosophy',
+         'psychology-professional','scripture-course','purgatory']
 
 
 class Links(HTMLParser):
@@ -42,11 +43,16 @@ def main():
         data = json.loads((ROOT / 'pages' / course['contentFile']).read_text())
         assert len(data['units']) >= 10 and course['credits'] == len(data['units']) * 2
         for unit in data['units']:
-            assert len(' '.join(unit['paragraphs']).split()) >= 90, unit['title']
+            lesson_parts = list(unit.get('paragraphs', []))
+            for section in unit.get('lectureSections', []):
+                lesson_parts.extend(section.get('paragraphs', []))
+                lesson_parts.extend(section.get('points', []))
+            lesson_parts.extend(unit.get('methodNotes', []))
+            assert len(' '.join(lesson_parts).split()) >= 90, unit['title']
             assert unit['sources'] and unit['assignment'] and len(unit['quiz']) == 2
         quizzes = [q for u in data['units'] for q in u['quiz']]
         for kind in ('mid', 'final'):
-            assert len(data['assessments'][kind]) == 5
+            assert len(data['assessments'][kind]) >= 5
             quizzes += data['assessments'][kind]
         for q in quizzes:
             assert len(q['options']) >= 2 and len(set(q['options'])) == len(q['options'])
