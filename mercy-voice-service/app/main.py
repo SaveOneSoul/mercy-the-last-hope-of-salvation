@@ -28,10 +28,18 @@ class SynthesisIn(BaseModel):
 
 
 def _authorized(authorization: str | None) -> bool:
-    token = os.getenv("MERCY_VOICE_SERVICE_TOKEN", "").strip()
-    if not token:
+    # In Cloud Run IAM mode, Google authenticates the caller before the request
+    # reaches this container. Keep application bearer-token auth for local or
+    # non-IAM deployments only.
+    auth_mode = os.getenv("MERCY_VOICE_AUTH_MODE", "token").strip().lower()
+    if auth_mode == "cloud_run_iam":
+        return True
+    if auth_mode == "token":
+        token = os.getenv("MERCY_VOICE_SERVICE_TOKEN", "").strip()
+        return bool(token) and authorization == f"Bearer {token}"
+    if auth_mode == "none":
         return os.getenv("MERCY_VOICE_ALLOW_UNAUTHENTICATED", "false").lower() == "true"
-    return authorization == f"Bearer {token}"
+    return False
 
 
 def _placeholder_wav(text: str) -> str:
