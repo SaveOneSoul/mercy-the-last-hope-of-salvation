@@ -77,3 +77,14 @@ body>main#main>.content{box-sizing:border-box}
 .avatar-viewport>.mercy-digital-human .mercy-state-badge{display:block!important;visibility:visible!important}
 @media(max-width:980px){.avatar-viewport>.mercy-digital-human{min-height:460px!important}}
 @media(max-width:600px){.avatar-viewport>.mercy-digital-human{min-height:390px!important}}
+
+/* v7 SVG renderer: self-contained geometry, minimal external styling. */
+.mercy-avatar-v7{width:min(100%,500px)!important;height:520px!important;min-height:520px!important}
+.mercy-avatar-svg{display:block!important;width:100%!important;height:100%!important;max-width:none!important}
+.mercy-avatar-svg[data-state="thinking"] .mercy-body{animation:mercy-svg-think 1.7s ease-in-out infinite;transform-origin:250px 260px}
+.mercy-avatar-svg[data-state="listening"] .mercy-svg-status rect{stroke:#5aa8ff;stroke-width:4}
+.mercy-avatar-svg[data-state="speaking"] .mercy-svg-status rect{stroke:#d4ad59;stroke-width:4}
+.mercy-svg-eyes{transform-origin:250px 220px;animation:mercy-svg-blink 6s infinite}
+@keyframes mercy-svg-think{50%{transform:rotate(-1deg) translateY(-3px)}}@keyframes mercy-svg-blink{0%,46%,48%,100%{transform:scaleY(1)}47%{transform:scaleY(.08)}}
+@media(max-width:980px){.mercy-avatar-v7{height:460px!important;min-height:460px!important}}
+@media(max-width:600px){.mercy-avatar-v7{height:390px!important;min-height:390px!important}}
