@@ -15,6 +15,8 @@ import wave
 from fastapi import FastAPI, Header, HTTPException
 from pydantic import BaseModel, Field
 
+from .engines import synthesize_kokoro
+
 app = FastAPI(title="Mercy Voice Service", version="0.1.0")
 
 
@@ -78,5 +80,12 @@ def synthesize(payload: SynthesisIn, authorization: str | None = Header(default=
             "timings": [],
         }
 
-    # No neural engine is silently selected. A reviewed engine adapter belongs here.
+    if engine == "kokoro":
+        if payload.language != "en":
+            raise HTTPException(status_code=422, detail="language_not_supported_by_engine")
+        result = synthesize_kokoro(payload.text, payload.voice)
+        if result is None:
+            raise HTTPException(status_code=503, detail="tts_engine_unavailable")
+        return result
+
     raise HTTPException(status_code=503, detail="tts_engine_not_available")
