@@ -308,3 +308,10 @@ body.dark .logos-atlas-map figcaption{background:#20191b;border-color:#49383a}
   .logos-atlas-region{font-size:18px}
   .logos-atlas-point-label{font-size:13px}
 }
+
+/* Atlas visibility safeguards */
+.logos-atlas-static-fallback{margin-top:.8rem}
+.logos-atlas-sticky-bar{position:sticky;top:.5rem;z-index:8;display:flex;align-items:center;justify-content:space-between;gap:.75rem;margin:.55rem 0 .7rem;padding:.55rem .65rem;border:1px solid var(--line);border-radius:13px;background:rgba(255,253,248,.96);backdrop-filter:blur(8px);box-shadow:0 7px 22px rgba(52,34,27,.10)}
+.logos-atlas-sticky-bar span{font:800 .78rem/1.3 system-ui;color:var(--wine)}
+body.dark .logos-atlas-sticky-bar{background:rgba(32,25,27,.95)}
+@media(max-width:760px){.logos-atlas-sticky-bar{top:.25rem}.logos-atlas-sticky-bar .logos-small-btn{min-height:40px}}
