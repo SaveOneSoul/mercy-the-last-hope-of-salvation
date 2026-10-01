@@ -36,3 +36,28 @@ body>main#main>.content{box-sizing:border-box}
 .avatar-viewport{width:min(100%,500px);height:520px}
 @media(max-width:980px){.avatar-shell{grid-template-columns:1fr}.avatar-stage,.avatar-panel{min-height:auto}.avatar-viewport{height:460px}}
 @media(max-width:600px){body>main#main>.page-hero,body>main#main>.content{width:min(100% - 20px,1440px)}.avatar-viewport{height:390px}.avatar-stage{padding:1rem}.avatar-panel{padding:.8rem}}
+
+/* Mercy digital human v5 — replaces the retired sphere/WebGL placeholder. */
+.mercy-digital-human{--mouth-open:0;position:relative;width:100%;height:100%;overflow:hidden;background:radial-gradient(circle at 50% 26%,#fff8ec 0,#ead9c8 48%,#c7a98f 100%);isolation:isolate}
+.mercy-hair-back{position:absolute;z-index:1;left:17%;top:8%;width:66%;height:73%;border-radius:48% 48% 38% 38%;background:linear-gradient(100deg,#24130f 0,#5a3326 46%,#2a1712 100%);box-shadow:0 20px 45px #4b2b2440}
+.mercy-neck{position:absolute;z-index:2;left:43%;top:61%;width:14%;height:18%;border-radius:0 0 45% 45%;background:linear-gradient(90deg,#d89e7e,#efbd9e 52%,#cc8e70)}
+.mercy-shoulders{position:absolute;z-index:2;left:7%;bottom:-13%;width:86%;height:42%;border-radius:48% 48% 0 0;background:linear-gradient(90deg,#65182a,#8b2940 48%,#5a1324);box-shadow:inset 0 14px 30px #ffffff12}
+.mercy-face-shape{position:absolute;z-index:4;left:27%;top:14%;width:46%;height:51%;border-radius:48% 48% 46% 46%/42% 42% 55% 55%;background:radial-gradient(circle at 52% 35%,#f6c8aa 0,#e8ad8d 58%,#c98468 100%);box-shadow:inset -13px -9px 25px #8f523b25,0 12px 24px #3a201a20;transition:transform .35s ease}
+.mercy-hair-top{position:absolute;z-index:6;left:-8%;top:-13%;width:116%;height:37%;border-radius:55% 50% 42% 38%;background:linear-gradient(155deg,#2b1712,#5c3528 52%,#281510);transform:rotate(-3deg);box-shadow:0 7px 10px #2a161630}
+.mercy-hair-side{position:absolute;z-index:7;top:18%;width:19%;height:61%;border-radius:55% 45% 50% 50%;background:linear-gradient(100deg,#281510,#6a3c2c 48%,#2a1712);filter:drop-shadow(0 10px 9px #301b1830)}
+.mercy-hair-side.left{left:17%;transform:rotate(7deg)}.mercy-hair-side.right{right:17%;transform:rotate(-7deg)}
+.mercy-eye{position:absolute;z-index:8;top:39%;width:19%;height:8.5%;border-radius:50%;background:#fffaf4;box-shadow:0 -3px 0 #5a3028;animation:mercy-blink 6.2s infinite}
+.mercy-eye.left{left:20%}.mercy-eye.right{right:20%}.mercy-eye i{position:absolute;left:38%;top:5%;width:30%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#1d1614 0 27%,#6d4933 31% 62%,#201713 66%)}
+.mercy-brow{position:absolute;z-index:9;top:31%;width:22%;height:4%;border-radius:50%;border-top:4px solid #5b3328}.mercy-brow.left{left:18%;transform:rotate(-5deg)}.mercy-brow.right{right:18%;transform:rotate(5deg)}
+.mercy-nose{position:absolute;z-index:8;left:46%;top:45%;width:9%;height:23%;border-radius:50%;box-shadow:5px 2px 6px #9f654533}
+.mercy-cheek{position:absolute;z-index:7;top:58%;width:20%;height:12%;border-radius:50%;background:#d96f7040;filter:blur(5px)}.mercy-cheek.left{left:12%}.mercy-cheek.right{right:12%}
+.mercy-lips{position:absolute;z-index:10;left:36%;top:73%;width:28%;height:9%;border-radius:45% 45% 55% 55%;background:linear-gradient(#a94d59,#7b2839);transform:scaleY(calc(1 + var(--mouth-open)*1.35));transform-origin:center;transition:transform .08s linear}
+.mercy-lips:after{content:"";position:absolute;left:8%;right:8%;top:48%;height:calc(1px + var(--mouth-open)*10px);border-radius:50%;background:#3a101a}
+.mercy-lips span{position:absolute;z-index:2;left:24%;right:24%;bottom:6%;height:calc(var(--mouth-open)*4px);background:#f2d8c9;border-radius:50%}
+.mercy-necklace{position:absolute;z-index:8;left:37%;top:74%;width:26%;height:13%;border-radius:0 0 50% 50%;border-bottom:2px solid #c59b52}.mercy-pendant{position:absolute;z-index:9;left:47.3%;top:82%;color:#b98834;font:700 27px/1 Georgia;text-shadow:0 1px 1px #fff6}
+.mercy-state-badge{position:absolute;z-index:12;left:20px;top:20px;padding:.5rem .8rem;border:1px solid #ffffffaa;border-radius:999px;background:#301c1cbb;color:#fff;font:700 .78rem system-ui;backdrop-filter:blur(7px)}
+.mercy-digital-human[data-state="listening"] .mercy-state-badge{box-shadow:0 0 0 5px #4fa3ff35}.mercy-digital-human[data-state="thinking"] .mercy-face-shape{animation:mercy-think 1.8s ease-in-out infinite}.mercy-digital-human[data-state="speaking"] .mercy-state-badge{box-shadow:0 0 0 5px #d4ad5940}
+@keyframes mercy-blink{0%,46%,48%,100%{transform:scaleY(1)}47%{transform:scaleY(.08)}}@keyframes mercy-think{50%{transform:translateY(-3px) rotate(-1deg)}}
+.avatar-canvas{display:none!important}
+@media(max-width:600px){.mercy-face-shape{left:25%;width:50%}.mercy-hair-side.left{left:14%}.mercy-hair-side.right{right:14%}}
+@media(prefers-reduced-motion:reduce){.mercy-eye,.mercy-face-shape{animation:none!important}}
