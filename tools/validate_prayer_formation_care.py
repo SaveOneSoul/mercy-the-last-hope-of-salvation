@@ -73,7 +73,9 @@ def main():
     assert len(genesis_creation) == 1
     assert any(topic['title'] == 'The Ancient Near East'
                for topic in genesis_creation[0]['topics'])
-    assert len(atlas.get('visual_maps', {})) >= 9
+    assert len(atlas.get('visual_maps', {})) >= 10
+    assert atlas.get('chapter_visual_map', {}).get('1') == 'ancient-near-east'
+    assert atlas.get('chapter_visual_map', {}).get('2') == 'palestine-overview'
     assert genesis_creation[0].get('visual_map') == 'ancient-near-east'
     ancient_map = atlas['visual_maps']['ancient-near-east']
     assert ancient_map['points'] and ancient_map['regions'] and ancient_map['bounds']
@@ -87,6 +89,8 @@ def main():
     assert 'data-atlas-fallback="true"' in logos_html
     assert 'Bible lands overview' in logos_html
     assert 'logos-atlas-sticky-bar' in logos_js
+    assert 'logos-atlas-map-thumb' in logos_js
+    assert 'atlasChapterCard(ch,data)' in logos_js
     assert "atlasPreview.hidden=false" in logos_js
     assert "createElementNS('http://www.w3.org/2000/svg'" in logos_js
     assert "currentTab='atlas'" in logos_js

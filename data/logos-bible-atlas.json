@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "reviewed": "2026-10-01",
   "source": {
     "title": "Bible Atlas",
@@ -3080,6 +3080,141 @@
           "lon": 29.11
         }
       ]
+    },
+    "palestine-overview": {
+      "title": "Palestine / The Holy Land",
+      "subtitle": "Natural regions and principal biblical locations",
+      "bounds": {
+        "minLat": 30.5,
+        "maxLat": 33.6,
+        "minLon": 34.1,
+        "maxLon": 36.1
+      },
+      "note": "Original schematic map for geographic orientation; not copied from the source atlas.",
+      "regions": [
+        {
+          "name": "GALILEE",
+          "lat": 32.85,
+          "lon": 35.3
+        },
+        {
+          "name": "SAMARIA",
+          "lat": 32.25,
+          "lon": 35.18
+        },
+        {
+          "name": "JUDAH",
+          "lat": 31.55,
+          "lon": 35.1
+        },
+        {
+          "name": "NEGEV",
+          "lat": 30.85,
+          "lon": 34.85
+        },
+        {
+          "name": "TRANSJORDAN",
+          "lat": 31.9,
+          "lon": 35.78
+        }
+      ],
+      "waters": [
+        {
+          "name": "Mediterranean Sea",
+          "lat": 32.2,
+          "lon": 34.35
+        },
+        {
+          "name": "Sea of Galilee",
+          "lat": 32.82,
+          "lon": 35.58
+        },
+        {
+          "name": "Dead Sea",
+          "lat": 31.45,
+          "lon": 35.5
+        }
+      ],
+      "rivers": [
+        {
+          "name": "Jordan",
+          "coords": [
+            [
+              33.05,
+              35.62
+            ],
+            [
+              32.82,
+              35.58
+            ],
+            [
+              32.2,
+              35.55
+            ],
+            [
+              31.85,
+              35.5
+            ],
+            [
+              31.45,
+              35.5
+            ]
+          ]
+        }
+      ],
+      "routes": [],
+      "points": [
+        {
+          "name": "Dan",
+          "lat": 33.25,
+          "lon": 35.65
+        },
+        {
+          "name": "Nazareth",
+          "lat": 32.7,
+          "lon": 35.3
+        },
+        {
+          "name": "Capernaum",
+          "lat": 32.88,
+          "lon": 35.58
+        },
+        {
+          "name": "Samaria",
+          "lat": 32.28,
+          "lon": 35.2
+        },
+        {
+          "name": "Shechem",
+          "lat": 32.21,
+          "lon": 35.29
+        },
+        {
+          "name": "Jericho",
+          "lat": 31.87,
+          "lon": 35.44
+        },
+        {
+          "name": "Jerusalem",
+          "lat": 31.778,
+          "lon": 35.235
+        },
+        {
+          "name": "Bethlehem",
+          "lat": 31.7,
+          "lon": 35.2
+        },
+        {
+          "name": "Hebron",
+          "lat": 31.53,
+          "lon": 35.1
+        },
+        {
+          "name": "Beersheba",
+          "lat": 31.25,
+          "lon": 34.79
+        }
+      ]
     }
   },
   "book_visual_map": {
@@ -3149,5 +3284,28 @@
     "3 John": "revelation",
     "Jude": "revelation",
     "Revelation": "revelation"
+  },
+  "chapter_visual_map": {
+    "1": "ancient-near-east",
+    "2": "palestine-overview",
+    "3": "palestine-overview",
+    "4": "ancient-near-east",
+    "5": "patriarchs",
+    "6": "exodus",
+    "7": "exodus",
+    "8": "conquest",
+    "9": "monarchy",
+    "10": "monarchy",
+    "11": "monarchy",
+    "12": "exile-return",
+    "13": "exile-return",
+    "14": "exile-return",
+    "15": "paul",
+    "16": "jesus",
+    "17": "jesus",
+    "18": "jesus",
+    "19": "paul",
+    "20": "jesus",
+    "21": "revelation"
   }
 }
