@@ -84,6 +84,10 @@ def main():
     assert 'id="logosAtlasPreview"' in logos_html
     assert 'loadAtlasPreview(data)' in logos_js
     assert 'renderAtlasVisualMap' in logos_js
+    assert 'data-atlas-fallback="true"' in logos_html
+    assert 'Bible lands overview' in logos_html
+    assert 'logos-atlas-sticky-bar' in logos_js
+    assert "atlasPreview.hidden=false" in logos_js
     assert "createElementNS('http://www.w3.org/2000/svg'" in logos_js
     assert "currentTab='atlas'" in logos_js
 
