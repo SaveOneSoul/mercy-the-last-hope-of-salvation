@@ -30,3 +30,19 @@ service token to browser JavaScript. No transcript persistence is implemented.
 - `MERCY_VOICE_SERVICE_TOKEN=`
 - `MERCY_VOICE_ALLOW_UNAUTHENTICATED=false`
 - `MERCY_VOICE_ENABLE_CONTRACT_AUDIO=false`
+
+
+## Reviewed English engine
+
+The first English candidate is Kokoro-82M. Upstream model metadata identifies the
+weights as Apache-2.0 and the current inference library is Apache-2.0. The runtime
+uses espeak-ng through the phonemization stack; keep the voice service as a
+separate deployable component and retain the applicable notices/source-offer
+obligations for distributed images.
+
+Set:
+- `MERCY_VOICE_ENGINE=kokoro`
+- `MERCY_KOKORO_VOICE=af_heart`
+
+Kokoro is used for English only. Requests with `language=kha` fail closed until
+a Khasi model has passed the dedicated corpus/pronunciation gate.
