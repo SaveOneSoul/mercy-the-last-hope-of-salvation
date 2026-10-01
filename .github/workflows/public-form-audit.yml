@@ -54,7 +54,7 @@ jobs:
           CSS_SHA="$(openssl dgst -sha256 -binary "$LEAFLET_CSS" | openssl base64 -A)"
           echo "Leaflet JS SHA256(base64): $JS_SHA"
           echo "Leaflet CSS SHA256(base64): $CSS_SHA"
-          if [ "$JS_SHA" != "20nQCchB9coqIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" ]; then
+          if [ "$JS_SHA" != "hdRVtFIkFfa63EKg59F8kZ0QA0fWuJWL0Nxzj97NbVA=" ]; then
             echo "Unexpected Leaflet JS hash"
             exit 1
           fi
