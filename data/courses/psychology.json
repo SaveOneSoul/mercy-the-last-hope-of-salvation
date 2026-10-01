@@ -1,10 +1,10 @@
 {
   "id": "psychology",
   "title": "Psychology Foundations",
-  "version": 3,
+  "version": 4,
   "reviewed": "2026-10-01",
-  "description": "Twenty-unit professional-style psychology foundation covering scientific method, brain and behaviour, consciousness, learning, memory, emotion, development, social and cultural psychology, mental-health literacy, sensation and perception, motivation, cognition, attachment, trauma, psychopathology, assessment, psychotherapy, health psychology and ethics.",
-  "creditNote": "20 internal Save One Soul formation credits. Professional-style breadth and study method; non-accredited and not a qualification, licence or evidence of competence to practise psychology, counselling or psychotherapy.",
+  "description": "Ten-unit Psychology Foundations prerequisite covering scientific method, brain and behaviour, consciousness, learning and habits, memory, emotion, development, social and cultural psychology, mental-health literacy, and careful integration of psychology, ethics and Catholic faith.",
+  "creditNote": "20 internal formation credits (10 units × 2). Non-accredited education; not a qualification, licence or evidence of competence to practise counselling, psychology or psychotherapy. Continue to the separate 24-unit Professional Foundations track for advanced study.",
   "units": [
     {
       "title": "Psychology as a science",
@@ -466,592 +466,6 @@
           "explanation": "Education does not confer clinical competence or registration."
         }
       ]
-    },
-    {
-      "title": "Sensation and perception",
-      "label": "Professional-style psychology formation",
-      "objectives": [
-        "Distinguish sensation from perception.",
-        "Explain thresholds, adaptation and top-down processing.",
-        "Describe perceptual errors without treating them as character defects."
-      ],
-      "paragraphs": [
-        "Sensation concerns detection of physical energy by sensory systems; perception concerns the brain's organization and interpretation of sensory input. The two processes are deeply integrated rather than sequential boxes.",
-        "Perception is constructive. Expectations, attention, context and prior learning influence what is noticed and how ambiguous information is interpreted. This does not mean reality is arbitrary; perceptual systems make constrained inferences from incomplete information.",
-        "Visual, auditory, somatosensory, olfactory and gustatory systems use different receptors and neural pathways. Professional study connects receptor physiology, neural coding and psychological experience."
-      ],
-      "lectureSections": [
-        {
-          "title": "Perceptual organization",
-          "paragraphs": [
-            "Study figure-ground organization, depth cues, constancies, Gestalt grouping, signal detection and multisensory integration. Distinguish ordinary illusions from hallucinations or clinical symptoms, which require context and assessment."
-          ]
-        }
-      ],
-      "keyTerms": [
-        "Sensation",
-        "Perception",
-        "Absolute threshold",
-        "Signal detection",
-        "Top-down processing"
-      ],
-      "sources": [
-        {
-          "title": "OpenStax Psychology 2e, Sensation and Perception",
-          "url": "https://openstax.org/books/psychology-2e/pages/5-introduction"
-        }
-      ],
-      "assignment": "Analyze one visual or auditory illusion, explaining the perceptual mechanism and why an illusion is not evidence of mental disorder.",
-      "quiz": [
-        {
-          "question": "Perception is best described as what?",
-          "options": [
-            "Organization and interpretation of sensory input",
-            "Perfect recording of reality",
-            "A moral judgment"
-          ],
-          "correct": 0,
-          "explanation": "Perception constructs meaningful experience from sensory information."
-        },
-        {
-          "question": "Top-down processing can be influenced by expectations.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 0,
-          "explanation": "Prior knowledge and expectation can shape perception."
-        }
-      ]
-    },
-    {
-      "title": "Motivation, reward and self-regulation",
-      "label": "Professional-style psychology formation",
-      "objectives": [
-        "Compare drive, incentive, expectancy and self-determination accounts.",
-        "Explain reward prediction without reducing motivation to dopamine.",
-        "Design motivation strategies that preserve autonomy."
-      ],
-      "paragraphs": [
-        "Motivation includes processes that energize, direct and sustain behavior. Biological needs, learned incentives, goals, social context, identity and expectations can all contribute.",
-        "Dopamine participates in reward prediction, salience and learning. It does not map neatly onto pleasure, happiness or moral goodness. A person may strongly 'want' an outcome without strongly 'liking' it.",
-        "Self-regulation includes goal representation, monitoring, inhibition, environmental design and recovery after setbacks. Sustainable change often depends more on structure and repetition than on fluctuating motivation."
-      ],
-      "lectureSections": [
-        {
-          "title": "Intrinsic and extrinsic motivation",
-          "paragraphs": [
-            "External rewards can be useful, but autonomy, competence and relatedness also matter. In education or ministry, avoid manipulation and excessive reward structures that undermine ownership of the task."
-          ]
-        }
-      ],
-      "keyTerms": [
-        "Motivation",
-        "Incentive",
-        "Reward prediction",
-        "Self-regulation",
-        "Intrinsic motivation"
-      ],
-      "sources": [
-        {
-          "title": "OpenStax Psychology 2e, Emotion and Motivation",
-          "url": "https://openstax.org/books/psychology-2e/pages/10-introduction"
-        }
-      ],
-      "assignment": "Design a motivation plan for a month-long study goal using environmental cues, intrinsic reasons, feedback and a recovery plan.",
-      "quiz": [
-        {
-          "question": "Dopamine is simply the brain's pleasure chemical.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 1,
-          "explanation": "Dopamine has broader roles in learning, salience and motivation."
-        },
-        {
-          "question": "Self-regulation includes environmental design.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 0,
-          "explanation": "Changing cues and friction can support behavior."
-        }
-      ]
-    },
-    {
-      "title": "Thinking, language and decision-making",
-      "label": "Professional-style psychology formation",
-      "objectives": [
-        "Explain concepts, schemas, heuristics and problem solving.",
-        "Describe common cognitive biases without using them as insults.",
-        "Analyze language as a cognitive and social system."
-      ],
-      "paragraphs": [
-        "Cognition includes categorization, reasoning, problem solving, judgment, imagination and language. Human thinking is efficient partly because it uses heuristics—shortcuts that often work but can also produce systematic errors.",
-        "Biases such as availability, anchoring and confirmation bias are tendencies, not diagnoses. Naming a bias does not by itself prove that another person's conclusion is false; the actual evidence and argument still matter.",
-        "Language enables symbolic thought and social coordination. Research examines phonology, syntax, semantics, pragmatics and language development, while debates continue about how language and thought influence one another."
-      ],
-      "lectureSections": [
-        {
-          "title": "Decision architecture",
-          "paragraphs": [
-            "Professional analysis distinguishes the quality of the decision process from the eventual outcome. A good decision can have a bad outcome under uncertainty, and a poor decision can occasionally succeed by chance."
-          ]
-        }
-      ],
-      "keyTerms": [
-        "Heuristic",
-        "Bias",
-        "Schema",
-        "Working memory",
-        "Pragmatics"
-      ],
-      "sources": [
-        {
-          "title": "OpenStax Psychology 2e, Thinking and Intelligence",
-          "url": "https://openstax.org/books/psychology-2e/pages/7-introduction"
-        }
-      ],
-      "assignment": "Analyze a fictional decision using at least three possible biases, then state what evidence would be needed before concluding that any bias actually occurred.",
-      "quiz": [
-        {
-          "question": "A heuristic is always irrational.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 1,
-          "explanation": "Heuristics can be efficient but sometimes biased."
-        },
-        {
-          "question": "Naming a cognitive bias automatically disproves a person's conclusion.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 1,
-          "explanation": "The evidence and argument still need evaluation."
-        }
-      ]
-    },
-    {
-      "title": "Attachment, relationships and interpersonal development",
-      "label": "Professional-style psychology formation",
-      "objectives": [
-        "Explain attachment as a developmental framework rather than a fixed identity label.",
-        "Describe relational regulation and interpersonal expectations.",
-        "Avoid overinterpreting popular attachment quizzes."
-      ],
-      "paragraphs": [
-        "Attachment research examines how children use caregivers as sources of safety and how patterns of responsiveness relate to exploration and distress regulation. Adult attachment research extends some concepts to close relationships but uses different methods and constructs.",
-        "Attachment categories are probabilistic descriptions, not permanent destinies. Relationships, therapy, development and life circumstances can change interpersonal expectations and behavior.",
-        "Professional use requires attention to culture, family structure, developmental stage and measurement method. Casual labels such as 'avoidant person' can obscure context and reinforce stereotypes."
-      ],
-      "lectureSections": [
-        {
-          "title": "Relational skills",
-          "paragraphs": [
-            "Listening, repair after conflict, boundary setting, emotional communication and mutual responsiveness can be studied behaviorally without pretending to infer another person's entire inner attachment history."
-          ]
-        }
-      ],
-      "keyTerms": [
-        "Attachment",
-        "Secure base",
-        "Caregiver sensitivity",
-        "Relational regulation",
-        "Repair"
-      ],
-      "sources": [
-        {
-          "title": "OpenStax Psychology 2e, Lifespan Development",
-          "url": "https://openstax.org/books/psychology-2e/pages/9-introduction"
-        }
-      ],
-      "assignment": "Write a case formulation that uses attachment concepts cautiously while listing at least three alternative explanations for the person's behavior.",
-      "quiz": [
-        {
-          "question": "Attachment style is an unchangeable personality destiny.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 1,
-          "explanation": "Attachment patterns are not immutable labels."
-        },
-        {
-          "question": "Cultural and family context matter in attachment interpretation.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 0,
-          "explanation": "Attachment measures and behavior must be interpreted in context."
-        }
-      ]
-    },
-    {
-      "title": "Trauma, adversity and resilience",
-      "label": "Professional-style psychology formation",
-      "objectives": [
-        "Define traumatic exposure and trauma-related responses carefully.",
-        "Explain resilience without romanticizing suffering.",
-        "Distinguish supportive care from trauma treatment."
-      ],
-      "paragraphs": [
-        "Trauma-related responses can involve intrusive memories, avoidance, hyperarousal, negative mood, dissociation or bodily distress, but exposure and response vary widely. Not everyone who experiences adversity develops a disorder.",
-        "Resilience is not invulnerability. It can involve relationships, meaning, material stability, coping skills, community, treatment and time. Calling someone 'resilient' should never excuse unsafe conditions or deny support.",
-        "Supportive listeners should avoid pressuring a person to recount traumatic details, claiming recovered memories, or interpreting distress as spiritual failure. Trauma-focused treatment requires appropriately trained clinicians."
-      ],
-      "lectureSections": [
-        {
-          "title": "Trauma-informed principles",
-          "points": [
-            "Safety",
-            "Choice",
-            "Collaboration",
-            "Predictability",
-            "Respect for culture",
-            "Avoiding unnecessary re-exposure"
-          ]
-        }
-      ],
-      "keyTerms": [
-        "Trauma",
-        "Intrusion",
-        "Avoidance",
-        "Hyperarousal",
-        "Resilience"
-      ],
-      "sources": [
-        {
-          "title": "WHO, Psychological First Aid",
-          "url": "https://www.who.int/publications/i/item/9789241548205"
-        },
-        {
-          "title": "NIMH, Post-Traumatic Stress Disorder",
-          "url": "https://www.nimh.nih.gov/health/topics/post-traumatic-stress-disorder-ptsd"
-        }
-      ],
-      "assignment": "Create a trauma-informed support plan for a fictional community member, including what a volunteer should not do and when referral is appropriate.",
-      "quiz": [
-        {
-          "question": "Everyone exposed to adversity develops PTSD.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 1,
-          "explanation": "Responses vary and diagnosis requires assessment."
-        },
-        {
-          "question": "Trauma-informed support includes choice and safety.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 0,
-          "explanation": "These are core trauma-informed principles."
-        }
-      ]
-    },
-    {
-      "title": "Psychopathology: classification, formulation and diagnostic limits",
-      "label": "Professional-style psychology formation",
-      "objectives": [
-        "Explain what diagnostic systems do and do not do.",
-        "Distinguish symptom, syndrome, diagnosis and formulation.",
-        "Avoid self-diagnosis from isolated checklists."
-      ],
-      "paragraphs": [
-        "Psychopathology studies patterns of psychological distress and impairment. Diagnostic systems group symptoms using operational criteria to improve communication and research, but categories are not complete descriptions of persons.",
-        "A diagnosis considers duration, severity, impairment, exclusion of medical or substance causes, developmental context and differential possibilities. Similar symptoms can occur in multiple conditions.",
-        "Formulation asks how biological, psychological and social factors may interact in this person's difficulties. It complements rather than replaces diagnosis when used by qualified professionals."
-      ],
-      "lectureSections": [
-        {
-          "title": "Diagnostic humility",
-          "paragraphs": [
-            "Students should learn categories for literacy, not to label friends, parishioners or themselves. A course cannot confer diagnostic authority."
-          ]
-        }
-      ],
-      "keyTerms": [
-        "Symptom",
-        "Syndrome",
-        "Diagnosis",
-        "Differential diagnosis",
-        "Formulation"
-      ],
-      "sources": [
-        {
-          "title": "NIMH, Mental Health Information",
-          "url": "https://www.nimh.nih.gov/health"
-        }
-      ],
-      "assignment": "Compare diagnosis and case formulation, then explain why a symptom list alone cannot establish either.",
-      "quiz": [
-        {
-          "question": "A symptom checklist can establish a complete diagnosis by itself.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 1,
-          "explanation": "Diagnosis requires broader assessment."
-        },
-        {
-          "question": "A diagnostic category is a complete description of a person.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 1,
-          "explanation": "Diagnosis is one clinical tool, not a total identity."
-        }
-      ]
-    },
-    {
-      "title": "Psychological assessment and measurement",
-      "label": "Professional-style psychology formation",
-      "objectives": [
-        "Explain reliability, validity and standardization.",
-        "Distinguish screening from diagnosis.",
-        "Evaluate tests according to purpose and population."
-      ],
-      "paragraphs": [
-        "Psychological measurement translates constructs such as depression, anxiety, memory or personality into observable scores. A test can be reliable without being valid for the intended interpretation.",
-        "Validity is not a single permanent property of a questionnaire; it concerns evidence supporting particular uses and interpretations. Cultural, linguistic and population differences affect measurement.",
-        "Screening identifies people who may need further assessment. It trades sensitivity and specificity and can produce false positives and false negatives. Screening should not be presented as diagnosis."
-      ],
-      "lectureSections": [
-        {
-          "title": "Measurement literacy",
-          "points": [
-            "Construct definition",
-            "Reliability",
-            "Content validity",
-            "Criterion validity",
-            "Sensitivity and specificity",
-            "Norms",
-            "Fairness and cultural validity"
-          ]
-        }
-      ],
-      "keyTerms": [
-        "Reliability",
-        "Validity",
-        "Standardization",
-        "Screening",
-        "Norms"
-      ],
-      "sources": [
-        {
-          "title": "OpenStax Psychology 2e, Psychological Disorders",
-          "url": "https://openstax.org/books/psychology-2e/pages/15-introduction"
-        }
-      ],
-      "assignment": "Evaluate a fictional screening tool by asking what construct it measures, for whom it was validated, and what decisions should or should not follow from a score.",
-      "quiz": [
-        {
-          "question": "A reliable test is automatically valid for every purpose.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 1,
-          "explanation": "Reliability is necessary for many uses but does not establish validity."
-        },
-        {
-          "question": "Screening and diagnosis are identical.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 1,
-          "explanation": "Screening indicates possible need for further assessment."
-        }
-      ]
-    },
-    {
-      "title": "Psychotherapies and evidence-based care",
-      "label": "Professional-style psychology formation",
-      "objectives": [
-        "Compare major psychotherapy families.",
-        "Explain evidence-based practice as research, clinical expertise and patient characteristics/preferences.",
-        "Recognize treatment boundaries for non-clinicians."
-      ],
-      "paragraphs": [
-        "Psychotherapies include cognitive-behavioral, psychodynamic, interpersonal, humanistic, systemic, trauma-focused and other approaches. Different problems have different evidence bases, and therapeutic relationship factors also matter.",
-        "Evidence-based practice is not 'use the most famous technique.' It integrates best available research with clinician expertise and the person's needs, values, culture and circumstances.",
-        "Pastoral care, friendship and peer support can complement treatment but should not imitate psychotherapy without training, consent, supervision and appropriate professional role."
-      ],
-      "lectureSections": [
-        {
-          "title": "Treatment literacy",
-          "paragraphs": [
-            "When reading treatment claims, ask about study design, comparison condition, effect size, dropout, follow-up, population and possible harms. Avoid universal cure claims."
-          ]
-        }
-      ],
-      "keyTerms": [
-        "Psychotherapy",
-        "Evidence-based practice",
-        "Therapeutic alliance",
-        "CBT",
-        "Informed consent"
-      ],
-      "sources": [
-        {
-          "title": "NIMH, Psychotherapies",
-          "url": "https://www.nimh.nih.gov/health/topics/psychotherapies"
-        }
-      ],
-      "assignment": "Compare two therapy approaches for one fictional problem, focusing on evidence, mechanism, boundaries and client preference.",
-      "quiz": [
-        {
-          "question": "Evidence-based practice includes client values and clinical expertise as well as research.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 0,
-          "explanation": "Evidence-based care integrates multiple sources of knowledge."
-        },
-        {
-          "question": "A pastoral volunteer should provide psychotherapy without training if intentions are good.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 1,
-          "explanation": "Role boundaries and competence matter."
-        }
-      ]
-    },
-    {
-      "title": "Health psychology and behavior change",
-      "label": "Professional-style psychology formation",
-      "objectives": [
-        "Explain interactions among behavior, physiology and social context.",
-        "Use behavior-change models without blaming patients.",
-        "Analyze sleep, activity, adherence and stress as health-related behaviors."
-      ],
-      "paragraphs": [
-        "Health psychology examines how behavior, cognition, stress, relationships and social conditions interact with physical health. It does not reduce illness to attitude or imply that positive thinking can prevent all disease.",
-        "Behavior change models consider readiness, self-efficacy, cues, reinforcement, environment and social support. Effective interventions often address barriers such as cost, access, fatigue, caregiving or unsafe conditions.",
-        "Medical adherence is a collaborative issue. People may have understandable concerns, side effects, logistical barriers or conflicting priorities. Psychological support should not override medical advice."
-      ],
-      "lectureSections": [
-        {
-          "title": "Biopsychosocial analysis",
-          "paragraphs": [
-            "For a health behavior, identify biological constraints, psychological processes, family/social influences, environmental barriers and health-system factors before proposing individual motivation as the solution."
-          ]
-        }
-      ],
-      "keyTerms": [
-        "Health behavior",
-        "Self-efficacy",
-        "Adherence",
-        "Biopsychosocial",
-        "Stress"
-      ],
-      "sources": [
-        {
-          "title": "WHO health topics",
-          "url": "https://www.who.int/health-topics"
-        }
-      ],
-      "assignment": "Create a biopsychosocial behavior-change plan for sleep or physical activity, explicitly avoiding medical claims or blame.",
-      "quiz": [
-        {
-          "question": "Health psychology teaches that illness is mainly caused by negative thinking.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 1,
-          "explanation": "Health is shaped by multiple biological and contextual factors."
-        },
-        {
-          "question": "Practical barriers can affect adherence.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 0,
-          "explanation": "Access, side effects and circumstances matter."
-        }
-      ]
-    },
-    {
-      "title": "Professional ethics, culture and psychology-faith integration capstone",
-      "label": "Professional-style psychology formation",
-      "objectives": [
-        "Apply consent, privacy, competence and referral principles.",
-        "Practice cultural humility and avoid spiritualizing symptoms.",
-        "Integrate psychology and Catholic anthropology without confusing scientific and moral claims."
-      ],
-      "paragraphs": [
-        "Psychological ethics centers respect for persons, competence, informed consent, confidentiality, avoidance of harm and responsible referral. Students of an introductory course should know these principles precisely because they are not licensed clinicians.",
-        "Cultural humility means asking rather than assuming, recognizing power differences and revising interpretations when new information appears. Religious belief can be a source of meaning and support, but clinicians and pastoral helpers should not impose faith interpretations on symptoms.",
-        "Catholic anthropology affirms dignity, freedom, embodiment, relationality and spiritual vocation. Psychology can describe mechanisms of emotion, habit and cognition; moral theology evaluates human acts; pastoral theology accompanies faith. Integration is strongest when disciplines remain distinct enough to correct one another."
-      ],
-      "lectureSections": [
-        {
-          "title": "Capstone method",
-          "points": [
-            "Choose a fictional case",
-            "Separate observation from inference",
-            "Map biological, psychological, social and spiritual dimensions",
-            "Identify role boundaries",
-            "Propose low-risk support",
-            "State referral criteria",
-            "Explain moral/spiritual issues without diagnosing guilt"
-          ]
-        }
-      ],
-      "keyTerms": [
-        "Informed consent",
-        "Competence",
-        "Confidentiality",
-        "Cultural humility",
-        "Interdisciplinary integration"
-      ],
-      "sources": [
-        {
-          "title": "OpenStax Psychology 2e",
-          "url": "https://openstax.org/details/books/psychology-2e"
-        },
-        {
-          "title": "NIMH",
-          "url": "https://www.nimh.nih.gov/health"
-        }
-      ],
-      "assignment": "Write a 2,500–3,500 word capstone case analysis integrating psychology, ethics, culture and optional Catholic pastoral reflection while maintaining clinical and moral boundaries.",
-      "quiz": [
-        {
-          "question": "Integration is strongest when psychology, moral theology and pastoral care are collapsed into one discipline.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 1,
-          "explanation": "The disciplines should remain distinct while informing one another."
-        },
-        {
-          "question": "Cultural humility includes revising assumptions.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "correct": 0,
-          "explanation": "It requires curiosity and correction rather than stereotyping."
-        }
-      ]
     }
   ],
   "assessments": {
@@ -1064,7 +478,7 @@
           "The unit treats one brain region as a complete explanation of character."
         ],
         "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
+        "explanation": "The first option reflects the unit's actual learning objective."
       },
       {
         "question": "Which statement best fits Unit 2: Brain, body and behaviour?",
@@ -1074,7 +488,7 @@
           "The unit treats one brain region as a complete explanation of character."
         ],
         "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
+        "explanation": "The first option reflects the unit's actual learning objective."
       },
       {
         "question": "Which statement best fits Unit 3: Attention, consciousness and sleep?",
@@ -1084,7 +498,7 @@
           "The unit treats one brain region as a complete explanation of character."
         ],
         "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
+        "explanation": "The first option reflects the unit's actual learning objective."
       },
       {
         "question": "Which statement best fits Unit 4: Learning and habits?",
@@ -1094,7 +508,7 @@
           "The unit treats one brain region as a complete explanation of character."
         ],
         "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
+        "explanation": "The first option reflects the unit's actual learning objective."
       },
       {
         "question": "Which statement best fits Unit 5: Memory and effective study?",
@@ -1104,159 +518,59 @@
           "The unit treats one brain region as a complete explanation of character."
         ],
         "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
-      },
+        "explanation": "The first option reflects the unit's actual learning objective."
+      }
+    ],
+    "final": [
       {
         "question": "Which statement best fits Unit 6: Emotion, stress and regulation?",
         "options": [
           "Distinguish emotion, bodily arousal, impulse, deliberate action and moral evaluation.",
-          "The unit authorizes diagnosis after self-study.",
-          "The unit treats one brain region as a complete explanation of character."
+          "The unit eliminates the need for context.",
+          "The unit permits unlicensed psychotherapy."
         ],
         "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
+        "explanation": "The first option reflects the unit's actual learning objective."
       },
       {
         "question": "Which statement best fits Unit 7: Development across the lifespan?",
         "options": [
           "Explain variation without using a stage model as a diagnosis.",
-          "The unit authorizes diagnosis after self-study.",
-          "The unit treats one brain region as a complete explanation of character."
+          "The unit eliminates the need for context.",
+          "The unit permits unlicensed psychotherapy."
         ],
         "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
+        "explanation": "The first option reflects the unit's actual learning objective."
       },
       {
         "question": "Which statement best fits Unit 8: Personality, social influence and culture?",
         "options": [
           "Notice situational explanations and avoid stereotyping.",
-          "The unit authorizes diagnosis after self-study.",
-          "The unit treats one brain region as a complete explanation of character."
+          "The unit eliminates the need for context.",
+          "The unit permits unlicensed psychotherapy."
         ],
         "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
+        "explanation": "The first option reflects the unit's actual learning objective."
       },
       {
         "question": "Which statement best fits Unit 9: Mental health literacy and help-seeking?",
         "options": [
           "Recognise when education should lead to qualified assessment.",
-          "The unit authorizes diagnosis after self-study.",
-          "The unit treats one brain region as a complete explanation of character."
+          "The unit eliminates the need for context.",
+          "The unit permits unlicensed psychotherapy."
         ],
         "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
+        "explanation": "The first option reflects the unit's actual learning objective."
       },
       {
         "question": "Which statement best fits Unit 10: Integrating psychology, ethics and faith?",
         "options": [
           "Keep scientific, psychological, moral and spiritual questions distinct and in dialogue.",
-          "The unit authorizes diagnosis after self-study.",
-          "The unit treats one brain region as a complete explanation of character."
-        ],
-        "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
-      }
-    ],
-    "final": [
-      {
-        "question": "Which statement best fits Unit 11: Sensation and perception?",
-        "options": [
-          "Distinguish sensation from perception.",
           "The unit eliminates the need for context.",
           "The unit permits unlicensed psychotherapy."
         ],
         "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
-      },
-      {
-        "question": "Which statement best fits Unit 12: Motivation, reward and self-regulation?",
-        "options": [
-          "Compare drive, incentive, expectancy and self-determination accounts.",
-          "The unit eliminates the need for context.",
-          "The unit permits unlicensed psychotherapy."
-        ],
-        "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
-      },
-      {
-        "question": "Which statement best fits Unit 13: Thinking, language and decision-making?",
-        "options": [
-          "Explain concepts, schemas, heuristics and problem solving.",
-          "The unit eliminates the need for context.",
-          "The unit permits unlicensed psychotherapy."
-        ],
-        "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
-      },
-      {
-        "question": "Which statement best fits Unit 14: Attachment, relationships and interpersonal development?",
-        "options": [
-          "Explain attachment as a developmental framework rather than a fixed identity label.",
-          "The unit eliminates the need for context.",
-          "The unit permits unlicensed psychotherapy."
-        ],
-        "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
-      },
-      {
-        "question": "Which statement best fits Unit 15: Trauma, adversity and resilience?",
-        "options": [
-          "Define traumatic exposure and trauma-related responses carefully.",
-          "The unit eliminates the need for context.",
-          "The unit permits unlicensed psychotherapy."
-        ],
-        "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
-      },
-      {
-        "question": "Which statement best fits Unit 16: Psychopathology: classification, formulation and diagnostic limits?",
-        "options": [
-          "Explain what diagnostic systems do and do not do.",
-          "The unit eliminates the need for context.",
-          "The unit permits unlicensed psychotherapy."
-        ],
-        "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
-      },
-      {
-        "question": "Which statement best fits Unit 17: Psychological assessment and measurement?",
-        "options": [
-          "Explain reliability, validity and standardization.",
-          "The unit eliminates the need for context.",
-          "The unit permits unlicensed psychotherapy."
-        ],
-        "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
-      },
-      {
-        "question": "Which statement best fits Unit 18: Psychotherapies and evidence-based care?",
-        "options": [
-          "Compare major psychotherapy families.",
-          "The unit eliminates the need for context.",
-          "The unit permits unlicensed psychotherapy."
-        ],
-        "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
-      },
-      {
-        "question": "Which statement best fits Unit 19: Health psychology and behavior change?",
-        "options": [
-          "Explain interactions among behavior, physiology and social context.",
-          "The unit eliminates the need for context.",
-          "The unit permits unlicensed psychotherapy."
-        ],
-        "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
-      },
-      {
-        "question": "Which statement best fits Unit 20: Professional ethics, culture and psychology-faith integration capstone?",
-        "options": [
-          "Apply consent, privacy, competence and referral principles.",
-          "The unit eliminates the need for context.",
-          "The unit permits unlicensed psychotherapy."
-        ],
-        "correct": 0,
-        "explanation": "The first option reflects the unit's stated learning objective."
+        "explanation": "The first option reflects the unit's actual learning objective."
       }
     ]
   }
