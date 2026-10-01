@@ -66,6 +66,18 @@ def main():
     assert atlas['source']['rights_status'] == 'Reuse licence not stated in the uploaded PDF.'
     assert all(chapter['page'] >= 1 and chapter['maps'] for chapter in atlas_chapters)
     assert all(item['page'] >= 1 and item['title'] for item in atlas_maps)
+    assert atlas.get('passage_rules')
+    genesis_creation = [rule for rule in atlas['passage_rules']
+                        if rule['book'] == 'Genesis'
+                        and rule['chapter_start'] <= 1 <= rule['chapter_end']]
+    assert len(genesis_creation) == 1
+    assert any(topic['title'] == 'The Ancient Near East'
+               for topic in genesis_creation[0]['topics'])
+    logos_html = (ROOT / 'pages/logos.html').read_text()
+    logos_js = (ROOT / 'javascript/logos.js').read_text()
+    assert 'id="logosAtlasPreview"' in logos_html
+    assert 'loadAtlasPreview(data)' in logos_js
+    assert "currentTab='atlas'" in logos_js
 
     manifest = json.loads((ROOT / 'data/prayers/sources.json').read_text())
     for source in manifest['sources']:
