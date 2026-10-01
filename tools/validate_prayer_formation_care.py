@@ -57,6 +57,16 @@ def main():
         for q in quizzes:
             assert len(q['options']) >= 2 and len(set(q['options'])) == len(q['options'])
             assert q['correct'] in range(len(q['options'])) and q['explanation']
+    atlas = json.loads((ROOT / 'data/logos-bible-atlas.json').read_text())
+    atlas_chapters = [chapter for part in atlas['parts'] for chapter in part['chapters']]
+    atlas_maps = [item for chapter in atlas_chapters for item in chapter['maps']]
+    assert len(atlas_chapters) == 21
+    assert len(atlas_maps) == 172
+    assert len(atlas['book_index']) == 73
+    assert atlas['source']['rights_status'] == 'Reuse licence not stated in the uploaded PDF.'
+    assert all(chapter['page'] >= 1 and chapter['maps'] for chapter in atlas_chapters)
+    assert all(item['page'] >= 1 and item['title'] for item in atlas_maps)
+
     manifest = json.loads((ROOT / 'data/prayers/sources.json').read_text())
     for source in manifest['sources']:
         if source['file'].endswith('.pdf'):
@@ -68,7 +78,8 @@ def main():
         assert '14416' in content and 'tel:112' in content and 'Privacy before you send' in content
     deploy = (ROOT / '.github/workflows/mercy-pages.yml').read_text()
     assert 'cp -R data/courses data/prayers _site/data/' in deploy
-    print('Prayer, formation and support validation passed: routes, variable-length professional courses, source PDFs, safety links and deployment data.')
+    assert 'cp data/logos-bible-atlas.json _site/data/' in deploy
+    print('Prayer, formation and support validation passed: routes, variable-length professional courses, Bible Atlas index, source PDFs, safety links and deployment data.')
 
 
 if __name__ == '__main__':
