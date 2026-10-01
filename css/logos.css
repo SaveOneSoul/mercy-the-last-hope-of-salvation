@@ -315,3 +315,13 @@ body.dark .logos-atlas-map figcaption{background:#20191b;border-color:#49383a}
 .logos-atlas-sticky-bar span{font:800 .78rem/1.3 system-ui;color:var(--wine)}
 body.dark .logos-atlas-sticky-bar{background:rgba(32,25,27,.95)}
 @media(max-width:760px){.logos-atlas-sticky-bar{top:.25rem}.logos-atlas-sticky-bar .logos-small-btn{min-height:40px}}
+
+/* Atlas chapter-card map thumbnails */
+.logos-atlas-map-thumb{margin:.65rem 0 .75rem;border-radius:14px;box-shadow:none}
+.logos-atlas-map-thumb svg{width:100%;height:220px;aspect-ratio:auto;object-fit:contain}
+.logos-atlas-map-thumb figcaption{padding:.5rem .65rem}
+.logos-atlas-map-thumb figcaption strong{font-size:.82rem}
+.logos-atlas-map-thumb figcaption small{font-size:.65rem}
+@media(max-width:760px){
+  .logos-atlas-map-thumb svg{height:190px}
+}
