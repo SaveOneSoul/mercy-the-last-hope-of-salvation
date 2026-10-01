@@ -19,6 +19,13 @@ from urllib.parse import urlparse
 
 import httpx
 
+try:
+    from google.auth.transport.requests import Request as GoogleAuthRequest
+    from google.oauth2 import id_token as google_id_token
+except ImportError:  # Local/test environments may omit Google auth unless IAM mode is used.
+    GoogleAuthRequest = None
+    google_id_token = None
+
 
 _SUPPORTED_PROVIDERS = {"elevenlabs", "mercy_voice"}
 
@@ -26,6 +33,11 @@ _SUPPORTED_PROVIDERS = {"elevenlabs", "mercy_voice"}
 def tts_provider() -> str:
     provider = os.getenv("AVATAR_TTS_PROVIDER", "none").strip().lower()
     return provider if provider in _SUPPORTED_PROVIDERS else "none"
+
+
+def _mercy_voice_auth_mode() -> str:
+    mode = os.getenv("MERCY_VOICE_AUTH_MODE", "token").strip().lower()
+    return mode if mode in {"cloud_run_iam", "token", "none"} else "invalid"
 
 
 def tts_enabled() -> bool:
@@ -36,7 +48,7 @@ def tts_enabled() -> bool:
             and os.getenv("ELEVENLABS_VOICE_ID", "").strip()
         )
     if provider == "mercy_voice":
-        return bool(os.getenv("MERCY_VOICE_URL", "").strip())
+        return bool(_mercy_voice_url() and _mercy_voice_auth_mode() != "invalid")
     return False
 
 
@@ -143,14 +155,34 @@ def _mercy_voice_url() -> str | None:
     return base + "/v1/synthesize"
 
 
+def _cloud_run_identity_token(audience: str) -> str | None:
+    if GoogleAuthRequest is None or google_id_token is None:
+        return None
+    try:
+        return google_id_token.fetch_id_token(GoogleAuthRequest(), audience)
+    except Exception:
+        return None
+
+
 async def _synthesize_mercy_voice(text: str, language: str) -> dict | None:
     url = _mercy_voice_url()
     if not url:
         return None
-    token = os.getenv("MERCY_VOICE_TOKEN", "").strip()
+    auth_mode = _mercy_voice_auth_mode()
     headers = {"Content-Type": "application/json"}
-    if token:
+    if auth_mode == "cloud_run_iam":
+        audience = url.rsplit("/v1/synthesize", 1)[0]
+        token = _cloud_run_identity_token(audience)
+        if not token:
+            return None
         headers["Authorization"] = f"Bearer {token}"
+    elif auth_mode == "token":
+        token = os.getenv("MERCY_VOICE_TOKEN", "").strip()
+        if not token:
+            return None
+        headers["Authorization"] = f"Bearer {token}"
+    elif auth_mode != "none":
+        return None
     payload = {
         "text": text[:5000],
         "language": "kha" if language == "kha" else "en",
