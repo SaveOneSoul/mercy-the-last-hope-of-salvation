@@ -1,0 +1,1556 @@
+{
+  "id": "theology-professional",
+  "title": "Catholic Theology: Professional Foundations",
+  "version": 1,
+  "reviewed": "2026-10-01",
+  "description": "Twenty-unit professional-style Catholic theology foundation integrating Scripture, Tradition, Fathers, councils, Magisterium, philosophy, historical method and research practice.",
+  "creditNote": "20 internal Save One Soul formation credits. Professional-style in breadth and study method, but non-accredited and not a seminary, university or canonical degree.",
+  "units": [
+    {
+      "title": "The nature and method of Catholic theology",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Explain theology as faith seeking understanding.",
+        "Distinguish Revelation, theology, doctrine and private opinion.",
+        "Use Scripture, Tradition, Magisterium, Fathers and reason according to their proper roles."
+      ],
+      "paragraphs": [
+        "Catholic theology is disciplined reflection on divine Revelation received in faith. It begins from God's self-communication in salvation history and asks how the mysteries confessed by the Church cohere, what they mean, how they have been expressed, and how they shape Christian life.",
+        "The theologian works within an ordered set of sources. Sacred Scripture and Sacred Tradition transmit the one deposit of faith; the Magisterium authentically interprets the Word of God; the Fathers and Doctors witness to the Church's reception of Revelation; philosophy and the human sciences serve inquiry according to their competence.",
+        "Professional study requires source criticism, historical context, conceptual clarity and doctrinal precision. It also requires distinguishing dogma, definitive doctrine, authoritative teaching, common theological conclusions and permitted opinions."
+      ],
+      "lectureSections": [
+        {
+          "title": "Methodological disciplines",
+          "paragraphs": [
+            "A serious theological method moves from primary sources to interpretation and synthesis. It identifies the question, reads the relevant biblical and ecclesial texts, reconstructs historical controversies, clarifies terms, weighs doctrinal authority, and then formulates a coherent account."
+          ],
+          "points": [
+            "Primary-source reading before summaries",
+            "Historical and linguistic context",
+            "Doctrinal level and theological note",
+            "Argument, objection and response",
+            "Pastoral and spiritual implications"
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Revelation: God's self-disclosure in history and in Christ.",
+        "Tradition: the living transmission of the apostolic faith.",
+        "Magisterium: the Church's teaching office.",
+        "Theological note: a way of identifying the authority or certainty attached to a proposition."
+      ],
+      "sources": [
+        {
+          "title": "Dei Verbum",
+          "url": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651118_dei-verbum_en.html"
+        },
+        {
+          "title": "International Theological Commission, Theology Today",
+          "url": "https://www.vatican.va/roman_curia/congregations/cfaith/cti_documents/rc_cti_doc_20111129_teologia-oggi_en.html"
+        }
+      ],
+      "assignment": "Write a 700–900 word methodological essay explaining how a Catholic theologian should move from Scripture to doctrinal synthesis without confusing interpretation with Magisterial authority.",
+      "quiz": [
+        {
+          "question": "Which source authentically interprets the Word of God in Catholic doctrine?",
+          "options": [
+            "The Magisterium",
+            "Private opinion",
+            "A single modern commentary"
+          ],
+          "correct": 0,
+          "explanation": "The Magisterium serves and authentically interprets the Word of God."
+        },
+        {
+          "question": "Professional theological method should begin with what?",
+          "options": [
+            "Primary sources and the actual question",
+            "A conclusion chosen in advance",
+            "Only devotional impressions"
+          ],
+          "correct": 0,
+          "explanation": "Sound theology begins from the sources and the question being investigated."
+        }
+      ]
+    },
+    {
+      "title": "Revelation, inspiration and the deposit of faith",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Explain public Revelation and its culmination in Christ.",
+        "Describe inspiration without reducing biblical authors to passive instruments.",
+        "Relate Scripture and Tradition within the one deposit of faith."
+      ],
+      "paragraphs": [
+        "Christian Revelation is not merely the communication of propositions; God reveals himself and his saving purpose, culminating in Jesus Christ. The apostolic witness to Christ is transmitted in Scripture and Tradition.",
+        "Inspiration means that God is the author of Scripture in such a way that the human authors truly wrote as human authors, using their language, culture, genres and intentions. This requires careful historical and literary interpretation.",
+        "Public Revelation is complete in Christ and the apostolic deposit. Private revelations may assist Christian life but do not add to or correct the deposit of faith."
+      ],
+      "lectureSections": [
+        {
+          "title": "From event to text to reception",
+          "paragraphs": [
+            "Revelation occurs in history, is proclaimed and handed on, is committed to writing in inspired texts, and is received and interpreted in the Church. These stages are distinguishable but belong to one economy of salvation."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Public Revelation",
+        "Inspiration",
+        "Inerrancy",
+        "Deposit of faith",
+        "Private revelation"
+      ],
+      "sources": [
+        {
+          "title": "Dei Verbum §§2–10",
+          "url": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651118_dei-verbum_en.html"
+        }
+      ],
+      "assignment": "Trace one revealed theme—covenant, temple, sacrifice, kingdom or sonship—from Scripture into the Church's doctrinal reception.",
+      "quiz": [
+        {
+          "question": "Public Revelation reaches its fullness in whom?",
+          "options": [
+            "Jesus Christ",
+            "A later visionary",
+            "A theologian"
+          ],
+          "correct": 0,
+          "explanation": "Catholic doctrine teaches that Revelation reaches its fullness in Christ."
+        },
+        {
+          "question": "Biblical inspiration eliminates the human author's culture and style.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Inspired authors truly wrote as human authors in historical and cultural settings."
+        }
+      ]
+    },
+    {
+      "title": "Faith, reason and philosophical theology",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Explain the Catholic account of faith and reason.",
+        "Distinguish mysteries above reason from contradictions of reason.",
+        "Use philosophical concepts without making philosophy the source of Revelation."
+      ],
+      "paragraphs": [
+        "Faith and reason both orient the human person toward truth. Philosophy can clarify concepts such as being, causality, person, nature, substance, relation and act, while theology receives its formal object from Revelation.",
+        "A mystery such as the Trinity exceeds what unaided reason could discover, but it is not irrational. Theology uses disciplined reasoning to clarify what the Church confesses and to reject contradictory formulations.",
+        "The history of doctrine shows that philosophical vocabulary can be purified and adapted. Terms such as ousia, hypostasis, substance and person acquired precise theological uses through controversy and conciliar definition."
+      ],
+      "lectureSections": [
+        {
+          "title": "Reason in service of faith",
+          "paragraphs": [
+            "Theological reasoning includes demonstration, analogy, distinction, inference and the evaluation of objections. It avoids both rationalism, which reduces faith to what reason can prove, and fideism, which treats reason as irrelevant."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Analogy",
+        "Mystery",
+        "Natural theology",
+        "Fideism",
+        "Rationalism"
+      ],
+      "sources": [
+        {
+          "title": "Fides et Ratio",
+          "url": "https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_14091998_fides-et-ratio.html"
+        }
+      ],
+      "assignment": "Compare fideism and rationalism, then explain the Catholic alternative using one theological example.",
+      "quiz": [
+        {
+          "question": "Catholic theology views reason as what?",
+          "options": [
+            "A servant and partner in the search for truth",
+            "An enemy of faith",
+            "A replacement for Revelation"
+          ],
+          "correct": 0,
+          "explanation": "Reason serves theological understanding without replacing Revelation."
+        },
+        {
+          "question": "A mystery of faith is the same as a logical contradiction.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Mystery exceeds created understanding but does not mean contradiction."
+        }
+      ]
+    },
+    {
+      "title": "The Trinity: one God in three Persons",
+      "label": "Professional-style formation",
+      "objectives": [
+        "State the basic Trinitarian dogma precisely.",
+        "Explain ousia and hypostasis/person in historical context.",
+        "Relate the missions of Son and Spirit to eternal Trinitarian life."
+      ],
+      "paragraphs": [
+        "The Church confesses one God in three divine Persons: Father, Son and Holy Spirit. The divine Persons are really distinct by relations of origin while possessing one indivisible divine nature.",
+        "The controversies of the fourth century required careful language. Nicaea confessed the Son as homoousios with the Father; Constantinople affirmed the divinity of the Holy Spirit. Cappadocian theology helped stabilize the distinction between one ousia and three hypostases.",
+        "Trinitarian theology must hold together unity and distinction without tritheism or modalism. The economic missions reveal, without exhausting, the eternal relations."
+      ],
+      "lectureSections": [
+        {
+          "title": "Biblical and conciliar synthesis",
+          "paragraphs": [
+            "Study baptismal formulas, Pauline benedictions, Johannine Christology and pneumatology alongside the Nicene-Constantinopolitan Creed. The doctrine develops in expression while guarding the apostolic confession."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Ousia",
+        "Hypostasis",
+        "Homoousios",
+        "Procession",
+        "Mission"
+      ],
+      "sources": [
+        {
+          "title": "Catechism §§232–267",
+          "url": "https://www.vatican.va/archive/ENG0015/__P17.HTM"
+        }
+      ],
+      "assignment": "Prepare a source chart linking five biblical texts with Nicaea, Constantinople I and the Nicene Creed.",
+      "quiz": [
+        {
+          "question": "Nicaea teaches the Son is what relative to the Father?",
+          "options": [
+            "Consubstantial",
+            "A creature",
+            "A lesser deity"
+          ],
+          "correct": 0,
+          "explanation": "Homoousios means consubstantial."
+        },
+        {
+          "question": "Trinitarian doctrine teaches three gods.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "The Church confesses one God in three Persons."
+        }
+      ]
+    },
+    {
+      "title": "Christology: Incarnation, Person and natures",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Explain the hypostatic union.",
+        "Distinguish person and nature in Christological doctrine.",
+        "Use Ephesus and Chalcedon in interpreting Christological claims."
+      ],
+      "paragraphs": [
+        "The Christian confession that the Word became flesh required the Church to articulate how Jesus Christ is fully divine and fully human. The subject of the Incarnation is the eternal Son.",
+        "Ephesus defended the unity of Christ's person and the title Theotokos. Chalcedon confessed one and the same Christ in two natures, without confusion, change, division or separation.",
+        "Later controversies addressed Christ's wills and operations. Constantinople III taught that Christ possesses a true human will and divine will in the unity of his person."
+      ],
+      "lectureSections": [
+        {
+          "title": "Soteriological significance",
+          "paragraphs": [
+            "Christology is not abstract classification. The one who acts, suffers, dies and rises is the divine Son acting through a complete human nature. What is not assumed is not healed; therefore full humanity is essential to salvation."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Incarnation",
+        "Hypostatic union",
+        "Theotokos",
+        "Nature",
+        "Person"
+      ],
+      "sources": [
+        {
+          "title": "Catechism §§456–483",
+          "url": "https://www.vatican.va/archive/ENG0015/__P1J.HTM"
+        }
+      ],
+      "assignment": "Explain why Christ must be fully divine and fully human for Christian soteriology, using at least two conciliar references.",
+      "quiz": [
+        {
+          "question": "Chalcedon confesses Christ as what?",
+          "options": [
+            "One person in two natures",
+            "Two persons",
+            "One nature only"
+          ],
+          "correct": 0,
+          "explanation": "Chalcedon safeguards unity of person and distinction of natures."
+        },
+        {
+          "question": "Theotokos primarily protects which doctrine?",
+          "options": [
+            "The unity of Christ's person",
+            "Mary's divinity",
+            "A fourth divine person"
+          ],
+          "correct": 0,
+          "explanation": "The title protects the confession that the one born of Mary is the divine Son incarnate."
+        }
+      ]
+    },
+    {
+      "title": "Soteriology: sin, grace, redemption and justification",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Compare biblical models of salvation.",
+        "Explain grace and justification in Catholic theology.",
+        "Relate cross, resurrection, sacrament and moral transformation."
+      ],
+      "paragraphs": [
+        "Scripture speaks of salvation through images of covenant, sacrifice, victory, reconciliation, justification, adoption, ransom and participation in divine life. No single metaphor exhausts the mystery.",
+        "Catholic theology understands grace as God's free self-gift and transforming help. Justification includes forgiveness and sanctification rather than a merely external declaration detached from renewal.",
+        "The Paschal Mystery is the center of salvation. The cross and resurrection are inseparable; sacramental incorporation into Christ and life in the Spirit communicate what Christ accomplished."
+      ],
+      "lectureSections": [
+        {
+          "title": "Historical controversies",
+          "paragraphs": [
+            "Study Augustine and Pelagius, medieval developments, the Reformation disputes and the Council of Trent. Identify both doctrinal differences and terminological misunderstandings."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Grace",
+        "Justification",
+        "Sanctification",
+        "Merit",
+        "Adoption"
+      ],
+      "sources": [
+        {
+          "title": "Council of Trent, Decree on Justification",
+          "url": "https://www.ewtn.com/catholicism/library/decree-on-justification-1496"
+        },
+        {
+          "title": "Catechism Part Three",
+          "url": "https://www.vatican.va/archive/ENG0015/_INDEX.HTM"
+        }
+      ],
+      "assignment": "Compare three biblical images of salvation and show how they complement one another.",
+      "quiz": [
+        {
+          "question": "Catholic justification includes what?",
+          "options": [
+            "Forgiveness and interior renewal",
+            "Only external legal status",
+            "Human self-salvation"
+          ],
+          "correct": 0,
+          "explanation": "Catholic doctrine holds together forgiveness, grace and sanctification."
+        },
+        {
+          "question": "The Resurrection is optional to Christian soteriology.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "The Paschal Mystery includes Christ's death and Resurrection."
+        }
+      ]
+    },
+    {
+      "title": "Pneumatology: the Holy Spirit in Trinity, Church and mission",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Explain the Spirit's divinity and procession.",
+        "Trace the Spirit through creation, Christ, Pentecost and the Church.",
+        "Distinguish sanctifying grace, gifts, fruits and charisms."
+      ],
+      "paragraphs": [
+        "The Holy Spirit is Lord and giver of life, not an impersonal force. Biblical pneumatology develops from creation and prophecy to Jesus' mission, Pentecost and the life of the Church.",
+        "The Spirit sanctifies, incorporates believers into Christ, gives gifts for mission and builds up ecclesial communion. Charisms must be discerned and ordered toward the common good.",
+        "Western and Eastern theological traditions use different formulations concerning procession. Serious study must distinguish dogmatic content, historical controversy and legitimate theological diversity."
+      ],
+      "lectureSections": [
+        {
+          "title": "Discernment and ecclesial life",
+          "paragraphs": [
+            "Charismatic experience is interpreted within Scripture, sacramental life, ecclesial communion and pastoral discernment. Extraordinary claims do not replace prudence, evidence or Church authority."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Pneumatology",
+        "Procession",
+        "Charism",
+        "Sanctifying grace",
+        "Discernment"
+      ],
+      "sources": [
+        {
+          "title": "Dominum et Vivificantem",
+          "url": "https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_18051986_dominum-et-vivificantem.html"
+        }
+      ],
+      "assignment": "Create a pneumatology map from creation to Pentecost to contemporary ecclesial mission.",
+      "quiz": [
+        {
+          "question": "The Holy Spirit is best described as what?",
+          "options": [
+            "A divine Person",
+            "An impersonal energy",
+            "A created angel"
+          ],
+          "correct": 0,
+          "explanation": "Catholic doctrine confesses the Spirit as divine Person."
+        },
+        {
+          "question": "Charisms are ordered toward what?",
+          "options": [
+            "The common good and mission",
+            "Private superiority",
+            "Freedom from discernment"
+          ],
+          "correct": 0,
+          "explanation": "Charisms serve the Church and require discernment."
+        }
+      ]
+    },
+    {
+      "title": "Ecclesiology: Church, communion and mission",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Explain major biblical images of the Church.",
+        "Relate local churches, episcopal communion and the universal Church.",
+        "Integrate holiness, sin, mission and ecumenism."
+      ],
+      "paragraphs": [
+        "The Church is described as People of God, Body of Christ, Temple of the Holy Spirit, Bride and sacrament of salvation. Each image highlights a dimension of the same mystery.",
+        "Catholic ecclesiology includes apostolic succession, episcopal collegiality, Petrine ministry, sacramental communion and the vocation of all the baptized.",
+        "The Church is holy because of Christ and his gifts while her members remain in need of purification. Mission and ecumenism must be pursued without erasing doctrinal truth or the real gifts present beyond visible Catholic boundaries."
+      ],
+      "lectureSections": [
+        {
+          "title": "Vatican II synthesis",
+          "paragraphs": [
+            "Lumen Gentium integrates mystery, people, hierarchy, laity, universal call to holiness, religious life, eschatology and Mariology. Unitatis Redintegratio frames ecumenical engagement within conversion and truth."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Communion",
+        "Apostolic succession",
+        "Collegiality",
+        "Primacy",
+        "Sacrament of salvation"
+      ],
+      "sources": [
+        {
+          "title": "Lumen Gentium",
+          "url": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19641121_lumen-gentium_en.html"
+        }
+      ],
+      "assignment": "Explain how the Church can be holy while also needing continual purification.",
+      "quiz": [
+        {
+          "question": "Vatican II calls all baptized Christians to what?",
+          "options": [
+            "Holiness",
+            "Clerical office",
+            "Monastic life only"
+          ],
+          "correct": 0,
+          "explanation": "The universal call to holiness concerns all the faithful."
+        },
+        {
+          "question": "Ecclesiology concerns only church administration.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Ecclesiology studies the mystery, structure, mission and communion of the Church."
+        }
+      ]
+    },
+    {
+      "title": "Sacramental and liturgical theology",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Explain sacrament as sign and instrument of grace.",
+        "Relate liturgy to the Paschal Mystery.",
+        "Distinguish sacramental efficacy from magical thinking."
+      ],
+      "paragraphs": [
+        "The sacraments are ecclesial actions instituted by Christ and entrusted to the Church. They signify and communicate grace within the economy of salvation.",
+        "Liturgy is participation in Christ's priestly worship and Paschal Mystery. Word, sacramental sign, ordained ministry, assembly, time and symbol form an integrated act of worship.",
+        "Ex opere operato does not mean magic. Sacramental efficacy comes from Christ's action, while fruitful reception also concerns disposition, faith and conversion."
+      ],
+      "lectureSections": [
+        {
+          "title": "Seven-sacrament synthesis",
+          "paragraphs": [
+            "Study initiation, healing and service together with sacramental theology of matter, form, minister, recipient, intention and ecclesial context."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Sacrament",
+        "Liturgy",
+        "Ex opere operato",
+        "Epiclesis",
+        "Anamnesis"
+      ],
+      "sources": [
+        {
+          "title": "Sacrosanctum Concilium",
+          "url": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19631204_sacrosanctum-concilium_en.html"
+        }
+      ],
+      "assignment": "Choose one sacrament and analyze its biblical roots, sign, grace, ecclesial meaning and pastoral celebration.",
+      "quiz": [
+        {
+          "question": "Sacramental efficacy is grounded primarily in whose action?",
+          "options": [
+            "Christ's",
+            "The emotional intensity of participants",
+            "The social prestige of the minister"
+          ],
+          "correct": 0,
+          "explanation": "Christ acts in the sacraments entrusted to the Church."
+        },
+        {
+          "question": "Ex opere operato means sacraments are magic.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "The doctrine rejects dependence on the minister's holiness, not the need for faith and disposition."
+        }
+      ]
+    },
+    {
+      "title": "Theological anthropology: creation, image of God and human vocation",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Explain the human person as created in the image of God.",
+        "Relate body, soul, freedom, sociality and vocation.",
+        "Reject dualism and reductionism."
+      ],
+      "paragraphs": [
+        "Christian anthropology begins with creation and vocation, not with sin. The human person is willed by God, embodied, relational, rational and free, called to communion with God and others.",
+        "The spiritual soul is not a second person trapped in a body. Catholic thought affirms the substantial unity of body and soul and the goodness of embodied existence.",
+        "The image of God grounds dignity while Christ reveals the human vocation in its fullness. Anthropology therefore informs ethics, sexuality, work, community, disability, technology and care for the vulnerable."
+      ],
+      "lectureSections": [
+        {
+          "title": "Interdisciplinary boundaries",
+          "paragraphs": [
+            "Neuroscience, psychology and sociology can illuminate human functioning. Theology receives these sciences seriously while resisting reduction of personhood to neural activity, social role or economic value."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Imago Dei",
+        "Body-soul unity",
+        "Freedom",
+        "Dignity",
+        "Vocation"
+      ],
+      "sources": [
+        {
+          "title": "Gaudium et Spes §§12–22",
+          "url": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651207_gaudium-et-spes_en.html"
+        }
+      ],
+      "assignment": "Write a theological anthropology of the human person that integrates embodiment, freedom, relationality and grace.",
+      "quiz": [
+        {
+          "question": "Catholic anthropology treats the body as what?",
+          "options": [
+            "Integral to the human person",
+            "A prison to escape",
+            "Morally irrelevant matter"
+          ],
+          "correct": 0,
+          "explanation": "Christian anthropology affirms embodied human unity."
+        },
+        {
+          "question": "Image of God grounds what?",
+          "options": [
+            "Human dignity and vocation",
+            "Social rank",
+            "Only intellectual ability"
+          ],
+          "correct": 0,
+          "explanation": "Imago Dei concerns the whole human person."
+        }
+      ]
+    },
+    {
+      "title": "Original sin, concupiscence and the drama of freedom",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Explain original sin without treating it as personal fault in descendants.",
+        "Distinguish temptation, concupiscence and chosen sin.",
+        "Relate grace to wounded freedom."
+      ],
+      "paragraphs": [
+        "Original sin names the fallen condition inherited by humanity, not a personal act committed by each newborn. Human nature is wounded but not destroyed.",
+        "Concupiscence describes disordered inclination remaining even after baptism. An inclination, temptation or emotion is not identical to deliberate consent.",
+        "Grace heals and elevates freedom. Moral theology therefore studies both objective moral order and subjective responsibility, including knowledge, freedom, habit, fear and other circumstances."
+      ],
+      "lectureSections": [
+        {
+          "title": "Pastoral precision",
+          "paragraphs": [
+            "Avoid telling people that involuntary thoughts, trauma reactions, mental-health symptoms or bodily arousal are automatically sinful. Moral evaluation concerns the human act as a whole."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Original sin",
+        "Concupiscence",
+        "Temptation",
+        "Consent",
+        "Grace"
+      ],
+      "sources": [
+        {
+          "title": "Catechism §§385–421",
+          "url": "https://www.vatican.va/archive/ENG0015/__P1B.HTM"
+        }
+      ],
+      "assignment": "Analyze a fictional case distinguishing involuntary impulse, temptation, consent, habit and culpability.",
+      "quiz": [
+        {
+          "question": "Concupiscence is identical to personal mortal sin.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Inclination is not the same as deliberate sinful choice."
+        },
+        {
+          "question": "Original sin destroys human nature completely.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Catholic doctrine teaches nature is wounded, not annihilated."
+        }
+      ]
+    },
+    {
+      "title": "Moral theology: beatitude, law, conscience, virtue and sin",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Organize moral theology around beatitude and communion with God.",
+        "Explain conscience formation and moral object, intention and circumstances.",
+        "Distinguish virtue, vice and isolated acts."
+      ],
+      "paragraphs": [
+        "Christian morality is ordered toward beatitude, not merely rule compliance. Grace, virtue, law, conscience and prudence shape mature freedom.",
+        "A moral act is analyzed through object, intention and circumstances. A good intention cannot make an intrinsically disordered object good, while circumstances affect responsibility and seriousness.",
+        "Virtues are stable dispositions toward the good; vices are stable dispositions toward disordered action. Repetition matters, but habit does not eliminate the need to examine freedom, responsibility and grace."
+      ],
+      "lectureSections": [
+        {
+          "title": "Conscience",
+          "paragraphs": [
+            "Conscience is not a private preference. It is the judgment of reason regarding the moral quality of an act and must be formed through truth, prayer, virtue, counsel and Church teaching."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Beatitude",
+        "Conscience",
+        "Prudence",
+        "Virtue",
+        "Mortal and venial sin"
+      ],
+      "sources": [
+        {
+          "title": "Veritatis Splendor",
+          "url": "https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_06081993_veritatis-splendor.html"
+        }
+      ],
+      "assignment": "Construct a moral analysis of one fictional case using object, intention, circumstances, conscience and virtue.",
+      "quiz": [
+        {
+          "question": "A good intention can make every chosen act morally good.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Object, intention and circumstances must all be considered."
+        },
+        {
+          "question": "Virtue is best understood as what?",
+          "options": [
+            "A stable disposition toward the good",
+            "A passing emotion",
+            "A public reputation"
+          ],
+          "correct": 0,
+          "explanation": "Virtue is a stable habit of acting well."
+        }
+      ]
+    },
+    {
+      "title": "Mariology within Christology and ecclesiology",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Explain Mary's role in salvation history without isolating her from Christ.",
+        "Distinguish Marian dogma, doctrine and devotion.",
+        "Use biblical typology with historical and doctrinal discipline."
+      ],
+      "paragraphs": [
+        "Mariology is intelligible within Christology, ecclesiology and the doctrine of grace. Mary's privileges are gifts of God ordered to Christ and the Church.",
+        "The four Marian dogmas—divine motherhood, perpetual virginity, Immaculate Conception and Assumption—have distinct biblical, patristic and dogmatic histories.",
+        "Typology such as New Eve, Ark and Daughter Zion can illuminate Scripture when grounded in canonical patterns rather than arbitrary resemblance. Devotions should be distinguished from dogmatic claims."
+      ],
+      "lectureSections": [
+        {
+          "title": "Ecumenical method",
+          "paragraphs": [
+            "Professional Mariology should state Catholic doctrine accurately, identify historical disputes, avoid exaggeration, and explain how Christ remains the sole mediator in a unique sense."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Theotokos",
+        "Immaculate Conception",
+        "Assumption",
+        "Typology",
+        "Hyperdulia"
+      ],
+      "sources": [
+        {
+          "title": "Lumen Gentium VIII",
+          "url": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19641121_lumen-gentium_en.html"
+        }
+      ],
+      "assignment": "Trace one Marian doctrine through Scripture, Fathers, Magisterium and liturgy.",
+      "quiz": [
+        {
+          "question": "Catholic Mariology is properly centered on what wider mysteries?",
+          "options": [
+            "Christ and the Church",
+            "Independent revelation",
+            "Private devotion alone"
+          ],
+          "correct": 0,
+          "explanation": "Mariology belongs within Christology and ecclesiology."
+        },
+        {
+          "question": "Every Marian devotion is a dogma.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Devotional practices and dogmatic teachings have different authority."
+        }
+      ]
+    },
+    {
+      "title": "Spiritual and mystical theology",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Distinguish spiritual theology from psychology and private revelation.",
+        "Explain ascetical practice, prayer and growth in charity.",
+        "Study classical schools of spirituality with doctrinal boundaries."
+      ],
+      "paragraphs": [
+        "Spiritual theology studies the life of grace as lived: prayer, purification, virtue, discernment, contemplation, suffering and union with God. It draws from Scripture, doctrine, liturgy and the saints.",
+        "Classical descriptions of purgative, illuminative and unitive ways are pedagogical maps rather than rigid diagnostic stages. Mystical phenomena are secondary to charity and holiness.",
+        "Discernment must distinguish spiritual experience from psychological or medical conditions. Extraordinary experiences require humility, ecclesial judgment and ordinary prudence."
+      ],
+      "lectureSections": [
+        {
+          "title": "Major traditions",
+          "paragraphs": [
+            "Compare Augustinian, Benedictine, Dominican, Franciscan, Carmelite, Ignatian and Salesian emphases. Each has a distinctive vocabulary but remains accountable to Catholic doctrine and the primacy of charity."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Asceticism",
+        "Contemplation",
+        "Discernment",
+        "Dark night",
+        "Union"
+      ],
+      "sources": [
+        {
+          "title": "Catechism Part Four",
+          "url": "https://www.vatican.va/archive/ENG0015/_INDEX.HTM"
+        }
+      ],
+      "assignment": "Compare two schools of Catholic spirituality and identify their shared doctrinal core.",
+      "quiz": [
+        {
+          "question": "Extraordinary mystical phenomena are the primary measure of holiness.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Charity and fidelity, not extraordinary experiences, are central."
+        },
+        {
+          "question": "Spiritual theology should ignore psychological realities.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Disciplines should be distinguished but can inform pastoral discernment."
+        }
+      ]
+    },
+    {
+      "title": "Eschatology: death, judgment, heaven and hell",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Explain particular and final judgment.",
+        "Describe heaven and hell without crude spatial reduction.",
+        "Relate eschatology to present Christian life."
+      ],
+      "paragraphs": [
+        "Christian eschatology studies the last things in light of Christ's death and Resurrection. Death ends the period of earthly decision and opens into judgment and the definitive fulfillment or rejection of communion with God.",
+        "Heaven is perfect communion with the Trinity and the saints; the beatific vision names direct knowledge of God granted by grace. Hell is definitive self-exclusion from communion with God through final unrepented mortal sin.",
+        "The final judgment manifests truth and justice publicly, while resurrection affirms the destiny of the whole embodied person and creation."
+      ],
+      "lectureSections": [
+        {
+          "title": "Avoiding sensationalism",
+          "paragraphs": [
+            "Apocalyptic imagery must be read according to genre, canonical context and Church teaching. Date-setting, speculative timetables and claims to know the fate of named persons should be rejected."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Particular judgment",
+        "Beatific vision",
+        "Hell",
+        "Resurrection",
+        "Final judgment"
+      ],
+      "sources": [
+        {
+          "title": "Catechism §§1005–1065",
+          "url": "https://www.vatican.va/archive/ENG0015/__P2L.HTM"
+        }
+      ],
+      "assignment": "Prepare an eschatology chart distinguishing death, particular judgment, purification, heaven, hell, resurrection and final judgment.",
+      "quiz": [
+        {
+          "question": "Catholic eschatology permits confident declarations that a named person is damned.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "The Church does not authorize private certainty about a particular person's damnation."
+        },
+        {
+          "question": "Resurrection concerns what?",
+          "options": [
+            "The whole embodied person",
+            "Only memory",
+            "Escape from created existence"
+          ],
+          "correct": 0,
+          "explanation": "Christian hope includes bodily resurrection."
+        }
+      ]
+    },
+    {
+      "title": "Purgatory and the communion of saints",
+      "label": "Professional-style formation",
+      "objectives": [
+        "State the doctrine of final purification precisely.",
+        "Evaluate principal biblical and patristic sources.",
+        "Explain prayer for the dead and avoid popular misconceptions."
+      ],
+      "paragraphs": [
+        "Purgatory is the final purification of those who die in God's grace and friendship but remain imperfectly purified. It is entirely different from the state of the damned and is ordered toward the assured salvation of the elect.",
+        "Key biblical lines of argument include prayer and atonement for the dead in 2 Maccabees 12:44–46, Paul's image of a person saved through testing fire in 1 Corinthians 3:10–15, and the broader biblical conviction that nothing unclean enters the heavenly Jerusalem. These texts must be interpreted carefully rather than treated as isolated proof-texts.",
+        "The Councils of Florence and Trent, the Catechism and the Church's liturgical prayer for the dead provide the doctrinal framework. Saints such as Augustine, Gregory the Great, John Chrysostom and Catherine of Genoa witness to developing reflection on post-mortem purification and suffrage for the dead."
+      ],
+      "lectureSections": [
+        {
+          "title": "Saints and theological witnesses",
+          "paragraphs": [
+            "Augustine discusses the possibility of purgatorial fire and the value of prayer for the departed. Gregory the Great connects post-mortem purification with lesser faults. John Chrysostom urges prayer and offerings for the dead. Catherine of Genoa reflects spiritually on purification as the soul's burning desire for God."
+          ],
+          "points": [
+            "Read saints historically; not every image carries equal doctrinal authority.",
+            "Distinguish defined doctrine from theological explanation and devotional imagery.",
+            "Avoid calculating duration or describing purgatory as a second chance after death."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Final purification",
+        "Suffrage",
+        "Communion of saints",
+        "Temporal punishment",
+        "Beatific vision"
+      ],
+      "sources": [
+        {
+          "title": "Catechism §§1030–1032",
+          "url": "https://www.vatican.va/content/catechism/en/part_one/section_two/chapter_three/article_12/iii_the_final_purification%2C_or_purgatory.html"
+        },
+        {
+          "title": "John Paul II, General Audience on Purgatory (4 Aug 1999)",
+          "url": "https://www.vatican.va/content/john-paul-ii/en/audiences/1999/documents/hf_jp-ii_aud_04081999.html"
+        },
+        {
+          "title": "St Augustine, Enchiridion ch. 69",
+          "url": "https://www.newadvent.org/fathers/1302.htm"
+        },
+        {
+          "title": "St Catherine of Genoa, Treatise on Purgatory",
+          "url": "https://www.ewtn.com/catholicism/library/treatise-on-purgatory-9820"
+        }
+      ],
+      "assignment": "Write a 1,000-word study distinguishing dogma, theological interpretation and devotional imagery in Catholic teaching on purgatory.",
+      "quiz": [
+        {
+          "question": "Who undergoes purgatorial purification?",
+          "options": [
+            "Those who die in God's grace but still need purification",
+            "The damned receiving a second chance",
+            "Only canonized saints"
+          ],
+          "correct": 0,
+          "explanation": "Purgatory concerns the elect who are assured of salvation."
+        },
+        {
+          "question": "Purgatory is equivalent to hell.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "The Church explicitly distinguishes final purification from damnation."
+        }
+      ]
+    },
+    {
+      "title": "Canon law and the juridical dimension of the Church",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Explain why law belongs to ecclesial communion.",
+        "Distinguish divine law, ecclesiastical law and pastoral prudence.",
+        "Read canons in context rather than as isolated quotations."
+      ],
+      "paragraphs": [
+        "Canon law gives juridical form to rights, duties, offices, sacraments, governance, penalties and procedures in the Church. It serves communion and mission rather than replacing theology or pastoral charity.",
+        "Interpretation requires attention to the text, context, legislator, canonical principles and competent authority. Not every pastoral guideline is a universal law, and not every canon has the same object.",
+        "Professional study should distinguish the Latin Code, Eastern Code, particular law, liturgical law and administrative norms."
+      ],
+      "lectureSections": [
+        {
+          "title": "Pastoral-juridical integration",
+          "paragraphs": [
+            "A canonical answer can be technically correct yet pastorally incomplete. Theology, justice, rights of the faithful, safeguarding and competent process belong together."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Canon",
+        "Juridical person",
+        "Particular law",
+        "Dispensation",
+        "Due process"
+      ],
+      "sources": [
+        {
+          "title": "Code of Canon Law",
+          "url": "https://www.vatican.va/archive/cod-iuris-canonici/cic_index_en.html"
+        }
+      ],
+      "assignment": "Choose one canon on sacramental life and explain its theological purpose, juridical wording and pastoral application.",
+      "quiz": [
+        {
+          "question": "Canon law is best understood as what?",
+          "options": [
+            "The juridical order serving Church communion and mission",
+            "A substitute for theology",
+            "Private advice"
+          ],
+          "correct": 0,
+          "explanation": "Canon law structures ecclesial rights, duties and governance."
+        },
+        {
+          "question": "Every diocesan practice is universal canon law.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Particular law and local practice must be distinguished from universal law."
+        }
+      ]
+    },
+    {
+      "title": "Catholic social doctrine and public moral theology",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Identify dignity, common good, solidarity and subsidiarity.",
+        "Apply social doctrine without turning it into partisan slogans.",
+        "Relate economic, political and ecological questions to moral principles."
+      ],
+      "paragraphs": [
+        "Catholic social teaching applies the Gospel's moral vision to social structures, labor, economy, political community, peace, migration, family life and care for creation.",
+        "Human dignity, common good, solidarity, subsidiarity, preferential concern for the poor and universal destination of goods provide enduring principles. Their application requires prudential judgment and empirical knowledge.",
+        "The Church does not offer a technical economic or political program. Theology should distinguish moral principles, authoritative judgments and prudential applications."
+      ],
+      "lectureSections": [
+        {
+          "title": "Method for social questions",
+          "paragraphs": [
+            "Describe the actual social problem, identify persons affected, gather reliable evidence, apply doctrinal principles, compare policy options and make explicit where prudential disagreement remains possible."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Common good",
+        "Solidarity",
+        "Subsidiarity",
+        "Universal destination of goods",
+        "Social sin"
+      ],
+      "sources": [
+        {
+          "title": "Compendium of the Social Doctrine of the Church",
+          "url": "https://www.vatican.va/roman_curia/pontifical_councils/justpeace/documents/rc_pc_justpeace_doc_20060526_compendio-dott-soc_en.html"
+        }
+      ],
+      "assignment": "Apply Catholic social principles to one nonpartisan case such as labor conditions, migration, poverty or environmental stewardship.",
+      "quiz": [
+        {
+          "question": "Catholic social teaching supplies one mandatory technical policy for every issue.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Moral principles guide prudential application; they do not eliminate all policy judgment."
+        },
+        {
+          "question": "Subsidiarity and solidarity should be treated as what?",
+          "options": [
+            "Complementary principles",
+            "Mutually exclusive ideologies",
+            "Optional slogans"
+          ],
+          "correct": 0,
+          "explanation": "Both belong to Catholic social doctrine."
+        }
+      ]
+    },
+    {
+      "title": "Apologetics and fundamental theology",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Distinguish apologetics from proof-by-assertion.",
+        "Present reasons for faith with intellectual charity.",
+        "Evaluate historical, philosophical and theological objections."
+      ],
+      "paragraphs": [
+        "Apologetics offers rational reasons for Christian belief and answers objections. Fundamental theology studies credibility, Revelation, faith and the conditions of theological knowledge.",
+        "Good apologetics does not manipulate evidence or pretend every question has a simple answer. It distinguishes demonstration, probability, testimony, historical inference and mystery.",
+        "The aim is not rhetorical victory but truthful witness. Respectful engagement requires accurately representing opposing positions before responding."
+      ],
+      "lectureSections": [
+        {
+          "title": "Argument disciplines",
+          "paragraphs": [
+            "State the claim, identify its evidence, clarify assumptions, test objections, separate what is demonstrable from what is believed on divine authority, and acknowledge uncertainty where it exists."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Credibility",
+        "Motive of credibility",
+        "Apologetics",
+        "Testimony",
+        "Burden of proof"
+      ],
+      "sources": [
+        {
+          "title": "Fides et Ratio",
+          "url": "https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_14091998_fides-et-ratio.html"
+        }
+      ],
+      "assignment": "Develop an apologetic response to one objection using a charitable summary, evidence, argument and acknowledged limits.",
+      "quiz": [
+        {
+          "question": "Good apologetics should first do what with an opposing view?",
+          "options": [
+            "Represent it accurately",
+            "Caricature it",
+            "Ignore its evidence"
+          ],
+          "correct": 0,
+          "explanation": "Intellectual charity requires accurate representation."
+        },
+        {
+          "question": "Every article of faith is demonstrable by unaided reason.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Some truths are known by Revelation while remaining reasonable to believe."
+        }
+      ]
+    },
+    {
+      "title": "Church history, councils and development of doctrine",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Use historical method in theological study.",
+        "Explain authentic development without contradiction of the deposit of faith.",
+        "Read councils within the controversies they addressed."
+      ],
+      "paragraphs": [
+        "Doctrine is expressed in history. Councils often define terms because disputes expose ambiguities. Historical study therefore clarifies why formulations emerged and what errors they exclude.",
+        "Development of doctrine involves growth in explicit understanding while preserving continuity in the substance of faith. Not every historical theological opinion becomes doctrine.",
+        "Primary sources should be read before later summaries. Context includes political pressures, philosophical vocabulary, liturgy, pastoral problems and transmission history."
+      ],
+      "lectureSections": [
+        {
+          "title": "Case-study method",
+          "paragraphs": [
+            "For one council, reconstruct the controversy, principal figures, pre-conciliar vocabulary, conciliar text, reception and later clarification."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Development of doctrine",
+        "Council",
+        "Reception",
+        "Anathema",
+        "Historical theology"
+      ],
+      "sources": [
+        {
+          "title": "International Theological Commission, Theology Today",
+          "url": "https://www.vatican.va/roman_curia/congregations/cfaith/cti_documents/rc_cti_doc_20111129_teologia-oggi_en.html"
+        }
+      ],
+      "assignment": "Prepare a historical dossier on Nicaea, Ephesus, Chalcedon, Trent or Vatican II.",
+      "quiz": [
+        {
+          "question": "Councils should be read without historical context.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Historical context helps identify the precise doctrinal question and meaning."
+        },
+        {
+          "question": "Development of doctrine means the Church can contradict revealed truth.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Authentic development deepens understanding without contradicting the deposit of faith."
+        }
+      ]
+    },
+    {
+      "title": "Theology of religions, ecumenism and interreligious encounter",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Distinguish ecumenism from interreligious dialogue.",
+        "State Catholic claims about Christ and salvation with precision.",
+        "Practice dialogue without relativism or hostility."
+      ],
+      "paragraphs": [
+        "Ecumenism concerns restoration of unity among Christians. Interreligious dialogue concerns relationships with followers of other religions. The theological questions and ecclesial frameworks differ.",
+        "Catholic theology confesses the unique and universal mediation of Christ while also affirming that God's grace is not confined by visible ecclesial boundaries. The relation between these truths requires careful formulation.",
+        "Dialogue seeks truth, peace, understanding and cooperation. It does not require pretending doctrinal differences are unimportant."
+      ],
+      "lectureSections": [
+        {
+          "title": "Comparative method",
+          "paragraphs": [
+            "Compare actual authoritative texts and lived traditions, distinguish internal diversity, avoid stereotyping, and separate theological judgment from sociological description."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Ecumenism",
+        "Interreligious dialogue",
+        "Religious freedom",
+        "Mission",
+        "Dialogue"
+      ],
+      "sources": [
+        {
+          "title": "Nostra Aetate",
+          "url": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651028_nostra-aetate_en.html"
+        },
+        {
+          "title": "Unitatis Redintegratio",
+          "url": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19641121_unitatis-redintegratio_en.html"
+        }
+      ],
+      "assignment": "Compare ecumenical dialogue and interreligious dialogue using official Catholic texts.",
+      "quiz": [
+        {
+          "question": "Ecumenism primarily concerns whom?",
+          "options": [
+            "Separated Christians",
+            "All religions without distinction",
+            "Only secular institutions"
+          ],
+          "correct": 0,
+          "explanation": "Ecumenism concerns Christian unity."
+        },
+        {
+          "question": "Dialogue requires denying real doctrinal differences.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Dialogue should be truthful and respectful."
+        }
+      ]
+    },
+    {
+      "title": "Pastoral theology, evangelization and inculturation",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Relate doctrine to pastoral practice without diluting either.",
+        "Explain inculturation and its limits.",
+        "Design pastoral responses using evidence and ecclesial discernment."
+      ],
+      "paragraphs": [
+        "Pastoral theology studies the Church's concrete mission of proclamation, worship, service, accompaniment and governance. It asks how revealed truth is communicated and embodied in particular communities.",
+        "Inculturation receives what is true and good in cultures while discerning elements incompatible with the Gospel. It is neither cultural domination nor uncritical accommodation.",
+        "Pastoral planning should combine theological principles, local knowledge, safeguarding, human-science evidence and evaluation."
+      ],
+      "lectureSections": [
+        {
+          "title": "Pastoral cycle",
+          "paragraphs": [
+            "Observe the situation; listen to the community; analyze causes; interpret in light of Scripture and Church teaching; design action; implement; evaluate; revise."
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Pastoral theology",
+        "Evangelization",
+        "Inculturation",
+        "Kerygma",
+        "Catechesis"
+      ],
+      "sources": [
+        {
+          "title": "Evangelii Gaudium",
+          "url": "https://www.vatican.va/content/francesco/en/apost_exhortations/documents/papa-francesco_esortazione-ap_20131124_evangelii-gaudium.html"
+        }
+      ],
+      "assignment": "Design a bounded pastoral project for catechesis, youth ministry or parish evangelization with theological rationale and evaluation criteria.",
+      "quiz": [
+        {
+          "question": "Inculturation means what?",
+          "options": [
+            "Discerned embodiment of the Gospel in culture",
+            "Uncritical adoption of every custom",
+            "Erasing local culture"
+          ],
+          "correct": 0,
+          "explanation": "Inculturation involves both reception and discernment."
+        },
+        {
+          "question": "Pastoral theology has no need for doctrinal accuracy.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 1,
+          "explanation": "Pastoral practice and doctrine belong together."
+        }
+      ]
+    },
+    {
+      "title": "Theological research capstone",
+      "label": "Professional-style formation",
+      "objectives": [
+        "Formulate a researchable theological question.",
+        "Build a primary-source bibliography and authority map.",
+        "Produce a sustained synthesis with objections and pastoral implications."
+      ],
+      "paragraphs": [
+        "The capstone integrates the entire course. A professional-style theological paper begins with a narrow question and a transparent method rather than a broad topic such as 'everything about grace.'",
+        "Sources should be classified: Scripture, councils, papal teaching, Catechism, Fathers, Doctors, canon law, scholarly theology and relevant human sciences. The paper should indicate the authority and function of each source.",
+        "A mature synthesis states the thesis, presents evidence, considers serious objections, distinguishes doctrine from opinion and identifies implications without claiming more than the evidence warrants."
+      ],
+      "lectureSections": [
+        {
+          "title": "Suggested capstone structure",
+          "paragraphs": [
+            "Research question and thesis; status quaestionis; biblical foundation; historical and patristic development; Magisterial teaching; systematic synthesis; objections; pastoral implications; conclusion; bibliography."
+          ],
+          "points": [
+            "Target: 3,000–5,000 words",
+            "At least 12 sources",
+            "At least 4 primary ecclesial sources",
+            "One section explicitly distinguishing doctrine from theological opinion"
+          ]
+        }
+      ],
+      "keyTerms": [
+        "Status quaestionis",
+        "Primary source",
+        "Secondary source",
+        "Thesis",
+        "Synthesis"
+      ],
+      "sources": [
+        {
+          "title": "Theology Today",
+          "url": "https://www.vatican.va/roman_curia/congregations/cfaith/cti_documents/rc_cti_doc_20111129_teologia-oggi_en.html"
+        }
+      ],
+      "assignment": "Complete the capstone outline and a 500-word abstract for a chosen theological question.",
+      "quiz": [
+        {
+          "question": "A strong theological research question should be what?",
+          "options": [
+            "Focused and answerable from relevant sources",
+            "As broad as possible",
+            "Chosen only after writing the conclusion"
+          ],
+          "correct": 0,
+          "explanation": "Focused questions support rigorous research."
+        },
+        {
+          "question": "A scholarly theology paper should distinguish doctrinal authority from theological opinion.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "correct": 0,
+          "explanation": "Source authority is central to Catholic theological method."
+        }
+      ]
+    }
+  ],
+  "assessments": {
+    "mid": [
+      {
+        "question": "Catholic theology formally begins from what?",
+        "options": [
+          "Divine Revelation received in faith",
+          "Private intuition",
+          "Political ideology"
+        ],
+        "correct": 0,
+        "explanation": "Theology reflects rationally on Revelation received in faith."
+      },
+      {
+        "question": "Nicaea's homoousios protects which confession?",
+        "options": [
+          "The full divinity of the Son",
+          "The creation of the Son",
+          "Three gods"
+        ],
+        "correct": 0,
+        "explanation": "The Son is consubstantial with the Father."
+      },
+      {
+        "question": "Chalcedon teaches Christ is what?",
+        "options": [
+          "One person in two natures",
+          "Two persons",
+          "Only divine"
+        ],
+        "correct": 0,
+        "explanation": "Chalcedon preserves unity of person and distinction of natures."
+      },
+      {
+        "question": "Justification in Catholic theology includes what?",
+        "options": [
+          "Forgiveness and sanctification",
+          "Only external declaration",
+          "Self-salvation"
+        ],
+        "correct": 0,
+        "explanation": "Grace both forgives and transforms."
+      },
+      {
+        "question": "Charisms are ordered toward what?",
+        "options": [
+          "The common good",
+          "Private status",
+          "Freedom from Church discernment"
+        ],
+        "correct": 0,
+        "explanation": "Charisms build up the Church."
+      },
+      {
+        "question": "The Church is holy while her members can still need purification.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "explanation": "Holiness comes from Christ while members remain sinners in need of conversion."
+      },
+      {
+        "question": "Ex opere operato means sacraments are magic.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "explanation": "Sacramental efficacy is Christ's action, not magic."
+      },
+      {
+        "question": "Catholic anthropology affirms what?",
+        "options": [
+          "Body-soul unity",
+          "Soul trapped in evil matter",
+          "Personhood equals intelligence"
+        ],
+        "correct": 0,
+        "explanation": "The human person is embodied unity."
+      },
+      {
+        "question": "Concupiscence is identical to deliberate sin.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "explanation": "Inclination and consent must be distinguished."
+      },
+      {
+        "question": "Conscience should be formed by truth.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "explanation": "Conscience is a judgment of reason and requires formation."
+      }
+    ],
+    "final": [
+      {
+        "question": "Purgatory concerns whom?",
+        "options": [
+          "The elect who still need purification",
+          "The damned receiving another chance",
+          "Only martyrs"
+        ],
+        "correct": 0,
+        "explanation": "It is final purification of those assured of salvation."
+      },
+      {
+        "question": "Catholic social teaching eliminates all prudential disagreement.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "explanation": "Principles require prudential application."
+      },
+      {
+        "question": "Good apologetics should represent objections accurately.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "explanation": "Intellectual charity is required."
+      },
+      {
+        "question": "Authentic development of doctrine contradicts the deposit of faith.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "explanation": "Development deepens expression without contradiction."
+      },
+      {
+        "question": "Ecumenism concerns Christian unity.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "explanation": "Ecumenism concerns separated Christians."
+      },
+      {
+        "question": "Inculturation requires discernment.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "explanation": "It is neither domination nor uncritical adoption."
+      },
+      {
+        "question": "A theological research paper should identify source authority.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "explanation": "Primary, Magisterial and secondary sources have different roles."
+      },
+      {
+        "question": "Private revelation can correct public Revelation.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "explanation": "Private revelation does not add to or correct the deposit of faith."
+      },
+      {
+        "question": "Theology may use philosophy and human sciences according to their competence.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "explanation": "They are legitimate auxiliary disciplines."
+      },
+      {
+        "question": "Eschatology should avoid date-setting and sensationalism.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "explanation": "Apocalyptic texts require disciplined interpretation."
+      }
+    ]
+  }
+}
