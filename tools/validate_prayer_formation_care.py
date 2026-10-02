@@ -73,7 +73,7 @@ def main():
     assert len(genesis_creation) == 1
     assert any(topic['title'] == 'The Ancient Near East'
                for topic in genesis_creation[0]['topics'])
-    assert len(atlas.get('visual_maps', {})) >= 10
+    assert len(atlas.get('visual_maps', {})) >= 11
     assert atlas.get('chapter_visual_map', {}).get('1') == 'ancient-near-east'
     assert atlas.get('chapter_visual_map', {}).get('2') == 'palestine-overview'
     assert genesis_creation[0].get('visual_map') == 'ancient-near-east'
@@ -81,6 +81,17 @@ def main():
     assert ancient_map['points'] and ancient_map['regions'] and ancient_map['bounds']
     assert any(point['name'] == 'Ur' for point in ancient_map['points'])
     assert any(point['name'] == 'Jerusalem' for point in ancient_map['points'])
+    zechariah_one = [rule for rule in atlas['passage_rules']
+                     if rule['book'] == 'Zechariah'
+                     and rule['chapter_start'] <= 1 <= rule['chapter_end']]
+    assert len(zechariah_one) == 1
+    assert zechariah_one[0]['visual_map'] == 'persian-yehud'
+    assert zechariah_one[0]['historical_context']['period'] == 'Early Persian period'
+    assert '520' in zechariah_one[0]['historical_context']['approximate_date']
+    assert 'nations that are at ease' in zechariah_one[0]['historical_context']['exegetical_focus']
+    persian_map = atlas['visual_maps']['persian-yehud']
+    assert any(point['name'] == 'Jerusalem' and point.get('focus') for point in persian_map['points'])
+    assert any(region['name'] == 'YEHUD / JUDAH' for region in persian_map['regions'])
     logos_html = (ROOT / 'pages/logos.html').read_text()
     logos_js = (ROOT / 'javascript/logos.js').read_text()
     assert 'id="logosAtlasPreview"' in logos_html
@@ -90,7 +101,9 @@ def main():
     assert 'Bible lands overview' in logos_html
     assert 'logos-atlas-map-thumb' in logos_js
     assert 'renderAtlasInteractiveMap' in logos_js
-    assert "ATLAS_DATA_URL='../data/logos-bible-atlas.json?v=5'" in logos_js
+    assert 'atlasHistoricalContextPanel' in logos_js
+    assert 'Historical-exegetical setting' in logos_js
+    assert "ATLAS_DATA_URL='../data/logos-bible-atlas.json?v=6'" in logos_js
     assert 'atlasChapterVisualId' in logos_js
     assert 'IntersectionObserver' in logos_js
     assert 'logos-atlas-card-live-map' in logos_js
