@@ -372,3 +372,16 @@ body.dark .logos-atlas-rights{background:#2a211a;border-color:#5b4938}
   .logos-atlas-card-live-map .logos-leaflet-canvas{height:220px}
   .logos-atlas-card-actions{align-items:flex-start}
 }
+
+/* Passage-specific historical-exegetical context */
+.logos-atlas-context{display:grid;gap:.65rem;margin:.75rem 0;padding:.8rem .9rem;border:1px solid #dcc9a9;border-radius:14px;background:#fffaf0}
+.logos-atlas-context-head{display:flex;align-items:center;justify-content:space-between;gap:.7rem;flex-wrap:wrap}
+.logos-atlas-context-head strong{color:var(--wine);font:800 .88rem/1.3 system-ui}
+.logos-atlas-context-period{display:inline-flex;align-items:center;min-height:28px;padding:.28rem .5rem;border-radius:999px;background:#f2e3c6;color:#6c4514;font:800 .68rem/1 system-ui}
+.logos-atlas-context-grid{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:.45rem .8rem;margin:0}
+.logos-atlas-context-grid dt{font:800 .72rem/1.45 system-ui;color:#5e4b42}
+.logos-atlas-context-grid dd{margin:0;font:500 .78rem/1.55 system-ui;color:#46383a}
+body.dark .logos-atlas-context{background:#251d19;border-color:#5d4936}
+body.dark .logos-atlas-context-period{background:#49351f;color:#f6ddbc}
+body.dark .logos-atlas-context-grid dt,body.dark .logos-atlas-context-grid dd{color:#eadfd9}
+@media(max-width:760px){.logos-atlas-context-grid{grid-template-columns:1fr;gap:.18rem}.logos-atlas-context-grid dd{margin-bottom:.45rem}}
