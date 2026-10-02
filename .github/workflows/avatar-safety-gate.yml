@@ -1,0 +1,40 @@
+name: Mercy Avatar Safety Gate
+
+on:
+  pull_request:
+    paths:
+      - "cloud-backend/app/avatar.py"
+      - "cloud-backend/app/avatar_agents.py"
+      - "cloud-backend/tests/test_avatar_adversarial.py"
+      - ".github/workflows/avatar-safety-gate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  adversarial-validation:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: cloud-backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: cloud-backend/requirements.txt
+      - name: Install backend dependencies
+        run: pip install -r requirements.txt
+      - name: Compile avatar modules
+        run: python -m py_compile app/avatar.py app/avatar_agents.py
+      - name: Run avatar adversarial gate
+        env:
+          AVATAR_REASONING_PROVIDER: none
+          AVATAR_MULTI_AGENT_PROVIDERS: ""
+          MAGISTERIUM_API_KEY: ""
+          GEMINI_API_KEY: ""
+          OLLAMA_BASE_URL: ""
+          OLLAMA_MODEL: ""
+        run: python -m unittest tests.test_avatar_adversarial -v

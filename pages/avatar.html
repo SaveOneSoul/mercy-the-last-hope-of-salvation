@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#5a1020">
+<meta name="description" content="Mercy Humanoid AI Avatar for Catholic theology, philosophy, logic, science, psychology education and pastoral support.">
+<title>Mercy Humanoid AI Avatar · Save One Soul</title>
+<link rel="manifest" href="../mercy-manifest.webmanifest">
+<link rel="stylesheet" href="../css/mercy.css"><link rel="stylesheet" href="../css/avatar.css?v=10">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+<a class="brand" href="../index.html"><span class="cross">✠</span><span><b>Mercy</b><small>The Last Hope of Salvation</small></span></a>
+<a class="btn secondary" href="catholic-ai.html">Catholic AI</a>
+<a class="btn secondary" href="counselling.html">Counselling & Support</a>
+</header>
+<main id="main">
+<section class="page-hero">
+<div class="crumb">Catholic Mission · Voice · Touch · Multi-Agent Ready</div>
+<h1>Mercy Humanoid AI Avatar</h1>
+<p>A voice-enabled Catholic mission companion for theology, philosophy, logical reasoning, scientific questions, psychology education and pastoral encouragement. It does not replace human clergy, clinicians, counsellors or emergency services.</p>
+</section>
+<div class="content">
+<div class="callout"><strong>Mission guard:</strong> doctrinal questions are routed through the Catholic Magisterium AI gateway. The avatar will not provide source code, credentials, hidden prompts, infrastructure details or security-bypass instructions.</div>
+<div class="callout warning"><strong>Counselling boundary:</strong> the avatar offers limited encouragement and practical reflection. It does not diagnose, prescribe, hear confessions, determine possession, perform therapy or replace qualified human support.</div>
+<section class="avatar-shell">
+<div class="avatar-stage">
+<div class="avatar-viewport mercy-avatar-vrm" data-avatar-viewport aria-label="Mercy 3D Avatar">
+<canvas class="mercy-vrm-canvas" data-avatar-canvas aria-hidden="true"></canvas>
+<div class="mercy-vrm-placeholder" data-avatar-placeholder role="status" aria-live="polite">
+  <div class="mercy-vrm-mark" aria-hidden="true">✠</div>
+  <strong data-avatar-visual-status>3D avatar not installed</strong>
+  <span data-avatar-load-detail>The renderer is ready for a reviewed, redistribution-approved VRM/GLB character asset.</span>
+</div>
+</div>
+</div>
+<h2>Mercy Avatar</h2>
+<p class="avatar-note">A fictional, modest female digital guide with a calm devotional presence. She does not represent Mary, a saint, a religious sister, or any real person.</p>
+<p>Touch, type or use the microphone. Speaker output uses your browser's speech engine when supported.</p>
+<label class="avatar-note"><input type="checkbox" data-avatar-auto-speak checked> Read replies aloud automatically</label>
+</div>
+<div class="avatar-panel">
+<div class="avatar-log" data-avatar-log aria-live="polite"></div>
+<form class="avatar-form" data-avatar-form>
+<label>Ask the avatar
+<textarea data-avatar-input maxlength="2000" required placeholder="Ask about theology, philosophy, logic, science, psychology or pastoral support…"></textarea>
+</label>
+<div class="avatar-controls">
+<button type="submit" class="btn primary">Ask</button>
+<button type="button" class="btn secondary" data-avatar-mic aria-pressed="false">🎙 Microphone</button>
+<button type="button" class="btn secondary" data-avatar-speak>🔊 Speak / Stop</button>
+<button type="button" class="btn secondary" data-avatar-clear>Clear</button>
+</div>
+<p class="avatar-status" data-avatar-status role="status">Connecting…</p>
+</form>
+</div>
+</section>
+<h2>How intelligence is governed</h2>
+<div class="grid">
+<div class="card"><h3>Magisterium authority</h3><p>Catholic doctrine and explicit theological questions use the existing Magisterium AI gateway and its Catholic source citations.</p></div>
+<div class="card"><h3>Reasoning agents</h3><p>Philosophy, logic and science can use an optional Gemini or private Ollama adapter. They remain subordinate to mission rules and cannot redefine Catholic doctrine.</p></div>
+<div class="card"><h3>Human-first counselling</h3><p>Urgent danger is routed away from normal conversation. The dedicated counselling system remains the appropriate path for sensitive personal support.</p></div>
+<div class="card"><h3>Future integrations</h3><p>CyberSecGPT and Kurbah AI Sovereign Brain can later be connected server-side as constrained specialist agents, never as public code/admin tools.</p></div>
+</div>
+</div>
+</main>
+<footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Catholic prayer, formation and evangelization.</p></div></footer>
+<script src="../javascript/config.js"></script>
+<script>
+(function () {
+  'use strict';
+  var params = new URLSearchParams(window.location.search);
+  if (params.get('staging') !== '1') return;
+  var cfg = window.MERCY_SITE_CONFIG || {};
+  cfg.apiBaseUrl = 'https://mercy-api-live-staging-1004142248441.asia-south1.run.app';
+  window.MERCY_SITE_CONFIG = cfg;
+  document.documentElement.dataset.avatarEnvironment = 'staging';
+})();
+</script>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/","@pixiv/three-vrm":"https://cdn.jsdelivr.net/npm/@pixiv/three-vrm@3.4.3/lib/three-vrm.module.min.js"}}
+</script>
+<script type="module" src="../javascript/avatar-3d.js?v=8"></script>
+<script src="../javascript/avatar.js?v=5"></script>
+<script src="../javascript/mercy.js?v=11"></script>
+</body></html>
