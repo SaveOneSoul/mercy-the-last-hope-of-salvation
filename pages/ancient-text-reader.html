@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#5a1020">
+<meta name="description" content="Mercy Ancient-Text Translation Corpus: original Greek, Latin and Syriac witnesses with independent Mercy English translations.">
+<title>Mercy Ancient-Text Translation Corpus</title>
+<link rel="stylesheet" href="../css/mercy.css">
+<style>
+.at-shell{max-width:1120px;margin:auto;padding:1.2rem}.at-note{border-left:4px solid var(--gold);background:#fff7e8;border-radius:0 16px 16px 0;padding:1rem 1.1rem;margin:1rem 0}.at-controls{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0}.at-controls button{border:1px solid var(--line);background:var(--card);padding:.55rem .75rem;border-radius:999px;cursor:pointer}.at-controls button[aria-pressed="true"]{background:var(--wine);color:#fff}.at-card{border:1px solid var(--line);border-radius:20px;background:var(--card);padding:1rem;margin:1rem 0}.at-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.at-col{border:1px solid var(--line);border-radius:16px;padding:1rem;background:var(--card)}.at-col h3{margin:.1rem 0 .6rem;color:var(--wine)}.at-original{font-family:"Times New Roman",serif;font-size:1.03rem;line-height:1.7}.at-translation{font-size:1.02rem;line-height:1.7;white-space:pre-line}.at-meta{font:.78rem/1.55 system-ui;color:var(--muted)}.at-notes li{margin:.45rem 0;line-height:1.55}body.dark .at-note{background:#2c241d}@media(max-width:760px){.at-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><a class="brand" href="../index.html"><span class="cross">✠</span><span><b>Mercy</b><small>The Last Hope of Salvation</small></span></a><button class="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button><nav id="main-nav"><a href="../index.html">Home</a><a href="patristics.html">Patristics</a><a href="fathers.html">Church Fathers</a><a href="patristic-library.html">Primary Texts</a><a href="ancient-text-reader.html" aria-current="page">Ancient Text Corpus</a></nav><button class="theme-btn" aria-label="Toggle theme">◐</button></header>
+<main id="main"><section class="page-hero"><div class="crumb">Patristics · Original languages</div><h1>Mercy Ancient-Text Translation Corpus</h1><p>Original-language patristic texts paired with independent Mercy English translations made directly from legally reusable ancient-language witnesses.</p></section>
+<div class="at-shell">
+<div class="at-note"><strong>Translation policy:</strong> Mercy translations are made from Greek, Latin, Syriac or another ancient witness—not from copyrighted modern English translations. Historical translations may be consulted comparatively, but they are not used as the base text for Mercy's translation.</div>
+<p class="at-meta"><strong>Current pilot:</strong> Didache chapters 1–4 · Greek source: Hitchcock and Brown edition (1884) · Public domain · Mercy Translation v0.1.0 · Status: philological review.</p>
+<div class="at-controls" id="chapterControls"></div><div id="reader"></div>
+</div></main>
+<footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Original-language patristic study.</p></div><div><a href="patristic-reader.html">Historical Translation Reader</a><a href="patristic-quotes.html">Verified Quotations</a><a href="sources.html">Sources</a></div><p class="copyright">© <span data-year></span> Mercy – The Last Hope of Salvation.</p></footer>
+<script src="../javascript/mobile-nav.js?v=2"></script><script src="../javascript/mercy.js?v=12"></script>
+<script>
+(function(){
+'use strict';
+const controls=document.getElementById('chapterControls'),reader=document.getElementById('reader');
+const chapters=[1,2,3,4];
+function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+async function load(ch){
+ controls.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.ch)===ch)));
+ reader.innerHTML='<p class="status">Loading Chapter '+ch+'…</p>';
+ try{
+   const r=await fetch('../data/ancient-text-translations/didache/chapter-'+ch+'.json',{cache:'no-store'});
+   if(!r.ok)throw new Error('HTTP '+r.status);
+   const d=await r.json();
+   reader.innerHTML='<article class="at-card"><h2>Didache · Chapter '+esc(ch)+'</h2><div class="at-grid"><section class="at-col"><h3>Original Greek</h3><div class="at-original">'+esc(d.original_text)+'</div></section><section class="at-col"><h3>Mercy English Translation</h3><div class="at-translation">'+esc(d.mercy_translation.text)+'</div></section></div><h3>Translator notes</h3><ul class="at-notes">'+(d.translator_notes||[]).map(n=>'<li>'+esc(n)+'</li>').join('')+'</ul><p class="at-meta"><strong>Source:</strong> '+esc(d.source_ref.edition)+' ('+esc(d.source_ref.publication_year)+') · '+esc(d.source_ref.rights)+'<br><strong>Translation version:</strong> '+esc(d.mercy_translation.version)+' · '+esc(d.mercy_translation.status)+'</p></article>';
+   history.replaceState(null,'','?work=didache&chapter='+ch);
+ }catch(e){reader.innerHTML='<p class="status">This translation unit is temporarily unavailable.</p>';}
+}
+chapters.forEach(ch=>{const b=document.createElement('button');b.type='button';b.dataset.ch=String(ch);b.textContent='Chapter '+ch;b.addEventListener('click',()=>load(ch));controls.append(b);});
+const p=new URL(location.href).searchParams,ch=Math.max(1,Math.min(4,Number(p.get('chapter')||1)));load(ch);
+})();
+</script>
+</body></html>
