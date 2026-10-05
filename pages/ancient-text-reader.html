@@ -15,7 +15,7 @@
 <main id="main"><section class="page-hero"><div class="crumb">Patristics · Original languages</div><h1>Mercy Ancient-Text Translation Corpus</h1><p>Original-language patristic texts paired with independent Mercy English translations made directly from legally reusable ancient-language witnesses.</p></section>
 <div class="at-shell">
 <div class="at-note"><strong>Translation policy:</strong> Mercy translations are made from Greek, Latin, Syriac or another ancient witness—not from copyrighted modern English translations. Historical translations may be consulted comparatively, but they are not used as the base text for Mercy's translation.</div>
-<p class="at-meta"><strong>Current pilot:</strong> Didache chapters 1–4 · Greek source: Hitchcock and Brown edition (1884) · Public domain · Mercy Translation v0.1.0 · Status: philological review.</p>
+<p class="at-meta"><strong>Current pilot:</strong> Didache chapters 1–16 · Greek source: Hitchcock and Brown edition (1884) · Public domain · Mercy Translation v0.2.0 · Status: philological review.</p>
 <div class="at-controls" id="chapterControls"></div><div id="reader"></div>
 </div></main>
 <footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Original-language patristic study.</p></div><div><a href="patristic-reader.html">Historical Translation Reader</a><a href="patristic-quotes.html">Verified Quotations</a><a href="sources.html">Sources</a></div><p class="copyright">© <span data-year></span> Mercy – The Last Hope of Salvation.</p></footer>
@@ -24,7 +24,7 @@
 (function(){
 'use strict';
 const controls=document.getElementById('chapterControls'),reader=document.getElementById('reader');
-const chapters=[1,2,3,4];
+const chapters=Array.from({length:16},(_,i)=>i+1);
 function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 async function load(ch){
  controls.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.ch)===ch)));
@@ -38,7 +38,7 @@ async function load(ch){
  }catch(e){reader.innerHTML='<p class="status">This translation unit is temporarily unavailable.</p>';}
 }
 chapters.forEach(ch=>{const b=document.createElement('button');b.type='button';b.dataset.ch=String(ch);b.textContent='Chapter '+ch;b.addEventListener('click',()=>load(ch));controls.append(b);});
-const p=new URL(location.href).searchParams,ch=Math.max(1,Math.min(4,Number(p.get('chapter')||1)));load(ch);
+const p=new URL(location.href).searchParams,ch=Math.max(1,Math.min(16,Number(p.get('chapter')||1)));load(ch);
 })();
 </script>
 </body></html>
