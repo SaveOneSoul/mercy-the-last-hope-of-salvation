@@ -309,6 +309,136 @@
         "Aphrahat: select demonstrations"
       ],
       "caution": "This is a selected historical English corpus, not the complete Syriac works of Ephrem."
+    },
+    {
+      "id": "npnf101-augustine-confessions-1886",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF I, Vol. I — Augustine: Confessions and Letters",
+      "author_label": "St. Augustine of Hippo",
+      "edition": "Nicene and Post-Nicene Fathers, First Series, vol. I",
+      "translators": "Historical NPNF translators under Philip Schaff",
+      "publication_year": 1886,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf101/cache/npnf101.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf101",
+      "expected_works": [
+        "Confessions",
+        "Letters of St. Augustine",
+        "Life and introductory materials"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf102-augustine-city-god-1887",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF I, Vol. II — Augustine: City of God and Christian Doctrine",
+      "author_label": "St. Augustine of Hippo",
+      "edition": "Nicene and Post-Nicene Fathers, First Series, vol. II",
+      "translators": "Historical NPNF translators under Philip Schaff",
+      "publication_year": 1887,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf102/cache/npnf102.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf102",
+      "expected_works": [
+        "City of God",
+        "On Christian Doctrine"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf103-augustine-trinity-1887",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF I, Vol. III — Augustine: On the Holy Trinity and Doctrinal Treatises",
+      "author_label": "St. Augustine of Hippo",
+      "edition": "Nicene and Post-Nicene Fathers, First Series, vol. III",
+      "translators": "Historical NPNF translators under Philip Schaff",
+      "publication_year": 1887,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf103/cache/npnf103.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf103",
+      "expected_works": [
+        "On the Holy Trinity",
+        "Enchiridion",
+        "Select doctrinal treatises"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf107-augustine-john-homilies-1888",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF I, Vol. VII — Augustine: Homilies on John and 1 John",
+      "author_label": "St. Augustine of Hippo",
+      "edition": "Nicene and Post-Nicene Fathers, First Series, vol. VII",
+      "translators": "Historical NPNF translators under Philip Schaff",
+      "publication_year": 1888,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf107/cache/npnf107.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf107",
+      "expected_works": [
+        "Tractates on the Gospel of John",
+        "Homilies on the First Epistle of John"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf109-chrysostom-priesthood-homilies-1889",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF I, Vol. IX — John Chrysostom: Priesthood, Ascetic Treatises, Homilies and Letters",
+      "author_label": "St. John Chrysostom",
+      "edition": "Nicene and Post-Nicene Fathers, First Series, vol. IX",
+      "translators": "Historical NPNF translators under Philip Schaff",
+      "publication_year": 1889,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf109/cache/npnf109.txt",
+      "rights_evidence_url": "https://ccel.org/s/schaff/npnf109/index.html",
+      "expected_works": [
+        "On the Priesthood",
+        "Ascetic Treatises",
+        "Select Homilies",
+        "Letters",
+        "Homilies on the Statues"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf110-chrysostom-matthew-1888",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF I, Vol. X — John Chrysostom: Homilies on Matthew",
+      "author_label": "St. John Chrysostom",
+      "edition": "Nicene and Post-Nicene Fathers, First Series, vol. X",
+      "translators": "Historical NPNF translators under Philip Schaff",
+      "publication_year": 1888,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf110/cache/npnf110.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf110",
+      "expected_works": [
+        "Homilies on the Gospel of Matthew"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf114-chrysostom-john-hebrews-1889",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF I, Vol. XIV — John Chrysostom: Homilies on John and Hebrews",
+      "author_label": "St. John Chrysostom",
+      "edition": "Nicene and Post-Nicene Fathers, First Series, vol. XIV",
+      "translators": "Historical NPNF translators under Philip Schaff",
+      "publication_year": 1889,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf114/cache/npnf114.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf114",
+      "expected_works": [
+        "Homilies on the Gospel of John",
+        "Homilies on Hebrews"
+      ],
+      "caution": "Historical public-domain English translations."
     }
   ],
   "lost_or_fragmentary": [
