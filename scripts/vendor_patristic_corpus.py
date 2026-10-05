@@ -119,6 +119,55 @@ def strip_gutenberg_boilerplate(blocks: list[Block]) -> list[Block]:
     return blocks[start:end]
 
 
+def parse_plain_text_sections(text: str, source: dict[str, Any]) -> list[dict[str, Any]]:
+    """Parse public-domain plain-text editions into heading/paragraph sections."""
+    start_marker = source.get("start_marker")
+    end_marker = source.get("end_marker")
+    if start_marker:
+        pos = text.find(start_marker)
+        if pos < 0:
+            raise RuntimeError(f"Start marker not found for {source['id']}: {start_marker}")
+        text = text[pos:]
+    if end_marker:
+        pos = text.find(end_marker)
+        if pos >= 0:
+            text = text[:pos]
+
+    lines = [line.rstrip() for line in text.replace("\r\n", "\n").split("\n")]
+    sections: list[dict[str, Any]] = []
+    current = {"heading": source["title"], "paragraphs": []}
+    paragraph: list[str] = []
+
+    def flush_paragraph() -> None:
+        nonlocal paragraph
+        value = clean_text(" ".join(paragraph))
+        if value and not PAGE_NUMBER_RE.fullmatch(value):
+            current["paragraphs"].append(value)
+        paragraph = []
+
+    def flush_section() -> None:
+        flush_paragraph()
+        if current["paragraphs"] or current["heading"] != source["title"]:
+            sections.append({"heading": current["heading"], "paragraphs": list(current["paragraphs"])})
+
+    heading_re = re.compile(
+        r"^(?:[A-Z][A-Z0-9 .,'’\-()]{5,}|(?:Chapter|CHAPTER|Book|BOOK|Preface|PREFACE|Introduction|INTRODUCTION|Fragments|FRAGMENTS)\b.*)$"
+    )
+
+    for raw in lines:
+        line = clean_text(raw)
+        if not line:
+            flush_paragraph()
+            continue
+        if heading_re.match(line) and len(line) <= 180:
+            flush_section()
+            current = {"heading": line, "paragraphs": []}
+        else:
+            paragraph.append(line)
+    flush_section()
+    return [s for s in sections if s["paragraphs"] or len(s["heading"]) > 2]
+
+
 def group_sections(blocks: list[Block]) -> list[dict[str, Any]]:
     sections: list[dict[str, Any]] = []
     current = {"heading": "Front matter", "paragraphs": []}
@@ -144,10 +193,15 @@ def slug(value: str) -> str:
 def write_source(source: dict[str, Any]) -> dict[str, Any]:
     raw = download(source["source_url"])
     digest = hashlib.sha256(raw).hexdigest()
-    parser = GutenbergHTML()
-    parser.feed(raw.decode("utf-8", errors="replace"))
-    blocks = strip_gutenberg_boilerplate(parser.blocks)
-    sections = group_sections(blocks)
+    source_type = source.get("source_type", "gutenberg_html")
+    decoded = raw.decode("utf-8", errors="replace")
+    if source_type == "ccel_plain_text":
+        sections = parse_plain_text_sections(decoded, source)
+    else:
+        parser = GutenbergHTML()
+        parser.feed(decoded)
+        blocks = strip_gutenberg_boilerplate(parser.blocks)
+        sections = group_sections(blocks)
     if len(sections) < 5:
         raise RuntimeError(f"Too few sections parsed from {source['id']}: {len(sections)}")
 
@@ -188,6 +242,8 @@ def write_source(source: dict[str, Any]) -> dict[str, Any]:
         "rights": source.get("rights"),
         "source_url": source["source_url"],
         "gutenberg_id": source.get("gutenberg_id"),
+        "source_type": source.get("source_type", "gutenberg_html"),
+        "rights_evidence_url": source.get("rights_evidence_url"),
         "caution": source.get("caution"),
         "expected_works": source.get("expected_works", []),
         "sha256": digest,
