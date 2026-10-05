@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "title": "Mercy Ancient-Text Translation Corpus",
+  "purpose": "Independent Mercy translations made directly from legally reusable ancient-language source texts, not from copyrighted modern English translations.",
+  "policy": [
+    "Translate from a verified Greek, Latin, Syriac, Coptic, Armenian, Georgian or other ancient-language witness.",
+    "Record the exact source edition, publication data, source location, rights/provenance and language for every translated unit.",
+    "Keep original ancient text, Mercy translation, translator notes and historical public-domain comparison translations visually and structurally distinct.",
+    "Do not derive Mercy translations from copyrighted modern English translations.",
+    "Use modern scholarship only as a secondary aid for lexicography, textual criticism, historical context and difficult readings.",
+    "Mark disputed authorship, fragmentary transmission, reconstructed text and uncertain readings explicitly.",
+    "Version Mercy translations so later philological review can amend them without obscuring earlier states."
+  ],
+  "works": [
+    {
+      "id": "didache",
+      "title": "Didache / Teaching of the Twelve Apostles",
+      "author_label": "Anonymous early Christian text",
+      "original_language": "Greek",
+      "ancient_source": {
+        "edition": "Hitchcock and Brown edition",
+        "publication_year": 1884,
+        "local_source_id": "didache-1884",
+        "local_source_section": 12,
+        "local_source_file": "data/patristic-corpus/apostolic/didache-1884/0012-section-2.json",
+        "rights": "Public domain edition; Project Gutenberg eBook 42053",
+        "note": "Greek text normalized from the local 1884 public-domain edition. This is not represented as a modern critical edition."
+      },
+      "mercy_translation": {
+        "language": "English",
+        "label": "Mercy Translation",
+        "basis": "Translated directly from the Greek text in the identified public-domain source edition.",
+        "version": "0.1.0",
+        "status": "pilot-philological-review",
+        "translated_units": [
+          "chapter-1",
+          "chapter-2",
+          "chapter-3",
+          "chapter-4"
+        ]
+      }
+    }
+  ]
+}
