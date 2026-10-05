@@ -1,0 +1,703 @@
+{
+  "schema": 1,
+  "updated_on": "2026-10-05",
+  "purpose": "Primary works, homilies, letters, fragments and source status for every Church Father / patristic writer profile in Mercy.",
+  "policy": [
+    "Every profile must expose the author's actual works or the status of the surviving primary corpus, not only a Mercy summary.",
+    "Local Mercy texts are preferred when a verified reusable edition has been vendored.",
+    "Historical public-domain online editions may be linked while local vendoring is pending.",
+    "Modern copyrighted translations are not copied without permission.",
+    "Lost, fragmentary, disputed or pseudonymous material is labelled as such.",
+    "A source-review status is an explicit limitation, not a substitute for a primary text."
+  ],
+  "profiles": [
+    {
+      "father_id": "clement-rome",
+      "card_id": "father-clement-rome",
+      "name": "St. Clement of Rome",
+      "major_works": "First Letter of Clement to the Corinthians (1 Clement).",
+      "source_status": "local",
+      "sources": [
+        {
+          "label": "1 Clement — local reader",
+          "url": "patristic-reader.html?source=apostolic-fathers-1870&section=6"
+        }
+      ],
+      "note": "Complete historical public-domain translation is stored inside Mercy."
+    },
+    {
+      "father_id": "ignatius",
+      "card_id": "father-ignatius",
+      "name": "St. Ignatius of Antioch",
+      "major_works": "Letters to the Ephesians, Magnesians, Trallians, Romans, Philadelphians, Smyrnaeans and Polycarp.",
+      "source_status": "local",
+      "sources": [
+        {
+          "label": "Ignatian letters — local reader",
+          "url": "patristic-reader.html?source=apostolic-fathers-1870&section=149"
+        }
+      ],
+      "note": "Seven-letter collection is available locally; later/spurious Ignatian material in the historical volume is kept distinct."
+    },
+    {
+      "father_id": "polycarp",
+      "card_id": "father-polycarp",
+      "name": "St. Polycarp of Smyrna",
+      "major_works": "Letter to the Philippians; his death is narrated in the Martyrdom of Polycarp.",
+      "source_status": "local",
+      "sources": [
+        {
+          "label": "Letter to the Philippians — local reader",
+          "url": "patristic-reader.html?source=apostolic-fathers-1870&section=83"
+        },
+        {
+          "label": "Martyrdom of Polycarp — local reader",
+          "url": "patristic-reader.html?source=apostolic-fathers-1870&section=100"
+        }
+      ],
+      "note": "Primary letter and early martyrdom account are available locally."
+    },
+    {
+      "father_id": "justin",
+      "card_id": "father-justin",
+      "name": "St. Justin Martyr",
+      "major_works": "First Apology; Second Apology; Dialogue with Trypho.",
+      "source_status": "local",
+      "sources": [
+        {
+          "label": "Justin Martyr — ANF I local volume",
+          "url": "patristic-reader.html?source=anf01-justin-irenaeus-1885"
+        }
+      ],
+      "note": "First and Second Apologies and Dialogue with Trypho are in the newly vendored historical ANF volume."
+    },
+    {
+      "father_id": "irenaeus",
+      "card_id": "father-irenaeus",
+      "name": "St. Irenaeus of Lyons",
+      "major_works": "Against Heresies; Demonstration of the Apostolic Preaching.",
+      "source_status": "local",
+      "sources": [
+        {
+          "label": "Irenaeus — ANF I local volume",
+          "url": "patristic-reader.html?source=anf01-justin-irenaeus-1885"
+        }
+      ],
+      "note": "Against Heresies and related material are in the locally vendored ANF volume; Demonstration/Proof is tracked separately for a later import."
+    },
+    {
+      "father_id": "papias",
+      "card_id": "father-papias",
+      "name": "Papias of Hierapolis",
+      "major_works": "Expositions of the Sayings of the Lord (lost except for fragments).",
+      "source_status": "local",
+      "sources": [
+        {
+          "label": "Fragments of Papias — local reader",
+          "url": "patristic-reader.html?source=apostolic-fathers-1870&section=435"
+        }
+      ],
+      "note": "Only fragments survive; Mercy does not present them as the complete lost Expositions."
+    },
+    {
+      "father_id": "didache",
+      "card_id": "father-didache",
+      "name": "The Didache (anonymous early Church manual)",
+      "major_works": "The Didache / Teaching of the Twelve Apostles.",
+      "source_status": "local",
+      "sources": [
+        {
+          "label": "Didache — local reader",
+          "url": "patristic-reader.html?source=didache-1884&section=18"
+        }
+      ],
+      "note": "Anonymous early Church manual; complete historical public-domain edition is local."
+    },
+    {
+      "father_id": "hermas",
+      "card_id": "father-hermas",
+      "name": "The Shepherd of Hermas",
+      "major_works": "The Shepherd: Visions, Mandates and Similitudes.",
+      "source_status": "local",
+      "sources": [
+        {
+          "label": "Shepherd of Hermas — local reader",
+          "url": "patristic-reader.html?source=apostolic-fathers-1870&section=303"
+        }
+      ],
+      "note": "Visions, Mandates and Similitudes are available in the local historical edition."
+    },
+    {
+      "father_id": "hippolytus",
+      "card_id": "father-hippolytus",
+      "name": "St. Hippolytus of Rome",
+      "major_works": "Refutation of All Heresies; Commentary on Daniel; Apostolic Tradition (traditional attribution disputed).",
+      "source_status": "local",
+      "sources": [
+        {
+          "label": "Apostolic Tradition — local reader",
+          "url": "patristic-reader.html?source=hippolytus-apostolic-tradition-1934&section=19"
+        }
+      ],
+      "note": "Traditional attribution is disputed and remains explicitly qualified."
+    },
+    {
+      "father_id": "clement-alexandria",
+      "card_id": "father-clement-alexandria",
+      "name": "Clement of Alexandria",
+      "major_works": "Protrepticus (Exhortation to the Greeks); Paedagogus (Instructor); Stromata (Miscellanies); Who Is the Rich Man That Is Saved?",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Clement of Alexandria — ANF II",
+          "url": "https://www.ccel.org/ccel/schaff/anf02.html"
+        }
+      ],
+      "note": "Historical public-domain English collection; local vendoring pending."
+    },
+    {
+      "father_id": "origen",
+      "card_id": "father-origen",
+      "name": "Origen of Alexandria",
+      "major_works": "On First Principles; Contra Celsum; biblical homilies and commentaries; Hexapla (text-critical project).",
+      "source_status": "local",
+      "sources": [
+        {
+          "label": "Origen Vol. I — local reader",
+          "url": "patristic-reader.html?source=origen-vol-1-1869&section=8"
+        },
+        {
+          "label": "Origen Vol. II — local reader",
+          "url": "patristic-reader.html?source=origen-vol-2-1872&section=12"
+        }
+      ],
+      "note": "De Principiis, Against Celsus and letters are available locally; Hexapla is fragmentary."
+    },
+    {
+      "father_id": "athanasius",
+      "card_id": "father-athanasius",
+      "name": "St. Athanasius of Alexandria",
+      "major_works": "On the Incarnation; Orations Against the Arians; Life of Antony; Letters.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Athanasius — NPNF II, Vol. IV",
+          "url": "https://www.ccel.org/ccel/schaff/npnf204.html"
+        }
+      ],
+      "note": "Select writings, letters, anti-Arian works and Life of Antony in a historical public-domain edition; local vendoring pending."
+    },
+    {
+      "father_id": "cyril-alexandria",
+      "card_id": "father-cyril-alexandria",
+      "name": "St. Cyril of Alexandria",
+      "major_works": "Commentary on John; On the Unity of Christ; letters and conciliar writings.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Commentary on John — Book I",
+          "url": "https://www.ccel.org/ccel/pearse/morefathers/files/cyril_on_john_01_book1.htm"
+        },
+        {
+          "label": "Commentary on Luke — public-domain historical translation",
+          "url": "https://www.tertullian.org/fathers/cyril_on_luke_00_eintro.htm"
+        }
+      ],
+      "note": "Historical translations are available online; local vendoring pending. Modern copyrighted Cyril translations are not copied."
+    },
+    {
+      "father_id": "gregory-thaumaturgus",
+      "card_id": "father-gregory-thaumaturgus",
+      "name": "St. Gregory Thaumaturgus",
+      "major_works": "Address of Thanksgiving to Origen; Canonical Letter; Trinitarian confession attributed in tradition.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Gregory Thaumaturgus — ANF VI",
+          "url": "https://www.ccel.org/ccel/schaff/anf06/anf06.toc.html"
+        }
+      ],
+      "note": "Includes acknowledged writings, fragments and homilies in the historical ANF edition."
+    },
+    {
+      "father_id": "athenagoras",
+      "card_id": "father-athenagoras",
+      "name": "Athenagoras of Athens",
+      "major_works": "Plea for the Christians; On the Resurrection of the Dead.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Athenagoras — ANF II",
+          "url": "https://www.ccel.org/ccel/schaff/anf02.html"
+        }
+      ],
+      "note": "Plea for the Christians and On the Resurrection are in the historical ANF collection."
+    },
+    {
+      "father_id": "methodius",
+      "card_id": "father-methodius",
+      "name": "St. Methodius of Olympus",
+      "major_works": "Symposium / Banquet of the Ten Virgins; On the Resurrection; other fragments.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Methodius — ANF VI",
+          "url": "https://www.ccel.org/ccel/schaff/anf06/anf06.toc.html"
+        }
+      ],
+      "note": "Symposium, resurrection material, fragments and homiletic pieces are available in the ANF volume."
+    },
+    {
+      "father_id": "chrysostom",
+      "card_id": "father-chrysostom",
+      "name": "St. John Chrysostom",
+      "major_works": "Homilies on Matthew, John, Acts and Pauline letters; On the Priesthood; Baptismal catecheses.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "On the Priesthood & selected homilies — NPNF I, Vol. IX",
+          "url": "https://www.ccel.org/ccel/schaff/npnf109.html"
+        },
+        {
+          "label": "Homilies on Matthew — NPNF I, Vol. X",
+          "url": "https://www.ccel.org/ccel/schaff/npnf110.html"
+        },
+        {
+          "label": "Homilies on John & Hebrews — NPNF I, Vol. XIV",
+          "url": "https://www.ccel.org/ccel/schaff/npnf114.html"
+        }
+      ],
+      "note": "Large public-domain homiletic corpus is available online; local staged import pending."
+    },
+    {
+      "father_id": "theophilus-antioch",
+      "card_id": "father-theophilus-antioch",
+      "name": "St. Theophilus of Antioch",
+      "major_works": "To Autolycus.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Theophilus of Antioch — ANF II",
+          "url": "https://www.ccel.org/ccel/schaff/anf02.html"
+        }
+      ],
+      "note": "To Autolycus is available in the historical ANF edition."
+    },
+    {
+      "father_id": "basil",
+      "card_id": "father-basil",
+      "name": "St. Basil the Great",
+      "major_works": "On the Holy Spirit; Hexaemeron; Longer and Shorter Rules; Letters.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Basil — NPNF II, Vol. VIII",
+          "url": "https://www.ccel.org/ccel/schaff/npnf208.html"
+        }
+      ],
+      "note": "Letters and select works, including Hexaemeron and On the Holy Spirit material, are available in the public-domain NPNF edition."
+    },
+    {
+      "father_id": "gregory-nazianzen",
+      "card_id": "father-gregory-nazianzen",
+      "name": "St. Gregory of Nazianzus",
+      "major_works": "Five Theological Orations; Orations; Letters; theological poetry.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Gregory Nazianzen — NPNF II, Vol. VII",
+          "url": "https://www.ccel.org/ccel/schaff/npnf207.html"
+        }
+      ],
+      "note": "Theological orations, other orations and letters are in the historical NPNF volume."
+    },
+    {
+      "father_id": "gregory-nyssa",
+      "card_id": "father-gregory-nyssa",
+      "name": "St. Gregory of Nyssa",
+      "major_works": "Life of Moses; Great Catechism; On the Making of Man; Against Eunomius; homilies on the Song of Songs.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Gregory of Nyssa — NPNF II, Vol. V",
+          "url": "https://www.ccel.org/ccel/schaff/npnf205.html"
+        }
+      ],
+      "note": "Dogmatic treatises and select writings are available in a historical public-domain edition."
+    },
+    {
+      "father_id": "ephrem",
+      "card_id": "father-ephrem",
+      "name": "St. Ephrem the Syrian",
+      "major_works": "Hymns on Faith; Hymns on Paradise; Hymns on the Nativity; biblical commentaries.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Ephrem Syrus — NPNF II, Vol. XIII",
+          "url": "https://www.ccel.org/ccel/schaff/npnf213.html"
+        }
+      ],
+      "note": "Selected Syriac-Father material is available in NPNF; broader hymn corpus requires separate rights/source review."
+    },
+    {
+      "father_id": "isaac-nineveh",
+      "card_id": "father-isaac-nineveh",
+      "name": "St. Isaac of Nineveh (Isaac the Syrian)",
+      "major_works": "Ascetical Homilies / Ascetical Discourses.",
+      "source_status": "source-review",
+      "sources": [
+        {
+          "label": "Additional Fathers public-domain index",
+          "url": "https://www.tertullian.org/fathers/"
+        }
+      ],
+      "note": "A complete reusable English Ascetical Homilies edition has not yet been approved for local import. Mercy lists the work but will not copy a modern copyrighted translation."
+    },
+    {
+      "father_id": "cyril-jerusalem",
+      "card_id": "father-cyril-jerusalem",
+      "name": "St. Cyril of Jerusalem",
+      "major_works": "Catechetical Lectures; Mystagogical Catecheses.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Catechetical Lectures — NPNF II, Vol. VII",
+          "url": "https://www.ccel.org/ccel/schaff/npnf207.toc.html"
+        }
+      ],
+      "note": "Catechetical and Mystagogical material is available in the historical public-domain NPNF edition."
+    },
+    {
+      "father_id": "tertullian",
+      "card_id": "father-tertullian",
+      "name": "Tertullian",
+      "major_works": "Apology; Against Praxeas; On Baptism; On Prayer; On the Prescription of Heretics.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Tertullian — ANF III",
+          "url": "https://www.ccel.org/ccel/schaff/anf03.html"
+        },
+        {
+          "label": "Tertullian — ANF IV",
+          "url": "https://www.ccel.org/ccel/schaff/anf04.html"
+        }
+      ],
+      "note": "Large corpus including Apology, On Prayer, On Baptism and polemical works; local vendoring pending."
+    },
+    {
+      "father_id": "cyprian",
+      "card_id": "father-cyprian",
+      "name": "St. Cyprian of Carthage",
+      "major_works": "On the Unity of the Catholic Church; On the Lord's Prayer; letters and treatises.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Cyprian — ANF V",
+          "url": "https://www.ccel.org/ccel/schaff/anf05.html"
+        }
+      ],
+      "note": "Treatises and letters are available in the historical ANF edition."
+    },
+    {
+      "father_id": "hilary",
+      "card_id": "father-hilary",
+      "name": "St. Hilary of Poitiers",
+      "major_works": "On the Trinity (De Trinitate); On the Councils; biblical commentaries and hymns.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Hilary of Poitiers — NPNF II, Vol. IX",
+          "url": "https://www.ccel.org/ccel/schaff/npnf209.toc.html"
+        }
+      ],
+      "note": "De Trinitate, On the Councils and selected Psalm homilies are available."
+    },
+    {
+      "father_id": "ambrose",
+      "card_id": "father-ambrose",
+      "name": "St. Ambrose of Milan",
+      "major_works": "On the Mysteries; On the Sacraments; On the Duties of Ministers; Exposition of Luke; hymns.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Ambrose — NPNF II, Vol. X",
+          "url": "https://www.ccel.org/ccel/schaff/npnf210.html"
+        }
+      ],
+      "note": "Select works and letters are available in the historical public-domain NPNF edition."
+    },
+    {
+      "father_id": "jerome",
+      "card_id": "father-jerome",
+      "name": "St. Jerome",
+      "major_works": "Vulgate translation work; biblical commentaries; Letters; On Illustrious Men.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Jerome — NPNF II, Vol. VI",
+          "url": "https://www.ccel.org/ccel/schaff/npnf206.html"
+        }
+      ],
+      "note": "Principal works and letters are available in the historical NPNF collection."
+    },
+    {
+      "father_id": "augustine",
+      "card_id": "father-augustine",
+      "name": "St. Augustine of Hippo",
+      "major_works": "Confessions; The City of God; On the Trinity; On Christian Doctrine; sermons, letters and anti-Pelagian works.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Augustine — NPNF I, Vol. I",
+          "url": "https://www.ccel.org/ccel/schaff/npnf101.html"
+        },
+        {
+          "label": "City of God & Christian Doctrine — Vol. II",
+          "url": "https://www.ccel.org/ccel/schaff/npnf102.html"
+        },
+        {
+          "label": "Homilies on John — Vol. VII",
+          "url": "https://www.ccel.org/ccel/schaff/npnf107.html"
+        }
+      ],
+      "note": "Extensive public-domain corpus; local staged import pending."
+    },
+    {
+      "father_id": "leo",
+      "card_id": "father-leo",
+      "name": "St. Leo the Great",
+      "major_works": "Tome to Flavian; Sermons; Letters.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Leo the Great — NPNF II, Vol. XII",
+          "url": "https://www.ccel.org/ccel/schaff/npnf212.html"
+        }
+      ],
+      "note": "Tome, sermons and letters are available in the historical NPNF edition."
+    },
+    {
+      "father_id": "gregory-great",
+      "card_id": "father-gregory-great",
+      "name": "St. Gregory the Great",
+      "major_works": "Pastoral Rule; Moralia on Job; Homilies on the Gospels; Dialogues; Letters.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Gregory the Great — NPNF II, Vol. XII",
+          "url": "https://www.ccel.org/ccel/schaff/npnf212.html"
+        },
+        {
+          "label": "Gregory the Great II — NPNF II, Vol. XIII",
+          "url": "https://www.ccel.org/ccel/schaff/npnf213.html"
+        }
+      ],
+      "note": "Pastoral and selected homiletic material is available in the historical collection."
+    },
+    {
+      "father_id": "optatus",
+      "card_id": "father-optatus",
+      "name": "St. Optatus of Milevis",
+      "major_works": "Against the Donatists (De schismate Donatistarum).",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Against the Donatists — Book I",
+          "url": "https://www.tertullian.org/fathers/optatus_01_book1.htm"
+        }
+      ],
+      "note": "1917 historical English translation is available online; local import requires edition-level rights review before redistribution."
+    },
+    {
+      "father_id": "rufinus",
+      "card_id": "father-rufinus",
+      "name": "Rufinus of Aquileia",
+      "major_works": "Latin translations of Origen; continuation/translation of Eusebius's Ecclesiastical History; Commentary on the Apostles' Creed.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Rufinus & Jerome — NPNF II, Vol. III",
+          "url": "https://www.ccel.org/ccel/schaff/npnf203.html"
+        }
+      ],
+      "note": "Historical writings and Rufinus material are available in NPNF."
+    },
+    {
+      "father_id": "paulinus-nola",
+      "card_id": "father-paulinus-nola",
+      "name": "St. Paulinus of Nola",
+      "major_works": "Letters; Carmina / Poems.",
+      "source_status": "source-review",
+      "sources": [
+        {
+          "label": "Additional Fathers public-domain index",
+          "url": "https://www.tertullian.org/fathers/"
+        }
+      ],
+      "note": "Letters and poems are listed in the profile; a stable reusable English corpus is being source-checked before local import."
+    },
+    {
+      "father_id": "peter-chrysologus",
+      "card_id": "father-peter-chrysologus",
+      "name": "St. Peter Chrysologus",
+      "major_works": "Sermons.",
+      "source_status": "source-review",
+      "sources": [
+        {
+          "label": "Additional Fathers public-domain index",
+          "url": "https://www.tertullian.org/fathers/"
+        }
+      ],
+      "note": "Sermon corpus is identified, but Mercy will not import a modern copyrighted English translation without permission."
+    },
+    {
+      "father_id": "vincent-lerins",
+      "card_id": "father-vincent-lerins",
+      "name": "St. Vincent of Lérins",
+      "major_works": "Commonitorium.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Vincent of Lérins — NPNF II, Vol. XI",
+          "url": "https://www.ccel.org/ccel/schaff/npnf211.html"
+        }
+      ],
+      "note": "Commonitorium is available in the historical NPNF edition."
+    },
+    {
+      "father_id": "prosper-aquitaine",
+      "card_id": "father-prosper-aquitaine",
+      "name": "St. Prosper of Aquitaine",
+      "major_works": "On the Call of All Nations; anti-Pelagian writings; Chronicle.",
+      "source_status": "source-review",
+      "sources": [
+        {
+          "label": "Additional Fathers public-domain index",
+          "url": "https://www.tertullian.org/fathers/"
+        }
+      ],
+      "note": "Primary works are identified; approved reusable English source still needs edition-level verification."
+    },
+    {
+      "father_id": "caesarius-arles",
+      "card_id": "father-caesarius-arles",
+      "name": "St. Caesarius of Arles",
+      "major_works": "Sermons; Rule for Virgins; Rule for Monks; conciliar texts associated with Orange II.",
+      "source_status": "source-review",
+      "sources": [
+        {
+          "label": "Additional Fathers public-domain index",
+          "url": "https://www.tertullian.org/fathers/"
+        }
+      ],
+      "note": "Sermons and rules are identified, but a reusable English edition is not yet approved for local import."
+    },
+    {
+      "father_id": "isidore-seville",
+      "card_id": "father-isidore-seville",
+      "name": "St. Isidore of Seville",
+      "major_works": "Etymologies; Sentences; biblical works; On Ecclesiastical Offices.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Chronicon — public-domain English translation",
+          "url": "https://www.tertullian.org/fathers/isidore_chronicon_01_trans.htm"
+        }
+      ],
+      "note": "A public-domain Chronicon translation is available; Etymologies and other works require separate source/rights handling."
+    },
+    {
+      "father_id": "bede",
+      "card_id": "father-bede",
+      "name": "St. Bede the Venerable",
+      "major_works": "Ecclesiastical History of the English People; biblical commentaries; On the Reckoning of Time.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Ecclesiastical History — 1907 public-domain edition",
+          "url": "https://www.ccel.org/ccel/bede/history.all.html"
+        }
+      ],
+      "note": "Historical public-domain English edition available; local import pending."
+    },
+    {
+      "father_id": "maximus",
+      "card_id": "father-maximus",
+      "name": "St. Maximus the Confessor",
+      "major_works": "Ambigua; Questions to Thalassius; Mystagogy; Centuries on Love; theological and polemical writings.",
+      "source_status": "source-review",
+      "sources": [
+        {
+          "label": "Additional Fathers public-domain index",
+          "url": "https://www.tertullian.org/fathers/"
+        }
+      ],
+      "note": "Major works are identified, but most standard English translations are modern and copyrighted. Mercy will not reproduce them without permission."
+    },
+    {
+      "father_id": "john-damascene",
+      "card_id": "father-john-damascene",
+      "name": "St. John Damascene",
+      "major_works": "The Fountain of Knowledge, including On the Orthodox Faith; Three Treatises on the Divine Images; homilies and hymns.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "On the Orthodox Faith — NPNF II, Vol. IX",
+          "url": "https://www.ccel.org/ccel/schaff/npnf209.toc.html"
+        }
+      ],
+      "note": "Exposition of the Orthodox Faith is available in the historical public-domain NPNF edition."
+    },
+    {
+      "father_id": "epiphanius",
+      "card_id": "father-epiphanius",
+      "name": "St. Epiphanius of Salamis",
+      "major_works": "Panarion; Ancoratus.",
+      "source_status": "partial-public-domain",
+      "sources": [
+        {
+          "label": "Weights and Measures — public-domain additional Fathers collection",
+          "url": "https://www.tertullian.org/fathers/"
+        },
+        {
+          "label": "Panarion excerpts / source note",
+          "url": "https://www.tertullian.org/rpearse/epiphanius.html"
+        }
+      ],
+      "note": "A complete modern English Panarion translation is copyrighted; Mercy therefore exposes only reusable historical/approved material and clearly labels excerpts."
+    },
+    {
+      "father_id": "pseudo-dionysius",
+      "card_id": "father-pseudo-dionysius",
+      "name": "Pseudo-Dionysius the Areopagite",
+      "major_works": "Divine Names; Mystical Theology; Celestial Hierarchy; Ecclesiastical Hierarchy; Letters.",
+      "source_status": "public-domain-online",
+      "sources": [
+        {
+          "label": "Dionysian Works — 1897 edition",
+          "url": "https://ccel.org/ccel/dionysius/works.all.html"
+        },
+        {
+          "label": "Divine Names & Mystical Theology",
+          "url": "https://ccel.org/ccel/rolt/dionysius.all.html"
+        }
+      ],
+      "note": "Historical public-domain translations are available. Authorship remains explicitly pseudonymous."
+    },
+    {
+      "father_id": "cyril-scythopolis",
+      "card_id": "father-cyril-scythopolis",
+      "name": "Cyril of Scythopolis",
+      "major_works": "Lives of the Monks of Palestine.",
+      "source_status": "source-review",
+      "sources": [
+        {
+          "label": "Additional Fathers public-domain index",
+          "url": "https://www.tertullian.org/fathers/"
+        }
+      ],
+      "note": "Lives of the Monks of Palestine is identified; no approved reusable English corpus has yet been selected for local import."
+    }
+  ]
+}

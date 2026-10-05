@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#5a1020">
+<meta name="description" content="Primary works, homilies, letters and source status for every Father and patristic writer in Mercy.">
+<title>Patristic Primary Works · Mercy</title>
+<link rel="stylesheet" href="../css/mercy.css">
+<style>
+.works-shell{max-width:1120px;margin:auto;padding:1.2rem}.works-controls{display:grid;grid-template-columns:2fr 1fr;gap:.7rem;margin:1rem 0}.works-controls input,.works-controls select{padding:.85rem;border:1px solid var(--line);border-radius:12px;background:var(--card);color:inherit}.works-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.work-card{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:1rem;box-shadow:var(--shadow)}.work-card h2{margin:.1rem 0 .5rem;color:var(--wine);font-size:1.2rem}.work-status{display:inline-flex;border-radius:999px;padding:.25rem .55rem;font:800 .68rem system-ui;background:#efe6dc;color:var(--wine)}.work-status.local{background:#e5f4e9;color:#285b37}.work-status.source-review{background:#fff0d9;color:#7a4b00}.work-links{display:flex;gap:.45rem;flex-wrap:wrap;margin:.7rem 0}.work-meta{font:.78rem/1.55 system-ui;color:var(--muted)}.notice{border-left:4px solid var(--gold);padding:1rem 1.1rem;background:#fff7e8;border-radius:0 16px 16px 0;margin:1rem 0}body.dark .notice{background:#2c241d}@media(max-width:760px){.works-grid,.works-controls{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><a class="brand" href="../index.html"><span class="cross">✠</span><span><b>Mercy</b><small>The Last Hope of Salvation</small></span></a><button class="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button><nav id="main-nav"><a href="../index.html">Home</a><a href="patristics.html">Patristics</a><a href="fathers.html">Church Fathers</a><a href="patristic-library.html">Primary Texts</a><a href="patristic-works.html" aria-current="page">All Works</a></nav><button class="theme-btn" aria-label="Toggle theme">◐</button></header>
+<main id="main"><section class="page-hero"><div class="crumb">Patristics · Primary works and homilies</div><h1>Primary Works of the Fathers</h1><p>Every Father or patristic writer in the Mercy portal now has a primary-source record. Where a verified reusable historical edition is already local, the work opens inside Mercy. Where local vendoring is pending, a public-domain source is linked. Where only modern copyrighted translations are readily available, the limitation is stated instead of copying them.</p></section>
+<div class="works-shell">
+<div class="notice"><strong>Source integrity:</strong> “Original works” here means the actual writings attributed to the author, not Mercy summaries. English translations are identified by source status. Lost, fragmentary, disputed and pseudonymous materials remain labelled accordingly.</div>
+<div class="works-controls"><input id="workSearch" placeholder="Search Father, work, homily, letter or treatise…" aria-label="Search primary works"><select id="workStatus"><option value="">All source states</option><option value="local">Local in Mercy</option><option value="public-domain-online">Public-domain online</option><option value="partial-public-domain">Partial reusable text</option><option value="source-review">Source/rights review</option></select></div>
+<p id="workCount" class="status">Loading primary works…</p><div id="worksGrid" class="works-grid"></div>
+</div></main>
+<footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Patristic primary-source library.</p></div><div><a href="fathers.html">Church Fathers</a><a href="patristic-reader.html">Local Reader</a><a href="patristic-quotes.html">Verified Quotations</a></div><p class="copyright">© <span data-year></span> Mercy – The Last Hope of Salvation.</p></footer>
+<script src="../javascript/mobile-nav.js?v=2"></script><script src="../javascript/mercy.js?v=12"></script>
+<script>
+(function(){
+'use strict';
+const grid=document.getElementById('worksGrid'),search=document.getElementById('workSearch'),status=document.getElementById('workStatus'),count=document.getElementById('workCount');
+let rows=[];
+function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function statusLabel(s){return {'local':'Local full/primary text','public-domain-online':'Public-domain text online','partial-public-domain':'Partial reusable text','source-review':'Source/rights review'}[s]||s;}
+function render(){
+ const q=(search.value||'').trim().toLowerCase(),s=status.value;
+ const list=rows.filter(x=>(!s||x.source_status===s)&&(!q||[x.name,x.major_works,x.note,(x.sources||[]).map(y=>y.label).join(' ')].join(' ').toLowerCase().includes(q)));
+ count.textContent=list.length+' profile'+(list.length===1?'':'s')+' shown.';
+ grid.innerHTML=list.map(x=>'<article class="work-card"><span class="work-status '+esc(x.source_status)+'">'+esc(statusLabel(x.source_status))+'</span><h2>'+esc(x.name)+'</h2><p><strong>Primary works / homilies:</strong> '+esc(x.major_works)+'</p><div class="work-links">'+(x.sources||[]).map(y=>'<a class="btn '+(/^https?:/i.test(y.url)?'secondary':'primary')+'" '+(/^https?:/i.test(y.url)?'target="_blank" rel="noopener noreferrer" ':'')+'href="'+esc(y.url)+'">'+esc(y.label)+'</a>').join('')+'</div><p class="work-meta">'+esc(x.note||'')+'</p><p><a class="btn secondary" href="fathers.html#father-'+esc(x.father_id)+'">Open Father profile</a></p></article>').join('');
+}
+fetch('../data/patristic-primary-works.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(d=>{rows=d.profiles||[];render();}).catch(()=>{count.textContent='Primary works catalog is temporarily unavailable.';});
+search.addEventListener('input',render);status.addEventListener('change',render);
+})();
+</script>
+</body></html>
