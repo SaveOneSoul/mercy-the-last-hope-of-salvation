@@ -36,8 +36,8 @@ function updateUrl(source,section){const u=new URL(location.href);u.searchParams
 async function loadSection(sourceRow,sourceIndex,tocRow,button){
   const data=await json(ROOT+sourceRow.corpus+'/'+sourceRow.id+'/'+tocRow.file);
   if(currentButton)currentButton.removeAttribute('aria-current');currentButton=button;if(button)button.setAttribute('aria-current','true');
-  out.textContent='';const meta=el('div',null,'reader-meta');meta.textContent=[sourceIndex.title,sourceIndex.edition,sourceIndex.publication_year?'Published '+sourceIndex.publication_year:null].filter(Boolean).join(' · ');out.append(meta);
-  out.append(el('h1',data.heading));
+  out.textContent='';const meta=el('div',null,'reader-meta');meta.textContent=[sourceIndex.title,sourceIndex.edition,sourceIndex.translators?'Translator(s): '+sourceIndex.translators:null,sourceIndex.publication_year?'Published '+sourceIndex.publication_year:null,sourceIndex.rights].filter(Boolean).join(' · ');out.append(meta);
+  out.append(el('h1',data.heading));if(sourceIndex.caution){const caution=el('p',sourceIndex.caution,'reader-meta');caution.style.fontWeight='700';out.append(caution);}
   const actions=el('div',null,'reader-actions');const back=el('a','Father study notes','btn secondary');back.href='fathers.html';actions.append(back);out.append(actions);
   (data.paragraphs||[]).forEach(p=>out.append(el('p',p)));
   updateUrl(sourceRow.id,String(tocRow.index));
