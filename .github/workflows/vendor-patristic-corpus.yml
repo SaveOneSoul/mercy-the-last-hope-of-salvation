@@ -44,6 +44,9 @@ jobs:
           print("Validated", len(index["sources"]), "local source volumes")
           PY
 
+      - name: Validate verified quotations
+        run: python tools/validate_patristic_quotations.py
+
       - name: Commit vendored corpus
         run: |
           if [ -z "$(git status --porcelain -- data/patristic-corpus)" ]; then
