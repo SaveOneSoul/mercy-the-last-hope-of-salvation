@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "work_id": "didache",
+  "unit_id": "chapter-2",
+  "chapter": 2,
+  "original_language": "Greek",
+  "source_ref": {
+    "local_source_id": "didache-1884",
+    "section_index": 12,
+    "edition": "Hitchcock and Brown edition",
+    "publication_year": 1884,
+    "rights": "Public domain edition; Project Gutenberg eBook 42053"
+  },
+  "original_text": "Δευτέρα δὲ ἐντολὴ τῆς διδαχῆς· Οὐ φονεύσεις, οὐ μοιχεύσεις, οὐ παιδοφθορήσεις, οὐ πορνεύσεις, οὐ κλέψεις, οὐ μαγεύσεις, οὐ φαρμακεύσεις, οὐ φονεύσεις τέκνον ἐν φθορᾷ οὐδὲ γεννηθὲν ἀποκτενεῖς. Οὐκ ἐπιθυμήσεις τὰ τοῦ πλησίον, οὐκ ἐπιορκήσεις, οὐ ψευδομαρτυρήσεις, οὐ κακολογήσεις, οὐ μνησικακήσεις. Οὐκ ἔσῃ διγνώμων οὐδὲ δίγλωσσος· παγὶς γὰρ θανάτου ἡ διγλωσσία. Οὐκ ἔσται ὁ λόγος σου ψευδής, οὐ κενός, ἀλλὰ μεμεστωμένος πράξει. Οὐκ ἔσῃ πλεονέκτης οὐδὲ ἅρπαξ οὐδὲ ὑποκριτὴς οὐδὲ κακοήθης οὐδὲ ὑπερήφανος. Οὐ λήψῃ βουλὴν πονηρὰν κατὰ τοῦ πλησίον σου. Οὐ μισήσεις πάντα ἄνθρωπον, ἀλλὰ οὓς μὲν ἐλέγξεις, περὶ δὲ ὧν προσεύξῃ, οὓς δὲ ἀγαπήσεις ὑπὲρ τὴν ψυχήν σου.",
+  "mercy_translation": {
+    "language": "English",
+    "version": "0.1.0",
+    "status": "pilot-philological-review",
+    "text": "The second commandment of the teaching is this: You shall not murder; you shall not commit adultery; you shall not corrupt children; you shall not commit sexual immorality; you shall not steal; you shall not practice magic; you shall not practice sorcery; you shall not kill a child by abortion, nor shall you kill one after it has been born.\n\nYou shall not covet what belongs to your neighbor. You shall not swear falsely; you shall not bear false witness; you shall not speak evil; you shall not bear a grudge. You shall not be double-minded or double-tongued, for duplicity of speech is a snare of death.\n\nYour word shall not be false or empty, but fulfilled in deed. You shall not be greedy, grasping, hypocritical, malicious, or proud. You shall not take evil counsel against your neighbor.\n\nYou shall not hate any person. Some you shall correct; for some you shall pray; and some you shall love more than your own life."
+  },
+  "translator_notes": [
+    "Mercy translation made directly from the Greek source.",
+    "The Greek παιδοφθορήσεις is difficult and historically loaded; here it is rendered 'corrupt children' rather than folded into the following explicit prohibition concerning abortion.",
+    "The phrase οὐ φονεύσεις τέκνον ἐν φθορᾷ is rendered 'you shall not kill a child by abortion' to reflect the text's explicit prohibition."
+  ]
+}
