@@ -100,6 +100,30 @@
       "expected_works": [
         "Apostolic Tradition"
       ]
+    },
+    {
+      "id": "anf01-justin-irenaeus-1885",
+      "corpus": "ante-nicene",
+      "title": "Ante-Nicene Fathers, Vol. I — Justin Martyr and Irenaeus",
+      "author_label": "St. Justin Martyr; St. Irenaeus of Lyons",
+      "edition": "Ante-Nicene Fathers, American edition, vol. I",
+      "translators": "Alexander Roberts and James Donaldson; revised/edited by A. Cleveland Coxe",
+      "publication_year": 1885,
+      "rights": "Public Domain historical edition; CCEL source metadata marks the text Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/anf01/cache/anf01.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/s/schaff/anf01/cache/anf01.txt",
+      "start_marker": "JUSTIN MARTYR",
+      "expected_works": [
+        "First Apology",
+        "Second Apology",
+        "Dialogue with Trypho",
+        "On the Resurrection (fragments)",
+        "Martyrdom of Justin",
+        "Against Heresies Books I–V",
+        "Fragments from the Lost Writings of Irenaeus"
+      ],
+      "caution": "This import uses the historical public-domain translation text. Modern CCEL summaries, cover art, and other website-specific content are not part of the vendored source."
     }
   ],
   "lost_or_fragmentary": [

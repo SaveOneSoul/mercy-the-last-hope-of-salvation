@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#5a1020">
+<meta name="description" content="Verified quotations from the Church Fathers with work, locator, edition, translator, context, topic tags, rights and direct links to the full local primary text.">
+<title>Verified Patristic Quotations · Mercy</title>
+<link rel="stylesheet" href="../css/mercy.css">
+<style>
+.quote-shell{max-width:1120px;margin:auto;padding:1.2rem}.quote-controls{display:grid;grid-template-columns:2fr 1fr;gap:.7rem;margin:1rem 0}.quote-controls input,.quote-controls select{padding:.85rem;border:1px solid var(--line);border-radius:12px;background:var(--card);color:inherit}.quote-grid{display:grid;gap:1rem}.quote-card{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:1rem;box-shadow:var(--shadow)}.quote-card blockquote{margin:.8rem 0;padding:.9rem 1rem;border-left:4px solid var(--gold);background:#fff9f0;font:1.05rem/1.65 Georgia,serif}.quote-meta{font:.78rem/1.55 system-ui;color:var(--muted)}.quote-tags{display:flex;gap:.35rem;flex-wrap:wrap;margin:.55rem 0}.quote-tag{border-radius:999px;background:#f0e4d7;color:var(--wine);padding:.25rem .5rem;font:800 .68rem system-ui}.quote-context{margin:.65rem 0}.status-note{border-left:4px solid var(--gold);background:#fff7e8;border-radius:0 14px 14px 0;padding:.9rem 1rem;margin:1rem 0}body.dark .quote-card blockquote,body.dark .status-note{background:#2c241d}@media(max-width:720px){.quote-controls{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><a class="brand" href="../index.html"><span class="cross">✠</span><span><b>Mercy</b><small>The Last Hope of Salvation</small></span></a><button class="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button><nav id="main-nav"><a href="../index.html">Home</a><a href="patristics.html">Patristics</a><a href="fathers.html">Church Fathers</a><a href="patristic-library.html">Primary Texts</a><a href="patristic-quotes.html" aria-current="page">Verified Quotations</a></nav><button class="theme-btn" aria-label="Toggle theme">◐</button></header>
+<main id="main"><section class="page-hero"><div class="crumb">Patristics · Verified primary-source citations</div><h1>Verified Patristic Quotations</h1><p>Every quotation on this page resolves to a locally vendored primary-text section. Work, locator, historical edition, translator, context, rights and a link to the full text are kept with the quotation.</p></section>
+<div class="quote-shell">
+<div class="status-note"><strong>Quotation rule:</strong> a short quotation is never treated as the whole of a Father’s teaching. Open the full source section before using a passage in theology, apologetics, preaching or formation. Editorial context and topic tags are Mercy metadata; the quotation itself comes from the identified historical edition.</div>
+<div class="quote-controls"><input id="quoteSearch" placeholder="Search Father, work, phrase, doctrine or topic…" aria-label="Search verified quotations"><select id="fatherFilter" aria-label="Filter by Father"><option value="">All Fathers / writers</option></select></div>
+<p id="quoteCount" class="status">Loading verified quotations…</p><div id="quoteGrid" class="quote-grid"></div>
+</div></main>
+<footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Verified patristic citations with provenance.</p></div><div><a href="patristic-reader.html">Patristic Reader</a><a href="fathers.html">Church Fathers</a><a href="sources.html">Sources</a></div><p class="copyright">© <span data-year></span> Mercy – The Last Hope of Salvation.</p></footer>
+<script src="../javascript/mobile-nav.js?v=2"></script><script src="../javascript/mercy.js?v=12"></script>
+<script>
+(function(){
+'use strict';
+const grid=document.getElementById('quoteGrid'),search=document.getElementById('quoteSearch'),filter=document.getElementById('fatherFilter'),count=document.getElementById('quoteCount');
+let rows=[];
+function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function render(){
+ const q=search.value.trim().toLowerCase(), f=filter.value;
+ const list=rows.filter(x=>{
+   if(f&&x.father_id!==f)return false;
+   const hay=[x.father_name,x.work,x.locator,x.quote,x.context,(x.topics||[]).join(' ')].join(' ').toLowerCase();
+   return !q||hay.includes(q);
+ });
+ count.textContent=list.length+' verified quotation'+(list.length===1?'':'s')+' shown.';
+ grid.innerHTML=list.map(x=>'<article class="quote-card"><div class="quote-meta"><strong>'+esc(x.father_name)+'</strong> · '+esc(x.work)+' · '+esc(x.locator)+'</div><blockquote>'+esc(x.quote)+'</blockquote><div class="quote-tags">'+(x.topics||[]).map(t=>'<span class="quote-tag">'+esc(t)+'</span>').join('')+'</div><p class="quote-context"><strong>Context:</strong> '+esc(x.context)+'</p><p class="quote-meta"><strong>Edition:</strong> '+esc(x.edition)+' · <strong>Translator(s):</strong> '+esc(x.translators||'Not separately identified in metadata')+' · <strong>Published:</strong> '+esc(x.publication_year)+'<br><strong>Rights / provenance:</strong> '+esc(x.rights)+'</p><p><a class="btn primary" href="'+esc(x.reader_url)+'">Read full source section</a></p></article>').join('')||'<p class="status">No verified quotations match this filter.</p>';
+}
+fetch('../data/patristic-quotations.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(d=>{
+ rows=d.quotations||[];
+ const fathers=[...new Map(rows.map(x=>[x.father_id,x.father_name])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));
+ fathers.forEach(([id,name])=>{const o=document.createElement('option');o.value=id;o.textContent=name;filter.append(o);});
+ render();
+}).catch(()=>{count.textContent='Verified quotation index is temporarily unavailable.';});
+search.addEventListener('input',render);filter.addEventListener('change',render);
+})();
+</script>
+</body></html>

@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "generated_on": "2026-10-05",
+  "policy": {
+    "purpose": "Verified patristic quotation index. Every quotation must resolve to a locally vendored primary-text section and must be an exact substring of that source section after whitespace normalization.",
+    "rules": [
+      "Never publish an unsourced patristic quotation.",
+      "Every quotation records Father/writer, work, section, source edition, translator, publication year, rights/provenance, topic tags and a context note.",
+      "The displayed quotation must be text from the source edition, not Mercy editorial prose.",
+      "Original-language text is included only when present in a verified reusable edition.",
+      "Context notes and doctrinal tags are editorial metadata and are visually separated from the quotation.",
+      "A quotation is not treated as a complete statement of a Father's theology; users are linked to the full local section and source volume."
+    ]
+  },
+  "quotations": [
+    {
+      "id": "clement-1clement-42-ministry",
+      "father_id": "clement-rome",
+      "father_name": "St. Clement of Rome",
+      "work": "First Letter of Clement to the Corinthians",
+      "locator": "Chapter 42",
+      "source_id": "apostolic-fathers-1870",
+      "section_index": 48,
+      "paragraph_index": 0,
+      "quote": "The apostles have preached the gospel to us from[176] the Lord Jesus Christ; Jesus Christ [has done so] from[177] God.",
+      "language": "English",
+      "original_language_available_in_this_edition": false,
+      "edition": "Ante-Nicene Christian Library, vol. I",
+      "translators": "Alexander Roberts, James Donaldson, F. Crombie",
+      "publication_year": 1870,
+      "rights": "Public domain edition; Project Gutenberg eBook 77576",
+      "context": "Clement is arguing for orderly apostolic mission and the appointment of ministers in the Church amid a dispute over ecclesial order.",
+      "topics": [
+        "apostolic succession",
+        "ministry",
+        "ecclesial order",
+        "mission"
+      ],
+      "reader_url": "patristic-reader.html?source=apostolic-fathers-1870&section=48"
+    },
+    {
+      "id": "ignatius-philadelphians-4-eucharist",
+      "father_id": "ignatius",
+      "father_name": "St. Ignatius of Antioch",
+      "work": "Letter to the Philadelphians",
+      "locator": "Chapter 4 (shorter recension)",
+      "source_id": "apostolic-fathers-1870",
+      "section_index": 217,
+      "paragraph_index": 1,
+      "quote": "Take ye heed, then, to have but one Eucharist.",
+      "language": "English",
+      "original_language_available_in_this_edition": false,
+      "edition": "Ante-Nicene Christian Library, vol. I",
+      "translators": "Alexander Roberts, James Donaldson, F. Crombie",
+      "publication_year": 1870,
+      "rights": "Public domain edition; Project Gutenberg eBook 77576",
+      "context": "Ignatius exhorts the Philadelphian church to visible unity in Eucharistic worship, ministry and ecclesial life.",
+      "topics": [
+        "Eucharist",
+        "unity",
+        "bishop",
+        "presbyters",
+        "deacons"
+      ],
+      "reader_url": "patristic-reader.html?source=apostolic-fathers-1870&section=217"
+    },
+    {
+      "id": "ignatius-smyrnaeans-7-eucharist",
+      "father_id": "ignatius",
+      "father_name": "St. Ignatius of Antioch",
+      "work": "Letter to the Smyrnaeans",
+      "locator": "Chapter 7 (shorter recension)",
+      "source_id": "apostolic-fathers-1870",
+      "section_index": 232,
+      "paragraph_index": 1,
+      "quote": "They abstain from the Eucharist and from prayer,[1272] because they confess not the Eucharist to be the flesh of our Saviour Jesus Christ, which suffered for our sins, and which the Father, of His goodness, raised up again.",
+      "language": "English",
+      "original_language_available_in_this_edition": false,
+      "edition": "Ante-Nicene Christian Library, vol. I",
+      "translators": "Alexander Roberts, James Donaldson, F. Crombie",
+      "publication_year": 1870,
+      "rights": "Public domain edition; Project Gutenberg eBook 77576",
+      "context": "Ignatius is opposing docetic teaching that denied the reality of Christ's flesh and suffering; his Eucharistic statement belongs inside that Christological controversy.",
+      "topics": [
+        "Eucharist",
+        "Incarnation",
+        "Docetism",
+        "resurrection",
+        "Christology"
+      ],
+      "reader_url": "patristic-reader.html?source=apostolic-fathers-1870&section=232"
+    },
+    {
+      "id": "polycarp-philippians-opening",
+      "father_id": "polycarp",
+      "father_name": "St. Polycarp of Smyrna",
+      "work": "Letter to the Philippians",
+      "locator": "Opening salutation",
+      "source_id": "apostolic-fathers-1870",
+      "section_index": 83,
+      "paragraph_index": 0,
+      "quote": "Polycarp, and the presbyters[317] with him, to the church of God sojourning at Philippi: Mercy to you, and peace from God Almighty, and from the Lord Jesus Christ, our Saviour, be multiplied.",
+      "language": "English",
+      "original_language_available_in_this_edition": false,
+      "edition": "Ante-Nicene Christian Library, vol. I",
+      "translators": "Alexander Roberts, James Donaldson, F. Crombie",
+      "publication_year": 1870,
+      "rights": "Public domain edition; Project Gutenberg eBook 77576",
+      "context": "The salutation identifies Polycarp together with the presbyters and addresses the Christian community at Philippi.",
+      "topics": [
+        "Church",
+        "presbyters",
+        "Christ",
+        "salutation"
+      ],
+      "reader_url": "patristic-reader.html?source=apostolic-fathers-1870&section=83"
+    },
+    {
+      "id": "origen-contra-celsum-1-truth",
+      "father_id": "origen",
+      "father_name": "Origen of Alexandria",
+      "work": "Contra Celsum",
+      "locator": "Book I, Chapter 1",
+      "source_id": "origen-vol-1-1869",
+      "section_index": 140,
+      "paragraph_index": 0,
+      "quote": "It is not irrational, then, to form associations in opposition to existing laws, if done for the sake of the truth.",
+      "language": "English",
+      "original_language_available_in_this_edition": false,
+      "edition": "Ante-Nicene Christian Library",
+      "translators": "Frederick Crombie",
+      "publication_year": 1869,
+      "rights": "Public domain edition; Project Gutenberg eBook 70561",
+      "context": "Origen is answering Celsus' accusation that Christian associations were unlawful, arguing that unjust laws cannot be the final measure of truth.",
+      "topics": [
+        "apologetics",
+        "truth",
+        "Christian community",
+        "Celsus"
+      ],
+      "reader_url": "patristic-reader.html?source=origen-vol-1-1869&section=140"
+    }
+  ]
+}
