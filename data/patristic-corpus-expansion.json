@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-10-05",
+  "purpose": "Rights-checked acquisition queue for expanding Mercy's local patristic primary-text corpus. Entries remain pending until a stable reusable text source is ingested and validated.",
+  "policy": [
+    "Prefer scans or transcriptions of historical public-domain editions from repositories that state reuse rights clearly.",
+    "Do not copy modern introductions, annotations, translations, website descriptions or database enhancements unless separately licensed.",
+    "Keep original ancient work, historical translation, modern editorial material and Mercy metadata distinct.",
+    "Record volume, editor, translator when identifiable, publication date, host, rights evidence, checksum and acquisition date.",
+    "Do not mark a Father as locally available until the actual text files have been generated under data/patristic-corpus and pass validation."
+  ],
+  "verified_collections": [
+    {
+      "id": "anf-1885-1896-loc",
+      "title": "The Ante-Nicene Fathers: Translations of the Writings of the Fathers down to A.D. 325",
+      "publication": "Buffalo: Christian Literature Publishing Company, 1885–1896",
+      "host": "Library of Congress",
+      "collection_url": "https://www.loc.gov/item/27027909/",
+      "rights_evidence_url": "https://www.loc.gov/item/27027909/",
+      "rights_status": "Library of Congress states that the books in this collection are in the public domain and free to use and reuse.",
+      "planned_fathers": [
+        "Justin Martyr",
+        "Irenaeus of Lyons",
+        "Clement of Alexandria",
+        "Tertullian",
+        "Cyprian of Carthage",
+        "Gregory Thaumaturgus",
+        "Athenagoras",
+        "Methodius",
+        "Theophilus of Antioch"
+      ],
+      "acquisition_status": "verified_source_found_pending_ingest"
+    },
+    {
+      "id": "npnf-series1-public-domain",
+      "title": "A Select Library of the Nicene and Post-Nicene Fathers, Series I",
+      "publication": "19th-century English edition, edited by Philip Schaff",
+      "host": "Wikisource / public-domain historical scans",
+      "collection_url": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers",
+      "rights_evidence_url": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers",
+      "rights_status": "Historical edition is marked public domain in the United States.",
+      "planned_fathers": [
+        "Augustine of Hippo",
+        "John Chrysostom"
+      ],
+      "acquisition_status": "verified_source_found_pending_ingest"
+    },
+    {
+      "id": "npnf-series2-public-domain",
+      "title": "A Select Library of the Nicene and Post-Nicene Fathers, Series II",
+      "publication": "1890–1900 English edition, edited by Philip Schaff and Henry Wace",
+      "host": "Wikimedia Commons / Internet Archive historical scans",
+      "collection_url": "https://commons.wikimedia.org/wiki/File:A_Select_library_of_Nicene_and_post-Nicene_fathers_of_the_Christian_church._Second_series_(IA_cu31924092893399).pdf",
+      "rights_evidence_url": "https://commons.wikimedia.org/wiki/File:A_Select_library_of_Nicene_and_post-Nicene_fathers_of_the_Christian_church._Second_series_(IA_cu31924092893399).pdf",
+      "rights_status": "The historical scan is marked public domain and free of known restrictions.",
+      "planned_fathers": [
+        "Athanasius of Alexandria",
+        "Basil the Great",
+        "Gregory of Nazianzus",
+        "Gregory of Nyssa",
+        "Cyril of Jerusalem",
+        "Hilary of Poitiers",
+        "John Damascene",
+        "Ambrose of Milan",
+        "Vincent of Lerins",
+        "Leo the Great",
+        "Gregory the Great",
+        "Ephrem the Syrian"
+      ],
+      "acquisition_status": "verified_source_found_pending_ingest"
+    }
+  ],
+  "next_ingest_priority": [
+    "Justin Martyr",
+    "Irenaeus of Lyons",
+    "Athanasius of Alexandria",
+    "Basil the Great",
+    "Gregory of Nazianzus",
+    "Gregory of Nyssa",
+    "John Chrysostom",
+    "Cyril of Jerusalem",
+    "Ambrose of Milan",
+    "Augustine of Hippo",
+    "Leo the Great",
+    "Gregory the Great",
+    "Ephrem the Syrian",
+    "John Damascene"
+  ]
+}
