@@ -1,0 +1,680 @@
+{
+  "id": "npnf212-leo-gregory-1895",
+  "title": "NPNF II, Vol. XII — Leo the Great and Gregory the Great",
+  "author_label": "St. Leo the Great; St. Gregory the Great",
+  "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. XII",
+  "translators": "Historical NPNF translators under Philip Schaff and Henry Wace",
+  "publication_year": 1895,
+  "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+  "source_url": "https://www.ccel.org/ccel/s/schaff/npnf212/cache/npnf212.txt",
+  "gutenberg_id": null,
+  "source_type": "ccel_plain_text",
+  "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf212.html",
+  "caution": "Historical public-domain English translations.",
+  "expected_works": [
+    "Letters of Leo the Great",
+    "Sermons of Leo the Great",
+    "Tome to Flavian",
+    "Pastoral Rule of Gregory the Great",
+    "Letters of Gregory the Great"
+  ],
+  "sha256": "7bb1db6e2f6814b58dd13a7b85f17f37f80c22ac979c3298793db1fa909b5b5a",
+  "section_count": 109,
+  "word_count": 448029,
+  "toc": [
+    {
+      "index": 1,
+      "heading": "NPNF II, Vol. XII — Leo the Great and Gregory the Great",
+      "file": "0001-npnf-ii-vol-xii-leo-the-great-and-gregory-the-great.json",
+      "words": 39
+    },
+    {
+      "index": 2,
+      "heading": "A SELECT LIBRARY",
+      "file": "0002-a-select-library.json",
+      "words": 0
+    },
+    {
+      "index": 3,
+      "heading": "OF THE",
+      "file": "0003-of-the.json",
+      "words": 0
+    },
+    {
+      "index": 4,
+      "heading": "NICENE AND",
+      "file": "0004-nicene-and.json",
+      "words": 0
+    },
+    {
+      "index": 5,
+      "heading": "POST-NICENE FATHERS",
+      "file": "0005-post-nicene-fathers.json",
+      "words": 1
+    },
+    {
+      "index": 6,
+      "heading": "THE CHRISTIAN CHURCH.",
+      "file": "0006-the-christian-church.json",
+      "words": 0
+    },
+    {
+      "index": 7,
+      "heading": "SECOND SERIES",
+      "file": "0007-second-series.json",
+      "words": 0
+    },
+    {
+      "index": 8,
+      "heading": "VOLUME XII",
+      "file": "0008-volume-xii.json",
+      "words": 8
+    },
+    {
+      "index": 9,
+      "heading": "EDINBURGH",
+      "file": "0009-edinburgh.json",
+      "words": 1
+    },
+    {
+      "index": 10,
+      "heading": "WM. B. EERDMANS PUBLISHING COMPANY",
+      "file": "0010-wm-b-eerdmans-publishing-company.json",
+      "words": 0
+    },
+    {
+      "index": 11,
+      "heading": "GRAND RAPIDS, MICHIGAN",
+      "file": "0011-grand-rapids-michigan.json",
+      "words": 3
+    },
+    {
+      "index": 12,
+      "heading": "LETTERS AND SERMONS",
+      "file": "0012-letters-and-sermons.json",
+      "words": 1
+    },
+    {
+      "index": 13,
+      "heading": "LEO THE GREAT",
+      "file": "0013-leo-the-great.json",
+      "words": 0
+    },
+    {
+      "index": 14,
+      "heading": "BISHOP OF ROME,",
+      "file": "0014-bishop-of-rome.json",
+      "words": 8
+    },
+    {
+      "index": 15,
+      "heading": "REV. CHARLES LETT FELTOE, M.A.,",
+      "file": "0015-rev-charles-lett-feltoe-m-a.json",
+      "words": 0
+    },
+    {
+      "index": 16,
+      "heading": "LATE FELLOW OF CLARE COLLEGE, CAMBRIDGE.",
+      "file": "0016-late-fellow-of-clare-college-cambridge.json",
+      "words": 309
+    },
+    {
+      "index": 17,
+      "heading": "Introduction.",
+      "file": "0017-introduction.json",
+      "words": 18054
+    },
+    {
+      "index": 18,
+      "heading": "Introduction, p. vi.: for his degradation, cf. Letter XII., chap. ix.,",
+      "file": "0018-introduction-p-vi-for-his-degradation-cf-letter-xii-chap-ix.json",
+      "words": 56409
+    },
+    {
+      "index": 19,
+      "heading": "Introduction, p. viii.",
+      "file": "0019-introduction-p-viii.json",
+      "words": 121007
+    },
+    {
+      "index": 20,
+      "heading": "Book of Pastoral Rule,",
+      "file": "0020-book-of-pastoral-rule.json",
+      "words": 4
+    },
+    {
+      "index": 21,
+      "heading": "GREGORY THE GREAT",
+      "file": "0021-gregory-the-great.json",
+      "words": 0
+    },
+    {
+      "index": 22,
+      "heading": "BISHOP OF ROME,",
+      "file": "0022-bishop-of-rome-2.json",
+      "words": 8630
+    },
+    {
+      "index": 23,
+      "heading": "Book I. Indiction IX. (a.d. 590-1.)",
+      "file": "0023-book-i-indiction-ix-a-d-590-1.json",
+      "words": 872
+    },
+    {
+      "index": 24,
+      "heading": "Book II. Indiction X. (a.d. 591-2.)",
+      "file": "0024-book-ii-indiction-x-a-d-591-2.json",
+      "words": 1484
+    },
+    {
+      "index": 25,
+      "heading": "Book III. Indiction XI. (a.d. 592-3).",
+      "file": "0025-book-iii-indiction-xi-a-d-592-3.json",
+      "words": 585
+    },
+    {
+      "index": 26,
+      "heading": "Book IV. Indiction XII. (a.d. 593-4).",
+      "file": "0026-book-iv-indiction-xii-a-d-593-4.json",
+      "words": 154
+    },
+    {
+      "index": 27,
+      "heading": "Book V. Indiction XIII. (a.d. 594-5).",
+      "file": "0027-book-v-indiction-xiii-a-d-594-5.json",
+      "words": 2181
+    },
+    {
+      "index": 28,
+      "heading": "Book VI. Indiction XIV. (a.d. 595-6).",
+      "file": "0028-book-vi-indiction-xiv-a-d-595-6.json",
+      "words": 1058
+    },
+    {
+      "index": 29,
+      "heading": "Book VII. Indiction XV. (a.d. 596-7), and Book VIII. Indiction I.",
+      "file": "0029-book-vii-indiction-xv-a-d-596-7-and-book-viii-indiction-i.json",
+      "words": 71
+    },
+    {
+      "index": 30,
+      "heading": "VIII. 22).",
+      "file": "0030-viii-22.json",
+      "words": 0
+    },
+    {
+      "index": 31,
+      "heading": "Book IX. Indiction II. (a.d. 598-9)",
+      "file": "0031-book-ix-indiction-ii-a-d-598-9.json",
+      "words": 133
+    },
+    {
+      "index": 32,
+      "heading": "Book XI. Indiction IV. (a.d. 600-1).",
+      "file": "0032-book-xi-indiction-iv-a-d-600-1.json",
+      "words": 202
+    },
+    {
+      "index": 33,
+      "heading": "Book XIII. Indiction V. (a.d. 602-3).",
+      "file": "0033-book-xiii-indiction-v-a-d-602-3.json",
+      "words": 887
+    },
+    {
+      "index": 34,
+      "heading": "Book XIV. Indiction VII. (a.d. 603-4.)",
+      "file": "0034-book-xiv-indiction-vii-a-d-603-4.json",
+      "words": 1585
+    },
+    {
+      "index": 35,
+      "heading": "Preface.",
+      "file": "0035-preface.json",
+      "words": 1545
+    },
+    {
+      "index": 36,
+      "heading": "Chapter I.",
+      "file": "0036-chapter-i.json",
+      "words": 765
+    },
+    {
+      "index": 37,
+      "heading": "Chapter II.",
+      "file": "0037-chapter-ii.json",
+      "words": 507
+    },
+    {
+      "index": 38,
+      "heading": "Chapter III.",
+      "file": "0038-chapter-iii.json",
+      "words": 590
+    },
+    {
+      "index": 39,
+      "heading": "Chapter IV.",
+      "file": "0039-chapter-iv.json",
+      "words": 596
+    },
+    {
+      "index": 40,
+      "heading": "Chapter V.",
+      "file": "0040-chapter-v.json",
+      "words": 707
+    },
+    {
+      "index": 41,
+      "heading": "Chapter VI.",
+      "file": "0041-chapter-vi.json",
+      "words": 155
+    },
+    {
+      "index": 42,
+      "heading": "Chapter VII.",
+      "file": "0042-chapter-vii.json",
+      "words": 535
+    },
+    {
+      "index": 43,
+      "heading": "Chapter VIII.",
+      "file": "0043-chapter-viii.json",
+      "words": 446
+    },
+    {
+      "index": 44,
+      "heading": "Chapter IX.",
+      "file": "0044-chapter-ix.json",
+      "words": 682
+    },
+    {
+      "index": 45,
+      "heading": "Chapter X.",
+      "file": "0045-chapter-x.json",
+      "words": 490
+    },
+    {
+      "index": 46,
+      "heading": "Chapter XI.",
+      "file": "0046-chapter-xi.json",
+      "words": 1792
+    },
+    {
+      "index": 47,
+      "heading": "Chapter I.",
+      "file": "0047-chapter-i-2.json",
+      "words": 177
+    },
+    {
+      "index": 48,
+      "heading": "Chapter II.",
+      "file": "0048-chapter-ii-2.json",
+      "words": 750
+    },
+    {
+      "index": 49,
+      "heading": "Chapter III.",
+      "file": "0049-chapter-iii-2.json",
+      "words": 1080
+    },
+    {
+      "index": 50,
+      "heading": "Chapter IV.",
+      "file": "0050-chapter-iv-2.json",
+      "words": 1320
+    },
+    {
+      "index": 51,
+      "heading": "Chapter V.",
+      "file": "0051-chapter-v-2.json",
+      "words": 1169
+    },
+    {
+      "index": 52,
+      "heading": "Chapter VI.",
+      "file": "0052-chapter-vi-2.json",
+      "words": 2683
+    },
+    {
+      "index": 53,
+      "heading": "Chapter VII.",
+      "file": "0053-chapter-vii-2.json",
+      "words": 2448
+    },
+    {
+      "index": 54,
+      "heading": "Chapter VIII.",
+      "file": "0054-chapter-viii-2.json",
+      "words": 920
+    },
+    {
+      "index": 55,
+      "heading": "Chapter IX.",
+      "file": "0055-chapter-ix-2.json",
+      "words": 198
+    },
+    {
+      "index": 56,
+      "heading": "Chapter X.",
+      "file": "0056-chapter-x-2.json",
+      "words": 2477
+    },
+    {
+      "index": 57,
+      "heading": "Chapter XI.",
+      "file": "0057-chapter-xi-2.json",
+      "words": 965
+    },
+    {
+      "index": 58,
+      "heading": "Chapter I.",
+      "file": "0058-chapter-i-3.json",
+      "words": 585
+    },
+    {
+      "index": 59,
+      "heading": "Chapter II.",
+      "file": "0059-chapter-ii-3.json",
+      "words": 896
+    },
+    {
+      "index": 60,
+      "heading": "Chapter III.",
+      "file": "0060-chapter-iii-3.json",
+      "words": 224
+    },
+    {
+      "index": 61,
+      "heading": "Chapter IV.",
+      "file": "0061-chapter-iv-3.json",
+      "words": 1454
+    },
+    {
+      "index": 62,
+      "heading": "Chapter V.",
+      "file": "0062-chapter-v-3.json",
+      "words": 217
+    },
+    {
+      "index": 63,
+      "heading": "Chapter VI.",
+      "file": "0063-chapter-vi-3.json",
+      "words": 432
+    },
+    {
+      "index": 64,
+      "heading": "Chapter VII.",
+      "file": "0064-chapter-vii-3.json",
+      "words": 287
+    },
+    {
+      "index": 65,
+      "heading": "Chapter VIII.",
+      "file": "0065-chapter-viii-3.json",
+      "words": 827
+    },
+    {
+      "index": 66,
+      "heading": "Chapter IX.",
+      "file": "0066-chapter-ix-3.json",
+      "words": 1940
+    },
+    {
+      "index": 67,
+      "heading": "Chapter X.",
+      "file": "0067-chapter-x-3.json",
+      "words": 975
+    },
+    {
+      "index": 68,
+      "heading": "Chapter XI.",
+      "file": "0068-chapter-xi-3.json",
+      "words": 1246
+    },
+    {
+      "index": 69,
+      "heading": "Chapter XII.",
+      "file": "0069-chapter-xii.json",
+      "words": 1907
+    },
+    {
+      "index": 70,
+      "heading": "Chapter XIII.",
+      "file": "0070-chapter-xiii.json",
+      "words": 1016
+    },
+    {
+      "index": 71,
+      "heading": "Chapter XIV.",
+      "file": "0071-chapter-xiv.json",
+      "words": 1486
+    },
+    {
+      "index": 72,
+      "heading": "Chapter XV.",
+      "file": "0072-chapter-xv.json",
+      "words": 846
+    },
+    {
+      "index": 73,
+      "heading": "Chapter XVI.",
+      "file": "0073-chapter-xvi.json",
+      "words": 1253
+    },
+    {
+      "index": 74,
+      "heading": "Chapter XVII.",
+      "file": "0074-chapter-xvii.json",
+      "words": 1205
+    },
+    {
+      "index": 75,
+      "heading": "Chapter XVIII.",
+      "file": "0075-chapter-xviii.json",
+      "words": 661
+    },
+    {
+      "index": 76,
+      "heading": "Chapter XIX.",
+      "file": "0076-chapter-xix.json",
+      "words": 1535
+    },
+    {
+      "index": 77,
+      "heading": "Chapter XX.",
+      "file": "0077-chapter-xx.json",
+      "words": 2098
+    },
+    {
+      "index": 78,
+      "heading": "Chapter XXI.",
+      "file": "0078-chapter-xxi.json",
+      "words": 1256
+    },
+    {
+      "index": 79,
+      "heading": "Chapter XXII.",
+      "file": "0079-chapter-xxii.json",
+      "words": 1826
+    },
+    {
+      "index": 80,
+      "heading": "Chapter XXIII.",
+      "file": "0080-chapter-xxiii.json",
+      "words": 998
+    },
+    {
+      "index": 81,
+      "heading": "Chapter XXIV.",
+      "file": "0081-chapter-xxiv.json",
+      "words": 1482
+    },
+    {
+      "index": 82,
+      "heading": "Chapter XXV.",
+      "file": "0082-chapter-xxv.json",
+      "words": 1903
+    },
+    {
+      "index": 83,
+      "heading": "Chapter XXVI.",
+      "file": "0083-chapter-xxvi.json",
+      "words": 1424
+    },
+    {
+      "index": 84,
+      "heading": "Chapter XXVII.",
+      "file": "0084-chapter-xxvii.json",
+      "words": 1871
+    },
+    {
+      "index": 85,
+      "heading": "Chapter XXVIII.",
+      "file": "0085-chapter-xxviii.json",
+      "words": 1943
+    },
+    {
+      "index": 86,
+      "heading": "Chapter XXIX.",
+      "file": "0086-chapter-xxix.json",
+      "words": 1385
+    },
+    {
+      "index": 87,
+      "heading": "Chapter XXX.",
+      "file": "0087-chapter-xxx.json",
+      "words": 1462
+    },
+    {
+      "index": 88,
+      "heading": "Chapter XXXI.",
+      "file": "0088-chapter-xxxi.json",
+      "words": 727
+    },
+    {
+      "index": 89,
+      "heading": "Chapter XXXII.",
+      "file": "0089-chapter-xxxii.json",
+      "words": 1274
+    },
+    {
+      "index": 90,
+      "heading": "Chapter XXXIII.",
+      "file": "0090-chapter-xxxiii.json",
+      "words": 842
+    },
+    {
+      "index": 91,
+      "heading": "Chapter XXXIV.",
+      "file": "0091-chapter-xxxiv.json",
+      "words": 1597
+    },
+    {
+      "index": 92,
+      "heading": "Chapter XXXV.",
+      "file": "0092-chapter-xxxv.json",
+      "words": 1176
+    },
+    {
+      "index": 93,
+      "heading": "Chapter XXXVI.",
+      "file": "0093-chapter-xxxvi.json",
+      "words": 454
+    },
+    {
+      "index": 94,
+      "heading": "Chapter XXXVII.",
+      "file": "0094-chapter-xxxvii.json",
+      "words": 420
+    },
+    {
+      "index": 95,
+      "heading": "Chapter XXXVIII.",
+      "file": "0095-chapter-xxxviii.json",
+      "words": 441
+    },
+    {
+      "index": 96,
+      "heading": "Chapter XXXIX.",
+      "file": "0096-chapter-xxxix.json",
+      "words": 436
+    },
+    {
+      "index": 97,
+      "heading": "Chapter XL.",
+      "file": "0097-chapter-xl.json",
+      "words": 1401
+    },
+    {
+      "index": 98,
+      "heading": "Book I.",
+      "file": "0098-book-i.json",
+      "words": 26984
+    },
+    {
+      "index": 99,
+      "heading": "Book II.",
+      "file": "0099-book-ii.json",
+      "words": 18044
+    },
+    {
+      "index": 100,
+      "heading": "Book of Rules, addressed to Saint Gregory, pope of the city of Rome",
+      "file": "0100-book-of-rules-addressed-to-saint-gregory-pope-of-the-city-of-rome.json",
+      "words": 1672
+    },
+    {
+      "index": 101,
+      "heading": "Book III.",
+      "file": "0101-book-iii.json",
+      "words": 17368
+    },
+    {
+      "index": 102,
+      "heading": "VII. 34.",
+      "file": "0102-vii-34.json",
+      "words": 3663
+    },
+    {
+      "index": 103,
+      "heading": "Book IV.",
+      "file": "0103-book-iv.json",
+      "words": 16815
+    },
+    {
+      "index": 104,
+      "heading": "Book V.",
+      "file": "0104-book-v.json",
+      "words": 19030
+    },
+    {
+      "index": 105,
+      "heading": "LVII., LVIII.",
+      "file": "0105-lvii-lviii.json",
+      "words": 5173
+    },
+    {
+      "index": 106,
+      "heading": "Book VI.",
+      "file": "0106-book-vi.json",
+      "words": 19603
+    },
+    {
+      "index": 107,
+      "heading": "Book VII.",
+      "file": "0107-book-vii.json",
+      "words": 18971
+    },
+    {
+      "index": 108,
+      "heading": "Book VIII.",
+      "file": "0108-book-viii.json",
+      "words": 7689
+    },
+    {
+      "index": 109,
+      "heading": "VII. 31, IX. 82.",
+      "file": "0109-vii-31-ix-82.json",
+      "words": 10926
+    }
+  ]
+}

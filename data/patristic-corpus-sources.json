@@ -123,6 +123,322 @@
         "Fragments from the Lost Writings of Irenaeus"
       ],
       "caution": "The historical public-domain volume is ingested as a complete source because its plain-text edition contains the Apostolic Fathers before Justin and Irenaeus. Mercy's earlier 1870 Apostolic Fathers source remains separately preserved; modern CCEL summaries, cover art, and other website-specific content are not part of the vendored text."
+    },
+    {
+      "id": "npnf204-athanasius-1892",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF II, Vol. IV — Athanasius: Select Works and Letters",
+      "author_label": "St. Athanasius of Alexandria",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. IV",
+      "translators": "Historical NPNF translators under Philip Schaff and Henry Wace",
+      "publication_year": 1892,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf204/cache/npnf204.txt",
+      "rights_evidence_url": "https://ccel.org/s/schaff/npnf204/cache/npnf204.html3?scrBook=Matt&scrCh=12",
+      "expected_works": [
+        "On the Incarnation",
+        "Orations Against the Arians",
+        "Life of Antony",
+        "Letters of Athanasius",
+        "Festal Letters"
+      ],
+      "caution": "Historical public-domain English translations. Modern CCEL summaries and site-specific editorial material are not treated as patristic primary text."
+    },
+    {
+      "id": "npnf205-gregory-nyssa-1892",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF II, Vol. V — Gregory of Nyssa: Dogmatic Treatises, Etc.",
+      "author_label": "St. Gregory of Nyssa",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. V",
+      "translators": "William Moore; Henry Austin Wilson; historical NPNF contributors",
+      "publication_year": 1892,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf205/cache/npnf205.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf205.html",
+      "expected_works": [
+        "Against Eunomius",
+        "On the Making of Man",
+        "On the Soul and the Resurrection",
+        "Great Catechism",
+        "On Virginity",
+        "Letters"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf206-jerome-1892",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF II, Vol. VI — Jerome: Principal Works",
+      "author_label": "St. Jerome",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. VI",
+      "translators": "W. H. Fremantle, with G. Lewis and W. G. Martley",
+      "publication_year": 1892,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf206/cache/npnf206.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf206.html",
+      "expected_works": [
+        "Letters of Jerome",
+        "Against Jovinianus",
+        "Against Vigilantius",
+        "Against the Pelagians",
+        "Prefaces and select works"
+      ],
+      "caution": "Historical public-domain English translations; Jerome's complete corpus is larger than this selected volume."
+    },
+    {
+      "id": "npnf207-cyril-gregory-nazianzen-1894",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF II, Vol. VII — Cyril of Jerusalem and Gregory Nazianzen",
+      "author_label": "St. Cyril of Jerusalem; St. Gregory of Nazianzus",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. VII",
+      "translators": "Historical NPNF translators under Philip Schaff and Henry Wace",
+      "publication_year": 1894,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf207/cache/npnf207.txt",
+      "rights_evidence_url": "https://ccel.org/ccel/schaff/npnf207/npnf207.i.html",
+      "expected_works": [
+        "Catechetical Lectures",
+        "Mystagogical Catecheses",
+        "Theological Orations",
+        "Orations of Gregory Nazianzen",
+        "Letters of Gregory Nazianzen"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf208-basil-1895",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF II, Vol. VIII — Basil: Letters and Select Works",
+      "author_label": "St. Basil the Great",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. VIII",
+      "translators": "Historical NPNF translators under Philip Schaff and Henry Wace",
+      "publication_year": 1895,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf208/cache/npnf208.txt",
+      "rights_evidence_url": "https://ccel.org/ccel/schaff/npnf208",
+      "expected_works": [
+        "On the Holy Spirit",
+        "Hexaemeron",
+        "Letters of Basil",
+        "Select ascetical and doctrinal works"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf209-hilary-john-damascene-1899",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF II, Vol. IX — Hilary of Poitiers and John of Damascus",
+      "author_label": "St. Hilary of Poitiers; St. John Damascene",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. IX",
+      "translators": "Historical NPNF translators under Philip Schaff and Henry Wace",
+      "publication_year": 1899,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf209/cache/npnf209.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf209.toc.html",
+      "expected_works": [
+        "On the Trinity",
+        "On the Councils",
+        "Homilies on the Psalms",
+        "Exposition of the Orthodox Faith"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf210-ambrose-1896",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF II, Vol. X — Ambrose: Select Works and Letters",
+      "author_label": "St. Ambrose of Milan",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. X",
+      "translators": "Historical NPNF translators under Philip Schaff and Henry Wace",
+      "publication_year": 1896,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf210/cache/npnf210.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf210.html",
+      "expected_works": [
+        "On the Duties of the Clergy",
+        "On the Holy Spirit",
+        "On the Mysteries",
+        "Letters of Ambrose",
+        "Select doctrinal works"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf212-leo-gregory-1895",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF II, Vol. XII — Leo the Great and Gregory the Great",
+      "author_label": "St. Leo the Great; St. Gregory the Great",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. XII",
+      "translators": "Historical NPNF translators under Philip Schaff and Henry Wace",
+      "publication_year": 1895,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf212/cache/npnf212.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf212.html",
+      "expected_works": [
+        "Letters of Leo the Great",
+        "Sermons of Leo the Great",
+        "Tome to Flavian",
+        "Pastoral Rule of Gregory the Great",
+        "Letters of Gregory the Great"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf213-gregory-ephrem-1898",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF II, Vol. XIII — Gregory the Great II, Ephrem Syrus, Aphrahat",
+      "author_label": "St. Gregory the Great; St. Ephrem the Syrian; Aphrahat",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. XIII",
+      "translators": "Historical NPNF translators under Philip Schaff and Henry Wace",
+      "publication_year": 1898,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf213/cache/npnf213.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf213.html",
+      "expected_works": [
+        "Gregory the Great: select works",
+        "Ephrem Syrus: select hymns and writings",
+        "Aphrahat: select demonstrations"
+      ],
+      "caution": "This is a selected historical English corpus, not the complete Syriac works of Ephrem."
+    },
+    {
+      "id": "npnf101-augustine-confessions-1886",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF I, Vol. I — Augustine: Confessions and Letters",
+      "author_label": "St. Augustine of Hippo",
+      "edition": "Nicene and Post-Nicene Fathers, First Series, vol. I",
+      "translators": "Historical NPNF translators under Philip Schaff",
+      "publication_year": 1886,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf101/cache/npnf101.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf101",
+      "expected_works": [
+        "Confessions",
+        "Letters of St. Augustine",
+        "Life and introductory materials"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf102-augustine-city-god-1887",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF I, Vol. II — Augustine: City of God and Christian Doctrine",
+      "author_label": "St. Augustine of Hippo",
+      "edition": "Nicene and Post-Nicene Fathers, First Series, vol. II",
+      "translators": "Historical NPNF translators under Philip Schaff",
+      "publication_year": 1887,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf102/cache/npnf102.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf102",
+      "expected_works": [
+        "City of God",
+        "On Christian Doctrine"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf103-augustine-trinity-1887",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF I, Vol. III — Augustine: On the Holy Trinity and Doctrinal Treatises",
+      "author_label": "St. Augustine of Hippo",
+      "edition": "Nicene and Post-Nicene Fathers, First Series, vol. III",
+      "translators": "Historical NPNF translators under Philip Schaff",
+      "publication_year": 1887,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf103/cache/npnf103.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf103",
+      "expected_works": [
+        "On the Holy Trinity",
+        "Enchiridion",
+        "Select doctrinal treatises"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf107-augustine-john-homilies-1888",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF I, Vol. VII — Augustine: Homilies on John and 1 John",
+      "author_label": "St. Augustine of Hippo",
+      "edition": "Nicene and Post-Nicene Fathers, First Series, vol. VII",
+      "translators": "Historical NPNF translators under Philip Schaff",
+      "publication_year": 1888,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf107/cache/npnf107.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf107",
+      "expected_works": [
+        "Tractates on the Gospel of John",
+        "Homilies on the First Epistle of John"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf109-chrysostom-priesthood-homilies-1889",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF I, Vol. IX — John Chrysostom: Priesthood, Ascetic Treatises, Homilies and Letters",
+      "author_label": "St. John Chrysostom",
+      "edition": "Nicene and Post-Nicene Fathers, First Series, vol. IX",
+      "translators": "Historical NPNF translators under Philip Schaff",
+      "publication_year": 1889,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf109/cache/npnf109.txt",
+      "rights_evidence_url": "https://ccel.org/s/schaff/npnf109/index.html",
+      "expected_works": [
+        "On the Priesthood",
+        "Ascetic Treatises",
+        "Select Homilies",
+        "Letters",
+        "Homilies on the Statues"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf110-chrysostom-matthew-1888",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF I, Vol. X — John Chrysostom: Homilies on Matthew",
+      "author_label": "St. John Chrysostom",
+      "edition": "Nicene and Post-Nicene Fathers, First Series, vol. X",
+      "translators": "Historical NPNF translators under Philip Schaff",
+      "publication_year": 1888,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf110/cache/npnf110.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf110",
+      "expected_works": [
+        "Homilies on the Gospel of Matthew"
+      ],
+      "caution": "Historical public-domain English translations."
+    },
+    {
+      "id": "npnf114-chrysostom-john-hebrews-1889",
+      "corpus": "nicene-post-nicene",
+      "title": "NPNF I, Vol. XIV — John Chrysostom: Homilies on John and Hebrews",
+      "author_label": "St. John Chrysostom",
+      "edition": "Nicene and Post-Nicene Fathers, First Series, vol. XIV",
+      "translators": "Historical NPNF translators under Philip Schaff",
+      "publication_year": 1889,
+      "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+      "source_type": "ccel_plain_text",
+      "source_url": "https://www.ccel.org/ccel/s/schaff/npnf114/cache/npnf114.txt",
+      "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf114",
+      "expected_works": [
+        "Homilies on the Gospel of John",
+        "Homilies on Hebrews"
+      ],
+      "caution": "Historical public-domain English translations."
     }
   ],
   "lost_or_fragmentary": [

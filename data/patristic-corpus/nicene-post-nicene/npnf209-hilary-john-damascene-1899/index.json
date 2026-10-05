@@ -1,0 +1,961 @@
+{
+  "id": "npnf209-hilary-john-damascene-1899",
+  "title": "NPNF II, Vol. IX — Hilary of Poitiers and John of Damascus",
+  "author_label": "St. Hilary of Poitiers; St. John Damascene",
+  "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. IX",
+  "translators": "Historical NPNF translators under Philip Schaff and Henry Wace",
+  "publication_year": 1899,
+  "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+  "source_url": "https://www.ccel.org/ccel/s/schaff/npnf209/cache/npnf209.txt",
+  "gutenberg_id": null,
+  "source_type": "ccel_plain_text",
+  "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf209.toc.html",
+  "caution": "Historical public-domain English translations.",
+  "expected_works": [
+    "On the Trinity",
+    "On the Councils",
+    "Homilies on the Psalms",
+    "Exposition of the Orthodox Faith"
+  ],
+  "sha256": "859ba34cc5998f2761b801aa5de724b2ea741a54d98e21614faeb89cc40f8ad4",
+  "section_count": 156,
+  "word_count": 411046,
+  "toc": [
+    {
+      "index": 1,
+      "heading": "NPNF II, Vol. IX — Hilary of Poitiers and John of Damascus",
+      "file": "0001-npnf-ii-vol-ix-hilary-of-poitiers-and-john-of-damascus.json",
+      "words": 46
+    },
+    {
+      "index": 2,
+      "heading": "A SELECT LIBRARY",
+      "file": "0002-a-select-library.json",
+      "words": 0
+    },
+    {
+      "index": 3,
+      "heading": "OF THE",
+      "file": "0003-of-the.json",
+      "words": 0
+    },
+    {
+      "index": 4,
+      "heading": "NICENE AND",
+      "file": "0004-nicene-and.json",
+      "words": 0
+    },
+    {
+      "index": 5,
+      "heading": "POST-NICENE FATHERS",
+      "file": "0005-post-nicene-fathers.json",
+      "words": 1
+    },
+    {
+      "index": 6,
+      "heading": "THE CHRISTIAN CHURCH.",
+      "file": "0006-the-christian-church.json",
+      "words": 0
+    },
+    {
+      "index": 7,
+      "heading": "SECOND SERIES",
+      "file": "0007-second-series.json",
+      "words": 0
+    },
+    {
+      "index": 8,
+      "heading": "TRANSLATED INTO ENGLISH WITH PROLEGOMENA AND EXPLANATORY NOTES.",
+      "file": "0008-translated-into-english-with-prolegomena-and-explanatory-notes.json",
+      "words": 2
+    },
+    {
+      "index": 9,
+      "heading": "PHILIP SCHAFF, D.D., LL.D.,",
+      "file": "0009-philip-schaff-d-d-ll-d.json",
+      "words": 0
+    },
+    {
+      "index": 10,
+      "heading": "PROFESSOR OF CHURCH HISTORY IN THE UNION THEOLOGICAL SEMINARY, NEW",
+      "file": "0010-professor-of-church-history-in-the-union-theological-seminary-new.json",
+      "words": 2
+    },
+    {
+      "index": 11,
+      "heading": "HENRY WACE, D.D.,",
+      "file": "0011-henry-wace-d-d.json",
+      "words": 0
+    },
+    {
+      "index": 12,
+      "heading": "PRINCIPAL OF KING'S COLLEGE, LONDON.",
+      "file": "0012-principal-of-king-s-college-london.json",
+      "words": 0
+    },
+    {
+      "index": 13,
+      "heading": "VOLUME IX",
+      "file": "0013-volume-ix.json",
+      "words": 8
+    },
+    {
+      "index": 14,
+      "heading": "EDINBURGH",
+      "file": "0014-edinburgh.json",
+      "words": 1
+    },
+    {
+      "index": 15,
+      "heading": "WM. B. EERDMANS PUBLISHING COMPANY",
+      "file": "0015-wm-b-eerdmans-publishing-company.json",
+      "words": 0
+    },
+    {
+      "index": 16,
+      "heading": "GRAND RAPIDS, MICHIGAN",
+      "file": "0016-grand-rapids-michigan.json",
+      "words": 57
+    },
+    {
+      "index": 17,
+      "heading": "Preface.",
+      "file": "0017-preface.json",
+      "words": 182
+    },
+    {
+      "index": 18,
+      "heading": "Introduction and a full half of the translation are from his hand,",
+      "file": "0018-introduction-and-a-full-half-of-the-translation-are-from-his-hand.json",
+      "words": 1273
+    },
+    {
+      "index": 19,
+      "heading": "Introduction.",
+      "file": "0019-introduction.json",
+      "words": 1
+    },
+    {
+      "index": 20,
+      "heading": "Chapter I.--The Life and Writings of St. Hilary of Poitiers.",
+      "file": "0020-chapter-i-the-life-and-writings-of-st-hilary-of-poitiers.json",
+      "words": 38476
+    },
+    {
+      "index": 21,
+      "heading": "Fragments, the secession from the party of Valens and Ursacius of an",
+      "file": "0021-fragments-the-secession-from-the-party-of-valens-and-ursacius-of-an.json",
+      "words": 5329
+    },
+    {
+      "index": 22,
+      "heading": "Chapter II.--The Theology of St. Hilary of Poitiers.",
+      "file": "0022-chapter-ii-the-theology-of-st-hilary-of-poitiers.json",
+      "words": 31750
+    },
+    {
+      "index": 23,
+      "heading": "Introduction to the Treatise De Synodis.",
+      "file": "0023-introduction-to-the-treatise-de-synodis.json",
+      "words": 25811
+    },
+    {
+      "index": 24,
+      "heading": "Introduction to the De Trinitate.",
+      "file": "0024-introduction-to-the-de-trinitate.json",
+      "words": 24
+    },
+    {
+      "index": 25,
+      "heading": "Introduction, it will suffice to give here a brief summary of its",
+      "file": "0025-introduction-it-will-suffice-to-give-here-a-brief-summary-of-its.json",
+      "words": 9
+    },
+    {
+      "index": 26,
+      "heading": "Book I. The treatise begins with St. Hilary's own spiritual history,",
+      "file": "0026-book-i-the-treatise-begins-with-st-hilary-s-own-spiritual-history.json",
+      "words": 441
+    },
+    {
+      "index": 27,
+      "heading": "Book II. He begins with the command to baptize all nations (St. Matt.",
+      "file": "0027-book-ii-he-begins-with-the-command-to-baptize-all-nations-st-matt.json",
+      "words": 302
+    },
+    {
+      "index": 28,
+      "heading": "Book III. In §§ 1-4, the words, I in the Father and the Father in Me,",
+      "file": "0028-book-iii-in-1-4-the-words-i-in-the-father-and-the-father-in-me.json",
+      "words": 204
+    },
+    {
+      "index": 29,
+      "heading": "Book IV. This book is in a sense the beginning of the treatise, and is",
+      "file": "0029-book-iv-this-book-is-in-a-sense-the-beginning-of-the-treatise-and-is.json",
+      "words": 301
+    },
+    {
+      "index": 30,
+      "heading": "Book V. Hilary now points out (§ 1) the controversial strength of the",
+      "file": "0030-book-v-hilary-now-points-out-1-the-controversial-strength-of-the.json",
+      "words": 376
+    },
+    {
+      "index": 31,
+      "heading": "Book VI. Hilary begins by lamenting the wide extension of Arianism; his",
+      "file": "0031-book-vi-hilary-begins-by-lamenting-the-wide-extension-of-arianism-his.json",
+      "words": 360
+    },
+    {
+      "index": 32,
+      "heading": "Book VII. The Arians are adepts at concealing their meaning; at the use",
+      "file": "0032-book-vii-the-arians-are-adepts-at-concealing-their-meaning-at-the-use.json",
+      "words": 403
+    },
+    {
+      "index": 33,
+      "heading": "Book VIII. Piety is necessary in a Bishop, but he needs also knowledge",
+      "file": "0033-book-viii-piety-is-necessary-in-a-bishop-but-he-needs-also-knowledge.json",
+      "words": 803
+    },
+    {
+      "index": 34,
+      "heading": "Book IX. After a summary (§ 1) of the results already obtained, Hilary",
+      "file": "0034-book-ix-after-a-summary-1-of-the-results-already-obtained-hilary.json",
+      "words": 954
+    },
+    {
+      "index": 35,
+      "heading": "Book X. Theological differences are not the result of honest reasoning,",
+      "file": "0035-book-x-theological-differences-are-not-the-result-of-honest-reasoning.json",
+      "words": 1053
+    },
+    {
+      "index": 36,
+      "heading": "Book XI. The Faith is one, even as God is One; but the faiths of",
+      "file": "0036-book-xi-the-faith-is-one-even-as-god-is-one-but-the-faiths-of.json",
+      "words": 641
+    },
+    {
+      "index": 37,
+      "heading": "Book XII. Hilary gives a final explanation of the great Arian text, The",
+      "file": "0037-book-xii-hilary-gives-a-final-explanation-of-the-great-arian-text-the.json",
+      "words": 627
+    },
+    {
+      "index": 38,
+      "heading": "Book I.",
+      "file": "0038-book-i.json",
+      "words": 10401
+    },
+    {
+      "index": 39,
+      "heading": "Book II.",
+      "file": "0039-book-ii.json",
+      "words": 9301
+    },
+    {
+      "index": 40,
+      "heading": "Book.",
+      "file": "0040-book.json",
+      "words": 612
+    },
+    {
+      "index": 41,
+      "heading": "Book III.",
+      "file": "0041-book-iii.json",
+      "words": 8224
+    },
+    {
+      "index": 42,
+      "heading": "Book IV.",
+      "file": "0042-book-iv.json",
+      "words": 13494
+    },
+    {
+      "index": 43,
+      "heading": "Book V.",
+      "file": "0043-book-v.json",
+      "words": 12096
+    },
+    {
+      "index": 44,
+      "heading": "Book VI.",
+      "file": "0044-book-vi.json",
+      "words": 18606
+    },
+    {
+      "index": 45,
+      "heading": "Book VII.",
+      "file": "0045-book-vii.json",
+      "words": 17446
+    },
+    {
+      "index": 46,
+      "heading": "Book VIII.",
+      "file": "0046-book-viii.json",
+      "words": 16835
+    },
+    {
+      "index": 47,
+      "heading": "Book IX.",
+      "file": "0047-book-ix.json",
+      "words": 26614
+    },
+    {
+      "index": 48,
+      "heading": "Book X.",
+      "file": "0048-book-x.json",
+      "words": 20653
+    },
+    {
+      "index": 49,
+      "heading": "Book XI.",
+      "file": "0049-book-xi.json",
+      "words": 14433
+    },
+    {
+      "index": 50,
+      "heading": "Book XII.",
+      "file": "0050-book-xii.json",
+      "words": 15095
+    },
+    {
+      "index": 51,
+      "heading": "Introduction to the Homilies on Psalms I., LIII., CXXX.",
+      "file": "0051-introduction-to-the-homilies-on-psalms-i-liii-cxxx.json",
+      "words": 14293
+    },
+    {
+      "index": 52,
+      "heading": "Book I.",
+      "file": "0052-book-i-2.json",
+      "words": 0
+    },
+    {
+      "index": 53,
+      "heading": "Chapter I.--That the Deity is incomprehensible, and that we ought not",
+      "file": "0053-chapter-i-that-the-deity-is-incomprehensible-and-that-we-ought-not.json",
+      "words": 403
+    },
+    {
+      "index": 54,
+      "heading": "Chapter II.--Concerning things utterable and things unutterable, and",
+      "file": "0054-chapter-ii-concerning-things-utterable-and-things-unutterable-and.json",
+      "words": 581
+    },
+    {
+      "index": 55,
+      "heading": "Chapter III.--Proof that there is a God.",
+      "file": "0055-chapter-iii-proof-that-there-is-a-god.json",
+      "words": 957
+    },
+    {
+      "index": 56,
+      "heading": "Chapter IV.--Concerning the nature of Deity: that it is",
+      "file": "0056-chapter-iv-concerning-the-nature-of-deity-that-it-is.json",
+      "words": 1032
+    },
+    {
+      "index": 57,
+      "heading": "Chapter V.--Proof that God is one and not many.",
+      "file": "0057-chapter-v-proof-that-god-is-one-and-not-many.json",
+      "words": 526
+    },
+    {
+      "index": 58,
+      "heading": "Chapter VI.--Concerning the Word and the Son of God: a reasoned proof.",
+      "file": "0058-chapter-vi-concerning-the-word-and-the-son-of-god-a-reasoned-proof.json",
+      "words": 424
+    },
+    {
+      "index": 59,
+      "heading": "Chapter VII.--Concerning the Holy Spirit, a reasoned proof.",
+      "file": "0059-chapter-vii-concerning-the-holy-spirit-a-reasoned-proof.json",
+      "words": 1069
+    },
+    {
+      "index": 60,
+      "heading": "Chapter VIII.--Concerning the Holy Trinity.",
+      "file": "0060-chapter-viii-concerning-the-holy-trinity.json",
+      "words": 6124
+    },
+    {
+      "index": 61,
+      "heading": "Chapter IX.--Concerning what is affirmed about God.",
+      "file": "0061-chapter-ix-concerning-what-is-affirmed-about-god.json",
+      "words": 682
+    },
+    {
+      "index": 62,
+      "heading": "Chapter X.--Concerning divine union and separation.",
+      "file": "0062-chapter-x-concerning-divine-union-and-separation.json",
+      "words": 346
+    },
+    {
+      "index": 63,
+      "heading": "Chapter XI.--Concerning what is affirmed about God as though He had",
+      "file": "0063-chapter-xi-concerning-what-is-affirmed-about-god-as-though-he-had.json",
+      "words": 595
+    },
+    {
+      "index": 64,
+      "heading": "Chapter XII.--Concerning the Same.",
+      "file": "0064-chapter-xii-concerning-the-same.json",
+      "words": 1570
+    },
+    {
+      "index": 65,
+      "heading": "Chapter XIII.--Concerning the place of God: and that the Deity alone is",
+      "file": "0065-chapter-xiii-concerning-the-place-of-god-and-that-the-deity-alone-is.json",
+      "words": 1623
+    },
+    {
+      "index": 66,
+      "heading": "Chapter XIV.--The properties of the divine nature.",
+      "file": "0066-chapter-xiv-the-properties-of-the-divine-nature.json",
+      "words": 481
+    },
+    {
+      "index": 67,
+      "heading": "Book II.",
+      "file": "0067-book-ii-2.json",
+      "words": 0
+    },
+    {
+      "index": 68,
+      "heading": "Chapter I.--Concerning æon or age.",
+      "file": "0068-chapter-i-concerning-on-or-age.json",
+      "words": 610
+    },
+    {
+      "index": 69,
+      "heading": "Chapter II.--Concerning the creation.",
+      "file": "0069-chapter-ii-concerning-the-creation.json",
+      "words": 112
+    },
+    {
+      "index": 70,
+      "heading": "Chapter III.--Concerning angels.",
+      "file": "0070-chapter-iii-concerning-angels.json",
+      "words": 1373
+    },
+    {
+      "index": 71,
+      "heading": "Chapter IV.--Concerning the devil and demons.",
+      "file": "0071-chapter-iv-concerning-the-devil-and-demons.json",
+      "words": 597
+    },
+    {
+      "index": 72,
+      "heading": "Chapter V.--Concerning the visible creation.",
+      "file": "0072-chapter-v-concerning-the-visible-creation.json",
+      "words": 91
+    },
+    {
+      "index": 73,
+      "heading": "Chapter VI.--Concerning the Heaven.",
+      "file": "0073-chapter-vi-concerning-the-heaven.json",
+      "words": 1590
+    },
+    {
+      "index": 74,
+      "heading": "Chapter VII.--Concerning light, fire, the luminaries, sun, moon and",
+      "file": "0074-chapter-vii-concerning-light-fire-the-luminaries-sun-moon-and.json",
+      "words": 3001
+    },
+    {
+      "index": 75,
+      "heading": "Chapter VIII.--Concerning air and winds.",
+      "file": "0075-chapter-viii-concerning-air-and-winds.json",
+      "words": 549
+    },
+    {
+      "index": 76,
+      "heading": "Chapter IX.--Concerning the waters.",
+      "file": "0076-chapter-ix-concerning-the-waters.json",
+      "words": 1263
+    },
+    {
+      "index": 77,
+      "heading": "Chapter X.--Concerning earth and its products.",
+      "file": "0077-chapter-x-concerning-earth-and-its-products.json",
+      "words": 1014
+    },
+    {
+      "index": 78,
+      "heading": "Chapter XI.--Concerning Paradise.",
+      "file": "0078-chapter-xi-concerning-paradise.json",
+      "words": 1496
+    },
+    {
+      "index": 79,
+      "heading": "Chapter XII.--Concerning Man.",
+      "file": "0079-chapter-xii-concerning-man.json",
+      "words": 2214
+    },
+    {
+      "index": 80,
+      "heading": "Chapter XIII.--Concerning Pleasures.",
+      "file": "0080-chapter-xiii-concerning-pleasures.json",
+      "words": 379
+    },
+    {
+      "index": 81,
+      "heading": "Chapter XIV.--Concerning Pain.",
+      "file": "0081-chapter-xiv-concerning-pain.json",
+      "words": 55
+    },
+    {
+      "index": 82,
+      "heading": "Chapter XV.--Concerning Fear.",
+      "file": "0082-chapter-xv-concerning-fear.json",
+      "words": 141
+    },
+    {
+      "index": 83,
+      "heading": "Chapter XVI.--Concerning Anger.",
+      "file": "0083-chapter-xvi-concerning-anger.json",
+      "words": 251
+    },
+    {
+      "index": 84,
+      "heading": "Chapter XVII.--Concerning Imagination.",
+      "file": "0084-chapter-xvii-concerning-imagination.json",
+      "words": 165
+    },
+    {
+      "index": 85,
+      "heading": "Chapter XVIII.--Concerning Sensation.",
+      "file": "0085-chapter-xviii-concerning-sensation.json",
+      "words": 824
+    },
+    {
+      "index": 86,
+      "heading": "Chapter XIX.--Concerning Thought.",
+      "file": "0086-chapter-xix-concerning-thought.json",
+      "words": 117
+    },
+    {
+      "index": 87,
+      "heading": "Chapter XX.--Concerning Memory.",
+      "file": "0087-chapter-xx-concerning-memory.json",
+      "words": 315
+    },
+    {
+      "index": 88,
+      "heading": "Chapter XXI.--Concerning Conception and Articulation.",
+      "file": "0088-chapter-xxi-concerning-conception-and-articulation.json",
+      "words": 137
+    },
+    {
+      "index": 89,
+      "heading": "Chapter XXII.--Concerning Passion and Energy.",
+      "file": "0089-chapter-xxii-concerning-passion-and-energy.json",
+      "words": 2222
+    },
+    {
+      "index": 90,
+      "heading": "Chapter XXIII.--Concerning Energy.",
+      "file": "0090-chapter-xxiii-concerning-energy.json",
+      "words": 497
+    },
+    {
+      "index": 91,
+      "heading": "Chapter XXIV.--Concerning what is Voluntary and what is Involuntary.",
+      "file": "0091-chapter-xxiv-concerning-what-is-voluntary-and-what-is-involuntary.json",
+      "words": 703
+    },
+    {
+      "index": 92,
+      "heading": "Chapter XXV.--Concerning what is in our own power, that is, concerning",
+      "file": "0092-chapter-xxv-concerning-what-is-in-our-own-power-that-is-concerning.json",
+      "words": 578
+    },
+    {
+      "index": 93,
+      "heading": "Chapter XXVI.--Concerning Events [1878] .",
+      "file": "0093-chapter-xxvi-concerning-events-1878.json",
+      "words": 281
+    },
+    {
+      "index": 94,
+      "heading": "Chapter XXVII.--Concerning the reason of our endowment with Free-will.",
+      "file": "0094-chapter-xxvii-concerning-the-reason-of-our-endowment-with-free-will.json",
+      "words": 433
+    },
+    {
+      "index": 95,
+      "heading": "Chapter XXVIII.--Concerning what is not in our hands.",
+      "file": "0095-chapter-xxviii-concerning-what-is-not-in-our-hands.json",
+      "words": 204
+    },
+    {
+      "index": 96,
+      "heading": "Chapter XXIX.--Concerning Providence.",
+      "file": "0096-chapter-xxix-concerning-providence.json",
+      "words": 1423
+    },
+    {
+      "index": 97,
+      "heading": "Chapter XXX.--Concerning Prescience and Predestination.",
+      "file": "0097-chapter-xxx-concerning-prescience-and-predestination.json",
+      "words": 1272
+    },
+    {
+      "index": 98,
+      "heading": "Book III.",
+      "file": "0098-book-iii-2.json",
+      "words": 0
+    },
+    {
+      "index": 99,
+      "heading": "Chapter I.--Concerning the Divine OEconomy and God's care over us, and",
+      "file": "0099-chapter-i-concerning-the-divine-oeconomy-and-god-s-care-over-us-and.json",
+      "words": 901
+    },
+    {
+      "index": 100,
+      "heading": "Chapter II. --Concerning the manner in which the Word [1942] was",
+      "file": "0100-chapter-ii-concerning-the-manner-in-which-the-word-1942-was.json",
+      "words": 766
+    },
+    {
+      "index": 101,
+      "heading": "Chapter III.--Concerning Christ's two natures, in opposition to those",
+      "file": "0101-chapter-iii-concerning-christ-s-two-natures-in-opposition-to-those.json",
+      "words": 1723
+    },
+    {
+      "index": 102,
+      "heading": "Chapter IV.--Concerning the manner of the Mutual Communication [1985] .",
+      "file": "0102-chapter-iv-concerning-the-manner-of-the-mutual-communication-1985.json",
+      "words": 666
+    },
+    {
+      "index": 103,
+      "heading": "Chapter V.--Concerning the number of the Natures.",
+      "file": "0103-chapter-v-concerning-the-number-of-the-natures.json",
+      "words": 701
+    },
+    {
+      "index": 104,
+      "heading": "Chapter VI.--That in one of its subsistences the divine nature is",
+      "file": "0104-chapter-vi-that-in-one-of-its-subsistences-the-divine-nature-is.json",
+      "words": 1185
+    },
+    {
+      "index": 105,
+      "heading": "Chapter VII.--Concerning the one compound subsistence of God the Word.",
+      "file": "0105-chapter-vii-concerning-the-one-compound-subsistence-of-god-the-word.json",
+      "words": 1028
+    },
+    {
+      "index": 106,
+      "heading": "Chapter VIII.--In reply to those who ask whether [2031] the natures of",
+      "file": "0106-chapter-viii-in-reply-to-those-who-ask-whether-2031-the-natures-of.json",
+      "words": 894
+    },
+    {
+      "index": 107,
+      "heading": "Chapter IX.--In reply to the question whether there is Nature that has",
+      "file": "0107-chapter-ix-in-reply-to-the-question-whether-there-is-nature-that-has.json",
+      "words": 296
+    },
+    {
+      "index": 108,
+      "heading": "Chapter X.--Concerning the Trisagium (\"the Thrice Holy\").",
+      "file": "0108-chapter-x-concerning-the-trisagium-the-thrice-holy.json",
+      "words": 889
+    },
+    {
+      "index": 109,
+      "heading": "Chapter XI.--Concerning the Nature as viewed in Species and in",
+      "file": "0109-chapter-xi-concerning-the-nature-as-viewed-in-species-and-in.json",
+      "words": 1125
+    },
+    {
+      "index": 110,
+      "heading": "Chapter XII.--That the holy Virgin is the Mother of God: an argument",
+      "file": "0110-chapter-xii-that-the-holy-virgin-is-the-mother-of-god-an-argument.json",
+      "words": 1283
+    },
+    {
+      "index": 111,
+      "heading": "Chapter XIII.--Concerning the properties of the two Natures.",
+      "file": "0111-chapter-xiii-concerning-the-properties-of-the-two-natures.json",
+      "words": 157
+    },
+    {
+      "index": 112,
+      "heading": "Chapter XIV.--Concerning the volitions and free-will of our Lord Jesus",
+      "file": "0112-chapter-xiv-concerning-the-volitions-and-free-will-of-our-lord-jesus.json",
+      "words": 3221
+    },
+    {
+      "index": 113,
+      "heading": "Chapter XV.--Concerning the energies in our Lord Jesus Christ.",
+      "file": "0113-chapter-xv-concerning-the-energies-in-our-lord-jesus-christ.json",
+      "words": 3846
+    },
+    {
+      "index": 114,
+      "heading": "Chapter XVI.--In reply to those who say [2171] \"If man has two natures",
+      "file": "0114-chapter-xvi-in-reply-to-those-who-say-2171-if-man-has-two-natures.json",
+      "words": 835
+    },
+    {
+      "index": 115,
+      "heading": "Chapter XVII.--Concerning the deification of the nature of our Lord's",
+      "file": "0115-chapter-xvii-concerning-the-deification-of-the-nature-of-our-lord-s.json",
+      "words": 611
+    },
+    {
+      "index": 116,
+      "heading": "Chapter XVIII.--Further concerning volitions and free-wills: minds,",
+      "file": "0116-chapter-xviii-further-concerning-volitions-and-free-wills-minds.json",
+      "words": 1285
+    },
+    {
+      "index": 117,
+      "heading": "Chapter XIX.--Concerning the theandric energy.",
+      "file": "0117-chapter-xix-concerning-the-theandric-energy.json",
+      "words": 744
+    },
+    {
+      "index": 118,
+      "heading": "Chapter XX.--Concerning the natural and innocent passions [2203] .",
+      "file": "0118-chapter-xx-concerning-the-natural-and-innocent-passions-2203.json",
+      "words": 388
+    },
+    {
+      "index": 119,
+      "heading": "Chapter XXI.--Concerning ignorance and servitude.",
+      "file": "0119-chapter-xxi-concerning-ignorance-and-servitude.json",
+      "words": 593
+    },
+    {
+      "index": 120,
+      "heading": "Chapter XXII.--Concerning His growth.",
+      "file": "0120-chapter-xxii-concerning-his-growth.json",
+      "words": 311
+    },
+    {
+      "index": 121,
+      "heading": "Chapter XXIII.--Concerning His Fear.",
+      "file": "0121-chapter-xxiii-concerning-his-fear.json",
+      "words": 537
+    },
+    {
+      "index": 122,
+      "heading": "Chapter XXIV.--Concerning our Lord's Praying.",
+      "file": "0122-chapter-xxiv-concerning-our-lord-s-praying.json",
+      "words": 638
+    },
+    {
+      "index": 123,
+      "heading": "Chapter XXV.--Concerning the Appropriation.",
+      "file": "0123-chapter-xxv-concerning-the-appropriation.json",
+      "words": 196
+    },
+    {
+      "index": 124,
+      "heading": "Chapter XXVI.--Concerning the Passion of our Lord's body, and the",
+      "file": "0124-chapter-xxvi-concerning-the-passion-of-our-lord-s-body-and-the.json",
+      "words": 359
+    },
+    {
+      "index": 125,
+      "heading": "Chapter XXVII.--Concerning the fact that the divinity of the Word",
+      "file": "0125-chapter-xxvii-concerning-the-fact-that-the-divinity-of-the-word.json",
+      "words": 407
+    },
+    {
+      "index": 126,
+      "heading": "Chapter XXVIII.--Concerning Corruption and Destruction.",
+      "file": "0126-chapter-xxviii-concerning-corruption-and-destruction.json",
+      "words": 406
+    },
+    {
+      "index": 127,
+      "heading": "Chapter XXIX.--Concerning the Descent to Hades.",
+      "file": "0127-chapter-xxix-concerning-the-descent-to-hades.json",
+      "words": 213
+    },
+    {
+      "index": 128,
+      "heading": "Book IV.",
+      "file": "0128-book-iv-2.json",
+      "words": 0
+    },
+    {
+      "index": 129,
+      "heading": "Chapter I.--Concerning what followed the Resurrection.",
+      "file": "0129-chapter-i-concerning-what-followed-the-resurrection.json",
+      "words": 293
+    },
+    {
+      "index": 130,
+      "heading": "Chapter II.--Concerning the sitting at the right hand of the Father.",
+      "file": "0130-chapter-ii-concerning-the-sitting-at-the-right-hand-of-the-father.json",
+      "words": 144
+    },
+    {
+      "index": 131,
+      "heading": "Chapter III.--In reply to those who say [2256] \"If Christ has two",
+      "file": "0131-chapter-iii-in-reply-to-those-who-say-2256-if-christ-has-two.json",
+      "words": 336
+    },
+    {
+      "index": 132,
+      "heading": "Chapter IV.--Why it was the Son of God, and not the Father or the",
+      "file": "0132-chapter-iv-why-it-was-the-son-of-god-and-not-the-father-or-the.json",
+      "words": 942
+    },
+    {
+      "index": 133,
+      "heading": "Chapter V.--In reply to those who ask if Christ's subsistence is create",
+      "file": "0133-chapter-v-in-reply-to-those-who-ask-if-christ-s-subsistence-is-create.json",
+      "words": 117
+    },
+    {
+      "index": 134,
+      "heading": "Chapter VI.--Concerning the question, when Christ was called.",
+      "file": "0134-chapter-vi-concerning-the-question-when-christ-was-called.json",
+      "words": 545
+    },
+    {
+      "index": 135,
+      "heading": "Chapter VII.--In answer to those who enquire whether the holy Mother of",
+      "file": "0135-chapter-vii-in-answer-to-those-who-enquire-whether-the-holy-mother-of.json",
+      "words": 464
+    },
+    {
+      "index": 136,
+      "heading": "Chapter VIII.--How the Only-begotten Son of God is called first-born.",
+      "file": "0136-chapter-viii-how-the-only-begotten-son-of-god-is-called-first-born.json",
+      "words": 346
+    },
+    {
+      "index": 137,
+      "heading": "Chapter IX.--Concerning Faith and Baptism.",
+      "file": "0137-chapter-ix-concerning-faith-and-baptism.json",
+      "words": 1534
+    },
+    {
+      "index": 138,
+      "heading": "VI. 26.",
+      "file": "0138-vi-26.json",
+      "words": 306
+    },
+    {
+      "index": 139,
+      "heading": "Chapter X.--Concerning Faith.",
+      "file": "0139-chapter-x-concerning-faith.json",
+      "words": 174
+    },
+    {
+      "index": 140,
+      "heading": "Chapter XI.--Concerning the Cross and here further concerning Faith.",
+      "file": "0140-chapter-xi-concerning-the-cross-and-here-further-concerning-faith.json",
+      "words": 1443
+    },
+    {
+      "index": 141,
+      "heading": "Chapter XII.--Concerning Worship towards the East.",
+      "file": "0141-chapter-xii-concerning-worship-towards-the-east.json",
+      "words": 543
+    },
+    {
+      "index": 142,
+      "heading": "Chapter XIII.--Concerning the holy and immaculate Mysteries of the",
+      "file": "0142-chapter-xiii-concerning-the-holy-and-immaculate-mysteries-of-the.json",
+      "words": 2943
+    },
+    {
+      "index": 143,
+      "heading": "Chapter XIV.--Concerning our Lord's genealogy and concerning the holy",
+      "file": "0143-chapter-xiv-concerning-our-lord-s-genealogy-and-concerning-the-holy.json",
+      "words": 1905
+    },
+    {
+      "index": 144,
+      "heading": "Chapter XV.--Concerning the honour due to the Saints and their remains.",
+      "file": "0144-chapter-xv-concerning-the-honour-due-to-the-saints-and-their-remains.json",
+      "words": 1366
+    },
+    {
+      "index": 145,
+      "heading": "Chapter XVI.--Concerning Images [2496] .",
+      "file": "0145-chapter-xvi-concerning-images-2496.json",
+      "words": 988
+    },
+    {
+      "index": 146,
+      "heading": "Chapter XVII.--Concerning Scripture [2514] .",
+      "file": "0146-chapter-xvii-concerning-scripture-2514.json",
+      "words": 1131
+    },
+    {
+      "index": 147,
+      "heading": "Chapter XVIII.--Regarding the things said concerning Christ.",
+      "file": "0147-chapter-xviii-regarding-the-things-said-concerning-christ.json",
+      "words": 2790
+    },
+    {
+      "index": 148,
+      "heading": "Chapter XIX.--That God [2607] is not the cause of evils.",
+      "file": "0148-chapter-xix-that-god-2607-is-not-the-cause-of-evils.json",
+      "words": 814
+    },
+    {
+      "index": 149,
+      "heading": "Chapter XX.--That there are not two Kingdoms.",
+      "file": "0149-chapter-xx-that-there-are-not-two-kingdoms.json",
+      "words": 643
+    },
+    {
+      "index": 150,
+      "heading": "Chapter XXI.--The purpose [2629] for which God in His foreknowledge",
+      "file": "0150-chapter-xxi-the-purpose-2629-for-which-god-in-his-foreknowledge.json",
+      "words": 275
+    },
+    {
+      "index": 151,
+      "heading": "Chapter XXII.--Concerning the law of God and the law of sin.",
+      "file": "0151-chapter-xxii-concerning-the-law-of-god-and-the-law-of-sin.json",
+      "words": 565
+    },
+    {
+      "index": 152,
+      "heading": "Chapter XXIII.--Against the Jews on the question of the Sabbath.",
+      "file": "0152-chapter-xxiii-against-the-jews-on-the-question-of-the-sabbath.json",
+      "words": 1427
+    },
+    {
+      "index": 153,
+      "heading": "Chapter XXIV.--Concerning Virginity.",
+      "file": "0153-chapter-xxiv-concerning-virginity.json",
+      "words": 1174
+    },
+    {
+      "index": 154,
+      "heading": "Chapter XXV.--Concerning the Circumcision.",
+      "file": "0154-chapter-xxv-concerning-the-circumcision.json",
+      "words": 640
+    },
+    {
+      "index": 155,
+      "heading": "Chapter XXVI.--Concerning the Antichrist [2705] .",
+      "file": "0155-chapter-xxvi-concerning-the-antichrist-2705.json",
+      "words": 860
+    },
+    {
+      "index": 156,
+      "heading": "Chapter XXVII.--Concerning the Resurrection.",
+      "file": "0156-chapter-xxvii-concerning-the-resurrection.json",
+      "words": 12274
+    }
+  ]
+}

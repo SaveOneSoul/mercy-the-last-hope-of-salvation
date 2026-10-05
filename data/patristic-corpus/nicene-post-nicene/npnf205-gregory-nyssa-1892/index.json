@@ -1,0 +1,729 @@
+{
+  "id": "npnf205-gregory-nyssa-1892",
+  "title": "NPNF II, Vol. V — Gregory of Nyssa: Dogmatic Treatises, Etc.",
+  "author_label": "St. Gregory of Nyssa",
+  "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. V",
+  "translators": "William Moore; Henry Austin Wilson; historical NPNF contributors",
+  "publication_year": 1892,
+  "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+  "source_url": "https://www.ccel.org/ccel/s/schaff/npnf205/cache/npnf205.txt",
+  "gutenberg_id": null,
+  "source_type": "ccel_plain_text",
+  "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf205.html",
+  "caution": "Historical public-domain English translations.",
+  "expected_works": [
+    "Against Eunomius",
+    "On the Making of Man",
+    "On the Soul and the Resurrection",
+    "Great Catechism",
+    "On Virginity",
+    "Letters"
+  ],
+  "sha256": "cef974043e48a52d1b6d4ce3bdfb538fa5be2c3af8b53e3bb75181760d614484",
+  "section_count": 117,
+  "word_count": 541565,
+  "toc": [
+    {
+      "index": 1,
+      "heading": "NPNF II, Vol. V — Gregory of Nyssa: Dogmatic Treatises, Etc.",
+      "file": "0001-npnf-ii-vol-v-gregory-of-nyssa-dogmatic-treatises-etc.json",
+      "words": 51
+    },
+    {
+      "index": 2,
+      "heading": "A SELECT LIBRARY",
+      "file": "0002-a-select-library.json",
+      "words": 0
+    },
+    {
+      "index": 3,
+      "heading": "OF THE",
+      "file": "0003-of-the.json",
+      "words": 0
+    },
+    {
+      "index": 4,
+      "heading": "NICENE AND",
+      "file": "0004-nicene-and.json",
+      "words": 0
+    },
+    {
+      "index": 5,
+      "heading": "POST-NICENE FATHERS",
+      "file": "0005-post-nicene-fathers.json",
+      "words": 1
+    },
+    {
+      "index": 6,
+      "heading": "THE CHRISTIAN CHURCH.",
+      "file": "0006-the-christian-church.json",
+      "words": 0
+    },
+    {
+      "index": 7,
+      "heading": "SECOND SERIES",
+      "file": "0007-second-series.json",
+      "words": 0
+    },
+    {
+      "index": 8,
+      "heading": "TRANSLATED INTO ENGLISH WITH PROLEGOMENA AND EXPLANATORY NOTES.",
+      "file": "0008-translated-into-english-with-prolegomena-and-explanatory-notes.json",
+      "words": 0
+    },
+    {
+      "index": 9,
+      "heading": "VOLUMES I-VII.",
+      "file": "0009-volumes-i-vii.json",
+      "words": 0
+    },
+    {
+      "index": 10,
+      "heading": "UNDER THE EDITORIAL SUPERVISION OF",
+      "file": "0010-under-the-editorial-supervision-of.json",
+      "words": 0
+    },
+    {
+      "index": 11,
+      "heading": "PHILIP SCHAFF, D.D., LL.D.,",
+      "file": "0011-philip-schaff-d-d-ll-d.json",
+      "words": 0
+    },
+    {
+      "index": 12,
+      "heading": "PROFESSOR OF CHURCH HISTORY IN THE UNION THEOLOGICAL SEMINARY, NEW",
+      "file": "0012-professor-of-church-history-in-the-union-theological-seminary-new.json",
+      "words": 2
+    },
+    {
+      "index": 13,
+      "heading": "HENRY WACE, D.D.,",
+      "file": "0013-henry-wace-d-d.json",
+      "words": 0
+    },
+    {
+      "index": 14,
+      "heading": "PRINCIPAL OF KING'S COLLEGE, LONDON.",
+      "file": "0014-principal-of-king-s-college-london.json",
+      "words": 0
+    },
+    {
+      "index": 15,
+      "heading": "VOLUME V",
+      "file": "0015-volume-v.json",
+      "words": 8
+    },
+    {
+      "index": 16,
+      "heading": "EDINBURGH",
+      "file": "0016-edinburgh.json",
+      "words": 1
+    },
+    {
+      "index": 17,
+      "heading": "WM. B. EERDMANS PUBLISHING COMPANY",
+      "file": "0017-wm-b-eerdmans-publishing-company.json",
+      "words": 0
+    },
+    {
+      "index": 18,
+      "heading": "GRAND RAPIDS, MICHIGAN",
+      "file": "0018-grand-rapids-michigan.json",
+      "words": 238
+    },
+    {
+      "index": 19,
+      "heading": "Preface.",
+      "file": "0019-preface.json",
+      "words": 2712
+    },
+    {
+      "index": 20,
+      "heading": "Chapter I.--A Sketch of the Life of S. Gregory of Nyssa.",
+      "file": "0020-chapter-i-a-sketch-of-the-life-of-s-gregory-of-nyssa.json",
+      "words": 5109
+    },
+    {
+      "index": 21,
+      "heading": "Chapter II.--His General Character as a Theologian.",
+      "file": "0021-chapter-ii-his-general-character-as-a-theologian.json",
+      "words": 4730
+    },
+    {
+      "index": 22,
+      "heading": "Chapter III.--His Origenism.",
+      "file": "0022-chapter-iii-his-origenism.json",
+      "words": 6799
+    },
+    {
+      "index": 23,
+      "heading": "Chapter IV.--His Teaching on the Holy Trinity.",
+      "file": "0023-chapter-iv-his-teaching-on-the-holy-trinity.json",
+      "words": 5219
+    },
+    {
+      "index": 24,
+      "heading": "Chapter V.--Mss. And Editions.",
+      "file": "0024-chapter-v-mss-and-editions.json",
+      "words": 100
+    },
+    {
+      "index": 25,
+      "heading": "Book were obtained from J. Livineius' transcript of the Vatican ms.",
+      "file": "0025-book-were-obtained-from-j-livineius-transcript-of-the-vatican-ms.json",
+      "words": 2871
+    },
+    {
+      "index": 26,
+      "heading": "Book I. [57]",
+      "file": "0026-book-i-57.json",
+      "words": 693
+    },
+    {
+      "index": 27,
+      "heading": "Book were found in J. Livineius' transcript from the Codex Vaticanus",
+      "file": "0027-book-were-found-in-j-livineius-transcript-from-the-codex-vaticanus.json",
+      "words": 63236
+    },
+    {
+      "index": 28,
+      "heading": "Book II.",
+      "file": "0028-book-ii.json",
+      "words": 16590
+    },
+    {
+      "index": 29,
+      "heading": "Book of Proverbs, for each of these phrases, taken in a tropical sense,",
+      "file": "0029-book-of-proverbs-for-each-of-these-phrases-taken-in-a-tropical-sense.json",
+      "words": 17486
+    },
+    {
+      "index": 30,
+      "heading": "Book III.",
+      "file": "0030-book-iii.json",
+      "words": 16327
+    },
+    {
+      "index": 31,
+      "heading": "Book IV.",
+      "file": "0031-book-iv.json",
+      "words": 19902
+    },
+    {
+      "index": 32,
+      "heading": "Book V.",
+      "file": "0032-book-v.json",
+      "words": 10447
+    },
+    {
+      "index": 33,
+      "heading": "Book VI.",
+      "file": "0033-book-vi.json",
+      "words": 9326
+    },
+    {
+      "index": 34,
+      "heading": "Book VII.",
+      "file": "0034-book-vii.json",
+      "words": 8393
+    },
+    {
+      "index": 35,
+      "heading": "Book VIII.",
+      "file": "0035-book-viii.json",
+      "words": 10975
+    },
+    {
+      "index": 36,
+      "heading": "Book IX.",
+      "file": "0036-book-ix.json",
+      "words": 8280
+    },
+    {
+      "index": 37,
+      "heading": "Book X.",
+      "file": "0037-book-x.json",
+      "words": 8994
+    },
+    {
+      "index": 38,
+      "heading": "Book XI.",
+      "file": "0038-book-xi.json",
+      "words": 9570
+    },
+    {
+      "index": 39,
+      "heading": "Book XII.",
+      "file": "0039-book-xii.json",
+      "words": 8058
+    },
+    {
+      "index": 40,
+      "heading": "Introduction to 'Epinoia",
+      "file": "0040-introduction-to-epinoia.json",
+      "words": 60567
+    },
+    {
+      "index": 41,
+      "heading": "Book preceding this, i.e. Book XII., is named as such by the Paris",
+      "file": "0041-book-preceding-this-i-e-book-xii-is-named-as-such-by-the-paris.json",
+      "words": 28647
+    },
+    {
+      "index": 42,
+      "heading": "Preface.",
+      "file": "0042-preface-2.json",
+      "words": 677
+    },
+    {
+      "index": 43,
+      "heading": "Introduction.",
+      "file": "0043-introduction.json",
+      "words": 644
+    },
+    {
+      "index": 44,
+      "heading": "Chapter I.",
+      "file": "0044-chapter-i.json",
+      "words": 589
+    },
+    {
+      "index": 45,
+      "heading": "Chapter II.",
+      "file": "0045-chapter-ii.json",
+      "words": 807
+    },
+    {
+      "index": 46,
+      "heading": "Chapter III.",
+      "file": "0046-chapter-iii.json",
+      "words": 3245
+    },
+    {
+      "index": 47,
+      "heading": "Chapter IV.",
+      "file": "0047-chapter-iv.json",
+      "words": 2622
+    },
+    {
+      "index": 48,
+      "heading": "Chapter V.",
+      "file": "0048-chapter-v.json",
+      "words": 346
+    },
+    {
+      "index": 49,
+      "heading": "Chapter VI.",
+      "file": "0049-chapter-vi.json",
+      "words": 457
+    },
+    {
+      "index": 50,
+      "heading": "Chapter VII.",
+      "file": "0050-chapter-vii.json",
+      "words": 387
+    },
+    {
+      "index": 51,
+      "heading": "Chapter VIII.",
+      "file": "0051-chapter-viii.json",
+      "words": 1387
+    },
+    {
+      "index": 52,
+      "heading": "Chapter IX.",
+      "file": "0052-chapter-ix.json",
+      "words": 682
+    },
+    {
+      "index": 53,
+      "heading": "Chapter X.",
+      "file": "0053-chapter-x.json",
+      "words": 902
+    },
+    {
+      "index": 54,
+      "heading": "Chapter XI.",
+      "file": "0054-chapter-xi.json",
+      "words": 1961
+    },
+    {
+      "index": 55,
+      "heading": "Chapter XII.",
+      "file": "0055-chapter-xii.json",
+      "words": 2058
+    },
+    {
+      "index": 56,
+      "heading": "Chapter XIII.",
+      "file": "0056-chapter-xiii.json",
+      "words": 1545
+    },
+    {
+      "index": 57,
+      "heading": "Chapter XIV.",
+      "file": "0057-chapter-xiv.json",
+      "words": 545
+    },
+    {
+      "index": 58,
+      "heading": "Chapter XV.",
+      "file": "0058-chapter-xv.json",
+      "words": 742
+    },
+    {
+      "index": 59,
+      "heading": "Chapter XVI.",
+      "file": "0059-chapter-xvi.json",
+      "words": 719
+    },
+    {
+      "index": 60,
+      "heading": "Chapter XVII.",
+      "file": "0060-chapter-xvii.json",
+      "words": 440
+    },
+    {
+      "index": 61,
+      "heading": "Chapter XVIII.",
+      "file": "0061-chapter-xviii.json",
+      "words": 1692
+    },
+    {
+      "index": 62,
+      "heading": "Chapter XIX.",
+      "file": "0062-chapter-xix.json",
+      "words": 778
+    },
+    {
+      "index": 63,
+      "heading": "Chapter XX.",
+      "file": "0063-chapter-xx.json",
+      "words": 1026
+    },
+    {
+      "index": 64,
+      "heading": "Chapter XXI.",
+      "file": "0064-chapter-xxi.json",
+      "words": 536
+    },
+    {
+      "index": 65,
+      "heading": "Chapter XXII.",
+      "file": "0065-chapter-xxii.json",
+      "words": 1025
+    },
+    {
+      "index": 66,
+      "heading": "Chapter XXIII.",
+      "file": "0066-chapter-xxiii.json",
+      "words": 1580
+    },
+    {
+      "index": 67,
+      "heading": "Chapter XXIV.",
+      "file": "0067-chapter-xxiv.json",
+      "words": 99008
+    },
+    {
+      "index": 68,
+      "heading": "Chapter II.--By the analogy of human breath, which is nothing but",
+      "file": "0068-chapter-ii-by-the-analogy-of-human-breath-which-is-nothing-but.json",
+      "words": 30
+    },
+    {
+      "index": 69,
+      "heading": "Chapter III.--From the Jewish doctrine, then, the unity of the Divine",
+      "file": "0069-chapter-iii-from-the-jewish-doctrine-then-the-unity-of-the-divine.json",
+      "words": 10
+    },
+    {
+      "index": 70,
+      "heading": "Chapter IV.--The Jew convicted from Scripture.",
+      "file": "0070-chapter-iv-the-jew-convicted-from-scripture.json",
+      "words": 385
+    },
+    {
+      "index": 71,
+      "heading": "Chapter IX.--The Incarnation was not unworthy of Him; for only evil",
+      "file": "0071-chapter-ix-the-incarnation-was-not-unworthy-of-him-for-only-evil.json",
+      "words": 2
+    },
+    {
+      "index": 72,
+      "heading": "Chapter X.--The objection that the finite cannot contain the infinite,",
+      "file": "0072-chapter-x-the-objection-that-the-finite-cannot-contain-the-infinite.json",
+      "words": 205
+    },
+    {
+      "index": 73,
+      "heading": "Chapter XVIII.--The ceasing of demon-worship, the Christian martyrdoms,",
+      "file": "0073-chapter-xviii-the-ceasing-of-demon-worship-the-christian-martyrdoms.json",
+      "words": 264
+    },
+    {
+      "index": 74,
+      "heading": "Chapter XXVI.--A certain deception was indeed practised upon the Evil",
+      "file": "0074-chapter-xxvi-a-certain-deception-was-indeed-practised-upon-the-evil.json",
+      "words": 200
+    },
+    {
+      "index": 75,
+      "heading": "Chapter XXXII.--Even the death on the Cross was sublime: for it was the",
+      "file": "0075-chapter-xxxii-even-the-death-on-the-cross-was-sublime-for-it-was-the.json",
+      "words": 177
+    },
+    {
+      "index": 76,
+      "heading": "Chapter XXXVII.--The Eucharist unites the body, as Baptism the soul, to",
+      "file": "0076-chapter-xxxvii-the-eucharist-unites-the-body-as-baptism-the-soul-to.json",
+      "words": 198
+    },
+    {
+      "index": 77,
+      "heading": "Chapter XL.--He alone has truly become a child of God who gives",
+      "file": "0077-chapter-xl-he-alone-has-truly-become-a-child-of-god-who-gives.json",
+      "words": 1577
+    },
+    {
+      "index": 78,
+      "heading": "Chapter I.",
+      "file": "0078-chapter-i-2.json",
+      "words": 2704
+    },
+    {
+      "index": 79,
+      "heading": "Chapter II.",
+      "file": "0079-chapter-ii-2.json",
+      "words": 807
+    },
+    {
+      "index": 80,
+      "heading": "Chapter III.",
+      "file": "0080-chapter-iii-2.json",
+      "words": 439
+    },
+    {
+      "index": 81,
+      "heading": "Chapter IV.",
+      "file": "0081-chapter-iv-2.json",
+      "words": 372
+    },
+    {
+      "index": 82,
+      "heading": "Chapter V.",
+      "file": "0082-chapter-v-2.json",
+      "words": 1754
+    },
+    {
+      "index": 83,
+      "heading": "Chapter VI.",
+      "file": "0083-chapter-vi-2.json",
+      "words": 1858
+    },
+    {
+      "index": 84,
+      "heading": "Chapter VII.",
+      "file": "0084-chapter-vii-2.json",
+      "words": 729
+    },
+    {
+      "index": 85,
+      "heading": "Chapter VIII.",
+      "file": "0085-chapter-viii-2.json",
+      "words": 2524
+    },
+    {
+      "index": 86,
+      "heading": "Chapter IX.",
+      "file": "0086-chapter-ix-2.json",
+      "words": 420
+    },
+    {
+      "index": 87,
+      "heading": "Chapter X.",
+      "file": "0087-chapter-x-2.json",
+      "words": 629
+    },
+    {
+      "index": 88,
+      "heading": "Chapter XI.",
+      "file": "0088-chapter-xi-2.json",
+      "words": 288
+    },
+    {
+      "index": 89,
+      "heading": "Chapter XII.",
+      "file": "0089-chapter-xii-2.json",
+      "words": 318
+    },
+    {
+      "index": 90,
+      "heading": "Chapter XIII.",
+      "file": "0090-chapter-xiii-2.json",
+      "words": 519
+    },
+    {
+      "index": 91,
+      "heading": "Chapter XIV.",
+      "file": "0091-chapter-xiv-2.json",
+      "words": 57
+    },
+    {
+      "index": 92,
+      "heading": "Chapter XV.",
+      "file": "0092-chapter-xv-2.json",
+      "words": 1048
+    },
+    {
+      "index": 93,
+      "heading": "Chapter XVI.",
+      "file": "0093-chapter-xvi-2.json",
+      "words": 1395
+    },
+    {
+      "index": 94,
+      "heading": "Chapter XVII.",
+      "file": "0094-chapter-xvii-2.json",
+      "words": 392
+    },
+    {
+      "index": 95,
+      "heading": "Chapter XVIII.",
+      "file": "0095-chapter-xviii-2.json",
+      "words": 1139
+    },
+    {
+      "index": 96,
+      "heading": "Chapter XIX.",
+      "file": "0096-chapter-xix-2.json",
+      "words": 176
+    },
+    {
+      "index": 97,
+      "heading": "Chapter XX.",
+      "file": "0097-chapter-xx-2.json",
+      "words": 661
+    },
+    {
+      "index": 98,
+      "heading": "Chapter XXI.",
+      "file": "0098-chapter-xxi-2.json",
+      "words": 743
+    },
+    {
+      "index": 99,
+      "heading": "Chapter XXII.",
+      "file": "0099-chapter-xxii-2.json",
+      "words": 460
+    },
+    {
+      "index": 100,
+      "heading": "Chapter XXIII.",
+      "file": "0100-chapter-xxiii-2.json",
+      "words": 891
+    },
+    {
+      "index": 101,
+      "heading": "Chapter XXIV.",
+      "file": "0101-chapter-xxiv-2.json",
+      "words": 945
+    },
+    {
+      "index": 102,
+      "heading": "Chapter XXV.",
+      "file": "0102-chapter-xxv.json",
+      "words": 239
+    },
+    {
+      "index": 103,
+      "heading": "Chapter XXVI.",
+      "file": "0103-chapter-xxvi.json",
+      "words": 1248
+    },
+    {
+      "index": 104,
+      "heading": "Chapter XXVII.",
+      "file": "0104-chapter-xxvii.json",
+      "words": 943
+    },
+    {
+      "index": 105,
+      "heading": "Chapter XXVIII.",
+      "file": "0105-chapter-xxviii.json",
+      "words": 525
+    },
+    {
+      "index": 106,
+      "heading": "Chapter XXIX.",
+      "file": "0106-chapter-xxix.json",
+      "words": 379
+    },
+    {
+      "index": 107,
+      "heading": "Chapter XXX.",
+      "file": "0107-chapter-xxx.json",
+      "words": 678
+    },
+    {
+      "index": 108,
+      "heading": "Chapter XXXI.",
+      "file": "0108-chapter-xxxi.json",
+      "words": 324
+    },
+    {
+      "index": 109,
+      "heading": "Chapter XXXII.",
+      "file": "0109-chapter-xxxii.json",
+      "words": 1662
+    },
+    {
+      "index": 110,
+      "heading": "Chapter XXXIII.",
+      "file": "0110-chapter-xxxiii.json",
+      "words": 629
+    },
+    {
+      "index": 111,
+      "heading": "Chapter XXXIV.",
+      "file": "0111-chapter-xxxiv.json",
+      "words": 594
+    },
+    {
+      "index": 112,
+      "heading": "Chapter XXXV.",
+      "file": "0112-chapter-xxxv.json",
+      "words": 2446
+    },
+    {
+      "index": 113,
+      "heading": "Chapter XXXVI.",
+      "file": "0113-chapter-xxxvi.json",
+      "words": 236
+    },
+    {
+      "index": 114,
+      "heading": "Chapter XXXVII.",
+      "file": "0114-chapter-xxxvii.json",
+      "words": 2148
+    },
+    {
+      "index": 115,
+      "heading": "Chapter XXXVIII.",
+      "file": "0115-chapter-xxxviii.json",
+      "words": 275
+    },
+    {
+      "index": 116,
+      "heading": "Chapter XXXIX.",
+      "file": "0116-chapter-xxxix.json",
+      "words": 1091
+    },
+    {
+      "index": 117,
+      "heading": "Chapter XL.",
+      "file": "0117-chapter-xl.json",
+      "words": 52100
+    }
+  ]
+}
