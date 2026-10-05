@@ -1,0 +1,4804 @@
+{
+  "id": "anf01-justin-irenaeus-1885",
+  "title": "Ante-Nicene Fathers, Vol. I — Apostolic Fathers, Justin Martyr and Irenaeus",
+  "author_label": "St. Justin Martyr; St. Irenaeus of Lyons",
+  "edition": "Ante-Nicene Fathers, American edition, vol. I",
+  "translators": "Alexander Roberts and James Donaldson; revised/edited by A. Cleveland Coxe",
+  "publication_year": 1885,
+  "rights": "Public Domain historical edition; CCEL source metadata marks the text Public Domain",
+  "source_url": "https://www.ccel.org/ccel/s/schaff/anf01/cache/anf01.txt",
+  "gutenberg_id": null,
+  "source_type": "ccel_plain_text",
+  "rights_evidence_url": "https://www.ccel.org/ccel/s/schaff/anf01/cache/anf01.txt",
+  "caution": "The historical public-domain volume is ingested as a complete source because its plain-text edition contains the Apostolic Fathers before Justin and Irenaeus. Mercy's earlier 1870 Apostolic Fathers source remains separately preserved; modern CCEL summaries, cover art, and other website-specific content are not part of the vendored text.",
+  "expected_works": [
+    "First Apology",
+    "Second Apology",
+    "Dialogue with Trypho",
+    "On the Resurrection (fragments)",
+    "Martyrdom of Justin",
+    "Against Heresies Books I–V",
+    "Fragments from the Lost Writings of Irenaeus"
+  ],
+  "sha256": "ee9c7f0ac3f4df08d07ddf81cd7e061e82a35e0d27de611cae06f1e05b2fb991",
+  "section_count": 796,
+  "word_count": 508803,
+  "toc": [
+    {
+      "index": 1,
+      "heading": "Ante-Nicene Fathers, Vol. I — Apostolic Fathers, Justin Martyr and Irenaeus",
+      "file": "0001-ante-nicene-fathers-vol-i-apostolic-fathers-justin-martyr-and-irenaeus.json",
+      "words": 42
+    },
+    {
+      "index": 2,
+      "heading": "ANTE-NICENE FATHERS",
+      "file": "0002-ante-nicene-fathers.json",
+      "words": 33
+    },
+    {
+      "index": 3,
+      "heading": "PREFACE.",
+      "file": "0003-preface.json",
+      "words": 511
+    },
+    {
+      "index": 4,
+      "heading": "A. C. C.",
+      "file": "0004-a-c-c.json",
+      "words": 1115
+    },
+    {
+      "index": 5,
+      "heading": "A. C. C.",
+      "file": "0005-a-c-c-2.json",
+      "words": 1488
+    },
+    {
+      "index": 6,
+      "heading": "Chapter I.--The salutation. Praise of the Corinthians before the breaking",
+      "file": "0006-chapter-i-the-salutation-praise-of-the-corinthians-before-the-breaking.json",
+      "words": 338
+    },
+    {
+      "index": 7,
+      "heading": "Chapter II.--Praise of the Corinthians continued.",
+      "file": "0007-chapter-ii-praise-of-the-corinthians-continued.json",
+      "words": 328
+    },
+    {
+      "index": 8,
+      "heading": "Chapter III.--The sad state of the Corinthian church after sedition arose in",
+      "file": "0008-chapter-iii-the-sad-state-of-the-corinthian-church-after-sedition-arose-in.json",
+      "words": 196
+    },
+    {
+      "index": 9,
+      "heading": "Chapter IV.--Many evils have already flowed from this source in ancient times.",
+      "file": "0009-chapter-iv-many-evils-have-already-flowed-from-this-source-in-ancient-times.json",
+      "words": 402
+    },
+    {
+      "index": 10,
+      "heading": "Chapter V.--No less evils have arisen from the same source in the most recent",
+      "file": "0010-chapter-v-no-less-evils-have-arisen-from-the-same-source-in-the-most-recent.json",
+      "words": 350
+    },
+    {
+      "index": 11,
+      "heading": "Chapter VI.--Continuation. Several other martyrs.",
+      "file": "0011-chapter-vi-continuation-several-other-martyrs.json",
+      "words": 172
+    },
+    {
+      "index": 12,
+      "heading": "Chapter VII.--An exhortation to repentance.",
+      "file": "0012-chapter-vii-an-exhortation-to-repentance.json",
+      "words": 208
+    },
+    {
+      "index": 13,
+      "heading": "Chapter VIII.--Continuation respecting repentance.",
+      "file": "0013-chapter-viii-continuation-respecting-repentance.json",
+      "words": 300
+    },
+    {
+      "index": 14,
+      "heading": "Chapter IX.--Examples of the saints.",
+      "file": "0014-chapter-ix-examples-of-the-saints.json",
+      "words": 128
+    },
+    {
+      "index": 15,
+      "heading": "Chapter X.--Continuation of the above.",
+      "file": "0015-chapter-x-continuation-of-the-above.json",
+      "words": 347
+    },
+    {
+      "index": 16,
+      "heading": "Chapter XI.--Continuation. Lot.",
+      "file": "0016-chapter-xi-continuation-lot.json",
+      "words": 168
+    },
+    {
+      "index": 17,
+      "heading": "Chapter XII.--The rewards of faith and hospitality. Rahab.",
+      "file": "0017-chapter-xii-the-rewards-of-faith-and-hospitality-rahab.json",
+      "words": 355
+    },
+    {
+      "index": 18,
+      "heading": "Chapter XIII.--An exhortation to humility.",
+      "file": "0018-chapter-xiii-an-exhortation-to-humility.json",
+      "words": 241
+    },
+    {
+      "index": 19,
+      "heading": "Chapter XIV.--We should obey God rather than the authors of sedition.",
+      "file": "0019-chapter-xiv-we-should-obey-god-rather-than-the-authors-of-sedition.json",
+      "words": 195
+    },
+    {
+      "index": 20,
+      "heading": "Chapter XV.--We must adhere to those who cultivate peace, not to those who",
+      "file": "0020-chapter-xv-we-must-adhere-to-those-who-cultivate-peace-not-to-those-who.json",
+      "words": 220
+    },
+    {
+      "index": 21,
+      "heading": "Chapter XVI.--Christ as an example of humility.",
+      "file": "0021-chapter-xvi-christ-as-an-example-of-humility.json",
+      "words": 652
+    },
+    {
+      "index": 22,
+      "heading": "Chapter XVII.--The saints as examples of humility.",
+      "file": "0022-chapter-xvii-the-saints-as-examples-of-humility.json",
+      "words": 262
+    },
+    {
+      "index": 23,
+      "heading": "Chapter XVIII.--David as an example of humility.",
+      "file": "0023-chapter-xviii-david-as-an-example-of-humility.json",
+      "words": 374
+    },
+    {
+      "index": 24,
+      "heading": "Chapter XIX.--Imitating these examples, let us seek after peace.",
+      "file": "0024-chapter-xix-imitating-these-examples-let-us-seek-after-peace.json",
+      "words": 157
+    },
+    {
+      "index": 25,
+      "heading": "Chapter XX.--The peace and harmony of the universe.",
+      "file": "0025-chapter-xx-the-peace-and-harmony-of-the-universe.json",
+      "words": 299
+    },
+    {
+      "index": 26,
+      "heading": "Chapter XXI.--Let us obey God, and not the authors of sedition.",
+      "file": "0026-chapter-xxi-let-us-obey-god-and-not-the-authors-of-sedition.json",
+      "words": 363
+    },
+    {
+      "index": 27,
+      "heading": "Chapter XXII.--These exhortations are confirmed by the Christian faith, which",
+      "file": "0027-chapter-xxii-these-exhortations-are-confirmed-by-the-christian-faith-which.json",
+      "words": 162
+    },
+    {
+      "index": 28,
+      "heading": "Chapter XXIII.--Be humble, and believe that Christ will come again.",
+      "file": "0028-chapter-xxiii-be-humble-and-believe-that-christ-will-come-again.json",
+      "words": 261
+    },
+    {
+      "index": 29,
+      "heading": "Chapter XXIV.--God continually shows us in nature that there will be a",
+      "file": "0029-chapter-xxiv-god-continually-shows-us-in-nature-that-there-will-be-a.json",
+      "words": 165
+    },
+    {
+      "index": 30,
+      "heading": "Chapter XXV.--The phoenix an emblem of our resurrection.",
+      "file": "0030-chapter-xxv-the-phoenix-an-emblem-of-our-resurrection.json",
+      "words": 235
+    },
+    {
+      "index": 31,
+      "heading": "Chapter XXVI.--We shall rise again, then, as the Scripture also testifies.",
+      "file": "0031-chapter-xxvi-we-shall-rise-again-then-as-the-scripture-also-testifies.json",
+      "words": 133
+    },
+    {
+      "index": 32,
+      "heading": "Chapter XXVII.--In the hope of the resurrection, let us cleave to the",
+      "file": "0032-chapter-xxvii-in-the-hope-of-the-resurrection-let-us-cleave-to-the.json",
+      "words": 220
+    },
+    {
+      "index": 33,
+      "heading": "Chapter XXVIII.--God sees all things: therefore let us avoid transgression.",
+      "file": "0033-chapter-xxviii-god-sees-all-things-therefore-let-us-avoid-transgression.json",
+      "words": 152
+    },
+    {
+      "index": 34,
+      "heading": "Chapter XXIX.--Let us also draw near to God in purity of heart.",
+      "file": "0034-chapter-xxix-let-us-also-draw-near-to-god-in-purity-of-heart.json",
+      "words": 175
+    },
+    {
+      "index": 35,
+      "heading": "Chapter XXX.--Let us do those things that please God, and flee from those He",
+      "file": "0035-chapter-xxx-let-us-do-those-things-that-please-god-and-flee-from-those-he.json",
+      "words": 246
+    },
+    {
+      "index": 36,
+      "heading": "Chapter XXXI.--Let us see by what means we may obtain the divine blessing.",
+      "file": "0036-chapter-xxxi-let-us-see-by-what-means-we-may-obtain-the-divine-blessing.json",
+      "words": 145
+    },
+    {
+      "index": 37,
+      "heading": "Chapter XXXII.--We are justified not by our own works, but by faith.",
+      "file": "0037-chapter-xxxii-we-are-justified-not-by-our-own-works-but-by-faith.json",
+      "words": 239
+    },
+    {
+      "index": 38,
+      "heading": "Chapter XXXIII.--But let us not give up the practice of good works and love.",
+      "file": "0038-chapter-xxxiii-but-let-us-not-give-up-the-practice-of-good-works-and-love.json",
+      "words": 304
+    },
+    {
+      "index": 39,
+      "heading": "Chapter XXXIV.--Great is the reward of good works with God. Joined together in",
+      "file": "0039-chapter-xxxiv-great-is-the-reward-of-good-works-with-god-joined-together-in.json",
+      "words": 285
+    },
+    {
+      "index": 40,
+      "heading": "Chapter XXXV.--Immense is this reward. How shall we obtain it?",
+      "file": "0040-chapter-xxxv-immense-is-this-reward-how-shall-we-obtain-it.json",
+      "words": 423
+    },
+    {
+      "index": 41,
+      "heading": "Chapter XXXVI.--All blessings are given to us through Christ.",
+      "file": "0041-chapter-xxxvi-all-blessings-are-given-to-us-through-christ.json",
+      "words": 282
+    },
+    {
+      "index": 42,
+      "heading": "Chapter XXXVII.--Christ is our leader, and we His soldiers.",
+      "file": "0042-chapter-xxxvii-christ-is-our-leader-and-we-his-soldiers.json",
+      "words": 192
+    },
+    {
+      "index": 43,
+      "heading": "Chapter XXXVIII.--Let the members of the Church submit themselves, and no one",
+      "file": "0043-chapter-xxxviii-let-the-members-of-the-church-submit-themselves-and-no-one.json",
+      "words": 260
+    },
+    {
+      "index": 44,
+      "heading": "Chapter XXXIX.--There is no reason for self-conceit.",
+      "file": "0044-chapter-xxxix-there-is-no-reason-for-self-conceit.json",
+      "words": 294
+    },
+    {
+      "index": 45,
+      "heading": "Chapter XL.--Let us preserve in the Church the order appointed by God.",
+      "file": "0045-chapter-xl-let-us-preserve-in-the-church-the-order-appointed-by-god.json",
+      "words": 206
+    },
+    {
+      "index": 46,
+      "heading": "Chapter XLI.--Continuation of the same subject.",
+      "file": "0046-chapter-xli-continuation-of-the-same-subject.json",
+      "words": 163
+    },
+    {
+      "index": 47,
+      "heading": "Chapter XLII.--The order of ministers in the Church.",
+      "file": "0047-chapter-xlii-the-order-of-ministers-in-the-church.json",
+      "words": 235
+    },
+    {
+      "index": 48,
+      "heading": "Chapter XLIII.--Moses of old stilled the contention which arose concerning the",
+      "file": "0048-chapter-xliii-moses-of-old-stilled-the-contention-which-arose-concerning-the.json",
+      "words": 328
+    },
+    {
+      "index": 49,
+      "heading": "Chapter XLIV.--The ordinances of the apostles, that there might be no",
+      "file": "0049-chapter-xliv-the-ordinances-of-the-apostles-that-there-might-be-no.json",
+      "words": 316
+    },
+    {
+      "index": 50,
+      "heading": "Chapter XLV.--It is the part of the wicked to vex the righteous.",
+      "file": "0050-chapter-xlv-it-is-the-part-of-the-wicked-to-vex-the-righteous.json",
+      "words": 306
+    },
+    {
+      "index": 51,
+      "heading": "Chapter XLVI.--Let us cleave to the righteous: your strife is pernicious.",
+      "file": "0051-chapter-xlvi-let-us-cleave-to-the-righteous-your-strife-is-pernicious.json",
+      "words": 362
+    },
+    {
+      "index": 52,
+      "heading": "Chapter XLVII.--Your recent discord is worse than the former which took place",
+      "file": "0052-chapter-xlvii-your-recent-discord-is-worse-than-the-former-which-took-place.json",
+      "words": 240
+    },
+    {
+      "index": 53,
+      "heading": "Chapter XLVIII.--Let us return to the practice of brotherly love.",
+      "file": "0053-chapter-xlviii-let-us-return-to-the-practice-of-brotherly-love.json",
+      "words": 224
+    },
+    {
+      "index": 54,
+      "heading": "Chapter XLIX.--The praise of love.",
+      "file": "0054-chapter-xlix-the-praise-of-love.json",
+      "words": 185
+    },
+    {
+      "index": 55,
+      "heading": "Chapter L.--Let us pray to be thought worthy of love.",
+      "file": "0055-chapter-l-let-us-pray-to-be-thought-worthy-of-love.json",
+      "words": 252
+    },
+    {
+      "index": 56,
+      "heading": "Chapter LI.--Let the partakers in strife acknowledge their sins.",
+      "file": "0056-chapter-li-let-the-partakers-in-strife-acknowledge-their-sins.json",
+      "words": 215
+    },
+    {
+      "index": 57,
+      "heading": "Chapter LII.--Such a confession is pleasing to God.",
+      "file": "0057-chapter-lii-such-a-confession-is-pleasing-to-god.json",
+      "words": 126
+    },
+    {
+      "index": 58,
+      "heading": "Chapter LIII.--The love of Moses towards his people.",
+      "file": "0058-chapter-liii-the-love-of-moses-towards-his-people.json",
+      "words": 240
+    },
+    {
+      "index": 59,
+      "heading": "Chapter LIV.--He who is full of love will incur every loss, that peace may be",
+      "file": "0059-chapter-liv-he-who-is-full-of-love-will-incur-every-loss-that-peace-may-be.json",
+      "words": 170
+    },
+    {
+      "index": 60,
+      "heading": "Chapter LV.--Examples of such love.",
+      "file": "0060-chapter-lv-examples-of-such-love.json",
+      "words": 262
+    },
+    {
+      "index": 61,
+      "heading": "Chapter LVI.--Let us admonish and correct one another.",
+      "file": "0061-chapter-lvi-let-us-admonish-and-correct-one-another.json",
+      "words": 451
+    },
+    {
+      "index": 62,
+      "heading": "Chapter LVII.--Let the authors of sedition submit themselves.",
+      "file": "0062-chapter-lvii-let-the-authors-of-sedition-submit-themselves.json",
+      "words": 358
+    },
+    {
+      "index": 63,
+      "heading": "Chapter LVIII.--Blessings sought for all that call upon God.",
+      "file": "0063-chapter-lviii-blessings-sought-for-all-that-call-upon-god.json",
+      "words": 94
+    },
+    {
+      "index": 64,
+      "heading": "Chapter LIX.--The Corinthians are exhorted speedily to send back word that",
+      "file": "0064-chapter-lix-the-corinthians-are-exhorted-speedily-to-send-back-word-that.json",
+      "words": 1165
+    },
+    {
+      "index": 65,
+      "heading": "Chapter I.--Occasion of the epistle.",
+      "file": "0065-chapter-i-occasion-of-the-epistle.json",
+      "words": 192
+    },
+    {
+      "index": 66,
+      "heading": "Chapter II.--The vanity of idols.",
+      "file": "0066-chapter-ii-the-vanity-of-idols.json",
+      "words": 697
+    },
+    {
+      "index": 67,
+      "heading": "Chapter III.--Superstitions of the Jews.",
+      "file": "0067-chapter-iii-superstitions-of-the-jews.json",
+      "words": 267
+    },
+    {
+      "index": 68,
+      "heading": "Chapter IV.--The other observances of the Jews.",
+      "file": "0068-chapter-iv-the-other-observances-of-the-jews.json",
+      "words": 432
+    },
+    {
+      "index": 69,
+      "heading": "Chapter V.--The manners of the Christians.",
+      "file": "0069-chapter-v-the-manners-of-the-christians.json",
+      "words": 427
+    },
+    {
+      "index": 70,
+      "heading": "Chapter VI.--The relation of Christians to the world.",
+      "file": "0070-chapter-vi-the-relation-of-christians-to-the-world.json",
+      "words": 282
+    },
+    {
+      "index": 71,
+      "heading": "Chapter VII.--The manifestation of Christ.",
+      "file": "0071-chapter-vii-the-manifestation-of-christ.json",
+      "words": 523
+    },
+    {
+      "index": 72,
+      "heading": "Chapter VIII.--The miserable state of men before the coming of the Word.",
+      "file": "0072-chapter-viii-the-miserable-state-of-men-before-the-coming-of-the-word.json",
+      "words": 392
+    },
+    {
+      "index": 73,
+      "heading": "Chapter IX.--Why the Son was sent so late.",
+      "file": "0073-chapter-ix-why-the-son-was-sent-so-late.json",
+      "words": 559
+    },
+    {
+      "index": 74,
+      "heading": "Chapter X.--The blessings that will flow from faith.",
+      "file": "0074-chapter-x-the-blessings-that-will-flow-from-faith.json",
+      "words": 446
+    },
+    {
+      "index": 75,
+      "heading": "Chapter XI.--These things are worthy to be known and believed.",
+      "file": "0075-chapter-xi-these-things-are-worthy-to-be-known-and-believed.json",
+      "words": 416
+    },
+    {
+      "index": 76,
+      "heading": "Chapter XII.--The importance of knowledge to true spiritual life.",
+      "file": "0076-chapter-xii-the-importance-of-knowledge-to-true-spiritual-life.json",
+      "words": 1342
+    },
+    {
+      "index": 77,
+      "heading": "Chapter I.--Praise of the Philippians.",
+      "file": "0077-chapter-i-praise-of-the-philippians.json",
+      "words": 194
+    },
+    {
+      "index": 78,
+      "heading": "Chapter II.--An exhortation to virtue.",
+      "file": "0078-chapter-ii-an-exhortation-to-virtue.json",
+      "words": 319
+    },
+    {
+      "index": 79,
+      "heading": "Chapter III.--Expressions of personal unworthiness.",
+      "file": "0079-chapter-iii-expressions-of-personal-unworthiness.json",
+      "words": 226
+    },
+    {
+      "index": 80,
+      "heading": "Chapter IV.--Various exhortations.",
+      "file": "0080-chapter-iv-various-exhortations.json",
+      "words": 198
+    },
+    {
+      "index": 81,
+      "heading": "Chapter V.--The duties of deacons, youths, and virgins.",
+      "file": "0081-chapter-v-the-duties-of-deacons-youths-and-virgins.json",
+      "words": 319
+    },
+    {
+      "index": 82,
+      "heading": "Chapter VI.--The duties of presbyters and others.",
+      "file": "0082-chapter-vi-the-duties-of-presbyters-and-others.json",
+      "words": 237
+    },
+    {
+      "index": 83,
+      "heading": "Chapter VII.--Avoid the Docetæ, and persevere in fasting and prayer.",
+      "file": "0083-chapter-vii-avoid-the-docet-and-persevere-in-fasting-and-prayer.json",
+      "words": 189
+    },
+    {
+      "index": 84,
+      "heading": "Chapter VIII.--Persevere in hope and patience.",
+      "file": "0084-chapter-viii-persevere-in-hope-and-patience.json",
+      "words": 135
+    },
+    {
+      "index": 85,
+      "heading": "Chapter IX.--Patience inculcated.",
+      "file": "0085-chapter-ix-patience-inculcated.json",
+      "words": 130
+    },
+    {
+      "index": 86,
+      "heading": "Chapter X.--Exhortation to the practice of virtue. [391]",
+      "file": "0086-chapter-x-exhortation-to-the-practice-of-virtue-391.json",
+      "words": 176
+    },
+    {
+      "index": 87,
+      "heading": "Chapter XI.--Expression of grief on account of Valens.",
+      "file": "0087-chapter-xi-expression-of-grief-on-account-of-valens.json",
+      "words": 371
+    },
+    {
+      "index": 88,
+      "heading": "Chapter XII.--Exhortation to various graces.",
+      "file": "0088-chapter-xii-exhortation-to-various-graces.json",
+      "words": 261
+    },
+    {
+      "index": 89,
+      "heading": "Chapter XIII.--Concerning the transmission of epistles.",
+      "file": "0089-chapter-xiii-concerning-the-transmission-of-epistles.json",
+      "words": 265
+    },
+    {
+      "index": 90,
+      "heading": "Chapter XIV.--Conclusion.",
+      "file": "0090-chapter-xiv-conclusion.json",
+      "words": 836
+    },
+    {
+      "index": 91,
+      "heading": "Chapter I.--Subject of which we write.",
+      "file": "0091-chapter-i-subject-of-which-we-write.json",
+      "words": 126
+    },
+    {
+      "index": 92,
+      "heading": "Chapter II.--The wonderful constancy of the martyrs.",
+      "file": "0092-chapter-ii-the-wonderful-constancy-of-the-martyrs.json",
+      "words": 355
+    },
+    {
+      "index": 93,
+      "heading": "Chapter III.--The constancy of Germanicus. The death of Polycarp is demanded.",
+      "file": "0093-chapter-iii-the-constancy-of-germanicus-the-death-of-polycarp-is-demanded.json",
+      "words": 140
+    },
+    {
+      "index": 94,
+      "heading": "Chapter IV.--Quintus the apostate.",
+      "file": "0094-chapter-iv-quintus-the-apostate.json",
+      "words": 80
+    },
+    {
+      "index": 95,
+      "heading": "Chapter V.--The departure and vision of Polycarp.",
+      "file": "0095-chapter-v-the-departure-and-vision-of-polycarp.json",
+      "words": 133
+    },
+    {
+      "index": 96,
+      "heading": "Chapter VI.--Polycarp is betrayed by a servant.",
+      "file": "0096-chapter-vi-polycarp-is-betrayed-by-a-servant.json",
+      "words": 151
+    },
+    {
+      "index": 97,
+      "heading": "Chapter VII.--Polycarp is found by his pursuers.",
+      "file": "0097-chapter-vii-polycarp-is-found-by-his-pursuers.json",
+      "words": 270
+    },
+    {
+      "index": 98,
+      "heading": "Chapter VIII.--Polycarp is brought into the city.",
+      "file": "0098-chapter-viii-polycarp-is-brought-into-the-city.json",
+      "words": 285
+    },
+    {
+      "index": 99,
+      "heading": "Chapter IX.--Polycarp refuses to revile Christ.",
+      "file": "0099-chapter-ix-polycarp-refuses-to-revile-christ.json",
+      "words": 222
+    },
+    {
+      "index": 100,
+      "heading": "Chapter X.--Polycarp confesses himself a Christian.",
+      "file": "0100-chapter-x-polycarp-confesses-himself-a-christian.json",
+      "words": 167
+    },
+    {
+      "index": 101,
+      "heading": "Chapter XI.--No threats have any effect on Polycarp.",
+      "file": "0101-chapter-xi-no-threats-have-any-effect-on-polycarp.json",
+      "words": 165
+    },
+    {
+      "index": 102,
+      "heading": "Chapter XII.--Polycarp is sentenced to be burned.",
+      "file": "0102-chapter-xii-polycarp-is-sentenced-to-be-burned.json",
+      "words": 271
+    },
+    {
+      "index": 103,
+      "heading": "Chapter XIII.--The funeral pile is erected.",
+      "file": "0103-chapter-xiii-the-funeral-pile-is-erected.json",
+      "words": 188
+    },
+    {
+      "index": 104,
+      "heading": "Chapter XIV.--The prayer of Polycarp.",
+      "file": "0104-chapter-xiv-the-prayer-of-polycarp.json",
+      "words": 291
+    },
+    {
+      "index": 105,
+      "heading": "Chapter XV.--Polycarp is not injured by the fire.",
+      "file": "0105-chapter-xv-polycarp-is-not-injured-by-the-fire.json",
+      "words": 151
+    },
+    {
+      "index": 106,
+      "heading": "Chapter XVI.--Polycarp is pierced by a dagger.",
+      "file": "0106-chapter-xvi-polycarp-is-pierced-by-a-dagger.json",
+      "words": 156
+    },
+    {
+      "index": 107,
+      "heading": "Chapter XVII.--The Christians are refused Polycarp's body.",
+      "file": "0107-chapter-xvii-the-christians-are-refused-polycarp-s-body.json",
+      "words": 293
+    },
+    {
+      "index": 108,
+      "heading": "Chapter XVIII.--The body of Polycarp is burned.",
+      "file": "0108-chapter-xviii-the-body-of-polycarp-is-burned.json",
+      "words": 121
+    },
+    {
+      "index": 109,
+      "heading": "Chapter XIX.--Praise of the martyr Polycarp.",
+      "file": "0109-chapter-xix-praise-of-the-martyr-polycarp.json",
+      "words": 173
+    },
+    {
+      "index": 110,
+      "heading": "Chapter XX.--This epistle is to be transmitted to the brethren.",
+      "file": "0110-chapter-xx-this-epistle-is-to-be-transmitted-to-the-brethren.json",
+      "words": 137
+    },
+    {
+      "index": 111,
+      "heading": "Chapter XXI.--The date of the martyrdom.",
+      "file": "0111-chapter-xxi-the-date-of-the-martyrdom.json",
+      "words": 162
+    },
+    {
+      "index": 112,
+      "heading": "Chapter XXII.--Salutation.",
+      "file": "0112-chapter-xxii-salutation.json",
+      "words": 3014
+    },
+    {
+      "index": 113,
+      "heading": "Chapter I.--Praise of the Ephesians.",
+      "file": "0113-chapter-i-praise-of-the-ephesians.json",
+      "words": 436
+    },
+    {
+      "index": 114,
+      "heading": "Chapter II.--Congratulations and entreaties.",
+      "file": "0114-chapter-ii-congratulations-and-entreaties.json",
+      "words": 426
+    },
+    {
+      "index": 115,
+      "heading": "Chapter III.--Exhortations to unity.",
+      "file": "0115-chapter-iii-exhortations-to-unity.json",
+      "words": 331
+    },
+    {
+      "index": 116,
+      "heading": "Chapter IV.--The same continued.",
+      "file": "0116-chapter-iv-the-same-continued.json",
+      "words": 327
+    },
+    {
+      "index": 117,
+      "heading": "Chapter V.--The praise of unity.",
+      "file": "0117-chapter-v-the-praise-of-unity.json",
+      "words": 541
+    },
+    {
+      "index": 118,
+      "heading": "Chapter VI.--Have respect to the bishop as to Christ Himself.",
+      "file": "0118-chapter-vi-have-respect-to-the-bishop-as-to-christ-himself.json",
+      "words": 359
+    },
+    {
+      "index": 119,
+      "heading": "Chapter VII.--Beware of false teachers.",
+      "file": "0119-chapter-vii-beware-of-false-teachers.json",
+      "words": 375
+    },
+    {
+      "index": 120,
+      "heading": "Chapter VIII.--Renewed praise of the Ephesians.",
+      "file": "0120-chapter-viii-renewed-praise-of-the-ephesians.json",
+      "words": 305
+    },
+    {
+      "index": 121,
+      "heading": "Chapter IX.--Ye have given no heed to false teachers.",
+      "file": "0121-chapter-ix-ye-have-given-no-heed-to-false-teachers.json",
+      "words": 686
+    },
+    {
+      "index": 122,
+      "heading": "Chapter X.--Exhortations to prayer, humility, etc.",
+      "file": "0122-chapter-x-exhortations-to-prayer-humility-etc.json",
+      "words": 551
+    },
+    {
+      "index": 123,
+      "heading": "Chapter XI.--An exhortation to fear God, etc.",
+      "file": "0123-chapter-xi-an-exhortation-to-fear-god-etc.json",
+      "words": 353
+    },
+    {
+      "index": 124,
+      "heading": "Chapter XII.--Praise of the Ephesians.",
+      "file": "0124-chapter-xii-praise-of-the-ephesians.json",
+      "words": 256
+    },
+    {
+      "index": 125,
+      "heading": "Chapter XIII.--Exhortation to meet together frequently for the worship of God.",
+      "file": "0125-chapter-xiii-exhortation-to-meet-together-frequently-for-the-worship-of-god.json",
+      "words": 205
+    },
+    {
+      "index": 126,
+      "heading": "Chapter XIV.--Exhortations to faith and love.",
+      "file": "0126-chapter-xiv-exhortations-to-faith-and-love.json",
+      "words": 328
+    },
+    {
+      "index": 127,
+      "heading": "Chapter XV.--Exhortation to confess Christ by silence as well as speech.",
+      "file": "0127-chapter-xv-exhortation-to-confess-christ-by-silence-as-well-as-speech.json",
+      "words": 369
+    },
+    {
+      "index": 128,
+      "heading": "Chapter XVI.--The fate of false teachers.",
+      "file": "0128-chapter-xvi-the-fate-of-false-teachers.json",
+      "words": 276
+    },
+    {
+      "index": 129,
+      "heading": "Chapter XVII.--Beware of false doctrines.",
+      "file": "0129-chapter-xvii-beware-of-false-doctrines.json",
+      "words": 261
+    },
+    {
+      "index": 130,
+      "heading": "Chapter XVIII.--The glory of the cross.",
+      "file": "0130-chapter-xviii-the-glory-of-the-cross.json",
+      "words": 278
+    },
+    {
+      "index": 131,
+      "heading": "Chapter XIX.--Three celebrated mysteries.",
+      "file": "0131-chapter-xix-three-celebrated-mysteries.json",
+      "words": 436
+    },
+    {
+      "index": 132,
+      "heading": "Chapter XX.--Promise of another letter.",
+      "file": "0132-chapter-xx-promise-of-another-letter.json",
+      "words": 183
+    },
+    {
+      "index": 133,
+      "heading": "Chapter XX.--Exhortations to stedfastness and unity.",
+      "file": "0133-chapter-xx-exhortations-to-stedfastness-and-unity.json",
+      "words": 130
+    },
+    {
+      "index": 134,
+      "heading": "Chapter XXI.--Conclusion.",
+      "file": "0134-chapter-xxi-conclusion.json",
+      "words": 447
+    },
+    {
+      "index": 135,
+      "heading": "Chapter I.--Reason of writing the epistle.",
+      "file": "0135-chapter-i-reason-of-writing-the-epistle.json",
+      "words": 292
+    },
+    {
+      "index": 136,
+      "heading": "Chapter II.--I rejoice in your messengers.",
+      "file": "0136-chapter-ii-i-rejoice-in-your-messengers.json",
+      "words": 193
+    },
+    {
+      "index": 137,
+      "heading": "Chapter III.--Honour your youthful bishop.",
+      "file": "0137-chapter-iii-honour-your-youthful-bishop.json",
+      "words": 796
+    },
+    {
+      "index": 138,
+      "heading": "Chapter IV.--Some wickedly act independently of the bishop.",
+      "file": "0138-chapter-iv-some-wickedly-act-independently-of-the-bishop.json",
+      "words": 160
+    },
+    {
+      "index": 139,
+      "heading": "Chapter V.--Death is the fate of all such.",
+      "file": "0139-chapter-v-death-is-the-fate-of-all-such.json",
+      "words": 346
+    },
+    {
+      "index": 140,
+      "heading": "Chapter VI.--Preserve harmony.",
+      "file": "0140-chapter-vi-preserve-harmony.json",
+      "words": 364
+    },
+    {
+      "index": 141,
+      "heading": "Chapter VII.--Do nothing without the bishop and presbyters.",
+      "file": "0141-chapter-vii-do-nothing-without-the-bishop-and-presbyters.json",
+      "words": 247
+    },
+    {
+      "index": 142,
+      "heading": "Chapter VIII.--Caution against false doctrines.",
+      "file": "0142-chapter-viii-caution-against-false-doctrines.json",
+      "words": 278
+    },
+    {
+      "index": 143,
+      "heading": "Chapter IX.--Let us live with Christ.",
+      "file": "0143-chapter-ix-let-us-live-with-christ.json",
+      "words": 618
+    },
+    {
+      "index": 144,
+      "heading": "Chapter X.--Beware of Judaizing.",
+      "file": "0144-chapter-x-beware-of-judaizing.json",
+      "words": 447
+    },
+    {
+      "index": 145,
+      "heading": "Chapter XI.--I write these things to warn you.",
+      "file": "0145-chapter-xi-i-write-these-things-to-warn-you.json",
+      "words": 385
+    },
+    {
+      "index": 146,
+      "heading": "Chapter XII.--Ye are superior to me.",
+      "file": "0146-chapter-xii-ye-are-superior-to-me.json",
+      "words": 363
+    },
+    {
+      "index": 147,
+      "heading": "Chapter XIII.--Be established in faith and unity.",
+      "file": "0147-chapter-xiii-be-established-in-faith-and-unity.json",
+      "words": 202
+    },
+    {
+      "index": 148,
+      "heading": "Chapter XIV.--Your prayers requested.",
+      "file": "0148-chapter-xiv-your-prayers-requested.json",
+      "words": 186
+    },
+    {
+      "index": 149,
+      "heading": "Chapter XV.--Salutations.",
+      "file": "0149-chapter-xv-salutations.json",
+      "words": 297
+    },
+    {
+      "index": 150,
+      "heading": "Chapter I.--Acknowledgment of their excellence.",
+      "file": "0150-chapter-i-acknowledgment-of-their-excellence.json",
+      "words": 223
+    },
+    {
+      "index": 151,
+      "heading": "Chapter II.--Be subject to the bishop, etc.",
+      "file": "0151-chapter-ii-be-subject-to-the-bishop-etc.json",
+      "words": 367
+    },
+    {
+      "index": 152,
+      "heading": "Chapter III.--Honour the deacons, etc.",
+      "file": "0152-chapter-iii-honour-the-deacons-etc.json",
+      "words": 393
+    },
+    {
+      "index": 153,
+      "heading": "Chapter IV.--I have need of humility.",
+      "file": "0153-chapter-iv-i-have-need-of-humility.json",
+      "words": 258
+    },
+    {
+      "index": 154,
+      "heading": "Chapter V.--I will not teach you profound doctrines.",
+      "file": "0154-chapter-v-i-will-not-teach-you-profound-doctrines.json",
+      "words": 320
+    },
+    {
+      "index": 155,
+      "heading": "Chapter VI.--Abstain from the poison of heretics.",
+      "file": "0155-chapter-vi-abstain-from-the-poison-of-heretics.json",
+      "words": 429
+    },
+    {
+      "index": 156,
+      "heading": "Chapter VII.--The same continued.",
+      "file": "0156-chapter-vii-the-same-continued.json",
+      "words": 467
+    },
+    {
+      "index": 157,
+      "heading": "Chapter VIII.--Be on your guard against the snares of the devil.",
+      "file": "0157-chapter-viii-be-on-your-guard-against-the-snares-of-the-devil.json",
+      "words": 417
+    },
+    {
+      "index": 158,
+      "heading": "Chapter IX.--Reference to the history of Christ.",
+      "file": "0158-chapter-ix-reference-to-the-history-of-christ.json",
+      "words": 563
+    },
+    {
+      "index": 159,
+      "heading": "Chapter X.--The reality of Christ's passion.",
+      "file": "0159-chapter-x-the-reality-of-christ-s-passion.json",
+      "words": 686
+    },
+    {
+      "index": 160,
+      "heading": "Chapter XI.--Avoid the deadly errors of the Docetæ.",
+      "file": "0160-chapter-xi-avoid-the-deadly-errors-of-the-docet.json",
+      "words": 369
+    },
+    {
+      "index": 161,
+      "heading": "Chapter XII.--Continue in unity and love.",
+      "file": "0161-chapter-xii-continue-in-unity-and-love.json",
+      "words": 311
+    },
+    {
+      "index": 162,
+      "heading": "Chapter XIII.--Conclusion.",
+      "file": "0162-chapter-xiii-conclusion.json",
+      "words": 751
+    },
+    {
+      "index": 163,
+      "heading": "Chapter I.--As a prisoner, I hope to see you.",
+      "file": "0163-chapter-i-as-a-prisoner-i-hope-to-see-you.json",
+      "words": 356
+    },
+    {
+      "index": 164,
+      "heading": "Chapter II.--Do not save me from martyrdom.",
+      "file": "0164-chapter-ii-do-not-save-me-from-martyrdom.json",
+      "words": 407
+    },
+    {
+      "index": 165,
+      "heading": "Chapter III.--Pray rather that I may attain to martyrdom.",
+      "file": "0165-chapter-iii-pray-rather-that-i-may-attain-to-martyrdom.json",
+      "words": 393
+    },
+    {
+      "index": 166,
+      "heading": "Chapter IV.--Allow me to fall a prey to the wild beasts.",
+      "file": "0166-chapter-iv-allow-me-to-fall-a-prey-to-the-wild-beasts.json",
+      "words": 483
+    },
+    {
+      "index": 167,
+      "heading": "Chapter V.--I desire to die.",
+      "file": "0167-chapter-v-i-desire-to-die.json",
+      "words": 560
+    },
+    {
+      "index": 168,
+      "heading": "Chapter VI.--By death I shall attain true life.",
+      "file": "0168-chapter-vi-by-death-i-shall-attain-true-life.json",
+      "words": 404
+    },
+    {
+      "index": 169,
+      "heading": "Chapter VII.--Reason of desiring to die.",
+      "file": "0169-chapter-vii-reason-of-desiring-to-die.json",
+      "words": 503
+    },
+    {
+      "index": 170,
+      "heading": "Chapter VIII.--Be ye favourable to me.",
+      "file": "0170-chapter-viii-be-ye-favourable-to-me.json",
+      "words": 297
+    },
+    {
+      "index": 171,
+      "heading": "Chapter IX.--Pray for the church in Syria.",
+      "file": "0171-chapter-ix-pray-for-the-church-in-syria.json",
+      "words": 307
+    },
+    {
+      "index": 172,
+      "heading": "Chapter X.--Conclusion.",
+      "file": "0172-chapter-x-conclusion.json",
+      "words": 464
+    },
+    {
+      "index": 173,
+      "heading": "Chapter I.--Praise of the bishop.",
+      "file": "0173-chapter-i-praise-of-the-bishop.json",
+      "words": 293
+    },
+    {
+      "index": 174,
+      "heading": "Chapter II.--Maintain union with the bishop.",
+      "file": "0174-chapter-ii-maintain-union-with-the-bishop.json",
+      "words": 160
+    },
+    {
+      "index": 175,
+      "heading": "Chapter III.--Avoid schismatics.",
+      "file": "0175-chapter-iii-avoid-schismatics.json",
+      "words": 653
+    },
+    {
+      "index": 176,
+      "heading": "Chapter IV.--Have but one Eucharist, etc.",
+      "file": "0176-chapter-iv-have-but-one-eucharist-etc.json",
+      "words": 854
+    },
+    {
+      "index": 177,
+      "heading": "Chapter V.--Pray for me.",
+      "file": "0177-chapter-v-pray-for-me.json",
+      "words": 454
+    },
+    {
+      "index": 178,
+      "heading": "Chapter VI.--Do not accept Judaism.",
+      "file": "0178-chapter-vi-do-not-accept-judaism.json",
+      "words": 811
+    },
+    {
+      "index": 179,
+      "heading": "Chapter VII.--I have exhorted you to unity.",
+      "file": "0179-chapter-vii-i-have-exhorted-you-to-unity.json",
+      "words": 348
+    },
+    {
+      "index": 180,
+      "heading": "Chapter VIII.--The same continued.",
+      "file": "0180-chapter-viii-the-same-continued.json",
+      "words": 453
+    },
+    {
+      "index": 181,
+      "heading": "Chapter IX.--The Old Testament is good: the New Testament is better.",
+      "file": "0181-chapter-ix-the-old-testament-is-good-the-new-testament-is-better.json",
+      "words": 448
+    },
+    {
+      "index": 182,
+      "heading": "Chapter X.--Congratulate the inhabitants of Antioch on the close of the",
+      "file": "0182-chapter-x-congratulate-the-inhabitants-of-antioch-on-the-close-of-the.json",
+      "words": 286
+    },
+    {
+      "index": 183,
+      "heading": "Chapter XI.--Thanks and salutation.",
+      "file": "0183-chapter-xi-thanks-and-salutation.json",
+      "words": 519
+    },
+    {
+      "index": 184,
+      "heading": "Chapter I.--Thanks to God for your faith.",
+      "file": "0184-chapter-i-thanks-to-god-for-your-faith.json",
+      "words": 427
+    },
+    {
+      "index": 185,
+      "heading": "Chapter II.--Christ's true passion.",
+      "file": "0185-chapter-ii-christ-s-true-passion.json",
+      "words": 290
+    },
+    {
+      "index": 186,
+      "heading": "Chapter III.--Christ was possessed of a body after His resurrection.",
+      "file": "0186-chapter-iii-christ-was-possessed-of-a-body-after-his-resurrection.json",
+      "words": 480
+    },
+    {
+      "index": 187,
+      "heading": "Chapter IV.--Beware of these heretics.",
+      "file": "0187-chapter-iv-beware-of-these-heretics.json",
+      "words": 333
+    },
+    {
+      "index": 188,
+      "heading": "Chapter V.--Their dangerous errors.",
+      "file": "0188-chapter-v-their-dangerous-errors.json",
+      "words": 303
+    },
+    {
+      "index": 189,
+      "heading": "Chapter VI--Unbelievers in the blood of Christ shall be condemned.",
+      "file": "0189-chapter-vi-unbelievers-in-the-blood-of-christ-shall-be-condemned.json",
+      "words": 444
+    },
+    {
+      "index": 190,
+      "heading": "Chapter VII.--Let us stand aloof from such heretics.",
+      "file": "0190-chapter-vii-let-us-stand-aloof-from-such-heretics.json",
+      "words": 467
+    },
+    {
+      "index": 191,
+      "heading": "Chapter VIII.--Let nothing be done without the bishop.",
+      "file": "0191-chapter-viii-let-nothing-be-done-without-the-bishop.json",
+      "words": 321
+    },
+    {
+      "index": 192,
+      "heading": "Chapter IX.--Honour the bishop.",
+      "file": "0192-chapter-ix-honour-the-bishop.json",
+      "words": 588
+    },
+    {
+      "index": 193,
+      "heading": "Chapter X.--Acknowledgment of their kindness.",
+      "file": "0193-chapter-x-acknowledgment-of-their-kindness.json",
+      "words": 234
+    },
+    {
+      "index": 194,
+      "heading": "Chapter XI.--Request to them to send a messenger to Antioch.",
+      "file": "0194-chapter-xi-request-to-them-to-send-a-messenger-to-antioch.json",
+      "words": 540
+    },
+    {
+      "index": 195,
+      "heading": "Chapter XII.--Salutations.",
+      "file": "0195-chapter-xii-salutations.json",
+      "words": 282
+    },
+    {
+      "index": 196,
+      "heading": "Chapter XIII.--Conclusion.",
+      "file": "0196-chapter-xiii-conclusion-2.json",
+      "words": 304
+    },
+    {
+      "index": 197,
+      "heading": "Chapter I.--Commendation and exhortation.",
+      "file": "0197-chapter-i-commendation-and-exhortation.json",
+      "words": 409
+    },
+    {
+      "index": 198,
+      "heading": "Chapter II.--Exhortations.",
+      "file": "0198-chapter-ii-exhortations.json",
+      "words": 451
+    },
+    {
+      "index": 199,
+      "heading": "Chapter III.--Exhortations.",
+      "file": "0199-chapter-iii-exhortations.json",
+      "words": 320
+    },
+    {
+      "index": 200,
+      "heading": "Chapter IV.--Exhortations.",
+      "file": "0200-chapter-iv-exhortations.json",
+      "words": 337
+    },
+    {
+      "index": 201,
+      "heading": "Chapter V.--The duties of husbands and wives.",
+      "file": "0201-chapter-v-the-duties-of-husbands-and-wives.json",
+      "words": 367
+    },
+    {
+      "index": 202,
+      "heading": "Chapter VI.--The duties of the Christian flock.",
+      "file": "0202-chapter-vi-the-duties-of-the-christian-flock.json",
+      "words": 417
+    },
+    {
+      "index": 203,
+      "heading": "Chapter VII.--Request that Polycarp would send a messenger to Antioch.",
+      "file": "0203-chapter-vii-request-that-polycarp-would-send-a-messenger-to-antioch.json",
+      "words": 434
+    },
+    {
+      "index": 204,
+      "heading": "Chapter VIII.--Let other churches also send to Antioch.",
+      "file": "0204-chapter-viii-let-other-churches-also-send-to-antioch.json",
+      "words": 916
+    },
+    {
+      "index": 205,
+      "heading": "Chapter I.",
+      "file": "0205-chapter-i.json",
+      "words": 195
+    },
+    {
+      "index": 206,
+      "heading": "Chapter II.",
+      "file": "0206-chapter-ii.json",
+      "words": 229
+    },
+    {
+      "index": 207,
+      "heading": "Chapter III.",
+      "file": "0207-chapter-iii.json",
+      "words": 135
+    },
+    {
+      "index": 208,
+      "heading": "Chapter IV.",
+      "file": "0208-chapter-iv.json",
+      "words": 127
+    },
+    {
+      "index": 209,
+      "heading": "Chapter V.",
+      "file": "0209-chapter-v.json",
+      "words": 153
+    },
+    {
+      "index": 210,
+      "heading": "Chapter VI.",
+      "file": "0210-chapter-vi.json",
+      "words": 175
+    },
+    {
+      "index": 211,
+      "heading": "Chapter VII.",
+      "file": "0211-chapter-vii.json",
+      "words": 39
+    },
+    {
+      "index": 212,
+      "heading": "Chapter VIII.",
+      "file": "0212-chapter-viii.json",
+      "words": 183
+    },
+    {
+      "index": 213,
+      "heading": "Chapter I.",
+      "file": "0213-chapter-i-2.json",
+      "words": 246
+    },
+    {
+      "index": 214,
+      "heading": "Chapter III. [1152]",
+      "file": "0214-chapter-iii-1152.json",
+      "words": 57
+    },
+    {
+      "index": 215,
+      "heading": "Chapter VIII. [1153]",
+      "file": "0215-chapter-viii-1153.json",
+      "words": 149
+    },
+    {
+      "index": 216,
+      "heading": "Chapter IX.",
+      "file": "0216-chapter-ix.json",
+      "words": 60
+    },
+    {
+      "index": 217,
+      "heading": "Chapter X.",
+      "file": "0217-chapter-x.json",
+      "words": 97
+    },
+    {
+      "index": 218,
+      "heading": "Chapter XIV. [1155]",
+      "file": "0218-chapter-xiv-1155.json",
+      "words": 63
+    },
+    {
+      "index": 219,
+      "heading": "Chapter XV.",
+      "file": "0219-chapter-xv.json",
+      "words": 47
+    },
+    {
+      "index": 220,
+      "heading": "Chapter XVIII. [1157]",
+      "file": "0220-chapter-xviii-1157.json",
+      "words": 43
+    },
+    {
+      "index": 221,
+      "heading": "Chapter XIX.",
+      "file": "0221-chapter-xix.json",
+      "words": 353
+    },
+    {
+      "index": 222,
+      "heading": "Chapter I.",
+      "file": "0222-chapter-i-3.json",
+      "words": 129
+    },
+    {
+      "index": 223,
+      "heading": "Chapter II.",
+      "file": "0223-chapter-ii-2.json",
+      "words": 146
+    },
+    {
+      "index": 224,
+      "heading": "Chapter III.",
+      "file": "0224-chapter-iii-2.json",
+      "words": 131
+    },
+    {
+      "index": 225,
+      "heading": "Chapter IV.",
+      "file": "0225-chapter-iv-2.json",
+      "words": 251
+    },
+    {
+      "index": 226,
+      "heading": "Chapter V.",
+      "file": "0226-chapter-v-2.json",
+      "words": 322
+    },
+    {
+      "index": 227,
+      "heading": "Chapter VI.",
+      "file": "0227-chapter-vi-2.json",
+      "words": 25
+    },
+    {
+      "index": 228,
+      "heading": "Chapter VII.",
+      "file": "0228-chapter-vii-2.json",
+      "words": 54
+    },
+    {
+      "index": 229,
+      "heading": "Chapter IX. [1172]",
+      "file": "0229-chapter-ix-1172.json",
+      "words": 1365
+    },
+    {
+      "index": 230,
+      "heading": "Chapter I.--His own sufferings: exhortation to stedfastness.",
+      "file": "0230-chapter-i-his-own-sufferings-exhortation-to-stedfastness.json",
+      "words": 192
+    },
+    {
+      "index": 231,
+      "heading": "Chapter II.--Cautions against false doctrine.",
+      "file": "0231-chapter-ii-cautions-against-false-doctrine.json",
+      "words": 214
+    },
+    {
+      "index": 232,
+      "heading": "Chapter III.--The true doctrine respecting Christ.",
+      "file": "0232-chapter-iii-the-true-doctrine-respecting-christ.json",
+      "words": 195
+    },
+    {
+      "index": 233,
+      "heading": "Chapter IV.--Continuation.",
+      "file": "0233-chapter-iv-continuation.json",
+      "words": 134
+    },
+    {
+      "index": 234,
+      "heading": "Chapter V.--Refutation of the previously mentioned errors.",
+      "file": "0234-chapter-v-refutation-of-the-previously-mentioned-errors.json",
+      "words": 117
+    },
+    {
+      "index": 235,
+      "heading": "Chapter VI.--Continuation.",
+      "file": "0235-chapter-vi-continuation.json",
+      "words": 310
+    },
+    {
+      "index": 236,
+      "heading": "Chapter VII.--Continuation.",
+      "file": "0236-chapter-vii-continuation.json",
+      "words": 272
+    },
+    {
+      "index": 237,
+      "heading": "Chapter VIII.--Exhortations to holiness and good order.",
+      "file": "0237-chapter-viii-exhortations-to-holiness-and-good-order.json",
+      "words": 108
+    },
+    {
+      "index": 238,
+      "heading": "Chapter IX.--Exhortations to the discharge of relative duties.",
+      "file": "0238-chapter-ix-exhortations-to-the-discharge-of-relative-duties.json",
+      "words": 129
+    },
+    {
+      "index": 239,
+      "heading": "Chapter X.--Salutations.",
+      "file": "0239-chapter-x-salutations.json",
+      "words": 177
+    },
+    {
+      "index": 240,
+      "heading": "Chapter I.--Cautions against error.",
+      "file": "0240-chapter-i-cautions-against-error.json",
+      "words": 134
+    },
+    {
+      "index": 241,
+      "heading": "Chapter II.--The true doctrine respecting God and Christ.",
+      "file": "0241-chapter-ii-the-true-doctrine-respecting-god-and-christ.json",
+      "words": 161
+    },
+    {
+      "index": 242,
+      "heading": "Chapter III.--The same continued.",
+      "file": "0242-chapter-iii-the-same-continued.json",
+      "words": 171
+    },
+    {
+      "index": 243,
+      "heading": "Chapter IV.--Continuation.",
+      "file": "0243-chapter-iv-continuation-2.json",
+      "words": 197
+    },
+    {
+      "index": 244,
+      "heading": "Chapter V.--Denunciation of false teachers.",
+      "file": "0244-chapter-v-denunciation-of-false-teachers.json",
+      "words": 171
+    },
+    {
+      "index": 245,
+      "heading": "Chapter VI.--Renewed cautions.",
+      "file": "0245-chapter-vi-renewed-cautions.json",
+      "words": 116
+    },
+    {
+      "index": 246,
+      "heading": "Chapter VII.--Exhortation to consistency of conduct.",
+      "file": "0246-chapter-vii-exhortation-to-consistency-of-conduct.json",
+      "words": 173
+    },
+    {
+      "index": 247,
+      "heading": "Chapter VIII.--Exhortations to the presbyters and others.",
+      "file": "0247-chapter-viii-exhortations-to-the-presbyters-and-others.json",
+      "words": 98
+    },
+    {
+      "index": 248,
+      "heading": "Chapter IX.--Duties of husbands, wives, parents, and children.",
+      "file": "0248-chapter-ix-duties-of-husbands-wives-parents-and-children.json",
+      "words": 103
+    },
+    {
+      "index": 249,
+      "heading": "Chapter X.--Duties of masters and servants.",
+      "file": "0249-chapter-x-duties-of-masters-and-servants.json",
+      "words": 94
+    },
+    {
+      "index": 250,
+      "heading": "Chapter XI.--Inculcation of various moral duties.",
+      "file": "0250-chapter-xi-inculcation-of-various-moral-duties.json",
+      "words": 164
+    },
+    {
+      "index": 251,
+      "heading": "Chapter XII.--Salutations.",
+      "file": "0251-chapter-xii-salutations-2.json",
+      "words": 164
+    },
+    {
+      "index": 252,
+      "heading": "Chapter XIII.--Salutations continued.",
+      "file": "0252-chapter-xiii-salutations-continued.json",
+      "words": 107
+    },
+    {
+      "index": 253,
+      "heading": "Chapter XIV.--Conclusion.",
+      "file": "0253-chapter-xiv-conclusion-2.json",
+      "words": 192
+    },
+    {
+      "index": 254,
+      "heading": "Chapter I.--Exhortations to earnestness and moderation.",
+      "file": "0254-chapter-i-exhortations-to-earnestness-and-moderation.json",
+      "words": 296
+    },
+    {
+      "index": 255,
+      "heading": "Chapter II.--Cautions against false teachers.",
+      "file": "0255-chapter-ii-cautions-against-false-teachers.json",
+      "words": 167
+    },
+    {
+      "index": 256,
+      "heading": "Chapter III.--Exhortations as to ecclesiastical duties.",
+      "file": "0256-chapter-iii-exhortations-as-to-ecclesiastical-duties.json",
+      "words": 220
+    },
+    {
+      "index": 257,
+      "heading": "Chapter IV.--Servants and women are not to be despised.",
+      "file": "0257-chapter-iv-servants-and-women-are-not-to-be-despised.json",
+      "words": 198
+    },
+    {
+      "index": 258,
+      "heading": "Chapter V.--Various relative duties.",
+      "file": "0258-chapter-v-various-relative-duties.json",
+      "words": 148
+    },
+    {
+      "index": 259,
+      "heading": "Chapter VI--Exhortations to purity and caution.",
+      "file": "0259-chapter-vi-exhortations-to-purity-and-caution.json",
+      "words": 158
+    },
+    {
+      "index": 260,
+      "heading": "Chapter VII.--Solemn charge to Hero, as future bishop of Antioch.",
+      "file": "0260-chapter-vii-solemn-charge-to-hero-as-future-bishop-of-antioch.json",
+      "words": 150
+    },
+    {
+      "index": 261,
+      "heading": "Chapter VIII.--Salutations.",
+      "file": "0261-chapter-viii-salutations.json",
+      "words": 182
+    },
+    {
+      "index": 262,
+      "heading": "Chapter IX.--Concluding salutations and instructions.",
+      "file": "0262-chapter-ix-concluding-salutations-and-instructions.json",
+      "words": 247
+    },
+    {
+      "index": 263,
+      "heading": "Chapter I.--Reason for writing the epistle.",
+      "file": "0263-chapter-i-reason-for-writing-the-epistle.json",
+      "words": 240
+    },
+    {
+      "index": 264,
+      "heading": "Chapter II.--Unity of the three divine persons.",
+      "file": "0264-chapter-ii-unity-of-the-three-divine-persons.json",
+      "words": 303
+    },
+    {
+      "index": 265,
+      "heading": "Chapter III.--Christ was truly born, and died.",
+      "file": "0265-chapter-iii-christ-was-truly-born-and-died.json",
+      "words": 199
+    },
+    {
+      "index": 266,
+      "heading": "Chapter IV.--The malignity and folly of Satan.",
+      "file": "0266-chapter-iv-the-malignity-and-folly-of-satan.json",
+      "words": 409
+    },
+    {
+      "index": 267,
+      "heading": "Chapter V.--Apostrophe to Satan.",
+      "file": "0267-chapter-v-apostrophe-to-satan.json",
+      "words": 198
+    },
+    {
+      "index": 268,
+      "heading": "Chapter VI.--Continuation.",
+      "file": "0268-chapter-vi-continuation-2.json",
+      "words": 190
+    },
+    {
+      "index": 269,
+      "heading": "Chapter VII.--Continuation: inconsistency of Satan.",
+      "file": "0269-chapter-vii-continuation-inconsistency-of-satan.json",
+      "words": 168
+    },
+    {
+      "index": 270,
+      "heading": "Chapter VIII.--Continuation: ignorance of Satan.",
+      "file": "0270-chapter-viii-continuation-ignorance-of-satan.json",
+      "words": 312
+    },
+    {
+      "index": 271,
+      "heading": "Chapter IX.--Continuation: ignorance of Satan.",
+      "file": "0271-chapter-ix-continuation-ignorance-of-satan.json",
+      "words": 403
+    },
+    {
+      "index": 272,
+      "heading": "Chapter X.--Continuation: audacity of Satan.",
+      "file": "0272-chapter-x-continuation-audacity-of-satan.json",
+      "words": 161
+    },
+    {
+      "index": 273,
+      "heading": "Chapter XI.--Continuation: audacity of Satan.",
+      "file": "0273-chapter-xi-continuation-audacity-of-satan.json",
+      "words": 320
+    },
+    {
+      "index": 274,
+      "heading": "Chapter XII.--The meek reply of Christ.",
+      "file": "0274-chapter-xii-the-meek-reply-of-christ.json",
+      "words": 159
+    },
+    {
+      "index": 275,
+      "heading": "Chapter XIII.--Various exhortations and directions.",
+      "file": "0275-chapter-xiii-various-exhortations-and-directions.json",
+      "words": 193
+    },
+    {
+      "index": 276,
+      "heading": "Chapter XIV.--Farewells and cautions.",
+      "file": "0276-chapter-xiv-farewells-and-cautions.json",
+      "words": 96
+    },
+    {
+      "index": 277,
+      "heading": "Chapter XV.--Salutations. Conclusion.",
+      "file": "0277-chapter-xv-salutations-conclusion.json",
+      "words": 260
+    },
+    {
+      "index": 278,
+      "heading": "Chapter I.--Occasion of the epistle.",
+      "file": "0278-chapter-i-occasion-of-the-epistle-2.json",
+      "words": 182
+    },
+    {
+      "index": 279,
+      "heading": "Chapter II.--Youth may be allied with piety and discretion.",
+      "file": "0279-chapter-ii-youth-may-be-allied-with-piety-and-discretion.json",
+      "words": 176
+    },
+    {
+      "index": 280,
+      "heading": "Chapter III.--Examples of youthful devotedness.",
+      "file": "0280-chapter-iii-examples-of-youthful-devotedness.json",
+      "words": 266
+    },
+    {
+      "index": 281,
+      "heading": "Chapter IV.--The same subject continued.",
+      "file": "0281-chapter-iv-the-same-subject-continued.json",
+      "words": 221
+    },
+    {
+      "index": 282,
+      "heading": "Chapter V.--Expressions of respect for Ignatius.",
+      "file": "0282-chapter-v-expressions-of-respect-for-ignatius.json",
+      "words": 224
+    },
+    {
+      "index": 283,
+      "heading": "Chapter I.--Acknowledgment of her excellence and wisdom.",
+      "file": "0283-chapter-i-acknowledgment-of-her-excellence-and-wisdom.json",
+      "words": 162
+    },
+    {
+      "index": 284,
+      "heading": "Chapter II.--His own condition.",
+      "file": "0284-chapter-ii-his-own-condition.json",
+      "words": 130
+    },
+    {
+      "index": 285,
+      "heading": "Chapter III.--He had complied with her request.",
+      "file": "0285-chapter-iii-he-had-complied-with-her-request.json",
+      "words": 176
+    },
+    {
+      "index": 286,
+      "heading": "Chapter IV.--Commendation and exhortation.",
+      "file": "0286-chapter-iv-commendation-and-exhortation.json",
+      "words": 182
+    },
+    {
+      "index": 287,
+      "heading": "Chapter V.--Salutations and good wishes.",
+      "file": "0287-chapter-v-salutations-and-good-wishes.json",
+      "words": 1803
+    },
+    {
+      "index": 288,
+      "heading": "Chapter I.--Desire of Ignatius for martyrdom.",
+      "file": "0288-chapter-i-desire-of-ignatius-for-martyrdom.json",
+      "words": 246
+    },
+    {
+      "index": 289,
+      "heading": "Chapter II.--Ignatius is condemned by Trajan.",
+      "file": "0289-chapter-ii-ignatius-is-condemned-by-trajan.json",
+      "words": 684
+    },
+    {
+      "index": 290,
+      "heading": "Chapter III.--Ignatius sails to Smyrna.",
+      "file": "0290-chapter-iii-ignatius-sails-to-smyrna.json",
+      "words": 199
+    },
+    {
+      "index": 291,
+      "heading": "Chapter IV.--Ignatius writes to the churches.",
+      "file": "0291-chapter-iv-ignatius-writes-to-the-churches.json",
+      "words": 208
+    },
+    {
+      "index": 292,
+      "heading": "Chapter V.--Ignatius is brought to Rome.",
+      "file": "0292-chapter-v-ignatius-is-brought-to-rome.json",
+      "words": 316
+    },
+    {
+      "index": 293,
+      "heading": "Chapter VI.--Ignatius is devoured by the beasts at Rome.",
+      "file": "0293-chapter-vi-ignatius-is-devoured-by-the-beasts-at-rome.json",
+      "words": 486
+    },
+    {
+      "index": 294,
+      "heading": "Chapter VII.--Ignatius appears in a vision after his death.",
+      "file": "0294-chapter-vii-ignatius-appears-in-a-vision-after-his-death.json",
+      "words": 1820
+    },
+    {
+      "index": 295,
+      "heading": "Chapter I.--After the salutation, the writer declares that he would",
+      "file": "0295-chapter-i-after-the-salutation-the-writer-declares-that-he-would.json",
+      "words": 597
+    },
+    {
+      "index": 296,
+      "heading": "Chapter II.--The Jewish sacrifices are now abolished.",
+      "file": "0296-chapter-ii-the-jewish-sacrifices-are-now-abolished.json",
+      "words": 499
+    },
+    {
+      "index": 297,
+      "heading": "Chapter III.--The fasts of the Jews are not true fasts, nor acceptable to God.",
+      "file": "0297-chapter-iii-the-fasts-of-the-jews-are-not-true-fasts-nor-acceptable-to-god.json",
+      "words": 366
+    },
+    {
+      "index": 298,
+      "heading": "Chapter IV.--Antichrist is at hand: let us therefore avoid Jewish errors.",
+      "file": "0298-chapter-iv-antichrist-is-at-hand-let-us-therefore-avoid-jewish-errors.json",
+      "words": 1026
+    },
+    {
+      "index": 299,
+      "heading": "Chapter V.--The new covenant, founded on the sufferings of Christ, tends to",
+      "file": "0299-chapter-v-the-new-covenant-founded-on-the-sufferings-of-christ-tends-to.json",
+      "words": 695
+    },
+    {
+      "index": 300,
+      "heading": "Chapter VI.--The sufferings of Christ, and the new covenant, were announced by",
+      "file": "0300-chapter-vi-the-sufferings-of-christ-and-the-new-covenant-were-announced-by.json",
+      "words": 1206
+    },
+    {
+      "index": 301,
+      "heading": "Chapter VII.--Fasting, and the goat sent away, were types of Christ.",
+      "file": "0301-chapter-vii-fasting-and-the-goat-sent-away-were-types-of-christ.json",
+      "words": 850
+    },
+    {
+      "index": 302,
+      "heading": "Chapter VIII.--The red heifer a type of Christ.",
+      "file": "0302-chapter-viii-the-red-heifer-a-type-of-christ.json",
+      "words": 404
+    },
+    {
+      "index": 303,
+      "heading": "Chapter IX.--The spiritual meaning of circumcision.",
+      "file": "0303-chapter-ix-the-spiritual-meaning-of-circumcision.json",
+      "words": 805
+    },
+    {
+      "index": 304,
+      "heading": "Chapter X.--Spiritual significance of the precepts of Moses respecting",
+      "file": "0304-chapter-x-spiritual-significance-of-the-precepts-of-moses-respecting.json",
+      "words": 1001
+    },
+    {
+      "index": 305,
+      "heading": "Chapter XI.--Baptism and the cross prefigured in the Old Testament.",
+      "file": "0305-chapter-xi-baptism-and-the-cross-prefigured-in-the-old-testament.json",
+      "words": 627
+    },
+    {
+      "index": 306,
+      "heading": "Chapter XII.--The cross of Christ frequently announced in the Old Testament.",
+      "file": "0306-chapter-xii-the-cross-of-christ-frequently-announced-in-the-old-testament.json",
+      "words": 944
+    },
+    {
+      "index": 307,
+      "heading": "Chapter XIII.--Christians, and not Jews, the heirs of the covenant.",
+      "file": "0307-chapter-xiii-christians-and-not-jews-the-heirs-of-the-covenant.json",
+      "words": 452
+    },
+    {
+      "index": 308,
+      "heading": "Chapter XIV.--The Lord hath given us the testament which Moses received and",
+      "file": "0308-chapter-xiv-the-lord-hath-given-us-the-testament-which-moses-received-and.json",
+      "words": 624
+    },
+    {
+      "index": 309,
+      "heading": "Chapter XV.--The false and the true Sabbath.",
+      "file": "0309-chapter-xv-the-false-and-the-true-sabbath.json",
+      "words": 678
+    },
+    {
+      "index": 310,
+      "heading": "Chapter XVI.--The spiritual temple of God.",
+      "file": "0310-chapter-xvi-the-spiritual-temple-of-god.json",
+      "words": 618
+    },
+    {
+      "index": 311,
+      "heading": "Chapter XVII.--Conclusion of the first part of the epistle.",
+      "file": "0311-chapter-xvii-conclusion-of-the-first-part-of-the-epistle.json",
+      "words": 147
+    },
+    {
+      "index": 312,
+      "heading": "Chapter XVIII.--Second part of the epistle. The two ways.",
+      "file": "0312-chapter-xviii-second-part-of-the-epistle-the-two-ways.json",
+      "words": 99
+    },
+    {
+      "index": 313,
+      "heading": "Chapter XIX.--The way of light.",
+      "file": "0313-chapter-xix-the-way-of-light.json",
+      "words": 1044
+    },
+    {
+      "index": 314,
+      "heading": "Chapter XX.--The way of darkness.",
+      "file": "0314-chapter-xx-the-way-of-darkness.json",
+      "words": 236
+    },
+    {
+      "index": 315,
+      "heading": "Chapter XXI.--Conclusion.",
+      "file": "0315-chapter-xxi-conclusion-2.json",
+      "words": 982
+    },
+    {
+      "index": 316,
+      "heading": "Fragments of Papias",
+      "file": "0316-fragments-of-papias.json",
+      "words": 4234
+    },
+    {
+      "index": 317,
+      "heading": "Chapter I.--Address.",
+      "file": "0317-chapter-i-address.json",
+      "words": 90
+    },
+    {
+      "index": 318,
+      "heading": "Chapter II.--Justice demanded.",
+      "file": "0318-chapter-ii-justice-demanded.json",
+      "words": 223
+    },
+    {
+      "index": 319,
+      "heading": "Chapter III.--Claim of judicial investigation.",
+      "file": "0319-chapter-iii-claim-of-judicial-investigation.json",
+      "words": 319
+    },
+    {
+      "index": 320,
+      "heading": "Chapter IV.--Christians unjustly condemned for their mere name.",
+      "file": "0320-chapter-iv-christians-unjustly-condemned-for-their-mere-name.json",
+      "words": 514
+    },
+    {
+      "index": 321,
+      "heading": "Chapter V.--Christians charged with atheism.",
+      "file": "0321-chapter-v-christians-charged-with-atheism.json",
+      "words": 463
+    },
+    {
+      "index": 322,
+      "heading": "Chapter VI.--Charge of atheism refuted.",
+      "file": "0322-chapter-vi-charge-of-atheism-refuted.json",
+      "words": 287
+    },
+    {
+      "index": 323,
+      "heading": "Chapter VII.--Each Christian must be tried by his own life.",
+      "file": "0323-chapter-vii-each-christian-must-be-tried-by-his-own-life.json",
+      "words": 252
+    },
+    {
+      "index": 324,
+      "heading": "Chapter VIII.--Christians confess their faith in God.",
+      "file": "0324-chapter-viii-christians-confess-their-faith-in-god.json",
+      "words": 237
+    },
+    {
+      "index": 325,
+      "heading": "Chapter IX.--Folly of idol worship.",
+      "file": "0325-chapter-ix-folly-of-idol-worship.json",
+      "words": 252
+    },
+    {
+      "index": 326,
+      "heading": "Chapter X.--How God is to be served.",
+      "file": "0326-chapter-x-how-god-is-to-be-served.json",
+      "words": 306
+    },
+    {
+      "index": 327,
+      "heading": "Chapter XI.--What kingdom Christians look for.",
+      "file": "0327-chapter-xi-what-kingdom-christians-look-for.json",
+      "words": 131
+    },
+    {
+      "index": 328,
+      "heading": "Chapter XII.--Christians live as under God's eye.",
+      "file": "0328-chapter-xii-christians-live-as-under-god-s-eye.json",
+      "words": 528
+    },
+    {
+      "index": 329,
+      "heading": "Chapter XIII.--Christians serve God rationally.",
+      "file": "0329-chapter-xiii-christians-serve-god-rationally.json",
+      "words": 331
+    },
+    {
+      "index": 330,
+      "heading": "Chapter XIV.--The demons misrepresent Christian doctrine.",
+      "file": "0330-chapter-xiv-the-demons-misrepresent-christian-doctrine.json",
+      "words": 314
+    },
+    {
+      "index": 331,
+      "heading": "Chapter XV.--What Christ himself taught.",
+      "file": "0331-chapter-xv-what-christ-himself-taught.json",
+      "words": 764
+    },
+    {
+      "index": 332,
+      "heading": "Chapter XVI.--Concerning patience and swearing.",
+      "file": "0332-chapter-xvi-concerning-patience-and-swearing.json",
+      "words": 573
+    },
+    {
+      "index": 333,
+      "heading": "Chapter XVII.--Christ taught civil obedience.",
+      "file": "0333-chapter-xvii-christ-taught-civil-obedience.json",
+      "words": 233
+    },
+    {
+      "index": 334,
+      "heading": "Chapter XVIII.--Proof of immortality and the resurrection.",
+      "file": "0334-chapter-xviii-proof-of-immortality-and-the-resurrection.json",
+      "words": 545
+    },
+    {
+      "index": 335,
+      "heading": "Chapter XIX.--The resurrection possible.",
+      "file": "0335-chapter-xix-the-resurrection-possible.json",
+      "words": 410
+    },
+    {
+      "index": 336,
+      "heading": "Chapter XX.--Heathen analogies to Christian doctrine.",
+      "file": "0336-chapter-xx-heathen-analogies-to-christian-doctrine.json",
+      "words": 351
+    },
+    {
+      "index": 337,
+      "heading": "Chapter XXI.--Analogies to the history of Christ.",
+      "file": "0337-chapter-xxi-analogies-to-the-history-of-christ.json",
+      "words": 431
+    },
+    {
+      "index": 338,
+      "heading": "Chapter XXII.--Analogies to the sonship of Christ.",
+      "file": "0338-chapter-xxii-analogies-to-the-sonship-of-christ.json",
+      "words": 242
+    },
+    {
+      "index": 339,
+      "heading": "Chapter XXIII.--The argument.",
+      "file": "0339-chapter-xxiii-the-argument.json",
+      "words": 334
+    },
+    {
+      "index": 340,
+      "heading": "Chapter XXIV.--Varieties of heathen worship.",
+      "file": "0340-chapter-xxiv-varieties-of-heathen-worship.json",
+      "words": 200
+    },
+    {
+      "index": 341,
+      "heading": "Chapter XXV.--False Gods abandoned by Christians.",
+      "file": "0341-chapter-xxv-false-gods-abandoned-by-christians.json",
+      "words": 188
+    },
+    {
+      "index": 342,
+      "heading": "Chapter XXVI.--Magicians not trusted by Christians.",
+      "file": "0342-chapter-xxvi-magicians-not-trusted-by-christians.json",
+      "words": 604
+    },
+    {
+      "index": 343,
+      "heading": "Chapter XXVII.--Guilt of exposing children.",
+      "file": "0343-chapter-xxvii-guilt-of-exposing-children.json",
+      "words": 338
+    },
+    {
+      "index": 344,
+      "heading": "Chapter XXVIII.--God's care for men.",
+      "file": "0344-chapter-xxviii-god-s-care-for-men.json",
+      "words": 276
+    },
+    {
+      "index": 345,
+      "heading": "Chapter XXIX.--Continence of Christians.",
+      "file": "0345-chapter-xxix-continence-of-christians.json",
+      "words": 241
+    },
+    {
+      "index": 346,
+      "heading": "Chapter XXX.--Was Christ not a magician?",
+      "file": "0346-chapter-xxx-was-christ-not-a-magician.json",
+      "words": 105
+    },
+    {
+      "index": 347,
+      "heading": "Chapter XXXI.--Of the Hebrew prophets.",
+      "file": "0347-chapter-xxxi-of-the-hebrew-prophets.json",
+      "words": 424
+    },
+    {
+      "index": 348,
+      "heading": "Chapter XXXII.--Christ predicted by Moses.",
+      "file": "0348-chapter-xxxii-christ-predicted-by-moses.json",
+      "words": 670
+    },
+    {
+      "index": 349,
+      "heading": "Chapter XXXIII.--Manner of Christ's birth predicted.",
+      "file": "0349-chapter-xxxiii-manner-of-christ-s-birth-predicted.json",
+      "words": 433
+    },
+    {
+      "index": 350,
+      "heading": "Chapter XXXIV.--Place of Christ's birth foretold.",
+      "file": "0350-chapter-xxxiv-place-of-christ-s-birth-foretold.json",
+      "words": 97
+    },
+    {
+      "index": 351,
+      "heading": "Chapter XXXV.--Other fulfilled prophecies.",
+      "file": "0351-chapter-xxxv-other-fulfilled-prophecies.json",
+      "words": 519
+    },
+    {
+      "index": 352,
+      "heading": "Chapter XXXVI.--Different modes of prophecy.",
+      "file": "0352-chapter-xxxvi-different-modes-of-prophecy.json",
+      "words": 161
+    },
+    {
+      "index": 353,
+      "heading": "Chapter XXXVII.--Utterances of the Father.",
+      "file": "0353-chapter-xxxvii-utterances-of-the-father.json",
+      "words": 265
+    },
+    {
+      "index": 354,
+      "heading": "Chapter XXXVIII.--Utterances of the Son.",
+      "file": "0354-chapter-xxxviii-utterances-of-the-son.json",
+      "words": 226
+    },
+    {
+      "index": 355,
+      "heading": "Chapter XXXIX.--Direct predictions by the Spirit.",
+      "file": "0355-chapter-xxxix-direct-predictions-by-the-spirit.json",
+      "words": 271
+    },
+    {
+      "index": 356,
+      "heading": "Chapter XL.--Christ's advent foretold.",
+      "file": "0356-chapter-xl-christ-s-advent-foretold.json",
+      "words": 644
+    },
+    {
+      "index": 357,
+      "heading": "Chapter XLI.--The crucifixion predicted.",
+      "file": "0357-chapter-xli-the-crucifixion-predicted.json",
+      "words": 193
+    },
+    {
+      "index": 358,
+      "heading": "Chapter XLII.--Prophecy using the past tense.",
+      "file": "0358-chapter-xlii-prophecy-using-the-past-tense.json",
+      "words": 192
+    },
+    {
+      "index": 359,
+      "heading": "Chapter XLIII.--Responsibility asserted.",
+      "file": "0359-chapter-xliii-responsibility-asserted.json",
+      "words": 386
+    },
+    {
+      "index": 360,
+      "heading": "Chapter XLIV.--Not nullified by prophecy.",
+      "file": "0360-chapter-xliv-not-nullified-by-prophecy.json",
+      "words": 601
+    },
+    {
+      "index": 361,
+      "heading": "Chapter XLV.--Christ's session in heaven foretold.",
+      "file": "0361-chapter-xlv-christ-s-session-in-heaven-foretold.json",
+      "words": 291
+    },
+    {
+      "index": 362,
+      "heading": "Chapter XLVI.--The Word in the world before Christ.",
+      "file": "0362-chapter-xlvi-the-word-in-the-world-before-christ.json",
+      "words": 309
+    },
+    {
+      "index": 363,
+      "heading": "Chapter XLVII.--Desolation of Judæa foretold.",
+      "file": "0363-chapter-xlvii-desolation-of-jud-a-foretold.json",
+      "words": 205
+    },
+    {
+      "index": 364,
+      "heading": "Chapter XLVIII.--Christ's work and death foretold.",
+      "file": "0364-chapter-xlviii-christ-s-work-and-death-foretold.json",
+      "words": 165
+    },
+    {
+      "index": 365,
+      "heading": "Chapter XLIX.--His rejection by the Jews foretold.",
+      "file": "0365-chapter-xlix-his-rejection-by-the-jews-foretold.json",
+      "words": 266
+    },
+    {
+      "index": 366,
+      "heading": "Chapter L.--His humiliation predicted.",
+      "file": "0366-chapter-l-his-humiliation-predicted.json",
+      "words": 421
+    },
+    {
+      "index": 367,
+      "heading": "Chapter LI.--The majesty of Christ.",
+      "file": "0367-chapter-li-the-majesty-of-christ.json",
+      "words": 298
+    },
+    {
+      "index": 368,
+      "heading": "Chapter LII.--Certain fulfilment of prophecy.",
+      "file": "0368-chapter-lii-certain-fulfilment-of-prophecy.json",
+      "words": 428
+    },
+    {
+      "index": 369,
+      "heading": "Chapter LIII.--Summary of the prophecies.",
+      "file": "0369-chapter-liii-summary-of-the-prophecies.json",
+      "words": 529
+    },
+    {
+      "index": 370,
+      "heading": "Chapter LIV.--Origin of heathen mythology.",
+      "file": "0370-chapter-liv-origin-of-heathen-mythology.json",
+      "words": 587
+    },
+    {
+      "index": 371,
+      "heading": "Chapter LV.--Symbols of the cross.",
+      "file": "0371-chapter-lv-symbols-of-the-cross.json",
+      "words": 349
+    },
+    {
+      "index": 372,
+      "heading": "Chapter LVI.--The demons still mislead men.",
+      "file": "0372-chapter-lvi-the-demons-still-mislead-men.json",
+      "words": 211
+    },
+    {
+      "index": 373,
+      "heading": "Chapter LVII.--And cause persecution.",
+      "file": "0373-chapter-lvii-and-cause-persecution.json",
+      "words": 214
+    },
+    {
+      "index": 374,
+      "heading": "Chapter LVIII.--And raise up heretics.",
+      "file": "0374-chapter-lviii-and-raise-up-heretics.json",
+      "words": 190
+    },
+    {
+      "index": 375,
+      "heading": "Chapter LIX.--Plato's obligation to Moses.",
+      "file": "0375-chapter-lix-plato-s-obligation-to-moses.json",
+      "words": 188
+    },
+    {
+      "index": 376,
+      "heading": "Chapter LX.--Plato's doctrine of the cross.",
+      "file": "0376-chapter-lx-plato-s-doctrine-of-the-cross.json",
+      "words": 484
+    },
+    {
+      "index": 377,
+      "heading": "Chapter LXI.--Christian baptism.",
+      "file": "0377-chapter-lxi-christian-baptism.json",
+      "words": 508
+    },
+    {
+      "index": 378,
+      "heading": "Chapter LXII.--Its imitation by demons.",
+      "file": "0378-chapter-lxii-its-imitation-by-demons.json",
+      "words": 256
+    },
+    {
+      "index": 379,
+      "heading": "Chapter LXIII.--How God appeared to Moses.",
+      "file": "0379-chapter-lxiii-how-god-appeared-to-moses.json",
+      "words": 742
+    },
+    {
+      "index": 380,
+      "heading": "Chapter LXIV.--Further misrepresentations of the truth.",
+      "file": "0380-chapter-lxiv-further-misrepresentations-of-the-truth.json",
+      "words": 213
+    },
+    {
+      "index": 381,
+      "heading": "Chapter LXV.--Administration of the sacraments.",
+      "file": "0381-chapter-lxv-administration-of-the-sacraments.json",
+      "words": 348
+    },
+    {
+      "index": 382,
+      "heading": "Chapter LXVI.--Of the Eucharist.",
+      "file": "0382-chapter-lxvi-of-the-eucharist.json",
+      "words": 491
+    },
+    {
+      "index": 383,
+      "heading": "Chapter LXVII.--Weekly worship of the Christians.",
+      "file": "0383-chapter-lxvii-weekly-worship-of-the-christians.json",
+      "words": 444
+    },
+    {
+      "index": 384,
+      "heading": "Chapter LXVIII.--Conclusion.",
+      "file": "0384-chapter-lxviii-conclusion.json",
+      "words": 1605
+    },
+    {
+      "index": 385,
+      "heading": "Chapter I.--Introduction.",
+      "file": "0385-chapter-i-introduction.json",
+      "words": 268
+    },
+    {
+      "index": 386,
+      "heading": "Chapter II.--Urbicus condemns the Christians to death.",
+      "file": "0386-chapter-ii-urbicus-condemns-the-christians-to-death.json",
+      "words": 781
+    },
+    {
+      "index": 387,
+      "heading": "Chapter III.--Justin accuses Crescens of ignorant prejudice against the",
+      "file": "0387-chapter-iii-justin-accuses-crescens-of-ignorant-prejudice-against-the.json",
+      "words": 380
+    },
+    {
+      "index": 388,
+      "heading": "Chapter IV.--Why the Christians do not kill themselves.",
+      "file": "0388-chapter-iv-why-the-christians-do-not-kill-themselves.json",
+      "words": 200
+    },
+    {
+      "index": 389,
+      "heading": "Chapter V.--How the angels transgressed.",
+      "file": "0389-chapter-v-how-the-angels-transgressed.json",
+      "words": 276
+    },
+    {
+      "index": 390,
+      "heading": "Chapter VI.--Names of God and of Christ, their meaning and power.",
+      "file": "0390-chapter-vi-names-of-god-and-of-christ-their-meaning-and-power.json",
+      "words": 263
+    },
+    {
+      "index": 391,
+      "heading": "Chapter VII.--The world preserved for the sake of Christians. Man's",
+      "file": "0391-chapter-vii-the-world-preserved-for-the-sake-of-christians-man-s.json",
+      "words": 495
+    },
+    {
+      "index": 392,
+      "heading": "Chapter VIII.--All have been hated in whom the Word has dwelt.",
+      "file": "0392-chapter-viii-all-have-been-hated-in-whom-the-word-has-dwelt.json",
+      "words": 209
+    },
+    {
+      "index": 393,
+      "heading": "Chapter IX.--Eternal punishment not a mere threat.",
+      "file": "0393-chapter-ix-eternal-punishment-not-a-mere-threat.json",
+      "words": 282
+    },
+    {
+      "index": 394,
+      "heading": "Chapter X.--Christ compared with Socrates.",
+      "file": "0394-chapter-x-christ-compared-with-socrates.json",
+      "words": 381
+    },
+    {
+      "index": 395,
+      "heading": "Chapter XI.--How Christians view death.",
+      "file": "0395-chapter-xi-how-christians-view-death.json",
+      "words": 367
+    },
+    {
+      "index": 396,
+      "heading": "Chapter XII.--Christians proved innocent by their contempt of death.",
+      "file": "0396-chapter-xii-christians-proved-innocent-by-their-contempt-of-death.json",
+      "words": 470
+    },
+    {
+      "index": 397,
+      "heading": "Chapter XIII.--How the Word has been in all men.",
+      "file": "0397-chapter-xiii-how-the-word-has-been-in-all-men.json",
+      "words": 275
+    },
+    {
+      "index": 398,
+      "heading": "Chapter XIV.--Justin prays that this appeal be published.",
+      "file": "0398-chapter-xiv-justin-prays-that-this-appeal-be-published.json",
+      "words": 143
+    },
+    {
+      "index": 399,
+      "heading": "Chapter XV.--Conclusion.",
+      "file": "0399-chapter-xv-conclusion.json",
+      "words": 226
+    },
+    {
+      "index": 400,
+      "heading": "Chapter I.--Introduction.",
+      "file": "0400-chapter-i-introduction-2.json",
+      "words": 615
+    },
+    {
+      "index": 401,
+      "heading": "Chapter II.--Justin describes his studies in philosophy.",
+      "file": "0401-chapter-ii-justin-describes-his-studies-in-philosophy.json",
+      "words": 737
+    },
+    {
+      "index": 402,
+      "heading": "Chapter III.--Justin narrates the manner of his conversion.",
+      "file": "0402-chapter-iii-justin-narrates-the-manner-of-his-conversion.json",
+      "words": 816
+    },
+    {
+      "index": 403,
+      "heading": "Chapter IV.--The soul of itself cannot see God.",
+      "file": "0403-chapter-iv-the-soul-of-itself-cannot-see-god.json",
+      "words": 723
+    },
+    {
+      "index": 404,
+      "heading": "Chapter V.--The soul is not in its own nature immortal.",
+      "file": "0404-chapter-v-the-soul-is-not-in-its-own-nature-immortal.json",
+      "words": 605
+    },
+    {
+      "index": 405,
+      "heading": "Chapter VI.--These things were unknown to Plato and other philosophers.",
+      "file": "0405-chapter-vi-these-things-were-unknown-to-plato-and-other-philosophers.json",
+      "words": 219
+    },
+    {
+      "index": 406,
+      "heading": "Chapter VII.--The knowledge of truth to be sought from the prophets alone.",
+      "file": "0406-chapter-vii-the-knowledge-of-truth-to-be-sought-from-the-prophets-alone.json",
+      "words": 314
+    },
+    {
+      "index": 407,
+      "heading": "Chapter VIII.--Justin by his colloquy is kindled with love to Christ.",
+      "file": "0407-chapter-viii-justin-by-his-colloquy-is-kindled-with-love-to-christ.json",
+      "words": 502
+    },
+    {
+      "index": 408,
+      "heading": "Chapter IX.--The Christians have not believed groundless stories.",
+      "file": "0408-chapter-ix-the-christians-have-not-believed-groundless-stories.json",
+      "words": 306
+    },
+    {
+      "index": 409,
+      "heading": "Chapter X.--Trypho blames the Christians for this alone--the non-observance of",
+      "file": "0409-chapter-x-trypho-blames-the-christians-for-this-alone-the-non-observance-of.json",
+      "words": 371
+    },
+    {
+      "index": 410,
+      "heading": "Chapter XI.--The law abrogated; the New Testament promised and given by God.",
+      "file": "0410-chapter-xi-the-law-abrogated-the-new-testament-promised-and-given-by-god.json",
+      "words": 574
+    },
+    {
+      "index": 411,
+      "heading": "Chapter XII.--The Jews violate the eternal law, and interpret ill that of",
+      "file": "0411-chapter-xii-the-jews-violate-the-eternal-law-and-interpret-ill-that-of.json",
+      "words": 323
+    },
+    {
+      "index": 412,
+      "heading": "Chapter XIII.--Isaiah teaches that sins are forgiven through Christ's blood.",
+      "file": "0412-chapter-xiii-isaiah-teaches-that-sins-are-forgiven-through-christ-s-blood.json",
+      "words": 842
+    },
+    {
+      "index": 413,
+      "heading": "Chapter XIV.--Righteousness is not placed in Jewish rites, but in the",
+      "file": "0413-chapter-xiv-righteousness-is-not-placed-in-jewish-rites-but-in-the.json",
+      "words": 635
+    },
+    {
+      "index": 414,
+      "heading": "Chapter XV.--In what the true fasting consists.",
+      "file": "0414-chapter-xv-in-what-the-true-fasting-consists.json",
+      "words": 457
+    },
+    {
+      "index": 415,
+      "heading": "Chapter XVI.--Circumcision given as a sign, that the Jews might be driven away",
+      "file": "0415-chapter-xvi-circumcision-given-as-a-sign-that-the-jews-might-be-driven-away.json",
+      "words": 433
+    },
+    {
+      "index": 416,
+      "heading": "Chapter XVII.--The Jews sent persons through the whole earth to spread",
+      "file": "0416-chapter-xvii-the-jews-sent-persons-through-the-whole-earth-to-spread.json",
+      "words": 491
+    },
+    {
+      "index": 417,
+      "heading": "Chapter XVIII.--Christians would observe the law, if they did not know why it",
+      "file": "0417-chapter-xviii-christians-would-observe-the-law-if-they-did-not-know-why-it.json",
+      "words": 189
+    },
+    {
+      "index": 418,
+      "heading": "Chapter XIX.--Circumcision unknown before Abraham. The law was given by Moses",
+      "file": "0418-chapter-xix-circumcision-unknown-before-abraham-the-law-was-given-by-moses.json",
+      "words": 463
+    },
+    {
+      "index": 419,
+      "heading": "Chapter XX.--Why choice of meats was prescribed.",
+      "file": "0419-chapter-xx-why-choice-of-meats-was-prescribed.json",
+      "words": 468
+    },
+    {
+      "index": 420,
+      "heading": "Chapter XXI.--Sabbaths were instituted on account of the people's sins, and",
+      "file": "0420-chapter-xxi-sabbaths-were-instituted-on-account-of-the-people-s-sins-and.json",
+      "words": 305
+    },
+    {
+      "index": 421,
+      "heading": "Chapter XXII.--So also were sacrifices and oblations.",
+      "file": "0421-chapter-xxii-so-also-were-sacrifices-and-oblations.json",
+      "words": 1035
+    },
+    {
+      "index": 422,
+      "heading": "Chapter XXIII.--The opinion of the Jews regarding the law does an injury to",
+      "file": "0422-chapter-xxiii-the-opinion-of-the-jews-regarding-the-law-does-an-injury-to.json",
+      "words": 423
+    },
+    {
+      "index": 423,
+      "heading": "Chapter XXIV.--The Christians' circumcision far more excellent.",
+      "file": "0423-chapter-xxiv-the-christians-circumcision-far-more-excellent.json",
+      "words": 263
+    },
+    {
+      "index": 424,
+      "heading": "Chapter XXV.--The Jews boast in vain that they are sons of Abraham.",
+      "file": "0424-chapter-xxv-the-jews-boast-in-vain-that-they-are-sons-of-abraham.json",
+      "words": 514
+    },
+    {
+      "index": 425,
+      "heading": "Chapter XXVI.--No salvation to the Jews except through Christ.",
+      "file": "0425-chapter-xxvi-no-salvation-to-the-jews-except-through-christ.json",
+      "words": 411
+    },
+    {
+      "index": 426,
+      "heading": "Chapter XXVII.--Why God taught the same things by the prophets as by Moses.",
+      "file": "0426-chapter-xxvii-why-god-taught-the-same-things-by-the-prophets-as-by-moses.json",
+      "words": 573
+    },
+    {
+      "index": 427,
+      "heading": "Chapter XXVIII.--True righteousness is obtained by Christ.",
+      "file": "0427-chapter-xxviii-true-righteousness-is-obtained-by-christ.json",
+      "words": 477
+    },
+    {
+      "index": 428,
+      "heading": "Chapter XXIX.--Christ is useless to those who observe the law.",
+      "file": "0428-chapter-xxix-christ-is-useless-to-those-who-observe-the-law.json",
+      "words": 259
+    },
+    {
+      "index": 429,
+      "heading": "Chapter XXX.--Christians possess the true righteousness.",
+      "file": "0429-chapter-xxx-christians-possess-the-true-righteousness.json",
+      "words": 333
+    },
+    {
+      "index": 430,
+      "heading": "Chapter XXXI.--If Christ's power be now so great, how much greater at the",
+      "file": "0430-chapter-xxxi-if-christ-s-power-be-now-so-great-how-much-greater-at-the.json",
+      "words": 707
+    },
+    {
+      "index": 431,
+      "heading": "Chapter XXXII.--Trypho objecting that Christ is described as glorious by",
+      "file": "0431-chapter-xxxii-trypho-objecting-that-christ-is-described-as-glorious-by.json",
+      "words": 709
+    },
+    {
+      "index": 432,
+      "heading": "Chapter XXXIII.--Ps. cx. is not spoken of Hezekiah. He proves that Christ was",
+      "file": "0432-chapter-xxxiii-ps-cx-is-not-spoken-of-hezekiah-he-proves-that-christ-was.json",
+      "words": 286
+    },
+    {
+      "index": 433,
+      "heading": "Chapter XXXIV.--Nor does Ps. lxxii. apply to Solomon, whose faults Christians",
+      "file": "0433-chapter-xxxiv-nor-does-ps-lxxii-apply-to-solomon-whose-faults-christians.json",
+      "words": 764
+    },
+    {
+      "index": 434,
+      "heading": "Chapter XXXV.--Heretics confirm the Catholics in the faith.",
+      "file": "0434-chapter-xxxv-heretics-confirm-the-catholics-in-the-faith.json",
+      "words": 569
+    },
+    {
+      "index": 435,
+      "heading": "Chapter XXXVI.--He proves that Christ is called Lord of Hosts.",
+      "file": "0435-chapter-xxxvi-he-proves-that-christ-is-called-lord-of-hosts.json",
+      "words": 585
+    },
+    {
+      "index": 436,
+      "heading": "Chapter XXXVII.--The same is proved from other Psalms.",
+      "file": "0436-chapter-xxxvii-the-same-is-proved-from-other-psalms.json",
+      "words": 341
+    },
+    {
+      "index": 437,
+      "heading": "Chapter XXXVIII.--It is an annoyance to the Jew that Christ is said to be",
+      "file": "0437-chapter-xxxviii-it-is-an-annoyance-to-the-jew-that-christ-is-said-to-be.json",
+      "words": 604
+    },
+    {
+      "index": 438,
+      "heading": "Chapter XXXIX.--The Jews hate the Christians who believe this. How great the",
+      "file": "0438-chapter-xxxix-the-jews-hate-the-christians-who-believe-this-how-great-the.json",
+      "words": 599
+    },
+    {
+      "index": 439,
+      "heading": "Chapter XL.--He returns to the Mosaic laws, and proves that they were figures",
+      "file": "0439-chapter-xl-he-returns-to-the-mosaic-laws-and-proves-that-they-were-figures.json",
+      "words": 393
+    },
+    {
+      "index": 440,
+      "heading": "Chapter XLI.--The oblation of fine flour was a figure of the Eucharist.",
+      "file": "0440-chapter-xli-the-oblation-of-fine-flour-was-a-figure-of-the-eucharist.json",
+      "words": 360
+    },
+    {
+      "index": 441,
+      "heading": "Chapter XLII.--The bells on the priest's robe were a figure of the apostles.",
+      "file": "0441-chapter-xlii-the-bells-on-the-priest-s-robe-were-a-figure-of-the-apostles.json",
+      "words": 395
+    },
+    {
+      "index": 442,
+      "heading": "Chapter XLIII.--He concludes that the law had an end in Christ, who was born",
+      "file": "0442-chapter-xliii-he-concludes-that-the-law-had-an-end-in-christ-who-was-born.json",
+      "words": 745
+    },
+    {
+      "index": 443,
+      "heading": "Chapter XLIV.--The Jews in vain promise themselves salvation, which cannot be",
+      "file": "0443-chapter-xliv-the-jews-in-vain-promise-themselves-salvation-which-cannot-be.json",
+      "words": 486
+    },
+    {
+      "index": 444,
+      "heading": "Chapter XLV.--Those who were righteous before and under the law shall be saved",
+      "file": "0444-chapter-xlv-those-who-were-righteous-before-and-under-the-law-shall-be-saved.json",
+      "words": 399
+    },
+    {
+      "index": 445,
+      "heading": "Chapter XLVI.--Trypho asks whether a man who keeps the law even now will be",
+      "file": "0445-chapter-xlvi-trypho-asks-whether-a-man-who-keeps-the-law-even-now-will-be.json",
+      "words": 654
+    },
+    {
+      "index": 446,
+      "heading": "Chapter XLVII.--Justin communicates with Christians who observe the law. Not a",
+      "file": "0446-chapter-xlvii-justin-communicates-with-christians-who-observe-the-law-not-a.json",
+      "words": 634
+    },
+    {
+      "index": 447,
+      "heading": "Chapter XLVIII.--Before the divinity of Christ is proved, he [Trypho] demands",
+      "file": "0447-chapter-xlviii-before-the-divinity-of-christ-is-proved-he-trypho-demands.json",
+      "words": 442
+    },
+    {
+      "index": 448,
+      "heading": "Chapter XLIX.--To those who object that Elijah has not yet come, he replies",
+      "file": "0448-chapter-xlix-to-those-who-object-that-elijah-has-not-yet-come-he-replies.json",
+      "words": 846
+    },
+    {
+      "index": 449,
+      "heading": "Chapter L.--It is proved from Isaiah that John is the precursor of Christ.",
+      "file": "0449-chapter-l-it-is-proved-from-isaiah-that-john-is-the-precursor-of-christ.json",
+      "words": 534
+    },
+    {
+      "index": 450,
+      "heading": "Chapter LI.--It is proved that this prophecy has been fulfilled.",
+      "file": "0450-chapter-li-it-is-proved-that-this-prophecy-has-been-fulfilled.json",
+      "words": 303
+    },
+    {
+      "index": 451,
+      "heading": "Chapter LII.--Jacob predicted two advents of Christ.",
+      "file": "0451-chapter-lii-jacob-predicted-two-advents-of-christ.json",
+      "words": 523
+    },
+    {
+      "index": 452,
+      "heading": "Chapter LIII.--Jacob predicted that Christ would ride on an ass, and Zechariah",
+      "file": "0452-chapter-liii-jacob-predicted-that-christ-would-ride-on-an-ass-and-zechariah.json",
+      "words": 507
+    },
+    {
+      "index": 453,
+      "heading": "Chapter LIV.--What the blood of the grape signifies.",
+      "file": "0453-chapter-liv-what-the-blood-of-the-grape-signifies.json",
+      "words": 175
+    },
+    {
+      "index": 454,
+      "heading": "Chapter LV.--Trypho asks that Christ be proved God, but without metaphor.",
+      "file": "0454-chapter-lv-trypho-asks-that-christ-be-proved-god-but-without-metaphor.json",
+      "words": 379
+    },
+    {
+      "index": 455,
+      "heading": "Chapter LVI.--God who appeared to Moses is distinguished from God the Father.",
+      "file": "0455-chapter-lvi-god-who-appeared-to-moses-is-distinguished-from-god-the-father.json",
+      "words": 2310
+    },
+    {
+      "index": 456,
+      "heading": "Chapter LVII.--The Jew objects, why is He said to have eaten, if He be God?",
+      "file": "0456-chapter-lvii-the-jew-objects-why-is-he-said-to-have-eaten-if-he-be-god.json",
+      "words": 351
+    },
+    {
+      "index": 457,
+      "heading": "Chapter LVIII.--The same is proved from the visions which appeared to Jacob.",
+      "file": "0457-chapter-lviii-the-same-is-proved-from-the-visions-which-appeared-to-jacob.json",
+      "words": 1190
+    },
+    {
+      "index": 458,
+      "heading": "Chapter LIX.--God distinct from the Father conversed with Moses.",
+      "file": "0458-chapter-lix-god-distinct-from-the-father-conversed-with-moses.json",
+      "words": 243
+    },
+    {
+      "index": 459,
+      "heading": "Chapter LX.--Opinions of the Jews with regard to Him who appeared in the bush.",
+      "file": "0459-chapter-lx-opinions-of-the-jews-with-regard-to-him-who-appeared-in-the-bush.json",
+      "words": 599
+    },
+    {
+      "index": 460,
+      "heading": "Chapter LXI--Wisdom is begotten of the Father, as fire from fire.",
+      "file": "0460-chapter-lxi-wisdom-is-begotten-of-the-father-as-fire-from-fire.json",
+      "words": 640
+    },
+    {
+      "index": 461,
+      "heading": "Chapter LXII.--The words \"Let Us make man\" agree with the testimony of",
+      "file": "0461-chapter-lxii-the-words-let-us-make-man-agree-with-the-testimony-of.json",
+      "words": 751
+    },
+    {
+      "index": 462,
+      "heading": "Chapter LXIII.--It is proved that this God was incarnate.",
+      "file": "0462-chapter-lxiii-it-is-proved-that-this-god-was-incarnate.json",
+      "words": 593
+    },
+    {
+      "index": 463,
+      "heading": "Chapter LXIV.--Justin adduces other proofs to the Jew, who denies that he",
+      "file": "0463-chapter-lxiv-justin-adduces-other-proofs-to-the-jew-who-denies-that-he.json",
+      "words": 835
+    },
+    {
+      "index": 464,
+      "heading": "Chapter LXV.--The Jew objects that God does not give His glory to another.",
+      "file": "0464-chapter-lxv-the-jew-objects-that-god-does-not-give-his-glory-to-another.json",
+      "words": 665
+    },
+    {
+      "index": 465,
+      "heading": "Chapter LXVI.--He proves from Isaiah that God was born from a virgin.",
+      "file": "0465-chapter-lxvi-he-proves-from-isaiah-that-god-was-born-from-a-virgin.json",
+      "words": 342
+    },
+    {
+      "index": 466,
+      "heading": "Chapter LXVII.--Trypho compares Jesus with Perseus; and would prefer [to say]",
+      "file": "0466-chapter-lxvii-trypho-compares-jesus-with-perseus-and-would-prefer-to-say.json",
+      "words": 794
+    },
+    {
+      "index": 467,
+      "heading": "Chapter LXVIII.--He complains of the obstinacy of Trypho; he answers his",
+      "file": "0467-chapter-lxviii-he-complains-of-the-obstinacy-of-trypho-he-answers-his.json",
+      "words": 877
+    },
+    {
+      "index": 468,
+      "heading": "Chapter LXIX.--The devil, since he emulates the truth, has invented fables",
+      "file": "0468-chapter-lxix-the-devil-since-he-emulates-the-truth-has-invented-fables.json",
+      "words": 660
+    },
+    {
+      "index": 469,
+      "heading": "Chapter LXX.--So also the mysteries of Mithras are distorted from the",
+      "file": "0469-chapter-lxx-so-also-the-mysteries-of-mithras-are-distorted-from-the.json",
+      "words": 708
+    },
+    {
+      "index": 470,
+      "heading": "Chapter LXXI.--The Jews reject the interpretation of the LXX., from which,",
+      "file": "0470-chapter-lxxi-the-jews-reject-the-interpretation-of-the-lxx-from-which.json",
+      "words": 237
+    },
+    {
+      "index": 471,
+      "heading": "Chapter LXXII.--Passages have been removed by the Jews from Esdras and",
+      "file": "0471-chapter-lxxii-passages-have-been-removed-by-the-jews-from-esdras-and.json",
+      "words": 354
+    },
+    {
+      "index": 472,
+      "heading": "Chapter LXXIII.--[The words] \"From the wood\" have been cut out of Ps. xcvi.",
+      "file": "0472-chapter-lxxiii-the-words-from-the-wood-have-been-cut-out-of-ps-xcvi.json",
+      "words": 529
+    },
+    {
+      "index": 473,
+      "heading": "Chapter LXXIV.--The beginning of Ps. xcvi. is attributed to the Father [by",
+      "file": "0473-chapter-lxxiv-the-beginning-of-ps-xcvi-is-attributed-to-the-father-by.json",
+      "words": 485
+    },
+    {
+      "index": 474,
+      "heading": "Chapter LXXV.--It is proved that Jesus was the name of God in the book of",
+      "file": "0474-chapter-lxxv-it-is-proved-that-jesus-was-the-name-of-god-in-the-book-of.json",
+      "words": 312
+    },
+    {
+      "index": 475,
+      "heading": "Chapter LXXVI.--From other passages the same majesty and government of Christ",
+      "file": "0475-chapter-lxxvi-from-other-passages-the-same-majesty-and-government-of-christ.json",
+      "words": 637
+    },
+    {
+      "index": 476,
+      "heading": "Chapter LXXVII.--He returns to explain the prophecy of Isaiah.",
+      "file": "0476-chapter-lxxvii-he-returns-to-explain-the-prophecy-of-isaiah.json",
+      "words": 410
+    },
+    {
+      "index": 477,
+      "heading": "Chapter LXXVIII.--He proves that this prophecy harmonizes with Christ alone,",
+      "file": "0477-chapter-lxxviii-he-proves-that-this-prophecy-harmonizes-with-christ-alone.json",
+      "words": 950
+    },
+    {
+      "index": 478,
+      "heading": "Chapter LXXIX.--He proves against Trypho that the wicked angels have revolted",
+      "file": "0478-chapter-lxxix-he-proves-against-trypho-that-the-wicked-angels-have-revolted.json",
+      "words": 472
+    },
+    {
+      "index": 479,
+      "heading": "Chapter LXXX.--The opinion of Justin with regard to the reign of a thousand",
+      "file": "0479-chapter-lxxx-the-opinion-of-justin-with-regard-to-the-reign-of-a-thousand.json",
+      "words": 701
+    },
+    {
+      "index": 480,
+      "heading": "Chapter LXXXI.--He endeavours to prove this opinion from Isaiah and the",
+      "file": "0480-chapter-lxxxi-he-endeavours-to-prove-this-opinion-from-isaiah-and-the.json",
+      "words": 577
+    },
+    {
+      "index": 481,
+      "heading": "Chapter LXXXII.--The prophetical gifts of the Jews were transferred to the",
+      "file": "0481-chapter-lxxxii-the-prophetical-gifts-of-the-jews-were-transferred-to-the.json",
+      "words": 377
+    },
+    {
+      "index": 482,
+      "heading": "Chapter LXXXIII.--It is proved that the Psalm, \"The Lord said to My Lord,\"",
+      "file": "0482-chapter-lxxxiii-it-is-proved-that-the-psalm-the-lord-said-to-my-lord.json",
+      "words": 437
+    },
+    {
+      "index": 483,
+      "heading": "Chapter LXXXIV.--That prophecy, \"Behold, a virgin,\" etc., suits Christ alone.",
+      "file": "0483-chapter-lxxxiv-that-prophecy-behold-a-virgin-etc-suits-christ-alone.json",
+      "words": 369
+    },
+    {
+      "index": 484,
+      "heading": "Chapter LXXXV.--He proves that Christ is the Lord of Hosts from Ps. xxiv., and",
+      "file": "0484-chapter-lxxxv-he-proves-that-christ-is-the-lord-of-hosts-from-ps-xxiv-and.json",
+      "words": 981
+    },
+    {
+      "index": 485,
+      "heading": "Chapter LXXXVI.--There are various figures in the Old Testament of the wood of",
+      "file": "0485-chapter-lxxxvi-there-are-various-figures-in-the-old-testament-of-the-wood-of.json",
+      "words": 603
+    },
+    {
+      "index": 486,
+      "heading": "Chapter LXXXVII.--Trypho maintains in objection these words: \"And shall rest",
+      "file": "0486-chapter-lxxxvii-trypho-maintains-in-objection-these-words-and-shall-rest.json",
+      "words": 585
+    },
+    {
+      "index": 487,
+      "heading": "Chapter LXXXVIII.--Christ has not received the Holy Spirit on account of",
+      "file": "0487-chapter-lxxxviii-christ-has-not-received-the-holy-spirit-on-account-of.json",
+      "words": 752
+    },
+    {
+      "index": 488,
+      "heading": "Chapter LXXXIX.--The cross alone is offensive to Trypho on account of the",
+      "file": "0488-chapter-lxxxix-the-cross-alone-is-offensive-to-trypho-on-account-of-the.json",
+      "words": 262
+    },
+    {
+      "index": 489,
+      "heading": "Chapter XC.--The stretched-out hands of Moses signified beforehand the cross.",
+      "file": "0489-chapter-xc-the-stretched-out-hands-of-moses-signified-beforehand-the-cross.json",
+      "words": 393
+    },
+    {
+      "index": 490,
+      "heading": "Chapter XCI.--The cross was foretold in the blessings of Joseph, and in the",
+      "file": "0490-chapter-xci-the-cross-was-foretold-in-the-blessings-of-joseph-and-in-the.json",
+      "words": 576
+    },
+    {
+      "index": 491,
+      "heading": "Chapter XCII.--Unless the scriptures be understood through God's great grace,",
+      "file": "0491-chapter-xcii-unless-the-scriptures-be-understood-through-god-s-great-grace.json",
+      "words": 603
+    },
+    {
+      "index": 492,
+      "heading": "Chapter XCIII.--The same kind of righteousness is bestowed on all. Christ",
+      "file": "0492-chapter-xciii-the-same-kind-of-righteousness-is-bestowed-on-all-christ.json",
+      "words": 513
+    },
+    {
+      "index": 493,
+      "heading": "Chapter XCIV.--In what sense he who hangs on a tree is cursed.",
+      "file": "0493-chapter-xciv-in-what-sense-he-who-hangs-on-a-tree-is-cursed.json",
+      "words": 318
+    },
+    {
+      "index": 494,
+      "heading": "Chapter XCV.--Christ took upon Himself the curse due to us.",
+      "file": "0494-chapter-xcv-christ-took-upon-himself-the-curse-due-to-us.json",
+      "words": 345
+    },
+    {
+      "index": 495,
+      "heading": "Chapter XCVI.--That curse was a prediction of the things which the Jews would",
+      "file": "0495-chapter-xcvi-that-curse-was-a-prediction-of-the-things-which-the-jews-would.json",
+      "words": 304
+    },
+    {
+      "index": 496,
+      "heading": "Chapter XCVII.--Other predictions of the cross of Christ.",
+      "file": "0496-chapter-xcvii-other-predictions-of-the-cross-of-christ.json",
+      "words": 332
+    },
+    {
+      "index": 497,
+      "heading": "Chapter XCVIII.--Predictions of Christ in Ps. xxii.",
+      "file": "0497-chapter-xcviii-predictions-of-christ-in-ps-xxii.json",
+      "words": 472
+    },
+    {
+      "index": 498,
+      "heading": "Chapter XCIX.--In the commencement of the Psalm are Christ's dying words.",
+      "file": "0498-chapter-xcix-in-the-commencement-of-the-psalm-are-christ-s-dying-words.json",
+      "words": 346
+    },
+    {
+      "index": 499,
+      "heading": "Chapter C.--In what sense Christ is [called] Jacob, and Israel, and Son of",
+      "file": "0499-chapter-c-in-what-sense-christ-is-called-jacob-and-israel-and-son-of.json",
+      "words": 710
+    },
+    {
+      "index": 500,
+      "heading": "Chapter CI.--Christ refers all things to the Father",
+      "file": "0500-chapter-ci-christ-refers-all-things-to-the-father.json",
+      "words": 326
+    },
+    {
+      "index": 501,
+      "heading": "Chapter CII.--The prediction of the events which happened to Christ when He",
+      "file": "0501-chapter-cii-the-prediction-of-the-events-which-happened-to-christ-when-he.json",
+      "words": 726
+    },
+    {
+      "index": 502,
+      "heading": "Chapter CIII.--The Pharisees are the bulls: the roaring lion is Herod or the",
+      "file": "0502-chapter-ciii-the-pharisees-are-the-bulls-the-roaring-lion-is-herod-or-the.json",
+      "words": 931
+    },
+    {
+      "index": 503,
+      "heading": "Chapter CIV.--Circumstances of Christ's death are predicted in this Psalm.",
+      "file": "0503-chapter-civ-circumstances-of-christ-s-death-are-predicted-in-this-psalm.json",
+      "words": 132
+    },
+    {
+      "index": 504,
+      "heading": "Chapter CV.--The Psalm also predicts the crucifixion and the subject of the",
+      "file": "0504-chapter-cv-the-psalm-also-predicts-the-crucifixion-and-the-subject-of-the.json",
+      "words": 508
+    },
+    {
+      "index": 505,
+      "heading": "Chapter CVI.--Christ's resurrection is foretold in the conclusion of the",
+      "file": "0505-chapter-cvi-christ-s-resurrection-is-foretold-in-the-conclusion-of-the.json",
+      "words": 377
+    },
+    {
+      "index": 506,
+      "heading": "Chapter CVII.--The same is taught from the history of Jonah.",
+      "file": "0506-chapter-cvii-the-same-is-taught-from-the-history-of-jonah.json",
+      "words": 418
+    },
+    {
+      "index": 507,
+      "heading": "Chapter CVIII.--The resurrection of Christ did not convert the Jews. But",
+      "file": "0507-chapter-cviii-the-resurrection-of-christ-did-not-convert-the-jews-but.json",
+      "words": 283
+    },
+    {
+      "index": 508,
+      "heading": "Chapter CIX.--The conversion of the Gentiles has been predicted by Micah.",
+      "file": "0508-chapter-cix-the-conversion-of-the-gentiles-has-been-predicted-by-micah.json",
+      "words": 336
+    },
+    {
+      "index": 509,
+      "heading": "Chapter CX.--A portion of the prophecy already fulfilled in the Christians:",
+      "file": "0509-chapter-cx-a-portion-of-the-prophecy-already-fulfilled-in-the-christians.json",
+      "words": 628
+    },
+    {
+      "index": 510,
+      "heading": "Chapter CXI.--The two advents were signified by the two goats. Other figures",
+      "file": "0510-chapter-cxi-the-two-advents-were-signified-by-the-two-goats-other-figures.json",
+      "words": 448
+    },
+    {
+      "index": 511,
+      "heading": "Chapter CXII.--The Jews expound these signs jejunely and feebly, and take up",
+      "file": "0511-chapter-cxii-the-jews-expound-these-signs-jejunely-and-feebly-and-take-up.json",
+      "words": 495
+    },
+    {
+      "index": 512,
+      "heading": "Chapter CXIII.--Joshua was a figure of Christ.",
+      "file": "0512-chapter-cxiii-joshua-was-a-figure-of-christ.json",
+      "words": 617
+    },
+    {
+      "index": 513,
+      "heading": "Chapter CXIV.--Some rules for discerning what is said about Christ. The",
+      "file": "0513-chapter-cxiv-some-rules-for-discerning-what-is-said-about-christ-the.json",
+      "words": 526
+    },
+    {
+      "index": 514,
+      "heading": "Chapter CXV.--Prediction about the Christians in Zechariah. The malignant way",
+      "file": "0514-chapter-cxv-prediction-about-the-christians-in-zechariah-the-malignant-way.json",
+      "words": 597
+    },
+    {
+      "index": 515,
+      "heading": "Chapter CXVI.--It is shown how this prophecy suits the Christians.",
+      "file": "0515-chapter-cxvi-it-is-shown-how-this-prophecy-suits-the-christians.json",
+      "words": 430
+    },
+    {
+      "index": 516,
+      "heading": "Chapter CXVII.--Malachi's prophecy concerning the sacrifices of the",
+      "file": "0516-chapter-cxvii-malachi-s-prophecy-concerning-the-sacrifices-of-the.json",
+      "words": 510
+    },
+    {
+      "index": 517,
+      "heading": "Chapter CXVIII.--He exhorts to repentance before Christ comes; in whom",
+      "file": "0517-chapter-cxviii-he-exhorts-to-repentance-before-christ-comes-in-whom.json",
+      "words": 476
+    },
+    {
+      "index": 518,
+      "heading": "Chapter CXIX.--Christians are the holy people promised to Abraham. They have",
+      "file": "0518-chapter-cxix-christians-are-the-holy-people-promised-to-abraham-they-have.json",
+      "words": 661
+    },
+    {
+      "index": 519,
+      "heading": "Chapter CXX.--Christians were promised to Isaac, Jacob, and Judah.",
+      "file": "0519-chapter-cxx-christians-were-promised-to-isaac-jacob-and-judah.json",
+      "words": 735
+    },
+    {
+      "index": 520,
+      "heading": "Chapter CXXI.--From the fact that the Gentiles believe in Jesus, it is evident",
+      "file": "0520-chapter-cxxi-from-the-fact-that-the-gentiles-believe-in-jesus-it-is-evident.json",
+      "words": 446
+    },
+    {
+      "index": 521,
+      "heading": "Chapter CXXII.--The Jews understand this of the proselytes without reason.",
+      "file": "0521-chapter-cxxii-the-jews-understand-this-of-the-proselytes-without-reason.json",
+      "words": 506
+    },
+    {
+      "index": 522,
+      "heading": "Chapter CXXIII.--Ridiculous interpretations of the Jews. Christians are the",
+      "file": "0522-chapter-cxxiii-ridiculous-interpretations-of-the-jews-christians-are-the.json",
+      "words": 876
+    },
+    {
+      "index": 523,
+      "heading": "Chapter CXXIV.--Christians are the sons of God.",
+      "file": "0523-chapter-cxxiv-christians-are-the-sons-of-god.json",
+      "words": 408
+    },
+    {
+      "index": 524,
+      "heading": "Chapter CXXV.--He explains what force the word Israel has, and how it suits",
+      "file": "0524-chapter-cxxv-he-explains-what-force-the-word-israel-has-and-how-it-suits.json",
+      "words": 500
+    },
+    {
+      "index": 525,
+      "heading": "Chapter CXXVI.--The various names of Christ according to both natures. It is",
+      "file": "0525-chapter-cxxvi-the-various-names-of-christ-according-to-both-natures-it-is.json",
+      "words": 662
+    },
+    {
+      "index": 526,
+      "heading": "Chapter CXXVII.--These passages of Scripture do not apply to the Father, but",
+      "file": "0526-chapter-cxxvii-these-passages-of-scripture-do-not-apply-to-the-father-but.json",
+      "words": 469
+    },
+    {
+      "index": 527,
+      "heading": "Chapter CXXVIII.--The Word is sent not as an inanimate power, but as a person",
+      "file": "0527-chapter-cxxviii-the-word-is-sent-not-as-an-inanimate-power-but-as-a-person.json",
+      "words": 439
+    },
+    {
+      "index": 528,
+      "heading": "Chapter CXXIX.--That is confirmed from other passages of Scripture.",
+      "file": "0528-chapter-cxxix-that-is-confirmed-from-other-passages-of-scripture.json",
+      "words": 282
+    },
+    {
+      "index": 529,
+      "heading": "Chapter CXXX.--He returns to the conversion of the Gentiles, and shows that it",
+      "file": "0529-chapter-cxxx-he-returns-to-the-conversion-of-the-gentiles-and-shows-that-it.json",
+      "words": 428
+    },
+    {
+      "index": 530,
+      "heading": "Chapter CXXXI.--How much more faithful to God the Gentiles are who are",
+      "file": "0530-chapter-cxxxi-how-much-more-faithful-to-god-the-gentiles-are-who-are.json",
+      "words": 638
+    },
+    {
+      "index": 531,
+      "heading": "Chapter CXXXII.--How great the power was of the name of Jesus in the Old",
+      "file": "0531-chapter-cxxxii-how-great-the-power-was-of-the-name-of-jesus-in-the-old.json",
+      "words": 391
+    },
+    {
+      "index": 532,
+      "heading": "Chapter CXXXIII.--The hard-heartedness of the Jews, for whom the Christians",
+      "file": "0532-chapter-cxxxiii-the-hard-heartedness-of-the-jews-for-whom-the-christians.json",
+      "words": 616
+    },
+    {
+      "index": 533,
+      "heading": "Chapter CXXXIV.--The marriages of Jacob are a figure of the Church.",
+      "file": "0533-chapter-cxxxiv-the-marriages-of-jacob-are-a-figure-of-the-church.json",
+      "words": 433
+    },
+    {
+      "index": 534,
+      "heading": "Chapter CXXXV.--Christ is king of Israel, and Christians are the Israelitic",
+      "file": "0534-chapter-cxxxv-christ-is-king-of-israel-and-christians-are-the-israelitic.json",
+      "words": 518
+    },
+    {
+      "index": 535,
+      "heading": "Chapter CXXXVI.--The Jews, in rejecting Christ, rejected God who sent him.",
+      "file": "0535-chapter-cxxxvi-the-jews-in-rejecting-christ-rejected-god-who-sent-him.json",
+      "words": 311
+    },
+    {
+      "index": 536,
+      "heading": "Chapter CXXXVII.--He exhorts the Jews to be converted.",
+      "file": "0536-chapter-cxxxvii-he-exhorts-the-jews-to-be-converted.json",
+      "words": 380
+    },
+    {
+      "index": 537,
+      "heading": "Chapter CXXXVIII.--Noah is a figure of Christ, who has regenerated us by",
+      "file": "0537-chapter-cxxxviii-noah-is-a-figure-of-christ-who-has-regenerated-us-by.json",
+      "words": 349
+    },
+    {
+      "index": 538,
+      "heading": "Chapter CXXXIX.--The blessings, and also the curse, pronounced by Noah were",
+      "file": "0538-chapter-cxxxix-the-blessings-and-also-the-curse-pronounced-by-noah-were.json",
+      "words": 477
+    },
+    {
+      "index": 539,
+      "heading": "Chapter CXL.--In Christ all are free. The Jews hope for salvation in vain",
+      "file": "0539-chapter-cxl-in-christ-all-are-free-the-jews-hope-for-salvation-in-vain.json",
+      "words": 440
+    },
+    {
+      "index": 540,
+      "heading": "Chapter CXLI.--Free-will in men and angels.",
+      "file": "0540-chapter-cxli-free-will-in-men-and-angels.json",
+      "words": 442
+    },
+    {
+      "index": 541,
+      "heading": "Chapter CXLII.--The Jews return thanks, and leave Justin.",
+      "file": "0541-chapter-cxlii-the-jews-return-thanks-and-leave-justin.json",
+      "words": 357
+    },
+    {
+      "index": 542,
+      "heading": "Chapter I.--Justin justifies his departure from Greek customs.",
+      "file": "0542-chapter-i-justin-justifies-his-departure-from-greek-customs.json",
+      "words": 391
+    },
+    {
+      "index": 543,
+      "heading": "Chapter II.--The Greek theogony exposed.",
+      "file": "0543-chapter-ii-the-greek-theogony-exposed.json",
+      "words": 392
+    },
+    {
+      "index": 544,
+      "heading": "Chapter III.--Follies of the Greek mythology.",
+      "file": "0544-chapter-iii-follies-of-the-greek-mythology.json",
+      "words": 430
+    },
+    {
+      "index": 545,
+      "heading": "Chapter IV.--Shameless practices of the Greeks.",
+      "file": "0545-chapter-iv-shameless-practices-of-the-greeks.json",
+      "words": 166
+    },
+    {
+      "index": 546,
+      "heading": "Chapter V.--Closing appeal.",
+      "file": "0546-chapter-v-closing-appeal.json",
+      "words": 354
+    },
+    {
+      "index": 547,
+      "heading": "Chapter I.--Reasons for addressing the Greeks.",
+      "file": "0547-chapter-i-reasons-for-addressing-the-greeks.json",
+      "words": 284
+    },
+    {
+      "index": 548,
+      "heading": "Chapter II--The poets are unfit to be religious teachers.",
+      "file": "0548-chapter-ii-the-poets-are-unfit-to-be-religious-teachers.json",
+      "words": 852
+    },
+    {
+      "index": 549,
+      "heading": "Chapter III.--Opinions of the school of Thales.",
+      "file": "0549-chapter-iii-opinions-of-the-school-of-thales.json",
+      "words": 354
+    },
+    {
+      "index": 550,
+      "heading": "Chapter IV.--Opinions of Pythagoras and Epicurus.",
+      "file": "0550-chapter-iv-opinions-of-pythagoras-and-epicurus.json",
+      "words": 348
+    },
+    {
+      "index": 551,
+      "heading": "Chapter V.--Opinions of Plato and Aristotle.",
+      "file": "0551-chapter-v-opinions-of-plato-and-aristotle.json",
+      "words": 710
+    },
+    {
+      "index": 552,
+      "heading": "Chapter VI.--Further disagreements between Plato and Aristotle.",
+      "file": "0552-chapter-vi-further-disagreements-between-plato-and-aristotle.json",
+      "words": 353
+    },
+    {
+      "index": 553,
+      "heading": "Chapter VII.--Inconsistencies of Plato's doctrine.",
+      "file": "0553-chapter-vii-inconsistencies-of-plato-s-doctrine.json",
+      "words": 369
+    },
+    {
+      "index": 554,
+      "heading": "Chapter VIII.--Antiquity, inspiration, and harmony of Christian teachers.",
+      "file": "0554-chapter-viii-antiquity-inspiration-and-harmony-of-christian-teachers.json",
+      "words": 316
+    },
+    {
+      "index": 555,
+      "heading": "Chapter IX.--The antiquity of Moses proved by Greek writers.",
+      "file": "0555-chapter-ix-the-antiquity-of-moses-proved-by-greek-writers.json",
+      "words": 733
+    },
+    {
+      "index": 556,
+      "heading": "Chapter X--Training and inspiration of Moses. [2539]",
+      "file": "0556-chapter-x-training-and-inspiration-of-moses-2539.json",
+      "words": 301
+    },
+    {
+      "index": 557,
+      "heading": "Chapter XI.--Heathen oracles testify of Moses.",
+      "file": "0557-chapter-xi-heathen-oracles-testify-of-moses.json",
+      "words": 313
+    },
+    {
+      "index": 558,
+      "heading": "Chapter XII.--Antiquity of Moses proved.",
+      "file": "0558-chapter-xii-antiquity-of-moses-proved.json",
+      "words": 450
+    },
+    {
+      "index": 559,
+      "heading": "Chapter XIII.--History of the Septuagint.",
+      "file": "0559-chapter-xiii-history-of-the-septuagint.json",
+      "words": 581
+    },
+    {
+      "index": 560,
+      "heading": "Chapter XIV.--A warning appeal to the Greeks.",
+      "file": "0560-chapter-xiv-a-warning-appeal-to-the-greeks.json",
+      "words": 223
+    },
+    {
+      "index": 561,
+      "heading": "Chapter XV.--Testimony of Orpheus to monotheism.",
+      "file": "0561-chapter-xv-testimony-of-orpheus-to-monotheism.json",
+      "words": 500
+    },
+    {
+      "index": 562,
+      "heading": "Chapter XVI.--Testimony of the Sibyl.",
+      "file": "0562-chapter-xvi-testimony-of-the-sibyl.json",
+      "words": 165
+    },
+    {
+      "index": 563,
+      "heading": "Chapter XVII.--Testimony of Homer.",
+      "file": "0563-chapter-xvii-testimony-of-homer.json",
+      "words": 291
+    },
+    {
+      "index": 564,
+      "heading": "Chapter XVIII.--Testimony of Sophocles.",
+      "file": "0564-chapter-xviii-testimony-of-sophocles.json",
+      "words": 104
+    },
+    {
+      "index": 565,
+      "heading": "Chapter XIX.--Testimony of Pythagoras.",
+      "file": "0565-chapter-xix-testimony-of-pythagoras.json",
+      "words": 228
+    },
+    {
+      "index": 566,
+      "heading": "Chapter XX.--Testimony of Plato.",
+      "file": "0566-chapter-xx-testimony-of-plato.json",
+      "words": 317
+    },
+    {
+      "index": 567,
+      "heading": "Chapter XXI.--The namelessness of God.",
+      "file": "0567-chapter-xxi-the-namelessness-of-god.json",
+      "words": 541
+    },
+    {
+      "index": 568,
+      "heading": "Chapter XXII.--Studied ambiguity of Plato.",
+      "file": "0568-chapter-xxii-studied-ambiguity-of-plato.json",
+      "words": 494
+    },
+    {
+      "index": 569,
+      "heading": "Chapter XXIII.--Plato's self-contradiction.",
+      "file": "0569-chapter-xxiii-plato-s-self-contradiction.json",
+      "words": 316
+    },
+    {
+      "index": 570,
+      "heading": "Chapter XXIV.--Agreement of Plato and Homer.",
+      "file": "0570-chapter-xxiv-agreement-of-plato-and-homer.json",
+      "words": 343
+    },
+    {
+      "index": 571,
+      "heading": "Chapter XXV.--Plato's knowledge of God's eternity.",
+      "file": "0571-chapter-xxv-plato-s-knowledge-of-god-s-eternity.json",
+      "words": 594
+    },
+    {
+      "index": 572,
+      "heading": "Chapter XXVI.--Plato indebted to the prophets.",
+      "file": "0572-chapter-xxvi-plato-indebted-to-the-prophets.json",
+      "words": 374
+    },
+    {
+      "index": 573,
+      "heading": "Chapter XXVII.--Plato's knowledge of the judgment.",
+      "file": "0573-chapter-xxvii-plato-s-knowledge-of-the-judgment.json",
+      "words": 543
+    },
+    {
+      "index": 574,
+      "heading": "Chapter XXVIII.--Homer's obligations to the sacred writers.",
+      "file": "0574-chapter-xxviii-homer-s-obligations-to-the-sacred-writers.json",
+      "words": 950
+    },
+    {
+      "index": 575,
+      "heading": "Chapter XXIX.--Origin of Plato's doctrine of form.",
+      "file": "0575-chapter-xxix-origin-of-plato-s-doctrine-of-form.json",
+      "words": 238
+    },
+    {
+      "index": 576,
+      "heading": "Chapter XXX.--Homer's knowledge of man's origin.",
+      "file": "0576-chapter-xxx-homer-s-knowledge-of-man-s-origin.json",
+      "words": 397
+    },
+    {
+      "index": 577,
+      "heading": "Chapter XXXI.--Further proof of Plato's acquaintance with Scripture.",
+      "file": "0577-chapter-xxxi-further-proof-of-plato-s-acquaintance-with-scripture.json",
+      "words": 254
+    },
+    {
+      "index": 578,
+      "heading": "Chapter XXXII.--Plato's doctrine of the heavenly gift.",
+      "file": "0578-chapter-xxxii-plato-s-doctrine-of-the-heavenly-gift.json",
+      "words": 418
+    },
+    {
+      "index": 579,
+      "heading": "Chapter XXXIII.--Plato's idea of the beginning of time drawn from Moses.",
+      "file": "0579-chapter-xxxiii-plato-s-idea-of-the-beginning-of-time-drawn-from-moses.json",
+      "words": 205
+    },
+    {
+      "index": 580,
+      "heading": "Chapter XXXIV.--Whence men attributed to God human form.",
+      "file": "0580-chapter-xxxiv-whence-men-attributed-to-god-human-form.json",
+      "words": 169
+    },
+    {
+      "index": 581,
+      "heading": "Chapter XXXV.--Appeal to the Greeks.",
+      "file": "0581-chapter-xxxv-appeal-to-the-greeks.json",
+      "words": 404
+    },
+    {
+      "index": 582,
+      "heading": "Chapter XXXVI.--True knowledge not held by the philosophers.",
+      "file": "0582-chapter-xxxvi-true-knowledge-not-held-by-the-philosophers.json",
+      "words": 601
+    },
+    {
+      "index": 583,
+      "heading": "Chapter XXXVII.--Of the Sibyl. [2589]",
+      "file": "0583-chapter-xxxvii-of-the-sibyl-2589.json",
+      "words": 646
+    },
+    {
+      "index": 584,
+      "heading": "Chapter XXXVIII.--Concluding appeal.",
+      "file": "0584-chapter-xxxviii-concluding-appeal.json",
+      "words": 558
+    },
+    {
+      "index": 585,
+      "heading": "Chapter I.--Object of the author.",
+      "file": "0585-chapter-i-object-of-the-author.json",
+      "words": 352
+    },
+    {
+      "index": 586,
+      "heading": "Chapter II.--Testimonies to the unity of God.",
+      "file": "0586-chapter-ii-testimonies-to-the-unity-of-god.json",
+      "words": 695
+    },
+    {
+      "index": 587,
+      "heading": "Chapter III.--Testimonies to a future judgment.",
+      "file": "0587-chapter-iii-testimonies-to-a-future-judgment.json",
+      "words": 421
+    },
+    {
+      "index": 588,
+      "heading": "Chapter IV.--God desires not sacrifices, but righteousness.",
+      "file": "0588-chapter-iv-god-desires-not-sacrifices-but-righteousness.json",
+      "words": 374
+    },
+    {
+      "index": 589,
+      "heading": "Chapter V.--The vain pretensions of false gods.",
+      "file": "0589-chapter-v-the-vain-pretensions-of-false-gods.json",
+      "words": 964
+    },
+    {
+      "index": 590,
+      "heading": "Chapter VI.--We should acknowledge one only God.",
+      "file": "0590-chapter-vi-we-should-acknowledge-one-only-god.json",
+      "words": 360
+    },
+    {
+      "index": 591,
+      "heading": "Fragments http://www.ccel.org/ccel/schaff/anf01.viii.viii.html",
+      "file": "0591-fragments-http-www-ccel-org-ccel-schaff-anf01-viii-viii-html.json",
+      "words": 1
+    },
+    {
+      "index": 592,
+      "heading": "Fragments of the Lost Work of Justin on the Resurrection",
+      "file": "0592-fragments-of-the-lost-work-of-justin-on-the-resurrection.json",
+      "words": 9
+    },
+    {
+      "index": 593,
+      "heading": "Chapter I.--The self-evidencing power of truth.",
+      "file": "0593-chapter-i-the-self-evidencing-power-of-truth.json",
+      "words": 437
+    },
+    {
+      "index": 594,
+      "heading": "Chapter II.--Objections to the resurrection of the flesh.",
+      "file": "0594-chapter-ii-objections-to-the-resurrection-of-the-flesh.json",
+      "words": 303
+    },
+    {
+      "index": 595,
+      "heading": "Chapter III.--If the members rise, must they discharge the same functions as",
+      "file": "0595-chapter-iii-if-the-members-rise-must-they-discharge-the-same-functions-as.json",
+      "words": 567
+    },
+    {
+      "index": 596,
+      "heading": "Chapter IV.--Must the deformed rise deformed?",
+      "file": "0596-chapter-iv-must-the-deformed-rise-deformed.json",
+      "words": 184
+    },
+    {
+      "index": 597,
+      "heading": "Chapter V.--The resurrection of the flesh is not impossible.",
+      "file": "0597-chapter-v-the-resurrection-of-the-flesh-is-not-impossible.json",
+      "words": 610
+    },
+    {
+      "index": 598,
+      "heading": "Chapter VI.--The resurrection consistent with the opinions of the",
+      "file": "0598-chapter-vi-the-resurrection-consistent-with-the-opinions-of-the.json",
+      "words": 670
+    },
+    {
+      "index": 599,
+      "heading": "Chapter VII.--The body valuable in God's sight.",
+      "file": "0599-chapter-vii-the-body-valuable-in-god-s-sight.json",
+      "words": 336
+    },
+    {
+      "index": 600,
+      "heading": "Chapter VIII.--Does the body cause the soul to sin?",
+      "file": "0600-chapter-viii-does-the-body-cause-the-soul-to-sin.json",
+      "words": 974
+    },
+    {
+      "index": 601,
+      "heading": "Chapter IX.--The resurrection of Christ proves that the body rises.",
+      "file": "0601-chapter-ix-the-resurrection-of-christ-proves-that-the-body-rises.json",
+      "words": 342
+    },
+    {
+      "index": 602,
+      "heading": "Chapter X.--The body saved, and will therefore rise.",
+      "file": "0602-chapter-x-the-body-saved-and-will-therefore-rise.json",
+      "words": 479
+    },
+    {
+      "index": 603,
+      "heading": "Fragments from the Lost Writings of Justin",
+      "file": "0603-fragments-from-the-lost-writings-of-justin.json",
+      "words": 1698
+    },
+    {
+      "index": 604,
+      "heading": "XVIII.",
+      "file": "0604-xviii.json",
+      "words": 519
+    },
+    {
+      "index": 605,
+      "heading": "Chapter I.--Examination of Justin by the prefect.",
+      "file": "0605-chapter-i-examination-of-justin-by-the-prefect.json",
+      "words": 325
+    },
+    {
+      "index": 606,
+      "heading": "Chapter II.--Examination of Justin continued.",
+      "file": "0606-chapter-ii-examination-of-justin-continued.json",
+      "words": 145
+    },
+    {
+      "index": 607,
+      "heading": "Chapter III.--Examination of Chariton and others.",
+      "file": "0607-chapter-iii-examination-of-chariton-and-others.json",
+      "words": 271
+    },
+    {
+      "index": 608,
+      "heading": "Chapter IV.--Rusticus threatens the Christians with death.",
+      "file": "0608-chapter-iv-rusticus-threatens-the-christians-with-death.json",
+      "words": 275
+    },
+    {
+      "index": 609,
+      "heading": "Chapter V.--Sentence pronounced and executed.",
+      "file": "0609-chapter-v-sentence-pronounced-and-executed.json",
+      "words": 3519
+    },
+    {
+      "index": 610,
+      "heading": "Preface.",
+      "file": "0610-preface-2.json",
+      "words": 1244
+    },
+    {
+      "index": 611,
+      "heading": "Chapter I.--Absurd ideas of the disciples of Valentinus as to the origin,",
+      "file": "0611-chapter-i-absurd-ideas-of-the-disciples-of-valentinus-as-to-the-origin.json",
+      "words": 950
+    },
+    {
+      "index": 612,
+      "heading": "Chapter II.--The Propator was known to Monogenes alone. Ambition, disturbance,",
+      "file": "0612-chapter-ii-the-propator-was-known-to-monogenes-alone-ambition-disturbance.json",
+      "words": 1699
+    },
+    {
+      "index": 613,
+      "heading": "Chapter III.--Texts of Holy Scripture used by these heretics to support their",
+      "file": "0613-chapter-iii-texts-of-holy-scripture-used-by-these-heretics-to-support-their.json",
+      "words": 1782
+    },
+    {
+      "index": 614,
+      "heading": "Chapter IV.--Account given by the heretics of the formation of Achamoth;",
+      "file": "0614-chapter-iv-account-given-by-the-heretics-of-the-formation-of-achamoth.json",
+      "words": 1663
+    },
+    {
+      "index": 615,
+      "heading": "Chapter V.--Formation of the Demiurge; description of him. He is the creator",
+      "file": "0615-chapter-v-formation-of-the-demiurge-description-of-him-he-is-the-creator.json",
+      "words": 1641
+    },
+    {
+      "index": 616,
+      "heading": "Chapter VI.--The threefold kind of man feigned by these heretics: good works",
+      "file": "0616-chapter-vi-the-threefold-kind-of-man-feigned-by-these-heretics-good-works.json",
+      "words": 1211
+    },
+    {
+      "index": 617,
+      "heading": "Chapter VII.--The mother Achamoth, when all her seed are perfected, shall pass",
+      "file": "0617-chapter-vii-the-mother-achamoth-when-all-her-seed-are-perfected-shall-pass.json",
+      "words": 1366
+    },
+    {
+      "index": 618,
+      "heading": "Chapter VIII.--How the Valentinians pervert the Scriptures to support their",
+      "file": "0618-chapter-viii-how-the-valentinians-pervert-the-scriptures-to-support-their.json",
+      "words": 2543
+    },
+    {
+      "index": 619,
+      "heading": "Chapter IX.--Refutation of the impious interpretations of these heretics.",
+      "file": "0619-chapter-ix-refutation-of-the-impious-interpretations-of-these-heretics.json",
+      "words": 1571
+    },
+    {
+      "index": 620,
+      "heading": "Chapter X.--Unity of the faith of the Church throughout the whole world.",
+      "file": "0620-chapter-x-unity-of-the-faith-of-the-church-throughout-the-whole-world.json",
+      "words": 1232
+    },
+    {
+      "index": 621,
+      "heading": "Chapter XI.--The opinions of Valentinus, with those of his disciples and",
+      "file": "0621-chapter-xi-the-opinions-of-valentinus-with-those-of-his-disciples-and.json",
+      "words": 1295
+    },
+    {
+      "index": 622,
+      "heading": "Chapter XII.--The doctrines of the followers of Ptolemy and Colorbasus.",
+      "file": "0622-chapter-xii-the-doctrines-of-the-followers-of-ptolemy-and-colorbasus.json",
+      "words": 857
+    },
+    {
+      "index": 623,
+      "heading": "Chapter XIII.--The deceitful arts and nefarious practices of Marcus.",
+      "file": "0623-chapter-xiii-the-deceitful-arts-and-nefarious-practices-of-marcus.json",
+      "words": 1932
+    },
+    {
+      "index": 624,
+      "heading": "Chapter XIV.--The various hypotheses of Marcus and others. Theories respecting",
+      "file": "0624-chapter-xiv-the-various-hypotheses-of-marcus-and-others-theories-respecting.json",
+      "words": 2972
+    },
+    {
+      "index": 625,
+      "heading": "Chapter XV.--Sige relates to Marcus the generation of the twenty-four elements",
+      "file": "0625-chapter-xv-sige-relates-to-marcus-the-generation-of-the-twenty-four-elements.json",
+      "words": 1918
+    },
+    {
+      "index": 626,
+      "heading": "Chapter XVI.--Absurd interpretations of the Marcosians.",
+      "file": "0626-chapter-xvi-absurd-interpretations-of-the-marcosians.json",
+      "words": 1363
+    },
+    {
+      "index": 627,
+      "heading": "Chapter XVII.--The theory of the Marcosians, that created things were made",
+      "file": "0627-chapter-xvii-the-theory-of-the-marcosians-that-created-things-were-made.json",
+      "words": 600
+    },
+    {
+      "index": 628,
+      "heading": "Chapter XVIII.--Passages from Moses, which the heretics pervert to the support",
+      "file": "0628-chapter-xviii-passages-from-moses-which-the-heretics-pervert-to-the-support.json",
+      "words": 1329
+    },
+    {
+      "index": 629,
+      "heading": "Chapter XIX.--Passages of Scripture by which they attempt to prove that the",
+      "file": "0629-chapter-xix-passages-of-scripture-by-which-they-attempt-to-prove-that-the.json",
+      "words": 418
+    },
+    {
+      "index": 630,
+      "heading": "Chapter XX.--The apocryphal and spurious Scriptures of the Marcosians, with",
+      "file": "0630-chapter-xx-the-apocryphal-and-spurious-scriptures-of-the-marcosians-with.json",
+      "words": 699
+    },
+    {
+      "index": 631,
+      "heading": "Chapter XXI.--The views of redemption entertained by these heretics.",
+      "file": "0631-chapter-xxi-the-views-of-redemption-entertained-by-these-heretics.json",
+      "words": 1470
+    },
+    {
+      "index": 632,
+      "heading": "Chapter XXII.--Deviations of heretics from the truth.",
+      "file": "0632-chapter-xxii-deviations-of-heretics-from-the-truth.json",
+      "words": 501
+    },
+    {
+      "index": 633,
+      "heading": "Chapter XXIII.--Doctrines and practices of Simon Magus and Menander.",
+      "file": "0633-chapter-xxiii-doctrines-and-practices-of-simon-magus-and-menander.json",
+      "words": 1291
+    },
+    {
+      "index": 634,
+      "heading": "Chapter XXIV.--Doctrines of Saturninus and Basilides.",
+      "file": "0634-chapter-xxiv-doctrines-of-saturninus-and-basilides.json",
+      "words": 1537
+    },
+    {
+      "index": 635,
+      "heading": "Chapter XXV.--Doctrines of Carpocrates.",
+      "file": "0635-chapter-xxv-doctrines-of-carpocrates.json",
+      "words": 1409
+    },
+    {
+      "index": 636,
+      "heading": "Chapter XXVI.--Doctrines of Cerinthus, the Ebionites, and Nicolaitanes.",
+      "file": "0636-chapter-xxvi-doctrines-of-cerinthus-the-ebionites-and-nicolaitanes.json",
+      "words": 382
+    },
+    {
+      "index": 637,
+      "heading": "Chapter XXVII.--Doctrines of Cerdo and Marcion.",
+      "file": "0637-chapter-xxvii-doctrines-of-cerdo-and-marcion.json",
+      "words": 805
+    },
+    {
+      "index": 638,
+      "heading": "Chapter XXVIII.--Doctrines of Tatian, the Encratites, and others.",
+      "file": "0638-chapter-xxviii-doctrines-of-tatian-the-encratites-and-others.json",
+      "words": 369
+    },
+    {
+      "index": 639,
+      "heading": "Chapter XXIX.--Doctrines of various other Gnostic sects, and especially of the",
+      "file": "0639-chapter-xxix-doctrines-of-various-other-gnostic-sects-and-especially-of-the.json",
+      "words": 933
+    },
+    {
+      "index": 640,
+      "heading": "Chapter XXX.--Doctrines of the Ophites and Sethians.",
+      "file": "0640-chapter-xxx-doctrines-of-the-ophites-and-sethians.json",
+      "words": 3428
+    },
+    {
+      "index": 641,
+      "heading": "Chapter XXXI.--Doctrines of the Cainites.",
+      "file": "0641-chapter-xxxi-doctrines-of-the-cainites.json",
+      "words": 849
+    },
+    {
+      "index": 642,
+      "heading": "Preface.",
+      "file": "0642-preface-3.json",
+      "words": 453
+    },
+    {
+      "index": 643,
+      "heading": "Chapter I.--There is but one God: the impossibility of its being otherwise.",
+      "file": "0643-chapter-i-there-is-but-one-god-the-impossibility-of-its-being-otherwise.json",
+      "words": 1189
+    },
+    {
+      "index": 644,
+      "heading": "Chapter II.--The world was not formed by angels, or by any other being,",
+      "file": "0644-chapter-ii-the-world-was-not-formed-by-angels-or-by-any-other-being.json",
+      "words": 1328
+    },
+    {
+      "index": 645,
+      "heading": "Chapter III.--The Bythus and Pleroma of the Valentinians, as well as the God",
+      "file": "0645-chapter-iii-the-bythus-and-pleroma-of-the-valentinians-as-well-as-the-god.json",
+      "words": 641
+    },
+    {
+      "index": 646,
+      "heading": "Chapter IV.--The absurdity of the supposed vacuum and defect of the heretics",
+      "file": "0646-chapter-iv-the-absurdity-of-the-supposed-vacuum-and-defect-of-the-heretics.json",
+      "words": 1256
+    },
+    {
+      "index": 647,
+      "heading": "Chapter V.--This world was not formed by any other beings within the territory",
+      "file": "0647-chapter-v-this-world-was-not-formed-by-any-other-beings-within-the-territory.json",
+      "words": 1406
+    },
+    {
+      "index": 648,
+      "heading": "Chapter VI.--The angels and the Creator of the world could not have been",
+      "file": "0648-chapter-vi-the-angels-and-the-creator-of-the-world-could-not-have-been.json",
+      "words": 753
+    },
+    {
+      "index": 649,
+      "heading": "Chapter VII.--Created things are not the images of those Æons who are within",
+      "file": "0649-chapter-vii-created-things-are-not-the-images-of-those-ons-who-are-within.json",
+      "words": 2279
+    },
+    {
+      "index": 650,
+      "heading": "Chapter VIII.--Created things are not a shadow of the Pleroma.",
+      "file": "0650-chapter-viii-created-things-are-not-a-shadow-of-the-pleroma.json",
+      "words": 763
+    },
+    {
+      "index": 651,
+      "heading": "Chapter IX.--There is but one Creator of the world, God the Father: this the",
+      "file": "0651-chapter-ix-there-is-but-one-creator-of-the-world-god-the-father-this-the.json",
+      "words": 541
+    },
+    {
+      "index": 652,
+      "heading": "Chapter X.--Perverse interpretations of Scripture by the heretics: God created",
+      "file": "0652-chapter-x-perverse-interpretations-of-scripture-by-the-heretics-god-created.json",
+      "words": 814
+    },
+    {
+      "index": 653,
+      "heading": "Chapter XI.--The heretics, from their disbelief of the truth, have fallen into",
+      "file": "0653-chapter-xi-the-heretics-from-their-disbelief-of-the-truth-have-fallen-into.json",
+      "words": 428
+    },
+    {
+      "index": 654,
+      "heading": "Chapter XII.--The Triacontad of the heretics errs both by defect and excess:",
+      "file": "0654-chapter-xii-the-triacontad-of-the-heretics-errs-both-by-defect-and-excess.json",
+      "words": 1956
+    },
+    {
+      "index": 655,
+      "heading": "Chapter XIII.--The first order of production maintained by the heretics is",
+      "file": "0655-chapter-xiii-the-first-order-of-production-maintained-by-the-heretics-is.json",
+      "words": 2968
+    },
+    {
+      "index": 656,
+      "heading": "Chapter XIV.--Valentinus and his followers derived the principles of their",
+      "file": "0656-chapter-xiv-valentinus-and-his-followers-derived-the-principles-of-their.json",
+      "words": 2892
+    },
+    {
+      "index": 657,
+      "heading": "Chapter XV.--No account can be given of these productions.",
+      "file": "0657-chapter-xv-no-account-can-be-given-of-these-productions.json",
+      "words": 761
+    },
+    {
+      "index": 658,
+      "heading": "Chapter XVI.--The Creator of the world either produced of Himself the images",
+      "file": "0658-chapter-xvi-the-creator-of-the-world-either-produced-of-himself-the-images.json",
+      "words": 937
+    },
+    {
+      "index": 659,
+      "heading": "Chapter XVII.--Inquiry into the production of the Æons: whatever its supposed",
+      "file": "0659-chapter-xvii-inquiry-into-the-production-of-the-ons-whatever-its-supposed.json",
+      "words": 2783
+    },
+    {
+      "index": 660,
+      "heading": "Chapter XVIII.--Sophia was never really in ignorance or passion; her",
+      "file": "0660-chapter-xviii-sophia-was-never-really-in-ignorance-or-passion-her.json",
+      "words": 1611
+    },
+    {
+      "index": 661,
+      "heading": "Chapter XIX.--Absurdities of the heretics as to their own origin: their",
+      "file": "0661-chapter-xix-absurdities-of-the-heretics-as-to-their-own-origin-their.json",
+      "words": 2497
+    },
+    {
+      "index": 662,
+      "heading": "Chapter XX.--Futility of the arguments adduced to demonstrate the sufferings",
+      "file": "0662-chapter-xx-futility-of-the-arguments-adduced-to-demonstrate-the-sufferings.json",
+      "words": 1377
+    },
+    {
+      "index": 663,
+      "heading": "Chapter XXI.--The twelve apostles were not a type of the Æons.",
+      "file": "0663-chapter-xxi-the-twelve-apostles-were-not-a-type-of-the-ons.json",
+      "words": 924
+    },
+    {
+      "index": 664,
+      "heading": "Chapter XXII.--The thirty Æons are not typified by the fact that Christ was",
+      "file": "0664-chapter-xxii-the-thirty-ons-are-not-typified-by-the-fact-that-christ-was.json",
+      "words": 2841
+    },
+    {
+      "index": 665,
+      "heading": "Chapter XXIII.--The woman who suffered from an issue of blood was no type of",
+      "file": "0665-chapter-xxiii-the-woman-who-suffered-from-an-issue-of-blood-was-no-type-of.json",
+      "words": 580
+    },
+    {
+      "index": 666,
+      "heading": "Chapter XXIV.--Folly of the arguments derived by the heretics from numbers,",
+      "file": "0666-chapter-xxiv-folly-of-the-arguments-derived-by-the-heretics-from-numbers.json",
+      "words": 3202
+    },
+    {
+      "index": 667,
+      "heading": "Chapter XXV.--God is not to be sought after by means of letters, syllables,",
+      "file": "0667-chapter-xxv-god-is-not-to-be-sought-after-by-means-of-letters-syllables.json",
+      "words": 866
+    },
+    {
+      "index": 668,
+      "heading": "Chapter XXVI.--\"Knowledge puffeth up, but love edifieth.\"",
+      "file": "0668-chapter-xxvi-knowledge-puffeth-up-but-love-edifieth.json",
+      "words": 989
+    },
+    {
+      "index": 669,
+      "heading": "Chapter XXVII.--Proper mode of interpreting parables and obscure passages of",
+      "file": "0669-chapter-xxvii-proper-mode-of-interpreting-parables-and-obscure-passages-of.json",
+      "words": 761
+    },
+    {
+      "index": 670,
+      "heading": "Chapter XXVIII.--Perfect knowledge cannot be attained in the present life:",
+      "file": "0670-chapter-xxviii-perfect-knowledge-cannot-be-attained-in-the-present-life.json",
+      "words": 3530
+    },
+    {
+      "index": 671,
+      "heading": "Chapter XXIX.--Refutation of the views of the heretics as to the future",
+      "file": "0671-chapter-xxix-refutation-of-the-views-of-the-heretics-as-to-the-future.json",
+      "words": 1015
+    },
+    {
+      "index": 672,
+      "heading": "Chapter XXX.--Absurdity of their styling themselves spiritual, while the",
+      "file": "0672-chapter-xxx-absurdity-of-their-styling-themselves-spiritual-while-the.json",
+      "words": 3269
+    },
+    {
+      "index": 673,
+      "heading": "Chapter XXXI.--Recapitulation and application of the foregoing arguments.",
+      "file": "0673-chapter-xxxi-recapitulation-and-application-of-the-foregoing-arguments.json",
+      "words": 1148
+    },
+    {
+      "index": 674,
+      "heading": "Chapter XXXII.--Further exposure of the wicked and blasphemous doctrines of",
+      "file": "0674-chapter-xxxii-further-exposure-of-the-wicked-and-blasphemous-doctrines-of.json",
+      "words": 1767
+    },
+    {
+      "index": 675,
+      "heading": "Chapter XXXIII.--Absurdity of the doctrine of the transmigration of souls.",
+      "file": "0675-chapter-xxxiii-absurdity-of-the-doctrine-of-the-transmigration-of-souls.json",
+      "words": 1400
+    },
+    {
+      "index": 676,
+      "heading": "Chapter XXXIV.--Souls can be recognised in the separate state, and are",
+      "file": "0676-chapter-xxxiv-souls-can-be-recognised-in-the-separate-state-and-are.json",
+      "words": 1142
+    },
+    {
+      "index": 677,
+      "heading": "Chapter XXXV.--Refutation of Basilides, and of the opinion that the prophets",
+      "file": "0677-chapter-xxxv-refutation-of-basilides-and-of-the-opinion-that-the-prophets.json",
+      "words": 1283
+    },
+    {
+      "index": 678,
+      "heading": "Preface.",
+      "file": "0678-preface-4.json",
+      "words": 338
+    },
+    {
+      "index": 679,
+      "heading": "Chapter I.--The apostles did not commence to preach the Gospel, or to place",
+      "file": "0679-chapter-i-the-apostles-did-not-commence-to-preach-the-gospel-or-to-place.json",
+      "words": 413
+    },
+    {
+      "index": 680,
+      "heading": "Chapter II.--The heretics follow neither Scripture nor tradition.",
+      "file": "0680-chapter-ii-the-heretics-follow-neither-scripture-nor-tradition.json",
+      "words": 427
+    },
+    {
+      "index": 681,
+      "heading": "Chapter III.--A refutation of the heretics, from the fact that, in the various",
+      "file": "0681-chapter-iii-a-refutation-of-the-heretics-from-the-fact-that-in-the-various.json",
+      "words": 1423
+    },
+    {
+      "index": 682,
+      "heading": "Chapter IV.--The truth is to be found nowhere else but in the Catholic Church,",
+      "file": "0682-chapter-iv-the-truth-is-to-be-found-nowhere-else-but-in-the-catholic-church.json",
+      "words": 841
+    },
+    {
+      "index": 683,
+      "heading": "Chapter V.--Christ and His apostles, without any fraud, deception, or",
+      "file": "0683-chapter-v-christ-and-his-apostles-without-any-fraud-deception-or.json",
+      "words": 944
+    },
+    {
+      "index": 684,
+      "heading": "Chapter VI--The Holy Ghost, throughout the Old Testament Scriptures, made",
+      "file": "0684-chapter-vi-the-holy-ghost-throughout-the-old-testament-scriptures-made.json",
+      "words": 1690
+    },
+    {
+      "index": 685,
+      "heading": "Chapter VII.--Reply to an objection founded on the words of St. Paul (2 Cor.",
+      "file": "0685-chapter-vii-reply-to-an-objection-founded-on-the-words-of-st-paul-2-cor.json",
+      "words": 760
+    },
+    {
+      "index": 686,
+      "heading": "Chapter VIII.--Answer to an objection, arising from the words of Christ (Matt.",
+      "file": "0686-chapter-viii-answer-to-an-objection-arising-from-the-words-of-christ-matt.json",
+      "words": 983
+    },
+    {
+      "index": 687,
+      "heading": "Chapter IX.--One and the same God, the Creator of heaven and earth, is He whom",
+      "file": "0687-chapter-ix-one-and-the-same-god-the-creator-of-heaven-and-earth-is-he-whom.json",
+      "words": 1439
+    },
+    {
+      "index": 688,
+      "heading": "Chapter X.--Proofs of the foregoing, drawn from the Gospels of Mark and Luke.",
+      "file": "0688-chapter-x-proofs-of-the-foregoing-drawn-from-the-gospels-of-mark-and-luke.json",
+      "words": 2723
+    },
+    {
+      "index": 689,
+      "heading": "Chapter XI--Proofs in continuation, extracted from St. John's Gospel. The",
+      "file": "0689-chapter-xi-proofs-in-continuation-extracted-from-st-john-s-gospel-the.json",
+      "words": 3644
+    },
+    {
+      "index": 690,
+      "heading": "Chapter XII.--Doctrine of the rest of the apostles.",
+      "file": "0690-chapter-xii-doctrine-of-the-rest-of-the-apostles.json",
+      "words": 6921
+    },
+    {
+      "index": 691,
+      "heading": "Chapter XIII--Refutation of the opinion, that Paul was the only apostle who",
+      "file": "0691-chapter-xiii-refutation-of-the-opinion-that-paul-was-the-only-apostle-who.json",
+      "words": 816
+    },
+    {
+      "index": 692,
+      "heading": "Chapter XIV.--If Paul had known any mysteries unrevealed to the other",
+      "file": "0692-chapter-xiv-if-paul-had-known-any-mysteries-unrevealed-to-the-other.json",
+      "words": 1718
+    },
+    {
+      "index": 693,
+      "heading": "Chapter XV.--Refutation of the Ebionites, who disparaged the authority of St.",
+      "file": "0693-chapter-xv-refutation-of-the-ebionites-who-disparaged-the-authority-of-st.json",
+      "words": 1040
+    },
+    {
+      "index": 694,
+      "heading": "Chapter XVI.--Proofs from the apostolic writings, that Jesus Christ was one",
+      "file": "0694-chapter-xvi-proofs-from-the-apostolic-writings-that-jesus-christ-was-one.json",
+      "words": 4247
+    },
+    {
+      "index": 695,
+      "heading": "Chapter XVII.--The apostles teach that it was neither Christ nor the Saviour,",
+      "file": "0695-chapter-xvii-the-apostles-teach-that-it-was-neither-christ-nor-the-saviour.json",
+      "words": 1352
+    },
+    {
+      "index": 696,
+      "heading": "Chapter XVIII.--Continuation of the foregoing argument. Proofs from the",
+      "file": "0696-chapter-xviii-continuation-of-the-foregoing-argument-proofs-from-the.json",
+      "words": 2699
+    },
+    {
+      "index": 697,
+      "heading": "Chapter XIX.--Jesus Christ was not a mere man, begotten from Joseph in the",
+      "file": "0697-chapter-xix-jesus-christ-was-not-a-mere-man-begotten-from-joseph-in-the.json",
+      "words": 1150
+    },
+    {
+      "index": 698,
+      "heading": "Chapter XX.--God showed himself, by the fall of man, as patient, benign,",
+      "file": "0698-chapter-xx-god-showed-himself-by-the-fall-of-man-as-patient-benign.json",
+      "words": 1735
+    },
+    {
+      "index": 699,
+      "heading": "Chapter XXI.--A vindication of the prophecy in Isa. vii. 14 against the",
+      "file": "0699-chapter-xxi-a-vindication-of-the-prophecy-in-isa-vii-14-against-the.json",
+      "words": 3032
+    },
+    {
+      "index": 700,
+      "heading": "Chapter XXII.--Christ assumed actual flesh, conceived and born of the Virgin.",
+      "file": "0700-chapter-xxii-christ-assumed-actual-flesh-conceived-and-born-of-the-virgin.json",
+      "words": 1286
+    },
+    {
+      "index": 701,
+      "heading": "Chapter XXIII.--Arguments in opposition to Tatian, showing that it was",
+      "file": "0701-chapter-xxiii-arguments-in-opposition-to-tatian-showing-that-it-was.json",
+      "words": 2537
+    },
+    {
+      "index": 702,
+      "heading": "Chapter XXIV.--Recapitulation of the various arguments adduced against Gnostic",
+      "file": "0702-chapter-xxiv-recapitulation-of-the-various-arguments-adduced-against-gnostic.json",
+      "words": 814
+    },
+    {
+      "index": 703,
+      "heading": "Chapter XXV.--This world is ruled by the providence of one God, who is both",
+      "file": "0703-chapter-xxv-this-world-is-ruled-by-the-providence-of-one-god-who-is-both.json",
+      "words": 2394
+    },
+    {
+      "index": 704,
+      "heading": "Preface.",
+      "file": "0704-preface-5.json",
+      "words": 912
+    },
+    {
+      "index": 705,
+      "heading": "Chapter I.--The Lord acknowledged but one God and Father.",
+      "file": "0705-chapter-i-the-lord-acknowledged-but-one-god-and-father.json",
+      "words": 480
+    },
+    {
+      "index": 706,
+      "heading": "Chapter II.--Proofs from the plain testimony of Moses, and of the other",
+      "file": "0706-chapter-ii-proofs-from-the-plain-testimony-of-moses-and-of-the-other.json",
+      "words": 1487
+    },
+    {
+      "index": 707,
+      "heading": "Chapter III.--Answer to the cavils of the Gnostics. We are not to suppose that",
+      "file": "0707-chapter-iii-answer-to-the-cavils-of-the-gnostics-we-are-not-to-suppose-that.json",
+      "words": 410
+    },
+    {
+      "index": 708,
+      "heading": "Chapter IV.--Answer to another objection, showing that the destruction of",
+      "file": "0708-chapter-iv-answer-to-another-objection-showing-that-the-destruction-of.json",
+      "words": 920
+    },
+    {
+      "index": 709,
+      "heading": "Chapter V.--The author returns to his former argument, and shows that there",
+      "file": "0709-chapter-v-the-author-returns-to-his-former-argument-and-shows-that-there.json",
+      "words": 1196
+    },
+    {
+      "index": 710,
+      "heading": "Chapter VI.--Explanation of the words of Christ, \"No man knoweth the Father,",
+      "file": "0710-chapter-vi-explanation-of-the-words-of-christ-no-man-knoweth-the-father.json",
+      "words": 1973
+    },
+    {
+      "index": 711,
+      "heading": "Chapter VII.--Recapitulation of the foregoing argument, showing that Abraham,",
+      "file": "0711-chapter-vii-recapitulation-of-the-foregoing-argument-showing-that-abraham.json",
+      "words": 979
+    },
+    {
+      "index": 712,
+      "heading": "Chapter VIII.--Vain attempts of Marcion and his followers, who exclude Abraham",
+      "file": "0712-chapter-viii-vain-attempts-of-marcion-and-his-followers-who-exclude-abraham.json",
+      "words": 1196
+    },
+    {
+      "index": 713,
+      "heading": "Chapter IX.--There is but one author, and one end to both covenants.",
+      "file": "0713-chapter-ix-there-is-but-one-author-and-one-end-to-both-covenants.json",
+      "words": 1489
+    },
+    {
+      "index": 714,
+      "heading": "Chapter X.--The Old Testament Scriptures, and those written by Moses in",
+      "file": "0714-chapter-x-the-old-testament-scriptures-and-those-written-by-moses-in.json",
+      "words": 828
+    },
+    {
+      "index": 715,
+      "heading": "Chapter XI.--The old prophets and righteous men knew beforehand of the advent",
+      "file": "0715-chapter-xi-the-old-prophets-and-righteous-men-knew-beforehand-of-the-advent.json",
+      "words": 1204
+    },
+    {
+      "index": 716,
+      "heading": "Chapter XII.--It clearly appears that there was but one author of both the old",
+      "file": "0716-chapter-xii-it-clearly-appears-that-there-was-but-one-author-of-both-the-old.json",
+      "words": 1498
+    },
+    {
+      "index": 717,
+      "heading": "Chapter XIII.--Christ did not abrogate the natural precepts of the law, but",
+      "file": "0717-chapter-xiii-christ-did-not-abrogate-the-natural-precepts-of-the-law-but.json",
+      "words": 1430
+    },
+    {
+      "index": 718,
+      "heading": "Chapter XIV.--If God demands obedience from man, if He formed man, called him",
+      "file": "0718-chapter-xiv-if-god-demands-obedience-from-man-if-he-formed-man-called-him.json",
+      "words": 1089
+    },
+    {
+      "index": 719,
+      "heading": "Chapter XV.--At first God deemed it sufficient to inscribe the natural law, or",
+      "file": "0719-chapter-xv-at-first-god-deemed-it-sufficient-to-inscribe-the-natural-law-or.json",
+      "words": 1079
+    },
+    {
+      "index": 720,
+      "heading": "Chapter XVI.--Perfect righteousness was conferred neither by circumcision nor",
+      "file": "0720-chapter-xvi-perfect-righteousness-was-conferred-neither-by-circumcision-nor.json",
+      "words": 1632
+    },
+    {
+      "index": 721,
+      "heading": "Chapter XVII.--Proof that God did not appoint the Levitical dispensation for",
+      "file": "0721-chapter-xvii-proof-that-god-did-not-appoint-the-levitical-dispensation-for.json",
+      "words": 2333
+    },
+    {
+      "index": 722,
+      "heading": "Chapter XVIII.--Concerning sacrifices and oblations, and those who truly offer",
+      "file": "0722-chapter-xviii-concerning-sacrifices-and-oblations-and-those-who-truly-offer.json",
+      "words": 2165
+    },
+    {
+      "index": 723,
+      "heading": "Chapter XIX.--Earthly things may be the type of heavenly, but the latter",
+      "file": "0723-chapter-xix-earthly-things-may-be-the-type-of-heavenly-but-the-latter.json",
+      "words": 848
+    },
+    {
+      "index": 724,
+      "heading": "Chapter XX.--That one God formed all things in the world, by means of the Word",
+      "file": "0724-chapter-xx-that-one-god-formed-all-things-in-the-world-by-means-of-the-word.json",
+      "words": 5039
+    },
+    {
+      "index": 725,
+      "heading": "Chapter XXI.--Abraham's faith was identical with ours; this faith was",
+      "file": "0725-chapter-xxi-abraham-s-faith-was-identical-with-ours-this-faith-was.json",
+      "words": 1006
+    },
+    {
+      "index": 726,
+      "heading": "Chapter XXII.--Christ did not come for the sake of the men of one age only,",
+      "file": "0726-chapter-xxii-christ-did-not-come-for-the-sake-of-the-men-of-one-age-only.json",
+      "words": 569
+    },
+    {
+      "index": 727,
+      "heading": "Chapter XXIII.--The patriarchs and prophets by pointing out the advent of",
+      "file": "0727-chapter-xxiii-the-patriarchs-and-prophets-by-pointing-out-the-advent-of.json",
+      "words": 859
+    },
+    {
+      "index": 728,
+      "heading": "Chapter XXIV.--The conversion of the Gentiles was more difficult than that of",
+      "file": "0728-chapter-xxiv-the-conversion-of-the-gentiles-was-more-difficult-than-that-of.json",
+      "words": 577
+    },
+    {
+      "index": 729,
+      "heading": "Chapter XXV.--Both covenants were prefigured in Abraham, and in the labour of",
+      "file": "0729-chapter-xxv-both-covenants-were-prefigured-in-abraham-and-in-the-labour-of.json",
+      "words": 821
+    },
+    {
+      "index": 730,
+      "heading": "Chapter XXVI.--The treasure hid in the Scriptures is Christ; the true",
+      "file": "0730-chapter-xxvi-the-treasure-hid-in-the-scriptures-is-christ-the-true.json",
+      "words": 1765
+    },
+    {
+      "index": 731,
+      "heading": "Chapter XXVII--The sins of the men of old time, which incurred the displeasure",
+      "file": "0731-chapter-xxvii-the-sins-of-the-men-of-old-time-which-incurred-the-displeasure.json",
+      "words": 2688
+    },
+    {
+      "index": 732,
+      "heading": "Chapter XXVIII.--Those persons prove themselves senseless who exaggerate the",
+      "file": "0732-chapter-xxviii-those-persons-prove-themselves-senseless-who-exaggerate-the.json",
+      "words": 1102
+    },
+    {
+      "index": 733,
+      "heading": "Chapter XXIX.--Refutation of the arguments of the Marcionites, who attempted",
+      "file": "0733-chapter-xxix-refutation-of-the-arguments-of-the-marcionites-who-attempted.json",
+      "words": 609
+    },
+    {
+      "index": 734,
+      "heading": "Chapter XXX.--Refutation of another argument adduced by the Marcionites, that",
+      "file": "0734-chapter-xxx-refutation-of-another-argument-adduced-by-the-marcionites-that.json",
+      "words": 1848
+    },
+    {
+      "index": 735,
+      "heading": "Chapter XXXI.--We should not hastily impute as crimes to the men of old time",
+      "file": "0735-chapter-xxxi-we-should-not-hastily-impute-as-crimes-to-the-men-of-old-time.json",
+      "words": 1209
+    },
+    {
+      "index": 736,
+      "heading": "Chapter XXXII.--That one God was the author of both Testaments, is confirmed",
+      "file": "0736-chapter-xxxii-that-one-god-was-the-author-of-both-testaments-is-confirmed.json",
+      "words": 725
+    },
+    {
+      "index": 737,
+      "heading": "Chapter XXXIII.--Whosoever confesses that one God is the author of both",
+      "file": "0737-chapter-xxxiii-whosoever-confesses-that-one-god-is-the-author-of-both.json",
+      "words": 4938
+    },
+    {
+      "index": 738,
+      "heading": "Chapter XXXIV.--Proof against the Marcionites, that the prophets referred in",
+      "file": "0738-chapter-xxxiv-proof-against-the-marcionites-that-the-prophets-referred-in.json",
+      "words": 1598
+    },
+    {
+      "index": 739,
+      "heading": "Chapter XXXV.--A refutation of those who allege that the prophets uttered some",
+      "file": "0739-chapter-xxxv-a-refutation-of-those-who-allege-that-the-prophets-uttered-some.json",
+      "words": 1451
+    },
+    {
+      "index": 740,
+      "heading": "Chapter XXXVI.--The prophets were sent from one and the same Father from whom",
+      "file": "0740-chapter-xxxvi-the-prophets-were-sent-from-one-and-the-same-father-from-whom.json",
+      "words": 4156
+    },
+    {
+      "index": 741,
+      "heading": "Chapter XXXVII.--Men are possessed of free will, and endowed with the faculty",
+      "file": "0741-chapter-xxxvii-men-are-possessed-of-free-will-and-endowed-with-the-faculty.json",
+      "words": 2320
+    },
+    {
+      "index": 742,
+      "heading": "Chapter XXXVIII.--Why man was not made perfect from the beginning.",
+      "file": "0742-chapter-xxxviii-why-man-was-not-made-perfect-from-the-beginning.json",
+      "words": 1369
+    },
+    {
+      "index": 743,
+      "heading": "Chapter XXXIX.--Man is endowed with the faculty of distinguishing good and",
+      "file": "0743-chapter-xxxix-man-is-endowed-with-the-faculty-of-distinguishing-good-and.json",
+      "words": 1207
+    },
+    {
+      "index": 744,
+      "heading": "Chapter XL.--One and the same God the Father inflicts punishment on the",
+      "file": "0744-chapter-xl-one-and-the-same-god-the-father-inflicts-punishment-on-the.json",
+      "words": 806
+    },
+    {
+      "index": 745,
+      "heading": "Chapter XLI.--Those persons who do not believe in God, but who are",
+      "file": "0745-chapter-xli-those-persons-who-do-not-believe-in-god-but-who-are.json",
+      "words": 1292
+    },
+    {
+      "index": 746,
+      "heading": "Preface.",
+      "file": "0746-preface-6.json",
+      "words": 453
+    },
+    {
+      "index": 747,
+      "heading": "Chapter I.--Christ alone is able to teach divine things, and to redeem us: He,",
+      "file": "0747-chapter-i-christ-alone-is-able-to-teach-divine-things-and-to-redeem-us-he.json",
+      "words": 1149
+    },
+    {
+      "index": 748,
+      "heading": "Chapter II.--When Christ visited us in His grace, He did not come to what did",
+      "file": "0748-chapter-ii-when-christ-visited-us-in-his-grace-he-did-not-come-to-what-did.json",
+      "words": 1068
+    },
+    {
+      "index": 749,
+      "heading": "Chapter III.--The power and glory of God shine forth in the weakness of human",
+      "file": "0749-chapter-iii-the-power-and-glory-of-god-shine-forth-in-the-weakness-of-human.json",
+      "words": 1228
+    },
+    {
+      "index": 750,
+      "heading": "Chapter IV.--Those persons are deceived who feign another God the Father",
+      "file": "0750-chapter-iv-those-persons-are-deceived-who-feign-another-god-the-father.json",
+      "words": 529
+    },
+    {
+      "index": 751,
+      "heading": "Chapter V.--The prolonged life of the ancients, the translation of Elijah and",
+      "file": "0751-chapter-v-the-prolonged-life-of-the-ancients-the-translation-of-elijah-and.json",
+      "words": 828
+    },
+    {
+      "index": 752,
+      "heading": "Chapter VI.--God will bestow salvation upon the whole nature of man,",
+      "file": "0752-chapter-vi-god-will-bestow-salvation-upon-the-whole-nature-of-man.json",
+      "words": 1109
+    },
+    {
+      "index": 753,
+      "heading": "Chapter VII.--Inasmuch as Christ did rise in our flesh, it follows that we",
+      "file": "0753-chapter-vii-inasmuch-as-christ-did-rise-in-our-flesh-it-follows-that-we.json",
+      "words": 825
+    },
+    {
+      "index": 754,
+      "heading": "Chapter VIII.--The gifts of the Holy Spirit which we receive prepare us for",
+      "file": "0754-chapter-viii-the-gifts-of-the-holy-spirit-which-we-receive-prepare-us-for.json",
+      "words": 1102
+    },
+    {
+      "index": 755,
+      "heading": "Chapter IX.--Showing how that passage of the apostle which the heretics",
+      "file": "0755-chapter-ix-showing-how-that-passage-of-the-apostle-which-the-heretics.json",
+      "words": 1185
+    },
+    {
+      "index": 756,
+      "heading": "Chapter X.--By a comparison drawn from the wild olive-tree, whose quality but",
+      "file": "0756-chapter-x-by-a-comparison-drawn-from-the-wild-olive-tree-whose-quality-but.json",
+      "words": 940
+    },
+    {
+      "index": 757,
+      "heading": "Chapter XI.--Treats upon the actions of carnal and of spiritual persons; also,",
+      "file": "0757-chapter-xi-treats-upon-the-actions-of-carnal-and-of-spiritual-persons-also.json",
+      "words": 735
+    },
+    {
+      "index": 758,
+      "heading": "Chapter XII.--Of the difference between life and death; of the breath of life",
+      "file": "0758-chapter-xii-of-the-difference-between-life-and-death-of-the-breath-of-life.json",
+      "words": 1637
+    },
+    {
+      "index": 759,
+      "heading": "Chapter XIII.--In the dead who were raised by Christ we possess the highest",
+      "file": "0759-chapter-xiii-in-the-dead-who-were-raised-by-christ-we-possess-the-highest.json",
+      "words": 1792
+    },
+    {
+      "index": 760,
+      "heading": "Chapter XIV.--Unless the flesh were to be saved, the Word would not have taken",
+      "file": "0760-chapter-xiv-unless-the-flesh-were-to-be-saved-the-word-would-not-have-taken.json",
+      "words": 1290
+    },
+    {
+      "index": 761,
+      "heading": "Chapter XV.--Proofs of the resurrection from Isaiah and Ezekiel; the same God",
+      "file": "0761-chapter-xv-proofs-of-the-resurrection-from-isaiah-and-ezekiel-the-same-god.json",
+      "words": 1581
+    },
+    {
+      "index": 762,
+      "heading": "Chapter XVI.--Since our bodies return to the earth, it follows that they have",
+      "file": "0762-chapter-xvi-since-our-bodies-return-to-the-earth-it-follows-that-they-have.json",
+      "words": 614
+    },
+    {
+      "index": 763,
+      "heading": "Chapter XVII.--There is but one Lord and one God, the Father and Creator of",
+      "file": "0763-chapter-xvii-there-is-but-one-lord-and-one-god-the-father-and-creator-of.json",
+      "words": 1271
+    },
+    {
+      "index": 764,
+      "heading": "Chapter XVIII.--God the Father and His Word have formed all created things",
+      "file": "0764-chapter-xviii-god-the-father-and-his-word-have-formed-all-created-things.json",
+      "words": 1224
+    },
+    {
+      "index": 765,
+      "heading": "Chapter XIX.--A comparison is instituted between the disobedient and sinning",
+      "file": "0765-chapter-xix-a-comparison-is-instituted-between-the-disobedient-and-sinning.json",
+      "words": 631
+    },
+    {
+      "index": 766,
+      "heading": "Chapter XX.--Those pastors are to be heard to whom the apostles committed the",
+      "file": "0766-chapter-xx-those-pastors-are-to-be-heard-to-whom-the-apostles-committed-the.json",
+      "words": 824
+    },
+    {
+      "index": 767,
+      "heading": "Chapter XXI.--Christ is the head of all things already mentioned. It was",
+      "file": "0767-chapter-xxi-christ-is-the-head-of-all-things-already-mentioned-it-was.json",
+      "words": 1653
+    },
+    {
+      "index": 768,
+      "heading": "Chapter XXII.--The true Lord and the one God is declared by the law, and",
+      "file": "0768-chapter-xxii-the-true-lord-and-the-one-god-is-declared-by-the-law-and.json",
+      "words": 824
+    },
+    {
+      "index": 769,
+      "heading": "Chapter XXIII.--The devil is well practised in falsehood, by which Adam having",
+      "file": "0769-chapter-xxiii-the-devil-is-well-practised-in-falsehood-by-which-adam-having.json",
+      "words": 906
+    },
+    {
+      "index": 770,
+      "heading": "Chapter XXIV.--Of the constant falsehood of the devil, and of the powers and",
+      "file": "0770-chapter-xxiv-of-the-constant-falsehood-of-the-devil-and-of-the-powers-and.json",
+      "words": 1078
+    },
+    {
+      "index": 771,
+      "heading": "Chapter XXV.--The fraud, pride, and tyrannical kingdom of Antichrist, as",
+      "file": "0771-chapter-xxv-the-fraud-pride-and-tyrannical-kingdom-of-antichrist-as.json",
+      "words": 1509
+    },
+    {
+      "index": 772,
+      "heading": "Chapter XXVI.--John and Daniel have predicted the dissolution and desolation",
+      "file": "0772-chapter-xxvi-john-and-daniel-have-predicted-the-dissolution-and-desolation.json",
+      "words": 1192
+    },
+    {
+      "index": 773,
+      "heading": "Chapter XXVII.--The future judgment by Christ. Communion with and separation",
+      "file": "0773-chapter-xxvii-the-future-judgment-by-christ-communion-with-and-separation.json",
+      "words": 769
+    },
+    {
+      "index": 774,
+      "heading": "Chapter XXVIII.--The distinction to be made between the righteous and the",
+      "file": "0774-chapter-xxviii-the-distinction-to-be-made-between-the-righteous-and-the.json",
+      "words": 1192
+    },
+    {
+      "index": 775,
+      "heading": "Chapter XXIX.--All things have been created for the service of man. The",
+      "file": "0775-chapter-xxix-all-things-have-been-created-for-the-service-of-man-the.json",
+      "words": 587
+    },
+    {
+      "index": 776,
+      "heading": "Chapter XXX.--Although certain as to the number of the name of Antichrist, yet",
+      "file": "0776-chapter-xxx-although-certain-as-to-the-number-of-the-name-of-antichrist-yet.json",
+      "words": 1586
+    },
+    {
+      "index": 777,
+      "heading": "Chapter XXXI.--The preservation of our bodies is confirmed by the resurrection",
+      "file": "0777-chapter-xxxi-the-preservation-of-our-bodies-is-confirmed-by-the-resurrection.json",
+      "words": 823
+    },
+    {
+      "index": 778,
+      "heading": "Chapter XXXII.--In that flesh in which the saints have suffered so many",
+      "file": "0778-chapter-xxxii-in-that-flesh-in-which-the-saints-have-suffered-so-many.json",
+      "words": 928
+    },
+    {
+      "index": 779,
+      "heading": "Chapter XXXIII.--Further proofs of the same proposition, drawn from the",
+      "file": "0779-chapter-xxxiii-further-proofs-of-the-same-proposition-drawn-from-the.json",
+      "words": 1650
+    },
+    {
+      "index": 780,
+      "heading": "Chapter XXXIV.--He fortifies his opinions with regard to the temporal and",
+      "file": "0780-chapter-xxxiv-he-fortifies-his-opinions-with-regard-to-the-temporal-and.json",
+      "words": 1459
+    },
+    {
+      "index": 781,
+      "heading": "Chapter XXXV.--He contends that these testimonies already alleged cannot be",
+      "file": "0781-chapter-xxxv-he-contends-that-these-testimonies-already-alleged-cannot-be.json",
+      "words": 1573
+    },
+    {
+      "index": 782,
+      "heading": "Chapter XXXVI.--Men shall be actually raised: the world shall not be",
+      "file": "0782-chapter-xxxvi-men-shall-be-actually-raised-the-world-shall-not-be.json",
+      "words": 997
+    },
+    {
+      "index": 783,
+      "heading": "Fragments from the Lost Writings of Irenæus",
+      "file": "0783-fragments-from-the-lost-writings-of-iren-us.json",
+      "words": 3593
+    },
+    {
+      "index": 784,
+      "heading": "XVIII.",
+      "file": "0784-xviii-2.json",
+      "words": 579
+    },
+    {
+      "index": 785,
+      "heading": "XXIII.",
+      "file": "0785-xxiii.json",
+      "words": 382
+    },
+    {
+      "index": 786,
+      "heading": "XXVII.",
+      "file": "0786-xxvii.json",
+      "words": 85
+    },
+    {
+      "index": 787,
+      "heading": "XXVIII.",
+      "file": "0787-xxviii.json",
+      "words": 895
+    },
+    {
+      "index": 788,
+      "heading": "XXXIII.",
+      "file": "0788-xxxiii.json",
+      "words": 220
+    },
+    {
+      "index": 789,
+      "heading": "XXXIV.",
+      "file": "0789-xxxiv.json",
+      "words": 177
+    },
+    {
+      "index": 790,
+      "heading": "XXXVI.",
+      "file": "0790-xxxvi.json",
+      "words": 413
+    },
+    {
+      "index": 791,
+      "heading": "XXXVII.",
+      "file": "0791-xxxvii.json",
+      "words": 431
+    },
+    {
+      "index": 792,
+      "heading": "XXXVIII.",
+      "file": "0792-xxxviii.json",
+      "words": 124
+    },
+    {
+      "index": 793,
+      "heading": "XXXIX.",
+      "file": "0793-xxxix.json",
+      "words": 404
+    },
+    {
+      "index": 794,
+      "heading": "XLIII.",
+      "file": "0794-xliii.json",
+      "words": 312
+    },
+    {
+      "index": 795,
+      "heading": "XLVII.",
+      "file": "0795-xlvii.json",
+      "words": 120
+    },
+    {
+      "index": 796,
+      "heading": "XLVIII.",
+      "file": "0796-xlviii.json",
+      "words": 2725
+    }
+  ]
+}
