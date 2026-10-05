@@ -104,7 +104,7 @@
     {
       "id": "anf01-justin-irenaeus-1885",
       "corpus": "ante-nicene",
-      "title": "Ante-Nicene Fathers, Vol. I — Justin Martyr and Irenaeus",
+      "title": "Ante-Nicene Fathers, Vol. I — Apostolic Fathers, Justin Martyr and Irenaeus",
       "author_label": "St. Justin Martyr; St. Irenaeus of Lyons",
       "edition": "Ante-Nicene Fathers, American edition, vol. I",
       "translators": "Alexander Roberts and James Donaldson; revised/edited by A. Cleveland Coxe",
@@ -113,7 +113,6 @@
       "source_type": "ccel_plain_text",
       "source_url": "https://www.ccel.org/ccel/s/schaff/anf01/cache/anf01.txt",
       "rights_evidence_url": "https://www.ccel.org/ccel/s/schaff/anf01/cache/anf01.txt",
-      "start_marker": "JUSTIN MARTYR",
       "expected_works": [
         "First Apology",
         "Second Apology",
@@ -123,7 +122,7 @@
         "Against Heresies Books I–V",
         "Fragments from the Lost Writings of Irenaeus"
       ],
-      "caution": "This import uses the historical public-domain translation text. Modern CCEL summaries, cover art, and other website-specific content are not part of the vendored source."
+      "caution": "The historical public-domain volume is ingested as a complete source because its plain-text edition contains the Apostolic Fathers before Justin and Irenaeus. Mercy's earlier 1870 Apostolic Fathers source remains separately preserved; modern CCEL summaries, cover art, and other website-specific content are not part of the vendored text."
     }
   ],
   "lost_or_fragmentary": [
