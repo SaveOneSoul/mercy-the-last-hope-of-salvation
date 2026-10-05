@@ -1,0 +1,2040 @@
+{
+  "id": "npnf101-augustine-confessions-1886",
+  "title": "NPNF I, Vol. I — Augustine: Confessions and Letters",
+  "author_label": "St. Augustine of Hippo",
+  "edition": "Nicene and Post-Nicene Fathers, First Series, vol. I",
+  "translators": "Historical NPNF translators under Philip Schaff",
+  "publication_year": 1886,
+  "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+  "source_url": "https://www.ccel.org/ccel/s/schaff/npnf101/cache/npnf101.txt",
+  "gutenberg_id": null,
+  "source_type": "ccel_plain_text",
+  "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf101",
+  "caution": "Historical public-domain English translations.",
+  "expected_works": [
+    "Confessions",
+    "Letters of St. Augustine",
+    "Life and introductory materials"
+  ],
+  "sha256": "210006964fc4eaae1706935a234b19a94a31c7adf048837fbf631d3c51e61549",
+  "section_count": 336,
+  "word_count": 590497,
+  "toc": [
+    {
+      "index": 1,
+      "heading": "NPNF I, Vol. I — Augustine: Confessions and Letters",
+      "file": "0001-npnf-i-vol-i-augustine-confessions-and-letters.json",
+      "words": 56
+    },
+    {
+      "index": 2,
+      "heading": "A SELECT LIBRARY",
+      "file": "0002-a-select-library.json",
+      "words": 0
+    },
+    {
+      "index": 3,
+      "heading": "OF THE",
+      "file": "0003-of-the.json",
+      "words": 0
+    },
+    {
+      "index": 4,
+      "heading": "NICENE AND",
+      "file": "0004-nicene-and.json",
+      "words": 0
+    },
+    {
+      "index": 5,
+      "heading": "POST-NICENE FATHERS",
+      "file": "0005-post-nicene-fathers.json",
+      "words": 1
+    },
+    {
+      "index": 6,
+      "heading": "THE CHRISTIAN CHURCH.",
+      "file": "0006-the-christian-church.json",
+      "words": 0
+    },
+    {
+      "index": 7,
+      "heading": "EDITED BY",
+      "file": "0007-edited-by.json",
+      "words": 0
+    },
+    {
+      "index": 8,
+      "heading": "PHILIP SCHAFF, D.D., LL.D.,",
+      "file": "0008-philip-schaff-d-d-ll-d.json",
+      "words": 0
+    },
+    {
+      "index": 9,
+      "heading": "PROFESSOR IN THE UNION THEOLOGICAL SEMINARY, NEW YORK,",
+      "file": "0009-professor-in-the-union-theological-seminary-new-york.json",
+      "words": 0
+    },
+    {
+      "index": 10,
+      "heading": "IN CONNECTION WITH A NUMBER OF PATRISTIC SCHOLARS OF EUROPE AND",
+      "file": "0010-in-connection-with-a-number-of-patristic-scholars-of-europe-and.json",
+      "words": 0
+    },
+    {
+      "index": 11,
+      "heading": "AMERICA.",
+      "file": "0011-america.json",
+      "words": 0
+    },
+    {
+      "index": 12,
+      "heading": "VOLUME I",
+      "file": "0012-volume-i.json",
+      "words": 0
+    },
+    {
+      "index": 13,
+      "heading": "THE CONFESSIONS AND LETTERS OF ST. AUGUSTIN,",
+      "file": "0013-the-confessions-and-letters-of-st-augustin.json",
+      "words": 0
+    },
+    {
+      "index": 14,
+      "heading": "WITH A SKETCH OF HIS LIFE AND WORK",
+      "file": "0014-with-a-sketch-of-his-life-and-work.json",
+      "words": 2
+    },
+    {
+      "index": 15,
+      "heading": "EDINBURGH",
+      "file": "0015-edinburgh.json",
+      "words": 1
+    },
+    {
+      "index": 16,
+      "heading": "WM. B. EERDMANS PUBLISHING COMPANY",
+      "file": "0016-wm-b-eerdmans-publishing-company.json",
+      "words": 0
+    },
+    {
+      "index": 17,
+      "heading": "GRAND RAPIDS, MICHIGAN",
+      "file": "0017-grand-rapids-michigan.json",
+      "words": 1
+    },
+    {
+      "index": 18,
+      "heading": "Preface",
+      "file": "0018-preface.json",
+      "words": 1114
+    },
+    {
+      "index": 19,
+      "heading": "Chapter I.--Literature",
+      "file": "0019-chapter-i-literature.json",
+      "words": 0
+    },
+    {
+      "index": 20,
+      "heading": "Chapter II.--Sketch of the Life of St. Augustin",
+      "file": "0020-chapter-ii-sketch-of-the-life-of-st-augustin.json",
+      "words": 0
+    },
+    {
+      "index": 21,
+      "heading": "Chapter III.--Estimate of St. Augustin",
+      "file": "0021-chapter-iii-estimate-of-st-augustin.json",
+      "words": 0
+    },
+    {
+      "index": 22,
+      "heading": "Chapter IV.--Writings of St. Augustin",
+      "file": "0022-chapter-iv-writings-of-st-augustin.json",
+      "words": 0
+    },
+    {
+      "index": 23,
+      "heading": "Chapter V.--The Influence of St. Augustin upon Posterity and his",
+      "file": "0023-chapter-v-the-influence-of-st-augustin-upon-posterity-and-his.json",
+      "words": 79
+    },
+    {
+      "index": 24,
+      "heading": "CHAPTER I.--Literature.",
+      "file": "0024-chapter-i-literature-2.json",
+      "words": 876
+    },
+    {
+      "index": 25,
+      "heading": "II. BIOGRAPHIES.",
+      "file": "0025-ii-biographies.json",
+      "words": 815
+    },
+    {
+      "index": 26,
+      "heading": "CHAPTER II.--A Sketch of the Life of St. Augustin.",
+      "file": "0026-chapter-ii-a-sketch-of-the-life-of-st-augustin.json",
+      "words": 3261
+    },
+    {
+      "index": 27,
+      "heading": "CHAPTER III.--Estimate of St. Augustin.",
+      "file": "0027-chapter-iii-estimate-of-st-augustin-2.json",
+      "words": 2310
+    },
+    {
+      "index": 28,
+      "heading": "Introduction to his edition of the Confessions (1860), has furnished a",
+      "file": "0028-introduction-to-his-edition-of-the-confessions-1860-has-furnished-a.json",
+      "words": 1268
+    },
+    {
+      "index": 29,
+      "heading": "CHAPTER IV.--The Writings of St. Augustin.",
+      "file": "0029-chapter-iv-the-writings-of-st-augustin.json",
+      "words": 6746
+    },
+    {
+      "index": 30,
+      "heading": "CHAPTER V.--The Influence of St. Augustin upon Posterity, and his",
+      "file": "0030-chapter-v-the-influence-of-st-augustin-upon-posterity-and-his-2.json",
+      "words": 9364
+    },
+    {
+      "index": 31,
+      "heading": "J. G. P.",
+      "file": "0031-j-g-p.json",
+      "words": 308
+    },
+    {
+      "index": 32,
+      "heading": "Preface (1683).",
+      "file": "0032-preface-1683.json",
+      "words": 883
+    },
+    {
+      "index": 33,
+      "heading": "Book I.",
+      "file": "0033-book-i.json",
+      "words": 49
+    },
+    {
+      "index": 34,
+      "heading": "Chapter I.--He Proclaims the Greatness of God, Whom He Desires to Seek",
+      "file": "0034-chapter-i-he-proclaims-the-greatness-of-god-whom-he-desires-to-seek.json",
+      "words": 566
+    },
+    {
+      "index": 35,
+      "heading": "Chapter II.--That the God Whom We Invoke is in Us, and We in Him.",
+      "file": "0035-chapter-ii-that-the-god-whom-we-invoke-is-in-us-and-we-in-him.json",
+      "words": 257
+    },
+    {
+      "index": 36,
+      "heading": "Chapter III.--Everywhere God Wholly Filleth All Things, But Neither",
+      "file": "0036-chapter-iii-everywhere-god-wholly-filleth-all-things-but-neither.json",
+      "words": 239
+    },
+    {
+      "index": 37,
+      "heading": "Chapter IV.--The Majesty of God is Supreme, and His Virtues",
+      "file": "0037-chapter-iv-the-majesty-of-god-is-supreme-and-his-virtues.json",
+      "words": 364
+    },
+    {
+      "index": 38,
+      "heading": "Chapter V.--He Seeks Rest in God, and Pardon of His Sins.",
+      "file": "0038-chapter-v-he-seeks-rest-in-god-and-pardon-of-his-sins.json",
+      "words": 494
+    },
+    {
+      "index": 39,
+      "heading": "Chapter VI.--He Describes His Infancy, and Lauds the Protection and",
+      "file": "0039-chapter-vi-he-describes-his-infancy-and-lauds-the-protection-and.json",
+      "words": 1203
+    },
+    {
+      "index": 40,
+      "heading": "Chapter VII.--He Shows by Example that Even Infancy is Prone to Sin.",
+      "file": "0040-chapter-vii-he-shows-by-example-that-even-infancy-is-prone-to-sin.json",
+      "words": 665
+    },
+    {
+      "index": 41,
+      "heading": "Chapter VIII.--That When a Boy He Learned to Speak, Not by Any Set",
+      "file": "0041-chapter-viii-that-when-a-boy-he-learned-to-speak-not-by-any-set.json",
+      "words": 334
+    },
+    {
+      "index": 42,
+      "heading": "Chapter IX.--Concerning the Hatred of Learning, the Love of Play, and",
+      "file": "0042-chapter-ix-concerning-the-hatred-of-learning-the-love-of-play-and.json",
+      "words": 568
+    },
+    {
+      "index": 43,
+      "heading": "Chapter X.--Through a Love of Ball-Playing and Shows, He Neglects His",
+      "file": "0043-chapter-x-through-a-love-of-ball-playing-and-shows-he-neglects-his.json",
+      "words": 222
+    },
+    {
+      "index": 44,
+      "heading": "Chapter XI.--Seized by Disease, His Mother Being Troubled, He Earnestly",
+      "file": "0044-chapter-xi-seized-by-disease-his-mother-being-troubled-he-earnestly.json",
+      "words": 687
+    },
+    {
+      "index": 45,
+      "heading": "Chapter XII.--Being Compelled, He Gave His Attention to Learning; But",
+      "file": "0045-chapter-xii-being-compelled-he-gave-his-attention-to-learning-but.json",
+      "words": 249
+    },
+    {
+      "index": 46,
+      "heading": "Chapter XIII.--He Delighted in Latin Studies and the Empty Fables of",
+      "file": "0046-chapter-xiii-he-delighted-in-latin-studies-and-the-empty-fables-of.json",
+      "words": 805
+    },
+    {
+      "index": 47,
+      "heading": "Chapter XIV.--Why He Despised Greek Literature, and Easily Learned",
+      "file": "0047-chapter-xiv-why-he-despised-greek-literature-and-easily-learned.json",
+      "words": 454
+    },
+    {
+      "index": 48,
+      "heading": "Chapter XV.--He Entreats God, that Whatever Useful Things He Learned as",
+      "file": "0048-chapter-xv-he-entreats-god-that-whatever-useful-things-he-learned-as.json",
+      "words": 170
+    },
+    {
+      "index": 49,
+      "heading": "Chapter XVI.--He Disapproves of the Mode of Educating Youth, and He",
+      "file": "0049-chapter-xvi-he-disapproves-of-the-mode-of-educating-youth-and-he.json",
+      "words": 605
+    },
+    {
+      "index": 50,
+      "heading": "Chapter XVII.--He Continues on the Unhappy Method of Training Youth in",
+      "file": "0050-chapter-xvii-he-continues-on-the-unhappy-method-of-training-youth-in.json",
+      "words": 255
+    },
+    {
+      "index": 51,
+      "heading": "Chapter XVIII.--Men Desire to Observe the Rules of Learning, But",
+      "file": "0051-chapter-xviii-men-desire-to-observe-the-rules-of-learning-but.json",
+      "words": 1257
+    },
+    {
+      "index": 52,
+      "heading": "Book II.",
+      "file": "0052-book-ii.json",
+      "words": 37
+    },
+    {
+      "index": 53,
+      "heading": "Chapter I.--He Deplores the Wickedness of His Youth.",
+      "file": "0053-chapter-i-he-deplores-the-wickedness-of-his-youth.json",
+      "words": 148
+    },
+    {
+      "index": 54,
+      "heading": "Chapter II.--Stricken with Exceeding Grief, He Remembers the Dissolute",
+      "file": "0054-chapter-ii-stricken-with-exceeding-grief-he-remembers-the-dissolute.json",
+      "words": 711
+    },
+    {
+      "index": 55,
+      "heading": "Chapter III.--Concerning His Father, a Freeman of Thagaste, the",
+      "file": "0055-chapter-iii-concerning-his-father-a-freeman-of-thagaste-the.json",
+      "words": 1107
+    },
+    {
+      "index": 56,
+      "heading": "Chapter IV.--He Commits Theft with His Companions, Not Urged on by",
+      "file": "0056-chapter-iv-he-commits-theft-with-his-companions-not-urged-on-by.json",
+      "words": 285
+    },
+    {
+      "index": 57,
+      "heading": "Chapter V.--Concerning the Motives to Sin, Which are Not in the Love of",
+      "file": "0057-chapter-v-concerning-the-motives-to-sin-which-are-not-in-the-love-of.json",
+      "words": 456
+    },
+    {
+      "index": 58,
+      "heading": "Chapter VI.--Why He Delighted in that Theft, When All Things Which",
+      "file": "0058-chapter-vi-why-he-delighted-in-that-theft-when-all-things-which.json",
+      "words": 859
+    },
+    {
+      "index": 59,
+      "heading": "Chapter VII.--He Gives Thanks to God for the Remission of His Sins, and",
+      "file": "0059-chapter-vii-he-gives-thanks-to-god-for-the-remission-of-his-sins-and.json",
+      "words": 304
+    },
+    {
+      "index": 60,
+      "heading": "Chapter VIII.--In His Theft He Loved the Company of His Fellow-Sinners.",
+      "file": "0060-chapter-viii-in-his-theft-he-loved-the-company-of-his-fellow-sinners.json",
+      "words": 232
+    },
+    {
+      "index": 61,
+      "heading": "Chapter IX.--It Was a Pleasure to Him Also to Laugh When Seriously",
+      "file": "0061-chapter-ix-it-was-a-pleasure-to-him-also-to-laugh-when-seriously.json",
+      "words": 243
+    },
+    {
+      "index": 62,
+      "heading": "Chapter X.--With God There is True Rest and Life Unchanging.",
+      "file": "0062-chapter-x-with-god-there-is-true-rest-and-life-unchanging.json",
+      "words": 117
+    },
+    {
+      "index": 63,
+      "heading": "Book III.",
+      "file": "0063-book-iii.json",
+      "words": 41
+    },
+    {
+      "index": 64,
+      "heading": "Chapter I.--Deluded by an Insane Love, He, Though Foul and",
+      "file": "0064-chapter-i-deluded-by-an-insane-love-he-though-foul-and.json",
+      "words": 292
+    },
+    {
+      "index": 65,
+      "heading": "Chapter II.--In Public Spectacles He is Moved by an Empty Compassion.",
+      "file": "0065-chapter-ii-in-public-spectacles-he-is-moved-by-an-empty-compassion.json",
+      "words": 828
+    },
+    {
+      "index": 66,
+      "heading": "Chapter III.--Not Even When at Church Does He Suppress His Desires. In",
+      "file": "0066-chapter-iii-not-even-when-at-church-does-he-suppress-his-desires-in.json",
+      "words": 443
+    },
+    {
+      "index": 67,
+      "heading": "Chapter IV.--In the Nineteenth Year of His Age (His Father Having Died",
+      "file": "0067-chapter-iv-in-the-nineteenth-year-of-his-age-his-father-having-died.json",
+      "words": 558
+    },
+    {
+      "index": 68,
+      "heading": "Chapter V.--He Rejects the Sacred Scriptures as Too Simple, and as Not",
+      "file": "0068-chapter-v-he-rejects-the-sacred-scriptures-as-too-simple-and-as-not.json",
+      "words": 480
+    },
+    {
+      "index": 69,
+      "heading": "Chapter VI.--Deceived by His Own Fault, He Falls into the Errors of the",
+      "file": "0069-chapter-vi-deceived-by-his-own-fault-he-falls-into-the-errors-of-the.json",
+      "words": 1339
+    },
+    {
+      "index": 70,
+      "heading": "Chapter VII.--He Attacks the Doctrine of the Manichæans Concerning",
+      "file": "0070-chapter-vii-he-attacks-the-doctrine-of-the-manich-ans-concerning.json",
+      "words": 1476
+    },
+    {
+      "index": 71,
+      "heading": "Chapter VIII.--He Argues Against the Same as to the Reason of Offences.",
+      "file": "0071-chapter-viii-he-argues-against-the-same-as-to-the-reason-of-offences.json",
+      "words": 926
+    },
+    {
+      "index": 72,
+      "heading": "Chapter IX.--That the Judgment of God and Men as to Human Acts of",
+      "file": "0072-chapter-ix-that-the-judgment-of-god-and-men-as-to-human-acts-of.json",
+      "words": 514
+    },
+    {
+      "index": 73,
+      "heading": "Chapter X.--He Reproves the Triflings of the Manichæans as to the",
+      "file": "0073-chapter-x-he-reproves-the-triflings-of-the-manich-ans-as-to-the.json",
+      "words": 387
+    },
+    {
+      "index": 74,
+      "heading": "Chapter XI.--He Refers to the Tears, and the Memorable Dream Concerning",
+      "file": "0074-chapter-xi-he-refers-to-the-tears-and-the-memorable-dream-concerning.json",
+      "words": 594
+    },
+    {
+      "index": 75,
+      "heading": "Chapter XII.--The Excellent Answer of the Bishop When Referred to by",
+      "file": "0075-chapter-xii-the-excellent-answer-of-the-bishop-when-referred-to-by.json",
+      "words": 416
+    },
+    {
+      "index": 76,
+      "heading": "Book IV.",
+      "file": "0076-book-iv.json",
+      "words": 47
+    },
+    {
+      "index": 77,
+      "heading": "Chapter I.--Concerning that Most Unhappy Time in Which He, Being",
+      "file": "0077-chapter-i-concerning-that-most-unhappy-time-in-which-he-being.json",
+      "words": 399
+    },
+    {
+      "index": 78,
+      "heading": "Chapter II.--He Teaches Rhetoric, the Only Thing He Loved, and Scorns",
+      "file": "0078-chapter-ii-he-teaches-rhetoric-the-only-thing-he-loved-and-scorns.json",
+      "words": 761
+    },
+    {
+      "index": 79,
+      "heading": "Chapter III.--Not Even the Most Experienced Men Could Persuade Him of",
+      "file": "0079-chapter-iii-not-even-the-most-experienced-men-could-persuade-him-of.json",
+      "words": 1314
+    },
+    {
+      "index": 80,
+      "heading": "Chapter IV.--Sorely Distressed by Weeping at the Death of His Friend,",
+      "file": "0080-chapter-iv-sorely-distressed-by-weeping-at-the-death-of-his-friend.json",
+      "words": 934
+    },
+    {
+      "index": 81,
+      "heading": "Chapter V.--Why Weeping is Pleasant to the Wretched.",
+      "file": "0081-chapter-v-why-weeping-is-pleasant-to-the-wretched.json",
+      "words": 241
+    },
+    {
+      "index": 82,
+      "heading": "Chapter VI.--His Friend Being Snatched Away by Death, He Imagines that",
+      "file": "0082-chapter-vi-his-friend-being-snatched-away-by-death-he-imagines-that.json",
+      "words": 453
+    },
+    {
+      "index": 83,
+      "heading": "Chapter VII.--Troubled by Restlessness and Grief, He Leaves His Country",
+      "file": "0083-chapter-vii-troubled-by-restlessness-and-grief-he-leaves-his-country.json",
+      "words": 396
+    },
+    {
+      "index": 84,
+      "heading": "Chapter VIII.--That His Grief Ceased by Time, and the Consolation of",
+      "file": "0084-chapter-viii-that-his-grief-ceased-by-time-and-the-consolation-of.json",
+      "words": 445
+    },
+    {
+      "index": 85,
+      "heading": "Chapter IX.--That the Love of a Human Being, However Constant in Loving",
+      "file": "0085-chapter-ix-that-the-love-of-a-human-being-however-constant-in-loving.json",
+      "words": 237
+    },
+    {
+      "index": 86,
+      "heading": "Chapter X.--That All Things Exist that They May Perish, and that We are",
+      "file": "0086-chapter-x-that-all-things-exist-that-they-may-perish-and-that-we-are.json",
+      "words": 698
+    },
+    {
+      "index": 87,
+      "heading": "Chapter XI.--That Portions of the World are Not to Be Loved; But that",
+      "file": "0087-chapter-xi-that-portions-of-the-world-are-not-to-be-loved-but-that.json",
+      "words": 422
+    },
+    {
+      "index": 88,
+      "heading": "Chapter XII.--Love is Not Condemned, But Love in God, in Whom There is",
+      "file": "0088-chapter-xii-love-is-not-condemned-but-love-in-god-in-whom-there-is.json",
+      "words": 1041
+    },
+    {
+      "index": 89,
+      "heading": "Chapter XIII.--Love Originates from Grace and Beauty Enticing Us.",
+      "file": "0089-chapter-xiii-love-originates-from-grace-and-beauty-enticing-us.json",
+      "words": 174
+    },
+    {
+      "index": 90,
+      "heading": "Chapter XIV.--Concerning the Books Which He Wrote \"On the Fair and",
+      "file": "0090-chapter-xiv-concerning-the-books-which-he-wrote-on-the-fair-and.json",
+      "words": 691
+    },
+    {
+      "index": 91,
+      "heading": "Chapter XV.--While Writing, Being Blinded by Corporeal Images, He",
+      "file": "0091-chapter-xv-while-writing-being-blinded-by-corporeal-images-he.json",
+      "words": 1266
+    },
+    {
+      "index": 92,
+      "heading": "Chapter of Professor Sidgwick's Methods of Ethics, for the conclusions",
+      "file": "0092-chapter-of-professor-sidgwick-s-methods-of-ethics-for-the-conclusions.json",
+      "words": 722
+    },
+    {
+      "index": 93,
+      "heading": "Chapter XVI.--He Very Easily Understood the Liberal Arts and the",
+      "file": "0093-chapter-xvi-he-very-easily-understood-the-liberal-arts-and-the.json",
+      "words": 1128
+    },
+    {
+      "index": 94,
+      "heading": "Book V.",
+      "file": "0094-book-v.json",
+      "words": 36
+    },
+    {
+      "index": 95,
+      "heading": "Chapter I.--That It Becomes the Soul to Praise God, and to Confess Unto",
+      "file": "0095-chapter-i-that-it-becomes-the-soul-to-praise-god-and-to-confess-unto.json",
+      "words": 389
+    },
+    {
+      "index": 96,
+      "heading": "Chapter II.--On the Vanity of Those Who Wished to Escape the Omnipotent",
+      "file": "0096-chapter-ii-on-the-vanity-of-those-who-wished-to-escape-the-omnipotent.json",
+      "words": 743
+    },
+    {
+      "index": 97,
+      "heading": "Chapter III.--Having Heard Faustus, the Most Learned Bishop of the",
+      "file": "0097-chapter-iii-having-heard-faustus-the-most-learned-bishop-of-the.json",
+      "words": 1160
+    },
+    {
+      "index": 98,
+      "heading": "Chapter IV.--That the Knowledge of Terrestrial and Celestial Things",
+      "file": "0098-chapter-iv-that-the-knowledge-of-terrestrial-and-celestial-things.json",
+      "words": 433
+    },
+    {
+      "index": 99,
+      "heading": "Chapter V.--Of Manichæus Pertinaciously Teaching False Doctrines, and",
+      "file": "0099-chapter-v-of-manich-us-pertinaciously-teaching-false-doctrines-and.json",
+      "words": 837
+    },
+    {
+      "index": 100,
+      "heading": "Chapter VI.--Faustus Was Indeed an Elegant Speaker, But Knew Nothing of",
+      "file": "0100-chapter-vi-faustus-was-indeed-an-elegant-speaker-but-knew-nothing-of.json",
+      "words": 712
+    },
+    {
+      "index": 101,
+      "heading": "Chapter VII.--Clearly Seeing the Fallacies of the Manichæans, He",
+      "file": "0101-chapter-vii-clearly-seeing-the-fallacies-of-the-manich-ans-he.json",
+      "words": 1084
+    },
+    {
+      "index": 102,
+      "heading": "Chapter VIII.--He Sets Out for Rome, His Mother in Vain Lamenting It.",
+      "file": "0102-chapter-viii-he-sets-out-for-rome-his-mother-in-vain-lamenting-it.json",
+      "words": 867
+    },
+    {
+      "index": 103,
+      "heading": "Chapter IX.--Being Attacked by Fever, He is in Great Danger.",
+      "file": "0103-chapter-ix-being-attacked-by-fever-he-is-in-great-danger.json",
+      "words": 1377
+    },
+    {
+      "index": 104,
+      "heading": "Chapter X.--When He Had Left the Manichæans, He Retained His Depraved",
+      "file": "0104-chapter-x-when-he-had-left-the-manich-ans-he-retained-his-depraved.json",
+      "words": 1780
+    },
+    {
+      "index": 105,
+      "heading": "Chapter XI.--Helpidius Disputed Well Against the Manichæans as to the",
+      "file": "0105-chapter-xi-helpidius-disputed-well-against-the-manich-ans-as-to-the.json",
+      "words": 374
+    },
+    {
+      "index": 106,
+      "heading": "Chapter XII.--Professing Rhetoric at Rome, He Discovers the Fraud of",
+      "file": "0106-chapter-xii-professing-rhetoric-at-rome-he-discovers-the-fraud-of.json",
+      "words": 279
+    },
+    {
+      "index": 107,
+      "heading": "Chapter XIII.--He is Sent to Milan, that He, About to Teach Rhetoric,",
+      "file": "0107-chapter-xiii-he-is-sent-to-milan-that-he-about-to-teach-rhetoric.json",
+      "words": 348
+    },
+    {
+      "index": 108,
+      "heading": "Chapter XIV.--Having Heard the Bishop, He Perceives the Force of the",
+      "file": "0108-chapter-xiv-having-heard-the-bishop-he-perceives-the-force-of-the.json",
+      "words": 608
+    },
+    {
+      "index": 109,
+      "heading": "Book VI.",
+      "file": "0109-book-vi.json",
+      "words": 36
+    },
+    {
+      "index": 110,
+      "heading": "Chapter I.--His Mother Having Followed Him to Milan, Declares that She",
+      "file": "0110-chapter-i-his-mother-having-followed-him-to-milan-declares-that-she.json",
+      "words": 977
+    },
+    {
+      "index": 111,
+      "heading": "Chapter II.--She, on the Prohibition of Ambrose, Abstains from",
+      "file": "0111-chapter-ii-she-on-the-prohibition-of-ambrose-abstains-from.json",
+      "words": 1491
+    },
+    {
+      "index": 112,
+      "heading": "Chapter III.--As Ambrose Was Occupied with Business and Study, Augustin",
+      "file": "0112-chapter-iii-as-ambrose-was-occupied-with-business-and-study-augustin.json",
+      "words": 972
+    },
+    {
+      "index": 113,
+      "heading": "Chapter IV.--He Recognises the Falsity of His Own Opinions, and Commits",
+      "file": "0113-chapter-iv-he-recognises-the-falsity-of-his-own-opinions-and-commits.json",
+      "words": 1482
+    },
+    {
+      "index": 114,
+      "heading": "Chapter V.--Faith is the Basis of Human Life; Man Cannot Discover that",
+      "file": "0114-chapter-v-faith-is-the-basis-of-human-life-man-cannot-discover-that.json",
+      "words": 1054
+    },
+    {
+      "index": 115,
+      "heading": "Chapter VI.--On the Source and Cause of True Joy,--The Example of the",
+      "file": "0115-chapter-vi-on-the-source-and-cause-of-true-joy-the-example-of-the.json",
+      "words": 806
+    },
+    {
+      "index": 116,
+      "heading": "Chapter VII.--He Leads to Reformation His Friend Alypius, Seized with",
+      "file": "0116-chapter-vii-he-leads-to-reformation-his-friend-alypius-seized-with.json",
+      "words": 1250
+    },
+    {
+      "index": 117,
+      "heading": "Chapter VIII.--The Same When at Rome, Being Led by Others into the",
+      "file": "0117-chapter-viii-the-same-when-at-rome-being-led-by-others-into-the.json",
+      "words": 1409
+    },
+    {
+      "index": 118,
+      "heading": "Chapter IX.--Innocent Alypius, Being Apprehended as a Thief, is Set at",
+      "file": "0118-chapter-ix-innocent-alypius-being-apprehended-as-a-thief-is-set-at.json",
+      "words": 654
+    },
+    {
+      "index": 119,
+      "heading": "Chapter X.--The Wonderful Integrity of Alypius in Judgment. The Lasting",
+      "file": "0119-chapter-x-the-wonderful-integrity-of-alypius-in-judgment-the-lasting.json",
+      "words": 748
+    },
+    {
+      "index": 120,
+      "heading": "Chapter XI.--Being Troubled by His Grievous Errors, He Meditates",
+      "file": "0120-chapter-xi-being-troubled-by-his-grievous-errors-he-meditates.json",
+      "words": 1005
+    },
+    {
+      "index": 121,
+      "heading": "Chapter XII.--Discussion with Alypius Concerning a Life of Celibacy.",
+      "file": "0121-chapter-xii-discussion-with-alypius-concerning-a-life-of-celibacy.json",
+      "words": 764
+    },
+    {
+      "index": 122,
+      "heading": "Chapter XIII.--Being Urged by His Mother to Take a Wife, He Sought a",
+      "file": "0122-chapter-xiii-being-urged-by-his-mother-to-take-a-wife-he-sought-a.json",
+      "words": 201
+    },
+    {
+      "index": 123,
+      "heading": "Chapter XIV.--The Design of Establishing a Common Household with His",
+      "file": "0123-chapter-xiv-the-design-of-establishing-a-common-household-with-his.json",
+      "words": 617
+    },
+    {
+      "index": 124,
+      "heading": "Chapter XV.--He Dismisses One Mistress, and Chooses Another.",
+      "file": "0124-chapter-xv-he-dismisses-one-mistress-and-chooses-another.json",
+      "words": 234
+    },
+    {
+      "index": 125,
+      "heading": "Chapter XVI.--The Fear of Death and Judgment Called Him, Believing in",
+      "file": "0125-chapter-xvi-the-fear-of-death-and-judgment-called-him-believing-in.json",
+      "words": 760
+    },
+    {
+      "index": 126,
+      "heading": "Book VII.",
+      "file": "0126-book-vii.json",
+      "words": 58
+    },
+    {
+      "index": 127,
+      "heading": "Chapter I.--He Regarded Not God Indeed Under the Form of a Human Body,",
+      "file": "0127-chapter-i-he-regarded-not-god-indeed-under-the-form-of-a-human-body.json",
+      "words": 1004
+    },
+    {
+      "index": 128,
+      "heading": "Chapter II.--The Disputation of Nebridius Against the Manichæans, on",
+      "file": "0128-chapter-ii-the-disputation-of-nebridius-against-the-manich-ans-on.json",
+      "words": 1100
+    },
+    {
+      "index": 129,
+      "heading": "Chapter III.--That the Cause of Evil is the Free Judgment of the Will.",
+      "file": "0129-chapter-iii-that-the-cause-of-evil-is-the-free-judgment-of-the-will.json",
+      "words": 519
+    },
+    {
+      "index": 130,
+      "heading": "Chapter IV.--That God is Not Corruptible, Who, If He Were, Would Not Be",
+      "file": "0130-chapter-iv-that-god-is-not-corruptible-who-if-he-were-would-not-be.json",
+      "words": 281
+    },
+    {
+      "index": 131,
+      "heading": "Chapter V.--Questions Concerning the Origin of Evil in Regard to God,",
+      "file": "0131-chapter-v-questions-concerning-the-origin-of-evil-in-regard-to-god.json",
+      "words": 730
+    },
+    {
+      "index": 132,
+      "heading": "Chapter VI.--He Refutes the Divinations of the Astrologers, Deduced",
+      "file": "0132-chapter-vi-he-refutes-the-divinations-of-the-astrologers-deduced.json",
+      "words": 1165
+    },
+    {
+      "index": 133,
+      "heading": "Chapter VII.--He is Severely Exercised as to the Origin of Evil.",
+      "file": "0133-chapter-vii-he-is-severely-exercised-as-to-the-origin-of-evil.json",
+      "words": 622
+    },
+    {
+      "index": 134,
+      "heading": "Chapter VIII.--By God's Assistance He by Degrees Arrives at the Truth.",
+      "file": "0134-chapter-viii-by-god-s-assistance-he-by-degrees-arrives-at-the-truth.json",
+      "words": 101
+    },
+    {
+      "index": 135,
+      "heading": "Chapter IX.--He Compares the Doctrine of the Platonists Concerning the",
+      "file": "0135-chapter-ix-he-compares-the-doctrine-of-the-platonists-concerning-the.json",
+      "words": 2990
+    },
+    {
+      "index": 136,
+      "heading": "Chapter X.--Divine Things are the More Clearly Manifested to Him Who",
+      "file": "0136-chapter-x-divine-things-are-the-more-clearly-manifested-to-him-who.json",
+      "words": 960
+    },
+    {
+      "index": 137,
+      "heading": "Chapter XI.--That Creatures are Mutable and God Alone Immutable.",
+      "file": "0137-chapter-xi-that-creatures-are-mutable-and-god-alone-immutable.json",
+      "words": 205
+    },
+    {
+      "index": 138,
+      "heading": "Chapter XII.--Whatever Things the Good God Has Created are Very Good.",
+      "file": "0138-chapter-xii-whatever-things-the-good-god-has-created-are-very-good.json",
+      "words": 300
+    },
+    {
+      "index": 139,
+      "heading": "Chapter XIII.--It is Meet to Praise the Creator for the Good Things",
+      "file": "0139-chapter-xiii-it-is-meet-to-praise-the-creator-for-the-good-things.json",
+      "words": 327
+    },
+    {
+      "index": 140,
+      "heading": "Chapter XIV.--Being Displeased with Some Part Of God's Creation, He",
+      "file": "0140-chapter-xiv-being-displeased-with-some-part-of-god-s-creation-he.json",
+      "words": 180
+    },
+    {
+      "index": 141,
+      "heading": "Chapter XV.--Whatever Is, Owes Its Being to God.",
+      "file": "0141-chapter-xv-whatever-is-owes-its-being-to-god.json",
+      "words": 145
+    },
+    {
+      "index": 142,
+      "heading": "Chapter XVI.--Evil Arises Not from a Substance, But from the Perversion",
+      "file": "0142-chapter-xvi-evil-arises-not-from-a-substance-but-from-the-perversion.json",
+      "words": 211
+    },
+    {
+      "index": 143,
+      "heading": "Chapter XVII.--Above His Changeable Mind, He Discovers the Unchangeable",
+      "file": "0143-chapter-xvii-above-his-changeable-mind-he-discovers-the-unchangeable.json",
+      "words": 1548
+    },
+    {
+      "index": 144,
+      "heading": "Chapter XVIII.--Jesus Christ, the Mediator, is the Only Way of Safety.",
+      "file": "0144-chapter-xviii-jesus-christ-the-mediator-is-the-only-way-of-safety.json",
+      "words": 324
+    },
+    {
+      "index": 145,
+      "heading": "Chapter XIX.--He Does Not Yet Fully Understand the Saying of John, that",
+      "file": "0145-chapter-xix-he-does-not-yet-fully-understand-the-saying-of-john-that.json",
+      "words": 1745
+    },
+    {
+      "index": 146,
+      "heading": "Chapter XX.--He Rejoices that He Proceeded from Plato to the Holy",
+      "file": "0146-chapter-xx-he-rejoices-that-he-proceeded-from-plato-to-the-holy.json",
+      "words": 607
+    },
+    {
+      "index": 147,
+      "heading": "Chapter XXI.--What He Found in the Sacred Books Which are Not to Be",
+      "file": "0147-chapter-xxi-what-he-found-in-the-sacred-books-which-are-not-to-be.json",
+      "words": 1425
+    },
+    {
+      "index": 148,
+      "heading": "Book VIII.",
+      "file": "0148-book-viii.json",
+      "words": 51
+    },
+    {
+      "index": 149,
+      "heading": "Chapter I.--He, Now Given to Divine Things, and Yet Entangled by the",
+      "file": "0149-chapter-i-he-now-given-to-divine-things-and-yet-entangled-by-the.json",
+      "words": 1036
+    },
+    {
+      "index": 150,
+      "heading": "Chapter II.--The Pious Old Man Rejoices that He Read Plato and the",
+      "file": "0150-chapter-ii-the-pious-old-man-rejoices-that-he-read-plato-and-the.json",
+      "words": 2985
+    },
+    {
+      "index": 151,
+      "heading": "Chapter III.--That God and the Angels Rejoice More on the Return of One",
+      "file": "0151-chapter-iii-that-god-and-the-angels-rejoice-more-on-the-return-of-one.json",
+      "words": 664
+    },
+    {
+      "index": 152,
+      "heading": "Chapter IV.--He Shows by the Example of Victorinus that There is More",
+      "file": "0152-chapter-iv-he-shows-by-the-example-of-victorinus-that-there-is-more.json",
+      "words": 891
+    },
+    {
+      "index": 153,
+      "heading": "Chapter V.--Of the Causes Which Alienate Us from God.",
+      "file": "0153-chapter-v-of-the-causes-which-alienate-us-from-god.json",
+      "words": 1709
+    },
+    {
+      "index": 154,
+      "heading": "Chapter VI.--Pontitianus' Account of Antony, the Founder of Monachism,",
+      "file": "0154-chapter-vi-pontitianus-account-of-antony-the-founder-of-monachism.json",
+      "words": 2281
+    },
+    {
+      "index": 155,
+      "heading": "Chapter VII.--He Deplores His Wretchedness, that Having Been Born",
+      "file": "0155-chapter-vii-he-deplores-his-wretchedness-that-having-been-born.json",
+      "words": 1043
+    },
+    {
+      "index": 156,
+      "heading": "Chapter VIII.--The Conversation with Alypius Being Ended, He Retires to",
+      "file": "0156-chapter-viii-the-conversation-with-alypius-being-ended-he-retires-to.json",
+      "words": 631
+    },
+    {
+      "index": 157,
+      "heading": "Chapter IX.--That the Mind Commandeth the Mind, But It Willeth Not",
+      "file": "0157-chapter-ix-that-the-mind-commandeth-the-mind-but-it-willeth-not.json",
+      "words": 280
+    },
+    {
+      "index": 158,
+      "heading": "Chapter X.--He Refutes the Opinion of the Manichæans as to Two Kinds of",
+      "file": "0158-chapter-x-he-refutes-the-opinion-of-the-manich-ans-as-to-two-kinds-of.json",
+      "words": 997
+    },
+    {
+      "index": 159,
+      "heading": "Chapter XI.--In What Manner the Spirit Struggled with the Flesh, that",
+      "file": "0159-chapter-xi-in-what-manner-the-spirit-struggled-with-the-flesh-that.json",
+      "words": 1024
+    },
+    {
+      "index": 160,
+      "heading": "Chapter XII.--Having Prayed to God, He Pours Forth a Shower of Tears,",
+      "file": "0160-chapter-xii-having-prayed-to-god-he-pours-forth-a-shower-of-tears.json",
+      "words": 397
+    },
+    {
+      "index": 161,
+      "heading": "Chapter I should light upon. For I had heard of Antony, [681] that,",
+      "file": "0161-chapter-i-should-light-upon-for-i-had-heard-of-antony-681-that.json",
+      "words": 496
+    },
+    {
+      "index": 162,
+      "heading": "Book IX.",
+      "file": "0162-book-ix.json",
+      "words": 44
+    },
+    {
+      "index": 163,
+      "heading": "Chapter I.--He Praises God, the Author of Safety, and Jesus Christ, the",
+      "file": "0163-chapter-i-he-praises-god-the-author-of-safety-and-jesus-christ-the.json",
+      "words": 566
+    },
+    {
+      "index": 164,
+      "heading": "Chapter II.--As His Lungs Were Affected, He Meditates Withdrawing",
+      "file": "0164-chapter-ii-as-his-lungs-were-affected-he-meditates-withdrawing.json",
+      "words": 890
+    },
+    {
+      "index": 165,
+      "heading": "Chapter III.--He Retires to the Villa of His Friend Verecundus, Who Was",
+      "file": "0165-chapter-iii-he-retires-to-the-villa-of-his-friend-verecundus-who-was.json",
+      "words": 987
+    },
+    {
+      "index": 166,
+      "heading": "Chapter IV.--In the Country He Gives His Attention to Literature, and",
+      "file": "0166-chapter-iv-in-the-country-he-gives-his-attention-to-literature-and.json",
+      "words": 2359
+    },
+    {
+      "index": 167,
+      "heading": "Chapter V.--At the Recommendation of Ambrose, He Reads the Prophecies",
+      "file": "0167-chapter-v-at-the-recommendation-of-ambrose-he-reads-the-prophecies.json",
+      "words": 192
+    },
+    {
+      "index": 168,
+      "heading": "Chapter VI.--He is Baptized at Milan with Alypius and His Son",
+      "file": "0168-chapter-vi-he-is-baptized-at-milan-with-alypius-and-his-son.json",
+      "words": 704
+    },
+    {
+      "index": 169,
+      "heading": "Chapter VII.--Of the Church Hymns Instituted at Milan; Of the Ambrosian",
+      "file": "0169-chapter-vii-of-the-church-hymns-instituted-at-milan-of-the-ambrosian.json",
+      "words": 755
+    },
+    {
+      "index": 170,
+      "heading": "Chapter VIII.--Of the Conversion of Evodius, and the Death of His",
+      "file": "0170-chapter-viii-of-the-conversion-of-evodius-and-the-death-of-his.json",
+      "words": 1463
+    },
+    {
+      "index": 171,
+      "heading": "Chapter IX.--He Describes the Praiseworthy Habits of His Mother; Her",
+      "file": "0171-chapter-ix-he-describes-the-praiseworthy-habits-of-his-mother-her.json",
+      "words": 1033
+    },
+    {
+      "index": 172,
+      "heading": "Chapter X.--A Conversation He Had with His Mother Concerning the",
+      "file": "0172-chapter-x-a-conversation-he-had-with-his-mother-concerning-the.json",
+      "words": 1043
+    },
+    {
+      "index": 173,
+      "heading": "Chapter XI.--His Mother, Attacked by Fever, Dies at Ostia.",
+      "file": "0173-chapter-xi-his-mother-attacked-by-fever-dies-at-ostia.json",
+      "words": 547
+    },
+    {
+      "index": 174,
+      "heading": "Chapter XII.--How He Mourned His Dead Mother.",
+      "file": "0174-chapter-xii-how-he-mourned-his-dead-mother.json",
+      "words": 1527
+    },
+    {
+      "index": 175,
+      "heading": "Chapter XIII.--He Entreats God for Her Sins, and Admonishes His Readers",
+      "file": "0175-chapter-xiii-he-entreats-god-for-her-sins-and-admonishes-his-readers.json",
+      "words": 1864
+    },
+    {
+      "index": 176,
+      "heading": "Book X.",
+      "file": "0176-book-x.json",
+      "words": 72
+    },
+    {
+      "index": 177,
+      "heading": "Chapter I.--In God Alone is the Hope and Joy of Man.",
+      "file": "0177-chapter-i-in-god-alone-is-the-hope-and-joy-of-man.json",
+      "words": 157
+    },
+    {
+      "index": 178,
+      "heading": "Chapter II.--That All Things are Manifest to God. That Confession Unto",
+      "file": "0178-chapter-ii-that-all-things-are-manifest-to-god-that-confession-unto.json",
+      "words": 286
+    },
+    {
+      "index": 179,
+      "heading": "Chapter III.--He Who Confesseth Rightly Unto God Best Knoweth Himself.",
+      "file": "0179-chapter-iii-he-who-confesseth-rightly-unto-god-best-knoweth-himself.json",
+      "words": 544
+    },
+    {
+      "index": 180,
+      "heading": "Chapter IV.--That in His Confessions He May Do Good, He Considers",
+      "file": "0180-chapter-iv-that-in-his-confessions-he-may-do-good-he-considers.json",
+      "words": 686
+    },
+    {
+      "index": 181,
+      "heading": "Chapter V.--That Man Knoweth Not Himself Wholly.",
+      "file": "0181-chapter-v-that-man-knoweth-not-himself-wholly.json",
+      "words": 351
+    },
+    {
+      "index": 182,
+      "heading": "Chapter VI.--The Love of God, in His Nature Superior to All Creatures,",
+      "file": "0182-chapter-vi-the-love-of-god-in-his-nature-superior-to-all-creatures.json",
+      "words": 976
+    },
+    {
+      "index": 183,
+      "heading": "Chapter VII.--That God is to Be Found Neither from the Powers of the",
+      "file": "0183-chapter-vii-that-god-is-to-be-found-neither-from-the-powers-of-the.json",
+      "words": 207
+    },
+    {
+      "index": 184,
+      "heading": "Chapter VIII.----Of the Nature and the Amazing Power of Memory.",
+      "file": "0184-chapter-viii-of-the-nature-and-the-amazing-power-of-memory.json",
+      "words": 1052
+    },
+    {
+      "index": 185,
+      "heading": "Chapter IX.--Not Only Things, But Also Literature and Images, are Taken",
+      "file": "0185-chapter-ix-not-only-things-but-also-literature-and-images-are-taken.json",
+      "words": 256
+    },
+    {
+      "index": 186,
+      "heading": "Chapter X.--Literature is Not Introduced to the Memory Through the",
+      "file": "0186-chapter-x-literature-is-not-introduced-to-the-memory-through-the.json",
+      "words": 350
+    },
+    {
+      "index": 187,
+      "heading": "Chapter XI.--What It is to Learn and to Think.",
+      "file": "0187-chapter-xi-what-it-is-to-learn-and-to-think.json",
+      "words": 275
+    },
+    {
+      "index": 188,
+      "heading": "Chapter XII.--On the Recollection of Things Mathematical.",
+      "file": "0188-chapter-xii-on-the-recollection-of-things-mathematical.json",
+      "words": 204
+    },
+    {
+      "index": 189,
+      "heading": "Chapter XIII.--Memory Retains All Things.",
+      "file": "0189-chapter-xiii-memory-retains-all-things.json",
+      "words": 165
+    },
+    {
+      "index": 190,
+      "heading": "Chapter XIV.--Concerning the Manner in Which Joy and Sadness May Be",
+      "file": "0190-chapter-xiv-concerning-the-manner-in-which-joy-and-sadness-may-be.json",
+      "words": 579
+    },
+    {
+      "index": 191,
+      "heading": "Chapter XV.--In Memory There are Also Images of Things Which are",
+      "file": "0191-chapter-xv-in-memory-there-are-also-images-of-things-which-are.json",
+      "words": 243
+    },
+    {
+      "index": 192,
+      "heading": "Chapter XVI.--The Privation of Memory is Forgetfulness.",
+      "file": "0192-chapter-xvi-the-privation-of-memory-is-forgetfulness.json",
+      "words": 579
+    },
+    {
+      "index": 193,
+      "heading": "Chapter XVII.--God Cannot Be Attained Unto by the Power of Memory,",
+      "file": "0193-chapter-xvii-god-cannot-be-attained-unto-by-the-power-of-memory.json",
+      "words": 390
+    },
+    {
+      "index": 194,
+      "heading": "Chapter XVIII.--A Thing When Lost Could Not Be Found Unless It Were",
+      "file": "0194-chapter-xviii-a-thing-when-lost-could-not-be-found-unless-it-were.json",
+      "words": 224
+    },
+    {
+      "index": 195,
+      "heading": "Chapter XIX.--What It is to Remember.",
+      "file": "0195-chapter-xix-what-it-is-to-remember.json",
+      "words": 314
+    },
+    {
+      "index": 196,
+      "heading": "Chapter XX.--We Should Not Seek for God and the Happy Life Unless We",
+      "file": "0196-chapter-xx-we-should-not-seek-for-god-and-the-happy-life-unless-we.json",
+      "words": 528
+    },
+    {
+      "index": 197,
+      "heading": "Chapter XXI.--How a Happy Life May Be Retained in the Memory.",
+      "file": "0197-chapter-xxi-how-a-happy-life-may-be-retained-in-the-memory.json",
+      "words": 562
+    },
+    {
+      "index": 198,
+      "heading": "Chapter XXII.--A Happy Life is to Rejoice in God, and for God.",
+      "file": "0198-chapter-xxii-a-happy-life-is-to-rejoice-in-god-and-for-god.json",
+      "words": 175
+    },
+    {
+      "index": 199,
+      "heading": "Chapter XXIII.--All Wish to Rejoice in the Truth.",
+      "file": "0199-chapter-xxiii-all-wish-to-rejoice-in-the-truth.json",
+      "words": 649
+    },
+    {
+      "index": 200,
+      "heading": "Chapter XXIV.--He Who Finds Truth, Finds God.",
+      "file": "0200-chapter-xxiv-he-who-finds-truth-finds-god.json",
+      "words": 141
+    },
+    {
+      "index": 201,
+      "heading": "Chapter XXV.--He is Glad that God Dwells in His Memory.",
+      "file": "0201-chapter-xxv-he-is-glad-that-god-dwells-in-his-memory.json",
+      "words": 289
+    },
+    {
+      "index": 202,
+      "heading": "Chapter XXVI.--God Everywhere Answers Those Who Take Counsel of Him.",
+      "file": "0202-chapter-xxvi-god-everywhere-answers-those-who-take-counsel-of-him.json",
+      "words": 146
+    },
+    {
+      "index": 203,
+      "heading": "Chapter XXVII.--He Grieves that He Was So Long Without God.",
+      "file": "0203-chapter-xxvii-he-grieves-that-he-was-so-long-without-god.json",
+      "words": 133
+    },
+    {
+      "index": 204,
+      "heading": "Chapter XXVIII.--On the Misery of Human Life.",
+      "file": "0204-chapter-xxviii-on-the-misery-of-human-life.json",
+      "words": 584
+    },
+    {
+      "index": 205,
+      "heading": "Chapter XXIX.--All Hope is in the Mercy of God.",
+      "file": "0205-chapter-xxix-all-hope-is-in-the-mercy-of-god.json",
+      "words": 213
+    },
+    {
+      "index": 206,
+      "heading": "Chapter XXX.--Of the Perverse Images of Dreams, Which He Wishes to Have",
+      "file": "0206-chapter-xxx-of-the-perverse-images-of-dreams-which-he-wishes-to-have.json",
+      "words": 764
+    },
+    {
+      "index": 207,
+      "heading": "Chapter XXXI.--About to Speak of the Temptations of the Lust of the",
+      "file": "0207-chapter-xxxi-about-to-speak-of-the-temptations-of-the-lust-of-the.json",
+      "words": 1673
+    },
+    {
+      "index": 208,
+      "heading": "Chapter XXXII.--Of the Charms of Perfumes Which are More Easily",
+      "file": "0208-chapter-xxxii-of-the-charms-of-perfumes-which-are-more-easily.json",
+      "words": 338
+    },
+    {
+      "index": 209,
+      "heading": "Chapter XXXIII.--He Overcame the Pleasures of the Ear, Although in the",
+      "file": "0209-chapter-xxxiii-he-overcame-the-pleasures-of-the-ear-although-in-the.json",
+      "words": 580
+    },
+    {
+      "index": 210,
+      "heading": "Chapter XXXIV.--Of the Very Dangerous Allurements of the Eyes; On",
+      "file": "0210-chapter-xxxiv-of-the-very-dangerous-allurements-of-the-eyes-on.json",
+      "words": 854
+    },
+    {
+      "index": 211,
+      "heading": "Chapter XXXV.--Another Kind of Temptation is Curiosity, Which is",
+      "file": "0211-chapter-xxxv-another-kind-of-temptation-is-curiosity-which-is.json",
+      "words": 1197
+    },
+    {
+      "index": 212,
+      "heading": "Chapter XXXVI.--A Third Kind is \"Pride\" Which is Pleasing to Man, Not",
+      "file": "0212-chapter-xxxvi-a-third-kind-is-pride-which-is-pleasing-to-man-not.json",
+      "words": 597
+    },
+    {
+      "index": 213,
+      "heading": "Chapter XXXVII.--He is Forcibly Goaded on by the Love of Praise.",
+      "file": "0213-chapter-xxxvii-he-is-forcibly-goaded-on-by-the-love-of-praise.json",
+      "words": 1272
+    },
+    {
+      "index": 214,
+      "heading": "Chapter XXXVIII.--Vain-Glory is the Highest Danger.",
+      "file": "0214-chapter-xxxviii-vain-glory-is-the-highest-danger.json",
+      "words": 146
+    },
+    {
+      "index": 215,
+      "heading": "Chapter XXXIX.--Of the Vice of Those Who, While Pleasing Themselves,",
+      "file": "0215-chapter-xxxix-of-the-vice-of-those-who-while-pleasing-themselves.json",
+      "words": 192
+    },
+    {
+      "index": 216,
+      "heading": "Chapter XL.--The Only Safe Resting-Place for the Soul is to Be Found in",
+      "file": "0216-chapter-xl-the-only-safe-resting-place-for-the-soul-is-to-be-found-in.json",
+      "words": 416
+    },
+    {
+      "index": 217,
+      "heading": "Chapter XLI.--Having Conquered His Triple Desire, He Arrives at",
+      "file": "0217-chapter-xli-having-conquered-his-triple-desire-he-arrives-at.json",
+      "words": 128
+    },
+    {
+      "index": 218,
+      "heading": "Chapter XLII.--In What Manner Many Sought the Mediator.",
+      "file": "0218-chapter-xlii-in-what-manner-many-sought-the-mediator.json",
+      "words": 431
+    },
+    {
+      "index": 219,
+      "heading": "Chapter XLIII.--That Jesus Christ, at the Same Time God and Man, is the",
+      "file": "0219-chapter-xliii-that-jesus-christ-at-the-same-time-god-and-man-is-the.json",
+      "words": 1306
+    },
+    {
+      "index": 220,
+      "heading": "Book XI.",
+      "file": "0220-book-xi.json",
+      "words": 66
+    },
+    {
+      "index": 221,
+      "heading": "Chapter I.--By Confession He Desires to Stimulate Towards God His Own",
+      "file": "0221-chapter-i-by-confession-he-desires-to-stimulate-towards-god-his-own.json",
+      "words": 269
+    },
+    {
+      "index": 222,
+      "heading": "Chapter II.--He Begs of God that Through the Holy Scriptures He May Be",
+      "file": "0222-chapter-ii-he-begs-of-god-that-through-the-holy-scriptures-he-may-be.json",
+      "words": 1619
+    },
+    {
+      "index": 223,
+      "heading": "Chapter III.--He Begins from the Creation of the World--Not",
+      "file": "0223-chapter-iii-he-begins-from-the-creation-of-the-world-not.json",
+      "words": 431
+    },
+    {
+      "index": 224,
+      "heading": "Chapter IV.--Heaven and Earth Cry Out that They Have Been Created by",
+      "file": "0224-chapter-iv-heaven-and-earth-cry-out-that-they-have-been-created-by.json",
+      "words": 267
+    },
+    {
+      "index": 225,
+      "heading": "Chapter V.--God Created the World Not from Any Certain Matter, But in",
+      "file": "0225-chapter-v-god-created-the-world-not-from-any-certain-matter-but-in.json",
+      "words": 453
+    },
+    {
+      "index": 226,
+      "heading": "Chapter VI.--He Did Not, However, Create It by a Sounding and Passing",
+      "file": "0226-chapter-vi-he-did-not-however-create-it-by-a-sounding-and-passing.json",
+      "words": 298
+    },
+    {
+      "index": 227,
+      "heading": "Chapter VII.--By His Co-Eternal Word He Speaks, and All Things are",
+      "file": "0227-chapter-vii-by-his-co-eternal-word-he-speaks-and-all-things-are.json",
+      "words": 205
+    },
+    {
+      "index": 228,
+      "heading": "Chapter VIII.--That Word Itself is the Beginning of All Things, in the",
+      "file": "0228-chapter-viii-that-word-itself-is-the-beginning-of-all-things-in-the.json",
+      "words": 532
+    },
+    {
+      "index": 229,
+      "heading": "Chapter IX.--Wisdom and the Beginning.",
+      "file": "0229-chapter-ix-wisdom-and-the-beginning.json",
+      "words": 250
+    },
+    {
+      "index": 230,
+      "heading": "Chapter X.--The Rashness of Those Who Inquire What God Did Before He",
+      "file": "0230-chapter-x-the-rashness-of-those-who-inquire-what-god-did-before-he.json",
+      "words": 177
+    },
+    {
+      "index": 231,
+      "heading": "Chapter XI.--They Who Ask This Have Not as Yet Known the Eternity of",
+      "file": "0231-chapter-xi-they-who-ask-this-have-not-as-yet-known-the-eternity-of.json",
+      "words": 254
+    },
+    {
+      "index": 232,
+      "heading": "Chapter XII.--What God Did Before the Creation of the World.",
+      "file": "0232-chapter-xii-what-god-did-before-the-creation-of-the-world.json",
+      "words": 174
+    },
+    {
+      "index": 233,
+      "heading": "Chapter XIII.--Before the Times Created by God, Times Were Not.",
+      "file": "0233-chapter-xiii-before-the-times-created-by-god-times-were-not.json",
+      "words": 368
+    },
+    {
+      "index": 234,
+      "heading": "Chapter XIV.--Neither Time Past Nor Future, But the Present Only,",
+      "file": "0234-chapter-xiv-neither-time-past-nor-future-but-the-present-only.json",
+      "words": 262
+    },
+    {
+      "index": 235,
+      "heading": "Chapter XV.--There is Only a Moment of Present Time.",
+      "file": "0235-chapter-xv-there-is-only-a-moment-of-present-time.json",
+      "words": 806
+    },
+    {
+      "index": 236,
+      "heading": "Chapter XVI.--Time Can Only Be Perceived or Measured While It is",
+      "file": "0236-chapter-xvi-time-can-only-be-perceived-or-measured-while-it-is.json",
+      "words": 130
+    },
+    {
+      "index": 237,
+      "heading": "Chapter XVII.--Nevertheless There is Time Past and Future.",
+      "file": "0237-chapter-xvii-nevertheless-there-is-time-past-and-future.json",
+      "words": 153
+    },
+    {
+      "index": 238,
+      "heading": "Chapter XVIII.--Past and Future Times Cannot Be Thought of But as",
+      "file": "0238-chapter-xviii-past-and-future-times-cannot-be-thought-of-but-as.json",
+      "words": 543
+    },
+    {
+      "index": 239,
+      "heading": "Chapter XIX.--We are Ignorant in What Manner God Teaches Future Things.",
+      "file": "0239-chapter-xix-we-are-ignorant-in-what-manner-god-teaches-future-things.json",
+      "words": 106
+    },
+    {
+      "index": 240,
+      "heading": "Chapter XX.--In What Manner Time May Properly Be Designated.",
+      "file": "0240-chapter-xx-in-what-manner-time-may-properly-be-designated.json",
+      "words": 175
+    },
+    {
+      "index": 241,
+      "heading": "Chapter XXI.--How Time May Be Measured.",
+      "file": "0241-chapter-xxi-how-time-may-be-measured.json",
+      "words": 291
+    },
+    {
+      "index": 242,
+      "heading": "Chapter XXII.--He Prays God that He Would Explain This Most Entangled",
+      "file": "0242-chapter-xxii-he-prays-god-that-he-would-explain-this-most-entangled.json",
+      "words": 308
+    },
+    {
+      "index": 243,
+      "heading": "Chapter XXIII.--That Time is a Certain Extension.",
+      "file": "0243-chapter-xxiii-that-time-is-a-certain-extension.json",
+      "words": 788
+    },
+    {
+      "index": 244,
+      "heading": "Chapter XXIV.--That Time is Not a Motion of a Body Which We Measure by",
+      "file": "0244-chapter-xxiv-that-time-is-not-a-motion-of-a-body-which-we-measure-by.json",
+      "words": 341
+    },
+    {
+      "index": 245,
+      "heading": "Chapter XXV.--He Calls on God to Enlighten His Mind.",
+      "file": "0245-chapter-xxv-he-calls-on-god-to-enlighten-his-mind.json",
+      "words": 141
+    },
+    {
+      "index": 246,
+      "heading": "Chapter XXVI.--We Measure Longer Events by Shorter in Time.",
+      "file": "0246-chapter-xxvi-we-measure-longer-events-by-shorter-in-time.json",
+      "words": 426
+    },
+    {
+      "index": 247,
+      "heading": "Chapter XXVII.--Times are Measured in Proportion as They Pass by.",
+      "file": "0247-chapter-xxvii-times-are-measured-in-proportion-as-they-pass-by.json",
+      "words": 1139
+    },
+    {
+      "index": 248,
+      "heading": "Chapter XXVIII.--Time in the Human Mind, Which Expects, Considers, and",
+      "file": "0248-chapter-xxviii-time-in-the-human-mind-which-expects-considers-and.json",
+      "words": 389
+    },
+    {
+      "index": 249,
+      "heading": "Chapter XXIX.--That Human Life is a Distraction But that Through the",
+      "file": "0249-chapter-xxix-that-human-life-is-a-distraction-but-that-through-the.json",
+      "words": 452
+    },
+    {
+      "index": 250,
+      "heading": "Chapter XXX.--Again He Refutes the Empty Question, \"What Did God Before",
+      "file": "0250-chapter-xxx-again-he-refutes-the-empty-question-what-did-god-before.json",
+      "words": 210
+    },
+    {
+      "index": 251,
+      "heading": "Chapter XXXI.--How the Knowledge of God Differs from that of Man.",
+      "file": "0251-chapter-xxxi-how-the-knowledge-of-god-differs-from-that-of-man.json",
+      "words": 610
+    },
+    {
+      "index": 252,
+      "heading": "Book XII.",
+      "file": "0252-book-xii.json",
+      "words": 62
+    },
+    {
+      "index": 253,
+      "heading": "Chapter I .--The Discovery of Truth is Difficult, But God Has Promised",
+      "file": "0253-chapter-i-the-discovery-of-truth-is-difficult-but-god-has-promised.json",
+      "words": 154
+    },
+    {
+      "index": 254,
+      "heading": "Chapter II.--Of the Double Heaven,--The Visible, and the Heaven of",
+      "file": "0254-chapter-ii-of-the-double-heaven-the-visible-and-the-heaven-of.json",
+      "words": 263
+    },
+    {
+      "index": 255,
+      "heading": "Chapter III.--Of the Darkness Upon the Deep, and of the Invisible and",
+      "file": "0255-chapter-iii-of-the-darkness-upon-the-deep-and-of-the-invisible-and.json",
+      "words": 234
+    },
+    {
+      "index": 256,
+      "heading": "Chapter IV.--From the Formlessness of Matter, the Beautiful World Has",
+      "file": "0256-chapter-iv-from-the-formlessness-of-matter-the-beautiful-world-has.json",
+      "words": 106
+    },
+    {
+      "index": 257,
+      "heading": "Chapter V.--What May Have Been the Form of Matter.",
+      "file": "0257-chapter-v-what-may-have-been-the-form-of-matter.json",
+      "words": 79
+    },
+    {
+      "index": 258,
+      "heading": "Chapter VI.--He Confesses that at One Time He Himself Thought",
+      "file": "0258-chapter-vi-he-confesses-that-at-one-time-he-himself-thought.json",
+      "words": 442
+    },
+    {
+      "index": 259,
+      "heading": "Chapter VII.--Out of Nothing God Made Heaven and Earth.",
+      "file": "0259-chapter-vii-out-of-nothing-god-made-heaven-and-earth.json",
+      "words": 323
+    },
+    {
+      "index": 260,
+      "heading": "Chapter VIII.--Heaven and Earth Were Made \"In the Beginning;\"",
+      "file": "0260-chapter-viii-heaven-and-earth-were-made-in-the-beginning.json",
+      "words": 373
+    },
+    {
+      "index": 261,
+      "heading": "Chapter IX.--That the Heaven of Heavens Was an Intellectual Creature,",
+      "file": "0261-chapter-ix-that-the-heaven-of-heavens-was-an-intellectual-creature.json",
+      "words": 174
+    },
+    {
+      "index": 262,
+      "heading": "Chapter X.--He Begs of God that He May Live in the True Light, and May",
+      "file": "0262-chapter-x-he-begs-of-god-that-he-may-live-in-the-true-light-and-may.json",
+      "words": 257
+    },
+    {
+      "index": 263,
+      "heading": "Chapter XI.--What May Be Discovered to Him by God.",
+      "file": "0263-chapter-xi-what-may-be-discovered-to-him-by-god.json",
+      "words": 793
+    },
+    {
+      "index": 264,
+      "heading": "Chapter XII.--From the Formless Earth God Created Another Heaven and a",
+      "file": "0264-chapter-xii-from-the-formless-earth-god-created-another-heaven-and-a.json",
+      "words": 270
+    },
+    {
+      "index": 265,
+      "heading": "Chapter XIII.--Of the Intellectual Heaven and Formless Earth, Out of",
+      "file": "0265-chapter-xiii-of-the-intellectual-heaven-and-formless-earth-out-of.json",
+      "words": 264
+    },
+    {
+      "index": 266,
+      "heading": "Chapter XIV.--Of the Depth of the Sacred Scripture, and Its Enemies.",
+      "file": "0266-chapter-xiv-of-the-depth-of-the-sacred-scripture-and-its-enemies.json",
+      "words": 226
+    },
+    {
+      "index": 267,
+      "heading": "Chapter XV.--He Argues Against Adversaries Concerning the Heaven of",
+      "file": "0267-chapter-xv-he-argues-against-adversaries-concerning-the-heaven-of.json",
+      "words": 1292
+    },
+    {
+      "index": 268,
+      "heading": "Chapter XVI.--He Wishes to Have No Intercourse with Those Who Deny",
+      "file": "0268-chapter-xvi-he-wishes-to-have-no-intercourse-with-those-who-deny.json",
+      "words": 562
+    },
+    {
+      "index": 269,
+      "heading": "Chapter XVII.--He Mentions Five Explanations of the Words of Genesis I.",
+      "file": "0269-chapter-xvii-he-mentions-five-explanations-of-the-words-of-genesis-i.json",
+      "words": 602
+    },
+    {
+      "index": 270,
+      "heading": "Chapter XVIII.--What Error is Harmless in Sacred Scripture.",
+      "file": "0270-chapter-xviii-what-error-is-harmless-in-sacred-scripture.json",
+      "words": 435
+    },
+    {
+      "index": 271,
+      "heading": "Chapter XIX.--He Enumerates the Things Concerning Which All Agree.",
+      "file": "0271-chapter-xix-he-enumerates-the-things-concerning-which-all-agree.json",
+      "words": 263
+    },
+    {
+      "index": 272,
+      "heading": "Chapter XX.--Of the Words, \"In the Beginning,\" Variously Understood.",
+      "file": "0272-chapter-xx-of-the-words-in-the-beginning-variously-understood.json",
+      "words": 548
+    },
+    {
+      "index": 273,
+      "heading": "Chapter XXI.--Of the Explanation of the Words, \"The Earth Was",
+      "file": "0273-chapter-xxi-of-the-explanation-of-the-words-the-earth-was.json",
+      "words": 337
+    },
+    {
+      "index": 274,
+      "heading": "Chapter XXII.--He Discusses Whether Matter Was from Eternity, or Was",
+      "file": "0274-chapter-xxii-he-discusses-whether-matter-was-from-eternity-or-was.json",
+      "words": 646
+    },
+    {
+      "index": 275,
+      "heading": "Chapter XXIII.--Two Kinds of Disagreements in the Books to Be",
+      "file": "0275-chapter-xxiii-two-kinds-of-disagreements-in-the-books-to-be.json",
+      "words": 202
+    },
+    {
+      "index": 276,
+      "heading": "Chapter XXIV.--Out of the Many True Things, It is Not Asserted",
+      "file": "0276-chapter-xxiv-out-of-the-many-true-things-it-is-not-asserted.json",
+      "words": 397
+    },
+    {
+      "index": 277,
+      "heading": "Chapter XXV.--It Behoves Interpreters, When Disagreeing Concerning",
+      "file": "0277-chapter-xxv-it-behoves-interpreters-when-disagreeing-concerning.json",
+      "words": 764
+    },
+    {
+      "index": 278,
+      "heading": "Chapter XXVI.--What He Might Have Asked of God Had He Been Enjoined to",
+      "file": "0278-chapter-xxvi-what-he-might-have-asked-of-god-had-he-been-enjoined-to.json",
+      "words": 283
+    },
+    {
+      "index": 279,
+      "heading": "Chapter XXVII.--The Style of Speaking in the Book of Genesis is Simple",
+      "file": "0279-chapter-xxvii-the-style-of-speaking-in-the-book-of-genesis-is-simple.json",
+      "words": 360
+    },
+    {
+      "index": 280,
+      "heading": "Chapter XXVIII.--The Words, \"In the Beginning,\" And, \"The Heaven and",
+      "file": "0280-chapter-xxviii-the-words-in-the-beginning-and-the-heaven-and.json",
+      "words": 480
+    },
+    {
+      "index": 281,
+      "heading": "Chapter XXIX.--Concerning the Opinion of Those Who Explain It \"At First",
+      "file": "0281-chapter-xxix-concerning-the-opinion-of-those-who-explain-it-at-first.json",
+      "words": 805
+    },
+    {
+      "index": 282,
+      "heading": "Chapter XXX.--In the Great Diversity of Opinions, It Becomes All to",
+      "file": "0282-chapter-xxx-in-the-great-diversity-of-opinions-it-becomes-all-to.json",
+      "words": 108
+    },
+    {
+      "index": 283,
+      "heading": "Book affright not those little ones of good hope, treating few of high",
+      "file": "0283-book-affright-not-those-little-ones-of-good-hope-treating-few-of-high.json",
+      "words": 229
+    },
+    {
+      "index": 284,
+      "heading": "Chapter XXXI.--Moses is Supposed to Have Perceived Whatever of Truth",
+      "file": "0284-chapter-xxxi-moses-is-supposed-to-have-perceived-whatever-of-truth.json",
+      "words": 234
+    },
+    {
+      "index": 285,
+      "heading": "Chapter XXXII.--First, the Sense of the Writer is to Be Discovered,",
+      "file": "0285-chapter-xxxii-first-the-sense-of-the-writer-is-to-be-discovered.json",
+      "words": 385
+    },
+    {
+      "index": 286,
+      "heading": "Book XIII.",
+      "file": "0286-book-xiii.json",
+      "words": 68
+    },
+    {
+      "index": 287,
+      "heading": "Chapter I.--He Calls Upon God, and Proposes to Himself to Worship Him.",
+      "file": "0287-chapter-i-he-calls-upon-god-and-proposes-to-himself-to-worship-him.json",
+      "words": 320
+    },
+    {
+      "index": 288,
+      "heading": "Chapter II.--All Creatures Subsist from the Plenitude of Divine",
+      "file": "0288-chapter-ii-all-creatures-subsist-from-the-plenitude-of-divine.json",
+      "words": 622
+    },
+    {
+      "index": 289,
+      "heading": "Chapter III.--Genesis I. 3,--Of \"Light,\"--He Understands as It is Seen",
+      "file": "0289-chapter-iii-genesis-i-3-of-light-he-understands-as-it-is-seen.json",
+      "words": 216
+    },
+    {
+      "index": 290,
+      "heading": "Chapter IV.--All Things Have Been Created by the Grace of God, and are",
+      "file": "0290-chapter-iv-all-things-have-been-created-by-the-grace-of-god-and-are.json",
+      "words": 240
+    },
+    {
+      "index": 291,
+      "heading": "Chapter V.--He Recognises the Trinity in the First Two Verses of",
+      "file": "0291-chapter-v-he-recognises-the-trinity-in-the-first-two-verses-of.json",
+      "words": 201
+    },
+    {
+      "index": 292,
+      "heading": "Chapter VI.--Why the Holy Ghost Should Have Been Mentioned After the",
+      "file": "0292-chapter-vi-why-the-holy-ghost-should-have-been-mentioned-after-the.json",
+      "words": 196
+    },
+    {
+      "index": 293,
+      "heading": "Chapter VII.--That the Holy Spirit Brings Us to God.",
+      "file": "0293-chapter-vii-that-the-holy-spirit-brings-us-to-god.json",
+      "words": 441
+    },
+    {
+      "index": 294,
+      "heading": "Chapter VIII.--That Nothing Whatever, Short of God, Can Yield to the",
+      "file": "0294-chapter-viii-that-nothing-whatever-short-of-god-can-yield-to-the.json",
+      "words": 648
+    },
+    {
+      "index": 295,
+      "heading": "Chapter IX.--Why the Holy Spirit Was Only \"Borne Over\" The Waters.",
+      "file": "0295-chapter-ix-why-the-holy-spirit-was-only-borne-over-the-waters.json",
+      "words": 382
+    },
+    {
+      "index": 296,
+      "heading": "Chapter X.--That Nothing Arose Save by the Gift of God.",
+      "file": "0296-chapter-x-that-nothing-arose-save-by-the-gift-of-god.json",
+      "words": 207
+    },
+    {
+      "index": 297,
+      "heading": "Chapter XI.--That the Symbols of the Trinity in Man, to Be, to Know,",
+      "file": "0297-chapter-xi-that-the-symbols-of-the-trinity-in-man-to-be-to-know.json",
+      "words": 905
+    },
+    {
+      "index": 298,
+      "heading": "Chapter XII.--Allegorical Explanation of Genesis, Chap. I., Concerning",
+      "file": "0298-chapter-xii-allegorical-explanation-of-genesis-chap-i-concerning.json",
+      "words": 418
+    },
+    {
+      "index": 299,
+      "heading": "Chapter XIII.--That the Renewal of Man is Not Completed in This World.",
+      "file": "0299-chapter-xiii-that-the-renewal-of-man-is-not-completed-in-this-world.json",
+      "words": 547
+    },
+    {
+      "index": 300,
+      "heading": "Chapter XIV.--That Out of the Children of the Night and of the",
+      "file": "0300-chapter-xiv-that-out-of-the-children-of-the-night-and-of-the.json",
+      "words": 512
+    },
+    {
+      "index": 301,
+      "heading": "Chapter XV.--Allegorical Explanation of the Firmament and Upper Works,",
+      "file": "0301-chapter-xv-allegorical-explanation-of-the-firmament-and-upper-works.json",
+      "words": 1015
+    },
+    {
+      "index": 302,
+      "heading": "Chapter XVI.--That No One But the Unchangeable Light Knows Himself.",
+      "file": "0302-chapter-xvi-that-no-one-but-the-unchangeable-light-knows-himself.json",
+      "words": 259
+    },
+    {
+      "index": 303,
+      "heading": "Chapter XVII.--Allegorical Explanation of the Sea and the Fruit-Bearing",
+      "file": "0303-chapter-xvii-allegorical-explanation-of-the-sea-and-the-fruit-bearing.json",
+      "words": 507
+    },
+    {
+      "index": 304,
+      "heading": "Chapter XVIII.--Of the Lights and Stars of Heaven--Of Day and Night,",
+      "file": "0304-chapter-xviii-of-the-lights-and-stars-of-heaven-of-day-and-night.json",
+      "words": 1498
+    },
+    {
+      "index": 305,
+      "heading": "Chapter XIX.--All Men Should Become Lights in the Firmament of Heaven.",
+      "file": "0305-chapter-xix-all-men-should-become-lights-in-the-firmament-of-heaven.json",
+      "words": 733
+    },
+    {
+      "index": 306,
+      "heading": "Chapter XX.--Concerning Reptiles and Flying Creatures (Ver. 20),--The",
+      "file": "0306-chapter-xx-concerning-reptiles-and-flying-creatures-ver-20-the.json",
+      "words": 740
+    },
+    {
+      "index": 307,
+      "heading": "Chapter XXI.--Concerning the Living Soul, Birds, and Fishes (Ver.",
+      "file": "0307-chapter-xxi-concerning-the-living-soul-birds-and-fishes-ver.json",
+      "words": 1285
+    },
+    {
+      "index": 308,
+      "heading": "Chapter XXII.--He Explains the Divine Image (Ver. 26) of the Renewal of",
+      "file": "0308-chapter-xxii-he-explains-the-divine-image-ver-26-of-the-renewal-of.json",
+      "words": 445
+    },
+    {
+      "index": 309,
+      "heading": "Chapter XXIII.--That to Have Power Over All Things (Ver. 26) is to",
+      "file": "0309-chapter-xxiii-that-to-have-power-over-all-things-ver-26-is-to.json",
+      "words": 1043
+    },
+    {
+      "index": 310,
+      "heading": "Chapter XXIV.--Why God Has Blessed Men, Fishes, Flying Creatures, and",
+      "file": "0310-chapter-xxiv-why-god-has-blessed-men-fishes-flying-creatures-and.json",
+      "words": 911
+    },
+    {
+      "index": 311,
+      "heading": "Chapter XXV.--He Explains the Fruits of the Earth (Ver. 29) of Works of",
+      "file": "0311-chapter-xxv-he-explains-the-fruits-of-the-earth-ver-29-of-works-of.json",
+      "words": 479
+    },
+    {
+      "index": 312,
+      "heading": "Chapter XXVI.--In the Confessing of Benefits, Computation is Made Not",
+      "file": "0312-chapter-xxvi-in-the-confessing-of-benefits-computation-is-made-not.json",
+      "words": 881
+    },
+    {
+      "index": 313,
+      "heading": "Chapter XXVII.--Many are Ignorant as to This, and Ask for Miracles,",
+      "file": "0313-chapter-xxvii-many-are-ignorant-as-to-this-and-ask-for-miracles.json",
+      "words": 253
+    },
+    {
+      "index": 314,
+      "heading": "Chapter XXVIII.--He Proceeds to the Last Verse, \"All Things are Very",
+      "file": "0314-chapter-xxviii-he-proceeds-to-the-last-verse-all-things-are-very.json",
+      "words": 196
+    },
+    {
+      "index": 315,
+      "heading": "Chapter XXIX.--Although It is Said Eight Times that \"God Saw that It",
+      "file": "0315-chapter-xxix-although-it-is-said-eight-times-that-god-saw-that-it.json",
+      "words": 236
+    },
+    {
+      "index": 316,
+      "heading": "Chapter XXX.--He Refutes the Opinions of the Manichæans and the",
+      "file": "0316-chapter-xxx-he-refutes-the-opinions-of-the-manich-ans-and-the.json",
+      "words": 236
+    },
+    {
+      "index": 317,
+      "heading": "Chapter XXXI.--We Do Not See \"That It Was Good\" But Through the Spirit",
+      "file": "0317-chapter-xxxi-we-do-not-see-that-it-was-good-but-through-the-spirit.json",
+      "words": 463
+    },
+    {
+      "index": 318,
+      "heading": "Chapter XXXII.--Of the Particular Works of God, More Especially of Man.",
+      "file": "0318-chapter-xxxii-of-the-particular-works-of-god-more-especially-of-man.json",
+      "words": 488
+    },
+    {
+      "index": 319,
+      "heading": "Chapter XXXIII.--The World Was Created by God Out of Nothing.",
+      "file": "0319-chapter-xxxiii-the-world-was-created-by-god-out-of-nothing.json",
+      "words": 167
+    },
+    {
+      "index": 320,
+      "heading": "Chapter XXXIV.--He Briefly Repeats the Allegorical Interpretation of",
+      "file": "0320-chapter-xxxiv-he-briefly-repeats-the-allegorical-interpretation-of.json",
+      "words": 277
+    },
+    {
+      "index": 321,
+      "heading": "Book, by which the faithful should be blessed. Next didst Thou form the",
+      "file": "0321-book-by-which-the-faithful-should-be-blessed-next-didst-thou-form-the.json",
+      "words": 249
+    },
+    {
+      "index": 322,
+      "heading": "Chapter XXXV.--He Prays God for that Peace of Rest Which Hath No",
+      "file": "0322-chapter-xxxv-he-prays-god-for-that-peace-of-rest-which-hath-no.json",
+      "words": 58
+    },
+    {
+      "index": 323,
+      "heading": "Chapter XXXVI.--The Seventh Day, Without Evening and Setting, the Image",
+      "file": "0323-chapter-xxxvi-the-seventh-day-without-evening-and-setting-the-image.json",
+      "words": 93
+    },
+    {
+      "index": 324,
+      "heading": "Chapter XXXVII.--Of Rest in God Who Ever Worketh, and Yet is Ever at",
+      "file": "0324-chapter-xxxvii-of-rest-in-god-who-ever-worketh-and-yet-is-ever-at.json",
+      "words": 120
+    },
+    {
+      "index": 325,
+      "heading": "Chapter XXXVIII.--Of the Difference Between the Knowledge of God and of",
+      "file": "0325-chapter-xxxviii-of-the-difference-between-the-knowledge-of-god-and-of.json",
+      "words": 218
+    },
+    {
+      "index": 326,
+      "heading": "Preface.",
+      "file": "0326-preface-2.json",
+      "words": 35364
+    },
+    {
+      "index": 327,
+      "heading": "Chapter of the Gospel fell to be expounded in ordinary course, in which",
+      "file": "0327-chapter-of-the-gospel-fell-to-be-expounded-in-ordinary-course-in-which.json",
+      "words": 46626
+    },
+    {
+      "index": 328,
+      "heading": "Book of God; nor can he prove his opinion to be right by the unanimous",
+      "file": "0328-book-of-god-nor-can-he-prove-his-opinion-to-be-right-by-the-unanimous.json",
+      "words": 14716
+    },
+    {
+      "index": 329,
+      "heading": "Chapter and paragraph a sentence further on than in the Benedictine",
+      "file": "0329-chapter-and-paragraph-a-sentence-further-on-than-in-the-benedictine.json",
+      "words": 18246
+    },
+    {
+      "index": 330,
+      "heading": "Chapter with which you find fault: \"If any one be dissatisfied with the",
+      "file": "0330-chapter-with-which-you-find-fault-if-any-one-be-dissatisfied-with-the.json",
+      "words": 131812
+    },
+    {
+      "index": 331,
+      "heading": "CLXXXVIII.",
+      "file": "0331-clxxxviii.json",
+      "words": 43460
+    },
+    {
+      "index": 332,
+      "heading": "Book ix. ch. 8 and 12).",
+      "file": "0332-book-ix-ch-8-and-12.json",
+      "words": 79548
+    },
+    {
+      "index": 333,
+      "heading": "THE CONFESSIONS OF ST. AUGUSTIN",
+      "file": "0333-the-confessions-of-st-augustin.json",
+      "words": 0
+    },
+    {
+      "index": 334,
+      "heading": "INDEX OF SUBJECTS",
+      "file": "0334-index-of-subjects.json",
+      "words": 9613
+    },
+    {
+      "index": 335,
+      "heading": "LETTERS OF ST. AUGUSTIN",
+      "file": "0335-letters-of-st-augustin.json",
+      "words": 0
+    },
+    {
+      "index": 336,
+      "heading": "INDEX OF SUBJECTS",
+      "file": "0336-index-of-subjects-2.json",
+      "words": 14347
+    }
+  ]
+}

@@ -1,0 +1,5225 @@
+{
+  "id": "npnf102-augustine-city-god-1887",
+  "title": "NPNF I, Vol. II — Augustine: City of God and Christian Doctrine",
+  "author_label": "St. Augustine of Hippo",
+  "edition": "Nicene and Post-Nicene Fathers, First Series, vol. II",
+  "translators": "Historical NPNF translators under Philip Schaff",
+  "publication_year": 1887,
+  "rights": "Public Domain historical edition; CCEL source metadata states Public Domain",
+  "source_url": "https://www.ccel.org/ccel/s/schaff/npnf102/cache/npnf102.txt",
+  "gutenberg_id": null,
+  "source_type": "ccel_plain_text",
+  "rights_evidence_url": "https://www.ccel.org/ccel/schaff/npnf102",
+  "caution": "Historical public-domain English translations.",
+  "expected_works": [
+    "City of God",
+    "On Christian Doctrine"
+  ],
+  "sha256": "5c973feda803f3e58a88ed7df210b42d436f5466741eb8dbeae713ab56dedae4",
+  "section_count": 867,
+  "word_count": 548700,
+  "toc": [
+    {
+      "index": 1,
+      "heading": "NPNF I, Vol. II — Augustine: City of God and Christian Doctrine",
+      "file": "0001-npnf-i-vol-ii-augustine-city-of-god-and-christian-doctrine.json",
+      "words": 51
+    },
+    {
+      "index": 2,
+      "heading": "A SELECT LIBRARY",
+      "file": "0002-a-select-library.json",
+      "words": 0
+    },
+    {
+      "index": 3,
+      "heading": "OF THE",
+      "file": "0003-of-the.json",
+      "words": 0
+    },
+    {
+      "index": 4,
+      "heading": "NICENE AND",
+      "file": "0004-nicene-and.json",
+      "words": 0
+    },
+    {
+      "index": 5,
+      "heading": "POST-NICENE FATHERS",
+      "file": "0005-post-nicene-fathers.json",
+      "words": 1
+    },
+    {
+      "index": 6,
+      "heading": "THE CHRISTIAN CHURCH.",
+      "file": "0006-the-christian-church.json",
+      "words": 0
+    },
+    {
+      "index": 7,
+      "heading": "EDITED BY",
+      "file": "0007-edited-by.json",
+      "words": 0
+    },
+    {
+      "index": 8,
+      "heading": "PHILIP SCHAFF, D.D., LL.D.,",
+      "file": "0008-philip-schaff-d-d-ll-d.json",
+      "words": 0
+    },
+    {
+      "index": 9,
+      "heading": "PROFESSOR IN THE UNION THEOLOGICAL SEMINARY, NEW YORK.",
+      "file": "0009-professor-in-the-union-theological-seminary-new-york.json",
+      "words": 0
+    },
+    {
+      "index": 10,
+      "heading": "IN CONNECTION WITH A NUMBER OF PATRISTIC SCHOLARS OF EUROPE AND",
+      "file": "0010-in-connection-with-a-number-of-patristic-scholars-of-europe-and.json",
+      "words": 0
+    },
+    {
+      "index": 11,
+      "heading": "AMERICA.",
+      "file": "0011-america.json",
+      "words": 0
+    },
+    {
+      "index": 12,
+      "heading": "VOLUME II",
+      "file": "0012-volume-ii.json",
+      "words": 10
+    },
+    {
+      "index": 13,
+      "heading": "EDINBURGH",
+      "file": "0013-edinburgh.json",
+      "words": 1
+    },
+    {
+      "index": 14,
+      "heading": "WM. B. EERDMANS PUBLISHING COMPANY",
+      "file": "0014-wm-b-eerdmans-publishing-company.json",
+      "words": 0
+    },
+    {
+      "index": 15,
+      "heading": "GRAND RAPIDS, MICHIGAN",
+      "file": "0015-grand-rapids-michigan.json",
+      "words": 5645
+    },
+    {
+      "index": 16,
+      "heading": "Book I.",
+      "file": "0016-book-i.json",
+      "words": 78
+    },
+    {
+      "index": 17,
+      "heading": "Preface, Explaining His Design in Undertaking This Work.",
+      "file": "0017-preface-explaining-his-design-in-undertaking-this-work.json",
+      "words": 577
+    },
+    {
+      "index": 18,
+      "heading": "Chapter 1.--Of the Adversaries of the Name of Christ, Whom the",
+      "file": "0018-chapter-1-of-the-adversaries-of-the-name-of-christ-whom-the.json",
+      "words": 638
+    },
+    {
+      "index": 19,
+      "heading": "Chapter 2.--That It is Quite Contrary to the Usage of War, that the",
+      "file": "0019-chapter-2-that-it-is-quite-contrary-to-the-usage-of-war-that-the.json",
+      "words": 301
+    },
+    {
+      "index": 20,
+      "heading": "Chapter 3.--That the Romans Did Not Show Their Usual Sagacity When They",
+      "file": "0020-chapter-3-that-the-romans-did-not-show-their-usual-sagacity-when-they.json",
+      "words": 696
+    },
+    {
+      "index": 21,
+      "heading": "Chapter 4.--Of the Asylum of Juno in Troy, Which Saved No One from the",
+      "file": "0021-chapter-4-of-the-asylum-of-juno-in-troy-which-saved-no-one-from-the.json",
+      "words": 468
+    },
+    {
+      "index": 22,
+      "heading": "Chapter 5.--Cæsar's Statement Regarding the Universal Custom of an",
+      "file": "0022-chapter-5-c-sar-s-statement-regarding-the-universal-custom-of-an.json",
+      "words": 155
+    },
+    {
+      "index": 23,
+      "heading": "Chapter 6.--That Not Even the Romans, When They Took Cities, Spared the",
+      "file": "0023-chapter-6-that-not-even-the-romans-when-they-took-cities-spared-the.json",
+      "words": 478
+    },
+    {
+      "index": 24,
+      "heading": "Chapter 7.--That the Cruelties Which Occurred in the Sack of Rome Were",
+      "file": "0024-chapter-7-that-the-cruelties-which-occurred-in-the-sack-of-rome-were.json",
+      "words": 228
+    },
+    {
+      "index": 25,
+      "heading": "Chapter 8.--Of the Advantages and Disadvantages Which Often",
+      "file": "0025-chapter-8-of-the-advantages-and-disadvantages-which-often.json",
+      "words": 681
+    },
+    {
+      "index": 26,
+      "heading": "Chapter 9.--Of the Reasons for Administering Correction to Bad and Good",
+      "file": "0026-chapter-9-of-the-reasons-for-administering-correction-to-bad-and-good.json",
+      "words": 1156
+    },
+    {
+      "index": 27,
+      "heading": "Chapter 10.--That the Saints Lose Nothing in Losing Temporal Goods.",
+      "file": "0027-chapter-10-that-the-saints-lose-nothing-in-losing-temporal-goods.json",
+      "words": 1405
+    },
+    {
+      "index": 28,
+      "heading": "Chapter 11.--Of the End of This Life, Whether It is Material that It Be",
+      "file": "0028-chapter-11-of-the-end-of-this-life-whether-it-is-material-that-it-be.json",
+      "words": 413
+    },
+    {
+      "index": 29,
+      "heading": "Chapter 12.--Of the Burial of the Dead: that the Denial of It to",
+      "file": "0029-chapter-12-of-the-burial-of-the-dead-that-the-denial-of-it-to.json",
+      "words": 783
+    },
+    {
+      "index": 30,
+      "heading": "Chapter 13.--Reasons for Burying the Bodies of the Saints.",
+      "file": "0030-chapter-13-reasons-for-burying-the-bodies-of-the-saints.json",
+      "words": 539
+    },
+    {
+      "index": 31,
+      "heading": "Chapter 14.--Of the Captivity of the Saints, and that Divine",
+      "file": "0031-chapter-14-of-the-captivity-of-the-saints-and-that-divine.json",
+      "words": 210
+    },
+    {
+      "index": 32,
+      "heading": "Chapter 15.--Of Regulus, in Whom We Have an Example of the Voluntary",
+      "file": "0032-chapter-15-of-regulus-in-whom-we-have-an-example-of-the-voluntary.json",
+      "words": 980
+    },
+    {
+      "index": 33,
+      "heading": "Chapter 16.--Of the Violation of the Consecrated and Other Christian",
+      "file": "0033-chapter-16-of-the-violation-of-the-consecrated-and-other-christian.json",
+      "words": 267
+    },
+    {
+      "index": 34,
+      "heading": "Chapter 17.--Of Suicide Committed Through Fear of Punishment or",
+      "file": "0034-chapter-17-of-suicide-committed-through-fear-of-punishment-or.json",
+      "words": 299
+    },
+    {
+      "index": 35,
+      "heading": "Chapter 18.--Of the Violence Which May Be Done to the Body by Another's",
+      "file": "0035-chapter-18-of-the-violence-which-may-be-done-to-the-body-by-another-s.json",
+      "words": 609
+    },
+    {
+      "index": 36,
+      "heading": "Chapter 19.--Of Lucretia, Who Put an End to Her Life Because of the",
+      "file": "0036-chapter-19-of-lucretia-who-put-an-end-to-her-life-because-of-the.json",
+      "words": 1083
+    },
+    {
+      "index": 37,
+      "heading": "Chapter 20.--That Christians Have No Authority for Committing Suicide",
+      "file": "0037-chapter-20-that-christians-have-no-authority-for-committing-suicide.json",
+      "words": 514
+    },
+    {
+      "index": 38,
+      "heading": "Chapter 21.--Of the Cases in Which We May Put Men to Death Without",
+      "file": "0038-chapter-21-of-the-cases-in-which-we-may-put-men-to-death-without.json",
+      "words": 312
+    },
+    {
+      "index": 39,
+      "heading": "Chapter 22.--That Suicide Can Never Be Prompted by Magnanimity.",
+      "file": "0039-chapter-22-that-suicide-can-never-be-prompted-by-magnanimity.json",
+      "words": 505
+    },
+    {
+      "index": 40,
+      "heading": "Chapter 23.--What We are to Think of the Example of Cato, Who Slew",
+      "file": "0040-chapter-23-what-we-are-to-think-of-the-example-of-cato-who-slew.json",
+      "words": 354
+    },
+    {
+      "index": 41,
+      "heading": "Chapter 24.--That in that Virtue in Which Regulus Excels Cato,",
+      "file": "0041-chapter-24-that-in-that-virtue-in-which-regulus-excels-cato.json",
+      "words": 565
+    },
+    {
+      "index": 42,
+      "heading": "Chapter 25.--That We Should Not Endeavor By Sin to Obviate Sin.",
+      "file": "0042-chapter-25-that-we-should-not-endeavor-by-sin-to-obviate-sin.json",
+      "words": 344
+    },
+    {
+      "index": 43,
+      "heading": "Chapter 26.--That in Certain Peculiar Cases the Examples of the Saints",
+      "file": "0043-chapter-26-that-in-certain-peculiar-cases-the-examples-of-the-saints.json",
+      "words": 520
+    },
+    {
+      "index": 44,
+      "heading": "Chapter 27.--Whether Voluntary Death Should Be Sought in Order to Avoid",
+      "file": "0044-chapter-27-whether-voluntary-death-should-be-sought-in-order-to-avoid.json",
+      "words": 497
+    },
+    {
+      "index": 45,
+      "heading": "Chapter 28.--By What Judgment of God the Enemy Was Permitted to Indulge",
+      "file": "0045-chapter-28-by-what-judgment-of-god-the-enemy-was-permitted-to-indulge.json",
+      "words": 766
+    },
+    {
+      "index": 46,
+      "heading": "Chapter 29.--What the Servants of Christ Should Say in Reply to the",
+      "file": "0046-chapter-29-what-the-servants-of-christ-should-say-in-reply-to-the.json",
+      "words": 284
+    },
+    {
+      "index": 47,
+      "heading": "Chapter 30.--That Those Who Complain of Christianity Really Desire to",
+      "file": "0047-chapter-30-that-those-who-complain-of-christianity-really-desire-to.json",
+      "words": 391
+    },
+    {
+      "index": 48,
+      "heading": "Chapter 31.--By What Steps the Passion for Governing Increased Among",
+      "file": "0048-chapter-31-by-what-steps-the-passion-for-governing-increased-among.json",
+      "words": 400
+    },
+    {
+      "index": 49,
+      "heading": "Chapter 32.--Of the Establishment of Scenic Entertainments.",
+      "file": "0049-chapter-32-of-the-establishment-of-scenic-entertainments.json",
+      "words": 300
+    },
+    {
+      "index": 50,
+      "heading": "Chapter 33.--That the Overthrow of Rome Has Not Corrected the Vices of",
+      "file": "0050-chapter-33-that-the-overthrow-of-rome-has-not-corrected-the-vices-of.json",
+      "words": 280
+    },
+    {
+      "index": 51,
+      "heading": "Chapter 34.--Of God's Clemency in Moderating the Ruin of the City.",
+      "file": "0051-chapter-34-of-god-s-clemency-in-moderating-the-ruin-of-the-city.json",
+      "words": 150
+    },
+    {
+      "index": 52,
+      "heading": "Chapter 35.--Of the Sons of the Church Who are Hidden Among the Wicked,",
+      "file": "0052-chapter-35-of-the-sons-of-the-church-who-are-hidden-among-the-wicked.json",
+      "words": 277
+    },
+    {
+      "index": 53,
+      "heading": "Chapter 36.--What Subjects are to Be Handled in the Following",
+      "file": "0053-chapter-36-what-subjects-are-to-be-handled-in-the-following.json",
+      "words": 346
+    },
+    {
+      "index": 54,
+      "heading": "Book II.",
+      "file": "0054-book-ii.json",
+      "words": 68
+    },
+    {
+      "index": 55,
+      "heading": "Chapter 1.--Of the Limits Which Must Be Put to the Necessity of",
+      "file": "0055-chapter-1-of-the-limits-which-must-be-put-to-the-necessity-of.json",
+      "words": 434
+    },
+    {
+      "index": 56,
+      "heading": "Chapter 2.--Recapitulation of the Contents of the First Book.",
+      "file": "0056-chapter-2-recapitulation-of-the-contents-of-the-first-book.json",
+      "words": 524
+    },
+    {
+      "index": 57,
+      "heading": "Chapter 3.--That We Need Only to Read History in Order to See What",
+      "file": "0057-chapter-3-that-we-need-only-to-read-history-in-order-to-see-what.json",
+      "words": 335
+    },
+    {
+      "index": 58,
+      "heading": "Chapter 4.--That the Worshippers of the Gods Never Received from Them",
+      "file": "0058-chapter-4-that-the-worshippers-of-the-gods-never-received-from-them.json",
+      "words": 658
+    },
+    {
+      "index": 59,
+      "heading": "Chapter 5.--Of the Obscenities Practiced in Honor of the Mother of the",
+      "file": "0059-chapter-5-of-the-obscenities-practiced-in-honor-of-the-mother-of-the.json",
+      "words": 511
+    },
+    {
+      "index": 60,
+      "heading": "Chapter 6.--That the Gods of the Pagans Never Inculcated Holiness of",
+      "file": "0060-chapter-6-that-the-gods-of-the-pagans-never-inculcated-holiness-of.json",
+      "words": 407
+    },
+    {
+      "index": 61,
+      "heading": "Chapter 7.--That the Suggestions of Philosophers are Precluded from",
+      "file": "0061-chapter-7-that-the-suggestions-of-philosophers-are-precluded-from.json",
+      "words": 664
+    },
+    {
+      "index": 62,
+      "heading": "Chapter 8.--That the Theatrical Exhibitions Publishing the Shameful",
+      "file": "0062-chapter-8-that-the-theatrical-exhibitions-publishing-the-shameful.json",
+      "words": 317
+    },
+    {
+      "index": 63,
+      "heading": "Chapter 9.--That the Poetical License Which the Greeks, in Obedience to",
+      "file": "0063-chapter-9-that-the-poetical-license-which-the-greeks-in-obedience-to.json",
+      "words": 538
+    },
+    {
+      "index": 64,
+      "heading": "Chapter 10.--That the Devils, in Suffering Either False or True Crimes",
+      "file": "0064-chapter-10-that-the-devils-in-suffering-either-false-or-true-crimes.json",
+      "words": 310
+    },
+    {
+      "index": 65,
+      "heading": "Chapter 11.--That the Greeks Admitted Players to Offices of State, on",
+      "file": "0065-chapter-11-that-the-greeks-admitted-players-to-offices-of-state-on.json",
+      "words": 566
+    },
+    {
+      "index": 66,
+      "heading": "Chapter 12.--That the Romans, by Refusing to the Poets the Same License",
+      "file": "0066-chapter-12-that-the-romans-by-refusing-to-the-poets-the-same-license.json",
+      "words": 283
+    },
+    {
+      "index": 67,
+      "heading": "Chapter 13.--That the Romans Should Have Understood that Gods Who",
+      "file": "0067-chapter-13-that-the-romans-should-have-understood-that-gods-who.json",
+      "words": 638
+    },
+    {
+      "index": 68,
+      "heading": "Chapter 14.--That Plato, Who Excluded Poets from a Well-Ordered City,",
+      "file": "0068-chapter-14-that-plato-who-excluded-poets-from-a-well-ordered-city.json",
+      "words": 925
+    },
+    {
+      "index": 69,
+      "heading": "Chapter 15.--That It Was Vanity, Not Reason, Which Created Some of the",
+      "file": "0069-chapter-15-that-it-was-vanity-not-reason-which-created-some-of-the.json",
+      "words": 212
+    },
+    {
+      "index": 70,
+      "heading": "Chapter 16.--That If the Gods Had Really Possessed Any Regard for",
+      "file": "0070-chapter-16-that-if-the-gods-had-really-possessed-any-regard-for.json",
+      "words": 305
+    },
+    {
+      "index": 71,
+      "heading": "Chapter 17.--Of the Rape of the Sabine Women, and Other Iniquities",
+      "file": "0071-chapter-17-of-the-rape-of-the-sabine-women-and-other-iniquities.json",
+      "words": 698
+    },
+    {
+      "index": 72,
+      "heading": "Chapter 18.--What the History of Sallust Reveals Regarding the Life of",
+      "file": "0072-chapter-18-what-the-history-of-sallust-reveals-regarding-the-life-of.json",
+      "words": 953
+    },
+    {
+      "index": 73,
+      "heading": "Chapter 19.--Of the Corruption Which Had Grown Upon the Roman Republic",
+      "file": "0073-chapter-19-of-the-corruption-which-had-grown-upon-the-roman-republic.json",
+      "words": 476
+    },
+    {
+      "index": 74,
+      "heading": "Chapter 20.--Of the Kind of Happiness and Life Truly Delighted in by",
+      "file": "0074-chapter-20-of-the-kind-of-happiness-and-life-truly-delighted-in-by.json",
+      "words": 606
+    },
+    {
+      "index": 75,
+      "heading": "Chapter 21.--Cicero's Opinion of the Roman Republic.",
+      "file": "0075-chapter-21-cicero-s-opinion-of-the-roman-republic.json",
+      "words": 1480
+    },
+    {
+      "index": 76,
+      "heading": "Chapter 22.--That the Roman Gods Never Took Any Steps to Prevent the",
+      "file": "0076-chapter-22-that-the-roman-gods-never-took-any-steps-to-prevent-the.json",
+      "words": 629
+    },
+    {
+      "index": 77,
+      "heading": "Chapter 23.--That the Vicissitudes of This Life are Dependent Not on",
+      "file": "0077-chapter-23-that-the-vicissitudes-of-this-life-are-dependent-not-on.json",
+      "words": 885
+    },
+    {
+      "index": 78,
+      "heading": "Chapter 24.--Of the Deeds of Sylla, in Which the Demons Boasted that He",
+      "file": "0078-chapter-24-of-the-deeds-of-sylla-in-which-the-demons-boasted-that-he.json",
+      "words": 811
+    },
+    {
+      "index": 79,
+      "heading": "Chapter 25.--How Powerfully the Evil Spirits Incite Men to Wicked",
+      "file": "0079-chapter-25-how-powerfully-the-evil-spirits-incite-men-to-wicked.json",
+      "words": 727
+    },
+    {
+      "index": 80,
+      "heading": "Chapter 26.--That the Demons Gave in Secret Certain Obscure",
+      "file": "0080-chapter-26-that-the-demons-gave-in-secret-certain-obscure.json",
+      "words": 727
+    },
+    {
+      "index": 81,
+      "heading": "Chapter 27.--That the Obscenities of Those Plays Which the Romans",
+      "file": "0081-chapter-27-that-the-obscenities-of-those-plays-which-the-romans.json",
+      "words": 418
+    },
+    {
+      "index": 82,
+      "heading": "Chapter 28.--That the Christian Religion is Health-Giving.",
+      "file": "0082-chapter-28-that-the-christian-religion-is-health-giving.json",
+      "words": 211
+    },
+    {
+      "index": 83,
+      "heading": "Chapter 29.--An Exhortation to the Romans to Renounce Paganism.",
+      "file": "0083-chapter-29-an-exhortation-to-the-romans-to-renounce-paganism.json",
+      "words": 827
+    },
+    {
+      "index": 84,
+      "heading": "Book III.",
+      "file": "0084-book-iii.json",
+      "words": 65
+    },
+    {
+      "index": 85,
+      "heading": "Chapter 1.--Of the Ills Which Alone the Wicked Fear, and Which the",
+      "file": "0085-chapter-1-of-the-ills-which-alone-the-wicked-fear-and-which-the.json",
+      "words": 321
+    },
+    {
+      "index": 86,
+      "heading": "Chapter 2.--Whether the Gods, Whom the Greeks and Romans Worshipped in",
+      "file": "0086-chapter-2-whether-the-gods-whom-the-greeks-and-romans-worshipped-in.json",
+      "words": 484
+    },
+    {
+      "index": 87,
+      "heading": "Chapter 3.--That the Gods Could Not Be Offended by the Adultery of",
+      "file": "0087-chapter-3-that-the-gods-could-not-be-offended-by-the-adultery-of.json",
+      "words": 432
+    },
+    {
+      "index": 88,
+      "heading": "Chapter 4.--Of Varro's Opinion, that It is Useful for Men to Feign",
+      "file": "0088-chapter-4-of-varro-s-opinion-that-it-is-useful-for-men-to-feign.json",
+      "words": 170
+    },
+    {
+      "index": 89,
+      "heading": "Chapter 5.--That It is Not Credible that the Gods Should Have Punished",
+      "file": "0089-chapter-5-that-it-is-not-credible-that-the-gods-should-have-punished.json",
+      "words": 276
+    },
+    {
+      "index": 90,
+      "heading": "Chapter 6.--That the Gods Exacted No Penalty for the Fratricidal Act of",
+      "file": "0090-chapter-6-that-the-gods-exacted-no-penalty-for-the-fratricidal-act-of.json",
+      "words": 366
+    },
+    {
+      "index": 91,
+      "heading": "Chapter 7.--Of the Destruction of Ilium by Fimbria, a Lieutenant of",
+      "file": "0091-chapter-7-of-the-destruction-of-ilium-by-fimbria-a-lieutenant-of.json",
+      "words": 581
+    },
+    {
+      "index": 92,
+      "heading": "Chapter 8.--Whether Rome Ought to Have Been Entrusted to the Trojan",
+      "file": "0092-chapter-8-whether-rome-ought-to-have-been-entrusted-to-the-trojan.json",
+      "words": 120
+    },
+    {
+      "index": 93,
+      "heading": "Chapter 9.--Whether It is Credible that the Peace During the Reign of",
+      "file": "0093-chapter-9-whether-it-is-credible-that-the-peace-during-the-reign-of.json",
+      "words": 446
+    },
+    {
+      "index": 94,
+      "heading": "Chapter 10.--Whether It Was Desirable that The Roman Empire Should Be",
+      "file": "0094-chapter-10-whether-it-was-desirable-that-the-roman-empire-should-be.json",
+      "words": 678
+    },
+    {
+      "index": 95,
+      "heading": "Chapter 11.--Of the Statue of Apollo at Cumæ, Whose Tears are Supposed",
+      "file": "0095-chapter-11-of-the-statue-of-apollo-at-cum-whose-tears-are-supposed.json",
+      "words": 395
+    },
+    {
+      "index": 96,
+      "heading": "Chapter 12.--That the Romans Added a Vast Number of Gods to Those",
+      "file": "0096-chapter-12-that-the-romans-added-a-vast-number-of-gods-to-those.json",
+      "words": 423
+    },
+    {
+      "index": 97,
+      "heading": "Chapter 13.--By What Right or Agreement The Romans Obtained Their First",
+      "file": "0097-chapter-13-by-what-right-or-agreement-the-romans-obtained-their-first.json",
+      "words": 722
+    },
+    {
+      "index": 98,
+      "heading": "Chapter 14.--Of the Wickedness of the War Waged by the Romans Against",
+      "file": "0098-chapter-14-of-the-wickedness-of-the-war-waged-by-the-romans-against.json",
+      "words": 1337
+    },
+    {
+      "index": 99,
+      "heading": "Chapter 15.--What Manner of Life and Death the Roman Kings Had.",
+      "file": "0099-chapter-15-what-manner-of-life-and-death-the-roman-kings-had.json",
+      "words": 1179
+    },
+    {
+      "index": 100,
+      "heading": "Chapter 16.--Of the First Roman Consuls, the One of Whom Drove the",
+      "file": "0100-chapter-16-of-the-first-roman-consuls-the-one-of-whom-drove-the.json",
+      "words": 618
+    },
+    {
+      "index": 101,
+      "heading": "Chapter 17.--Of the Disasters Which Vexed the Roman Republic After the",
+      "file": "0101-chapter-17-of-the-disasters-which-vexed-the-roman-republic-after-the.json",
+      "words": 1791
+    },
+    {
+      "index": 102,
+      "heading": "Chapter 18.--The Disasters Suffered by the Romans in the Punic Wars,",
+      "file": "0102-chapter-18-the-disasters-suffered-by-the-romans-in-the-punic-wars.json",
+      "words": 805
+    },
+    {
+      "index": 103,
+      "heading": "Chapter 19.--Of the Calamity of the Second Punic War, Which Consumed",
+      "file": "0103-chapter-19-of-the-calamity-of-the-second-punic-war-which-consumed.json",
+      "words": 508
+    },
+    {
+      "index": 104,
+      "heading": "Chapter 20.--Of the Destruction of the Saguntines, Who Received No Help",
+      "file": "0104-chapter-20-of-the-destruction-of-the-saguntines-who-received-no-help.json",
+      "words": 856
+    },
+    {
+      "index": 105,
+      "heading": "Chapter 21.--Of the Ingratitude of Rome to Scipio, Its Deliverer, and",
+      "file": "0105-chapter-21-of-the-ingratitude-of-rome-to-scipio-its-deliverer-and.json",
+      "words": 719
+    },
+    {
+      "index": 106,
+      "heading": "Chapter 22.--Of the Edict of Mithridates, Commanding that All Roman",
+      "file": "0106-chapter-22-of-the-edict-of-mithridates-commanding-that-all-roman.json",
+      "words": 290
+    },
+    {
+      "index": 107,
+      "heading": "Chapter 23.--Of the Internal Disasters Which Vexed the Roman Republic,",
+      "file": "0107-chapter-23-of-the-internal-disasters-which-vexed-the-roman-republic.json",
+      "words": 208
+    },
+    {
+      "index": 108,
+      "heading": "Chapter 24.--Of the Civil Dissension Occasioned by the Sedition of the",
+      "file": "0108-chapter-24-of-the-civil-dissension-occasioned-by-the-sedition-of-the.json",
+      "words": 225
+    },
+    {
+      "index": 109,
+      "heading": "Chapter 25.--Of the Temple of Concord, Which Was Erected by a Decree of",
+      "file": "0109-chapter-25-of-the-temple-of-concord-which-was-erected-by-a-decree-of.json",
+      "words": 473
+    },
+    {
+      "index": 110,
+      "heading": "Chapter 26.--Of the Various Kinds of Wars Which Followed the Building",
+      "file": "0110-chapter-26-of-the-various-kinds-of-wars-which-followed-the-building.json",
+      "words": 271
+    },
+    {
+      "index": 111,
+      "heading": "Chapter 27.--Of the Civil War Between Marius and Sylla.",
+      "file": "0111-chapter-27-of-the-civil-war-between-marius-and-sylla.json",
+      "words": 322
+    },
+    {
+      "index": 112,
+      "heading": "Chapter 28.--Of the Victory of Sylla, the Avenger of the Cruelties of",
+      "file": "0112-chapter-28-of-the-victory-of-sylla-the-avenger-of-the-cruelties-of.json",
+      "words": 516
+    },
+    {
+      "index": 113,
+      "heading": "Chapter 29.--A Comparison of the Disasters Which Rome Experienced",
+      "file": "0113-chapter-29-a-comparison-of-the-disasters-which-rome-experienced.json",
+      "words": 270
+    },
+    {
+      "index": 114,
+      "heading": "Chapter 30.--Of the Connection of the Wars Which with Great Severity",
+      "file": "0114-chapter-30-of-the-connection-of-the-wars-which-with-great-severity.json",
+      "words": 458
+    },
+    {
+      "index": 115,
+      "heading": "Chapter 31.--That It is Effrontery to Impute the Present Troubles to",
+      "file": "0115-chapter-31-that-it-is-effrontery-to-impute-the-present-troubles-to.json",
+      "words": 718
+    },
+    {
+      "index": 116,
+      "heading": "Book IV. [160]",
+      "file": "0116-book-iv-160.json",
+      "words": 69
+    },
+    {
+      "index": 117,
+      "heading": "Chapter 1.--Of the Things Which Have Been Discussed in the First Book.",
+      "file": "0117-chapter-1-of-the-things-which-have-been-discussed-in-the-first-book.json",
+      "words": 482
+    },
+    {
+      "index": 118,
+      "heading": "Chapter 2.--Of Those Things Which are Contained in Books Second and",
+      "file": "0118-chapter-2-of-those-things-which-are-contained-in-books-second-and.json",
+      "words": 636
+    },
+    {
+      "index": 119,
+      "heading": "Chapter 3.--Whether the Great Extent of the Empire, Which Has Been",
+      "file": "0119-chapter-3-whether-the-great-extent-of-the-empire-which-has-been.json",
+      "words": 666
+    },
+    {
+      "index": 120,
+      "heading": "Chapter 4.--How Like Kingdoms Without Justice are to Robberies.",
+      "file": "0120-chapter-4-how-like-kingdoms-without-justice-are-to-robberies.json",
+      "words": 206
+    },
+    {
+      "index": 121,
+      "heading": "Chapter 5.--Of the Runaway Gladiators Whose Power Became Like that of",
+      "file": "0121-chapter-5-of-the-runaway-gladiators-whose-power-became-like-that-of.json",
+      "words": 477
+    },
+    {
+      "index": 122,
+      "heading": "Chapter 6.--Concerning the Covetousness of Ninus, Who Was the First Who",
+      "file": "0122-chapter-6-concerning-the-covetousness-of-ninus-who-was-the-first-who.json",
+      "words": 361
+    },
+    {
+      "index": 123,
+      "heading": "Chapter 7.--Whether Earthly Kingdoms in Their Rise and Fall Have Been",
+      "file": "0123-chapter-7-whether-earthly-kingdoms-in-their-rise-and-fall-have-been.json",
+      "words": 593
+    },
+    {
+      "index": 124,
+      "heading": "Chapter 8.--Which of the Gods Can the Romans Suppose Presided Over the",
+      "file": "0124-chapter-8-which-of-the-gods-can-the-romans-suppose-presided-over-the.json",
+      "words": 736
+    },
+    {
+      "index": 125,
+      "heading": "Chapter 9.--Whether the Great Extent and Long Duration of the Roman",
+      "file": "0125-chapter-9-whether-the-great-extent-and-long-duration-of-the-roman.json",
+      "words": 225
+    },
+    {
+      "index": 126,
+      "heading": "Chapter 10.--What Opinions Those Have Followed Who Have Set Divers Gods",
+      "file": "0126-chapter-10-what-opinions-those-have-followed-who-have-set-divers-gods.json",
+      "words": 1047
+    },
+    {
+      "index": 127,
+      "heading": "Chapter 11.--Concerning the Many Gods Whom the Pagan Doctors Defend as",
+      "file": "0127-chapter-11-concerning-the-many-gods-whom-the-pagan-doctors-defend-as.json",
+      "words": 1135
+    },
+    {
+      "index": 128,
+      "heading": "Chapter 12.--Concerning the Opinion of Those Who Have Thought that God",
+      "file": "0128-chapter-12-concerning-the-opinion-of-those-who-have-thought-that-god.json",
+      "words": 213
+    },
+    {
+      "index": 129,
+      "heading": "Chapter 13.--Concerning Those Who Assert that Only Rational Animals are",
+      "file": "0129-chapter-13-concerning-those-who-assert-that-only-rational-animals-are.json",
+      "words": 263
+    },
+    {
+      "index": 130,
+      "heading": "Chapter 14.--The Enlargement of Kingdoms is Unsuitably Ascribed to",
+      "file": "0130-chapter-14-the-enlargement-of-kingdoms-is-unsuitably-ascribed-to.json",
+      "words": 143
+    },
+    {
+      "index": 131,
+      "heading": "Chapter 15.--Whether It is Suitable for Good Men to Wish to Rule More",
+      "file": "0131-chapter-15-whether-it-is-suitable-for-good-men-to-wish-to-rule-more.json",
+      "words": 444
+    },
+    {
+      "index": 132,
+      "heading": "Chapter 16.--What Was the Reason Why the Romans, in Detailing Separate",
+      "file": "0132-chapter-16-what-was-the-reason-why-the-romans-in-detailing-separate.json",
+      "words": 202
+    },
+    {
+      "index": 133,
+      "heading": "Chapter 17.--Whether, If the Highest Power Belongs to Jove, Victoria",
+      "file": "0133-chapter-17-whether-if-the-highest-power-belongs-to-jove-victoria.json",
+      "words": 245
+    },
+    {
+      "index": 134,
+      "heading": "Chapter 18.--With What Reason They Who Think Felicity and Fortune",
+      "file": "0134-chapter-18-with-what-reason-they-who-think-felicity-and-fortune.json",
+      "words": 503
+    },
+    {
+      "index": 135,
+      "heading": "Chapter 19.--Concerning Fortuna Muliebris. [174]",
+      "file": "0135-chapter-19-concerning-fortuna-muliebris-174.json",
+      "words": 185
+    },
+    {
+      "index": 136,
+      "heading": "Chapter 20.--Concerning Virtue and Faith, Which the Pagans Have Honored",
+      "file": "0136-chapter-20-concerning-virtue-and-faith-which-the-pagans-have-honored.json",
+      "words": 407
+    },
+    {
+      "index": 137,
+      "heading": "Chapter 21.--That Although Not Understanding Them to Be the Gifts of",
+      "file": "0137-chapter-21-that-although-not-understanding-them-to-be-the-gifts-of.json",
+      "words": 801
+    },
+    {
+      "index": 138,
+      "heading": "Chapter 22.--Concerning the Knowledge of the Worship Due to the Gods,",
+      "file": "0138-chapter-22-concerning-the-knowledge-of-the-worship-due-to-the-gods.json",
+      "words": 302
+    },
+    {
+      "index": 139,
+      "heading": "Chapter 23.--Concerning Felicity, Whom the Romans, Who Venerate Many",
+      "file": "0139-chapter-23-concerning-felicity-whom-the-romans-who-venerate-many.json",
+      "words": 1351
+    },
+    {
+      "index": 140,
+      "heading": "Chapter 24.--The Reasons by Which the Pagans Attempt to Defend Their",
+      "file": "0140-chapter-24-the-reasons-by-which-the-pagans-attempt-to-defend-their.json",
+      "words": 210
+    },
+    {
+      "index": 141,
+      "heading": "Chapter 25.--Concerning the One God Only to Be Worshipped, Who,",
+      "file": "0141-chapter-25-concerning-the-one-god-only-to-be-worshipped-who.json",
+      "words": 322
+    },
+    {
+      "index": 142,
+      "heading": "Chapter 26.--Of the Scenic Plays, the Celebration of Which the Gods",
+      "file": "0142-chapter-26-of-the-scenic-plays-the-celebration-of-which-the-gods.json",
+      "words": 560
+    },
+    {
+      "index": 143,
+      "heading": "Chapter 27.--Concerning the Three Kinds of Gods About Which the Pontiff",
+      "file": "0143-chapter-27-concerning-the-three-kinds-of-gods-about-which-the-pontiff.json",
+      "words": 690
+    },
+    {
+      "index": 144,
+      "heading": "Chapter 28.--Whether the Worship of the Gods Has Been of Service to the",
+      "file": "0144-chapter-28-whether-the-worship-of-the-gods-has-been-of-service-to-the.json",
+      "words": 272
+    },
+    {
+      "index": 145,
+      "heading": "Chapter 29.--Of the Falsity of the Augury by Which the Strength and",
+      "file": "0145-chapter-29-of-the-falsity-of-the-augury-by-which-the-strength-and.json",
+      "words": 738
+    },
+    {
+      "index": 146,
+      "heading": "Chapter 30.--What Kind of Things Even Their Worshippers Have Owned They",
+      "file": "0146-chapter-30-what-kind-of-things-even-their-worshippers-have-owned-they.json",
+      "words": 626
+    },
+    {
+      "index": 147,
+      "heading": "Chapter 31.--Concerning the Opinions of Varro, Who, While Reprobating",
+      "file": "0147-chapter-31-concerning-the-opinions-of-varro-who-while-reprobating.json",
+      "words": 859
+    },
+    {
+      "index": 148,
+      "heading": "Chapter 32.--In What Interest the Princes of the Nations Wished False",
+      "file": "0148-chapter-32-in-what-interest-the-princes-of-the-nations-wished-false.json",
+      "words": 207
+    },
+    {
+      "index": 149,
+      "heading": "Chapter 33.--That the Times of All Kings and Kingdoms are Ordained by",
+      "file": "0149-chapter-33-that-the-times-of-all-kings-and-kingdoms-are-ordained-by.json",
+      "words": 226
+    },
+    {
+      "index": 150,
+      "heading": "Chapter 34.--Concerning the Kingdom of the Jews, Which Was Founded by",
+      "file": "0150-chapter-34-concerning-the-kingdom-of-the-jews-which-was-founded-by.json",
+      "words": 498
+    },
+    {
+      "index": 151,
+      "heading": "Book V. [188]",
+      "file": "0151-book-v-188.json",
+      "words": 122
+    },
+    {
+      "index": 152,
+      "heading": "Preface.",
+      "file": "0152-preface.json",
+      "words": 143
+    },
+    {
+      "index": 153,
+      "heading": "Chapter 1.--That the Cause of the Roman Empire, and of All Kingdoms, is",
+      "file": "0153-chapter-1-that-the-cause-of-the-roman-empire-and-of-all-kingdoms-is.json",
+      "words": 780
+    },
+    {
+      "index": 154,
+      "heading": "Chapter 2.--On the Difference in the Health of Twins.",
+      "file": "0154-chapter-2-on-the-difference-in-the-health-of-twins.json",
+      "words": 650
+    },
+    {
+      "index": 155,
+      "heading": "Chapter 3.--Concerning the Arguments Which Nigidius the Mathematician",
+      "file": "0155-chapter-3-concerning-the-arguments-which-nigidius-the-mathematician.json",
+      "words": 418
+    },
+    {
+      "index": 156,
+      "heading": "Chapter 4.--Concerning the Twins Esau and Jacob, Who Were Very Unlike",
+      "file": "0156-chapter-4-concerning-the-twins-esau-and-jacob-who-were-very-unlike.json",
+      "words": 350
+    },
+    {
+      "index": 157,
+      "heading": "Chapter 5.--In What Manner the Mathematicians are Convicted of",
+      "file": "0157-chapter-5-in-what-manner-the-mathematicians-are-convicted-of.json",
+      "words": 964
+    },
+    {
+      "index": 158,
+      "heading": "Chapter 6.--Concerning Twins of Different Sexes.",
+      "file": "0158-chapter-6-concerning-twins-of-different-sexes.json",
+      "words": 540
+    },
+    {
+      "index": 159,
+      "heading": "Chapter 7.--Concerning the Choosing of a Day for Marriage, or for",
+      "file": "0159-chapter-7-concerning-the-choosing-of-a-day-for-marriage-or-for.json",
+      "words": 794
+    },
+    {
+      "index": 160,
+      "heading": "Chapter 8.--Concerning Those Who Call by the Name of Fate, Not the",
+      "file": "0160-chapter-8-concerning-those-who-call-by-the-name-of-fate-not-the.json",
+      "words": 489
+    },
+    {
+      "index": 161,
+      "heading": "Chapter 9.--Concerning the Foreknowledge of God and the Free Will of",
+      "file": "0161-chapter-9-concerning-the-foreknowledge-of-god-and-the-free-will-of.json",
+      "words": 2237
+    },
+    {
+      "index": 162,
+      "heading": "Chapter 10.--Whether Our Wills are Ruled by Necessity.",
+      "file": "0162-chapter-10-whether-our-wills-are-ruled-by-necessity.json",
+      "words": 900
+    },
+    {
+      "index": 163,
+      "heading": "Chapter 11.--Concerning the Universal Providence of God in the Laws of",
+      "file": "0163-chapter-11-concerning-the-universal-providence-of-god-in-the-laws-of.json",
+      "words": 291
+    },
+    {
+      "index": 164,
+      "heading": "Chapter 12.--By What Virtues the Ancient Romans Merited that the True",
+      "file": "0164-chapter-12-by-what-virtues-the-ancient-romans-merited-that-the-true.json",
+      "words": 2319
+    },
+    {
+      "index": 165,
+      "heading": "Chapter 13.--Concerning the Love of Praise, Which, Though It is a Vice,",
+      "file": "0165-chapter-13-concerning-the-love-of-praise-which-though-it-is-a-vice.json",
+      "words": 460
+    },
+    {
+      "index": 166,
+      "heading": "Chapter 14.--Concerning the Eradication of the Love of Human Praise,",
+      "file": "0166-chapter-14-concerning-the-eradication-of-the-love-of-human-praise.json",
+      "words": 703
+    },
+    {
+      "index": 167,
+      "heading": "Chapter 15.--Concerning the Temporal Reward Which God Granted to the",
+      "file": "0167-chapter-15-concerning-the-temporal-reward-which-god-granted-to-the.json",
+      "words": 248
+    },
+    {
+      "index": 168,
+      "heading": "Chapter 16.--Concerning the Reward of the Holy Citizens of the",
+      "file": "0168-chapter-16-concerning-the-reward-of-the-holy-citizens-of-the.json",
+      "words": 205
+    },
+    {
+      "index": 169,
+      "heading": "Chapter 17.--To What Profit the Romans Carried on Wars, and How Much",
+      "file": "0169-chapter-17-to-what-profit-the-romans-carried-on-wars-and-how-much.json",
+      "words": 682
+    },
+    {
+      "index": 170,
+      "heading": "Chapter 18.--How Far Christians Ought to Be from Boasting, If They Have",
+      "file": "0170-chapter-18-how-far-christians-ought-to-be-from-boasting-if-they-have.json",
+      "words": 2123
+    },
+    {
+      "index": 171,
+      "heading": "Chapter 19.--Concerning the Difference Between True Glory and the",
+      "file": "0171-chapter-19-concerning-the-difference-between-true-glory-and-the.json",
+      "words": 983
+    },
+    {
+      "index": 172,
+      "heading": "Chapter 20.--That It is as Shameful for the Virtues to Serve Human",
+      "file": "0172-chapter-20-that-it-is-as-shameful-for-the-virtues-to-serve-human.json",
+      "words": 556
+    },
+    {
+      "index": 173,
+      "heading": "Chapter 21.--That the Roman Dominion Was Granted by Him from Whom is",
+      "file": "0173-chapter-21-that-the-roman-dominion-was-granted-by-him-from-whom-is.json",
+      "words": 536
+    },
+    {
+      "index": 174,
+      "heading": "Chapter 22.--The Durations and Issues of War Depend on the Will of God.",
+      "file": "0174-chapter-22-the-durations-and-issues-of-war-depend-on-the-will-of-god.json",
+      "words": 511
+    },
+    {
+      "index": 175,
+      "heading": "Chapter 23.--Concerning the War in Which Radagaisus, King of the Goths,",
+      "file": "0175-chapter-23-concerning-the-war-in-which-radagaisus-king-of-the-goths.json",
+      "words": 608
+    },
+    {
+      "index": 176,
+      "heading": "Chapter 24.--What Was the Happiness of the Christian Emperors, and How",
+      "file": "0176-chapter-24-what-was-the-happiness-of-the-christian-emperors-and-how.json",
+      "words": 389
+    },
+    {
+      "index": 177,
+      "heading": "Chapter 25.--Concerning the Prosperity Which God Granted to the",
+      "file": "0177-chapter-25-concerning-the-prosperity-which-god-granted-to-the.json",
+      "words": 328
+    },
+    {
+      "index": 178,
+      "heading": "Chapter 26.--On the Faith and Piety of Theodosius Augustus.",
+      "file": "0178-chapter-26-on-the-faith-and-piety-of-theodosius-augustus.json",
+      "words": 1377
+    },
+    {
+      "index": 179,
+      "heading": "Book VI.",
+      "file": "0179-book-vi.json",
+      "words": 117
+    },
+    {
+      "index": 180,
+      "heading": "Preface.",
+      "file": "0180-preface-2.json",
+      "words": 317
+    },
+    {
+      "index": 181,
+      "heading": "Chapter 1.--Of Those Who Maintain that They Worship the Gods Not for",
+      "file": "0181-chapter-1-of-those-who-maintain-that-they-worship-the-gods-not-for.json",
+      "words": 1445
+    },
+    {
+      "index": 182,
+      "heading": "Chapter 2.--What We are to Believe that Varro Thought Concerning the",
+      "file": "0182-chapter-2-what-we-are-to-believe-that-varro-thought-concerning-the.json",
+      "words": 738
+    },
+    {
+      "index": 183,
+      "heading": "Chapter 3.--Varro's Distribution of His Book Which He Composed",
+      "file": "0183-chapter-3-varro-s-distribution-of-his-book-which-he-composed.json",
+      "words": 499
+    },
+    {
+      "index": 184,
+      "heading": "Chapter 4.--That from the Disputation of Varro, It Follows that the",
+      "file": "0184-chapter-4-that-from-the-disputation-of-varro-it-follows-that-the.json",
+      "words": 982
+    },
+    {
+      "index": 185,
+      "heading": "Chapter 5.--Concerning the Three Kinds of Theology According to Varro,",
+      "file": "0185-chapter-5-concerning-the-three-kinds-of-theology-according-to-varro.json",
+      "words": 997
+    },
+    {
+      "index": 186,
+      "heading": "Chapter 6.--Concerning the Mythic, that Is, the Fabulous, Theology, and",
+      "file": "0186-chapter-6-concerning-the-mythic-that-is-the-fabulous-theology-and.json",
+      "words": 1048
+    },
+    {
+      "index": 187,
+      "heading": "Chapter 7.--Concerning the Likeness and Agreement of the Fabulous and",
+      "file": "0187-chapter-7-concerning-the-likeness-and-agreement-of-the-fabulous-and.json",
+      "words": 1254
+    },
+    {
+      "index": 188,
+      "heading": "Chapter 8.--Concerning the Interpretations, Consisting of Natural",
+      "file": "0188-chapter-8-concerning-the-interpretations-consisting-of-natural.json",
+      "words": 782
+    },
+    {
+      "index": 189,
+      "heading": "Chapter 9.--Concerning the Special Offices of the Gods.",
+      "file": "0189-chapter-9-concerning-the-special-offices-of-the-gods.json",
+      "words": 1761
+    },
+    {
+      "index": 190,
+      "heading": "Chapter 10.--Concerning the Liberty of Seneca, Who More Vehemently",
+      "file": "0190-chapter-10-concerning-the-liberty-of-seneca-who-more-vehemently.json",
+      "words": 1352
+    },
+    {
+      "index": 191,
+      "heading": "Chapter 11.--What Seneca Thought Concerning the Jews.",
+      "file": "0191-chapter-11-what-seneca-thought-concerning-the-jews.json",
+      "words": 280
+    },
+    {
+      "index": 192,
+      "heading": "Chapter 12.--That When Once the Vanity of the Gods of the Nations Has",
+      "file": "0192-chapter-12-that-when-once-the-vanity-of-the-gods-of-the-nations-has.json",
+      "words": 491
+    },
+    {
+      "index": 193,
+      "heading": "Book VII.",
+      "file": "0193-book-vii.json",
+      "words": 30
+    },
+    {
+      "index": 194,
+      "heading": "Preface.",
+      "file": "0194-preface-3.json",
+      "words": 201
+    },
+    {
+      "index": 195,
+      "heading": "Chapter 1.--Whether, Since It is Evident that Deity is Not to Be Found",
+      "file": "0195-chapter-1-whether-since-it-is-evident-that-deity-is-not-to-be-found.json",
+      "words": 442
+    },
+    {
+      "index": 196,
+      "heading": "Chapter 2.--Who are the Select Gods, and Whether They are Held to Be",
+      "file": "0196-chapter-2-who-are-the-select-gods-and-whether-they-are-held-to-be.json",
+      "words": 394
+    },
+    {
+      "index": 197,
+      "heading": "Chapter 3.--How There is No Reason Which Can Be Shown for the Selection",
+      "file": "0197-chapter-3-how-there-is-no-reason-which-can-be-shown-for-the-selection.json",
+      "words": 1622
+    },
+    {
+      "index": 198,
+      "heading": "Chapter 4.--The Inferior Gods, Whose Names are Not Associated with",
+      "file": "0198-chapter-4-the-inferior-gods-whose-names-are-not-associated-with.json",
+      "words": 465
+    },
+    {
+      "index": 199,
+      "heading": "Chapter 5.--Concerning the More Secret Doctrine of the Pagans, and",
+      "file": "0199-chapter-5-concerning-the-more-secret-doctrine-of-the-pagans-and.json",
+      "words": 709
+    },
+    {
+      "index": 200,
+      "heading": "Chapter 6.--Concerning the Opinion of Varro, that God is the Soul of",
+      "file": "0200-chapter-6-concerning-the-opinion-of-varro-that-god-is-the-soul-of.json",
+      "words": 320
+    },
+    {
+      "index": 201,
+      "heading": "Chapter 7.--Whether It is Reasonable to Separate Janus and Terminus as",
+      "file": "0201-chapter-7-whether-it-is-reasonable-to-separate-janus-and-terminus-as.json",
+      "words": 497
+    },
+    {
+      "index": 202,
+      "heading": "Chapter 8.--For What Reason the Worshippers of Janus Have Made His",
+      "file": "0202-chapter-8-for-what-reason-the-worshippers-of-janus-have-made-his.json",
+      "words": 453
+    },
+    {
+      "index": 203,
+      "heading": "Chapter 9.--Concerning the Power of Jupiter, and a Comparison of",
+      "file": "0203-chapter-9-concerning-the-power-of-jupiter-and-a-comparison-of.json",
+      "words": 951
+    },
+    {
+      "index": 204,
+      "heading": "Chapter 10.--Whether the Distinction Between Janus and Jupiter is a",
+      "file": "0204-chapter-10-whether-the-distinction-between-janus-and-jupiter-is-a.json",
+      "words": 189
+    },
+    {
+      "index": 205,
+      "heading": "Chapter 11.--Concerning the Surnames of Jupiter, Which are Referred Not",
+      "file": "0205-chapter-11-concerning-the-surnames-of-jupiter-which-are-referred-not.json",
+      "words": 552
+    },
+    {
+      "index": 206,
+      "heading": "Chapter 12.--That Jupiter is Also Called Pecunia.",
+      "file": "0206-chapter-12-that-jupiter-is-also-called-pecunia.json",
+      "words": 379
+    },
+    {
+      "index": 207,
+      "heading": "Chapter 13.--That When It is Expounded What Saturn Is, What Genius Is,",
+      "file": "0207-chapter-13-that-when-it-is-expounded-what-saturn-is-what-genius-is.json",
+      "words": 351
+    },
+    {
+      "index": 208,
+      "heading": "Chapter 14.--Concerning the Offices of Mercury and Mars.",
+      "file": "0208-chapter-14-concerning-the-offices-of-mercury-and-mars.json",
+      "words": 469
+    },
+    {
+      "index": 209,
+      "heading": "Chapter 15.--Concerning Certain Stars Which the Pagans Have Called by",
+      "file": "0209-chapter-15-concerning-certain-stars-which-the-pagans-have-called-by.json",
+      "words": 509
+    },
+    {
+      "index": 210,
+      "heading": "Chapter 16.--Concerning Apollo and Diana, and the Other Select Gods",
+      "file": "0210-chapter-16-concerning-apollo-and-diana-and-the-other-select-gods.json",
+      "words": 517
+    },
+    {
+      "index": 211,
+      "heading": "Chapter 17.--That Even Varro Himself Pronounced His Own Opinions",
+      "file": "0211-chapter-17-that-even-varro-himself-pronounced-his-own-opinions.json",
+      "words": 500
+    },
+    {
+      "index": 212,
+      "heading": "Chapter 18.--A More Credible Cause of the Rise of Pagan Error.",
+      "file": "0212-chapter-18-a-more-credible-cause-of-the-rise-of-pagan-error.json",
+      "words": 202
+    },
+    {
+      "index": 213,
+      "heading": "Chapter 19.--Concerning the Interpretations Which Compose the Reason of",
+      "file": "0213-chapter-19-concerning-the-interpretations-which-compose-the-reason-of.json",
+      "words": 640
+    },
+    {
+      "index": 214,
+      "heading": "Chapter 20.--Concerning the Rites of Eleusinian Ceres.",
+      "file": "0214-chapter-20-concerning-the-rites-of-eleusinian-ceres.json",
+      "words": 172
+    },
+    {
+      "index": 215,
+      "heading": "Chapter 21.--Concerning the Shamefulness of the Rites Which are",
+      "file": "0215-chapter-21-concerning-the-shamefulness-of-the-rites-which-are.json",
+      "words": 397
+    },
+    {
+      "index": 216,
+      "heading": "Chapter 22.--Concerning Neptune, and Salacia and Venilia.",
+      "file": "0216-chapter-22-concerning-neptune-and-salacia-and-venilia.json",
+      "words": 419
+    },
+    {
+      "index": 217,
+      "heading": "Chapter 23.--Concerning the Earth, Which Varro Affirms to Be a Goddess,",
+      "file": "0217-chapter-23-concerning-the-earth-which-varro-affirms-to-be-a-goddess.json",
+      "words": 1108
+    },
+    {
+      "index": 218,
+      "heading": "Chapter 24.--Concerning the Surnames of Tellus and Their",
+      "file": "0218-chapter-24-concerning-the-surnames-of-tellus-and-their.json",
+      "words": 1046
+    },
+    {
+      "index": 219,
+      "heading": "Chapter 25.--The Interpretation of the Mutilation of Atys Which the",
+      "file": "0219-chapter-25-the-interpretation-of-the-mutilation-of-atys-which-the.json",
+      "words": 253
+    },
+    {
+      "index": 220,
+      "heading": "Chapter 26.--Concerning the Abomination of the Sacred Rites of the",
+      "file": "0220-chapter-26-concerning-the-abomination-of-the-sacred-rites-of-the.json",
+      "words": 665
+    },
+    {
+      "index": 221,
+      "heading": "Chapter 27.--Concerning the Figments of the Physical Theologists, Who",
+      "file": "0221-chapter-27-concerning-the-figments-of-the-physical-theologists-who.json",
+      "words": 668
+    },
+    {
+      "index": 222,
+      "heading": "Chapter 28.--That the Doctrine of Varro Concerning Theology is in No",
+      "file": "0222-chapter-28-that-the-doctrine-of-varro-concerning-theology-is-in-no.json",
+      "words": 661
+    },
+    {
+      "index": 223,
+      "heading": "Chapter 29.--That All Things Which the Physical Theologists Have",
+      "file": "0223-chapter-29-that-all-things-which-the-physical-theologists-have.json",
+      "words": 145
+    },
+    {
+      "index": 224,
+      "heading": "Chapter 30.--How Piety Distinguishes the Creator from the Creatures, So",
+      "file": "0224-chapter-30-how-piety-distinguishes-the-creator-from-the-creatures-so.json",
+      "words": 562
+    },
+    {
+      "index": 225,
+      "heading": "Chapter 31.--What Benefits God Gives to the Followers of the Truth to",
+      "file": "0225-chapter-31-what-benefits-god-gives-to-the-followers-of-the-truth-to.json",
+      "words": 219
+    },
+    {
+      "index": 226,
+      "heading": "Chapter 32.--That at No Time in the Past Was the Mystery of Christ's",
+      "file": "0226-chapter-32-that-at-no-time-in-the-past-was-the-mystery-of-christ-s.json",
+      "words": 224
+    },
+    {
+      "index": 227,
+      "heading": "Chapter 33.--That Only Through the Christian Religion Could the Deceit",
+      "file": "0227-chapter-33-that-only-through-the-christian-religion-could-the-deceit.json",
+      "words": 370
+    },
+    {
+      "index": 228,
+      "heading": "Chapter 34.--Concerning the Books of Numa Pompilius, Which the Senate",
+      "file": "0228-chapter-34-concerning-the-books-of-numa-pompilius-which-the-senate.json",
+      "words": 544
+    },
+    {
+      "index": 229,
+      "heading": "Chapter 35.--Concerning the Hydromancy Through Which Numa Was Befooled",
+      "file": "0229-chapter-35-concerning-the-hydromancy-through-which-numa-was-befooled.json",
+      "words": 825
+    },
+    {
+      "index": 230,
+      "heading": "Book VIII.",
+      "file": "0230-book-viii.json",
+      "words": 137
+    },
+    {
+      "index": 231,
+      "heading": "Chapter 1.--That the Question of Natural Theology is to Be Discussed",
+      "file": "0231-chapter-1-that-the-question-of-natural-theology-is-to-be-discussed.json",
+      "words": 533
+    },
+    {
+      "index": 232,
+      "heading": "Chapter 2.--Concerning the Two Schools of Philosophers, that Is, the",
+      "file": "0232-chapter-2-concerning-the-two-schools-of-philosophers-that-is-the.json",
+      "words": 695
+    },
+    {
+      "index": 233,
+      "heading": "Chapter 3.--Of the Socratic Philosophy.",
+      "file": "0233-chapter-3-of-the-socratic-philosophy.json",
+      "words": 575
+    },
+    {
+      "index": 234,
+      "heading": "Chapter 4.--Concerning Plato, the Chief Among the Disciples of",
+      "file": "0234-chapter-4-concerning-plato-the-chief-among-the-disciples-of.json",
+      "words": 770
+    },
+    {
+      "index": 235,
+      "heading": "Chapter 5.--That It is Especially with the Platonists that We Must",
+      "file": "0235-chapter-5-that-it-is-especially-with-the-platonists-that-we-must.json",
+      "words": 1099
+    },
+    {
+      "index": 236,
+      "heading": "Chapter 6.--Concerning the Meaning of the Platonists in that Part of",
+      "file": "0236-chapter-6-concerning-the-meaning-of-the-platonists-in-that-part-of.json",
+      "words": 697
+    },
+    {
+      "index": 237,
+      "heading": "Chapter 7.--How Much the Platonists are to Be Held as Excelling Other",
+      "file": "0237-chapter-7-how-much-the-platonists-are-to-be-held-as-excelling-other.json",
+      "words": 247
+    },
+    {
+      "index": 238,
+      "heading": "Chapter 8.--That the Platonists Hold the First Rank in Moral Philosophy",
+      "file": "0238-chapter-8-that-the-platonists-hold-the-first-rank-in-moral-philosophy.json",
+      "words": 707
+    },
+    {
+      "index": 239,
+      "heading": "Chapter 9.--Concerning that Philosophy Which Has Come Nearest to the",
+      "file": "0239-chapter-9-concerning-that-philosophy-which-has-come-nearest-to-the.json",
+      "words": 183
+    },
+    {
+      "index": 240,
+      "heading": "Chapter 10.--That the Excellency of the Christian Religion is Above All",
+      "file": "0240-chapter-10-that-the-excellency-of-the-christian-religion-is-above-all.json",
+      "words": 800
+    },
+    {
+      "index": 241,
+      "heading": "Chapter 11.--How Plato Has Been Able to Approach So Nearly to Christian",
+      "file": "0241-chapter-11-how-plato-has-been-able-to-approach-so-nearly-to-christian.json",
+      "words": 704
+    },
+    {
+      "index": 242,
+      "heading": "Chapter 12.--That Even the Platonists, Though They Say These Things",
+      "file": "0242-chapter-12-that-even-the-platonists-though-they-say-these-things.json",
+      "words": 407
+    },
+    {
+      "index": 243,
+      "heading": "Chapter 13.--Concerning the Opinion of Plato, According to Which He",
+      "file": "0243-chapter-13-concerning-the-opinion-of-plato-according-to-which-he.json",
+      "words": 633
+    },
+    {
+      "index": 244,
+      "heading": "Chapter 14.--Of the Opinion of Those Who Have Said that Rational Souls",
+      "file": "0244-chapter-14-of-the-opinion-of-those-who-have-said-that-rational-souls.json",
+      "words": 774
+    },
+    {
+      "index": 245,
+      "heading": "Chapter 15.--That the Demons are Not Better Than Men Because of Their",
+      "file": "0245-chapter-15-that-the-demons-are-not-better-than-men-because-of-their.json",
+      "words": 695
+    },
+    {
+      "index": 246,
+      "heading": "Chapter 16.--What Apuleius the Platonist Thought Concerning the Manners",
+      "file": "0246-chapter-16-what-apuleius-the-platonist-thought-concerning-the-manners.json",
+      "words": 582
+    },
+    {
+      "index": 247,
+      "heading": "Chapter 17.--Whether It is Proper that Men Should Worship Those Spirits",
+      "file": "0247-chapter-17-whether-it-is-proper-that-men-should-worship-those-spirits.json",
+      "words": 551
+    },
+    {
+      "index": 248,
+      "heading": "Chapter 18.--What Kind of Religion that is Which Teaches that Men Ought",
+      "file": "0248-chapter-18-what-kind-of-religion-that-is-which-teaches-that-men-ought.json",
+      "words": 332
+    },
+    {
+      "index": 249,
+      "heading": "Chapter 19.--Of the Impiety of the Magic Art, Which is Dependent on the",
+      "file": "0249-chapter-19-of-the-impiety-of-the-magic-art-which-is-dependent-on-the.json",
+      "words": 764
+    },
+    {
+      "index": 250,
+      "heading": "Chapter 20.--Whether We are to Believe that the Good Gods are More",
+      "file": "0250-chapter-20-whether-we-are-to-believe-that-the-good-gods-are-more.json",
+      "words": 281
+    },
+    {
+      "index": 251,
+      "heading": "Chapter 21.--Whether the Gods Use the Demons as Messengers and",
+      "file": "0251-chapter-21-whether-the-gods-use-the-demons-as-messengers-and.json",
+      "words": 1007
+    },
+    {
+      "index": 252,
+      "heading": "Chapter 22.--That We Must, Notwithstanding the Opinion of Apuleius,",
+      "file": "0252-chapter-22-that-we-must-notwithstanding-the-opinion-of-apuleius.json",
+      "words": 386
+    },
+    {
+      "index": 253,
+      "heading": "Chapter 23.--What Hermes Trismegistus Thought Concerning Idolatry, and",
+      "file": "0253-chapter-23-what-hermes-trismegistus-thought-concerning-idolatry-and.json",
+      "words": 1416
+    },
+    {
+      "index": 254,
+      "heading": "Chapter 24.--How Hermes Openly Confessed the Error of His Forefathers,",
+      "file": "0254-chapter-24-how-hermes-openly-confessed-the-error-of-his-forefathers.json",
+      "words": 1847
+    },
+    {
+      "index": 255,
+      "heading": "Chapter 25.--Concerning Those Things Which May Be Common to the Holy",
+      "file": "0255-chapter-25-concerning-those-things-which-may-be-common-to-the-holy.json",
+      "words": 186
+    },
+    {
+      "index": 256,
+      "heading": "Chapter 26.--That All the Religion of the Pagans Has Reference to Dead",
+      "file": "0256-chapter-26-that-all-the-religion-of-the-pagans-has-reference-to-dead.json",
+      "words": 1070
+    },
+    {
+      "index": 257,
+      "heading": "Chapter 27.--Concerning the Nature of the Honor Which the Christians",
+      "file": "0257-chapter-27-concerning-the-nature-of-the-honor-which-the-christians.json",
+      "words": 857
+    },
+    {
+      "index": 258,
+      "heading": "Book IX.",
+      "file": "0258-book-ix.json",
+      "words": 71
+    },
+    {
+      "index": 259,
+      "heading": "Chapter 1.--The Point at Which the Discussion Has Arrived, and What",
+      "file": "0259-chapter-1-the-point-at-which-the-discussion-has-arrived-and-what.json",
+      "words": 363
+    },
+    {
+      "index": 260,
+      "heading": "Chapter 2.--Whether Among the Demons, Inferior to the Gods, There are",
+      "file": "0260-chapter-2-whether-among-the-demons-inferior-to-the-gods-there-are.json",
+      "words": 230
+    },
+    {
+      "index": 261,
+      "heading": "Chapter 3.--What Apuleius Attributes to the Demons, to Whom, Though He",
+      "file": "0261-chapter-3-what-apuleius-attributes-to-the-demons-to-whom-though-he.json",
+      "words": 383
+    },
+    {
+      "index": 262,
+      "heading": "Chapter 4.--The Opinion of the Peripatetics and Stoics About Mental",
+      "file": "0262-chapter-4-the-opinion-of-the-peripatetics-and-stoics-about-mental.json",
+      "words": 1302
+    },
+    {
+      "index": 263,
+      "heading": "Chapter 5.--That the Passions Which Assail the Souls of Christians Do",
+      "file": "0263-chapter-5-that-the-passions-which-assail-the-souls-of-christians-do.json",
+      "words": 565
+    },
+    {
+      "index": 264,
+      "heading": "Chapter 6.--Of the Passions Which, According to Apuleius, Agitate the",
+      "file": "0264-chapter-6-of-the-passions-which-according-to-apuleius-agitate-the.json",
+      "words": 220
+    },
+    {
+      "index": 265,
+      "heading": "Chapter 7.--That the Platonists Maintain that the Poets Wrong the Gods",
+      "file": "0265-chapter-7-that-the-platonists-maintain-that-the-poets-wrong-the-gods.json",
+      "words": 459
+    },
+    {
+      "index": 266,
+      "heading": "Chapter 8.--How Apuleius Defines the Gods Who Dwell in Heaven, the",
+      "file": "0266-chapter-8-how-apuleius-defines-the-gods-who-dwell-in-heaven-the.json",
+      "words": 609
+    },
+    {
+      "index": 267,
+      "heading": "Chapter 9.--Whether the Intercession of the Demons Can Secure for Men",
+      "file": "0267-chapter-9-whether-the-intercession-of-the-demons-can-secure-for-men.json",
+      "words": 433
+    },
+    {
+      "index": 268,
+      "heading": "Chapter 10.--That, According to Plotinus, Men, Whose Body is Mortal,",
+      "file": "0268-chapter-10-that-according-to-plotinus-men-whose-body-is-mortal.json",
+      "words": 255
+    },
+    {
+      "index": 269,
+      "heading": "Chapter 11.--Of the Opinion of the Platonists, that the Souls of Men",
+      "file": "0269-chapter-11-of-the-opinion-of-the-platonists-that-the-souls-of-men.json",
+      "words": 169
+    },
+    {
+      "index": 270,
+      "heading": "Chapter 12.--Of the Three Opposite Qualities by Which the Platonists",
+      "file": "0270-chapter-12-of-the-three-opposite-qualities-by-which-the-platonists.json",
+      "words": 338
+    },
+    {
+      "index": 271,
+      "heading": "Chapter 13.--How the Demons Can Mediate Between Gods and Men If They",
+      "file": "0271-chapter-13-how-the-demons-can-mediate-between-gods-and-men-if-they.json",
+      "words": 974
+    },
+    {
+      "index": 272,
+      "heading": "Chapter 14.--Whether Men, Though Mortal, Can Enjoy True Blessedness.",
+      "file": "0272-chapter-14-whether-men-though-mortal-can-enjoy-true-blessedness.json",
+      "words": 146
+    },
+    {
+      "index": 273,
+      "heading": "Chapter 15.--Of the Man Christ Jesus, the Mediator Between God and Men.",
+      "file": "0273-chapter-15-of-the-man-christ-jesus-the-mediator-between-god-and-men.json",
+      "words": 769
+    },
+    {
+      "index": 274,
+      "heading": "Chapter 16.--Whether It is Reasonable in the Platonists to Determine",
+      "file": "0274-chapter-16-whether-it-is-reasonable-in-the-platonists-to-determine.json",
+      "words": 997
+    },
+    {
+      "index": 275,
+      "heading": "Chapter 17.--That to Obtain the Blessed Life, Which Consists in",
+      "file": "0275-chapter-17-that-to-obtain-the-blessed-life-which-consists-in.json",
+      "words": 408
+    },
+    {
+      "index": 276,
+      "heading": "Chapter 18.--That the Deceitful Demons, While Promising to Conduct Men",
+      "file": "0276-chapter-18-that-the-deceitful-demons-while-promising-to-conduct-men.json",
+      "words": 255
+    },
+    {
+      "index": 277,
+      "heading": "Chapter 19.--That Even Among Their Own Worshippers the Name \"Demon\" Has",
+      "file": "0277-chapter-19-that-even-among-their-own-worshippers-the-name-demon-has.json",
+      "words": 234
+    },
+    {
+      "index": 278,
+      "heading": "Chapter 20.--Of the Kind of Knowledge Which Puffs Up the Demons.",
+      "file": "0278-chapter-20-of-the-kind-of-knowledge-which-puffs-up-the-demons.json",
+      "words": 196
+    },
+    {
+      "index": 279,
+      "heading": "Chapter 21.--To What Extent the Lord Was Pleased to Make Himself Known",
+      "file": "0279-chapter-21-to-what-extent-the-lord-was-pleased-to-make-himself-known.json",
+      "words": 353
+    },
+    {
+      "index": 280,
+      "heading": "Chapter 22.--The Difference Between the Knowledge of the Holy Angels",
+      "file": "0280-chapter-22-the-difference-between-the-knowledge-of-the-holy-angels.json",
+      "words": 352
+    },
+    {
+      "index": 281,
+      "heading": "Chapter 23.--That the Name of Gods is Falsely Given to the Gods of the",
+      "file": "0281-chapter-23-that-the-name-of-gods-is-falsely-given-to-the-gods-of-the.json",
+      "words": 1059
+    },
+    {
+      "index": 282,
+      "heading": "Book X.",
+      "file": "0282-book-x.json",
+      "words": 52
+    },
+    {
+      "index": 283,
+      "heading": "Chapter 1.--That the Platonists Themselves Have Determined that God",
+      "file": "0283-chapter-1-that-the-platonists-themselves-have-determined-that-god.json",
+      "words": 1203
+    },
+    {
+      "index": 284,
+      "heading": "Chapter 2.--The Opinion of Plotinus the Platonist Regarding",
+      "file": "0284-chapter-2-the-opinion-of-plotinus-the-platonist-regarding.json",
+      "words": 353
+    },
+    {
+      "index": 285,
+      "heading": "Chapter 3.--That the Platonists, Though Knowing Something of the",
+      "file": "0285-chapter-3-that-the-platonists-though-knowing-something-of-the.json",
+      "words": 741
+    },
+    {
+      "index": 286,
+      "heading": "Chapter 4.--That Sacrifice is Due to the True God Only.",
+      "file": "0286-chapter-4-that-sacrifice-is-due-to-the-true-god-only.json",
+      "words": 125
+    },
+    {
+      "index": 287,
+      "heading": "Chapter 5.--Of the Sacrifices Which God Does Not Require, But Wished to",
+      "file": "0287-chapter-5-of-the-sacrifices-which-god-does-not-require-but-wished-to.json",
+      "words": 843
+    },
+    {
+      "index": 288,
+      "heading": "Chapter 6.--Of the True and Perfect Sacrifice.",
+      "file": "0288-chapter-6-of-the-true-and-perfect-sacrifice.json",
+      "words": 746
+    },
+    {
+      "index": 289,
+      "heading": "Chapter 7.--Of the Love of the Holy Angels, Which Prompts Them to",
+      "file": "0289-chapter-7-of-the-love-of-the-holy-angels-which-prompts-them-to.json",
+      "words": 228
+    },
+    {
+      "index": 290,
+      "heading": "Chapter 8.--Of the Miracles Which God Has Condescended to Adhibit",
+      "file": "0290-chapter-8-of-the-miracles-which-god-has-condescended-to-adhibit.json",
+      "words": 702
+    },
+    {
+      "index": 291,
+      "heading": "Chapter 9.--Of the Illicit Arts Connected with Demonolatry, and of",
+      "file": "0291-chapter-9-of-the-illicit-arts-connected-with-demonolatry-and-of.json",
+      "words": 738
+    },
+    {
+      "index": 292,
+      "heading": "Chapter 10.--Concerning Theurgy, Which Promises a Delusive Purification",
+      "file": "0292-chapter-10-concerning-theurgy-which-promises-a-delusive-purification.json",
+      "words": 560
+    },
+    {
+      "index": 293,
+      "heading": "Chapter 11.--Of Porphyry's Epistle to Anebo, in Which He Asks for",
+      "file": "0293-chapter-11-of-porphyry-s-epistle-to-anebo-in-which-he-asks-for.json",
+      "words": 1275
+    },
+    {
+      "index": 294,
+      "heading": "Chapter 12.--Of the Miracles Wrought by the True God Through the",
+      "file": "0294-chapter-12-of-the-miracles-wrought-by-the-true-god-through-the.json",
+      "words": 439
+    },
+    {
+      "index": 295,
+      "heading": "Chapter 13.--Of the Invisible God, Who Has Often Made Himself Visible,",
+      "file": "0295-chapter-13-of-the-invisible-god-who-has-often-made-himself-visible.json",
+      "words": 290
+    },
+    {
+      "index": 296,
+      "heading": "Chapter 14.--That the One God is to Be Worshipped Not Only for the Sake",
+      "file": "0296-chapter-14-that-the-one-god-is-to-be-worshipped-not-only-for-the-sake.json",
+      "words": 377
+    },
+    {
+      "index": 297,
+      "heading": "Chapter 15.--Of the Ministry of the Holy Angels, by Which They Fulfill",
+      "file": "0297-chapter-15-of-the-ministry-of-the-holy-angels-by-which-they-fulfill.json",
+      "words": 310
+    },
+    {
+      "index": 298,
+      "heading": "Chapter 16.--Whether Those Angels Who Demand that We Pay Them Divine",
+      "file": "0298-chapter-16-whether-those-angels-who-demand-that-we-pay-them-divine.json",
+      "words": 1114
+    },
+    {
+      "index": 299,
+      "heading": "Chapter 17.--Concerning the Ark of the Covenant, and the Miraculous",
+      "file": "0299-chapter-17-concerning-the-ark-of-the-covenant-and-the-miraculous.json",
+      "words": 681
+    },
+    {
+      "index": 300,
+      "heading": "Chapter 18.--Against Those Who Deny that the Books of the Church are to",
+      "file": "0300-chapter-18-against-those-who-deny-that-the-books-of-the-church-are-to.json",
+      "words": 443
+    },
+    {
+      "index": 301,
+      "heading": "Chapter 19.--On the Reasonableness of Offering, as the True Religion",
+      "file": "0301-chapter-19-on-the-reasonableness-of-offering-as-the-true-religion.json",
+      "words": 429
+    },
+    {
+      "index": 302,
+      "heading": "Chapter 20.--Of the Supreme and True Sacrifice Which Was Effected by",
+      "file": "0302-chapter-20-of-the-supreme-and-true-sacrifice-which-was-effected-by.json",
+      "words": 189
+    },
+    {
+      "index": 303,
+      "heading": "Chapter 21 .--Of the Power Delegated to Demons for the Trial and",
+      "file": "0303-chapter-21-of-the-power-delegated-to-demons-for-the-trial-and.json",
+      "words": 511
+    },
+    {
+      "index": 304,
+      "heading": "Chapter 22.--Whence the Saints Derive Power Against Demons and True",
+      "file": "0304-chapter-22-whence-the-saints-derive-power-against-demons-and-true.json",
+      "words": 282
+    },
+    {
+      "index": 305,
+      "heading": "Chapter 23.--Of the Principles Which, According to the Platonists,",
+      "file": "0305-chapter-23-of-the-principles-which-according-to-the-platonists.json",
+      "words": 448
+    },
+    {
+      "index": 306,
+      "heading": "Chapter 24.--Of the One Only True Principle Which Alone Purifies and",
+      "file": "0306-chapter-24-of-the-one-only-true-principle-which-alone-purifies-and.json",
+      "words": 649
+    },
+    {
+      "index": 307,
+      "heading": "Chapter 25.--That All the Saints, Both Under the Law and Before It,",
+      "file": "0307-chapter-25-that-all-the-saints-both-under-the-law-and-before-it.json",
+      "words": 1100
+    },
+    {
+      "index": 308,
+      "heading": "Chapter 26.--Of Porphyry's Weakness in Wavering Between the Confession",
+      "file": "0308-chapter-26-of-porphyry-s-weakness-in-wavering-between-the-confession.json",
+      "words": 509
+    },
+    {
+      "index": 309,
+      "heading": "Chapter 27.--Of the Impiety of Porphyry, Which is Worse Than Even the",
+      "file": "0309-chapter-27-of-the-impiety-of-porphyry-which-is-worse-than-even-the.json",
+      "words": 855
+    },
+    {
+      "index": 310,
+      "heading": "Chapter 28.--How It is that Porphyry Has Been So Blind as Not to",
+      "file": "0310-chapter-28-how-it-is-that-porphyry-has-been-so-blind-as-not-to.json",
+      "words": 581
+    },
+    {
+      "index": 311,
+      "heading": "Chapter 29.--Of the Incarnation of Our Lord Jesus Christ, Which the",
+      "file": "0311-chapter-29-of-the-incarnation-of-our-lord-jesus-christ-which-the.json",
+      "words": 1403
+    },
+    {
+      "index": 312,
+      "heading": "Chapter 30.--Porphyry's Emendations and Modifications of Platonism.",
+      "file": "0312-chapter-30-porphyry-s-emendations-and-modifications-of-platonism.json",
+      "words": 882
+    },
+    {
+      "index": 313,
+      "heading": "Chapter 31.--Against the Arguments on Which the Platonists Ground Their",
+      "file": "0313-chapter-31-against-the-arguments-on-which-the-platonists-ground-their.json",
+      "words": 461
+    },
+    {
+      "index": 314,
+      "heading": "Chapter 32.--Of the Universal Way of the Soul's Deliverance, Which",
+      "file": "0314-chapter-32-of-the-universal-way-of-the-soul-s-deliverance-which.json",
+      "words": 2334
+    },
+    {
+      "index": 315,
+      "heading": "Book XI.",
+      "file": "0315-book-xi.json",
+      "words": 79
+    },
+    {
+      "index": 316,
+      "heading": "Chapter 1.--Of This Part of the Work, Wherein We Begin to Explain the",
+      "file": "0316-chapter-1-of-this-part-of-the-work-wherein-we-begin-to-explain-the.json",
+      "words": 455
+    },
+    {
+      "index": 317,
+      "heading": "Chapter 2.--Of the Knowledge of God, to Which No Man Can Attain Save",
+      "file": "0317-chapter-2-of-the-knowledge-of-god-to-which-no-man-can-attain-save.json",
+      "words": 509
+    },
+    {
+      "index": 318,
+      "heading": "Chapter 3.--Of the Authority of the Canonical Scriptures Composed by",
+      "file": "0318-chapter-3-of-the-authority-of-the-canonical-scriptures-composed-by.json",
+      "words": 216
+    },
+    {
+      "index": 319,
+      "heading": "Chapter 4.--That the World is Neither Without Beginning, Nor Yet",
+      "file": "0319-chapter-4-that-the-world-is-neither-without-beginning-nor-yet.json",
+      "words": 893
+    },
+    {
+      "index": 320,
+      "heading": "Chapter 5.--That We Ought Not to Seek to Comprehend the Infinite Ages",
+      "file": "0320-chapter-5-that-we-ought-not-to-seek-to-comprehend-the-infinite-ages.json",
+      "words": 602
+    },
+    {
+      "index": 321,
+      "heading": "Chapter 6.--That the World and Time Had Both One Beginning, and the One",
+      "file": "0321-chapter-6-that-the-world-and-time-had-both-one-beginning-and-the-one.json",
+      "words": 341
+    },
+    {
+      "index": 322,
+      "heading": "Chapter 7.--Of the Nature of the First Days, Which are Said to Have Had",
+      "file": "0322-chapter-7-of-the-nature-of-the-first-days-which-are-said-to-have-had.json",
+      "words": 540
+    },
+    {
+      "index": 323,
+      "heading": "Chapter 8.--What We are to Understand of God's Resting on the Seventh",
+      "file": "0323-chapter-8-what-we-are-to-understand-of-god-s-resting-on-the-seventh.json",
+      "words": 310
+    },
+    {
+      "index": 324,
+      "heading": "Chapter 9.--What the Scriptures Teach Us to Believe Concerning the",
+      "file": "0324-chapter-9-what-the-scriptures-teach-us-to-believe-concerning-the.json",
+      "words": 957
+    },
+    {
+      "index": 325,
+      "heading": "Chapter 10.--Of the Simple and Unchangeable Trinity, Father, Son, and",
+      "file": "0325-chapter-10-of-the-simple-and-unchangeable-trinity-father-son-and.json",
+      "words": 1055
+    },
+    {
+      "index": 326,
+      "heading": "Chapter 11.--Whether the Angels that Fell Partook of the Blessedness",
+      "file": "0326-chapter-11-whether-the-angels-that-fell-partook-of-the-blessedness.json",
+      "words": 471
+    },
+    {
+      "index": 327,
+      "heading": "Chapter 12.--A Comparison of the Blessedness of the Righteous, Who Have",
+      "file": "0327-chapter-12-a-comparison-of-the-blessedness-of-the-righteous-who-have.json",
+      "words": 295
+    },
+    {
+      "index": 328,
+      "heading": "Chapter 13.--Whether All the Angels Were So Created in One Common State",
+      "file": "0328-chapter-13-whether-all-the-angels-were-so-created-in-one-common-state.json",
+      "words": 769
+    },
+    {
+      "index": 329,
+      "heading": "Chapter 14.--An Explanation of What is Said of the Devil, that He Did",
+      "file": "0329-chapter-14-an-explanation-of-what-is-said-of-the-devil-that-he-did.json",
+      "words": 210
+    },
+    {
+      "index": 330,
+      "heading": "Chapter 15.--How We are to Understand the Words, \"The Devil Sinneth",
+      "file": "0330-chapter-15-how-we-are-to-understand-the-words-the-devil-sinneth.json",
+      "words": 402
+    },
+    {
+      "index": 331,
+      "heading": "Chapter 16.--Of the Ranks and Differences of the Creatures, Estimated",
+      "file": "0331-chapter-16-of-the-ranks-and-differences-of-the-creatures-estimated.json",
+      "words": 369
+    },
+    {
+      "index": 332,
+      "heading": "Chapter 17.--That the Flaw of Wickedness is Not Nature, But Contrary to",
+      "file": "0332-chapter-17-that-the-flaw-of-wickedness-is-not-nature-but-contrary-to.json",
+      "words": 305
+    },
+    {
+      "index": 333,
+      "heading": "Chapter 18.--Of the Beauty of the Universe, Which Becomes, by God's",
+      "file": "0333-chapter-18-of-the-beauty-of-the-universe-which-becomes-by-god-s.json",
+      "words": 317
+    },
+    {
+      "index": 334,
+      "heading": "Chapter 19.--What, Seemingly, We are to Understand by the Words, \"God",
+      "file": "0334-chapter-19-what-seemingly-we-are-to-understand-by-the-words-god.json",
+      "words": 402
+    },
+    {
+      "index": 335,
+      "heading": "Chapter 20.--Of the Words Which Follow the Separation of Light and",
+      "file": "0335-chapter-20-of-the-words-which-follow-the-separation-of-light-and.json",
+      "words": 298
+    },
+    {
+      "index": 336,
+      "heading": "Chapter 21.--Of God's Eternal and Unchangeable Knowledge and Will,",
+      "file": "0336-chapter-21-of-god-s-eternal-and-unchangeable-knowledge-and-will.json",
+      "words": 895
+    },
+    {
+      "index": 337,
+      "heading": "Chapter 22.--Of Those Who Do Not Approve of Certain Things Which are a",
+      "file": "0337-chapter-22-of-those-who-do-not-approve-of-certain-things-which-are-a.json",
+      "words": 696
+    },
+    {
+      "index": 338,
+      "heading": "Chapter 23.--Of the Error in Which the Doctrine of Origen is Involved.",
+      "file": "0338-chapter-23-of-the-error-in-which-the-doctrine-of-origen-is-involved.json",
+      "words": 856
+    },
+    {
+      "index": 339,
+      "heading": "Chapter 24.--Of the Divine Trinity, and the Indications of Its Presence",
+      "file": "0339-chapter-24-of-the-divine-trinity-and-the-indications-of-its-presence.json",
+      "words": 610
+    },
+    {
+      "index": 340,
+      "heading": "Chapter 25.--Of the Division of Philosophy into Three Parts.",
+      "file": "0340-chapter-25-of-the-division-of-philosophy-into-three-parts.json",
+      "words": 567
+    },
+    {
+      "index": 341,
+      "heading": "Chapter 26.--Of the Image of the Supreme Trinity, Which We Find in Some",
+      "file": "0341-chapter-26-of-the-image-of-the-supreme-trinity-which-we-find-in-some.json",
+      "words": 534
+    },
+    {
+      "index": 342,
+      "heading": "Chapter 27.--Of Existence, and Knowledge of It, and the Love of Both.",
+      "file": "0342-chapter-27-of-existence-and-knowledge-of-it-and-the-love-of-both.json",
+      "words": 747
+    },
+    {
+      "index": 343,
+      "heading": "Chapter 28.--Whether We Ought to Love the Love Itself with Which We",
+      "file": "0343-chapter-28-whether-we-ought-to-love-the-love-itself-with-which-we.json",
+      "words": 765
+    },
+    {
+      "index": 344,
+      "heading": "Chapter 29.--Of the Knowledge by Which the Holy Angels Know God in His",
+      "file": "0344-chapter-29-of-the-knowledge-by-which-the-holy-angels-know-god-in-his.json",
+      "words": 441
+    },
+    {
+      "index": 345,
+      "heading": "Chapter 30.--Of the Perfection of the Number Six, Which is the First of",
+      "file": "0345-chapter-30-of-the-perfection-of-the-number-six-which-is-the-first-of.json",
+      "words": 451
+    },
+    {
+      "index": 346,
+      "heading": "Chapter 31.--Of the Seventh Day, in Which Completeness and Repose are",
+      "file": "0346-chapter-31-of-the-seventh-day-in-which-completeness-and-repose-are.json",
+      "words": 498
+    },
+    {
+      "index": 347,
+      "heading": "Chapter 32.--Of the Opinion that the Angels Were Created Before the",
+      "file": "0347-chapter-32-of-the-opinion-that-the-angels-were-created-before-the.json",
+      "words": 493
+    },
+    {
+      "index": 348,
+      "heading": "Chapter 33.--Of the Two Different and Dissimilar Communities of Angels,",
+      "file": "0348-chapter-33-of-the-two-different-and-dissimilar-communities-of-angels.json",
+      "words": 770
+    },
+    {
+      "index": 349,
+      "heading": "Chapter 34.--Of the Idea that the Angels Were Meant Where the",
+      "file": "0349-chapter-34-of-the-idea-that-the-angels-were-meant-where-the.json",
+      "words": 541
+    },
+    {
+      "index": 350,
+      "heading": "Book XII.",
+      "file": "0350-book-xii.json",
+      "words": 66
+    },
+    {
+      "index": 351,
+      "heading": "Chapter 1.--That the Nature of the Angels, Both Good and Bad, is One",
+      "file": "0351-chapter-1-that-the-nature-of-the-angels-both-good-and-bad-is-one.json",
+      "words": 921
+    },
+    {
+      "index": 352,
+      "heading": "Chapter 2.--That There is No Entity [526] Contrary to the Divine,",
+      "file": "0352-chapter-2-that-there-is-no-entity-526-contrary-to-the-divine.json",
+      "words": 265
+    },
+    {
+      "index": 353,
+      "heading": "Chapter 3.--That the Enemies of God are So, Not by Nature, But by Will,",
+      "file": "0353-chapter-3-that-the-enemies-of-god-are-so-not-by-nature-but-by-will.json",
+      "words": 527
+    },
+    {
+      "index": 354,
+      "heading": "Chapter 4.--Of the Nature of Irrational and Lifeless Creatures, Which",
+      "file": "0354-chapter-4-of-the-nature-of-irrational-and-lifeless-creatures-which.json",
+      "words": 583
+    },
+    {
+      "index": 355,
+      "heading": "Chapter 5.--That in All Natures, of Every Kind and Rank, God is",
+      "file": "0355-chapter-5-that-in-all-natures-of-every-kind-and-rank-god-is.json",
+      "words": 211
+    },
+    {
+      "index": 356,
+      "heading": "Chapter 6.--What the Cause of the Blessedness of the Good Angels Is,",
+      "file": "0356-chapter-6-what-the-cause-of-the-blessedness-of-the-good-angels-is.json",
+      "words": 1299
+    },
+    {
+      "index": 357,
+      "heading": "Chapter 7.--That We Ought Not to Expect to Find Any Efficient Cause of",
+      "file": "0357-chapter-7-that-we-ought-not-to-expect-to-find-any-efficient-cause-of.json",
+      "words": 278
+    },
+    {
+      "index": 358,
+      "heading": "Chapter 8.--Of the Misdirected Love Whereby the Will Fell Away from the",
+      "file": "0358-chapter-8-of-the-misdirected-love-whereby-the-will-fell-away-from-the.json",
+      "words": 338
+    },
+    {
+      "index": 359,
+      "heading": "Chapter 9.--Whether the Angels, Besides Receiving from God Their",
+      "file": "0359-chapter-9-whether-the-angels-besides-receiving-from-god-their.json",
+      "words": 1011
+    },
+    {
+      "index": 360,
+      "heading": "Chapter 10.--Of the Falseness of the History Which Allots Many Thousand",
+      "file": "0360-chapter-10-of-the-falseness-of-the-history-which-allots-many-thousand.json",
+      "words": 785
+    },
+    {
+      "index": 361,
+      "heading": "Chapter 11.--Of Those Who Suppose that This World Indeed is Not",
+      "file": "0361-chapter-11-of-those-who-suppose-that-this-world-indeed-is-not.json",
+      "words": 230
+    },
+    {
+      "index": 362,
+      "heading": "Chapter 12.--How These Persons are to Be Answered, Who Find Fault with",
+      "file": "0362-chapter-12-how-these-persons-are-to-be-answered-who-find-fault-with.json",
+      "words": 694
+    },
+    {
+      "index": 363,
+      "heading": "Chapter 13.--Of the Revolution of the Ages, Which Some Philosophers",
+      "file": "0363-chapter-13-of-the-revolution-of-the-ages-which-some-philosophers.json",
+      "words": 750
+    },
+    {
+      "index": 364,
+      "heading": "Chapter 14.--Of the Creation of the Human Race in Time, and How This",
+      "file": "0364-chapter-14-of-the-creation-of-the-human-race-in-time-and-how-this.json",
+      "words": 349
+    },
+    {
+      "index": 365,
+      "heading": "Chapter 15.--Whether We are to Believe that God, as He Has Always Been",
+      "file": "0365-chapter-15-whether-we-are-to-believe-that-god-as-he-has-always-been.json",
+      "words": 1492
+    },
+    {
+      "index": 366,
+      "heading": "Chapter 16.--How We are to Understand God's Promise of Life Eternal,",
+      "file": "0366-chapter-16-how-we-are-to-understand-god-s-promise-of-life-eternal.json",
+      "words": 229
+    },
+    {
+      "index": 367,
+      "heading": "Chapter 17.--What Defence is Made by Sound Faith Regarding God's",
+      "file": "0367-chapter-17-what-defence-is-made-by-sound-faith-regarding-god-s.json",
+      "words": 953
+    },
+    {
+      "index": 368,
+      "heading": "Chapter 18.--Against Those Who Assert that Things that are Infinite",
+      "file": "0368-chapter-18-against-those-who-assert-that-things-that-are-infinite.json",
+      "words": 518
+    },
+    {
+      "index": 369,
+      "heading": "Chapter 19.--Of Worlds Without End, or Ages of Ages. [561]",
+      "file": "0369-chapter-19-of-worlds-without-end-or-ages-of-ages-561.json",
+      "words": 393
+    },
+    {
+      "index": 370,
+      "heading": "Chapter 20.--Of the Impiety of Those Who Assert that the Souls Which",
+      "file": "0370-chapter-20-of-the-impiety-of-those-who-assert-that-the-souls-which.json",
+      "words": 1780
+    },
+    {
+      "index": 371,
+      "heading": "Chapter 21.--That There Was Created at First But One Individual, and",
+      "file": "0371-chapter-21-that-there-was-created-at-first-but-one-individual-and.json",
+      "words": 340
+    },
+    {
+      "index": 372,
+      "heading": "Chapter 22.--That God Foreknew that the First Man Would Sin, and that",
+      "file": "0372-chapter-22-that-god-foreknew-that-the-first-man-would-sin-and-that.json",
+      "words": 257
+    },
+    {
+      "index": 373,
+      "heading": "Chapter 23.--Of the Nature of the Human Soul Created in the Image of",
+      "file": "0373-chapter-23-of-the-nature-of-the-human-soul-created-in-the-image-of.json",
+      "words": 316
+    },
+    {
+      "index": 374,
+      "heading": "Chapter 24.--Whether the Angels Can Be Said to Be the Creators of Any,",
+      "file": "0374-chapter-24-whether-the-angels-can-be-said-to-be-the-creators-of-any.json",
+      "words": 208
+    },
+    {
+      "index": 375,
+      "heading": "Chapter 25.--That God Alone is the Creator of Every Kind of Creature,",
+      "file": "0375-chapter-25-that-god-alone-is-the-creator-of-every-kind-of-creature.json",
+      "words": 779
+    },
+    {
+      "index": 376,
+      "heading": "Chapter 26.--Of that Opinion of the Platonists, that the Angels Were",
+      "file": "0376-chapter-26-of-that-opinion-of-the-platonists-that-the-angels-were.json",
+      "words": 461
+    },
+    {
+      "index": 377,
+      "heading": "Chapter 27.--That the Whole Plenitude of the Human Race Was Embraced in",
+      "file": "0377-chapter-27-that-the-whole-plenitude-of-the-human-race-was-embraced-in.json",
+      "words": 434
+    },
+    {
+      "index": 378,
+      "heading": "Book XIII.",
+      "file": "0378-book-xiii.json",
+      "words": 19
+    },
+    {
+      "index": 379,
+      "heading": "Chapter 1.--Of the Fall of the First Man, Through Which Mortality Has",
+      "file": "0379-chapter-1-of-the-fall-of-the-first-man-through-which-mortality-has.json",
+      "words": 127
+    },
+    {
+      "index": 380,
+      "heading": "Chapter 2.--Of that Death Which Can Affect an Immortal Soul, and of",
+      "file": "0380-chapter-2-of-that-death-which-can-affect-an-immortal-soul-and-of.json",
+      "words": 563
+    },
+    {
+      "index": 381,
+      "heading": "Chapter 3.--Whether Death, Which by the Sin of Our First Parents Has",
+      "file": "0381-chapter-3-whether-death-which-by-the-sin-of-our-first-parents-has.json",
+      "words": 670
+    },
+    {
+      "index": 382,
+      "heading": "Chapter 4.--Why Death, the Punishment of Sin, is Not Withheld from",
+      "file": "0382-chapter-4-why-death-the-punishment-of-sin-is-not-withheld-from.json",
+      "words": 526
+    },
+    {
+      "index": 383,
+      "heading": "Chapter 5.--As the Wicked Make an Ill Use of the Law, Which is Good, So",
+      "file": "0383-chapter-5-as-the-wicked-make-an-ill-use-of-the-law-which-is-good-so.json",
+      "words": 376
+    },
+    {
+      "index": 384,
+      "heading": "Chapter 6.--Of the Evil of Death in General, Considered as the",
+      "file": "0384-chapter-6-of-the-evil-of-death-in-general-considered-as-the.json",
+      "words": 219
+    },
+    {
+      "index": 385,
+      "heading": "Chapter 7.--Of the Death Which the Unbaptized [585] Suffer for the",
+      "file": "0385-chapter-7-of-the-death-which-the-unbaptized-585-suffer-for-the.json",
+      "words": 466
+    },
+    {
+      "index": 386,
+      "heading": "Chapter 8.--That the Saints, by Suffering the First Death for the",
+      "file": "0386-chapter-8-that-the-saints-by-suffering-the-first-death-for-the.json",
+      "words": 209
+    },
+    {
+      "index": 387,
+      "heading": "Chapter 9.--Whether We Should Say that The Moment of Death, in Which",
+      "file": "0387-chapter-9-whether-we-should-say-that-the-moment-of-death-in-which.json",
+      "words": 434
+    },
+    {
+      "index": 388,
+      "heading": "Chapter 10.--Of the Life of Mortals, Which is Rather to Be Called Death",
+      "file": "0388-chapter-10-of-the-life-of-mortals-which-is-rather-to-be-called-death.json",
+      "words": 510
+    },
+    {
+      "index": 389,
+      "heading": "Chapter 11.--Whether One Can Both Be Living and Dead at the Same Time.",
+      "file": "0389-chapter-11-whether-one-can-both-be-living-and-dead-at-the-same-time.json",
+      "words": 1064
+    },
+    {
+      "index": 390,
+      "heading": "Chapter 12.--What Death God Intended, When He Threatened Our First",
+      "file": "0390-chapter-12-what-death-god-intended-when-he-threatened-our-first.json",
+      "words": 282
+    },
+    {
+      "index": 391,
+      "heading": "Chapter 13.--What Was the First Punishment of the Transgression of Our",
+      "file": "0391-chapter-13-what-was-the-first-punishment-of-the-transgression-of-our.json",
+      "words": 203
+    },
+    {
+      "index": 392,
+      "heading": "Chapter 14.--In What State Man Was Made by God, and into What Estate He",
+      "file": "0392-chapter-14-in-what-state-man-was-made-by-god-and-into-what-estate-he.json",
+      "words": 187
+    },
+    {
+      "index": 393,
+      "heading": "Chapter 15.--That Adam in His Sin Forsook God Ere God Forsook Him, and",
+      "file": "0393-chapter-15-that-adam-in-his-sin-forsook-god-ere-god-forsook-him-and.json",
+      "words": 443
+    },
+    {
+      "index": 394,
+      "heading": "Chapter 16.--Concerning the Philosophers Who Think that the Separation",
+      "file": "0394-chapter-16-concerning-the-philosophers-who-think-that-the-separation.json",
+      "words": 932
+    },
+    {
+      "index": 395,
+      "heading": "Chapter 17.--Against Those Who Affirm that Earthly Bodies Cannot Be",
+      "file": "0395-chapter-17-against-those-who-affirm-that-earthly-bodies-cannot-be.json",
+      "words": 883
+    },
+    {
+      "index": 396,
+      "heading": "Chapter 18.--Of Earthly Bodies, Which the Philosophers Affirm Cannot Be",
+      "file": "0396-chapter-18-of-earthly-bodies-which-the-philosophers-affirm-cannot-be.json",
+      "words": 704
+    },
+    {
+      "index": 397,
+      "heading": "Chapter 19.--Against the Opinion of Those Who Do Not Believe that the",
+      "file": "0397-chapter-19-against-the-opinion-of-those-who-do-not-believe-that-the.json",
+      "words": 833
+    },
+    {
+      "index": 398,
+      "heading": "Chapter 20.--That the Flesh Now Resting in Peace Shall Be Raised to a",
+      "file": "0398-chapter-20-that-the-flesh-now-resting-in-peace-shall-be-raised-to-a.json",
+      "words": 524
+    },
+    {
+      "index": 399,
+      "heading": "Chapter 21.--Of Paradise, that It Can Be Understood in a Spiritual",
+      "file": "0399-chapter-21-of-paradise-that-it-can-be-understood-in-a-spiritual.json",
+      "words": 538
+    },
+    {
+      "index": 400,
+      "heading": "Chapter 22.--That the Bodies of the Saints Shall After the Resurrection",
+      "file": "0400-chapter-22-that-the-bodies-of-the-saints-shall-after-the-resurrection.json",
+      "words": 311
+    },
+    {
+      "index": 401,
+      "heading": "Chapter 23.--What We are to Understand by the Animal and Spiritual",
+      "file": "0401-chapter-23-what-we-are-to-understand-by-the-animal-and-spiritual.json",
+      "words": 1683
+    },
+    {
+      "index": 402,
+      "heading": "Chapter 24.--How We Must Understand that Breathing of God by Which \"The",
+      "file": "0402-chapter-24-how-we-must-understand-that-breathing-of-god-by-which-the.json",
+      "words": 2636
+    },
+    {
+      "index": 403,
+      "heading": "Book XIV. [638]",
+      "file": "0403-book-xiv-638.json",
+      "words": 63
+    },
+    {
+      "index": 404,
+      "heading": "Chapter 1.--That the Disobedience of the First Man Would Have Plunged",
+      "file": "0404-chapter-1-that-the-disobedience-of-the-first-man-would-have-plunged.json",
+      "words": 289
+    },
+    {
+      "index": 405,
+      "heading": "Chapter 2.--Of Carnal Life, Which is to Be Understood Not Only of",
+      "file": "0405-chapter-2-of-carnal-life-which-is-to-be-understood-not-only-of.json",
+      "words": 897
+    },
+    {
+      "index": 406,
+      "heading": "Chapter 3.--That the Sin is Caused Not by the Flesh, But by the Soul,",
+      "file": "0406-chapter-3-that-the-sin-is-caused-not-by-the-flesh-but-by-the-soul.json",
+      "words": 783
+    },
+    {
+      "index": 407,
+      "heading": "Chapter 4.--What It is to Live According to Man, and What to Live",
+      "file": "0407-chapter-4-what-it-is-to-live-according-to-man-and-what-to-live.json",
+      "words": 853
+    },
+    {
+      "index": 408,
+      "heading": "Chapter 5.--That the Opinion of the Platonists Regarding the Nature of",
+      "file": "0408-chapter-5-that-the-opinion-of-the-platonists-regarding-the-nature-of.json",
+      "words": 562
+    },
+    {
+      "index": 409,
+      "heading": "Chapter 6.--Of the Character of the Human Will Which Makes the",
+      "file": "0409-chapter-6-of-the-character-of-the-human-will-which-makes-the.json",
+      "words": 306
+    },
+    {
+      "index": 410,
+      "heading": "Chapter 7.--That the Words Love and Regard (Amor and Dilectio) are in",
+      "file": "0410-chapter-7-that-the-words-love-and-regard-amor-and-dilectio-are-in.json",
+      "words": 896
+    },
+    {
+      "index": 411,
+      "heading": "Chapter 8.--Of the Three Perturbations, Which the Stoics Admitted in",
+      "file": "0411-chapter-8-of-the-three-perturbations-which-the-stoics-admitted-in.json",
+      "words": 1316
+    },
+    {
+      "index": 412,
+      "heading": "Chapter 9.--Of the Perturbations of the Soul Which Appear as Right",
+      "file": "0412-chapter-9-of-the-perturbations-of-the-soul-which-appear-as-right.json",
+      "words": 2145
+    },
+    {
+      "index": 413,
+      "heading": "Chapter 10.--Whether It is to Be Believed that Our First Parents in",
+      "file": "0413-chapter-10-whether-it-is-to-be-believed-that-our-first-parents-in.json",
+      "words": 473
+    },
+    {
+      "index": 414,
+      "heading": "Chapter 11.--Of the Fall of the First Man, in Whom Nature Was Created",
+      "file": "0414-chapter-11-of-the-fall-of-the-first-man-in-whom-nature-was-created.json",
+      "words": 1277
+    },
+    {
+      "index": 415,
+      "heading": "Chapter 12.--Of the Nature of Man's First Sin.",
+      "file": "0415-chapter-12-of-the-nature-of-man-s-first-sin.json",
+      "words": 262
+    },
+    {
+      "index": 416,
+      "heading": "Chapter 13.--That in Adam's Sin an Evil Will Preceded the Evil Act.",
+      "file": "0416-chapter-13-that-in-adam-s-sin-an-evil-will-preceded-the-evil-act.json",
+      "words": 1106
+    },
+    {
+      "index": 417,
+      "heading": "Chapter 14.--Of the Pride in the Sin, Which Was Worse Than the Sin",
+      "file": "0417-chapter-14-of-the-pride-in-the-sin-which-was-worse-than-the-sin.json",
+      "words": 182
+    },
+    {
+      "index": 418,
+      "heading": "Chapter 15.--Of the Justice of the Punishment with Which Our First",
+      "file": "0418-chapter-15-of-the-justice-of-the-punishment-with-which-our-first.json",
+      "words": 1090
+    },
+    {
+      "index": 419,
+      "heading": "Chapter 16.--Of the Evil of Lust,--A Word Which, Though Applicable to",
+      "file": "0419-chapter-16-of-the-evil-of-lust-a-word-which-though-applicable-to.json",
+      "words": 330
+    },
+    {
+      "index": 420,
+      "heading": "Chapter 17.--Of the Nakedness of Our First Parents, Which They Saw",
+      "file": "0420-chapter-17-of-the-nakedness-of-our-first-parents-which-they-saw.json",
+      "words": 687
+    },
+    {
+      "index": 421,
+      "heading": "Chapter 18.--Of the Shame Which Attends All Sexual Intercourse.",
+      "file": "0421-chapter-18-of-the-shame-which-attends-all-sexual-intercourse.json",
+      "words": 305
+    },
+    {
+      "index": 422,
+      "heading": "Chapter 19.--That It is Now Necessary, as It Was Not Before Man Sinned,",
+      "file": "0422-chapter-19-that-it-is-now-necessary-as-it-was-not-before-man-sinned.json",
+      "words": 443
+    },
+    {
+      "index": 423,
+      "heading": "Chapter 20.--Of the Foolish Beastliness of the Cynics.",
+      "file": "0423-chapter-20-of-the-foolish-beastliness-of-the-cynics.json",
+      "words": 358
+    },
+    {
+      "index": 424,
+      "heading": "Chapter 21.--That Man's Transgression Did Not Annul the Blessing of",
+      "file": "0424-chapter-21-that-man-s-transgression-did-not-annul-the-blessing-of.json",
+      "words": 385
+    },
+    {
+      "index": 425,
+      "heading": "Chapter 22.--Of the Conjugal Union as It Was Originally Instituted and",
+      "file": "0425-chapter-22-of-the-conjugal-union-as-it-was-originally-instituted-and.json",
+      "words": 461
+    },
+    {
+      "index": 426,
+      "heading": "Chapter 23.--Whether Generation Should Have Taken Place Even in",
+      "file": "0426-chapter-23-whether-generation-should-have-taken-place-even-in.json",
+      "words": 1005
+    },
+    {
+      "index": 427,
+      "heading": "Chapter 24.--That If Men Had Remained Innocent and Obedient in",
+      "file": "0427-chapter-24-that-if-men-had-remained-innocent-and-obedient-in.json",
+      "words": 890
+    },
+    {
+      "index": 428,
+      "heading": "Chapter 25.--Of True Blessedness, Which This Present Life Cannot Enjoy.",
+      "file": "0428-chapter-25-of-true-blessedness-which-this-present-life-cannot-enjoy.json",
+      "words": 357
+    },
+    {
+      "index": 429,
+      "heading": "Chapter 26.--That We are to Believe that in Paradise Our First Parents",
+      "file": "0429-chapter-26-that-we-are-to-believe-that-in-paradise-our-first-parents.json",
+      "words": 710
+    },
+    {
+      "index": 430,
+      "heading": "Chapter 27.--Of the Angels and Men Who Sinned, and that Their",
+      "file": "0430-chapter-27-of-the-angels-and-men-who-sinned-and-that-their.json",
+      "words": 473
+    },
+    {
+      "index": 431,
+      "heading": "Chapter 28.--Of the Nature of the Two Cities, the Earthly and the",
+      "file": "0431-chapter-28-of-the-nature-of-the-two-cities-the-earthly-and-the.json",
+      "words": 382
+    },
+    {
+      "index": 432,
+      "heading": "Book XV.",
+      "file": "0432-book-xv.json",
+      "words": 81
+    },
+    {
+      "index": 433,
+      "heading": "Chapter 1.--Of the Two Lines of the Human Race Which from First to Last",
+      "file": "0433-chapter-1-of-the-two-lines-of-the-human-race-which-from-first-to-last.json",
+      "words": 762
+    },
+    {
+      "index": 434,
+      "heading": "Chapter 2.--Of the Children of the Flesh and the Children of the",
+      "file": "0434-chapter-2-of-the-children-of-the-flesh-and-the-children-of-the.json",
+      "words": 647
+    },
+    {
+      "index": 435,
+      "heading": "Chapter 3.--That Sarah's Barrenness was Made Productive by God's Grace.",
+      "file": "0435-chapter-3-that-sarah-s-barrenness-was-made-productive-by-god-s-grace.json",
+      "words": 294
+    },
+    {
+      "index": 436,
+      "heading": "Chapter 4.--Of the Conflict and Peace of the Earthly City.",
+      "file": "0436-chapter-4-of-the-conflict-and-peace-of-the-earthly-city.json",
+      "words": 383
+    },
+    {
+      "index": 437,
+      "heading": "Chapter 5.--Of the Fratricidal Act of the Founder of the Earthly City,",
+      "file": "0437-chapter-5-of-the-fratricidal-act-of-the-founder-of-the-earthly-city.json",
+      "words": 594
+    },
+    {
+      "index": 438,
+      "heading": "Chapter 6.--Of the Weaknesses Which Even the Citizens of the City of",
+      "file": "0438-chapter-6-of-the-weaknesses-which-even-the-citizens-of-the-city-of.json",
+      "words": 574
+    },
+    {
+      "index": 439,
+      "heading": "Chapter 7.--Of the Cause of Cain's Crime and His Obstinacy, Which Not",
+      "file": "0439-chapter-7-of-the-cause-of-cain-s-crime-and-his-obstinacy-which-not.json",
+      "words": 1702
+    },
+    {
+      "index": 440,
+      "heading": "Chapter 8.--What Cain's Reason Was for Building a City So Early in the",
+      "file": "0440-chapter-8-what-cain-s-reason-was-for-building-a-city-so-early-in-the.json",
+      "words": 1077
+    },
+    {
+      "index": 441,
+      "heading": "Chapter 9.--Of the Long Life and Greater Stature of the Antediluvians.",
+      "file": "0441-chapter-9-of-the-long-life-and-greater-stature-of-the-antediluvians.json",
+      "words": 625
+    },
+    {
+      "index": 442,
+      "heading": "Chapter 10.--Of the Different Computation of the Ages of the",
+      "file": "0442-chapter-10-of-the-different-computation-of-the-ages-of-the.json",
+      "words": 467
+    },
+    {
+      "index": 443,
+      "heading": "Chapter 11.--Of Methuselah's Age, Which Seems to Extend Fourteen Years",
+      "file": "0443-chapter-11-of-methuselah-s-age-which-seems-to-extend-fourteen-years.json",
+      "words": 572
+    },
+    {
+      "index": 444,
+      "heading": "Chapter 12.--Of the Opinion of Those Who Do Not Believe that in These",
+      "file": "0444-chapter-12-of-the-opinion-of-those-who-do-not-believe-that-in-these.json",
+      "words": 885
+    },
+    {
+      "index": 445,
+      "heading": "Chapter 13.--Whether, in Computing Years, We Ought to Follow the Hebrew",
+      "file": "0445-chapter-13-whether-in-computing-years-we-ought-to-follow-the-hebrew.json",
+      "words": 1242
+    },
+    {
+      "index": 446,
+      "heading": "Chapter 14.--That the Years in Those Ancient Times Were of the Same",
+      "file": "0446-chapter-14-that-the-years-in-those-ancient-times-were-of-the-same.json",
+      "words": 901
+    },
+    {
+      "index": 447,
+      "heading": "Chapter 15.--Whether It is Credible that the Men of the Primitive Age",
+      "file": "0447-chapter-15-whether-it-is-credible-that-the-men-of-the-primitive-age.json",
+      "words": 1108
+    },
+    {
+      "index": 448,
+      "heading": "Chapter 16.--Of Marriage Between Blood-Relations, in Regard to Which",
+      "file": "0448-chapter-16-of-marriage-between-blood-relations-in-regard-to-which.json",
+      "words": 1224
+    },
+    {
+      "index": 449,
+      "heading": "Chapter 17.--Of the Two Fathers and Leaders Who Sprang from One",
+      "file": "0449-chapter-17-of-the-two-fathers-and-leaders-who-sprang-from-one.json",
+      "words": 622
+    },
+    {
+      "index": 450,
+      "heading": "Chapter 18.--The Significance of Abel, Seth, and Enos to Christ and His",
+      "file": "0450-chapter-18-the-significance-of-abel-seth-and-enos-to-christ-and-his.json",
+      "words": 555
+    },
+    {
+      "index": 451,
+      "heading": "Chapter 19.--The Significance Of Enoch's Translation.",
+      "file": "0451-chapter-19-the-significance-of-enoch-s-translation.json",
+      "words": 289
+    },
+    {
+      "index": 452,
+      "heading": "Chapter 20.--How It is that Cain's Line Terminates in the Eighth",
+      "file": "0452-chapter-20-how-it-is-that-cain-s-line-terminates-in-the-eighth.json",
+      "words": 1784
+    },
+    {
+      "index": 453,
+      "heading": "Chapter 21.--Why It is That, as Soon as Cain's Son Enoch Has Been",
+      "file": "0453-chapter-21-why-it-is-that-as-soon-as-cain-s-son-enoch-has-been.json",
+      "words": 750
+    },
+    {
+      "index": 454,
+      "heading": "Chapter 22.--Of the Fall of the Sons of God Who Were Captivated by the",
+      "file": "0454-chapter-22-of-the-fall-of-the-sons-of-god-who-were-captivated-by-the.json",
+      "words": 613
+    },
+    {
+      "index": 455,
+      "heading": "Chapter 23.--Whether We are to Believe that Angels, Who are of a",
+      "file": "0455-chapter-23-whether-we-are-to-believe-that-angels-who-are-of-a.json",
+      "words": 1944
+    },
+    {
+      "index": 456,
+      "heading": "Chapter 24.--How We are to Understand This Which the Lord Said to Those",
+      "file": "0456-chapter-24-how-we-are-to-understand-this-which-the-lord-said-to-those.json",
+      "words": 329
+    },
+    {
+      "index": 457,
+      "heading": "Chapter 25.--Of the Anger of God, Which Does Not Inflame His Mind, Nor",
+      "file": "0457-chapter-25-of-the-anger-of-god-which-does-not-inflame-his-mind-nor.json",
+      "words": 178
+    },
+    {
+      "index": 458,
+      "heading": "Chapter 26.--That the Ark Which Noah Was Ordered to Make Figures In",
+      "file": "0458-chapter-26-that-the-ark-which-noah-was-ordered-to-make-figures-in.json",
+      "words": 731
+    },
+    {
+      "index": 459,
+      "heading": "Chapter 27.--Of the Ark and the Deluge, and that We Cannot Agree with",
+      "file": "0459-chapter-27-of-the-ark-and-the-deluge-and-that-we-cannot-agree-with.json",
+      "words": 1504
+    },
+    {
+      "index": 460,
+      "heading": "Book XVI.",
+      "file": "0460-book-xvi.json",
+      "words": 56
+    },
+    {
+      "index": 461,
+      "heading": "Chapter 1.--Whether, After the Deluge, from Noah to Abraham, Any",
+      "file": "0461-chapter-1-whether-after-the-deluge-from-noah-to-abraham-any.json",
+      "words": 318
+    },
+    {
+      "index": 462,
+      "heading": "Chapter 2.--What Was Prophetically Prefigured in the Sons of Noah.",
+      "file": "0462-chapter-2-what-was-prophetically-prefigured-in-the-sons-of-noah.json",
+      "words": 1290
+    },
+    {
+      "index": 463,
+      "heading": "Chapter 3.--Of the Generations of the Three Sons of Noah.",
+      "file": "0463-chapter-3-of-the-generations-of-the-three-sons-of-noah.json",
+      "words": 1223
+    },
+    {
+      "index": 464,
+      "heading": "Chapter 4.--Of the Diversity of Languages, and of the Founding of",
+      "file": "0464-chapter-4-of-the-diversity-of-languages-and-of-the-founding-of.json",
+      "words": 774
+    },
+    {
+      "index": 465,
+      "heading": "Chapter 5.--Of God's Coming Down to Confound the Languages of the",
+      "file": "0465-chapter-5-of-god-s-coming-down-to-confound-the-languages-of-the.json",
+      "words": 308
+    },
+    {
+      "index": 466,
+      "heading": "Chapter 6.--What We are to Understand by God's Speaking to the Angels.",
+      "file": "0466-chapter-6-what-we-are-to-understand-by-god-s-speaking-to-the-angels.json",
+      "words": 621
+    },
+    {
+      "index": 467,
+      "heading": "Chapter 7.--Whether Even the Remotest Islands Received Their Fauna from",
+      "file": "0467-chapter-7-whether-even-the-remotest-islands-received-their-fauna-from.json",
+      "words": 276
+    },
+    {
+      "index": 468,
+      "heading": "Chapter 8.--Whether Certain Monstrous Races of Men are Derived from the",
+      "file": "0468-chapter-8-whether-certain-monstrous-races-of-men-are-derived-from-the.json",
+      "words": 937
+    },
+    {
+      "index": 469,
+      "heading": "Chapter 9.--Whether We are to Believe in the Antipodes.",
+      "file": "0469-chapter-9-whether-we-are-to-believe-in-the-antipodes.json",
+      "words": 308
+    },
+    {
+      "index": 470,
+      "heading": "Chapter 10.--Of the Genealogy of Shem, in Whose Line the City of God is",
+      "file": "0470-chapter-10-of-the-genealogy-of-shem-in-whose-line-the-city-of-god-is.json",
+      "words": 895
+    },
+    {
+      "index": 471,
+      "heading": "Chapter 11.--That the Original Language in Use Among Men Was that Which",
+      "file": "0471-chapter-11-that-the-original-language-in-use-among-men-was-that-which.json",
+      "words": 1188
+    },
+    {
+      "index": 472,
+      "heading": "Chapter 12.--Of the Era in Abraham's Life from Which a New Period in",
+      "file": "0472-chapter-12-of-the-era-in-abraham-s-life-from-which-a-new-period-in.json",
+      "words": 357
+    },
+    {
+      "index": 473,
+      "heading": "Chapter 13.--Why, in the Account of Terah's Emigration, on His",
+      "file": "0473-chapter-13-why-in-the-account-of-terah-s-emigration-on-his.json",
+      "words": 530
+    },
+    {
+      "index": 474,
+      "heading": "Chapter 14.--Of the Years of Terah, Who Completed His Lifetime in",
+      "file": "0474-chapter-14-of-the-years-of-terah-who-completed-his-lifetime-in.json",
+      "words": 219
+    },
+    {
+      "index": 475,
+      "heading": "Chapter 15.--Of the Time of the Migration of Abraham, When, According",
+      "file": "0475-chapter-15-of-the-time-of-the-migration-of-abraham-when-according.json",
+      "words": 1088
+    },
+    {
+      "index": 476,
+      "heading": "Chapter 16.--Of the Order and Nature of the Promises of God Which Were",
+      "file": "0476-chapter-16-of-the-order-and-nature-of-the-promises-of-god-which-were.json",
+      "words": 425
+    },
+    {
+      "index": 477,
+      "heading": "Chapter 17.--Of the Three Most Famous Kingdoms of the Nations, of Which",
+      "file": "0477-chapter-17-of-the-three-most-famous-kingdoms-of-the-nations-of-which.json",
+      "words": 376
+    },
+    {
+      "index": 478,
+      "heading": "Chapter 18.--Of the Repeated Address of God to Abraham, in Which He",
+      "file": "0478-chapter-18-of-the-repeated-address-of-god-to-abraham-in-which-he.json",
+      "words": 133
+    },
+    {
+      "index": 479,
+      "heading": "Chapter 19.--Of the Divine Preservation of Sarah's Chastity in Egypt,",
+      "file": "0479-chapter-19-of-the-divine-preservation-of-sarah-s-chastity-in-egypt.json",
+      "words": 221
+    },
+    {
+      "index": 480,
+      "heading": "Chapter 20.--Of the Parting of Lot and Abraham, Which They Agreed to",
+      "file": "0480-chapter-20-of-the-parting-of-lot-and-abraham-which-they-agreed-to.json",
+      "words": 191
+    },
+    {
+      "index": 481,
+      "heading": "Chapter 21.--Of the Third Promise of God, by Which He Assured the Land",
+      "file": "0481-chapter-21-of-the-third-promise-of-god-by-which-he-assured-the-land.json",
+      "words": 644
+    },
+    {
+      "index": 482,
+      "heading": "Chapter 22.--Of Abraham's Overcoming the Enemies of Sodom, When He",
+      "file": "0482-chapter-22-of-abraham-s-overcoming-the-enemies-of-sodom-when-he.json",
+      "words": 241
+    },
+    {
+      "index": 483,
+      "heading": "Chapter 23.--Of the Word of the Lord to Abraham, by Which It Was",
+      "file": "0483-chapter-23-of-the-word-of-the-lord-to-abraham-by-which-it-was.json",
+      "words": 329
+    },
+    {
+      "index": 484,
+      "heading": "Chapter 24.--Of the Meaning of the Sacrifice Abraham Was Commanded to",
+      "file": "0484-chapter-24-of-the-meaning-of-the-sacrifice-abraham-was-commanded-to.json",
+      "words": 1525
+    },
+    {
+      "index": 485,
+      "heading": "Chapter 25.--Of Sarah's Handmaid, Hagar, Whom She Herself Wished to Be",
+      "file": "0485-chapter-25-of-sarah-s-handmaid-hagar-whom-she-herself-wished-to-be.json",
+      "words": 320
+    },
+    {
+      "index": 486,
+      "heading": "Chapter 26.--Of God's Attestation to Abraham, by Which He Assures Him,",
+      "file": "0486-chapter-26-of-god-s-attestation-to-abraham-by-which-he-assures-him.json",
+      "words": 586
+    },
+    {
+      "index": 487,
+      "heading": "Chapter 27.--Of the Male, Who Was to Lose His Soul If He Was Not",
+      "file": "0487-chapter-27-of-the-male-who-was-to-lose-his-soul-if-he-was-not.json",
+      "words": 627
+    },
+    {
+      "index": 488,
+      "heading": "Chapter 28.--Of the Change of Name in Abraham and Sarah, Who Received",
+      "file": "0488-chapter-28-of-the-change-of-name-in-abraham-and-sarah-who-received.json",
+      "words": 529
+    },
+    {
+      "index": 489,
+      "heading": "Chapter 29.--Of the Three Men or Angels, in Whom the Lord is Related to",
+      "file": "0489-chapter-29-of-the-three-men-or-angels-in-whom-the-lord-is-related-to.json",
+      "words": 617
+    },
+    {
+      "index": 490,
+      "heading": "Chapter 30.--Of Lot's Deliverance from Sodom, and Its Consumption by",
+      "file": "0490-chapter-30-of-lot-s-deliverance-from-sodom-and-its-consumption-by.json",
+      "words": 265
+    },
+    {
+      "index": 491,
+      "heading": "Chapter 31.--Of Isaac, Who Was Born According to the Promise, Whose",
+      "file": "0491-chapter-31-of-isaac-who-was-born-according-to-the-promise-whose.json",
+      "words": 205
+    },
+    {
+      "index": 492,
+      "heading": "Chapter 32.--Of Abraham's Obedience and Faith, Which Were Proved by the",
+      "file": "0492-chapter-32-of-abraham-s-obedience-and-faith-which-were-proved-by-the.json",
+      "words": 1066
+    },
+    {
+      "index": 493,
+      "heading": "Chapter 33.--Of Rebecca, the Grand-Daughter of Nahor, Whom Isaac Took",
+      "file": "0493-chapter-33-of-rebecca-the-grand-daughter-of-nahor-whom-isaac-took.json",
+      "words": 154
+    },
+    {
+      "index": 494,
+      "heading": "Chapter 34.--What is Meant by Abraham's Marrying Keturah After Sarah's",
+      "file": "0494-chapter-34-what-is-meant-by-abraham-s-marrying-keturah-after-sarah-s.json",
+      "words": 458
+    },
+    {
+      "index": 495,
+      "heading": "Chapter 35.--What Was Indicated by the Divine Answer About the Twins",
+      "file": "0495-chapter-35-what-was-indicated-by-the-divine-answer-about-the-twins.json",
+      "words": 375
+    },
+    {
+      "index": 496,
+      "heading": "Chapter 36.--Of the Oracle and Blessing Which Isaac Received, Just as",
+      "file": "0496-chapter-36-of-the-oracle-and-blessing-which-isaac-received-just-as.json",
+      "words": 559
+    },
+    {
+      "index": 497,
+      "heading": "Chapter 37.--Of the Things Mystically Prefigured in Esau and Jacob.",
+      "file": "0497-chapter-37-of-the-things-mystically-prefigured-in-esau-and-jacob.json",
+      "words": 739
+    },
+    {
+      "index": 498,
+      "heading": "Chapter 38.--Of Jacob's Mission to Mesopotamia to Get a Wife, and of",
+      "file": "0498-chapter-38-of-jacob-s-mission-to-mesopotamia-to-get-a-wife-and-of.json",
+      "words": 972
+    },
+    {
+      "index": 499,
+      "heading": "Chapter 39.--The Reason Why Jacob Was Also Called Israel.",
+      "file": "0499-chapter-39-the-reason-why-jacob-was-also-called-israel.json",
+      "words": 228
+    },
+    {
+      "index": 500,
+      "heading": "Chapter 40.--How It is Said that Jacob Went into Egypt with",
+      "file": "0500-chapter-40-how-it-is-said-that-jacob-went-into-egypt-with.json",
+      "words": 604
+    },
+    {
+      "index": 501,
+      "heading": "Chapter 41.--Of the Blessing Which Jacob Promised in Judah His Son.",
+      "file": "0501-chapter-41-of-the-blessing-which-jacob-promised-in-judah-his-son.json",
+      "words": 662
+    },
+    {
+      "index": 502,
+      "heading": "Chapter 42.--Of the Sons of Joseph, Whom Jacob Blessed, Prophetically",
+      "file": "0502-chapter-42-of-the-sons-of-joseph-whom-jacob-blessed-prophetically.json",
+      "words": 264
+    },
+    {
+      "index": 503,
+      "heading": "Chapter 43.--Of the Times of Moses and Joshua the Son of Nun, of the",
+      "file": "0503-chapter-43-of-the-times-of-moses-and-joshua-the-son-of-nun-of-the.json",
+      "words": 1083
+    },
+    {
+      "index": 504,
+      "heading": "Book XVII.",
+      "file": "0504-book-xvii.json",
+      "words": 52
+    },
+    {
+      "index": 505,
+      "heading": "Chapter 1.--Of the Prophetic Age.",
+      "file": "0505-chapter-1-of-the-prophetic-age.json",
+      "words": 528
+    },
+    {
+      "index": 506,
+      "heading": "Chapter 2.--At What Time the Promise of God Was Fulfilled Concerning",
+      "file": "0506-chapter-2-at-what-time-the-promise-of-god-was-fulfilled-concerning.json",
+      "words": 536
+    },
+    {
+      "index": 507,
+      "heading": "Chapter 3.--Of the Three-Fold Meaning of the Prophecies, Which are to",
+      "file": "0507-chapter-3-of-the-three-fold-meaning-of-the-prophecies-which-are-to.json",
+      "words": 905
+    },
+    {
+      "index": 508,
+      "heading": "Chapter 4.--About the Prefigured Change of the Israelitic Kingdom and",
+      "file": "0508-chapter-4-about-the-prefigured-change-of-the-israelitic-kingdom-and.json",
+      "words": 3842
+    },
+    {
+      "index": 509,
+      "heading": "Chapter 5.--Of Those Things Which a Man of God Spake by the Spirit to",
+      "file": "0509-chapter-5-of-those-things-which-a-man-of-god-spake-by-the-spirit-to.json",
+      "words": 2186
+    },
+    {
+      "index": 510,
+      "heading": "Chapter 6.--Of the Jewish Priesthood and Kingdom, Which, Although",
+      "file": "0510-chapter-6-of-the-jewish-priesthood-and-kingdom-which-although.json",
+      "words": 885
+    },
+    {
+      "index": 511,
+      "heading": "Chapter 7.--Of the Disruption of the Kingdom of Israel, by Which the",
+      "file": "0511-chapter-7-of-the-disruption-of-the-kingdom-of-israel-by-which-the.json",
+      "words": 1227
+    },
+    {
+      "index": 512,
+      "heading": "Chapter 8.--Of the Promises Made to David in His Son, Which are in No",
+      "file": "0512-chapter-8-of-the-promises-made-to-david-in-his-son-which-are-in-no.json",
+      "words": 1170
+    },
+    {
+      "index": 513,
+      "heading": "Chapter 9.--How Like the Prophecy About Christ in the 89th Psalm is to",
+      "file": "0513-chapter-9-how-like-the-prophecy-about-christ-in-the-89th-psalm-is-to.json",
+      "words": 773
+    },
+    {
+      "index": 514,
+      "heading": "Chapter 10.--How Different the Acts in the Kingdom of the Earthly",
+      "file": "0514-chapter-10-how-different-the-acts-in-the-kingdom-of-the-earthly.json",
+      "words": 479
+    },
+    {
+      "index": 515,
+      "heading": "Chapter 11.--Of the Substance of the People of God, Which Through His",
+      "file": "0515-chapter-11-of-the-substance-of-the-people-of-god-which-through-his.json",
+      "words": 528
+    },
+    {
+      "index": 516,
+      "heading": "Chapter 12.--To Whose Person the Entreaty for the Promises is to Be",
+      "file": "0516-chapter-12-to-whose-person-the-entreaty-for-the-promises-is-to-be.json",
+      "words": 1158
+    },
+    {
+      "index": 517,
+      "heading": "Chapter 13.--Whether the Truth of This Promised Peace Can Be Ascribed",
+      "file": "0517-chapter-13-whether-the-truth-of-this-promised-peace-can-be-ascribed.json",
+      "words": 355
+    },
+    {
+      "index": 518,
+      "heading": "Chapter 14.--Of David's Concern in the Writing of the Psalms.",
+      "file": "0518-chapter-14-of-david-s-concern-in-the-writing-of-the-psalms.json",
+      "words": 111
+    },
+    {
+      "index": 519,
+      "heading": "Book of Psalms, of which some will have it those only were made by",
+      "file": "0519-book-of-psalms-of-which-some-will-have-it-those-only-were-made-by.json",
+      "words": 332
+    },
+    {
+      "index": 520,
+      "heading": "Chapter 15.--Whether All the Things Prophesied in the Psalms Concerning",
+      "file": "0520-chapter-15-whether-all-the-things-prophesied-in-the-psalms-concerning.json",
+      "words": 284
+    },
+    {
+      "index": 521,
+      "heading": "Chapter 16.--Of the Things Pertaining to Christ and the Church, Said",
+      "file": "0521-chapter-16-of-the-things-pertaining-to-christ-and-the-church-said.json",
+      "words": 1279
+    },
+    {
+      "index": 522,
+      "heading": "Chapter 17.--Of Those Things in the 110th Psalm Which Relate to the",
+      "file": "0522-chapter-17-of-those-things-in-the-110th-psalm-which-relate-to-the.json",
+      "words": 575
+    },
+    {
+      "index": 523,
+      "heading": "Chapter 18.--Of the 3d, 41st, 15th, and 68th Psalms, in Which the Death",
+      "file": "0523-chapter-18-of-the-3d-41st-15th-and-68th-psalms-in-which-the-death.json",
+      "words": 1112
+    },
+    {
+      "index": 524,
+      "heading": "Chapter 19.--Of the 69th Psalm, in Which the Obstinate Unbelief of the",
+      "file": "0524-chapter-19-of-the-69th-psalm-in-which-the-obstinate-unbelief-of-the.json",
+      "words": 290
+    },
+    {
+      "index": 525,
+      "heading": "Chapter 20.--Of David's Reign and Merit; And of His Son Solomon, and",
+      "file": "0525-chapter-20-of-david-s-reign-and-merit-and-of-his-son-solomon-and.json",
+      "words": 1698
+    },
+    {
+      "index": 526,
+      "heading": "Chapter 21.--Of the Kings After Solomon, Both in Judah and Israel.",
+      "file": "0526-chapter-21-of-the-kings-after-solomon-both-in-judah-and-israel.json",
+      "words": 379
+    },
+    {
+      "index": 527,
+      "heading": "Chapter 22.--Of Jeroboam, Who Profaned the People Put Under Him by the",
+      "file": "0527-chapter-22-of-jeroboam-who-profaned-the-people-put-under-him-by-the.json",
+      "words": 218
+    },
+    {
+      "index": 528,
+      "heading": "Chapter 23.--Of the Varying Condition of Both the Hebrew Kingdoms,",
+      "file": "0528-chapter-23-of-the-varying-condition-of-both-the-hebrew-kingdoms.json",
+      "words": 353
+    },
+    {
+      "index": 529,
+      "heading": "Chapter 24.--Of the Prophets, Who Either Were the Last Among the Jews,",
+      "file": "0529-chapter-24-of-the-prophets-who-either-were-the-last-among-the-jews.json",
+      "words": 311
+    },
+    {
+      "index": 530,
+      "heading": "Book XVIII.",
+      "file": "0530-book-xviii.json",
+      "words": 57
+    },
+    {
+      "index": 531,
+      "heading": "Chapter 1.--Of Those Things Down to the Times of the Saviour Which Have",
+      "file": "0531-chapter-1-of-those-things-down-to-the-times-of-the-saviour-which-have.json",
+      "words": 370
+    },
+    {
+      "index": 532,
+      "heading": "Chapter 2.--Of the Kings and Times of the Earthly City Which Were",
+      "file": "0532-chapter-2-of-the-kings-and-times-of-the-earthly-city-which-were.json",
+      "words": 995
+    },
+    {
+      "index": 533,
+      "heading": "Chapter 3.--What Kings Reigned in Assyria and Sicyon When, According to",
+      "file": "0533-chapter-3-what-kings-reigned-in-assyria-and-sicyon-when-according-to.json",
+      "words": 527
+    },
+    {
+      "index": 534,
+      "heading": "Chapter 4.--Of the Times of Jacob and His Son Joseph.",
+      "file": "0534-chapter-4-of-the-times-of-jacob-and-his-son-joseph.json",
+      "words": 314
+    },
+    {
+      "index": 535,
+      "heading": "Chapter 5.--Of Apis King of Argos, Whom the Egyptians Called Serapis,",
+      "file": "0535-chapter-5-of-apis-king-of-argos-whom-the-egyptians-called-serapis.json",
+      "words": 337
+    },
+    {
+      "index": 536,
+      "heading": "Chapter 6.--Who Were Kings of Argos, and of Assyria, When Jacob Died in",
+      "file": "0536-chapter-6-who-were-kings-of-argos-and-of-assyria-when-jacob-died-in.json",
+      "words": 223
+    },
+    {
+      "index": 537,
+      "heading": "Chapter 7.--Who Were Kings When Joseph Died in Egypt.",
+      "file": "0537-chapter-7-who-were-kings-when-joseph-died-in-egypt.json",
+      "words": 112
+    },
+    {
+      "index": 538,
+      "heading": "Chapter 8.--Who Were Kings When Moses Was Born, and What Gods Began to",
+      "file": "0538-chapter-8-who-were-kings-when-moses-was-born-and-what-gods-began-to.json",
+      "words": 653
+    },
+    {
+      "index": 539,
+      "heading": "Chapter 9.--When the City of Athens Was Founded, and What Reason Varro",
+      "file": "0539-chapter-9-when-the-city-of-athens-was-founded-and-what-reason-varro.json",
+      "words": 426
+    },
+    {
+      "index": 540,
+      "heading": "Chapter 10.--What Varro Reports About the Term Areopagus, and About",
+      "file": "0540-chapter-10-what-varro-reports-about-the-term-areopagus-and-about.json",
+      "words": 462
+    },
+    {
+      "index": 541,
+      "heading": "Chapter 11.--When Moses Led the People Out of Egypt; And Who Were Kings",
+      "file": "0541-chapter-11-when-moses-led-the-people-out-of-egypt-and-who-were-kings.json",
+      "words": 272
+    },
+    {
+      "index": 542,
+      "heading": "Chapter 12.--Of the Rituals of False Gods Instituted by the Kings of",
+      "file": "0542-chapter-12-of-the-rituals-of-false-gods-instituted-by-the-kings-of.json",
+      "words": 851
+    },
+    {
+      "index": 543,
+      "heading": "Chapter 13.--What Fables Were Invented at the Time When Judges Began to",
+      "file": "0543-chapter-13-what-fables-were-invented-at-the-time-when-judges-began-to.json",
+      "words": 669
+    },
+    {
+      "index": 544,
+      "heading": "Chapter 14.--Of the Theological Poets.",
+      "file": "0544-chapter-14-of-the-theological-poets.json",
+      "words": 232
+    },
+    {
+      "index": 545,
+      "heading": "Chapter 15.--Of the Fall of the Kingdom of Argos, When Picus the Son of",
+      "file": "0545-chapter-15-of-the-fall-of-the-kingdom-of-argos-when-picus-the-son-of.json",
+      "words": 359
+    },
+    {
+      "index": 546,
+      "heading": "Chapter 16.--Of Diomede, Who After the Destruction of Troy Was Placed",
+      "file": "0546-chapter-16-of-diomede-who-after-the-destruction-of-troy-was-placed.json",
+      "words": 299
+    },
+    {
+      "index": 547,
+      "heading": "Chapter 17.--What Varro Says of the Incredible Transformations of Men.",
+      "file": "0547-chapter-17-what-varro-says-of-the-incredible-transformations-of-men.json",
+      "words": 214
+    },
+    {
+      "index": 548,
+      "heading": "Chapter 18.--What We Should Believe Concerning the Transformations",
+      "file": "0548-chapter-18-what-we-should-believe-concerning-the-transformations.json",
+      "words": 1180
+    },
+    {
+      "index": 549,
+      "heading": "Chapter 19.--That Æneas Came into Italy When Abdon the Judge Ruled Over",
+      "file": "0549-chapter-19-that-neas-came-into-italy-when-abdon-the-judge-ruled-over.json",
+      "words": 311
+    },
+    {
+      "index": 550,
+      "heading": "Chapter 20.--Of the Succession of the Line of Kings Among the",
+      "file": "0550-chapter-20-of-the-succession-of-the-line-of-kings-among-the.json",
+      "words": 209
+    },
+    {
+      "index": 551,
+      "heading": "Chapter 21.--Of the Kings of Latium, the First and Twelfth of Whom,",
+      "file": "0551-chapter-21-of-the-kings-of-latium-the-first-and-twelfth-of-whom.json",
+      "words": 461
+    },
+    {
+      "index": 552,
+      "heading": "Chapter 22.--That Rome Was Founded When the Assyrian Kingdom Perished,",
+      "file": "0552-chapter-22-that-rome-was-founded-when-the-assyrian-kingdom-perished.json",
+      "words": 330
+    },
+    {
+      "index": 553,
+      "heading": "Chapter 23.--Of the Erythræan Sibyl, Who is Known to Have Sung Many",
+      "file": "0553-chapter-23-of-the-erythr-an-sibyl-who-is-known-to-have-sung-many.json",
+      "words": 1258
+    },
+    {
+      "index": 554,
+      "heading": "Chapter 24.--That the Seven Sages Flourished in the Reign of Romulus,",
+      "file": "0554-chapter-24-that-the-seven-sages-flourished-in-the-reign-of-romulus.json",
+      "words": 387
+    },
+    {
+      "index": 555,
+      "heading": "Chapter 25.--What Philosophers Were Famous When Tarquinius Priscus",
+      "file": "0555-chapter-25-what-philosophers-were-famous-when-tarquinius-priscus.json",
+      "words": 246
+    },
+    {
+      "index": 556,
+      "heading": "Chapter 26.--That at the Time When the Captivity of the Jews Was",
+      "file": "0556-chapter-26-that-at-the-time-when-the-captivity-of-the-jews-was.json",
+      "words": 232
+    },
+    {
+      "index": 557,
+      "heading": "Chapter 27.--Of the Times of the Prophets Whose Oracles are Contained",
+      "file": "0557-chapter-27-of-the-times-of-the-prophets-whose-oracles-are-contained.json",
+      "words": 507
+    },
+    {
+      "index": 558,
+      "heading": "Chapter 28.--Of the Things Pertaining to the Gospel of Christ Which",
+      "file": "0558-chapter-28-of-the-things-pertaining-to-the-gospel-of-christ-which.json",
+      "words": 595
+    },
+    {
+      "index": 559,
+      "heading": "Chapter 29.--What Things are Predicted by Isaiah Concerning Christ and",
+      "file": "0559-chapter-29-what-things-are-predicted-by-isaiah-concerning-christ-and.json",
+      "words": 265
+    },
+    {
+      "index": 560,
+      "heading": "Chapter 30.--What Micah, Jonah, and Joel Prophesied in Accordance with",
+      "file": "0560-chapter-30-what-micah-jonah-and-joel-prophesied-in-accordance-with.json",
+      "words": 462
+    },
+    {
+      "index": 561,
+      "heading": "Chapter 31.--Of the Predictions Concerning the Salvation of the World",
+      "file": "0561-chapter-31-of-the-predictions-concerning-the-salvation-of-the-world.json",
+      "words": 681
+    },
+    {
+      "index": 562,
+      "heading": "Chapter 32.--Of the Prophecy that is Contained in the Prayer and Song",
+      "file": "0562-chapter-32-of-the-prophecy-that-is-contained-in-the-prayer-and-song.json",
+      "words": 1638
+    },
+    {
+      "index": 563,
+      "heading": "Chapter 33.--What Jeremiah and Zephaniah Have, by the Prophetic Spirit,",
+      "file": "0563-chapter-33-what-jeremiah-and-zephaniah-have-by-the-prophetic-spirit.json",
+      "words": 785
+    },
+    {
+      "index": 564,
+      "heading": "Chapter 34.--Of the Prophecy of Daniel and Ezekiel, Other Two of the",
+      "file": "0564-chapter-34-of-the-prophecy-of-daniel-and-ezekiel-other-two-of-the.json",
+      "words": 373
+    },
+    {
+      "index": 565,
+      "heading": "Chapter 35.--Of the Prophecy of the Three Prophets, Haggai, Zechariah,",
+      "file": "0565-chapter-35-of-the-prophecy-of-the-three-prophets-haggai-zechariah.json",
+      "words": 1476
+    },
+    {
+      "index": 566,
+      "heading": "Chapter 36.--About Esdras and the Books of the Maccabees.",
+      "file": "0566-chapter-36-about-esdras-and-the-books-of-the-maccabees.json",
+      "words": 233
+    },
+    {
+      "index": 567,
+      "heading": "Chapter 37.--That Prophetic Records are Found Which are More Ancient",
+      "file": "0567-chapter-37-that-prophetic-records-are-found-which-are-more-ancient.json",
+      "words": 490
+    },
+    {
+      "index": 568,
+      "heading": "Chapter 38.--That the Ecclesiastical Canon Has Not Admitted Certain",
+      "file": "0568-chapter-38-that-the-ecclesiastical-canon-has-not-admitted-certain.json",
+      "words": 472
+    },
+    {
+      "index": 569,
+      "heading": "Chapter 39.--About the Hebrew Written Characters Which that Language",
+      "file": "0569-chapter-39-about-the-hebrew-written-characters-which-that-language.json",
+      "words": 342
+    },
+    {
+      "index": 570,
+      "heading": "Chapter 40.--About the Most Mendacious Vanity of the Egyptians, in",
+      "file": "0570-chapter-40-about-the-most-mendacious-vanity-of-the-egyptians-in.json",
+      "words": 296
+    },
+    {
+      "index": 571,
+      "heading": "Chapter 41.--About the Discord of Philosophic Opinion, and the Concord",
+      "file": "0571-chapter-41-about-the-discord-of-philosophic-opinion-and-the-concord.json",
+      "words": 1212
+    },
+    {
+      "index": 572,
+      "heading": "Chapter 42.--By What Dispensation of God's Providence the Sacred",
+      "file": "0572-chapter-42-by-what-dispensation-of-god-s-providence-the-sacred.json",
+      "words": 399
+    },
+    {
+      "index": 573,
+      "heading": "Chapter 43.--Of the Authority of the Septuagint Translation, Which,",
+      "file": "0573-chapter-43-of-the-authority-of-the-septuagint-translation-which.json",
+      "words": 862
+    },
+    {
+      "index": 574,
+      "heading": "Chapter 44.--How the Threat of the Destruction of the Ninevites is to",
+      "file": "0574-chapter-44-how-the-threat-of-the-destruction-of-the-ninevites-is-to.json",
+      "words": 555
+    },
+    {
+      "index": 575,
+      "heading": "Chapter 45.--That the Jews Ceased to Have Prophets After the Rebuilding",
+      "file": "0575-chapter-45-that-the-jews-ceased-to-have-prophets-after-the-rebuilding.json",
+      "words": 1088
+    },
+    {
+      "index": 576,
+      "heading": "Chapter 46.--Of the Birth of Our Saviour, Whereby the Word Was Made",
+      "file": "0576-chapter-46-of-the-birth-of-our-saviour-whereby-the-word-was-made.json",
+      "words": 683
+    },
+    {
+      "index": 577,
+      "heading": "Chapter 47.--Whether Before Christian Times There Were Any Outside of",
+      "file": "0577-chapter-47-whether-before-christian-times-there-were-any-outside-of.json",
+      "words": 566
+    },
+    {
+      "index": 578,
+      "heading": "Chapter 48.--That Haggai's Prophecy, in Which He Said that the Glory of",
+      "file": "0578-chapter-48-that-haggai-s-prophecy-in-which-he-said-that-the-glory-of.json",
+      "words": 560
+    },
+    {
+      "index": 579,
+      "heading": "Chapter 49.--Of the Indiscriminate Increase of the Church, Wherein Many",
+      "file": "0579-chapter-49-of-the-indiscriminate-increase-of-the-church-wherein-many.json",
+      "words": 401
+    },
+    {
+      "index": 580,
+      "heading": "Chapter 50.--Of the Preaching of the Gospel, Which is Made More Famous",
+      "file": "0580-chapter-50-of-the-preaching-of-the-gospel-which-is-made-more-famous.json",
+      "words": 441
+    },
+    {
+      "index": 581,
+      "heading": "Chapter 51.--That the Catholic Faith May Be Confirmed Even by the",
+      "file": "0581-chapter-51-that-the-catholic-faith-may-be-confirmed-even-by-the.json",
+      "words": 863
+    },
+    {
+      "index": 582,
+      "heading": "Chapter 52.--Whether We Should Believe What Some Think, That, as the",
+      "file": "0582-chapter-52-whether-we-should-believe-what-some-think-that-as-the.json",
+      "words": 887
+    },
+    {
+      "index": 583,
+      "heading": "Chapter 53.--Of the Hidden Time of the Final Persecution.",
+      "file": "0583-chapter-53-of-the-hidden-time-of-the-final-persecution.json",
+      "words": 768
+    },
+    {
+      "index": 584,
+      "heading": "Chapter 54.--Of the Very Foolish Lie of the Pagans, in Feigning that",
+      "file": "0584-chapter-54-of-the-very-foolish-lie-of-the-pagans-in-feigning-that.json",
+      "words": 1188
+    },
+    {
+      "index": 585,
+      "heading": "Book XIX.",
+      "file": "0585-book-xix.json",
+      "words": 72
+    },
+    {
+      "index": 586,
+      "heading": "Chapter 1.--That Varro Has Made Out that Two Hundred and Eighty-Eight",
+      "file": "0586-chapter-1-that-varro-has-made-out-that-two-hundred-and-eighty-eight.json",
+      "words": 1780
+    },
+    {
+      "index": 587,
+      "heading": "Chapter 2.--How Varro, by Removing All the Differences Which Do Not",
+      "file": "0587-chapter-2-how-varro-by-removing-all-the-differences-which-do-not.json",
+      "words": 736
+    },
+    {
+      "index": 588,
+      "heading": "Chapter 3.--Which of the Three Leading Opinions Regarding the Chief",
+      "file": "0588-chapter-3-which-of-the-three-leading-opinions-regarding-the-chief.json",
+      "words": 998
+    },
+    {
+      "index": 589,
+      "heading": "Chapter 4.--What the Christians Believe Regarding the Supreme Good and",
+      "file": "0589-chapter-4-what-the-christians-believe-regarding-the-supreme-good-and.json",
+      "words": 2612
+    },
+    {
+      "index": 590,
+      "heading": "Chapter 5.--Of the Social Life, Which, Though Most Desirable, is",
+      "file": "0590-chapter-5-of-the-social-life-which-though-most-desirable-is.json",
+      "words": 529
+    },
+    {
+      "index": 591,
+      "heading": "Chapter 6.--Of the Error of Human Judgments When the Truth is Hidden.",
+      "file": "0591-chapter-6-of-the-error-of-human-judgments-when-the-truth-is-hidden.json",
+      "words": 628
+    },
+    {
+      "index": 592,
+      "heading": "Chapter 7.--Of the Diversity of Languages, by Which the Intercourse of",
+      "file": "0592-chapter-7-of-the-diversity-of-languages-by-which-the-intercourse-of.json",
+      "words": 466
+    },
+    {
+      "index": 593,
+      "heading": "Chapter 8.--That the Friendship of Good Men Cannot Be Securely Rested",
+      "file": "0593-chapter-8-that-the-friendship-of-good-men-cannot-be-securely-rested.json",
+      "words": 556
+    },
+    {
+      "index": 594,
+      "heading": "Chapter 9.--Of the Friendship of the Holy Angels, Which Men Cannot Be",
+      "file": "0594-chapter-9-of-the-friendship-of-the-holy-angels-which-men-cannot-be.json",
+      "words": 300
+    },
+    {
+      "index": 595,
+      "heading": "Chapter 10.--The Reward Prepared for the Saints After They Have Endured",
+      "file": "0595-chapter-10-the-reward-prepared-for-the-saints-after-they-have-endured.json",
+      "words": 281
+    },
+    {
+      "index": 596,
+      "heading": "Chapter 11.--Of the Happiness of the Eternal Peace, Which Constitutes",
+      "file": "0596-chapter-11-of-the-happiness-of-the-eternal-peace-which-constitutes.json",
+      "words": 417
+    },
+    {
+      "index": 597,
+      "heading": "Chapter 12.--That Even the Fierceness of War and All the Disquietude of",
+      "file": "0597-chapter-12-that-even-the-fierceness-of-war-and-all-the-disquietude-of.json",
+      "words": 1698
+    },
+    {
+      "index": 598,
+      "heading": "Chapter 13.--Of the Universal Peace Which the Law of Nature Preserves",
+      "file": "0598-chapter-13-of-the-universal-peace-which-the-law-of-nature-preserves.json",
+      "words": 995
+    },
+    {
+      "index": 599,
+      "heading": "Chapter 14.--Of the Order and Law Which Obtain in Heaven and Earth,",
+      "file": "0599-chapter-14-of-the-order-and-law-which-obtain-in-heaven-and-earth.json",
+      "words": 750
+    },
+    {
+      "index": 600,
+      "heading": "Chapter 15.--Of the Liberty Proper to Man's Nature, and the Servitude",
+      "file": "0600-chapter-15-of-the-liberty-proper-to-man-s-nature-and-the-servitude.json",
+      "words": 667
+    },
+    {
+      "index": 601,
+      "heading": "Chapter 16.--Of Equitable Rule.",
+      "file": "0601-chapter-16-of-equitable-rule.json",
+      "words": 444
+    },
+    {
+      "index": 602,
+      "heading": "Chapter 17.--What Produces Peace, and What Discord, Between the",
+      "file": "0602-chapter-17-what-produces-peace-and-what-discord-between-the.json",
+      "words": 845
+    },
+    {
+      "index": 603,
+      "heading": "Chapter 18.--How Different the Uncertainty of the New Academy is from",
+      "file": "0603-chapter-18-how-different-the-uncertainty-of-the-new-academy-is-from.json",
+      "words": 223
+    },
+    {
+      "index": 604,
+      "heading": "Chapter 19.--Of the Dress and Habits of the Christian People.",
+      "file": "0604-chapter-19-of-the-dress-and-habits-of-the-christian-people.json",
+      "words": 537
+    },
+    {
+      "index": 605,
+      "heading": "Chapter 20.--That the Saints are in This Life Blessed in Hope.",
+      "file": "0605-chapter-20-that-the-saints-are-in-this-life-blessed-in-hope.json",
+      "words": 195
+    },
+    {
+      "index": 606,
+      "heading": "Chapter 21.--Whether There Ever Was a Roman Republic Answering to the",
+      "file": "0606-chapter-21-whether-there-ever-was-a-roman-republic-answering-to-the.json",
+      "words": 985
+    },
+    {
+      "index": 607,
+      "heading": "Chapter 22.--Whether the God Whom the Christians Serve is the True God",
+      "file": "0607-chapter-22-whether-the-god-whom-the-christians-serve-is-the-true-god.json",
+      "words": 251
+    },
+    {
+      "index": 608,
+      "heading": "Chapter 23.--Porphyry's Account of the Responses Given by the Oracles",
+      "file": "0608-chapter-23-porphyry-s-account-of-the-responses-given-by-the-oracles.json",
+      "words": 2445
+    },
+    {
+      "index": 609,
+      "heading": "Chapter 24.--The Definition Which Must Be Given of a People and a",
+      "file": "0609-chapter-24-the-definition-which-must-be-given-of-a-people-and-a.json",
+      "words": 361
+    },
+    {
+      "index": 610,
+      "heading": "Chapter 25.--That Where There is No True Religion There are No True",
+      "file": "0610-chapter-25-that-where-there-is-no-true-religion-there-are-no-true.json",
+      "words": 239
+    },
+    {
+      "index": 611,
+      "heading": "Chapter 26.--Of the Peace Which is Enjoyed by the People that are",
+      "file": "0611-chapter-26-of-the-peace-which-is-enjoyed-by-the-people-that-are.json",
+      "words": 266
+    },
+    {
+      "index": 612,
+      "heading": "Chapter 27.--That the Peace of Those Who Serve God Cannot in This",
+      "file": "0612-chapter-27-that-the-peace-of-those-who-serve-god-cannot-in-this.json",
+      "words": 625
+    },
+    {
+      "index": 613,
+      "heading": "Chapter 28.--The End of the Wicked.",
+      "file": "0613-chapter-28-the-end-of-the-wicked.json",
+      "words": 311
+    },
+    {
+      "index": 614,
+      "heading": "Book XX.",
+      "file": "0614-book-xx.json",
+      "words": 17
+    },
+    {
+      "index": 615,
+      "heading": "Chapter 1.--That Although God is Always Judging, It is Nevertheless",
+      "file": "0615-chapter-1-that-although-god-is-always-judging-it-is-nevertheless.json",
+      "words": 670
+    },
+    {
+      "index": 616,
+      "heading": "Chapter 2.--That in the Mingled Web of Human Affairs God's Judgment is",
+      "file": "0616-chapter-2-that-in-the-mingled-web-of-human-affairs-god-s-judgment-is.json",
+      "words": 655
+    },
+    {
+      "index": 617,
+      "heading": "Chapter 3.--What Solomon, in the Book of Ecclesiastes, Says Regarding",
+      "file": "0617-chapter-3-what-solomon-in-the-book-of-ecclesiastes-says-regarding.json",
+      "words": 585
+    },
+    {
+      "index": 618,
+      "heading": "Chapter 4.--That Proofs of the Last Judgment Will Be Adduced, First",
+      "file": "0618-chapter-4-that-proofs-of-the-last-judgment-will-be-adduced-first.json",
+      "words": 260
+    },
+    {
+      "index": 619,
+      "heading": "Chapter 5.--The Passages in Which the Saviour Declares that There Shall",
+      "file": "0619-chapter-5-the-passages-in-which-the-saviour-declares-that-there-shall.json",
+      "words": 1288
+    },
+    {
+      "index": 620,
+      "heading": "Chapter 6.--What is the First Resurrection, and What the Second.",
+      "file": "0620-chapter-6-what-is-the-first-resurrection-and-what-the-second.json",
+      "words": 1123
+    },
+    {
+      "index": 621,
+      "heading": "Chapter 7.--What is Written in the Revelation of John Regarding the Two",
+      "file": "0621-chapter-7-what-is-written-in-the-revelation-of-john-regarding-the-two.json",
+      "words": 1681
+    },
+    {
+      "index": 622,
+      "heading": "Chapter 8.--Of the Binding and Loosing of the Devil.",
+      "file": "0622-chapter-8-of-the-binding-and-loosing-of-the-devil.json",
+      "words": 1601
+    },
+    {
+      "index": 623,
+      "heading": "Chapter 9.--What the Reign of the Saints with Christ for a Thousand",
+      "file": "0623-chapter-9-what-the-reign-of-the-saints-with-christ-for-a-thousand.json",
+      "words": 1863
+    },
+    {
+      "index": 624,
+      "heading": "Chapter 10.--What is to Be Replied to Those Who Think that Resurrection",
+      "file": "0624-chapter-10-what-is-to-be-replied-to-those-who-think-that-resurrection.json",
+      "words": 489
+    },
+    {
+      "index": 625,
+      "heading": "Chapter 11.--Of Gog and Magog, Who are to Be Roused by the Devil to",
+      "file": "0625-chapter-11-of-gog-and-magog-who-are-to-be-roused-by-the-devil-to.json",
+      "words": 520
+    },
+    {
+      "index": 626,
+      "heading": "Chapter 12.--Whether the Fire that Came Down Out of Heaven and Devoured",
+      "file": "0626-chapter-12-whether-the-fire-that-came-down-out-of-heaven-and-devoured.json",
+      "words": 302
+    },
+    {
+      "index": 627,
+      "heading": "Chapter 13.--Whether the Time of the Persecution or Antichrist Should",
+      "file": "0627-chapter-13-whether-the-time-of-the-persecution-or-antichrist-should.json",
+      "words": 850
+    },
+    {
+      "index": 628,
+      "heading": "Chapter 14.--Of the Damnation of the Devil and His Adherents; And a",
+      "file": "0628-chapter-14-of-the-damnation-of-the-devil-and-his-adherents-and-a.json",
+      "words": 826
+    },
+    {
+      "index": 629,
+      "heading": "Chapter 15.--Who the Dead are Who are Given Up to Judgment by the Sea,",
+      "file": "0629-chapter-15-who-the-dead-are-who-are-given-up-to-judgment-by-the-sea.json",
+      "words": 668
+    },
+    {
+      "index": 630,
+      "heading": "Chapter 16.--Of the New Heaven and the New Earth.",
+      "file": "0630-chapter-16-of-the-new-heaven-and-the-new-earth.json",
+      "words": 456
+    },
+    {
+      "index": 631,
+      "heading": "Chapter 17.--Of the Endless Glory of the Church.",
+      "file": "0631-chapter-17-of-the-endless-glory-of-the-church.json",
+      "words": 839
+    },
+    {
+      "index": 632,
+      "heading": "Chapter 18.--What the Apostle Peter Predicted Regarding the Last",
+      "file": "0632-chapter-18-what-the-apostle-peter-predicted-regarding-the-last.json",
+      "words": 435
+    },
+    {
+      "index": 633,
+      "heading": "Chapter 19.--What the Apostle Paul Wrote to the Thessalonians About the",
+      "file": "0633-chapter-19-what-the-apostle-paul-wrote-to-the-thessalonians-about-the.json",
+      "words": 1385
+    },
+    {
+      "index": 634,
+      "heading": "Chapter 20.--What the Same Apostle Taught in the First Epistle to the",
+      "file": "0634-chapter-20-what-the-same-apostle-taught-in-the-first-epistle-to-the.json",
+      "words": 1130
+    },
+    {
+      "index": 635,
+      "heading": "Chapter 21.--Utterances of the Prophet Isaiah Regarding the",
+      "file": "0635-chapter-21-utterances-of-the-prophet-isaiah-regarding-the.json",
+      "words": 2325
+    },
+    {
+      "index": 636,
+      "heading": "Chapter 22.--What is Meant by the Good Going Out to See the Punishment",
+      "file": "0636-chapter-22-what-is-meant-by-the-good-going-out-to-see-the-punishment.json",
+      "words": 470
+    },
+    {
+      "index": 637,
+      "heading": "Chapter 23.--What Daniel Predicted Regarding the Persecution of",
+      "file": "0637-chapter-23-what-daniel-predicted-regarding-the-persecution-of.json",
+      "words": 730
+    },
+    {
+      "index": 638,
+      "heading": "Chapter 24.--Passages from the Psalms of David Which Predict the End of",
+      "file": "0638-chapter-24-passages-from-the-psalms-of-david-which-predict-the-end-of.json",
+      "words": 1774
+    },
+    {
+      "index": 639,
+      "heading": "Chapter 25.--Of Malachi's Prophecy, in Which He Speaks of the Last",
+      "file": "0639-chapter-25-of-malachi-s-prophecy-in-which-he-speaks-of-the-last.json",
+      "words": 556
+    },
+    {
+      "index": 640,
+      "heading": "Chapter 26.--Of the Sacrifices Offered to God by the Saints, Which are",
+      "file": "0640-chapter-26-of-the-sacrifices-offered-to-god-by-the-saints-which-are.json",
+      "words": 1105
+    },
+    {
+      "index": 641,
+      "heading": "Chapter 27.--Of the Separation of the Good and the Bad, Which Proclaim",
+      "file": "0641-chapter-27-of-the-separation-of-the-good-and-the-bad-which-proclaim.json",
+      "words": 112
+    },
+    {
+      "index": 642,
+      "heading": "Chapter 28.--That the Law of Moses Must Be Spiritually Understood to",
+      "file": "0642-chapter-28-that-the-law-of-moses-must-be-spiritually-understood-to.json",
+      "words": 463
+    },
+    {
+      "index": 643,
+      "heading": "Chapter 29.--Of the Coming of Elias Before the Judgment, that the Jews",
+      "file": "0643-chapter-29-of-the-coming-of-elias-before-the-judgment-that-the-jews.json",
+      "words": 637
+    },
+    {
+      "index": 644,
+      "heading": "Chapter 30.--That in the Books of the Old Testament, Where It is Said",
+      "file": "0644-chapter-30-that-in-the-books-of-the-old-testament-where-it-is-said.json",
+      "words": 2461
+    },
+    {
+      "index": 645,
+      "heading": "Book XXI.",
+      "file": "0645-book-xxi.json",
+      "words": 28
+    },
+    {
+      "index": 646,
+      "heading": "Chapter 1.--Of the Order of the Discussion, Which Requires that We",
+      "file": "0646-chapter-1-of-the-order-of-the-discussion-which-requires-that-we.json",
+      "words": 362
+    },
+    {
+      "index": 647,
+      "heading": "Chapter 2.--Whether It is Possible for Bodies to Last for Ever in",
+      "file": "0647-chapter-2-whether-it-is-possible-for-bodies-to-last-for-ever-in.json",
+      "words": 258
+    },
+    {
+      "index": 648,
+      "heading": "Chapter 3.--Whether Bodily Suffering Necessarily Terminates in the",
+      "file": "0648-chapter-3-whether-bodily-suffering-necessarily-terminates-in-the.json",
+      "words": 1041
+    },
+    {
+      "index": 649,
+      "heading": "Chapter 4.--Examples from Nature Proving that Bodies May Remain",
+      "file": "0649-chapter-4-examples-from-nature-proving-that-bodies-may-remain.json",
+      "words": 1512
+    },
+    {
+      "index": 650,
+      "heading": "Chapter 5.--That There are Many Things Which Reason Cannot Account For,",
+      "file": "0650-chapter-5-that-there-are-many-things-which-reason-cannot-account-for.json",
+      "words": 1052
+    },
+    {
+      "index": 651,
+      "heading": "Chapter 6.--That All Marvels are Not of Nature's Production, But that",
+      "file": "0651-chapter-6-that-all-marvels-are-not-of-nature-s-production-but-that.json",
+      "words": 924
+    },
+    {
+      "index": 652,
+      "heading": "Chapter 7.--That the Ultimate Reason for Believing Miracles is the",
+      "file": "0652-chapter-7-that-the-ultimate-reason-for-believing-miracles-is-the.json",
+      "words": 1101
+    },
+    {
+      "index": 653,
+      "heading": "Chapter 8.--That It is Not Contrary to Nature That, in an Object Whose",
+      "file": "0653-chapter-8-that-it-is-not-contrary-to-nature-that-in-an-object-whose.json",
+      "words": 1619
+    },
+    {
+      "index": 654,
+      "heading": "Chapter 9.--Of Hell, and the Nature of Eternal Punishments.",
+      "file": "0654-chapter-9-of-hell-and-the-nature-of-eternal-punishments.json",
+      "words": 876
+    },
+    {
+      "index": 655,
+      "heading": "Chapter 10.--Whether the Fire of Hell, If It Be Material Fire, Can Burn",
+      "file": "0655-chapter-10-whether-the-fire-of-hell-if-it-be-material-fire-can-burn.json",
+      "words": 643
+    },
+    {
+      "index": 656,
+      "heading": "Chapter 11.--Whether It is Just that the Punishments of Sins Last",
+      "file": "0656-chapter-11-whether-it-is-just-that-the-punishments-of-sins-last.json",
+      "words": 692
+    },
+    {
+      "index": 657,
+      "heading": "Chapter 12.--Of the Greatness of the First Transgression, on Account of",
+      "file": "0657-chapter-12-of-the-greatness-of-the-first-transgression-on-account-of.json",
+      "words": 316
+    },
+    {
+      "index": 658,
+      "heading": "Chapter 13.--Against the Opinion of Those Who Think that the",
+      "file": "0658-chapter-13-against-the-opinion-of-those-who-think-that-the.json",
+      "words": 568
+    },
+    {
+      "index": 659,
+      "heading": "Chapter 14.--Of the Temporary Punishments of This Life to Which the",
+      "file": "0659-chapter-14-of-the-temporary-punishments-of-this-life-to-which-the.json",
+      "words": 437
+    },
+    {
+      "index": 660,
+      "heading": "Chapter 15.--That Everything Which the Grace of God Does in the Way of",
+      "file": "0660-chapter-15-that-everything-which-the-grace-of-god-does-in-the-way-of.json",
+      "words": 616
+    },
+    {
+      "index": 661,
+      "heading": "Chapter 16.--The Laws of Grace, Which Extend to All the Epochs of the",
+      "file": "0661-chapter-16-the-laws-of-grace-which-extend-to-all-the-epochs-of-the.json",
+      "words": 645
+    },
+    {
+      "index": 662,
+      "heading": "Chapter 17.--Of Those Who Fancy that No Men Shall Be Punished",
+      "file": "0662-chapter-17-of-those-who-fancy-that-no-men-shall-be-punished.json",
+      "words": 462
+    },
+    {
+      "index": 663,
+      "heading": "Chapter 18.--Of Those Who Fancy That, on Account of the Saints'",
+      "file": "0663-chapter-18-of-those-who-fancy-that-on-account-of-the-saints.json",
+      "words": 803
+    },
+    {
+      "index": 664,
+      "heading": "Chapter 19.--Of Those Who Promise Impunity from All Sins Even to",
+      "file": "0664-chapter-19-of-those-who-promise-impunity-from-all-sins-even-to.json",
+      "words": 146
+    },
+    {
+      "index": 665,
+      "heading": "Chapter 20.--Of Those Who Promise This Indulgence Not to All, But Only",
+      "file": "0665-chapter-20-of-those-who-promise-this-indulgence-not-to-all-but-only.json",
+      "words": 177
+    },
+    {
+      "index": 666,
+      "heading": "Chapter 21.--Of Those Who Assert that All Catholics Who Continue in the",
+      "file": "0666-chapter-21-of-those-who-assert-that-all-catholics-who-continue-in-the.json",
+      "words": 303
+    },
+    {
+      "index": 667,
+      "heading": "Chapter 22.--Of Those Who Fancy that the Sins Which are Intermingled",
+      "file": "0667-chapter-22-of-those-who-fancy-that-the-sins-which-are-intermingled.json",
+      "words": 394
+    },
+    {
+      "index": 668,
+      "heading": "Chapter 23.--Against Those Who are of Opinion that the Punishment",
+      "file": "0668-chapter-23-against-those-who-are-of-opinion-that-the-punishment.json",
+      "words": 666
+    },
+    {
+      "index": 669,
+      "heading": "Chapter 24.--Against Those Who Fancy that in the Judgment of God All",
+      "file": "0669-chapter-24-against-those-who-fancy-that-in-the-judgment-of-god-all.json",
+      "words": 2519
+    },
+    {
+      "index": 670,
+      "heading": "Chapter 25.--Whether Those Who Received Heretical Baptism, and Have",
+      "file": "0670-chapter-25-whether-those-who-received-heretical-baptism-and-have.json",
+      "words": 1151
+    },
+    {
+      "index": 671,
+      "heading": "Chapter 26.--What It is to Have Christ for a Foundation, and Who They",
+      "file": "0671-chapter-26-what-it-is-to-have-christ-for-a-foundation-and-who-they.json",
+      "words": 1957
+    },
+    {
+      "index": 672,
+      "heading": "Chapter 27.--Against the Belief of Those Who Think that the Sins Which",
+      "file": "0672-chapter-27-against-the-belief-of-those-who-think-that-the-sins-which.json",
+      "words": 2949
+    },
+    {
+      "index": 673,
+      "heading": "Book XXII.",
+      "file": "0673-book-xxii.json",
+      "words": 54
+    },
+    {
+      "index": 674,
+      "heading": "Chapter 1.--Of the Creation of Angels and Men.",
+      "file": "0674-chapter-1-of-the-creation-of-angels-and-men.json",
+      "words": 738
+    },
+    {
+      "index": 675,
+      "heading": "Chapter 2.--Of the Eternal and Unchangeable Will of God.",
+      "file": "0675-chapter-2-of-the-eternal-and-unchangeable-will-of-god.json",
+      "words": 644
+    },
+    {
+      "index": 676,
+      "heading": "Chapter 3.--Of the Promise of Eternal Blessedness to the Saints, and",
+      "file": "0676-chapter-3-of-the-promise-of-eternal-blessedness-to-the-saints-and.json",
+      "words": 349
+    },
+    {
+      "index": 677,
+      "heading": "Chapter 4.--Against the Wise Men of the World, Who Fancy that the",
+      "file": "0677-chapter-4-against-the-wise-men-of-the-world-who-fancy-that-the.json",
+      "words": 487
+    },
+    {
+      "index": 678,
+      "heading": "Chapter 5.--Of the Resurrection of the Flesh, Which Some Refuse to",
+      "file": "0678-chapter-5-of-the-resurrection-of-the-flesh-which-some-refuse-to.json",
+      "words": 945
+    },
+    {
+      "index": 679,
+      "heading": "Chapter 6.--That Rome Made Its Founder Romulus a God Because It Loved",
+      "file": "0679-chapter-6-that-rome-made-its-founder-romulus-a-god-because-it-loved.json",
+      "words": 1368
+    },
+    {
+      "index": 680,
+      "heading": "Chapter 7.--That the World's Belief in Christ is the Result of Divine",
+      "file": "0680-chapter-7-that-the-world-s-belief-in-christ-is-the-result-of-divine.json",
+      "words": 239
+    },
+    {
+      "index": 681,
+      "heading": "Chapter 8.--Of Miracles Which Were Wrought that the World Might Believe",
+      "file": "0681-chapter-8-of-miracles-which-were-wrought-that-the-world-might-believe.json",
+      "words": 6488
+    },
+    {
+      "index": 682,
+      "heading": "Chapter 9.--That All the Miracles Which are Done by Means of the",
+      "file": "0682-chapter-9-that-all-the-miracles-which-are-done-by-means-of-the.json",
+      "words": 305
+    },
+    {
+      "index": 683,
+      "heading": "Chapter 10.--That the Martyrs Who Obtain Many Miracles in Order that",
+      "file": "0683-chapter-10-that-the-martyrs-who-obtain-many-miracles-in-order-that.json",
+      "words": 551
+    },
+    {
+      "index": 684,
+      "heading": "Chapter 11.--Against the Platonists, Who Argue from the Physical Weight",
+      "file": "0684-chapter-11-against-the-platonists-who-argue-from-the-physical-weight.json",
+      "words": 1292
+    },
+    {
+      "index": 685,
+      "heading": "Chapter 12.--Against the Calumnies with Which Unbelievers Throw",
+      "file": "0685-chapter-12-against-the-calumnies-with-which-unbelievers-throw.json",
+      "words": 841
+    },
+    {
+      "index": 686,
+      "heading": "Chapter 13.--Whether Abortions, If They are Numbered Among the Dead,",
+      "file": "0686-chapter-13-whether-abortions-if-they-are-numbered-among-the-dead.json",
+      "words": 196
+    },
+    {
+      "index": 687,
+      "heading": "Chapter 14.--Whether Infants Shall Rise in that Body Which They Would",
+      "file": "0687-chapter-14-whether-infants-shall-rise-in-that-body-which-they-would.json",
+      "words": 342
+    },
+    {
+      "index": 688,
+      "heading": "Chapter 15.--Whether the Bodies of All the Dead Shall Rise the Same",
+      "file": "0688-chapter-15-whether-the-bodies-of-all-the-dead-shall-rise-the-same.json",
+      "words": 308
+    },
+    {
+      "index": 689,
+      "heading": "Chapter 16.--What is Meant by the Conforming of the Saints to the Image",
+      "file": "0689-chapter-16-what-is-meant-by-the-conforming-of-the-saints-to-the-image.json",
+      "words": 245
+    },
+    {
+      "index": 690,
+      "heading": "Chapter 17.--Whether the Bodies of Women Shall Retain Their Own Sex in",
+      "file": "0690-chapter-17-whether-the-bodies-of-women-shall-retain-their-own-sex-in.json",
+      "words": 638
+    },
+    {
+      "index": 691,
+      "heading": "Chapter 18.--Of the Perfect Man, that Is, Christ; And of His Body, that",
+      "file": "0691-chapter-18-of-the-perfect-man-that-is-christ-and-of-his-body-that.json",
+      "words": 633
+    },
+    {
+      "index": 692,
+      "heading": "Chapter 19.--That All Bodily Blemishes Which Mar Human Beauty in This",
+      "file": "0692-chapter-19-that-all-bodily-blemishes-which-mar-human-beauty-in-this.json",
+      "words": 1053
+    },
+    {
+      "index": 693,
+      "heading": "Chapter 20.--That, in the Resurrection, the Substance of Our Bodies,",
+      "file": "0693-chapter-20-that-in-the-resurrection-the-substance-of-our-bodies.json",
+      "words": 700
+    },
+    {
+      "index": 694,
+      "heading": "Chapter 21.--Of the New Spiritual Body into Which the Flesh of the",
+      "file": "0694-chapter-21-of-the-new-spiritual-body-into-which-the-flesh-of-the.json",
+      "words": 519
+    },
+    {
+      "index": 695,
+      "heading": "Chapter 22.--Of the Miseries and Ills to Which the Human Race is Justly",
+      "file": "0695-chapter-22-of-the-miseries-and-ills-to-which-the-human-race-is-justly.json",
+      "words": 1451
+    },
+    {
+      "index": 696,
+      "heading": "Chapter 23.--Of the Miseries of This Life Which Attach Peculiarly to",
+      "file": "0696-chapter-23-of-the-miseries-of-this-life-which-attach-peculiarly-to.json",
+      "words": 535
+    },
+    {
+      "index": 697,
+      "heading": "Chapter 24.--Of the Blessings with Which the Creator Has Filled This",
+      "file": "0697-chapter-24-of-the-blessings-with-which-the-creator-has-filled-this.json",
+      "words": 2726
+    },
+    {
+      "index": 698,
+      "heading": "Chapter 25.--Of the Obstinacy of Those Individuals Who Impugn the",
+      "file": "0698-chapter-25-of-the-obstinacy-of-those-individuals-who-impugn-the.json",
+      "words": 564
+    },
+    {
+      "index": 699,
+      "heading": "Chapter 26.--That the Opinion of Porphyry, that the Soul, in Order to",
+      "file": "0699-chapter-26-that-the-opinion-of-porphyry-that-the-soul-in-order-to.json",
+      "words": 556
+    },
+    {
+      "index": 700,
+      "heading": "Chapter 27.--Of the Apparently Conflicting Opinions of Plato and",
+      "file": "0700-chapter-27-of-the-apparently-conflicting-opinions-of-plato-and.json",
+      "words": 354
+    },
+    {
+      "index": 701,
+      "heading": "Chapter 28.--What Plato or Labeo, or Even Varro, Might Have Contributed",
+      "file": "0701-chapter-28-what-plato-or-labeo-or-even-varro-might-have-contributed.json",
+      "words": 493
+    },
+    {
+      "index": 702,
+      "heading": "Chapter 29.--Of the Beatific Vision.",
+      "file": "0702-chapter-29-of-the-beatific-vision.json",
+      "words": 2696
+    },
+    {
+      "index": 703,
+      "heading": "Chapter 30.--Of the Eternal Felicity of the City of God, and of the",
+      "file": "0703-chapter-30-of-the-eternal-felicity-of-the-city-of-god-and-of-the.json",
+      "words": 2418
+    },
+    {
+      "index": 704,
+      "heading": "Preface, Showing the Utility of the Treatise on Christian Doctrine.",
+      "file": "0704-preface-showing-the-utility-of-the-treatise-on-christian-doctrine.json",
+      "words": 0
+    },
+    {
+      "index": 705,
+      "heading": "Book I.",
+      "file": "0705-book-i-2.json",
+      "words": 344
+    },
+    {
+      "index": 706,
+      "heading": "Book II.",
+      "file": "0706-book-ii-2.json",
+      "words": 244
+    },
+    {
+      "index": 707,
+      "heading": "Book III.",
+      "file": "0707-book-iii-2.json",
+      "words": 216
+    },
+    {
+      "index": 708,
+      "heading": "Book IV.",
+      "file": "0708-book-iv.json",
+      "words": 308
+    },
+    {
+      "index": 709,
+      "heading": "Preface.",
+      "file": "0709-preface-4.json",
+      "words": 2072
+    },
+    {
+      "index": 710,
+      "heading": "Book I.",
+      "file": "0710-book-i-3.json",
+      "words": 346
+    },
+    {
+      "index": 711,
+      "heading": "Chapter 1.--The Interpretation of Scripture Depends on the Discovery",
+      "file": "0711-chapter-1-the-interpretation-of-scripture-depends-on-the-discovery.json",
+      "words": 361
+    },
+    {
+      "index": 712,
+      "heading": "Chapter 2.--What a Thing Is, and What A Sign.",
+      "file": "0712-chapter-2-what-a-thing-is-and-what-a-sign.json",
+      "words": 275
+    },
+    {
+      "index": 713,
+      "heading": "Chapter 3.--Some Things are for Use, Some for Enjoyment.",
+      "file": "0713-chapter-3-some-things-are-for-use-some-for-enjoyment.json",
+      "words": 138
+    },
+    {
+      "index": 714,
+      "heading": "Chapter 4.--Difference of Use and Enjoyment.",
+      "file": "0714-chapter-4-difference-of-use-and-enjoyment.json",
+      "words": 272
+    },
+    {
+      "index": 715,
+      "heading": "Chapter 5.--The Trinity the True Object of Enjoyment.",
+      "file": "0715-chapter-5-the-trinity-the-true-object-of-enjoyment.json",
+      "words": 265
+    },
+    {
+      "index": 716,
+      "heading": "Chapter 6.--In What Sense God is Ineffable.",
+      "file": "0716-chapter-6-in-what-sense-god-is-ineffable.json",
+      "words": 232
+    },
+    {
+      "index": 717,
+      "heading": "Chapter 7.--What All Men Understand by the Term God.",
+      "file": "0717-chapter-7-what-all-men-understand-by-the-term-god.json",
+      "words": 303
+    },
+    {
+      "index": 718,
+      "heading": "Chapter 8.--God to Be Esteemed Above All Else, Because He is",
+      "file": "0718-chapter-8-god-to-be-esteemed-above-all-else-because-he-is.json",
+      "words": 336
+    },
+    {
+      "index": 719,
+      "heading": "Chapter 9.--All Acknowledge the Superiority of Unchangeable Wisdom to",
+      "file": "0719-chapter-9-all-acknowledge-the-superiority-of-unchangeable-wisdom-to.json",
+      "words": 162
+    },
+    {
+      "index": 720,
+      "heading": "Chapter 10.--To See God, the Soul Must Be Purified.",
+      "file": "0720-chapter-10-to-see-god-the-soul-must-be-purified.json",
+      "words": 104
+    },
+    {
+      "index": 721,
+      "heading": "Chapter 11.--Wisdom Becoming Incarnate, a Pattern to Us of",
+      "file": "0721-chapter-11-wisdom-becoming-incarnate-a-pattern-to-us-of.json",
+      "words": 131
+    },
+    {
+      "index": 722,
+      "heading": "Chapter 12.--In What Sense the Wisdom of God Came to Us.",
+      "file": "0722-chapter-12-in-what-sense-the-wisdom-of-god-came-to-us.json",
+      "words": 215
+    },
+    {
+      "index": 723,
+      "heading": "Chapter 13.--The Word Was Made Flesh.",
+      "file": "0723-chapter-13-the-word-was-made-flesh.json",
+      "words": 116
+    },
+    {
+      "index": 724,
+      "heading": "Chapter 14.--How the Wisdom of God Healed Man.",
+      "file": "0724-chapter-14-how-the-wisdom-of-god-healed-man.json",
+      "words": 413
+    },
+    {
+      "index": 725,
+      "heading": "Chapter 15.--Faith is Buttressed by the Resurrection and Ascension of",
+      "file": "0725-chapter-15-faith-is-buttressed-by-the-resurrection-and-ascension-of.json",
+      "words": 248
+    },
+    {
+      "index": 726,
+      "heading": "Chapter 16.--Christ Purges His Church by Medicinal Afflictions.",
+      "file": "0726-chapter-16-christ-purges-his-church-by-medicinal-afflictions.json",
+      "words": 111
+    },
+    {
+      "index": 727,
+      "heading": "Chapter 17.--Christ, by Forgiving Our Sins, Opened the Way to Our Home.",
+      "file": "0727-chapter-17-christ-by-forgiving-our-sins-opened-the-way-to-our-home.json",
+      "words": 93
+    },
+    {
+      "index": 728,
+      "heading": "Chapter 18.--The Keys Given to the Church.",
+      "file": "0728-chapter-18-the-keys-given-to-the-church.json",
+      "words": 149
+    },
+    {
+      "index": 729,
+      "heading": "Chapter 19.--Bodily and Spiritual Death and Resurrection.",
+      "file": "0729-chapter-19-bodily-and-spiritual-death-and-resurrection.json",
+      "words": 172
+    },
+    {
+      "index": 730,
+      "heading": "Chapter 20.--The Resurrection to Damnation.",
+      "file": "0730-chapter-20-the-resurrection-to-damnation.json",
+      "words": 51
+    },
+    {
+      "index": 731,
+      "heading": "Chapter 21.--Neither Body Nor Soul Extinguished at Death.",
+      "file": "0731-chapter-21-neither-body-nor-soul-extinguished-at-death.json",
+      "words": 47
+    },
+    {
+      "index": 732,
+      "heading": "Chapter 22.--God Alone to Be Enjoyed.",
+      "file": "0732-chapter-22-god-alone-to-be-enjoyed.json",
+      "words": 669
+    },
+    {
+      "index": 733,
+      "heading": "Chapter 23.--Man Needs No Injunction to Love Himself and His Own Body.",
+      "file": "0733-chapter-23-man-needs-no-injunction-to-love-himself-and-his-own-body.json",
+      "words": 387
+    },
+    {
+      "index": 734,
+      "heading": "Chapter 24.--No Man Hates His Own Flesh, Not Even Those Who Abuse It.",
+      "file": "0734-chapter-24-no-man-hates-his-own-flesh-not-even-those-who-abuse-it.json",
+      "words": 625
+    },
+    {
+      "index": 735,
+      "heading": "Chapter 25.--A Man May Love Something More Than His Body, But Does Not",
+      "file": "0735-chapter-25-a-man-may-love-something-more-than-his-body-but-does-not.json",
+      "words": 236
+    },
+    {
+      "index": 736,
+      "heading": "Chapter 26.--The Command to Love God and Our Neighbor Includes a",
+      "file": "0736-chapter-26-the-command-to-love-god-and-our-neighbor-includes-a.json",
+      "words": 282
+    },
+    {
+      "index": 737,
+      "heading": "Chapter 27.--The Order of Love.",
+      "file": "0737-chapter-27-the-order-of-love.json",
+      "words": 192
+    },
+    {
+      "index": 738,
+      "heading": "Chapter 28.--How We are to Decide Whom to Aid.",
+      "file": "0738-chapter-28-how-we-are-to-decide-whom-to-aid.json",
+      "words": 165
+    },
+    {
+      "index": 739,
+      "heading": "Chapter 29.--We are to Desire and Endeavor that All Men May Love God.",
+      "file": "0739-chapter-29-we-are-to-desire-and-endeavor-that-all-men-may-love-god.json",
+      "words": 415
+    },
+    {
+      "index": 740,
+      "heading": "Chapter 30.--Whether Angels are to Be Reckoned Our Neighbors.",
+      "file": "0740-chapter-30-whether-angels-are-to-be-reckoned-our-neighbors.json",
+      "words": 738
+    },
+    {
+      "index": 741,
+      "heading": "Chapter 31.--God Uses Rather Than Enjoys Us.",
+      "file": "0741-chapter-31-god-uses-rather-than-enjoys-us.json",
+      "words": 212
+    },
+    {
+      "index": 742,
+      "heading": "Chapter 32.--In What Way God Uses Man.",
+      "file": "0742-chapter-32-in-what-way-god-uses-man.json",
+      "words": 278
+    },
+    {
+      "index": 743,
+      "heading": "Chapter 33.--In What Way Man Should Be Enjoyed.",
+      "file": "0743-chapter-33-in-what-way-man-should-be-enjoyed.json",
+      "words": 433
+    },
+    {
+      "index": 744,
+      "heading": "Chapter 34.--Christ the First Way to God.",
+      "file": "0744-chapter-34-christ-the-first-way-to-god.json",
+      "words": 395
+    },
+    {
+      "index": 745,
+      "heading": "Chapter 35.--The Fulfillment and End of Scripture is the Love of God",
+      "file": "0745-chapter-35-the-fulfillment-and-end-of-scripture-is-the-love-of-god.json",
+      "words": 192
+    },
+    {
+      "index": 746,
+      "heading": "Chapter 36.--That Interpretation of Scripture Which Builds Us Up in",
+      "file": "0746-chapter-36-that-interpretation-of-scripture-which-builds-us-up-in.json",
+      "words": 410
+    },
+    {
+      "index": 747,
+      "heading": "Chapter 37.--Dangers of Mistaken Interpretation.",
+      "file": "0747-chapter-37-dangers-of-mistaken-interpretation.json",
+      "words": 226
+    },
+    {
+      "index": 748,
+      "heading": "Chapter 38.--Love Never Faileth.",
+      "file": "0748-chapter-38-love-never-faileth.json",
+      "words": 233
+    },
+    {
+      "index": 749,
+      "heading": "Chapter 39.--He Who is Mature in Faith, Hope and Love, Needs Scripture",
+      "file": "0749-chapter-39-he-who-is-mature-in-faith-hope-and-love-needs-scripture.json",
+      "words": 214
+    },
+    {
+      "index": 750,
+      "heading": "Chapter 40.--What Manner of Reader Scripture Demands.",
+      "file": "0750-chapter-40-what-manner-of-reader-scripture-demands.json",
+      "words": 252
+    },
+    {
+      "index": 751,
+      "heading": "Book II.",
+      "file": "0751-book-ii-3.json",
+      "words": 246
+    },
+    {
+      "index": 752,
+      "heading": "Chapter 1.--Signs, Their Nature and Variety.",
+      "file": "0752-chapter-1-signs-their-nature-and-variety.json",
+      "words": 368
+    },
+    {
+      "index": 753,
+      "heading": "Chapter 2.--Of the Kind of Signs We are Now Concerned with.",
+      "file": "0753-chapter-2-of-the-kind-of-signs-we-are-now-concerned-with.json",
+      "words": 252
+    },
+    {
+      "index": 754,
+      "heading": "Chapter 3.--Among Signs, Words Hold the Chief Place.",
+      "file": "0754-chapter-3-among-signs-words-hold-the-chief-place.json",
+      "words": 326
+    },
+    {
+      "index": 755,
+      "heading": "Chapter 4.--Origin of Writing.",
+      "file": "0755-chapter-4-origin-of-writing.json",
+      "words": 140
+    },
+    {
+      "index": 756,
+      "heading": "Chapter 5.--Scripture Translated into Various Languages.",
+      "file": "0756-chapter-5-scripture-translated-into-various-languages.json",
+      "words": 110
+    },
+    {
+      "index": 757,
+      "heading": "Chapter 6.--Use of the Obscurities in Scripture Which Arise from Its",
+      "file": "0757-chapter-6-use-of-the-obscurities-in-scripture-which-arise-from-its.json",
+      "words": 602
+    },
+    {
+      "index": 758,
+      "heading": "Chapter 7.--Steps to Wisdom: First, Fear; Second, Piety; Third,",
+      "file": "0758-chapter-7-steps-to-wisdom-first-fear-second-piety-third.json",
+      "words": 862
+    },
+    {
+      "index": 759,
+      "heading": "Chapter 8.--The Canonical Books.",
+      "file": "0759-chapter-8-the-canonical-books.json",
+      "words": 775
+    },
+    {
+      "index": 760,
+      "heading": "Chapter 9.--How We Should Proceed in Studying Scripture.",
+      "file": "0760-chapter-9-how-we-should-proceed-in-studying-scripture.json",
+      "words": 241
+    },
+    {
+      "index": 761,
+      "heading": "Chapter 10.--Unknown or Ambiguous Signs Prevent Scripture from Being",
+      "file": "0761-chapter-10-unknown-or-ambiguous-signs-prevent-scripture-from-being.json",
+      "words": 157
+    },
+    {
+      "index": 762,
+      "heading": "Chapter 11.--Knowledge of Languages, Especially of Greek and Hebrew,",
+      "file": "0762-chapter-11-knowledge-of-languages-especially-of-greek-and-hebrew.json",
+      "words": 327
+    },
+    {
+      "index": 763,
+      "heading": "Chapter 12.--A Diversity of Interpretations is Useful. Errors Arising",
+      "file": "0763-chapter-12-a-diversity-of-interpretations-is-useful-errors-arising.json",
+      "words": 761
+    },
+    {
+      "index": 764,
+      "heading": "Chapter 13.--How Faulty Interpretations Can Be Emended.",
+      "file": "0764-chapter-13-how-faulty-interpretations-can-be-emended.json",
+      "words": 915
+    },
+    {
+      "index": 765,
+      "heading": "Chapter 14.--How the Meaning of Unknown Words and Idioms is to Be",
+      "file": "0765-chapter-14-how-the-meaning-of-unknown-words-and-idioms-is-to-be.json",
+      "words": 353
+    },
+    {
+      "index": 766,
+      "heading": "Chapter 15.--Among Versions a Preference is Given to the Septuagint and",
+      "file": "0766-chapter-15-among-versions-a-preference-is-given-to-the-septuagint-and.json",
+      "words": 540
+    },
+    {
+      "index": 767,
+      "heading": "Chapter 16.--The Knowledge Both of Language and Things is Helpful for",
+      "file": "0767-chapter-16-the-knowledge-both-of-language-and-things-is-helpful-for.json",
+      "words": 1441
+    },
+    {
+      "index": 768,
+      "heading": "Chapter 17.--Origin of the Legend of the Nine Muses.",
+      "file": "0768-chapter-17-origin-of-the-legend-of-the-nine-muses.json",
+      "words": 270
+    },
+    {
+      "index": 769,
+      "heading": "Chapter 18.--No Help is to Be Despised, Even Though It Come from a",
+      "file": "0769-chapter-18-no-help-is-to-be-despised-even-though-it-come-from-a.json",
+      "words": 250
+    },
+    {
+      "index": 770,
+      "heading": "Chapter 19.--Two Kinds Of Heathen Knowledge.",
+      "file": "0770-chapter-19-two-kinds-of-heathen-knowledge.json",
+      "words": 73
+    },
+    {
+      "index": 771,
+      "heading": "Chapter 20.--The Superstitious Nature of Human Institutions.",
+      "file": "0771-chapter-20-the-superstitious-nature-of-human-institutions.json",
+      "words": 467
+    },
+    {
+      "index": 772,
+      "heading": "Chapter 21.--Superstition of Astrologers.",
+      "file": "0772-chapter-21-superstition-of-astrologers.json",
+      "words": 490
+    },
+    {
+      "index": 773,
+      "heading": "Chapter 22 .--The Folly of Observing the Stars in Order to Predict the",
+      "file": "0773-chapter-22-the-folly-of-observing-the-stars-in-order-to-predict-the.json",
+      "words": 490
+    },
+    {
+      "index": 774,
+      "heading": "Chapter 23.--Why We Repudiate Arts of Divination.",
+      "file": "0774-chapter-23-why-we-repudiate-arts-of-divination.json",
+      "words": 643
+    },
+    {
+      "index": 775,
+      "heading": "Chapter 24.--The Intercourse and Agreement with Demons Which",
+      "file": "0775-chapter-24-the-intercourse-and-agreement-with-demons-which.json",
+      "words": 390
+    },
+    {
+      "index": 776,
+      "heading": "Chapter 25.--In Human Institutions Which are Not Superstitious, There",
+      "file": "0776-chapter-25-in-human-institutions-which-are-not-superstitious-there.json",
+      "words": 567
+    },
+    {
+      "index": 777,
+      "heading": "Chapter 26.--What Human Contrivances We are to Adopt, and What We are",
+      "file": "0777-chapter-26-what-human-contrivances-we-are-to-adopt-and-what-we-are.json",
+      "words": 177
+    },
+    {
+      "index": 778,
+      "heading": "Chapter 27.--Some Departments of Knowledge, Not of Mere Human",
+      "file": "0778-chapter-27-some-departments-of-knowledge-not-of-mere-human.json",
+      "words": 95
+    },
+    {
+      "index": 779,
+      "heading": "Chapter 28.--To What Extent History is an Aid.",
+      "file": "0779-chapter-28-to-what-extent-history-is-an-aid.json",
+      "words": 628
+    },
+    {
+      "index": 780,
+      "heading": "Chapter 29.--To What Extent Natural Science is an Exegetical Aid.",
+      "file": "0780-chapter-29-to-what-extent-natural-science-is-an-exegetical-aid.json",
+      "words": 607
+    },
+    {
+      "index": 781,
+      "heading": "Chapter 30.--What the Mechanical Arts Contribute to Exegetics.",
+      "file": "0781-chapter-30-what-the-mechanical-arts-contribute-to-exegetics.json",
+      "words": 189
+    },
+    {
+      "index": 782,
+      "heading": "Chapter 31.--Use of Dialectics. Of Fallacies.",
+      "file": "0782-chapter-31-use-of-dialectics-of-fallacies.json",
+      "words": 526
+    },
+    {
+      "index": 783,
+      "heading": "Chapter 32.--Valid Logical Sequence is Not Devised But Only Observed by",
+      "file": "0783-chapter-32-valid-logical-sequence-is-not-devised-but-only-observed-by.json",
+      "words": 330
+    },
+    {
+      "index": 784,
+      "heading": "Chapter 33.--False Inferences May Be Drawn from Valid Reasonings, and",
+      "file": "0784-chapter-33-false-inferences-may-be-drawn-from-valid-reasonings-and.json",
+      "words": 355
+    },
+    {
+      "index": 785,
+      "heading": "Chapter 34.--It is One Thing to Know the Laws of Inference, Another to",
+      "file": "0785-chapter-34-it-is-one-thing-to-know-the-laws-of-inference-another-to.json",
+      "words": 226
+    },
+    {
+      "index": 786,
+      "heading": "Chapter 35 .--The Science of Definition is Not False, Though It May Be",
+      "file": "0786-chapter-35-the-science-of-definition-is-not-false-though-it-may-be.json",
+      "words": 265
+    },
+    {
+      "index": 787,
+      "heading": "Chapter 36.--The Rules of Eloquence are True, Though Sometimes Used to",
+      "file": "0787-chapter-36-the-rules-of-eloquence-are-true-though-sometimes-used-to.json",
+      "words": 184
+    },
+    {
+      "index": 788,
+      "heading": "Chapter 37.--Use of Rhetoric and Dialectic.",
+      "file": "0788-chapter-37-use-of-rhetoric-and-dialectic.json",
+      "words": 381
+    },
+    {
+      "index": 789,
+      "heading": "Chapter 38.--The Science of Numbers Not Created, But Only Discovered,",
+      "file": "0789-chapter-38-the-science-of-numbers-not-created-but-only-discovered.json",
+      "words": 318
+    },
+    {
+      "index": 790,
+      "heading": "Chapter 39.--To Which of the Above-Mentioned Studies Attention Should",
+      "file": "0790-chapter-39-to-which-of-the-above-mentioned-studies-attention-should.json",
+      "words": 639
+    },
+    {
+      "index": 791,
+      "heading": "Chapter 40.--Whatever Has Been Rightly Said by the Heathen, We Must",
+      "file": "0791-chapter-40-whatever-has-been-rightly-said-by-the-heathen-we-must.json",
+      "words": 581
+    },
+    {
+      "index": 792,
+      "heading": "Chapter 41.--What Kind of Spirit is Required for the Study of Holy",
+      "file": "0792-chapter-41-what-kind-of-spirit-is-required-for-the-study-of-holy.json",
+      "words": 547
+    },
+    {
+      "index": 793,
+      "heading": "Chapter 42.--Sacred Scripture Compared with Profane Authors.",
+      "file": "0793-chapter-42-sacred-scripture-compared-with-profane-authors.json",
+      "words": 239
+    },
+    {
+      "index": 794,
+      "heading": "Book III.",
+      "file": "0794-book-iii-3.json",
+      "words": 218
+    },
+    {
+      "index": 795,
+      "heading": "Chapter 1 .--Summary of the Foregoing Books, and Scope of that Which",
+      "file": "0795-chapter-1-summary-of-the-foregoing-books-and-scope-of-that-which.json",
+      "words": 233
+    },
+    {
+      "index": 796,
+      "heading": "Chapter 2.--Rule for Removing Ambiguity by Attending to Punctuation.",
+      "file": "0796-chapter-2-rule-for-removing-ambiguity-by-attending-to-punctuation.json",
+      "words": 855
+    },
+    {
+      "index": 797,
+      "heading": "Chapter 3.--How Pronunciation Serves to Remove Ambiguity. Different",
+      "file": "0797-chapter-3-how-pronunciation-serves-to-remove-ambiguity-different.json",
+      "words": 865
+    },
+    {
+      "index": 798,
+      "heading": "Chapter 4.--How Ambiguities May Be Solved.",
+      "file": "0798-chapter-4-how-ambiguities-may-be-solved.json",
+      "words": 295
+    },
+    {
+      "index": 799,
+      "heading": "Chapter 5.--It is a Wretched Slavery Which Takes the Figurative",
+      "file": "0799-chapter-5-it-is-a-wretched-slavery-which-takes-the-figurative.json",
+      "words": 248
+    },
+    {
+      "index": 800,
+      "heading": "Chapter 6.--Utility of the Bondage of the Jews.",
+      "file": "0800-chapter-6-utility-of-the-bondage-of-the-jews.json",
+      "words": 416
+    },
+    {
+      "index": 801,
+      "heading": "Chapter 7.--The Useless Bondage of the Gentiles.",
+      "file": "0801-chapter-7-the-useless-bondage-of-the-gentiles.json",
+      "words": 359
+    },
+    {
+      "index": 802,
+      "heading": "Chapter 8.--The Jews Liberated from Their Bondage in One Way, the",
+      "file": "0802-chapter-8-the-jews-liberated-from-their-bondage-in-one-way-the.json",
+      "words": 164
+    },
+    {
+      "index": 803,
+      "heading": "Chapter 9.--Who is in Bondage to Signs, and Who Not.",
+      "file": "0803-chapter-9-who-is-in-bondage-to-signs-and-who-not.json",
+      "words": 361
+    },
+    {
+      "index": 804,
+      "heading": "Chapter 10.--How We are to Discern Whether a Phrase is Figurative.",
+      "file": "0804-chapter-10-how-we-are-to-discern-whether-a-phrase-is-figurative.json",
+      "words": 595
+    },
+    {
+      "index": 805,
+      "heading": "Chapter 11.--Rule for Interpreting Phrases Which Seem to Ascribe",
+      "file": "0805-chapter-11-rule-for-interpreting-phrases-which-seem-to-ascribe.json",
+      "words": 341
+    },
+    {
+      "index": 806,
+      "heading": "Chapter 12.--Rule for Interpreting Those Sayings and Actions Which are",
+      "file": "0806-chapter-12-rule-for-interpreting-those-sayings-and-actions-which-are.json",
+      "words": 769
+    },
+    {
+      "index": 807,
+      "heading": "Chapter 13.--Same Subject, Continued.",
+      "file": "0807-chapter-13-same-subject-continued.json",
+      "words": 59
+    },
+    {
+      "index": 808,
+      "heading": "Chapter 14.--Error of Those Who Think that There is No Absolute Right",
+      "file": "0808-chapter-14-error-of-those-who-think-that-there-is-no-absolute-right.json",
+      "words": 277
+    },
+    {
+      "index": 809,
+      "heading": "Chapter 15.--Rule for Interpreting Figurative Expressions.",
+      "file": "0809-chapter-15-rule-for-interpreting-figurative-expressions.json",
+      "words": 98
+    },
+    {
+      "index": 810,
+      "heading": "Chapter 16.--Rule for Interpreting Commands and Prohibitions.",
+      "file": "0810-chapter-16-rule-for-interpreting-commands-and-prohibitions.json",
+      "words": 422
+    },
+    {
+      "index": 811,
+      "heading": "Chapter 17.--Some Commands are Given to All in Common, Others to",
+      "file": "0811-chapter-17-some-commands-are-given-to-all-in-common-others-to.json",
+      "words": 198
+    },
+    {
+      "index": 812,
+      "heading": "Chapter 18.--We Must Take into Consideration the Time at Which Anything",
+      "file": "0812-chapter-18-we-must-take-into-consideration-the-time-at-which-anything.json",
+      "words": 492
+    },
+    {
+      "index": 813,
+      "heading": "Chapter 19.--Wicked Men Judge Others by Themselves.",
+      "file": "0813-chapter-19-wicked-men-judge-others-by-themselves.json",
+      "words": 260
+    },
+    {
+      "index": 814,
+      "heading": "Chapter 20.--Consistency of Good Men in All Outward Circumstances.",
+      "file": "0814-chapter-20-consistency-of-good-men-in-all-outward-circumstances.json",
+      "words": 153
+    },
+    {
+      "index": 815,
+      "heading": "Chapter 21.--David Not Lustful, Though He Fell into Adultery.",
+      "file": "0815-chapter-21-david-not-lustful-though-he-fell-into-adultery.json",
+      "words": 590
+    },
+    {
+      "index": 816,
+      "heading": "Chapter 22.--Rule Regarding Passages of Scripture in Which Approval is",
+      "file": "0816-chapter-22-rule-regarding-passages-of-scripture-in-which-approval-is.json",
+      "words": 117
+    },
+    {
+      "index": 817,
+      "heading": "Chapter 23.--Rule Regarding the Narrative of Sins of Great Men.",
+      "file": "0817-chapter-23-rule-regarding-the-narrative-of-sins-of-great-men.json",
+      "words": 175
+    },
+    {
+      "index": 818,
+      "heading": "Chapter 24.--The Character of the Expressions Used is Above All to Have",
+      "file": "0818-chapter-24-the-character-of-the-expressions-used-is-above-all-to-have.json",
+      "words": 100
+    },
+    {
+      "index": 819,
+      "heading": "Chapter 25.--The Same Word Does Not Always Signify the Same Thing.",
+      "file": "0819-chapter-25-the-same-word-does-not-always-signify-the-same-thing.json",
+      "words": 619
+    },
+    {
+      "index": 820,
+      "heading": "Chapter 26.--Obscure Passages are to Be Interpreted by Those Which are",
+      "file": "0820-chapter-26-obscure-passages-are-to-be-interpreted-by-those-which-are.json",
+      "words": 208
+    },
+    {
+      "index": 821,
+      "heading": "Chapter 27.--One Passage Susceptible of Various Interpretations.",
+      "file": "0821-chapter-27-one-passage-susceptible-of-various-interpretations.json",
+      "words": 226
+    },
+    {
+      "index": 822,
+      "heading": "Chapter 28.-- It is Safer to Explain a Doubtful Passage by Other",
+      "file": "0822-chapter-28-it-is-safer-to-explain-a-doubtful-passage-by-other.json",
+      "words": 114
+    },
+    {
+      "index": 823,
+      "heading": "Chapter 29.--The Knowledge of Tropes is Necessary.",
+      "file": "0823-chapter-29-the-knowledge-of-tropes-is-necessary.json",
+      "words": 619
+    },
+    {
+      "index": 824,
+      "heading": "Chapter 30.--The Rules of Tichonius the Donatist Examined.",
+      "file": "0824-chapter-30-the-rules-of-tichonius-the-donatist-examined.json",
+      "words": 692
+    },
+    {
+      "index": 825,
+      "heading": "Chapter 31.--The First Rule of Tichonius.",
+      "file": "0825-chapter-31-the-first-rule-of-tichonius.json",
+      "words": 188
+    },
+    {
+      "index": 826,
+      "heading": "Chapter 32.--The Second Rule of Tichonius.",
+      "file": "0826-chapter-32-the-second-rule-of-tichonius.json",
+      "words": 462
+    },
+    {
+      "index": 827,
+      "heading": "Chapter 33.--The Third Rule of Tichonius.",
+      "file": "0827-chapter-33-the-third-rule-of-tichonius.json",
+      "words": 406
+    },
+    {
+      "index": 828,
+      "heading": "Chapter 34.--The Fourth Rule of Tichonius.",
+      "file": "0828-chapter-34-the-fourth-rule-of-tichonius.json",
+      "words": 1535
+    },
+    {
+      "index": 829,
+      "heading": "Chapter 35.--The Fifth Rule of Tichonius.",
+      "file": "0829-chapter-35-the-fifth-rule-of-tichonius.json",
+      "words": 544
+    },
+    {
+      "index": 830,
+      "heading": "Chapter 36.--The Sixth Rule of Tichonius.",
+      "file": "0830-chapter-36-the-sixth-rule-of-tichonius.json",
+      "words": 1027
+    },
+    {
+      "index": 831,
+      "heading": "Chapter 37.--The Seventh Rule of Tichonius.",
+      "file": "0831-chapter-37-the-seventh-rule-of-tichonius.json",
+      "words": 726
+    },
+    {
+      "index": 832,
+      "heading": "Book IV.",
+      "file": "0832-book-iv-2.json",
+      "words": 310
+    },
+    {
+      "index": 833,
+      "heading": "Chapter 1.--This Work Not Intended as a Treatise on Rhetoric.",
+      "file": "0833-chapter-1-this-work-not-intended-as-a-treatise-on-rhetoric.json",
+      "words": 270
+    },
+    {
+      "index": 834,
+      "heading": "Chapter 2.--It is Lawful for a Christian Teacher to Use the Art of",
+      "file": "0834-chapter-2-it-is-lawful-for-a-christian-teacher-to-use-the-art-of.json",
+      "words": 275
+    },
+    {
+      "index": 835,
+      "heading": "Chapter 3.--The Proper Age and the Proper Means for Acquiring",
+      "file": "0835-chapter-3-the-proper-age-and-the-proper-means-for-acquiring.json",
+      "words": 738
+    },
+    {
+      "index": 836,
+      "heading": "Chapter 4.--The Duty of the Christian Teacher.",
+      "file": "0836-chapter-4-the-duty-of-the-christian-teacher.json",
+      "words": 228
+    },
+    {
+      "index": 837,
+      "heading": "Chapter 5.--Wisdom of More Importance Than Eloquence to the Christian",
+      "file": "0837-chapter-5-wisdom-of-more-importance-than-eloquence-to-the-christian.json",
+      "words": 678
+    },
+    {
+      "index": 838,
+      "heading": "Chapter 6.--The Sacred Writers Unite Eloquence with Wisdom.",
+      "file": "0838-chapter-6-the-sacred-writers-unite-eloquence-with-wisdom.json",
+      "words": 573
+    },
+    {
+      "index": 839,
+      "heading": "Chapter 7.--Examples of True Eloquence Drawn from the Epistles of Paul",
+      "file": "0839-chapter-7-examples-of-true-eloquence-drawn-from-the-epistles-of-paul.json",
+      "words": 3410
+    },
+    {
+      "index": 840,
+      "heading": "Chapter 8.--The Obscurity of the Sacred Writers, Though Compatible with",
+      "file": "0840-chapter-8-the-obscurity-of-the-sacred-writers-though-compatible-with.json",
+      "words": 277
+    },
+    {
+      "index": 841,
+      "heading": "Chapter 9.--How, and with Whom, Difficult Passages are to Be Discussed.",
+      "file": "0841-chapter-9-how-and-with-whom-difficult-passages-are-to-be-discussed.json",
+      "words": 193
+    },
+    {
+      "index": 842,
+      "heading": "Chapter 10.--The Necessity for Perspicuity of Style.",
+      "file": "0842-chapter-10-the-necessity-for-perspicuity-of-style.json",
+      "words": 886
+    },
+    {
+      "index": 843,
+      "heading": "Chapter 11.--The Christian Teacher Must Speak Clearly, But Not",
+      "file": "0843-chapter-11-the-christian-teacher-must-speak-clearly-but-not.json",
+      "words": 182
+    },
+    {
+      "index": 844,
+      "heading": "Chapter 12.--The Aim of the Orator, According to Cicero, is to Teach,",
+      "file": "0844-chapter-12-the-aim-of-the-orator-according-to-cicero-is-to-teach.json",
+      "words": 698
+    },
+    {
+      "index": 845,
+      "heading": "Chapter 13.--The Hearer Must Be Moved as Well as Instructed.",
+      "file": "0845-chapter-13-the-hearer-must-be-moved-as-well-as-instructed.json",
+      "words": 288
+    },
+    {
+      "index": 846,
+      "heading": "Chapter 14.--Beauty of Diction to Be in Keeping with the Matter.",
+      "file": "0846-chapter-14-beauty-of-diction-to-be-in-keeping-with-the-matter.json",
+      "words": 604
+    },
+    {
+      "index": 847,
+      "heading": "Chapter 15.--The Christian Teacher Should Pray Before Preaching.",
+      "file": "0847-chapter-15-the-christian-teacher-should-pray-before-preaching.json",
+      "words": 354
+    },
+    {
+      "index": 848,
+      "heading": "Chapter 16.--Human Directions Not to Be Despised, Though God Makes the",
+      "file": "0848-chapter-16-human-directions-not-to-be-despised-though-god-makes-the.json",
+      "words": 640
+    },
+    {
+      "index": 849,
+      "heading": "Chapter 17.--Threefold Division of The Various Styles of Speech.",
+      "file": "0849-chapter-17-threefold-division-of-the-various-styles-of-speech.json",
+      "words": 221
+    },
+    {
+      "index": 850,
+      "heading": "Chapter 18.--The Christian Orator is Constantly Dealing with Great",
+      "file": "0850-chapter-18-the-christian-orator-is-constantly-dealing-with-great.json",
+      "words": 962
+    },
+    {
+      "index": 851,
+      "heading": "Chapter 19.--The Christian Teacher Must Use Different Styles on",
+      "file": "0851-chapter-19-the-christian-teacher-must-use-different-styles-on.json",
+      "words": 336
+    },
+    {
+      "index": 852,
+      "heading": "Chapter 20.--Examples of the Various Styles Drawn from Scripture.",
+      "file": "0852-chapter-20-examples-of-the-various-styles-drawn-from-scripture.json",
+      "words": 2596
+    },
+    {
+      "index": 853,
+      "heading": "Chapter 21.--Examples of the Various Styles, Drawn from the Teachers of",
+      "file": "0853-chapter-21-examples-of-the-various-styles-drawn-from-the-teachers-of.json",
+      "words": 2511
+    },
+    {
+      "index": 854,
+      "heading": "Chapter 22.--The Necessity of Variety in Style.",
+      "file": "0854-chapter-22-the-necessity-of-variety-in-style.json",
+      "words": 266
+    },
+    {
+      "index": 855,
+      "heading": "Chapter 23.--How the Various Styles Should Be Mingled.",
+      "file": "0855-chapter-23-how-the-various-styles-should-be-mingled.json",
+      "words": 310
+    },
+    {
+      "index": 856,
+      "heading": "Chapter 24.--The Effects Produced by the Majestic Style.",
+      "file": "0856-chapter-24-the-effects-produced-by-the-majestic-style.json",
+      "words": 505
+    },
+    {
+      "index": 857,
+      "heading": "Chapter 25.--How the Temperate Style is to Be Used.",
+      "file": "0857-chapter-25-how-the-temperate-style-is-to-be-used.json",
+      "words": 408
+    },
+    {
+      "index": 858,
+      "heading": "Chapter 26.--In Every Style the Orator Should Aim at Perspicuity,",
+      "file": "0858-chapter-26-in-every-style-the-orator-should-aim-at-perspicuity.json",
+      "words": 710
+    },
+    {
+      "index": 859,
+      "heading": "Chapter 27.--The Man Whose Life is in Harmony with His Teaching Will",
+      "file": "0859-chapter-27-the-man-whose-life-is-in-harmony-with-his-teaching-will.json",
+      "words": 489
+    },
+    {
+      "index": 860,
+      "heading": "Chapter 28.--Truth is More Important Than Expression. What is Meant by",
+      "file": "0860-chapter-28-truth-is-more-important-than-expression-what-is-meant-by.json",
+      "words": 455
+    },
+    {
+      "index": 861,
+      "heading": "Chapter 29.--It is Permissible for a Preacher to Deliver to the People",
+      "file": "0861-chapter-29-it-is-permissible-for-a-preacher-to-deliver-to-the-people.json",
+      "words": 603
+    },
+    {
+      "index": 862,
+      "heading": "Chapter 30.--The Preacher Should Commence His Discourse with Prayer to",
+      "file": "0862-chapter-30-the-preacher-should-commence-his-discourse-with-prayer-to.json",
+      "words": 196
+    },
+    {
+      "index": 863,
+      "heading": "Chapter 31.--Apology for the Length of the Work.",
+      "file": "0863-chapter-31-apology-for-the-length-of-the-work.json",
+      "words": 134
+    },
+    {
+      "index": 864,
+      "heading": "THE CITY OF GOD.",
+      "file": "0864-the-city-of-god.json",
+      "words": 0
+    },
+    {
+      "index": 865,
+      "heading": "INDEX OF SUBJECTS.",
+      "file": "0865-index-of-subjects.json",
+      "words": 13024
+    },
+    {
+      "index": 866,
+      "heading": "ON CHRISTIAN DOCTRINE.",
+      "file": "0866-on-christian-doctrine.json",
+      "words": 0
+    },
+    {
+      "index": 867,
+      "heading": "INDEX OF SUBJECTS.",
+      "file": "0867-index-of-subjects-2.json",
+      "words": 12663
+    }
+  ]
+}
