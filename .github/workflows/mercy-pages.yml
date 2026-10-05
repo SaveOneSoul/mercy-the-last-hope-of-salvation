@@ -43,6 +43,13 @@ jobs:
           if [ -d data/patristic-corpus ]; then
             cp -R data/patristic-corpus _site/data/
           fi
+          if [ -d data/ancient-text-translations ]; then
+            cp -R data/ancient-text-translations _site/data/
+          fi
+          cp data/patristic-quotations.json _site/data/ 2>/dev/null || true
+          cp data/patristic-primary-works.json _site/data/ 2>/dev/null || true
+          cp data/patristic-profile-audit.json _site/data/ 2>/dev/null || true
+          cp data/patristic-corpus-expansion.json _site/data/ 2>/dev/null || true
           mkdir -p _site/data/logos-interlinear
           cp cloud-backend/app/logos_interlinear/prototypes/john-1-1/JHN-1-1.json _site/data/logos-interlinear/
           cp cloud-backend/app/logos_interlinear/prototypes/john-1-1/sources-manifest.json _site/data/logos-interlinear/
