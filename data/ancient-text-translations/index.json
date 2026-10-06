@@ -51,6 +51,36 @@
           "chapter-16"
         ]
       }
+    },
+    {
+      "id": "athanasius-de-incarnatione",
+      "title": "De Incarnatione Verbi / On the Incarnation of the Word",
+      "author_label": "St. Athanasius of Alexandria",
+      "original_language": "Greek",
+      "ancient_source": {
+        "edition": "Archibald Robertson, 2nd ed.",
+        "publication_year": 1893,
+        "source_file": "data/ancient-text-sources/athanasius-de-incarnatione.json",
+        "digital_source": "Open Greek and Latin / First1KGreek",
+        "digital_license": "CC BY-SA 4.0",
+        "note": "Complete Greek text: 56 chapters, 328 sections. The ancient Greek edition is public domain; the OGL digital transcription is reused under CC BY-SA 4.0."
+      },
+      "mercy_translation": {
+        "language": "English",
+        "label": "Mercy Translation",
+        "basis": "Translated directly from the Greek text in Robertson's 1893 edition as digitally transcribed by Open Greek and Latin.",
+        "version": "0.1.0",
+        "status": "in-progress-philological-review",
+        "translated_units": [
+          "chapter-1",
+          "chapter-2"
+        ]
+      },
+      "historical_translation": {
+        "local_source_id": "npnf204-athanasius-1892",
+        "reader_url": "patristic-reader.html?source=npnf204-athanasius-1892",
+        "note": "Historical public-domain English Athanasius volume remains available in the Patristic Reader for comparison."
+      }
     }
   ]
 }
