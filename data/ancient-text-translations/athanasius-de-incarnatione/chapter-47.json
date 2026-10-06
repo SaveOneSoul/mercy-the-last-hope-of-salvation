@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "work_id": "athanasius-de-incarnatione",
+  "unit_id": "chapter-47",
+  "chapter": 47,
+  "original_language": "Greek",
+  "source_ref": {
+    "edition": "Archibald Robertson, 2nd ed.",
+    "publication_year": 1893,
+    "digital_source": "Open Greek and Latin / First1KGreek",
+    "digital_license": "CC BY-SA 4.0",
+    "ancient_source_file": "data/ancient-text-sources/athanasius-de-incarnatione.json"
+  },
+  "mercy_translation": {
+    "language": "English",
+    "version": "0.2.0",
+    "status": "philological-review",
+    "text": "Formerly everywhere was filled with the deception of oracles, and the prophetic shrines at Delphi, Dodona, Boeotia, Lycia, Libya, Egypt, and among the Cabiri, together with the Pythia, were admired by people because of their appearance of supernatural power. But now, since Christ is proclaimed everywhere, the frenzy of these things has ceased and there is no longer one among them who gives oracles.\n\nFormerly demons produced apparitions among human beings, taking possession of springs, rivers, trees, or stones and in this way terrifying the foolish with their tricks. But now, since the divine manifestation of the Word has occurred, their illusion has ceased. For a person needs only to use the sign of the cross and their deceptions are driven away.\n\nFormerly people considered Zeus, Cronus, Apollo, and the heroes spoken of by poets to be gods and wandered in worshiping them. But now that the Savior has appeared among human beings, those figures have been exposed as mortal human beings, while Christ alone among human beings has become known as true God, God the Word from God.\n\nWhat should one say about the magic they admire? Before the Word came, it had power and activity among Egyptians, Chaldeans, and Indians and astonished those who saw it. But with the presence of the truth and the manifestation of the Word, it too was exposed and completely abolished.\n\nAs for Greek wisdom and the grand speech of philosophers, I think no one needs an argument from us, since the marvel is visible to everyone. The wise among the Greeks wrote so much and yet could not persuade even a few people from neighboring regions concerning immortality and the virtuous life. Christ alone, through simple words and through people not trained in eloquence, persuaded great multitudes in churches throughout the whole inhabited world to despise death, think about immortality, overlook temporal things, look toward eternal things, regard earthly glory as nothing, and seek immortality alone."
+  },
+  "translator_notes": [
+    "Translated directly from the Greek source.",
+    "The list of oracular centers reflects the religious geography familiar to Athanasius.",
+    "The contrast between philosophical rhetoric and simple Christian preaching is a recurring apologetic theme."
+  ]
+}
