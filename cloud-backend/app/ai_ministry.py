@@ -123,6 +123,29 @@ def generate(payload: GenerateIn, request: Request, session: dict = Depends(requ
     final_text = refined["text"]
     if not final_text.strip():
         raise HTTPException(status_code=502, detail="ministry_validation_failed")
+    if refined.get("refined"):
+        verification_prompt = (
+            "Act as the final Catholic doctrinal verifier for this private ministry draft. "
+            "Compare the candidate with the authoritative grounded contribution. Correct or remove any claim, "
+            "Scripture interpretation, attribution, quotation, Catechism/canon reference, Father/Saint claim, or "
+            "pastoral statement that is unsupported, fabricated, misleading, or contrary to Catholic faith and morals. "
+            "The authoritative grounded contribution wins every disagreement. Preserve its valid citations and sources. "
+            "Return only the corrected final ministry draft; do not add unverified citations.\n\n"
+            + "AUTHORITATIVE GROUNDED CONTRIBUTION:\n" + grounded["reply"]
+            + "\n\nCANDIDATE SYNTHESIS:\n" + final_text
+        )
+        try:
+            verified = ask_magisterium(
+                CatholicChatIn(message=verification_prompt, language="en"),
+                f"ministry-verify:{identity.subject}",
+            )
+            verified_text = (verified.get("reply") or "").strip()
+            if verified_text:
+                final_text = verified_text
+            else:
+                final_text = grounded["reply"]
+        except Exception:
+            final_text = grounded["reply"]
     reference_pattern = re.compile(r"\b(?:CCC|Canon|Can\.|§)\s*\d+[A-Za-z0-9.:-]*", re.IGNORECASE)
     required_refs = {match.group(0).lower() for match in reference_pattern.finditer(grounded["reply"])}
     refined_lower = final_text.lower()
