@@ -50,7 +50,7 @@ async function chooseWork(id,requestedChapter){
  const expected=Number(currentWork.expected_total_chapters||chapters.length||0);
  const st=statusLabel(currentWork,chapters.length);
  const sourceCount=chapters.length;
- workMeta.innerHTML='<strong>'+esc(currentWork.author_label)+'</strong><br>'+esc(currentWork.original_language)+' · '+expected+' chapter'+(expected===1?'':'s')+' total · '+sourceCount+' source chapter'+(sourceCount===1?'':'s')+' currently ingested · <span class="at-status '+st[0]+'">'+esc(st[1])+'</span>';
+ workMeta.innerHTML='<strong>'+esc(currentWork.author_label)+'</strong><br>'+esc(currentWork.original_language)+' · '+expected+' chapter'+(expected===1?'':'s')+' total · '+sourceCount+' source chapter'+(sourceCount===1?'':'s')+' currently ingested · <span class="at-status '+st[0]+'">'+esc(st[1])+'</span>'+(currentWork.ancient_source&&currentWork.ancient_source.reading_url?'<br><a href="'+esc(currentWork.ancient_source.reading_url)+'">Read the locally hosted Greek source archive (unverified OCR)</a>':'');
  controls.textContent='';
  chapters.forEach(ch=>{const b=document.createElement('button');b.type='button';b.dataset.ch=String(ch);b.dataset.translated=String(translatedSet.has(ch));b.textContent=String(ch);b.title=translatedSet.has(ch)?'Mercy translation available':'Original ancient text available; Mercy translation in progress';b.addEventListener('click',()=>loadChapter(ch));controls.append(b);});
  const target=chapters.includes(Number(requestedChapter))?Number(requestedChapter):chapters[0];
