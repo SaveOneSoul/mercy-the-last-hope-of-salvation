@@ -13,15 +13,15 @@
 <main class="bs-wrap"><h1>St. Basil — <em>On the Holy Spirit</em></h1><h2>Original Greek source archive</h2>
 <p>The full available digitized OCR transcription of the Greek treatise is hosted here for research and collation. The treatise comprises 30 chapters and 79 numbered sections, but the OCR's section/chapter recognition is incomplete; this archive is therefore browsed by preserved PG page loci, not by falsely reconstructed chapters.</p>
 <div class="bs-warning"><strong>Source-quality notice:</strong> This is a <strong>machine-generated, unverified transcription</strong>, not a proofread Greek critical edition. It includes OCR errors, gaps, occasional Latin or editorial notes, and damaged headings. Do not cite it as verified Greek. Compare with the original <em>Patrologia Graeca</em> 32 page images or a scholarly critical edition before publishing a quotation or translation. The separate Mercy translation is explicitly reviewed chapter by chapter.</div>
-<div class="bs-toolbar"><label>Search text <input id="q" type="search" placeholder="Greek word or expression"></label><label>PG OCR page <select id="page"></select></label><a class="btn secondary" href="ancient-text-reader.html?work=basil-de-spiritu-sancto&chapter=1">Mercy translation</a></div>
-<p id="summary" class="bs-count"></p><div id="body" class="bs-list" aria-live="polite">Loading Greek source…</div>
+<div class="bs-toolbar"><label>Search text <input id="q" type="search" placeholder="Greek word or expression"></label><label>PG OCR page <select id="page"></select></label><label>Chapter / section locator <select id="section"><option value="">Select section…</option></select></label><a class="btn secondary" href="ancient-text-reader.html?work=basil-de-spiritu-sancto&chapter=1">Mercy translation</a></div>
+<p id="sectionNotice" class="bs-count">Chapter and section concordance is a working editorial map; OCR sections are not yet proofread.</p><p id="summary" class="bs-count"></p><div id="body" class="bs-list" aria-live="polite">Loading Greek source…</div>
 <div class="bs-controls"><button id="prev" type="button">← Previous page</button><button id="next" type="button">Next page →</button></div>
 <p><strong>Provenance:</strong> Migne, <em>Patrologia Graeca</em>, vol. 32; digitized Greek work-level OCR from <a href="https://github.com/open-greek/open-greek-corpus">Open Greek Corpus</a>, source key <code>basilius-theology.de-spiritu-sancto</code>. OCR location labels are retained verbatim for audit. Attribution and editorial status are recorded in the downloadable source metadata.</p>
 </main><script>
 (function(){
  const base='../data/ancient-text-sources/basil-de-spiritu-sancto-ocr.json';
- const q=document.getElementById('q'),page=document.getElementById('page'),body=document.getElementById('body'),summary=document.getElementById('summary');
- let rows=[],pages=[];
+ const q=document.getElementById('q'),page=document.getElementById('page'),body=document.getElementById('body'),summary=document.getElementById('summary'),section=document.getElementById('section'),sectionNotice=document.getElementById('sectionNotice');
+ let rows=[],pages=[],sectionList=[],focusLocus='';
  const pageOf=x=>String(x.locus||'').split('.')[0];
  function render(){
   const key=q.value.trim().toLocaleLowerCase(),selected=page.value;
@@ -30,7 +30,7 @@
   body.replaceChildren();
   if(!found.length){body.textContent='No matching source blocks. Try another word or page.';return;}
   found.slice(0,key?200:100).forEach(r=>{
-   const section=document.createElement('section');section.className='bs-line';
+   const section=document.createElement('section');section.className='bs-line';section.dataset.locus=r.locus;if(r.locus===focusLocus){section.style.outline='2px solid #a66f21';section.style.borderRadius='.5rem';}
    const label=document.createElement('span');label.className='locus';label.textContent='Source locus: '+r.locus;
    const p=document.createElement('p');p.lang='grc';p.textContent=r.text;
    section.append(label,p);body.append(section);
@@ -41,8 +41,17 @@
  q.addEventListener('input',render);page.addEventListener('change',render);
  document.getElementById('prev').addEventListener('click',()=>step(-1));
  document.getElementById('next').addEventListener('click',()=>step(1));
- fetch(base).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(data=>{
-  rows=data.rows||[];pages=[...new Set(rows.map(pageOf))];
+ section.addEventListener('change',()=>{
+   const item=sectionList.find(x=>String(x.section)===section.value);if(!item)return;
+   q.value='';
+   if(item.source_anchor){focusLocus=item.source_anchor.locus;page.value=pageOf(item.source_anchor);sectionNotice.textContent='Chapter '+item.chapter+' · §'+item.section+': OCR label found at '+item.source_anchor.locus+'. Greek text still requires printed-edition verification.';}
+   else{focusLocus='';page.value='';sectionNotice.textContent='Chapter '+item.chapter+' · §'+item.section+': Section heading was not recovered from OCR. This passage requires manual transcription/collation before a Mercy translation can be certified.';}
+   render();
+   const target=body.querySelector('[data-locus="'+focusLocus+'"]');if(target)target.scrollIntoView({behavior:'smooth',block:'center'});
+ });
+ Promise.all([base,'../data/ancient-text-sources/basil-section-concordance.json'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json();}))).then(([data,audit])=>{
+  rows=data.rows||[];pages=[...new Set(rows.map(pageOf))];sectionList=audit.sections||[];
+  sectionList.forEach(item=>{const o=document.createElement('option');o.value=String(item.section);o.textContent='Chapter '+item.chapter+' · §'+item.section+(item.source_anchor?'':' · OCR gap');section.append(o);});
   const all=document.createElement('option');all.value='';all.textContent='All pages (search)';page.append(all);
   pages.forEach(p=>{const opt=document.createElement('option');opt.value=p;opt.textContent=p;page.append(opt);});
   page.value=pages[0]||'';render();

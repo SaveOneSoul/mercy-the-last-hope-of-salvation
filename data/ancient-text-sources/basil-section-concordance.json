@@ -1,0 +1,1080 @@
+{
+  "schema": 1,
+  "work_id": "basil-de-spiritu-sancto",
+  "expected_chapters": 30,
+  "expected_sections": 79,
+  "mapping_basis": "Chapter/section numbering from public-domain Blomfield Jackson historical translation and parallel independent catalogues (e.g. EWTN / Catholic Library), used only for numeric concordance; OCR is independently stored from PG32 Greek.",
+  "editorial_status": "working section-number concordance, not verified Greek chapter transcription",
+  "cautions": [
+    "Source anchor indicates a detected numbered paragraph, not proof of complete Greek text.",
+    "Missing anchors are genuine OCR gaps or headings rendered illegible; do not auto-fill by translation from another language.",
+    "Do not generate Mercy translations from modern or public-domain English translations; translate from Greek after verifying ancient text.",
+    "The page-locus labels pg032_0039 etc are OCR page identifiers, not Migne printed column numbers."
+  ],
+  "chapters": [
+    {
+      "chapter": 1,
+      "start_section": 1,
+      "end_section": 3
+    },
+    {
+      "chapter": 2,
+      "start_section": 4,
+      "end_section": 4
+    },
+    {
+      "chapter": 3,
+      "start_section": 5,
+      "end_section": 5
+    },
+    {
+      "chapter": 4,
+      "start_section": 6,
+      "end_section": 6
+    },
+    {
+      "chapter": 5,
+      "start_section": 7,
+      "end_section": 12
+    },
+    {
+      "chapter": 6,
+      "start_section": 13,
+      "end_section": 15
+    },
+    {
+      "chapter": 7,
+      "start_section": 16,
+      "end_section": 16
+    },
+    {
+      "chapter": 8,
+      "start_section": 17,
+      "end_section": 21
+    },
+    {
+      "chapter": 9,
+      "start_section": 22,
+      "end_section": 23
+    },
+    {
+      "chapter": 10,
+      "start_section": 24,
+      "end_section": 24
+    },
+    {
+      "chapter": 11,
+      "start_section": 25,
+      "end_section": 26
+    },
+    {
+      "chapter": 12,
+      "start_section": 27,
+      "end_section": 28
+    },
+    {
+      "chapter": 13,
+      "start_section": 29,
+      "end_section": 29
+    },
+    {
+      "chapter": 14,
+      "start_section": 30,
+      "end_section": 33
+    },
+    {
+      "chapter": 15,
+      "start_section": 34,
+      "end_section": 35
+    },
+    {
+      "chapter": 16,
+      "start_section": 36,
+      "end_section": 40
+    },
+    {
+      "chapter": 17,
+      "start_section": 41,
+      "end_section": 43
+    },
+    {
+      "chapter": 18,
+      "start_section": 44,
+      "end_section": 47
+    },
+    {
+      "chapter": 19,
+      "start_section": 48,
+      "end_section": 48
+    },
+    {
+      "chapter": 20,
+      "start_section": 49,
+      "end_section": 51
+    },
+    {
+      "chapter": 21,
+      "start_section": 52,
+      "end_section": 52
+    },
+    {
+      "chapter": 22,
+      "start_section": 53,
+      "end_section": 53
+    },
+    {
+      "chapter": 23,
+      "start_section": 54,
+      "end_section": 54
+    },
+    {
+      "chapter": 24,
+      "start_section": 55,
+      "end_section": 57
+    },
+    {
+      "chapter": 25,
+      "start_section": 58,
+      "end_section": 60
+    },
+    {
+      "chapter": 26,
+      "start_section": 61,
+      "end_section": 64
+    },
+    {
+      "chapter": 27,
+      "start_section": 65,
+      "end_section": 68
+    },
+    {
+      "chapter": 28,
+      "start_section": 69,
+      "end_section": 70
+    },
+    {
+      "chapter": 29,
+      "start_section": 71,
+      "end_section": 75
+    },
+    {
+      "chapter": 30,
+      "start_section": 76,
+      "end_section": 79
+    }
+  ],
+  "sections": [
+    {
+      "chapter": 1,
+      "section": 1,
+      "source_anchor": {
+        "row_index": 7,
+        "locus": "pg032_0039.8",
+        "preview": "1. 'Επηνεσα το φιλομάθες σου και φιλόπονον του τρόπου, και ήσθη γε ύπερφυώς τω επιστατικω και νηφαλίω της διαν"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 1,
+      "section": 2,
+      "source_anchor": null,
+      "anchor_status": "Section label missing in OCR; find in printed edition",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 1,
+      "section": 3,
+      "source_anchor": {
+        "row_index": 10,
+        "locus": "pg032_0041.1",
+        "preview": "3. Προσευχομένῳ μοι πρώτῳ μετὰ τοῦ λαοῦ, καὶ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 2,
+      "section": 4,
+      "source_anchor": null,
+      "anchor_status": "Section label missing in OCR; find in printed edition",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 3,
+      "section": 5,
+      "source_anchor": {
+        "row_index": 30,
+        "locus": "pg032_0043.4",
+        "preview": "5. Ὑπῆγατο μέντοι αὐτοὺς πρὸς τὴν ἀπάτην ταύτην καὶ ἡ τῶν ἐξωθεν παρατήρησις, οἱ τὸ, ἐξ οὗ, καὶ τὸ, δι' οὗ, κε"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 4,
+      "section": 6,
+      "source_anchor": {
+        "row_index": 36,
+        "locus": "pg032_0044.3",
+        "preview": "6. 'Ημεῖς δὲ κεχρῆσθαι μὲν πολλῶ τοῖς φωναῖς ταύταις καὶ τὸν τῆς ἀληθείας λόγον ὁμολογοῦμεν· οὐ μὴν τὴν γε τοῦ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 5,
+      "section": 7,
+      "source_anchor": {
+        "row_index": 39,
+        "locus": "pg032_0044.6",
+        "preview": "7. Τὰ μὲν οὖν (49) ἐκείνων τοιαῦτα· ἡμεῖς δὲ δείξομεν τὰ προειρημένα, ὅτι οὔτε ὁ Πατὴρ τὸ ἐξ οὗ λαβών, τῷ Υἱῷ "
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 5,
+      "section": 8,
+      "source_anchor": {
+        "row_index": 103,
+        "locus": "pg032_0046.2",
+        "preview": "8. Εἰ δὲ πρὸς ταύτην ἡμῶν τὴν ἐκδοχὴν ἐνίστανται, τίς αὐτοὺς ἐξαιρέσει λόγος τοῦ μὴ οὐχὶ φανερῶς ἐαυτοὺς περιπ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 5,
+      "section": 9,
+      "source_anchor": {
+        "row_index": 104,
+        "locus": "pg032_0046.3",
+        "preview": "9. Γράφων ὁ Ἀπόστολος πρὸς Ἐφεσίους, φησίν· Ἀληθεύοντες δὲ ἐν ἀγάπῃ, αὐξήσωμεν εἰς αὐτὸν τὰ πάντα, ὅς ἐστιν ἡ "
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 5,
+      "section": 10,
+      "source_anchor": {
+        "row_index": 106,
+        "locus": "pg032_0047.2",
+        "preview": "10. Ὅτι δὲ τὴν δι' οὐ φωνὴν ὁμοίως ἐπὶ τε Πατρὸς καὶ Υἱοῦ καὶ ἁγίου Πνεύματος ἡ Γραφὴ παραδέχεται, ἤδη δεῖξεν."
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 5,
+      "section": 11,
+      "source_anchor": {
+        "row_index": 107,
+        "locus": "pg032_0047.3",
+        "preview": "11. Τὰ αὐτὰ δὲ ταῦτα καὶ περὶ τῆς, ἐν, συλλαβῆς εἰπεῖν ἔχομεν, ὅτι καὶ ἐπὶ τοῦ Θεοῦ καὶ Πατρὸς τὴν χρήσιν αὐτῆ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 5,
+      "section": 12,
+      "source_anchor": {
+        "row_index": 111,
+        "locus": "pg032_0048.2",
+        "preview": "12. Οὐ μόνον δὲ ἐπὶ τῆς θεολογίας αἱ χρήσεις τῶν φωνῶν ἐπιλλάττονται, ἀλλ' ἤδη καὶ πρὸς τὰ ὑπ' ἀλλήλων σημαινό"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 6,
+      "section": 13,
+      "source_anchor": {
+        "row_index": 116,
+        "locus": "pg032_0049.3",
+        "preview": "13. Καὶ μὴν οὐδὲ πρὸς τὴν ἐξ ἀγνοίας συγγνώμην δυνατὸν αὐτοὺς καταφυγεῖν, οὕτω τεχνικῶς καὶ κακοθῶς τὸν λόγον "
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 6,
+      "section": 14,
+      "source_anchor": {
+        "row_index": 117,
+        "locus": "pg032_0049.4",
+        "preview": "14. \"Ημεῖς δὲ εἴκον πρῶτον αὐτοὺς ἐρωτήσωμεν, τὸ μετὰ τὸν Πατέρα πῶς τὸν Υἱὸν λέγουσιν; ὡς χρόνῳ νεώτερον, ἢ ὡ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 6,
+      "section": 15,
+      "source_anchor": {
+        "row_index": 119,
+        "locus": "pg032_0050.2",
+        "preview": "15. Εἰ δ’ ὡς ἐν τόπῳ ὑποκειμένῳ ὑποβάσιν τινα τοῦ Υἱοῦ νοοῦσι πρὸς τὸν Πατέρα, ὥστε ὑπεράνω μὲν τὸν Πατέρα καθ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 7,
+      "section": 16,
+      "source_anchor": {
+        "row_index": 125,
+        "locus": "pg032_0052.4",
+        "preview": "16. Ἄλλὰ τὸ μεθ' αὐτοῦ λέγειν, φασίν, ἀπεξενωμένον παντελῶς καὶ ἀσύνηθες· τὸ δὲ δι' αὐτοῦ τῷ C λόγῳ τῆς Γραφῆς"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 8,
+      "section": 17,
+      "source_anchor": {
+        "row_index": 149,
+        "locus": "pg032_0053.25",
+        "preview": "17. Ὅταν οὖν ὁ Ἀπόστολος εὐχαριστῇ τῷ Θεῷ διὰ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 8,
+      "section": 18,
+      "source_anchor": {
+        "row_index": 179,
+        "locus": "pg032_0054.2",
+        "preview": "18. Δι' αὐτοῦ γὰρ πᾶσα βοήθεια τῶν ψυχῶν, καὶ καθ' ἕκαστον εἶδος· ἐπιμελείας ἰδιαζούσα τις προσηγορία ἐπινενόη"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 8,
+      "section": 19,
+      "source_anchor": {
+        "row_index": 182,
+        "locus": "pg032_0055.2",
+        "preview": "19. Ὁποία δὲ πάλιν καὶ ἡ παρὰ τοῦ Πατρὸς (4) εἰς ἡμᾶς δι’ αὐτοῦ χορηγία τῶν ἀγαθῶν, ἐξῆς ἂν εἴη λέγειν. Ὅτι, π"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 8,
+      "section": 20,
+      "source_anchor": null,
+      "anchor_status": "Section label missing in OCR; find in printed edition",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 8,
+      "section": 21,
+      "source_anchor": {
+        "row_index": 240,
+        "locus": "pg032_0058.2",
+        "preview": "21. Ὁ ὁρώμενος ἐμὲ ὁράκε τὸν Πατέρα· οὐ τὸν χαρακτῆρα, οὐδὲ τὴν μορφήν· καθαρὰ γὰρ συνθέσεως ἡ θεία φύσις· ἀλλ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 9,
+      "section": 22,
+      "source_anchor": {
+        "row_index": 246,
+        "locus": "pg032_0059.5",
+        "preview": "22. Ἦδη δὲ καὶ περὶ τοῦ Πνεύματος τὰς κοινὰς ἡμῶν ἔννοιας ὁποῖαι τινὲς εἰσιν ἐξετάσωμεν, τὰς τε ἐκ τῶν Γραφῶν "
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 9,
+      "section": 23,
+      "source_anchor": {
+        "row_index": 248,
+        "locus": "pg032_0060.2",
+        "preview": "23. Οἰκειώσει δὲ Πνεύματος πρὸς ψυχὴν οὐχ ὁ διὰ τόπου προσεγγισμός (πῶς γὰρ ἂν πλησιάσαις τῷ ἀσωμάτῳ σωματικῶς"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 10,
+      "section": 24,
+      "source_anchor": {
+        "row_index": 251,
+        "locus": "pg032_0060.5",
+        "preview": "24. Οὐ χρή, φασι, Πατρὶ καὶ Υἱῷ συντετάχθαι τὸ ἅγιον Πνεῦμα, διὰ τε τὸ τῆς φύσεως ἀλλότριον, καὶ πατρὶ. Vide B"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 11,
+      "section": 25,
+      "source_anchor": {
+        "row_index": 254,
+        "locus": "pg032_0061.2",
+        "preview": "25. Ἄλλ’ ἡ μὲν παρασκευή τοῦ καθ’ ἡμῶν πολέμου ἐξήρτυται (35), καὶ πᾶσα διάνοια πρὸς ἡμᾶς τέταται, καὶ γλῶσσαι"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 11,
+      "section": 26,
+      "source_anchor": null,
+      "anchor_status": "Section label missing in OCR; find in printed edition",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 12,
+      "section": 27,
+      "source_anchor": null,
+      "anchor_status": "Section label missing in OCR; find in printed edition",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 12,
+      "section": 28,
+      "source_anchor": null,
+      "anchor_status": "Section label missing in OCR; find in printed edition",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 13,
+      "section": 29,
+      "source_anchor": null,
+      "anchor_status": "Section label missing in OCR; find in printed edition",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 14,
+      "section": 30,
+      "source_anchor": {
+        "row_index": 307,
+        "locus": "pg032_0065.2",
+        "preview": "30. Καὶ οὐχ οὗτος μόνον, ἀλλὰ καὶ πάντες ἀπλῶς οἱ λόγῳ τινὰ διακονίαν πεπιστευμένοι, οὐδένα χρόνον διαμαρτυρόμ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 14,
+      "section": 31,
+      "source_anchor": {
+        "row_index": 311,
+        "locus": "pg032_0066.4",
+        "preview": "31. Ἄλλ’ οὐδὲ εἰ βαπτιζόμεθα, φησίν, εἰς αὐτό, οὐδ’ οὕτω δίκαιον μετὰ Θεοῦ τετάχθαι. Καὶ γὰρ καὶ εἰς τὸν Μωϋσῆ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 14,
+      "section": 32,
+      "source_anchor": {
+        "row_index": 314,
+        "locus": "pg032_0067.3",
+        "preview": "32. Τί οὖν; ἐπειδὴ τυπικῶς εἰς Μωϋσῆν ἐβαπτίσθησαν, διὰ τοῦτο μικρὰ (74) ἡ τοῦ βαπτίσματος χάρις; Οὕτω μὲν οὖν"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 14,
+      "section": 33,
+      "source_anchor": {
+        "row_index": 317,
+        "locus": "pg032_0068.2",
+        "preview": "33. Ἄλλὰ καὶ ἡ εἰς τὸν Μωϋσᾶ πιστις οὐ τὴν εἰς τὸ Πνεῦμα πιστὶν ὀλίγου τινὸς ἀξίας δείκνυσιν· ἀλλὰ κατὰ τὸν το"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 15,
+      "section": 34,
+      "source_anchor": {
+        "row_index": 340,
+        "locus": "pg032_0069.23",
+        "preview": "34. Τί οὖν πρὸς τούτους (84) εἰπ; Πολλῶν γὰρ διαλύσεων"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 15,
+      "section": 35,
+      "source_anchor": {
+        "row_index": 351,
+        "locus": "pg032_0069.34",
+        "preview": "35. Ἡ τοῦ Θεοῦ καὶ Σωτῆρος ἡμῶν περὶ τὸν ἀνθρωπον"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 16,
+      "section": 36,
+      "source_anchor": null,
+      "anchor_status": "Section label missing in OCR; find in printed edition",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 16,
+      "section": 37,
+      "source_anchor": {
+        "row_index": 377,
+        "locus": "pg032_0072.4",
+        "preview": "37. Ἐπὶ οὖν τὸ ἐξ ἀρχῆς ἐπανίωμεν, ὅπως ἐν πᾶσιν ἀχώριστόν ἐστι καὶ ἀδιάστατον παντελῶς Πατρὸς καὶ Υἱοῦ τὸ ἅγι"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 16,
+      "section": 38,
+      "source_anchor": null,
+      "anchor_status": "Section label missing in OCR; find in printed edition",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 16,
+      "section": 39,
+      "source_anchor": {
+        "row_index": 381,
+        "locus": "pg032_0075.2",
+        "preview": "39. Τὰς δὲ περὶ τὸν ἀνθρώπων οἰκονομίας, τὰς ὑπὸ τοῦ μεγάλου Θεοῦ καὶ Σωτῆρος ἡμῶν Ἰησοῦ Χριστοῦ κατὰ τὴν ἀγαθ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 16,
+      "section": 40,
+      "source_anchor": {
+        "row_index": 383,
+        "locus": "pg032_0076.2",
+        "preview": "40. Εἴροι δὲ ἂν τις, ἀκριβῶς λογιζόμενος, καὶ ἐπὶ τοῦ καιροῦ τῆς προσδοκωμένης ἐπιφανείας τῆς ἐξ οὐρανῶν τοῦ Κ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 17,
+      "section": 41,
+      "source_anchor": {
+        "row_index": 388,
+        "locus": "pg032_0077.4",
+        "preview": "41. Τὴν δὲ ὑπαρίθμησιν ὅ τι καὶ λέγουσι, καὶ κατὰ τίνος σημαινομένου τὴν φωνὴν ταύτην ἄγουσιν, οὐδὲ ἐπινοῆσαι "
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 17,
+      "section": 42,
+      "source_anchor": {
+        "row_index": 389,
+        "locus": "pg032_0078.1",
+        "preview": "42. Τί γὰρ λέγουσιν ; Ὁρᾶτε αὐτῶν τὴς ἀλαζονείας τὰ βήματα. Ἡμεῖς τοῖς μὲν ὁμοτίμοις φαμέν τὴν συναριθμητὴν τρ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 17,
+      "section": 43,
+      "source_anchor": {
+        "row_index": 390,
+        "locus": "pg032_0078.2",
+        "preview": "43. Καὶ τὸν Υἱὸν ὑπαριθμεῖσθαι τῷ Πατρὶ λέγετε, καὶ τὸ Πνεῦμα τῷ Υἱῷ, ἢ τῷ Πνεύματι μόνῃ τὴν ὑπαρίθμησιν ἀφορί"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 18,
+      "section": 44,
+      "source_anchor": {
+        "row_index": 393,
+        "locus": "pg032_0079.3",
+        "preview": "44. Πατέρα καὶ Υἱὸν καὶ ἅγιον Πνεῦμα παραδιδούς ὁ Κύριος, οὐ μετὰ τοῦ ἀριθμοῦ συνεξέδωκεν. Οὐ γὰρ εἶπεν, ὅτι Ε"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 18,
+      "section": 45,
+      "source_anchor": {
+        "row_index": 395,
+        "locus": "pg032_0080.2",
+        "preview": "45. Οὐ γὰρ κατὰ σύνθεσιν ἀριθμοῦμεν, ἀφ’ ἑνὸς εἰς πλήθος ποιούμενοι τὴν παραξύνθην, ἐν καὶ δύο καὶ τρία λέγοντ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 18,
+      "section": 46,
+      "source_anchor": {
+        "row_index": 397,
+        "locus": "pg032_0081.2",
+        "preview": "46. Καὶ οὐχ ἐντεῦθεν μόνον τῆς κατὰ τὴν φύσιν κοινωνίας αἱ ἀποδείξεις (48), ἀλλ' ὅτι καὶ ἐκ τοῦ Θεοῦ εἶναι λέγ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 18,
+      "section": 47,
+      "source_anchor": {
+        "row_index": 399,
+        "locus": "pg032_0082.2",
+        "preview": "47. Ἐπειδὴ δὲ διὰ δυνάμεως φωτιστικῆς τῷ κάλλει τῆς τοῦ Θεοῦ τοῦ ἀοράτου εἰκόνος ἐνατεινοῦμεν, καὶ δι’ αὐτῆς ἀ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 19,
+      "section": 48,
+      "source_anchor": {
+        "row_index": 402,
+        "locus": "pg032_0083.3",
+        "preview": "48. Ἔστω ταῦτα, φησίν, ἀλλ’ οὐχὶ καὶ ἔξεα πάντων φεριομένην ἐστὶ τῷ Πνεύματι, ὥστε δοξολογίας ἀναψύσθαι παρ’ ἡ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 20,
+      "section": 49,
+      "source_anchor": {
+        "row_index": 403,
+        "locus": "pg032_0083.4",
+        "preview": "49. Αἱ δὲ ἐνέργειαι τίνες; Ἄρρητοι μὲν διὰ τὸ μέγεθος, ἀνεξάριθητοι δὲ διὰ τὸ πλῆθος. Πῶς μὲν γὰρ νοήσομεν τὰ "
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 20,
+      "section": 50,
+      "source_anchor": null,
+      "anchor_status": "Section label missing in OCR; find in printed edition",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 20,
+      "section": 51,
+      "source_anchor": null,
+      "anchor_status": "Section label missing in OCR; find in printed edition",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 21,
+      "section": 52,
+      "source_anchor": {
+        "row_index": 428,
+        "locus": "pg032_0087.3",
+        "preview": "52. Καὶ τί δεῖ, ἐκ τῶν ταπεινῶν ἀπομαχομένων, αἰσχρῶς τὴν νίκην κατακτάσθαι τῷ λόγῳ, ἐξὼν τῇ παραθέσει τῶν σεμ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 22,
+      "section": 53,
+      "source_anchor": {
+        "row_index": 432,
+        "locus": "pg032_0088.4",
+        "preview": "53. Οὐ μόνον δὲ ἐξ ὧν τὰς αὐτὰς προσηγολίας ἔχει, καὶ κοινωνῶν (93) ἐστὶ τῶν ἐνεργειῶν Πατρὶ καὶ Υἱῷ, τὸ ὑπερέ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 23,
+      "section": 54,
+      "source_anchor": {
+        "row_index": 437,
+        "locus": "pg032_0089.4",
+        "preview": "54. Τῶν μὲν οὖν (2) ἄλλων ἑκάστη δυναμένων ἐν περιγράπτῳ τόπῳ τυγχάνει πιστευεται. Ὁ γὰρ τῷ Κορνηλίῳ ἐπιστάς ἄ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 24,
+      "section": 55,
+      "source_anchor": {
+        "row_index": 441,
+        "locus": "pg032_0090.4",
+        "preview": "55. Εἴτα δόξῃ μὲν καὶ τιμῇ ἐστεφάνωται ὁ κοινὸς ἄνθρωπος (8), καὶ δόξα καὶ τιμὴ καὶ εἰρήνη παντί.(9) τῷ ποιούν"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 24,
+      "section": 56,
+      "source_anchor": {
+        "row_index": 447,
+        "locus": "pg032_0091.3",
+        "preview": "56. Ἐκφεύξωμεθα οὖν τὰ καθ' ἕκαστον. Φύσει ἐστὶν ἀγαθόν, ὡς ἀγαθὸς ὁ Πατήρ, καὶ ἀγαθὸς ὁ Υἱός. Ἡ κτίσις δὲ ἐν "
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 24,
+      "section": 57,
+      "source_anchor": {
+        "row_index": 449,
+        "locus": "pg032_0092.2",
+        "preview": "57. Ἐν ἡμῖν, φησί, τὸ Πνεῦμα, ὡς δῶρόν ἐστι παρὰ τοῦ Θεοῦ. Οὐ δῆπουν δὲ τὸ δῶρον ταῖς ἴσαις τιμαῖς τῷ δεδωκότι"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 25,
+      "section": 58,
+      "source_anchor": {
+        "row_index": 452,
+        "locus": "pg032_0092.5",
+        "preview": "58. Πῶς οὖν, φησίν, ἡ Γραφὴ οὐδαμοῦ συνοδωζόμενον Πατρὶ καὶ Υἱῷ τὸ Πνεῦμα παρέδωκεν, ἀλλὰ πεφυλαγμένως ἐξέλιπε"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 25,
+      "section": 59,
+      "source_anchor": {
+        "row_index": 454,
+        "locus": "pg032_0093.2",
+        "preview": "59. Ἡμεῖς γὰρ, ἀμφοτέρας ἐν τῷ τῶν πιστῶν χρήσει καταλαμβάνοντες (27) τὰς ῥήσεις, ἀμφοτέρας κεχρῆμεθα· τὴν μὲν"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 25,
+      "section": 60,
+      "source_anchor": null,
+      "anchor_status": "Section label missing in OCR; find in printed edition",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 26,
+      "section": 61,
+      "source_anchor": {
+        "row_index": 460,
+        "locus": "pg032_0095.4",
+        "preview": "61. Ἐμοὶ τοίνυν σκοπουμένῳ δοκεῖ, ἀπλῆς καὶ συντόμου τῆς ἐκφωνήσεως οὖσης, πολλὰ καὶ ποικίλα εἶναι τὰ δι' αὐτῆ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 26,
+      "section": 62,
+      "source_anchor": {
+        "row_index": 462,
+        "locus": "pg032_0096.2",
+        "preview": "62. Ὁ δὲ παράδοξον μὲν εἰπεῖν, ἀληθὲς δὲ οὐδενὸς ἔλαττον (41), ὅτι καὶ ὡς χώρα τῶν ἀγιαζομένων πολυλάκις τὸ Πν"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 26,
+      "section": 63,
+      "source_anchor": {
+        "row_index": 464,
+        "locus": "pg032_0097.2",
+        "preview": "63. Ἐν μὲν οὖν τοῖς γεννητοῖς (47) οὕτω πολυμερῶς καὶ πολυτρόπως ἐνέσται λέγεται τὸ Πνεῦμα· Πατρὶ δὲ καὶ Υἱῷ ο"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 26,
+      "section": 64,
+      "source_anchor": {
+        "row_index": 466,
+        "locus": "pg032_0098.2",
+        "preview": "64. Δεύτερος δὲ νοῦς, οὐδὲ αὐτὸς ἀποβλητός· ὅτι ὥσπερ ἐν τῷ Υἱῷ ὁρᾶται ὁ Πατήρ, οὕτως ὁ Υἱὸς ἐν τῷ Πνεύματι. Ἡ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 27,
+      "section": 65,
+      "source_anchor": {
+        "row_index": 469,
+        "locus": "pg032_0098.5",
+        "preview": "65. Τίνος οὖν ἕνεκεν, φασίν, ἰδίως προστιθούσης τῷ Πνεύματι τῆς ἐν συλλαβῆς, καὶ εἰς πᾶσαν ἡμῖν τὴν περὶ αὐτοῦ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 27,
+      "section": 66,
+      "source_anchor": {
+        "row_index": 471,
+        "locus": "pg032_0099.2",
+        "preview": "66. Τῶν ἐν τῇ Ἐκκλησίᾳ πεφυλαγμένων δογμάτων καὶ χρηγμάτων τὰ μὲν ἐκ τῆς ἐγγράφου διδασκαλίας ἔχομεν, τὰ δὲ ἐκ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 27,
+      "section": 67,
+      "source_anchor": {
+        "row_index": 478,
+        "locus": "pg032_0101.4",
+        "preview": "67. Ἐπιλείψει με ἡ ἡμέρα, τὰ ἄγραφα (68) τῆς"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 27,
+      "section": 68,
+      "source_anchor": null,
+      "anchor_status": "Section label missing in OCR; find in printed edition",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 28,
+      "section": 69,
+      "source_anchor": {
+        "row_index": 482,
+        "locus": "pg032_0103.4",
+        "preview": "69. Ἴδωμεν δὲ καὶ εἰ τινὰ ἀπολογίαν τοῖς πατράσιν ἡμῶν τῆς χρήσεως ταύτης ἐπινοήσομεν. Οἱ γὰρ τὴν ἀρχὴν παρασχ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 28,
+      "section": 70,
+      "source_anchor": {
+        "row_index": 484,
+        "locus": "pg032_0104.2",
+        "preview": "70. Αἰτῶνυμαι ἐπαγγέμεναι τὰ λεπτόμενα, ὅτι σὺ μὲν συνοδοξασθήσεσθαι Χριστῷ προσδοκᾶς (εἴπερ γὰρ συμπάσχομεν ἵ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 29,
+      "section": 71,
+      "source_anchor": {
+        "row_index": 488,
+        "locus": "pg032_0105.4",
+        "preview": "71. Πρὸς γε μὴν τὸ ἀμάρτυρον καὶ ἄγραφον εἶναι τὴν σὺν τῷ Πνεύματι δοξολογίαν ἐκεῖνο λέγομεν ὅτι, εἰ μὲν μηδὲν"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 29,
+      "section": 72,
+      "source_anchor": {
+        "row_index": 490,
+        "locus": "pg032_0106.2",
+        "preview": "72. Εἰρηναῖος ἐκεῖνος, καὶ Κλήμης ὁ Ῥωμαῖος, καὶ Διονύσιος ὁ Ῥωμαῖος, καὶ ὁ Ἀλεξανδρεύς Διονύσιος, ὁ καὶ παράδ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 29,
+      "section": 73,
+      "source_anchor": {
+        "row_index": 495,
+        "locus": "pg032_0107.3",
+        "preview": "73. Ἦδη δὲ καὶ Ὀριγένην ἐν πολλαῖς τῶν εἰς τοὺς Ψαλμούς διαλέξεων εὕρομεν (97) σὺν τῷ ἁγίῳ Πνεύματι τὴν δόξαν "
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 29,
+      "section": 74,
+      "source_anchor": null,
+      "anchor_status": "Section label missing in OCR; find in printed edition",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 29,
+      "section": 75,
+      "source_anchor": {
+        "row_index": 529,
+        "locus": "pg032_0109.2",
+        "preview": "75. Πῶς οὖν καινοτόμος ἐγώ, καὶ νεωτέρας ῥημάτων δημιουργός, ἔθνη ὅλα καὶ πόλεις, καὶ ἕως πάσης μνήμης ἀνθρωπί"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 30,
+      "section": 76,
+      "source_anchor": {
+        "row_index": 576,
+        "locus": "pg032_0110.48",
+        "preview": "76. Τίνι οὖν ὁμοιώσομεν τὴν παροῦσαν κατάστα-"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 30,
+      "section": 77,
+      "source_anchor": {
+        "row_index": 582,
+        "locus": "pg032_0111.1",
+        "preview": "77. Transi jam ab imagine ad ipsum mali exem- · 77. Μετάβα δὴ μοι ἀπὸ τῆς εἰκόνος ἐπ' αὐτὸ τὸ plar. Annon olim"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 30,
+      "section": 78,
+      "source_anchor": {
+        "row_index": 585,
+        "locus": "pg032_0113.2",
+        "preview": "78. Διὰ ταῦτα λυσσιτελεστέραν τοῦ λόγου τὴν σιωπὴν ἐτιθέμην, ὡς οὐ δυναμένης φωνῆς ἀνθρώπου διὰ τοσούτων θορύβ"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    },
+    {
+      "chapter": 30,
+      "section": 79,
+      "source_anchor": {
+        "row_index": 587,
+        "locus": "pg032_0114.1",
+        "preview": "79. Τοῦτων μὲν οὖν πάντων ἕνεκεν σωφρὴν ἔδει, ἀλλ’ ἀνθεῖλε (41) γὰρ ἑτέρωθεν ἡ ἀγάπη, οὐ ζητοῦσα τὸ ἑαυτῆς, κα"
+      },
+      "anchor_status": "OCR label located; Greek unverified",
+      "transcript_status": "unverified OCR; may contain omissions",
+      "translation_status": "not yet reviewed against complete section"
+    }
+  ],
+  "summary": {
+    "total_sections": 79,
+    "located_ocr_anchors": 65,
+    "missing_ocr_anchors": [
+      2,
+      4,
+      20,
+      26,
+      27,
+      28,
+      29,
+      36,
+      38,
+      50,
+      51,
+      60,
+      68,
+      74
+    ]
+  }
+}
