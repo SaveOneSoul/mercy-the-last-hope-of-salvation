@@ -1,7 +1,8 @@
-"""Gemini editorial adapter for private Ministry content.
+"""Gemini ministry contributor for private Catholic Ministry drafts.
 
-Gemini is never the doctrinal authority. It may only improve structure,
-readability and pastoral flow of already grounded Catholic content.
+Gemini contributes independently to structure, biblical/historical context and
+pastoral development. Magisterium-grounded material remains the doctrinal
+authority whenever the providers differ.
 """
 import os
 import httpx
@@ -16,18 +17,28 @@ def gemini_state() -> dict:
     return {"provider": "Gemini", "configured": bool(GEMINI_API_KEY), "model": GEMINI_MODEL}
 
 
-def refine_ministry_text(grounded_text: str, *, kind: str, title: str) -> dict:
+def refine_ministry_text(grounded_text: str, *, kind: str, title: str, request_text: str = "") -> dict:
     if not GEMINI_API_KEY:
         return {"text": grounded_text, "provider": "none", "model": None, "refined": False}
-    prompt = f"""You are an editorial assistant, not a doctrinal authority.
-Preserve every Catholic doctrinal claim, qualification, citation and source from the grounded text.
-Do not add quotations, paragraph numbers, canon numbers, document titles, facts, or theological claims.
-Improve only organization, clarity, pastoral flow and readability.
-Keep the output suitable for a private {kind} draft titled {title}.
-Return only the revised draft.
+    prompt = f"""You are the pastoral and homiletic contributor in a Catholic ministry system.
+You are not the final doctrinal authority. Answer the ministry request yourself and contribute
+biblical context, historical/cultural background, structure, pastoral application, reflection,
+prayer, and clear presentation. For a homily, respect the Catholic liturgical character and the
+Holy See Homiletic Directory (2014): proclaimed Scripture, liturgical celebration and season,
+the Paschal Mystery, sound Catholic doctrine, and the needs of the assembly.
+Do not invent quotations, Scripture references, Catechism/canon numbers, Vatican citations,
+Fathers, or saints. If your proposal differs from the Magisterium-grounded contribution below,
+preserve the Magisterium-grounded doctrine and sources.
 
-GROUNDED TEXT:
-{grounded_text}"""
+TYPE: {kind}
+TITLE: {title}
+REQUEST:
+{request_text}
+
+MAGISTERIUM-GROUNDED CONTRIBUTION:
+{grounded_text}
+
+Return one integrated private draft using both contributions."""
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
     try:
         with httpx.Client(timeout=httpx.Timeout(GEMINI_TIMEOUT_SECONDS, connect=15.0)) as client:
