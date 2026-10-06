@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "work_id": "athanasius-de-incarnatione",
+  "unit_id": "chapter-1",
+  "chapter": 1,
+  "original_language": "Greek",
+  "source_ref": {
+    "edition": "Archibald Robertson, 2nd ed.",
+    "publication_year": 1893,
+    "digital_source": "Open Greek and Latin / First1KGreek",
+    "digital_license": "CC BY-SA 4.0",
+    "ancient_source_file": "data/ancient-text-sources/athanasius-de-incarnatione.json"
+  },
+  "mercy_translation": {
+    "language": "English",
+    "version": "0.1.0",
+    "status": "philological-review",
+    "text": "Having sufficiently discussed a few things out of many in what came before—concerning the error of the nations about idols and their superstition, how the invention of these things arose from the beginning, and how human beings devised for themselves the worship of idols out of wickedness—and having also, by the grace of God, indicated a few things concerning the divinity of the Word of the Father, his providence and power over all things, and how the good Father orders all things through him, while all things are moved by him and receive life in him, let us now proceed in due order.\n\nO Macarius, truly a lover of Christ, let us set forth the matters concerning the Word’s becoming man and make known his divine manifestation among us—a manifestation which the Jews slander and the Greeks mock, but which we worship—so that from the very lowliness that seems to belong to the Word you may have an even greater and fuller reverence for him.\n\nFor the more he is mocked by unbelievers, the greater the testimony he gives concerning his divinity. Things that human beings fail to understand and regard as impossible, he himself shows to be possible. Things that people mock as unfitting, he makes fitting by his own goodness. And things at which people, thinking themselves wise, laugh as merely human, he shows by his own power to be divine: by the apparent lowliness of the cross he destroys the fantasy of idols, while invisibly persuading those who mock and disbelieve so that they come to recognize his divinity and power.\n\nFor the account of these things, it is necessary to recall what has already been said, so that you may be able to understand the reason why so great and mighty a Word of the Father appeared in a body. Do not suppose that the Savior wore a body as a consequence of his nature. Rather, although by nature incorporeal and existing as the Word, nevertheless, because of the loving-kindness and goodness of his own Father, and for the sake of our salvation, he appeared to us in a human body.\n\nIn giving an account of this matter, it is fitting first to speak about the creation of the universe and about God its Creator, so that one may properly see that its renewal was accomplished by the Word who created it in the beginning. For there will be nothing contradictory in this: that the Father should work the salvation of creation through the very One through whom he created it."
+  },
+  "translator_notes": [
+    "Translated directly from the Greek text of Robertson's 1893 edition as digitally transcribed by Open Greek and Latin.",
+    "The Greek ἐνανθρώπησις is rendered contextually as 'becoming man'; this preserves Athanasius' focus on the Word's real assumption of humanity.",
+    "The term φιλανθρωπία is rendered 'loving-kindness' in the third paragraph; it carries the sense of divine benevolence toward humanity.",
+    "This is a Mercy translation under philological review, not a reproduction of a modern copyrighted English translation."
+  ]
+}
