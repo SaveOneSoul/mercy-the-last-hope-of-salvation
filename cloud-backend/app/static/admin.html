@@ -25,6 +25,7 @@
 <button class="btn secondary" data-view="media">Media</button>
 <button class="btn secondary" data-view="courses">Course Videos</button>
 <button class="btn secondary" data-view="homiletics">Homiletics</button>
+<button class="btn secondary" data-view="ministry">AI Ministry</button>
 <button class="btn secondary" data-view="live">Live Studio</button>
 <button class="btn secondary" data-view="content">Existing Pages</button>
 </nav>
@@ -119,6 +120,16 @@
 <div class="table-wrap"><table><thead><tr><th>Date</th><th>Title</th><th>Speaker</th><th>Occasion</th><th>Status</th><th></th></tr></thead><tbody id="homRows"></tbody></table></div>
 </div>
 </section>
+
+<section id="ministryView" class="hidden">
+<div class="panel">
+<div class="section-head"><div><h2 style="margin-bottom:3px">Private AI Ministry</h2><p class="muted" style="margin-top:0">Request-driven Catholic ministry preparation. Nothing is public until reviewed and explicitly published.</p></div></div>
+<div class="note"><strong>Authority pipeline:</strong> Magisterium AI grounds doctrine and sources → Gemini may improve structure and readability → the result remains a private draft for human review.</div>
+<div class="two"><label class="field"><span>Ministry type</span><select id="ministryKind"><option value="homily">Homily</option><option value="bible_study">Bible Study</option><option value="retreat">Retreat</option><option value="catechesis">Catechesis</option><option value="rcia">RCIA</option><option value="lesson_planner">Lesson Planner</option><option value="prayer_service">Prayer Service</option><option value="liturgy">Liturgy</option></select></label><label class="field"><span>Title</span><input id="ministryTitle" maxlength="240"></label></div>
+<label class="field"><span>What should the AI prepare?</span><textarea id="ministryRequest" style="min-height:130px" placeholder="Example: Prepare a Sunday homily on John 20:19–31, with Fathers, Catechism, pastoral application and prayer."></textarea></label>
+<div class="composer-actions"><button id="ministryGenerateBtn" class="btn primary" type="button">Generate Private Draft</button><button id="ministryRefreshBtn" class="btn secondary" type="button">Refresh Drafts</button></div>
+<p id="ministryStatus" class="status"></p><div id="ministryDrafts"></div>
+</div></section>
 
 <section id="liveView" class="hidden">
 <div class="panel">
@@ -230,6 +241,12 @@ $('resetPageBtn').addEventListener('click',function(){if(!currentPath||!confirm(
 function boot(){loadDashboard();loadPageList();loadLibrary();loadMedia();loadCourseVideos();loadHomiletics();loadLive();clearComposer();}
 fetch('/api/admin/me',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error();return r.json();}).then(function(j){csrf=j.csrf;showApp();boot();}).catch(showLogin);
 })();
+
+async function loadMinistry(){const box=document.getElementById('ministryDrafts');if(!box)return;try{const r=await api('/api/admin/ministry/drafts');box.innerHTML=(r.items||[]).map(d=>'<div class="card" style="margin:12px 0"><div class="section-head"><strong>'+escapeHtml(d.title)+'</strong><span class="pill">'+escapeHtml(d.status)+'</span></div><div class="muted">'+escapeHtml(d.kind)+' · v'+d.version+'</div><textarea class="field" style="width:100%;min-height:220px;margin-top:10px" data-ministry-content="'+d.id+'">'+escapeHtml(d.content)+'</textarea><div class="composer-actions"><button class="btn secondary" onclick="saveMinistry('+d.id+','+d.version+')">Save Edit</button><button class="btn secondary" onclick="reviewMinistry('+d.id+','+d.version+')">Mark Reviewed</button><button class="btn primary" onclick="publishMinistry('+d.id+','+d.version+')">Publish</button></div></div>').join('')||'<p class="muted">No private ministry drafts yet.</p>';}catch(e){setStatus('ministryStatus',e.message,true)}}
+async function saveMinistry(id,version){const content=document.querySelector('[data-ministry-content="'+id+'"]');const card=content.closest('.card');const title=card.querySelector('strong').textContent;await api('/api/admin/ministry/drafts/'+id,{method:'PUT',body:JSON.stringify({expected_version:version,title,content:content.value})});await loadMinistry()}
+async function reviewMinistry(id,version){await api('/api/admin/ministry/drafts/'+id+'/review',{method:'POST',body:JSON.stringify({expected_version:version})});await loadMinistry()}
+async function publishMinistry(id,version){if(!confirm('Publish this reviewed ministry draft?'))return;await api('/api/admin/ministry/drafts/'+id+'/publish',{method:'POST',body:JSON.stringify({expected_version:version})});await loadMinistry()}
+document.getElementById('ministryGenerateBtn')?.addEventListener('click',async()=>{setStatus('ministryStatus','Generating grounded private draft…');try{await api('/api/admin/ministry/generate',{method:'POST',body:JSON.stringify({kind:document.getElementById('ministryKind').value,title:document.getElementById('ministryTitle').value,request:document.getElementById('ministryRequest').value})});setStatus('ministryStatus','Private draft created. Review it before publishing.');await loadMinistry()}catch(e){setStatus('ministryStatus',e.message,true)}});document.getElementById('ministryRefreshBtn')?.addEventListener('click',loadMinistry);
 </script>
 </body>
 </html>
