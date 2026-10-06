@@ -4,6 +4,7 @@ Uses the existing signed Mercy admin session as the initial owner authentication
 boundary. It does not add public navigation and never schedules generation.
 """
 import json
+import re
 from datetime import datetime, timezone
 
 from fastapi import APIRouter, Depends, HTTPException, Request
@@ -33,8 +34,6 @@ class MinistryDraft(Base):
     title: Mapped[str] = mapped_column(String(240))
     request_text: Mapped[str] = mapped_column(Text)
     content: Mapped[str] = mapped_column(Text)
-    grounded_content: Mapped[str | None] = mapped_column(Text, nullable=True)
-    orchestration_json: Mapped[str] = mapped_column(Text, default="{}")
     sources_json: Mapped[str] = mapped_column(Text, default="[]")
     status: Mapped[str] = mapped_column(String(20), default="draft", index=True)
     version: Mapped[int] = mapped_column(Integer, default=1)
@@ -82,7 +81,6 @@ def _serialize(row: MinistryDraft) -> dict:
         "sources": json.loads(row.sources_json or "[]"), "status": row.status,
         "version": row.version, "created_at": row.created_at, "updated_at": row.updated_at,
         "published_at": row.published_at,
-        "orchestration": json.loads(getattr(row, "orchestration_json", "{}") or "{}"),
     }
 
 
@@ -115,15 +113,14 @@ def generate(payload: GenerateIn, request: Request, session: dict = Depends(requ
     final_text = refined["text"]
     if not final_text.strip():
         raise HTTPException(status_code=502, detail="ministry_validation_failed")
-    orchestration = {
-        "doctrinal_provider": grounded.get("provider"), "doctrinal_model": grounded.get("model"),
-        "editorial_provider": refined.get("provider"), "editorial_model": refined.get("model"),
-        "editorial_refined": refined.get("refined", False), "validated": True,
-    }
+    reference_pattern = re.compile(r"\b(?:CCC|Canon|Can\.|§)\s*\d+[A-Za-z0-9.:-]*", re.IGNORECASE)
+    required_refs = {match.group(0).lower() for match in reference_pattern.finditer(grounded["reply"])}
+    refined_lower = final_text.lower()
+    if not all(ref in refined_lower for ref in required_refs):
+        final_text = grounded["reply"]
     row = MinistryDraft(
         owner_subject=identity.subject, kind=payload.kind, title=payload.title.strip(),
-        request_text=payload.request.strip(), content=final_text, grounded_content=grounded["reply"],
-        orchestration_json=json.dumps(orchestration),
+        request_text=payload.request.strip(), content=final_text,
         sources_json=json.dumps(grounded.get("sources") or []), status="draft",
     )
     db.add(row); db.commit(); db.refresh(row)
