@@ -30,9 +30,10 @@ function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;',
 async function json(path){const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status+' '+path);return r.json();}
 function statusLabel(work,totalChapters){
  const units=(work.mercy_translation&&work.mercy_translation.translated_units)||[];
- const complete=totalChapters>0&&units.length>=totalChapters;
+ const expected=Number(work.expected_total_chapters||totalChapters||0);
+ const complete=expected>0&&units.length>=expected;
  if(complete)return ['complete','Complete Mercy translation · '+units.length+' chapters'];
- return ['progress',units.length+' of '+totalChapters+' chapters translated'];
+ return ['progress',units.length+' of '+expected+' chapters translated'];
 }
 async function chooseWork(id,requestedChapter){
  currentWork=manifest.works.find(w=>w.id===id)||manifest.works[0];
@@ -46,8 +47,10 @@ async function chooseWork(id,requestedChapter){
  }else{
    chapters=[...translatedSet].sort((a,b)=>a-b);
  }
+ const expected=Number(currentWork.expected_total_chapters||chapters.length||0);
  const st=statusLabel(currentWork,chapters.length);
- workMeta.innerHTML='<strong>'+esc(currentWork.author_label)+'</strong><br>'+esc(currentWork.original_language)+' · '+chapters.length+' chapter'+(chapters.length===1?'':'s')+' · <span class="at-status '+st[0]+'">'+esc(st[1])+'</span>';
+ const sourceCount=chapters.length;
+ workMeta.innerHTML='<strong>'+esc(currentWork.author_label)+'</strong><br>'+esc(currentWork.original_language)+' · '+expected+' chapter'+(expected===1?'':'s')+' total · '+sourceCount+' source chapter'+(sourceCount===1?'':'s')+' currently ingested · <span class="at-status '+st[0]+'">'+esc(st[1])+'</span>';
  controls.textContent='';
  chapters.forEach(ch=>{const b=document.createElement('button');b.type='button';b.dataset.ch=String(ch);b.dataset.translated=String(translatedSet.has(ch));b.textContent=String(ch);b.title=translatedSet.has(ch)?'Mercy translation available':'Original ancient text available; Mercy translation in progress';b.addEventListener('click',()=>loadChapter(ch));controls.append(b);});
  const target=chapters.includes(Number(requestedChapter))?Number(requestedChapter):chapters[0];
