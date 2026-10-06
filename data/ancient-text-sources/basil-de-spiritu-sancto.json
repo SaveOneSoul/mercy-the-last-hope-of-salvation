@@ -14,9 +14,11 @@
     "digital_repository": "Fabio3rs/BibliothecaPatristica",
     "digital_revision": "34c5de5a1e066fe518744e5dc34b219afa56098a",
     "digital_license": "MIT for the repository transcription/code; underlying 1857 printed edition is public domain",
-    "source_note": "Greek text is normalized from the digitized public-domain PG 32 pages. The repository OCR/transcription is used as a transcription aid and remains subject to checking against the printed page image. Modern critical editions such as Sources Chrétiennes 17bis are bibliographic controls only and are not reproduced. Full available OCR transcription is archived separately with page-level loci. It is not represented as a verified chapter-by-chapter critical text.",
+    "source_note": "Greek text is normalized from the digitized public-domain PG 32 pages. The repository OCR/transcription is used as a transcription aid and remains subject to checking against the printed page image. Modern critical editions such as Sources Chrétiennes 17bis are bibliographic controls only and are not reproduced. Full available OCR transcription is archived separately with page-level loci. It is not represented as a verified chapter-by-chapter critical text. The chapter/section concordance maps all 79 section numbers and flags 14 missed OCR paragraph anchors requiring direct edition collation.",
     "raw_ocr_archive": "data/ancient-text-sources/basil-de-spiritu-sancto-ocr.json",
-    "local_reading_page": "pages/basil-greek-source.html"
+    "local_reading_page": "pages/basil-greek-source.html",
+    "section_concordance": "data/ancient-text-sources/basil-section-concordance.json",
+    "verify_before_translation": true
   },
   "chapters": [
     {
