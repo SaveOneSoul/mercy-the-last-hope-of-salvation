@@ -150,18 +150,21 @@
         "source_file": "data/ancient-text-sources/basil-de-spiritu-sancto.json",
         "digital_source": "Patrística Digital / BibliothecaPatristica",
         "digital_license": "MIT repository transcription; underlying printed edition public domain",
-        "note": "Complete work has 30 chapters and 79 numbered sections. Mercy is ingesting and checking the Greek chapter by chapter from the public-domain PG 32 edition."
+        "note": "Complete work has 30 chapters and 79 numbered sections. Mercy is ingesting and checking the Greek chapter by chapter from the public-domain PG 32 edition. Full source is archived page-by-page, but OCR errors and lost structural markers require collation before individual chapters are certified.",
+        "raw_ocr_archive": "data/ancient-text-sources/basil-de-spiritu-sancto-ocr.json",
+        "reading_url": "basil-greek-source.html"
       },
       "mercy_translation": {
         "language": "English",
         "label": "Mercy Translation",
         "basis": "Translated directly from Basil's Greek text as normalized from the public-domain PG 32 edition; not translated from a modern English version.",
-        "version": "0.1.0",
+        "version": "0.2.0",
         "status": "in-progress-philological-review",
         "translated_units": [
-          "chapter-1"
+          "chapter-1",
+          "chapter-3"
         ],
-        "completion_note": "Chapter 1 is translated. Greek source ingestion and direct Mercy translation will continue through all 30 chapters / 79 sections."
+        "completion_note": "Chapters 1 and 3 have first-pass Mercy translation. Chapter 2 and chapters 4–30 remain untranslated. Full available Greek OCR has been locally archived with page loci pending philological verification."
       }
     }
   ]
