@@ -19,7 +19,7 @@ from .magisterium import CatholicChatIn, ask_magisterium
 from .gemini_ministry import refine_ministry_text
 
 router = APIRouter(prefix="/api/admin/ministry", tags=["private-ai-ministry"])
-TYPES = {"homily", "bible_study", "retreat", "catechesis", "rcia", "lesson_planner", "prayer_service", "liturgy"}
+TYPES = {"homily", "preaching", "seminar", "bible_study", "retreat", "catechesis", "rcia", "lesson_planner", "prayer_service", "liturgy"}
 
 
 def utcnow():
@@ -102,14 +102,22 @@ def generate(payload: GenerateIn, request: Request, session: dict = Depends(requ
     identity = _require(session, "write")
     if payload.kind not in TYPES:
         raise HTTPException(status_code=400, detail="unsupported_ministry_type")
+    mode_rule = ""
+    if payload.kind == "homily":
+        mode_rule = "Follow the Holy See Homiletic Directory (2014). Determine the liturgical day from any supplied date/context: for Sundays use the correct A/B/C cycle; for weekdays use the proper weekday Lectionary and season; account for solemnities and feasts. Relate the proclaimed readings, Paschal Mystery, liturgical celebration, Catholic doctrine, and pastoral needs of the assembly."
+    elif payload.kind == "preaching":
+        mode_rule = "This is non-liturgical preaching/proclamation. Base it on Scripture supplied by the user. If no Scripture passage is supplied, return exactly SCRIPTURE_REQUIRED and do not invent a passage."
+    elif payload.kind == "seminar":
+        mode_rule = "Prepare a Catholic seminar/teaching session from the requested theme with objectives, Scripture where appropriate, doctrine, background, grounded Fathers and Saints, practical teaching, reflection questions, prayer, and conclusion."
     prompt = (
         "Create a private Catholic ministry draft only because an authorized user explicitly requested it. "
         "Do not claim publication. Distinguish binding doctrine, discipline, theological opinion, devotional practice and private revelation. "
-        "Prefer Scripture, Catechism, Magisterium, Church Fathers and Saints; never fabricate citations.\n\n"
-        f"TYPE: {payload.kind}\nTITLE: {payload.title.strip()}\nREQUEST: {payload.request.strip()}"
+        "Prefer Scripture, Catechism, Magisterium, Church Fathers and Saints; never fabricate citations. "
+        + mode_rule + "\n\n"
+        + f"TYPE: {payload.kind}\nTITLE: {payload.title.strip()}\nREQUEST: {payload.request.strip()}"
     )
     grounded = ask_magisterium(CatholicChatIn(message=prompt, language="en"), f"ministry:{identity.subject}")
-    refined = refine_ministry_text(grounded["reply"], kind=payload.kind, title=payload.title.strip())
+    if payload.kind == "preaching" and grounded["reply"].strip() == "SCRIPTURE_REQUIRED":\n        raise HTTPException(status_code=422, detail="scripture_required_for_preaching")\n    refined = refine_ministry_text(grounded["reply"], kind=payload.kind, title=payload.title.strip(), request_text=payload.request.strip())
     final_text = refined["text"]
     if not final_text.strip():
         raise HTTPException(status_code=502, detail="ministry_validation_failed")
@@ -135,7 +143,7 @@ def _transition(draft_id: int, payload: TransitionIn, request: Request, session:
         raise HTTPException(status_code=404, detail="ministry_draft_not_found")
     if row.version != payload.expected_version:
         raise HTTPException(status_code=409, detail="ministry_draft_version_conflict")
-    if target == "published" and row.status != "reviewed":
+    if row.status == "published":\n        raise HTTPException(status_code=409, detail="published_draft_is_immutable")\n    if target == "published" and row.status != "reviewed":
         raise HTTPException(status_code=409, detail="review_required_before_publish")
     row.status = target; row.version += 1
     if target == "published": row.published_at = utcnow()
