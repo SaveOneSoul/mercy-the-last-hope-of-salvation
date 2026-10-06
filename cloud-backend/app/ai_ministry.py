@@ -15,6 +15,7 @@ from .ai_ministry_policy import MinistryIdentity, can_access_ministry, private_m
 from .cms_admin import require_admin, _require_write_guard
 from .db import Base, get_db
 from .magisterium import CatholicChatIn, ask_magisterium
+from .gemini_ministry import refine_ministry_text
 
 router = APIRouter(prefix="/api/admin/ministry", tags=["private-ai-ministry"])
 TYPES = {"homily", "bible_study", "retreat", "catechesis", "rcia", "lesson_planner", "prayer_service", "liturgy"}
@@ -32,6 +33,8 @@ class MinistryDraft(Base):
     title: Mapped[str] = mapped_column(String(240))
     request_text: Mapped[str] = mapped_column(Text)
     content: Mapped[str] = mapped_column(Text)
+    grounded_content: Mapped[str | None] = mapped_column(Text, nullable=True)
+    orchestration_json: Mapped[str] = mapped_column(Text, default="{}")
     sources_json: Mapped[str] = mapped_column(Text, default="[]")
     status: Mapped[str] = mapped_column(String(20), default="draft", index=True)
     version: Mapped[int] = mapped_column(Integer, default=1)
@@ -48,6 +51,12 @@ class GenerateIn(BaseModel):
 
 class TransitionIn(BaseModel):
     expected_version: int = Field(ge=1)
+
+
+class EditIn(BaseModel):
+    expected_version: int = Field(ge=1)
+    title: str = Field(min_length=1, max_length=240)
+    content: str = Field(min_length=1, max_length=60000)
 
 
 def _owner_identity(session: dict) -> MinistryIdentity:
@@ -73,6 +82,7 @@ def _serialize(row: MinistryDraft) -> dict:
         "sources": json.loads(row.sources_json or "[]"), "status": row.status,
         "version": row.version, "created_at": row.created_at, "updated_at": row.updated_at,
         "published_at": row.published_at,
+        "orchestration": json.loads(getattr(row, "orchestration_json", "{}") or "{}"),
     }
 
 
@@ -100,11 +110,21 @@ def generate(payload: GenerateIn, request: Request, session: dict = Depends(requ
         "Prefer Scripture, Catechism, Magisterium, Church Fathers and Saints; never fabricate citations.\n\n"
         f"TYPE: {payload.kind}\nTITLE: {payload.title.strip()}\nREQUEST: {payload.request.strip()}"
     )
-    result = ask_magisterium(CatholicChatIn(message=prompt, language="en"), f"ministry:{identity.subject}")
+    grounded = ask_magisterium(CatholicChatIn(message=prompt, language="en"), f"ministry:{identity.subject}")
+    refined = refine_ministry_text(grounded["reply"], kind=payload.kind, title=payload.title.strip())
+    final_text = refined["text"]
+    if not final_text.strip():
+        raise HTTPException(status_code=502, detail="ministry_validation_failed")
+    orchestration = {
+        "doctrinal_provider": grounded.get("provider"), "doctrinal_model": grounded.get("model"),
+        "editorial_provider": refined.get("provider"), "editorial_model": refined.get("model"),
+        "editorial_refined": refined.get("refined", False), "validated": True,
+    }
     row = MinistryDraft(
         owner_subject=identity.subject, kind=payload.kind, title=payload.title.strip(),
-        request_text=payload.request.strip(), content=result["reply"],
-        sources_json=json.dumps(result.get("sources") or []), status="draft",
+        request_text=payload.request.strip(), content=final_text, grounded_content=grounded["reply"],
+        orchestration_json=json.dumps(orchestration),
+        sources_json=json.dumps(grounded.get("sources") or []), status="draft",
     )
     db.add(row); db.commit(); db.refresh(row)
     return _serialize(row)
@@ -134,3 +154,19 @@ def review(draft_id: int, payload: TransitionIn, request: Request, session: dict
 @router.post("/drafts/{draft_id}/publish")
 def publish(draft_id: int, payload: TransitionIn, request: Request, session: dict = Depends(require_admin), db: Session = Depends(get_db)):
     return _transition(draft_id, payload, request, session, db, "published")
+
+
+@router.put("/drafts/{draft_id}")
+def edit_draft(draft_id: int, payload: EditIn, request: Request, session: dict = Depends(require_admin), db: Session = Depends(get_db)):
+    _require_write_guard(request, session)
+    identity = _require(session, "write")
+    row = db.get(MinistryDraft, draft_id)
+    if not row or row.owner_subject != identity.subject:
+        raise HTTPException(status_code=404, detail="ministry_draft_not_found")
+    if row.status == "published":
+        raise HTTPException(status_code=409, detail="published_draft_is_immutable")
+    if row.version != payload.expected_version:
+        raise HTTPException(status_code=409, detail="ministry_draft_version_conflict")
+    row.title = payload.title.strip(); row.content = payload.content.strip(); row.status = "draft"; row.version += 1
+    db.commit(); db.refresh(row)
+    return _serialize(row)
