@@ -28,10 +28,11 @@ let manifest=null,currentWork=null,sourceBundle=null,translatedSet=new Set();
 
 function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 async function json(path){const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status+' '+path);return r.json();}
-function statusLabel(work){
+function statusLabel(work,totalChapters){
  const units=(work.mercy_translation&&work.mercy_translation.translated_units)||[];
- if(work.id==='didache'&&units.length===16)return ['complete','Complete Mercy translation'];
- return ['progress',units.length+' chapter'+(units.length===1?'':'s')+' translated'];
+ const complete=totalChapters>0&&units.length>=totalChapters;
+ if(complete)return ['complete','Complete Mercy translation · '+units.length+' chapters'];
+ return ['progress',units.length+' of '+totalChapters+' chapters translated'];
 }
 async function chooseWork(id,requestedChapter){
  currentWork=manifest.works.find(w=>w.id===id)||manifest.works[0];
@@ -45,7 +46,7 @@ async function chooseWork(id,requestedChapter){
  }else{
    chapters=[...translatedSet].sort((a,b)=>a-b);
  }
- const st=statusLabel(currentWork);
+ const st=statusLabel(currentWork,chapters.length);
  workMeta.innerHTML='<strong>'+esc(currentWork.author_label)+'</strong><br>'+esc(currentWork.original_language)+' · '+chapters.length+' chapter'+(chapters.length===1?'':'s')+' · <span class="at-status '+st[0]+'">'+esc(st[1])+'</span>';
  controls.textContent='';
  chapters.forEach(ch=>{const b=document.createElement('button');b.type='button';b.dataset.ch=String(ch);b.dataset.translated=String(translatedSet.has(ch));b.textContent=String(ch);b.title=translatedSet.has(ch)?'Mercy translation available':'Original ancient text available; Mercy translation in progress';b.addEventListener('click',()=>loadChapter(ch));controls.append(b);});
