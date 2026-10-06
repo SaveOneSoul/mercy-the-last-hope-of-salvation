@@ -150,9 +150,12 @@
         "source_file": "data/ancient-text-sources/basil-de-spiritu-sancto.json",
         "digital_source": "Patrística Digital / BibliothecaPatristica",
         "digital_license": "MIT repository transcription; underlying printed edition public domain",
-        "note": "Complete work has 30 chapters and 79 numbered sections. Mercy is ingesting and checking the Greek chapter by chapter from the public-domain PG 32 edition. Full source is archived page-by-page, but OCR errors and lost structural markers require collation before individual chapters are certified.",
+        "note": "Complete work has 30 chapters and 79 numbered sections. Mercy is ingesting and checking the Greek chapter by chapter from the public-domain PG 32 edition. Full source is archived page-by-page, but OCR errors and lost structural markers require collation before individual chapters are certified. Editorial 30-chapter/79-section locator records all section numbers and distinguishes recovered OCR labels from the 14 absent OCR anchors. This is not equivalent to verified Greek text.",
         "raw_ocr_archive": "data/ancient-text-sources/basil-de-spiritu-sancto-ocr.json",
-        "reading_url": "basil-greek-source.html"
+        "reading_url": "basil-greek-source.html",
+        "section_concordance": "data/ancient-text-sources/basil-section-concordance.json",
+        "sections_located_in_ocr": 65,
+        "sections_missing_ocr_anchor": 14
       },
       "mercy_translation": {
         "language": "English",
@@ -164,7 +167,7 @@
           "chapter-1",
           "chapter-3"
         ],
-        "completion_note": "Chapters 1 and 3 have first-pass Mercy translation. Chapter 2 and chapters 4–30 remain untranslated. Full available Greek OCR has been locally archived with page loci pending philological verification."
+        "completion_note": "Only Chapters 1 and 3 have preliminary English translations; additional Greek section-level collation is required before translating the remaining chapters. The 79-section concordance is metadata, not 79 completed texts."
       }
     }
   ]
