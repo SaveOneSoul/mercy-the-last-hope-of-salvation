@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "work_id": "athanasius-de-incarnatione",
+  "unit_id": "chapter-8",
+  "chapter": 8,
+  "original_language": "Greek",
+  "source_ref": {
+    "edition": "Archibald Robertson, 2nd ed.",
+    "publication_year": 1893,
+    "digital_source": "Open Greek and Latin / First1KGreek",
+    "digital_license": "CC BY-SA 4.0",
+    "ancient_source_file": "data/ancient-text-sources/athanasius-de-incarnatione.json"
+  },
+  "mercy_translation": {
+    "language": "English",
+    "version": "0.2.0",
+    "status": "philological-review",
+    "text": "For this reason the incorporeal, incorruptible, and immaterial Word of God comes into our realm—although he had not been far away before. For no part of creation had been left empty of him; he has filled all things everywhere while remaining with his own Father. But he comes by condescending to us in his loving-kindness and manifestation.\n\nSeeing the rational race perishing and death reigning over them through corruption; seeing also that the threat attached to the transgression maintained corruption against us, and that it would be unreasonable for the law to be dissolved before it was fulfilled; seeing also what was unfitting in what had happened, namely that the things of which he himself was the Maker were disappearing; seeing the exceeding wickedness of human beings, which little by little they had increased against themselves until it became unbearable; seeing also that all human beings were liable to death—he had mercy on our race, pitied our weakness, condescended to our corruption, and could not endure the dominion of death. So that what had been made might not perish and the Father's work toward humanity become useless, he took to himself a body, and one not foreign to our own.\n\nFor he did not merely wish to be in a body, nor did he simply wish to appear. Had he wished only to appear, he could have made his divine manifestation through some other and greater means. Instead, he takes what is ours, and not merely in any way, but from a spotless and undefiled virgin who had known no man, a body pure and truly unmixed with intercourse with men. For being himself powerful and the Maker of all, he prepared for himself in the Virgin the body as a temple, and made it his own as an instrument, making himself known and dwelling in it.\n\nThus, taking from among our own what was like us, because all were liable to the corruption of death, he handed it over to death on behalf of all and offered it to the Father. He did this in loving-kindness, so that, as though all had died in him, the law concerning the corruption of human beings might be dissolved, since its power had been fulfilled in the Lord's body and no longer had any place against human beings like him; and so that he might turn human beings, who had returned to corruption, back again to incorruption, make them alive from death through his making the body his own and through the grace of the resurrection, and cause death to vanish from them like straw before fire."
+  },
+  "translator_notes": [
+    "Translated directly from the Greek source.",
+    "The phrase 'made it his own as an instrument' renders Athanasius' ἰδιοποιεῖται ... ὥσπερ ὄργανον and should be read within his doctrine of the Word truly assuming a human body.",
+    "The Virgin is described as ἄχραντος and ἀμίαντος—spotless and undefiled—in the source.",
+    "Athanasius' sacrificial and representative logic is retained without importing later technical terminology not present in the passage."
+  ]
+}

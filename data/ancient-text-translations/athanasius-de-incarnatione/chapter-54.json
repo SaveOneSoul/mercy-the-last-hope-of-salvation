@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "work_id": "athanasius-de-incarnatione",
+  "unit_id": "chapter-54",
+  "chapter": 54,
+  "original_language": "Greek",
+  "source_ref": {
+    "edition": "Archibald Robertson, 2nd ed.",
+    "publication_year": 1893,
+    "digital_source": "Open Greek and Latin / First1KGreek",
+    "digital_license": "CC BY-SA 4.0",
+    "ancient_source_file": "data/ancient-text-sources/athanasius-de-incarnatione.json"
+  },
+  "mercy_translation": {
+    "language": "English",
+    "version": "0.2.0",
+    "status": "philological-review",
+    "text": "Just as someone who wishes to see God—who is invisible by nature and cannot be seen at all—grasps and knows him from his works, so the person who does not behold Christ with the mind should at least learn who he is from the works of the body and test whether they are merely human or belong to God.\n\nIf they are human, let that person mock. But if they are not human and are recognized as God's works, let him not laugh at things that are not laughable. Rather, let him marvel that through so humble a means divine realities have been manifested to us, that through death immortality “has reached all,” and that through the Word's becoming man the providence over all things has been made known together with its Giver and Creator, the Word of God himself.\n\nFor he became man so that we might be made godlike; he manifested himself through a body so that we might receive a conception of the invisible Father; and he endured insult from human beings so that we might inherit incorruption. He himself suffered no harm, being impassible, incorruptible, the very Word and God; but in his own impassibility he kept and preserved the suffering human beings for whose sake he endured these things.\n\nIn short, the achievements of the Savior accomplished through his becoming man are of such a kind and so many that anyone who wished to recount them would be like people gazing upon the open sea and wishing to count its waves. Just as the eye cannot take in all the waves because those continually arriving outstrip the perception of the one trying to count them, so it is impossible for someone wishing to comprehend all Christ's achievements in the body to receive them all even in thought, since more pass beyond the mind than the person thinks he has grasped.\n\nIt is better, then, not to attempt to speak of them all, when one cannot adequately express even a part, but to mention one more thing and leave you to marvel at the whole. For all are equally wondrous, and wherever one looks, there, beholding the divinity of the Word, one is overwhelmed with amazement."
+  },
+  "translator_notes": [
+    "Translated directly from the Greek source.",
+    "The famous line ἐνηνθρώπησεν, ἵνα ἡμεῖς θεοποιηθῶμεν is rendered 'he became man so that we might be made godlike'; it expresses Athanasius' doctrine of participation/deification, not identity with the divine essence.",
+    "The sea-and-waves analogy emphasizes the inexhaustibility of Christ's saving works."
+  ]
+}

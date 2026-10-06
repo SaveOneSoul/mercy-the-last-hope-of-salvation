@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "work_id": "athanasius-de-incarnatione",
+  "unit_id": "chapter-12",
+  "chapter": 12,
+  "original_language": "Greek",
+  "source_ref": {
+    "edition": "Archibald Robertson, 2nd ed.",
+    "publication_year": 1893,
+    "digital_source": "Open Greek and Latin / First1KGreek",
+    "digital_license": "CC BY-SA 4.0",
+    "ancient_source_file": "data/ancient-text-sources/athanasius-de-incarnatione.json"
+  },
+  "mercy_translation": {
+    "language": "English",
+    "version": "0.2.0",
+    "status": "philological-review",
+    "text": "The grace of being according to the image was sufficient for knowing God the Word and, through him, the Father. Yet God, knowing human weakness, also made provision for their negligence, so that if they neglected to know God through themselves, they might not remain ignorant of the Creator through the works of creation.\n\nBut because human negligence gradually descends toward worse things, God again made provision for this weakness also. He sent the law and prophets known to them, so that even if they were reluctant to lift their eyes to heaven and know the Maker, they might have instruction close at hand. For human beings are more readily able to learn higher things from other human beings.\n\nIt was possible, then, by looking up at the greatness of heaven and considering the harmony of creation, to know its Ruler, the Word of the Father, who by his providence over all things makes the Father known to everyone and for this reason moves all things, so that through him everyone may know God.\n\nOr, if this was too difficult for them, they could at least meet with the holy ones and through them learn about God, the Creator of all, the Father of Christ, and learn that the worship of idols is godlessness and full of every impiety.\n\nHaving known the law, they could also have ceased from every lawlessness and lived the life of virtue. For the law was not for the Jews alone, nor were the prophets sent only for them. They were sent to the Jews and were persecuted by the Jews, but they were a sacred school for the whole inhabited world, teaching the knowledge of God and the conduct of the soul.\n\nYet although God's goodness and loving-kindness were so great, human beings, overcome by immediate pleasures and by the fantasies and deceptions of demons, did not lift themselves toward the truth. Instead, they loaded themselves with more evils and sins, so that they no longer appeared rational but, by their behavior, were reckoned irrational."
+  },
+  "translator_notes": [
+    "Translated directly from the Greek source.",
+    "Athanasius presents three pedagogies of divine self-disclosure: the image within humanity, creation, and the law and prophets.",
+    "'Sacred school' renders Athanasius' language for the law and prophets as instruction for the whole inhabited world."
+  ]
+}

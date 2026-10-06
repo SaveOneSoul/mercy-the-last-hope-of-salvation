@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "work_id": "athanasius-de-incarnatione",
+  "unit_id": "chapter-51",
+  "chapter": 51,
+  "original_language": "Greek",
+  "source_ref": {
+    "edition": "Archibald Robertson, 2nd ed.",
+    "publication_year": 1893,
+    "digital_source": "Open Greek and Latin / First1KGreek",
+    "digital_license": "CC BY-SA 4.0",
+    "ancient_source_file": "data/ancient-text-sources/athanasius-de-incarnatione.json"
+  },
+  "mercy_translation": {
+    "language": "English",
+    "version": "0.2.0",
+    "status": "philological-review",
+    "text": "Who among human beings, either after death or while still living, ever taught concerning virginity and did not regard this virtue as impossible among human beings? Yet our Savior and King of all, Christ, proved so powerful in his teaching concerning it that even children who had not yet reached the lawful age promised themselves to virginity beyond what the law required.\n\nWho among human beings was ever able to reach so far—to Scythians, Ethiopians, Persians, Armenians, Goths, those said to live beyond the Ocean, those beyond Hyrcania, and in general Egyptians and Chaldeans—peoples given to magical practices, exceedingly superstitious and fierce in their customs—and to proclaim virtue and self-control and opposition to the worship of idols as the Lord of all, the Power of God, our Lord Jesus Christ has done?\n\nFor he not only proclaimed these things through his own disciples; he also persuaded people in mind to change the savagery of their ways, no longer to worship the gods of their ancestors, but to acknowledge him and through him worship the Father.\n\nFormerly, while worshiping idols, Greeks and peoples called barbarians fought against one another and were cruel even toward their own kin. It was scarcely possible for anyone to cross land or sea without arming his hand with a sword because of their irreconcilable warfare with one another.\n\nTheir whole manner of life was carried on with weapons. A sword took the place of a staff and served as support for every need. Yet, as I said before, although they worshiped idols and poured libations to demons, those who held such beliefs were not able to be retrained by the superstition of idols.\n\nBut when they passed over to the teaching of Christ, then, truly in a remarkable way, being pierced in conscience, they laid aside the cruelty of murder and no longer thought in terms of war. Everything became peaceful for them, and the things that make for friendship became desirable."
+  },
+  "translator_notes": [
+    "Translated directly from the Greek source.",
+    "The chapter reflects Athanasius' fourth-century descriptions of various peoples and his apologetic claim that Christian teaching transformed violent customs.",
+    "Historical ethnonyms are retained descriptively but should not be treated as modern value judgments."
+  ]
+}
