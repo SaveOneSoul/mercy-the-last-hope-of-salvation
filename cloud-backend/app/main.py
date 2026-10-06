@@ -11,6 +11,7 @@ from sqlalchemy.orm import Session
 from .cms_admin import router as cms_admin_router
 from .cms_publish import router as cms_publish_router
 from .media_studio import router as media_studio_router
+from .ai_ministry import router as ai_ministry_router
 from .prayer_network import (
     PrayerDistributionLog,
     PrayerNetworkRequest,
@@ -65,6 +66,7 @@ app.include_router(counselling_router)
 app.include_router(cms_admin_router)
 app.include_router(cms_publish_router)
 app.include_router(media_studio_router)
+app.include_router(ai_ministry_router)
 app.include_router(prayer_network_router)
 app.include_router(priest_portal_router)
 app.include_router(seo_router)
