@@ -46,6 +46,9 @@ jobs:
           if [ -d data/ancient-text-translations ]; then
             cp -R data/ancient-text-translations _site/data/
           fi
+          if [ -d data/ancient-text-sources ]; then
+            cp -R data/ancient-text-sources _site/data/
+          fi
           cp data/patristic-quotations.json _site/data/ 2>/dev/null || true
           cp data/patristic-primary-works.json _site/data/ 2>/dev/null || true
           cp data/patristic-profile-audit.json _site/data/ 2>/dev/null || true

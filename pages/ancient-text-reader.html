@@ -2,43 +2,99 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#5a1020">
-<meta name="description" content="Mercy Ancient-Text Translation Corpus: original Greek, Latin and Syriac witnesses with independent Mercy English translations.">
+<meta name="description" content="Mercy Ancient-Text Translation Corpus: full original-language patristic works with independent Mercy English translations made directly from ancient sources.">
 <title>Mercy Ancient-Text Translation Corpus</title>
 <link rel="stylesheet" href="../css/mercy.css">
 <style>
-.at-shell{max-width:1120px;margin:auto;padding:1.2rem}.at-note{border-left:4px solid var(--gold);background:#fff7e8;border-radius:0 16px 16px 0;padding:1rem 1.1rem;margin:1rem 0}.at-controls{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0}.at-controls button{border:1px solid var(--line);background:var(--card);padding:.55rem .75rem;border-radius:999px;cursor:pointer}.at-controls button[aria-pressed="true"]{background:var(--wine);color:#fff}.at-card{border:1px solid var(--line);border-radius:20px;background:var(--card);padding:1rem;margin:1rem 0}.at-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.at-col{border:1px solid var(--line);border-radius:16px;padding:1rem;background:var(--card)}.at-col h3{margin:.1rem 0 .6rem;color:var(--wine)}.at-original{font-family:"Times New Roman",serif;font-size:1.03rem;line-height:1.7}.at-translation{font-size:1.02rem;line-height:1.7;white-space:pre-line}.at-meta{font:.78rem/1.55 system-ui;color:var(--muted)}.at-notes li{margin:.45rem 0;line-height:1.55}body.dark .at-note{background:#2c241d}@media(max-width:760px){.at-grid{grid-template-columns:1fr}}
+.at-shell{max-width:1180px;margin:auto;padding:1.2rem}.at-note{border-left:4px solid var(--gold);background:#fff7e8;border-radius:0 16px 16px 0;padding:1rem 1.1rem;margin:1rem 0}.at-toolbar{display:grid;grid-template-columns:minmax(250px,1fr) 2fr;gap:.8rem;align-items:start;margin:1rem 0}.at-work-select{width:100%;padding:.8rem;border:1px solid var(--line);border-radius:12px;background:var(--card);color:inherit}.at-controls{display:flex;gap:.42rem;flex-wrap:wrap}.at-controls button{border:1px solid var(--line);background:var(--card);padding:.48rem .65rem;border-radius:999px;cursor:pointer;min-width:2.5rem}.at-controls button[aria-pressed="true"]{background:var(--wine);color:#fff}.at-controls button[data-translated="true"]{box-shadow:inset 0 -3px 0 var(--gold)}.at-card{border:1px solid var(--line);border-radius:20px;background:var(--card);padding:1rem;margin:1rem 0}.at-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.at-col{border:1px solid var(--line);border-radius:16px;padding:1rem;background:var(--card)}.at-col h3{margin:.1rem 0 .6rem;color:var(--wine)}.at-original{font-family:"Times New Roman",serif;font-size:1.03rem;line-height:1.72;white-space:pre-line}.at-translation{font-size:1.02rem;line-height:1.72;white-space:pre-line}.at-meta{font:.78rem/1.55 system-ui;color:var(--muted)}.at-notes li{margin:.45rem 0;line-height:1.55}.at-section{margin:0 0 1.2rem}.at-section-num{display:inline-block;font:800 .72rem system-ui;color:var(--muted);margin-right:.35rem}.at-progress{display:flex;gap:.5rem;flex-wrap:wrap;margin:.7rem 0}.at-status{display:inline-flex;padding:.25rem .5rem;border-radius:999px;background:#efe6dc;color:var(--wine);font:800 .68rem system-ui}.at-status.complete{background:#e5f4e9;color:#285b37}.at-status.progress{background:#fff0d9;color:#7a4b00}.at-pending{padding:1rem;border:1px dashed var(--line);border-radius:14px;background:#fffaf3}.at-nav{display:flex;justify-content:space-between;gap:.6rem;flex-wrap:wrap;margin:1rem 0}.at-nav .btn{max-width:48%;white-space:normal}body.dark .at-note,body.dark .at-pending{background:#2c241d}@media(max-width:800px){.at-grid,.at-toolbar{grid-template-columns:1fr}.at-nav .btn{max-width:100%}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="topbar"><a class="brand" href="../index.html"><span class="cross">✠</span><span><b>Mercy</b><small>The Last Hope of Salvation</small></span></a><button class="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button><nav id="main-nav"><a href="../index.html">Home</a><a href="patristics.html">Patristics</a><a href="fathers.html">Church Fathers</a><a href="patristic-library.html">Primary Texts</a><a href="ancient-text-reader.html" aria-current="page">Ancient Text Corpus</a></nav><button class="theme-btn" aria-label="Toggle theme">◐</button></header>
-<main id="main"><section class="page-hero"><div class="crumb">Patristics · Original languages</div><h1>Mercy Ancient-Text Translation Corpus</h1><p>Original-language patristic texts paired with independent Mercy English translations made directly from legally reusable ancient-language witnesses.</p></section>
+<main id="main"><section class="page-hero"><div class="crumb">Patristics · Original languages</div><h1>Mercy Ancient-Text Translation Corpus</h1><p>Full original-language patristic texts paired, chapter by chapter, with independent Mercy English translations made directly from legally reusable ancient-language witnesses.</p></section>
 <div class="at-shell">
-<div class="at-note"><strong>Translation policy:</strong> Mercy translations are made from Greek, Latin, Syriac or another ancient witness—not from copyrighted modern English translations. Historical translations may be consulted comparatively, but they are not used as the base text for Mercy's translation.</div>
-<p class="at-meta"><strong>Current pilot:</strong> Didache chapters 1–16 · Greek source: Hitchcock and Brown edition (1884) · Public domain · Mercy Translation v0.2.0 · Status: philological review.</p>
-<div class="at-controls" id="chapterControls"></div><div id="reader"></div>
+<div class="at-note"><strong>Translation policy:</strong> Mercy translations are made from Greek, Latin, Syriac or another ancient witness—not from copyrighted modern English translations. Historical public-domain translations may be available separately for comparison, but they are not the base text for Mercy's translation.</div>
+<div class="at-toolbar"><div><label for="workSelect"><strong>Select work</strong></label><select id="workSelect" class="at-work-select"></select><p id="workMeta" class="at-meta"></p></div><div><strong>Chapters</strong><div class="at-controls" id="chapterControls"></div></div></div>
+<div id="reader"><p class="status">Loading ancient-text corpus…</p></div>
 </div></main>
 <footer><div><strong>Mercy – The Last Hope of Salvation</strong><p>Original-language patristic study.</p></div><div><a href="patristic-reader.html">Historical Translation Reader</a><a href="patristic-quotes.html">Verified Quotations</a><a href="sources.html">Sources</a></div><p class="copyright">© <span data-year></span> Mercy – The Last Hope of Salvation.</p></footer>
 <script src="../javascript/mobile-nav.js?v=2"></script><script src="../javascript/mercy.js?v=12"></script>
 <script>
 (function(){
 'use strict';
-const controls=document.getElementById('chapterControls'),reader=document.getElementById('reader');
-const chapters=Array.from({length:16},(_,i)=>i+1);
+const workSelect=document.getElementById('workSelect'),controls=document.getElementById('chapterControls'),reader=document.getElementById('reader'),workMeta=document.getElementById('workMeta');
+let manifest=null,currentWork=null,sourceBundle=null,translatedSet=new Set();
+
 function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
-async function load(ch){
+async function json(path){const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status+' '+path);return r.json();}
+function statusLabel(work){
+ const units=(work.mercy_translation&&work.mercy_translation.translated_units)||[];
+ if(work.id==='didache'&&units.length===16)return ['complete','Complete Mercy translation'];
+ return ['progress',units.length+' chapter'+(units.length===1?'':'s')+' translated'];
+}
+async function chooseWork(id,requestedChapter){
+ currentWork=manifest.works.find(w=>w.id===id)||manifest.works[0];
+ workSelect.value=currentWork.id;
+ sourceBundle=null;
+ translatedSet=new Set((currentWork.mercy_translation&&currentWork.mercy_translation.translated_units||[]).map(x=>Number(String(x).replace('chapter-',''))));
+ let chapters=[];
+ if(currentWork.ancient_source&&currentWork.ancient_source.source_file){
+   sourceBundle=await json('../'+currentWork.ancient_source.source_file);
+   chapters=(sourceBundle.chapters||[]).map(x=>x.chapter);
+ }else{
+   chapters=[...translatedSet].sort((a,b)=>a-b);
+ }
+ const st=statusLabel(currentWork);
+ workMeta.innerHTML='<strong>'+esc(currentWork.author_label)+'</strong><br>'+esc(currentWork.original_language)+' · '+chapters.length+' chapter'+(chapters.length===1?'':'s')+' · <span class="at-status '+st[0]+'">'+esc(st[1])+'</span>';
+ controls.textContent='';
+ chapters.forEach(ch=>{const b=document.createElement('button');b.type='button';b.dataset.ch=String(ch);b.dataset.translated=String(translatedSet.has(ch));b.textContent=String(ch);b.title=translatedSet.has(ch)?'Mercy translation available':'Original ancient text available; Mercy translation in progress';b.addEventListener('click',()=>loadChapter(ch));controls.append(b);});
+ const target=chapters.includes(Number(requestedChapter))?Number(requestedChapter):chapters[0];
+ await loadChapter(target);
+}
+async function loadChapter(ch){
  controls.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.ch)===ch)));
  reader.innerHTML='<p class="status">Loading Chapter '+ch+'…</p>';
  try{
-   const r=await fetch('../data/ancient-text-translations/didache/chapter-'+ch+'.json',{cache:'no-store'});
-   if(!r.ok)throw new Error('HTTP '+r.status);
-   const d=await r.json();
-   reader.innerHTML='<article class="at-card"><h2>Didache · Chapter '+esc(ch)+'</h2><div class="at-grid"><section class="at-col"><h3>Original Greek</h3><div class="at-original">'+esc(d.original_text)+'</div></section><section class="at-col"><h3>Mercy English Translation</h3><div class="at-translation">'+esc(d.mercy_translation.text)+'</div></section></div><h3>Translator notes</h3><ul class="at-notes">'+(d.translator_notes||[]).map(n=>'<li>'+esc(n)+'</li>').join('')+'</ul><p class="at-meta"><strong>Source:</strong> '+esc(d.source_ref.edition)+' ('+esc(d.source_ref.publication_year)+') · '+esc(d.source_ref.rights)+'<br><strong>Translation version:</strong> '+esc(d.mercy_translation.version)+' · '+esc(d.mercy_translation.status)+'</p></article>';
-   history.replaceState(null,'','?work=didache&chapter='+ch);
- }catch(e){reader.innerHTML='<p class="status">This translation unit is temporarily unavailable.</p>';}
+   let original='',sourceMeta='',translation=null;
+   if(sourceBundle){
+     const chapter=sourceBundle.chapters.find(x=>Number(x.chapter)===Number(ch));
+     if(!chapter)throw new Error('Chapter not found');
+     original=(chapter.sections||[]).map(s=>'§ '+s.section+'\n'+s.text).join('\n\n');
+     const s=sourceBundle.source||{};
+     sourceMeta=[s.edition,s.publication,s.digital_source,s.digital_license].filter(Boolean).join(' · ');
+   }
+   try{
+     translation=await json('../data/ancient-text-translations/'+currentWork.id+'/chapter-'+ch+'.json');
+     if(!original)original=translation.original_text||'';
+     if(!sourceMeta&&translation.source_ref)sourceMeta=[translation.source_ref.edition,translation.source_ref.publication_year,translation.source_ref.rights].filter(Boolean).join(' · ');
+   }catch(e){translation=null;}
+
+   const historic=currentWork.historical_translation;
+   let right='';
+   if(translation){
+     right='<section class="at-col"><h3>Mercy English Translation</h3><div class="at-translation">'+esc(translation.mercy_translation.text)+'</div><h3>Translator notes</h3><ul class="at-notes">'+(translation.translator_notes||[]).map(n=>'<li>'+esc(n)+'</li>').join('')+'</ul><p class="at-meta"><strong>Translation version:</strong> '+esc(translation.mercy_translation.version)+' · '+esc(translation.mercy_translation.status)+'</p></section>';
+   }else{
+     right='<section class="at-col"><h3>Mercy English Translation</h3><div class="at-pending"><strong>Translation in progress.</strong><p>The complete ancient-language chapter is already hosted in Mercy. The independent Mercy English translation has not yet passed philological review for this chapter.</p>'+(historic?'<p><a class="btn secondary" href="'+esc(historic.reader_url)+'">Read historical public-domain English edition</a></p>':'')+'</div></section>';
+   }
+   reader.innerHTML='<article class="at-card"><div class="at-progress"><span class="at-status">'+esc(currentWork.original_language)+'</span><span class="at-status '+(translation?'complete':'progress')+'">'+(translation?'Mercy translation available':'Translation in progress')+'</span></div><h2>'+esc(currentWork.title)+' · Chapter '+esc(ch)+'</h2><div class="at-grid"><section class="at-col"><h3>Original '+esc(currentWork.original_language)+'</h3><div class="at-original">'+esc(original)+'</div></section>'+right+'</div><p class="at-meta"><strong>Ancient source:</strong> '+esc(sourceMeta)+'</p><div class="at-nav" id="chapterNav"></div></article>';
+   const chapterList=[...controls.querySelectorAll('button')].map(b=>Number(b.dataset.ch));
+   const pos=chapterList.indexOf(ch),nav=document.getElementById('chapterNav');
+   if(pos>0){const a=document.createElement('a');a.className='btn secondary';a.href='#';a.textContent='← Chapter '+chapterList[pos-1];a.onclick=e=>{e.preventDefault();loadChapter(chapterList[pos-1]);};nav.append(a);}
+   if(pos<chapterList.length-1){const a=document.createElement('a');a.className='btn primary';a.href='#';a.textContent='Chapter '+chapterList[pos+1]+' →';a.onclick=e=>{e.preventDefault();loadChapter(chapterList[pos+1]);};nav.append(a);}
+   const u=new URL(location.href);u.searchParams.set('work',currentWork.id);u.searchParams.set('chapter',String(ch));history.replaceState(null,'',u);
+ }catch(e){reader.innerHTML='<p class="status">This chapter is temporarily unavailable.</p>';}
 }
-chapters.forEach(ch=>{const b=document.createElement('button');b.type='button';b.dataset.ch=String(ch);b.textContent='Chapter '+ch;b.addEventListener('click',()=>load(ch));controls.append(b);});
-const p=new URL(location.href).searchParams,ch=Math.max(1,Math.min(16,Number(p.get('chapter')||1)));load(ch);
+async function init(){
+ try{
+   manifest=await json('../data/ancient-text-translations/index.json');
+   manifest.works.forEach(w=>{const o=document.createElement('option');o.value=w.id;o.textContent=w.author_label+' — '+w.title;workSelect.append(o);});
+   workSelect.addEventListener('change',()=>chooseWork(workSelect.value,1));
+   const p=new URL(location.href).searchParams;
+   await chooseWork(p.get('work')||manifest.works[0].id,Number(p.get('chapter')||1));
+ }catch(e){reader.innerHTML='<p class="status">The ancient-text corpus could not be loaded.</p>';}
+}
+init();
 })();
 </script>
 </body></html>

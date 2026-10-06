@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "work_id": "athanasius-de-incarnatione",
+  "unit_id": "chapter-2",
+  "chapter": 2,
+  "original_language": "Greek",
+  "source_ref": {
+    "edition": "Archibald Robertson, 2nd ed.",
+    "publication_year": 1893,
+    "digital_source": "Open Greek and Latin / First1KGreek",
+    "digital_license": "CC BY-SA 4.0",
+    "ancient_source_file": "data/ancient-text-sources/athanasius-de-incarnatione.json"
+  },
+  "mercy_translation": {
+    "language": "English",
+    "version": "0.1.0",
+    "status": "philological-review",
+    "text": "Many people have understood the making of the world and the creation of all things in different ways, and each has defined the matter according to his own preference.\n\nSome say that all things came into being spontaneously and by chance, as the Epicureans do. They even tell the story that there is no providence over the universe, speaking directly against what is evident and visible.\n\nFor if, according to them, all things came into being spontaneously and without providence, then everything ought simply to have come into being alike, without diversity. In the case of a single body, everything ought to have been sun or moon; and in the case of human beings, the whole body ought to have been hand, or eye, or foot. But this is not what we see. We see one thing as sun, another as moon, another as earth; and likewise in human bodies, one part is foot, another hand, another head. Such ordering shows that these things did not come into being spontaneously, but that a cause preceded them; and from that cause one can understand God, who ordered and made all things.\n\nOthers—including Plato, who is held in high esteem among the Greeks—say that God made the universe from pre-existing and ungenerated matter. According to them, God would not have been able to make anything unless matter already existed, just as a carpenter must have wood already at hand in order to work.\n\nBut those who say this do not realize that they are attributing weakness to God. For if he is not himself the cause of matter, but makes existing things only out of matter already there, then he is shown to be weak, unable to make anything that comes into being without matter. In the same way it is plainly a limitation of the carpenter that he cannot make what is needed without wood. By this supposition, if matter did not exist, God would make nothing.\n\nHow, then, could he still be called Maker and Creator if he receives from something else—namely matter—the ability to make? If this were so, God would, according to them, be only a craftsman and not the Creator who brings things into being, since he merely works on pre-existing matter and is not himself the cause of matter. Indeed, he could not properly be called Creator at all if he does not create the matter from which created things come to be.\n\nThose belonging to the heresies invent for themselves another maker of all things, different from the Father of our Lord Jesus Christ, showing great blindness in the very things they say.\n\nFor when the Lord says to the Jews, “Have you not read that the One who made them from the beginning made them male and female, and said, ‘For this reason a man shall leave his father and mother and be joined to his wife, and the two shall become one flesh’?” and then, indicating the Creator, says, “What therefore God has joined together, let no human being separate,” how can they introduce creation as something foreign to the Father?\n\nAnd if, according to John, who embraces all things in his statement, “All things came into being through him, and without him not one thing came into being,” how could there be another creator besides the Father of Christ?"
+  },
+  "translator_notes": [
+    "Translated directly from the Greek source, not from a modern English translation.",
+    "Athanasius contrasts Epicurean chance, Platonic pre-existent matter, and Christian creation by God.",
+    "δημιουργός is rendered according to context as 'Creator' or 'maker'; Athanasius is arguing that God is not merely an artisan arranging matter that exists independently of him.",
+    "The biblical quotations are translated from Athanasius' Greek wording in this passage rather than copied from a modern Bible translation."
+  ]
+}
