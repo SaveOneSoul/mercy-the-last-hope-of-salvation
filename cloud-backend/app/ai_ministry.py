@@ -117,7 +117,9 @@ def generate(payload: GenerateIn, request: Request, session: dict = Depends(requ
         + f"TYPE: {payload.kind}\nTITLE: {payload.title.strip()}\nREQUEST: {payload.request.strip()}"
     )
     grounded = ask_magisterium(CatholicChatIn(message=prompt, language="en"), f"ministry:{identity.subject}")
-    if payload.kind == "preaching" and grounded["reply"].strip() == "SCRIPTURE_REQUIRED":\n        raise HTTPException(status_code=422, detail="scripture_required_for_preaching")\n    refined = refine_ministry_text(grounded["reply"], kind=payload.kind, title=payload.title.strip(), request_text=payload.request.strip())
+    if payload.kind == "preaching" and grounded["reply"].strip() == "SCRIPTURE_REQUIRED":
+        raise HTTPException(status_code=422, detail="scripture_required_for_preaching")
+    refined = refine_ministry_text(grounded["reply"], kind=payload.kind, title=payload.title.strip(), request_text=payload.request.strip())
     final_text = refined["text"]
     if not final_text.strip():
         raise HTTPException(status_code=502, detail="ministry_validation_failed")
