@@ -145,7 +145,9 @@ def _transition(draft_id: int, payload: TransitionIn, request: Request, session:
         raise HTTPException(status_code=404, detail="ministry_draft_not_found")
     if row.version != payload.expected_version:
         raise HTTPException(status_code=409, detail="ministry_draft_version_conflict")
-    if row.status == "published":\n        raise HTTPException(status_code=409, detail="published_draft_is_immutable")\n    if target == "published" and row.status != "reviewed":
+    if row.status == "published":
+        raise HTTPException(status_code=409, detail="published_draft_is_immutable")
+    if target == "published" and row.status != "reviewed":
         raise HTTPException(status_code=409, detail="review_required_before_publish")
     row.status = target; row.version += 1
     if target == "published": row.published_at = utcnow()
