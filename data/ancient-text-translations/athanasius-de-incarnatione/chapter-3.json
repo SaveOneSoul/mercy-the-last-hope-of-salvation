@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "work_id": "athanasius-de-incarnatione",
+  "unit_id": "chapter-3",
+  "chapter": 3,
+  "original_language": "Greek",
+  "source_ref": {
+    "edition": "Archibald Robertson, 2nd ed.",
+    "publication_year": 1893,
+    "digital_source": "Open Greek and Latin / First1KGreek",
+    "digital_license": "CC BY-SA 4.0",
+    "ancient_source_file": "data/ancient-text-sources/athanasius-de-incarnatione.json"
+  },
+  "mercy_translation": {
+    "language": "English",
+    "version": "0.2.0",
+    "status": "philological-review",
+    "text": "These people tell such stories. But the divinely inspired teaching and the faith according to Christ condemn their empty talk as godlessness. For it knows that God did not make all things spontaneously, since they are not without providence; nor from pre-existing matter, since God is not weak. Rather, through the Word he brought the universe into being out of things that did not exist at all. Thus through Moses he says, “In the beginning God made the heaven and the earth,” and through that most useful book, the Shepherd: “First of all believe that there is one God, who created and ordered all things, and made them pass from non-being into being.”\n\nPaul also indicates this when he says, “By faith we understand that the ages were framed by the word of God, so that what is seen did not come into being from visible things.”\n\nFor God is good—or rather, he is the source of goodness—and one who is good could envy no one. Therefore, begrudging existence to none, he made all things from nothing through his own Word, our Lord Jesus Christ. Among earthly creatures he especially showed mercy to the human race. Seeing that by the condition of their own coming-to-be they were not able to remain forever, he gave them something more: he did not create human beings simply like the irrational animals upon the earth, but made them according to his own image, sharing with them something of the power of his own Word, so that, possessing as it were shadows of the Word and becoming rational, they might be able to remain in blessedness, living the true life that properly belongs to the saints in paradise.\n\nKnowing again that human free choice could incline in either direction, he secured beforehand by law and by place the grace he had given them. He brought them into his own paradise and gave them a law, so that if they guarded the grace and remained good, they might possess in paradise a life without sorrow, pain, or care, together with the promise of incorruption in heaven. But if they transgressed, turned away, and became evil, they were to know that they would undergo the corruption of death that belongs to them by nature, no longer living in paradise but dying outside it and remaining thereafter in death and corruption.\n\nDivine Scripture gives advance warning of this, speaking in the person of God: “You may freely eat from every tree in paradise; but from the tree of the knowledge of good and evil you shall not eat. On the day you eat from it, you shall surely die.” And what else could “you shall surely die” mean except not only dying, but remaining in the corruption of death?"
+  },
+  "translator_notes": [
+    "Translated directly from the Greek source.",
+    "Athanasius explicitly frames creation as ex nihilo: God brings what did not exist into being through the Word.",
+    "The language of humanity as created 'according to the image' and participating in the Word's rationality is foundational for the anthropology that follows."
+  ]
+}
