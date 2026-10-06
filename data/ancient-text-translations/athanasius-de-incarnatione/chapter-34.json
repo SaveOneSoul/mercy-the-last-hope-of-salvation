@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "work_id": "athanasius-de-incarnatione",
+  "unit_id": "chapter-34",
+  "chapter": 34,
+  "original_language": "Greek",
+  "source_ref": {
+    "edition": "Archibald Robertson, 2nd ed.",
+    "publication_year": 1893,
+    "digital_source": "Open Greek and Latin / First1KGreek",
+    "digital_license": "CC BY-SA 4.0",
+    "ancient_source_file": "data/ancient-text-sources/athanasius-de-incarnatione.json"
+  },
+  "mercy_translation": {
+    "language": "English",
+    "version": "0.2.0",
+    "status": "philological-review",
+    "text": "Nor has his death been left unspoken. It too is indicated very clearly in the divine Scriptures. They did not fear to speak even of the reason for his death—that he endures it not for himself but for the immortality and salvation of all—as well as of the plot of the Jews and the insults inflicted upon him by them, so that none might remain ignorant of what would happen and be led astray.\n\nThey say: “He is a man under affliction and knows how to bear weakness, because his face has been turned away. He was dishonored and not esteemed. He bears our sins and suffers pain for us, and we reckoned him to be in toil, affliction, and suffering. But he was wounded because of our sins and weakened because of our lawlessness. The discipline of our peace was upon him; by his bruise we were healed.”\n\nMarvel at the loving-kindness of the Word: he is dishonored for our sake so that we may become honored. “For all of us,” it says, “went astray like sheep; each person wandered in his own way, and the Lord handed him over for our sins. Though afflicted, he does not open his mouth. Like a sheep he was led to slaughter, and like a lamb silent before the one who shears it, so he does not open his mouth. In his humiliation his judgment was taken away.”\n\nThen, so that no one should suppose from his suffering that he was merely an ordinary human being, Scripture anticipates human suspicions and speaks of the power that is beyond him and of the difference of his nature from ours, saying: “Who shall describe his generation? For his life is taken away from the earth. Because of the lawlessness of my people he was led to death. I will give the wicked for his burial and the rich for his death, because he committed no lawlessness, nor was deceit found in his mouth. And the Lord wills to cleanse him from his wound.”"
+  },
+  "translator_notes": [
+    "Translated directly from the Greek source.",
+    "The chapter cites Isaiah 53 in the Septuagintal form known to Athanasius.",
+    "Athanasius reads the suffering servant christologically and emphasizes that the death is endured for the salvation of others, not for Christ's own sin."
+  ]
+}
