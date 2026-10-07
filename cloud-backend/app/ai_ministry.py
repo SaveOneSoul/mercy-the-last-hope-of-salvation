@@ -96,10 +96,8 @@ def list_drafts(session: dict = Depends(require_admin), db: Session = Depends(ge
     return {"items": [_serialize(row) for row in rows]}
 
 
-@router.post("/generate", status_code=201)
-def generate(payload: GenerateIn, request: Request, session: dict = Depends(require_admin), db: Session = Depends(get_db)):
-    _require_write_guard(request, session)
-    identity = _require(session, "write")
+def _orchestrate_ministry(payload: GenerateIn, subject: str) -> dict:
+
     if payload.kind not in TYPES:
         raise HTTPException(status_code=400, detail="unsupported_ministry_type")
     mode_rule = ""
@@ -116,7 +114,7 @@ def generate(payload: GenerateIn, request: Request, session: dict = Depends(requ
         + mode_rule + "\n\n"
         + f"TYPE: {payload.kind}\nTITLE: {payload.title.strip()}\nREQUEST: {payload.request.strip()}"
     )
-    grounded = ask_magisterium(CatholicChatIn(message=prompt, language="en"), f"ministry:{identity.subject}")
+    grounded = ask_magisterium(CatholicChatIn(message=prompt, language="en"), f"ministry:{subject}")
     if payload.kind == "preaching" and grounded["reply"].strip() == "SCRIPTURE_REQUIRED":
         raise HTTPException(status_code=422, detail="scripture_required_for_preaching")
     refined = refine_ministry_text(grounded["reply"], kind=payload.kind, title=payload.title.strip(), request_text=payload.request.strip())
@@ -137,7 +135,7 @@ def generate(payload: GenerateIn, request: Request, session: dict = Depends(requ
         try:
             verified = ask_magisterium(
                 CatholicChatIn(message=verification_prompt, language="en"),
-                f"ministry-verify:{identity.subject}",
+                f"ministry-verify:{subject}",
             )
             verified_text = (verified.get("reply") or "").strip()
             if verified_text:
@@ -151,14 +149,21 @@ def generate(payload: GenerateIn, request: Request, session: dict = Depends(requ
     refined_lower = final_text.lower()
     if not all(ref in refined_lower for ref in required_refs):
         final_text = grounded["reply"]
+    return {"text": final_text, "sources": grounded.get("sources") or []}
+
+
+@router.post("/generate", status_code=201)
+def generate(payload: GenerateIn, request: Request, session: dict = Depends(require_admin), db: Session = Depends(get_db)):
+    _require_write_guard(request, session)
+    identity = _require(session, "write")
+    result = _orchestrate_ministry(payload, identity.subject)
     row = MinistryDraft(
         owner_subject=identity.subject, kind=payload.kind, title=payload.title.strip(),
-        request_text=payload.request.strip(), content=final_text,
-        sources_json=json.dumps(grounded.get("sources") or []), status="draft",
+        request_text=payload.request.strip(), content=result["text"],
+        sources_json=json.dumps(result["sources"]), status="draft",
     )
     db.add(row); db.commit(); db.refresh(row)
     return _serialize(row)
-
 
 def _transition(draft_id: int, payload: TransitionIn, request: Request, session: dict, db: Session, target: str):
     _require_write_guard(request, session)
