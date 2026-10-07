@@ -11,6 +11,7 @@ param(
     [ValidateNotNullOrEmpty()][string]$DbPasswordSecretName = "mercy-db-password",
     [ValidateNotNullOrEmpty()][string]$AdminPasswordSecretName = "mercy-admin-password",
     [ValidateNotNullOrEmpty()][string]$AdminSessionSecretName = "mercy-admin-session-secret",
+    [ValidateNotNullOrEmpty()][string]$MinistryBridgeSecretName = "mercy-ministry-bridge-secret",
     [ValidateNotNullOrEmpty()][string]$YouTubeClientIdSecretName = "mercy-youtube-client-id",
     [ValidateNotNullOrEmpty()][string]$YouTubeClientSecretSecretName = "mercy-youtube-client-secret",
     [ValidateNotNullOrEmpty()][string]$YouTubeRefreshTokenSecretName = "mercy-youtube-refresh-token",
@@ -282,6 +283,21 @@ if (-not $adminSessionSecretExists) {
     Write-Host "Admin session-signing secret already exists." -ForegroundColor Green
 }
 
+Write-Host "`nPreparing private Ministry bridge secret..." -ForegroundColor Cyan
+$ministryBridgeSecretExists = Test-GCloudResource @("secrets", "describe", $MinistryBridgeSecretName, "--project", $ProjectId)
+if (-not $ministryBridgeSecretExists) {
+    $ministryBridgeSecret = New-StrongSecret -Bytes 48
+    try {
+        Write-SecretVersion -Secret $MinistryBridgeSecretName -Value $ministryBridgeSecret -Exists $false
+        $ministryBridgeSecretExists = $true
+    }
+    finally {
+        $ministryBridgeSecret = $null
+    }
+} else {
+    Write-Host "Private Ministry bridge secret already exists." -ForegroundColor Green
+}
+
 Write-Host "`nPreparing YouTube Live OAuth credentials..." -ForegroundColor Cyan
 $youtubeSecrets = @(
     @{ Env = "YOUTUBE_CLIENT_ID"; Secret = $YouTubeClientIdSecretName; Label = "YouTube OAuth Client ID" },
@@ -342,7 +358,7 @@ Invoke-GCloud projects add-iam-policy-binding $ProjectId `
     --role roles/cloudsql.client `
     --quiet
 
-foreach ($secretToGrant in @($SecretName, $DbPasswordSecretName, $AdminPasswordSecretName, $AdminSessionSecretName, $YouTubeClientIdSecretName, $YouTubeClientSecretSecretName, $YouTubeRefreshTokenSecretName)) {
+foreach ($secretToGrant in @($SecretName, $DbPasswordSecretName, $AdminPasswordSecretName, $AdminSessionSecretName, $MinistryBridgeSecretName, $YouTubeClientIdSecretName, $YouTubeClientSecretSecretName, $YouTubeRefreshTokenSecretName)) {
     Invoke-GCloud secrets add-iam-policy-binding $secretToGrant `
         --project $ProjectId `
         --member "serviceAccount:$runtimeEmail" `
@@ -384,7 +400,7 @@ try {
         --allow-unauthenticated `
         --service-account $runtimeEmail `
         --add-cloudsql-instances $instanceConnectionName `
-        --set-secrets "MAGISTERIUM_API_KEY=${SecretName}:latest,DB_PASS=${DbPasswordSecretName}:latest,ADMIN_PASSWORD=${AdminPasswordSecretName}:latest,ADMIN_SESSION_SECRET=${AdminSessionSecretName}:latest,YOUTUBE_CLIENT_ID=${YouTubeClientIdSecretName}:latest,YOUTUBE_CLIENT_SECRET=${YouTubeClientSecretSecretName}:latest,YOUTUBE_REFRESH_TOKEN=${YouTubeRefreshTokenSecretName}:latest$counsellingSecretBinding" `
+        --set-secrets "MAGISTERIUM_API_KEY=${SecretName}:latest,DB_PASS=${DbPasswordSecretName}:latest,ADMIN_PASSWORD=${AdminPasswordSecretName}:latest,ADMIN_SESSION_SECRET=${AdminSessionSecretName}:latest,MINISTRY_BRIDGE_SECRET=${MinistryBridgeSecretName}:latest,YOUTUBE_CLIENT_ID=${YouTubeClientIdSecretName}:latest,YOUTUBE_CLIENT_SECRET=${YouTubeClientSecretSecretName}:latest,YOUTUBE_REFRESH_TOKEN=${YouTubeRefreshTokenSecretName}:latest$counsellingSecretBinding" `
         --set-env-vars "CORS_ORIGINS=https://saveonesoul.github.io,PUBLIC_SITE_BASE=https://saveonesoul.github.io/mercy-the-last-hope-of-salvation,MAGISTERIUM_MODEL=magisterium-1,MAGISTERIUM_TIMEOUT_SECONDS=90,ENABLE_DOCS=false,DB_USER=$DbUser,DB_NAME=$DbName,INSTANCE_UNIX_SOCKET=$instanceUnixSocket,DB_POOL_SIZE=5,DB_MAX_OVERFLOW=2,DB_POOL_RECYCLE_SECONDS=1800,CMS_BUCKET=$CmsBucketName,COUNSELLING_ENABLED=$counsellingEnabled,COUNSELLING_MODEL=$CounsellingModel" `
         --memory 512Mi `
         --cpu 1 `
