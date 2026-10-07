@@ -4,7 +4,9 @@ Uses the existing signed Mercy admin session as the initial owner authentication
 boundary. It does not add public navigation and never schedules generation.
 """
 import json
+import logging
 import re
+import time
 from datetime import datetime, timezone
 
 from fastapi import APIRouter, Depends, HTTPException, Request
@@ -20,6 +22,26 @@ from .gemini_ministry import refine_ministry_text
 
 router = APIRouter(prefix="/api/admin/ministry", tags=["private-ai-ministry"])
 TYPES = {"homily", "preaching", "seminar", "bible_study", "retreat", "catechesis", "rcia", "lesson_planner", "prayer_service", "liturgy"}
+logger = logging.getLogger(__name__)
+
+
+def _stage_log(stage: str, event: str, started_at: float | None = None, exc: Exception | None = None) -> None:
+    """Log only stage metadata; never prompts, generated text, keys, or provider bodies."""
+    fields = ["ministry_stage=%s", "event=%s"]
+    args: list[object] = [stage, event]
+    if started_at is not None:
+        fields.append("elapsed_ms=%d")
+        args.append(max(0, int((time.perf_counter() - started_at) * 1000)))
+    if exc is not None:
+        if isinstance(exc, HTTPException):
+            status_code = exc.status_code
+            detail = exc.detail if isinstance(exc.detail, str) else "http_error"
+        else:
+            status_code = 500
+            detail = "internal_error"
+        fields.extend(["status_code=%d", "error_code=%s"])
+        args.extend([status_code, detail])
+    logger.info(" ".join(fields), *args)
 
 
 def utcnow():
@@ -114,10 +136,26 @@ def _orchestrate_ministry(payload: GenerateIn, subject: str) -> dict:
         + mode_rule + "\n\n"
         + f"TYPE: {payload.kind}\nTITLE: {payload.title.strip()}\nREQUEST: {payload.request.strip()}"
     )
-    grounded = ask_magisterium(CatholicChatIn(message=prompt, language="en"), f"ministry:{subject}")
+    grounding_started = time.perf_counter()
+    _stage_log("magisterium_grounding", "start")
+    try:
+        grounded = ask_magisterium(CatholicChatIn(message=prompt, language="en"), f"ministry:{subject}")
+    except Exception as exc:
+        _stage_log("magisterium_grounding", "failure", grounding_started, exc)
+        raise
+    _stage_log("magisterium_grounding", "success", grounding_started)
     if payload.kind == "preaching" and grounded["reply"].strip() == "SCRIPTURE_REQUIRED":
         raise HTTPException(status_code=422, detail="scripture_required_for_preaching")
-    refined = refine_ministry_text(grounded["reply"], kind=payload.kind, title=payload.title.strip(), request_text=payload.request.strip())
+    synthesis_started = time.perf_counter()
+    _stage_log("gemini_synthesis", "start")
+    try:
+        refined = refine_ministry_text(
+            grounded["reply"], kind=payload.kind, title=payload.title.strip(), request_text=payload.request.strip()
+        )
+    except Exception as exc:
+        _stage_log("gemini_synthesis", "failure", synthesis_started, exc)
+        raise
+    _stage_log("gemini_synthesis", "success", synthesis_started)
     final_text = refined["text"]
     if not final_text.strip():
         raise HTTPException(status_code=502, detail="ministry_validation_failed")
@@ -132,6 +170,8 @@ def _orchestrate_ministry(payload: GenerateIn, subject: str) -> dict:
             + "AUTHORITATIVE GROUNDED CONTRIBUTION:\n" + grounded["reply"]
             + "\n\nCANDIDATE SYNTHESIS:\n" + final_text
         )
+        verification_started = time.perf_counter()
+        _stage_log("magisterium_final_verification", "start")
         try:
             verified = ask_magisterium(
                 CatholicChatIn(message=verification_prompt, language="en"),
@@ -142,7 +182,9 @@ def _orchestrate_ministry(payload: GenerateIn, subject: str) -> dict:
                 final_text = verified_text
             else:
                 final_text = grounded["reply"]
-        except Exception:
+            _stage_log("magisterium_final_verification", "success", verification_started)
+        except Exception as exc:
+            _stage_log("magisterium_final_verification", "failure", verification_started, exc)
             final_text = grounded["reply"]
     reference_pattern = re.compile(r"\b(?:CCC|Canon|Can\.|§)\s*\d+[A-Za-z0-9.:-]*", re.IGNORECASE)
     required_refs = {match.group(0).lower() for match in reference_pattern.finditer(grounded["reply"])}
