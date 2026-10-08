@@ -6,6 +6,7 @@ boundary. It does not add public navigation and never schedules generation.
 import json
 import logging
 import re
+import sys
 import time
 from datetime import datetime, timezone
 
@@ -23,6 +24,21 @@ from .gemini_ministry import refine_ministry_text
 router = APIRouter(prefix="/api/admin/ministry", tags=["private-ai-ministry"])
 TYPES = {"homily", "preaching", "seminar", "bible_study", "retreat", "catechesis", "rcia", "lesson_planner", "prayer_service", "liturgy"}
 logger = logging.getLogger(__name__)
+# Emit only controlled Ministry stage metadata even when root INFO logging is disabled.
+logger.setLevel(logging.INFO)
+logger.propagate = False
+if not logger.handlers:
+    _stage_handler = logging.StreamHandler(sys.stderr)
+    _stage_handler.setFormatter(logging.Formatter("%(levelname)s: %(message)s"))
+    logger.addHandler(_stage_handler)
+
+_ALLOWED_STAGE_ERRORS = frozenset({
+    "magisterium_upstream_error", "magisterium_unavailable",
+    "magisterium_timeout", "magisterium_authentication_failed",
+    "gemini_upstream_error", "gemini_unavailable", "gemini_timeout",
+    "gemini_authentication_failed", "gemini_invalid_response",
+    "gemini_empty_response", "ministry_validation_failed",
+})
 
 
 def _stage_log(stage: str, event: str, started_at: float | None = None, exc: Exception | None = None) -> None:
@@ -35,7 +51,7 @@ def _stage_log(stage: str, event: str, started_at: float | None = None, exc: Exc
     if exc is not None:
         if isinstance(exc, HTTPException):
             status_code = exc.status_code
-            detail = exc.detail if isinstance(exc.detail, str) else "http_error"
+            detail = exc.detail if isinstance(exc.detail, str) and exc.detail in _ALLOWED_STAGE_ERRORS else "http_error"
         else:
             status_code = 500
             detail = "internal_error"
@@ -155,10 +171,12 @@ def _orchestrate_ministry(payload: GenerateIn, subject: str) -> dict:
     except Exception as exc:
         _stage_log("gemini_synthesis", "failure", synthesis_started, exc)
         raise
+    final_text = refined.get("text")
+    if not isinstance(final_text, str) or not final_text.strip():
+        exc = HTTPException(status_code=502, detail="ministry_validation_failed")
+        _stage_log("gemini_synthesis", "failure", synthesis_started, exc)
+        raise exc
     _stage_log("gemini_synthesis", "success", synthesis_started)
-    final_text = refined["text"]
-    if not final_text.strip():
-        raise HTTPException(status_code=502, detail="ministry_validation_failed")
     if refined.get("refined"):
         verification_prompt = (
             "Act as the final Catholic doctrinal verifier for this private ministry draft. "
