@@ -90,5 +90,42 @@ class GeminiMinistryTest(unittest.TestCase):
         self.assertNotIn("Candidate synthesis", logs)
 
 
+    @patch("app.ai_ministry.ask_magisterium")
+    def test_untrusted_http_detail_is_not_logged(self, magisterium):
+        secret = "PRIVATE-API-KEY-IN-ERROR"
+        magisterium.side_effect = HTTPException(status_code=502, detail=secret)
+        with self.assertLogs("app.ai_ministry", level="INFO") as captured:
+            with self.assertRaises(HTTPException):
+                _orchestrate_ministry(
+                    GenerateIn(kind="seminar", title="Private", request="Teach Scripture"),
+                    "private-owner",
+                )
+        logs = "\\n".join(captured.output)
+        self.assertIn("error_code=http_error", logs)
+        self.assertNotIn(secret, logs)
+
+    @patch("app.ai_ministry.refine_ministry_text")
+    @patch("app.ai_ministry.ask_magisterium")
+    def test_empty_gemini_output_logs_failure(self, magisterium, gemini):
+        magisterium.return_value = {"reply": "Grounded", "sources": []}
+        gemini.return_value = {"text": "", "refined": True}
+        with self.assertLogs("app.ai_ministry", level="INFO") as captured:
+            with self.assertRaises(HTTPException) as error:
+                _orchestrate_ministry(
+                    GenerateIn(kind="seminar", title="Private", request="Teach Scripture"),
+                    "private-owner",
+                )
+        self.assertEqual(error.exception.status_code, 502)
+        logs = "\\n".join(captured.output)
+        self.assertIn("ministry_stage=gemini_synthesis event=failure", logs)
+        self.assertIn("error_code=ministry_validation_failed", logs)
+
+    def test_stage_logger_emits_info_without_root_configuration(self):
+        import logging
+        from app.ai_ministry import logger
+        self.assertEqual(logger.level, logging.INFO)
+        self.assertFalse(logger.propagate)
+        self.assertTrue(logger.handlers)
+
 if __name__ == "__main__":
     unittest.main()
