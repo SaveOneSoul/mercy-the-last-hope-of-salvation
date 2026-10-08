@@ -4,6 +4,8 @@ Gemini contributes independently to structure, biblical/historical context and
 pastoral development. Magisterium-grounded material remains the doctrinal
 authority whenever the providers differ.
 """
+import logging
+import sys
 import os
 import httpx
 from fastapi import HTTPException
@@ -11,6 +13,15 @@ from fastapi import HTTPException
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash").strip() or "gemini-2.5-flash"
 GEMINI_TIMEOUT_SECONDS = float(os.getenv("GEMINI_TIMEOUT_SECONDS", "60"))
+
+logger = logging.getLogger("mercy.gemini_ministry")
+logger.setLevel(logging.INFO)
+logger.propagate = False
+
+if not logger.handlers:
+    handler = logging.StreamHandler(sys.stderr)
+    handler.setFormatter(logging.Formatter("%(levelname)s: %(message)s"))
+    logger.addHandler(handler)
 
 
 def gemini_state() -> dict:
@@ -53,6 +64,10 @@ Return one integrated private draft using both contributions."""
     if response.status_code in (401, 403):
         raise HTTPException(status_code=503, detail="gemini_authentication_failed")
     if response.status_code >= 400:
+        logger.info(
+            "gemini_upstream_http_error status_code=%d",
+            response.status_code,
+        )
         raise HTTPException(status_code=502, detail="gemini_upstream_error")
     try:
         data = response.json()
