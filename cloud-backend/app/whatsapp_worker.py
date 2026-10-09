@@ -6,7 +6,7 @@ Run the worker explicitly after Meta onboarding; no background scheduler is enab
 """
 import os
 import secrets
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 import httpx
 from sqlalchemy import select
@@ -37,8 +37,18 @@ def dispatch_one():
         conversation = db.scalar(select(WhatsAppConversation).where(
             WhatsAppConversation.account_id == inbound.account_id,
             WhatsAppConversation.contact_id == inbound.contact_id).with_for_update())
+        newest = db.scalar(select(WhatsAppInbound).where(
+            WhatsAppInbound.account_id == inbound.account_id,
+            WhatsAppInbound.contact_id == inbound.contact_id
+        ).order_by(WhatsAppInbound.id.desc()).limit(1))
+        # Never deliver a superseded or stale greeting; the 24-hour window
+        # must be verified before contacting Meta.
+        fresh = inbound.received_at is not None and (
+            timedelta(0) <= datetime.now(timezone.utc) - inbound.received_at.replace(
+                tzinfo=inbound.received_at.tzinfo or timezone.utc) < timedelta(hours=24)
+        )
         # Only send from the explicitly onboarded Meta phone number.
-        if (conversation is None or conversation.handoff or
+        if (conversation is None or conversation.handoff or not fresh or newest is None or newest.id != inbound.id or
                 inbound.account_id != os.environ["WHATSAPP_PHONE_NUMBER_ID"]):
             job.status = "suppressed"
             return {"status": "suppressed"}
