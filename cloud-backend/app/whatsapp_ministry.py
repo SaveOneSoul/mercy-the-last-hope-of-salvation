@@ -9,10 +9,13 @@ import json
 import os
 from datetime import datetime, timedelta, timezone
 
-from fastapi import APIRouter, HTTPException, Request
+from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import PlainTextResponse
 from sqlalchemy import DateTime, ForeignKey, Integer, String, Text, UniqueConstraint, select
 from sqlalchemy.orm import Mapped, Session, mapped_column
+from pydantic import BaseModel
+
+from .cms_admin import require_admin, _require_write_guard
 
 from .db import Base, SessionLocal
 
@@ -131,3 +134,52 @@ async def receive_webhook(request: Request):
                             conversation.last_human_at = now
                         conversation.history_known = True
     return {"accepted": True}
+
+
+# Owner-only inbox and takeover. These endpoints never expose private messages
+# to unauthenticated callers and never authorize ministry draft generation.
+class HandoffIn(BaseModel):
+    enabled: bool
+
+@router.get("/admin/conversations")
+def list_conversations(session: dict = Depends(require_admin)):
+    with SessionLocal() as db:
+        rows = db.scalars(select(WhatsAppConversation).order_by(
+            WhatsAppConversation.id.desc()).limit(100)).all()
+        return {"items": [{"id": row.id, "account_id": row.account_id,
+                           "contact_id": row.contact_id, "handoff": row.handoff,
+                           "last_human_at": row.last_human_at} for row in rows]}
+
+@router.get("/admin/conversations/{conversation_id}/messages")
+def list_messages(conversation_id: int, session: dict = Depends(require_admin)):
+    with SessionLocal() as db:
+        row = db.get(WhatsAppConversation, conversation_id)
+        if row is None:
+            raise HTTPException(404, "conversation_not_found")
+        messages = db.scalars(select(WhatsAppInbound).where(
+            WhatsAppInbound.account_id == row.account_id,
+            WhatsAppInbound.contact_id == row.contact_id
+        ).order_by(WhatsAppInbound.id.desc()).limit(100)).all()
+        return {"items": [{"id": m.id, "body": m.body, "received_at": m.received_at}
+                          for m in reversed(messages)]}
+
+@router.put("/admin/conversations/{conversation_id}/handoff")
+def change_handoff(conversation_id: int, payload: HandoffIn,
+                   request: Request, session: dict = Depends(require_admin)):
+    _require_write_guard(request, session)
+    with SessionLocal.begin() as db:
+        row = db.scalar(select(WhatsAppConversation).where(
+            WhatsAppConversation.id == conversation_id).with_for_update())
+        if row is None:
+            raise HTTPException(404, "conversation_not_found")
+        row.handoff = payload.enabled
+        if payload.enabled:
+            pending = db.scalars(select(WhatsAppOutbox).join(
+                WhatsAppInbound, WhatsAppOutbox.inbound_id == WhatsAppInbound.id
+            ).where(WhatsAppInbound.account_id == row.account_id,
+                    WhatsAppInbound.contact_id == row.contact_id,
+                    WhatsAppOutbox.kind == "welcome",
+                    WhatsAppOutbox.status == "pending")).all()
+            for item in pending:
+                item.status = "suppressed"
+    return {"handoff": payload.enabled}
