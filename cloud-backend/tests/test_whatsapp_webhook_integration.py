@@ -118,3 +118,45 @@ def test_outbound_defaults_to_disabled(monkeypatch):
     assert not outbound_ready()
     with pytest.raises(RuntimeError, match="whatsapp_outbound_disabled"):
         send_text("15550001111", "test")
+
+
+def test_worker_sends_once_and_never_retries_ambiguous_receipt(client, monkeypatch):
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("worker-first", now)).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    sent = []
+    monkeypatch.setattr(whatsapp_worker, "send_text", lambda contact, body: sent.append(contact) or [{"id": "meta-test-1"}])
+    assert whatsapp_worker.dispatch_one()["status"] == "sent"
+    assert whatsapp_worker.dispatch_one()["status"] == "empty"
+    assert len(sent) == 1
+
+
+def test_worker_suppresses_handoff_and_stale_pending_welcome(client, monkeypatch):
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("worker-first", now - timedelta(days=2))).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    monkeypatch.setattr(whatsapp_worker, "send_text", lambda *args: pytest.fail("must not send stale greeting"))
+    assert whatsapp_worker.dispatch_one()["status"] == "suppressed"
+
+
+def test_worker_unknown_receipt_never_automatically_retries(client, monkeypatch):
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("worker-first", now)).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    sent = []
+    def ambiguous(*args):
+        sent.append(1)
+        raise RuntimeError("simulated uncertain provider result")
+    monkeypatch.setattr(whatsapp_worker, "send_text", ambiguous)
+    assert whatsapp_worker.dispatch_one()["status"] == "unknown"
+    assert whatsapp_worker.dispatch_one()["status"] == "empty"
+    assert len(sent) == 1
