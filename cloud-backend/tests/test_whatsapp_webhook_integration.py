@@ -7,11 +7,11 @@ from datetime import datetime, timedelta, timezone
 
 import pytest
 from fastapi.testclient import TestClient
-from sqlalchemy import select
+from sqlalchemy import select, text, inspect
 
 from app.db import Base, SessionLocal, engine
 from app.main import app
-from app.whatsapp_ministry import WhatsAppInbound, WhatsAppOutbox, WhatsAppConversation
+from app.whatsapp_ministry import WhatsAppInbound, WhatsAppOutbox, WhatsAppConversation, purge_expired_messages
 
 pytestmark = pytest.mark.skipif(
     engine.dialect.name != "postgresql" or os.getenv("WHATSAPP_TEST_DATABASE") != "1",
@@ -78,3 +78,43 @@ def test_handoff_suppresses_welcome(client):
     assert signed(client, event("handoff-msg", now)).status_code == 200
     with SessionLocal() as db:
         assert db.scalar(select(WhatsAppOutbox).where(WhatsAppOutbox.kind == "welcome")) is None
+
+
+def test_existing_mercy_tables_survive_repeat_schema_creation(client):
+    with engine.begin() as connection:
+        connection.execute(text("CREATE TABLE IF NOT EXISTS whatsapp_migration_sentinel (id integer PRIMARY KEY, note text)"))
+        connection.execute(text("INSERT INTO whatsapp_migration_sentinel (id, note) VALUES (1, 'preserve') ON CONFLICT (id) DO NOTHING"))
+    Base.metadata.create_all(engine)
+    Base.metadata.create_all(engine)
+    assert inspect(engine).has_table("whatsapp_ministry_inbound")
+    with engine.connect() as connection:
+        assert connection.execute(text("SELECT note FROM whatsapp_migration_sentinel WHERE id=1")).scalar_one() == "preserve"
+
+
+def test_retention_keeps_pending_and_removes_terminal(client):
+    old = datetime.now(timezone.utc).replace(microsecond=0) - timedelta(days=45)
+    with SessionLocal.begin() as db:
+        db.add_all([
+            WhatsAppInbound(account_id="phone-test", contact_id="one", message_id="retained", received_at=old),
+            WhatsAppInbound(account_id="phone-test", contact_id="two", message_id="purged", received_at=old),
+        ])
+        db.flush()
+        rows = {x.message_id: x for x in db.scalars(select(WhatsAppInbound)).all()}
+        db.add_all([
+            WhatsAppOutbox(inbound_id=rows["retained"].id, kind="owner_notification", status="pending"),
+            WhatsAppOutbox(inbound_id=rows["purged"].id, kind="owner_notification", status="acknowledged"),
+        ])
+    with SessionLocal.begin() as db:
+        assert purge_expired_messages(db, now=datetime.now(timezone.utc)) == 1
+    with SessionLocal() as db:
+        assert [x.message_id for x in db.scalars(select(WhatsAppInbound)).all()] == ["retained"]
+
+
+def test_outbound_defaults_to_disabled(monkeypatch):
+    from app.whatsapp_delivery import send_text, outbound_ready
+    monkeypatch.delenv("WHATSAPP_OUTBOUND_ENABLED", raising=False)
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    assert not outbound_ready()
+    with pytest.raises(RuntimeError, match="whatsapp_outbound_disabled"):
+        send_text("15550001111", "test")
