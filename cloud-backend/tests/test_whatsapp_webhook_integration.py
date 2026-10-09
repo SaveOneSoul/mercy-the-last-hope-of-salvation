@@ -192,3 +192,31 @@ def test_superseded_welcome_is_suppressed(client, monkeypatch):
     monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
     monkeypatch.setattr(whatsapp_worker, "send_text", lambda *args: pytest.fail("superseded welcome must not send"))
     assert whatsapp_worker.dispatch_one()["status"] == "suppressed"
+
+
+def test_two_concurrent_workers_claim_one_welcome(client, monkeypatch):
+    """PostgreSQL SKIP LOCKED must prevent duplicate provider calls."""
+    from concurrent.futures import ThreadPoolExecutor
+    from threading import Barrier, Lock
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("concurrent-worker", now)).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    calls = []
+    lock = Lock()
+    def provider(contact, body):
+        with lock:
+            calls.append(contact)
+        return [{"id": "meta-concurrent-1"}]
+    monkeypatch.setattr(whatsapp_worker, "send_text", provider)
+    start = Barrier(2)
+    def worker():
+        start.wait(timeout=10)
+        return whatsapp_worker.dispatch_one()
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        futures = [pool.submit(worker) for _ in range(2)]
+        statuses = [future.result(timeout=15)["status"] for future in futures]
+    assert sorted(statuses) == ["empty", "sent"]
+    assert calls == ["15550001111"]
