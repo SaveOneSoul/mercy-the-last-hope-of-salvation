@@ -138,6 +138,10 @@ def test_worker_suppresses_handoff_and_stale_pending_welcome(client, monkeypatch
     from app import whatsapp_worker
     now = datetime.now(timezone.utc).replace(microsecond=0)
     assert signed(client, event("worker-first", now - timedelta(days=2))).status_code == 200
+    # Simulate a queued delivery that has aged beyond the 24-hour service window.
+    with SessionLocal.begin() as db:
+        inbound = db.scalar(select(WhatsAppInbound).where(WhatsAppInbound.message_id == "worker-first"))
+        inbound.received_at = now - timedelta(days=2)
     monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
     monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
     monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
