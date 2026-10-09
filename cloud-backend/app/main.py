@@ -14,6 +14,7 @@ from .media_studio import router as media_studio_router
 from .ai_ministry import router as ai_ministry_router
 from .ministry_bridge import router as ministry_bridge_router
 from .whatsapp_ministry import router as whatsapp_ministry_router
+from .whatsapp_admin_service import router as whatsapp_admin_service_router
 from .prayer_network import (
     PrayerDistributionLog,
     PrayerNetworkRequest,
@@ -71,6 +72,7 @@ app.include_router(media_studio_router)
 app.include_router(ai_ministry_router)
 app.include_router(ministry_bridge_router)
 app.include_router(whatsapp_ministry_router)
+app.include_router(whatsapp_admin_service_router)
 app.include_router(prayer_network_router)
 app.include_router(priest_portal_router)
 app.include_router(seo_router)
