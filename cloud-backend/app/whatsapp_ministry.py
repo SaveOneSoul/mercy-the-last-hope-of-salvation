@@ -11,7 +11,7 @@ from datetime import datetime, timedelta, timezone
 
 from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import PlainTextResponse
-from sqlalchemy import DateTime, ForeignKey, Integer, String, Text, UniqueConstraint, select
+from sqlalchemy import DateTime, ForeignKey, Integer, String, Text, UniqueConstraint, select, delete
 from sqlalchemy.orm import Mapped, Session, mapped_column
 from pydantic import BaseModel
 
@@ -21,6 +21,7 @@ from .db import Base, SessionLocal
 
 router = APIRouter(prefix="/api/whatsapp", tags=["divine-mercy-whatsapp"])
 INACTIVITY = timedelta(hours=168)
+DEFAULT_RETENTION_DAYS = 30
 
 class WhatsAppConversation(Base):
     __tablename__ = "whatsapp_ministry_conversations"
@@ -156,6 +157,31 @@ async def receive_webhook(request: Request):
                         if occurred_at is not None:
                             conversation.history_known = True
     return {"accepted": True}
+
+
+def purge_expired_messages(db: Session, *, now: datetime, retention_days: int = DEFAULT_RETENTION_DAYS) -> int:
+    """Delete old inbound content only after every associated outbox job is terminal.
+
+    Never erase pending jobs or conversation activity needed for the 7-day rule.
+    Caller owns the transaction; no public endpoint or automatic scheduler.
+    """
+    if not 7 <= retention_days <= 365:
+        raise ValueError("retention_days_out_of_range")
+    cutoff = now - timedelta(days=retention_days)
+    from sqlalchemy import exists
+    blocked = select(WhatsAppOutbox.id).where(
+        WhatsAppOutbox.inbound_id == WhatsAppInbound.id,
+        WhatsAppOutbox.status.notin_(("acknowledged", "sent", "suppressed", "cancelled")),
+    ).exists()
+    ids = select(WhatsAppInbound.id).where(
+        WhatsAppInbound.received_at < cutoff, ~blocked
+    )
+    removed_jobs = db.execute(delete(WhatsAppOutbox).where(WhatsAppOutbox.inbound_id.in_(ids)))
+    removed_messages = db.execute(delete(WhatsAppInbound).where(
+        WhatsAppInbound.received_at < cutoff,
+        ~select(WhatsAppOutbox.id).where(WhatsAppOutbox.inbound_id == WhatsAppInbound.id).exists(),
+    ))
+    return removed_messages.rowcount
 
 
 # Owner-only inbox and takeover. These endpoints never expose private messages
