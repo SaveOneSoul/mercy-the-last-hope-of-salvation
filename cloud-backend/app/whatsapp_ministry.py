@@ -59,6 +59,22 @@ def should_welcome(previous, now, history_known, handoff=False):
         previous = previous.replace(tzinfo=timezone.utc)
     return now - previous >= INACTIVITY
 
+def event_time(value, received_at):
+    """Validate Meta's Unix-second timestamp; reject missing, future or stale events."""
+    try:
+        timestamp = int(value)
+        if str(timestamp) != str(value):
+            return None
+        event_at = datetime.fromtimestamp(timestamp, tz=timezone.utc)
+    except (TypeError, ValueError, OverflowError, OSError):
+        return None
+    if event_at > received_at + timedelta(minutes=5):
+        return None
+    if event_at < received_at - timedelta(days=7):
+        return None
+    return event_at
+
+
 def _verify(raw, signature):
     secret = os.getenv("WHATSAPP_APP_SECRET", "")
     if not secret:
@@ -113,6 +129,7 @@ async def receive_webhook(request: Request):
                         if duplicate:
                             continue
                         now = datetime.now(timezone.utc)
+                        occurred_at = event_time(message.get("timestamp"), now)
                         conversation = db.scalar(select(WhatsAppConversation).where(
                             WhatsAppConversation.account_id == account,
                             WhatsAppConversation.contact_id == contact).with_for_update())
@@ -127,12 +144,17 @@ async def receive_webhook(request: Request):
                         db.add(inbound)
                         db.flush()
                         db.add(WhatsAppOutbox(inbound_id=inbound.id, kind="owner_notification"))
-                        if should_welcome(conversation.last_human_at, now, conversation.history_known, conversation.handoff):
+                        # Never issue a greeting for invalid, stale, or out-of-order events.
+                        previous = conversation.last_human_at
+                        if previous is not None and previous.tzinfo is None:
+                            previous = previous.replace(tzinfo=timezone.utc)
+                        is_new_activity = occurred_at is not None and (previous is None or occurred_at > previous)
+                        if is_new_activity and should_welcome(previous, occurred_at, conversation.history_known, conversation.handoff):
                             db.add(WhatsAppOutbox(inbound_id=inbound.id, kind="welcome"))
-                        if conversation.last_human_at is None or now > conversation.last_human_at.replace(
-                            tzinfo=conversation.last_human_at.tzinfo or timezone.utc):
-                            conversation.last_human_at = now
-                        conversation.history_known = True
+                        if is_new_activity:
+                            conversation.last_human_at = occurred_at
+                        if occurred_at is not None:
+                            conversation.history_known = True
     return {"accepted": True}
 
 
