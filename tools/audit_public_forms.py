@@ -87,6 +87,13 @@ def audit_form(rel: str, attrs: str, body: str, page: str, errors: list[str]) ->
         require("mercy.js" not in page_l, f"{marker} counselling page must not load CMS/analytics script", errors)
         return
 
+    if "data-avatar-form" in attrs_l:
+        require("data-avatar-input" in body_l, f"{marker} avatar form missing input hook", errors)
+        require("data-avatar-status" in page_l, f"{marker} avatar page missing status output", errors)
+        require('type="submit"' in body_l or "type='submit'" in body_l, f"{marker} avatar form missing submit button", errors)
+        require("avatar.js" in page_l, f"{marker} avatar form does not load avatar.js", errors)
+        return
+
     if "data-catholic-ai-form" in attrs_l:
         require("data-catholic-ai-input" in body_l, f"{marker} Catholic AI form missing input hook", errors)
         require("data-catholic-ai-status" in body_l, f"{marker} Catholic AI form missing status hook", errors)

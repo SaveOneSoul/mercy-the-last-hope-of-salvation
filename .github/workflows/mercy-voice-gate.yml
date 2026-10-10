@@ -1,0 +1,32 @@
+name: Mercy Voice Gate
+
+on:
+  pull_request:
+    paths:
+      - "mercy-voice-service/**"
+      - ".github/workflows/mercy-voice-gate.yml"
+  push:
+    branches:
+      - feature/mercy-humanoid-avatar
+    paths:
+      - "mercy-voice-service/**"
+      - ".github/workflows/mercy-voice-gate.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: mercy-voice-service
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --upgrade pip
+      - run: pip install -r requirements.txt pytest httpx
+      - run: python -m compileall app
+      - run: python -m pytest -q
