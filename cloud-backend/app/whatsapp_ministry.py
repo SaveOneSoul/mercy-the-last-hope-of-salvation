@@ -11,7 +11,7 @@ from datetime import datetime, timedelta, timezone
 
 from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import PlainTextResponse
-from sqlalchemy import DateTime, ForeignKey, Integer, String, Text, UniqueConstraint, select, delete
+from sqlalchemy import DateTime, ForeignKey, Integer, String, Text, UniqueConstraint, select, delete, text
 from sqlalchemy.orm import Mapped, Session, mapped_column
 from pydantic import BaseModel
 
@@ -73,6 +73,19 @@ def apply_delivery_status(job, state):
             job.delivery_status = "failed"
     elif previous != "failed" and rank[state] > rank.get(previous, 0):
         job.delivery_status = state
+
+
+
+def lock_delivery_receipt(db: Session, account: str, provider_id: str) -> None:
+    """Serialize webhook buffering and worker reconciliation for one Meta ID.
+
+    Both sides must acquire this transaction-scoped lock before reading or
+    writing the matching outbox/buffer rows. PostgreSQL-only in production.
+    """
+    if db.bind.dialect.name == "postgresql":
+        digest = hashlib.sha256(("receipt:" + account + ":" + provider_id).encode()).digest()
+        lock_id = int.from_bytes(digest[:8], "big", signed=True)
+        db.execute(text("SELECT pg_advisory_xact_lock(:key)"), {"key": lock_id})
 
 
 def should_welcome(previous, now, history_known, handoff=False):
@@ -150,11 +163,7 @@ async def receive_webhook(request: Request):
                     with db.begin():
                         # Serialize unknown-receipt inserts per provider ID,
                         # avoiding duplicate-key failures under parallel webhooks.
-                        if db.bind.dialect.name == "postgresql":
-                            from sqlalchemy import text
-                            digest = hashlib.sha256(("receipt:" + account + ":" + provider_id).encode()).digest()
-                            lock_id = int.from_bytes(digest[:8], "big", signed=True)
-                            db.execute(text("SELECT pg_advisory_xact_lock(:key)"), {"key": lock_id})
+                        lock_delivery_receipt(db, account, provider_id)
                         job = db.scalar(select(WhatsAppOutbox).join(
                             WhatsAppInbound, WhatsAppOutbox.inbound_id == WhatsAppInbound.id
                         ).where(WhatsAppOutbox.provider_message_id == provider_id,
