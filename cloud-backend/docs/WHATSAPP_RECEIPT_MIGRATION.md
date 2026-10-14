@@ -130,3 +130,32 @@ This is **policy approval only**, not authorization to execute deletion,
 schedule cleanup, run migrations against staging, connect Meta, enable
 outbound sends, merge this draft PR, or deploy. A separate operational
 security review and explicit staging-deployment approval are required.
+
+
+## Administrator access and deletion security review — 2026-10-14
+
+The current WhatsApp owner endpoints depend on the existing CMS
+`require_admin` signed-session verification. State-changing owner
+endpoints also call `_require_write_guard` for CSRF-token validation and
+Origin checking when an Origin header is present. Automated regression
+tests assert that every WhatsApp admin route has an admin dependency,
+every mutating route calls the write guard, and no WhatsApp admin route
+exposes HTTP DELETE. These are code-level controls, **not** proof that
+production account permissions, session-secret rotation, or operational
+access logging have been audited.
+
+**Deletion procedure (not enabled):** The operator must document the
+request or scheduled retention basis; identify and exclude pending,
+sending, and unknown jobs; preserve seven-day greeting timestamps;
+take and test a backup on a disposable clone; record aggregate row
+counts before/after; and verify that the process cannot remove data
+under preservation hold. Deletion of individual conversations,
+associated outbox rows, and identifiers is not yet implemented as a
+reviewed user-request workflow. Backups and application logs need
+separate expiry/deletion procedures.
+
+**Remaining security gates:** inspect actual staging IAM and admin
+access, review audit-log coverage and secret rotation, design
+data-subject deletion/backup-expiry handling, and rehearse migration
+on a disposable clone of the real staging database. No operational
+deletion or deployment is authorized by this review.
