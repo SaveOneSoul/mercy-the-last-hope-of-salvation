@@ -15,6 +15,14 @@ ALTER TABLE whatsapp_ministry_outbox
 CREATE UNIQUE INDEX IF NOT EXISTS
   whatsapp_ministry_outbox_provider_message_id_key
   ON whatsapp_ministry_outbox (provider_message_id);
+CREATE TABLE IF NOT EXISTS whatsapp_ministry_delivery_receipts (
+  id SERIAL PRIMARY KEY,
+  account_id VARCHAR(120) NOT NULL,
+  provider_message_id VARCHAR(200) NOT NULL,
+  delivery_status VARCHAR(24) NOT NULL,
+  received_at TIMESTAMPTZ NOT NULL,
+  UNIQUE (account_id, provider_message_id)
+);
 COMMIT;
 ```
 
@@ -22,6 +30,7 @@ COMMIT;
 
 ```sql
 BEGIN;
+DROP TABLE IF EXISTS whatsapp_ministry_delivery_receipts;
 DROP INDEX IF EXISTS whatsapp_ministry_outbox_provider_message_id_key;
 ALTER TABLE whatsapp_ministry_outbox
   DROP COLUMN IF EXISTS delivery_status,
@@ -38,8 +47,10 @@ constraints. Migration is **not** yet verified on a staging clone.
 - `status=sent` means Meta's send API accepted the request, not delivery.
 - `delivery_status` tracks `sent`, `delivered`, `read`, `failed`.
 - Signed receipts only update matching known provider IDs and phone accounts.
-- Unknown receipts (including callbacks preceding DB commit) are ignored;
-  replay/backfill is **not implemented**. This is an open acceptance gate.
+- Unmatched signed receipts are buffered by provider ID and phone account.
+  When a worker records the send response, it consumes the buffered state.
+- Unmatched receipts require a bounded cleanup/abuse policy and replay tests
+  under concurrent callbacks before activation. No cleanup scheduler exists yet.
 - HTTP timeouts remain `unknown` and are never automatically retried.
 - The human handoff in-flight race and scheduled privacy retention remain
   separate unresolved gates.
