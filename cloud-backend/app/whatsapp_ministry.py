@@ -22,6 +22,7 @@ from .db import Base, SessionLocal
 router = APIRouter(prefix="/api/whatsapp", tags=["divine-mercy-whatsapp"])
 INACTIVITY = timedelta(hours=168)
 DEFAULT_RETENTION_DAYS = 30
+UNMATCHED_RECEIPT_RETENTION_DAYS = 7
 
 class WhatsAppConversation(Base):
     __tablename__ = "whatsapp_ministry_conversations"
@@ -147,6 +148,13 @@ async def receive_webhook(request: Request):
                     if state not in ("sent", "delivered", "read", "failed"):
                         continue
                     with db.begin():
+                        # Serialize unknown-receipt inserts per provider ID,
+                        # avoiding duplicate-key failures under parallel webhooks.
+                        if db.bind.dialect.name == "postgresql":
+                            from sqlalchemy import text
+                            digest = hashlib.sha256(("receipt:" + account + ":" + provider_id).encode()).digest()
+                            lock_id = int.from_bytes(digest[:8], "big", signed=True)
+                            db.execute(text("SELECT pg_advisory_xact_lock(:key)"), {"key": lock_id})
                         job = db.scalar(select(WhatsAppOutbox).join(
                             WhatsAppInbound, WhatsAppOutbox.inbound_id == WhatsAppInbound.id
                         ).where(WhatsAppOutbox.provider_message_id == provider_id,
@@ -211,6 +219,21 @@ async def receive_webhook(request: Request):
                         if occurred_at is not None:
                             conversation.history_known = True
     return {"accepted": True}
+
+
+def purge_expired_delivery_receipts(db: Session, *, now: datetime,
+                                    retention_days: int = UNMATCHED_RECEIPT_RETENTION_DAYS) -> int:
+    """Explicit maintenance operation; never run automatically during webhooks.
+
+    Only unmatched receipts are stored here. A 7-day maximum bounds retained
+    provider IDs while leaving time for delayed worker reconciliation.
+    """
+    if not 1 <= retention_days <= 7:
+        raise ValueError("receipt_retention_days_out_of_range")
+    cutoff = now - timedelta(days=retention_days)
+    result = db.execute(delete(WhatsAppDeliveryReceipt).where(
+        WhatsAppDeliveryReceipt.received_at < cutoff))
+    return result.rowcount
 
 
 def purge_expired_messages(db: Session, *, now: datetime, retention_days: int = DEFAULT_RETENTION_DAYS) -> int:
