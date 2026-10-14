@@ -116,3 +116,17 @@ been run. Do not run cleanup from a public request handler.
 
 **Current state:** cleanup functions exist but are manual, no scheduler is
 configured, and this document does not authorize deleting user data.
+
+
+## Owner retention-policy approval — 2026-10-14
+
+The project owner explicitly approved **30-day message-record retention**
+and **7-day unmatched-delivery-receipt retention**. The existing safety
+exceptions remain mandatory: do not purge inbound messages associated
+with pending, sending, or unknown jobs; preserve conversation activity
+metadata required for the seven-day greeting/inactivity rule.
+
+This is **policy approval only**, not authorization to execute deletion,
+schedule cleanup, run migrations against staging, connect Meta, enable
+outbound sends, merge this draft PR, or deploy. A separate operational
+security review and explicit staging-deployment approval are required.
