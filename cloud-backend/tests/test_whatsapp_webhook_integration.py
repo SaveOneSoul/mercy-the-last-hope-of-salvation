@@ -220,3 +220,29 @@ def test_two_concurrent_workers_claim_one_welcome(client, monkeypatch):
         statuses = [future.result(timeout=15)["status"] for future in futures]
     assert sorted(statuses) == ["empty", "sent"]
     assert calls == ["15550001111"]
+
+
+def test_meta_receipts_reconcile_without_downgrades(client, monkeypatch):
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("receipt-first", now)).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    monkeypatch.setattr(whatsapp_worker, "send_text",
+                        lambda *args: [{"id": "wamid.accepted-1"}])
+    assert whatsapp_worker.dispatch_one()["status"] == "sent"
+    def receipt(status, provider="wamid.accepted-1", account="phone-test"):
+        return {"object": "whatsapp_business_account", "entry": [{"changes": [{
+            "value": {"metadata": {"phone_number_id": account},
+                      "statuses": [{"id": provider, "status": status}]}}]}]}
+    for status in ("delivered", "sent", "delivered", "read", "failed"):
+        assert signed(client, receipt(status)).status_code == 200
+    assert signed(client, receipt("failed", "unknown-id")).status_code == 200
+    assert signed(client, receipt("failed", account="other-account")).status_code == 200
+    with SessionLocal() as db:
+        job = db.scalar(select(WhatsAppOutbox).where(WhatsAppOutbox.kind == "welcome"))
+        assert job.provider_message_id == "wamid.accepted-1"
+        assert job.delivery_status == "read"
+        assert job.status == "sent"
+        assert db.query(WhatsAppInbound).count() == 1
