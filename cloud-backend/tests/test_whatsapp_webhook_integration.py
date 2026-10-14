@@ -341,29 +341,78 @@ def test_handoff_during_inflight_provider_send_is_recorded(client, monkeypatch):
 
 
 def test_receipt_migration_forward_and_rollback_on_disposable_schema(client):
-    """Run actual SQL twice, then rollback; preserve unrelated preexisting rows."""
+    """Exercise real migration SQL against a legacy outbox in its own schema."""
+    import psycopg
+    from sqlalchemy.engine import make_url
+
     sql_dir = Path(__file__).parent / "sql"
     forward = (sql_dir / "whatsapp_receipts_forward.sql").read_text()
     rollback = (sql_dir / "whatsapp_receipts_rollback.sql").read_text()
-    # The integration database is disposable; no production or staging access.
-    with engine.begin() as conn:
-        conn.execute(text("CREATE TABLE IF NOT EXISTS whatsapp_migration_sentinel (id integer PRIMARY KEY, note text)"))
-        conn.execute(text("INSERT INTO whatsapp_migration_sentinel (id, note) VALUES (2, 'untouched') ON CONFLICT (id) DO NOTHING"))
-    import psycopg
-    from sqlalchemy.engine import make_url
     url = make_url(os.environ["DATABASE_URL"])
     kwargs = dict(host=url.host, port=url.port, dbname=url.database,
                   user=url.username, password=url.password)
+    # This schema is isolated from the application tables and is disposable.
     with psycopg.connect(**kwargs) as conn:
-        for statement in (forward, forward, rollback, forward):
+        with conn.cursor() as cursor:
+            cursor.execute("CREATE SCHEMA whatsapp_receipt_migration_fixture")
+            cursor.execute("SET search_path TO whatsapp_receipt_migration_fixture")
+            cursor.execute(
+                "CREATE TABLE whatsapp_ministry_outbox ("
+                "id INTEGER PRIMARY KEY, inbound_id INTEGER NOT NULL, "
+                "kind VARCHAR(32) NOT NULL, status VARCHAR(24) NOT NULL)"
+            )
+            cursor.execute(
+                "INSERT INTO whatsapp_ministry_outbox "
+                "(id, inbound_id, kind, status) VALUES (1, 42, 'welcome', 'pending')"
+            )
+        conn.commit()
+        try:
+            for sql in (forward, forward):
+                with conn.cursor() as cursor:
+                    cursor.execute(sql)
+                conn.commit()
             with conn.cursor() as cursor:
-                cursor.execute(statement)
+                cursor.execute(
+                    "UPDATE whatsapp_ministry_outbox SET "
+                    "provider_message_id = 'wamid.migration', delivery_status = 'read' WHERE id = 1"
+                )
+                cursor.execute("SELECT count(*) FROM whatsapp_ministry_delivery_receipts")
+                assert cursor.fetchone()[0] == 0
             conn.commit()
-    with engine.connect() as conn:
-        assert conn.execute(text("SELECT note FROM whatsapp_migration_sentinel WHERE id=2")).scalar_one() == "untouched"
-    inspector = inspect(engine)
-    assert "provider_message_id" in {col["name"] for col in inspector.get_columns("whatsapp_ministry_outbox")}
-    assert inspector.has_table("whatsapp_ministry_delivery_receipts")
+            # Rollback is destructive for receipt metadata; never test against real data.
+            with conn.cursor() as cursor:
+                cursor.execute(rollback)
+            conn.commit()
+            with conn.cursor() as cursor:
+                cursor.execute(
+                    "SELECT column_name FROM information_schema.columns "
+                    "WHERE table_schema = 'whatsapp_receipt_migration_fixture' "
+                    "AND table_name = 'whatsapp_ministry_outbox'"
+                )
+                columns = {row[0] for row in cursor.fetchall()}
+                assert "provider_message_id" not in columns
+                assert "delivery_status" not in columns
+                cursor.execute("SELECT inbound_id, kind, status FROM whatsapp_ministry_outbox WHERE id = 1")
+                assert cursor.fetchone() == (42, "welcome", "pending")
+            with conn.cursor() as cursor:
+                cursor.execute(forward)
+            conn.commit()
+            with conn.cursor() as cursor:
+                cursor.execute(
+                    "SELECT provider_message_id, delivery_status, inbound_id "
+                    "FROM whatsapp_ministry_outbox WHERE id = 1"
+                )
+                assert cursor.fetchone() == (None, None, 42)
+                cursor.execute(
+                    "SELECT count(*) FROM whatsapp_ministry_delivery_receipts"
+                )
+                assert cursor.fetchone()[0] == 0
+        finally:
+            conn.rollback()
+            with conn.cursor() as cursor:
+                cursor.execute("RESET search_path")
+                cursor.execute("DROP SCHEMA whatsapp_receipt_migration_fixture CASCADE")
+            conn.commit()
 
 
 def test_receipt_racing_worker_commit_is_not_orphaned(client, monkeypatch):
