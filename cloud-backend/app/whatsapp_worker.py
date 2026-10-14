@@ -12,7 +12,7 @@ import httpx
 from sqlalchemy import select
 
 from .db import SessionLocal
-from .whatsapp_ministry import WhatsAppConversation, WhatsAppInbound, WhatsAppOutbox
+from .whatsapp_ministry import WhatsAppConversation, WhatsAppInbound, WhatsAppOutbox, WhatsAppDeliveryReceipt, apply_delivery_status
 from .whatsapp_delivery import WELCOME, outbound_ready, send_text
 
 
@@ -72,6 +72,14 @@ def dispatch_one():
         if job.status == "sending":
             job.provider_message_id = receipt[0]["id"]
             job.status = "sent"  # Meta API accepted; not proof of delivery.
+            inbound = db.get(WhatsAppInbound, job.inbound_id)
+            pending = db.scalar(select(WhatsAppDeliveryReceipt).where(
+                WhatsAppDeliveryReceipt.account_id == inbound.account_id,
+                WhatsAppDeliveryReceipt.provider_message_id == job.provider_message_id
+            ).with_for_update())
+            if pending is not None:
+                apply_delivery_status(job, pending.delivery_status)
+                db.delete(pending)
     return {"status": "sent", "job_id": job_id}
 
 
