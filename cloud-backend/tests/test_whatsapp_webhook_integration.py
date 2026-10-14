@@ -364,3 +364,44 @@ def test_receipt_migration_forward_and_rollback_on_disposable_schema(client):
     inspector = inspect(engine)
     assert "provider_message_id" in {col["name"] for col in inspector.get_columns("whatsapp_ministry_outbox")}
     assert inspector.has_table("whatsapp_ministry_delivery_receipts")
+
+
+def test_receipt_racing_worker_commit_is_not_orphaned(client, monkeypatch):
+    """Hold the worker's shared lock while a signed webhook races its commit."""
+    from concurrent.futures import ThreadPoolExecutor
+    from threading import Event
+    from app import whatsapp_worker
+
+    assert signed(client, event("receipt-race", datetime.now(timezone.utc))).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    monkeypatch.setattr(whatsapp_worker, "send_text",
+                        lambda *args: [{"id": "wamid.race-commit"}])
+
+    acquired, release = Event(), Event()
+    original_lock = whatsapp_worker.lock_delivery_receipt
+
+    def held_worker_lock(db, account, provider_id):
+        original_lock(db, account, provider_id)
+        acquired.set()
+        assert release.wait(timeout=10)
+
+    monkeypatch.setattr(whatsapp_worker, "lock_delivery_receipt", held_worker_lock)
+    payload = {"object": "whatsapp_business_account", "entry": [{"changes": [{
+        "value": {"metadata": {"phone_number_id": "phone-test"},
+                  "statuses": [{"id": "wamid.race-commit", "status": "delivered"}]}
+    }]}]}
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        worker = pool.submit(whatsapp_worker.dispatch_one)
+        assert acquired.wait(timeout=10)
+        callback = pool.submit(signed, client, payload)
+        release.set()
+        assert worker.result(timeout=15)["status"] == "sent"
+        assert callback.result(timeout=15).status_code == 200
+
+    with SessionLocal() as db:
+        job = db.scalar(select(WhatsAppOutbox).where(WhatsAppOutbox.kind == "welcome"))
+        assert job.provider_message_id == "wamid.race-commit"
+        assert job.delivery_status == "delivered"
+        assert db.query(WhatsAppDeliveryReceipt).count() == 0
