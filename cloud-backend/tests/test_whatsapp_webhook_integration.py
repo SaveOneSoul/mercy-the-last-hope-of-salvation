@@ -1,0 +1,494 @@
+"""Webhook integration contracts; run with a disposable PostgreSQL DATABASE_URL."""
+import hashlib
+import hmac
+import json
+import os
+from pathlib import Path
+from datetime import datetime, timedelta, timezone
+
+import pytest
+from fastapi.testclient import TestClient
+from sqlalchemy import select, text, inspect
+
+from app.db import Base, SessionLocal, engine
+from app.main import app
+from app.whatsapp_ministry import WhatsAppInbound, WhatsAppOutbox, WhatsAppConversation, WhatsAppDeliveryReceipt, purge_expired_messages, purge_expired_delivery_receipts
+
+pytestmark = pytest.mark.skipif(
+    engine.dialect.name != "postgresql" or os.getenv("WHATSAPP_TEST_DATABASE") != "1",
+    reason="requires disposable PostgreSQL and WHATSAPP_TEST_DATABASE=1",
+)
+
+@pytest.fixture
+def client(monkeypatch):
+    monkeypatch.setenv("WHATSAPP_APP_SECRET", "integration-secret-only")
+    monkeypatch.setenv("WHATSAPP_VERIFY_TOKEN", "integration-verify-only")
+    Base.metadata.create_all(engine)
+    with SessionLocal.begin() as db:
+        db.query(WhatsAppDeliveryReceipt).delete()
+        db.query(WhatsAppOutbox).delete()
+        db.query(WhatsAppInbound).delete()
+        db.query(WhatsAppConversation).delete()
+    yield TestClient(app)
+
+
+def signed(client, payload, signature=True):
+    raw = json.dumps(payload).encode()
+    digest = hmac.new(b"integration-secret-only", raw, hashlib.sha256).hexdigest()
+    return client.post("/api/whatsapp/webhook", content=raw, headers={
+        "x-hub-signature-256": "sha256=" + (digest if signature else "bad")})
+
+
+def event(msg_id, timestamp, contact="15550001111"):
+    return {"object": "whatsapp_business_account", "entry": [{"changes": [{
+        "value": {"metadata": {"phone_number_id": "phone-test"}, "messages": [{
+            "id": msg_id, "from": contact, "timestamp": str(int(timestamp.timestamp())),
+            "type": "text", "text": {"body": "Peace be with you"}}]}}]}]}
+
+
+def test_webhook_verification_and_signature(client):
+    assert client.get("/api/whatsapp/webhook", params={
+        "hub.mode": "subscribe", "hub.verify_token": "integration-verify-only",
+        "hub.challenge": "12345"}).text == "12345"
+    assert client.get("/api/whatsapp/webhook", params={
+        "hub.mode": "subscribe", "hub.verify_token": "wrong",
+        "hub.challenge": "12345"}).status_code == 403
+    assert signed(client, event("invalid-signature", datetime.now(timezone.utc)), False).status_code == 401
+
+
+def test_persist_deduplicate_and_suppress_out_of_order(client):
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    first = event("first", now - timedelta(days=2))
+    assert signed(client, first).status_code == 200
+    assert signed(client, first).status_code == 200
+    assert signed(client, event("older", now - timedelta(days=3))).status_code == 200
+    assert signed(client, event("recent", now)).status_code == 200
+    with SessionLocal() as db:
+        inbound = db.scalars(select(WhatsAppInbound)).all()
+        welcomes = db.scalars(select(WhatsAppOutbox).where(WhatsAppOutbox.kind == "welcome")).all()
+        notifications = db.scalars(select(WhatsAppOutbox).where(WhatsAppOutbox.kind == "owner_notification")).all()
+        assert len(inbound) == 3
+        assert len(welcomes) == 1
+        assert len(notifications) == 3
+        assert db.scalar(select(WhatsAppConversation)).last_human_at == now
+
+
+def test_handoff_suppresses_welcome(client):
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    with SessionLocal.begin() as db:
+        db.add(WhatsAppConversation(account_id="phone-test", contact_id="15550001111", handoff=True))
+    assert signed(client, event("handoff-msg", now)).status_code == 200
+    with SessionLocal() as db:
+        assert db.scalar(select(WhatsAppOutbox).where(WhatsAppOutbox.kind == "welcome")) is None
+
+
+def test_existing_mercy_tables_survive_repeat_schema_creation(client):
+    with engine.begin() as connection:
+        connection.execute(text("CREATE TABLE IF NOT EXISTS whatsapp_migration_sentinel (id integer PRIMARY KEY, note text)"))
+        connection.execute(text("INSERT INTO whatsapp_migration_sentinel (id, note) VALUES (1, 'preserve') ON CONFLICT (id) DO NOTHING"))
+    Base.metadata.create_all(engine)
+    Base.metadata.create_all(engine)
+    assert inspect(engine).has_table("whatsapp_ministry_inbound")
+    with engine.connect() as connection:
+        assert connection.execute(text("SELECT note FROM whatsapp_migration_sentinel WHERE id=1")).scalar_one() == "preserve"
+
+
+def test_retention_keeps_pending_and_removes_terminal(client):
+    old = datetime.now(timezone.utc).replace(microsecond=0) - timedelta(days=45)
+    with SessionLocal.begin() as db:
+        db.add_all([
+            WhatsAppInbound(account_id="phone-test", contact_id="one", message_id="retained", received_at=old),
+            WhatsAppInbound(account_id="phone-test", contact_id="two", message_id="purged", received_at=old),
+        ])
+        db.flush()
+        rows = {x.message_id: x for x in db.scalars(select(WhatsAppInbound)).all()}
+        db.add_all([
+            WhatsAppOutbox(inbound_id=rows["retained"].id, kind="owner_notification", status="pending"),
+            WhatsAppOutbox(inbound_id=rows["purged"].id, kind="owner_notification", status="acknowledged"),
+        ])
+    with SessionLocal.begin() as db:
+        assert purge_expired_messages(db, now=datetime.now(timezone.utc)) == 1
+    with SessionLocal() as db:
+        assert [x.message_id for x in db.scalars(select(WhatsAppInbound)).all()] == ["retained"]
+
+
+def test_outbound_defaults_to_disabled(monkeypatch):
+    from app.whatsapp_delivery import send_text, outbound_ready
+    monkeypatch.delenv("WHATSAPP_OUTBOUND_ENABLED", raising=False)
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    assert not outbound_ready()
+    with pytest.raises(RuntimeError, match="whatsapp_outbound_disabled"):
+        send_text("15550001111", "test")
+
+
+def test_worker_sends_once_and_never_retries_ambiguous_receipt(client, monkeypatch):
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("worker-first", now)).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    sent = []
+    monkeypatch.setattr(whatsapp_worker, "send_text", lambda contact, body: sent.append(contact) or [{"id": "meta-test-1"}])
+    assert whatsapp_worker.dispatch_one()["status"] == "sent"
+    assert whatsapp_worker.dispatch_one()["status"] == "empty"
+    assert len(sent) == 1
+
+
+def test_worker_suppresses_handoff_and_stale_pending_welcome(client, monkeypatch):
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("worker-first", now - timedelta(days=2))).status_code == 200
+    # Simulate a queued delivery that has aged beyond the 24-hour service window.
+    with SessionLocal.begin() as db:
+        inbound = db.scalar(select(WhatsAppInbound).where(WhatsAppInbound.message_id == "worker-first"))
+        inbound.received_at = now - timedelta(days=2)
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    monkeypatch.setattr(whatsapp_worker, "send_text", lambda *args: pytest.fail("must not send stale greeting"))
+    assert whatsapp_worker.dispatch_one()["status"] == "suppressed"
+
+
+def test_worker_unknown_receipt_never_automatically_retries(client, monkeypatch):
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("worker-first", now)).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    sent = []
+    def ambiguous(*args):
+        sent.append(1)
+        raise RuntimeError("simulated uncertain provider result")
+    monkeypatch.setattr(whatsapp_worker, "send_text", ambiguous)
+    assert whatsapp_worker.dispatch_one()["status"] == "unknown"
+    assert whatsapp_worker.dispatch_one()["status"] == "empty"
+    assert len(sent) == 1
+
+
+def test_handoff_before_worker_claim_suppresses_delivery(client, monkeypatch):
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("handoff-before-claim", now)).status_code == 200
+    with SessionLocal.begin() as db:
+        conversation = db.scalar(select(WhatsAppConversation).where(
+            WhatsAppConversation.contact_id == "15550001111"
+        ).with_for_update())
+        conversation.handoff = True
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    monkeypatch.setattr(whatsapp_worker, "send_text", lambda *args: pytest.fail("handoff must prevent delivery"))
+    assert whatsapp_worker.dispatch_one()["status"] == "suppressed"
+
+
+def test_superseded_welcome_is_suppressed(client, monkeypatch):
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("first-message", now - timedelta(minutes=3))).status_code == 200
+    assert signed(client, event("followup-message", now)).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    monkeypatch.setattr(whatsapp_worker, "send_text", lambda *args: pytest.fail("superseded welcome must not send"))
+    assert whatsapp_worker.dispatch_one()["status"] == "suppressed"
+
+
+def test_two_concurrent_workers_claim_one_welcome(client, monkeypatch):
+    """PostgreSQL SKIP LOCKED must prevent duplicate provider calls."""
+    from concurrent.futures import ThreadPoolExecutor
+    from threading import Barrier, Lock
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("concurrent-worker", now)).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    calls = []
+    lock = Lock()
+    def provider(contact, body):
+        with lock:
+            calls.append(contact)
+        return [{"id": "meta-concurrent-1"}]
+    monkeypatch.setattr(whatsapp_worker, "send_text", provider)
+    start = Barrier(2)
+    def worker():
+        start.wait(timeout=10)
+        return whatsapp_worker.dispatch_one()
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        futures = [pool.submit(worker) for _ in range(2)]
+        statuses = [future.result(timeout=15)["status"] for future in futures]
+    assert sorted(statuses) == ["empty", "sent"]
+    assert calls == ["15550001111"]
+
+
+def test_meta_receipts_reconcile_without_downgrades(client, monkeypatch):
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("receipt-first", now)).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    monkeypatch.setattr(whatsapp_worker, "send_text",
+                        lambda *args: [{"id": "wamid.accepted-1"}])
+    assert whatsapp_worker.dispatch_one()["status"] == "sent"
+    def receipt(status, provider="wamid.accepted-1", account="phone-test"):
+        return {"object": "whatsapp_business_account", "entry": [{"changes": [{
+            "value": {"metadata": {"phone_number_id": account},
+                      "statuses": [{"id": provider, "status": status}]}}]}]}
+    for status in ("delivered", "sent", "delivered", "read", "failed"):
+        assert signed(client, receipt(status)).status_code == 200
+    assert signed(client, receipt("failed", "unknown-id")).status_code == 200
+    assert signed(client, receipt("failed", account="other-account")).status_code == 200
+    with SessionLocal() as db:
+        job = db.scalar(select(WhatsAppOutbox).where(WhatsAppOutbox.kind == "welcome"))
+        assert job.provider_message_id == "wamid.accepted-1"
+        assert job.delivery_status == "read"
+        assert job.status == "sent"
+        assert db.query(WhatsAppInbound).count() == 1
+
+
+def test_receipt_before_provider_id_commit_is_reconciled(client, monkeypatch):
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("early-receipt", now)).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    early = {"object": "whatsapp_business_account", "entry": [{"changes": [{
+        "value": {"metadata": {"phone_number_id": "phone-test"},
+                  "statuses": [{"id": "wamid.early-1", "status": "delivered"}]}}]}]}
+    def provider(*args):
+        assert signed(client, early).status_code == 200
+        return [{"id": "wamid.early-1"}]
+    monkeypatch.setattr(whatsapp_worker, "send_text", provider)
+    assert whatsapp_worker.dispatch_one()["status"] == "sent"
+    with SessionLocal() as db:
+        job = db.scalar(select(WhatsAppOutbox).where(WhatsAppOutbox.kind == "welcome"))
+        assert job.delivery_status == "delivered"
+        assert job.provider_message_id == "wamid.early-1"
+        assert db.query(WhatsAppDeliveryReceipt).count() == 0
+
+
+def test_parallel_duplicate_unknown_receipts_are_idempotent(client):
+    from concurrent.futures import ThreadPoolExecutor
+    from threading import Barrier
+    payload = {"object": "whatsapp_business_account", "entry": [{"changes": [{
+        "value": {"metadata": {"phone_number_id": "phone-test"},
+                  "statuses": [{"id": "wamid.parallel-unknown", "status": "delivered"}]}}]}]}
+    start = Barrier(2)
+    def post():
+        start.wait(timeout=10)
+        return signed(client, payload).status_code
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        results = [future.result(timeout=15) for future in [pool.submit(post) for _ in range(2)]]
+    assert results == [200, 200]
+    with SessionLocal() as db:
+        rows = db.scalars(select(WhatsAppDeliveryReceipt)).all()
+        assert len(rows) == 1
+        assert rows[0].delivery_status == "delivered"
+
+
+def test_unmatched_receipt_retention_is_bounded(client):
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    with SessionLocal.begin() as db:
+        db.add_all([
+            WhatsAppDeliveryReceipt(account_id="phone-test", provider_message_id="old",
+                delivery_status="sent", received_at=now - timedelta(days=8)),
+            WhatsAppDeliveryReceipt(account_id="phone-test", provider_message_id="recent",
+                delivery_status="delivered", received_at=now - timedelta(days=2)),
+        ])
+    with SessionLocal.begin() as db:
+        assert purge_expired_delivery_receipts(db, now=now) == 1
+    with SessionLocal() as db:
+        assert [x.provider_message_id for x in db.scalars(select(WhatsAppDeliveryReceipt)).all()] == ["recent"]
+    with SessionLocal.begin() as db:
+        with pytest.raises(ValueError):
+            purge_expired_delivery_receipts(db, now=now, retention_days=30)
+
+
+def test_handoff_during_inflight_provider_send_is_recorded(client, monkeypatch):
+    """Expose the unavoidable in-flight handoff window without claiming cancellation."""
+    from concurrent.futures import ThreadPoolExecutor
+    from threading import Event
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("inflight-handoff", now)).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    entered, release = Event(), Event()
+    def provider(*args):
+        entered.set()
+        assert release.wait(timeout=10)
+        return [{"id": "wamid.inflight-handoff"}]
+    monkeypatch.setattr(whatsapp_worker, "send_text", provider)
+    with ThreadPoolExecutor(max_workers=1) as pool:
+        future = pool.submit(whatsapp_worker.dispatch_one)
+        assert entered.wait(timeout=10)
+        with SessionLocal.begin() as db:
+            conversation = db.scalar(select(WhatsAppConversation).with_for_update())
+            conversation.handoff = True
+        release.set()
+        assert future.result(timeout=15)["status"] == "sent"
+    with SessionLocal() as db:
+        assert db.scalar(select(WhatsAppConversation)).handoff is True
+        job = db.scalar(select(WhatsAppOutbox).where(WhatsAppOutbox.kind == "welcome"))
+        assert job.status == "sent"
+        assert job.provider_message_id == "wamid.inflight-handoff"
+
+
+def test_receipt_migration_forward_and_rollback_on_disposable_schema(client):
+    """Exercise real migration SQL against a legacy outbox in its own schema."""
+    import psycopg
+    from sqlalchemy.engine import make_url
+
+    sql_dir = Path(__file__).parent / "sql"
+    forward = (sql_dir / "whatsapp_receipts_forward.sql").read_text()
+    rollback = (sql_dir / "whatsapp_receipts_rollback.sql").read_text()
+    url = make_url(os.environ["DATABASE_URL"])
+    kwargs = dict(host=url.host, port=url.port, dbname=url.database,
+                  user=url.username, password=url.password)
+    # This schema is isolated from the application tables and is disposable.
+    with psycopg.connect(**kwargs) as conn:
+        with conn.cursor() as cursor:
+            cursor.execute("CREATE SCHEMA whatsapp_receipt_migration_fixture")
+            cursor.execute("SET search_path TO whatsapp_receipt_migration_fixture")
+            cursor.execute(
+                "CREATE TABLE whatsapp_ministry_outbox ("
+                "id INTEGER PRIMARY KEY, inbound_id INTEGER NOT NULL, "
+                "kind VARCHAR(32) NOT NULL, status VARCHAR(24) NOT NULL)"
+            )
+            cursor.execute(
+                "INSERT INTO whatsapp_ministry_outbox "
+                "(id, inbound_id, kind, status) VALUES (1, 42, 'welcome', 'pending')"
+            )
+        conn.commit()
+        try:
+            for sql in (forward, forward):
+                with conn.cursor() as cursor:
+                    cursor.execute(sql)
+                conn.commit()
+            with conn.cursor() as cursor:
+                cursor.execute(
+                    "UPDATE whatsapp_ministry_outbox SET "
+                    "provider_message_id = 'wamid.migration', delivery_status = 'read' WHERE id = 1"
+                )
+                cursor.execute("SELECT count(*) FROM whatsapp_ministry_delivery_receipts")
+                assert cursor.fetchone()[0] == 0
+            conn.commit()
+            # Rollback is destructive for receipt metadata; never test against real data.
+            with conn.cursor() as cursor:
+                cursor.execute(rollback)
+            conn.commit()
+            with conn.cursor() as cursor:
+                cursor.execute(
+                    "SELECT column_name FROM information_schema.columns "
+                    "WHERE table_schema = 'whatsapp_receipt_migration_fixture' "
+                    "AND table_name = 'whatsapp_ministry_outbox'"
+                )
+                columns = {row[0] for row in cursor.fetchall()}
+                assert "provider_message_id" not in columns
+                assert "delivery_status" not in columns
+                cursor.execute("SELECT inbound_id, kind, status FROM whatsapp_ministry_outbox WHERE id = 1")
+                assert cursor.fetchone() == (42, "welcome", "pending")
+            with conn.cursor() as cursor:
+                cursor.execute(forward)
+            conn.commit()
+            with conn.cursor() as cursor:
+                cursor.execute(
+                    "SELECT provider_message_id, delivery_status, inbound_id "
+                    "FROM whatsapp_ministry_outbox WHERE id = 1"
+                )
+                assert cursor.fetchone() == (None, None, 42)
+                cursor.execute(
+                    "SELECT count(*) FROM whatsapp_ministry_delivery_receipts"
+                )
+                assert cursor.fetchone()[0] == 0
+        finally:
+            conn.rollback()
+            with conn.cursor() as cursor:
+                cursor.execute("RESET search_path")
+                cursor.execute("DROP SCHEMA whatsapp_receipt_migration_fixture CASCADE")
+            conn.commit()
+
+
+def test_receipt_racing_worker_commit_is_not_orphaned(client, monkeypatch):
+    """Hold the worker's shared lock while a signed webhook races its commit."""
+    from concurrent.futures import ThreadPoolExecutor
+    from threading import Event
+    from app import whatsapp_worker
+
+    assert signed(client, event("receipt-race", datetime.now(timezone.utc))).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    monkeypatch.setattr(whatsapp_worker, "send_text",
+                        lambda *args: [{"id": "wamid.race-commit"}])
+
+    acquired, release = Event(), Event()
+    original_lock = whatsapp_worker.lock_delivery_receipt
+
+    def held_worker_lock(db, account, provider_id):
+        original_lock(db, account, provider_id)
+        acquired.set()
+        assert release.wait(timeout=10)
+
+    monkeypatch.setattr(whatsapp_worker, "lock_delivery_receipt", held_worker_lock)
+    payload = {"object": "whatsapp_business_account", "entry": [{"changes": [{
+        "value": {"metadata": {"phone_number_id": "phone-test"},
+                  "statuses": [{"id": "wamid.race-commit", "status": "delivered"}]}
+    }]}]}
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        worker = pool.submit(whatsapp_worker.dispatch_one)
+        assert acquired.wait(timeout=10)
+        callback = pool.submit(signed, client, payload)
+        release.set()
+        assert worker.result(timeout=15)["status"] == "sent"
+        assert callback.result(timeout=15).status_code == 200
+
+    with SessionLocal() as db:
+        job = db.scalar(select(WhatsAppOutbox).where(WhatsAppOutbox.kind == "welcome"))
+        assert job.provider_message_id == "wamid.race-commit"
+        assert job.delivery_status == "delivered"
+        assert db.query(WhatsAppDeliveryReceipt).count() == 0
+
+
+def test_retention_does_not_delete_unknown_or_sending_jobs(client):
+    """Ambiguous sends and unresolved notifications must survive cleanup."""
+    old = datetime.now(timezone.utc).replace(microsecond=0) - timedelta(days=45)
+    with SessionLocal.begin() as db:
+        for msg, status in (("unknown", "unknown"), ("sending", "sending"),
+                            ("pending", "pending"), ("terminal", "sent")):
+            inbound = WhatsAppInbound(account_id="phone-test", contact_id=msg,
+                message_id="privacy-" + msg, received_at=old, body="private")
+            db.add(inbound)
+            db.flush()
+            db.add(WhatsAppOutbox(inbound_id=inbound.id, kind="welcome", status=status))
+    with SessionLocal.begin() as db:
+        assert purge_expired_messages(db, now=datetime.now(timezone.utc)) == 1
+    with SessionLocal() as db:
+        remaining = {row.message_id for row in db.scalars(select(WhatsAppInbound)).all()}
+        assert remaining == {"privacy-unknown", "privacy-sending", "privacy-pending"}
+
+
+def test_retention_preserves_conversation_activity_for_seven_day_rule(client):
+    old = datetime.now(timezone.utc).replace(microsecond=0) - timedelta(days=45)
+    activity = datetime.now(timezone.utc).replace(microsecond=0) - timedelta(days=2)
+    with SessionLocal.begin() as db:
+        db.add(WhatsAppConversation(account_id="phone-test", contact_id="contact",
+            last_human_at=activity, history_known=True))
+        inbound = WhatsAppInbound(account_id="phone-test", contact_id="contact",
+            message_id="privacy-old", received_at=old, body="private")
+        db.add(inbound)
+        db.flush()
+        db.add(WhatsAppOutbox(inbound_id=inbound.id, kind="welcome", status="sent"))
+    with SessionLocal.begin() as db:
+        assert purge_expired_messages(db, now=datetime.now(timezone.utc)) == 1
+    with SessionLocal() as db:
+        conversation = db.scalar(select(WhatsAppConversation))
+        assert conversation.history_known is True
+        assert conversation.last_human_at.replace(tzinfo=timezone.utc) == activity
+        assert db.query(WhatsAppInbound).count() == 0

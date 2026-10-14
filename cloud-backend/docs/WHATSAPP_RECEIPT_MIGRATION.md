@@ -1,0 +1,161 @@
+# WhatsApp delivery receipt migration — deployment blocked
+
+The application model now requires two nullable columns on
+`whatsapp_ministry_outbox`. SQLAlchemy `create_all()` does **not**
+add columns to an existing table. Do not deploy before running and
+verifying this migration on a disposable clone of the staging database.
+
+## Forward migration (PostgreSQL)
+
+```sql
+BEGIN;
+ALTER TABLE whatsapp_ministry_outbox
+  ADD COLUMN IF NOT EXISTS provider_message_id VARCHAR(200),
+  ADD COLUMN IF NOT EXISTS delivery_status VARCHAR(24);
+CREATE UNIQUE INDEX IF NOT EXISTS
+  whatsapp_ministry_outbox_provider_message_id_key
+  ON whatsapp_ministry_outbox (provider_message_id);
+CREATE TABLE IF NOT EXISTS whatsapp_ministry_delivery_receipts (
+  id SERIAL PRIMARY KEY,
+  account_id VARCHAR(120) NOT NULL,
+  provider_message_id VARCHAR(200) NOT NULL,
+  delivery_status VARCHAR(24) NOT NULL,
+  received_at TIMESTAMPTZ NOT NULL,
+  UNIQUE (account_id, provider_message_id)
+);
+COMMIT;
+```
+
+## Rollback (only if no receipts need preserving)
+
+```sql
+BEGIN;
+DROP TABLE IF EXISTS whatsapp_ministry_delivery_receipts;
+ALTER TABLE whatsapp_ministry_outbox
+  DROP COLUMN IF EXISTS delivery_status,
+  DROP COLUMN IF EXISTS provider_message_id;
+COMMIT;
+```
+
+Dropping `provider_message_id` automatically removes its dependent unique index or constraint. Do not explicitly drop the index: ORM-created schemas can own it through a UNIQUE constraint. Do not run rollback if provider IDs or receipt states must be retained.
+Back up before migration and confirm table/index ownership and existing
+constraints. Migration is **not** yet verified on a staging clone.
+
+## Semantics and limitations
+
+- `status=sent` means Meta's send API accepted the request, not delivery.
+- `delivery_status` tracks `sent`, `delivered`, `read`, `failed`.
+- Signed receipts only update matching known provider IDs and phone accounts.
+- Unmatched signed receipts are buffered by provider ID and phone account.
+  When a worker records the send response, it consumes the buffered state.
+- Unmatched receipts require a bounded cleanup/abuse policy and replay tests
+  under concurrent callbacks before activation. No cleanup scheduler exists yet.
+- HTTP timeouts remain `unknown` and are never automatically retried.
+- The human handoff in-flight race and scheduled privacy retention remain
+  separate unresolved gates.
+- Outbound stays disabled and Meta webhook remains unconfigured.
+
+## Unmatched receipt maintenance
+
+`purge_expired_delivery_receipts(db, now=...)` removes unmatched receipts older than 7 days. This is **manual and unscheduled**; operational scheduling, metrics, and retention policy approval are still required. Parallel unknown-ID callbacks use a PostgreSQL transaction-scoped advisory lock. Do not treat these additions as permission to activate the webhook.
+
+
+## Privacy and legacy-schema review (pre-activation)
+
+The integration suite now exercises forward migration twice, rollback, and
+forward migration again in a disposable PostgreSQL schema that starts with
+a **legacy outbox table without receipt columns**. It asserts that existing
+outbox identifiers, job status, and foreign-key reference values survive.
+This synthetic legacy fixture does **not** replace a migration rehearsal on
+a disposable clone of the actual staging database.
+
+Message retention defaults to 30 days and applies only when all associated
+outbox jobs are terminal. Unknown, sending, and pending jobs are deliberately
+preserved to avoid losing unreconciled delivery evidence. Conversation
+`last_human_at` and `history_known` are retained separately so the seven-day
+welcome rule continues to work after old message bodies are removed.
+Unmatched receipt retention defaults to 7 days. Neither cleanup operation
+is scheduled or enabled automatically.
+
+**Unresolved approval gates:** owner-approved retention/deletion policy,
+documented operator cleanup schedule and audit trail, review of retained
+contact identifiers and conversation activity metadata, administrator access
+review, and migration rehearsal on a disposable staging clone. Rollback
+destroys receipt metadata and must not be used after real receipts exist
+without a separately approved preservation/recovery plan.
+
+Keep PR in Draft, outbound disabled, and Meta webhook unconfigured.
+
+
+## Proposed maintenance runbook — NOT AUTHORIZED FOR EXECUTION
+
+**Prerequisites:** Explicit owner approval of retention periods and operator
+access; verified backup/restore; scheduled maintenance window; database
+permissions restricted to the WhatsApp tables; audit trail recording time,
+operator, affected row counts, and errors. No live or staging cleanup has
+been run. Do not run cleanup from a public request handler.
+
+1. Use a disposable database clone to inspect age distributions and count
+   inbound records eligible for removal, excluding any with unresolved
+   `pending`, `sending`, or `unknown` outbox work. Separately count
+   unmatched delivery receipts older than seven days.
+2. Confirm no incident investigation, legal hold, or owner-approved
+   preservation requirement applies. Review `last_human_at` and
+   `history_known` separately; these fields are not removed by message
+   cleanup because the seven-day greeting rule needs them.
+3. Rehearse both cleanup functions within explicit database transactions on
+   the disposable clone, verify counts and referential integrity, and test
+   rollback on injected failure.
+4. Only after owner approval, establish a narrowly scoped maintenance job
+   with least-privilege credentials, bounded execution time, monitoring, and
+   alerts for failures. Record aggregate counts rather than message bodies
+   or provider identifiers in routine logs.
+5. Review retained phone/contact identifiers, access logs, backup expiry,
+   data-subject deletion workflows, and the effect of terminal `sent`
+   jobs on future receipt reconciliation before production activation.
+
+**Current state:** cleanup functions exist but are manual, no scheduler is
+configured, and this document does not authorize deleting user data.
+
+
+## Owner retention-policy approval — 2026-10-14
+
+The project owner explicitly approved **30-day message-record retention**
+and **7-day unmatched-delivery-receipt retention**. The existing safety
+exceptions remain mandatory: do not purge inbound messages associated
+with pending, sending, or unknown jobs; preserve conversation activity
+metadata required for the seven-day greeting/inactivity rule.
+
+This is **policy approval only**, not authorization to execute deletion,
+schedule cleanup, run migrations against staging, connect Meta, enable
+outbound sends, merge this draft PR, or deploy. A separate operational
+security review and explicit staging-deployment approval are required.
+
+
+## Administrator access and deletion security review — 2026-10-14
+
+The current WhatsApp owner endpoints depend on the existing CMS
+`require_admin` signed-session verification. State-changing owner
+endpoints also call `_require_write_guard` for CSRF-token validation and
+Origin checking when an Origin header is present. Automated regression
+tests assert that every WhatsApp admin route has an admin dependency,
+every mutating route calls the write guard, and no WhatsApp admin route
+exposes HTTP DELETE. These are code-level controls, **not** proof that
+production account permissions, session-secret rotation, or operational
+access logging have been audited.
+
+**Deletion procedure (not enabled):** The operator must document the
+request or scheduled retention basis; identify and exclude pending,
+sending, and unknown jobs; preserve seven-day greeting timestamps;
+take and test a backup on a disposable clone; record aggregate row
+counts before/after; and verify that the process cannot remove data
+under preservation hold. Deletion of individual conversations,
+associated outbox rows, and identifiers is not yet implemented as a
+reviewed user-request workflow. Backups and application logs need
+separate expiry/deletion procedures.
+
+**Remaining security gates:** inspect actual staging IAM and admin
+access, review audit-log coverage and secret rotation, design
+data-subject deletion/backup-expiry handling, and rehearse migration
+on a disposable clone of the real staging database. No operational
+deletion or deployment is authorized by this review.

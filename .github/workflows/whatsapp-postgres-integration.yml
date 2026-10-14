@@ -1,0 +1,42 @@
+name: WhatsApp PostgreSQL Security Integration
+on:
+  pull_request:
+    paths:
+      - 'cloud-backend/app/whatsapp_*.py'
+      - 'cloud-backend/tests/test_whatsapp_*.py'
+      - '.github/workflows/whatsapp-postgres-integration.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  postgres-webhook:
+    runs-on: ubuntu-24.04
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: mercytest
+          POSTGRES_PASSWORD: integration-only
+          POSTGRES_DB: mercytest
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U mercytest -d mercytest"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgresql+psycopg://mercytest:integration-only@localhost:5432/mercytest
+      WHATSAPP_TEST_DATABASE: '1'
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r cloud-backend/requirements.txt pytest
+      - name: Run PostgreSQL webhook integration tests
+        working-directory: cloud-backend
+        run: python -m pytest -q tests/test_whatsapp_webhook_integration.py tests/test_whatsapp_ministry.py tests/test_whatsapp_admin_service.py
