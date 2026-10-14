@@ -3,6 +3,7 @@ import hashlib
 import hmac
 import json
 import os
+from pathlib import Path
 from datetime import datetime, timedelta, timezone
 
 import pytest
@@ -337,3 +338,29 @@ def test_handoff_during_inflight_provider_send_is_recorded(client, monkeypatch):
         job = db.scalar(select(WhatsAppOutbox).where(WhatsAppOutbox.kind == "welcome"))
         assert job.status == "sent"
         assert job.provider_message_id == "wamid.inflight-handoff"
+
+
+def test_receipt_migration_forward_and_rollback_on_disposable_schema(client):
+    """Run actual SQL twice, then rollback; preserve unrelated preexisting rows."""
+    sql_dir = Path(__file__).parent / "sql"
+    forward = (sql_dir / "whatsapp_receipts_forward.sql").read_text()
+    rollback = (sql_dir / "whatsapp_receipts_rollback.sql").read_text()
+    # The integration database is disposable; no production or staging access.
+    with engine.begin() as conn:
+        conn.execute(text("CREATE TABLE IF NOT EXISTS whatsapp_migration_sentinel (id integer PRIMARY KEY, note text)"))
+        conn.execute(text("INSERT INTO whatsapp_migration_sentinel (id, note) VALUES (2, 'untouched') ON CONFLICT (id) DO NOTHING"))
+    import psycopg
+    from sqlalchemy.engine import make_url
+    url = make_url(os.environ["DATABASE_URL"])
+    kwargs = dict(host=url.host, port=url.port, dbname=url.database,
+                  user=url.username, password=url.password)
+    with psycopg.connect(**kwargs) as conn:
+        for statement in (forward, forward, rollback, forward):
+            with conn.cursor() as cursor:
+                cursor.execute(statement)
+            conn.commit()
+    with engine.connect() as conn:
+        assert conn.execute(text("SELECT note FROM whatsapp_migration_sentinel WHERE id=2")).scalar_one() == "untouched"
+    inspector = inspect(engine)
+    assert "provider_message_id" in {col["name"] for col in inspector.get_columns("whatsapp_ministry_outbox")}
+    assert inspector.has_table("whatsapp_ministry_delivery_receipts")
