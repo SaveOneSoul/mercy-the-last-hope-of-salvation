@@ -454,3 +454,41 @@ def test_receipt_racing_worker_commit_is_not_orphaned(client, monkeypatch):
         assert job.provider_message_id == "wamid.race-commit"
         assert job.delivery_status == "delivered"
         assert db.query(WhatsAppDeliveryReceipt).count() == 0
+
+
+def test_retention_does_not_delete_unknown_or_sending_jobs(client):
+    """Ambiguous sends and unresolved notifications must survive cleanup."""
+    old = datetime.now(timezone.utc).replace(microsecond=0) - timedelta(days=45)
+    with SessionLocal.begin() as db:
+        for msg, status in (("unknown", "unknown"), ("sending", "sending"),
+                            ("pending", "pending"), ("terminal", "sent")):
+            inbound = WhatsAppInbound(account_id="phone-test", contact_id=msg,
+                message_id="privacy-" + msg, received_at=old, body="private")
+            db.add(inbound)
+            db.flush()
+            db.add(WhatsAppOutbox(inbound_id=inbound.id, kind="welcome", status=status))
+    with SessionLocal.begin() as db:
+        assert purge_expired_messages(db, now=datetime.now(timezone.utc)) == 1
+    with SessionLocal() as db:
+        remaining = {row.message_id for row in db.scalars(select(WhatsAppInbound)).all()}
+        assert remaining == {"privacy-unknown", "privacy-sending", "privacy-pending"}
+
+
+def test_retention_preserves_conversation_activity_for_seven_day_rule(client):
+    old = datetime.now(timezone.utc).replace(microsecond=0) - timedelta(days=45)
+    activity = datetime.now(timezone.utc).replace(microsecond=0) - timedelta(days=2)
+    with SessionLocal.begin() as db:
+        db.add(WhatsAppConversation(account_id="phone-test", contact_id="contact",
+            last_human_at=activity, history_known=True))
+        inbound = WhatsAppInbound(account_id="phone-test", contact_id="contact",
+            message_id="privacy-old", received_at=old, body="private")
+        db.add(inbound)
+        db.flush()
+        db.add(WhatsAppOutbox(inbound_id=inbound.id, kind="welcome", status="sent"))
+    with SessionLocal.begin() as db:
+        assert purge_expired_messages(db, now=datetime.now(timezone.utc)) == 1
+    with SessionLocal() as db:
+        conversation = db.scalar(select(WhatsAppConversation))
+        assert conversation.history_known is True
+        assert conversation.last_human_at.replace(tzinfo=timezone.utc) == activity
+        assert db.query(WhatsAppInbound).count() == 0
