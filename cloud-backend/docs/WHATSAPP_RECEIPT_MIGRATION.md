@@ -85,3 +85,34 @@ destroys receipt metadata and must not be used after real receipts exist
 without a separately approved preservation/recovery plan.
 
 Keep PR in Draft, outbound disabled, and Meta webhook unconfigured.
+
+
+## Proposed maintenance runbook — NOT AUTHORIZED FOR EXECUTION
+
+**Prerequisites:** Explicit owner approval of retention periods and operator
+access; verified backup/restore; scheduled maintenance window; database
+permissions restricted to the WhatsApp tables; audit trail recording time,
+operator, affected row counts, and errors. No live or staging cleanup has
+been run. Do not run cleanup from a public request handler.
+
+1. Use a disposable database clone to inspect age distributions and count
+   inbound records eligible for removal, excluding any with unresolved
+   `pending`, `sending`, or `unknown` outbox work. Separately count
+   unmatched delivery receipts older than seven days.
+2. Confirm no incident investigation, legal hold, or owner-approved
+   preservation requirement applies. Review `last_human_at` and
+   `history_known` separately; these fields are not removed by message
+   cleanup because the seven-day greeting rule needs them.
+3. Rehearse both cleanup functions within explicit database transactions on
+   the disposable clone, verify counts and referential integrity, and test
+   rollback on injected failure.
+4. Only after owner approval, establish a narrowly scoped maintenance job
+   with least-privilege credentials, bounded execution time, monitoring, and
+   alerts for failures. Record aggregate counts rather than message bodies
+   or provider identifiers in routine logs.
+5. Review retained phone/contact identifiers, access logs, backup expiry,
+   data-subject deletion workflows, and the effect of terminal `sent`
+   jobs on future receipt reconciliation before production activation.
+
+**Current state:** cleanup functions exist but are manual, no scheduler is
+configured, and this document does not authorize deleting user data.
