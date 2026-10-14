@@ -31,14 +31,13 @@ COMMIT;
 ```sql
 BEGIN;
 DROP TABLE IF EXISTS whatsapp_ministry_delivery_receipts;
-DROP INDEX IF EXISTS whatsapp_ministry_outbox_provider_message_id_key;
 ALTER TABLE whatsapp_ministry_outbox
   DROP COLUMN IF EXISTS delivery_status,
   DROP COLUMN IF EXISTS provider_message_id;
 COMMIT;
 ```
 
-Do not run rollback if provider IDs or receipt states must be retained.
+Dropping `provider_message_id` automatically removes its dependent unique index or constraint. Do not explicitly drop the index: ORM-created schemas can own it through a UNIQUE constraint. Do not run rollback if provider IDs or receipt states must be retained.
 Back up before migration and confirm table/index ownership and existing
 constraints. Migration is **not** yet verified on a staging clone.
 
