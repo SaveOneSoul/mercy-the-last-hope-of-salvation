@@ -23,3 +23,12 @@ Status: **HOLD — not ready to merge**. Review date: 2026-10-14.
 
 ## Release decision
 - Draft PR #159 remains unmerged. No production deployment or owner merge approval requested until image provenance, theological citations, and accessibility checks are complete.
+
+## Review update — 2026-10-14
+- Official Vatican Litany checked: the 2020 additions Mother of Mercy, Mother of Hope, and Solace of Migrants have been inserted in the correct sequence. Gallery now contains 54 Marian invocations with 54 corresponding notes.
+- The original owner's 51 titles remain preserved. Differences in English translation (for example Comforter/Comfort of the afflicted and honor/honour) are retained as provided rather than silently rewritten.
+- Wikimedia Commons exact file record confirmed for Raphael's *Virgin and Child with Young Saint John the Baptist* (MFA Boston accession 76.422), with Commons PD-Art statement and jurisdictional caveat.
+- Other image files require separate exact-record and live-image checks; no claim of complete verification.
+- Static source inspection confirms search, category filters, dialog, Escape support via native dialog, and focus return handlers exist. Browser automation, screen reader testing, contrast audit, and mobile checks remain NOT RUN.
+- Editorial check remains incomplete for 54 individual theological/historical claims. The Litany source confirms titles but not every individual interpretation or date.
+- Release decision remains HOLD; draft PR only.
