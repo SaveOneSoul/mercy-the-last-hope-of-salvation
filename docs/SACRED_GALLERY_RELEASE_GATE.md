@@ -41,3 +41,12 @@ Status: **HOLD — not ready to merge**. Review date: 2026-10-14.
 - Added `scripts/check-sacred-gallery.cjs` static regression test; the workflow creation attempt was blocked, so no CI result exists for it. The script itself has not been executed on a runner.
 - Open gates: 53 additional distinct Marian artwork selections and licence verification (plus non-Marian sections); individual theological and historical source substantiation; cross-browser/mobile/assistive-technology audit; successful test execution; review of the proposed image selection against Catholic iconographic suitability.
 - Decision: **DO NOT MERGE OR PUBLISH**; keep PR #159 draft until all requirements are satisfied and owner approval is obtained.
+
+## Follow-up checkpoint — artwork verification and structural audit
+- Exact Commons file pages independently checked for Murillo's *The Immaculate Conception* (Dayton Art Institute) and Velázquez's *Coronation of the Virgin* (Museo del Prado). Both have public-domain artwork/reproduction notices; jurisdictional caveats apply. Their candidate records were enabled in the gallery.
+- Gallery approved artwork total: **3** (including previously reviewed Raphael). This is not 54 distinct verified Marian images.
+- In-memory parse of the committed gallery data confirms 54 Marian titles, 54 note objects, 0 entries with missing required fields. This validates completeness, not factual accuracy.
+- Primary source for Litany sequence: https://www.vatican.va/special/rosary/documents/litanie-lauretane_en.html
+- Murillo provenance: https://commons.wikimedia.org/wiki/File:'The_Immaculate_Conception'_by_Murillo,_Dayton_Art_Institute.JPG
+- Velázquez provenance: https://commons.wikimedia.org/wiki/File:Coronación_de_la_Virgen,_by_Diego_Velázquez.jpg
+- Still blocked: remaining unique artwork and iconographic fit, exhaustive 54-entry primary-source review, executable CI and browser accessibility tests. No release approval.
