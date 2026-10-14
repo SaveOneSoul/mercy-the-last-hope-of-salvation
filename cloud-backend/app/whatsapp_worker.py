@@ -70,7 +70,8 @@ def dispatch_one():
     with SessionLocal.begin() as db:
         job = db.get(WhatsAppOutbox, job_id)
         if job.status == "sending":
-            job.status = "sent"
+            job.provider_message_id = receipt[0]["id"]
+            job.status = "sent"  # Meta API accepted; not proof of delivery.
     return {"status": "sent", "job_id": job_id}
 
 
