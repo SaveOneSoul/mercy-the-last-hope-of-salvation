@@ -58,3 +58,30 @@ constraints. Migration is **not** yet verified on a staging clone.
 ## Unmatched receipt maintenance
 
 `purge_expired_delivery_receipts(db, now=...)` removes unmatched receipts older than 7 days. This is **manual and unscheduled**; operational scheduling, metrics, and retention policy approval are still required. Parallel unknown-ID callbacks use a PostgreSQL transaction-scoped advisory lock. Do not treat these additions as permission to activate the webhook.
+
+
+## Privacy and legacy-schema review (pre-activation)
+
+The integration suite now exercises forward migration twice, rollback, and
+forward migration again in a disposable PostgreSQL schema that starts with
+a **legacy outbox table without receipt columns**. It asserts that existing
+outbox identifiers, job status, and foreign-key reference values survive.
+This synthetic legacy fixture does **not** replace a migration rehearsal on
+a disposable clone of the actual staging database.
+
+Message retention defaults to 30 days and applies only when all associated
+outbox jobs are terminal. Unknown, sending, and pending jobs are deliberately
+preserved to avoid losing unreconciled delivery evidence. Conversation
+`last_human_at` and `history_known` are retained separately so the seven-day
+welcome rule continues to work after old message bodies are removed.
+Unmatched receipt retention defaults to 7 days. Neither cleanup operation
+is scheduled or enabled automatically.
+
+**Unresolved approval gates:** owner-approved retention/deletion policy,
+documented operator cleanup schedule and audit trail, review of retained
+contact identifiers and conversation activity metadata, administrator access
+review, and migration rehearsal on a disposable staging clone. Rollback
+destroys receipt metadata and must not be used after real receipts exist
+without a separately approved preservation/recovery plan.
+
+Keep PR in Draft, outbound disabled, and Meta webhook unconfigured.
