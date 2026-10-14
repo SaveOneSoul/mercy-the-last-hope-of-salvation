@@ -32,3 +32,12 @@ Status: **HOLD — not ready to merge**. Review date: 2026-10-14.
 - Static source inspection confirms search, category filters, dialog, Escape support via native dialog, and focus return handlers exist. Browser automation, screen reader testing, contrast audit, and mobile checks remain NOT RUN.
 - Editorial check remains incomplete for 54 individual theological/historical claims. The Litany source confirms titles but not every individual interpretation or date.
 - Release decision remains HOLD; draft PR only.
+
+## Verification checkpoint — 2026-10-14 (follow-up)
+- Cross-checked the complete Litany order and 2020 placements against https://press.vatican.va/special/rosary/documents/litanie-lauretane_en.html and the 20 June 2020 Vatican letter https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2020/06/20/200620c.html.
+- Confirmed the Raphael *Virgin and Child with Young Saint John the Baptist* file metadata on Wikimedia Commons, accession MFA Boston 76.422: https://commons.wikimedia.org/wiki/File:Raphael_(Raffaello_Sanzio_or_Santi)_-_Virgin_and_Child_with_Young_Saint_John_the_Baptist_-_76.422_-_Museum_of_Fine_Arts.jpg. Public-domain marking carries jurisdiction-specific caveats.
+- Tightened gallery's published approved-art manifest to this one directly verified artwork; remaining candidate artwork is unpublished pending exact file record checks.
+- Source-inspected all 54 title/note keys for completeness and checked that dialog labeling, live count announcements, search event wiring and focus-return code exist. This is NOT a browser-based accessibility test.
+- Added `scripts/check-sacred-gallery.cjs` static regression test; the workflow creation attempt was blocked, so no CI result exists for it. The script itself has not been executed on a runner.
+- Open gates: 53 additional distinct Marian artwork selections and licence verification (plus non-Marian sections); individual theological and historical source substantiation; cross-browser/mobile/assistive-technology audit; successful test execution; review of the proposed image selection against Catholic iconographic suitability.
+- Decision: **DO NOT MERGE OR PUBLISH**; keep PR #159 draft until all requirements are satisfied and owner approval is obtained.
