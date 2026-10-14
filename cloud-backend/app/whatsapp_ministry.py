@@ -49,6 +49,8 @@ class WhatsAppOutbox(Base):
     inbound_id: Mapped[int] = mapped_column(ForeignKey("whatsapp_ministry_inbound.id"))
     kind: Mapped[str] = mapped_column(String(32))
     status: Mapped[str] = mapped_column(String(24), default="pending")
+    provider_message_id: Mapped[str | None] = mapped_column(String(200), nullable=True, unique=True)
+    delivery_status: Mapped[str | None] = mapped_column(String(24), nullable=True)
     __table_args__ = (UniqueConstraint("inbound_id", "kind"),)
 
 def should_welcome(previous, now, history_known, handoff=False):
@@ -113,6 +115,31 @@ async def receive_webhook(request: Request):
                 account = str(value.get("metadata", {}).get("phone_number_id", ""))[:120]
                 if not account:
                     continue
+                # Meta delivery receipts are independent of inbound customer messages.
+                # Unknown provider IDs are deliberately ignored: they cannot safely
+                # be matched to a recipient or an ambiguous send.
+                for receipt in value.get("statuses", []):
+                    provider_id = receipt.get("id")
+                    state = receipt.get("status")
+                    if not isinstance(provider_id, str) or not 1 <= len(provider_id) <= 200:
+                        continue
+                    if state not in ("sent", "delivered", "read", "failed"):
+                        continue
+                    with db.begin():
+                        job = db.scalar(select(WhatsAppOutbox).join(
+                            WhatsAppInbound, WhatsAppOutbox.inbound_id == WhatsAppInbound.id
+                        ).where(WhatsAppOutbox.provider_message_id == provider_id,
+                                WhatsAppOutbox.kind == "welcome",
+                                WhatsAppInbound.account_id == account).with_for_update())
+                        if job is None:
+                            continue
+                        rank = {"sent": 1, "delivered": 2, "read": 3}
+                        previous = job.delivery_status
+                        if state == "failed":
+                            if previous not in ("delivered", "read"):
+                                job.delivery_status = "failed"
+                        elif previous != "failed" and rank[state] > rank.get(previous, 0):
+                            job.delivery_status = state
                 for message in value.get("messages", []):
                     msg_id = str(message.get("id", ""))[:200]
                     contact = str(message.get("from", ""))[:120]
