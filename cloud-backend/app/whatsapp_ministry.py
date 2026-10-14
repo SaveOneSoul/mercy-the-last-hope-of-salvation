@@ -53,6 +53,27 @@ class WhatsAppOutbox(Base):
     delivery_status: Mapped[str | None] = mapped_column(String(24), nullable=True)
     __table_args__ = (UniqueConstraint("inbound_id", "kind"),)
 
+class WhatsAppDeliveryReceipt(Base):
+    """Bounded unmatched receipts for the send-response/DB-commit race."""
+    __tablename__ = "whatsapp_ministry_delivery_receipts"
+    id: Mapped[int] = mapped_column(primary_key=True)
+    account_id: Mapped[str] = mapped_column(String(120))
+    provider_message_id: Mapped[str] = mapped_column(String(200))
+    delivery_status: Mapped[str] = mapped_column(String(24))
+    received_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+    __table_args__ = (UniqueConstraint("account_id", "provider_message_id"),)
+
+
+def apply_delivery_status(job, state):
+    rank = {"sent": 1, "delivered": 2, "read": 3}
+    previous = job.delivery_status
+    if state == "failed":
+        if previous not in ("delivered", "read"):
+            job.delivery_status = "failed"
+    elif previous != "failed" and rank[state] > rank.get(previous, 0):
+        job.delivery_status = state
+
+
 def should_welcome(previous, now, history_known, handoff=False):
     if handoff:
         return False
@@ -131,15 +152,21 @@ async def receive_webhook(request: Request):
                         ).where(WhatsAppOutbox.provider_message_id == provider_id,
                                 WhatsAppOutbox.kind == "welcome",
                                 WhatsAppInbound.account_id == account).with_for_update())
-                        if job is None:
-                            continue
-                        rank = {"sent": 1, "delivered": 2, "read": 3}
-                        previous = job.delivery_status
-                        if state == "failed":
-                            if previous not in ("delivered", "read"):
-                                job.delivery_status = "failed"
-                        elif previous != "failed" and rank[state] > rank.get(previous, 0):
-                            job.delivery_status = state
+                        if job is not None:
+                            apply_delivery_status(job, state)
+                        else:
+                            # Buffer unknown IDs for later reconciliation. Never
+                            # infer an outbound job from the recipient alone.
+                            pending = db.scalar(select(WhatsAppDeliveryReceipt).where(
+                                WhatsAppDeliveryReceipt.account_id == account,
+                                WhatsAppDeliveryReceipt.provider_message_id == provider_id
+                            ).with_for_update())
+                            if pending is None:
+                                db.add(WhatsAppDeliveryReceipt(
+                                    account_id=account, provider_message_id=provider_id,
+                                    delivery_status=state, received_at=datetime.now(timezone.utc)))
+                            else:
+                                apply_delivery_status(pending, state)
                 for message in value.get("messages", []):
                     msg_id = str(message.get("id", ""))[:200]
                     contact = str(message.get("from", ""))[:120]
