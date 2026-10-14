@@ -11,7 +11,7 @@ from sqlalchemy import select, text, inspect
 
 from app.db import Base, SessionLocal, engine
 from app.main import app
-from app.whatsapp_ministry import WhatsAppInbound, WhatsAppOutbox, WhatsAppConversation, WhatsAppDeliveryReceipt, purge_expired_messages
+from app.whatsapp_ministry import WhatsAppInbound, WhatsAppOutbox, WhatsAppConversation, WhatsAppDeliveryReceipt, purge_expired_messages, purge_expired_delivery_receipts
 
 pytestmark = pytest.mark.skipif(
     engine.dialect.name != "postgresql" or os.getenv("WHATSAPP_TEST_DATABASE") != "1",
@@ -269,3 +269,40 @@ def test_receipt_before_provider_id_commit_is_reconciled(client, monkeypatch):
         assert job.delivery_status == "delivered"
         assert job.provider_message_id == "wamid.early-1"
         assert db.query(WhatsAppDeliveryReceipt).count() == 0
+
+
+def test_parallel_duplicate_unknown_receipts_are_idempotent(client):
+    from concurrent.futures import ThreadPoolExecutor
+    from threading import Barrier
+    payload = {"object": "whatsapp_business_account", "entry": [{"changes": [{
+        "value": {"metadata": {"phone_number_id": "phone-test"},
+                  "statuses": [{"id": "wamid.parallel-unknown", "status": "delivered"}]}}]}]}
+    start = Barrier(2)
+    def post():
+        start.wait(timeout=10)
+        return signed(client, payload).status_code
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        results = [future.result(timeout=15) for future in [pool.submit(post) for _ in range(2)]]
+    assert results == [200, 200]
+    with SessionLocal() as db:
+        rows = db.scalars(select(WhatsAppDeliveryReceipt)).all()
+        assert len(rows) == 1
+        assert rows[0].delivery_status == "delivered"
+
+
+def test_unmatched_receipt_retention_is_bounded(client):
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    with SessionLocal.begin() as db:
+        db.add_all([
+            WhatsAppDeliveryReceipt(account_id="phone-test", provider_message_id="old",
+                delivery_status="sent", received_at=now - timedelta(days=8)),
+            WhatsAppDeliveryReceipt(account_id="phone-test", provider_message_id="recent",
+                delivery_status="delivered", received_at=now - timedelta(days=2)),
+        ])
+    with SessionLocal.begin() as db:
+        assert purge_expired_delivery_receipts(db, now=now) == 1
+    with SessionLocal() as db:
+        assert [x.provider_message_id for x in db.scalars(select(WhatsAppDeliveryReceipt)).all()] == ["recent"]
+    with SessionLocal.begin() as db:
+        with pytest.raises(ValueError):
+            purge_expired_delivery_receipts(db, now=now, retention_days=30)
