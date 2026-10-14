@@ -12,7 +12,7 @@ import httpx
 from sqlalchemy import select
 
 from .db import SessionLocal
-from .whatsapp_ministry import WhatsAppConversation, WhatsAppInbound, WhatsAppOutbox, WhatsAppDeliveryReceipt, apply_delivery_status
+from .whatsapp_ministry import WhatsAppConversation, WhatsAppInbound, WhatsAppOutbox, WhatsAppDeliveryReceipt, apply_delivery_status, lock_delivery_receipt
 from .whatsapp_delivery import WELCOME, outbound_ready, send_text
 
 
@@ -70,9 +70,12 @@ def dispatch_one():
     with SessionLocal.begin() as db:
         job = db.get(WhatsAppOutbox, job_id)
         if job.status == "sending":
+            inbound = db.get(WhatsAppInbound, job.inbound_id)
+            # Match the webhook's advisory lock before exposing the provider ID.
+            # Otherwise a concurrent webhook can miss both the job and buffer.
+            lock_delivery_receipt(db, inbound.account_id, receipt[0]["id"])
             job.provider_message_id = receipt[0]["id"]
             job.status = "sent"  # Meta API accepted; not proof of delivery.
-            inbound = db.get(WhatsAppInbound, job.inbound_id)
             pending = db.scalar(select(WhatsAppDeliveryReceipt).where(
                 WhatsAppDeliveryReceipt.account_id == inbound.account_id,
                 WhatsAppDeliveryReceipt.provider_message_id == job.provider_message_id
