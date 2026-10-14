@@ -306,3 +306,34 @@ def test_unmatched_receipt_retention_is_bounded(client):
     with SessionLocal.begin() as db:
         with pytest.raises(ValueError):
             purge_expired_delivery_receipts(db, now=now, retention_days=30)
+
+
+def test_handoff_during_inflight_provider_send_is_recorded(client, monkeypatch):
+    """Expose the unavoidable in-flight handoff window without claiming cancellation."""
+    from concurrent.futures import ThreadPoolExecutor
+    from threading import Event
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("inflight-handoff", now)).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    entered, release = Event(), Event()
+    def provider(*args):
+        entered.set()
+        assert release.wait(timeout=10)
+        return [{"id": "wamid.inflight-handoff"}]
+    monkeypatch.setattr(whatsapp_worker, "send_text", provider)
+    with ThreadPoolExecutor(max_workers=1) as pool:
+        future = pool.submit(whatsapp_worker.dispatch_one)
+        assert entered.wait(timeout=10)
+        with SessionLocal.begin() as db:
+            conversation = db.scalar(select(WhatsAppConversation).with_for_update())
+            conversation.handoff = True
+        release.set()
+        assert future.result(timeout=15)["status"] == "sent"
+    with SessionLocal() as db:
+        assert db.scalar(select(WhatsAppConversation)).handoff is True
+        job = db.scalar(select(WhatsAppOutbox).where(WhatsAppOutbox.kind == "welcome"))
+        assert job.status == "sent"
+        assert job.provider_message_id == "wamid.inflight-handoff"
