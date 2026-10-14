@@ -55,3 +55,7 @@ constraints. Migration is **not** yet verified on a staging clone.
 - The human handoff in-flight race and scheduled privacy retention remain
   separate unresolved gates.
 - Outbound stays disabled and Meta webhook remains unconfigured.
+
+## Unmatched receipt maintenance
+
+`purge_expired_delivery_receipts(db, now=...)` removes unmatched receipts older than 7 days. This is **manual and unscheduled**; operational scheduling, metrics, and retention policy approval are still required. Parallel unknown-ID callbacks use a PostgreSQL transaction-scoped advisory lock. Do not treat these additions as permission to activate the webhook.
