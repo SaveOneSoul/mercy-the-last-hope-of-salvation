@@ -11,7 +11,7 @@ from sqlalchemy import select, text, inspect
 
 from app.db import Base, SessionLocal, engine
 from app.main import app
-from app.whatsapp_ministry import WhatsAppInbound, WhatsAppOutbox, WhatsAppConversation, purge_expired_messages
+from app.whatsapp_ministry import WhatsAppInbound, WhatsAppOutbox, WhatsAppConversation, WhatsAppDeliveryReceipt, purge_expired_messages
 
 pytestmark = pytest.mark.skipif(
     engine.dialect.name != "postgresql" or os.getenv("WHATSAPP_TEST_DATABASE") != "1",
@@ -24,6 +24,7 @@ def client(monkeypatch):
     monkeypatch.setenv("WHATSAPP_VERIFY_TOKEN", "integration-verify-only")
     Base.metadata.create_all(engine)
     with SessionLocal.begin() as db:
+        db.query(WhatsAppDeliveryReceipt).delete()
         db.query(WhatsAppOutbox).delete()
         db.query(WhatsAppInbound).delete()
         db.query(WhatsAppConversation).delete()
@@ -246,3 +247,25 @@ def test_meta_receipts_reconcile_without_downgrades(client, monkeypatch):
         assert job.delivery_status == "read"
         assert job.status == "sent"
         assert db.query(WhatsAppInbound).count() == 1
+
+
+def test_receipt_before_provider_id_commit_is_reconciled(client, monkeypatch):
+    from app import whatsapp_worker
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    assert signed(client, event("early-receipt", now)).status_code == 200
+    monkeypatch.setenv("WHATSAPP_OUTBOUND_ENABLED", "true")
+    monkeypatch.setenv("WHATSAPP_ACCESS_TOKEN", "test-only")
+    monkeypatch.setenv("WHATSAPP_PHONE_NUMBER_ID", "phone-test")
+    early = {"object": "whatsapp_business_account", "entry": [{"changes": [{
+        "value": {"metadata": {"phone_number_id": "phone-test"},
+                  "statuses": [{"id": "wamid.early-1", "status": "delivered"}]}}]}]}
+    def provider(*args):
+        assert signed(client, early).status_code == 200
+        return [{"id": "wamid.early-1"}]
+    monkeypatch.setattr(whatsapp_worker, "send_text", provider)
+    assert whatsapp_worker.dispatch_one()["status"] == "sent"
+    with SessionLocal() as db:
+        job = db.scalar(select(WhatsAppOutbox).where(WhatsAppOutbox.kind == "welcome"))
+        assert job.delivery_status == "delivered"
+        assert job.provider_message_id == "wamid.early-1"
+        assert db.query(WhatsAppDeliveryReceipt).count() == 0
