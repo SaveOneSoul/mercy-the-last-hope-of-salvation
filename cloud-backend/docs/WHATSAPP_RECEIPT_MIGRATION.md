@@ -206,3 +206,38 @@ infer from an empty list that the deployment is approved.
 
 If a read-only account or secure connection is not available, stop and
 request an access plan. Never use production admin credentials in CI.
+
+
+## Pre-staging access and deletion decision record — 2026-10-19
+
+**CI verified:** commit `7dcf63f4725a667fc2e0c35e677ed608b453944a`
+passed Public Form Audit #711, Mercy Backend Smoke #372, and
+WhatsApp PostgreSQL 15 Security Integration #37.
+
+**Read-only schema inspection: NOT EXECUTED.** The repository has no
+authorized Cloud SQL connection in this review session. An operator
+must confirm a secure access method and a database identity with
+SELECT-only metadata permissions. Never grant broad database access
+to GitHub Actions or put Cloud SQL credentials in CI. A successful
+metadata inspection is evidence of schema compatibility only; it is
+not permission to migrate.
+
+**Administrator access findings:** WhatsApp owner routes use the
+shared CMS admin session; mutating routes use the existing CSRF
+guard. Route-level regression tests passed. This does not establish
+individual administrator attribution, least-privilege role separation,
+production IAM configuration, secret rotation, or audit-log coverage.
+Those controls remain operational acceptance gates.
+
+**Deletion findings:** Owner-approved 30-day inbound and 7-day
+unmatched-receipt periods are implemented as manual helper functions,
+not a scheduled job. Unresolved pending/sending/unknown work is
+excluded; seven-day greeting metadata persists. No reviewed
+individual-request erasure workflow, backup-expiry enforcement, or
+deletion audit job is present. These are outstanding privacy
+requirements before production activation.
+
+**Decision:** Staging deployment, cleanup execution, Meta webhook
+configuration, outbound activation, and PR merge are NOT authorized.
+Separate owner approval is required after the access and migration
+evidence is reviewed.
