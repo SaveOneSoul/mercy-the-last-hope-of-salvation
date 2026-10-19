@@ -159,3 +159,50 @@ access, review audit-log coverage and secret rotation, design
 data-subject deletion/backup-expiry handling, and rehearse migration
 on a disposable clone of the real staging database. No operational
 deletion or deployment is authorized by this review.
+
+
+## Actual Cloud SQL schema inspection — read-only gate (pending)
+
+GitHub Actions PostgreSQL **15** migration/security suite passed at commit
+`4f3b50ea671a41329caf5731bf186fbca298dcb3`. This is a disposable
+synthetic schema test, **not** inspection of the actual Cloud SQL database.
+
+To verify real-schema compatibility without a paid clone, an authorized
+operator may run the following **read-only metadata queries** against the
+existing `mercy` database using a read-only account and an approved secure
+connection. Do not run migrations, `CREATE`, `ALTER`, `DROP`, `DELETE`,
+or any application tests against this database. Do not export data rows,
+message bodies, passwords, connection strings, or credentials.
+
+```sql
+SELECT current_database(), current_setting('server_version') AS server_version;
+SELECT table_schema, table_name
+FROM information_schema.tables
+WHERE table_schema NOT IN ('pg_catalog', 'information_schema')
+  AND table_name LIKE 'whatsapp_ministry_%'
+ORDER BY table_schema, table_name;
+SELECT table_schema, table_name, column_name, data_type,
+       character_maximum_length, is_nullable
+FROM information_schema.columns
+WHERE table_schema NOT IN ('pg_catalog', 'information_schema')
+  AND table_name LIKE 'whatsapp_ministry_%'
+ORDER BY table_schema, table_name, ordinal_position;
+SELECT n.nspname AS schema_name, t.relname AS table_name,
+       c.conname AS constraint_name, c.contype AS constraint_type,
+       pg_get_constraintdef(c.oid) AS definition
+FROM pg_constraint c
+JOIN pg_class t ON t.oid = c.conrelid
+JOIN pg_namespace n ON n.oid = t.relnamespace
+WHERE n.nspname NOT IN ('pg_catalog', 'information_schema')
+  AND t.relname LIKE 'whatsapp_ministry_%'
+ORDER BY schema_name, table_name, constraint_name;
+```
+
+The results should be reviewed for pre-existing WhatsApp tables, column
+types, unique constraints, and unexpected dependencies before authorizing
+any real-schema migration. An empty table list is a meaningful result:
+there is no legacy WhatsApp schema to migrate in that database. Never
+infer from an empty list that the deployment is approved.
+
+If a read-only account or secure connection is not available, stop and
+request an access plan. Never use production admin credentials in CI.
